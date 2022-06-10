@@ -474,6 +474,326 @@
           "wordCount": 1009,
           "title": "Magic behind App Insights Codeless Integration with App Services",
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/356418i77BA8102F41F14BB?v=v2"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/azure-apps-autopilot/ba-p/3253831",
+          "author": "justinyoo",
+          "description": "My colleague David asked about a very interesting feature.\n \n\n\"What if we can provision Azure Static Web App and deploy the app at the same time? If we can, we just simply hand over our PoC repository to developers so that they just run it directly from there.\"\n\n \nAlthough two challenges exist to achieve this idea, if we can combine both challenges, devs can autopilot everything from the resource creating to the app deployment, which will result in improving the development experiences. Throughout this post, I'm going to discuss how to offer the autopilot feature for your application repository.\n \n\nYou can download the sample code from this repository.\n\n \nArchitecture\n \n\nFront-end Application: Blazor Web Assembly\nBack-end Application: Azure Functions\nDatabase: Cosmos DB\n\n \nBoth front-end a…",
+          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/azure-apps-autopilot/ba-p/3253831",
+          "publishedOn": "2022-03-12T00:00:00.000Z",
+          "wordCount": 3145,
+          "title": "Azure Apps Autopilot",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/354799iE2ADC7858C3A8A69/image-size/original?v=v2&px=-1"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/deploy-your-app-service-flexibly-with-azure-devops-pipeline/ba-p/3251306",
+          "author": "Marina_Liu",
+          "description": "When deploying contents to App Services, usually we use CI/CD pipeline to make the deployment automatically and continuously.\nFor Azure DevOps pipeline, we usually use the \"Azure Web App\" task to deploy the related contents to Azure App Service. In this blog, we are introducing using KUDU API in Azure DevOps pipeline to make the app service deployment more flexible.\n \nKUDU API provide the way to operate the App Service SCM/KUDU site easily. Such as you can do ZIP deployment, delete/undeploy files and get certain files etc.\nSince KUDU API needs basic auth for authentication, we need to get the related credentials before configuring Azure DevOps pipeline. There are two kinds of credentials which you can use - Site level credential and user level credential. Below are the detailed steps to sh…",
+          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/deploy-your-app-service-flexibly-with-azure-devops-pipeline/ba-p/3251306",
+          "publishedOn": "2022-03-09T08:51:11.000Z",
+          "wordCount": 1089,
+          "title": "Deploy your App Service flexibly with Azure DevOps pipeline",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/354177iA79C8B50317D3B78/image-size/original?v=v2&px=-1"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/join-us-at-microsoft-jdconf-2022-java-dev-conference/ba-p/3249786",
+          "author": "nceres",
+          "description": "Microsoft’s mission is to empower every developer on the planet, and this includes Java developers! Not only are we building tools and services like Visual Studio Code, GitHub, and Azure Spring Cloud, we’re also part of the Java Community Process, supporting the Eclipse Foundation, and contributing to OpenJDK. We use Java ourselves running millions of JVMs in production—from LinkedIn and Minecraft to Azure Big Data services and Yammer.\n \nAs a member of the Java community, we want to run a community event to encourage best practice sharing and interaction. We invite you to join us for Microsoft JDConf on May 4-5, 2022. To learn more the event, read the full post on the Java at Microsoft developer blog.\n \nInterested in submitting a session? Our call for speakers is has been extended through April 8!",
+          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/join-us-at-microsoft-jdconf-2022-java-dev-conference/ba-p/3249786",
+          "publishedOn": "2022-03-08T01:42:28.000Z",
+          "wordCount": 716,
+          "title": "Join us at Microsoft JDConf 2022 Java dev conference",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/354168i6E92EA71C186A8A2/image-size/original?v=v2&px=-1"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/publishing-openapi-document-from-azure-functions-to-azure-api/ba-p/3239611",
+          "author": "justinyoo",
+          "description": "In my previous post, we've walked through how to run the Azure Functions app as a background process and locally generate the OpenAPI document from it within the GitHub Actions workflow. The OpenAPI document can be stored as an artifact and integrated with Power Platform or Azure API Management (APIM) later on.\n \n\nGenerating OpenAPI Document from Azure Functions within CI/CD Pipeline\nPublishing OpenAPI Document from Azure Functions to Azure API Management within CI/CD Pipeline :backhand_index_pointing_left:\n\n \nThroughout this post, I'm going to discuss how to publish the OpenAPI document to APIM, after locally running the Azure Functions app as a background process and generating the OpenAPI document within the GitHub Actions workflow.\n \n\nNOTE: Let's use the sample app provided by the Azur…",
+          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/publishing-openapi-document-from-azure-functions-to-azure-api/ba-p/3239611",
+          "publishedOn": "2022-03-05T00:00:00.000Z",
+          "wordCount": 1557,
+          "title": "Publishing OpenAPI Document from Azure Functions to Azure API Management within CI/CD Pipeline",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/352283iB70F182CC2446421/image-size/original?v=v2&px=-1"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/run-scalable-and-resilient-redis-with-kubernetes-and-azure/ba-p/3247956",
+          "author": "aaron-w",
+          "description": "Redis is a successful open source in-memory data structure store first released in 2009. It is most commonly used as a database, cache, and message broker. Developers enjoy Redis for its versatility and simplicity. Low cognitive load makes development fast and efficient.\n \nLanguage support for Redis is very mature with clients across every major language one might expect, with multiple community-supported implementations per language (including Go, Java, Python and Rust), as well as support for advanced functionality such as Redis Cluster and Redis Sentinel, which enable sharding and master-replica topologies respectively.\n \nMany other open source projects integrate with Redis. Just two examples in the cloud native ecosystem that we contribute to in the CNCF are Dapr (Distributed Applicati…",
+          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/run-scalable-and-resilient-redis-with-kubernetes-and-azure/ba-p/3247956",
+          "publishedOn": "2022-03-04T22:59:46.000Z",
+          "wordCount": 2401,
+          "title": "Run scalable and resilient Redis with Kubernetes and Azure Kubernetes Service",
+          "imageUrl": "https://cdn.techcommunity.microsoft.com/assets/MTC_Open_graph_image1.jpg"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/generating-openapi-document-from-azure-functions-within-ci-cd/ba-p/3193584",
+          "author": "justinyoo",
+          "description": "From time to time, you might be facing some situations while using the Azure Functions OpenAPI extension for your Azure Functions development. One of them is that you are asked to generate the OpenAPI document from the function app right after the build and integrate it with Power Platform or Azure API Management. What if you want to do this process within your CI/CD pipeline?\n \nThroughout this post, I'm going to discuss how to generate the OpenAPI document within the GitHub Actions workflow right after the function app build.\n \n\nNOTE: Let's use the sample app provided by the Azure Functions OpenAPI Extension repository.\n\n \nFirst of all, you need to install the Azure Functions Core Tools within your GitHub Actions workflow. Installing the tool varies depending on the runner OS. The command…",
+          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/generating-openapi-document-from-azure-functions-within-ci-cd/ba-p/3193584",
+          "publishedOn": "2022-02-26T00:00:00.000Z",
+          "wordCount": 1207,
+          "title": "Generating OpenAPI Document from Azure Functions within CI/CD Pipeline",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/350025iA481B01C98803E45/image-size/original?v=v2&px=-1"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/new-kudu-ui-for-app-service-on-linux-preview/ba-p/3212270",
+          "author": "Winnie_Chen",
+          "description": "Great news for App Service on Linux users that our KUDU new UI provides [instance selector] feature! \n \nUnlike Windows App Service, it used to be difficult for App Service on Linux users to make an SSH connection to the intended instance. You might need to handle Session affinity cookie (ARR cookie) or clean up cookies to allow KUDU to randomly choose an instance to attach. \nhttps://azure.github.io/AppService/2016/05/16/Disable-Session-affinity-cookie-(ARR-cookie)-for-Azure-web-apps.html\n \nOn new UI, you can choose the instance as easy as the App Service on Windows!\n \n[App Service on Linux]\n\n \n[App Service on Windows]\n\n \nAccess Kudu new UI for your App Service on Linux \n \n⚠️ Warning\n**  newui endpoint is only available for App Service on Linux\n**  Readers should note that the new UI is still in preview stage, do not use in production environments\n \nApp not in Isolated tier: https://<app-name>.scm.azurewebsites.net/newui\n \nInternet-facing app in Isolated tier (App Service Environment): https://<app-name>.scm.<ase-name>.p.azurewebsites.net/newui\n \nInternal app in Isolated tier (ILB App Service Environment): https://<app-name>.scm.<ase-name>.appserviceenvironment.net/newui\n \nSample Image\n \n[New UI for App Service on Linux]\n\n \n[Original UI for App Service on Linux]",
+          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/new-kudu-ui-for-app-service-on-linux-preview/ba-p/3212270",
+          "publishedOn": "2022-02-25T02:16:33.000Z",
+          "wordCount": 751,
+          "title": "New KUDU UI for App Service on Linux(Preview)",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/351134iFC647EA54811C664/image-size/original?v=v2&px=-1"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/the-new-and-better-wordpress-on-app-service/ba-p/3202594",
+          "author": "abhishekreddy",
+          "description": "We are happy to announce that the new and updated WordPress on Azure App Service is available for public preview in Azure Marketplace. You can directly head to Create WordPress on App Service - Microsoft Azure to create your WordPress website or go to QuickStart: Create a WordPress site - Azure App Service | Microsoft Docs for a how-to guide to build your WordPress website in Azure.\n \nWe have made some significant improvements based on feedback from many WordPress developers and in close collaboration with the ever-growing WordPress community This new offering will improve your experience, and help your websites run faster.\n \nWhat’s new and improved?\n\nUpdated image: We have made sure that whenever you deploy a new WordPress website, you get the latest stable versions of WordPress and PHP. …",
+          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/the-new-and-better-wordpress-on-app-service/ba-p/3202594",
+          "publishedOn": "2022-02-23T07:00:12.000Z",
+          "wordCount": 1155,
+          "title": "The new and better ‘WordPress on App Service’",
+          "imageUrl": "https://cdn.techcommunity.microsoft.com/assets/MTC_Open_graph_image1.jpg"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/app-service-environment-ase-v3-key-vault-reference-behavior/ba-p/3191780",
+          "author": "Boqian",
+          "description": "As we know, the Azure App Service/Function App support to use the Key Vault Reference (Use Key Vault references - Azure App Service | Microsoft Docs), and customer can use this setting to read the App Service Settings from the Key Vault directly without any code. And recently, there are more and more users that using the Azure App Service Environment V3 (App Service Environment v3 now generally available | Azure updates | Microsoft Azure). We received some query from the users about how the Key Vault Reference worked on the ASE V3 platform, in order to help users to have a better understanding on this, I write this article. \n \n\nSome users may observed that even for the ILB ASE V3, seems the ASE is trying to access the Key Vault Reference via the public IP, not the private IP. For example, …",
+          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/app-service-environment-ase-v3-key-vault-reference-behavior/ba-p/3191780",
+          "publishedOn": "2022-02-22T06:25:27.000Z",
+          "wordCount": 1028,
+          "title": "App Service Environment (ASE) V3 Key Vault Reference behavior",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/349898i297C5778F14BCB8C?v=v2"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/tutorial-publish-azure-static-web-apps-with-gitlab/ba-p/3176762",
+          "author": "SachinRathor",
+          "description": "This article demonstrates how to deploy to Azure Static Web Apps using GitLab.\n \nIn this tutorial, you learn to:\n\nSet up an Azure Static Web Apps site for a Vanilla Basic app.\nCreate an GitLab Pipeline to build and publish a static web app via Azure portal.\n\n \nPrerequisites\n\nActive Azure account: If you don't have one, you can create an account for free.\nGitLab project: If you don't have one, you can create a project for free.\nYou’ll need to validate your account with a credit card. This is required to discourage and reduce abuse on GitLab infrastructure.\n\n \nCreate a repository in GitLab\n\nNavigate to your repository in GitLab Repos.\nGo to create new project page.\nClick on Import Project.\n\n \n\n                                                       Creation of new project using import method\n…",
+          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/tutorial-publish-azure-static-web-apps-with-gitlab/ba-p/3176762",
+          "publishedOn": "2022-02-22T05:50:20.000Z",
+          "wordCount": 1232,
+          "title": "Tutorial: Publish Azure Static Web Apps with GitLab",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/348941i758867C2A1A813D5?v=v2"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/tutorial-publish-azure-static-web-apps-with-bitbucket/ba-p/3104518",
+          "author": "RupaReddy",
+          "description": "In this tutorial, you learn to: \n\nSet up an Azure Static Web Apps site for a Vanilla API sample app using Azure portal\nCreate a Bitbucket Pipeline to build and publish a static web app \n\nPrerequisites \n\nActive Azure account: If you don't have one, you can create an account for free. \nBitbucket project: If you don't have one, you can create a project for free. \n\nBitbucket includes Pipelines. If you haven't created a pipeline before, you first have to enable two-step verification for your Bitbucket account.\nYou can add SSH Keys using the steps here \n\n\n\nNOTE - The static web app Pipeline Task currently only works on Linux machines. When running the pipeline mentioned below, please ensure it is running on a Linux VM.\nCreate a static web app project in Bitbucket \n \nNOTE - If you have an existin…",
+          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/tutorial-publish-azure-static-web-apps-with-bitbucket/ba-p/3104518",
+          "publishedOn": "2022-02-21T15:54:31.000Z",
+          "wordCount": 1346,
+          "title": "Tutorial: Publish Azure Static Web Apps with Bitbucket",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/349026iB44CE9F4C9C8B6CD?v=v2"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/using-websocket-with-java-in-azure-app-service/ba-p/3158851",
+          "author": "Hanli_Ren",
+          "description": "Azure App Service supports using WebSocket protocol in both Windows and Linux Web Apps. Developers can enable and use WebSockets in their applications by turning on WebSockets feature in App Service Configuration -> General Settings portal.\n \nThis blog walks you through the process of creating a Java WebSocket sample application in both Windows and Linux App Service.\n \nWe will use a simple Java Spring Boot Websocket sample to build a server that accepts a message that carries a user’s name. In response, the server will push a greeting into a queue to which the client is subscribed.\n \n\n \nPrerequisite\n\nAzure account with an active subscription\nJDK 1.8 or later\nMaven 3.2+\nGit client\n\n \nBuild & Test the Java Spring Boot Websocket Service\n1.  Git clone the sample code \n \ngit clone https://githu…",
+          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/using-websocket-with-java-in-azure-app-service/ba-p/3158851",
+          "publishedOn": "2022-02-21T02:10:58.000Z",
+          "wordCount": 1596,
+          "title": "Using WebSocket with Java in Azure App Service",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/347585i53DF2C81CC9B2B4B?v=v2"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/azure-spring-cloud-enterprise-is-now-available-in-preview/ba-p/3172004",
+          "author": "Asir_Selvasingh",
+          "description": "By -- Julia Liuson, President, Developer Division\n \nWhen we launched Azure Spring Cloud with VMware in 2019, we set out to solve common challenges developers, IT operators, and DevOps teams face when running Spring Boot applications at scale. Since then we’ve had the opportunity to work with many customers to help them adopt the service including Bosch, Digital Realty, Kroger, Liantis, Morgan Stanley, National Life, Raley’s, and Swiss Re. They value the fully managed infrastructure of Azure Spring Cloud that lets them focus on their apps, while the service manages dynamic scaling, security patching, out-of-the-box instrumentation for monitoring, and more.\n \nMany organizations are running thousands of Spring Boot applications on-premises and need advanced capabilities to accelerate their Sp…",
+          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/azure-spring-cloud-enterprise-is-now-available-in-preview/ba-p/3172004",
+          "publishedOn": "2022-02-16T16:00:00.000Z",
+          "wordCount": 1785,
+          "title": "Azure Spring Cloud Enterprise is now available in preview",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/348621i2AA0BFCA6D283A3A/image-size/original?v=v2&px=-1"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/leverage-collaboration-between-powerapps-and-azure-api/ba-p/3159161",
+          "author": "daisami",
+          "description": "This post is a part of series of Leverage collaboration between PowerApps and Azure API Management. In previous post, we have enabled our PowerApps to access your Web APIs via API Management. As next step, we will enable Developer Portal on Azure API Management to publish your Web API for \"citizen developers\" widely to establish ecosystems.\n\nNo.1: Setup Power Apps \"custom connectors\" to simply call your Web APIs via API Management \nNo.2: Enable Developer portal for API Management to expose your Web APIs as ecosystem - this post!\nNo.3: Authentication and authorization with Azure AD\nNo.4: Enterprise network usage\n\nIT departments can establish ecosystems with your Web APIs and API Management, and it requires to enable citizen developers to confirm API specs, publish keys, test or run Web APIs…",
+          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/leverage-collaboration-between-powerapps-and-azure-api/ba-p/3159161",
+          "publishedOn": "2022-02-13T11:47:55.000Z",
+          "wordCount": 1245,
+          "title": "Leverage collaboration between PowerApps and Azure API Management - No.2 Enable Developer Portal",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/347597iB4EF6C9D2010A5F0?v=v2"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/graphql-on-azure-part-8-logging/ba-p/3152454",
+          "author": "aaronpowell",
+          "description": "As we've been looking at how to run GraphQL on Azure we've covered several topics of importance with Azure integration, but what we haven't looked at is how we make sure that we are getting insights into our application so that if something goes wrong, we know about it. So for this post we're going to address that as we take a look at logging using the Azure Application Insights platform (often referred to as AppInsights).\nIf you're deploying into Azure in the ways that we've looked at in this series, chances are you're already using AppInsights, as it's the cornerstone of Azure's monitoring platform, so let's look at how to get better insights out of our GraphQL server.\nSide note: There's a lot more you can do with AppInsights in monitoring your infrastructure, monitoring across resources…",
+          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/graphql-on-azure-part-8-logging/ba-p/3152454",
+          "publishedOn": "2022-02-11T02:41:43.000Z",
+          "wordCount": 1423,
+          "title": "GraphQL on Azure: Part 8 - Logging",
+          "imageUrl": "https://cdn.techcommunity.microsoft.com/assets/MTC_Open_graph_image1.jpg"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/graphql-on-azure-part-7-server-side-authentication/ba-p/3152436",
+          "author": "aaronpowell",
+          "description": "In our journey into GraphQL on Azure we've only created endpoints that can be accessed by anyone. In this post we'll look at how we can add authentication to our GraphQL server.\nFor the post, we'll use the Apollo Server and Azure Static Web Apps for hosting the API, mainly because SWA provides security (and if you're wondering, this is how I came across the need to write this recent post).\nIf you're new to GraphQL on Azure, I'd encourage you to check out part 3 in which I go over how we can create a GraphQL server using Apollo and deploy that to an Azure Function, which is the process we'll be using for this post.\nCreating an application\nThe application we're going to use today is a basic blog application, in which someone can authenticate against, create a new post with markdown and befor…",
+          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/graphql-on-azure-part-7-server-side-authentication/ba-p/3152436",
+          "publishedOn": "2022-02-11T02:37:14.000Z",
+          "wordCount": 2527,
+          "title": "GraphQL on Azure: Part 7 - Server-side Authentication",
+          "imageUrl": "https://cdn.techcommunity.microsoft.com/assets/MTC_Open_graph_image1.jpg"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/openapi-for-javascript-azure-functions/ba-p/3146739",
+          "author": "aaronpowell",
+          "description": "OpenAPI, formerly known as Swagger (or still known, depending who you ask!), is used to describe a REST API's.\nLast year my colleague Justin Yoo released an extension for .NET Azure Functions to generate OpenAPI definitions and not long afterwards he reached out to me on whether it'd be possible to do something similar for JavaScript/TypeScript Functions.\nWell, good news, I've created a npm package to do that, which you can find on GitHub and in this post we'll take a look at how to use it.\nHow it works\nThis npm package works conceptually similar to the .NET one in that you annotate the Function handler to provide OpenAPI schema information. This is done using a wrapper, or higher order, function, which takes a JavaScript object in that represents the schema for OpenAPI.\nThe second part of…",
+          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/openapi-for-javascript-azure-functions/ba-p/3146739",
+          "publishedOn": "2022-02-10T03:01:41.000Z",
+          "wordCount": 1971,
+          "title": "OpenAPI for JavaScript Azure Functions",
+          "imageUrl": "https://cdn.techcommunity.microsoft.com/assets/MTC_Open_graph_image1.jpg"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/leverage-collaboration-between-powerapps-and-azure-api/ba-p/3140009",
+          "author": "daisami",
+          "description": "Power Platform is quite popular for \"citizen developers\" now and the demand retrieving data and APIs with Power Platform has been increased by the developers. Some major SaaS services have been published as reusable APIs, but most existing systems are not exposed as reusable APIs because such systems would have been developed as specific use cases.\nPower Apps has offered \"Custom Connectors\" to retrieve external systems via Web APIs, so the citizen developers can leverage your systems. As first step, you should expose your systems as Web APIs for Power Apps usage if the systems might have not provided yet.\n\nCitizen developers can develop various applications by leveraging existing systems if existing systems would have officially been published their systems as Web APIs. This will accelerat…",
+          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/leverage-collaboration-between-powerapps-and-azure-api/ba-p/3140009",
+          "publishedOn": "2022-02-08T21:43:43.000Z",
+          "wordCount": 1542,
+          "title": "Leverage collaboration between PowerApps and Azure API Management - No.1 setup \"custom connection\"",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/346431i6A005E5FEB7C7F26?v=v2"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/mount-azure-storage-in-a-custom-container-in-app-service-with/ba-p/3115202",
+          "author": "Zehui",
+          "description": "Azure app service supports the functionality to mount Azure Storage as a network share in a built-in Linux container or a custom Linux container in App Service. The detailed steps are provided in the following document:\nMount Azure Storage as a local share (container) - Azure App Service | Microsoft Docs\nWhile Storage Firewall is supported through service endpoint and private endpoint,  some configuration details are not addressed within the document. Today, this article will provide detailed steps on mounting the storage account using service endpoint and private endpoint. \n \nOne thing to notice is that mounting the storage from the app service requires some ports to be open. \n\nFor blob storage: Port 80 and 443 should be open\nFor file share: Port 80 and 445 should be open\n\nThe reason for …",
+          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/mount-azure-storage-in-a-custom-container-in-app-service-with/ba-p/3115202",
+          "publishedOn": "2022-02-06T05:18:51.000Z",
+          "wordCount": 1077,
+          "title": "Mount Azure Storage in a custom container in App Service with the restricted network environment",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/345233i0158A7A442AC4673?v=v2"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/istio-a-robust-extensible-service-mesh-for-k8s/ba-p/3112403",
+          "author": "monojit18",
+          "description": "What is Service Mesh?\nService Mesh provides managing capabilities for the micro-services hosted in the Kubernetes cluster uniformly and decouples them from the Applications (Microservices) layer.\n \nThis makes it a great tool for Infrastructure architects as well as Developer architects easily Manage, Observe and Secure the cluster.\n \n\n \nFeatures\n\n\nObservability - Monitor applications hosted inside the cluster\n\n\nTraffic Splitting - Split Ingress Traffic to different versions of an API. Helps  to perform Blue/Green Deployment, A/B Testing, Fault Injection\n\n\nDistributed Tracing - Trace/Compare Service to Service calls with visualisation\n\n\nCircuit Breaking - Limit impact of failures due to uncertainty in Network and make services resilient\n\n\nMirroring - Allows copying traffic directed to one S…",
+          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/istio-a-robust-extensible-service-mesh-for-k8s/ba-p/3112403",
+          "publishedOn": "2022-02-04T13:03:09.000Z",
+          "wordCount": 2270,
+          "title": "Istio - A Robust, Extensible Service Mesh for K8s",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/345079i0A407EB4251D25DE/image-size/original?v=v2&px=-1"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/azure-container-apps-virtual-network-integration/ba-p/3096932",
+          "author": "kendallroden",
+          "description": "Azure Container Apps Virtual Network Integration release announcement\n \nAt Ignite, we announced Azure Container Apps, a serverless application-centric hosting service that enables users to quickly deploy containerized applications and microservices to Azure without the need to configure and manage underlying infrastructure resources or container orchestrators. Azure Container Apps runs on  Azure Kubernetes Service, and includes several open-source projects: Kubernetes Event Driven Autoscaling (KEDA), Distributed Application Runtime (Dapr), and Envoy. This open-source foundation enables teams to build and run portable applications powered by Kubernetes and open standards without the operational overhead and management complexity of working with the platform directly.\n \nSince its preview rel…",
+          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/azure-container-apps-virtual-network-integration/ba-p/3096932",
+          "publishedOn": "2022-02-02T18:51:48.000Z",
+          "wordCount": 1840,
+          "title": "Azure Container Apps Virtual Network Integration",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/344093iB8D660776A560E51?v=v2"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/open-lightweight-service-mesh-for-k8s/ba-p/3097216",
+          "author": "monojit18",
+          "description": "What is Service Mesh?\nService Mesh provides managing capabilities for the micro-services hosted in the Kubernetes cluster uniformly and decouples them from the Applications (Microservices) layer.\n \nThis makes it a great tool for Infrastructure architects as well as Developer architects easily Manage, Observe and Secure the cluster.\n \n\n \nFeatures\n\n\nObservability - Monitor applications hosted inside the cluster\n\n\nTraffic Splitting - Split Ingress Traffic to different versions of an API. Helps perform - Blue/Green Deployment, A/B Testing, Fault Injection\n\n\nDistributed Tracing - Trace/Compare Service to Service calls with visualisation\n\n\nCircuit Breaking - Limit impact of failures due to uncertainty in Network and make services resilient\n\n\n \nConsiderations\n\n\nComplexity - More complex for simpl…",
+          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/open-lightweight-service-mesh-for-k8s/ba-p/3097216",
+          "publishedOn": "2022-02-02T13:48:45.000Z",
+          "wordCount": 1601,
+          "title": "Open Lightweight Service Mesh for K8s",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/344113i68510A2C724E2EDD/image-size/original?v=v2&px=-1"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/manage-azure-resources-using-powershell-function-app-with/ba-p/3099282",
+          "author": "KevinLi",
+          "description": "Briefly, this post will provide you a step to step guidance with sample code on how to leverage Azure PowerShell Function App to manage Azure resources and use managed identity for authentication to simplify the workflow.\n \nAzure PowerShell is a set of cmdlets for managing Azure resources directly from the PowerShell command line. Azure PowerShell is designed to make it easy to learn and get started with, but provides powerful features for automation.\n \nAzure Functions is a cloud service available on-demand that provides all the continually updated infrastructure and resources needed to run your applications. You focus on the pieces of code that matter most to you, and Functions handles the rest. Functions provides serverless compute for Azure. You can use Functions to build web APIs, resp…",
+          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/manage-azure-resources-using-powershell-function-app-with/ba-p/3099282",
+          "publishedOn": "2022-02-02T06:19:21.000Z",
+          "wordCount": 1213,
+          "title": "Manage Azure Resources using PowerShell Function App with Managed Identity",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/344436i31E88CA3B2E9A5DA?v=v2"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/windows-azure-app-service-nodejs-version/ba-p/3102319",
+          "author": "Boqian",
+          "description": "We recently received some feedback regarding to Windows Azure App Service Node version change, so I would like to write this article to clarify what happened and what is the best practice. \n \nWhat is the discussion scope of this article? \n\nThis article only discuss the Windows Azure App Service, Linux App Service is out of scope of this article. \n\n \nWhat happened? \n\nThe Windows Azure App Service platform removed some minor NodeJS version. That could result in some un-expected result if the App Service's configuration is not right. \n\n \nIs that removement is expected behavior? \n\nYes.\nAzure App Service is a PaaS service, and the platform will manage the Windows Node version.\nThe App Service Platform periodically refreshes the node version, and only keeps the latest two minor versions, and rem…",
+          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/windows-azure-app-service-nodejs-version/ba-p/3102319",
+          "publishedOn": "2022-02-02T01:20:08.000Z",
+          "wordCount": 907,
+          "title": "Windows Azure App Service NodeJS Version",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/344396i61A13D11B7BFD43F?v=v2"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/deploy-cloud-native-apps-on-aks-happy-helming/ba-p/3072667",
+          "author": "monojit18",
+          "description": "Introduction\nHelm is the package manager for the applications built for Kubernetes. Helm helps to manage complex Kubernetes applications with minimal effort. Helm packages are bundled as Charts which are easy to Create, Manage, Deploy and Rollback onto K8s clusters.\n \nWhat this article covers\n\n\nAn overview of Helm chart and its components\n\n\nAn insight into the Architecture of Helm\n\n\nA deep look at how Helm chart can be used to deploy Containerised applications onto K8s clusters\n\n\nAnatomy of Helm chart templates and configurations\n\n\nSome hands-on examples\n\n\nA quick showcase of how Helm can work with Azure DevOps to automate application deployment\n\n\nComponents\nChart.yaml\n\n\nContains information about the chart\n\n\nModify Description\n\n\nModify Chart Version\n\n\nModify App Version\n\n\napiVersion: v2na…",
+          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/deploy-cloud-native-apps-on-aks-happy-helming/ba-p/3072667",
+          "publishedOn": "2022-01-26T22:06:47.000Z",
+          "wordCount": 2147,
+          "title": "Deploy Cloud Native Apps on AKS - Happy Helming",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/342774i7E4385DBD8DC7B07/image-size/original?v=v2&px=-1"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/connected-microservices-with-azure-container-apps/ba-p/3072158",
+          "author": "monojit18",
+          "description": "Azure Container Apps(Preview) enables users to run containerised applications in a completely Serverless manner providing complete isolation of Orchestration and Infrastructure. Applications built on Azure Container Apps can dynamically scale based on the various triggers as well as KEDA-supported scalers\nFeatures of Azure Container Apps include:\n\n\nRun multiple Revisions of containerised applications\n\n\nAutoscale apps based on any KEDA-supported scale trigger\n\n\nEnable HTTPS Ingress without having to manage other Azure infrastructure like L7 Load Balancers\n\n\nEasily implement Blue/Green deployment and perform A/B Testing by splitting traffic across multiple versions of an application\n\n\nAzure CLI extension or ARM templates to automate management of containerised applications\n\n\nManage Applicati…",
+          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/connected-microservices-with-azure-container-apps/ba-p/3072158",
+          "publishedOn": "2022-01-26T13:13:56.000Z",
+          "wordCount": 2946,
+          "title": "Connected Microservices with Azure Container Apps",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/342549iC22EF883DE19B47D/image-size/original?v=v2&px=-1"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/configure-nginx-for-php-8-linux-azure-app-service/ba-p/3069373",
+          "author": "Hanli_Ren",
+          "description": "Azure App Service for Linux platform now supports customer using both PHP 7 and PHP 8 built-in docker image. \nWhen switching from PHP 7 to PHP 8, you may recognize the platform changed the web container from using Apache to Nginx. If you previously defined custom rules in .htaccess will be lost and will highly possible break your app.\n \nBut Nginx does not have an equivalent to the .htaccess file, you need to update the main configuration and reload Nginx for any changes to take effect. NGINX is designed to be efficient. While using .htaccess can do harm to performance. For more details, please refer to https://www.nginx.com/resources/wiki/start/topics/examples/likeapache-htaccess/.\n \nThis article shows how to deploy a customized Nginx configuration in PHP 8 Linux App Service.\n \nInside App …",
+          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/configure-nginx-for-php-8-linux-azure-app-service/ba-p/3069373",
+          "publishedOn": "2022-01-25T06:53:54.000Z",
+          "wordCount": 932,
+          "title": "Configure Nginx for PHP 8 Linux Azure App Service",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/341703i8C4083058B749351?v=v2"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/dockershim-deprecation-and-aks/ba-p/3055902",
+          "author": "Justin Davies",
+          "description": "The huge success of Docker in energizing the tech community around containers has been truly amazing to see.  As containers are the foundation of Kubernetes, it goes hand in hand that Docker was a core part of the platform. As Kubernetes matured, and the needs of the community and our customers grew, the tight coupling of Docker to Kubernetes through dockershim (the interface between the Kubernetes platform and the Docker runtime) needed to evolve. On 2 December 2020, with the release of Kubernetes 1.20, Kubernetes announced it is deprecating Docker as a container runtime, through the use of dockershim, in a future release of Kubernetes.\n \nWith the upcoming Kubernetes 1.24 release, dockershim will be removed.\n \nIf you are using a supported Kubernetes version in Azure Kubernetes Service (AKS):\n\nFor Linux node pools, there is no action required on your part. All supported Kubernetes versions on AKS use containerd as the default runtime for Kubernetes 1.19 and greater.\nFor Windows Server 2019 node pools, in January 2021, we announced the general availability of containerd as the default container runtime for Kubernetes 1.23 and greater. If you are using a cluster with a Kubernetes version prior to 1.23, you can create a new node pool with containerd enabled before the switch over to it being the default in 1.23 then move your pods to the new pool.\n\n \nWe work very closely with the community through our participation in the Kubernetes Special Interest Groups (SIG) from Storage, to Windows and everything in between and I'd like to thank both the community and our engineering teams for the work to get to this milestone.",
+          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/dockershim-deprecation-and-aks/ba-p/3055902",
+          "publishedOn": "2022-01-22T07:35:15.000Z",
+          "wordCount": 838,
+          "title": "Dockershim deprecation and AKS",
+          "imageUrl": "https://cdn.techcommunity.microsoft.com/assets/MTC_Open_graph_image1.jpg"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/store-prometheus-metrics-with-thanos-azure-storage-and-azure/ba-p/3067849",
+          "author": "aaron-w",
+          "description": "by Lucas Santos and Aaron Wislang\n \nIn our previous article we explored how to deploy Grafana and Prometheus on AKS. However, despite Prometheus being an excellent way to monitor your AKS cluster, it lacks some functionality to save metrics for future use and enable us to query historical data.\n \nPrometheus is a metrics collector, it can be used to collect metrics from any source, and it can be used to generate graphs. However, it is not a data storage solution and therefore isn't not focused on storing data for historical purposes. Prometheus has its storage solution and supports both on-disk storage as well as remote locations. You can configure a lot of options but the data management options are limited. This is where Thanos can help.\n \nThere is also a configuration overhead when we wa…",
+          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/store-prometheus-metrics-with-thanos-azure-storage-and-azure/ba-p/3067849",
+          "publishedOn": "2022-01-21T01:52:17.000Z",
+          "wordCount": 2670,
+          "title": "Store Prometheus Metrics with Thanos, Azure Storage and Azure Kubernetes Service (AKS)",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/341271i7B5CB1812452E1AB?v=v2"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/elastic-and-microsoft-azure-unified-observability-for-spring/ba-p/3065347",
+          "author": "Asir_Selvasingh",
+          "description": "Today, we are excited to announce the availability of Elastic integrations for unified observability of Spring Boot applications on Azure. You can seamlessly ship Microsoft Azure Spring Cloud logs and metrics into Elastic, instrument Spring Boot apps, and monitor every step of your cloud journey. And gain a holistic view across Spring Boot applications and other logs and metrics in your cloud and on-premises environments.\n \nOver the past two years, we worked with many enterprise customers to learn about the scenarios they face. Many of these customers have thousands of Spring Boot applications running in on-premises data centers. As they migrate these applications to the cloud, they need to aggregate logs and metrics from these applications and instrument them for application performance m…",
+          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/elastic-and-microsoft-azure-unified-observability-for-spring/ba-p/3065347",
+          "publishedOn": "2022-01-19T13:30:00.000Z",
+          "wordCount": 1838,
+          "title": "Elastic and Microsoft Azure - Unified Observability for Spring Boot applications",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/340544i056AAA441B7A558A/image-size/original?v=v2&px=-1"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/announcing-app-service-environment-v3-migration-feature-public/ba-p/3059611",
+          "author": "jordanselig",
+          "description": "We are happy to announce the availability of the initial public preview of the App Service Environment (ASE) v3 migration tool. With this feature, you'll be able to migrate your existing ASE as well as the apps running on that ASE to ASEv3. ASEv3 provides a number of feature differences as well as performance enhancements and potential reduced overall costs compared to previous versions. To get a complete overview on ASEv3, read the ASEv3 focused App Service Environment overview.\n\nCheck out the following docs to learn more about migrating to ASEv3:\n\n- Migrate to App Service Environment v3\n- How to Migrate to ASEv3\n\nPlease note, at this time, the public preview supports a subset of possible ASE configurations. Be sure to review the supported scenarios to see if you can migrate at this time using the feature and stay tuned for updates as we release additional capabilities.\n\nAn Azure portal experience for migration will be available at the start of February, 2022. Be on the lookout for additional announcements.\n\nIf your ASE isn't supported for migration using the migration feature and your ASE isn't listed under one of the upcoming supported scenarios, you have the option to migrate to ASEv3 manually. See the migration alternatives for more details.",
+          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/announcing-app-service-environment-v3-migration-feature-public/ba-p/3059611",
+          "publishedOn": "2022-01-18T14:00:00.000Z",
+          "wordCount": 792,
+          "title": "Announcing App Service Environment v3 Migration Feature Public Preview",
+          "imageUrl": "https://cdn.techcommunity.microsoft.com/assets/MTC_Open_graph_image1.jpg"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/function-app-could-not-be-changed-back-to-built-in-storage/ba-p/3064058",
+          "author": "Dennis411",
+          "description": "For Function app Premium plan or Consumption plan running on windows, when you create function app it requires you to create a personal storage account and your application codes will be deployed to your personal storage account instead of platform file server built-in storage account.\n \nExample:\n\n \n \n \n \nWhen you create Function app dedicated plan running on windows, all of your application contents will be stored on file server which has been mounted to built-in storage account. \n \nExample:\n \n\n \n \n \n \nEven though Dedicated plan function apps mounting to personal storage accounts are mentioned “not supported” by below documentation ,  but still some of the users are mounting Dedicated plan function apps to personal storage account by adding below two connections.  (it’s still allowed)\n \nW…",
+          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/function-app-could-not-be-changed-back-to-built-in-storage/ba-p/3064058",
+          "publishedOn": "2022-01-18T01:38:34.000Z",
+          "wordCount": 1024,
+          "title": "Function app could not be changed back to built-in storage account",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/340151i2EBF65BCAD7ED135/image-size/original?v=v2&px=-1"
         }
       ]
     },
@@ -621,6 +941,76 @@
           "wordCount": 2274,
           "title": "Getting rid of credentials in Azure - Part 1",
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/358078i34350ED2AAFDE957?v=v2"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/azure-developer-community-blog/using-secretless-azure-functions-from-within-aks/ba-p/3248143",
+          "author": "stephaneey",
+          "description": "I recently implemented a change in KEDA (currently evaluated as a potential pull request), consisting of leveraging managed identities in a more granular way, in order to adhere to the least privilege principle. While I was testing my changes, I wanted to use managed identities not only for KEDA itself but also for the Azure Functions I was using in my tests. I found out that although there are quite a few docs on the topic, none is targeting AKS:\n \nhttps://docs.microsoft.com/en-us/azure/azure-functions/functions-bindings-storage-queue-trigger?tabs=csharp#identity-based-connections\nhttps://docs.microsoft.com/en-us/azure/azure-functions/functions-reference?tabs=blob#connecting-to-host-storage-with-an-identity-preview\n \nYou can find many articles showing how to grab a token from an HTTP trig…",
+          "link": "https://techcommunity.microsoft.com/t5/azure-developer-community-blog/using-secretless-azure-functions-from-within-aks/ba-p/3248143",
+          "publishedOn": "2022-03-05T16:00:53.000Z",
+          "wordCount": 1421,
+          "title": "Using secretless Azure Functions from within AKS",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/353247i1EBC070C411D57A9?v=v2"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/azure-developer-community-blog/how-you-can-build-a-mock-rest-api-based-on-json-for-asp-net-and/ba-p/3196039",
+          "author": "Chris_Noring",
+          "description": "TLDR; this article describes how to create a Mock API from a JSON file for minimal API in ASP .NET\n\n \nWhat and why Mock APIs\nTo mock something means you respond with fake data, that data can be in-memory, from a file or some kind of tool generating a bunch of endpoints. There are some reasons why mocking an API could be a good idea:\n\nDifferent teams work at different speeds. Let's say your app is built by two different teams, or developers and one is faster than the other. That's when it's handy to rely on a mocked API.\nYou start with the frontend first. Your team/developer have decided to build a full vertical and starts with the frontend and slowly work their way towards the backend and the data source.\n\nOk, so we established there might be a need to mock your API. So how do we do it? Yo…",
+          "link": "https://techcommunity.microsoft.com/t5/azure-developer-community-blog/how-you-can-build-a-mock-rest-api-based-on-json-for-asp-net-and/ba-p/3196039",
+          "publishedOn": "2022-02-22T01:05:20.000Z",
+          "wordCount": 2464,
+          "title": "How YOU can build a Mock REST API based on JSON for ASP .NET and minimal API",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/350143i566F01C8DC871C86/image-size/original?v=v2&px=-1"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/azure-developer-community-blog/azure-cache-for-redis-tls-upcoming-migration-to-digicert-global/ba-p/3171086",
+          "author": "Shruti_Pathak",
+          "description": "This blog contains important information about TLS certificate changes for Azure Cache for Redis endpoints that may impact client connectivity.  \n \nIn 2020, most Azure services were updated to use TLS certificates from Certificate Authorities (CAs) that chain up to the DigiCert Global G2 root. However, Azure Cache for Redis, remained on TLS certificates issued by the Baltimore CyberTrust Root. Because the current Baltimore CyberTrust Root will expire in May 2025, now is the time for Azure Cache for Redis to switch to the DigiCert Global G2 CA Root*. The migration will start in May 2022, and finish by the end of June 2022.  \n \nWe expect that most Azure Cache for Redis customers will not be impacted; however, your application may be impacted if you explicitly specify a list of acceptable CAs…",
+          "link": "https://techcommunity.microsoft.com/t5/azure-developer-community-blog/azure-cache-for-redis-tls-upcoming-migration-to-digicert-global/ba-p/3171086",
+          "publishedOn": "2022-02-16T01:45:20.000Z",
+          "wordCount": 1625,
+          "title": "Azure Cache for Redis TLS: Upcoming migration to DigiCert Global G2 CA Root",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/361206iC4BF1640110883A5?v=v2"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/azure-developer-community-blog/building-a-cloud-native-lab-scripted-edition/ba-p/3169848",
+          "author": "Andreas Helland",
+          "description": "Last year I did a blog post on how to build a cloud native lab at home based on Azure Stack HCI and AKS:\nhttps://techcommunity.microsoft.com/t5/azure-developer-community-blog/building-a-cloud-native-lab-at-home/ba-p/2519504\n \nIn that post I mentioned in passing that I'd also be looking into doing day two stuff. And I did. It just didn't materialize in a new post :)\n \nWhat I realized when testing out stuff was that while I did use my own blog post for reference it was sort of unpractical scrolling up and down the page to find the right command, and jumping between various tools and ways of solving things. I thought that \"hey, wouldn't it be nice if I could just start a script and have it go through everything automatically?\" Of course it would; it was just a matter of a little bit of effort…",
+          "link": "https://techcommunity.microsoft.com/t5/azure-developer-community-blog/building-a-cloud-native-lab-scripted-edition/ba-p/3169848",
+          "publishedOn": "2022-02-15T20:06:13.000Z",
+          "wordCount": 1505,
+          "title": "Building a Cloud Native Lab - Scripted Edition",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/348449iCA020D9CCF30D643?v=v2"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/azure-developer-community-blog/winners-announced-azure-hack-for-wellness/ba-p/3165373",
+          "author": "NinaSui",
+          "description": "The nature of work has changed. The move to hybrid jobs is underway, and the developer community is uniquely equipped to reimagine experiences that enrich and fulfill employees’ wellness. Over 200 developers participated in the Microsoft Azure Hack for Wellness virtual hackathon where the event specifically focused on using Azure services to help organizations support their members' well beings. Organizations could be businesses, schools, or communities. As a bonus, applications that integrate into Microsoft Teams were eligible for additional prize. \n \nSee below for the top 3 winning projects:\n \n1st Place: Rest Azzure\nCreated by: Nefertiti Bourne, Ed Hart, Marcos A Oliva\nA mobile app that connects with MS Teams and chatbot and dashboard.\n\n\n\n2nd Place: Feeling Well\nCreated by: Zechen Lu, Am…",
+          "link": "https://techcommunity.microsoft.com/t5/azure-developer-community-blog/winners-announced-azure-hack-for-wellness/ba-p/3165373",
+          "publishedOn": "2022-02-14T23:42:38.000Z",
+          "wordCount": 896,
+          "title": "Winners Announced: Azure Hack for Wellness",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/361207i2700E509EDB56FC9/image-size/original?v=v2&px=-1"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/azure-developer-community-blog/how-to-utilize-active-geo-replication-in-azure-cache-for-redis/ba-p/3074404",
+          "author": "kteegarden",
+          "description": "In an increasingly global and online world, the speed, availability, and consistency of data has never been more important. We’ve seen customers of all sizes take advantage of the outstanding performance of Azure Cache for Redis, but we’ve also heard your requests for a Redis solution that offers even higher availability and more robust geographic consistency. That’s why we’re excited to announce the latest element of our collaboration with Redis Corporation—the general availability of active geo-replication in our Enterprise offering of Azure Cache for Redis.\n \nActive geo-replication background\nActive geo-replication is a powerful tool that enables Azure Cache for Redis clusters to be linked together for seamless active-active replication of data. In other words, you can write to one Redi…",
+          "link": "https://techcommunity.microsoft.com/t5/azure-developer-community-blog/how-to-utilize-active-geo-replication-in-azure-cache-for-redis/ba-p/3074404",
+          "publishedOn": "2022-02-02T16:00:00.000Z",
+          "wordCount": 1214,
+          "title": "How to utilize active geo-replication in Azure Cache for Redis",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/343084iB7053269D808AB29?v=v2"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/azure-developer-community-blog/new-learning-path-on-python-11-parts-check-it-out/ba-p/3101700",
+          "author": "Chris_Noring",
+          "description": "On the Academic team, we set out to create a long path of Python modules. The idea was to address all the concerns you might have starting out with Python. All the way from learning the basic building blocks to managing larger Python projects. Whether you're into #iot #datascience #machinelearning or #webdev - this is a great way to start.\n \nCheck out the below article for more details on the learning path \nhttps://techcommunity.microsoft.com/t5/educator-developer-blog/how-you-can-learn-python-with-this-11-part-series/ba-p/3101534#M779\n \nIf you just want to start learning, here's the path on aka.ms/learn\nPython path, 11 modules \n \nIt's free - start learning today.",
+          "link": "https://techcommunity.microsoft.com/t5/azure-developer-community-blog/new-learning-path-on-python-11-parts-check-it-out/ba-p/3101700",
+          "publishedOn": "2022-02-01T22:03:55.000Z",
+          "wordCount": 677,
+          "title": "New Learning path on Python 11 parts - check it out",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/344355i9ECBE17FECC71411/image-size/original?v=v2&px=-1"
         }
       ]
     },
@@ -905,6 +1295,136 @@
           "wordCount": 2272,
           "title": "Self-managed Kubernetes on Azure",
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/354883i0D84F4A22808B53D?v=v2"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/operations-task-management-for-azure-alerts/ba-p/3253388",
+          "author": "raffertyuy",
+          "description": "Background\nA few weeks back, a customer asked us for a way to effectively track the alerts that they get from Microsoft Sentinel and Defender for Cloud and ensure resolution. For organisations with an ITIL practice, this work is tracked by logging an Incident or a Problem ticket in an ITSM tool. But some organisations are a lot leaner (no ITIL practice and no ITSM tooling) and simply need something that works.\n \nSolution Idea\nAnd so the idea is to use Azure Boards as a simple Kanban board for the operations team to track work status. The tasks are created automatically as alerts/incidents are raised using Azure Logic Apps.\n \nWorkflow\nBut before that, let's design the workflow:\n\n \nThis workflow is implemented using a custom inherited process in Azure Boards. In our implementation, we used\nW…",
+          "link": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/operations-task-management-for-azure-alerts/ba-p/3253388",
+          "publishedOn": "2022-03-10T09:54:57.000Z",
+          "wordCount": 920,
+          "title": "Operations Task Management for Azure Alerts",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/354696i73C8E2D5FD472D0B?v=v2"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/enabling-hadoop-migration-to-azure/ba-p/3207909",
+          "author": "hitakagi",
+          "description": "Why migrate on-premises big data workloads to Azure?\n \nThere are many reasons why customers consider migrating their existing on-premises big data workloads to Azure.\n\nCost of ownership -  Running a cluster of computers in an on-premises data center requires a considerable administration effort, as well as consuming significant capital expenditure on hardware. Day-to-day running costs involved in maintaining a cool and stable environment for high-powered computing resources can also be a significant factor.\nUncertainty in on-premises ecosystem - In the past few years, Hadoop on Cloud has significantly helped shape the on-premises Hadoop ecosystem. Mergers, bankruptcies and license expirations have caused a sense of tremendous uncertainty amongst customers on the viability of continuing wit…",
+          "link": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/enabling-hadoop-migration-to-azure/ba-p/3207909",
+          "publishedOn": "2022-03-08T06:43:41.000Z",
+          "wordCount": 1458,
+          "title": "Enabling Hadoop Migration to Azure",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/353690i4DEC71D228FA9661/image-size/original?v=v2&px=-1"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/guidance-for-architecting-mission-critical-apps-on-azure/ba-p/3201745",
+          "author": "brauerblogs",
+          "description": "Microsoft Azure makes it easy to deploy and manage cloud solutions. However, building mission-critical solutions that are always available and operational remains a challenge that requires extensive platform knowledge and engineering rigor to overcome.\n \n“Tell us what good looks like” is therefore a common request, with organizations seeking opinionated guidance and reference deployments to establish technical confidence and accelerate moving their mission-critical workloads to the Microsoft Cloud.\n \nWith this in mind, we have developed an opensource project, which we are pleased to announce is now publicly available on GitHub as a preview.\n \nGuidance for mission-critical workloads\nMicrosoft's guidance strives to address the challenges of building mission-critical applications by providing…",
+          "link": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/guidance-for-architecting-mission-critical-apps-on-azure/ba-p/3201745",
+          "publishedOn": "2022-02-23T03:30:19.000Z",
+          "wordCount": 979,
+          "title": "Guidance for Architecting Mission Critical Apps on Azure",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/350578iD9B092F12321EE39?v=v2"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/you-finished-your-well-architected-review-now-what/ba-p/3165827",
+          "author": "brauerblogs",
+          "description": "Congratulations! You’ve finished your Well-Architected Review of a workload, giving you a better understanding of where it could be fortified along the five pillars: Security, Reliability, Operational Excellence, Performance Efficiency and Cost Optimization. You have received Microsoft’s best practices as recommendations based on your answers to questions specific to each pillar.\n \nThe report (example below) shows a Well-Architected score for each pillar, as well as prioritized recommendations that allows for you to focus on biggest areas of impact. A great example is virtual machine right sizing. You can significantly lower your costs if you know which VM is best suited for your workload type.\n \n\n \nThese recommendations also consider trade-offs among the pillars (i.e. higher forms of reli…",
+          "link": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/you-finished-your-well-architected-review-now-what/ba-p/3165827",
+          "publishedOn": "2022-02-15T01:44:54.000Z",
+          "wordCount": 1142,
+          "title": "You finished your Well-Architected Review…now what?",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/348417i5772A9B7F84B8DC1/image-size/original?v=v2&px=-1"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/data-analytics-solution-tokenization-with-external-tokenization/ba-p/2821038",
+          "author": "Namrata01",
+          "description": "Data security is an important consideration for organizations when complying with data protection regulations. There are different options to choose from to protect sensitive data - Tokenization is one of the options to preserve data privacy  and protect sensitive data at rest.\n \nProtegrity is a global leader in data security, has the serverless User Defined Function (UDF) that provides external data tokenization capabilities and a SQL Gateway is in the roadmap as another option by Protegrity.\nIn this post, we will describe how customers can use the Protegrity Protector UDF with Azure Synapse SQL pool to tokenize or detokenize data at scale.\nTokenization is a technique for de-identifying sensitive data at rest while retaining its usefulness. This is particularly vital to companies that dea…",
+          "link": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/data-analytics-solution-tokenization-with-external-tokenization/ba-p/2821038",
+          "publishedOn": "2022-02-01T06:22:43.000Z",
+          "wordCount": 3110,
+          "title": "Data Analytics Solution - Tokenization with External Tokenization System , Synapse and PowerBI",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/343910i83024E5E480006C2/image-size/original?v=v2&px=-1"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/protecting-mongodb-on-aks-anf-with-astra-control-service-using/ba-p/3057574",
+          "author": "GeertVanTeylingen",
+          "description": "Abstract\n \nIn this article, we describe how the newly added support for custom execution hooks in NetApp Astra Control Service® (ACS) enables you to freeze/quiesce database transactions for taking application consistent snapshots. We demonstrate how to add custom pre- and post- scripts for MongoDB® managed by Astra Control Service and create application consistent snapshots of the database.\n \nCo-authors: Sayan Saha and Patric Uebele, NetApp\n \nIntroduction\n \nNetApp Astra Control is a solution that makes it easier to manage, protect, and move data-rich Kubernetes workloads within and across public clouds and on-premises. Astra Control provides persistent container storage that leverages NetApp’s proven and expansive storage portfolio in the public cloud and on premises. It also offers a rich…",
+          "link": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/protecting-mongodb-on-aks-anf-with-astra-control-service-using/ba-p/3057574",
+          "publishedOn": "2022-01-27T17:00:00.000Z",
+          "wordCount": 2841,
+          "title": "Protecting MongoDB on AKS / ANF with Astra Control Service using custom execution hooks",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/338707i67C321AA7CC56B66/image-size/original?v=v2&px=-1"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/comparing-and-contrasting-the-aks-anf-nfs-subdir-external/ba-p/3057547",
+          "author": "GeertVanTeylingen",
+          "description": "Abstract\n \nThis blog examines two unique ways of using Azure NetApp Files (ANF) volumes in Azure Kubernetes Service (AKS) clusters, evaluating the pros and cons of both.\n \nCo-authors: Sayan Saha and Balasubramanian Ramesh Babu, NetApp\n \nIntroduction\n \nWhen it comes to accessing Azure NetApp Files volumes for Kubernetes applications, there are a few ways to achieve it:\n\nStatic creation of volumes, handled outside Kubernetes. ANF volumes are created and then exposed to Kubernetes apps by providing connectivity info on a per-volume basis.\nUsing an automatic provisioner, such as the NFS Subdir External Provisioner.\nUsing Astra Trident, NetApp’s preferred solution for on-demand, Kubernetes-native ANF storage.\n\n \n\n \nThis blog walks you through the options, as well as factors to consider when sel…",
+          "link": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/comparing-and-contrasting-the-aks-anf-nfs-subdir-external/ba-p/3057547",
+          "publishedOn": "2022-01-25T14:00:52.000Z",
+          "wordCount": 2725,
+          "title": "Comparing and Contrasting the AKS/ANF NFS subdir external provisioner with Astra Trident",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/338701iE2D6C7B2DC1C6690/image-size/original?v=v2&px=-1"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/azure-kubernetes-service-security-deep-dive-part-5-securing/ba-p/3053769",
+          "author": "pranabpaul",
+          "description": "In the previous part of this series (part 4), we saw how you can secure ingress and egress traffic between pods within AKS cluster using Network Policy. But AKS is not an isolated service. Most of the time it’s part of bigger network that consists of other Azure services and computes. It’s evident that ingress and egress connections from those services are also essential. For example, your APIs running as stateless microservices within AKS need to connect Azure SQL DB or say Cosmos DB. In this article, we will discuss how to ensure security in such egress and ingress requirements. Fortunately, we have well documented resources within Azure documentation on this subject and hence we will only point out the important areas within those documentation.Let’s talk about egress first. By default,…",
+          "link": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/azure-kubernetes-service-security-deep-dive-part-5-securing/ba-p/3053769",
+          "publishedOn": "2022-01-25T13:56:54.000Z",
+          "wordCount": 1093,
+          "title": "Azure Kubernetes Service Security Deep Dive – Part 5 (Securing Egress and Ingress)",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/337964iDE984986859FE88C/image-size/original?v=v2&px=-1"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/azure-kubernetes-service-security-deep-dive-part-4-network/ba-p/3037014",
+          "author": "pranabpaul",
+          "description": "By nature, and by default each pod can talk to all other pods within a Kubernetes cluster. This behaviour sometimes is not desirable as some application owners may not agree to share connectivity to other applications. Or would like to restrict access in or out of the backend applications running on certain pods. Network Policy comes to your rescue in those cases.\nNetwork policies or network security policies are kind of firewall rules for Kubernetes cluster. These are implemented with the help of Network Plugin or Container Network Interface (CNI) and control traffic flow at the IP address or port level (OSI layer 3 or 4). These policies are applied at the Namespace level and can restrict ingress and egress to and from a pod or a group of pods based on how they are configured. Please read…",
+          "link": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/azure-kubernetes-service-security-deep-dive-part-4-network/ba-p/3037014",
+          "publishedOn": "2022-01-25T13:56:04.000Z",
+          "wordCount": 1665,
+          "title": "Azure Kubernetes Service Security Deep Dive – Part 4 (Network Policies)",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/333454iE6DCF8C56607FDD4/image-size/original?v=v2&px=-1"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/azure-kubernetes-service-security-deep-dive-part-3-audit-logs/ba-p/3036977",
+          "author": "pranabpaul",
+          "description": "Any activity to your Kubernetes cluster is handled as API request. So, when you create a new pod, changes container image of your deployment or read information from a configmap or secret, you basically generate requests to the Kubernetes API. We can ask Kubernetes to record all these requests and related data and metadata in log repository called Audit Logs. Each event at its different stages of execution generates event record and can be stored in audit logs based on some pre-defined policies. Please read this article on auditing carefully to understand the defined stages and defined audit levels. Remember, turning on audit logs means increase in memory consumption as well as storage consumption.\n \nAs you can see in the above-mentioned article, for a regular Kubernetes cluster, you can c…",
+          "link": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/azure-kubernetes-service-security-deep-dive-part-3-audit-logs/ba-p/3036977",
+          "publishedOn": "2022-01-25T13:54:01.000Z",
+          "wordCount": 1070,
+          "title": "Azure Kubernetes Service Security Deep Dive – Part 3 (Audit Logs)",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/333436i4873D150AA4BF186/image-size/original?v=v2&px=-1"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/azure-kubernetes-service-security-deep-dive-part-2-apparmor-and/ba-p/3013977",
+          "author": "pranabpaul",
+          "description": "AppArmor is a Linux Kernel security module. It confines the access of users and groups to different resources within Linux. This is at the Node level, and you already have AppArmor installed in your AKS worker nodes. The way AppArmor works is, you can create a profile and that in turn define whether the entity adhering this profile allowed to do certain activities such as network access or say file read/write/execute. It can either do “Enforcing” or block access to resources or can “Complain”, which means report such violations. Read more on AppArmor and its applicability in the perspective of Kubernetes here.\n \nLet’s start with AppArmor. Let’s first connect to your AKS cluster using Azure CLI (see Part 1 of this series) and run command “kubectl get nodes -o wide” to get the internal IPs o…",
+          "link": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/azure-kubernetes-service-security-deep-dive-part-2-apparmor-and/ba-p/3013977",
+          "publishedOn": "2022-01-25T13:53:43.000Z",
+          "wordCount": 1453,
+          "title": "Azure Kubernetes Service Security Deep Dive – Part 2 (AppArmor and seccomp)",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/329972i053B95DA64F1A912/image-size/original?v=v2&px=-1"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/armchair-architects-how-architecture-is-changing-part-2/ba-p/3060033",
+          "author": "brauerblogs",
+          "description": "So, how is cloud architecture evolving? In this latest installment of the Armchair Architects series of the Azure Enablement Show, we discuss the evolution of cloud architecture for four topics:\n\nContainers and collaboration environments\nMachine learning\nServerless computing\nLow-code/No-code development.\n\nWe’ll cover four topics in two separate posts to minimize reader fatigue.  The second two are topics are covered in this one, while Containers and collaboration environments and Machine learning are in Part 1.\n \nWhile these posts are detailed, if you’d like to get straight to the videos (averaging about 10 minutes each), feel free at the following link.\n \nServerless:\nThree dimensions of serverless:\n\nEnvironment that has an even with an observable state is shared. You have a piece of code …",
+          "link": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/armchair-architects-how-architecture-is-changing-part-2/ba-p/3060033",
+          "publishedOn": "2022-01-12T21:39:02.000Z",
+          "wordCount": 1626,
+          "title": "Armchair Architects: How Architecture Is Changing - Part 2",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/339199i70992496A81B7E2E/image-size/original?v=v2&px=-1"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/armchair-architects-how-architecture-is-changing-part-1/ba-p/3060022",
+          "author": "brauerblogs",
+          "description": "So, how is cloud architecture evolving? In this latest installment of the Armchair Architects series of the Azure Enablement Show, we discuss the evolution of cloud architecture for four topics:\n\nContainers and collaboration environments\nMachine learning\nServerless computing\nLow-code/No-code development.\n\n \nWe’ll cover four topics in two separate posts to minimize reader fatigue.  The first two are topics are covered in this one, while Serverless and Low-code/No-code development are in Part 2.\n \nWhile these posts are detailed, if you’d like to get straight to the videos (averaging about 10 minutes each), feel free at the following link.\n \nContainers and Collaboration Environments:\nLet’s start describe containers at a high level.  A container is a packaging and distribution mechanism that a…",
+          "link": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/armchair-architects-how-architecture-is-changing-part-1/ba-p/3060022",
+          "publishedOn": "2022-01-12T21:26:44.000Z",
+          "wordCount": 1721,
+          "title": "Armchair Architects: How Architecture Is Changing - Part 1",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/339197iF1A98930C62B2838/image-size/original?v=v2&px=-1"
         }
       ]
     },
@@ -932,6 +1452,36 @@
           "wordCount": 2779,
           "title": "Migrating Active Server Pages applications to Azure App Services",
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/360592iBE4DE987FF8CF4A3?v=v2"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/azure-migration-and/build-high-confidence-migration-plans-using-azure-migrate/ba-p/3248554",
+          "author": "VB_AzMig8",
+          "description": "Build high confidence migration plans using Azure Migrate’s software inventory and agentless dependency analysis\n \nAuthored by Vikram Bansal, Senior PM, Azure Migrate\n \nMigrating a large & complex IT environment from on-premises to the cloud can be quite daunting. Customers are often challenged with the problem of unknown where they may not have complete visibility of applications running on their servers or the dependencies between them, as they start planning their migration to cloud. This results not only in leaving behind dependent servers causing the application to break, but also adds up to the migration cost that the customers want to reduce. Azure Migrate aims at helping customers build a high-confidence migration plan with features like software inventory and agentless dependency …",
+          "link": "https://techcommunity.microsoft.com/t5/azure-migration-and/build-high-confidence-migration-plans-using-azure-migrate/ba-p/3248554",
+          "publishedOn": "2022-03-06T13:14:39.000Z",
+          "wordCount": 1378,
+          "title": "Build high confidence migration plans using Azure Migrate",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/353314i37946CF0FB3E8596/image-size/original?v=v2&px=-1"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/azure-migration-and/implement-azure-landing-zones-with-hashicorp-terraform/ba-p/3241071",
+          "author": "Jeff_Mitchell_MSFT",
+          "description": "In our first blog post, we outlined the Azure landing zone conceptual architecture as the strategic design path for your Azure environments target technical state. Not all organizations adopt Azure in the same way and, similarly, not all organizations use the same tools to implement landing zones. We highlighted the Azure landing zone accelerator, which utilizes the Azure Portal to speed up your implementation — allowing you to customize environment configurations with the option of GitHub integration that sets up CI/CD pipelines for infrastructure as code (IaC) DevOps practices.  To accelerate organizations using HashiCorp Terraform and in co-development partnership with HashiCorp, we released the Terraform Module for Cloud Adoption Framework Enterprise-scale (caf-enterprise-scale). Just …",
+          "link": "https://techcommunity.microsoft.com/t5/azure-migration-and/implement-azure-landing-zones-with-hashicorp-terraform/ba-p/3241071",
+          "publishedOn": "2022-03-02T14:19:08.000Z",
+          "wordCount": 1243,
+          "title": "Implement Azure landing zones with HashiCorp Terraform",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/352363i45ECAE03AB44252C/image-size/original?v=v2&px=-1"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/azure-migration-and/netscout-accelerates-moving-vmware-based-workloads-to-azure-with/ba-p/3110347",
+          "author": "jurey",
+          "description": "Authored by Ron Lifton, Director, Solutions Marketing, NETSCOUT and Juan Manuel Rey, Senior Program Manager, AVS Product Group, Microsoft\n \nCloud infrastructures are foundational elements for success in a digital world. For any organization to succeed, however, it must be able to accomplish digital transformation in a way that ensures a high-quality user experience before, during, and after cloud migration—while minimizing risks. Business continuity, service quality, and security cannot be compromised. Indeed, IDC recently stated during a FutureScape webinar that the emerging digital infrastructure ecosystem, increasingly built on a cloud foundation, focuses on ensuring ever-faster delivery of innovative software and consistent, ubiquitous, scalable operations across cloud, on-premises dat…",
+          "link": "https://techcommunity.microsoft.com/t5/azure-migration-and/netscout-accelerates-moving-vmware-based-workloads-to-azure-with/ba-p/3110347",
+          "publishedOn": "2022-02-03T11:24:09.000Z",
+          "wordCount": 1595,
+          "title": "NETSCOUT Accelerates Moving VMware-based Workloads to Azure with Confidence",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/344998i095B2636E5320189?v=v2"
         }
       ]
     },
@@ -998,6 +1548,26 @@
           "publishedOn": "2022-03-29T08:00:20.000Z",
           "wordCount": 5572,
           "title": "Introducing the new Azure Front Door: Reimagined for modern apps and content",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "azure-spring-cloud-enterprise-is-now-available-in-preview",
+          "author": "Julia Liuson",
+          "description": "When we launched Azure Spring Cloud with VMware in 2019, we set out to solve common challenges developers, IT operators, and DevOps teams face when running Spring Boot applications at scale. We are thankful to the many customers and partners who participated in the private preview and shared their learnings, and we are excited to announce that Azure Spring Cloud Enterprise is now available in public preview.",
+          "link": "https://azure.microsoft.com/blog/azure-spring-cloud-enterprise-is-now-available-in-preview/",
+          "publishedOn": "2022-02-16T08:00:16.000Z",
+          "wordCount": 5593,
+          "title": "Azure Spring Cloud Enterprise is now available in preview",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "elastic-and-microsoft-azure-unified-observability-for-spring-boot-applications",
+          "author": "Asir Selvasingh",
+          "description": "Seamlessly ship Microsoft Azure Spring Cloud data into Elastic and monitor every step of your cloud journey. Gain a holistic view across Spring Boot applications and other data sets in your cloud and on-premises environments.",
+          "link": "https://azure.microsoft.com/blog/elastic-and-microsoft-azure-unified-observability-for-spring-boot-applications/",
+          "publishedOn": "2022-01-19T05:30:02.000Z",
+          "wordCount": 5698,
+          "title": "Elastic and Microsoft Azure: Unified Observability for Spring Boot applications",
           "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
         }
       ]
@@ -1096,6 +1666,16 @@
           "wordCount": 1617,
           "title": "Java on Visual Studio Code Update – March 2022",
           "imageUrl": "https://devblogs.microsoft.com/java/wp-content/uploads/sites/51/2022/03/englishcover.png"
+        },
+        {
+          "id": "https://devblogs.microsoft.com/java/?p=228766",
+          "author": "Nate Ceres",
+          "description": "Join us for the second Microsoft JDConf event on May 4-5, 2022. JDConf is a virtual, Java focused conference where developers can come together to share interesting topics and stay engaged. Learn about the latest cloud development trends, best practices, tips, tricks, and more.\nThe post Join us at Microsoft JDConf 2022 appeared first on Microsoft for Java Developers.",
+          "link": "https://devblogs.microsoft.com/java/microsoft-jdconf-2022-java-conference/",
+          "publishedOn": "2022-03-08T01:30:03.000Z",
+          "wordCount": 1296,
+          "title": "Join us at Microsoft JDConf 2022",
+          "imageUrl": "https://devblogs.microsoft.com/java/wp-content/uploads/sites/51/2022/03/1920x1080-JDConf-CFP.jpg"
         }
       ]
     },
@@ -1397,6 +1977,26 @@
           "wordCount": 2005,
           "title": "Build GraphQL apps with Hasura and Azure SQL Database",
           "imageUrl": "https://devblogs.microsoft.com/azure-sql/wp-content/uploads/sites/56/2022/03/Pic1.jpg"
+        },
+        {
+          "id": "https://devblogs.microsoft.com/azure-sql/?p=1176",
+          "author": "Abhiman Tiwari",
+          "description": "Django is a Python-based open-source web framework. It is a popular and well-liked web framework among developers all around the world. But wouldn’t it be amazing to build a website with Django while also taking advantage of Azure SQL database’s security,\nThe post Create REST API in Python with Django, using the Django REST Framework and Azure SQL appeared first on Azure SQL Database Devs’ Corner.",
+          "link": "https://devblogs.microsoft.com/azure-sql/create-rest-api-in-python-with-django-using-the-django-rest-framework-and-azure-sql/",
+          "publishedOn": "2022-03-02T20:56:30.000Z",
+          "wordCount": 2361,
+          "title": "Create REST API in Python with Django, using the Django REST Framework and Azure SQL",
+          "imageUrl": null
+        },
+        {
+          "id": "https://devblogs.microsoft.com/azure-sql/?p=1139",
+          "author": "Abhiman Tiwari",
+          "description": "In this blog post, we’ll walkthrough of how to integrate Bot Framework v4 SDK with Azure SQL Database and save Bot activities/ conversations into the database.\nThe post Saving Bot Activities in Azure SQL Database appeared first on Azure SQL Database Devs’ Corner.",
+          "link": "https://devblogs.microsoft.com/azure-sql/saving-bot-activities-in-azure-sql-database/",
+          "publishedOn": "2022-02-08T18:31:32.000Z",
+          "wordCount": 1365,
+          "title": "Saving Bot Activities in Azure SQL Database",
+          "imageUrl": "https://devblogs.microsoft.com/azure-sql/wp-content/uploads/sites/56/2022/02/bot-azsql-300x256.png"
         }
       ]
     },
@@ -1424,6 +2024,56 @@
           "wordCount": 1372,
           "title": "Azure Synapse Link: Announcing support for existing Azure Cosmos DB containers and seamless Power BI integration",
           "imageUrl": "https://devblogs.microsoft.com/cosmosdb/wp-content/uploads/sites/52/2020/05/a-circuit-board-description-automatically-generat-2-e1589831964774.png"
+        },
+        {
+          "id": "https://devblogs.microsoft.com/cosmosdb/?p=4034",
+          "author": "Nikisha Reyes-Grange",
+          "description": "The new Microsoft Azure Cosmos DB Developer Specialty Certification is an important credential for developers who want to prove their skills in building scalable cloud-native applications with Azure Cosmos DB.   Find free resources to help you prepare for - and pass! - the exam. \nThe post The new Microsoft Azure Cosmos DB Developer Specialty Certification is here! appeared first on Azure Cosmos DB Blog.",
+          "link": "https://devblogs.microsoft.com/cosmosdb/the-new-microsoft-azure-cosmos-db-developer-specialty-certification-is-here/",
+          "publishedOn": "2022-03-11T19:35:01.000Z",
+          "wordCount": 1021,
+          "title": "The new Microsoft Azure Cosmos DB Developer Specialty Certification is here!",
+          "imageUrl": "https://devblogs.microsoft.com/cosmosdb/wp-content/uploads/sites/52/2019/10/FeaturedDefault.png"
+        },
+        {
+          "id": "https://devblogs.microsoft.com/cosmosdb/?p=4028",
+          "author": "Mark Brown",
+          "description": "Read about how Jack Henry has a found a scalable, reliable database in Azure Cosmos DB.\nThe post Financial services firm Jack Henry finds a reliable, fast database in Azure Cosmos DB appeared first on Azure Cosmos DB Blog.",
+          "link": "https://devblogs.microsoft.com/cosmosdb/jack-henry-finds-reliable-fast-database/",
+          "publishedOn": "2022-03-09T14:18:02.000Z",
+          "wordCount": 1505,
+          "title": "Financial services firm Jack Henry finds a reliable, fast database in Azure Cosmos DB",
+          "imageUrl": "https://devblogs.microsoft.com/cosmosdb/wp-content/uploads/sites/52/2022/03/JackHenryAssociates_Logo_RGB.png"
+        },
+        {
+          "id": "https://devblogs.microsoft.com/cosmosdb/?p=4001",
+          "author": "Nikisha Reyes-Grange",
+          "description": "A new video by Microsoft Mechanics explores ways to get started with Azure Cosmos DB and build a NoSQL database for high performance and scalability. \nThe post Microsoft Mechanics video: Azure Cosmos DB NoSQL Database for High Performance & Scalability appeared first on Azure Cosmos DB Blog.",
+          "link": "https://devblogs.microsoft.com/cosmosdb/microsoft-mechanics-video-azure-cosmos-db-nosql-database-for-high-performance-scalability/",
+          "publishedOn": "2022-02-17T18:58:21.000Z",
+          "wordCount": 1085,
+          "title": "Microsoft Mechanics video: Azure Cosmos DB NoSQL Database for High Performance & Scalability",
+          "imageUrl": "https://devblogs.microsoft.com/cosmosdb/wp-content/uploads/sites/52/2022/02/Mechanics-screenshot.jpg"
+        },
+        {
+          "id": "https://devblogs.microsoft.com/cosmosdb/?p=3848",
+          "author": "Theo van Kraay",
+          "description": "Discover ways to collect lots of separate records quickly using the Java SDK for Azure Cosmos DB Java.\nThe post Read many items fast with the Java SDK for Azure Cosmos DB appeared first on Azure Cosmos DB Blog.",
+          "link": "https://devblogs.microsoft.com/cosmosdb/read-many-items-fast-with-the-java-sdk-for-azure-cosmos-db/",
+          "publishedOn": "2022-01-20T14:00:14.000Z",
+          "wordCount": 1626,
+          "title": "Read many items fast with the Java SDK for Azure Cosmos DB",
+          "imageUrl": "https://devblogs.microsoft.com/cosmosdb/wp-content/uploads/sites/52/2022/01/readMany3-scaled.jpg"
+        },
+        {
+          "id": "https://devblogs.microsoft.com/cosmosdb/?p=3892",
+          "author": "Tim Sander",
+          "description": "In this blog, we'll take a look at tips for query pagination in Azure Cosmos DB. Pagination is the process of dividing a large volume of data across many small pages.\nThe post Tips & Tricks for Query Pagination in Azure Cosmos DB appeared first on Azure Cosmos DB Blog.",
+          "link": "https://devblogs.microsoft.com/cosmosdb/tips-tricks-query-pagination/",
+          "publishedOn": "2022-01-13T14:00:10.000Z",
+          "wordCount": 1513,
+          "title": "Tips & Tricks for Query Pagination in Azure Cosmos DB",
+          "imageUrl": "https://devblogs.microsoft.com/cosmosdb/wp-content/uploads/sites/52/2022/01/paginationCosmosDB.png"
         }
       ]
     },
@@ -1461,6 +2111,16 @@
           "wordCount": 1457,
           "title": "Achieve cost-effectiveness using vault-archive tier for Azure Backup",
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/361679i676A7674861AFEB6/image-size/original?v=v2&px=-1"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/azure-governance-and-management/security-trends-for-2022/ba-p/3068782",
+          "author": "RobbyMillsap",
+          "description": "In 2021, the effects of ransomware and data breaches were felt by all of us.  This trend will likely continue in 2022 as attackers continue to seek out vulnerabilities in our most critical systems. One thing is clear, the threat isn’t going away.\n \nWe must strive to be vigilant to ensure that we are doing all we can to ensure our data and infrastructure is secure.  Security is not a target.  We can’t check a box indicating our workload is “secure”.  Rather, security is an ongoing journey guided by the security principles defined in frameworks like the Well-Architected Framework.\n \nLast May, Colonial Pipeline shut its entire network which supplies nearly half of the U.S East Coast’s fuel supply after a ransomware attack.  Investigators say the attackers accessed the network through an expos…",
+          "link": "https://techcommunity.microsoft.com/t5/azure-governance-and-management/security-trends-for-2022/ba-p/3068782",
+          "publishedOn": "2022-01-21T20:20:36.000Z",
+          "wordCount": 1069,
+          "title": "Security Trends for 2022",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/341560iD7DE9B3A5FB27758/image-size/original?v=v2&px=-1"
         }
       ]
     },
@@ -1518,6 +2178,36 @@
           "wordCount": 2130,
           "title": "Supporting efficient large model training on AMD Instinct™ GPUs with DeepSpeed",
           "imageUrl": "https://cloudblogs.microsoft.com/uploads/prod/sites/37/2022/03/Picture1-1024x602.webp"
+        },
+        {
+          "id": "https://cloudblogs.microsoft.com/opensource/2022/02/22/getting-linux-based-ebpf-programs-to-run-with-ebpf-for-windows/",
+          "author": "Poorna Gaddehosur",
+          "description": "In our previous blog, we spoke about the progress we have made for the eBPF for Windows project. A key goal for us has been to meet developers where they are. As a result, enabling eBPF programs written for Linux to run on top of the eBPF for Windows platform is very important to us.Read more\nThe post Getting Linux based eBPF programs to run with eBPF for Windows appeared first on Microsoft Open Source Blog.",
+          "link": "https://cloudblogs.microsoft.com/opensource/2022/02/22/getting-linux-based-ebpf-programs-to-run-with-ebpf-for-windows/",
+          "publishedOn": "2022-02-22T17:00:00.000Z",
+          "wordCount": 1901,
+          "title": "Getting Linux based eBPF programs to run with eBPF for Windows",
+          "imageUrl": "https://cloudblogs.microsoft.com/uploads/prod/sites/37/2022/02/Picture1-1024x532.webp"
+        },
+        {
+          "id": "https://cloudblogs.microsoft.com/opensource/2022/02/07/join-us-at-the-build-in-the-open-happy-hour-to-connect-and-collaborate-with-open-source-enthusiasts/",
+          "author": "Katie Fritsch",
+          "description": "Open source has forever changed software development for the better. It has allowed developers from around the world to connect, collaborate, and build tomorrow's technology. Microsoft culturally adopted an open mindset under Satya Nadella and internally changed the way software was developed. Microsoft is continually learning how to be a better open-source partner and supportRead more\nThe post Join us at the Build in the Open Happy Hour to connect and collaborate with Open Source enthusiasts appeared first on Microsoft Open Source Blog.",
+          "link": "https://cloudblogs.microsoft.com/opensource/2022/02/07/join-us-at-the-build-in-the-open-happy-hour-to-connect-and-collaborate-with-open-source-enthusiasts/",
+          "publishedOn": "2022-02-07T14:00:00.000Z",
+          "wordCount": 919,
+          "title": "Join us at the Build in the Open Happy Hour to connect and collaborate with Open Source enthusiasts",
+          "imageUrl": "https://cloudblogs.microsoft.com/uploads/prod/sites/37/2022/01/Picture1-1024x581.webp"
+        },
+        {
+          "id": "https://cloudblogs.microsoft.com/opensource/2022/01/18/announcing-azure-active-directory-azure-ad-workload-identity-for-kubernetes/",
+          "author": "Anish Ramasekar and Sertac Ozercan",
+          "description": "Today, we are excited to announce an open-source project called Azure AD workload identity for Kubernetes. It leverages the public preview capability of Azure AD workload identity federation. With this project, developers can use native Kubernetes concepts of service accounts and federation to access Azure AD protected resources, such as Azure and Microsoft Graph, without needingRead more\nThe post Announcing Azure Active Directory (Azure AD) workload identity for Kubernetes appeared first on Microsoft Open Source Blog.",
+          "link": "https://cloudblogs.microsoft.com/opensource/2022/01/18/announcing-azure-active-directory-azure-ad-workload-identity-for-kubernetes/",
+          "publishedOn": "2022-01-18T18:00:00.000Z",
+          "wordCount": 901,
+          "title": "Announcing Azure Active Directory (Azure AD) workload identity for Kubernetes",
+          "imageUrl": "https://cloudblogs.microsoft.com/uploads/prod/sites/37/2022/01/Img-2-1024x426.webp"
         }
       ]
     },
