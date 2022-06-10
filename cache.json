@@ -234,6 +234,246 @@
           "wordCount": 1995,
           "title": "Blazor WebAssembly for Headless CMS on Azure Static Web Apps",
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/370407iE297CE62F955D95C/image-size/original?v=v2&px=-1"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/learn-azure-static-web-apps-in-30daysofswa/ba-p/3354021",
+          "author": "nityan",
+          "description": "The people behind the #30DaysOfSWA: https://aka.ms/30DaysOfSWA\nAbout #30DaysOfSWA\n Azure Static Web Apps (SWA) celebrates 1 year of general availability in May!! If you're new to the technology, join us as we cover #30DaysOfSWA at https://aka.ms/30DaysOfSWA. This is a labor of love with contributors from the Azure Static Web Apps team, Cloud Advocacy, Next Gen Experiences and Microsoft Edge Developer Experiences team, amongst others.The content is structured to mimic a developer's journey.\n\nWeek 1 | Core Concepts. Get an overview of Azure Static Web Apps, learn what differentiates it from other web app architectures, and walk through the key features that make it a valuable service for managing your hosting and automated deployment needs.\nWeek 2 | Usage Examples. Azure Static Web Apps work…",
+          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/learn-azure-static-web-apps-in-30daysofswa/ba-p/3354021",
+          "publishedOn": "2022-05-11T14:41:00.000Z",
+          "wordCount": 1428,
+          "title": "Learn Azure Static Web Apps in #30DaysOfSWA",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/370580i3BF8EC6C8BF3131F/image-size/original?v=v2&px=-1"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/wcf-based-web-app-performance-issue-caused-by-hitting/ba-p/3301144",
+          "author": "Weizhen_Sun",
+          "description": "A .NET web app hosted on Azure App Service can be built on top of the Windows Communication Foundation (WCF) framework. We've seen a kind of performance/slow response/timeout issue of such web app, which is caused by the MaxConcurrentSessions limit of WCF is hit. \n \nThe symptom might include that after restarting the web app for a few hours, a percentage of the total requests (e.g. 1/3) get no response from the web server and timeout after 230 seconds. 230 seconds is the Azure default timeout value. The web app's memory usage may be observed to grow continuously since the issue starts. \n \nThe default MAX concurrent session setting of WCF server is 5000. If the WCF clients don’t close channels  properly, a lot of sessions which have been completed will not be able to get closed at the WCF s…",
+          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/wcf-based-web-app-performance-issue-caused-by-hitting/ba-p/3301144",
+          "publishedOn": "2022-05-04T04:31:09.000Z",
+          "wordCount": 1081,
+          "title": "WCF Based Web App Performance Issue Caused by Hitting MaxConcurrentSessions Limit of WCF",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/369022i6F5BB8697168C51A?v=v2"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/hide-your-public-connection-from-paas-to-storage-account/ba-p/3300961",
+          "author": "theringe",
+          "description": "Using PaaS resources in Azure brings convenience to developers such as saving times, concentrating on coding, and etc. However, there is a paradox which convenience and secure might never on the same direction.\n \nYour customers might challenging you by exposing the inter-connection among resources under public networks. For example, You builded a Function App for tracking customers' information and storing them in to a Blob container (from a Storage Account). Meanwhile, connections invoked by that function uses public domain name to the container, which means those requests might have a great opportunity routing outside.\n \nFor security purpose such as ISO/IEC 27001, you may want your resources to co-op privately, however, detail network settings among PaaS services are extreamly hard to fi…",
+          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/hide-your-public-connection-from-paas-to-storage-account/ba-p/3300961",
+          "publishedOn": "2022-05-03T02:04:19.000Z",
+          "wordCount": 2740,
+          "title": "Hide Your Public Connection From PaaS To Storage Account",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/368728iA245E54A064B97CD/image-size/original?v=v2&px=-1"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/simplify-azure-container-apps-deployments-with-quot-az/ba-p/3298436",
+          "author": "Anthony Chu",
+          "description": "As developers, we love the benefits of containers, but they're not always easy to deploy. It can be a cumbersome process to build a container image, push it to a registry, and then set up infrastructure and deploy the container.\n \nAzure Container Apps is a modern, fully-managed, serverless platform for running containers. While we don't have to manage infrastructure, it's still up to us to figure out how to build our container image and deploy it.\n \nToday, we're introducing a preview feature in the Azure CLI that streamlines the process of deploying to Azure Container Apps in a single command. Whether your source code is on your local machine or in GitHub, \"az containerapp up\" is the only command you need to get your app running in Azure Container Apps.\n \nHow does it work?\n \n\"az containera…",
+          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/simplify-azure-container-apps-deployments-with-quot-az/ba-p/3298436",
+          "publishedOn": "2022-04-29T06:04:04.000Z",
+          "wordCount": 1213,
+          "title": "Simplify Azure Container Apps deployments with \"az containerapp up\"",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/367909i866F8198ADA89495/image-size/original?v=v2&px=-1"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/getting-started-with-gitops-argo-and-azure-kubernetes-service/ba-p/3288595",
+          "author": "jldeen",
+          "description": "What is GitOps?\n \nFirst, what is GitOps? Is it the same as DevOps? I'm so glad you asked. Let's begin with a refresher on what DevOps is:\n \n\"DevOps is the union of people, process, and products to enable the continuous delivery of value to our end users.\" ~ Donovan Brown\n \nDonovan puts it best - DevOps is a combination of several key factors: people, process, and products - but it starts with people. Getting started with DevOps involves a cultural shift, which means it's so much more than buzz words like agile, continuous integration, continuous deployment, automation, etc. While those buzz words have their place and are needed, truly embracing DevOps means creating a DevOps culture between your engineering teams - this includes developers, operations, security, and beyond.\n \nGitOps is dif…",
+          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/getting-started-with-gitops-argo-and-azure-kubernetes-service/ba-p/3288595",
+          "publishedOn": "2022-04-26T20:00:00.000Z",
+          "wordCount": 2332,
+          "title": "Getting started with GitOps, Argo, and Azure Kubernetes Service",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/365103i2F2D11AD3CB04D1D/image-size/original?v=v2&px=-1"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/monitor-azure-spring-cloud-app-ingress-request-log/ba-p/3292046",
+          "author": "Hanli_Ren",
+          "description": "When using Azure Spring Cloud, sometimes we need to monitor a specific App's Ingress request log to investigation app performance issue.\n \nAzure Spring Cloud platform provides AppPlatformIngressLogs to query Ingress request log for those Apps with endpoint enabled.\nBut for the Apps with endpoint disabled, since the traffic is not going through the platform load balancer, the ingress request log is not recorded. For such cases, to monitor the App access log, we can use Application Performance Monitoring (APM) tools like Application Insights.\n \nIn this blog, let's demonstrate how to use AppPlatformIngressLogs and Application Insights to monitor both types of request access log.\n \nA Brief Description of the sample test Apps\nIn my test Azure Spring Cloud, I created two Apps, \"hello\" and \"numbe…",
+          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/monitor-azure-spring-cloud-app-ingress-request-log/ba-p/3292046",
+          "publishedOn": "2022-04-25T03:22:33.000Z",
+          "wordCount": 1081,
+          "title": "Monitor Azure Spring Cloud App Ingress Request Log",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/366052i7DA15B1E1FC9B814?v=v2"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/issues-you-may-meet-when-upgrading-azure-function-app-to-v4/ba-p/3288983",
+          "author": "XinyuShan",
+          "description": "This blog will talk about some common issues you may meet when you try to upgrade your Azure function from older runtime version to newer (eg. ~4) and the causes/resolutions.\n \nPublic Doc:\nBlog Function v4 VS v3: https://techcommunity.microsoft.com/t5/apps-on-azure-blog/azure-functions-v4-versus-v3/ba-p/3276055\nMigrate from 3.x to 4.x: https://docs.microsoft.com/en-us/azure/azure-functions/functions-versions?tabs=in-process%2Cv4&pivots=programming-language-powershell#migrating-from-3x-to-4x\nMigrate from 2.x to 3.x: https://docs.microsoft.com/en-us/azure/azure-functions/functions-versions?tabs=in-process%2Cv4&pivots=programming-language-powershell#migrating-from-2x-to-3x\nKnown issues: https://docs.microsoft.com/en-us/azure/azure-functions/functions-versions?tabs=in-process%2Cv4&pivots=progr…",
+          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/issues-you-may-meet-when-upgrading-azure-function-app-to-v4/ba-p/3288983",
+          "publishedOn": "2022-04-21T02:27:28.000Z",
+          "wordCount": 1686,
+          "title": "Issues you may meet when upgrading Azure function app to V4",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/365178iBCE2E4CF43070DA1?v=v2"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/connect-app-service-with-azure-sql-database-with-managed/ba-p/3288300",
+          "author": "DeependraChaudhary",
+          "description": "A managed identity from Azure Active Directory (Azure AD) allows your app to easily access other Azure AD-protected resources such as Azure Key Vault or Azure SQL. The identity is managed by the Azure platform and does not require you to provision or rotate any secrets.\nWe have two types of Managed Identities:\n\nSystem-assigned Identity\nUser-assigned Identity\n\nYou can read about Managed Identity for App Service and Azure Functions here.\nBelow are the steps for the configuration:\n\nYou can create an App Service or an Azure Function and use the code example below to retrieve the token using the Azure Identity client library via System-assigned identity:\n\nvar conn = (System.Data.SqlClient.SqlConnection)Database.Connection;\nvar credential = new Azure.Identity.DefaultAzureCredential();\nvar token …",
+          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/connect-app-service-with-azure-sql-database-with-managed/ba-p/3288300",
+          "publishedOn": "2022-04-18T20:41:18.000Z",
+          "wordCount": 1029,
+          "title": "Connect App Service with Azure SQL Database with Managed Identity",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/364974i314239B266D76490?v=v2"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/add-a-default-error-page-in-web-xml-for-java-app-in-windows-app/ba-p/3286691",
+          "author": "wanjing",
+          "description": "App Service Windows includes multiple versions of Tomcat. Sometimes, you may want to add custom configurations via web.xml file.\n \nBefore talking about how to change web.xml file in App Service windows, let's discuss \"what is web.xml\"?\n \nJava web applications use a deployment descriptor file to determine how URLs map to servlets, which URLs require authentication, and other information. This file is named web.xml and resides in the app's WAR under the WEB-INF/ directory. web.xml is part of the servlet standard for web applications.\n \nThe default Servlet configurations is under ${catalina.home}/conf. For each webapp, the settings could be found under ${catalina.home}/webapps/ROOT/WEB_INF.\n \nWhen tomcat deploys the application, it reads the generic configurations from conf/web.xml and then WEB-INF/web.xml in the web application. \n \nIt instructs the Tomcat which classes to load, what parameters to set in the context, and how to intercept requests coming from browsers.\nThere you specify:\n\nwhat servlets (and filters) you want to use and what URLs you want to map them to\nlisteners - classes that are notified when some events happen (context starts, session created, etc)\nconfiguration parameters (context-params)\nerror pages, welcome files\nsecurity constraints\n\nBack to our topic, if you haven't defined a custom error page, you will the default page as below:\n\n \nTo add a custom error page, please follow below steps:\n\nAdd <error-page></error-page> in web.xml under webapps/ROOT/WEB_INF. For example, my custom error page \"error.html\" is under root folder /webapp, so I should use \"/error.html\" in <location></location>.\n\n\n\nAdd your custom error in webapps folder.\n\n\n\nBuild and re-deploy the project to App Service.\nNow you will see the custom error page replace the default one.\n\n\n \nPlease kindly note, configurations won't take effect if you add web.xml directly in Kudu site. Tomcats only reads the configurations from war file during startup.",
+          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/add-a-default-error-page-in-web-xml-for-java-app-in-windows-app/ba-p/3286691",
+          "publishedOn": "2022-04-18T06:41:17.000Z",
+          "wordCount": 894,
+          "title": "Add a Default Error Page in web.xml for Java app in Windows App Service",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/364473iFFEDA58E4E81B807/image-size/original?v=v2&px=-1"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/generally-available-enhanced-network-security-features-for-app/ba-p/3285943",
+          "author": "jordanselig",
+          "description": "App Service now supports VNet integration (outbound) and private endpoints (inbound) all the way down to the Basic SKU. The App Service VNet integration feature enables your apps to access resources in or through a virtual network but doesn't grant inbound private access to your apps. For inbound access, you need private endpoints, which allow clients located in your private network to securely access your apps over Private Link, which eliminates exposure from the public internet.\n \nWith this update, you can use our lower-cost tiers and achieve the same level of security that you could previously only achieve with our high-end SKUs. Note that if you want to downgrade an existing App Service Plan and still use VNet integration, you need to be on the newer App Service footprint to ensure you’re App Service Plan supports VNet integration for Basic SKU. For more details, see the VNet integration limitations.\n \nLearn how to enable virtual network integration.\n \nLearn how to connect to a web app using an Azure Private endpoint.",
+          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/generally-available-enhanced-network-security-features-for-app/ba-p/3285943",
+          "publishedOn": "2022-04-14T16:25:26.000Z",
+          "wordCount": 763,
+          "title": "Generally available: Enhanced network security features for App Service Basic SKU",
+          "imageUrl": "https://cdn.techcommunity.microsoft.com/assets/MTC_Open_graph_image1.jpg"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/a-simple-network-connection-test-tool-for-azure-spring-cloud/ba-p/3276256",
+          "author": "Hanli_Ren",
+          "description": "Applications running inside Azure Spring Cloud may need to make outbound calls to targets outside the Azure Spring Cloud. Sometimes the application may encounter network connection issue for different reasons. If we can run DNS resolve and TCP ping test from inside the Azure Spring Cloud to the outside target, it should be helpful for us to quickly narrow down network connection related issues.\n \nThis blog shows how to build a very simple App for DNS resolve and TCP ping tests. After we deploy this App inside the existing Azure Spring Cloud service. We can run quick test to verify the availability of network connection to a specific target.\n \nStep 1: Create a simple Spring Web application with DNS resolve and TCP ping feature\nStep 2: Deploy it to your Azure Spring Cloud\nStep 3: Run DNS/Tcp…",
+          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/a-simple-network-connection-test-tool-for-azure-spring-cloud/ba-p/3276256",
+          "publishedOn": "2022-04-14T02:51:11.000Z",
+          "wordCount": 1296,
+          "title": "A Simple Network Connection Test Tool for Azure Spring Cloud",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/361375i7B5A83DF9D3E1BA0?v=v2"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/secure-apis-on-azure-behind-api-management/ba-p/3281374",
+          "author": "monojit18",
+          "description": "Introduction\nAzure API Management is a hybrid, multi-cloud management service for APIs onAzure; ensuring a complete abstraction of backend APIs and its complexities from the consumer of the APIs. This allows API developers to Securely expose APIs to various types of API consumers with varying degree of access control, observability and protection mechanisms available out-of-the-box.\n \nAzure API Management has deep integrations with Azure AD which in turn has support for with the OAuth 2.0 & OpenID Connect through Microsoft identity platform. These two powerful, feature-rich resources can be leveraged to secure backend APIs without adding any code or logic within the APIs itself; thus making the Security of APIs clean, flexible and reusable\n \nWhat this Document will do?\n\n\nA detailed overvie…",
+          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/secure-apis-on-azure-behind-api-management/ba-p/3281374",
+          "publishedOn": "2022-04-10T20:20:08.000Z",
+          "wordCount": 1607,
+          "title": "Secure APIs on Azure behind API Management",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/362823iD80238ADC53F909C/image-size/original?v=v2&px=-1"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/robust-messaging-using-azure-service-bus/ba-p/3275225",
+          "author": "monojit18",
+          "description": "What is Service Bus\n\n\nFully managed enterprise Message Broker\n\n\nDecouple applications and services from each other\n\n\nMessage Queues and Publish/Subscribe Topics\n\n\nLoad-balancing across Competing workers\n\n\nHigh degree of Reliability and Throughput\n\n\n \nWhat This Document will do?\n\n\nDifferentiate between Messages and Events\n\n\nLook at the Orchestrators or Service Bus who can Produce and Consume Messages\n\n\nDeep dive into Service Bus Concepts and Advanced Features\n\n\nDetailed look at some of code examples for Producers and Consumers\n\n\nCode examples discussed are available at Source Code\n\n\n \nWhat is a Message?\n\n \n\n \n\n\nRaw Data Produced by a service to be Consumed or Stored elsewhere\n\n\nContains the data that triggered the Message pipeline\n\n\nPublisher of the Message has an expectation about how the …",
+          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/robust-messaging-using-azure-service-bus/ba-p/3275225",
+          "publishedOn": "2022-04-10T08:15:43.000Z",
+          "wordCount": 3495,
+          "title": "Robust Messaging using Azure Service Bus",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/362616i3471DD21C0D92E48/image-size/original?v=v2&px=-1"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/azure-apps-autopilot-2-deployment-script/ba-p/3275979",
+          "author": "justinyoo",
+          "description": "In my previous post, we built the autopilot feature, using various event triggers from GitHub Actions and Azure Bicep. Throughout this post, I'm going to build the revised autopilot feature using Azure Bicep Deployment Scripts resource without GitHub Actions.\n \n\nYou can download the sample code from this GitHub repository.\n\n \nSolution Architecture\n \nLet's say you're building a microservices architecture. It typically consists of an API gateway and many API apps, which are Azure API Management (APIM) and Azure Functions API in this example. The microservices architecture might be more complex depending on the requirements, but it's way too far from our topic. Therefore, let's build a minimal structure that is working. Here's the diagram.\n \n\n \nAzure Resources Provisioning\n \nThere are five re…",
+          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/azure-apps-autopilot-2-deployment-script/ba-p/3275979",
+          "publishedOn": "2022-04-09T00:00:00.000Z",
+          "wordCount": 1736,
+          "title": "Azure Apps Autopilot #2 - Deployment Script",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/361290iE575E20AEFEC5BE3/image-size/original?v=v2&px=-1"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/asev3-vs-asev2-difference-overview/ba-p/3276225",
+          "author": "XinyuShan",
+          "description": "The App Service Environment v3 (ASEv3) has become GA since 2021/07. Both ASEv1 and ASEv2 will be retired on 2024/08/31. \nApp Service Environment v3 provides advantages and feature differences over earlier versions. We suggest to review the supported features of App Service Environment v3 before migrating to reduce the risk of an unexpected application issue.\n \nWe've received several customers feedback and questions regarding ASEv3's changes. This blog will focus on the difference between ASE different versions.\n \nMigration:\nASEv2 -> ASEv3 automate migration(certain regions support): https://docs.microsoft.com/en-us/azure/app-service/environment/migrate\nASEv1 -> ASEv3 manual migration: manual migration options documentation\n \nPublic documentation:\nASEv1: https://docs.microsoft.com/en-us/azu…",
+          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/asev3-vs-asev2-difference-overview/ba-p/3276225",
+          "publishedOn": "2022-04-07T09:21:46.000Z",
+          "wordCount": 1671,
+          "title": "ASEv3 VS ASEv2  - Difference Overview",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/361358i477CFB7F0D8ACF1C?v=v2"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/try-ibm-websphere-on-azure-with-free-evaluation-licensing/ba-p/3272895",
+          "author": "reza_rahman",
+          "description": "We are very happy to announce that we have enabled evaluation licenses for our WebSphere on Azure Virtual Machines (VMs) Marketplace solutions. The solutions are jointly developed and supported by IBM and Microsoft. We have also added support for standalone WebSphere Base instance on VMs deployments. In addition, we have integrated a sample getting started application into our WebSphere Liberty/Open Liberty on Azure Kubernetes Service (AKS)/Azure Red Hat OpenShift (ARO) solutions. These changes make getting started with WebSphere and Azure even easier. Evaluate the WebSphere on Azure solutions for full production usage and reach out to collaborate on migration cases.\n \nWebSphere Base Standalone Instance on VMs\nIBM and Microsoft previously released a Marketplace solution to automate WebSphe…",
+          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/try-ibm-websphere-on-azure-with-free-evaluation-licensing/ba-p/3272895",
+          "publishedOn": "2022-04-05T17:00:00.000Z",
+          "wordCount": 1125,
+          "title": "Try IBM WebSphere on Azure with Free Evaluation Licensing",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/360421i6772125D4D21ED39/image-size/original?v=v2&px=-1"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/azure-functions-v4-versus-v3/ba-p/3276055",
+          "author": "Mengyang",
+          "description": "In this article, I’m going to compare the Azure Functions latest V4 and V3 and share some main differences and highlights of the new version. Hope this article will give some insights about what to notice in the latest version.\n \nFirstly, all the changes can be found in this breaking change doc, also we have a Github post to track the changes. I’m not going to go into details about each difference mentioned in the post, but I will highlight some breaking changes below.\n \nSo, what’s changed?\nAzure Function Proxies → Azure API Management\nThe use of Azure Function Proxies has been decommissioned in V4, and it will be replaced by APIM(Azure API Management) instead. APIM will come as a separate service with more functionalities and built-in security sets, version controls, and more. For details…",
+          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/azure-functions-v4-versus-v3/ba-p/3276055",
+          "publishedOn": "2022-04-05T08:26:12.000Z",
+          "wordCount": 1568,
+          "title": "Azure Functions V4 Versus V3",
+          "imageUrl": "https://cdn.techcommunity.microsoft.com/assets/MTC_Open_graph_image1.jpg"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/use-php-fpm-log-to-troubleshoot-php-8-linux-azure-app-service/ba-p/3275136",
+          "author": "Hanli_Ren",
+          "description": "Azure App Service for Linux platform now supports customer using both PHP 7 and PHP 8 built-in docker image. When switching from PHP 7 to PHP 8, you may recognize the platform changed the web container from using Apache to Nginx+php-fpm mode.\n \nThis blog shows how to use customized php-fpm configuration in PHP 8 Linux App Service to get more detailed logs to troubleshoot application issues.\n \nHow to Enable php-fpm access log\nHow to Enable php-fpm slow requests log\nHow to check php-fpm status\n \nHow to Enable php-fpm access log\nWe can get a lot of detailed PHP requests information in php-fpm access log.For example:\n\nRequest URL\nResponse status code\nServer time the request was received\nTime taken to serve the request\n%CPU used by the request\npeak of memory allocated by PHP\n\n \nIn PHP 8 Linux A…",
+          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/use-php-fpm-log-to-troubleshoot-php-8-linux-azure-app-service/ba-p/3275136",
+          "publishedOn": "2022-04-05T03:01:46.000Z",
+          "wordCount": 1231,
+          "title": "Use php-fpm log to troubleshoot PHP 8 Linux Azure App Service",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/361023i3D8DF769FBE65DA0?v=v2"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/seamlessly-integrate-springs-apps-with-azure-services-using/ba-p/3266427",
+          "author": "Sean_Li",
+          "description": "Spring Cloud Azure is an open-source project that provides seamless Spring integration with Azure services. It gives developers a Spring-idiomatic way to connect and consume Azure services, with only need few lines of configuration and minimal code changes. I am pleased to announce that Spring Cloud Azure 4.0 is now generally available. With this major release we aim to bring better security, leaner dependencies, support for production readiness and more. Version 4 represents a significant milestone in our product roadmap that we couldn’t have delivered without the collective wisdom of the Spring community and customer feedback. On behalf of the Spring on Azure product team, thank you for making this happen!\n \nUnified Development Experience\nAt the Developer Division of Microsoft, we are bi…",
+          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/seamlessly-integrate-springs-apps-with-azure-services-using/ba-p/3266427",
+          "publishedOn": "2022-03-31T01:05:17.000Z",
+          "wordCount": 1511,
+          "title": "Seamlessly integrate Springs apps with Azure Services using Spring Cloud Azure 4.0, now GA",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/358377i4F8A81DDB4DA7F71?v=v2"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/app-service-web-apps-functions-and-logic-apps-standard/ba-p/3266287",
+          "author": "YutangL",
+          "description": "This blog contains information about *.azurewebsites.net TLS certificate changes for web apps, functions, and logic apps (standard). Customers should not be impacted by this change. The scope of services affected includes web apps, functions, and logic apps (standard); logic apps (consumption) and resources hosted on an ASE are not impacted. This change is limited to public Azure cloud; government clouds are not affected.\n \nEvery web app, function, or logic app (standard) has its own default hostname that goes by “<resource-name>.azurewebsites.net” where App Service secures it with a wildcard *.azurewebsites.net TLS certificate. The current TLS certificate issued by Baltimore CyberTrust Root CA is set to expire on July 7th, 2022. Starting April 2022, App Service will begin renewing these T…",
+          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/app-service-web-apps-functions-and-logic-apps-standard/ba-p/3266287",
+          "publishedOn": "2022-03-24T21:47:25.000Z",
+          "wordCount": 1058,
+          "title": "App Service Web Apps, Functions, and Logic Apps (Standard) *.azurewebsites.net TLS cert renewal",
+          "imageUrl": "https://cdn.techcommunity.microsoft.com/assets/MTC_Open_graph_image1.jpg"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/how-to-deploy-your-web-app-from-azure-pipeline-with-restricted/ba-p/3249054",
+          "author": "Raven_Zhang",
+          "description": "More and more users now choose to integrate App Service with Azure DevOps to streamline build and deployment process of their applications. The SCM site is the engine behind App Service for deployment, meaning that the release pipeline of Azure DevOps deploys code to the SCM site of an app. In most scenario, SCM site can be reached through public internet. Therefore, ensuring secure access to the site becomes more important. We can enable access restriction on SCM site or set up other firewall solutions to control incoming traffic to the site.\n\nHere we will introduce you on how to identify and whitelist deployment traffic from Azure pipeline to SCM site with access restriction. This article also applies when setting up the same rules in other firewall solutions.\n \n \nIdentify IP ranges comi…",
+          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/how-to-deploy-your-web-app-from-azure-pipeline-with-restricted/ba-p/3249054",
+          "publishedOn": "2022-03-18T04:30:16.000Z",
+          "wordCount": 1377,
+          "title": "How to deploy your Web App from Azure Pipeline with restricted access.",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/353430i3377C0D1C11B6D5B?v=v2"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/communicate-realtime-on-azure-with-web-pubsub/ba-p/3256264",
+          "author": "monojit18",
+          "description": "Azure Web PubSub is a PaaS Service on Azure to send real-time messages and notifications between Web and Mobile applications using WebSockets. This uses a Publish/Subscribe model and allows sending notifications, updates, messages between various connected entities.\n \nWhen to use it?\nThis Link lists down a set of use cases where it can be used; a quick glance:\n\n\nLive Dashboard and Data Updates\n\n\nReal-time Chats, Grouped Chat\n\n\nCollaboration, Screen sharing Apps\n\n\nBroadcasting Advertisements, Offers, Promotions\n\n\nSupply Chain Control Tower - Notify Warehouses, Customers, Transporters - Real-time\n\n\nApps for People with Disability - Play Music or Videos for someone else\n\n\nRemote Control Apps, Location Tracking Apps, Enterprise Automation Process\n\n\nAnd many more...\n\n\n \nWhat are we going to dis…",
+          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/communicate-realtime-on-azure-with-web-pubsub/ba-p/3256264",
+          "publishedOn": "2022-03-16T02:45:41.000Z",
+          "wordCount": 1949,
+          "title": "Communicate Realtime on Azure with Web PubSub",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/356119i967F4DC8BF50494E/image-size/original?v=v2&px=-1"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/clustering-support-for-jboss-eap-on-azure-app-service-public/ba-p/3252898",
+          "author": "Jason_Freeberg",
+          "description": "Red Hat JBoss EAP on Azure App Service has been generally available since June 2021 and is jointly supported by Red Hat and Microsoft. Today, we are announcing the Public Preview of support for clustered deployments of JBoss EAP on App Service. This means customers can run Java EE, Jakarta EE and MicroProfile applications which use stateful session beans, distributed transactions, and similar features that require instance-to-instance communication or high availability. Previously, individual JBoss EAP instances on App Service could not communicate with one another; with this update all nodes can communicate over a virtual network. Read on to learn more!\n \nCreate a JBoss EAP cluster on App Service now and deploy a stateful application! \n \n\n \n \nAbout JBoss EAP Clustering\nIn JBoss EAP, clust…",
+          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/clustering-support-for-jboss-eap-on-azure-app-service-public/ba-p/3252898",
+          "publishedOn": "2022-03-15T08:00:00.000Z",
+          "wordCount": 1135,
+          "title": "Clustering Support for JBoss EAP on Azure App Service (Public Preview)",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/355970i449EAEDBA72B0285/image-size/original?v=v2&px=-1"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/magic-behind-app-insights-codeless-integration-with-app-services/ba-p/3257025",
+          "author": "YangYu",
+          "description": "As the official tool for monitoring Azure App Services, App Insights is increasingly popular among App Services users. This article explores how App Insights codeless agent integrates with App Services.\n \nTo start with, here is an overview of current runtime support of App Insights codeless integration on App Services.\n \n\n\n\n\n\n \n\n\n \n\n\nCodeless agent managed by platform\n\n\nCode-based App Insights SDK\n\n\n\n\nWindows\n\n\n.NET Framework\n\n\nY\n\n\nY\n\n\n\n\n \n\n\n.NET Core\n\n\nY\n\n\nY\n\n\n\n\n \n\n\n.NET\n\n\nY\n\n\nY\n\n\n\n\n \n\n\nNodejs\n\n\nY\n\n\nY\n\n\n\n\n \n\n\nJava\n\n\nY\n\n\nY\n\n\n\n\nLinux\n\n\n.NET Core\n\n\nN\n\n\nY\n\n\n\n\n \n\n\n.NET\n\n\nY (.NET 6+)\n\n\nY\n\n\n\n\n \n\n\nNodejs\n\n\nY\n\n\nY\n\n\n\n\n \n\n\nJava\n\n\nY\n\n\nY\n\n\n\n\n \n\n\nPython\n\n\nN\n\n\nY\n\n\n\n\n\n \nNext, we will take a look at current design of App Insights codeless integration with Azure App Services. Regardless of OS and runtime s…",
+          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/magic-behind-app-insights-codeless-integration-with-app-services/ba-p/3257025",
+          "publishedOn": "2022-03-15T02:15:49.000Z",
+          "wordCount": 1009,
+          "title": "Magic behind App Insights Codeless Integration with App Services",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/356418i77BA8102F41F14BB?v=v2"
         }
       ]
     },
@@ -311,6 +551,76 @@
           "wordCount": 1515,
           "title": "Introducing Microsoft Dev Box",
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/374068iEFD32D2A1F88C0D2?v=v2"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/azure-developer-community-blog/join-us-for-the-azure-static-web-apps-anniversary-event/ba-p/3352767",
+          "author": "nityan",
+          "description": "It's the #SWAanniversary!It's hard to believe that it was just under a year ago that this announcement happened - telling us Azure Static Web Apps was generally available! :party_popper: \n \nA turnkey service for modern full-stack web apps with pre-built and pre-rendered static front-ends, and serverless API backends\", Azure Static Web Apps focuses on making the developer experience - from build-to-deploy - effortless for modern web apps. Static Web Apps is a power-packed solution to globally host websites, providing a seamless experience via features like CI/CD integrations, preview environments, global scalability, customizable authentication integrations, managed Azure edge, custom domains, and a lot more! \n \nFast forward a year and we are days away from the 1-year Anniversary (#SWAanniv…",
+          "link": "https://techcommunity.microsoft.com/t5/azure-developer-community-blog/join-us-for-the-azure-static-web-apps-anniversary-event/ba-p/3352767",
+          "publishedOn": "2022-05-10T17:51:38.000Z",
+          "wordCount": 915,
+          "title": "Join Us For the Azure Static Web Apps Anniversary Event!",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/370503i434A97E8D52748A0/image-size/original?v=v2&px=-1"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/azure-developer-community-blog/getting-rid-of-credentials-in-azure-part-4-kubernetes/ba-p/3307283",
+          "author": "Andreas Helland",
+          "description": "The journey to rid ourselves of credentials in Azure continues, and this time we'll tackle a much in demand service - Azure Kubernetes Service (AKS). Because while Azure App Services, which we have covered in previous parts, are nice and dandy they simply don't serve all your microservice needs.\n \nAKS is kind of a double feature when it comes to going credless:\n\nThe first is what we've been doing up until now. The provisioning and configuration of the cluster is handled by a GitHub Action which is trusted by Azure through using a federated credential.\nThe second is that Kubernetes is a system of its own and part of that is having a credential and identity model inside the cluster regardless of Azure. This can in turn be configured to have Azure trust the cluster and create a bridge between…",
+          "link": "https://techcommunity.microsoft.com/t5/azure-developer-community-blog/getting-rid-of-credentials-in-azure-part-4-kubernetes/ba-p/3307283",
+          "publishedOn": "2022-05-04T17:00:00.000Z",
+          "wordCount": 3968,
+          "title": "Getting rid of credentials in Azure - Part 4 (Kubernetes)",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/369207i7C058573D43ACBEA?v=v2"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/azure-developer-community-blog/getting-rid-of-credentials-in-azure-part-3-easyauth-amp-managed/ba-p/3296909",
+          "author": "Andreas Helland",
+          "description": "We are on a quest to remove credentials where we can in dealing with Azure. Part 1 created a connection between GitHub and Azure using \"federated credentials\":  \nhttps://techcommunity.microsoft.com/t5/azure-developer-community-blog/getting-rid-of-credentials-in-azure-part-1/ba-p/3265205\n \nIn part 2 we got started with setting up Azure App Services with EasyAuth: \nhttps://techcommunity.microsoft.com/t5/azure-developer-community-blog/getting-rid-of-credentials-in-azure-part-2-easyauth/ba-p/3270553\n \nAt the end of part 2 we were kind of unsatisfied with the fact that while we have no secrets anywhere in our GitHub repository it is possible to retrieve a client secret either by glancing through the deployment logs or in the Azure Portal. For reasons that should be understandable we don't reall…",
+          "link": "https://techcommunity.microsoft.com/t5/azure-developer-community-blog/getting-rid-of-credentials-in-azure-part-3-easyauth-amp-managed/ba-p/3296909",
+          "publishedOn": "2022-04-27T18:11:41.000Z",
+          "wordCount": 2568,
+          "title": "Getting rid of credentials in Azure - Part 3 (EasyAuth & Managed Identity)",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/367392i4D94640BE0D8BE95?v=v2"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/azure-developer-community-blog/mission-critical-applications-on-microsoft-azure/ba-p/3289694",
+          "author": "Ed Price",
+          "description": "Oh no! Not another buzzword! (Or is it a term? Is buzzterm a word?)\n \n\n \nWhat exactly is a mission-critical application or workload?\n \nWell, it means you're building an app on Azure. And a workload is just a bunch of services, technologies, and resources that support a unified business goal or solution, that meets your needs. You'll usually string together many services, APIs, and data to get the final functionality you're after. Some people might call this a solution instead. Just for clarity, an architecture is when we really dig into how we put together the given solution.\n \nAnd then what do we mean with the term mission critical? It's basically a business requirement where you need your solution to be highly available, reliable, and performant, or else it's going to have a significant …",
+          "link": "https://techcommunity.microsoft.com/t5/azure-developer-community-blog/mission-critical-applications-on-microsoft-azure/ba-p/3289694",
+          "publishedOn": "2022-04-19T22:05:53.000Z",
+          "wordCount": 1234,
+          "title": "Mission-Critical Applications on Microsoft Azure",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/365387i36AEBEE14C8D50B2?v=v2"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/azure-developer-community-blog/azure-api-management-networking-explained/ba-p/3274323",
+          "author": "stephaneey",
+          "description": "Hi,\n \nMicrosoft recently announced that Azure Private Link was in preview for Azure API Management. I thought this was a good opportunity to recap and compare the different options from a network perspective. I will also explain how VIP (Virtual IP) and DIP (Dynamic IP) work because the official doc is not 100% accurate on the topic.\n \nIntroducing the different pricing tiers\n \nAs you might know, APIM comes with Developer, Consumption, Basic, Standard, Premium tiers. Microsoft also refers to an Isolated (in preview) tier on its pricing page but I do not know what's behind, so let's stick to the other tiers with the exception of the Consumption tier, which I will park since there is nothing to consider network-wise, other than the fact that it has no instance-specific IPs that you can contro…",
+          "link": "https://techcommunity.microsoft.com/t5/azure-developer-community-blog/azure-api-management-networking-explained/ba-p/3274323",
+          "publishedOn": "2022-04-03T14:52:23.000Z",
+          "wordCount": 2237,
+          "title": "Azure API Management networking explained",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/360923iDBE0DC907421E268?v=v2"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/azure-developer-community-blog/getting-rid-of-credentials-in-azure-part-2-easyauth/ba-p/3270553",
+          "author": "Andreas Helland",
+          "description": "This is part two in a series on how to get rid of credentials wherever you can in Azure. The first part set the stage with configuring \"federated credentials\" for doing deployments based on Bicep code stored in GitHub using GitHub Actions. The samples in this post assumes you have this in place, so you might want to take a look at that if you haven't:\nhttps://techcommunity.microsoft.com/t5/azure-developer-community-blog/getting-rid-of-credentials-in-azure-part-1/ba-p/3265205\n \nStarting with this post we will deploy actual resources in Azure so let's start with something easy in the world of credentialless in Azure - like EasyAuth :)\n \nBad puns aside; EasyAuth is a mechanism that allows you to add identity to Azure App Services in a fairly simple manner. And in line with the topic of the se…",
+          "link": "https://techcommunity.microsoft.com/t5/azure-developer-community-blog/getting-rid-of-credentials-in-azure-part-2-easyauth/ba-p/3270553",
+          "publishedOn": "2022-03-30T16:00:00.000Z",
+          "wordCount": 2787,
+          "title": "Getting rid of credentials in Azure - Part 2 (EasyAuth)",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/359635i1B691C3F1496B0F1?v=v2"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/azure-developer-community-blog/getting-rid-of-credentials-in-azure-part-1/ba-p/3265205",
+          "author": "Andreas Helland",
+          "description": "Passwordless is a popular term, and it's been a long time since it was considered acceptable to store credentials directly in code. There are however many nuances of this and how you go about achieving it is not necessarily easy. First you need to sort out the terms and tools available to you and then there's the minor details of implementing this in various ways.\n \nI will try to go through this topic in an Azure context providing code samples and instructions along the way. This post is called \"part one\" because there's more than we can cover in one sitting. \n \nTo clarify  - we are not talking about avoiding identities. I appreciate that google.com is available to me without having to log in first, but we are not talking about anonymous access to services here. We still want identities fo…",
+          "link": "https://techcommunity.microsoft.com/t5/azure-developer-community-blog/getting-rid-of-credentials-in-azure-part-1/ba-p/3265205",
+          "publishedOn": "2022-03-24T16:00:00.000Z",
+          "wordCount": 2274,
+          "title": "Getting rid of credentials in Azure - Part 1",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/358078i34350ED2AAFDE957?v=v2"
         }
       ]
     },
@@ -368,6 +678,46 @@
           "wordCount": 1959,
           "title": "Benchmarking Azure Event Hubs Premium for Kafka and AMQP workloads",
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/374718i55EE760081C09EE2/image-size/original?v=v2&px=-1"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/messaging-on-azure-blog/upcoming-changes-to-ip-addresses-for-azure-event-hubs/ba-p/3294564",
+          "author": "Kasun_Indrasiri",
+          "description": "At Azure Event Hubs we are upgrading our infrastructure to the newest technologies, allowing us to use the latest features available. Due to this infrastructure change, the IP-addresses associated with our customers’ namespaces are also going to change.\n \nYour Event Hubs based solutions may break if you are not following the best practices of using service tags or domain names in your firewall or network devices configurations to allow communication with this service but are instead using these IP-addresses.\n \nIf you are using Event Hubs basic, standard or dedicated, we recommend using  service tags, as per our recommendations described in the service documentation. Service tags will automatically be updated if anything changes in our infrastructure, meaning you won’t have to make these changes manually. If you are not able to use service tags, we recommend using the fully qualified domain names for your specific namespaces or the general “*.servicebus.windows.net” domains. These will automatically resolve to the new configurations as well, meaning you won’t be impacted by these changes either.\n \n If you are using Event Hubs premium, you are not impacted from this infrastructure upgrade.\n \nAs we are moving forward with implementing these changes, we will be updating this blogpost with the impacted regions and their new IP ranges. Below you can find the impacted regions that we have currently planned.\n \n\n\n\n\nRegion\n\n\nTimeframe\n\n\n\n\nWest Central US\n\n\nJuly 2022\n\n\n\n\nNorth Central US\n\n\nJuly 2022",
+          "link": "https://techcommunity.microsoft.com/t5/messaging-on-azure-blog/upcoming-changes-to-ip-addresses-for-azure-event-hubs/ba-p/3294564",
+          "publishedOn": "2022-04-26T20:35:07.000Z",
+          "wordCount": 813,
+          "title": "Upcoming changes to IP addresses for Azure Event Hubs",
+          "imageUrl": "https://cdn.techcommunity.microsoft.com/assets/MTC_Open_graph_image1.jpg"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/messaging-on-azure-blog/policy-to-control-the-minimum-tls-version-used-with-azure/ba-p/3294987",
+          "author": "EldertGrootenboer",
+          "description": "Communication between a client application and an Azure Service Bus namespace is encrypted using Transport Layer Security (TLS). TLS is a standard cryptographic protocol that ensures privacy and data integrity between clients and services over the Internet. For more information about TLS, see Transport Layer Security.\nAzure Service Bus supports choosing a specific TLS version for namespaces. Currently Azure Service Bus uses TLS 1.2 on public endpoints by default, but TLS 1.0 and TLS 1.1 are still supported for backward compatibility.\nAzure Service Bus namespaces permit clients to send and receive data with TLS 1.0 and above. To enforce stricter security measures, you can configure your Service Bus namespace to require that clients send and receive data with a newer version of TLS. If a Service Bus namespace requires a minimum version of TLS, then any requests made with an older version will fail.\nTo learn more, see Enforce a minimum required version of Transport Layer Security (TLS) for requests to a Service Bus namespace.",
+          "link": "https://techcommunity.microsoft.com/t5/messaging-on-azure-blog/policy-to-control-the-minimum-tls-version-used-with-azure/ba-p/3294987",
+          "publishedOn": "2022-04-26T11:10:18.000Z",
+          "wordCount": 777,
+          "title": "Policy to control the minimum TLS version used with Azure Service Bus now in public preview",
+          "imageUrl": "https://cdn.techcommunity.microsoft.com/assets/MTC_Open_graph_image1.jpg"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/messaging-on-azure-blog/upcoming-changes-to-ip-addresses-for-azure-relay/ba-p/3285254",
+          "author": "EldertGrootenboer",
+          "description": "At Azure Relay we are upgrading our infrastructure to the newest technologies, allowing us to use the latest features available. Due to this infrastructure change, the IP-addresses associated with our customers’ namespaces are also going to change.\n \nYour Relay based solutions may break if you are not following the best practices of using domain names in your firewall or network devices configurations to allow communication with this service, but are instead using these IP-addresses.\n \nWe recommend using the fully qualified domain names for your specific namespaces or the general “*.servicebus.windows.net” domain, instead of using hardcoded IP-addresses. These will automatically resolve to the new configurations, meaning you won’t be impacted by these changes.\n \nAs we are moving forward with implementing these changes, we will be updating this blogpost with the impacted regions and their new IP ranges. Below you can find the impacted regions that we have currently planned.\n \n\n\n\nRegion\nTimeframe\n\n\nWest Central US\nMay 2022\n\n\nNorth Central US\nMay 2022",
+          "link": "https://techcommunity.microsoft.com/t5/messaging-on-azure-blog/upcoming-changes-to-ip-addresses-for-azure-relay/ba-p/3285254",
+          "publishedOn": "2022-04-22T16:00:00.000Z",
+          "wordCount": 736,
+          "title": "Upcoming changes to IP-addresses for Azure Relay",
+          "imageUrl": "https://cdn.techcommunity.microsoft.com/assets/MTC_Open_graph_image1.jpg"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/messaging-on-azure-blog/upcoming-changes-to-ip-addresses-for-azure-service-bus/ba-p/3285247",
+          "author": "EldertGrootenboer",
+          "description": "At Azure Service Bus we are upgrading our infrastructure to the newest technologies, allowing us to use the latest features available. Due to this infrastructure change, the IP-addresses associated with our customers’ namespaces are also going to change.\n \nYour Service Bus based solutions may break if you are not following the best practices of using service tags or domain names in your firewall or network devices configurations to allow communication with this service, but are instead using these IP-addresses.\n \nIf you are using Service Bus premium, we recommend using service tags, as per our recommendations described in the service documentation. Service tags will automatically be updated if anything changes in our infrastructure, meaning you won’t have to make these changes manually.\n \nIf you are on Service Bus standard or cannot use service tags, we recommend using the fully qualified domain names for your specific namespaces or the general “*.servicebus.windows.net” domains. These will automatically resolve to the new configurations as well, meaning you won’t be impacted by these changes either.\n \nAs we are moving forward with implementing these changes, we will be updating this blogpost with the impacted regions and their new IP ranges. Below you can find the impacted regions that we have currently planned.\n \n\n\n\nRegion\nTimeframe\n\n\nWest Central US\nMay 2022\n\n\nNorth Central US\nMay 2022",
+          "link": "https://techcommunity.microsoft.com/t5/messaging-on-azure-blog/upcoming-changes-to-ip-addresses-for-azure-service-bus/ba-p/3285247",
+          "publishedOn": "2022-04-22T16:00:00.000Z",
+          "wordCount": 795,
+          "title": "Upcoming changes to IP-addresses for Azure Service Bus",
+          "imageUrl": "https://cdn.techcommunity.microsoft.com/assets/MTC_Open_graph_image1.jpg"
         }
       ]
     },
@@ -425,6 +775,136 @@
           "wordCount": 1252,
           "title": "Optimizing Azure Kubernetes Service (AKS) with the Well-Architected Framework",
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/370509i4ADE816452BE0548?v=v2"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/so-you-want-to-be-an-architect/ba-p/3353391",
+          "author": "brauerblogs",
+          "description": "Architects are typically revered throughout the organization and are often astute, technologically capable, and often must \"walk and chew gum simultaneously”! Are you interested in exploring a career in technical architecture? In this episode of Armchair Architects, Eric Charran and Uli Homann (both highly revered architects within Microsoft) delve into the traits, behaviors, and proclivities of this rare breed.\n \nHow do you know when you’re an architect? One factor is determined by how you think about technologies, components, services and how they’ll be used.  Here are a few good indicators:\n\nIf you think in terms of components and their interactions, then you’re thinking like an architect.\nIf you’re done coding up a microservice and are concerned about how it’s going to be used and cons…",
+          "link": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/so-you-want-to-be-an-architect/ba-p/3353391",
+          "publishedOn": "2022-05-10T22:48:40.000Z",
+          "wordCount": 1576,
+          "title": "So, you want to be an architect?",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/370611i71EB2EBF888B11B6/image-size/original?v=v2&px=-1"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/operations-task-management-feedback-loop/ba-p/3330954",
+          "author": "raffertyuy",
+          "description": "Background\nLast month, I wrote about how work items in Azure DevOps can be automatically created as you receive alerts from Azure (Microsoft Sentinel Alerts and Incidents & Microsoft Defender for Cloud Alerts, Recommendations and Compliance Assessments).\nIn this post, I'm sharing how you can\n\nCreate a webhook that will close/dismiss the Azure alert/incident as you resolve the work item (State = Resolved/Closed), and\nReactivate the Azure alert/incident when the work item reopens (State != Resolved/Closed)\n\nSolution Idea\nHere's the high level diagram for this solution, see here for the logic app code.\n\n \nNote: The following alert types do not need to be dismissed\n\nSentinel Alerts\n\nAlerts that are associated to incidents will be dismissed together with the incident\nAlerts that are unassociate…",
+          "link": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/operations-task-management-feedback-loop/ba-p/3330954",
+          "publishedOn": "2022-05-06T08:52:56.000Z",
+          "wordCount": 1506,
+          "title": "Operations Task Management Feedback Loop",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/371383i0A50FD02A0D6B4DE?v=v2"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/five-best-practices-to-anticipate-failure/ba-p/3314035",
+          "author": "danielstocker",
+          "description": "Every day organizations of different sizes and industries choose Azure to take advantage of economic and technological benefits when operating secure and reliable workloads. To maximize their success on the platform, they need to continuously review their operational procedures to minimize maintenance and management overhead.\nTo achieve this, each individual team needs to focus on high-business value activities instead of spending time on undifferentiated tasks like manual testing, manual build and deployment, or others.\nNo matter what type of workload; be it a conventional lift-and-shift or a highly distributed cloud native application: In the cloud we can no longer avoid all failure – like we sometimes attempted to in a traditional on-premises scenario.\nInstead, we need to anticipate out…",
+          "link": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/five-best-practices-to-anticipate-failure/ba-p/3314035",
+          "publishedOn": "2022-05-05T18:09:27.000Z",
+          "wordCount": 1667,
+          "title": "Five Best Practices to Anticipate Failure",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/369333iADFB0FBA6E2113DC/image-size/original?v=v2&px=-1"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/armchair-architects-exploring-the-relationship-between-cost-and/ba-p/3297043",
+          "author": "brauerblogs",
+          "description": "Welcome to season two of the Armchair Architects series! We received great feedback – and lots of good questions and discourse – in season 1, so we’re back for another ten posts and videos from now through mid-Summer.\n \nUli Homann and Eric Charran continue to be our resident experts alongside David Blank-Endelman, host of the Azure Enablement Show. However, this season will feature customer speakers and other activities leading up to the second Backstage Tour virtual event in September.\n \nThis post focuses on cost considerations when designing your cloud architecture. Too often we hear about architects or developers striving to design the perfect architecture only to realize it’s too expensive once it’s in production. Moreover, the move to cloud makes it possible to rethink costs at the po…",
+          "link": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/armchair-architects-exploring-the-relationship-between-cost-and/ba-p/3297043",
+          "publishedOn": "2022-04-27T18:48:29.000Z",
+          "wordCount": 1731,
+          "title": "Armchair Architects: Exploring the relationship between Cost and Architecture",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/367400iC335ABBED54733FE/image-size/original?v=v2&px=-1"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/planning-for-an-outage-here-is-how-to-anticipate-failure-in-your/ba-p/3295770",
+          "author": "danielstocker",
+          "description": "We all live in a world where we have grown accustomed to the fact that services are available 24 by 7. Be it a quick game to pass the time on your smartphone at home, accessing a deck of slides on your tablet before a client presentation, or finishing a report on your laptop on the train, our sensitivity to application downtime has decreased over the last few years – particularly during the pandemic. Users expect high quality, instant results, for any task at any time, and will happily switch to an alternative if the service they are using doesn’t meet their expectations.\n \nAs more workloads embrace the huge opportunities that the Azure platform provides, we must ensure that we reduce downtime as much as possible for a great customer experience. The Microsoft Well-Architected framework com…",
+          "link": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/planning-for-an-outage-here-is-how-to-anticipate-failure-in-your/ba-p/3295770",
+          "publishedOn": "2022-04-27T17:10:04.000Z",
+          "wordCount": 1430,
+          "title": "Planning for an outage: Here is how to anticipate failure in your workload",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/367087i626B1013FEF94A95/image-size/original?v=v2&px=-1"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/protecting-applications-on-private-azure-kubernetes-service/ba-p/3289422",
+          "author": "GeertVanTeylingen",
+          "description": "Abstract\nIntroduction\nScenario\nCreate a private AKS cluster\nAccess the private AKS cluster\nEnable the private AKS cluster to be managed from ACS\nDiscover and manage the private AKS cluster using ACS\nSummary\nRecommended reading/references\n \nAbstract \nThis technical blog explains how NetApp® Astra™ Control Service (ACS) can be used to protect applications on private Azure Kubernetes Service (AKS) clusters. Private AKS clusters restrict Kubernetes network traffic to an internal network. Familiarity with AKS clusters and general Azure principles is recommended.\n \nCo-authors: Sayan Saha and Balasubramanian Ramesh Babu, NetApp\n \nIntroduction\nSecurity is a growing concern for customers. For organizations that would like to steer clear of public IPs, Azure offers a convenient way of spinning up AK…",
+          "link": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/protecting-applications-on-private-azure-kubernetes-service/ba-p/3289422",
+          "publishedOn": "2022-04-20T18:11:49.000Z",
+          "wordCount": 1898,
+          "title": "Protecting applications on private Azure Kubernetes Service clusters with Astra Control Service",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/365533i9AF3B19AF3359A0D/image-size/original?v=v2&px=-1"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/protecting-magento-e-commerce-platform-in-aks-against-disasters/ba-p/3285525",
+          "author": "GeertVanTeylingen",
+          "description": "Abstract\nIntroduction\nScenario\nDeploying Magento\nProtecting Magento with Astra Control Service\nCustom execution hooks for ElasticSearch and Magento\nSimulating disaster and recover the application to another cluster\nDisaster recovery simulation\nSummary\nResources\n \nAbstract\nIn this article, we describe how to protect a multi-tier application with multiple components (like Magento, now Adobe Commerce ) on Azure Kubernetes Service against disasters like the complete loss of a region with NetApp® Astra™ Control Service. We demonstrate how the use of pre-snapshot execution hooks in Astra Control Service enables us to create application-consistent snapshots and backups across all application tiers and recover the application to a different region in case of a disaster.\n \nCo-authors: Patric Uebele…",
+          "link": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/protecting-magento-e-commerce-platform-in-aks-against-disasters/ba-p/3285525",
+          "publishedOn": "2022-04-20T18:10:41.000Z",
+          "wordCount": 3094,
+          "title": "Protecting Magento e-commerce platform in AKS against disasters with Astra Control Service",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/364544iE5A2861495714D53/image-size/original?v=v2&px=-1"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/introducing-azure-well-architected-framework-for-internet-of/ba-p/3288539",
+          "author": "brauerblogs",
+          "description": "Internet of Things (IoT) projects are high in complexity, and this complexity can increase substantially over time. While IoT is widely adopted in organizations, only a quarter of those IoT projects are in use, while many fail in the proof-of-concept stage. Companies cite a lack of knowledge and technical complexity as many of the challenges preventing them from using IoT more and developing new IoT solutions.\n \n\nIoT Signals Edition 3 – October 2021\n \nAzure Well-Architected for IoT was built by a deeply technical team of architects, consultants and developers who work daily with Microsoft’s customers and partners on their IoT solutions. This team sought to synthesize their experience of designing and deploying successful IoT projects into actionable recommendations for all our customers. W…",
+          "link": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/introducing-azure-well-architected-framework-for-internet-of/ba-p/3288539",
+          "publishedOn": "2022-04-18T21:04:03.000Z",
+          "wordCount": 1184,
+          "title": "Introducing Azure Well-Architected Framework for Internet of Things (IoT)",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/365058i3EA12E10916BE174?v=v2"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/optimizing-azure-service-fabric-workloads-with-the-well/ba-p/3285776",
+          "author": "ckittel",
+          "description": "The Azure Well-Architected Framework assists architects in the creation and review of their cloud workloads with guidance spanning five pillars – reliability, security, cost optimization, operational excellence, and performance efficiency. These are cross-cutting and cover the entire scope of the workload. Additionally, it’s often beneficial for an architect to focus on a core component of the workload, and the Well-Architected Framework also delivers targeted, on key workload components.\nToday we’re going to be looking at the Azure Well-Architected Azure Service Fabric guide. Like all the Well-Architected Framework service guides, the Azure Service Fabric guide delivers checklists and recommendations across the same five pillars, but with a focus on workload architectures that include Azu…",
+          "link": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/optimizing-azure-service-fabric-workloads-with-the-well/ba-p/3285776",
+          "publishedOn": "2022-04-15T17:58:02.000Z",
+          "wordCount": 1192,
+          "title": "Optimizing Azure Service Fabric Workloads with the Well-Architected Framework",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/364198i5F8B3F968D3F5974?v=v2"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/run-your-most-demanding-oracle-workloads-in-azure-without/ba-p/3264545",
+          "author": "GeertVanTeylingen",
+          "description": "Abstract\nIntroduction\nOracle on Azure Strategy – the misconceptions\nMigration options in Azure\nThe “Nature of” Azure Resource Limits\nUnderstand cloud: resource constraint by design\nUnderstand IaaS VM Series\nMore importantly: understand IaaS VM SKUs\nAzure Virtual Machine Limits: Disk Throughput vs. Network Bandwidth\nBreaking “The Laws of Nature” – stretching the network\nLinux kernel NFS (kNFS) vs Oracle Direct NFS (dNFS)\nHigh Throughput AND Low Latency\nStop Riding the Peaks\nAutomation = Scale\nLinks to Additional Information\n \nAbstract\nOracle comprises over 30% of relational workloads in the world today and it has consistently been among the most used database for over a decade. In this blog post, we’ll discuss how Azure NetApp Files, combined with Azure virtual machines, can meet those dema…",
+          "link": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/run-your-most-demanding-oracle-workloads-in-azure-without/ba-p/3264545",
+          "publishedOn": "2022-04-11T14:59:52.000Z",
+          "wordCount": 3308,
+          "title": "Run Your Most Demanding Oracle Workloads in Azure without Sacrificing Performance or Scalability",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/357891iA825876EEB1CE69E/image-size/original?v=v2&px=-1"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/managed-virtual-networks-and-dns-for-synapse-analytics-to-enable/ba-p/3268509",
+          "author": "Anil Dwarakanath",
+          "description": "Overview\n \nWhile working with many customers who have implemented Azure Synapse Analytics and data management landing zone, we have seen customers face a few challenges while enabling seamless hybrid connectivity across Azure Synapse services and data integration. This blog talks about a few nuances of Managed Virtual network and how the data flows end to end between Azure Synapse and on-premises.\nManaged Virtual Network is a new capability that eases network configuration while creating services such as Azure Data Factory, Azure Synapse Analytics and Azure Purview. It builds on Private Links and Private Endpoints. Private Endpoints enables many Azure Services listed here to have a network interface in a customer Virtual Network and each Azure resource gets a private IP address from that V…",
+          "link": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/managed-virtual-networks-and-dns-for-synapse-analytics-to-enable/ba-p/3268509",
+          "publishedOn": "2022-03-28T08:53:56.000Z",
+          "wordCount": 1631,
+          "title": "Managed Virtual Networks and DNS for Synapse Analytics to enable a seamless data estate",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/358972iB555DA57A94A85C7?v=v2"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/well-architected-branches-for-assessing-workload-types/ba-p/3267234",
+          "author": "brauerblogs",
+          "description": "Microsoft offers prescriptive guidance called the Well-Architected Framework that optimizes workloads implemented and deployed on Azure. This guidance has been generalized for most workloads and creates a basis for reliable and secure applications that are cost optimized.\n \nWe have begun to build on this base content set to include more precise guidance for specific workload types, such as machine learning, data services and analytics, IoT, SAP, mission critical apps, and web apps. Machine Learning was the first branch from the base content, which came into fruition in the Fall of 2021.\n \nAzure oriented prescriptive guidance needs to consider multiple dimensions of the workload type. Thus, these branches are developed by teams across Microsoft, including those that are customer-facing, par…",
+          "link": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/well-architected-branches-for-assessing-workload-types/ba-p/3267234",
+          "publishedOn": "2022-03-25T21:36:50.000Z",
+          "wordCount": 1147,
+          "title": "Well-Architected Branches for Assessing Workload-Types",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/359349iEC9D9BE637409B58/image-size/original?v=v2&px=-1"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/self-managed-kubernetes-on-azure/ba-p/3122730",
+          "author": "monojit18",
+          "description": "Introduction\nCluster API is a Kubernetes community project started by the Kubernetes Special Interest Group (SIG) which brings declarative, Kubernetes-style APIs to cluster creation, configuration and management.\nThe supporting infrastructure on Azure for K8s cluster - like Virtual Machines, Virtual Networks, Load Balancers etc. as well as the Kubernetes cluster configuration are all defined through an YAML configuration file - thus making the K8s management seamless and easy for Infrastructure Architects across various environments.\n \nHigh Level Architecture\n\n \nComponents\nManagement Cluster\n\n\nWorks as the deployment plane for the CAPZ cluster\n\n\nThis can be any K8s cluster and can be a simple, light-weight one - e.g. Kind, MicroK8s etc. This article uses a 3 Nodes AKS cluster, just as an e…",
+          "link": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/self-managed-kubernetes-on-azure/ba-p/3122730",
+          "publishedOn": "2022-03-23T15:32:05.000Z",
+          "wordCount": 2272,
+          "title": "Self-managed Kubernetes on Azure",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/354883i0D84F4A22808B53D?v=v2"
         }
       ]
     },
@@ -432,7 +912,28 @@
       "title": "Microsoft Tech Community - Latest Blogs - Azure Migration and Modernization Blog",
       "feedUrl": "https://techcommunity.microsoft.com/plugins/custom/microsoft/o365/custom-blog-rss?tid=-2574164104208876465&board=AzureMigrationBlog&size=50",
       "siteUrl": "https://techcommunity.microsoft.com",
-      "articles": []
+      "articles": [
+        {
+          "id": "https://techcommunity.microsoft.com/t5/azure-migration-and/how-unified-visibility-from-datadog-supports-cloud-migrations/ba-p/3278590",
+          "author": "PaulGrimley_MSFT",
+          "description": "Migrating your applications from on-premises infrastructure to the cloud comes with a number of benefits, including increased agility, resilience, and scalability, as well as potential cost and IT overhead reductions. The Microsoft Cloud Adoption Framework for Azure (CAF) helps ensure a successful migration by providing a set of detailed guidelines, best practices and tools for the key stages of a cloud migration. These include the creation of a strategy and plan, ensuring your environment is ready to move to the cloud, and safely migrate your workloads. These methodologies provide a migration route that help customers adopt cloud with confidence.\n \nBut even with the right strategy, incidents can occur, especially if you lack continuous visibility into the health, performance, and makeup o…",
+          "link": "https://techcommunity.microsoft.com/t5/azure-migration-and/how-unified-visibility-from-datadog-supports-cloud-migrations/ba-p/3278590",
+          "publishedOn": "2022-04-07T10:18:27.000Z",
+          "wordCount": 943,
+          "title": "How Unified Visibility from Datadog Supports Cloud Migrations following the Cloud Adoption Framework",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/362031i856B93033A62FE27/image-size/original?v=v2&px=-1"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/azure-migration-and/migrating-active-server-pages-applications-to-azure-app-services/ba-p/3273816",
+          "author": "jometzg",
+          "description": "What I hope you will get out of this blog\nActive Server Pages AKA “Classic ASP” was a popular web framework in the late 1990s. There are still many of these running today. If you have such applications and need to migrate these off their existing infrastructure to Azure – then this blog is for you.\nThis blog presents a step-by-step guide to migrating such applications onto Azure using platform (PaaS) services. This will allow you to take such an application, package it as a container and deploy to Azure, using the simplest approach – targeting Azure App Services.\n \nSo, what is Classic ASP?\nActive Server Pages https://en.wikipedia.org/wiki/Active_Server_Pages was Microsoft’s first framework for building server-side web applications and was released late 1996.\nThe programming model was quite…",
+          "link": "https://techcommunity.microsoft.com/t5/azure-migration-and/migrating-active-server-pages-applications-to-azure-app-services/ba-p/3273816",
+          "publishedOn": "2022-04-05T16:03:58.000Z",
+          "wordCount": 2779,
+          "title": "Migrating Active Server Pages applications to Azure App Services",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/360592iBE4DE987FF8CF4A3?v=v2"
+        }
+      ]
     },
     {
       "title": "Microsoft Azure Blog > Developer",
@@ -467,6 +968,36 @@
           "publishedOn": "2022-05-24T08:00:01.000Z",
           "wordCount": 5648,
           "title": "Introducing the Microsoft Intelligent Data Platform",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "join-us-and-the-developer-community-to-celebrate-azure-static-web-apps",
+          "author": "Simona Cotin",
+          "description": "Join us on May 19, 2022, to celebrate the one-year anniversary of Azure Static Web Apps! Come connect with others in the developer community and increase your Azure Static Web Apps skills in a fun, collaborative way. Hear from keynote speakers like Scott Hanselman and Donovan Brown, along with our product team and Microsoft MVPs, in a one-and-a-half-hour event streaming live on Learn TV.",
+          "link": "https://azure.microsoft.com/blog/join-us-and-the-developer-community-to-celebrate-azure-static-web-apps/",
+          "publishedOn": "2022-05-09T08:00:53.000Z",
+          "wordCount": 4907,
+          "title": "Join us and the developer community to celebrate Azure Static Web Apps",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "enhance-your-classroom-experience-with-azure-lab-services-april-2022-update",
+          "author": "Fawad Khan",
+          "description": "We are excited to announce major updates to Azure Lab Services including enhanced lab creation and improved backend reliability, access performance, extended virtual network support, easier labs administration via new roles, improved cost tracking via Azure Cost Management service, availability of PowerShell module, and .NET API SDK for advanced automation and customization, and integration with Canvas learning management system.",
+          "link": "https://azure.microsoft.com/blog/enhance-your-classroom-experience-with-azure-lab-services-april-2022-update/",
+          "publishedOn": "2022-04-25T10:30:31.000Z",
+          "wordCount": 5047,
+          "title": "Enhance your classroom experience with Azure Lab Services—April 2022 update",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "introducing-the-new-azure-front-door-reimagined-for-modern-apps-and-content",
+          "author": "Sunil  Kishen",
+          "description": "Today, we are announcing the general availability of the new Azure Front Door, our native, modern cloud content delivery network (CDN) catering to both dynamic and static content acceleration with built-in turnkey security, and a simple and predictable pricing model. There are two Azure Front Door tiers—Azure Front Door Standard and Premium—that provide a unified, secure solution for delivering your applications, APIs, and content on Azure or anywhere.",
+          "link": "https://azure.microsoft.com/blog/introducing-the-new-azure-front-door-reimagined-for-modern-apps-and-content/",
+          "publishedOn": "2022-03-29T08:00:20.000Z",
+          "wordCount": 5572,
+          "title": "Introducing the new Azure Front Door: Reimagined for modern apps and content",
           "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
         }
       ]
@@ -515,6 +1046,56 @@
           "wordCount": 1811,
           "title": "Debugging a JVM Crash for LinkedIn – Part 2",
           "imageUrl": "https://devblogs.microsoft.com/java/wp-content/uploads/sites/51/2022/05/gdb-300x294.png"
+        },
+        {
+          "id": "https://devblogs.microsoft.com/java/?p=228931",
+          "author": "Brian Stafford",
+          "description": "Introduction\nThe post Debugging a JVM Crash for LinkedIn – Part 1 appeared first on Microsoft for Java Developers.",
+          "link": "https://devblogs.microsoft.com/java/debugging-a-jvm-crash-for-linkedin-part-1/",
+          "publishedOn": "2022-05-09T22:15:04.000Z",
+          "wordCount": 2709,
+          "title": "Debugging a JVM Crash for LinkedIn – Part 1",
+          "imageUrl": "https://devblogs.microsoft.com/java/wp-content/uploads/sites/51/2019/11/trexduke-blackwhite-cropped-half.png"
+        },
+        {
+          "id": "https://devblogs.microsoft.com/java/?p=228879",
+          "author": "Jialuo Gan",
+          "description": "Welcome to our new blog series for Azure Toolkit for IntelliJ. Azure Toolkit for IntelliJ is a plugin that allows you to easily create, develop, configure, test, and deploy Java applications to Azure. Our goal of this blog series is to keep you posted on the latest product updates,\nThe post Azure Toolkit for IntelliJ Update – April 2022 appeared first on Microsoft for Java Developers.",
+          "link": "https://devblogs.microsoft.com/java/azure-toolkit-for-intellij-update-april-2022/",
+          "publishedOn": "2022-04-29T10:18:45.000Z",
+          "wordCount": 1689,
+          "title": "Azure Toolkit for IntelliJ Update – April 2022",
+          "imageUrl": "https://devblogs.microsoft.com/java/wp-content/uploads/sites/51/2022/04/background1.png"
+        },
+        {
+          "id": "https://devblogs.microsoft.com/java/?p=228833",
+          "author": "Nick Zhu",
+          "description": "Hi everyone, welcome to the April update of Visual Studio Code Java. This time we are bringing you many exciting updates regarding our fundamental experience improvement including Java 18 support, inlay hints for parameter names, new language server status UX, lambda expression support in debugging and so on.\nThe post Java on Visual Studio Code Update – April 2022 appeared first on Microsoft for Java Developers.",
+          "link": "https://devblogs.microsoft.com/java/java-on-visual-studio-code-update-april-2022/",
+          "publishedOn": "2022-04-19T07:30:25.000Z",
+          "wordCount": 1366,
+          "title": "Java on Visual Studio Code Update – April 2022",
+          "imageUrl": "https://devblogs.microsoft.com/java/wp-content/uploads/sites/51/2022/04/englishcover.png"
+        },
+        {
+          "id": "https://devblogs.microsoft.com/java/?p=228758",
+          "author": "Jason Freeberg",
+          "description": "Earlier this year we reported that the Microsoft Build of OpenJDK was coming to Azure App Service in an upcoming platform update. That update has now rolled out to all regions and includes Java 17 and Tomcat 10.0, which are both brand new on App Service!\nThe post Java 17 and Tomcat 10.0 available on Azure App Service appeared first on Microsoft for Java Developers.",
+          "link": "https://devblogs.microsoft.com/java/java-17-and-tomcat-10-0-available-on-azure-app-service/",
+          "publishedOn": "2022-04-11T16:00:12.000Z",
+          "wordCount": 1720,
+          "title": "Java 17 and Tomcat 10.0 available on Azure App Service",
+          "imageUrl": "https://devblogs.microsoft.com/java/wp-content/uploads/sites/51/2022/03/java17screenshot-300x257.png"
+        },
+        {
+          "id": "https://devblogs.microsoft.com/java/?p=228790",
+          "author": "Nick Zhu",
+          "description": "Hi everyone, welcome to the March update of Visual Studio Code Java. This time we are going to bring you some recent update regarding our code completion optimization, Maven improvements and pre-release version of our Java extensions. Let’s get right into it!\nThe post Java on Visual Studio Code Update – March 2022 appeared first on Microsoft for Java Developers.",
+          "link": "https://devblogs.microsoft.com/java/java-on-visual-studio-code-update-march-2022/",
+          "publishedOn": "2022-03-21T09:11:15.000Z",
+          "wordCount": 1617,
+          "title": "Java on Visual Studio Code Update – March 2022",
+          "imageUrl": "https://devblogs.microsoft.com/java/wp-content/uploads/sites/51/2022/03/englishcover.png"
         }
       ]
     },
@@ -786,6 +1367,36 @@
           "wordCount": 2284,
           "title": "Azure SQL Database Change Stream with Debezium",
           "imageUrl": "https://devblogs.microsoft.com/azure-sql/wp-content/uploads/sites/56/2022/05/1_OpmqeWf_MgF1QqN7L4SOIw.jpeg"
+        },
+        {
+          "id": "https://devblogs.microsoft.com/azure-sql/?p=1284",
+          "author": "Davide Mauri",
+          "description": "There are many ways in which an Azure SQL database can be created, and if you are new to the development all those different options can be quite intimidating. Let me show you, in just a few steps, how easy it is instead.\nThe post Create and connect to an Azure SQL DB in 6 easy steps appeared first on Azure SQL Database Devs’ Corner.",
+          "link": "https://devblogs.microsoft.com/azure-sql/create-and-connect-to-an-azure-sql-db/",
+          "publishedOn": "2022-05-09T18:56:49.000Z",
+          "wordCount": 1459,
+          "title": "Create and connect to an Azure SQL DB in 6 easy steps",
+          "imageUrl": "https://devblogs.microsoft.com/azure-sql/wp-content/uploads/sites/56/2022/05/pexels-pixabay-256302-1440.jpg"
+        },
+        {
+          "id": "https://devblogs.microsoft.com/azure-sql/?p=1248",
+          "author": "Abhiman Tiwari",
+          "description": "We are excited to announce the general availability (GA) of change data capture (CDC) in Azure SQL Database.\nThe post Announcing General Availability of Change Data Capture (CDC) on Azure SQL Database appeared first on Azure SQL Database Devs’ Corner.",
+          "link": "https://devblogs.microsoft.com/azure-sql/announcing-general-availability-of-change-data-capture-cdc-on-azure-sql-database/",
+          "publishedOn": "2022-04-27T17:00:28.000Z",
+          "wordCount": 1595,
+          "title": "Announcing General Availability of Change Data Capture (CDC) on Azure SQL Database",
+          "imageUrl": "https://devblogs.microsoft.com/azure-sql/wp-content/uploads/sites/56/2020/04/sql-database-3-560.png"
+        },
+        {
+          "id": "https://devblogs.microsoft.com/azure-sql/?p=1211",
+          "author": "Silvano Coriani",
+          "description": "Hasura makes data access easy, by instantly composing a GraphQL API that is backed by databases and services so that the developer team (or API consumers) get productive immediately. The nature of GraphQL itself and Hasura’s dynamic approach makes integration and iteration easy.\nThe post Build GraphQL apps with Hasura and Azure SQL Database appeared first on Azure SQL Database Devs’ Corner.",
+          "link": "https://devblogs.microsoft.com/azure-sql/build-graphql-apps-with-hasura-and-azure-sql-database/",
+          "publishedOn": "2022-03-15T17:32:38.000Z",
+          "wordCount": 2005,
+          "title": "Build GraphQL apps with Hasura and Azure SQL Database",
+          "imageUrl": "https://devblogs.microsoft.com/azure-sql/wp-content/uploads/sites/56/2022/03/Pic1.jpg"
         }
       ]
     },
@@ -803,6 +1414,16 @@
           "wordCount": 1016,
           "title": "Watch Now! Azure Cosmos DB Essentials Season 3",
           "imageUrl": "https://devblogs.microsoft.com/cosmosdb/wp-content/uploads/sites/52/2022/05/Azure-Cosmos-DB-Essentials.png"
+        },
+        {
+          "id": "https://devblogs.microsoft.com/cosmosdb/?p=4064",
+          "author": "Rodrigo Souza",
+          "description": "Azure Synapse Link: Announcing support for existing Azure Cosmos DB containers and seamless Power BI integration. \nThe post Azure Synapse Link: Announcing support for existing Azure Cosmos DB containers and seamless Power BI integration appeared first on Azure Cosmos DB Blog.",
+          "link": "https://devblogs.microsoft.com/cosmosdb/azure-synapse-link-existing-containers-and-power-bi-integration/",
+          "publishedOn": "2022-03-30T15:55:14.000Z",
+          "wordCount": 1372,
+          "title": "Azure Synapse Link: Announcing support for existing Azure Cosmos DB containers and seamless Power BI integration",
+          "imageUrl": "https://devblogs.microsoft.com/cosmosdb/wp-content/uploads/sites/52/2020/05/a-circuit-board-description-automatically-generat-2-e1589831964774.png"
         }
       ]
     },
@@ -820,6 +1441,26 @@
           "wordCount": 1748,
           "title": "Chaos engineering to improve application resiliency using Azure Chaos Studio",
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/377535i3E981F536BF58F79/image-size/original?v=v2&px=-1"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/azure-governance-and-management/azure-portal-march-2022-updates/ba-p/3282525",
+          "author": "Allison_Cordle",
+          "description": "Compute > Virtual Machines\n\nAzure Arc virtual machines now in public preview - Azure Arc virtual machines now in public preview – AVS, VMware and Azure Stack\n\nContainers > AKS/Kubernetes\n\nTwo options for quick start applications for Azure Kubernetes Service now available\n\nIntune \n\nUpdates to Microsoft Intune \n\nLet’s look at each of these updates in greater detail. \n \nCompute > Virtual Machines\nAzure Arc virtual machines now in public preview – AVS, VMware and Azure Stack HCI \n \nWith Azure Arc, customers can manage infrastructure from non-Azure environments, including on-premises, other public clouds, and edge devices. Azure Arc-enabled virtual machines extend these capabilities to common host platforms such as AVS, VMware, and Azure Stack HCI. Customers with existing non-Azure virtual mach…",
+          "link": "https://techcommunity.microsoft.com/t5/azure-governance-and-management/azure-portal-march-2022-updates/ba-p/3282525",
+          "publishedOn": "2022-04-14T00:21:13.000Z",
+          "wordCount": 1519,
+          "title": "Azure portal March 2022 updates",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/363892iE14CF16CE4141352?v=v2"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/azure-governance-and-management/achieve-cost-effectiveness-using-vault-archive-tier-for-azure/ba-p/3277296",
+          "author": "Debpriya_Bose",
+          "description": "As organizations are scaling up their cloud adoption, the accompanying cost increase becomes a constant hindrance towards a seamless cloud footprint expansion. The situation is no different when it comes to cloud backup. As more organizations start backing up their resources in cloud, efficient cost management techniques become one of the key pivots that uniquely differentiates one backup service provider from another.\n \nAzure Backup already offers a series of capabilities that address your cost-related concerns as you decide to scale up your cloud backup usage. The latest addition to this list is Azure Backup’s capability to move your long-term recovery points to a low-cost archive tier. Azure Backup’s storage options are presented in 3 broad tiers\n\nSnapshot/Operational tier – The backup …",
+          "link": "https://techcommunity.microsoft.com/t5/azure-governance-and-management/achieve-cost-effectiveness-using-vault-archive-tier-for-azure/ba-p/3277296",
+          "publishedOn": "2022-04-07T05:09:15.000Z",
+          "wordCount": 1457,
+          "title": "Achieve cost-effectiveness using vault-archive tier for Azure Backup",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/361679i676A7674861AFEB6/image-size/original?v=v2&px=-1"
         }
       ]
     },
@@ -847,6 +1488,36 @@
           "wordCount": 1385,
           "title": "Join Microsoft at KubeCon + CloudNativeCon Europe 2022",
           "imageUrl": "https://cloudblogs.microsoft.com/uploads/prod/sites/37/2019/04/V_1O61BK.jpg"
+        },
+        {
+          "id": "https://cloudblogs.microsoft.com/opensource/2022/05/02/optimizing-and-deploying-transformer-int8-inference-with-onnx-runtime-tensorrt-on-nvidia-gpus/",
+          "author": "Emma Ning",
+          "description": "Mohit Ayani, Solutions Architect, NVIDIA Shang Zhang, Senior AI Developer Technology Engineer, NVIDIA Jay Rodge, Product Marketing Manager-AI, NVIDIA Transformer-based models have revolutionized the natural language processing (NLP) domain. Ever since its inception, transformer architecture has been integrated into models like Bidirectional Encoder Representations from Transformers (BERT) and Generative Pre-trained Transformer (GPT) for performing tasksRead more\nThe post Optimizing and deploying transformer INT8 inference with ONNX Runtime-TensorRT on NVIDIA GPUs appeared first on Microsoft Open Source Blog.",
+          "link": "https://cloudblogs.microsoft.com/opensource/2022/05/02/optimizing-and-deploying-transformer-int8-inference-with-onnx-runtime-tensorrt-on-nvidia-gpus/",
+          "publishedOn": "2022-05-02T18:00:00.000Z",
+          "wordCount": 1675,
+          "title": "Optimizing and deploying transformer INT8 inference with ONNX Runtime-TensorRT on NVIDIA GPUs",
+          "imageUrl": "https://cloudblogs.microsoft.com/uploads/prod/sites/37/2022/04/Mohit-150x150.webp"
+        },
+        {
+          "id": "https://cloudblogs.microsoft.com/opensource/2022/04/19/scaling-up-pytorch-inference-serving-billions-of-daily-nlp-inferences-with-onnx-runtime/",
+          "author": "Faith Xu",
+          "description": "Scale, performance, and efficient deployment of state-of-the-art Deep Learning models are ubiquitous challenges as applied machine learning grows across the industry. We're happy to see that the ONNX Runtime Machine Learning model inferencing solution we've built and use in high-volume Microsoft products and services also resonates with our open source community, enabling new capabilities thatRead more\nThe post Scaling-up PyTorch inference: Serving billions of daily NLP inferences with ONNX Runtime appeared first on Microsoft Open Source Blog.",
+          "link": "https://cloudblogs.microsoft.com/opensource/2022/04/19/scaling-up-pytorch-inference-serving-billions-of-daily-nlp-inferences-with-onnx-runtime/",
+          "publishedOn": "2022-04-19T16:00:00.000Z",
+          "wordCount": 2618,
+          "title": "Scaling-up PyTorch inference: Serving billions of daily NLP inferences with ONNX Runtime",
+          "imageUrl": "https://cloudblogs.microsoft.com/uploads/prod/sites/37/2022/04/hfXort-1024x536.jpg"
+        },
+        {
+          "id": "https://cloudblogs.microsoft.com/opensource/2022/03/21/supporting-efficient-large-model-training-on-amd-instinct-gpus-with-deepspeed/",
+          "author": "Olatunji Ruwase and Jeff Rasley",
+          "description": "This post was co-authored by Jithun Nair and Aswin Mathews, members of technical staff at AMD. In recent years, large-scale deep learning models have demonstrated impressive capabilities, excelling at tasks across natural language processing, computer vision, and speech domains. Companies now use these models to power novel AI-driven user experiences across a whole spectrum ofRead more\nThe post Supporting efficient large model training on AMD Instinct™ GPUs with DeepSpeed appeared first on Microsoft Open Source Blog.",
+          "link": "https://cloudblogs.microsoft.com/opensource/2022/03/21/supporting-efficient-large-model-training-on-amd-instinct-gpus-with-deepspeed/",
+          "publishedOn": "2022-03-21T16:00:00.000Z",
+          "wordCount": 2130,
+          "title": "Supporting efficient large model training on AMD Instinct™ GPUs with DeepSpeed",
+          "imageUrl": "https://cloudblogs.microsoft.com/uploads/prod/sites/37/2022/03/Picture1-1024x602.webp"
         }
       ]
     },
@@ -1743,6 +2414,1116 @@
           "publishedOn": "2022-05-12T15:00:33.000Z",
           "wordCount": 4387,
           "title": "Generally available: OCR supports 164 languages in the Cognitive Services Computer Vision",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "azure-sql-generally-available-updates-for-early-may-2022",
+          "author": null,
+          "description": "General availability enhancements and updates released for Azure SQL.",
+          "link": "https://azure.microsoft.com/en-us/updates/azure-sql-generally-available-updates-for-early-may-2022/",
+          "publishedOn": "2022-05-11T16:00:22.000Z",
+          "wordCount": 4294,
+          "title": "Azure SQL—Generally available updates for early May 2022",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "generally-available-it-service-management-integration-with-secure-webhook",
+          "author": null,
+          "description": "IT Service Management is now integrated with secure webhook, an updated version that allows you to create work items in an ITSM tool when Azure Monitor sends alerts.",
+          "link": "https://azure.microsoft.com/en-us/updates/generally-available-it-service-management-integration-with-secure-webhook/",
+          "publishedOn": "2022-05-11T16:00:20.000Z",
+          "wordCount": 4420,
+          "title": "Generally available: IT Service Management Integration with secure webhook",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "public-preview-azure-container-apps-now-support-log-streaming-and-console-connect",
+          "author": null,
+          "description": "You can now connect to a container console and use live log streaming for testing and diagnosis.",
+          "link": "https://azure.microsoft.com/en-us/updates/public-preview-azure-container-apps-now-support-log-streaming-and-console-connect/",
+          "publishedOn": "2022-05-11T16:00:20.000Z",
+          "wordCount": 4352,
+          "title": "Public preview: Azure Container Apps now support log streaming and console connect",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "public-preview-static-web-apps-support-skipping-api-builds-via-azure-pipelines",
+          "author": null,
+          "description": "You can now skip the default API build via Azure pipelines.",
+          "link": "https://azure.microsoft.com/en-us/updates/public-preview-static-web-apps-support-skipping-api-builds-via-azure-pipelines/",
+          "publishedOn": "2022-05-11T16:00:19.000Z",
+          "wordCount": 4321,
+          "title": "Public preview: Static Web Apps support skipping API builds via Azure pipelines",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "public-preview-improved-azure-devops-support-in-static-web-apps-2",
+          "author": null,
+          "description": "You no longer have to go through a series of manual steps to configure your DevOps CI/CD pipeline for your Static Web Apps project.",
+          "link": "https://azure.microsoft.com/en-us/updates/public-preview-improved-azure-devops-support-in-static-web-apps-2/",
+          "publishedOn": "2022-05-11T16:00:18.000Z",
+          "wordCount": 4317,
+          "title": "Public preview: Improved Azure DevOps support in Static Web Apps",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "trusted-launch-azure-compute-gallery-support",
+          "author": null,
+          "description": "Azure Compute Gallery now allows you to create and share custom images for Trusted launch virtual machines",
+          "link": "https://azure.microsoft.com/en-us/updates/trusted-launch-azure-compute-gallery-support/",
+          "publishedOn": "2022-05-11T15:00:18.000Z",
+          "wordCount": 4348,
+          "title": "Generally available: Azure Compute Gallery support for trusted launch Virtual Machines",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "azure-iot-edge-supports-debian-bullseye-arm32v7",
+          "author": null,
+          "description": "Debian is included in the Tier 1 OS support list for ARM32v7 devices. Official packages for Bullseye on ARM32v7 are now available on packages.microsoft.com.",
+          "link": "https://azure.microsoft.com/en-us/updates/azure-iot-edge-supports-debian-bullseye-arm32v7/",
+          "publishedOn": "2022-05-09T16:00:58.000Z",
+          "wordCount": 4349,
+          "title": "Generally available: Azure IoT Edge supports Debian Bullseye on ARM32v7",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "policy-to-control-the-minimum-tls-version-used-with-azure-service-bus-now-in-public-preview",
+          "author": null,
+          "description": "To enforce stricter security measures, you can now configure your Service Bus namespace to require that clients send and receive data with a minimum version of TLS.",
+          "link": "https://azure.microsoft.com/en-us/updates/policy-to-control-the-minimum-tls-version-used-with-azure-service-bus-now-in-public-preview/",
+          "publishedOn": "2022-05-05T19:00:53.000Z",
+          "wordCount": 4440,
+          "title": "Public preview: Control the minimum TLS version used with Azure Service Bus",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "azure-resource-health-for-virtual-network-nat",
+          "author": null,
+          "description": "With Azure Resource Health, diagnose and get support for service problems that affect Virtual Network NAT (NAT gateway).",
+          "link": "https://azure.microsoft.com/en-us/updates/azure-resource-health-for-virtual-network-nat/",
+          "publishedOn": "2022-05-05T17:00:52.000Z",
+          "wordCount": 4452,
+          "title": "General availability: Virtual Network NAT health checks available via Resource Health",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "generally-available-enhancements-to-azure-web-application-firewall",
+          "author": null,
+          "description": "Latest updates and new enhancements available for Azure Web Application Firewall (WAF).",
+          "link": "https://azure.microsoft.com/en-us/updates/generally-available-enhancements-to-azure-web-application-firewall/",
+          "publishedOn": "2022-05-03T17:00:21.000Z",
+          "wordCount": 4520,
+          "title": "Generally available: Enhancements to Azure Web Application Firewall",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "public-preview-event-grid-enables-user-authorization-to-create-partner-topics",
+          "author": null,
+          "description": "Gain a greater security stance by explicitly authorizing a partner to create partner topics or partner destinations in your Azure subscription.",
+          "link": "https://azure.microsoft.com/en-us/updates/public-preview-event-grid-enables-user-authorization-to-create-partner-topics/",
+          "publishedOn": "2022-05-03T16:00:21.000Z",
+          "wordCount": 4367,
+          "title": "Public preview: Event Grid enables user authorization to create partner topics",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "public-preview-static-web-apps-support-for-preview-environments-in-azure-devops",
+          "author": null,
+          "description": "You can now deploy Static Web Apps to staging environments using Azure DevOps.",
+          "link": "https://azure.microsoft.com/en-us/updates/public-preview-static-web-apps-support-for-preview-environments-in-azure-devops/",
+          "publishedOn": "2022-05-02T20:56:48.000Z",
+          "wordCount": 4380,
+          "title": "Public preview: Static Web Apps support for preview environments in Azure DevOps",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "generally-available-object-replication-for-premium-block-blob-and-rule-limit-increase-to-1000-on-azure-blob-storage",
+          "author": null,
+          "description": "You can now replicate your block blobs to region of your choice with object replication for premium block blobs and rule limit is increased to 1000 containers per replication policy.",
+          "link": "https://azure.microsoft.com/en-us/updates/generally-available-object-replication-for-premium-block-blob-and-rule-limit-increase-to-1000-on-azure-blob-storage/",
+          "publishedOn": "2022-05-02T19:00:07.000Z",
+          "wordCount": 4454,
+          "title": "General availability: Object replication on premium blob storage and rule limit increased",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "general-availability-azure-machine-learning-announcements-for-march-2022",
+          "author": null,
+          "description": "Label data with text classification using machine learning assist.",
+          "link": "https://azure.microsoft.com/en-us/updates/general-availability-azure-machine-learning-announcements-for-march-2022/",
+          "publishedOn": "2022-05-02T15:00:06.000Z",
+          "wordCount": 4302,
+          "title": "General availability: Azure Machine Learning announcements for March 2022",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "public-preview-azure-machine-learning-announcements-for-march-2022",
+          "author": null,
+          "description": "New features include multi-class, multi-label, and named entity recognition, search for Azure Machine Learning assets across multiple workspaces, and label with text named entity recognition.",
+          "link": "https://azure.microsoft.com/en-us/updates/public-preview-azure-machine-learning-announcements-for-march-2022/",
+          "publishedOn": "2022-05-02T15:00:05.000Z",
+          "wordCount": 4389,
+          "title": "Public preview: Azure Machine Learning announcements for March 2022",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "public-preview-azure-machine-learning-announcements-for-april-2022",
+          "author": null,
+          "description": "Compartmentalize access to data with identity passthrough and configure email notifications from Azure Learning.",
+          "link": "https://azure.microsoft.com/en-us/updates/public-preview-azure-machine-learning-announcements-for-april-2022/",
+          "publishedOn": "2022-05-02T15:00:04.000Z",
+          "wordCount": 4348,
+          "title": "Public preview: Azure Machine Learning announcements for April 2022",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "automated-key-rotation-in-azure-key-vault-is-now-available",
+          "author": null,
+          "description": "Key Vault now enables you to automatically rotate keys for encryption of your data.",
+          "link": "https://azure.microsoft.com/en-us/updates/automated-key-rotation-in-azure-key-vault-is-now-available/",
+          "publishedOn": "2022-04-29T04:00:11.000Z",
+          "wordCount": 4370,
+          "title": "Generally available: Automated key rotation in Azure Key Vault",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "generally-available-azure-functions-linux-elastic-premium-plan-increased-maximum-scaleout-limits",
+          "author": null,
+          "description": "Maximum scale-out limits for Functions Linux Premium plans have been increased in a number of regions.",
+          "link": "https://azure.microsoft.com/en-us/updates/generally-available-azure-functions-linux-elastic-premium-plan-increased-maximum-scaleout-limits/",
+          "publishedOn": "2022-04-28T15:00:03.000Z",
+          "wordCount": 4312,
+          "title": "Generally available: Azure Functions Linux Elastic Premium plan increased maximum scale-out limits",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "communitygallerypreview",
+          "author": null,
+          "description": "New Azure Compute Gallery feature ‘community gallery’ makes your private images public.",
+          "link": "https://azure.microsoft.com/en-us/updates/communitygallerypreview/",
+          "publishedOn": "2022-04-27T19:00:12.000Z",
+          "wordCount": 4335,
+          "title": "Public preview: Azure Compute Gallery feature ‘community gallery’",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "azure-sql-database-storage-limits-increase-for-selected-compute-sizes-in-general-purpose-and-business-critical-tiers",
+          "author": null,
+          "description": "Data storage limits have increased over 30% for selected mid-size compute configurations to help reduce costs.",
+          "link": "https://azure.microsoft.com/en-us/updates/azure-sql-database-storage-limits-increase-for-selected-compute-sizes-in-general-purpose-and-business-critical-tiers/",
+          "publishedOn": "2022-04-27T18:00:11.000Z",
+          "wordCount": 4369,
+          "title": "Generally available: Azure SQL Database storage limits increase for selected compute sizes",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "azure-sql-generally-available-updates-for-late-april-2022",
+          "author": null,
+          "description": "Generally available enhancements and updates released for Azure SQL.",
+          "link": "https://azure.microsoft.com/en-us/updates/azure-sql-generally-available-updates-for-late-april-2022/",
+          "publishedOn": "2022-04-27T16:00:51.000Z",
+          "wordCount": 4301,
+          "title": "Azure SQL—Generally available updates for late April 2022",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "azure-sql-public-preview-updates-for-late-april-2022",
+          "author": null,
+          "description": "Public preview enhancements and updates released for Azure SQL.",
+          "link": "https://azure.microsoft.com/en-us/updates/azure-sql-public-preview-updates-for-late-april-2022/",
+          "publishedOn": "2022-04-27T16:00:50.000Z",
+          "wordCount": 4300,
+          "title": "Azure SQL—Public preview updates for late April 2022",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "generally-available-azure-database-for-mysql-flexible-server-higher-burstable-compute",
+          "author": null,
+          "description": "Azure Database for MySQL - Flexible Server is now offering more options for burstable compute for you to choose from depending on your workload.",
+          "link": "https://azure.microsoft.com/en-us/updates/generally-available-azure-database-for-mysql-flexible-server-higher-burstable-compute/",
+          "publishedOn": "2022-04-27T16:00:50.000Z",
+          "wordCount": 4408,
+          "title": "Generally available: Azure Database for MySQL – Flexible Server higher burstable compute",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "generally-available-azure-database-for-postgresql-hyperscale-citus-now-includes-pgbouncer-117",
+          "author": null,
+          "description": "Create a Hyperscale Citus) server group using the latest 1.7 version of PgBouncer, a popular connection pooler for Postgres used with Azure Database for PostgreSQL – Hyperscale (Citus).",
+          "link": "https://azure.microsoft.com/en-us/updates/generally-available-azure-database-for-postgresql-hyperscale-citus-now-includes-pgbouncer-117/",
+          "publishedOn": "2022-04-27T16:00:49.000Z",
+          "wordCount": 4417,
+          "title": "Generally available: Azure Database for PostgreSQL – Hyperscale (Citus) now includes PgBouncer 1.17",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "public-preview-azure-managed-instance-for-apache-cassandra-enhancements",
+          "author": null,
+          "description": "Azure Managed Instance for Apache Cassandra now includes support for deploying Cassandra 4.0 clusters and running nodetool commands using Azure CLI.",
+          "link": "https://azure.microsoft.com/en-us/updates/public-preview-azure-managed-instance-for-apache-cassandra-enhancements/",
+          "publishedOn": "2022-04-27T16:00:48.000Z",
+          "wordCount": 4346,
+          "title": "Public preview: Azure Managed Instance for Apache Cassandra enhancements",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "generally-available-database-templates-in-azure-synapse-analytics",
+          "author": null,
+          "description": "Azure Synapse database templates are industry-specific schema definitions that provide a standardized way for you to store and shape data, enabling rapid digital transformation.",
+          "link": "https://azure.microsoft.com/en-us/updates/generally-available-database-templates-in-azure-synapse-analytics/",
+          "publishedOn": "2022-04-27T16:00:48.000Z",
+          "wordCount": 4405,
+          "title": "Generally available: Database templates in Azure Synapse Analytics",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "general-availability-azure-synapse-link-now-supports-existing-azure-cosmos-db-containers",
+          "author": null,
+          "description": "Enable Azure Synapse Link on your existing Azure Cosmos DB containers using the SQL API for Azure Cosmos DB.",
+          "link": "https://azure.microsoft.com/en-us/updates/general-availability-azure-synapse-link-now-supports-existing-azure-cosmos-db-containers/",
+          "publishedOn": "2022-04-27T16:00:47.000Z",
+          "wordCount": 4349,
+          "title": "General availability: Azure Synapse Link now supports existing Azure Cosmos DB containers",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "general-availability-azure-cosmos-db-portal-azure-synapse-link-seamless-power-bi",
+          "author": null,
+          "description": "Build Power BI reports using Azure Synapse Link from the Azure Cosmos DB portal.",
+          "link": "https://azure.microsoft.com/en-us/updates/general-availability-azure-cosmos-db-portal-azure-synapse-link-seamless-power-bi/",
+          "publishedOn": "2022-04-27T16:00:47.000Z",
+          "wordCount": 4354,
+          "title": "General availability: Azure Cosmos DB portal—Azure Synapse Link seamless Power BI",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "general-availability-unique-partial-indexes-in-azure-cosmos-db-api-for-mongodb",
+          "author": null,
+          "description": "Specify a partialFilterExpression along with the 'unique' constraint in your Azure Cosmos DB API for MongoDB index.",
+          "link": "https://azure.microsoft.com/en-us/updates/general-availability-unique-partial-indexes-in-azure-cosmos-db-api-for-mongodb/",
+          "publishedOn": "2022-04-27T16:00:44.000Z",
+          "wordCount": 4359,
+          "title": "General availability: Unique partial indexes in Azure Cosmos DB API for MongoDB",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "public-preview-azure-storage-as-share-in-windows-code-in-app-service",
+          "author": null,
+          "description": "Mount Azure Files as a local share in Windows Code in Azure App Service.",
+          "link": "https://azure.microsoft.com/en-us/updates/public-preview-azure-storage-as-share-in-windows-code-in-app-service/",
+          "publishedOn": "2022-04-27T16:00:44.000Z",
+          "wordCount": 4367,
+          "title": "Public preview: Azure Storage as share in Windows Code in App Service",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "public-preview-azure-functions-now-supports-powershell-72",
+          "author": null,
+          "description": "You can now use the latest version of PowerShell with Azure Functions.",
+          "link": "https://azure.microsoft.com/en-us/updates/public-preview-azure-functions-now-supports-powershell-72/",
+          "publishedOn": "2022-04-27T16:00:43.000Z",
+          "wordCount": 4301,
+          "title": "Public preview: Azure Functions now supports PowerShell 7.2",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "public-preview-static-web-apps-now-supports-gitlab-and-bitbucket-for-cicd",
+          "author": null,
+          "description": "You can now use Gitlab and Bitbucket as your CI/CD providers for Static Web Apps.",
+          "link": "https://azure.microsoft.com/en-us/updates/public-preview-static-web-apps-now-supports-gitlab-and-bitbucket-for-cicd/",
+          "publishedOn": "2022-04-27T16:00:42.000Z",
+          "wordCount": 4320,
+          "title": "Public preview: Static Web Apps now supports Gitlab and Bitbucket for CI/CD",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "public-preview-azure-static-web-apps-now-support-skipping-api-builds",
+          "author": null,
+          "description": "You can now choose to skip your default API builds.",
+          "link": "https://azure.microsoft.com/en-us/updates/public-preview-azure-static-web-apps-now-support-skipping-api-builds/",
+          "publishedOn": "2022-04-27T16:00:41.000Z",
+          "wordCount": 4320,
+          "title": "Public preview: Azure Static Web Apps now support skipping API builds",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "generally-available-scaledown-mode-in-aks",
+          "author": null,
+          "description": "You can now select if you would like your AKS nodes to be deleted or deallocated when scaled down.",
+          "link": "https://azure.microsoft.com/en-us/updates/generally-available-scaledown-mode-in-aks/",
+          "publishedOn": "2022-04-27T16:00:34.000Z",
+          "wordCount": 4348,
+          "title": "Generally available: Scale-down mode in AKS",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "generally-available-node-pool-snapshot",
+          "author": null,
+          "description": "You can now take a snapshot of the node pool configuration and then create a node pool from that snapshot.",
+          "link": "https://azure.microsoft.com/en-us/updates/generally-available-node-pool-snapshot/",
+          "publishedOn": "2022-04-27T16:00:27.000Z",
+          "wordCount": 4305,
+          "title": "Generally available: Node pool snapshot",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "generally-available-group-managed-service-accounts-security-policy-support-on-windows",
+          "author": null,
+          "description": "AKS now supports Group Managed Service Accounts (GMSA) configuration, as well as maintaining trust during scale operations in the Windows nodepool.",
+          "link": "https://azure.microsoft.com/en-us/updates/generally-available-group-managed-service-accounts-security-policy-support-on-windows/",
+          "publishedOn": "2022-04-27T16:00:20.000Z",
+          "wordCount": 4324,
+          "title": "Generally available: Group Managed Service Accounts security policy support on Windows",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "public-preview-azure-container-apps-builtin-authentication-microsoft-azure-container-apps",
+          "author": null,
+          "description": "Use configured identify providers to sign in to your container apps by writing little or no code.",
+          "link": "https://azure.microsoft.com/en-us/updates/public-preview-azure-container-apps-builtin-authentication-microsoft-azure-container-apps/",
+          "publishedOn": "2022-04-27T16:00:10.000Z",
+          "wordCount": 4358,
+          "title": "Public preview: Azure Container Apps built-in authentication Microsoft Azure Container Apps",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "blocking-domain-fronting-behavior-on-azure-front-door-azure-front-door-classic-and-azure-cdn-standard-from-microsoft-classic",
+          "author": null,
+          "description": "Block domain fronting behavior on Azure Front Door, Azure Front Door (classic), and Azure CDN Standard from Microsoft (classic) resources.",
+          "link": "https://azure.microsoft.com/en-us/updates/blocking-domain-fronting-behavior-on-azure-front-door-azure-front-door-classic-and-azure-cdn-standard-from-microsoft-classic/",
+          "publishedOn": "2022-04-25T17:00:31.000Z",
+          "wordCount": 4429,
+          "title": "Generally available: Controls to block domain fronting behavior on customer resources",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "general-availability-app-service-networking-capabilities-added-to-basic-pricing-tier",
+          "author": null,
+          "description": "Virtual network integration and private endpoints now supported in Basic pricing tier.",
+          "link": "https://azure.microsoft.com/en-us/updates/general-availability-app-service-networking-capabilities-added-to-basic-pricing-tier/",
+          "publishedOn": "2022-04-21T16:00:29.000Z",
+          "wordCount": 4407,
+          "title": "General availability: App Service - Networking capabilities added to Basic pricing tier",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "public-preview-app-service-configure-networking-in-azure-portal-during-app-creation",
+          "author": null,
+          "description": "VNet integration and private endpoints options now configurable when creating a web application.",
+          "link": "https://azure.microsoft.com/en-us/updates/public-preview-app-service-configure-networking-in-azure-portal-during-app-creation/",
+          "publishedOn": "2022-04-21T16:00:28.000Z",
+          "wordCount": 4350,
+          "title": "Public preview: App Service - Configure networking in Azure Portal during app creation",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "generally-available-rehydrate-an-archived-blob-to-a-different-storage-account",
+          "author": null,
+          "description": "Segregate your backup data in different storage accounts with Archive across-accounts copy.",
+          "link": "https://azure.microsoft.com/en-us/updates/generally-available-rehydrate-an-archived-blob-to-a-different-storage-account/",
+          "publishedOn": "2022-04-20T19:00:15.000Z",
+          "wordCount": 4351,
+          "title": "Generally available: Rehydrate an archived blob to a different storage account",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "public-preview-stable-urls-for-preview-environments-in-azure-static-web-apps",
+          "author": null,
+          "description": "Azure Static Web Apps preview deployments now support stable URLs.",
+          "link": "https://azure.microsoft.com/en-us/updates/public-preview-stable-urls-for-preview-environments-in-azure-static-web-apps/",
+          "publishedOn": "2022-04-18T19:14:23.000Z",
+          "wordCount": 4393,
+          "title": "Public preview: Stable URLs for preview environments in Azure Static Web Apps",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "general-availability-azure-archive-storage-now-available-in-switzerland-north",
+          "author": null,
+          "description": "Reduce spending by storing cold data to Azure Archive Storage, now in new regions.",
+          "link": "https://azure.microsoft.com/en-us/updates/general-availability-azure-archive-storage-now-available-in-switzerland-north/",
+          "publishedOn": "2022-04-18T19:00:44.000Z",
+          "wordCount": 4337,
+          "title": "General availability: Azure Archive Storage now available in Switzerland North",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "public-preview-azure-media-services-lo-latency-live-streaming-llhls",
+          "author": null,
+          "description": "Azure Media Services is announcing the preview of low latency HLS with glass-to-glass latency as low as 3 seconds with support for automatic transcriptions and DRM.",
+          "link": "https://azure.microsoft.com/en-us/updates/public-preview-azure-media-services-lo-latency-live-streaming-llhls/",
+          "publishedOn": "2022-04-13T17:00:26.000Z",
+          "wordCount": 4483,
+          "title": "In development: Azure Media Services low-latency live streaming",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "generally-available-azure-sql-migration-extension-for-azure-data-studio",
+          "author": null,
+          "description": "Assess, receive Azure recommendations, and then migrate your SQL Server databases using the Azure SQL Migration extension in Azure Data Studio.",
+          "link": "https://azure.microsoft.com/en-us/updates/generally-available-azure-sql-migration-extension-for-azure-data-studio/",
+          "publishedOn": "2022-04-13T16:00:37.000Z",
+          "wordCount": 4376,
+          "title": "Generally available: Azure SQL Migration extension for Azure Data Studio",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "general-availability-azure-cosmos-db-autoscale-rus-entry-point-is-4x-lower",
+          "author": null,
+          "description": "Set autoscale on your database or container with a new scale range of 100 RU/s – 1000 RU/s.",
+          "link": "https://azure.microsoft.com/en-us/updates/general-availability-azure-cosmos-db-autoscale-rus-entry-point-is-4x-lower/",
+          "publishedOn": "2022-04-13T16:00:36.000Z",
+          "wordCount": 4429,
+          "title": "General availability: Azure Cosmos DB autoscale RU/s entry point is 4x lower",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "public-preview-azure-cosmos-db-api-for-mongodb-unique-index-reindexing",
+          "author": null,
+          "description": "Unique indexes can now be created in existing collections with data in the API for MongoDB.",
+          "link": "https://azure.microsoft.com/en-us/updates/public-preview-azure-cosmos-db-api-for-mongodb-unique-index-reindexing/",
+          "publishedOn": "2022-04-13T16:00:35.000Z",
+          "wordCount": 4355,
+          "title": "Public preview: Azure Cosmos DB API for MongoDB unique index re-indexing",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "general-availability-zone-redundancy-for-azure-sql-database-general-purpose-tier",
+          "author": null,
+          "description": "Make your general purpose provisioned and serverless Azure SQL databases and elastic pools more resilient with catastrophic datacenter outages, without any changes of the application logic by selecting zone redundancy.",
+          "link": "https://azure.microsoft.com/en-us/updates/general-availability-zone-redundancy-for-azure-sql-database-general-purpose-tier/",
+          "publishedOn": "2022-04-13T16:00:35.000Z",
+          "wordCount": 4344,
+          "title": "General availability: Zone redundancy for Azure SQL Database general purpose tier",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "azure-sql-public-preview-updates-for-midapril-2022",
+          "author": null,
+          "description": "Public preview enhancements and updates released for Azure SQL.",
+          "link": "https://azure.microsoft.com/en-us/updates/azure-sql-public-preview-updates-for-midapril-2022/",
+          "publishedOn": "2022-04-13T16:00:34.000Z",
+          "wordCount": 4310,
+          "title": "Azure SQL—Public preview updates for mid-April 2022",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "public-preview-azure-sql-database-hyperscale-reverse-migration-to-general-purpose-tier",
+          "author": null,
+          "description": "Easily move your previously migrated databases on Azure SQL Database Hyperscale back to the general purpose tier.",
+          "link": "https://azure.microsoft.com/en-us/updates/public-preview-azure-sql-database-hyperscale-reverse-migration-to-general-purpose-tier/",
+          "publishedOn": "2022-04-13T16:00:34.000Z",
+          "wordCount": 4365,
+          "title": "Public preview: Azure SQL Database Hyperscale reverse migration to general purpose tier",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "public-preview-azure-monitoring-agent-supports-custom-and-iis-logs",
+          "author": null,
+          "description": "New collection types supported by Azure Monitoring Agent that extends beyond the standard data available today.",
+          "link": "https://azure.microsoft.com/en-us/updates/public-preview-azure-monitoring-agent-supports-custom-and-iis-logs/",
+          "publishedOn": "2022-04-13T16:00:33.000Z",
+          "wordCount": 4343,
+          "title": "Public preview: Azure Monitoring Agent supports custom and IIS logs",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "generally-available-azure-static-web-apps-support-for-private-endpoints",
+          "author": null,
+          "description": "Azure Static Web Apps support for private endpoints is now generally available with a 99.95 SLA for production and staging environments.",
+          "link": "https://azure.microsoft.com/en-us/updates/generally-available-azure-static-web-apps-support-for-private-endpoints/",
+          "publishedOn": "2022-04-13T16:00:32.000Z",
+          "wordCount": 4353,
+          "title": "Generally available: Azure Static Web Apps support for private endpoints",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "public-preview-metrics-and-alerts-support-in-azure-container-apps",
+          "author": null,
+          "description": "You can now view metrics for your Azure Container Apps and setup alerts for metric thresholds and Log Analytic queries.",
+          "link": "https://azure.microsoft.com/en-us/updates/public-preview-metrics-and-alerts-support-in-azure-container-apps/",
+          "publishedOn": "2022-04-13T16:00:31.000Z",
+          "wordCount": 4336,
+          "title": "Public preview: Metrics and alerts support in Azure Container Apps",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "public-preview-health-probes-support-in-azure-container-apps",
+          "author": null,
+          "description": "You can now use readiness, liveness, and startup probes in your Azure Container Apps.",
+          "link": "https://azure.microsoft.com/en-us/updates/public-preview-health-probes-support-in-azure-container-apps/",
+          "publishedOn": "2022-04-13T16:00:31.000Z",
+          "wordCount": 4316,
+          "title": "Public preview: Health probes support in Azure Container Apps",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "public-preview-visual-studio-support-for-azure-container-apps",
+          "author": null,
+          "description": "You can now publish .NET Core applications to Azure Container Apps from Visual Studio 2022 Preview 2.",
+          "link": "https://azure.microsoft.com/en-us/updates/public-preview-visual-studio-support-for-azure-container-apps/",
+          "publishedOn": "2022-04-13T16:00:30.000Z",
+          "wordCount": 4312,
+          "title": "Public preview: Visual Studio support for Azure Container Apps",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "public-preview-visual-studio-code-extension-for-azure-container-apps",
+          "author": null,
+          "description": "You can now deploy and manage Azure Container Apps from Visual Studio Code.",
+          "link": "https://azure.microsoft.com/en-us/updates/public-preview-visual-studio-code-extension-for-azure-container-apps/",
+          "publishedOn": "2022-04-13T16:00:30.000Z",
+          "wordCount": 4338,
+          "title": "Public preview: Visual Studio Code extension for Azure Container Apps",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "public-preview-managed-identities-support-in-azure-container-apps",
+          "author": null,
+          "description": "You can now use managed identities with Azure Container Apps instead of passing secrets in connection strings.",
+          "link": "https://azure.microsoft.com/en-us/updates/public-preview-managed-identities-support-in-azure-container-apps/",
+          "publishedOn": "2022-04-13T16:00:29.000Z",
+          "wordCount": 4352,
+          "title": "Public preview: Managed identities support in Azure Container Apps",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "public-preview-support-for-windows-clients-using-azure-monitor-agent",
+          "author": null,
+          "description": "Using the new Windows client installer launched today, you can now get the benefits of the new agent and data collection rules on your Windows 10 and 11 client devices.",
+          "link": "https://azure.microsoft.com/en-us/updates/public-preview-support-for-windows-clients-using-azure-monitor-agent/",
+          "publishedOn": "2022-04-13T16:00:28.000Z",
+          "wordCount": 4367,
+          "title": "Public preview: Support for Windows clients using Azure Monitor agent",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "generally-available-java-17-and-tomcat-100-on-azure-app-service-2",
+          "author": null,
+          "description": "Use new supported versions of Java and Tomcat to run web applications on Azure App Service.",
+          "link": "https://azure.microsoft.com/en-us/updates/generally-available-java-17-and-tomcat-100-on-azure-app-service-2/",
+          "publishedOn": "2022-04-13T16:00:28.000Z",
+          "wordCount": 4444,
+          "title": "Generally available: Java 17 and Tomcat 10.0 on Azure App Service",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "generally-available-new-result-set-grid-in-azure-monitor-log-analytics",
+          "author": null,
+          "description": "The new result set grid in log analytics boasts a brand-new experience, introduces numerous new features, and is much easier to use!",
+          "link": "https://azure.microsoft.com/en-us/updates/generally-available-new-result-set-grid-in-azure-monitor-log-analytics/",
+          "publishedOn": "2022-04-13T16:00:27.000Z",
+          "wordCount": 4419,
+          "title": "Generally available: new result set grid in Azure Monitor log analytics",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "public-preview-azure-monitor-activity-log-insights",
+          "author": null,
+          "description": "Azure Monitor activity log insights let you view information about changes to resources and resource groups in a subscription.",
+          "link": "https://azure.microsoft.com/en-us/updates/public-preview-azure-monitor-activity-log-insights/",
+          "publishedOn": "2022-04-13T16:00:27.000Z",
+          "wordCount": 4341,
+          "title": "Public preview: Azure Monitor activity log insights",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "public-preview-redesign-of-alerts-summary-landing-page",
+          "author": null,
+          "description": "The summary (landing) page for alerts has been simplified to improve usability and actionability.",
+          "link": "https://azure.microsoft.com/en-us/updates/public-preview-redesign-of-alerts-summary-landing-page/",
+          "publishedOn": "2022-04-13T16:00:26.000Z",
+          "wordCount": 4303,
+          "title": "Public preview: Redesign of alerts summary (landing) page",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "public-preview-recommended-alert-rules-for-virtual-machines",
+          "author": null,
+          "description": "You can now enable a set of recommended alert rules for your existing virtual machines.",
+          "link": "https://azure.microsoft.com/en-us/updates/public-preview-recommended-alert-rules-for-virtual-machines/",
+          "publishedOn": "2022-04-13T16:00:25.000Z",
+          "wordCount": 4325,
+          "title": "Public preview: Recommended alert rules for virtual machines",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "iotc-migrate-devices-across-templates",
+          "author": null,
+          "description": "Migrating devices across device templates at scale is now supported in Azure IoT Central jobs.",
+          "link": "https://azure.microsoft.com/en-us/updates/iotc-migrate-devices-across-templates/",
+          "publishedOn": "2022-04-12T16:00:10.000Z",
+          "wordCount": 4380,
+          "title": "Generally available: Migrate devices across templates at scale in Azure IoT Central",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "generally-available-service-tags-support-for-user-defined-routing",
+          "author": null,
+          "description": "Simplify route creation and management by using service tags to represent multiple IP ranges in a single user-defined route.",
+          "link": "https://azure.microsoft.com/en-us/updates/generally-available-service-tags-support-for-user-defined-routing/",
+          "publishedOn": "2022-04-11T18:00:15.000Z",
+          "wordCount": 4493,
+          "title": "Generally available: Service tags support for user-defined routing",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "iotc-replacetextlabels",
+          "author": null,
+          "description": "You can now replace ‘Device’ label in your Azure IoT Central application with your preferred text.",
+          "link": "https://azure.microsoft.com/en-us/updates/iotc-replacetextlabels/",
+          "publishedOn": "2022-04-11T16:00:34.000Z",
+          "wordCount": 4373,
+          "title": "Generally available: Customize application text labels in Azure IoT Central",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "purview-glossary-search",
+          "author": null,
+          "description": "The Azure Purview data catalog search experience now includes glossary terms in the search results.",
+          "link": "https://azure.microsoft.com/en-us/updates/purview-glossary-search/",
+          "publishedOn": "2022-04-11T16:00:14.000Z",
+          "wordCount": 4360,
+          "title": "General availability: Glossary terms in Azure Purview data catalog search",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "dns-reservations-to-prevent-subdomain-takeover-in-cloud-services",
+          "author": null,
+          "description": "As a preventive measure, DNS record is reserved for seven days to allow clean-up of dangling DNS domains or reclaim from same Azure Active Directory tenant only.",
+          "link": "https://azure.microsoft.com/en-us/updates/dns-reservations-to-prevent-subdomain-takeover-in-cloud-services/",
+          "publishedOn": "2022-04-11T15:09:52.000Z",
+          "wordCount": 4432,
+          "title": "Generally available: DNS reservations to prevent subdomain takeover in Cloud Services deployments",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "diagnostic-audit-logs",
+          "author": null,
+          "description": "Forward Azure Automation diagnostic audit logs to Log analytics workspace to keep track of changes at the automation account level.",
+          "link": "https://azure.microsoft.com/en-us/updates/diagnostic-audit-logs/",
+          "publishedOn": "2022-04-07T16:00:40.000Z",
+          "wordCount": 4397,
+          "title": "Generally available: Diagnostic audit logs for Automation accounts",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "general-availability-azure-backup-now-supports-vaultarchive-tier-for-backups-of-azure-vms",
+          "author": null,
+          "description": "Azure Backup now provides the capability to move long term retention (LTR) recovery points to low-cost archive tier for Azure Virtual Machines.",
+          "link": "https://azure.microsoft.com/en-us/updates/general-availability-azure-backup-now-supports-vaultarchive-tier-for-backups-of-azure-vms/",
+          "publishedOn": "2022-04-07T16:00:32.000Z",
+          "wordCount": 4528,
+          "title": "General availability: Azure Backup now supports vault-archive tier for Azure VMs",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "adx-pe",
+          "author": null,
+          "description": "Enhance your security posture by leveraging Azure private endpoints to connect to your Azure Data Explorer cluster privately",
+          "link": "https://azure.microsoft.com/en-us/updates/adx-pe/",
+          "publishedOn": "2022-04-07T16:00:22.000Z",
+          "wordCount": 4424,
+          "title": "General availability: Azure Data Explorer supports Azure private endpoints",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "generally-available-azure-storage-table-access-using-azure-active-directory",
+          "author": null,
+          "description": "Accessing Azure storage table using Azure AD for authentication and Azure RBAC for authorization provides superior security over using shared key for access.",
+          "link": "https://azure.microsoft.com/en-us/updates/generally-available-azure-storage-table-access-using-azure-active-directory/",
+          "publishedOn": "2022-04-06T17:00:20.000Z",
+          "wordCount": 4386,
+          "title": "Generally available: Azure storage table access using Azure Active Directory",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "iotc-private-link",
+          "author": null,
+          "description": "Enhance your security posture by privately connecting devices to Azure IoT Central via private endpoint, eliminating exposure to the public internet.",
+          "link": "https://azure.microsoft.com/en-us/updates/iotc-private-link/",
+          "publishedOn": "2022-04-06T17:00:10.000Z",
+          "wordCount": 4412,
+          "title": "Generally available: Support for Private Link in Azure IoT Central",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "public-preview-capacity-reservation-support-in-aks",
+          "author": null,
+          "description": "You can now use reserved capacity with AKS via the capacity reservation feature.",
+          "link": "https://azure.microsoft.com/en-us/updates/public-preview-capacity-reservation-support-in-aks/",
+          "publishedOn": "2022-04-05T16:19:36.000Z",
+          "wordCount": 4398,
+          "title": "Public preview: Capacity reservation support in AKS",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "generally-available-azure-virtual-machines-increase-storage-throughput-by-up-to-300",
+          "author": null,
+          "description": "Microsoft is announcing the general availability of the Ebs/Ebds v5 memory optimized Azure VM series, that deliver up to 300% increase in remote storage performance compared to prior generation VMs.",
+          "link": "https://azure.microsoft.com/en-us/updates/generally-available-azure-virtual-machines-increase-storage-throughput-by-up-to-300/",
+          "publishedOn": "2022-04-05T16:00:15.000Z",
+          "wordCount": 4442,
+          "title": "Generally available: Azure Virtual Machines increase storage throughput by up to 300%",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "e2e-adx-pipeline-arm-template",
+          "author": null,
+          "description": "We can now build an entire Azure Data Explorer environment with ARM template.  Schema entities (e.g. tables, functions, policies) can be deployed without an external storage account.",
+          "link": "https://azure.microsoft.com/en-us/updates/e2e-adx-pipeline-arm-template/",
+          "publishedOn": "2022-04-05T15:00:16.000Z",
+          "wordCount": 4396,
+          "title": "Generally available: Azure Data Explorer Inline script deployment with ARM Template",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "iotc-copy-tiles",
+          "author": null,
+          "description": "IoT Central customers will now be able to quickly build new visuals in their dashboards by simply copying an existing tile.",
+          "link": "https://azure.microsoft.com/en-us/updates/iotc-copy-tiles/",
+          "publishedOn": "2022-04-05T15:00:04.000Z",
+          "wordCount": 4347,
+          "title": "Generally available: Support for copying tiles added to Azure IoT Central",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "public-preview-azure-bastion-support-for-kerberos-authentication",
+          "author": null,
+          "description": "Azure Bastion now supports the Kerberos authentication protocol in public preview.",
+          "link": "https://azure.microsoft.com/en-us/updates/public-preview-azure-bastion-support-for-kerberos-authentication/",
+          "publishedOn": "2022-04-04T16:00:08.000Z",
+          "wordCount": 4329,
+          "title": "Public preview: Azure Bastion support for Kerberos authentication",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "simplified-compute-node-communication",
+          "author": null,
+          "description": "Azure Batch offers simplified, efficient node communication within the Batch pool and Azure resources (storage, AppPackage storage accounts, output files, and other resources).",
+          "link": "https://azure.microsoft.com/en-us/updates/simplified-compute-node-communication/",
+          "publishedOn": "2022-03-31T17:00:07.000Z",
+          "wordCount": 4317,
+          "title": "Public preview: Simplified compute node communication",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "general-availability-bring-your-own-ip-byoip-ranges-to-azure",
+          "author": null,
+          "description": "Bring your own public IP ranges to Azure to retain existing reputation or to prevent your customers from needing to modify dependencies (e.g. firewalls or other hardcoding) on their network.",
+          "link": "https://azure.microsoft.com/en-us/updates/general-availability-bring-your-own-ip-byoip-ranges-to-azure/",
+          "publishedOn": "2022-03-31T16:00:06.000Z",
+          "wordCount": 4357,
+          "title": "General availability: Bring your own IP ranges to Azure",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "general-availability-azure-data-explorer-supports-conditional-access",
+          "author": null,
+          "description": "Azure Data Explorer launches support for Azure Active Directory Conditional Access.",
+          "link": "https://azure.microsoft.com/en-us/updates/general-availability-azure-data-explorer-supports-conditional-access/",
+          "publishedOn": "2022-03-30T17:00:36.000Z",
+          "wordCount": 4386,
+          "title": "General availability: Azure Data Explorer supports Conditional Access",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "azure-sql-public-preview-updates-for-late-march-2022",
+          "author": null,
+          "description": "Public preview enhancements and updates released for Azure SQL in late March 2022.",
+          "link": "https://azure.microsoft.com/en-us/updates/azure-sql-public-preview-updates-for-late-march-2022/",
+          "publishedOn": "2022-03-30T16:02:09.000Z",
+          "wordCount": 4305,
+          "title": "Azure SQL—Public preview updates for late March 2022",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "public-preview-azure-sql-migration-extension-with-azure-powershell-and-cli-support",
+          "author": null,
+          "description": "Leverage Azure PowerShell module (Az.DataMigration) or Azure CLI commands (az datamigration) for recommendations and migrate SQL Server databases using Azure Database Migration Service with Azure SQL Migration extensions for ADS.",
+          "link": "https://azure.microsoft.com/en-us/updates/public-preview-azure-sql-migration-extension-with-azure-powershell-and-cli-support/",
+          "publishedOn": "2022-03-30T16:02:02.000Z",
+          "wordCount": 4361,
+          "title": "Public preview: Azure SQL Migration extension with Azure PowerShell and CLI support",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "general-availability-azure-database-for-postgresql-hyperscale-citus-now-fedramp-high-compliant",
+          "author": null,
+          "description": "Azure Database for PostgreSQL – Hyperscale (Citus), a managed service running the open-source Postgres database on Azure is now compliant with FedRAMP High.",
+          "link": "https://azure.microsoft.com/en-us/updates/general-availability-azure-database-for-postgresql-hyperscale-citus-now-fedramp-high-compliant/",
+          "publishedOn": "2022-03-30T16:01:55.000Z",
+          "wordCount": 4349,
+          "title": "General availability: Azure Database for PostgreSQL - Hyperscale (Citus) now FedRAMP High compliant",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "public-preview-azure-cosmos-db-partition-key-advisor-notebook",
+          "author": null,
+          "description": "The Azure Cosmos DB partition key advisor notebook helps recommend an optimal partition key based on information you provide about your workload traffic patterns and queries.",
+          "link": "https://azure.microsoft.com/en-us/updates/public-preview-azure-cosmos-db-partition-key-advisor-notebook/",
+          "publishedOn": "2022-03-30T16:01:51.000Z",
+          "wordCount": 4392,
+          "title": "Public preview: Azure Cosmos DB partition key advisor notebook",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "general-availability-always-encrypted-for-azure-cosmos-db",
+          "author": null,
+          "description": "The Always Encrypted feature brings client-side encryption capabilities to Azure Cosmos DB and allows you to put an extra level of protection on your sensitive data.",
+          "link": "https://azure.microsoft.com/en-us/updates/general-availability-always-encrypted-for-azure-cosmos-db/",
+          "publishedOn": "2022-03-30T16:01:41.000Z",
+          "wordCount": 4347,
+          "title": "General availability: Always Encrypted for Azure Cosmos DB",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "general-availability-azure-cognitive-search-implements-debug-sessions",
+          "author": null,
+          "description": "Streamline your Cognitive Search operations with debug sessions for building, testing, and modifying skillsets.",
+          "link": "https://azure.microsoft.com/en-us/updates/general-availability-azure-cognitive-search-implements-debug-sessions/",
+          "publishedOn": "2022-03-30T16:01:34.000Z",
+          "wordCount": 4363,
+          "title": "General availability: Azure Cognitive Search implements debug sessions",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "generally-available-crossregion-snapshot-copy-for-azure-disk-storage",
+          "author": null,
+          "description": "Cross-region snapshot copy allows you to copy disk snapshots to any region for disaster recovery.",
+          "link": "https://azure.microsoft.com/en-us/updates/generally-available-crossregion-snapshot-copy-for-azure-disk-storage/",
+          "publishedOn": "2022-03-30T16:01:19.000Z",
+          "wordCount": 4370,
+          "title": "Generally available: Cross-region snapshot copy for Azure Disk Storage",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "general-availability-azure-ultra-disk-storage-in-sweden-central",
+          "author": null,
+          "description": "Azure Ultra Disk Storage provides high-performance along with sub-millisecond latency for your most-demanding workloads.",
+          "link": "https://azure.microsoft.com/en-us/updates/general-availability-azure-ultra-disk-storage-in-sweden-central/",
+          "publishedOn": "2022-03-30T16:01:12.000Z",
+          "wordCount": 4315,
+          "title": "General availability: Azure Ultra Disk Storage in Sweden Central",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "generally-available-nodejs-16-in-azure-functions-2",
+          "author": null,
+          "description": "Azure Functions support for Node.js 16.x is now generally available in Azure Functions runtime 4.0 on all hosting plans.",
+          "link": "https://azure.microsoft.com/en-us/updates/generally-available-nodejs-16-in-azure-functions-2/",
+          "publishedOn": "2022-03-30T16:01:05.000Z",
+          "wordCount": 4327,
+          "title": "Generally available: Node.js 16 in Azure Functions",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "public-preview-azure-dedicated-host-support-in-aks",
+          "author": null,
+          "description": "You can now use Azure Dedicated Hosts with the Azure Kubernetes Service (AKS)",
+          "link": "https://azure.microsoft.com/en-us/updates/public-preview-azure-dedicated-host-support-in-aks/",
+          "publishedOn": "2022-03-30T16:00:51.000Z",
+          "wordCount": 4399,
+          "title": "Public preview: Azure dedicated host support in AKS",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "public-preview-node-autodrain-for-aks",
+          "author": null,
+          "description": "AKS now minimizes unexpected disruptions by handling maintenance events and offloading applications via auto-drain node feature.",
+          "link": "https://azure.microsoft.com/en-us/updates/public-preview-node-autodrain-for-aks/",
+          "publishedOn": "2022-03-30T16:00:36.000Z",
+          "wordCount": 4370,
+          "title": "Public preview: Node auto-drain for AKS",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "access-time-based-lifecycle-management-adls-gen2",
+          "author": null,
+          "description": "Access time tracking for objects and lifecycle management policies based on last accessed time in Azure Data Lake Storage Gen2.",
+          "link": "https://azure.microsoft.com/en-us/updates/access-time-based-lifecycle-management-adls-gen2/",
+          "publishedOn": "2022-03-29T16:00:36.000Z",
+          "wordCount": 4573,
+          "title": "Generally available: Access time-based lifecycle management rules for Data Lake Storage Gen2",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "generally-available-the-new-azure-front-door-a-modern-cloud-cdn-service",
+          "author": null,
+          "description": "Azure Front Door is a modern cloud CDN that enables you to accelerate the delivery of applications, APIs, and content on Azure or anywhere at scale.",
+          "link": "https://azure.microsoft.com/en-us/updates/generally-available-the-new-azure-front-door-a-modern-cloud-cdn-service/",
+          "publishedOn": "2022-03-29T16:00:21.000Z",
+          "wordCount": 4476,
+          "title": "Generally available: The new Azure Front Door – a modern cloud CDN service",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "generally-available-copy-data-directly-to-archive-storage-with-data-box",
+          "author": null,
+          "description": "You can now use Data Box to copy data directly to Archive tier by indicating this when ordering and then copying to the corresponding share on the Data Box.",
+          "link": "https://azure.microsoft.com/en-us/updates/generally-available-copy-data-directly-to-archive-storage-with-data-box/",
+          "publishedOn": "2022-03-28T20:00:09.000Z",
+          "wordCount": 4356,
+          "title": "Generally available: Copy data directly to Archive Storage with Data Box",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "ondemand-capacity-reservation-with-azure-site-recovery-safeguards-vms-failover",
+          "author": null,
+          "description": "Integrating Site Recovery with capacity reservation to reserve compute capacity in the disaster recovery region and use that for failover.",
+          "link": "https://azure.microsoft.com/en-us/updates/ondemand-capacity-reservation-with-azure-site-recovery-safeguards-vms-failover/",
+          "publishedOn": "2022-03-28T17:00:07.000Z",
+          "wordCount": 4445,
+          "title": "Generally available: On-demand capacity reservation with Azure Site Recovery safeguards VMs failover",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "general-availability-azure-bastion-native-client-support",
+          "author": null,
+          "description": "Azure Bastion native client support brings you the ability to connect to target VMs from the command line and log in using your Azure Active Directory credentials.",
+          "link": "https://azure.microsoft.com/en-us/updates/general-availability-azure-bastion-native-client-support/",
+          "publishedOn": "2022-03-28T16:00:23.000Z",
+          "wordCount": 4326,
+          "title": "General availability: Azure Bastion native client support",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "general-availability-ondemand-capacity-reservations",
+          "author": null,
+          "description": "On-demand capacity reservations let you reserve compute capacity for one or more VM size(s) in an Azure region or availability zone for any length of time.",
+          "link": "https://azure.microsoft.com/en-us/updates/general-availability-ondemand-capacity-reservations/",
+          "publishedOn": "2022-03-28T16:00:22.000Z",
+          "wordCount": 4401,
+          "title": "General availability: On-demand capacity reservations",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "batch-spot-vms-2",
+          "author": null,
+          "description": "Azure Batch supports Spot Virtual Machine's in user-subscription mode and is offered at a significantly reduced price compared with dedicated virtual machines.",
+          "link": "https://azure.microsoft.com/en-us/updates/batch-spot-vms-2/",
+          "publishedOn": "2022-03-28T16:00:06.000Z",
+          "wordCount": 4325,
+          "title": "Generally available: Azure Batch supports Spot Virtual Machines",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "apdk2203update",
+          "author": null,
+          "description": "The Azure Percept March update includes fixes related to security.",
+          "link": "https://azure.microsoft.com/en-us/updates/apdk2203update/",
+          "publishedOn": "2022-03-28T15:00:06.000Z",
+          "wordCount": 4345,
+          "title": "Public preview: Azure Percept DK March (2203) software update",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "asa-uami",
+          "author": null,
+          "description": "You can now use user-assigned managed identity to authenticate your Stream Analytics jobs to inputs and outputs without ever having to worry about credential management.",
+          "link": "https://azure.microsoft.com/en-us/updates/asa-uami/",
+          "publishedOn": "2022-03-24T16:00:26.000Z",
+          "wordCount": 4343,
+          "title": "Public preview: User-assigned managed identities in Stream Analytics",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "intelligent-cache-for-apache-spark-in-azure-synapse-now-available-in-public-preview",
+          "author": null,
+          "description": "Accelerate Apache Spark in Azure Synapse execution speed using the new intelligent cache feature.",
+          "link": "https://azure.microsoft.com/en-us/updates/intelligent-cache-for-apache-spark-in-azure-synapse-now-available-in-public-preview/",
+          "publishedOn": "2022-03-24T16:00:18.000Z",
+          "wordCount": 4406,
+          "title": "Public preview: Intelligent cache for Apache Spark in Azure Synapse",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "azure-data-explorer-now-supports-multiple-databases-on-a-single-data-connection",
+          "author": null,
+          "description": "Dynamically route Azure Data Explorer data to an alternate database",
+          "link": "https://azure.microsoft.com/en-us/updates/azure-data-explorer-now-supports-multiple-databases-on-a-single-data-connection/",
+          "publishedOn": "2022-03-24T16:00:07.000Z",
+          "wordCount": 4408,
+          "title": "Generally available: Azure Data Explorer supports multiple databases per data connection",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "ga-amludf-asa",
+          "author": null,
+          "description": "Machine Learning user-defined function in Stream Analytics allows you to perform high throughput, low latency, real-time predictions, allowing you to act on insights which have a very short shelf-life.",
+          "link": "https://azure.microsoft.com/en-us/updates/ga-amludf-asa/",
+          "publishedOn": "2022-03-24T15:00:06.000Z",
+          "wordCount": 4361,
+          "title": "General availability: Azure Machine Learning user-defined functions in Azure Stream Analytics",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "standard-load-balancer-inbound-nat-rule-now-supports-port-management-for-backend-pools-2",
+          "author": null,
+          "description": "You can now specify target backend pool in inbound NAT rule for less management overhead when configuring port forwarding.",
+          "link": "https://azure.microsoft.com/en-us/updates/standard-load-balancer-inbound-nat-rule-now-supports-port-management-for-backend-pools-2/",
+          "publishedOn": "2022-03-22T03:00:09.000Z",
+          "wordCount": 4425,
+          "title": "General availability: Inbound NAT rule now supports port management for backend pools",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "iotc-manage-devices-without-models",
+          "author": null,
+          "description": "You now have the ability to connect your devices, send data, run commands, and create relationships without having to first create a model for them in Azure IoT Central.",
+          "link": "https://azure.microsoft.com/en-us/updates/iotc-manage-devices-without-models/",
+          "publishedOn": "2022-03-21T19:00:04.000Z",
+          "wordCount": 4381,
+          "title": "Generally available: Connect and manage devices in Azure IoT Central without models",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "public-preview-azure-container-registry-on-azure-stack-hub",
+          "author": null,
+          "description": "A public preview of Azure Container Registry on Azure Stack Hub is available starting with Azure Stack Hub update 2108.",
+          "link": "https://azure.microsoft.com/en-us/updates/public-preview-azure-container-registry-on-azure-stack-hub/",
+          "publishedOn": "2022-03-21T16:00:03.000Z",
+          "wordCount": 4334,
+          "title": "Public preview: Azure Container Registry on Azure Stack Hub",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "public-preview-azure-kubernetes-service-on-azure-stack-hub",
+          "author": null,
+          "description": "A public preview of Azure Kubernetes Service on Azure Stack Hub is available starting with Azure Stack Hub update 2108.",
+          "link": "https://azure.microsoft.com/en-us/updates/public-preview-azure-kubernetes-service-on-azure-stack-hub/",
+          "publishedOn": "2022-03-21T15:00:02.000Z",
+          "wordCount": 4335,
+          "title": "Public preview: Azure Kubernetes Service on Azure Stack Hub",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "azure-hbv3-vms-for-hpc-now-generally-available-with-amd-milanx-cpus",
+          "author": null,
+          "description": "Azure HBv3 virtual machines are now upgraded to and generally available with AMD EPYC 3rd Gen processors with 3D V-Cache, codenamed “Milan-X”, in the Azure East US, South Central US, and West Europe regions.",
+          "link": "https://azure.microsoft.com/en-us/updates/azure-hbv3-vms-for-hpc-now-generally-available-with-amd-milanx-cpus/",
+          "publishedOn": "2022-03-21T13:00:01.000Z",
+          "wordCount": 4417,
+          "title": "General availability: Azure HBv3 virtual machines for HPC now upgraded",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "combined-password-reset-mfa-registration",
+          "author": null,
+          "description": "Beginning 1 October 2022, combined registration for multifactor authentication and self-service password reset is rolling out to you.",
+          "link": "https://azure.microsoft.com/en-us/updates/combined-password-reset-mfa-registration/",
+          "publishedOn": "2022-03-17T15:00:06.000Z",
+          "wordCount": 4373,
+          "title": "General availability: Enablement of combined security information registration for Azure Active Directory",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "generally-available-azure-site-recovery-update-rollup-61-march-2022",
+          "author": null,
+          "description": "Review the improvements and fixes provided in Update Rollup 61.",
+          "link": "https://azure.microsoft.com/en-us/updates/generally-available-azure-site-recovery-update-rollup-61-march-2022/",
+          "publishedOn": "2022-03-16T17:00:08.000Z",
+          "wordCount": 4360,
+          "title": "Generally available: Azure Site Recovery update rollup 61 - March 2022",
           "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
         }
       ]
