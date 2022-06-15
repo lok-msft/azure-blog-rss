@@ -6,6 +6,36 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/run-jboss-eap-on-azure-red-hat-openshift/ba-p/3478743",
+          "author": "reza_rahman",
+          "description": "We are very happy to announce the availability of official guidance for running JBoss EAP on Azure Red Hat OpenShift (ARO). The guidance is delivered through an ongoing collaboration between Red Hat and Microsoft to fully enable JBoss EAP on Azure. Developed alongside Red Hat, the guidance utilizes the JBoss EAP Helm Charts and provides step-by-step instructions for running JBoss EAP on an ARO cluster. The guidance is intended to make it as easy as possible to get started with production ready deployments utilizing best practices from both Red Hat and Microsoft. Evaluate the guidance for full production usage and reach out to collaborate on migration cases.\n \nSolution Details and Roadmap\nJBoss EAP powers some of the most mission-critical enterprise applications worldwide. JBoss EAP is a ke…",
+          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/run-jboss-eap-on-azure-red-hat-openshift/ba-p/3478743",
+          "publishedOn": "2022-06-14T16:00:00.000Z",
+          "wordCount": 938,
+          "title": "Run JBoss EAP on Azure Red Hat OpenShift",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/378350iDD63BA22AEBB98B1/image-size/original?v=v2&px=-1"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/see-how-dynamic-concurrency-works-in-azure-function-app-with-a/ba-p/3502772",
+          "author": "zhuyue",
+          "description": "In May, dynamic concurrency(denoted as DC in this blog) in Azure Functions became generally available. By enabling dynamic concurrency, the platform can adjust the concurrency of functions dynamically in the condition that the worker instance is healthy(like CPU and thread utilization is healthy). You can refer to more information about dynamic concurrency in this link: https://docs.microsoft.com/en-us/azure/azure-functions/functions-concurrency#dynamic-concurrency.\n \nIn this blog, I am writing to introduce how DC works in Azure function apps with some tests.\n \nHow to enable Dynamic Concurrency?\nBy default, dynamic concurrency is disabled. With dynamic concurrency enabled, concurrency starts at 1 for each function, and is adjusted up to an optimal value, which is determined by the host.\n \n…",
+          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/see-how-dynamic-concurrency-works-in-azure-function-app-with-a/ba-p/3502772",
+          "publishedOn": "2022-06-14T07:25:11.000Z",
+          "wordCount": 1671,
+          "title": "See how dynamic concurrency works in Azure Function App with a simple test",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/380041i8B8AA212660856AC?v=v2"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/azure-spring-apps-custom-container-image-cicd-deployment-using/ba-p/3491732",
+          "author": "Hanli_Ren",
+          "description": "Since 2022 May, Azure Spring Cloud started to allow deploying an application with a custom container image (Preview).\nDeploying an application with a custom container supports most features as when deploying a JAR application. Other Java and non-Java applications can also be deployed with the container image.\n \nThis blog aims to show an example for how to use Azure DevOps pipeline to make CICD deployment using custom container image.\n\n \nPrerequisites\n\nAzure DevOps account\nProvision an instance of Azure Spring Cloud\nCreate an App without code deployment\naz spring app create -n <app name> -s <service instance name> -g <resource group name> --assign-endpoint true​\n\n\nStep 1: Create a Git repo for your project in Azure DevOps\n \n1.  Go to https://dev.azure.com \n2.  After signing in, click on 'Cr…",
+          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/azure-spring-apps-custom-container-image-cicd-deployment-using/ba-p/3491732",
+          "publishedOn": "2022-06-14T06:50:22.000Z",
+          "wordCount": 1287,
+          "title": "Azure Spring Apps Custom Container Image CICD deployment using Azure DevOps",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/379216i4ECAD4BB39617C80?v=v2"
+        },
+        {
           "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/get-web-apps-certificates-in-bulk/ba-p/3436666",
           "author": "Marina_Liu",
           "description": "For Web App, there are two kinds of SSL/TLS certificates - private certificate and public certificate.\nFor some users they might have lots of web apps and certificates which need to managed. So I've been asked many times for how to get (both private and public) certificates in bulk. In this blog I will show how to get Web Apps private certificates and public certificates under a subscription correspondingly.\n \nGet Web Apps private certificates in bulk\nFor the private  certificates, we have the existing feature and API to bulk get the private certificates under a subscription. The following shows how to use Azure Resource Graph Explorer and Azure REST API to get them:\nOption 1: Use Azure Resource Graph Explorer\nIn Azure portal -> Go to the \"Resource Graph Explorer\" service -> search the \"mi…",
@@ -1471,6 +1501,26 @@
       "siteUrl": "https://azure.microsoft.com/blog/topics/developer/",
       "articles": [
         {
+          "id": "azure-powers-rapid-deployment-of-private-4g-and-5g-networks",
+          "author": "Shriraj  Gaglani",
+          "description": "As the cloud continues to expand into a ubiquitous and highly distributed fabric, a new breed of application is emerging: Modern Connected Applications. We define these new offerings as network-intelligent applications at the edge, powered by 5G, and enabled by programmable interfaces that give developer access to network resources.",
+          "link": "https://azure.microsoft.com/blog/azure-powers-rapid-deployment-of-private-4g-and-5g-networks/",
+          "publishedOn": "2022-06-14T09:00:02.000Z",
+          "wordCount": 5621,
+          "title": "Azure powers rapid deployment of private 4G and 5G networks",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-28ecccf487975ebf4015ff2ec6baec71b585647df2d367061a61e7b961bc701c/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "mlops-blog-series-part-1-the-art-of-testing-machine-learning-systems-using-mlops",
+          "author": "Takuto Higuchi",
+          "description": "Testing is an important exercise in the life cycle of developing a machine learning system to assure high-quality operations. In this blog, we will look at testing machine learning systems from a Machine Learning Operations (MLOps) perspective and learn about good case practices and a testing framework that you can use to build robust, scalable, and secure machine learning systems.",
+          "link": "https://azure.microsoft.com/blog/mlops-blog-series-part-1-the-art-of-testing-machine-learning-systems-using-mlops/",
+          "publishedOn": "2022-06-14T08:00:15.000Z",
+          "wordCount": 5155,
+          "title": "MLOps Blog Series Part 1: The art of testing machine learning systems using MLOps",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-28ecccf487975ebf4015ff2ec6baec71b585647df2d367061a61e7b961bc701c/images/shared/social/azure-icon-250x250.png"
+        },
+        {
           "id": "code-test-and-ship-your-next-app-quickly-and-securely-with-microsoft-developer-tools",
           "author": "Kathleen Mitford",
           "description": "Welcome to Microsoft Build, the event that’s all about celebrating the developer community! The work you do has the power to transform entire industries and keep critical businesses and services running through innovative solutions and applications. I couldn’t be more honored to champion this entire dev community as you create the future.",
@@ -2186,6 +2236,16 @@
       "feedUrl": "https://azurecomcdn.azureedge.net/en-us/updates/feed/?updateType=features",
       "siteUrl": "https://azure.microsoft.com/en-us/updates/",
       "articles": [
+        {
+          "id": "power-platform-connector-ga",
+          "author": null,
+          "description": "Automate alerts, orchestrate business workflows and build low-code apps with Azure Data Explorer connector for Power Automate, Logic Apps, and Power Apps.",
+          "link": "https://azure.microsoft.com/en-us/updates/power-platform-connector-ga/",
+          "publishedOn": "2022-06-14T19:00:03.000Z",
+          "wordCount": 4439,
+          "title": "General availability: Azure Data Explorer connector for Power Automate, Logic Apps, and Power Apps",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-28ecccf487975ebf4015ff2ec6baec71b585647df2d367061a61e7b961bc701c/images/shared/social/azure-icon-250x250.png"
+        },
         {
           "id": "public-preview-private-link-support-for-application-gateway",
           "author": null,
