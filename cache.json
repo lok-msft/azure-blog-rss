@@ -6,6 +6,16 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/announcing-ga-launch-of-kafka-trigger-extension-on-azure/ba-p/3499015",
+          "author": "Ramya_Oruganti",
+          "description": "With the power of serverless event driven compute platform and real time stream processing, application development can evolve from traditional monolith apps to programming models whose flows are based on internal or external events and not just on its structure.\nServerless compute allows you to run code without provisioning or managing servers, creating workload-aware cluster scaling logic, maintaining event integrations, or managing runtimes. Serverless Stream processing is increasingly becoming a vital part of complex distributed systems. An event streaming platform like Kafka is capable of handling trillions of events, manipulates data as it arrives, supports publishing of data to any number of systems or real-time applications running in distributed systems.\nServerless architectures a…",
+          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/announcing-ga-launch-of-kafka-trigger-extension-on-azure/ba-p/3499015",
+          "publishedOn": "2022-06-23T13:04:01.000Z",
+          "wordCount": 15954,
+          "title": "Announcing GA launch of Kafka Trigger extension on Azure Functions",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/379730i5E17AF73186160D0/image-size/original?v=v2&px=-1"
+        },
+        {
           "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/new-api-backend-options-in-azure-static-web-apps/ba-p/3516882",
           "author": "anninakeller",
           "description": "Integrate APIs hosted on Azure App Service, Azure Container Apps, and Azure API Management\n \n\n \nFrontend web applications often rely on dynamic content retrieved from APIs. Azure Static Web Apps supports seamless integration with Azure Functions to create serverless HTTP APIs. Azure Functions is one of several popular options for hosting APIs on Azure. Today, we’re excited to announce Azure Static Web Apps has added preview support for integrating APIs in the following Azure services:\n \n\nAzure App Service – host APIs built with frameworks like Flask, Express, Apollo, and ASP.NET\nAzure Container Apps – integrate with APIs and microservices running in serverless containers\nAzure API Management – aggregate multiple APIs in a unified API gateway \n\n \nYou can link any of these resources to your …",
@@ -794,16 +804,6 @@
           "wordCount": 2946,
           "title": "Connected Microservices with Azure Container Apps",
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/342549iC22EF883DE19B47D/image-size/original?v=v2&px=-1"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/configure-nginx-for-php-8-linux-azure-app-service/ba-p/3069373",
-          "author": "Hanli_Ren",
-          "description": "Azure App Service for Linux platform now supports customer using both PHP 7 and PHP 8 built-in docker image. \nWhen switching from PHP 7 to PHP 8, you may recognize the platform changed the web container from using Apache to Nginx. If you previously defined custom rules in .htaccess will be lost and will highly possible break your app.\n \nBut Nginx does not have an equivalent to the .htaccess file, you need to update the main configuration and reload Nginx for any changes to take effect. NGINX is designed to be efficient. While using .htaccess can do harm to performance. For more details, please refer to https://www.nginx.com/resources/wiki/start/topics/examples/likeapache-htaccess/.\n \nThis article shows how to deploy a customized Nginx configuration in PHP 8 Linux App Service.\n \nInside App …",
-          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/configure-nginx-for-php-8-linux-azure-app-service/ba-p/3069373",
-          "publishedOn": "2022-01-25T06:53:54.000Z",
-          "wordCount": 932,
-          "title": "Configure Nginx for PHP 8 Linux Azure App Service",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/341703i8C4083058B749351?v=v2"
         }
       ]
     },
@@ -812,6 +812,106 @@
       "feedUrl": "https://techcommunity.microsoft.com/plugins/custom/microsoft/o365/custom-blog-rss?tid=-2574164104208876465&board=AzureDevCommunityBlog&size=100",
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
+        {
+          "id": "https://techcommunity.microsoft.com/t5/azure-developer-community-blog/azure-tips-and-tricks-setup-an-azure-pipeline-with-node-js/ba-p/3545930",
+          "author": "manoj-srinivas",
+          "description": "Setup an Azure Pipeline with Node.js\n \n\n \nBuild a Node.js application with Azure Pipelines\nA great way to improve the quality of your application is to automatically build it whenever you make changes. This enables you and your team to see if the application still works and fix errors quickly. You can easily set up a build pipeline with Azure Pipelines, which is part of Azure DevOps.\n \nIn this post, we'll create an Azure Pipeline that builds and tests a Node.js application.\nPrerequisites\nIf you want to follow along, you'll need the following:\n\nAn Azure DevOps account. If you don't have one yet, you can start by creating a free account here\nA GitHub account. If you don't have one yet, you can create a free account here\n\n \nCreate an Azure Pipeline that builds and tests a Node.js application\n…",
+          "link": "https://techcommunity.microsoft.com/t5/azure-developer-community-blog/azure-tips-and-tricks-setup-an-azure-pipeline-with-node-js/ba-p/3545930",
+          "publishedOn": "2022-06-23T22:47:51.000Z",
+          "wordCount": 15874,
+          "title": "Azure Tips and Tricks - Setup an Azure Pipeline with Node.js",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/383239i153C21EC78A100E3?v=v2"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/azure-developer-community-blog/azure-tips-and-tricks-how-to-perform-serverless-operations-with/ba-p/3545900",
+          "author": "manoj-srinivas",
+          "description": "How to perform Serverless operations with Azure DevOps\n \n\n \nBuild and deploy Azure Functions with Azure DevOps\nAzure Functions are great for running tasks on demand, like processing queue messages or resizing images. They can run serverless, which means that you can run them without having to configure and maintain infrastructure. And with Azure DevOps Pipelines, Microsofts' Continuous Integration (CI) and Continuous Deployment (CD) solution, you can easily compile your Azure Functions and deploy to the Azure.\nIn this post, we'll take a look at how we can use Azure DevOps Pipelines to easily build and deploy an Azure Function to the cloud.\n \nPrerequisites\nIf you want to follow along, you'll need the following:\n\nAn Azure subscription (If you don't have an Azure subscription, create a free a…",
+          "link": "https://techcommunity.microsoft.com/t5/azure-developer-community-blog/azure-tips-and-tricks-how-to-perform-serverless-operations-with/ba-p/3545900",
+          "publishedOn": "2022-06-23T22:39:59.000Z",
+          "wordCount": 16163,
+          "title": "Azure Tips and Tricks - How to perform Serverless operations with Azure DevOps",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/383234i4104ADBA13CBC4FE?v=v2"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/azure-developer-community-blog/azure-tips-and-tricks-working-with-azure-functions-in-vs-code/ba-p/3545578",
+          "author": "manoj-srinivas",
+          "description": "Working With Azure Functions in VS Code and GitHub\n \nOverview\n \nAzure Functions is a Serverless component from Microsoft that allows you to create event-based functions that can be dynamically scaled to meet the demand. We can work with all kinds of events such as when a file is uploaded to storage, a message appears in the queue or a HTTP request is received.\n \nUsing GitHub we can take an existing application, fork it to our account and then create our own version of the application, all from within VS Code.\n \nWhat's covered in this lab\n \nIn this lab, you will:\n\nFork an existing Azure Functions project on GitHub\nLearn how to create and merge branches in VS Code\nDebug Functions with VS Code\nDeploy Functions to Azure from VS Code\n\n \nPrerequisites\n \n\nYou'll need VS Code with Azure Functions …",
+          "link": "https://techcommunity.microsoft.com/t5/azure-developer-community-blog/azure-tips-and-tricks-working-with-azure-functions-in-vs-code/ba-p/3545578",
+          "publishedOn": "2022-06-23T22:31:20.000Z",
+          "wordCount": 15827,
+          "title": "Azure Tips and Tricks - Working With Azure Functions in VS Code and GitHub",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/383206i4A61EA66DC8167DA?v=v2"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/azure-developer-community-blog/azure-tips-and-tricks-how-to-use-deployment-slots-in-azure-app/ba-p/3545518",
+          "author": "manoj-srinivas",
+          "description": "How to use Deployment Slots in Azure App Service for Containers\n \n\n \nManaged features for containerized applications\n \nUsing containers is a great way to make sure that your application can run anywhere and that it runs in the same environment, anywhere. In Azure, you can run containers in many services, including in Azure Kubernetes Service, Azure Container Instances, Azure Service Fabric and more. And you can also run containers in Azure App Service. Running containers in Azure App Service enables you to use features like deployment slots and easy authentication and authorization.\n \nIn this post, we'll take a look at using deployment slots for containers in Azure App Service.\n \nPrerequisites\n \nIf you want to follow along, you'll need the following:\n\nAn Azure subscription (If you don't ha…",
+          "link": "https://techcommunity.microsoft.com/t5/azure-developer-community-blog/azure-tips-and-tricks-how-to-use-deployment-slots-in-azure-app/ba-p/3545518",
+          "publishedOn": "2022-06-23T22:25:04.000Z",
+          "wordCount": 15989,
+          "title": "Azure Tips and Tricks - How to use Deployment Slots in Azure App Service for Containers",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/383201i68BA03AE96AAEB12?v=v2"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/azure-developer-community-blog/azure-tips-and-tricks-build-and-deploy-your-first-app-with-the/ba-p/3545406",
+          "author": "manoj-srinivas",
+          "description": "Build and deploy your first app with the Azure SDK for Java on Azure\n \nAzure is a very inclusive cloud platform. You can run applications on it that have been created in almost any programming language. This includes Java. And Microsoft has even created an Azure Toolkit for Eclipse to make it easier to use Azure when you are developing Java applications. Let's see how that works. In this post, we'll create a simple Java application and run that in an Azure App Service Web App.\n \nGetting your development environment ready\n \nBefore we get started, we need to make sure that we can develop Java applications on our development machine and that we have the Azure toolkit for Eclipse installed. Follow the steps below to get your development environment ready.\n\nDownload and install the latest Java …",
+          "link": "https://techcommunity.microsoft.com/t5/azure-developer-community-blog/azure-tips-and-tricks-build-and-deploy-your-first-app-with-the/ba-p/3545406",
+          "publishedOn": "2022-06-23T22:20:52.000Z",
+          "wordCount": 15898,
+          "title": "Azure Tips and Tricks - Build and deploy your first app with the Azure SDK for Java on Azure",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/383180iE0C0E434C6221FAC?v=v2"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/azure-developer-community-blog/azure-tips-and-tricks-remove-azure-secrets-committed-to-github/ba-p/3545349",
+          "author": "manoj-srinivas",
+          "description": "Remove Azure Secrets committed to GitHub\n \nRemove passwords committed to GitHub on accident\n \nWriting code day after day means secrets, connection strings and more get added to your code accidentally. And if you are like me, they get committed to your GitHub repo and then you have to live in shame. =) In this post, I'll walk you through removing secrets from a GitHub repo that you've already committed the secret to.\n \nPart 1 - Initial setup:\n \nScenario: You have committed a password with the value of qph@}uC,7cGLBdsX to your GitHub repo. This password should be confidential and not stored in the code.\n \nHow do you fix it?\n \n\nEnsure you have the repo on your local disk or clone a fresh copy with HTTPS or SSH. I'll use SSH git clone git@github.com:mbcrump/crumpbot.git as a sample.\nClone a co…",
+          "link": "https://techcommunity.microsoft.com/t5/azure-developer-community-blog/azure-tips-and-tricks-remove-azure-secrets-committed-to-github/ba-p/3545349",
+          "publishedOn": "2022-06-23T22:14:26.000Z",
+          "wordCount": 15959,
+          "title": "Azure Tips and Tricks - Remove Azure Secrets committed to GitHub",
+          "imageUrl": "https://cdn.techcommunity.microsoft.com/assets/MTC_Open_graph_image1.jpg"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/azure-developer-community-blog/azure-tips-and-tricks-how-to-move-azure-storage-blobs-between/ba-p/3545304",
+          "author": "manoj-srinivas",
+          "description": "How to move Azure Storage Blobs between containers\n \n\n \nEasy file management\n \nAzure Storage is a versatile and secure storage service. You can create storage containers with folder hierarchies and store Blobs in them. But it isn't very straightforward to move Blobs between containers or between storage accounts. Azure offers several options to help with this, including Azure Storage Explorer.\n \nIn this post, we'll use Azure Storage Explorer to move Blobs between containers in Azure Storage Accounts.\n \nPrerequisites\n \nIf you want to follow along, you'll need the following:\n\nAn Azure subscription (If you don't have an Azure subscription, create a free account before you begin)\nTwo existing Azure Storage accounts with Blobs in one of them. Learn how to work with Blobs here\n\n \nCopy Blobs with…",
+          "link": "https://techcommunity.microsoft.com/t5/azure-developer-community-blog/azure-tips-and-tricks-how-to-move-azure-storage-blobs-between/ba-p/3545304",
+          "publishedOn": "2022-06-23T22:11:27.000Z",
+          "wordCount": 15672,
+          "title": "Azure Tips and Tricks - How to move Azure Storage Blobs between containers",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/383176iB0F8045950B66CDA?v=v2"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/azure-developer-community-blog/azure-tips-and-tricks-how-to-run-logic-apps-in-a-docker/ba-p/3545220",
+          "author": "manoj-srinivas",
+          "description": "How to run Logic Apps in a Docker container\n \n\n \nAzure Logic Apps can run anywhere\n \nYou can run Azure Logic Apps anywhere, on the Azure Functions Runtime. This enables you to deploy and run Logic Apps on your local machine, in your own datacenter, or in another cloud. And you can also run Azure Logic Apps in a Docker container.\nIn this post, we'll run an Azure Logic App in a Docker container.\n \nPrerequisites\n \nIf you want to follow along, you'll need the following:\n\nAn Azure subscription (If you don't have an Azure subscription, create a free account before you begin)\nCreate an Azure Logic App in VS Code with the newest extension by following this previous tip.\nDocker Desktop\nPostman for sending requests\n\n \nDeploy a Logic App to a container\n \nThe Logic App is triggered by an HTTP trigger …",
+          "link": "https://techcommunity.microsoft.com/t5/azure-developer-community-blog/azure-tips-and-tricks-how-to-run-logic-apps-in-a-docker/ba-p/3545220",
+          "publishedOn": "2022-06-23T22:06:28.000Z",
+          "wordCount": 15771,
+          "title": "Azure Tips and Tricks - How to run Logic Apps in a Docker container",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/383167iB9A1B2FC809E4E73?v=v2"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/azure-developer-community-blog/azure-tips-and-tricks-how-to-get-started-with-azure-container/ba-p/3545026",
+          "author": "manoj-srinivas",
+          "description": "How to get started with Azure Container Apps\n \n\n \n \nA simple way to run containers in Azure\n \nContainers offer a great way to develop and run applications in a consistent environment. You can develop your app in a container on your local development machine, and run that same container in production, thereby eliminating differences in infrastructure between environments. And now, you can easily run containers in Azure with Azure Container Apps. Azure Container Apps abstracts the overhead of infrastructure and orchestration, making it easy for you to deploy and run a container.\nIn this post, we'll deploy a sample container to Azure Container Apps.\n \nPrerequisites\n \nIf you want to follow along, you'll need the following:\n\nAn Azure subscription (If you don't have an Azure subscription, create…",
+          "link": "https://techcommunity.microsoft.com/t5/azure-developer-community-blog/azure-tips-and-tricks-how-to-get-started-with-azure-container/ba-p/3545026",
+          "publishedOn": "2022-06-23T21:57:41.000Z",
+          "wordCount": 15689,
+          "title": "Azure Tips and Tricks - How to get started with Azure Container Apps",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/383149i951D21D9765BF1E0?v=v2"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/azure-developer-community-blog/azure-tips-and-tricks-how-to-test-application-performance-with/ba-p/3544867",
+          "author": "manoj-srinivas",
+          "description": "How to test application performance with Azure Load Testing\n \n\nApplication performance testing\n \nWhen you build an application, you want it to be fast. Users should perceive it as fast and performant, even when many users are using it. And your application should continue to work without errors when it is under load. It can be difficult to know how your application behaves when it is used by many concurrent users. Azure Load Testing can help by putting your application under load and analyzing how it performs.\nIn this post, we'll test the performance of an existing web application with Azure Load Testing.\n \nPrerequisites\nIf you want to follow along, you'll need the following:\n\nAn Azure subscription (If you don't have an Azure subscription, create a free account before you begin)\nAn existin…",
+          "link": "https://techcommunity.microsoft.com/t5/azure-developer-community-blog/azure-tips-and-tricks-how-to-test-application-performance-with/ba-p/3544867",
+          "publishedOn": "2022-06-23T21:50:29.000Z",
+          "wordCount": 16000,
+          "title": "Azure Tips and Tricks - How to test application performance with Azure Load Testing",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/383127iAB9A91DA2985425E?v=v2"
+        },
         {
           "id": "https://techcommunity.microsoft.com/t5/azure-developer-community-blog/azure-tips-and-tricks-getting-started-with-azure-app/ba-p/3539176",
           "author": "manoj-srinivas",
@@ -1157,6 +1257,26 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/gov-topics-avd-cross-cloud-cross-tenant-deployment/ba-p/3543939",
+          "author": "Kelbley",
+          "description": "I’ve run into a great many customers with complicated AAD / Azure tenant setups – some the result of mergers and acquisitions, others sometimes to do regulatory reasons.\n \nThousands of Microsoft U.S. government and regulated industry customers use the Office 365 Government Community Cloud (GCC) for end-user identity and productivity services.  Azure Active Directory (AAD) for the GCC lives in a U.S.-only partition of AAD in the Azure Commercial service.\n \nMany governmental agencies leverage Azure Government for non-Office 365 services, which cannot directly leverage the AAD identities of GCC users. \n \nThis post is intended to demonstrate how Azure Virtual Desktop (AVD) might be deployed using Azure Commercial as the control plane, and Azure Government for compute. Such a deployment enables…",
+          "link": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/gov-topics-avd-cross-cloud-cross-tenant-deployment/ba-p/3543939",
+          "publishedOn": "2022-06-23T14:57:12.000Z",
+          "wordCount": 17575,
+          "title": "Gov Topics:  AVD Cross-Cloud / Cross-Tenant Deployment",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/383030i7104790D6E81C833?v=v2"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/gov-topics-dedicated-hosts-with-avd/ba-p/3543438",
+          "author": "Kelbley",
+          "description": "Azure Virtual Desktop by default will provision up VMs based on a number of different “availability” options, but the AVD blades in the Azure Portal do not support deploying VMs to dedicated hosts.\n \nCompute Isolation (and use of a dedicated host) may be important to meet regulatory requirements, including meeting isolation guidelines to meet DoD IL5 requirements.\n \nThis post is intended to provide you with a path to using dedicated hosts with AVD, and will walk through a portal-based deployment, that we will update to use dedicated hosts.\n \nFirst Step: Deploy AVD VMs\nProvisioning the VMs in your AVD pool will be similar to other portal-based deployment, but with attention paid to the availability options.\n \nWalking through the portal, we will create our host pool:\nCreating your Host Pool …",
+          "link": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/gov-topics-dedicated-hosts-with-avd/ba-p/3543438",
+          "publishedOn": "2022-06-23T13:37:44.000Z",
+          "wordCount": 16572,
+          "title": "Gov Topics:  Dedicated Hosts with AVD",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/383004i64D261C2031665A1?v=v2"
+        },
+        {
           "id": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/armchair-architects-the-land-of-iot/ba-p/3478756",
           "author": "brauerblogs",
           "description": "Designing modern applications that may include legacy components introduces unique challenges to the world of cloud architecture. IoT-related architecture can be different than other architecture.\n \nThe first thing to point out in this landscape is that there are two distinct scenarios: brownfield and greenfield. Anytime you’re building something new, such as a factory, building or car, and you want to include Internet connected devices or components, you are working within a greenfield scenario. Anytime you want to connect existing devices and assets that may have been around for years to decades, this typically is a brownfield scenario.  The assets or devices were not designed to be network or internet connected by default. Thus, a retrofit methodology is required. In many cases, brownfi…",
@@ -1395,56 +1515,6 @@
           "wordCount": 2841,
           "title": "Protecting MongoDB on AKS / ANF with Astra Control Service using custom execution hooks",
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/338707i67C321AA7CC56B66/image-size/original?v=v2&px=-1"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/comparing-and-contrasting-the-aks-anf-nfs-subdir-external/ba-p/3057547",
-          "author": "GeertVanTeylingen",
-          "description": "Abstract\n \nThis blog examines two unique ways of using Azure NetApp Files (ANF) volumes in Azure Kubernetes Service (AKS) clusters, evaluating the pros and cons of both.\n \nCo-authors: Sayan Saha and Balasubramanian Ramesh Babu, NetApp\n \nIntroduction\n \nWhen it comes to accessing Azure NetApp Files volumes for Kubernetes applications, there are a few ways to achieve it:\n\nStatic creation of volumes, handled outside Kubernetes. ANF volumes are created and then exposed to Kubernetes apps by providing connectivity info on a per-volume basis.\nUsing an automatic provisioner, such as the NFS Subdir External Provisioner.\nUsing Astra Trident, NetApp’s preferred solution for on-demand, Kubernetes-native ANF storage.\n\n \n\n \nThis blog walks you through the options, as well as factors to consider when sel…",
-          "link": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/comparing-and-contrasting-the-aks-anf-nfs-subdir-external/ba-p/3057547",
-          "publishedOn": "2022-01-25T14:00:52.000Z",
-          "wordCount": 2725,
-          "title": "Comparing and Contrasting the AKS/ANF NFS subdir external provisioner with Astra Trident",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/338701iE2D6C7B2DC1C6690/image-size/original?v=v2&px=-1"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/azure-kubernetes-service-security-deep-dive-part-5-securing/ba-p/3053769",
-          "author": "pranabpaul",
-          "description": "In the previous part of this series (part 4), we saw how you can secure ingress and egress traffic between pods within AKS cluster using Network Policy. But AKS is not an isolated service. Most of the time it’s part of bigger network that consists of other Azure services and computes. It’s evident that ingress and egress connections from those services are also essential. For example, your APIs running as stateless microservices within AKS need to connect Azure SQL DB or say Cosmos DB. In this article, we will discuss how to ensure security in such egress and ingress requirements. Fortunately, we have well documented resources within Azure documentation on this subject and hence we will only point out the important areas within those documentation.Let’s talk about egress first. By default,…",
-          "link": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/azure-kubernetes-service-security-deep-dive-part-5-securing/ba-p/3053769",
-          "publishedOn": "2022-01-25T13:56:54.000Z",
-          "wordCount": 1093,
-          "title": "Azure Kubernetes Service Security Deep Dive – Part 5 (Securing Egress and Ingress)",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/337964iDE984986859FE88C/image-size/original?v=v2&px=-1"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/azure-kubernetes-service-security-deep-dive-part-4-network/ba-p/3037014",
-          "author": "pranabpaul",
-          "description": "By nature, and by default each pod can talk to all other pods within a Kubernetes cluster. This behaviour sometimes is not desirable as some application owners may not agree to share connectivity to other applications. Or would like to restrict access in or out of the backend applications running on certain pods. Network Policy comes to your rescue in those cases.\nNetwork policies or network security policies are kind of firewall rules for Kubernetes cluster. These are implemented with the help of Network Plugin or Container Network Interface (CNI) and control traffic flow at the IP address or port level (OSI layer 3 or 4). These policies are applied at the Namespace level and can restrict ingress and egress to and from a pod or a group of pods based on how they are configured. Please read…",
-          "link": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/azure-kubernetes-service-security-deep-dive-part-4-network/ba-p/3037014",
-          "publishedOn": "2022-01-25T13:56:04.000Z",
-          "wordCount": 1665,
-          "title": "Azure Kubernetes Service Security Deep Dive – Part 4 (Network Policies)",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/333454iE6DCF8C56607FDD4/image-size/original?v=v2&px=-1"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/azure-kubernetes-service-security-deep-dive-part-3-audit-logs/ba-p/3036977",
-          "author": "pranabpaul",
-          "description": "Any activity to your Kubernetes cluster is handled as API request. So, when you create a new pod, changes container image of your deployment or read information from a configmap or secret, you basically generate requests to the Kubernetes API. We can ask Kubernetes to record all these requests and related data and metadata in log repository called Audit Logs. Each event at its different stages of execution generates event record and can be stored in audit logs based on some pre-defined policies. Please read this article on auditing carefully to understand the defined stages and defined audit levels. Remember, turning on audit logs means increase in memory consumption as well as storage consumption.\n \nAs you can see in the above-mentioned article, for a regular Kubernetes cluster, you can c…",
-          "link": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/azure-kubernetes-service-security-deep-dive-part-3-audit-logs/ba-p/3036977",
-          "publishedOn": "2022-01-25T13:54:01.000Z",
-          "wordCount": 1070,
-          "title": "Azure Kubernetes Service Security Deep Dive – Part 3 (Audit Logs)",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/333436i4873D150AA4BF186/image-size/original?v=v2&px=-1"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/azure-kubernetes-service-security-deep-dive-part-2-apparmor-and/ba-p/3013977",
-          "author": "pranabpaul",
-          "description": "AppArmor is a Linux Kernel security module. It confines the access of users and groups to different resources within Linux. This is at the Node level, and you already have AppArmor installed in your AKS worker nodes. The way AppArmor works is, you can create a profile and that in turn define whether the entity adhering this profile allowed to do certain activities such as network access or say file read/write/execute. It can either do “Enforcing” or block access to resources or can “Complain”, which means report such violations. Read more on AppArmor and its applicability in the perspective of Kubernetes here.\n \nLet’s start with AppArmor. Let’s first connect to your AKS cluster using Azure CLI (see Part 1 of this series) and run command “kubectl get nodes -o wide” to get the internal IPs o…",
-          "link": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/azure-kubernetes-service-security-deep-dive-part-2-apparmor-and/ba-p/3013977",
-          "publishedOn": "2022-01-25T13:53:43.000Z",
-          "wordCount": 1453,
-          "title": "Azure Kubernetes Service Security Deep Dive – Part 2 (AppArmor and seccomp)",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/329972i053B95DA64F1A912/image-size/original?v=v2&px=-1"
         }
       ]
     },
@@ -1617,6 +1687,16 @@
       "feedUrl": "https://devblogs.microsoft.com/java/feed/",
       "siteUrl": "https://devblogs.microsoft.com/java",
       "articles": [
+        {
+          "id": "https://devblogs.microsoft.com/java/?p=229119",
+          "author": "Nick Zhu",
+          "description": "Hi everyone, welcome to the June update of Visual Studio Code Java. We have a feature-packed edition this time, including some major Spring visualization upgrade for Spring developers, user experience improvements as well as fundamental experience enhancements.\nThe post Java on Visual Studio Code Update – June 2022 appeared first on Microsoft for Java Developers.",
+          "link": "https://devblogs.microsoft.com/java/java-on-visual-studio-code-update-june-2022/",
+          "publishedOn": "2022-06-23T07:21:45.000Z",
+          "wordCount": 5221,
+          "title": "Java on Visual Studio Code Update – June 2022",
+          "imageUrl": "https://devblogs.microsoft.com/java/wp-content/uploads/sites/51/2022/06/englishcover.png"
+        },
         {
           "id": "https://devblogs.microsoft.com/java/?p=229090",
           "author": "Jialuo Gan",
@@ -2256,6 +2336,36 @@
       "feedUrl": "https://azurecomcdn.azureedge.net/en-us/updates/feed/?updateType=features",
       "siteUrl": "https://azure.microsoft.com/en-us/updates/",
       "articles": [
+        {
+          "id": "azure-sql-public-preview-updates-for-late-june-2022",
+          "author": null,
+          "description": "Public preview updates made in late June 2022 for Azure SQL.",
+          "link": "https://azure.microsoft.com/en-us/updates/azure-sql-public-preview-updates-for-late-june-2022/",
+          "publishedOn": "2022-06-23T16:00:01.000Z",
+          "wordCount": 5176,
+          "title": "Azure SQL—Public preview updates for late June 2022",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-a58d5f2506bfb8c7aab9f8b0d37369090505fca3b8d7d0ca65919a0b5118290b/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "azure-sql-generally-available-updates-for-late-june-2022",
+          "author": null,
+          "description": "Generally available updates made in late June 2022 for Azure SQL.",
+          "link": "https://azure.microsoft.com/en-us/updates/azure-sql-generally-available-updates-for-late-june-2022/",
+          "publishedOn": "2022-06-23T16:00:00.000Z",
+          "wordCount": 5186,
+          "title": "Azure SQL—Generally available updates for late June 2022",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-a58d5f2506bfb8c7aab9f8b0d37369090505fca3b8d7d0ca65919a0b5118290b/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "general-availability-akv-provider-arc-kubernetes",
+          "author": null,
+          "description": "Enable fetching secrets from an Azure Key Vault directly into the workload running on an Arc connected Kubernetes cluster.",
+          "link": "https://azure.microsoft.com/en-us/updates/general-availability-akv-provider-arc-kubernetes/",
+          "publishedOn": "2022-06-23T15:00:00.000Z",
+          "wordCount": 5217,
+          "title": "General availability: Azure Key Vault secrets provider on Azure Arc enabled Kubernetes",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-a58d5f2506bfb8c7aab9f8b0d37369090505fca3b8d7d0ca65919a0b5118290b/images/shared/social/azure-icon-250x250.png"
+        },
         {
           "id": "generally-available-windows-iot-on-arm64",
           "author": null,
