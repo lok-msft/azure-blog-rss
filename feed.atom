@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2022-06-28T03:07:49.302Z</updated>
+    <updated>2022-06-28T03:16:01.747Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
@@ -2169,6 +2169,36 @@ Today we are happy to announce the public preview of Resource governance for cli
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[What’s new in Azure Monitor @ Build 2022]]></title>
+        <id>https://techcommunity.microsoft.com/t5/azure-observability-blog/what-s-new-in-azure-monitor-build-2022/ba-p/3422384</id>
+        <link href="https://techcommunity.microsoft.com/t5/azure-observability-blog/what-s-new-in-azure-monitor-build-2022/ba-p/3422384"/>
+        <updated>2022-05-24T16:34:01.000Z</updated>
+        <summary type="html"><![CDATA[Azure Monitor provides a rich set of enterprise ready capabilities to ensure you have complete observability of your hybrid environment, helping you keep it always available, reliable and performant. We announced several new capabilities at Microsoft Build 2022 to help you gain intelligent and streamlined visibility into your apps and container workloads.
+ 
+Intelligently view and identify root causes in application map with Application Insights
+
+We have introduced an Intelligent view toggle on the application map feature that uses patented AIOps and machine learning models to guide you to the root cause of the issue being investigated. The map now can recommend the exact node to node edges that need further investigation.The images below illustrate this benefit:
+ 
+
+
+Easily enable Application Insights for client-side monitoring of Node.js apps
+
+We have introduced JavaScript auto-injection to Application Insights Node.js SDK that now simplifies enablement for client side monitoring.
+
+ 
+Streamline your query experience from Container Insights
+
+Our new ContainerLogv2 schema offers a streamlined querying experience by reducing your data to a single table as well as the number of required join operations.
+
+ 
+We also recently introduced a public preview of Azure Managed Grafana and new Grafana integrations, with the ability to pin Azure Monitor visualizations from Azure Portal to Grafana and new out-of-the-box monitoring dashboards.
+ 
+Learn more about Azure Monitor and monitoring best practices for your cloud and edge environments with our dedicated guidance cookbooks. We welcome you to reach out to us with any questions or feedback on our Tech Community.]]></summary>
+        <author>
+            <name>artigulwadi</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Protect, Augment, and Build GraphQL APIs with Azure API Management]]></title>
         <id>https://techcommunity.microsoft.com/t5/azure-developer-community-blog/protect-augment-and-build-graphql-apis-with-azure-api-management/ba-p/3396388</id>
         <link href="https://techcommunity.microsoft.com/t5/azure-developer-community-blog/protect-augment-and-build-graphql-apis-with-azure-api-management/ba-p/3396388"/>
@@ -3093,6 +3123,43 @@ Today we’re going to be looking at the Azure Well-Architected Azure Kubernetes
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[Simplified Log Analytics Table Management]]></title>
+        <id>https://techcommunity.microsoft.com/t5/azure-observability-blog/simplified-log-analytics-table-management/ba-p/3378755</id>
+        <link href="https://techcommunity.microsoft.com/t5/azure-observability-blog/simplified-log-analytics-table-management/ba-p/3378755"/>
+        <updated>2022-05-16T08:47:24.000Z</updated>
+        <summary type="html"><![CDATA[Azure Log Analytics is introducing a new way to view and manage Table metadata from the Azure Portal. With this new experience our customers can view and edit table properties directly from Azure Portal->Log Analytics workspaces. Up until now, this was only possible using the Tables REST API or CLI.
+ 
+In this blog you will learn how to manage each table’s plan and retention and archiving policy using the Azure Portal's Tables experience - which was lately introduced in preview.
+ 
+From the Log Analytics workspaces menu, select Tables (preview).
+The Tables screen lists all the tables in the workspace with their properties:
+
+Type: Azure table \ Custom table \ Search results \ Restored logs
+Plan: Analytics \ Basic
+Retention properties:
+
+Interactive retention
+Archive period
+Total retention period
+
+
+
+
+ 
+To edit a specific table setting, select the context menu of the table you want to configure and select Manage table.
+
+ 
+From the table’s configuration screen you can:
+
+Edit the table’s Plan.By default, all tables in your workspace are Analytics tables. You can configure particular tables to use Basic Logs. The list of tables that are applicable to Basic plan can be found here. You can read here about the differences between Analytics and Basic Logs plans.
+Configure the retention and archive duration in Data retention settings section.By default, all tables in your workspace inherit the workspace retention and have no archive. From the Data retention settings section you can set the retention policies for individual tables: Interactive retention and Total retention, and the Archive retention value is calculated as (Total – Interactive).
+Note: 
+Selecting a longer retention period will incur additional charges. For more information see our pricing page.Selecting a shorter retention period may result in some data loss.]]></summary>
+        <author>
+            <name>AdiBiran</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Join Microsoft at KubeCon + CloudNativeCon Europe 2022]]></title>
         <id>https://cloudblogs.microsoft.com/opensource/2022/05/16/join-microsoft-at-kubecon-cloudnativecon-europe-2022/</id>
         <link href="https://cloudblogs.microsoft.com/opensource/2022/05/16/join-microsoft-at-kubecon-cloudnativecon-europe-2022/"/>
@@ -3883,6 +3950,56 @@ In my test Azure Spring Cloud, I created two Apps, "hello" and "numbe…]]></sum
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[Activity Logs Insights (Preview)]]></title>
+        <id>https://techcommunity.microsoft.com/t5/azure-observability-blog/activity-logs-insights-preview/ba-p/3291892</id>
+        <link href="https://techcommunity.microsoft.com/t5/azure-observability-blog/activity-logs-insights-preview/ba-p/3291892"/>
+        <updated>2022-04-24T08:13:57.000Z</updated>
+        <summary type="html"><![CDATA[Activity Logs Insights is a centralised place to see all of the activities done in a resource or resource group, information such as who administrators deleted, updated or created resources, and whether the activities failed or succeeded. This article explains how to enable and use Activity log insights.
+ 
+
+Note: This current version of Activity Log Insights is a preview, and offers basic Activity logs insights. The next version, planned for the upcoming months, will offer additional information and insights
+
+ 
+To enable Activity Logs Insights, simply configure the Activity log to export to a Log Analytics workspace.
+ 
+To view Activity logs insights on a resource group or a subscription level:
+
+
+In the Azure portal, select Monitor > Workbooks.
+
+
+Select Activity Logs Insights in the Insights section.
+
+ At the top of the Activity Logs Insights page, select:
+
+One or more subscriptions from the Subscriptions dropdown.
+Resources and resource groups from the CurrentResource dropdown.
+A time range for which to view data from the TimeRange dropdown.
+
+
+
+o To view Activity Logs Insights on a resource level:
+
+
+In the Azure portal, go to your resource, select Workbooks.
+
+
+Select Activity Logs Insights in the Activity Logs Insights section.
+ 
+At the top of the Activity Logs Insights page, select:
+
+A time range for which to view data from the TimeRange dropdown.
+
+
+
+ 
+
+To learn more about Activity Logs Insights, see this article.]]></summary>
+        <author>
+            <name>OREN_SALZBERG</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Upcoming changes to IP-addresses for Azure Relay]]></title>
         <id>https://techcommunity.microsoft.com/t5/messaging-on-azure-blog/upcoming-changes-to-ip-addresses-for-azure-relay/ba-p/3285254</id>
         <link href="https://techcommunity.microsoft.com/t5/messaging-on-azure-blog/upcoming-changes-to-ip-addresses-for-azure-relay/ba-p/3285254"/>
@@ -4136,6 +4253,20 @@ var token …]]></summary>
         <summary type="html"><![CDATA[Reduce spending by storing cold data to Azure Archive Storage, now in new regions.]]></summary>
         <author>
             <name>Azure service updates</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Enabling Full-stack Observability with Azure Monitor and Grafana]]></title>
+        <id>https://techcommunity.microsoft.com/t5/azure-observability-blog/enabling-full-stack-observability-with-azure-monitor-and-grafana/ba-p/3287145</id>
+        <link href="https://techcommunity.microsoft.com/t5/azure-observability-blog/enabling-full-stack-observability-with-azure-monitor-and-grafana/ba-p/3287145"/>
+        <updated>2022-04-18T17:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Along with the announcement of Azure Managed Grafana, we are excited to introduce new Grafana integrations with Azure Monitor including the ability to pin Azure Monitor visualizations from Azure Portal to Grafana dashboards and new out-of-the-box Azure Monitor dashboards.
+ 
+Full stack visibility from multiple sources in a single screen
+ 
+Grafana allows you to query, visualize and create operational dashboards on Azure Monitor data. Using Azure Managed Grafana, you can now view your Azure monitoring data in Grafana dashboards in a few simple clicks. You can quickly pin Azure Monitor visualizations from the Azure Portal to new or existing Grafana dashboards by adding panels to your Grafana dashboard directly from Azure Monitor. Additionally, you can combine app and infrastructure metrics fro…]]></summary>
+        <author>
+            <name>KayodePrince</name>
         </author>
     </entry>
     <entry>
@@ -4864,6 +4995,29 @@ In PHP 8 Linux A…]]></summary>
         <summary type="html"><![CDATA[Azure Bastion now supports the Kerberos authentication protocol in public preview.]]></summary>
         <author>
             <name>Azure service updates</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Log Analytics results upgrade]]></title>
+        <id>https://techcommunity.microsoft.com/t5/azure-observability-blog/log-analytics-results-upgrade/ba-p/3257229</id>
+        <link href="https://techcommunity.microsoft.com/t5/azure-observability-blog/log-analytics-results-upgrade/ba-p/3257229"/>
+        <updated>2022-04-04T07:55:57.000Z</updated>
+        <summary type="html"><![CDATA[Intro
+The Log Analytics team is happy to introduce one of our biggest upgrades yet - our new result set grid.
+The new results set packs a large amount of enhancements, usability, accessibility and performance improvements alongside all new features - designed to help you do more with your Logs.
+Results Re-design
+The new result set was re-designed to allow more focus on what matters to you - your result.When running your query, you will now get a full screen experience - that is cleaner and more pleasing:
+
+ 
+Result set is re-designed to occupy most of the screen. Column controls and other elements were rearranged to focus on content:
+
+ 
+Query details was re designed as a sideblade, allowing for a cleaner look and feel, with even more room for future details and statistics:
+
+ 
+Goodbye pages,…]]></summary>
+        <author>
+            <name>RoyGal</name>
         </author>
     </entry>
     <entry>
@@ -5662,6 +5816,22 @@ The post The new Microsoft Azure Cosmos DB Developer Specialty Certification is 
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[Announcing the limited preview of Optimization Insights]]></title>
+        <id>https://techcommunity.microsoft.com/t5/azure-observability-blog/announcing-the-limited-preview-of-optimization-insights/ba-p/3254582</id>
+        <link href="https://techcommunity.microsoft.com/t5/azure-observability-blog/announcing-the-limited-preview-of-optimization-insights/ba-p/3254582"/>
+        <updated>2022-03-11T19:14:40.000Z</updated>
+        <summary type="html"><![CDATA[**Sign up here**
+ 
+Detecting performance issues in today’s applications and web services can be challenging. Even with the right profiling tools and an abundance of profiler data, it can be hard for developers to efficiently uncover useful insights. For instance, manually sifting through gigabytes of profiler data can be tedious and time consuming.
+ 
+One of the common ways to address performance issues is to scale out cloud resources. While it may feel like a reasonable solution in the short run, the resulting costs can add up over time and even cause problems such as cloud sprawling, which can be a maintenance nightmare.
+ 
+Today, we’re excited to announce the limited preview of Optimization Insights, an AI-based service within Application Insights that continuously detects performance iss…]]></summary>
+        <author>
+            <name>jogrima</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Operations Task Management for Azure Alerts]]></title>
         <id>https://techcommunity.microsoft.com/t5/azure-architecture-blog/operations-task-management-for-azure-alerts/ba-p/3253388</id>
         <link href="https://techcommunity.microsoft.com/t5/azure-architecture-blog/operations-task-management-for-azure-alerts/ba-p/3253388"/>
@@ -5887,6 +6057,40 @@ Sample Image
 [Original UI for App Service on Linux]]]></summary>
         <author>
             <name>Winnie_Chen</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Azure Monitor Log Analytics data export is generally available!]]></title>
+        <id>https://techcommunity.microsoft.com/t5/azure-observability-blog/azure-monitor-log-analytics-data-export-is-generally-available/ba-p/3099618</id>
+        <link href="https://techcommunity.microsoft.com/t5/azure-observability-blog/azure-monitor-log-analytics-data-export-is-generally-available/ba-p/3099618"/>
+        <updated>2022-02-23T16:30:46.000Z</updated>
+        <summary type="html"><![CDATA[We are excited to announce the general availability of Log Analytics data export, a capability that lets you continuously export ingested data for selected tables in your Log Analytics workspace, and sent it to an Azure storage account, or Azure Event Hubs.
+ 
+
+ 
+During the public preview, we've implemented many improvements to accommodate high ingestion rate, that many of our large customers have. We also collected valuable feedback and introduced more flexibility in rules to Event Hubs, for better utilization of the various Event Hubs tiers. Export configuration is defined in Log Analytics workspace and can include up to 10 enabled rules, each with one table or more.
+ 
+Common Data export scenarios
+Data in Log Analytics is available for the retention period in your workspace, and used in v…]]></summary>
+        <author>
+            <name>Yossi Yossifon</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[The next evolution of Azure Monitor Logs]]></title>
+        <id>https://techcommunity.microsoft.com/t5/azure-observability-blog/the-next-evolution-of-azure-monitor-logs/ba-p/3143195</id>
+        <link href="https://techcommunity.microsoft.com/t5/azure-observability-blog/the-next-evolution-of-azure-monitor-logs/ba-p/3143195"/>
+        <updated>2022-02-23T13:02:04.000Z</updated>
+        <summary type="html"><![CDATA[We commonly see customers using Azure Monitor in a wide range of scenarios across applications and infrastructure, using data collection, store, out-of-the-box insights and analytics query in their core operation core. We heard from our customers ask for a clear message to bring this immense scale and high-end services also for other logging use cases – making Azure Monitor the one stop shop for all logging needs. :
+ 
+
+Get more value from all your logs – Azure Monitor already provides . This will allow you to unlock insights from troves of logs. You can now apply your own parsing to all logs, search very high volumes, export them to other tools and keep them in the system for up to 7 years.
+
+ 
+
+Allow customers to be more cost effective with their logs – organizations are forced to make wro…]]></summary>
+        <author>
+            <name>Meir Mendelovich</name>
         </author>
     </entry>
     <entry>
