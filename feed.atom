@@ -2,10 +2,117 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2022-07-07T01:51:28.630Z</updated>
+    <updated>2022-07-08T01:49:56.532Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Public preview: 2022-06-30 Azure IoT Central REST API release is now live]]></title>
+        <id>iotc-2022-06-30-rest-api-preview</id>
+        <link href="https://azure.microsoft.com/en-us/updates/iotc-2022-06-30-rest-api-preview/"/>
+        <updated>2022-07-07T19:00:39.000Z</updated>
+        <summary type="html"><![CDATA[The Azure IoT Central REST API now supports to programmatically create enrollment groups, schedule jobs, configure application dashboards, and leverage the REST API for unassociated/unmodeled devices.]]></summary>
+        <author>
+            <name>Azure service updates</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[General availability: Application Insights standard test for synthetic monitoring]]></title>
+        <id>standard-tests-within-application-insights-availability</id>
+        <link href="https://azure.microsoft.com/en-us/updates/standard-tests-within-application-insights-availability/"/>
+        <updated>2022-07-07T19:00:26.000Z</updated>
+        <summary type="html"><![CDATA[Standard tests are a single request test which also includes SSL certificate validity, proactive lifetime check, HTTP request verb, custom headers, and custom data associated with your HTTP request.]]></summary>
+        <author>
+            <name>Azure service updates</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[A Bootiful Podcast: Kubernetes contributor and fellow Tanzu Developer Advocate Leigh Capili]]></title>
+        <id>https://spring.io/blog/2022/07/07/a-bootiful-podcast-kubernetes-contributor-and-fellow-tanzu-developer-advocate-leigh-capili</id>
+        <link href="https://spring.io/blog/2022/07/07/a-bootiful-podcast-kubernetes-contributor-and-fellow-tanzu-developer-advocate-leigh-capili"/>
+        <updated>2022-07-07T19:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Hi, Spring fans! In this installment Josh Long (@starbuxman) talks to fellow teammate and Kubernetes ecosystem legend Leigh Capili (@capileigh) about Gitops, Kubernetes, Puppet/Chef, continuous delivery, how zoom scales if you deploy on-prem, being a developer advocate, Flux, and so much more.]]></summary>
+        <author>
+            <name>Spring</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Spring for Apache Kafka 2.9 Release Candidate Available]]></title>
+        <id>https://spring.io/blog/2022/07/07/spring-for-apache-kafka-2-9-release-candidate-available</id>
+        <link href="https://spring.io/blog/2022/07/07/spring-for-apache-kafka-2-9-release-candidate-available"/>
+        <updated>2022-07-07T16:18:55.000Z</updated>
+        <summary type="html"><![CDATA[I am pleased to announce that the release candidate Spring for Apache Kafka 2.9.0 is now available (2.9.0-RC1) in the Spring Milestone Repo.
+
+
+
+This version is not provided by Spring Boot dependency management, but it can be used with Boot 2.7, as long as you override the Kafka dependencies as described in this appendix, especially if you are using the embedded Kafka broker.
+
+
+
+Notable Changes
+
+
+
+
+This version uses the 3.2.0 kafka-clients version
+
+
+
+Non-blocking retry bootstrapping is now more robust
+
+
+
+New Error Handler Mode
+
+
+
+
+
+By default, after an error, the DefaultErrorHandler performs seeks on the remaining records from the last poll and re-fetches them from the broker on the next poll.
+With high error rates and large max.poll.records, this can cause unnecessary strain on the network.
+For this reason, the error handler has a new property seekAfterError, when set to false, instead of seeking the records, the remaining records are retained in memory and the consumer paused for the next poll (or multiple polls if the error handler is configured to use the ContainerPausingBackOffHandler).
+
+
+
+
+
+Pausing Containers
+
+
+
+
+
+By default, when you pause() a container, it actually pauses when all the records from the previous poll have been processed.
+This version adds the pauseImmediate container property, which, when true, causes the container to pause after the current record is processed.
+
+
+
+For information about all changes in this release, see What’s New.
+
+
+
+Project Page | GitHub | Issues | Documentation | Stack Overflow | Gitter]]></summary>
+        <author>
+            <name>Spring</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Spring Shell 2.1.0-RC1 is now available]]></title>
+        <id>https://spring.io/blog/2022/07/07/spring-shell-2-1-0-rc1-is-now-available</id>
+        <link href="https://spring.io/blog/2022/07/07/spring-shell-2-1-0-rc1-is-now-available"/>
+        <updated>2022-07-07T08:32:40.000Z</updated>
+        <summary type="html"><![CDATA[On behalf of the team and everyone who has contributed, I’m happy to announce that Spring Shell 2.1.0-RC1 has been released and is now available from https://repo.spring.io/milestone.
+
+Please see the release notes for more details.
+
+Thanks to all those who have contributed with issue reports and pull requests.
+How can you help?
+
+Project Page | GitHub | Issues | Documentation]]></summary>
+        <author>
+            <name>Spring</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[General availability: Azure Archive Storage now available in South Africa North]]></title>
         <id>general-availability-azure-archive-storage-now-available-in-south-africa-north</id>
@@ -7385,17 +7492,6 @@ Citizen developers can develop various applications by leveraging existing syste
 The post Saving Bot Activities in Azure SQL Database appeared first on Azure SQL Database Devs’ Corner.]]></summary>
         <author>
             <name>Abhiman Tiwari</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Join us at the Build in the Open Happy Hour to connect and collaborate with Open Source enthusiasts]]></title>
-        <id>https://cloudblogs.microsoft.com/opensource/2022/02/07/join-us-at-the-build-in-the-open-happy-hour-to-connect-and-collaborate-with-open-source-enthusiasts/</id>
-        <link href="https://cloudblogs.microsoft.com/opensource/2022/02/07/join-us-at-the-build-in-the-open-happy-hour-to-connect-and-collaborate-with-open-source-enthusiasts/"/>
-        <updated>2022-02-07T14:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Open source has forever changed software development for the better. It has allowed developers from around the world to connect, collaborate, and build tomorrow's technology. Microsoft culturally adopted an open mindset under Satya Nadella and internally changed the way software was developed. Microsoft is continually learning how to be a better open-source partner and supportRead more
-The post Join us at the Build in the Open Happy Hour to connect and collaborate with Open Source enthusiasts appeared first on Microsoft Open Source Blog.]]></summary>
-        <author>
-            <name>Katie Fritsch</name>
         </author>
     </entry>
 </feed>

@@ -6,6 +6,36 @@
       "siteUrl": "https://spring.io/blog",
       "articles": [
         {
+          "id": "https://spring.io/blog/2022/07/07/a-bootiful-podcast-kubernetes-contributor-and-fellow-tanzu-developer-advocate-leigh-capili",
+          "author": null,
+          "description": "Hi, Spring fans! In this installment Josh Long (@starbuxman) talks to fellow teammate and Kubernetes ecosystem legend Leigh Capili (@capileigh) about Gitops, Kubernetes, Puppet/Chef, continuous delivery, how zoom scales if you deploy on-prem, being a developer advocate, Flux, and so much more.",
+          "link": "https://spring.io/blog/2022/07/07/a-bootiful-podcast-kubernetes-contributor-and-fellow-tanzu-developer-advocate-leigh-capili",
+          "publishedOn": "2022-07-07T19:00:00.000Z",
+          "wordCount": 549,
+          "title": "A Bootiful Podcast: Kubernetes contributor and fellow Tanzu Developer Advocate Leigh Capili",
+          "imageUrl": "https://avatars.githubusercontent.com/u/54473?v=4?s=200"
+        },
+        {
+          "id": "https://spring.io/blog/2022/07/07/spring-for-apache-kafka-2-9-release-candidate-available",
+          "author": null,
+          "description": "I am pleased to announce that the release candidate Spring for Apache Kafka 2.9.0 is now available (2.9.0-RC1) in the Spring Milestone Repo.\n\r\n\r\n\r\nThis version is not provided by Spring Boot dependency management, but it can be used with Boot 2.7, as long as you override the Kafka dependencies as described in this appendix, especially if you are using the embedded Kafka broker.\n\r\n\r\n\r\nNotable Changes\n\r\n\r\n\r\n\r\nThis version uses the 3.2.0 kafka-clients version\n\r\n\r\n\r\nNon-blocking retry bootstrapping is now more robust\n\r\n\r\n\r\nNew Error Handler Mode\n\r\n\r\n\r\n\r\n\r\nBy default, after an error, the DefaultErrorHandler performs seeks on the remaining records from the last poll and re-fetches them from the broker on the next poll.\r\nWith high error rates and large max.poll.records, this can cause unnecessary strain on the network.\r\nFor this reason, the error handler has a new property seekAfterError, when set to false, instead of seeking the records, the remaining records are retained in memory and the consumer paused for the next poll (or multiple polls if the error handler is configured to use the ContainerPausingBackOffHandler).\n\r\n\r\n\r\n\r\n\r\nPausing Containers\n\r\n\r\n\r\n\r\n\r\nBy default, when you pause() a container, it actually pauses when all the records from the previous poll have been processed.\r\nThis version adds the pauseImmediate container property, which, when true, causes the container to pause after the current record is processed.\n\r\n\r\n\r\nFor information about all changes in this release, see What’s New.\n\r\n\r\n\r\nProject Page | GitHub | Issues | Documentation | Stack Overflow | Gitter",
+          "link": "https://spring.io/blog/2022/07/07/spring-for-apache-kafka-2-9-release-candidate-available",
+          "publishedOn": "2022-07-07T16:18:55.000Z",
+          "wordCount": 740,
+          "title": "Spring for Apache Kafka 2.9 Release Candidate Available",
+          "imageUrl": "https://avatars.githubusercontent.com/u/483832?v=4?s=200"
+        },
+        {
+          "id": "https://spring.io/blog/2022/07/07/spring-shell-2-1-0-rc1-is-now-available",
+          "author": null,
+          "description": "On behalf of the team and everyone who has contributed, I’m happy to announce that Spring Shell 2.1.0-RC1 has been released and is now available from https://repo.spring.io/milestone.\n\r\nPlease see the release notes for more details.\n\r\nThanks to all those who have contributed with issue reports and pull requests.\nHow can you help?\n\r\nProject Page | GitHub | Issues | Documentation",
+          "link": "https://spring.io/blog/2022/07/07/spring-shell-2-1-0-rc1-is-now-available",
+          "publishedOn": "2022-07-07T08:32:40.000Z",
+          "wordCount": 554,
+          "title": "Spring Shell 2.1.0-RC1 is now available",
+          "imageUrl": "https://avatars.githubusercontent.com/u/50398?v=4?s=200"
+        },
+        {
           "id": "https://spring.io/blog/2022/07/05/this-week-in-spring-july-5th-2022",
           "author": null,
           "description": "Hi, Spring fans! Welcome to another installment of This Week in Spring! This week’s all sorts of weird for me. It’s Tuesday! But here in the US we just celebrated the 4th of July, and I, like many Americans, took a long weekend. Took some time with the family to do a little road trip up north to visit Mt. Shasta, Crater Lake, Lassen National Park, etc. It was a ton of fun, and a lot of driving! Anyway, it all kinda blurs together and felt like just one weekend, and today feels like Monday. I only just realized it was Tuesday! And you know what that means? It’s time for our weekly dive into the wild and wonderful world of Springdom! \n\r\n\r\n  \nThe last of my eight part series on building GraphQL applications with Spring for GraphQL is up! Check that page out and find links to all eight videos, each of which introduces one interesting dimension of the powerful and novel new Spring for GraphQL project.\n\r\n  \nIn last week’s installment of A Bootiful Podcast, I talk to Spring Developer Advocate Dan Vega\n\r\n  \nProcessing the Response Body in Spring Cloud Gateway\n\r\n  \nSpring Cloud 2020.0.6 is available\n\r\n  \nUUID as Entity ID in MongoDB\n\r\n  \nI liked this post over on Dzone: Are All Kubernetes Ingresses the Same?\n\r\n  \nWant to learn more about how to build GraalVM native images for Spring Boot 2.x-generation applications? Check out this article I wrote for InfoQ on Spring Native and GraalVM\n\r\n  \nThe good folks over at Vaadin have put together a nice tutorial on building full-stack Spring Boot applications using their Java web framework called Hilla - check it out!\n\r\n  \nour friends over at Sivalabs have put together an interesting looking tutorial on how to use Spring Boot and Kubernetes together\n\r\n  \nSpring Boot team member Stéphane Nicoll did a French-language presentation for DevFest Lille recently introducing Spring AOT",
@@ -2602,16 +2632,6 @@
           "wordCount": 1901,
           "title": "Getting Linux based eBPF programs to run with eBPF for Windows",
           "imageUrl": "https://cloudblogs.microsoft.com/uploads/prod/sites/37/2022/02/Picture1-1024x532.webp"
-        },
-        {
-          "id": "https://cloudblogs.microsoft.com/opensource/2022/02/07/join-us-at-the-build-in-the-open-happy-hour-to-connect-and-collaborate-with-open-source-enthusiasts/",
-          "author": "Katie Fritsch",
-          "description": "Open source has forever changed software development for the better. It has allowed developers from around the world to connect, collaborate, and build tomorrow's technology. Microsoft culturally adopted an open mindset under Satya Nadella and internally changed the way software was developed. Microsoft is continually learning how to be a better open-source partner and supportRead more\nThe post Join us at the Build in the Open Happy Hour to connect and collaborate with Open Source enthusiasts appeared first on Microsoft Open Source Blog.",
-          "link": "https://cloudblogs.microsoft.com/opensource/2022/02/07/join-us-at-the-build-in-the-open-happy-hour-to-connect-and-collaborate-with-open-source-enthusiasts/",
-          "publishedOn": "2022-02-07T14:00:00.000Z",
-          "wordCount": 919,
-          "title": "Join us at the Build in the Open Happy Hour to connect and collaborate with Open Source enthusiasts",
-          "imageUrl": "https://cloudblogs.microsoft.com/uploads/prod/sites/37/2022/01/Picture1-1024x581.webp"
         }
       ]
     },
@@ -2620,6 +2640,26 @@
       "feedUrl": "https://azurecomcdn.azureedge.net/en-us/updates/feed/?updateType=features",
       "siteUrl": "https://azure.microsoft.com/en-us/updates/",
       "articles": [
+        {
+          "id": "iotc-2022-06-30-rest-api-preview",
+          "author": null,
+          "description": "The Azure IoT Central REST API now supports to programmatically create enrollment groups, schedule jobs, configure application dashboards, and leverage the REST API for unassociated/unmodeled devices.",
+          "link": "https://azure.microsoft.com/en-us/updates/iotc-2022-06-30-rest-api-preview/",
+          "publishedOn": "2022-07-07T19:00:39.000Z",
+          "wordCount": 5445,
+          "title": "Public preview: 2022-06-30 Azure IoT Central REST API release is now live",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-66fe7c55211457c31a19d08118eee3c639359e61d338e563115903783c4e8f6a/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "standard-tests-within-application-insights-availability",
+          "author": null,
+          "description": "Standard tests are a single request test which also includes SSL certificate validity, proactive lifetime check, HTTP request verb, custom headers, and custom data associated with your HTTP request.",
+          "link": "https://azure.microsoft.com/en-us/updates/standard-tests-within-application-insights-availability/",
+          "publishedOn": "2022-07-07T19:00:26.000Z",
+          "wordCount": 5299,
+          "title": "General availability: Application Insights standard test for synthetic monitoring",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-66fe7c55211457c31a19d08118eee3c639359e61d338e563115903783c4e8f6a/images/shared/social/azure-icon-250x250.png"
+        },
         {
           "id": "general-availability-azure-archive-storage-now-available-in-south-africa-north",
           "author": null,
