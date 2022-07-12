@@ -22,6 +22,96 @@
             data-action="toggle-accordions"
             title="Click to toggle the day, Ctrl + click to toggle all."
           >
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2022-07-12 datetime="2022-07-11T16:57:56.000Z">2022-07-12</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2022-07-12 datetime="2022-07-11T16:57:56.000Z"></time>
+          </button>
+        </h2>
+        <ul class="sources card">
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Microsoft Tech Community - Latest Blogs - Apps on Azure Blog</button>
+                  <a class="source-heading__link" href="https://techcommunity.microsoft.com">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/more-fun-with-azure-container-apps-and-compose-files/ba-p/3570234"
+                        open
+                      >
+                        <summary class="article-expander__title">More Fun with Azure Container Apps and Compose Files</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/more-fun-with-azure-container-apps-and-compose-files/ba-p/3570234">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://techcommunity.microsoft.com/t5/image/serverpage/image-id/387267i112C5A0CA4DE8D07?v&#x3D;v2" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>One of the main missing pieces for the Compose spec support in az containerapp compose was support for the build key.
+ 
+With the 0.2.0 release, there is now support for the build key.  The container image build is handled by Azure Container Registry, so you can either provide ACR credentials or a new container registry will be created for you as part of the creation process.  Only context and dockerfile are currently supported.  
+ 
+Example Compose File for a .NET Web Api project:
+ 
+ 
+ 
+ 
+version: &#x27;3&#x27;
+services:
+  api:
+    build:
+      context: ./src
+      dockerfile: ./TodoApi/Dockerfile
+    ports:
+      - 8080:80
+ 
+ 
+ 
+ 
+Example Repository Layout:
+ 
+
+ 
+Example Command:
+ 
+ 
+ 
+cd dotnet_api
+az group create --name dotnet_api_example --location eastus
+az containerapp compose create \
+            --environment dotnetaca \
+            --resource-group dotnet_api_example
+
+ 
+ 
+ 
+For More:
+ 
+For more examples of az containerapp compose functionality - check out the examples repository. 
+ 
+Let us know what else you&#x27;d like to see at containerapp-compose@microsoft.com or via GitHub.</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;31
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+        </ul>
+      </section>
+      <section class="daily-content js-toggle-accordions-scope">
+        <h2 class="daily-heading">
+          <button
+            class="daily-heading-toggle"
+            data-action="toggle-accordions"
+            title="Click to toggle the day, Ctrl + click to toggle all."
+          >
             <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2022-07-10 datetime="2022-07-10T08:39:13.000Z">2022-07-10</time>
             <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2022-07-10 datetime="2022-07-10T08:39:13.000Z"></time>
           </button>
@@ -18013,8 +18103,8 @@ IT departments can establish ecosystems with your Web APIs and API Management, a
       </section>
 
     <footer>
-      <a class="footer-link" href="https://github.com/lok-msft/azure-blog-rss/actions/runs/2646729210">
-        <time id="build-timestamp" datetime="2022-07-11T01:46:19.758Z">2022-07-11T01:46:19.758Z</time>
+      <a class="footer-link" href="https://github.com/lok-msft/azure-blog-rss/actions/runs/2653606685">
+        <time id="build-timestamp" datetime="2022-07-12T01:52:36.153Z">2022-07-12T01:52:36.153Z</time>
       </a>
       <a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a>
     </footer>

@@ -273,6 +273,16 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/more-fun-with-azure-container-apps-and-compose-files/ba-p/3570234",
+          "author": "steven_murawski",
+          "description": "One of the main missing pieces for the Compose spec support in az containerapp compose was support for the build key.\n \nWith the 0.2.0 release, there is now support for the build key.  The container image build is handled by Azure Container Registry, so you can either provide ACR credentials or a new container registry will be created for you as part of the creation process.  Only context and dockerfile are currently supported.  \n \nExample Compose File for a .NET Web Api project:\n \n \n \n \nversion: '3'\nservices:\n  api:\n    build:\n      context: ./src\n      dockerfile: ./TodoApi/Dockerfile\n    ports:\n      - 8080:80\n \n \n \n \nExample Repository Layout:\n \n\n \nExample Command:\n \n \n \ncd dotnet_api\naz group create --name dotnet_api_example --location eastus\naz containerapp compose create \\\n            --environment dotnetaca \\\n            --resource-group dotnet_api_example\n\n \n \n \nFor More:\n \nFor more examples of az containerapp compose functionality - check out the examples repository. \n \nLet us know what else you'd like to see at containerapp-compose@microsoft.com or via GitHub.",
+          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/more-fun-with-azure-container-apps-and-compose-files/ba-p/3570234",
+          "publishedOn": "2022-07-11T16:57:56.000Z",
+          "wordCount": 9211,
+          "title": "More Fun with Azure Container Apps and Compose Files",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/387267i112C5A0CA4DE8D07?v=v2"
+        },
+        {
           "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/beginners-guide-to-secure-cloud-native-applications-with-calico/ba-p/3562827",
           "author": "Tommy Falgout",
           "description": "Authors: Dhiraj Sehgal Steve Griffith and Tommy Falgout\n \nThis is a 4-module workshop that walks you through the following to become and remain secure quickly: \n\nImplement simple and straightforward security controls in place \nMonitor if the security policies are working as expected \nAddress a security gap with security policy \nTroubleshoot a workload-to-workload communication issue  \n\n \nSince AKS users are busy running cloud-native applications and to get started, this blog post should provide you a brief overview of what you can expect from each module in the workshop. You can register for the upcoming hands-on workshop here to learn about this in-depth and advanced topic, such as compliance and runtime threat defense.   \n \nModule 1: Implementing security controls \n \nThis module focuses …",
