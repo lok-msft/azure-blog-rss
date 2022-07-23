@@ -2,10 +2,86 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2022-07-22T01:50:54.287Z</updated>
+    <updated>2022-07-23T01:47:48.689Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Providing Disaster Recovery to CloudBees-Jenkins in AKS with Astra Control Service]]></title>
+        <id>https://techcommunity.microsoft.com/t5/azure-architecture-blog/providing-disaster-recovery-to-cloudbees-jenkins-in-aks-with/ba-p/3553412</id>
+        <link href="https://techcommunity.microsoft.com/t5/azure-architecture-blog/providing-disaster-recovery-to-cloudbees-jenkins-in-aks-with/ba-p/3553412"/>
+        <updated>2022-07-22T22:11:32.000Z</updated>
+        <summary type="html"><![CDATA[Table of Contents
+Abstract
+Introduction
+Scenario
+Deploying CloudBees CI - Jenkins
+Configuring CloudBees-CI-Jenkins
+Protecting CloudBees-CI-Jenkins with Astra Control Service
+Simulating disaster and recovering the application to another cluster
+Summary
+Additional Information
+ 
+Abstract
+This article describes how to protect a complex application with multiple components (like CloudBees CI - Jenkins) on Azure Kubernetes Service against disasters like the complete loss of an Azure region with NetApp® Astra™ Control Service. We demonstrate how to protect a CloudBees deployment using multiple Jenkins instances with snapshots and backups and recover the entire application to a different Azure region in case of a disaster.
+ 
+Co-authors: Luis Rico, Sayan Saha
+ 
+Special thanks to DevOps Consultant a…]]></summary>
+        <author>
+            <name>GeertVanTeylingen</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Azure Tips and Tricks - How to containerize and deploy a Java app to Azure]]></title>
+        <id>https://techcommunity.microsoft.com/t5/azure-developer-community-blog/azure-tips-and-tricks-how-to-containerize-and-deploy-a-java-app/ba-p/3580169</id>
+        <link href="https://techcommunity.microsoft.com/t5/azure-developer-community-blog/azure-tips-and-tricks-how-to-containerize-and-deploy-a-java-app/ba-p/3580169"/>
+        <updated>2022-07-22T19:05:55.000Z</updated>
+        <summary type="html"><![CDATA[How to containerize and deploy a Java app to Azure
+ 
+
+
+Use containers for platform independence
+ 
+An application that runs in a container behaves the same, wherever you run it. That's because the container provides a stable infrastructure environment that doesn't change. You just take it to wherever you want to run it. 
+
+This also enables you to run self-contained applications that do not rely on a runtime, like the Java runtime, to be installed on its host. And this experience is enhanced with cloud-based management and features when you run your containers in a service like Azure Kubernetes Service.
+
+In this post, we'll containerize a Java application, push it to Azure Container Registry, and run it in Azure Kubernetes Service.
+
+Prerequisites
+ 
+If you want to follow along, you'll need th…]]></summary>
+        <author>
+            <name>manoj-srinivas</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Armchair Architects: Architecting Mission Critical Apps]]></title>
+        <id>https://techcommunity.microsoft.com/t5/azure-architecture-blog/armchair-architects-architecting-mission-critical-apps/ba-p/3576955</id>
+        <link href="https://techcommunity.microsoft.com/t5/azure-architecture-blog/armchair-architects-architecting-mission-critical-apps/ba-p/3576955"/>
+        <updated>2022-07-22T18:42:51.000Z</updated>
+        <summary type="html"><![CDATA[In a new episode of the Azure Enablement Show, Uli, Eric, and David have a lively discussion about what architects need to consider when designing mission critical solutions such as emergency services that must always work.
+ 
+Read below for highlights and watch the video.
+ 
+How is the architecture for mission critical apps different than for other apps?
+We'd like there to be a consistent set of architectural principles for everything from the small to the large, but in general, when you're building mission critical applications, we need to think about things in terms of those uber important architectural patterns and system characteristics. When looking at mission critical apps it’s important to understand that there's going to be failure present within these applications at some component…]]></summary>
+        <author>
+            <name>brauerblogs</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[eDiscovery API for Microsoft Graph is now generally available]]></title>
+        <id>https://devblogs.microsoft.com/microsoft365dev/?p=11059</id>
+        <link href="https://devblogs.microsoft.com/microsoft365dev/ediscovery-api-for-microsoft-graph-is-now-generally-available/"/>
+        <updated>2022-07-22T16:48:13.000Z</updated>
+        <summary type="html"><![CDATA[We are excited to announce the general availability of the Microsoft Graph APIs for Microsoft Purview eDiscovery (Premium) to help you automate common eDiscovery workflows and integrate third party applications into eDiscovery (Premium). 
+The post eDiscovery API for Microsoft Graph is now generally available appeared first on Microsoft 365 Developer Blog.]]></summary>
+        <author>
+            <name>Microsoft Graph team</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Generally available: Live resize for Premium SSD and Standard SSD Disk Storage]]></title>
         <id>generally-available-live-resize-for-premium-ssd-and-standard-ssd-disk-storage</id>
@@ -8115,67 +8191,6 @@ Common Data export scenarios
 Data in Log Analytics is available for the retention period in your workspace, and used in v…]]></summary>
         <author>
             <name>Yossi Yossifon</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[The next evolution of Azure Monitor Logs]]></title>
-        <id>https://techcommunity.microsoft.com/t5/azure-observability-blog/the-next-evolution-of-azure-monitor-logs/ba-p/3143195</id>
-        <link href="https://techcommunity.microsoft.com/t5/azure-observability-blog/the-next-evolution-of-azure-monitor-logs/ba-p/3143195"/>
-        <updated>2022-02-23T13:02:04.000Z</updated>
-        <summary type="html"><![CDATA[We commonly see customers using Azure Monitor in a wide range of scenarios across applications and infrastructure, using data collection, store, out-of-the-box insights and analytics query in their core operation core. We heard from our customers ask for a clear message to bring this immense scale and high-end services also for other logging use cases – making Azure Monitor the one stop shop for all logging needs. :
- 
-
-Get more value from all your logs – Azure Monitor already provides . This will allow you to unlock insights from troves of logs. You can now apply your own parsing to all logs, search very high volumes, export them to other tools and keep them in the system for up to 7 years.
-
- 
-
-Allow customers to be more cost effective with their logs – organizations are forced to make wro…]]></summary>
-        <author>
-            <name>Meir Mendelovich</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[The new and better ‘WordPress on App Service’]]></title>
-        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/the-new-and-better-wordpress-on-app-service/ba-p/3202594</id>
-        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/the-new-and-better-wordpress-on-app-service/ba-p/3202594"/>
-        <updated>2022-02-23T07:00:12.000Z</updated>
-        <summary type="html"><![CDATA[We are happy to announce that the new and updated WordPress on Azure App Service is available for public preview in Azure Marketplace. You can directly head to Create WordPress on App Service - Microsoft Azure to create your WordPress website or go to QuickStart: Create a WordPress site - Azure App Service | Microsoft Docs for a how-to guide to build your WordPress website in Azure.
- 
-We have made some significant improvements based on feedback from many WordPress developers and in close collaboration with the ever-growing WordPress community This new offering will improve your experience, and help your websites run faster.
- 
-What’s new and improved?
-
-Updated image: We have made sure that whenever you deploy a new WordPress website, you get the latest stable versions of WordPress and PHP. …]]></summary>
-        <author>
-            <name>abhishekreddy</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Guidance for Architecting Mission Critical Apps on Azure]]></title>
-        <id>https://techcommunity.microsoft.com/t5/azure-architecture-blog/guidance-for-architecting-mission-critical-apps-on-azure/ba-p/3201745</id>
-        <link href="https://techcommunity.microsoft.com/t5/azure-architecture-blog/guidance-for-architecting-mission-critical-apps-on-azure/ba-p/3201745"/>
-        <updated>2022-02-23T03:30:19.000Z</updated>
-        <summary type="html"><![CDATA[Microsoft Azure makes it easy to deploy and manage cloud solutions. However, building mission-critical solutions that are always available and operational remains a challenge that requires extensive platform knowledge and engineering rigor to overcome.
- 
-“Tell us what good looks like” is therefore a common request, with organizations seeking opinionated guidance and reference deployments to establish technical confidence and accelerate moving their mission-critical workloads to the Microsoft Cloud.
- 
-With this in mind, we have developed an opensource project, which we are pleased to announce is now publicly available on GitHub as a preview.
- 
-Guidance for mission-critical workloads
-Microsoft's guidance strives to address the challenges of building mission-critical applications by providing…]]></summary>
-        <author>
-            <name>brauerblogs</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Getting Linux based eBPF programs to run with eBPF for Windows]]></title>
-        <id>https://cloudblogs.microsoft.com/opensource/2022/02/22/getting-linux-based-ebpf-programs-to-run-with-ebpf-for-windows/</id>
-        <link href="https://cloudblogs.microsoft.com/opensource/2022/02/22/getting-linux-based-ebpf-programs-to-run-with-ebpf-for-windows/"/>
-        <updated>2022-02-22T17:00:00.000Z</updated>
-        <summary type="html"><![CDATA[In our previous blog, we spoke about the progress we have made for the eBPF for Windows project. A key goal for us has been to meet developers where they are. As a result, enabling eBPF programs written for Linux to run on top of the eBPF for Windows platform is very important to us.Read more
-The post Getting Linux based eBPF programs to run with eBPF for Windows appeared first on Microsoft Open Source Blog.]]></summary>
-        <author>
-            <name>Poorna Gaddehosur</name>
         </author>
     </entry>
 </feed>
