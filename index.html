@@ -22,6 +22,60 @@
             data-action="toggle-accordions"
             title="Click to toggle the day, Ctrl + click to toggle all."
           >
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2022-07-31 datetime="2022-07-31T10:34:13.000Z">2022-07-31</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2022-07-31 datetime="2022-07-31T10:34:13.000Z"></time>
+          </button>
+        </h2>
+        <ul class="sources card">
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Microsoft Tech Community - Latest Blogs - Azure Observability Blog</button>
+                  <a class="source-heading__link" href="https://techcommunity.microsoft.com">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://techcommunity.microsoft.com/t5/azure-observability-blog/improving-the-tools-for-monitoring-log-analytics-workspace/ba-p/3566634"
+                        open
+                      >
+                        <summary class="article-expander__title">Improving the tools for monitoring Log Analytics workspace health</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/t5/azure-observability-blog/improving-the-tools-for-monitoring-log-analytics-workspace/ba-p/3566634">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://techcommunity.microsoft.com/t5/image/serverpage/image-id/386107i887B1D086247B45B/image-size/original?v&#x3D;v2&amp;px&#x3D;-1" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>The Log Analytics product team identified the two important indicators of workspace’s health as ingestion latency and query success percentage.
+ 
+Ingestion latency signals measure the time it takes for an event to be reported, processed and become available for search in your logs data store. You can read more about how we calculate the latency and what can influence data latency time.
+ 
+Query success percentage measures the number of queries that return a non-Http5XX - for example, when a query completes successfully or fails with user-side errors. This number does not include queries initiated by Azure log search Alerts or Azure Sentinel. This signal will be available via Resource health in the near future.
+ 
+We’ve worked to enhance these workspace health indicators with features we rele…</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;32
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+        </ul>
+      </section>
+      <section class="daily-content js-toggle-accordions-scope">
+        <h2 class="daily-heading">
+          <button
+            class="daily-heading-toggle"
+            data-action="toggle-accordions"
+            title="Click to toggle the day, Ctrl + click to toggle all."
+          >
             <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2022-07-30 datetime="2022-07-29T18:07:01.000Z">2022-07-30</time>
             <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2022-07-30 datetime="2022-07-29T18:07:01.000Z"></time>
           </button>
@@ -9235,7 +9289,7 @@ When you put in place or meet the majority of compliance requirements, this can 
                     data-action="toggle-accordions"
                     title="Click to toggle the source, Ctrl + click to toggle all."
                   >Microsoft Open Source Blog</button>
-                  <a class="source-heading__link" href="https://cloudblogs.microsoft.com/opensource/">Open</a>
+                  <a class="source-heading__link" href="https://cloudblogs.microsoft.com/opensource">Open</a>
                 </h3>
                 <section class="articles-per-source">
                     <article>
@@ -13357,7 +13411,7 @@ Selecting a longer retention period will incur additional charges. For more info
                     data-action="toggle-accordions"
                     title="Click to toggle the source, Ctrl + click to toggle all."
                   >Microsoft Open Source Blog</button>
-                  <a class="source-heading__link" href="https://cloudblogs.microsoft.com/opensource/">Open</a>
+                  <a class="source-heading__link" href="https://cloudblogs.microsoft.com/opensource">Open</a>
                 </h3>
                 <section class="articles-per-source">
                     <article>
@@ -14477,7 +14531,7 @@ For security purpose such as ISO/IEC 27001, you may want your resources to co-op
                     data-action="toggle-accordions"
                     title="Click to toggle the source, Ctrl + click to toggle all."
                   >Microsoft Open Source Blog</button>
-                  <a class="source-heading__link" href="https://cloudblogs.microsoft.com/opensource/">Open</a>
+                  <a class="source-heading__link" href="https://cloudblogs.microsoft.com/opensource">Open</a>
                 </h3>
                 <section class="articles-per-source">
                     <article>
@@ -16166,7 +16220,7 @@ QUICK LINKS:
                     data-action="toggle-accordions"
                     title="Click to toggle the source, Ctrl + click to toggle all."
                   >Microsoft Open Source Blog</button>
-                  <a class="source-heading__link" href="https://cloudblogs.microsoft.com/opensource/">Open</a>
+                  <a class="source-heading__link" href="https://cloudblogs.microsoft.com/opensource">Open</a>
                 </h3>
                 <section class="articles-per-source">
                     <article>
@@ -19636,7 +19690,7 @@ This can be any K8s cluster and can be a simple, light-weight one - e.g. Kind, M
                     data-action="toggle-accordions"
                     title="Click to toggle the source, Ctrl + click to toggle all."
                   >Microsoft Open Source Blog</button>
-                  <a class="source-heading__link" href="https://cloudblogs.microsoft.com/opensource/">Open</a>
+                  <a class="source-heading__link" href="https://cloudblogs.microsoft.com/opensource">Open</a>
                 </h3>
                 <section class="articles-per-source">
                     <article>
@@ -20879,8 +20933,8 @@ Many other open source projects integrate with Redis. Just two examples in the c
       </section>
 
     <footer>
-      <a class="footer-link" href="https://github.com/lok-msft/azure-blog-rss/actions/runs/2767884903">
-        <time id="build-timestamp" datetime="2022-07-31T01:59:33.529Z">2022-07-31T01:59:33.529Z</time>
+      <a class="footer-link" href="https://github.com/lok-msft/azure-blog-rss/actions/runs/2771753716">
+        <time id="build-timestamp" datetime="2022-08-01T01:59:42.806Z">2022-08-01T01:59:42.806Z</time>
       </a>
       <a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a>
     </footer>
