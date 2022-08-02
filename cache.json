@@ -6,6 +6,26 @@
       "siteUrl": "https://spring.io/blog",
       "articles": [
         {
+          "id": "https://spring.io/blog/2022/08/01/spring-cloud-2022-0-0-m4-codename-kilburn-has-been-released",
+          "author": null,
+          "description": "On behalf of the community, I am pleased to announce that the Milestone 4 (M4) of the Spring Cloud 2022.0.0 Release Train is available today. The release can be found in Spring Milestone repository. You can check out the 2022.0 release notes for more information.\nNotable Changes in the 2022.0.0 Release Train\n\r\nSee the project page for all the issues and pull requests included in this release.\n\r\nSpring Cloud 2022.0.0-M4 is compatible with Spring Boot 3.0.0-M4.\nSpring Cloud Stream\n\r\n\r\n  \nInitial version of fully reactive Kafka binder\n\r\n  \nImproved support for Kafka tombstone records via BiFunction\n\r\n  \nSpring Native improvements\n\r\n\nSpring Cloud Config\n\r\n\r\n  \nMoved to AWS SDK V2 (#2111)\n\r\n  \nMoved from JSCH to Apache MINA (#1901)\n\r\n\nSpring Cloud Gateway\n\r\n\r\n  \nAdds JSON to gRPC filter (#2657)…",
+          "link": "https://spring.io/blog/2022/08/01/spring-cloud-2022-0-0-m4-codename-kilburn-has-been-released",
+          "publishedOn": "2022-08-01T20:00:00.000Z",
+          "wordCount": 877,
+          "title": "Spring Cloud 2022.0.0-M4 (codename Kilburn) Has Been Released",
+          "imageUrl": "https://avatars.githubusercontent.com/u/524254?v=4?s=200"
+        },
+        {
+          "id": "https://spring.io/blog/2022/07/31/how-to-integrate-hibernates-multitenant-feature-with-spring-data-jpa-in-a-spring-boot-application",
+          "author": null,
+          "description": "For quite some time now, Hibernate has offered a Multitenant feature.\r\nIt integrates nicely with Spring, but there is not much information about how to actually set it up, so I thought an example or two or three could help.\n\r\n\r\n\r\nThere is already an excellent blog article, but it is a little dated and it covers a lot of specifics to the business problems the author tried to solve.\r\nThis approach hides a little of the actual integration, which will be the focus of this article.\n\r\n\r\n\r\nDo not worry about the code in this post. You can find links to the full code examples at the end of this blog post.\n\r\n\r\n\r\nWhat Does Multitenant Mean?\n\r\n\r\n\r\nImagine you build an application. You want to host it yourself and offer the service provided by the application to multiple companies.\r\nBut the data of th…",
+          "link": "https://spring.io/blog/2022/07/31/how-to-integrate-hibernates-multitenant-feature-with-spring-data-jpa-in-a-spring-boot-application",
+          "publishedOn": "2022-07-31T17:03:00.000Z",
+          "wordCount": 2109,
+          "title": "How to integrate Hibernates Multitenant feature with Spring Data JPA in a Spring Boot application",
+          "imageUrl": "https://avatars.githubusercontent.com/u/136683?v=4?s=200"
+        },
+        {
           "id": "https://spring.io/blog/2022/07/28/a-bootiful-podcast-rabbitmq-rabbit-herder-dan-carwin",
           "author": null,
           "description": "Hi, Spring fans! In this installment Josh Long (@starbuxman) talks to a very busy rabbit-herder on the RabbitMQ team, Dan Carwin (@dcarwin)",
@@ -472,6 +492,16 @@
       "feedUrl": "https://techcommunity.microsoft.com/plugins/custom/microsoft/o365/custom-blog-rss?tid=-2574164104208876465&board=AppsonAzureBlog&size=100",
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
+        {
+          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/controlling-blazor-environments-on-static-web-apps/ba-p/3587397",
+          "author": "aaronpowell",
+          "description": "Like all good problems, it started with a tweet:\n\nJT is trying to run a Blazor application, using appsettings.json but load a different one depending on what environment is being deployed to. Given that Blazor has the feature built in to load different configs based on the ASPNETCORE_ENVIRONMENT environment variable, it's something that is doable, but how do we do it?\nUnderstanding Static Web Apps config\nOn SWA we have application configuration and you might think this is the starting point for what you want to do. But this is not quite right, this is actually used to control the configuration for the Azure Functions backend that you use, not the frontend for your application.\nIn fact, there's no way to directly control the client \"environment\" once it's deployed, as the application is bui…",
+          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/controlling-blazor-environments-on-static-web-apps/ba-p/3587397",
+          "publishedOn": "2022-08-01T05:15:21.000Z",
+          "wordCount": 9525,
+          "title": "Controlling Blazor Environments on Static Web Apps",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/392251i93EF2BF39F84C640?v=v2"
+        },
         {
           "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/how-to-deploy-a-local-docker-container-to-azure-container-apps/ba-p/3583888",
           "author": "vnwonah",
@@ -1091,26 +1121,6 @@
           "wordCount": 716,
           "title": "Join us at Microsoft JDConf 2022 Java dev conference",
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/354168i6E92EA71C186A8A2/image-size/original?v=v2&px=-1"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/publishing-openapi-document-from-azure-functions-to-azure-api/ba-p/3239611",
-          "author": "justinyoo",
-          "description": "In my previous post, we've walked through how to run the Azure Functions app as a background process and locally generate the OpenAPI document from it within the GitHub Actions workflow. The OpenAPI document can be stored as an artifact and integrated with Power Platform or Azure API Management (APIM) later on.\n \n\nGenerating OpenAPI Document from Azure Functions within CI/CD Pipeline\nPublishing OpenAPI Document from Azure Functions to Azure API Management within CI/CD Pipeline :backhand_index_pointing_left:\n\n \nThroughout this post, I'm going to discuss how to publish the OpenAPI document to APIM, after locally running the Azure Functions app as a background process and generating the OpenAPI document within the GitHub Actions workflow.\n \n\nNOTE: Let's use the sample app provided by the Azur…",
-          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/publishing-openapi-document-from-azure-functions-to-azure-api/ba-p/3239611",
-          "publishedOn": "2022-03-05T00:00:00.000Z",
-          "wordCount": 1557,
-          "title": "Publishing OpenAPI Document from Azure Functions to Azure API Management within CI/CD Pipeline",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/352283iB70F182CC2446421/image-size/original?v=v2&px=-1"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/run-scalable-and-resilient-redis-with-kubernetes-and-azure/ba-p/3247956",
-          "author": "aaron-w",
-          "description": "Redis is a successful open source in-memory data structure store first released in 2009. It is most commonly used as a database, cache, and message broker. Developers enjoy Redis for its versatility and simplicity. Low cognitive load makes development fast and efficient.\n \nLanguage support for Redis is very mature with clients across every major language one might expect, with multiple community-supported implementations per language (including Go, Java, Python and Rust), as well as support for advanced functionality such as Redis Cluster and Redis Sentinel, which enable sharding and master-replica topologies respectively.\n \nMany other open source projects integrate with Redis. Just two examples in the cloud native ecosystem that we contribute to in the CNCF are Dapr (Distributed Applicati…",
-          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/run-scalable-and-resilient-redis-with-kubernetes-and-azure/ba-p/3247956",
-          "publishedOn": "2022-03-04T22:59:46.000Z",
-          "wordCount": 2401,
-          "title": "Run scalable and resilient Redis with Kubernetes and Azure Kubernetes Service",
-          "imageUrl": "https://cdn.techcommunity.microsoft.com/assets/MTC_Open_graph_image1.jpg"
         }
       ]
     },
@@ -1850,6 +1860,16 @@
       "feedUrl": "https://techcommunity.microsoft.com/plugins/custom/microsoft/o365/custom-blog-rss?tid=6220021871588173833&board=MicrosoftMechanicsBlog&size=100",
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
+        {
+          "id": "https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/manage-objectives-and-key-results-with-transparency-microsoft/ba-p/3585457",
+          "author": "Zachary Cavanell",
+          "description": "If you’re a manager or a team member, Viva Goals makes it easier to align and stay focused on the strategic priorities of your organization and work together to accelerate progress.\n\nVetri Vellore, Viva Goals team lead at Microsoft, joins Jeremy Chapman for a closer look at how this brand-new goal setting and management solution helps drive clarity around your objectives and key results, and makes it seamless for teams to track progress against them as they work. If you are a team leader, we’ll show you the intuitive goal setting experience, along with Microsoft 365 integration for your team members to record their contribution to goals. For admins, we'll demonstrate how quickly you can set everything up.\n \n \nAddress organizational pressures.\n\nPrioritize individual efforts with clarity on …",
+          "link": "https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/manage-objectives-and-key-results-with-transparency-microsoft/ba-p/3585457",
+          "publishedOn": "2022-08-01T15:10:57.000Z",
+          "wordCount": 11813,
+          "title": "Manage Objectives and Key Results with Transparency | Microsoft Viva Goals",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/392248iE51DD26472C4B733?v=v2"
+        },
         {
           "id": "https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/office-and-microsoft-365-apps-deployment-amp-update-management/ba-p/3580592",
           "author": "Zachary Cavanell",
@@ -2958,7 +2978,7 @@
     {
       "title": "Microsoft Open Source Blog",
       "feedUrl": "https://cloudblogs.microsoft.com/opensource/feed/",
-      "siteUrl": "https://cloudblogs.microsoft.com/opensource",
+      "siteUrl": "https://cloudblogs.microsoft.com/opensource/",
       "articles": [
         {
           "id": "https://cloudblogs.microsoft.com/opensource/2022/06/06/live-demos-of-machine-learning-models-with-onnx-and-hugging-face-spaces/",
@@ -3017,6 +3037,16 @@
       "feedUrl": "https://azurecomcdn.azureedge.net/en-us/updates/feed/?updateType=features",
       "siteUrl": "https://azure.microsoft.com/en-us/updates/",
       "articles": [
+        {
+          "id": "public-preview-amdbased-confidential-vms-for-azure-kubernetes-service-aks",
+          "author": null,
+          "description": "Announcing the public preview of confidential node pools  on AKS with AMD SEV-SNP confidential VMs.",
+          "link": "https://azure.microsoft.com/en-us/updates/public-preview-amdbased-confidential-vms-for-azure-kubernetes-service-aks/",
+          "publishedOn": "2022-08-01T16:00:09.000Z",
+          "wordCount": 5157,
+          "title": "Public preview: AMD-based confidential VMs for Azure Kubernetes Service (AKS)",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-7f65d9b3a57d55bc6a90069205cadb3b8fbce564be0d2d5cb2d32d9f70ce6aff/images/shared/social/azure-icon-250x250.png"
+        },
         {
           "id": "public-preview-azure-synapse-analytics-spark-elastic-pool-storage",
           "author": null,
@@ -6094,6 +6124,16 @@
       "feedUrl": "https://devblogs.microsoft.com/microsoft365dev/feed/",
       "siteUrl": "https://devblogs.microsoft.com/microsoft365dev/",
       "articles": [
+        {
+          "id": "https://devblogs.microsoft.com/microsoft365dev/?p=11128",
+          "author": "Mathangi Chakrapani",
+          "description": "Today, we’re announcing the general availability of Azure Fluid Relay and Fluid Framework azure-client v1.0 library for all web developers. Fluid Framework and Azure Fluid Relay service are now ready to power production-quality solutions.\nThe post Announcing general availability of Azure Fluid Relay service appeared first on Microsoft 365 Developer Blog.",
+          "link": "https://devblogs.microsoft.com/microsoft365dev/announcing-general-availability-of-azure-fluid-relay-service/",
+          "publishedOn": "2022-08-01T15:00:51.000Z",
+          "wordCount": 4874,
+          "title": "Announcing general availability of Azure Fluid Relay service",
+          "imageUrl": "https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2022/07/Azure-Fluid-relay-blog_august-1-image2.png"
+        },
         {
           "id": "https://devblogs.microsoft.com/microsoft365dev/?p=11099",
           "author": "Chris Dietsch",
