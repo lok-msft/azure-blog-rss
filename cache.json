@@ -6,6 +6,26 @@
       "siteUrl": "https://spring.io/blog",
       "articles": [
         {
+          "id": "https://spring.io/blog/2022/08/02/spring-for-apache-kafka-2-9-0-available",
+          "author": null,
+          "description": "I am pleased to announce that Spring for Apache Kafka 2.9.0 is now available.\n\r\n\r\n\r\nThis version is not provided by Spring Boot dependency management, but it can be used with Boot 2.7 (or 2.6), as long as you override the Kafka dependencies to 3.2.0 as described in this appendix, especially if you are using the embedded Kafka broker.\n\r\n\r\n\r\nPlease see the release candidate announcement for notable changes in this release.\n\r\n\r\n\r\nFor information about all changes in this release, see What’s New.\n\r\n\r\n\r\nProject Page | GitHub | Issues | Documentation | Stack Overflow | Gitter",
+          "link": "https://spring.io/blog/2022/08/02/spring-for-apache-kafka-2-9-0-available",
+          "publishedOn": "2022-08-02T16:05:26.000Z",
+          "wordCount": 589,
+          "title": "Spring for Apache Kafka 2.9.0 Available",
+          "imageUrl": "https://avatars.githubusercontent.com/u/483832?v=4?s=200"
+        },
+        {
+          "id": "https://spring.io/blog/2022/08/02/this-week-in-spring-august-1st-2022",
+          "author": null,
+          "description": "Aloha, Spring fans! Welcome to another installment of This Week in Spring!\n\r\nI’m still on vacation on the beautiful island of Maui, Hawaii, but I wanted to say hello (“aloha!”) and share this week’s latest roundup of all that’s good and glorious in the wide and wonderful world of Springdom.\n\r\nFunny thing, today - the 2nd of August, 2022 - is also my 12-year anniversary on the Spring team. It continues to be a helluva ride, and I so look forward to all that lies ahead. Thank you, Spring team, for everything. Also, sort of coincidentally, I just got a nice promotion. (Thanks, Spring team and VMware). I’m also just about to hit 60,000 followers on Twitter. It’s been a weird, wonderful week, and not just because of all that, but because we’ve got a ton of great stuff to dive into this week (be…",
+          "link": "https://spring.io/blog/2022/08/02/this-week-in-spring-august-1st-2022",
+          "publishedOn": "2022-08-02T07:00:00.000Z",
+          "wordCount": 846,
+          "title": "This Week in Spring - August 1st, 2022",
+          "imageUrl": "https://avatars.githubusercontent.com/u/54473?v=4?s=200"
+        },
+        {
           "id": "https://spring.io/blog/2022/08/01/spring-cloud-2022-0-0-m4-codename-kilburn-has-been-released",
           "author": null,
           "description": "On behalf of the community, I am pleased to announce that the Milestone 4 (M4) of the Spring Cloud 2022.0.0 Release Train is available today. The release can be found in Spring Milestone repository. You can check out the 2022.0 release notes for more information.\nNotable Changes in the 2022.0.0 Release Train\n\r\nSee the project page for all the issues and pull requests included in this release.\n\r\nSpring Cloud 2022.0.0-M4 is compatible with Spring Boot 3.0.0-M4.\nSpring Cloud Stream\n\r\n\r\n  \nInitial version of fully reactive Kafka binder\n\r\n  \nImproved support for Kafka tombstone records via BiFunction\n\r\n  \nSpring Native improvements\n\r\n\nSpring Cloud Config\n\r\n\r\n  \nMoved to AWS SDK V2 (#2111)\n\r\n  \nMoved from JSCH to Apache MINA (#1901)\n\r\n\nSpring Cloud Gateway\n\r\n\r\n  \nAdds JSON to gRPC filter (#2657)…",
@@ -492,6 +512,16 @@
       "feedUrl": "https://techcommunity.microsoft.com/plugins/custom/microsoft/o365/custom-blog-rss?tid=-2574164104208876465&board=AppsonAzureBlog&size=100",
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
+        {
+          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/how-to-configure-url-rewrite-in-tomcat-java-app-on-azure-app/ba-p/3581137",
+          "author": "Yeongseon",
+          "description": "If you are using a Tomcat Java App, you can easily set route rules using Tomcat This article provides how to configure the URL Rewrite functionality step by step in Tomcat Java App on Azure App Service.\n \nWhat is the URL Rewrite Value?\nThe URL Rewrite functionality was introduced from Tomcat 8. This feature is similar to mod_rewrite  from Apache HTTP Server.\n \nThere are 2 ways to use URL rewrite functionality in Tomcat.1. Overwrite the built-in server.xml file with own server.xml file2. Overwrite the built-in context.xml file with own context.xml file\n \n1. Overwrite the built-in server.xml file with own server.xml file\n\nGot to SSH via portal or http://<webapp-name>.scm.azurewebsites.net/webssh/host \nCopy the built-in server.xml file to the home directory.\ncp /usr/local/tomcat/conf/server.x…",
+          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/how-to-configure-url-rewrite-in-tomcat-java-app-on-azure-app/ba-p/3581137",
+          "publishedOn": "2022-08-02T03:15:02.000Z",
+          "wordCount": 9574,
+          "title": "How to configure URL Rewrite in Tomcat Java App on Azure App Service.",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/390419i37F6F092437BC0F2?v=v2"
+        },
         {
           "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/controlling-blazor-environments-on-static-web-apps/ba-p/3587397",
           "author": "aaronpowell",
@@ -1418,16 +1448,6 @@
           "wordCount": 2274,
           "title": "Getting rid of credentials in Azure - Part 1",
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/358078i34350ED2AAFDE957?v=v2"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/azure-developer-community-blog/using-secretless-azure-functions-from-within-aks/ba-p/3248143",
-          "author": "stephaneey",
-          "description": "I recently implemented a change in KEDA (currently evaluated as a potential pull request), consisting of leveraging managed identities in a more granular way, in order to adhere to the least privilege principle. While I was testing my changes, I wanted to use managed identities not only for KEDA itself but also for the Azure Functions I was using in my tests. I found out that although there are quite a few docs on the topic, none is targeting AKS:\n \nhttps://docs.microsoft.com/en-us/azure/azure-functions/functions-bindings-storage-queue-trigger?tabs=csharp#identity-based-connections\nhttps://docs.microsoft.com/en-us/azure/azure-functions/functions-reference?tabs=blob#connecting-to-host-storage-with-an-identity-preview\n \nYou can find many articles showing how to grab a token from an HTTP trig…",
-          "link": "https://techcommunity.microsoft.com/t5/azure-developer-community-blog/using-secretless-azure-functions-from-within-aks/ba-p/3248143",
-          "publishedOn": "2022-03-05T16:00:53.000Z",
-          "wordCount": 1421,
-          "title": "Using secretless Azure Functions from within AKS",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/353247i1EBC070C411D57A9?v=v2"
         }
       ]
     },
@@ -2096,16 +2116,6 @@
           "wordCount": 2779,
           "title": "Migrating Active Server Pages applications to Azure App Services",
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/360592iBE4DE987FF8CF4A3?v=v2"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/azure-migration-and/build-high-confidence-migration-plans-using-azure-migrate/ba-p/3248554",
-          "author": "VB_AzMig8",
-          "description": "Build high confidence migration plans using Azure Migrate’s software inventory and agentless dependency analysis\n \nAuthored by Vikram Bansal, Senior PM, Azure Migrate\n \nMigrating a large & complex IT environment from on-premises to the cloud can be quite daunting. Customers are often challenged with the problem of unknown where they may not have complete visibility of applications running on their servers or the dependencies between them, as they start planning their migration to cloud. This results not only in leaving behind dependent servers causing the application to break, but also adds up to the migration cost that the customers want to reduce. Azure Migrate aims at helping customers build a high-confidence migration plan with features like software inventory and agentless dependency …",
-          "link": "https://techcommunity.microsoft.com/t5/azure-migration-and/build-high-confidence-migration-plans-using-azure-migrate/ba-p/3248554",
-          "publishedOn": "2022-03-06T13:14:39.000Z",
-          "wordCount": 1378,
-          "title": "Build high confidence migration plans using Azure Migrate",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/353314i37946CF0FB3E8596/image-size/original?v=v2&px=-1"
         }
       ]
     },
@@ -2476,6 +2486,16 @@
       "siteUrl": "https://devblogs.microsoft.com/devops/",
       "articles": [
         {
+          "id": "https://devblogs.microsoft.com/devops/?p=65387",
+          "author": "Dan Hellem",
+          "description": "Since the March announcement of the New Boards Hub, our team has collected a lot of your feedback. Thank you! We have been hard at work addressing the issues. Every week the experience gets better and better. The issues backlog is getting smaller,\nThe post New Boards Hub, Sprint 208 Update appeared first on Azure DevOps Blog.",
+          "link": "https://devblogs.microsoft.com/devops/new-boards-hub-sprint-208-update/",
+          "publishedOn": "2022-08-02T17:36:54.000Z",
+          "wordCount": 4953,
+          "title": "New Boards Hub, Sprint 208 Update",
+          "imageUrl": "https://devblogs.microsoft.com/devops/wp-content/uploads/sites/6/2022/03/agile.png"
+        },
+        {
           "id": "https://devblogs.microsoft.com/devops/?p=64636",
           "author": "Dan Hellem",
           "description": "Over these last few months, our team has been working hard at delivering new value in Azure Boards. We would like to take a moment to highlight some of the most recently released features. Be sure to check out the Features Timeline for updates and our product roadmap.\nThe post Azure Boards Summer Update appeared first on Azure DevOps Blog.",
@@ -2787,6 +2807,16 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/t5/azure-governance-and-management/using-azure-templatespecs-with-a-custom-ui/ba-p/3586173",
+          "author": "bmoore-msft",
+          "description": "TemplateSpecs provide a great way to govern deployments in your organization by sharing templates users can use to deploy approved or prescribed workloads.  While TemplateSpecs are commonly used in developer and devops scenarios they are also useful for end users to deploy canonical workloads through the Azure Portal.  By default, the Portal will create a simple user experience for any templateSpec you create and deploy through the Portal.  To provide a richer, more robust experience you can also create your own user interface for deploying templateSpecs via the Azure Portal.\n \nWith a customized user experience, you can do things like select existing resources from a list, restrict locations, or even make API calls to Azure to guide the experience.  I'll show you a sample that does just th…",
+          "link": "https://techcommunity.microsoft.com/t5/azure-governance-and-management/using-azure-templatespecs-with-a-custom-ui/ba-p/3586173",
+          "publishedOn": "2022-08-02T14:58:05.000Z",
+          "wordCount": 10899,
+          "title": "Using Azure templateSpecs with a Custom UI",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/392026iA2A7CD76F0D01B4C?v=v2"
+        },
+        {
           "id": "https://techcommunity.microsoft.com/t5/azure-governance-and-management/business-impacts-to-healthy-cloud-monitoring/ba-p/3585279",
           "author": "kirtpatel",
           "description": "Within the past decade, cloud computing has revolutionized digital transformation. Benefits such as enhanced performance, ability to scale, and improving costs are key reasons that IT decision-makers migrate to the cloud. One critical component of enabling businesses to take full advantage of the cloud is observability. Properly monitoring your cloud environment expedites the identification and resolution of incidents that occur. This post aims to provide an introduction of operational analytics by exploring observability, monitoring, incident response, and how correctly instrumenting your environment with these components benefits your company. \n \nObserve \nMature observability of metrics, logs, and errors enables your business to track the health of your cloud environment. When ingesting …",
@@ -2978,7 +3008,7 @@
     {
       "title": "Microsoft Open Source Blog",
       "feedUrl": "https://cloudblogs.microsoft.com/opensource/feed/",
-      "siteUrl": "https://cloudblogs.microsoft.com/opensource/",
+      "siteUrl": "https://cloudblogs.microsoft.com/opensource",
       "articles": [
         {
           "id": "https://cloudblogs.microsoft.com/opensource/2022/06/06/live-demos-of-machine-learning-models-with-onnx-and-hugging-face-spaces/",
@@ -3037,6 +3067,16 @@
       "feedUrl": "https://azurecomcdn.azureedge.net/en-us/updates/feed/?updateType=features",
       "siteUrl": "https://azure.microsoft.com/en-us/updates/",
       "articles": [
+        {
+          "id": "general-availability-reservation-administrator-and-reader-roles-in-azure-portal",
+          "author": null,
+          "description": "You can now assign reservation administrator and reader roles in the Azure Portal.",
+          "link": "https://azure.microsoft.com/en-us/updates/general-availability-reservation-administrator-and-reader-roles-in-azure-portal/",
+          "publishedOn": "2022-08-02T16:00:26.000Z",
+          "wordCount": 5048,
+          "title": "General availability: Reservation administrator and reader roles in the Azure Portal",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-0575bb7a1cf68c8dbe5697224d85b9818047b8965b5b42e076e5aee4946f7128/images/shared/social/azure-icon-250x250.png"
+        },
         {
           "id": "public-preview-amdbased-confidential-vms-for-azure-kubernetes-service-aks",
           "author": null,
