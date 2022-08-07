@@ -2,10 +2,29 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2022-08-06T01:37:25.979Z</updated>
+    <updated>2022-08-07T01:49:52.523Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Ten Azure networking tips that may simplify your life]]></title>
+        <id>https://techcommunity.microsoft.com/t5/azure-developer-community-blog/ten-azure-networking-tips-that-may-simplify-your-life/ba-p/3592774</id>
+        <link href="https://techcommunity.microsoft.com/t5/azure-developer-community-blog/ten-azure-networking-tips-that-may-simplify-your-life/ba-p/3592774"/>
+        <updated>2022-08-06T09:45:27.000Z</updated>
+        <summary type="html"><![CDATA[Hi,
+ 
+Azure networking can sometimes give headaches. Here are a few tips which may make your life easier.
+ 
+1. Private link effect - episode 1 - route tables
+ 
+When enabling Azure Private Link for a given resource, say a Storage Account, you may end up with the following configuration
+ 
+
+where you have routed all traffic to Azure Firewall (or an NVA) and noticed that the VM (or anything else) is directly connecting to the private endpoint, bypassing the firewall...This might come as a surprise to you but this is due to the fact that whenever you enable private link for a given resource, a direct (more specific) route is propagated to the underlying NICs. In the above example, Azure will write the 10.1.5.4/32 route to the NIC(s) of the VM pointing directly to the InterfaceEndpoint of the re…]]></summary>
+        <author>
+            <name>stephaneey</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Announcing preview: Enable Azure Monitor VM insights using Azure Monitor agent]]></title>
         <id>https://techcommunity.microsoft.com/t5/azure-observability-blog/announcing-preview-enable-azure-monitor-vm-insights-using-azure/ba-p/3589423</id>
@@ -9054,38 +9073,6 @@ One of the common ways to address performance issues is to scale out cloud resou
 Today, we’re excited to announce the limited preview of Optimization Insights, an AI-based service within Application Insights that continuously detects performance iss…]]></summary>
         <author>
             <name>jogrima</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Operations Task Management for Azure Alerts]]></title>
-        <id>https://techcommunity.microsoft.com/t5/azure-architecture-blog/operations-task-management-for-azure-alerts/ba-p/3253388</id>
-        <link href="https://techcommunity.microsoft.com/t5/azure-architecture-blog/operations-task-management-for-azure-alerts/ba-p/3253388"/>
-        <updated>2022-03-10T09:54:57.000Z</updated>
-        <summary type="html"><![CDATA[Background
-A few weeks back, a customer asked us for a way to effectively track the alerts that they get from Microsoft Sentinel and Defender for Cloud and ensure resolution. For organisations with an ITIL practice, this work is tracked by logging an Incident or a Problem ticket in an ITSM tool. But some organisations are a lot leaner (no ITIL practice and no ITSM tooling) and simply need something that works.
- 
-Solution Idea
-And so the idea is to use Azure Boards as a simple Kanban board for the operations team to track work status. The tasks are created automatically as alerts/incidents are raised using Azure Logic Apps.
- 
-Workflow
-But before that, let's design the workflow:
-
- 
-This workflow is implemented using a custom inherited process in Azure Boards. In our implementation, we used
-W…]]></summary>
-        <author>
-            <name>raffertyuy</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Financial services firm Jack Henry finds a reliable, fast database in Azure Cosmos DB]]></title>
-        <id>https://devblogs.microsoft.com/cosmosdb/?p=4028</id>
-        <link href="https://devblogs.microsoft.com/cosmosdb/jack-henry-finds-reliable-fast-database/"/>
-        <updated>2022-03-09T14:18:02.000Z</updated>
-        <summary type="html"><![CDATA[Read about how Jack Henry has a found a scalable, reliable database in Azure Cosmos DB.
-The post Financial services firm Jack Henry finds a reliable, fast database in Azure Cosmos DB appeared first on Azure Cosmos DB Blog.]]></summary>
-        <author>
-            <name>Mark Brown</name>
         </author>
     </entry>
 </feed>

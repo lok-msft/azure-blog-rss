@@ -1160,6 +1160,16 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/t5/azure-developer-community-blog/ten-azure-networking-tips-that-may-simplify-your-life/ba-p/3592774",
+          "author": "stephaneey",
+          "description": "Hi,\n \nAzure networking can sometimes give headaches. Here are a few tips which may make your life easier.\n \n1. Private link effect - episode 1 - route tables\n \nWhen enabling Azure Private Link for a given resource, say a Storage Account, you may end up with the following configuration\n \n\nwhere you have routed all traffic to Azure Firewall (or an NVA) and noticed that the VM (or anything else) is directly connecting to the private endpoint, bypassing the firewall...This might come as a surprise to you but this is due to the fact that whenever you enable private link for a given resource, a direct (more specific) route is propagated to the underlying NICs. In the above example, Azure will write the 10.1.5.4/32 route to the NIC(s) of the VM pointing directly to the InterfaceEndpoint of the re…",
+          "link": "https://techcommunity.microsoft.com/t5/azure-developer-community-blog/ten-azure-networking-tips-that-may-simplify-your-life/ba-p/3592774",
+          "publishedOn": "2022-08-06T09:45:27.000Z",
+          "wordCount": 10090,
+          "title": "Ten Azure networking tips that may simplify your life",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/393861i0A31AB1EE3C7CD22?v=v2"
+        },
+        {
           "id": "https://techcommunity.microsoft.com/t5/azure-developer-community-blog/redisjson-now-available-in-preview/ba-p/3590602",
           "author": "kteegarden",
           "description": "Overview\nWe are excited to announce the preview of RedisJSON on the Enterprise and Enterprise Flash tiers of Azure Cache for Redis. Check out the details below to learn about the feature overview, benefits, use cases, and how to get started!\n \n \nWhat is RedisJSON?\nRedisJSON is a new module in Azure Cache for Redis Enterprise and Enterprise Flash that turns Redis into a high-performance NoSQL document store streamlining how developers build modern applications. Leveraging common Redis use cases such as product catalogs and user profile data is simplified thanks to RedisJSON’s native APIs to ingest, index, query, and full-text search on JSON documents both on-prem and in the cloud. Additionally, the RedisJSON module adds native functionality to store, query, and search nested data in the JSO…",
@@ -1862,16 +1872,6 @@
           "wordCount": 2272,
           "title": "Self-managed Kubernetes on Azure",
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/354883i0D84F4A22808B53D?v=v2"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/operations-task-management-for-azure-alerts/ba-p/3253388",
-          "author": "raffertyuy",
-          "description": "Background\nA few weeks back, a customer asked us for a way to effectively track the alerts that they get from Microsoft Sentinel and Defender for Cloud and ensure resolution. For organisations with an ITIL practice, this work is tracked by logging an Incident or a Problem ticket in an ITSM tool. But some organisations are a lot leaner (no ITIL practice and no ITSM tooling) and simply need something that works.\n \nSolution Idea\nAnd so the idea is to use Azure Boards as a simple Kanban board for the operations team to track work status. The tasks are created automatically as alerts/incidents are raised using Azure Logic Apps.\n \nWorkflow\nBut before that, let's design the workflow:\n\n \nThis workflow is implemented using a custom inherited process in Azure Boards. In our implementation, we used\nW…",
-          "link": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/operations-task-management-for-azure-alerts/ba-p/3253388",
-          "publishedOn": "2022-03-10T09:54:57.000Z",
-          "wordCount": 920,
-          "title": "Operations Task Management for Azure Alerts",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/354696i73C8E2D5FD472D0B?v=v2"
         }
       ]
     },
@@ -2788,16 +2788,6 @@
           "wordCount": 1021,
           "title": "The new Microsoft Azure Cosmos DB Developer Specialty Certification is here!",
           "imageUrl": "https://devblogs.microsoft.com/cosmosdb/wp-content/uploads/sites/52/2019/10/FeaturedDefault.png"
-        },
-        {
-          "id": "https://devblogs.microsoft.com/cosmosdb/?p=4028",
-          "author": "Mark Brown",
-          "description": "Read about how Jack Henry has a found a scalable, reliable database in Azure Cosmos DB.\nThe post Financial services firm Jack Henry finds a reliable, fast database in Azure Cosmos DB appeared first on Azure Cosmos DB Blog.",
-          "link": "https://devblogs.microsoft.com/cosmosdb/jack-henry-finds-reliable-fast-database/",
-          "publishedOn": "2022-03-09T14:18:02.000Z",
-          "wordCount": 1505,
-          "title": "Financial services firm Jack Henry finds a reliable, fast database in Azure Cosmos DB",
-          "imageUrl": "https://devblogs.microsoft.com/cosmosdb/wp-content/uploads/sites/52/2022/03/JackHenryAssociates_Logo_RGB.png"
         }
       ]
     },
