@@ -2,10 +2,137 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2022-08-24T01:56:30.445Z</updated>
+    <updated>2022-08-25T01:58:05.071Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[New Azure Architecture - Detect mobile bank fraud]]></title>
+        <id>https://techcommunity.microsoft.com/t5/azure-developer-community-blog/new-azure-architecture-detect-mobile-bank-fraud/ba-p/3608785</id>
+        <link href="https://techcommunity.microsoft.com/t5/azure-developer-community-blog/new-azure-architecture-detect-mobile-bank-fraud/ba-p/3608785"/>
+        <updated>2022-08-24T22:28:00.000Z</updated>
+        <summary type="html"><![CDATA[In a typical case of online fraud, the thief makes multiple transactions, leading to a loss of thousands of dollars. That's why fraud detection must happen in near real-time. 
+ 
+This article presents a solution that uses Azure technology to predict a fraudulent mobile bank transaction within two seconds. We've built it with customers.
+ 
+Read the article here:
+
+Detect mobile bank fraud - Azure Architecture Center
+
+ 
+Let's dig into the architecture:
+ 
+
+ 
+An event-driven pipeline ingests and processes log data, creates and maintains behavioral account profiles, incorporates a fraud classification model, and produces a predictive score. Most steps in this pipeline start with an Azure function. A model training workstream combines on-premises historical fraud data and ingested log data. Azure D…]]></summary>
+        <author>
+            <name>Ed Price</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How to use Azure in IntelliJ IDEA (Video)]]></title>
+        <id>https://techcommunity.microsoft.com/t5/azure-developer-community-blog/how-to-use-azure-in-intellij-idea-video/ba-p/3608629</id>
+        <link href="https://techcommunity.microsoft.com/t5/azure-developer-community-blog/how-to-use-azure-in-intellij-idea-video/ba-p/3608629"/>
+        <updated>2022-08-24T19:42:26.000Z</updated>
+        <summary type="html"><![CDATA[When you’re developing your applications and deploying them to the cloud, having the right tools can save you time and help eliminate context switching. If you’re using IntelliJ IDEA for your Java development, you can create, deploy, and work with your apps in Azure without leaving your IDE. 
+ 
+In this video, we show you how to setup IntelliJ IDEA to work with Azure and highlight the top features you could use while working with your apps in the cloud. The video covers: 
+
+Setting up Azure in IntelliJ IDEA 
+Deploying your app to the cloud (we use the Spring PetClinic sample app) 
+Working with your deployed applications and databases without leaving your IDE 
+Creating and deploying a Serverless application in IntelliJ IDEA using Azure Functions 
+General tips to take full advantage of all the Azure functionality in IntelliJ IDEA 
+
+ 
+
+ 
+If you want more information about the Azure Toolkit for IntelliJ, checkout the Azure Toolkit Documentation.]]></summary>
+        <author>
+            <name>daliashea</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Azure portal July 2022 updates]]></title>
+        <id>https://techcommunity.microsoft.com/t5/azure-governance-and-management/azure-portal-july-2022-updates/ba-p/3608580</id>
+        <link href="https://techcommunity.microsoft.com/t5/azure-governance-and-management/azure-portal-july-2022-updates/ba-p/3608580"/>
+        <updated>2022-08-24T18:35:53.000Z</updated>
+        <summary type="html"><![CDATA[Mobile > Support
+
+Expanded Support Features on Azure Mobile App
+
+Global Search
+
+Find more Azure AD objects from global search 
+
+Intune
+
+Updates to Microsoft Intune
+
+ 
+Mobile > Support
+Expanded Support Features on Azure Mobile App
+ 
+Support ticket functionality is being expanded on the Azure mobile app with requested features. Updates include users now able to access their support tickets, including the ability to reply to their support engineer and change the severity of the ticket, while waiting to be assigned a support engineer. Along with these two exciting functionalities, support requests are much easier to access from a new Support Request button in the hamburger menu on the Azure mobile app home page.
+ 
+1. Click on hamburger menu in Azure mobile home
+
+2. Click on support requests
+3.…]]></summary>
+        <author>
+            <name>Allison_Cordle</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How Cloud Storage Partners integrate their services with Microsoft Teams and Office]]></title>
+        <id>https://devblogs.microsoft.com/microsoft365dev/?p=11332</id>
+        <link href="https://devblogs.microsoft.com/microsoft365dev/how-cloud-storage-partners-integrate-their-services-with-microsoft-teams-and-office/"/>
+        <updated>2022-08-24T17:34:41.000Z</updated>
+        <summary type="html"><![CDATA[Today we’re announcing several new ways for Cloud Storage Partners to integrate their services with Office and Teams.  
+The post How Cloud Storage Partners integrate their services with Microsoft Teams and Office appeared first on Microsoft 365 Developer Blog.]]></summary>
+        <author>
+            <name>Ben Summers</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[A Heavy Lift: Bringing Kestrel + YARP to Azure App Services]]></title>
+        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/a-heavy-lift-bringing-kestrel-yarp-to-azure-app-services/ba-p/3607417</id>
+        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/a-heavy-lift-bringing-kestrel-yarp-to-azure-app-services/ba-p/3607417"/>
+        <updated>2022-08-24T16:25:48.000Z</updated>
+        <summary type="html"><![CDATA[In this post, we get a behind-the-scenes look at the engineering work required to change a critical platform component with code paths that are exercised billions of times a day while minimizing service disruptions and maintaining SLA for our customers. We provide a brief introduction to help cover the basics, go over motivations for doing this work, explain some of the more interesting challenges, issues, and bugs encountered along the way, and close with the results and the new customers scenarios enabled.
+ 
+The challenge was huge, but we’re excited about the benefits this brings to Azure App Services and our customers:
+
+Almost 80% improvement in throughput in performance tests designed to isolate the benefits.
+Greener Azure data centers from significantly decreased per-request CPU usage…]]></summary>
+        <author>
+            <name>jeffmartinez</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[General availability: Azure Data Explorer supports native ingestion from Amazon S3]]></title>
+        <id>general-availability-azure-data-explorer-supports-native-ingestion-from-amazon-s3</id>
+        <link href="https://azure.microsoft.com/en-us/updates/general-availability-azure-data-explorer-supports-native-ingestion-from-amazon-s3/"/>
+        <updated>2022-08-24T15:00:23.000Z</updated>
+        <summary type="html"><![CDATA[Azure Data Explorer (ADX) now supports bringing data from S3 natively without complex ETL pipelines.]]></summary>
+        <author>
+            <name>Azure service updates</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[On-premises connectivity from Azure Monitor: a serverless approach]]></title>
+        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/on-premises-connectivity-from-azure-monitor-a-serverless/ba-p/3608207</id>
+        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/on-premises-connectivity-from-azure-monitor-a-serverless/ba-p/3608207"/>
+        <updated>2022-08-24T13:29:55.000Z</updated>
+        <summary type="html"><![CDATA[Summary
+One of the obvious benefits of open, cloud-based technologies is the ability to integrate a wide range of global services with on-premises resources. If you’ve developed for financial services for any length of time, you know this openness adds another level of complexity to development. When money movement is involved, you’re going to encounter a higher level of risk and compliance considerations.
+This blog highlights just such an issue encountered by the DevStudio engineering team here at Fiserv, and how we solved it. I hope this blog helps you understand not only how our team works but gives you useful context for implementing your own solutions that prioritize security and compliance without sacrificing speed or functionality.
+Challenge
+The API portal (DevStudio) from Fiserv ru…]]></summary>
+        <author>
+            <name>saswatms</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Build a productivity dashboard with Microsoft Teams Toolkit for Visual Studio]]></title>
         <id>https://devblogs.microsoft.com/microsoft365dev/?p=11247</id>
@@ -10023,19 +10150,6 @@ The post Azure Synapse Link: Announcing support for existing Azure Cosmos DB con
         <summary type="html"><![CDATA[The Azure Percept March update includes fixes related to security.]]></summary>
         <author>
             <name>Azure service updates</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Managed Virtual Networks and DNS for Synapse Analytics to enable a seamless data estate]]></title>
-        <id>https://techcommunity.microsoft.com/t5/azure-architecture-blog/managed-virtual-networks-and-dns-for-synapse-analytics-to-enable/ba-p/3268509</id>
-        <link href="https://techcommunity.microsoft.com/t5/azure-architecture-blog/managed-virtual-networks-and-dns-for-synapse-analytics-to-enable/ba-p/3268509"/>
-        <updated>2022-03-28T08:53:56.000Z</updated>
-        <summary type="html"><![CDATA[Overview
- 
-While working with many customers who have implemented Azure Synapse Analytics and data management landing zone, we have seen customers face a few challenges while enabling seamless hybrid connectivity across Azure Synapse services and data integration. This blog talks about a few nuances of Managed Virtual network and how the data flows end to end between Azure Synapse and on-premises.
-Managed Virtual Network is a new capability that eases network configuration while creating services such as Azure Data Factory, Azure Synapse Analytics and Azure Purview. It builds on Private Links and Private Endpoints. Private Endpoints enables many Azure Services listed here to have a network interface in a customer Virtual Network and each Azure resource gets a private IP address from that V…]]></summary>
-        <author>
-            <name>Anil Dwarakanath</name>
         </author>
     </entry>
     <entry>
