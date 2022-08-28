@@ -2,10 +2,41 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2022-08-27T02:00:29.264Z</updated>
+    <updated>2022-08-28T02:06:31.518Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Creating a custom Spring Cloud Gateway Filter]]></title>
+        <id>https://spring.io/blog/2022/08/26/creating-a-custom-spring-cloud-gateway-filter</id>
+        <link href="https://spring.io/blog/2022/08/26/creating-a-custom-spring-cloud-gateway-filter"/>
+        <updated>2022-08-27T05:15:00.000Z</updated>
+        <summary type="html"><![CDATA[In this article, we look into writing a custom extension for Spring Cloud Gateway. Before we get started, let’s go over how Spring Cloud Gateway works:
+
+
+
+
+  
+First, a client makes a network request to the Gateway
+
+  
+The Gateway is defined with a number of routes, each with Predicates to match the request to the route. For example, you can match on the path segment of the URL or the HTTP method of the request.
+
+  
+Once matched, the Gateway executes pre-request logic on each of the filters applied to the route. For example, you might want to add query parameters to your request
+
+  
+A proxy filter routes the request to the proxied service
+
+  
+The service executes and returns a response
+
+  
+The gateway receives the response and executes post-request logic on each filter before return…]]></summary>
+        <author>
+            <name>Spring</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[High-performance storage for AI Model Training tasks using Azure ML studio with Azure NetApp Files]]></title>
         <id>https://techcommunity.microsoft.com/t5/azure-architecture-blog/high-performance-storage-for-ai-model-training-tasks-using-azure/ba-p/3609189</id>
@@ -10016,165 +10047,6 @@ As you might know, APIM comes with Developer, Consumption, Basic, Standard, Prem
         <summary type="html"><![CDATA[Bring your own public IP ranges to Azure to retain existing reputation or to prevent your customers from needing to modify dependencies (e.g. firewalls or other hardcoding) on their network.]]></summary>
         <author>
             <name>Azure service updates</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Seamlessly integrate Springs apps with Azure Services using Spring Cloud Azure 4.0, now GA]]></title>
-        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/seamlessly-integrate-springs-apps-with-azure-services-using/ba-p/3266427</id>
-        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/seamlessly-integrate-springs-apps-with-azure-services-using/ba-p/3266427"/>
-        <updated>2022-03-31T01:05:17.000Z</updated>
-        <summary type="html"><![CDATA[Spring Cloud Azure is an open-source project that provides seamless Spring integration with Azure services. It gives developers a Spring-idiomatic way to connect and consume Azure services, with only need few lines of configuration and minimal code changes. I am pleased to announce that Spring Cloud Azure 4.0 is now generally available. With this major release we aim to bring better security, leaner dependencies, support for production readiness and more. Version 4 represents a significant milestone in our product roadmap that we couldn’t have delivered without the collective wisdom of the Spring community and customer feedback. On behalf of the Spring on Azure product team, thank you for making this happen!
- 
-Unified Development Experience
-At the Developer Division of Microsoft, we are bi…]]></summary>
-        <author>
-            <name>Sean_Li</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[General availability: Azure Data Explorer supports Conditional Access]]></title>
-        <id>general-availability-azure-data-explorer-supports-conditional-access</id>
-        <link href="https://azure.microsoft.com/en-us/updates/general-availability-azure-data-explorer-supports-conditional-access/"/>
-        <updated>2022-03-30T17:00:36.000Z</updated>
-        <summary type="html"><![CDATA[Azure Data Explorer launches support for Azure Active Directory Conditional Access.]]></summary>
-        <author>
-            <name>Azure service updates</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Azure SQL—Public preview updates for late March 2022]]></title>
-        <id>azure-sql-public-preview-updates-for-late-march-2022</id>
-        <link href="https://azure.microsoft.com/en-us/updates/azure-sql-public-preview-updates-for-late-march-2022/"/>
-        <updated>2022-03-30T16:02:09.000Z</updated>
-        <summary type="html"><![CDATA[Public preview enhancements and updates released for Azure SQL in late March 2022.]]></summary>
-        <author>
-            <name>Azure service updates</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Public preview: Azure SQL Migration extension with Azure PowerShell and CLI support]]></title>
-        <id>public-preview-azure-sql-migration-extension-with-azure-powershell-and-cli-support</id>
-        <link href="https://azure.microsoft.com/en-us/updates/public-preview-azure-sql-migration-extension-with-azure-powershell-and-cli-support/"/>
-        <updated>2022-03-30T16:02:02.000Z</updated>
-        <summary type="html"><![CDATA[Leverage Azure PowerShell module (Az.DataMigration) or Azure CLI commands (az datamigration) for recommendations and migrate SQL Server databases using Azure Database Migration Service with Azure SQL Migration extensions for ADS.]]></summary>
-        <author>
-            <name>Azure service updates</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[General availability: Azure Database for PostgreSQL - Hyperscale (Citus) now FedRAMP High compliant]]></title>
-        <id>general-availability-azure-database-for-postgresql-hyperscale-citus-now-fedramp-high-compliant</id>
-        <link href="https://azure.microsoft.com/en-us/updates/general-availability-azure-database-for-postgresql-hyperscale-citus-now-fedramp-high-compliant/"/>
-        <updated>2022-03-30T16:01:55.000Z</updated>
-        <summary type="html"><![CDATA[Azure Database for PostgreSQL – Hyperscale (Citus), a managed service running the open-source Postgres database on Azure is now compliant with FedRAMP High.]]></summary>
-        <author>
-            <name>Azure service updates</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Public preview: Azure Cosmos DB partition key advisor notebook]]></title>
-        <id>public-preview-azure-cosmos-db-partition-key-advisor-notebook</id>
-        <link href="https://azure.microsoft.com/en-us/updates/public-preview-azure-cosmos-db-partition-key-advisor-notebook/"/>
-        <updated>2022-03-30T16:01:51.000Z</updated>
-        <summary type="html"><![CDATA[The Azure Cosmos DB partition key advisor notebook helps recommend an optimal partition key based on information you provide about your workload traffic patterns and queries.]]></summary>
-        <author>
-            <name>Azure service updates</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[General availability: Always Encrypted for Azure Cosmos DB]]></title>
-        <id>general-availability-always-encrypted-for-azure-cosmos-db</id>
-        <link href="https://azure.microsoft.com/en-us/updates/general-availability-always-encrypted-for-azure-cosmos-db/"/>
-        <updated>2022-03-30T16:01:41.000Z</updated>
-        <summary type="html"><![CDATA[The Always Encrypted feature brings client-side encryption capabilities to Azure Cosmos DB and allows you to put an extra level of protection on your sensitive data.]]></summary>
-        <author>
-            <name>Azure service updates</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[General availability: Azure Cognitive Search implements debug sessions]]></title>
-        <id>general-availability-azure-cognitive-search-implements-debug-sessions</id>
-        <link href="https://azure.microsoft.com/en-us/updates/general-availability-azure-cognitive-search-implements-debug-sessions/"/>
-        <updated>2022-03-30T16:01:34.000Z</updated>
-        <summary type="html"><![CDATA[Streamline your Cognitive Search operations with debug sessions for building, testing, and modifying skillsets.]]></summary>
-        <author>
-            <name>Azure service updates</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Generally available: Cross-region snapshot copy for Azure Disk Storage]]></title>
-        <id>generally-available-crossregion-snapshot-copy-for-azure-disk-storage</id>
-        <link href="https://azure.microsoft.com/en-us/updates/generally-available-crossregion-snapshot-copy-for-azure-disk-storage/"/>
-        <updated>2022-03-30T16:01:19.000Z</updated>
-        <summary type="html"><![CDATA[Cross-region snapshot copy allows you to copy disk snapshots to any region for disaster recovery.]]></summary>
-        <author>
-            <name>Azure service updates</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[General availability: Azure Ultra Disk Storage in Sweden Central]]></title>
-        <id>general-availability-azure-ultra-disk-storage-in-sweden-central</id>
-        <link href="https://azure.microsoft.com/en-us/updates/general-availability-azure-ultra-disk-storage-in-sweden-central/"/>
-        <updated>2022-03-30T16:01:12.000Z</updated>
-        <summary type="html"><![CDATA[Azure Ultra Disk Storage provides high-performance along with sub-millisecond latency for your most-demanding workloads.]]></summary>
-        <author>
-            <name>Azure service updates</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Generally available: Node.js 16 in Azure Functions]]></title>
-        <id>generally-available-nodejs-16-in-azure-functions-2</id>
-        <link href="https://azure.microsoft.com/en-us/updates/generally-available-nodejs-16-in-azure-functions-2/"/>
-        <updated>2022-03-30T16:01:05.000Z</updated>
-        <summary type="html"><![CDATA[Azure Functions support for Node.js 16.x is now generally available in Azure Functions runtime 4.0 on all hosting plans.]]></summary>
-        <author>
-            <name>Azure service updates</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Public preview: Azure dedicated host support in AKS]]></title>
-        <id>public-preview-azure-dedicated-host-support-in-aks</id>
-        <link href="https://azure.microsoft.com/en-us/updates/public-preview-azure-dedicated-host-support-in-aks/"/>
-        <updated>2022-03-30T16:00:51.000Z</updated>
-        <summary type="html"><![CDATA[You can now use Azure Dedicated Hosts with the Azure Kubernetes Service (AKS)]]></summary>
-        <author>
-            <name>Azure service updates</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Public preview: Node auto-drain for AKS]]></title>
-        <id>public-preview-node-autodrain-for-aks</id>
-        <link href="https://azure.microsoft.com/en-us/updates/public-preview-node-autodrain-for-aks/"/>
-        <updated>2022-03-30T16:00:36.000Z</updated>
-        <summary type="html"><![CDATA[AKS now minimizes unexpected disruptions by handling maintenance events and offloading applications via auto-drain node feature.]]></summary>
-        <author>
-            <name>Azure service updates</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Getting rid of credentials in Azure - Part 2 (EasyAuth)]]></title>
-        <id>https://techcommunity.microsoft.com/t5/azure-developer-community-blog/getting-rid-of-credentials-in-azure-part-2-easyauth/ba-p/3270553</id>
-        <link href="https://techcommunity.microsoft.com/t5/azure-developer-community-blog/getting-rid-of-credentials-in-azure-part-2-easyauth/ba-p/3270553"/>
-        <updated>2022-03-30T16:00:00.000Z</updated>
-        <summary type="html"><![CDATA[This is part two in a series on how to get rid of credentials wherever you can in Azure. The first part set the stage with configuring "federated credentials" for doing deployments based on Bicep code stored in GitHub using GitHub Actions. The samples in this post assumes you have this in place, so you might want to take a look at that if you haven't:
-https://techcommunity.microsoft.com/t5/azure-developer-community-blog/getting-rid-of-credentials-in-azure-part-1/ba-p/3265205
- 
-Starting with this post we will deploy actual resources in Azure so let's start with something easy in the world of credentialless in Azure - like EasyAuth :)
- 
-Bad puns aside; EasyAuth is a mechanism that allows you to add identity to Azure App Services in a fairly simple manner. And in line with the topic of the se…]]></summary>
-        <author>
-            <name>Andreas Helland</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Azure Synapse Link: Announcing support for existing Azure Cosmos DB containers and seamless Power BI integration]]></title>
-        <id>https://devblogs.microsoft.com/cosmosdb/?p=4064</id>
-        <link href="https://devblogs.microsoft.com/cosmosdb/azure-synapse-link-existing-containers-and-power-bi-integration/"/>
-        <updated>2022-03-30T15:55:14.000Z</updated>
-        <summary type="html"><![CDATA[Azure Synapse Link: Announcing support for existing Azure Cosmos DB containers and seamless Power BI integration. 
-The post Azure Synapse Link: Announcing support for existing Azure Cosmos DB containers and seamless Power BI integration appeared first on Azure Cosmos DB Blog.]]></summary>
-        <author>
-            <name>Rodrigo Souza</name>
         </author>
     </entry>
 </feed>

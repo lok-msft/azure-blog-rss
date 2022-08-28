@@ -6,6 +6,16 @@
       "siteUrl": "https://spring.io/blog",
       "articles": [
         {
+          "id": "https://spring.io/blog/2022/08/26/creating-a-custom-spring-cloud-gateway-filter",
+          "author": null,
+          "description": "In this article, we look into writing a custom extension for Spring Cloud Gateway. Before we get started, let’s go over how Spring Cloud Gateway works:\n\r\n\n\r\n\r\n  \nFirst, a client makes a network request to the Gateway\n\r\n  \nThe Gateway is defined with a number of routes, each with Predicates to match the request to the route. For example, you can match on the path segment of the URL or the HTTP method of the request.\n\r\n  \nOnce matched, the Gateway executes pre-request logic on each of the filters applied to the route. For example, you might want to add query parameters to your request\n\r\n  \nA proxy filter routes the request to the proxied service\n\r\n  \nThe service executes and returns a response\n\r\n  \nThe gateway receives the response and executes post-request logic on each filter before return…",
+          "link": "https://spring.io/blog/2022/08/26/creating-a-custom-spring-cloud-gateway-filter",
+          "publishedOn": "2022-08-27T05:15:00.000Z",
+          "wordCount": 1800,
+          "title": "Creating a custom Spring Cloud Gateway Filter",
+          "imageUrl": "https://avatars.githubusercontent.com/u/1717428?v=4?s=200"
+        },
+        {
           "id": "https://spring.io/blog/2022/08/25/a-bootiful-podcast-fellow-java-champion-and-timescaledb-developer-advocate-christoph-engelbert",
           "author": null,
           "description": "Hi, Spring fans! In this installment, Josh Long (@starbuxman) talks to fellow Java Champion and TimescaleDB developer advocate Christoph Engelbert (@noctarius2k) about PostgreSQL, Java, time series databases, observability, and so much more.",
@@ -1361,16 +1371,6 @@
           "wordCount": 1231,
           "title": "Use php-fpm log to troubleshoot PHP 8 Linux Azure App Service",
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/361023i3D8DF769FBE65DA0?v=v2"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/seamlessly-integrate-springs-apps-with-azure-services-using/ba-p/3266427",
-          "author": "Sean_Li",
-          "description": "Spring Cloud Azure is an open-source project that provides seamless Spring integration with Azure services. It gives developers a Spring-idiomatic way to connect and consume Azure services, with only need few lines of configuration and minimal code changes. I am pleased to announce that Spring Cloud Azure 4.0 is now generally available. With this major release we aim to bring better security, leaner dependencies, support for production readiness and more. Version 4 represents a significant milestone in our product roadmap that we couldn’t have delivered without the collective wisdom of the Spring community and customer feedback. On behalf of the Spring on Azure product team, thank you for making this happen!\n \nUnified Development Experience\nAt the Developer Division of Microsoft, we are bi…",
-          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/seamlessly-integrate-springs-apps-with-azure-services-using/ba-p/3266427",
-          "publishedOn": "2022-03-31T01:05:17.000Z",
-          "wordCount": 1511,
-          "title": "Seamlessly integrate Springs apps with Azure Services using Spring Cloud Azure 4.0, now GA",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/358377i4F8A81DDB4DA7F71?v=v2"
         }
       ]
     },
@@ -1718,16 +1718,6 @@
           "wordCount": 2237,
           "title": "Azure API Management networking explained",
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/360923iDBE0DC907421E268?v=v2"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/azure-developer-community-blog/getting-rid-of-credentials-in-azure-part-2-easyauth/ba-p/3270553",
-          "author": "Andreas Helland",
-          "description": "This is part two in a series on how to get rid of credentials wherever you can in Azure. The first part set the stage with configuring \"federated credentials\" for doing deployments based on Bicep code stored in GitHub using GitHub Actions. The samples in this post assumes you have this in place, so you might want to take a look at that if you haven't:\nhttps://techcommunity.microsoft.com/t5/azure-developer-community-blog/getting-rid-of-credentials-in-azure-part-1/ba-p/3265205\n \nStarting with this post we will deploy actual resources in Azure so let's start with something easy in the world of credentialless in Azure - like EasyAuth :)\n \nBad puns aside; EasyAuth is a mechanism that allows you to add identity to Azure App Services in a fairly simple manner. And in line with the topic of the se…",
-          "link": "https://techcommunity.microsoft.com/t5/azure-developer-community-blog/getting-rid-of-credentials-in-azure-part-2-easyauth/ba-p/3270553",
-          "publishedOn": "2022-03-30T16:00:00.000Z",
-          "wordCount": 2787,
-          "title": "Getting rid of credentials in Azure - Part 2 (EasyAuth)",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/359635i1B691C3F1496B0F1?v=v2"
         }
       ]
     },
@@ -3158,16 +3148,6 @@
           "wordCount": 1016,
           "title": "Watch Now! Azure Cosmos DB Essentials Season 3",
           "imageUrl": "https://devblogs.microsoft.com/cosmosdb/wp-content/uploads/sites/52/2022/05/Azure-Cosmos-DB-Essentials.png"
-        },
-        {
-          "id": "https://devblogs.microsoft.com/cosmosdb/?p=4064",
-          "author": "Rodrigo Souza",
-          "description": "Azure Synapse Link: Announcing support for existing Azure Cosmos DB containers and seamless Power BI integration. \nThe post Azure Synapse Link: Announcing support for existing Azure Cosmos DB containers and seamless Power BI integration appeared first on Azure Cosmos DB Blog.",
-          "link": "https://devblogs.microsoft.com/cosmosdb/azure-synapse-link-existing-containers-and-power-bi-integration/",
-          "publishedOn": "2022-03-30T15:55:14.000Z",
-          "wordCount": 1372,
-          "title": "Azure Synapse Link: Announcing support for existing Azure Cosmos DB containers and seamless Power BI integration",
-          "imageUrl": "https://devblogs.microsoft.com/cosmosdb/wp-content/uploads/sites/52/2020/05/a-circuit-board-description-automatically-generat-2-e1589831964774.png"
         }
       ]
     },
@@ -3458,7 +3438,7 @@
     {
       "title": "Microsoft Open Source Blog",
       "feedUrl": "https://cloudblogs.microsoft.com/opensource/feed/",
-      "siteUrl": "https://cloudblogs.microsoft.com/opensource/",
+      "siteUrl": "https://cloudblogs.microsoft.com/opensource",
       "articles": [
         {
           "id": "https://cloudblogs.microsoft.com/opensource/2022/06/06/live-demos-of-machine-learning-models-with-onnx-and-hugging-face-spaces/",
@@ -6755,126 +6735,6 @@
           "publishedOn": "2022-03-31T16:00:06.000Z",
           "wordCount": 4357,
           "title": "General availability: Bring your own IP ranges to Azure",
-          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
-        },
-        {
-          "id": "general-availability-azure-data-explorer-supports-conditional-access",
-          "author": null,
-          "description": "Azure Data Explorer launches support for Azure Active Directory Conditional Access.",
-          "link": "https://azure.microsoft.com/en-us/updates/general-availability-azure-data-explorer-supports-conditional-access/",
-          "publishedOn": "2022-03-30T17:00:36.000Z",
-          "wordCount": 4386,
-          "title": "General availability: Azure Data Explorer supports Conditional Access",
-          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
-        },
-        {
-          "id": "azure-sql-public-preview-updates-for-late-march-2022",
-          "author": null,
-          "description": "Public preview enhancements and updates released for Azure SQL in late March 2022.",
-          "link": "https://azure.microsoft.com/en-us/updates/azure-sql-public-preview-updates-for-late-march-2022/",
-          "publishedOn": "2022-03-30T16:02:09.000Z",
-          "wordCount": 4305,
-          "title": "Azure SQL—Public preview updates for late March 2022",
-          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
-        },
-        {
-          "id": "public-preview-azure-sql-migration-extension-with-azure-powershell-and-cli-support",
-          "author": null,
-          "description": "Leverage Azure PowerShell module (Az.DataMigration) or Azure CLI commands (az datamigration) for recommendations and migrate SQL Server databases using Azure Database Migration Service with Azure SQL Migration extensions for ADS.",
-          "link": "https://azure.microsoft.com/en-us/updates/public-preview-azure-sql-migration-extension-with-azure-powershell-and-cli-support/",
-          "publishedOn": "2022-03-30T16:02:02.000Z",
-          "wordCount": 4361,
-          "title": "Public preview: Azure SQL Migration extension with Azure PowerShell and CLI support",
-          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
-        },
-        {
-          "id": "general-availability-azure-database-for-postgresql-hyperscale-citus-now-fedramp-high-compliant",
-          "author": null,
-          "description": "Azure Database for PostgreSQL – Hyperscale (Citus), a managed service running the open-source Postgres database on Azure is now compliant with FedRAMP High.",
-          "link": "https://azure.microsoft.com/en-us/updates/general-availability-azure-database-for-postgresql-hyperscale-citus-now-fedramp-high-compliant/",
-          "publishedOn": "2022-03-30T16:01:55.000Z",
-          "wordCount": 4349,
-          "title": "General availability: Azure Database for PostgreSQL - Hyperscale (Citus) now FedRAMP High compliant",
-          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
-        },
-        {
-          "id": "public-preview-azure-cosmos-db-partition-key-advisor-notebook",
-          "author": null,
-          "description": "The Azure Cosmos DB partition key advisor notebook helps recommend an optimal partition key based on information you provide about your workload traffic patterns and queries.",
-          "link": "https://azure.microsoft.com/en-us/updates/public-preview-azure-cosmos-db-partition-key-advisor-notebook/",
-          "publishedOn": "2022-03-30T16:01:51.000Z",
-          "wordCount": 4392,
-          "title": "Public preview: Azure Cosmos DB partition key advisor notebook",
-          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
-        },
-        {
-          "id": "general-availability-always-encrypted-for-azure-cosmos-db",
-          "author": null,
-          "description": "The Always Encrypted feature brings client-side encryption capabilities to Azure Cosmos DB and allows you to put an extra level of protection on your sensitive data.",
-          "link": "https://azure.microsoft.com/en-us/updates/general-availability-always-encrypted-for-azure-cosmos-db/",
-          "publishedOn": "2022-03-30T16:01:41.000Z",
-          "wordCount": 4347,
-          "title": "General availability: Always Encrypted for Azure Cosmos DB",
-          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
-        },
-        {
-          "id": "general-availability-azure-cognitive-search-implements-debug-sessions",
-          "author": null,
-          "description": "Streamline your Cognitive Search operations with debug sessions for building, testing, and modifying skillsets.",
-          "link": "https://azure.microsoft.com/en-us/updates/general-availability-azure-cognitive-search-implements-debug-sessions/",
-          "publishedOn": "2022-03-30T16:01:34.000Z",
-          "wordCount": 4363,
-          "title": "General availability: Azure Cognitive Search implements debug sessions",
-          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
-        },
-        {
-          "id": "generally-available-crossregion-snapshot-copy-for-azure-disk-storage",
-          "author": null,
-          "description": "Cross-region snapshot copy allows you to copy disk snapshots to any region for disaster recovery.",
-          "link": "https://azure.microsoft.com/en-us/updates/generally-available-crossregion-snapshot-copy-for-azure-disk-storage/",
-          "publishedOn": "2022-03-30T16:01:19.000Z",
-          "wordCount": 4370,
-          "title": "Generally available: Cross-region snapshot copy for Azure Disk Storage",
-          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
-        },
-        {
-          "id": "general-availability-azure-ultra-disk-storage-in-sweden-central",
-          "author": null,
-          "description": "Azure Ultra Disk Storage provides high-performance along with sub-millisecond latency for your most-demanding workloads.",
-          "link": "https://azure.microsoft.com/en-us/updates/general-availability-azure-ultra-disk-storage-in-sweden-central/",
-          "publishedOn": "2022-03-30T16:01:12.000Z",
-          "wordCount": 4315,
-          "title": "General availability: Azure Ultra Disk Storage in Sweden Central",
-          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
-        },
-        {
-          "id": "generally-available-nodejs-16-in-azure-functions-2",
-          "author": null,
-          "description": "Azure Functions support for Node.js 16.x is now generally available in Azure Functions runtime 4.0 on all hosting plans.",
-          "link": "https://azure.microsoft.com/en-us/updates/generally-available-nodejs-16-in-azure-functions-2/",
-          "publishedOn": "2022-03-30T16:01:05.000Z",
-          "wordCount": 4327,
-          "title": "Generally available: Node.js 16 in Azure Functions",
-          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
-        },
-        {
-          "id": "public-preview-azure-dedicated-host-support-in-aks",
-          "author": null,
-          "description": "You can now use Azure Dedicated Hosts with the Azure Kubernetes Service (AKS)",
-          "link": "https://azure.microsoft.com/en-us/updates/public-preview-azure-dedicated-host-support-in-aks/",
-          "publishedOn": "2022-03-30T16:00:51.000Z",
-          "wordCount": 4399,
-          "title": "Public preview: Azure dedicated host support in AKS",
-          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
-        },
-        {
-          "id": "public-preview-node-autodrain-for-aks",
-          "author": null,
-          "description": "AKS now minimizes unexpected disruptions by handling maintenance events and offloading applications via auto-drain node feature.",
-          "link": "https://azure.microsoft.com/en-us/updates/public-preview-node-autodrain-for-aks/",
-          "publishedOn": "2022-03-30T16:00:36.000Z",
-          "wordCount": 4370,
-          "title": "Public preview: Node auto-drain for AKS",
           "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
         }
       ]
