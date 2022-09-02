@@ -2,10 +2,64 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2022-09-01T01:52:51.203Z</updated>
+    <updated>2022-09-02T01:58:28.783Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Save up to 54% vs. on-premises and up to 35% vs. AWS by migrating your ASP.NET applications to Azure]]></title>
+        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/save-up-to-54-vs-on-premises-and-up-to-35-vs-aws-by-migrating/ba-p/3596627</id>
+        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/save-up-to-54-vs-on-premises-and-up-to-35-vs-aws-by-migrating/ba-p/3596627"/>
+        <updated>2022-09-01T20:25:40.000Z</updated>
+        <summary type="html"><![CDATA[Moving your apps to a fully managed service can be one of the most effective strategies for organizations looking to modernize their applications—it removes the need to maintain infrastructure and is not as time-consuming or complex as a re-write. Our customers have always known that there is no better service than Azure App Service when it comes to organizing your enterprise .NET applications. Leveraging our deep expertise in Windows, Visual Studio, and ASP.NET, we designed App Service and Azure SQL Database as the home in the cloud for .NET applications and the databases that power them. You can be confident with Azure you are hosting your .NET web apps and data on the most cost-effective cloud. GigaOm recently conducted an independent analyst study with results that support this.  
+ 
+Th…]]></summary>
+        <author>
+            <name>Mayunk Jain</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Generally available: New Azure Virtual Machines with Ampere Altra Arm-based processors]]></title>
+        <id>generally-available-new-azure-virtual-machines-with-ampere-altra-armbased-processors</id>
+        <link href="https://azure.microsoft.com/en-us/updates/generally-available-new-azure-virtual-machines-with-ampere-altra-armbased-processors/"/>
+        <updated>2022-09-01T16:00:08.000Z</updated>
+        <summary type="html"><![CDATA[New general-purpose and memory-optimized Azure VMs, featuring Ampere Altra Arm-based processors, engineered to efficiently run scale-out, cloud-native workloads, are now available.]]></summary>
+        <author>
+            <name>Azure service updates</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[A Bootiful Podcast: Dr. Kris De Volder on Spring Tools, VS Code, and so much more]]></title>
+        <id>https://spring.io/blog/2022/09/01/a-bootiful-podcast-dr-kris-de-volder-on-spring-tools-vs-code-and-so-much-more</id>
+        <link href="https://spring.io/blog/2022/09/01/a-bootiful-podcast-dr-kris-de-volder-on-spring-tools-vs-code-and-so-much-more"/>
+        <updated>2022-09-01T07:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Hi, Spring fans! In this episode Josh Long (@starbuxman)  talks to Dr. Kris De Volder, a longtime member of the Spring Tools team, about all the cool stuff he’s worked on and is going to work on. And then we get knee deep into a discussion around building IDE integrations.]]></summary>
+        <author>
+            <name>Spring</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How to allow target cipher suites to work with NGINX from on prem and AKS side]]></title>
+        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/how-to-allow-target-cipher-suites-to-work-with-nginx-from-on/ba-p/3610629</id>
+        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/how-to-allow-target-cipher-suites-to-work-with-nginx-from-on/ba-p/3610629"/>
+        <updated>2022-09-01T03:40:04.000Z</updated>
+        <summary type="html"><![CDATA[This article will discuss the common scenario when the on-prem servers failed to connect to AKS(Azure Kubernetes Services) with the error: Encrypted Alert. Normally, this error message means the TLS handshake has failed to establish, and today I want to share the common reason for that: the NGINX-based AKS package limits certain cipher suites in the connectivity.
+ 
+Symptom
+Connection from the 2012R2 on-prem Windows server to the AKS would fail, with the error message: 
+
+ 
+Troubleshooting
+
+Capture the network trace, and you will find Encrypted Alert during the TLS handshake:
+
+
+2. Note that the handshake would fail immediately after the client hello. This means TLS handshake fails to establish, and most often it's due to the server and client does not have common cipher suites to exchange.
+3…]]></summary>
+        <author>
+            <name>Mengyang</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[General availability: Managed identity to connect Azure Cache for Redis to storage]]></title>
         <id>general-availability-managed-identity-to-connect-azure-cache-for-redis-to-storage</id>
@@ -10544,51 +10598,6 @@ The programming model was quite…]]></summary>
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Azure Functions V4 Versus V3]]></title>
-        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/azure-functions-v4-versus-v3/ba-p/3276055</id>
-        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/azure-functions-v4-versus-v3/ba-p/3276055"/>
-        <updated>2022-04-05T08:26:12.000Z</updated>
-        <summary type="html"><![CDATA[In this article, I’m going to compare the Azure Functions latest V4 and V3 and share some main differences and highlights of the new version. Hope this article will give some insights about what to notice in the latest version.
- 
-Firstly, all the changes can be found in this breaking change doc, also we have a Github post to track the changes. I’m not going to go into details about each difference mentioned in the post, but I will highlight some breaking changes below.
- 
-So, what’s changed?
-Azure Function Proxies → Azure API Management
-The use of Azure Function Proxies has been decommissioned in V4, and it will be replaced by APIM(Azure API Management) instead. APIM will come as a separate service with more functionalities and built-in security sets, version controls, and more. For details…]]></summary>
-        <author>
-            <name>Mengyang</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Use php-fpm log to troubleshoot PHP 8 Linux Azure App Service]]></title>
-        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/use-php-fpm-log-to-troubleshoot-php-8-linux-azure-app-service/ba-p/3275136</id>
-        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/use-php-fpm-log-to-troubleshoot-php-8-linux-azure-app-service/ba-p/3275136"/>
-        <updated>2022-04-05T03:01:46.000Z</updated>
-        <summary type="html"><![CDATA[Azure App Service for Linux platform now supports customer using both PHP 7 and PHP 8 built-in docker image. When switching from PHP 7 to PHP 8, you may recognize the platform changed the web container from using Apache to Nginx+php-fpm mode.
- 
-This blog shows how to use customized php-fpm configuration in PHP 8 Linux App Service to get more detailed logs to troubleshoot application issues.
- 
-How to Enable php-fpm access log
-How to Enable php-fpm slow requests log
-How to check php-fpm status
- 
-How to Enable php-fpm access log
-We can get a lot of detailed PHP requests information in php-fpm access log.For example:
-
-Request URL
-Response status code
-Server time the request was received
-Time taken to serve the request
-%CPU used by the request
-peak of memory allocated by PHP
-
- 
-In PHP 8 Linux A…]]></summary>
-        <author>
-            <name>Hanli_Ren</name>
-        </author>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[Exclusive for Education | Manage Windows 11 SE with Surface Laptop SE]]></title>
         <id>https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/exclusive-for-education-manage-windows-11-se-with-surface-laptop/ba-p/3275600</id>
         <link href="https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/exclusive-for-education-manage-windows-11-se-with-surface-laptop/ba-p/3275600"/>
@@ -10602,16 +10611,6 @@ Windows 11 SE is a new edition of Windows built off of Windows 11. It’s a clou
 We’ve also launched the Microsoft Surface Laptop SE, purpose-built for education and Windows 11 SE. This brings streamlined per…]]></summary>
         <author>
             <name>Zachary Cavanell</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Public preview: Azure Bastion support for Kerberos authentication]]></title>
-        <id>public-preview-azure-bastion-support-for-kerberos-authentication</id>
-        <link href="https://azure.microsoft.com/en-us/updates/public-preview-azure-bastion-support-for-kerberos-authentication/"/>
-        <updated>2022-04-04T16:00:08.000Z</updated>
-        <summary type="html"><![CDATA[Azure Bastion now supports the Kerberos authentication protocol in public preview.]]></summary>
-        <author>
-            <name>Azure service updates</name>
         </author>
     </entry>
 </feed>
