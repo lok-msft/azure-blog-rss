@@ -2,10 +2,92 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2022-09-09T02:07:30.210Z</updated>
+    <updated>2022-09-10T02:04:38.243Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Celebrating 10 years of Azure App Service’s free tier]]></title>
+        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/celebrating-10-years-of-azure-app-service-s-free-tier/ba-p/3621148</id>
+        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/celebrating-10-years-of-azure-app-service-s-free-tier/ba-p/3621148"/>
+        <updated>2022-09-09T15:53:03.000Z</updated>
+        <summary type="html"><![CDATA[On June 6th, 2012, when we launched the world-class platform-as-a-service (PaaS) named Azure Websites—and later expanded to Azure App Service—one of our central promises was to offer a plan that always remained free. Our goal back then was to give developers the flexibility to build, deploy, and scale web apps and APIs on their own terms, regardless of price. Today, we remain just as committed to that goal—and are doubling down on our commitment to improving and growing the free tier alongside our premium offerings.
+ 
+The free tier captures the world-class benefits of the App Service platform
+Like the other App Service plans—from Basic to Isolated to Premium—the free tier is a fully managed platform that enables developers and organizations around the world to embrace cloud development and…]]></summary>
+        <author>
+            <name>Nir_Mashkowski</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Azure Spring Apps - Config Server with SSH Authentication]]></title>
+        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/azure-spring-apps-config-server-with-ssh-authentication/ba-p/3620987</id>
+        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/azure-spring-apps-config-server-with-ssh-authentication/ba-p/3620987"/>
+        <updated>2022-09-09T08:35:50.000Z</updated>
+        <summary type="html"><![CDATA[Here are the steps you can follow to configure the Config Server on Azure Spring Apps which uses SSH authentication to connect to a git repository on GitHub.
+Create your keys using the following command on your terminal
+
+
+ssh-keygen -m PEM -t rsa -b 4096 -C "test@mymail.com"
+
+
+
+This will create a public key (.pub) and a private key.
+Copy the public key on GitHub
+Go to your GitHub account -> Settings -> SSH and GPG keys Click on New SSH key and copy the public key here.
+Configure the Config Server on Azure Spring Apps
+Go to the Azure Spring Apps Service -> Config ServerSpecify the GitHub URL, Label etc. and choose SSH as the Authentication protocol. Copy your private key in the text box and save.
+
+(Optional) To ensure that the key works, you can test it on the local system as well.
+Refer: Clone GitHub Repository using SSH
+
+
+eval "$(ssh-agent -s)"
+
+ssh-add <private key>
+
+git clone <GIT_URL>
+#Example of the URL: git@github.com:username/testconfig.git
+
+
+
+You should now have access to your private GitHub Repository via SSH from Azure Spring Apps.]]></summary>
+        <author>
+            <name>gaukazure</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Collect Thread Dump and Heap Dump on Linux App Service (Java/Tomcat)]]></title>
+        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/collect-thread-dump-and-heap-dump-on-linux-app-service-java/ba-p/3620971</id>
+        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/collect-thread-dump-and-heap-dump-on-linux-app-service-java/ba-p/3620971"/>
+        <updated>2022-09-09T08:21:19.000Z</updated>
+        <summary type="html"><![CDATA[The following steps can be followed for both our Java and Tomcat offerings on Linux App Service. Note that, if you are using a custom image, you could enable webSSH and collect dumps using jcmd, if present.
+ 
+1. Go to the Kudu Site of the WebApp via Advanced Tools blade:
+ 
+
+ 
+2. Click on SSH to ssh into the Application Container:
+ 
+
+3. Get the PID of the Java Process (your application):
+[There are multiple ways to get it. We can use ps -ef | grep java | grep -v grep command, or simply run jcmd]
+ 
+
+ 
+4. Finally, execute the following command to collect the Thread Dump and save it as a file. 
+ 
+jcmd <PID of Java Process> Thread.print > /home/threaddump
+Similarly, to collect the heap dump, run:jcmd <PID of Java Process> GC.heap_dump /home/heapdump
+ 
+
+ 
+Note:
+The files under /home are only persistent by default. Consider collecting the dumps under /home or in the mounted location for External Storage (if using BYOS)]]></summary>
+        <author>
+            <name>gaukazure</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Is your Data Estate Well-Architected?]]></title>
         <id>https://techcommunity.microsoft.com/t5/azure-migration-and/is-your-data-estate-well-architected/ba-p/3620867</id>
@@ -10597,16 +10679,6 @@ With Azure Arc, customers can manage infrastructure from non-Azure environments,
         <link href="https://azure.microsoft.com/en-us/updates/public-preview-recommended-alert-rules-for-virtual-machines/"/>
         <updated>2022-04-13T16:00:25.000Z</updated>
         <summary type="html"><![CDATA[You can now enable a set of recommended alert rules for your existing virtual machines.]]></summary>
-        <author>
-            <name>Azure service updates</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Generally available: Migrate devices across templates at scale in Azure IoT Central]]></title>
-        <id>iotc-migrate-devices-across-templates</id>
-        <link href="https://azure.microsoft.com/en-us/updates/iotc-migrate-devices-across-templates/"/>
-        <updated>2022-04-12T16:00:10.000Z</updated>
-        <summary type="html"><![CDATA[Migrating devices across device templates at scale is now supported in Azure IoT Central jobs.]]></summary>
         <author>
             <name>Azure service updates</name>
         </author>
