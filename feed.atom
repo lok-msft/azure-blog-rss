@@ -2,10 +2,171 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2022-09-15T02:09:58.946Z</updated>
+    <updated>2022-09-16T02:11:30.693Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[New Boards Hub, Sprint 210 Update]]></title>
+        <id>https://devblogs.microsoft.com/devops/?p=65737</id>
+        <link href="https://devblogs.microsoft.com/devops/new-boards-hub-sprint-210-update/"/>
+        <updated>2022-09-15T17:35:54.000Z</updated>
+        <summary type="html"><![CDATA[We spent most of sprint 210 focusing on accessibility issues and bug fixes. Here is a list of the items that have been resolved.
+Issue
+Unable to create a branch from card
+The post New Boards Hub, Sprint 210 Update appeared first on Azure DevOps Blog.]]></summary>
+        <author>
+            <name>Dan Hellem</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Generally available: Resizing of peered virtual networks]]></title>
+        <id>resizing-of-peered-virtual-networks-is-now-generally-available</id>
+        <link href="https://azure.microsoft.com/en-us/updates/resizing-of-peered-virtual-networks-is-now-generally-available/"/>
+        <updated>2022-09-15T16:00:41.000Z</updated>
+        <summary type="html"><![CDATA[You can use this feature to resize or update the IP address of your peered virtual networks without removing the peering.]]></summary>
+        <author>
+            <name>Azure service updates</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[A Bootiful Podcast: big data legend, former Pivot, and friend to the Spring community, Tim Spann]]></title>
+        <id>https://spring.io/blog/2022/09/15/a-bootiful-podcast-big-data-legend-former-pivot-and-friend-to-the-spring-community-tim-spann</id>
+        <link href="https://spring.io/blog/2022/09/15/a-bootiful-podcast-big-data-legend-former-pivot-and-friend-to-the-spring-community-tim-spann"/>
+        <updated>2022-09-15T16:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Hi, Spring fans! In this installment, Josh Long (@starbuxman) talks to big data legend, former Pivot, and friend to the Spring community, Tim Spann (@PaaSDev), about big data, StreamNative, and Apache Pulsar, and Spring for Apache Pulsar. Get your notebooks ready for this one, class!]]></summary>
+        <author>
+            <name>Spring</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[General availability: Azure Media Services low-latency live streaming]]></title>
+        <id>general-availability-azure-media-services-lowlatency-live-streaming</id>
+        <link href="https://azure.microsoft.com/en-us/updates/general-availability-azure-media-services-lowlatency-live-streaming/"/>
+        <updated>2022-09-15T15:00:40.000Z</updated>
+        <summary type="html"><![CDATA[Azure Media Services is announcing the general availability of low-latency HLS with glass-to-glass latency between 4-7 seconds with support for automatic transcriptions and digital rights management.]]></summary>
+        <author>
+            <name>Azure service updates</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Client Side Decryption on Azure Spring Apps]]></title>
+        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/client-side-decryption-on-azure-spring-apps/ba-p/3621622</id>
+        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/client-side-decryption-on-azure-spring-apps/ba-p/3621622"/>
+        <updated>2022-09-15T12:36:15.000Z</updated>
+        <summary type="html"><![CDATA[You can use client side decryption of properties on Azure Spring Apps by following the steps below:
+Add the encrypted property in your .properties file in your git repository.It would look like:
+
+
+message={cipher}f43e3df3862ab196a4b367624a7d9b581e1c543610da353fbdd2477d60fb282f
+
+
+Update the Config Server on Azure Spring App to use the git repository which has our encrypted property. You could do it directly from Azure Portal or use Azure CLI:
+az spring-cloud config-server git set -n myspringcloud --uri <git_repo_url>
+
+In your Spring Boot application, add the decryption key in the bootstrap.yml file. (You would need to create it if it does not exist)
+
+
+encrypt:
+  key: somerandomkey
+
+
+
+[This is the key you would have used in order to encrypt your property earlier]Now, add some code to get the value of the encrypted property.
+
+
+package com.example.demo;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class TestController {
+
+    @Value("${message:default}") 
+    String message;
+
+    @GetMapping("/")
+    public String hello() {
+        return message;
+    }
+
+}
+
+
+
+Create an App, or deploy to an existing one.
+az spring-cloud app create -n <appName>
+
+ 
+Deploy your app.
+az spring-cloud app deploy -n appName --jar-path <location_of_jar>
+
+ 
+Assign a public endpoint (or use the Test Endpoints)
+az spring-cloud app update -n appName --assign-endpoint true
+
+ 
+Access your application to view the value.
+https://<myspringcloud>-<appName>.azuremicroservices.io/
+
+ 
+(Optional) You can check the encrypted values on the Config Server by following the steps mentioned in thisdocumentation: https://docs.microsoft.com/en-us/azure/spring-cloud/how-to-access-data-plane-azure-ad-rbac]]></summary>
+        <author>
+            <name>gaukazure</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Spring Framework 6.0.0-M6 and 5.3.23 available now]]></title>
+        <id>https://spring.io/blog/2022/09/15/spring-framework-6-0-0-m6-and-5-3-23-available-now</id>
+        <link href="https://spring.io/blog/2022/09/15/spring-framework-6-0-0-m6-and-5-3-23-available-now"/>
+        <updated>2022-09-15T09:05:00.000Z</updated>
+        <summary type="html"><![CDATA[On behalf of the team and everyone who has contributed, I am pleased to announce that Spring Framework 6.0.0-M6 and 5.3.23 are available now.
+
+Spring Framework 5.3.23 includes 32 fixes and improvements and is a recommended upgrade for all Spring production scenarios.
+
+Spring Framework 6.0.0-M6 includes 123 additional fixes and improvements specific to the 6.0 branch. This milestone wraps up most of our AOT efforts, in preparation for our release candidate phase. Stay tuned for the announcement of Spring Boot 3.0.0-M5 next week!
+
+Project Page | GitHub | Issues | Documentation]]></summary>
+        <author>
+            <name>Spring</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Built-in Azure Monitor alerts for Azure Backup is now generally available]]></title>
+        <id>https://techcommunity.microsoft.com/t5/azure-governance-and-management/built-in-azure-monitor-alerts-for-azure-backup-is-now-generally/ba-p/3627859</id>
+        <link href="https://techcommunity.microsoft.com/t5/azure-governance-and-management/built-in-azure-monitor-alerts-for-azure-backup-is-now-generally/ba-p/3627859"/>
+        <updated>2022-09-15T02:46:07.000Z</updated>
+        <summary type="html"><![CDATA[We are happy to share that built-in Azure Monitor alerts for Azure Backup is now generally available! (Read our earlier blog post for more context around the evolution of backup alerting) 
+ 
+With this solution, users receive default alerts for critical scenarios related to backup security and job failures, that are integrated with Azure Monitor. You can monitor these alerts at scale via either the Azure Monitor dashboard or via Backup center, and route these alerts to various notification channels of choice.
+ 
+Screenshot of alerts tile in Backup center
+ 
+To recap, below are the main benefits of using built-in Azure Monitor alerts for backup:
+ 
+
+Ability to configure notifications to a wide range of notification channels supported by Azure Monitor, for example, email, ITSM, Webhooks, Logic A…]]></summary>
+        <author>
+            <name>Aditya_Balaji</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Spring Cloud Dataflow 2.9.6 Released]]></title>
+        <id>https://spring.io/blog/2022/09/14/spring-cloud-dataflow-2-9-6-released</id>
+        <link href="https://spring.io/blog/2022/09/14/spring-cloud-dataflow-2-9-6-released"/>
+        <updated>2022-09-15T02:00:00.000Z</updated>
+        <summary type="html"><![CDATA[On behalf of the team and everyone who has contributed, I’m happy to announce that Spring Cloud Dataflow 2.9.6 has been released and is now available from Maven Central.
+
+This release updates to Postgres SQL driver 42.2.26 to address CVE-2022-31197. See the release notes for more information.
+Stay in touch…
+
+As always, we welcome feedback and contributions, so please reach out to us on Stackoverflow or GitHub.]]></summary>
+        <author>
+            <name>Spring</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Public preview: API Server VNET Integration for AKS private cluster]]></title>
         <id>public-preview-api-server-vnet-integration-for-aks-private-cluster</id>
@@ -10754,89 +10915,6 @@ QUICK LINKS:
 The post Scaling-up PyTorch inference: Serving billions of daily NLP inferences with ONNX Runtime appeared first on Microsoft Open Source Blog.]]></summary>
         <author>
             <name>Faith Xu</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Java on Visual Studio Code Update – April 2022]]></title>
-        <id>https://devblogs.microsoft.com/java/?p=228833</id>
-        <link href="https://devblogs.microsoft.com/java/java-on-visual-studio-code-update-april-2022/"/>
-        <updated>2022-04-19T07:30:25.000Z</updated>
-        <summary type="html"><![CDATA[Hi everyone, welcome to the April update of Visual Studio Code Java. This time we are bringing you many exciting updates regarding our fundamental experience improvement including Java 18 support, inlay hints for parameter names, new language server status UX, lambda expression support in debugging and so on.
-The post Java on Visual Studio Code Update – April 2022 appeared first on Microsoft for Java Developers.]]></summary>
-        <author>
-            <name>Nick Zhu</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Introducing Azure Well-Architected Framework for Internet of Things (IoT)]]></title>
-        <id>https://techcommunity.microsoft.com/t5/azure-architecture-blog/introducing-azure-well-architected-framework-for-internet-of/ba-p/3288539</id>
-        <link href="https://techcommunity.microsoft.com/t5/azure-architecture-blog/introducing-azure-well-architected-framework-for-internet-of/ba-p/3288539"/>
-        <updated>2022-04-18T21:04:03.000Z</updated>
-        <summary type="html"><![CDATA[Internet of Things (IoT) projects are high in complexity, and this complexity can increase substantially over time. While IoT is widely adopted in organizations, only a quarter of those IoT projects are in use, while many fail in the proof-of-concept stage. Companies cite a lack of knowledge and technical complexity as many of the challenges preventing them from using IoT more and developing new IoT solutions.
- 
-
-IoT Signals Edition 3 – October 2021
- 
-Azure Well-Architected for IoT was built by a deeply technical team of architects, consultants and developers who work daily with Microsoft’s customers and partners on their IoT solutions. This team sought to synthesize their experience of designing and deploying successful IoT projects into actionable recommendations for all our customers. W…]]></summary>
-        <author>
-            <name>brauerblogs</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Connect App Service with Azure SQL Database with Managed Identity]]></title>
-        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/connect-app-service-with-azure-sql-database-with-managed/ba-p/3288300</id>
-        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/connect-app-service-with-azure-sql-database-with-managed/ba-p/3288300"/>
-        <updated>2022-04-18T20:41:18.000Z</updated>
-        <summary type="html"><![CDATA[A managed identity from Azure Active Directory (Azure AD) allows your app to easily access other Azure AD-protected resources such as Azure Key Vault or Azure SQL. The identity is managed by the Azure platform and does not require you to provision or rotate any secrets.
-We have two types of Managed Identities:
-
-System-assigned Identity
-User-assigned Identity
-
-You can read about Managed Identity for App Service and Azure Functions here.
-Below are the steps for the configuration:
-
-You can create an App Service or an Azure Function and use the code example below to retrieve the token using the Azure Identity client library via System-assigned identity:
-
-var conn = (System.Data.SqlClient.SqlConnection)Database.Connection;
-var credential = new Azure.Identity.DefaultAzureCredential();
-var token …]]></summary>
-        <author>
-            <name>DeependraChaudhary</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Public preview: Stable URLs for preview environments in Azure Static Web Apps]]></title>
-        <id>public-preview-stable-urls-for-preview-environments-in-azure-static-web-apps</id>
-        <link href="https://azure.microsoft.com/en-us/updates/public-preview-stable-urls-for-preview-environments-in-azure-static-web-apps/"/>
-        <updated>2022-04-18T19:14:23.000Z</updated>
-        <summary type="html"><![CDATA[Azure Static Web Apps preview deployments now support stable URLs.]]></summary>
-        <author>
-            <name>Azure service updates</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[General availability: Azure Archive Storage now available in Switzerland North]]></title>
-        <id>general-availability-azure-archive-storage-now-available-in-switzerland-north</id>
-        <link href="https://azure.microsoft.com/en-us/updates/general-availability-azure-archive-storage-now-available-in-switzerland-north/"/>
-        <updated>2022-04-18T19:00:44.000Z</updated>
-        <summary type="html"><![CDATA[Reduce spending by storing cold data to Azure Archive Storage, now in new regions.]]></summary>
-        <author>
-            <name>Azure service updates</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Enabling Full-stack Observability with Azure Monitor and Grafana]]></title>
-        <id>https://techcommunity.microsoft.com/t5/azure-observability-blog/enabling-full-stack-observability-with-azure-monitor-and-grafana/ba-p/3287145</id>
-        <link href="https://techcommunity.microsoft.com/t5/azure-observability-blog/enabling-full-stack-observability-with-azure-monitor-and-grafana/ba-p/3287145"/>
-        <updated>2022-04-18T17:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Along with the announcement of Azure Managed Grafana, we are excited to introduce new Grafana integrations with Azure Monitor including the ability to pin Azure Monitor visualizations from Azure Portal to Grafana dashboards and new out-of-the-box Azure Monitor dashboards.
- 
-Full stack visibility from multiple sources in a single screen
- 
-Grafana allows you to query, visualize and create operational dashboards on Azure Monitor data. Using Azure Managed Grafana, you can now view your Azure monitoring data in Grafana dashboards in a few simple clicks. You can quickly pin Azure Monitor visualizations from the Azure Portal to new or existing Grafana dashboards by adding panels to your Grafana dashboard directly from Azure Monitor. Additionally, you can combine app and infrastructure metrics fro…]]></summary>
-        <author>
-            <name>KayodePrince</name>
         </author>
     </entry>
 </feed>

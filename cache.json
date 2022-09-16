@@ -6,6 +6,36 @@
       "siteUrl": "https://spring.io/blog",
       "articles": [
         {
+          "id": "https://spring.io/blog/2022/09/15/a-bootiful-podcast-big-data-legend-former-pivot-and-friend-to-the-spring-community-tim-spann",
+          "author": null,
+          "description": "Hi, Spring fans! In this installment, Josh Long (@starbuxman) talks to big data legend, former Pivot, and friend to the Spring community, Tim Spann (@PaaSDev), about big data, StreamNative, and Apache Pulsar, and Spring for Apache Pulsar. Get your notebooks ready for this one, class!",
+          "link": "https://spring.io/blog/2022/09/15/a-bootiful-podcast-big-data-legend-former-pivot-and-friend-to-the-spring-community-tim-spann",
+          "publishedOn": "2022-09-15T16:00:00.000Z",
+          "wordCount": 560,
+          "title": "A Bootiful Podcast: big data legend, former Pivot, and friend to the Spring community, Tim Spann",
+          "imageUrl": "https://avatars.githubusercontent.com/u/54473?v=4?s=200"
+        },
+        {
+          "id": "https://spring.io/blog/2022/09/15/spring-framework-6-0-0-m6-and-5-3-23-available-now",
+          "author": null,
+          "description": "On behalf of the team and everyone who has contributed, I am pleased to announce that Spring Framework 6.0.0-M6 and 5.3.23 are available now.\n\r\nSpring Framework 5.3.23 includes 32 fixes and improvements and is a recommended upgrade for all Spring production scenarios.\n\r\nSpring Framework 6.0.0-M6 includes 123 additional fixes and improvements specific to the 6.0 branch. This milestone wraps up most of our AOT efforts, in preparation for our release candidate phase. Stay tuned for the announcement of Spring Boot 3.0.0-M5 next week!\n\r\nProject Page | GitHub | Issues | Documentation",
+          "link": "https://spring.io/blog/2022/09/15/spring-framework-6-0-0-m6-and-5-3-23-available-now",
+          "publishedOn": "2022-09-15T09:05:00.000Z",
+          "wordCount": 588,
+          "title": "Spring Framework 6.0.0-M6 and 5.3.23 available now",
+          "imageUrl": "https://avatars.githubusercontent.com/u/490484?v=4?s=200"
+        },
+        {
+          "id": "https://spring.io/blog/2022/09/14/spring-cloud-dataflow-2-9-6-released",
+          "author": null,
+          "description": "On behalf of the team and everyone who has contributed, I’m happy to announce that Spring Cloud Dataflow 2.9.6 has been released and is now available from Maven Central.\n\r\nThis release updates to Postgres SQL driver 42.2.26 to address CVE-2022-31197. See the release notes for more information.\nStay in touch…\n\r\nAs always, we welcome feedback and contributions, so please reach out to us on Stackoverflow or GitHub.",
+          "link": "https://spring.io/blog/2022/09/14/spring-cloud-dataflow-2-9-6-released",
+          "publishedOn": "2022-09-15T02:00:00.000Z",
+          "wordCount": 559,
+          "title": "Spring Cloud Dataflow 2.9.6 Released",
+          "imageUrl": "https://avatars.githubusercontent.com/u/28907971?v=4?s=200"
+        },
+        {
           "id": "https://spring.io/blog/2022/09/13/this-week-in-spring-september-13th-2022",
           "author": null,
           "description": "Hi, Spring fans! Welcome to another installment of This Week in Spring! We’ve got a lot of good stuff to get to so let’s dive right into it! \n\r\n\r\n  \nA Bootiful Podcast: Hashicorp’s Rosemary Wang on securing the intersection of apps and ops with Hashicorp Vault\n\r\n  \na nice video by my colleague Dan Vega: Spring Security JWT\n\r\n  \nI also loved Dan’s video on Spring Security without the WebSecurityConfigurerAdapter \n\r\n  \nDispatching Queries in Axon Framework\n\r\n  \nGuide to Find the Java .class Version\n\r\n  \nSpring Cloud 2021.0.4 (codename Jubilee) Has Been Released\n\r\n  \nStatic Fields and Garbage Collection\n\r\n  \nBlog: Announcing the Auto-refreshing Official Kubernetes CVE Feed\n\r\n  \nBlog: Kubernetes 1.25: KMS V2 Improvements\n\r\n  \nBlog: Kubernetes’s IPTables Chains Are Not API\n\r\n  \nthis is an interesting post looking at how to use JUnit with Spring Boot. The only thing I didn’t quite understand is why the author declares Mockito explicitly. I’m pretty sure it’s brought in transitively in spring-boot-starter-test, but either way: good post!",
@@ -803,6 +833,16 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/client-side-decryption-on-azure-spring-apps/ba-p/3621622",
+          "author": "gaukazure",
+          "description": "You can use client side decryption of properties on Azure Spring Apps by following the steps below:\nAdd the encrypted property in your .properties file in your git repository.It would look like:\n\n\nmessage={cipher}f43e3df3862ab196a4b367624a7d9b581e1c543610da353fbdd2477d60fb282f\n\n\nUpdate the Config Server on Azure Spring App to use the git repository which has our encrypted property. You could do it directly from Azure Portal or use Azure CLI:\naz spring-cloud config-server git set -n myspringcloud --uri <git_repo_url>\n\nIn your Spring Boot application, add the decryption key in the bootstrap.yml file. (You would need to create it if it does not exist)\n\n\nencrypt:\n  key: somerandomkey\n\n\n\n[This is the key you would have used in order to encrypt your property earlier]Now, add some code to get the value of the encrypted property.\n\n\npackage com.example.demo;\n\nimport org.springframework.beans.factory.annotation.Value;\nimport org.springframework.web.bind.annotation.GetMapping;\nimport org.springframework.web.bind.annotation.RestController;\n\n@RestController\npublic class TestController {\n\n    @Value(\"${message:default}\") \n    String message;\n\n    @GetMapping(\"/\")\n    public String hello() {\n        return message;\n    }\n\n}\n\n\n\nCreate an App, or deploy to an existing one.\naz spring-cloud app create -n <appName>\n\n \nDeploy your app.\naz spring-cloud app deploy -n appName --jar-path <location_of_jar>\n\n \nAssign a public endpoint (or use the Test Endpoints)\naz spring-cloud app update -n appName --assign-endpoint true\n\n \nAccess your application to view the value.\nhttps://<myspringcloud>-<appName>.azuremicroservices.io/\n\n \n(Optional) You can check the encrypted values on the Config Server by following the steps mentioned in thisdocumentation: https://docs.microsoft.com/en-us/azure/spring-cloud/how-to-access-data-plane-azure-ad-rbac",
+          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/client-side-decryption-on-azure-spring-apps/ba-p/3621622",
+          "publishedOn": "2022-09-15T12:36:15.000Z",
+          "wordCount": 9449,
+          "title": "Client Side Decryption on Azure Spring Apps",
+          "imageUrl": "https://cdn.techcommunity.microsoft.com/assets/MTC_Open_graph_image1.jpg"
+        },
+        {
           "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/how-to-run-bash-scripts-in-wordpress-on-azure-app-service/ba-p/3625692",
           "author": "abhishekreddy",
           "description": "You might need to run custom Linux scripts in WordPress on Azure App Service for achieving specific goals, such as, updating Nginx settings, running WP-CLI commands, and installing system packages. This article is intended to guide you in running custom shell or bash scripts.\nThere are two ways in which you could run a shell script in WordPress on Azure App Service.\n\nWeb SSH – run shell commands and scripts that are non-persistent\nThe start-up File – run shell commands and scripts that need to be persistent\n\n1. Using Web SSH\nAs we have mentioned earlier, web SSH can be used to run commands and scripts that are non-persistent. For example, navigating folders, reading the contents of a file, or echoing a message. Here, we will learn how to echo “Hello World!” in web SSH.\nStep 1: Go to your W…",
@@ -1511,16 +1551,6 @@
           "wordCount": 1686,
           "title": "Issues you may meet when upgrading Azure function app to V4",
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/365178iBCE2E4CF43070DA1?v=v2"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/connect-app-service-with-azure-sql-database-with-managed/ba-p/3288300",
-          "author": "DeependraChaudhary",
-          "description": "A managed identity from Azure Active Directory (Azure AD) allows your app to easily access other Azure AD-protected resources such as Azure Key Vault or Azure SQL. The identity is managed by the Azure platform and does not require you to provision or rotate any secrets.\nWe have two types of Managed Identities:\n\nSystem-assigned Identity\nUser-assigned Identity\n\nYou can read about Managed Identity for App Service and Azure Functions here.\nBelow are the steps for the configuration:\n\nYou can create an App Service or an Azure Function and use the code example below to retrieve the token using the Azure Identity client library via System-assigned identity:\n\nvar conn = (System.Data.SqlClient.SqlConnection)Database.Connection;\nvar credential = new Azure.Identity.DefaultAzureCredential();\nvar token …",
-          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/connect-app-service-with-azure-sql-database-with-managed/ba-p/3288300",
-          "publishedOn": "2022-04-18T20:41:18.000Z",
-          "wordCount": 1029,
-          "title": "Connect App Service with Azure SQL Database with Managed Identity",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/364974i314239B266D76490?v=v2"
         }
       ]
     },
@@ -2322,16 +2352,6 @@
           "wordCount": 3094,
           "title": "Protecting Magento e-commerce platform in AKS against disasters with Astra Control Service",
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/364544iE5A2861495714D53/image-size/original?v=v2&px=-1"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/introducing-azure-well-architected-framework-for-internet-of/ba-p/3288539",
-          "author": "brauerblogs",
-          "description": "Internet of Things (IoT) projects are high in complexity, and this complexity can increase substantially over time. While IoT is widely adopted in organizations, only a quarter of those IoT projects are in use, while many fail in the proof-of-concept stage. Companies cite a lack of knowledge and technical complexity as many of the challenges preventing them from using IoT more and developing new IoT solutions.\n \n\nIoT Signals Edition 3 – October 2021\n \nAzure Well-Architected for IoT was built by a deeply technical team of architects, consultants and developers who work daily with Microsoft’s customers and partners on their IoT solutions. This team sought to synthesize their experience of designing and deploying successful IoT projects into actionable recommendations for all our customers. W…",
-          "link": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/introducing-azure-well-architected-framework-for-internet-of/ba-p/3288539",
-          "publishedOn": "2022-04-18T21:04:03.000Z",
-          "wordCount": 1184,
-          "title": "Introducing Azure Well-Architected Framework for Internet of Things (IoT)",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/365058i3EA12E10916BE174?v=v2"
         }
       ]
     },
@@ -2860,16 +2880,6 @@
           "wordCount": 1689,
           "title": "Azure Toolkit for IntelliJ Update – April 2022",
           "imageUrl": "https://devblogs.microsoft.com/java/wp-content/uploads/sites/51/2022/04/background1.png"
-        },
-        {
-          "id": "https://devblogs.microsoft.com/java/?p=228833",
-          "author": "Nick Zhu",
-          "description": "Hi everyone, welcome to the April update of Visual Studio Code Java. This time we are bringing you many exciting updates regarding our fundamental experience improvement including Java 18 support, inlay hints for parameter names, new language server status UX, lambda expression support in debugging and so on.\nThe post Java on Visual Studio Code Update – April 2022 appeared first on Microsoft for Java Developers.",
-          "link": "https://devblogs.microsoft.com/java/java-on-visual-studio-code-update-april-2022/",
-          "publishedOn": "2022-04-19T07:30:25.000Z",
-          "wordCount": 1366,
-          "title": "Java on Visual Studio Code Update – April 2022",
-          "imageUrl": "https://devblogs.microsoft.com/java/wp-content/uploads/sites/51/2022/04/englishcover.png"
         }
       ]
     },
@@ -3005,6 +3015,16 @@
       "feedUrl": "https://devblogs.microsoft.com/devops/feed/",
       "siteUrl": "https://devblogs.microsoft.com/devops/",
       "articles": [
+        {
+          "id": "https://devblogs.microsoft.com/devops/?p=65737",
+          "author": "Dan Hellem",
+          "description": "We spent most of sprint 210 focusing on accessibility issues and bug fixes. Here is a list of the items that have been resolved.\nIssue\nUnable to create a branch from card\nThe post New Boards Hub, Sprint 210 Update appeared first on Azure DevOps Blog.",
+          "link": "https://devblogs.microsoft.com/devops/new-boards-hub-sprint-210-update/",
+          "publishedOn": "2022-09-15T17:35:54.000Z",
+          "wordCount": 4032,
+          "title": "New Boards Hub, Sprint 210 Update",
+          "imageUrl": "https://devblogs.microsoft.com/devops/wp-content/uploads/sites/6/2018/08/vstsfeature.png"
+        },
         {
           "id": "https://devblogs.microsoft.com/devops/?p=65671",
           "author": "Gloridel Morales",
@@ -3377,6 +3397,16 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/t5/azure-governance-and-management/built-in-azure-monitor-alerts-for-azure-backup-is-now-generally/ba-p/3627859",
+          "author": "Aditya_Balaji",
+          "description": "We are happy to share that built-in Azure Monitor alerts for Azure Backup is now generally available! (Read our earlier blog post for more context around the evolution of backup alerting) \n \nWith this solution, users receive default alerts for critical scenarios related to backup security and job failures, that are integrated with Azure Monitor. You can monitor these alerts at scale via either the Azure Monitor dashboard or via Backup center, and route these alerts to various notification channels of choice.\n \nScreenshot of alerts tile in Backup center\n \nTo recap, below are the main benefits of using built-in Azure Monitor alerts for backup:\n \n\nAbility to configure notifications to a wide range of notification channels supported by Azure Monitor, for example, email, ITSM, Webhooks, Logic A…",
+          "link": "https://techcommunity.microsoft.com/t5/azure-governance-and-management/built-in-azure-monitor-alerts-for-azure-backup-is-now-generally/ba-p/3627859",
+          "publishedOn": "2022-09-15T02:46:07.000Z",
+          "wordCount": 9607,
+          "title": "Built-in Azure Monitor alerts for Azure Backup is now generally available",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/405406i9CAF0CD2F256A55C?v=v2"
+        },
+        {
           "id": "https://techcommunity.microsoft.com/t5/azure-governance-and-management/azure-portal-july-2022-updates/ba-p/3608580",
           "author": "Allison_Cordle",
           "description": "Mobile > Support\n\nExpanded Support Features on Azure Mobile App\n\nGlobal Search\n\nFind more Azure AD objects from global search \n\nIntune\n\nUpdates to Microsoft Intune\n\n \nMobile > Support\nExpanded Support Features on Azure Mobile App\n \nSupport ticket functionality is being expanded on the Azure mobile app with requested features. Updates include users now able to access their support tickets, including the ability to reply to their support engineer and change the severity of the ticket, while waiting to be assigned a support engineer. Along with these two exciting functionalities, support requests are much easier to access from a new Support Request button in the hamburger menu on the Azure mobile app home page.\n \n1. Click on hamburger menu in Azure mobile home\n\n2. Click on support requests\n3.…",
@@ -3662,16 +3692,6 @@
           "wordCount": 15384,
           "title": "Activity Logs Insights (Preview)",
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/365980i29C6E938E7BA8470?v=v2"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/azure-observability-blog/enabling-full-stack-observability-with-azure-monitor-and-grafana/ba-p/3287145",
-          "author": "KayodePrince",
-          "description": "Along with the announcement of Azure Managed Grafana, we are excited to introduce new Grafana integrations with Azure Monitor including the ability to pin Azure Monitor visualizations from Azure Portal to Grafana dashboards and new out-of-the-box Azure Monitor dashboards.\n \nFull stack visibility from multiple sources in a single screen\n \nGrafana allows you to query, visualize and create operational dashboards on Azure Monitor data. Using Azure Managed Grafana, you can now view your Azure monitoring data in Grafana dashboards in a few simple clicks. You can quickly pin Azure Monitor visualizations from the Azure Portal to new or existing Grafana dashboards by adding panels to your Grafana dashboard directly from Azure Monitor. Additionally, you can combine app and infrastructure metrics fro…",
-          "link": "https://techcommunity.microsoft.com/t5/azure-observability-blog/enabling-full-stack-observability-with-azure-monitor-and-grafana/ba-p/3287145",
-          "publishedOn": "2022-04-18T17:00:00.000Z",
-          "wordCount": 15817,
-          "title": "Enabling Full-stack Observability with Azure Monitor and Grafana",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/364639i3F36C92D8E538417?v=v2"
         }
       ]
     },
@@ -3737,6 +3757,26 @@
       "feedUrl": "https://azurecomcdn.azureedge.net/en-us/updates/feed/?updateType=features",
       "siteUrl": "https://azure.microsoft.com/en-us/updates/",
       "articles": [
+        {
+          "id": "resizing-of-peered-virtual-networks-is-now-generally-available",
+          "author": null,
+          "description": "You can use this feature to resize or update the IP address of your peered virtual networks without removing the peering.",
+          "link": "https://azure.microsoft.com/en-us/updates/resizing-of-peered-virtual-networks-is-now-generally-available/",
+          "publishedOn": "2022-09-15T16:00:41.000Z",
+          "wordCount": 5198,
+          "title": "Generally available: Resizing of peered virtual networks",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-4f90d6e2bf6b706b78e151f8a44e48efbca14b99a54e638b34d747b05bac2968/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "general-availability-azure-media-services-lowlatency-live-streaming",
+          "author": null,
+          "description": "Azure Media Services is announcing the general availability of low-latency HLS with glass-to-glass latency between 4-7 seconds with support for automatic transcriptions and digital rights management.",
+          "link": "https://azure.microsoft.com/en-us/updates/general-availability-azure-media-services-lowlatency-live-streaming/",
+          "publishedOn": "2022-09-15T15:00:40.000Z",
+          "wordCount": 5318,
+          "title": "General availability: Azure Media Services low-latency live streaming",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-4f90d6e2bf6b706b78e151f8a44e48efbca14b99a54e638b34d747b05bac2968/images/shared/social/azure-icon-250x250.png"
+        },
         {
           "id": "public-preview-api-server-vnet-integration-for-aks-private-cluster",
           "author": null,
@@ -7015,26 +7055,6 @@
           "publishedOn": "2022-04-20T19:00:15.000Z",
           "wordCount": 4351,
           "title": "Generally available: Rehydrate an archived blob to a different storage account",
-          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
-        },
-        {
-          "id": "public-preview-stable-urls-for-preview-environments-in-azure-static-web-apps",
-          "author": null,
-          "description": "Azure Static Web Apps preview deployments now support stable URLs.",
-          "link": "https://azure.microsoft.com/en-us/updates/public-preview-stable-urls-for-preview-environments-in-azure-static-web-apps/",
-          "publishedOn": "2022-04-18T19:14:23.000Z",
-          "wordCount": 4393,
-          "title": "Public preview: Stable URLs for preview environments in Azure Static Web Apps",
-          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
-        },
-        {
-          "id": "general-availability-azure-archive-storage-now-available-in-switzerland-north",
-          "author": null,
-          "description": "Reduce spending by storing cold data to Azure Archive Storage, now in new regions.",
-          "link": "https://azure.microsoft.com/en-us/updates/general-availability-azure-archive-storage-now-available-in-switzerland-north/",
-          "publishedOn": "2022-04-18T19:00:44.000Z",
-          "wordCount": 4337,
-          "title": "General availability: Azure Archive Storage now available in Switzerland North",
           "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
         }
       ]
