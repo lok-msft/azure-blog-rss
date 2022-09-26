@@ -2,10 +2,63 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2022-09-25T02:06:02.768Z</updated>
+    <updated>2022-09-26T02:07:00.174Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Terraform with Azure Cloud Shell & State file in Azure Storage]]></title>
+        <id>https://techcommunity.microsoft.com/t5/azure-architecture-blog/terraform-with-azure-cloud-shell-amp-state-file-in-azure-storage/ba-p/3627967</id>
+        <link href="https://techcommunity.microsoft.com/t5/azure-architecture-blog/terraform-with-azure-cloud-shell-amp-state-file-in-azure-storage/ba-p/3627967"/>
+        <updated>2022-09-26T01:26:01.000Z</updated>
+        <summary type="html"><![CDATA[Azure Cloud Shell automatically has the latest version of Terraform installed. Also, as Terraform is run from the cloud it automatically uses information from the current Azure subscription and you can securely save the Terraform state file in Azure Storage. Best of all, you can still do all your authoring of Terraform from VS Code. 
+ 
+Btw, the last section on the Terraform state file in Azure storage is documented here on Microsoft Docs, however I have captured the complete solution here.
+ 
+Four easy steps:
+
+Connect to CloudDrive (Azure Files Share)
+Copy files from this reop to Azure CloudDrive
+Setup the Terraform State in Azure Blob Storage
+Sign into Azure Cloud Shell from VS Code
+
+ 
+1. Connect to CloudDrive (Azure Files Share)
+Assuming you have previously connected to Azure Cloud Shell …]]></summary>
+        <author>
+            <name>Marc Kean</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Terraform locally run from Windows with State file in Azure Storage]]></title>
+        <id>https://techcommunity.microsoft.com/t5/azure-architecture-blog/terraform-locally-run-from-windows-with-state-file-in-azure/ba-p/3637692</id>
+        <link href="https://techcommunity.microsoft.com/t5/azure-architecture-blog/terraform-locally-run-from-windows-with-state-file-in-azure/ba-p/3637692"/>
+        <updated>2022-09-26T01:25:57.000Z</updated>
+        <summary type="html"><![CDATA[Running Terraform locally in Windows along with the Azure CLI gives you a bit more flexibility in large corporates due to eliminating the need to connect to Azure Cloud Shell from VS Code, which in itself can be a challenge with things like conditional access which may block authentication from remote locations where Azure Cloud Shell runs from. 
+ 
+To get things setup remotely, you need a few things. 
+ 
+Five easy steps:
+
+Install Terraform locally
+Install Bash (optional)
+
+Can use PowerShell or the Command Prompt
+
+
+Install the Azure CLI
+Setup the Terraform State in Azure Blob Storage
+Sign into Azure CLI from VS Code
+
+ 
+1. Install Terraform
+Installing Terraform is not really an install, it's more of a download and a binary which you run. Download from here.
+ 
+Later when running Terraform comm…]]></summary>
+        <author>
+            <name>Marc Kean</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[My SpringOne 2022]]></title>
         <id>https://spring.io/blog/2022/09/23/my-springone-2022</id>
@@ -10917,55 +10970,6 @@ The post Optimizing and deploying transformer INT8 inference with ONNX Runtime-T
         <link href="https://azure.microsoft.com/en-us/updates/public-preview-azure-machine-learning-announcements-for-april-2022/"/>
         <updated>2022-05-02T15:00:04.000Z</updated>
         <summary type="html"><![CDATA[Compartmentalize access to data with identity passthrough and configure email notifications from Azure Learning.]]></summary>
-        <author>
-            <name>Azure service updates</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Azure Toolkit for IntelliJ Update – April 2022]]></title>
-        <id>https://devblogs.microsoft.com/java/?p=228879</id>
-        <link href="https://devblogs.microsoft.com/java/azure-toolkit-for-intellij-update-april-2022/"/>
-        <updated>2022-04-29T10:18:45.000Z</updated>
-        <summary type="html"><![CDATA[Welcome to our new blog series for Azure Toolkit for IntelliJ. Azure Toolkit for IntelliJ is a plugin that allows you to easily create, develop, configure, test, and deploy Java applications to Azure. Our goal of this blog series is to keep you posted on the latest product updates,
-The post Azure Toolkit for IntelliJ Update – April 2022 appeared first on Microsoft for Java Developers.]]></summary>
-        <author>
-            <name>Jialuo Gan</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Simplify Azure Container Apps deployments with "az containerapp up"]]></title>
-        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/simplify-azure-container-apps-deployments-with-quot-az/ba-p/3298436</id>
-        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/simplify-azure-container-apps-deployments-with-quot-az/ba-p/3298436"/>
-        <updated>2022-04-29T06:04:04.000Z</updated>
-        <summary type="html"><![CDATA[As developers, we love the benefits of containers, but they're not always easy to deploy. It can be a cumbersome process to build a container image, push it to a registry, and then set up infrastructure and deploy the container.
- 
-Azure Container Apps is a modern, fully-managed, serverless platform for running containers. While we don't have to manage infrastructure, it's still up to us to figure out how to build our container image and deploy it.
- 
-Today, we're introducing a preview feature in the Azure CLI that streamlines the process of deploying to Azure Container Apps in a single command. Whether your source code is on your local machine or in GitHub, "az containerapp up" is the only command you need to get your app running in Azure Container Apps.
- 
-How does it work?
- 
-"az containera…]]></summary>
-        <author>
-            <name>Anthony Chu</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Generally available: Automated key rotation in Azure Key Vault]]></title>
-        <id>automated-key-rotation-in-azure-key-vault-is-now-available</id>
-        <link href="https://azure.microsoft.com/en-us/updates/automated-key-rotation-in-azure-key-vault-is-now-available/"/>
-        <updated>2022-04-29T04:00:11.000Z</updated>
-        <summary type="html"><![CDATA[Key Vault now enables you to automatically rotate keys for encryption of your data.]]></summary>
-        <author>
-            <name>Azure service updates</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Generally available: Azure Functions Linux Elastic Premium plan increased maximum scale-out limits]]></title>
-        <id>generally-available-azure-functions-linux-elastic-premium-plan-increased-maximum-scaleout-limits</id>
-        <link href="https://azure.microsoft.com/en-us/updates/generally-available-azure-functions-linux-elastic-premium-plan-increased-maximum-scaleout-limits/"/>
-        <updated>2022-04-28T15:00:03.000Z</updated>
-        <summary type="html"><![CDATA[Maximum scale-out limits for Functions Linux Premium plans have been increased in a number of regions.]]></summary>
         <author>
             <name>Azure service updates</name>
         </author>
