@@ -6,6 +6,26 @@
       "siteUrl": "https://spring.io/blog",
       "articles": [
         {
+          "id": "https://spring.io/blog/2022/10/05/spring-shell-2-1-2-and-3-0-0-m1-are-now-available",
+          "author": null,
+          "description": "On behalf of the team and everyone who has contributed, I’m happy to announce that Spring Shell 2.1.2 and 3.0.0-M1 has been released and is now available from https://repo.spring.io/release, Maven Central and https://repo.spring.io/milestone respectively.\n\r\n3.0.0-M1 is first milestone which builds on Spring Boot 3.x and requires JDK 17.\n\r\nPlease see the release notes 2.1.2 and release notes 3.0.0-M1 for more details.\n\r\nThanks to all those who have contributed with issue reports and pull requests.\nHow can you help?\n\r\nProject Page | GitHub | Issues | Documentation",
+          "link": "https://spring.io/blog/2022/10/05/spring-shell-2-1-2-and-3-0-0-m1-are-now-available",
+          "publishedOn": "2022-10-05T10:08:06.000Z",
+          "wordCount": 602,
+          "title": "Spring Shell 2.1.2 and 3.0.0-M1 are now available",
+          "imageUrl": "https://avatars.githubusercontent.com/u/50398?v=4?s=200"
+        },
+        {
+          "id": "https://spring.io/blog/2022/10/05/spring-batch-5-0-0-m7-available-now",
+          "author": null,
+          "description": "On behalf of the team and all contributors, I am pleased to announce that Spring Batch 5.0.0-M7 is now available from our milestone repository.\n\r\nThe main theme of this milestone is the improvement of job parameters handling in Spring Batch. Two main changes were introduced in this release:\n\r\n\r\n  \nAdd support to use any type as a job parameter\n\r\n  \nImprove job parameters conversion\n\r\n\r\nThis blog post walks through these two major changes in details. For the complete list of changes, please check the release notes.\nAdd support to use any type as a job parameter\n\r\nUp to version 4, Spring Batch supported only 4 types that can be used as job parameters, which are long, double, String and Date. While this was convenient to simplify job parameters handling on the framework’s side, it turns out t…",
+          "link": "https://spring.io/blog/2022/10/05/spring-batch-5-0-0-m7-available-now",
+          "publishedOn": "2022-10-05T08:00:00.000Z",
+          "wordCount": 1096,
+          "title": "Spring Batch 5.0.0-M7 available now!",
+          "imageUrl": "https://avatars.githubusercontent.com/u/1210553?v=4?s=200"
+        },
+        {
           "id": "https://spring.io/blog/2022/10/04/this-week-in-spring-october-4th-2022",
           "author": null,
           "description": "Hi, Spring fans! Welcome to another installment of This Week in Spring! It’s October 4th, 2022, and I’m in Austin, TX, for the new version of show formerly known as the Kafka Summit, here to talk to folks about the amazing opportunities for Spring Boot and Apache Kafka. On the 12th, I’ll be in Antwerp, Belgium, for the amazing Devoxx show. On October 17-20th, I’ll be in Las Vegas, for the new version of JavaOne. And, well, there’s more but I can’t say exactly. Stay tuned!\n\r\nAnd as for now, well, I’m excited to be here! We’ve got a ton of cool stuff to cover this week, so let’s dive right into it!\n\r\n\r\n  \nA Bootiful Podcast: thought leader Chris Richardson (and no, I’m not using that title ironically!)\n\r\n  \nGetting a URL Attribute Value in Thymeleaf\n\r\n  \nRabbitMQ 3.11 Feature Preview: Super …",
@@ -1083,6 +1103,16 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/how-to-set-blob-storage-firewall-accessing-from-app-service-only/ba-p/3638851",
+          "author": "Youna_Hyun",
+          "description": "Scenario\nGoal: Blob storage can access only from the app service.So, you want to set the blob storage firewall for inbound traffic.\n \nBlob storage firewall limitation in this scenario\n1. IP address\n IP network rules have no effect on requests originating from the same Azure region as the storage account.\n See Grant access from an internet IP range \n2. Service tag\n There isn't an App service tag.\n\n \nps. When clients request blob storage through app service, blob storage receives not App service IP but Client IP.\n \nWorkaround\n1. Add IP address when app service and storage are located in a different region.\nWhen resources are located in a different region, the IP address firewall setting works.\n2. Firewall with Virtual Network\nWhen blob storage uses VNet firewall, app service must be integrated with VNet.\nIf you want to read what is VNet integration, see VNet integration \n\n \nBefore setting VNet integration, you must check limitations.\nIntegrate your app with an Azure virtual network - Azure App Service | Microsoft Learn\n \n1. Set Vnet Integration on the app service\nAdd VNet to your app service.\nI use \"firwall-storage-vnet\" VNet as below.\n \n\n \n2. Blob storage firewall setting with VNet which is integrated with app service\n\n3. If you use a function app, please add WEBSITE_CONTENTOVERVNET = 1\nA value of 1 enables your function app to scale when you have your storage account restricted to a virtual network. \nYou can see the detail about this setting website_contentovervnet",
+          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/how-to-set-blob-storage-firewall-accessing-from-app-service-only/ba-p/3638851",
+          "publishedOn": "2022-10-05T02:50:30.000Z",
+          "wordCount": 9522,
+          "title": "How to set blob storage firewall accessing from app service only",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/408702iF4BEA9C6DEC6A741?v=v2"
+        },
+        {
           "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/universal-rendering-with-nuxt-3-and-azure-static-web-apps/ba-p/3586297",
           "author": "nuzhatminhaz",
           "description": "Azure Static Web Apps automatically builds and deploys dozens of frontend frameworks, one of them is Nuxt. Today, we're excited to share that you can deploy Nuxt 3 applications with universal rendering to Azure Static Web Apps.\n \nWhile Nuxt 2 is known for its ease of use, Nuxt 3 brings even faster performance and improved developer experience with a thrilling new set of underlying technologies and features. With the release of Nuxt 3’s release candidate in April 2022, developers witnessed a complete re-architect of the framework. Nuxt 2 apps that have been upgraded with Nuxt Bridge also work with Azure Static Web Apps.\n \nWhat’s new in Nuxt 3? \n \n\nZero-configuration deployment of Nuxt 3 and Nuxt Bridge applications with universal rendering to Azure Static Web Apps \nAPI routes support for automatic generation from server API and middleware directories \nVue 3 support including composition API with imported functions for better code re-usability \nNitro Engine, a full stack server that allows deployment of output on Node.js, serverless, edge-side rendering, or as static \nVite, a frontend tooling that features fast Hot Module Replacement (HMR) and optimizes assets for production \n\nUniversal rendering vs static rendering\n \nPreviously, you were able to deploy a static rendered Nuxt app on Azure Static Web Apps, where the entire app is pre-generated as static content. However, Nuxt 3 also supports universal rendering, which provides the performance and search engine optimization of server-side rendering while still enabling client-side interactivity.\n \nWith Nuxt 3's support for Azure Static Web Apps, you can now deploy sites with universal rendering. \n \nTo learn more, check out the Nuxt 3 site deployment with universal rendering on Azure Static Web Apps documentation that also includes a tutorial.\n \nNuxt 3 Sample App on Azure Static Web Apps\n \nNuzhat Minhaz is a Program Manager Intern on the Azure Static Web App team at Microsoft. (Twitter: @nuzhatminhaz)",
@@ -1849,6 +1879,26 @@
       "feedUrl": "https://techcommunity.microsoft.com/plugins/custom/microsoft/o365/custom-blog-rss?tid=-2574164104208876465&board=AzureDevCommunityBlog&size=100",
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
+        {
+          "id": "https://techcommunity.microsoft.com/t5/azure-developer-community-blog/author-bibliography-and-bio-jeffrey-chilberto/ba-p/3645387",
+          "author": "Ed Price",
+          "description": "Jeffrey has been authoring on the Azure Developer Community blog since February 2016. It's time to learn more about him!\n \nJeffrey Chilberto's profiles:\n\nJeffrey Chilberto - Microsoft Tech Community\nAmazon.com: Jeffrey Chilberto\nInterview with Jeffrey Chilberto | Packt Authors (packtpub.com)\nJeff Chilberto | LinkedIn\n\n \nBibliography\n  \nLast Updated: 10/05/22\nThis section lists Jeffrey Chilberto's bibliography. It will expand over time. The sections are divided into different parts:\n\nBooks \nBlog Posts\n\n  \nBooks\n\nJeffrey has co-authored 4 books:\n\n\n\n\n\nPublisher\n\n\nTitle\n\n\nPublished\n\n\n\nPackt\nASP.NET Core 5 for Beginners\n12/18/20\n\n\nApress\nCloud Debugging and Profiling in Microsoft Azure\n04/17/20\n\n\nPackt\nHands-On Design Patterns with C# and .NET Core\n07/05/19\n\n\nPackt\nC# i .NET Core projektni obra…",
+          "link": "https://techcommunity.microsoft.com/t5/azure-developer-community-blog/author-bibliography-and-bio-jeffrey-chilberto/ba-p/3645387",
+          "publishedOn": "2022-10-06T00:03:49.000Z",
+          "wordCount": 9622,
+          "title": "Author Bibliography and Bio: Jeffrey Chilberto",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/410398iE4611DF9869D107A/image-size/original?v=v2&px=-1"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/azure-developer-community-blog/how-to-retrieve-from-cosmosdb-using-azure-api-management/ba-p/3644458",
+          "author": "Jeffrey Chilberto",
+          "description": "Overview\nIn this How To, I will show a simple mechanism for reading items from CosmosDB using Azure API Management (APIM). Azure Cosmos DB is a fully managed, serverless NoSQL database for high-performance applications of any size or scale. APIM is a API management service offering many features for manging APIs and exposing backend services.\n \nExample Use Case\nThe example use case involves using CosmosDB to maintain a list of information and exposing the information using APIM as a public RSS feed. This will provide a user to illustrate APIM caching and transformation, and how APIM can call CosmosDB securely using managed identity.\n \nSetup\nThe first step is to provision a CosmosDB and APIM service instance. In my resource group, I created the following services:\n\n \nThe first step is to ge…",
+          "link": "https://techcommunity.microsoft.com/t5/azure-developer-community-blog/how-to-retrieve-from-cosmosdb-using-azure-api-management/ba-p/3644458",
+          "publishedOn": "2022-10-05T20:34:59.000Z",
+          "wordCount": 10021,
+          "title": "How To: Retrieve from CosmosDB using Azure API Management",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/410127i8C50951019A74044?v=v2"
+        },
         {
           "id": "https://techcommunity.microsoft.com/t5/azure-developer-community-blog/join-microsoft-at-devoxx-belgium-2022/ba-p/3643500",
           "author": "cedricve",
@@ -2972,16 +3022,6 @@
           "publishedOn": "2022-05-24T08:00:01.000Z",
           "wordCount": 5648,
           "title": "Introducing the Microsoft Intelligent Data Platform",
-          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
-        },
-        {
-          "id": "join-us-and-the-developer-community-to-celebrate-azure-static-web-apps",
-          "author": "Simona Cotin",
-          "description": "Join us on May 19, 2022, to celebrate the one-year anniversary of Azure Static Web Apps! Come connect with others in the developer community and increase your Azure Static Web Apps skills in a fun, collaborative way. Hear from keynote speakers like Scott Hanselman and Donovan Brown, along with our product team and Microsoft MVPs, in a one-and-a-half-hour event streaming live on Learn TV.",
-          "link": "https://azure.microsoft.com/blog/join-us-and-the-developer-community-to-celebrate-azure-static-web-apps/",
-          "publishedOn": "2022-05-09T08:00:53.000Z",
-          "wordCount": 4907,
-          "title": "Join us and the developer community to celebrate Azure Static Web Apps",
           "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
         }
       ]
