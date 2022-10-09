@@ -1123,6 +1123,16 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/extending-next-js-support-in-azure-static-web-apps/ba-p/3627975",
+          "author": "aaronpowell",
+          "description": "Next.js is one of the most popular JavaScript frameworks for building complex, server-driven React applications, combining the features that make React a useful UI library with server-side rendering, built-in API support and SEO optimizations.\nWith today’s preview release, we’re improving support for Next.js on Azure Static Web Apps.\nWhat’s new\nIn this preview we’re focusing on making zero-config deployments with Next.js even easier than it’s been before by including support for Server-Side Rendering and Incremental Static Regeneration (SSR and ISR respectively), API Routes, advanced image compression, and Next.js Auth. In this post, we want to highlight three features that make building Next.js apps on Azure more powerful.\nServer-Side Rendering\nWhen we first launched Static Web Apps, we e…",
+          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/extending-next-js-support-in-azure-static-web-apps/ba-p/3627975",
+          "publishedOn": "2022-10-08T22:00:00.000Z",
+          "wordCount": 10126,
+          "title": "Extending Next.js support in Azure Static Web Apps",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/405445iB1C179FD1F1F81C3?v=v2"
+        },
+        {
           "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/how-to-set-blob-storage-firewall-accessing-from-app-service-only/ba-p/3638851",
           "author": "Youna_Hyun",
           "description": "Scenario\nGoal: Blob storage can access only from the app service.So, you want to set the blob storage firewall for inbound traffic.\n \nBlob storage firewall limitation in this scenario\n1. IP address\n IP network rules have no effect on requests originating from the same Azure region as the storage account.\n See Grant access from an internet IP range \n2. Service tag\n There isn't an App service tag.\n\n \nps. When clients request blob storage through app service, blob storage receives not App service IP but Client IP.\n \nWorkaround\n1. Add IP address when app service and storage are located in a different region.\nWhen resources are located in a different region, the IP address firewall setting works.\n2. Firewall with Virtual Network\nWhen blob storage uses VNet firewall, app service must be integrated with VNet.\nIf you want to read what is VNet integration, see VNet integration \n\n \nBefore setting VNet integration, you must check limitations.\nIntegrate your app with an Azure virtual network - Azure App Service | Microsoft Learn\n \n1. Set Vnet Integration on the app service\nAdd VNet to your app service.\nI use \"firwall-storage-vnet\" VNet as below.\n \n\n \n2. Blob storage firewall setting with VNet which is integrated with app service\n\n3. If you use a function app, please add WEBSITE_CONTENTOVERVNET = 1\nA value of 1 enables your function app to scale when you have your storage account restricted to a virtual network. \nYou can see the detail about this setting website_contentovervnet",
@@ -1881,16 +1891,6 @@
           "wordCount": 1995,
           "title": "Blazor WebAssembly for Headless CMS on Azure Static Web Apps",
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/370407iE297CE62F955D95C/image-size/original?v=v2&px=-1"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/learn-azure-static-web-apps-in-30daysofswa/ba-p/3354021",
-          "author": "nityan",
-          "description": "The people behind the #30DaysOfSWA: https://aka.ms/30DaysOfSWA\nAbout #30DaysOfSWA\n Azure Static Web Apps (SWA) celebrates 1 year of general availability in May!! If you're new to the technology, join us as we cover #30DaysOfSWA at https://aka.ms/30DaysOfSWA. This is a labor of love with contributors from the Azure Static Web Apps team, Cloud Advocacy, Next Gen Experiences and Microsoft Edge Developer Experiences team, amongst others.The content is structured to mimic a developer's journey.\n\nWeek 1 | Core Concepts. Get an overview of Azure Static Web Apps, learn what differentiates it from other web app architectures, and walk through the key features that make it a valuable service for managing your hosting and automated deployment needs.\nWeek 2 | Usage Examples. Azure Static Web Apps work…",
-          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/learn-azure-static-web-apps-in-30daysofswa/ba-p/3354021",
-          "publishedOn": "2022-05-11T14:41:00.000Z",
-          "wordCount": 1428,
-          "title": "Learn Azure Static Web Apps in #30DaysOfSWA",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/370580i3BF8EC6C8BF3131F/image-size/original?v=v2&px=-1"
         }
       ]
     },
@@ -1899,6 +1899,26 @@
       "feedUrl": "https://techcommunity.microsoft.com/plugins/custom/microsoft/o365/custom-blog-rss?tid=-2574164104208876465&board=AzureDevCommunityBlog&size=100",
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
+        {
+          "id": "https://techcommunity.microsoft.com/t5/azure-developer-community-blog/new-book-meg-the-mechanical-engineer-she-is-m-e/ba-p/3647842",
+          "author": "Ed Price",
+          "description": "I've debated about writing this blog for a while, but what it comes down to is how passionate I am about this...\n\nWhat are we doing to change the world?\nWhat are we doing to build inclusivity?\nWhat are we doing to show our future generations what they're capable of?\n\nSimply put, this is one of the things that I'm doing to answer these three questions (whilst partnering with some amazing ladies), and I want to share that journey.\n \nMicrosoft is great. One of the reasons why it's so great is our emphasis on philanthropy and nonprofits. We're constantly encouraged to volunteer, to give of our time and resources.\n \nThis led me to help champion Microsoft Small Basic (again, relying on the help of some amazing people). We banded together and led many hackathons. It led me to co-writing a Small B…",
+          "link": "https://techcommunity.microsoft.com/t5/azure-developer-community-blog/new-book-meg-the-mechanical-engineer-she-is-m-e/ba-p/3647842",
+          "publishedOn": "2022-10-08T18:13:01.000Z",
+          "wordCount": 10547,
+          "title": "NEW BOOK: Meg the Mechanical Engineer - She is M.E.",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/411137iF359D31934B1CC70/image-size/original?v=v2&px=-1"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/azure-developer-community-blog/aks-the-elephant-in-the-hub-amp-spoke-room-deep-dive/ba-p/3635985",
+          "author": "stephaneey",
+          "description": "Hi,\n \nIn this article, I will walk you through some typical challenges when building AKS platforms. I will also reflect on the AKS impact over the Hub & Spoke topology, which is widely adopted by organizations.\n \nQuick recap of the Hub & Spoke\n \nI won't spend much time on this because, most of you already know what the Hub & Spoke model is all about. Microsoft has already documented this here, although the proposed diagram is a little bit naïve, but the essentials are there. The Hub & Spoke model, is a network-centric architecture where everything ends up in a virtual network in a way or another. This gives companies a greater control over the network traffic. There are many variants, but the spokes are virtual networks dedicated to business workloads, while the hubs play a control role, m…",
+          "link": "https://techcommunity.microsoft.com/t5/azure-developer-community-blog/aks-the-elephant-in-the-hub-amp-spoke-room-deep-dive/ba-p/3635985",
+          "publishedOn": "2022-10-08T11:38:31.000Z",
+          "wordCount": 12009,
+          "title": "AKS, the elephant in the hub & spoke room, deep dive",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/411083i341F4624E7C79F86?v=v2"
+        },
         {
           "id": "https://techcommunity.microsoft.com/t5/azure-developer-community-blog/author-bibliography-and-bio-jeffrey-chilberto/ba-p/3645387",
           "author": "Ed Price",
@@ -4012,6 +4032,16 @@
       "feedUrl": "https://azurecomcdn.azureedge.net/en-us/updates/feed/?updateType=features",
       "siteUrl": "https://azure.microsoft.com/en-us/updates/",
       "articles": [
+        {
+          "id": "vmware-dr-ga-with-asr",
+          "author": null,
+          "description": "Today we’re officially announcing the general availability of a simpler, more reliable, and modernized way to protect your VMware virtual machines using Azure Site Recovery, for recovering quickly from disasters.",
+          "link": "https://azure.microsoft.com/en-us/updates/vmware-dr-ga-with-asr/",
+          "publishedOn": "2022-10-08T12:00:10.000Z",
+          "wordCount": 5429,
+          "title": "General availability: Simplified disaster recovery for VMware machines using Azure Site Recovery",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-48d6f86ad28c2de171c7f48c15b1fa4b879fbd1a4532dfece545791a7f636e38/images/shared/social/azure-icon-250x250.png"
+        },
         {
           "id": "azure-batch-certificates-will-be-retired-on-29-february-2024",
           "author": null,
@@ -7240,66 +7270,6 @@
           "publishedOn": "2022-05-12T15:00:33.000Z",
           "wordCount": 4387,
           "title": "Generally available: OCR supports 164 languages in the Cognitive Services Computer Vision",
-          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
-        },
-        {
-          "id": "azure-sql-generally-available-updates-for-early-may-2022",
-          "author": null,
-          "description": "General availability enhancements and updates released for Azure SQL.",
-          "link": "https://azure.microsoft.com/en-us/updates/azure-sql-generally-available-updates-for-early-may-2022/",
-          "publishedOn": "2022-05-11T16:00:22.000Z",
-          "wordCount": 4294,
-          "title": "Azure SQL—Generally available updates for early May 2022",
-          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
-        },
-        {
-          "id": "generally-available-it-service-management-integration-with-secure-webhook",
-          "author": null,
-          "description": "IT Service Management is now integrated with secure webhook, an updated version that allows you to create work items in an ITSM tool when Azure Monitor sends alerts.",
-          "link": "https://azure.microsoft.com/en-us/updates/generally-available-it-service-management-integration-with-secure-webhook/",
-          "publishedOn": "2022-05-11T16:00:20.000Z",
-          "wordCount": 4420,
-          "title": "Generally available: IT Service Management Integration with secure webhook",
-          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
-        },
-        {
-          "id": "public-preview-azure-container-apps-now-support-log-streaming-and-console-connect",
-          "author": null,
-          "description": "You can now connect to a container console and use live log streaming for testing and diagnosis.",
-          "link": "https://azure.microsoft.com/en-us/updates/public-preview-azure-container-apps-now-support-log-streaming-and-console-connect/",
-          "publishedOn": "2022-05-11T16:00:20.000Z",
-          "wordCount": 4352,
-          "title": "Public preview: Azure Container Apps now support log streaming and console connect",
-          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
-        },
-        {
-          "id": "public-preview-static-web-apps-support-skipping-api-builds-via-azure-pipelines",
-          "author": null,
-          "description": "You can now skip the default API build via Azure pipelines.",
-          "link": "https://azure.microsoft.com/en-us/updates/public-preview-static-web-apps-support-skipping-api-builds-via-azure-pipelines/",
-          "publishedOn": "2022-05-11T16:00:19.000Z",
-          "wordCount": 4321,
-          "title": "Public preview: Static Web Apps support skipping API builds via Azure pipelines",
-          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
-        },
-        {
-          "id": "public-preview-improved-azure-devops-support-in-static-web-apps-2",
-          "author": null,
-          "description": "You no longer have to go through a series of manual steps to configure your DevOps CI/CD pipeline for your Static Web Apps project.",
-          "link": "https://azure.microsoft.com/en-us/updates/public-preview-improved-azure-devops-support-in-static-web-apps-2/",
-          "publishedOn": "2022-05-11T16:00:18.000Z",
-          "wordCount": 4317,
-          "title": "Public preview: Improved Azure DevOps support in Static Web Apps",
-          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
-        },
-        {
-          "id": "trusted-launch-azure-compute-gallery-support",
-          "author": null,
-          "description": "Azure Compute Gallery now allows you to create and share custom images for Trusted launch virtual machines",
-          "link": "https://azure.microsoft.com/en-us/updates/trusted-launch-azure-compute-gallery-support/",
-          "publishedOn": "2022-05-11T15:00:18.000Z",
-          "wordCount": 4348,
-          "title": "Generally available: Azure Compute Gallery support for trusted launch Virtual Machines",
           "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
         }
       ]
