@@ -6,6 +6,26 @@
       "siteUrl": "https://spring.io/blog",
       "articles": [
         {
+          "id": "https://spring.io/blog/2022/10/13/spring-batch-5-0-0-m8-is-out",
+          "author": null,
+          "description": "On behalf of the team and all contributors, I am pleased to announce that Spring Batch 5.0.0-M8 is now available from our milestone repository.\n\r\nIn this milestone, we introduced two main changes:\n\r\n\r\n  \nNew default execution context serialization format\n\r\n  \nSystemCommandTasklet enhancements\n\r\n\r\nThis blog post walks through these two major changes in details. For the complete list of changes,\nplease check the release notes.\nNew default execution context serialization format\n\r\nIn this milestone release, the DefaultExecutionContextSerializer was updated to serialize/deserialize the context to/from Base64.\n\r\nMoreover, the default ExecutionContextSerializer configured by @EnableBatchProcessing or DefaultBatchConfiguration was changed from JacksonExecutionContextStringSerializer to DefaultExecutionContextSerializer. The dependency to Jackson was made optional. In order to use the JacksonExecutionContextStringSerializer, jackson-core should be added to the classpath.\nSystemCommandTasklet enhancements\n\r\nThe SystemCommandTasklet has been revisited in this release and was changed as follows:\n\r\n\r\n  \n\r\n  \nA new strategy interface named CommandRunner was introduced in order to decouple the command execution from the tasklet execution. The default implementation is the JvmCommandRunner which uses the java.lang.Runtime#exec API to run system commands. This interface can be implemented to use any other API to run system commands.\n\r\n  \n\r\n  \nThe method that runs the command now accepts an array of Strings representing the command and its arguments. There is no need to tokenize the command or do any pre-processing anymore. This change makes the API more intuitive, and less prone to errors.\n\r\n\nFeedback\n\r\nI would like to thank all contributors who had a role in this release! As we continue\nour work on Spring Batch 5, we look forward to your feedback on Github, Twitter and StackOverflow.\n\r\n\r\nSpring Batch Home|Source on Github|Reference documentation",
+          "link": "https://spring.io/blog/2022/10/13/spring-batch-5-0-0-m8-is-out",
+          "publishedOn": "2022-10-13T08:00:00.000Z",
+          "wordCount": 772,
+          "title": "Spring Batch 5.0.0-M8 is out!",
+          "imageUrl": "https://avatars.githubusercontent.com/u/1210553?v=4?s=200"
+        },
+        {
+          "id": "https://spring.io/blog/2022/10/12/a-bootiful-podcast-google-mad-scientist-josh-suereth-on-observability-with-opentelemetry-building-better-build-tools-and-so-much-more",
+          "author": null,
+          "description": "Hi, Spring fans! In this installment Josh Long (@starbuxman) looks at the latest and greatest in Spring Boot 3 AOT, then talks to Google’s Josh Suereth (@jsuereth) about observability with OpenTelemetry, building better build tools, and so much more.",
+          "link": "https://spring.io/blog/2022/10/12/a-bootiful-podcast-google-mad-scientist-josh-suereth-on-observability-with-opentelemetry-building-better-build-tools-and-so-much-more",
+          "publishedOn": "2022-10-13T06:00:00.000Z",
+          "wordCount": 580,
+          "title": "A Bootiful Podcast: Google mad scientist Josh Suereth on Observability with OpenTelemetry, building better build tools, and so much more",
+          "imageUrl": "https://avatars.githubusercontent.com/u/54473?v=4?s=200"
+        },
+        {
           "id": "https://spring.io/blog/2022/10/12/observability-with-spring-boot-3",
           "author": null,
           "description": "The Spring Observability Team has been working on adding observability support for Spring Applications for quite some time, and we are pleased to inform you that this feature will be generally available with Spring Framework 6 and Spring Boot 3!\n\r\n\r\n\r\nWhat is observability? In our understanding, it is \"how well you can understand the internals of your system by examining its outputs\". We believe that the interconnection between metrics, logging, and distributed tracing gives you the ability to reason about the state of your system in order to debug exceptions and latency in your applications. You can watch more about what we think observability is in this episode of Enlightning with Jonatan Ivanov.\n\r\n\r\n\r\nThe upcoming Spring Boot 3.0.0-RC1 release will contain numerous autoconfigurations fo…",
@@ -2580,6 +2600,36 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/azure-kubernetes-service-aks-cost-optimization-techniques/ba-p/3652908",
+          "author": "cheekeongtan",
+          "description": "According to Flexera State of Cloud Report 2022, the top cloud initiatives for 2022 across all organizations is once again “Optimizing existing use of cloud (cost savings)” – for the sixth year in a row. \n \n\n \nAs more and more organizations continue to expand their cloud usage, it is imperative to have the right cloud computing strategy in place to accelerate time to market while ensuring cost effectiveness to maximize ROI.\n \nIn order to help customers to maximize cost savings, we have published a set of actionable architecture guidance and best practices in Microsoft Azure Well-Architected Framework, which includes a guide on Cost Optimization for AKS. There is also another article Baseline architecture for an Azure Kubernetes Service (AKS) cluster, which provides a recommended baseline f…",
+          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/azure-kubernetes-service-aks-cost-optimization-techniques/ba-p/3652908",
+          "publishedOn": "2022-10-13T19:01:52.000Z",
+          "wordCount": 10152,
+          "title": "Azure Kubernetes Service (AKS) – Cost Optimization Techniques",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/413132i1CC0D8A886ADA1FD/image-size/original?v=v2&px=-1"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/drive-application-innovation-and-modernization-at-scale-with/ba-p/3650098",
+          "author": "Devanshi Joshi",
+          "description": "Innovate at scale with cloud-native architectures\nCloud-native is the core of application innovation and modernization. When we talk about cloud-native we are referring to technologies and development patterns that empower organizations to build and run scalable applications, quickly.  The speed and agility of cloud native is made possible by some foundational pillars – modern architectures like microservices or composite applications deployed in containers, using an API first approach for your apps, infrastructure, and data, while taking advantage of DevOps and automation, on infrastructure you can count on to be elastic. Azure Kubernetes Service (AKS) brings all these together making it easier to deploy and manage cloud native applications leading to some great business outcomes and savi…",
+          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/drive-application-innovation-and-modernization-at-scale-with/ba-p/3650098",
+          "publishedOn": "2022-10-13T16:00:00.000Z",
+          "wordCount": 10841,
+          "title": "Drive application innovation and modernization at scale with cloud-native architectures",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/412838i3D12B8C95A109029/image-size/original?v=v2&px=-1"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/tutorial-azure-web-pubsub-trigger-for-azure-python-functions/ba-p/3650727",
+          "author": "acorn20180214",
+          "description": "This step-by-step blog explains how to use Web PubSub trigger in python functions.\n \nWhat is Azure Web Pubsub:\nWeb PubSub is an Azure-managed service that helps developers easily build real-time web applications using websockets and publish-subscribe pattern. Any platform supporting WebSocket APIs can connect to the service easily, e.g. web pages, mobile applications, edge devices, etc. The service manages the WebSocket connections for you and allows up to 100K *concurrent connections. It provides powerful APIs for you to manage these clients and deliver real-time messages.\n \nWeb PubSub v.s. SignalR:   https://learn.microsoft.com/en-us/azure/azure-web-pubsub/resource-faq#how-do-i-choose-between-azure-signalr-service-and-azure-web-pubsub-service\n \nAzure Web PubSub trigger and bindings for A…",
+          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/tutorial-azure-web-pubsub-trigger-for-azure-python-functions/ba-p/3650727",
+          "publishedOn": "2022-10-13T08:42:15.000Z",
+          "wordCount": 9967,
+          "title": "Tutorial:  Azure Web PubSub trigger for Azure Python Functions",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/412333i34EFD5BE43C00170/image-size/original?v=v2&px=-1"
+        },
+        {
           "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/releasing-kubernetes-apps-offer-in-microsoft-cloud-marketplace/ba-p/3650628",
           "author": "kavithagowda",
           "description": "We are excited to announce the release of Kubernetes apps offer in Microsoft Cloud Marketplace in public preview at Ignite 2022. Kubernetes apps is a new marketplace offer that allows partners to create, publish, and manage commercial Kubernetes solutions in marketplace with click-through deployments to Azure Kubernetes service and flexible billing models. Kubernetes customers require a rich ecosystem of first-party and third-party solutions to build robust enterprise solutions. By building an exclusive marketplace offer type for Kubernetes, we aim to provide a rich catalog of partner and open-source Kubernetes solutions which customers can deploy to their AKS clusters through an easy one-click option with integrated Azure billing. Customer Dev/IT teams can procure their Kubernetes solutio…",
@@ -3468,16 +3518,6 @@
           "wordCount": 2417,
           "title": "Multi-stage Azure Static Web Apps deployments with Azure DevOps",
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/372716i92E10C79F4CC7A13/image-size/original?v=v2&px=-1"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/connected-micro-services-with-azure-arc-enabled-kubernetes-and/ba-p/3319996",
-          "author": "monojit18",
-          "description": "Introduction\nAzure Arc provides a simplified Governance and Management capability by delivering a consistent multi-cloud and on-premises management platform. Azure Arc-enabled Kubernetes allows us to on-board and manage Kubernetes clusters running anywhere - clusters running on other public cloud providers (GCP or AWS) or clusters running on on-premise data-centers (VMware vSphere or Azure Stack HCI) to Azure Arc. Azure Arc-enabled data services allows us to run Azure data services like SQL Managed Instance or PostgreSQL Hyperscale (preview) anywhere using Kubernetes.\n \nWhat are we going to build?\n\n \nIn this article we will build an end-to-end flow of a connected set of simple micro-services and an SQL Managed Instance all deployed on an AKS cluster. The same example can be extended to dep…",
-          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/connected-micro-services-with-azure-arc-enabled-kubernetes-and/ba-p/3319996",
-          "publishedOn": "2022-05-17T11:52:44.000Z",
-          "wordCount": 4231,
-          "title": "Connected Micro-services with Azure Arc-enabled Kubernetes and Data Services",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/372232iC59BE7EAC133B0B6/image-size/original?v=v2&px=-1"
         }
       ]
     },
@@ -3486,6 +3526,16 @@
       "feedUrl": "https://techcommunity.microsoft.com/plugins/custom/microsoft/o365/custom-blog-rss?tid=-2574164104208876465&board=AzureDevCommunityBlog&size=100",
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
+        {
+          "id": "https://techcommunity.microsoft.com/t5/azure-developer-community-blog/excited-to-be-at-javaone-2022-in-person/ba-p/3652089",
+          "author": "Julia_Liuson",
+          "description": "Last month, I wrote about our commitment to the success of Java developers and the launch of our new website. Alongside much Microsoft Ignite excitement, this month, our engineers, and developer advocates are travelling to Java developer conferences, talking about our Java offerings and learning from interactions with you. I, too, am looking forward to meeting you next week at Oracle’s flagship Java developer conference – JavaOne in Las Vegas.\n \nI will be a part of JavaOne’s technical keynote on Day 2 of the conference (Oct 19 at 1:15 PM), where I will talk about how several Microsoft products and divisions run on Java and how we empower Java developers at one of our customer organizations to achieve truly relevant business impact.\n \nWe’re grateful to the Oracle team for their partnership …",
+          "link": "https://techcommunity.microsoft.com/t5/azure-developer-community-blog/excited-to-be-at-javaone-2022-in-person/ba-p/3652089",
+          "publishedOn": "2022-10-13T18:48:36.000Z",
+          "wordCount": 9559,
+          "title": "Excited to be at JavaOne 2022 in person!",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/412990i234853E16B70AD36/image-size/original?v=v2&px=-1"
+        },
         {
           "id": "https://techcommunity.microsoft.com/t5/azure-developer-community-blog/new-book-meg-the-mechanical-engineer-she-is-m-e/ba-p/3647842",
           "author": "Ed Price",
@@ -4279,16 +4329,6 @@
           "wordCount": 914,
           "title": "Optimizing Azure Virtual Machines with the Well-Architected Framework",
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/375318iE228363EADB8A9B0/image-size/original?v=v2&px=-1"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/optimizing-azure-kubernetes-service-aks-with-the-well/ba-p/3352848",
-          "author": "ckittel",
-          "description": "The Azure Well-Architected Framework assists architects in the creation and review of their cloud workloads with guidance spanning five pillars – reliability, security, cost optimization, operational excellence, and performance efficiency. These are cross-cutting and cover the entire scope of the workload. Additionally, it's often beneficial for an architect to focus on a core component of the workload, and the Well-Architected Framework also delivers targeted, service-specific guidance on key workload components.\n \nToday we’re going to be looking at the Azure Well-Architected Azure Kubernetes Service (AKS) guide. Like all the Well-Architected Framework service guides, the Azure Kubernetes Service (AKS) guide delivers checklists and recommendations across the same five pillars, but with a …",
-          "link": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/optimizing-azure-kubernetes-service-aks-with-the-well/ba-p/3352848",
-          "publishedOn": "2022-05-16T15:28:42.000Z",
-          "wordCount": 1252,
-          "title": "Optimizing Azure Kubernetes Service (AKS) with the Well-Architected Framework",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/370509i4ADE816452BE0548?v=v2"
         }
       ]
     },
@@ -5636,6 +5676,26 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/t5/azure-observability-blog/general-availability-predictive-autoscaling-for-vmss/ba-p/3652844",
+          "author": "Shilpa_Sharma",
+          "description": "Azure autoscale automatically increases or decreases the number of VM instances for an Azure virtual machine scale set (VMSS) that run your application. This automated and elastic behavior reduces the management overhead to monitor, need for overprovisioning and optimize the performance of your application. You create rules that define the acceptable performance for a positive customer experience. When those defined thresholds are met, autoscale rules take action to adjust the capacity of your scale set. You can also schedule events to automatically increase or decrease the capacity of your scale set at fixed times.\n \nWe are pleased to announce that you can now use machine learning to help manage and scale out your Virtual Machine Scale Sets with Predictive autoscale for Percentage CPU met…",
+          "link": "https://techcommunity.microsoft.com/t5/azure-observability-blog/general-availability-predictive-autoscaling-for-vmss/ba-p/3652844",
+          "publishedOn": "2022-10-13T18:34:46.000Z",
+          "wordCount": 9781,
+          "title": "General Availability: Predictive Autoscaling for VMSS",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/413095i83F952DAE0078D85?v=v2"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/azure-observability-blog/what-s-new-in-azure-monitor-ignite-2022/ba-p/3652570",
+          "author": "artigulwadi",
+          "description": "Azure Monitor offers a rich set of enterprise ready capabilities to ensure complete observability of your hybrid environment, enabling high availability, reliability, and performance. At Ignite, we announced new capabilities that will help you optimize costs and gain streamlined visibility into your application and infrastructure workloads. Here’s a quick recap.\n \nAccelerate innovation in your cloud-native environments with Azure Monitor managed service for Prometheus (in preview)\n\n\nAzure Monitor managed service for Prometheus brings the best of what you like about the open-source ecosystem while automating complex tasks such as scaling, high-availability, and long-term data retention. It is available to use as a standalone service from Azure Monitor or as an integrated component of contai…",
+          "link": "https://techcommunity.microsoft.com/t5/azure-observability-blog/what-s-new-in-azure-monitor-ignite-2022/ba-p/3652570",
+          "publishedOn": "2022-10-13T17:31:13.000Z",
+          "wordCount": 9793,
+          "title": "What’s new in Azure Monitor @ Ignite 2022",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/412998i45431569EE40ACBD?v=v2"
+        },
+        {
           "id": "https://techcommunity.microsoft.com/t5/azure-observability-blog/general-availability-get-more-value-from-your-logs-with-azure/ba-p/3643129",
           "author": "AdiBiran",
           "description": "We are excited to announce the general availability of Azure Monitor Logs’ new set of features, which let you gain more value from your logs at a lower cost. These features were made available in public preview in early 2022 and have already been successfully adopted by a large set of customers, from small companies to very large, complex organizations. The features we’re announcing today provide significant value based on feedback from our preview customers. We’re very happy to introduce them alongside enhanced Azure portal experiences that will help you better manage and control your log data.\n \nThese features were developed together with Microsoft Sentinel, to support security analysts and allow access to any data, over any timeframe, and provide the most comprehensive and innovative th…",
@@ -5859,6 +5919,76 @@
       "feedUrl": "https://azurecomcdn.azureedge.net/en-us/updates/feed/?updateType=features",
       "siteUrl": "https://azure.microsoft.com/en-us/updates/",
       "articles": [
+        {
+          "id": "azure-backup-enhanced-soft-delete-preview",
+          "author": null,
+          "description": "Enhanced soft delete helps you recover your backup data after it has been deleted, giving you protection against data loss scenarios like ransomwares, malicious actors, and accidental deletes.",
+          "link": "https://azure.microsoft.com/en-us/updates/azure-backup-enhanced-soft-delete-preview/",
+          "publishedOn": "2022-10-13T19:00:33.000Z",
+          "wordCount": 5263,
+          "title": "Public preview: Enhanced soft delete for Azure Backup",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-965268e7b1cf73137b16b6010b01ce745ba0e9c78254c8baa9be9e55bca88e3e/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "azure-backup-mua-backup-vaults-preview",
+          "author": null,
+          "description": "Multi-user authorization provides enhanced protection for your backup data against unauthorized critical operations.",
+          "link": "https://azure.microsoft.com/en-us/updates/azure-backup-mua-backup-vaults-preview/",
+          "publishedOn": "2022-10-13T19:00:25.000Z",
+          "wordCount": 5293,
+          "title": "Public preview: Multi-user authorization for Backup vaults",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-965268e7b1cf73137b16b6010b01ce745ba0e9c78254c8baa9be9e55bca88e3e/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "azure-backup-immutable-vaults-preview",
+          "author": null,
+          "description": "Immutable vaults helps you protect your backups against threats like ransomware attacks and malicious actors by ensuring that your backup data cannot be deleted before its intended expiry time.",
+          "link": "https://azure.microsoft.com/en-us/updates/azure-backup-immutable-vaults-preview/",
+          "publishedOn": "2022-10-13T19:00:22.000Z",
+          "wordCount": 5234,
+          "title": "Public preview: Immutable vaults for Azure Backup",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-965268e7b1cf73137b16b6010b01ce745ba0e9c78254c8baa9be9e55bca88e3e/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "general-availability-azure-netapp-files-application-volume-group-for-sap-hana",
+          "author": null,
+          "description": "With Azure NetApp Files application volume group (AVG) for SAP HANA, you are able to deploy all volumes required to install and operate an SAP HANA system according to best practices.",
+          "link": "https://azure.microsoft.com/en-us/updates/general-availability-azure-netapp-files-application-volume-group-for-sap-hana/",
+          "publishedOn": "2022-10-13T17:00:21.000Z",
+          "wordCount": 5375,
+          "title": "General availability: Azure NetApp Files application volume group for SAP HANA",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-965268e7b1cf73137b16b6010b01ce745ba0e9c78254c8baa9be9e55bca88e3e/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "general-availability-static-ip-configurations-of-private-endpoints",
+          "author": null,
+          "description": "Azure private endpoint support of statically defined IP addresses is now generally available allowing you to provide static IP addresses when configuring your private endpoints.",
+          "link": "https://azure.microsoft.com/en-us/updates/general-availability-static-ip-configurations-of-private-endpoints/",
+          "publishedOn": "2022-10-13T16:00:21.000Z",
+          "wordCount": 5285,
+          "title": "General availability: Static IP configurations of private endpoints",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-965268e7b1cf73137b16b6010b01ce745ba0e9c78254c8baa9be9e55bca88e3e/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "general-availability-custom-nic-name-configurations-of-private-endpoints",
+          "author": null,
+          "description": "Azure private endpoint (PE) support of custom network interface (NIC) names is now generally available. With this feature you can now deploy PE NICs without the GUID suffix.",
+          "link": "https://azure.microsoft.com/en-us/updates/general-availability-custom-nic-name-configurations-of-private-endpoints/",
+          "publishedOn": "2022-10-13T16:00:20.000Z",
+          "wordCount": 5294,
+          "title": "General availability: Custom network interface name configurations of private endpoints",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-965268e7b1cf73137b16b6010b01ce745ba0e9c78254c8baa9be9e55bca88e3e/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "generally-available-azure-site-recovery-update-rollup-64-october-2022",
+          "author": null,
+          "description": "This update provides the improvements for the latest version of Azure Site Recovery components.",
+          "link": "https://azure.microsoft.com/en-us/updates/generally-available-azure-site-recovery-update-rollup-64-october-2022/",
+          "publishedOn": "2022-10-13T15:00:20.000Z",
+          "wordCount": 5235,
+          "title": "Generally available: Azure Site Recovery update rollup 64 - October 2022",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-965268e7b1cf73137b16b6010b01ce745ba0e9c78254c8baa9be9e55bca88e3e/images/shared/social/azure-icon-250x250.png"
+        },
         {
           "id": "public-preview-computer-vision-image-analysis-40",
           "author": null,
@@ -9497,26 +9627,6 @@
           "publishedOn": "2022-05-17T16:00:04.000Z",
           "wordCount": 4392,
           "title": "Generally available: Industrial IoT Connectivity Partners integrate with Azure IoT Central",
-          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
-        },
-        {
-          "id": "cosmosdb-servicebus-asami",
-          "author": null,
-          "description": "Stream Analytics now supports authenticating to Azure Cosmos DB and Azure Service Bus using Managed Identities.",
-          "link": "https://azure.microsoft.com/en-us/updates/cosmosdb-servicebus-asami/",
-          "publishedOn": "2022-05-16T17:00:31.000Z",
-          "wordCount": 4370,
-          "title": "Public preview: Additional support for managed identity authentication in Azure Stream Analytics",
-          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
-        },
-        {
-          "id": "public-preview-azure-dns-private-resolver-hybrid-name-resolution-and-conditional-forwarding",
-          "author": null,
-          "description": "Seamlessly perform conditional forwarding from on-prem to Azure Private DNS Zones and from Azure Virtual Networks to any target DNS server.",
-          "link": "https://azure.microsoft.com/en-us/updates/public-preview-azure-dns-private-resolver-hybrid-name-resolution-and-conditional-forwarding/",
-          "publishedOn": "2022-05-16T16:00:30.000Z",
-          "wordCount": 4391,
-          "title": "Public preview: Azure DNS Private Resolver – Hybrid name resolution and conditional forwarding",
           "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c00c88738ef6594839378f43064be491097c45ed54edea083b9e774dcfc264f7/images/shared/social/azure-icon-250x250.png"
         }
       ]
