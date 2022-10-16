@@ -6,6 +6,16 @@
       "siteUrl": "https://spring.io/blog",
       "articles": [
         {
+          "id": "https://spring.io/blog/2022/10/15/learn-more-about-spring-framework-6-and-spring-boot-3-in-these-two-great-talks-from-devoxx-2022",
+          "author": null,
+          "description": "Hi, Spring fans! I was just at Devoxx in Belgium, where hundreds of experts from across the Java ecosystem converged for the first time since 2019 to deliver their biggest and best. \n\r\nI could do a proper trip report, but I really just came here to point you to two talks from two of my amazing teammates, Stéphane Nicoll (@snicoll) and Brian Clozel (@bclozel), who have been very hard at work on both Spring Framework 6 and Spring Boot 3, both of which will land by the end of November, 2022. These are brand new generations of the framework, implying huge new paradigms and new opportunities for developers. \n\r\nThis first is a broader, whirlwind tour of the new features in Spring Framework 6 (which bubble up into Spring Boot 3).\n\r\n\r\nThis second one introduces the new ahead-of-time (AOT) support in Spring Framework 6 and Spring Boot 3, which makes it trivial to build GraalVM native images.\n\r\n\n\r\nNB: please ignore the metadata for the YouTube videos. Both talks feature both speakers, and there is no mention whatsoever of React and JavaScript and the like. I think that was a metadata issue with the publication of the videos on YouTube, which will hopefully be resolved. \n\r\nEnjoy!",
+          "link": "https://spring.io/blog/2022/10/15/learn-more-about-spring-framework-6-and-spring-boot-3-in-these-two-great-talks-from-devoxx-2022",
+          "publishedOn": "2022-10-15T07:00:00.000Z",
+          "wordCount": 741,
+          "title": "Learn more about Spring Framework 6 and Spring Boot 3 in these two great talks from Devoxx 2022",
+          "imageUrl": "https://avatars.githubusercontent.com/u/54473?v=4?s=200"
+        },
+        {
           "id": "https://spring.io/blog/2022/10/13/spring-batch-5-0-0-m8-is-out",
           "author": null,
           "description": "On behalf of the team and all contributors, I am pleased to announce that Spring Batch 5.0.0-M8 is now available from our milestone repository.\n\r\nIn this milestone, we introduced two main changes:\n\r\n\r\n  \nNew default execution context serialization format\n\r\n  \nSystemCommandTasklet enhancements\n\r\n\r\nThis blog post walks through these two major changes in details. For the complete list of changes,\nplease check the release notes.\nNew default execution context serialization format\n\r\nIn this milestone release, the DefaultExecutionContextSerializer was updated to serialize/deserialize the context to/from Base64.\n\r\nMoreover, the default ExecutionContextSerializer configured by @EnableBatchProcessing or DefaultBatchConfiguration was changed from JacksonExecutionContextStringSerializer to DefaultExecutionContextSerializer. The dependency to Jackson was made optional. In order to use the JacksonExecutionContextStringSerializer, jackson-core should be added to the classpath.\nSystemCommandTasklet enhancements\n\r\nThe SystemCommandTasklet has been revisited in this release and was changed as follows:\n\r\n\r\n  \n\r\n  \nA new strategy interface named CommandRunner was introduced in order to decouple the command execution from the tasklet execution. The default implementation is the JvmCommandRunner which uses the java.lang.Runtime#exec API to run system commands. This interface can be implemented to use any other API to run system commands.\n\r\n  \n\r\n  \nThe method that runs the command now accepts an array of Strings representing the command and its arguments. There is no need to tokenize the command or do any pre-processing anymore. This change makes the API more intuitive, and less prone to errors.\n\r\n\nFeedback\n\r\nI would like to thank all contributors who had a role in this release! As we continue\nour work on Spring Batch 5, we look forward to your feedback on Github, Twitter and StackOverflow.\n\r\n\r\nSpring Batch Home|Source on Github|Reference documentation",
@@ -3508,26 +3518,6 @@
           "wordCount": 2075,
           "title": "A coding pitfall in implementing dependency injection in .NET azure functions",
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/374015i2408F89CFEF0BA98/image-size/original?v=v2&px=-1"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/an-azure-developer-s-guide-to-microsoft-build-2022/ba-p/3396664",
-          "author": "Jenn Jinhong",
-          "description": "Microsoft Build 2022 takes place May 24-26, 2022.\n \nDiscover the latest news in Azure application development and learn how to take advantage of the latest innovation to build secure, future-ready applications productively.\n \nOn Day 1, in the Microsoft Build Opening keynote, Satya Nadella will share how Microsoft is creating new opportunities for developers across our platforms.\n \nOn Day 2, Microsoft CTO Kevin Scott, will share how new advances in AI and other tech and software innovations are empowering developers and creators to do more, be more productive and creative, and enrich the lives of everyone on the planet in the The Future of AI Development Tools.\n  \nAfter each day, join Scott Hanselman and friends as they discuss Build content, share their perspectives, interviews and recap t…",
-          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/an-azure-developer-s-guide-to-microsoft-build-2022/ba-p/3396664",
-          "publishedOn": "2022-05-18T23:42:56.000Z",
-          "wordCount": 1491,
-          "title": "An Azure Developer's guide to Microsoft Build 2022",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/373024iAD94313487D2D14E/image-size/original?v=v2&px=-1"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/multi-stage-azure-static-web-apps-deployments-with-azure-devops/ba-p/3390625",
-          "author": "Anthony Chu",
-          "description": "This article is part of the #30DaysOfSWA blog series. Check out https://aka.ms/30DaysOfSWA for many more amazing articles about Azure Static Web Apps!\n \nAzure Static Web Apps recently introduced the ability to automatically configure an Azure DevOps pipeline to build and deploy your app. It's a great way to get your app up and running quickly.\n \nFor production applications, it's common to first deploy an app to staging environment(s) prior to deploying to production. In this article, we'll walk through how to configure a robust Azure DevOps pipeline that will:\n \n\nBuild an app, Azure Functions API, and Playwright tests\n Deploy the app to a staging environment\nAutomatically validate the staging app with the Playwright tests\nWait for a manual approval\nDeploy your app to production\n\n \nSample a…",
-          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/multi-stage-azure-static-web-apps-deployments-with-azure-devops/ba-p/3390625",
-          "publishedOn": "2022-05-18T16:42:54.000Z",
-          "wordCount": 2417,
-          "title": "Multi-stage Azure Static Web Apps deployments with Azure DevOps",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/372716i92E10C79F4CC7A13/image-size/original?v=v2&px=-1"
         }
       ]
     },
@@ -5311,16 +5301,6 @@
           "wordCount": 2767,
           "title": "Updates to Azure Pipelines Runtime Variables Settings [Updated]",
           "imageUrl": "https://devblogs.microsoft.com/devops/wp-content/uploads/sites/6/2018/08/vstsfeature.png"
-        },
-        {
-          "id": "https://devblogs.microsoft.com/devops/?p=64084",
-          "author": "April Edwards",
-          "description": "Join us for episode 1 in our series for DevOps for Java Shops! In this episode Brian Benz walks us through how to deploy a Java application to Azure App Service using GitHub Actions. Brian also covers off feature flags!\nApril: Welcome to this week’s episode of the dev ops lab.\nThe post Deploy a Java application to Azure App Service using GitHub Actions appeared first on Azure DevOps Blog.",
-          "link": "https://devblogs.microsoft.com/devops/deploy-a-java-application-to-azure-app-service-using-github-actions/",
-          "publishedOn": "2022-05-19T07:50:51.000Z",
-          "wordCount": 2455,
-          "title": "Deploy a Java application to Azure App Service using GitHub Actions",
-          "imageUrl": "https://devblogs.microsoft.com/devops/wp-content/uploads/sites/6/2022/05/java_logo_640.jpg"
         }
       ]
     },
