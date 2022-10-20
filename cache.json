@@ -2680,6 +2680,16 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/do-more-with-your-jmeter-scripts/ba-p/3656144",
+          "author": "Sachidanand_Sharma",
+          "description": "We know you want to do more with your JMeter scripts. \nWe came across many uses cases wherein customers wished to do more with their JMeter scripts, like ability to manipulate variables, or to use logs to debug the conditions. It is almost possible to achieve many of the use cases through the commonly available JMeter elements and augment them with the rich source of plugins available. There may be instances wherein it would be required for the test authors to script in order to manipulate the data before or after it is passed to samplers.\n \nThis blog will highlight steps on how to retrieve a user id from a JSON response and then pass it to the next request to fetch the details of a user. The details would be displayed on the log. This is a very common use case wherein it would be required…",
+          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/do-more-with-your-jmeter-scripts/ba-p/3656144",
+          "publishedOn": "2022-10-19T05:00:09.000Z",
+          "wordCount": 9858,
+          "title": "Do more with your JMeter scripts",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/414040iD8391ED4695D241E/image-size/original?v=v2&px=-1"
+        },
+        {
           "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/zero-to-hero-with-k8s-apps-in-the-azure-marketplace/ba-p/3655806",
           "author": "Tommy Falgout",
           "description": "Our ISV partners have been asking for a way to provide an easy way to package their Kubernetes based solutions into the Marketplace and we're excited to announce K8s Apps to meet their needs.\n \nISV's are excited about this because it allows them to transact their offers in the Azure Marketplace via CI/CD.  This includes 48 hour publishing turnaround, automated security vetting and a self-service experience.  Customers look forward to the easy deployment, automated patching and using these offers to decrement their MACC.\n \nSince then, a lot of information has come out and our partners are looking for guidance on how to get started.  I've recorded this End-To-End video which walks through the steps of an ISV Creating and Publishing an Offer as well as a Customer Purchasing the offer.  This is a more detailed version of the demo seen at Ignite.\n \n\n\n\n \n \nAll of the code available for the Minecraft As A Service demo is on GitHub.\n \nIf you are an ISV and interested in getting started in the K8s Apps in the Marketplace, I recommend the following:\n \n\nRead the blog for the Ignite Announcement\nWatch the full demo video\nFill out the Public Preview Invite Form\nAttend the Mastering Container Offers Workshop\n\n \nWhen you're ready to publish your offer to the marketplace, these docs will guide you:\n\nCreate the Offer\nPrepare your Technical Assets\nCreate/Publish offer in Partner Center\nDeploy the Offer\n\nCome join some of our other partners that have already taken the leap!\n\nTetrate Istio Distro\nElastic Cloud\n\nI hope this helps you on your journey into K8s Apps on the Azure Marketplace and we'll see your offer available for customers soon.",
@@ -3578,26 +3588,6 @@
           "wordCount": 2448,
           "title": "What's New in Azure App Service at Build 2022",
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/373807i473ED57E94D29A89?v=v2"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/how-to-use-a-tls-ssl-certificate-in-your-python-code-in-azure/ba-p/3409568",
-          "author": "KevinLi",
-          "description": "If you want to know how to use it in C#/Java, there are some sample code in this document: https://docs.microsoft.com/en-us/azure/app-service/configure-ssl-certificate-in-code. Basically, to refer certificates uploaded in Azure App Service Linux using Python does not make much difference from in a local machine. It can be divided into three steps:\n \nSteps:\n1. Upload or import the certificates in Azure Portal to make it accessible to the app service:\nhttps://docs.microsoft.com/en-us/azure/app-service/configure-ssl-certificate?tabs=apex%2Cportal#upload-a-public-certificate\n\n \n\n2. Load certificate by setting WEBSITE_LOAD_CERTIFICATES to * or a specific thumbprint which belong to the certificate you want to use.\nThen the certificate(s) will be injected into the python container in the path \"/v…",
-          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/how-to-use-a-tls-ssl-certificate-in-your-python-code-in-azure/ba-p/3409568",
-          "publishedOn": "2022-05-22T21:10:56.000Z",
-          "wordCount": 866,
-          "title": "How to use a TLS/SSL certificate in your Python code in Azure App Service",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/373892iFE9990BBD9B803B3?v=v2"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/a-coding-pitfall-in-implementing-dependency-injection-in-net/ba-p/3411110",
-          "author": "acorn20180214",
-          "description": ".NET Azure Functions supports the dependency injection (DI) software design pattern to achieve Inversion of Control (IoC) between classes and their dependencies.  The official article explains how to implement dependency injection in Azure .NET Functions.\n \n2 key points are summarized as below:\n1.  Create a custom Startup.cs that inherits from FunctionsStartup class from the Microsoft.Azure.Functions.Extensions NuGet package.  This startup class is meant for setup and dependency registration only but not for using any of the registered services during startup process.   The startup class runs once and only once to build up the ServiceCollection when the function host starts up.\n2.  Service lifetimes:\n\nTransient: Transient services are created upon each resolution of the service.\nScoped: Th…",
-          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/a-coding-pitfall-in-implementing-dependency-injection-in-net/ba-p/3411110",
-          "publishedOn": "2022-05-22T21:08:35.000Z",
-          "wordCount": 2075,
-          "title": "A coding pitfall in implementing dependency injection in .NET azure functions",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/374015i2408F89CFEF0BA98/image-size/original?v=v2&px=-1"
         }
       ]
     },
@@ -3606,6 +3596,16 @@
       "feedUrl": "https://techcommunity.microsoft.com/plugins/custom/microsoft/o365/custom-blog-rss?tid=-2574164104208876465&board=AzureDevCommunityBlog&size=100",
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
+        {
+          "id": "https://techcommunity.microsoft.com/t5/azure-developer-community-blog/dapr-v1-9-0-now-available-in-the-dapr-extension-for-aks-and-arc/ba-p/3655958",
+          "author": "greenie-msft",
+          "description": "The Dapr extension for AKS and Arc-enabled Kubernetes now supports Dapr v1.9.0. \n \nDapr is a developer framework for building cloud-native applications, making it easier to run multiple microservices on Kubernetes and interact with external state stores/databases, secret stores, pub/sub brokers, and other cloud services and self-hosted solutions. \nThe Dapr v1.9.0 release offers several new features, including pluggable components, resiliency metrics, and app health checks, as well as many fixes in the core runtime and components. \n \n\nLearn how to get started with the Dapr extension\nLearn more about Dapr \nRead the release notes for Dapr 1.9.0  \n\n \nHighlights \nPluggable components \nYou can now create private components called \"pluggable components”. Simply write a component with a gRPC servi…",
+          "link": "https://techcommunity.microsoft.com/t5/azure-developer-community-blog/dapr-v1-9-0-now-available-in-the-dapr-extension-for-aks-and-arc/ba-p/3655958",
+          "publishedOn": "2022-10-19T16:18:32.000Z",
+          "wordCount": 9629,
+          "title": "Dapr v1.9.0 now available in the Dapr extension for AKS and Arc-enabled Kubernetes",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/414075i4E28B72885DC03FA/image-size/original?v=v2&px=-1"
+        },
         {
           "id": "https://techcommunity.microsoft.com/t5/azure-developer-community-blog/excited-to-be-at-javaone-2022-in-person/ba-p/3652089",
           "author": "Julia_Liuson",
@@ -5017,16 +5017,6 @@
           "wordCount": 1642,
           "title": "Debugging a JVM Crash for LinkedIn – Part 3",
           "imageUrl": "https://devblogs.microsoft.com/java/wp-content/uploads/sites/51/2019/11/trexduke-blackwhite-cropped-half.png"
-        },
-        {
-          "id": "https://devblogs.microsoft.com/java/?p=229009",
-          "author": "Nick Zhu",
-          "description": "Hi everyone, welcome to the May update of Visual Studio Code Java. In this month’s update, we are going to share exciting improvements to our user experience regarding signature help and code completion as well as new Gradle features. Let’s get started!\nThe post Java on Visual Studio Code Update – May 2022 appeared first on Microsoft for Java Developers.",
-          "link": "https://devblogs.microsoft.com/java/java-on-visual-studio-code-update-may-2022/",
-          "publishedOn": "2022-05-23T04:56:19.000Z",
-          "wordCount": 1259,
-          "title": "Java on Visual Studio Code Update – May 2022",
-          "imageUrl": "https://devblogs.microsoft.com/java/wp-content/uploads/sites/51/2022/05/englishcover.png"
         }
       ]
     },
@@ -5035,6 +5025,16 @@
       "feedUrl": "https://devblogs.microsoft.com/premier-developer/feed/",
       "siteUrl": "https://devblogs.microsoft.com/premier-developer/",
       "articles": [
+        {
+          "id": "https://devblogs.microsoft.com/premier-developer/?p=41033",
+          "author": "Developer Support",
+          "description": "John Folberth explores how Azure Resource Graph can help you can track environmental changes that span multiple subscriptions and resources.\nWhen administrating an Azure environment, or any environment really, one will most likely find a way to track changes that were introduced.\nThe post Tracking Azure History with Azure Resource Graph appeared first on Developer Support.",
+          "link": "https://devblogs.microsoft.com/premier-developer/tracking-azure-history-with-azure-resource-graph/",
+          "publishedOn": "2022-10-19T07:44:10.000Z",
+          "wordCount": 3749,
+          "title": "Tracking Azure History with Azure Resource Graph",
+          "imageUrl": "https://devblogs.microsoft.com/premier-developer/wp-content/uploads/sites/31/2022/10/j_folberth_0-1662172688951.png"
+        },
         {
           "id": "https://devblogs.microsoft.com/premier-developer/?p=41027",
           "author": "Developer Support",
@@ -5164,16 +5164,6 @@
           "wordCount": 1836,
           "title": "Performance regression tests at Microsoft Security",
           "imageUrl": "https://devblogs.microsoft.com/premier-developer/wp-content/uploads/sites/31/2022/05/MSC17_dataCenter_036_fi.jpg"
-        },
-        {
-          "id": "https://devblogs.microsoft.com/premier-developer/?p=40728",
-          "author": "Developer Support",
-          "description": "Chris Tjoumas explores the power and flexibility of Azure Service Bus through some fun with Fantasy Football.\nFor the past 15 years, I’ve been playing fantasy football and probably spend too much time each Sunday during the regular season watching every single game.\nThe post Exploring Service Bus with Fantasy Football appeared first on Developer Support.",
-          "link": "https://devblogs.microsoft.com/premier-developer/exploring-service-bus-with-fantasy-football/",
-          "publishedOn": "2022-05-23T07:37:18.000Z",
-          "wordCount": 3133,
-          "title": "Exploring Service Bus with Fantasy Football",
-          "imageUrl": "https://devblogs.microsoft.com/premier-developer/wp-content/uploads/sites/31/2022/05/fantasyfootball.png"
         }
       ]
     },
@@ -5979,6 +5969,16 @@
       "feedUrl": "https://azurecomcdn.azureedge.net/en-us/updates/feed/?updateType=features",
       "siteUrl": "https://azure.microsoft.com/en-us/updates/",
       "articles": [
+        {
+          "id": "general-availability-opentelemetry-exporter-for-azure-data-explorer",
+          "author": null,
+          "description": "Azure Data Explorer now supports ingestion of data from many receivers via the OpenTelemetry exporter.",
+          "link": "https://azure.microsoft.com/en-us/updates/general-availability-opentelemetry-exporter-for-azure-data-explorer/",
+          "publishedOn": "2022-10-19T15:00:20.000Z",
+          "wordCount": 5251,
+          "title": "General availability: OpenTelemetry exporter for Azure Data Explorer",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-868ff44bac82fea18766986f48022e6c7bb8538815cb89845c3630541dbe09a4/images/shared/social/azure-icon-250x250.png"
+        },
         {
           "id": "auto-extension-upgrade-for-arc-servers",
           "author": null,
@@ -9696,6 +9696,36 @@
       "feedUrl": "https://devblogs.microsoft.com/microsoft365dev/feed/",
       "siteUrl": "https://devblogs.microsoft.com/microsoft365dev/",
       "articles": [
+        {
+          "id": "https://devblogs.microsoft.com/microsoft365dev/?p=11995",
+          "author": "Rabia Williams",
+          "description": "Last week at Ignite 2022, we shared new capabilities and improvements to the Microsoft 365 developer platform, designed to help you integrate workflows and collaboration patterns across Teams, Outlook and Office.com. Check out our “highlight reel” what's new.\nThe post Ignite 2022: Highlights for Microsoft Teams app builders appeared first on Microsoft 365 Developer Blog.",
+          "link": "https://devblogs.microsoft.com/microsoft365dev/ignite-2022-highlights-for-microsoft-teams-app-builders/",
+          "publishedOn": "2022-10-19T16:00:29.000Z",
+          "wordCount": 4227,
+          "title": "Ignite 2022: Highlights for Microsoft Teams app builders",
+          "imageUrl": "https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2022/10/MicrosoftTeams-image-24.jpg"
+        },
+        {
+          "id": "https://devblogs.microsoft.com/microsoft365dev/?p=12012",
+          "author": "Daniel Carrasco",
+          "description": "Learna about the top five takeaways to help you boost your collaborative app development with the Microsoft 365 platform tools and technologies.\nThe post 5 ways to boost your collaborative app development appeared first on Microsoft 365 Developer Blog.",
+          "link": "https://devblogs.microsoft.com/microsoft365dev/5-ways-to-boost-your-collaborative-app-development/",
+          "publishedOn": "2022-10-19T15:00:31.000Z",
+          "wordCount": 5227,
+          "title": "5 ways to boost your collaborative app development",
+          "imageUrl": "https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2022/10/MicrosoftTeams-image-23-1.png"
+        },
+        {
+          "id": "https://devblogs.microsoft.com/microsoft365dev/?p=12026",
+          "author": "SharePoint team",
+          "description": "Microsoft is adjusting access to the APIs used to interact with the SharePoint start page. To ensure proper use and supportability, we are making a change to minimize use of these APIs. \nThe post Removal of SPHome APIs from SharePoint Online appeared first on Microsoft 365 Developer Blog.",
+          "link": "https://devblogs.microsoft.com/microsoft365dev/removal-of-sphome-apis-from-sharepoint-online/",
+          "publishedOn": "2022-10-19T10:47:54.000Z",
+          "wordCount": 3899,
+          "title": "Removal of SPHome APIs from SharePoint Online",
+          "imageUrl": null
+        },
         {
           "id": "https://devblogs.microsoft.com/microsoft365dev/?p=11985",
           "author": "SharePoint team",
