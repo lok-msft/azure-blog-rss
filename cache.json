@@ -6,6 +6,16 @@
       "siteUrl": "https://spring.io/blog",
       "articles": [
         {
+          "id": "https://spring.io/blog/2022/10/24/this-week-in-spring-october-25th-2022",
+          "author": null,
+          "description": "Hi, Spring fans! Welcome to another installment of This Week in Spring! When last we spoke, I was in Las Vegas, NV, for the JavaOne show. It was amazing! I’m in sunny Singapore, then off to Malaysia and Thailand. It’s the first time I’ve been to any of these places since 2019! How good it is to be back! I’ve so missed it.\n\r\nThe Spring team is busy preparing for both Spring Boot 3 (and the Spring Framework 6 release that underpins it) and SpringOne 2022. Have you booked your ticket for SpringOne 2022 yet? It’s going to be held in sunny San Francisco, and - of course - it’ll be the absolute best place to learn about Spring Framework 6, Spring Boot 3, GraalVM, the new Ahead-of-time compilation engine in Spring Boot 3, and more. Also, it’s a rare chance to hang out with the Spring team proper.…",
+          "link": "https://spring.io/blog/2022/10/24/this-week-in-spring-october-25th-2022",
+          "publishedOn": "2022-10-24T07:00:00.000Z",
+          "wordCount": 863,
+          "title": "This Week in Spring - October 25th, 2022",
+          "imageUrl": "https://avatars.githubusercontent.com/u/54473?v=4?s=200"
+        },
+        {
           "id": "https://spring.io/blog/2022/10/21/introducing-spring-modulith",
           "author": null,
           "description": "When designing software systems, architects and developers have plenty of architectural options to choose from. Microservice-based systems have become ubiquitous in the last couple of years. However, the idea of monolithic, modular systems has also regained popularity recently.\r\nIndependent of the architectural style ultimately selected, the individual applications comprising the overall system need their structure to be evolvable and able to follow changes in business requirements.\n\r\n\r\n\r\nTraditionally, application frameworks have provided structural guidance by providing abstractions aligned with technical concepts, such as Spring Framework’s stereotype annotations (@Controller, @Service, @Repository, and so on).\r\nHowever, shifting the focus to align code structure with the domain has pro…",
@@ -2790,6 +2800,16 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/use-managed-identity-instead-of-azurewebjobsstorage-to-connect-a/ba-p/3657606",
+          "author": "Bobi_Bao",
+          "description": "In a function app, usually we use appsetting AzureWebJobsStorage to connect to storage. This blog shows you how to configure a function app using Azure Active Directory identities instead of secrets or connection strings, where possible. Using identities helps you avoid accidentally leaking sensitive secrets and can provide better visibility into how data is accessed.\n \nThis will not work if the storage account is in a sovereign cloud or has a custom DNS.\n \nBelow are the steps to do configuration.\n \n1. Enable system assigned identity in your function app and save it.\n\n \n2. Give storage access to your function app. Search for Storage Blob Data Owner, select it.\n\n \n \n\n \n\n \n \n \n3. If you configure a blob-triggered function app, repeat the step 2 to add Storage Account Contributor and Storage Queue Data Contributor roles which will be used for blob trigger.\n\n \n\n \n \n4. Return to Access Control (IAM), click Role assignments, search for your function app name to confirm the roles are added successfully.\n\n \n \n5. Navigate to your function app. Select Configuration and edit AzureWebJobsStorage. Change the name to AzureWebJobsStorage__accountname.  Change the value to your storage account name. (The new setting uses a double underscore (__), which is a special character in application settings.) \n\n \n \n6. Delete the previous AzureWebJobsStorage. Then you will find your function app still works fine.",
+          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/use-managed-identity-instead-of-azurewebjobsstorage-to-connect-a/ba-p/3657606",
+          "publishedOn": "2022-10-24T03:45:47.000Z",
+          "wordCount": 9438,
+          "title": "Use managed identity instead of AzureWebJobsStorage to connect a function app to a storage account",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/414510i91300A64BDFCECDD?v=v2"
+        },
+        {
           "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/do-more-with-your-jmeter-scripts/ba-p/3656144",
           "author": "Sachidanand_Sharma",
           "description": "We know you want to do more with your JMeter scripts. \nWe came across many uses cases wherein customers wished to do more with their JMeter scripts, like ability to manipulate variables, or to use logs to debug the conditions. It is almost possible to achieve many of the use cases through the commonly available JMeter elements and augment them with the rich source of plugins available. There may be instances wherein it would be required for the test authors to script in order to manipulate the data before or after it is passed to samplers.\n \nThis blog will highlight steps on how to retrieve a user id from a JSON response and then pass it to the next request to fetch the details of a user. The details would be displayed on the log. This is a very common use case wherein it would be required…",
@@ -3985,16 +4005,6 @@
           "wordCount": 1431,
           "title": "Transform your REST APIs into GraphQL with Azure API Management",
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/377853i5BE88ECAAEAC43D6?v=v2"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/azure-developer-community-blog/my-visual-guide-to-msbuild-keynote-10-things-to-know/ba-p/3440545",
-          "author": "nityan",
-          "description": "Just in case you missed it, Microsoft Build 2022 happened this past week (May 24-May 26) and it was a packed conference with 330+ sessions according to the schedule. As I do every year, I paid most attention to the opening keynote from Satya Nadella which often provides the high-level roadmap of core themes and exciting announcements that we can then use to find and attend deep-dive sessions into our topics of interest.\n \nThis year, the keynote was more packed with announcements than usual. As I do every year, I sketch-noted the entire thing and as you can see there was a lot of information covered.  If you're a visual-spatial learner, having a 1-page cheatsheet might help so I thought I'd share it. \n\nIf you want to share the image, there's a tweet to make that easier .\nIf you're curious. …",
-          "link": "https://techcommunity.microsoft.com/t5/azure-developer-community-blog/my-visual-guide-to-msbuild-keynote-10-things-to-know/ba-p/3440545",
-          "publishedOn": "2022-05-28T00:08:55.000Z",
-          "wordCount": 1489,
-          "title": "My Visual Guide to #MSBuild Keynote: 10 Things To Know",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/375890i893ADF49B84EB522/image-size/original?v=v2&px=-1"
         }
       ]
     },
@@ -4080,6 +4090,16 @@
       "feedUrl": "https://techcommunity.microsoft.com/plugins/custom/microsoft/o365/custom-blog-rss?tid=-2574164104208876465&board=AzureArchitectureBlog&size=50",
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
+        {
+          "id": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/architecture-software-as-a-service-databases-single-db-or-db-per/ba-p/3658819",
+          "author": "GregLow",
+          "description": "I have a varied client base. Many of my customers are traditional larger financial organizations. But I also work with start-ups and software houses. (Microsoft calls these ISVs – Independent Software Vendors).\n \nMost software houses don't want to sell software anymore. Instead, they want to repackage their solutions as services, i.e. they want to offer Software as a Service (SaaS).\n \nConverting an application to a service is not easy. Even Microsoft had false starts with moving their on-premises applications to cloud-based offerings.\n \nLately, I've spent a lot of time considering Microsoft's Well Architected Framework (WAF). It provides pillars of guidance targeted at architectural excellence. There is a specific article that covers Multitenant SaaS on Azure. Part of that discussion is ar…",
+          "link": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/architecture-software-as-a-service-databases-single-db-or-db-per/ba-p/3658819",
+          "publishedOn": "2022-10-24T16:35:22.000Z",
+          "wordCount": 10330,
+          "title": "Architecture: Software as a Service Databases – Single DB or DB per Client",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/415109iC40F9223A762C60D/image-size/original?v=v2&px=-1"
+        },
         {
           "id": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/managing-azure-netapp-files-preview-features-with-terraform/ba-p/3657714",
           "author": "GeertVanTeylingen",
@@ -5260,6 +5280,16 @@
       "siteUrl": "https://devblogs.microsoft.com/azure-sql/",
       "articles": [
         {
+          "id": "https://devblogs.microsoft.com/azure-sql/?p=1417",
+          "author": "Brian Spendolini",
+          "description": "Azure SQL CICD Part 1: Getting Started\nThe post Connecting the Dots of Azure SQL CICD Part 1: Getting Started appeared first on Azure SQL Devs’ Corner.",
+          "link": "https://devblogs.microsoft.com/azure-sql/connecting-the-dots-of-azure-sql-cicd-part-1-getting-started/",
+          "publishedOn": "2022-10-24T15:00:47.000Z",
+          "wordCount": 4375,
+          "title": "Connecting the Dots of Azure SQL CICD Part 1: Getting Started",
+          "imageUrl": "https://devblogs.microsoft.com/azure-sql/wp-content/uploads/sites/56/2020/04/sql-database-3-560.png"
+        },
+        {
           "id": "https://devblogs.microsoft.com/azure-sql/?p=1347",
           "author": "Umachandar Jayachandran (UC)",
           "description": "Azure SQL Database, Azure SQL Managed Instance and SQL Server currently support JSON text processing in T-SQL batches. This functionality allows you to store and manipulate JSON documents in the database. The JSON functions – ISJSON, JSON_VALUE, JSON_QUERY, JSON_MODIFY allows you to validate,\nThe post Announcing JSON Enhancements in Azure SQL Database, Azure SQL Managed Instance and SQL Server 2022 appeared first on Azure SQL Database Devs’ Corner.",
@@ -5763,6 +5793,16 @@
       "siteUrl": "https://cloudblogs.microsoft.com/opensource/",
       "articles": [
         {
+          "id": "https://cloudblogs.microsoft.com/opensource/2022/10/24/making-culture-count-for-open-source-sustainability-celebrating-foss-fund-25/",
+          "author": "Emma Irwin",
+          "description": "To celebrate FOSS Fund #25 we have invited all employees whose projects were not selected in past FOSS Fund to propose a project for a one-time $500.00 USD award. We expect this to result in over 50 projects receiving this microgrant for a total of $25,000 USD.\nThe post Making culture count for Open Source sustainability—Celebrating FOSS Fund 25 appeared first on Microsoft Open Source Blog.",
+          "link": "https://cloudblogs.microsoft.com/opensource/2022/10/24/making-culture-count-for-open-source-sustainability-celebrating-foss-fund-25/",
+          "publishedOn": "2022-10-24T16:00:00.000Z",
+          "wordCount": 1769,
+          "title": "Making culture count for Open Source sustainability—Celebrating FOSS Fund 25",
+          "imageUrl": "https://cloudblogs.microsoft.com/uploads/prod/sites/37/2019/04/V_1O61BK.jpg"
+        },
+        {
           "id": "https://cloudblogs.microsoft.com/opensource/2022/09/20/hugging-face-transformers-now-enabled-in-apache-opennlp-by-onnx-runtime/",
           "author": "Faith Xu",
           "description": "We're excited to share the recent integration of ONNX Runtime in Apache OpenNLP! Apache OpenNLP is a Java machine learning library for natural language processing (NLP) tasks.\nThe post Hugging Face Transformers now enabled in Apache OpenNLP by ONNX Runtime appeared first on Microsoft Open Source Blog.",
@@ -5799,6 +5839,16 @@
       "feedUrl": "https://azurecomcdn.azureedge.net/en-us/updates/feed/?updateType=features",
       "siteUrl": "https://azure.microsoft.com/en-us/updates/",
       "articles": [
+        {
+          "id": "public-preview-availability-zone-volume-placement-for-azure-netapp-files",
+          "author": null,
+          "description": "Deploy new Azure NetApp Files volumes in Azure availability zones (AZs) of your choice to support workloads across multiple availability zones.",
+          "link": "https://azure.microsoft.com/en-us/updates/public-preview-availability-zone-volume-placement-for-azure-netapp-files/",
+          "publishedOn": "2022-10-24T15:00:37.000Z",
+          "wordCount": 5283,
+          "title": "Public preview: Availability zone volume placement for Azure NetApp Files",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-fe57289d93574764bb92c960bccedc24350feca44bb59a4812ed905039930935/images/shared/social/azure-icon-250x250.png"
+        },
         {
           "id": "sftp-support-for-azure-blob-storage-now-generally-available",
           "author": null,
@@ -9076,6 +9126,16 @@
       "feedUrl": "https://devblogs.microsoft.com/microsoft365dev/feed/",
       "siteUrl": "https://devblogs.microsoft.com/microsoft365dev/",
       "articles": [
+        {
+          "id": "https://devblogs.microsoft.com/microsoft365dev/?p=12097",
+          "author": "Microsoft 365 Platform team",
+          "description": "Microsoft 365 Developer Program members who created an instant sandbox on or after September 30, 2022, may be unable to sign into their subscription with their admin accounts because they have expired.\nThe post Microsoft 365 Developer Program instant sandbox update appeared first on Microsoft 365 Developer Blog.",
+          "link": "https://devblogs.microsoft.com/microsoft365dev/microsoft-365-developer-program-instant-sandbox-update/",
+          "publishedOn": "2022-10-24T18:26:37.000Z",
+          "wordCount": 3781,
+          "title": "Microsoft 365 Developer Program instant sandbox update",
+          "imageUrl": null
+        },
         {
           "id": "https://devblogs.microsoft.com/microsoft365dev/?p=11995",
           "author": "Rabia Williams",
