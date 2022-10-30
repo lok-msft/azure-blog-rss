@@ -2,10 +2,28 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2022-10-29T01:43:25.996Z</updated>
+    <updated>2022-10-30T02:01:46.967Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Best practices to harden your AKS environment]]></title>
+        <id>https://techcommunity.microsoft.com/t5/azure-developer-community-blog/best-practices-to-harden-your-aks-environment/ba-p/3665659</id>
+        <link href="https://techcommunity.microsoft.com/t5/azure-developer-community-blog/best-practices-to-harden-your-aks-environment/ba-p/3665659"/>
+        <updated>2022-10-29T12:48:32.000Z</updated>
+        <summary type="html"><![CDATA[Hi,
+ 
+AKS takes more and more space in the Azure landscape, and there are a few best practices that you can follow to harden the environment and make it as secure as possible. As a preamble, remember that containers all share the kernel through system calls, so the level of isolation in the container world is not as strong as with virtual machines, and even more as with physical hosts. Mistakes can quickly lead to security issues.
+ 
+1. Hardening the application itself
+This might sound obvious but one of the best ways to defend against malicious attacks, is to use bullet proof code. There is no way you'll be 100% bullet proof, but a few steps can be taken to maximize the robustness:
+ 
+
+Try to use up-to-date libraries in your code (NuGet, npm, etc.), because as you know, most of your code is…]]></summary>
+        <author>
+            <name>stephaneey</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Developer Experience Day - Build and Run Enterprise Spring Apps at Scale]]></title>
         <id>https://techcommunity.microsoft.com/t5/azure-developer-community-blog/developer-experience-day-build-and-run-enterprise-spring-apps-at/ba-p/3653811</id>
@@ -16723,99 +16741,6 @@ The post Azure DevOps Server 2022 Deprecation of Reporting Services appeared fir
 The post Breaking changes for the Insights API (beta) appeared first on Microsoft 365 Developer Blog.]]></summary>
         <author>
             <name>Microsoft Graph team</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Build developer environments fast with Microsoft Dev Box]]></title>
-        <id>https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/build-developer-environments-fast-with-microsoft-dev-box/ba-p/3460196</id>
-        <link href="https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/build-developer-environments-fast-with-microsoft-dev-box/ba-p/3460196"/>
-        <updated>2022-06-02T13:45:18.000Z</updated>
-        <summary type="html"><![CDATA[A first look at the new Microsoft service that leverages Windows 365 infrastructure to stream secure, ready-to-code developer workstations on demand.
-
-Setting up a dev box is extremely arduous for both geographically distributed and co-located development teams. As a developer, you're configuring different environments, weekly, and monthly, for new projects or team members. And it's not unusual for you to have costly over spec'd physical machines under your desk or hosted virtual machines set up for specific projects.
- 
-As a developer, you may need to access and work with sensitive source code or elevated privileges on your local dev environments to install custom tools in SDKs. It can be a difficult task for IT to give developers the flexibility they need while keeping devices secure.
- 
-
-…]]></summary>
-        <author>
-            <name>Zachary Cavanell</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Work Item Revision Limits]]></title>
-        <id>https://devblogs.microsoft.com/devops/?p=64125</id>
-        <link href="https://devblogs.microsoft.com/devops/work-item-revision-limits/"/>
-        <updated>2022-06-02T13:38:06.000Z</updated>
-        <summary type="html"><![CDATA[Every time a work item is updated, it creates an entry in the work item history. This is a great feature for users to track all the individual changes made to work items. However, we have seen organizations with automated tools that will generate tens of thousands of work item revisions.
-The post Work Item Revision Limits appeared first on Azure DevOps Blog.]]></summary>
-        <author>
-            <name>Dan Hellem</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Java on Azure Tooling Update – June 2022]]></title>
-        <id>https://devblogs.microsoft.com/java/?p=229090</id>
-        <link href="https://devblogs.microsoft.com/java/java-on-azure-tooling-update-june-2022/"/>
-        <updated>2022-06-02T07:25:51.000Z</updated>
-        <summary type="html"><![CDATA[Hi everyone, welcome back to June update of Java on Azure Tooling. In this update, we will introduce the new application-centric view on Azure toolkit for IntelliJ that will make the interface more user-friendly. In addition, we have added support for more Azure services.
-The post Java on Azure Tooling Update – June 2022 appeared first on Microsoft for Java Developers.]]></summary>
-        <author>
-            <name>Jialuo Gan</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Armchair Architects: The edge computing model]]></title>
-        <id>https://techcommunity.microsoft.com/t5/azure-architecture-blog/armchair-architects-the-edge-computing-model/ba-p/3456575</id>
-        <link href="https://techcommunity.microsoft.com/t5/azure-architecture-blog/armchair-architects-the-edge-computing-model/ba-p/3456575"/>
-        <updated>2022-06-01T22:27:49.000Z</updated>
-        <summary type="html"><![CDATA[So, what is “edge computing”? It’s a compute environment of different sizes that exists on-premises that helps customers and solutions do things like aggregate, filter, or inference on data that’s coming from devices that are connected to that on-premises environment. In many cases, there’s a spectrum of devices and we can go from constrained edge devices to data-class edge devices, all with different levels of computer power and complexity. There are different types of solutions and places where you can host AI models, filtering models, database components, all for the purpose of doing things in the premises world before they actually connect to the cloud and send data to the cloud.
- 
-Another key reason it is called “Edge” (you could do all of the above with many types of traditional on-p…]]></summary>
-        <author>
-            <name>brauerblogs</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[SharePoint Framework 1.15 Release Candidate now available with new features and updates]]></title>
-        <id>https://devblogs.microsoft.com/microsoft365dev/?p=10824</id>
-        <link href="https://devblogs.microsoft.com/microsoft365dev/sharepoint-framework-1-15-release-candidate-new-features-for-viva-connections-microsoft-teams-and-sharepoint/"/>
-        <updated>2022-06-01T17:05:26.000Z</updated>
-        <summary type="html"><![CDATA[We are excited to announce first release candidate of the SharePoint Framework (SPFx) 1.15 - with updates for Viva Connections, Microsoft Teams and SharePoint Online experiences.
-The post SharePoint Framework 1.15 Release Candidate now available with new features and updates appeared first on Microsoft 365 Developer Blog.]]></summary>
-        <author>
-            <name>Vesa Juvonen</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[General availability: Conversational language understanding]]></title>
-        <id>general-availability-conversational-language-understanding</id>
-        <link href="https://azure.microsoft.com/en-us/updates/general-availability-conversational-language-understanding/"/>
-        <updated>2022-06-01T17:00:21.000Z</updated>
-        <summary type="html"><![CDATA[Conversational language understanding includes multilingual transformer-based models as the underlying model architecture and results in significant accuracy improvements over its predecessor, LUIS.]]></summary>
-        <author>
-            <name>Azure service updates</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Public preview: Manage Azure Web Application Firewall policies in Azure Firewall Manager]]></title>
-        <id>public-preview-manage-azure-waf-policies-in-azure-firewall-manager</id>
-        <link href="https://azure.microsoft.com/en-us/updates/public-preview-manage-azure-waf-policies-in-azure-firewall-manager/"/>
-        <updated>2022-06-01T16:00:21.000Z</updated>
-        <summary type="html"><![CDATA[Azure Firewall Manager now supports the ability to manage Azure Web Application Firewall (WAF) policies for application delivery platforms, Application Gateway, and Azure Front Door, at scale within a centralized place.]]></summary>
-        <author>
-            <name>Azure service updates</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Debugging a JVM Crash for LinkedIn – Part 3]]></title>
-        <id>https://devblogs.microsoft.com/java/?p=229066</id>
-        <link href="https://devblogs.microsoft.com/java/debugging-a-jvm-crash-for-linkedin-part-3/"/>
-        <updated>2022-06-01T15:37:02.000Z</updated>
-        <summary type="html"><![CDATA[Introduction
-The post Debugging a JVM Crash for LinkedIn – Part 3 appeared first on Microsoft for Java Developers.]]></summary>
-        <author>
-            <name>Brian Stafford</name>
         </author>
     </entry>
     <entry>
