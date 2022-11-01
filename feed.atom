@@ -2,10 +2,310 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2022-10-31T02:02:55.982Z</updated>
+    <updated>2022-11-01T02:07:59.955Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[How to build a FTP client in Azure Spring App]]></title>
+        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/how-to-build-a-ftp-client-in-azure-spring-app/ba-p/3664851</id>
+        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/how-to-build-a-ftp-client-in-azure-spring-app/ba-p/3664851"/>
+        <updated>2022-11-01T01:32:53.000Z</updated>
+        <summary type="html"><![CDATA[In this blog, we'll take a look at how to leverage the Apache Commons Net library to build an FTP client running in Azure Spring App and interacts with an external FTP server.
+ 
+During the set up, I encountered several SSL connections issues for different reasons. So, I would also like to discuss how to troubleshoot SSL connection issue and useful tools we could leverage.
+ 
+Step 1: Create a simple Spring Web application with FTPClient or FTPSClient SDK
+1. create the project
+ 
+import org.apache.commons.net.ftp.FTPClient;
+import org.apache.commons.net.ftp.FTPSClient;
+import org.apache.commons.net.ftp.FTPFile;
+public static void main(String[] args){
+        FTPClient client = new FTPClient();
+	   FTPClient client = new FTPSClient();
+        try{
+            int reply;
+            client.conne…]]></summary>
+        <author>
+            <name>wanjing</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Cosmos Db for PostgreSQL w/ React Quickstart]]></title>
+        <id>https://techcommunity.microsoft.com/t5/azure-developer-community-blog/cosmos-db-for-postgresql-w-react-quickstart/ba-p/3666430</id>
+        <link href="https://techcommunity.microsoft.com/t5/azure-developer-community-blog/cosmos-db-for-postgresql-w-react-quickstart/ba-p/3666430"/>
+        <updated>2022-10-31T17:45:26.000Z</updated>
+        <summary type="html"><![CDATA[Cosmos DB for PostgreSQL and React
+ 
+Introduction
+I’m so excited to ‘introduce’ you to a new addition to Azure Cosmos DB service. At Ignite 2022, Microsoft made an announcement for PostgreSQL in CosmosDB!
+ 
+In this blog we will show you how to connect your Front end app to the Cosmos DB for PostgreSQL service in Azure.
+ 
+This is the beginning of a larger series so not all the features you see on the app are complete. We will walk this journey together as we add more production level of deployment into the repo. (Aka. Key-Vault for secrets, Managed Identity and Infrastructure As Code. :))
+ 
+What is Cosmos DB for PostgreSQL?
+
+ 
+Cosmos DB - is a fast, distributed NoSQL database. Scalable with 99.999% availability! (Get started)
+ 
+PostgreSQL - Here are some reasons why you might want to use Po…]]></summary>
+        <author>
+            <name>Daniel-Kim</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Spring Security 5.7.5 and 5.6.9 available now]]></title>
+        <id>https://spring.io/blog/2022/10/31/spring-security-5-7-5-and-5-6-9-available-now</id>
+        <link href="https://spring.io/blog/2022/10/31/spring-security-5-7-5-and-5-6-9-available-now"/>
+        <updated>2022-10-31T17:04:00.000Z</updated>
+        <summary type="html"><![CDATA[On behalf of the team and everyone who has contributed, I am pleased to announce that Spring Security 5.7.5 and 5.6.9 are available now. In both cases the releases are composed of bug fixes.
+
+
+
+To learn more, please visit the 5.7.5 and
+ 5.6.9 release summaries.
+
+
+
+Project Site | Reference | Help]]></summary>
+        <author>
+            <name>Spring</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[CVE-2022-31690: Privilege Escalation in spring-security-oauth2-client]]></title>
+        <id>https://spring.io/blog/2022/10/31/cve-2022-31690-privilege-escalation-in-spring-security-oauth2-client</id>
+        <link href="https://spring.io/blog/2022/10/31/cve-2022-31690-privilege-escalation-in-spring-security-oauth2-client"/>
+        <updated>2022-10-31T16:41:00.000Z</updated>
+        <summary type="html"><![CDATA[Spring Security 5.6.9 and 5.7.5 released on October 31st, 2022 included a fix for CVE-2022-31690 affecting the mapping of authorized scopes in spring-security-oauth2-client. Users are encouraged to update as soon as possible.
+
+
+
+Impact
+
+
+
+Users who have applied the mitigation should take note of the following impact:
+
+
+
+No authorized scopes are mapped to the principal (current user) when the Authorization Server (AS) responds to the OAuth2 Access Token Response with an empty or missing scope parameter.
+
+
+
+If you are affected by this vulnerability, users will not be granted any authorities beginning with SCOPE_ when the AS does not return scopes. Only the special authority ROLE_USER is given to the principal.
+
+
+
+
+
+
+Note
+
+
+
+Beginning with 6.0, the special authority is ch…]]></summary>
+        <author>
+            <name>Spring</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[CVE-2022-31692: Authorization rules can be bypassed via forward or include in Spring Security]]></title>
+        <id>https://spring.io/blog/2022/10/31/cve-2022-31692-authorization-rules-can-be-bypassed-via-forward-or-include-in-spring-security</id>
+        <link href="https://spring.io/blog/2022/10/31/cve-2022-31692-authorization-rules-can-be-bypassed-via-forward-or-include-in-spring-security"/>
+        <updated>2022-10-31T16:41:00.000Z</updated>
+        <summary type="html"><![CDATA[Spring Security 5.6.9 and 5.7.5 released on October 31st, 2022 included a fix for CVE-2022-31692 affecting the AuthorizationFilter. Users are encouraged to update as soon as possible.
+
+
+
+Severity
+
+
+
+High
+
+
+
+
+
+Vendor
+
+
+
+Spring by VMware
+
+
+
+
+
+Affected VMware Products and Versions
+
+
+
+
+
+Spring Security 5.7.0 to 5.7.4
+
+
+
+Spring Security 5.6.0 to 5.6.8
+
+
+
+
+
+
+
+Description
+
+
+
+Spring Security, versions 5.7 prior to 5.7.5 and 5.6 prior to 5.6.9 could be susceptible to authorization rules bypass via FORWARD or INCLUDE dispatch.
+
+
+
+Specifically, an application is vulnerable when all the following are true:
+
+
+
+
+
+The application expects that Spring Security applies security to forward and include dispatcher types.
+
+
+
+The application uses the AuthorizationF…]]></summary>
+        <author>
+            <name>Spring</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Spring Cloud 2022.0.0-RC1 Is Available]]></title>
+        <id>https://spring.io/blog/2022/10/31/spring-cloud-2022-0-0-rc1-is-available</id>
+        <link href="https://spring.io/blog/2022/10/31/spring-cloud-2022-0-0-rc1-is-available"/>
+        <updated>2022-10-31T16:22:48.000Z</updated>
+        <summary type="html"><![CDATA[On behalf of the community, I am pleased to announce that the Release Candidate 1 (RC1) of the Spring Cloud 2022.0 Release Train is available today. The release can be found in Spring Milestone repository. You can check out the 2022.0 release notes for more information.
+Notable Changes in the 2022.0.0 Release Train
+
+See all issues closed here.
+Spring Cloud Function
+
+
+  
+Updates for Observability and Native Hints
+
+
+Spring Cloud OpenFeign
+
+
+  
+Added support for target URL refreshing (#710)
+
+  
+Added support for LoadBalancer X-Forwarded Headers (#748)
+
+  
+Set Jackson Autoconfiguration to be enabled by default (#476)
+
+  
+Removed deprecations and adjusted to the API changes in Feign (#768)
+
+
+Spring Cloud Commons
+
+
+  
+Support added for property-based configuration for weighted load-b…]]></summary>
+        <author>
+            <name>Spring</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How to check if the uploaded certificate is added to Windows-My keystore on App Service-Windows?]]></title>
+        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/how-to-check-if-the-uploaded-certificate-is-added-to-windows-my/ba-p/3666138</id>
+        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/how-to-check-if-the-uploaded-certificate-is-added-to-windows-my/ba-p/3666138"/>
+        <updated>2022-10-31T08:43:30.000Z</updated>
+        <summary type="html"><![CDATA[In Java, the default keystore of windows App Service is windows-MY. This article illustrates you on how to know if the uploaded certificate is part of windows-MY keystore or not.
+ 
+
+After uploading the certificate (public/private) in AppService under TLS/SSL settings.
+Login to kudu -> navigate to /home/site/wwwroot folder
+Create a CertTest.java file on KUDU container in /home and copy the below code as per the instructions
+
+If you already know the subject CN, you can replace the highlighted text part below.
+ 
+Java code:
+ 
+ 
+ 
+ 
+import java.security.KeyStore;
+import java.security.cert.Certificate;
+import java.time.LocalDateTime;
+import java.util.Enumeration;
+
+public class CertTest {
+public static void main(String[] args) {
+// TODO Auto-generated method stub
+try{
+KeyStore ks = KeyStore.getIn…]]></summary>
+        <author>
+            <name>karthi2210</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Adding HSTS header in the NGINX based App Service]]></title>
+        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/adding-hsts-header-in-the-nginx-based-app-service/ba-p/3666106</id>
+        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/adding-hsts-header-in-the-nginx-based-app-service/ba-p/3666106"/>
+        <updated>2022-10-31T07:23:39.000Z</updated>
+        <summary type="html"><![CDATA[Azure App Service on Linux images using PHP 8.x are now bundled with NGINX instead of Apache. The use of .htaccess files will not work for NGINX as these are used for Apache only. This will require the need to setup a custom startup script and modifying the existing NGINX site configuration.
+ 
+
+ 
+Navigate to your App Service via the Azure Portal. Under the Development Tools section, select SSH then Go -->.
+Modifying the default site config
+You will want to make a copy of the existing configuration and place the file inside the /home/site directory.
+ 
+
+
+cp /etc/nginx/sites-available/default /home/site/default
+
+
+Once you created a default page as in the previous step, please update the location block to add HSTS Header and create the custom startup script as mentioned below
+  
+location / {           
+index  index.php index.html index.htm hostingstart.html;
+add_header Strict-Transport-Security "max-age=31536000; includeSubDomains" always;
+}
+Creating the custom startup script
+You will now need to create a custom startup script and save the file as /home/site/startup.sh
+
+
+
+#!/bin/bash
+
+cp /home/site/default /etc/nginx/sites-available/default
+service nginx reload
+
+
+In the custom startup script, we are doing the following:
+
+Overriding the existing /etc/nginx/sites-available/default file with the /home/site/default file.
+Reloading the NGINX service to make the updates take effect.
+
+Updating the application settings
+Navigate back to your App Service via the Azure Portal. Under the Settings section, select Configuration.
+Go over to the General Settings section of the Configuration blade.
+For the Startup Command enter the following: /home/site/startup.sh
+Save these settings and navigate to your application https://{sitename}.azurewebsites.net/
+ 
+Please refer to the document https://www.nginx.com/blog/http-strict-transport-security-hsts-and-nginx/]]></summary>
+        <author>
+            <name>karthi2210</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Best practices to harden your AKS environment]]></title>
         <id>https://techcommunity.microsoft.com/t5/azure-developer-community-blog/best-practices-to-harden-your-aks-environment/ba-p/3665659</id>
@@ -22,6 +322,26 @@ This might sound obvious but one of the best ways to defend against malicious at
 Try to use up-to-date libraries in your code (NuGet, npm, etc.), because as you know, most of your code is…]]></summary>
         <author>
             <name>stephaneey</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[API versions being retired for Azure API Management]]></title>
+        <id>api-versions-being-retired-for-azure-api-management</id>
+        <link href="https://azure.microsoft.com/en-us/updates/api-versions-being-retired-for-azure-api-management/"/>
+        <updated>2022-10-28T23:00:51.000Z</updated>
+        <summary type="html"><![CDATA[On 30 September 2023, all API versions prior to 2021-08-01 will be retired and API calls using those API versions will fail.]]></summary>
+        <author>
+            <name>Azure service updates</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Review your VNET configurations in Switzerland North that may be affected by IP address changes]]></title>
+        <id>review-your-vnet-configurations-in-switzerland-north-that-may-be-affected-by-ip-address-changes</id>
+        <link href="https://azure.microsoft.com/en-us/updates/review-your-vnet-configurations-in-switzerland-north-that-may-be-affected-by-ip-address-changes/"/>
+        <updated>2022-10-28T23:00:44.000Z</updated>
+        <summary type="html"><![CDATA[On 30 September 2023 we're making the resource providers for Azure API Management zone redundant in each region.]]></summary>
+        <author>
+            <name>Azure service updates</name>
         </author>
     </entry>
     <entry>
@@ -613,6 +933,19 @@ Netherlands-based Avans University of Applied Sciences is a vocational instituti
 This is something that teacher Frank van der Kruis finds highly appealing. A huge advocate of digital solutions himself, he’s eager to make teaching more dynamic and engaging. “As teachers, our task is to prepare our students for what awaits them outside the classroom,” he says.  “But when it comes to teaching law, it’s hard to convey what the real world is about if your curriculum is limited by week-one, week-two-type of courses.…]]></summary>
         <author>
             <name>Lee Stott</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Microsoft Build of OpenJDK – October 2022 PSU Release]]></title>
+        <id>https://devblogs.microsoft.com/java/?p=229541</id>
+        <link href="https://devblogs.microsoft.com/java/microsoft-build-of-openjdk-october-2022-psu-release/"/>
+        <updated>2022-10-25T00:58:37.000Z</updated>
+        <summary type="html"><![CDATA[We are happy to announce the latest patch & security update release for the Microsoft Build of OpenJDK. You can find the usual updates from the OpenJDK upstream community:
+List of fixes in OpenJDK 17
+And you can also see the additional work that our team has put in place in our builds through the release notes.
+The post Microsoft Build of OpenJDK – October 2022 PSU Release appeared first on Microsoft for Java Developers.]]></summary>
+        <author>
+            <name>Derek Keeler</name>
         </author>
     </entry>
     <entry>
@@ -16631,59 +16964,6 @@ The workshop was attended by 30 students. All students received a Microsoft Azur
 Starting with the basic concepts of cloud computing and how Azure Cog…]]></summary>
         <author>
             <name>mustafasaifee</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Top Stories from the Microsoft DevOps Community – 04.06.2022]]></title>
-        <id>https://devblogs.microsoft.com/devops/?p=64335</id>
-        <link href="https://devblogs.microsoft.com/devops/top-stories-from-the-microsoft-devops-community-04-06-2022/"/>
-        <updated>2022-06-04T07:46:22.000Z</updated>
-        <summary type="html"><![CDATA[‘Don’t Accept the Defaults’ -Abel Wang
-The post Top Stories from the Microsoft DevOps Community – 04.06.2022 appeared first on Azure DevOps Blog.]]></summary>
-        <author>
-            <name>April Edwards</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Announcing JSON Enhancements in Azure SQL Database, Azure SQL Managed Instance and SQL Server 2022]]></title>
-        <id>https://devblogs.microsoft.com/azure-sql/?p=1347</id>
-        <link href="https://devblogs.microsoft.com/azure-sql/announcing-json-enhancements-in-azure-sql-database-azure-sql-managed-instance-and-sql-server-2022/"/>
-        <updated>2022-06-03T23:49:53.000Z</updated>
-        <summary type="html"><![CDATA[Azure SQL Database, Azure SQL Managed Instance and SQL Server currently support JSON text processing in T-SQL batches. This functionality allows you to store and manipulate JSON documents in the database. The JSON functions – ISJSON, JSON_VALUE, JSON_QUERY, JSON_MODIFY allows you to validate,
-The post Announcing JSON Enhancements in Azure SQL Database, Azure SQL Managed Instance and SQL Server 2022 appeared first on Azure SQL Database Devs’ Corner.]]></summary>
-        <author>
-            <name>Umachandar Jayachandran (UC)</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Chaos engineering to improve application resiliency using Azure Chaos Studio]]></title>
-        <id>https://techcommunity.microsoft.com/t5/azure-governance-and-management/chaos-engineering-to-improve-application-resiliency-using-azure/ba-p/3461983</id>
-        <link href="https://techcommunity.microsoft.com/t5/azure-governance-and-management/chaos-engineering-to-improve-application-resiliency-using-azure/ba-p/3461983"/>
-        <updated>2022-06-03T22:43:06.000Z</updated>
-        <summary type="html"><![CDATA[Digital transformation is reshaping the way we work helping us create new, innovative, and sustainable ways of working and living. This transformation led the modern application development to be Cloud native. Any application in cloud must be designed with the ability to recover from failures and continue to function without any customer downtime. This blog focuses on Chaos engineering as a methodology that helps to build resilient, well-architected applications. I discuss how Azure Chaos Studio, a latest Azure service can be used as a tool to implement Chaos engineering.
- 
-Why reliability?
-Designing an application in cloud must meet certain architectural guidelines to operate effectively. Reliability is one of the well-architected principles of Azure that aims at hardening your applicatio…]]></summary>
-        <author>
-            <name>hputta1220</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[New major release of Durable Functions for NodeJS]]></title>
-        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/new-major-release-of-durable-functions-for-nodejs/ba-p/3451227</id>
-        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/new-major-release-of-durable-functions-for-nodejs/ba-p/3451227"/>
-        <updated>2022-06-03T20:31:40.000Z</updated>
-        <summary type="html"><![CDATA[TLDR; we’ve just released a new major version of the Durable Functions NodeJS SDK. 
- 
-To try out it out, install durable-functions v2.x from npm. 
- 
-Note: This is a breaking change release, so make sure to check that your applications are not affected by any of the modified APIs. That said, we have only changed edge-case behaviors that we believe should not affect most apps. 
- 
-Durable Functions (DF) makes it easy to implement robust stateful services that make full use of the scaling and billing benefits of serverless, all while using your language of choice: C#, JavaScript/TypeScript, Python, and PowerShell. 
- 
-As DF makes its way into more languages, we’ve been working on ways to optimize each programming language’s SDK to be as performant as possible. We made changes that significantly…]]></summary>
-        <author>
-            <name>davidmrdavid</name>
         </author>
     </entry>
     <entry>
