@@ -6,6 +6,16 @@
       "siteUrl": "https://spring.io/blog/category/engineering",
       "articles": [
         {
+          "id": "https://spring.io/blog/2022/11/10/updates-on-spring-cloud-stream-4-0-0-schema-registry-support",
+          "author": null,
+          "description": "This blog gives an update on the Schema Registry support that is part of Spring Cloud Stream version 4.0.x. \n\r\nMany enterprises use a schema registry for schema evolution use cases, such as the Confluent Schema Registry. Starting with version 1.1.x of Spring Cloud Stream until 3.0.0, we provided a schema registry server and AVRO-based schema registry client converters that can reconcile the schema from the schema registry server. Spring Cloud Stream version 3.0.0 moved the Schema Registry components into a top-level spring-cloud project, and Spring Cloud Stream included those in its BOM for the end user applications to consume them. However, this didn’t scale well, and with the 3.2 version, we decided to stop having them as part of the Spring Cloud Stream BOM. \n\r\nThe schema registry use ca…",
+          "link": "https://spring.io/blog/2022/11/10/updates-on-spring-cloud-stream-4-0-0-schema-registry-support",
+          "publishedOn": "2022-11-10T08:00:00.000Z",
+          "wordCount": 1237,
+          "title": "Updates on Spring Cloud Stream 4.0.0 Schema Registry Support",
+          "imageUrl": "https://avatars.githubusercontent.com/u/827682?v=4?s=200"
+        },
+        {
           "id": "https://spring.io/blog/2022/11/09/a-bootiful-podcast-rabbitmq-engineer-arnaud-cogolu-gnes-on-the-new-and-novel-in-rabbitmq",
           "author": null,
           "description": "Hi, Spring fans! In this episode, Josh Long (@starbuxman) talks to RabbitMQ engineer Arnaud Cogoluègnes (@acogoluegnes) on the new and novel in RabbitMQ",
@@ -1630,6 +1640,16 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/about-the-authorization-events-in-appserviceauditlogs/ba-p/3670294",
+          "author": "Weizhen_Sun",
+          "description": "Customers may see such authorization events in App Service -> Monitoring -> Logs -> AppServiceAuditLogs, and be puzzled by these entries.\n\nResource field value is your app service web app name, and the User account of KUDU line is '$' plus your app name.\nThe User account of AAD line is 10032*****, totally 16 digit number. This is the Net ID of your logged in AAD account.\nYou can query the 'UserDisplayName' column  to display the readable user account name of this NET ID. \n \nWhat's that? \nThese are the authentication and authorization events when accessing the KUDU site(the .scm site) by Web browser.\nRefer to https://github.com/projectkudu/kudu/wiki/Accessing-the-kudu-service\nWhen access to SCM site, the scm service requires authentication and authorization.\n \nAuthentication \nThere are 2 au…",
+          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/about-the-authorization-events-in-appserviceauditlogs/ba-p/3670294",
+          "publishedOn": "2022-11-10T01:54:28.000Z",
+          "wordCount": 9533,
+          "title": "About The Authorization Events in AppServiceAuditLogs",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/417340i6AB5B88A8E30F9F7?v=v2"
+        },
+        {
           "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/announcing-the-net-7-for-azure-functions-isolated-worker-process/ba-p/3671398",
           "author": "MelonyQ",
           "description": "We’re happy to share that Azure functions joins Azure Web Apps and Static Web Apps support for .NET 7.0 GA. Azure Functions is starting to roll out the RTM version of .NET 7.0 across the global infrastructure. \nAzure Functions will support .NET 7 serverless apps hosted on all Windows and Linux SKUs, including Consumption plan, Elastic Premium plan, and App Service plans. Customers can start to test in limited cloud regions (e.g West Central US, France Central) by the end of today. Additional rollouts to fully deploy the RTM version across our fleet are expected to be done by the 2nd week of November.  \n.NET 7 in Azure Functions is supported by leveraging the .NET Isolated Worker process.  Azure functions .NET Isolated worker process decouples your worker process where your dotnet function …",
@@ -2468,26 +2488,6 @@
           "wordCount": 9593,
           "title": "Run JBoss EAP on Azure Red Hat OpenShift",
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/378350iDD63BA22AEBB98B1/image-size/original?v=v2&px=-1"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/see-how-dynamic-concurrency-works-in-azure-function-app-with-a/ba-p/3502772",
-          "author": "zhuyue",
-          "description": "In May, dynamic concurrency(denoted as DC in this blog) in Azure Functions became generally available. By enabling dynamic concurrency, the platform can adjust the concurrency of functions dynamically in the condition that the worker instance is healthy(like CPU and thread utilization is healthy). You can refer to more information about dynamic concurrency in this link: https://docs.microsoft.com/en-us/azure/azure-functions/functions-concurrency#dynamic-concurrency.\n \nIn this blog, I am writing to introduce how DC works in Azure function apps with some tests.\n \nHow to enable Dynamic Concurrency?\nBy default, dynamic concurrency is disabled. With dynamic concurrency enabled, concurrency starts at 1 for each function, and is adjusted up to an optimal value, which is determined by the host. He…",
-          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/see-how-dynamic-concurrency-works-in-azure-function-app-with-a/ba-p/3502772",
-          "publishedOn": "2022-06-14T07:25:11.000Z",
-          "wordCount": 10436,
-          "title": "See how dynamic concurrency works in Azure Function App with a simple test",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/380041i8B8AA212660856AC?v=v2"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/azure-spring-apps-custom-container-image-cicd-deployment-using/ba-p/3491732",
-          "author": "Hanli_Ren",
-          "description": "Since 2022 May, Azure Spring Cloud started to allow deploying an application with a custom container image (Preview).\nDeploying an application with a custom container supports most features as when deploying a JAR application. Other Java and non-Java applications can also be deployed with the container image.\n \nThis blog aims to show an example for how to use Azure DevOps pipeline to make CICD deployment using custom container image.\n\n \nPrerequisites\n\nAzure DevOps account\nProvision an instance of Azure Spring Cloud\nCreate an App without code deployment\naz spring app create -n <app name> -s <service instance name> -g <resource group name> --assign-endpoint true​\n\n\nStep 1: Create a Git repo for your project in Azure DevOps\n \n1.  Go to https://dev.azure.com \n2.  After signing in, click on 'Cr…",
-          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/azure-spring-apps-custom-container-image-cicd-deployment-using/ba-p/3491732",
-          "publishedOn": "2022-06-14T06:50:22.000Z",
-          "wordCount": 9950,
-          "title": "Azure Spring Apps Custom Container Image CICD deployment using Azure DevOps",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/379216i4ECAD4BB39617C80?v=v2"
         }
       ]
     },
@@ -2796,6 +2796,16 @@
       "feedUrl": "https://techcommunity.microsoft.com/plugins/custom/microsoft/o365/custom-blog-rss?tid=2893852362688900935&board=AzureArchitectureBlog&size=50",
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
+        {
+          "id": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/3-reasons-to-optimize-your-workloads-with-azure-advisor/ba-p/3674044",
+          "author": "AntonioOrtoll",
+          "description": "As macro-economic uncertainty grows in today’s economy so do expectations to accelerate growth, drive revenue higher, and compete beyond the status quo. Early October, Azure launched a campaign to address this unprecedented situation by empowering businesses to “Do More with Less”. The campaign focuses on three value elements – migrating and saving, optimizing existing cloud investments, and reinvesting to drive growth. Read more about each of these topics here. All three highlight the importance of cost optimization in one way or another. Azure Advisor is at the front and center of making some of these objectives a reality. However, you may wonder how this product may help your business in this journey. If you are sitting nodding as you read this last sentence, you are in the right place.…",
+          "link": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/3-reasons-to-optimize-your-workloads-with-azure-advisor/ba-p/3674044",
+          "publishedOn": "2022-11-10T22:26:12.000Z",
+          "wordCount": 9843,
+          "title": "3 reasons to optimize your workloads with Azure Advisor.",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/418361i25FE3689F239A687/image-size/original?v=v2&px=-1"
+        },
         {
           "id": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/why-you-need-a-cloud-adoption-framework-caf-and-probably-a-waf/ba-p/3667426",
           "author": "Stephen Thair",
@@ -3476,26 +3486,6 @@
           "wordCount": 6039,
           "title": "See how 3 industry-leading companies are driving innovation in a new episode of Inside Azure for IT",
           "imageUrl": "https://azurecomcdn.azureedge.net/cvt-5d42d8308e16339220120c1a6f98c7bbb987886bb59056cba12dc33b53e3fb74/images/shared/social/azure-icon-250x250.png"
-        },
-        {
-          "id": "azure-powers-rapid-deployment-of-private-4g-and-5g-networks",
-          "author": "Shriraj  Gaglani",
-          "description": "As the cloud continues to expand into a ubiquitous and highly distributed fabric, a new breed of application is emerging: Modern Connected Applications. We define these new offerings as network-intelligent applications at the edge, powered by 5G, and enabled by programmable interfaces that give developer access to network resources.",
-          "link": "https://azure.microsoft.com/blog/azure-powers-rapid-deployment-of-private-4g-and-5g-networks/",
-          "publishedOn": "2022-06-14T09:00:02.000Z",
-          "wordCount": 5621,
-          "title": "Azure powers rapid deployment of private 4G and 5G networks",
-          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-28ecccf487975ebf4015ff2ec6baec71b585647df2d367061a61e7b961bc701c/images/shared/social/azure-icon-250x250.png"
-        },
-        {
-          "id": "mlops-blog-series-part-1-the-art-of-testing-machine-learning-systems-using-mlops",
-          "author": "Takuto Higuchi",
-          "description": "Testing is an important exercise in the life cycle of developing a machine learning system to assure high-quality operations. In this blog, we will look at testing machine learning systems from a Machine Learning Operations (MLOps) perspective and learn about good case practices and a testing framework that you can use to build robust, scalable, and secure machine learning systems.",
-          "link": "https://azure.microsoft.com/blog/mlops-blog-series-part-1-the-art-of-testing-machine-learning-systems-using-mlops/",
-          "publishedOn": "2022-06-14T08:00:15.000Z",
-          "wordCount": 5155,
-          "title": "MLOps Blog Series Part 1: The art of testing machine learning systems using MLOps",
-          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-28ecccf487975ebf4015ff2ec6baec71b585647df2d367061a61e7b961bc701c/images/shared/social/azure-icon-250x250.png"
         }
       ]
     },
@@ -3513,16 +3503,6 @@
           "wordCount": 4925,
           "title": "X++ And Git: A Basic Setup",
           "imageUrl": "https://devblogs.microsoft.com/cse/wp-content/uploads/sites/55/2022/06/XPP.jpg"
-        },
-        {
-          "id": "https://devblogs.microsoft.com/cse/?p=14374",
-          "author": "David Giard",
-          "description": "Overview\nThe post An Approach to Unit Testing ADX Functions appeared first on CSE Developer Blog.",
-          "link": "https://devblogs.microsoft.com/cse/2022/06/13/an-approach-to-unit-testing-adx-functions/",
-          "publishedOn": "2022-06-13T21:00:24.000Z",
-          "wordCount": 3922,
-          "title": "An Approach to Unit Testing ADX Functions",
-          "imageUrl": "https://devblogs.microsoft.com/cse/wp-content/uploads/sites/55/2022/06/Testing.jpg"
         }
       ]
     },
@@ -4658,6 +4638,66 @@
       "feedUrl": "https://azurecomcdn.azureedge.net/en-us/updates/feed/?updateType=features",
       "siteUrl": "https://azure.microsoft.com/en-us/updates/",
       "articles": [
+        {
+          "id": "public-preview-azure-front-door-integration-with-managed-identities",
+          "author": null,
+          "description": "Azure Front Door Standard and Premium supports enabling managed identities for Azure Front Door to access Azure Key Vault.",
+          "link": "https://azure.microsoft.com/en-us/updates/public-preview-azure-front-door-integration-with-managed-identities/",
+          "publishedOn": "2022-11-10T17:00:02.000Z",
+          "wordCount": 5269,
+          "title": "Public preview: Azure Front Door integration with managed identities",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-ffeb70ec274b24d42faa2ef66e67c256a878fdd4efa9e63641b8820e633ea0cf/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "public-preview-azure-maps-creator-feature-wayfinding",
+          "author": null,
+          "description": "Wayfinding in Azure Maps Creator enables you to provide your users with the shortest path between two points within a facility.",
+          "link": "https://azure.microsoft.com/en-us/updates/public-preview-azure-maps-creator-feature-wayfinding/",
+          "publishedOn": "2022-11-10T17:00:02.000Z",
+          "wordCount": 5283,
+          "title": "Public preview: Azure Maps Creator feature - Wayfinding",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-ffeb70ec274b24d42faa2ef66e67c256a878fdd4efa9e63641b8820e633ea0cf/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "public-preview-azure-front-door-zero-downtime-migration",
+          "author": null,
+          "description": "You can use this feature to migrate Azure Front Door (classic) to Azure Front Door Standard and Premium with zero downtime.",
+          "link": "https://azure.microsoft.com/en-us/updates/public-preview-azure-front-door-zero-downtime-migration/",
+          "publishedOn": "2022-11-10T17:00:01.000Z",
+          "wordCount": 5372,
+          "title": "Public preview: Azure Front Door zero downtime migration",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-ffeb70ec274b24d42faa2ef66e67c256a878fdd4efa9e63641b8820e633ea0cf/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "public-preview-upgrade-from-azure-front-door-standard-to-premium-tier",
+          "author": null,
+          "description": "You can now use this feature to upgrade your Azure Front Door Standard profile to Premium tier without downtime.",
+          "link": "https://azure.microsoft.com/en-us/updates/public-preview-upgrade-from-azure-front-door-standard-to-premium-tier/",
+          "publishedOn": "2022-11-10T17:00:01.000Z",
+          "wordCount": 5282,
+          "title": "Public preview: Upgrade from Azure Front Door Standard to Premium tier",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-ffeb70ec274b24d42faa2ef66e67c256a878fdd4efa9e63641b8820e633ea0cf/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "azure-machine-learning-generally-availability-updates-for-november-2022",
+          "author": null,
+          "description": "New GA features include the ability to automate auto-shutdown/auto-start schedules, configure and customize a compute instance, seamlessly build NLP/vision models, and assess AI systems.",
+          "link": "https://azure.microsoft.com/en-us/updates/azure-machine-learning-generally-availability-updates-for-november-2022/",
+          "publishedOn": "2022-11-09T18:00:00.000Z",
+          "wordCount": 5398,
+          "title": "Azure Machine Learning—Generally availability updates for November 2022",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-ffeb70ec274b24d42faa2ef66e67c256a878fdd4efa9e63641b8820e633ea0cf/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "azure-machine-learning-public-preview-updates-for-november-2022",
+          "author": null,
+          "description": "New public preview features include reading Delta Lakes in fewer steps, debugging and monitoring training jobs, and performing data wrangling.",
+          "link": "https://azure.microsoft.com/en-us/updates/azure-machine-learning-public-preview-updates-for-november-2022/",
+          "publishedOn": "2022-11-09T18:00:00.000Z",
+          "wordCount": 5371,
+          "title": "Azure Machine Learning—Public preview updates for November 2022",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-ffeb70ec274b24d42faa2ef66e67c256a878fdd4efa9e63641b8820e633ea0cf/images/shared/social/azure-icon-250x250.png"
+        },
         {
           "id": "general-availability-multivariate-anomaly-detection",
           "author": null,
@@ -8186,16 +8226,6 @@
           "publishedOn": "2022-06-14T19:00:03.000Z",
           "wordCount": 4439,
           "title": "General availability: Azure Data Explorer connector for Power Automate, Logic Apps, and Power Apps",
-          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-28ecccf487975ebf4015ff2ec6baec71b585647df2d367061a61e7b961bc701c/images/shared/social/azure-icon-250x250.png"
-        },
-        {
-          "id": "public-preview-private-link-support-for-application-gateway",
-          "author": null,
-          "description": "Learn how private link support for Application Gateway drives more secured network access.",
-          "link": "https://azure.microsoft.com/en-us/updates/public-preview-private-link-support-for-application-gateway/",
-          "publishedOn": "2022-06-13T19:00:02.000Z",
-          "wordCount": 4344,
-          "title": "Public preview: Private link support in Azure Application Gateway",
           "imageUrl": "https://azurecomcdn.azureedge.net/cvt-28ecccf487975ebf4015ff2ec6baec71b585647df2d367061a61e7b961bc701c/images/shared/social/azure-icon-250x250.png"
         }
       ]
