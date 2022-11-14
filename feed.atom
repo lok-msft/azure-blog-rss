@@ -2,10 +2,27 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2022-11-13T01:40:29.435Z</updated>
+    <updated>2022-11-14T01:41:08.375Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Creating an authorized Microservice - Secured Blob Exchange]]></title>
+        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/creating-an-authorized-microservice-secured-blob-exchange/ba-p/3675214</id>
+        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/creating-an-authorized-microservice-secured-blob-exchange/ba-p/3675214"/>
+        <updated>2022-11-13T08:46:05.000Z</updated>
+        <summary type="html"><![CDATA[Context
+Many ISVs (Independent Software Vendors) are exchanging information with devices, applications, services, or humans. In many cases the information passed can be a file or a blob. Each of these ISVs would need to implement such a service. In the past few months, I discussed this capability with several (over 4) different customers, each with slightly unique needs. When I tried to generalize the need, it was clear: they wanted a quick, safe means to exchange files with customers or devices. 
+ 
+So, I tried to translate these asks into user stories: 
+ 
+As a service provider, I need my customers to upload content in a secure, easy-to-maintain micro-service exposed as an API (application programming interfaces) so that I can process the content uploaded and perform an action on it. 
+  
+A…]]></summary>
+        <author>
+            <name>yodobrin</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[3 reasons to optimize your workloads with Azure Advisor.]]></title>
         <id>https://techcommunity.microsoft.com/t5/azure-architecture-blog/3-reasons-to-optimize-your-workloads-with-azure-advisor/ba-p/3674044</id>
@@ -13209,17 +13226,6 @@ These are my favorite resources f…]]></summary>
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Top Stores from the Microsoft DevOps Community – 17.06.2022]]></title>
-        <id>https://devblogs.microsoft.com/devops/?p=64512</id>
-        <link href="https://devblogs.microsoft.com/devops/top-stores-from-the-microsoft-devops-community-17-06-2022/"/>
-        <updated>2022-06-17T10:03:14.000Z</updated>
-        <summary type="html"><![CDATA[Last weekend was the Scottish Summit, while this event is local to the UK, people flew in globally to speak and attend one of the best Azure events around! There were so many great sessions from technical folks in the community and an amazing keynote from Dona Sarkar about accessibility.
-The post Top Stores from the Microsoft DevOps Community – 17.06.2022 appeared first on Azure DevOps Blog.]]></summary>
-        <author>
-            <name>April Edwards</name>
-        </author>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[Build COVID-19 Dashboard with Microsoft Excel]]></title>
         <id>https://techcommunity.microsoft.com/t5/educator-developer-blog/build-covid-19-dashboard-with-microsoft-excel/ba-p/3509050</id>
         <link href="https://techcommunity.microsoft.com/t5/educator-developer-blog/build-covid-19-dashboard-with-microsoft-excel/ba-p/3509050"/>
@@ -13235,36 +13241,6 @@ Technical Issue During the Live Session
 Our facilitator for this session had a technical issue joinin…]]></summary>
         <author>
             <name>theoyinbooke</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Accelerating Azure Container Apps with the Azure CLI and Compose Files]]></title>
-        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/accelerating-azure-container-apps-with-the-azure-cli-and-compose/ba-p/3516636</id>
-        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/accelerating-azure-container-apps-with-the-azure-cli-and-compose/ba-p/3516636"/>
-        <updated>2022-06-16T21:10:00.000Z</updated>
-        <summary type="html"><![CDATA[Azure Container Apps is a hosted service designed to make microservices and container-based solutions easy in a serverless model. My team (the Cloud Native Advocacy team) and I have been kicking the tires on this service since the preview was announced.
- 
-After working through some getting started experiences in the preview with a couple of my teammates, both of them expressed the idea that a docker-compose file should provide enough information to create an Azure Container Apps environment and microservices deployment.  The Compose specification is open source and has been used to create a variety of tools to support other deployment options, so I thought it’d be worth a try.
- 
-I like to build CLIs, so I spent a couple of days prototyping an example and showed it off to our team.  We poli…]]></summary>
-        <author>
-            <name>steven_murawski</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Coming soon: guest configuration renames to machine configuration]]></title>
-        <id>https://techcommunity.microsoft.com/t5/azure-governance-and-management/coming-soon-guest-configuration-renames-to-machine-configuration/ba-p/3474116</id>
-        <link href="https://techcommunity.microsoft.com/t5/azure-governance-and-management/coming-soon-guest-configuration-renames-to-machine-configuration/ba-p/3474116"/>
-        <updated>2022-06-16T16:55:09.000Z</updated>
-        <summary type="html"><![CDATA[In this post we will give you additional insight into the name change and a status update on key initiatives.
- 
-Since the launch of guest configuration in 2018, the product has been a key piece of many Azure security and Azure governance scenarios. The service enables customers to audit and report on configuration settings inside machines, at cloud scale. This past year, we have been working to support customers more holistically, shipping the public preview of  “Apply and Monitor” and “Apply and Autocorrect” assignment types, and are working hard on the upcoming GA of these capabilities.
- 
-We have been listening to our customers as well as the community and are excited to announce a name that highlights the current and future capabilities of our service. Guest configuration will become machine configuration. In addition to the name change, we are moving under the Automanage brand umbrella to reinforce the message that the goal of machine configuration is to reduce op-ex and customer burden in managing their Windows and Linux machines both in Azure and on-premises. It is important to note that the current experience within policy will not change. Customers will still be able to apply machine configurations at scale through policy assignments as they have thus far. 
- 
-This rebranding will go live soon in the Azure portal as well as our documentation. More information to come soon about the GA of our enforcement capabilities.]]></summary>
-        <author>
-            <name>jodiboone</name>
         </author>
     </entry>
     <entry>
