@@ -6,6 +6,16 @@
       "siteUrl": "https://spring.io/blog/category/engineering",
       "articles": [
         {
+          "id": "https://spring.io/blog/2022/11/17/a-bootiful-podcast-java-champion-legendary-engineer-and-teacher-trisha-gee",
+          "author": null,
+          "description": "Hi, Spring fans! In this installment, Josh Long (@starbuxman) talks to Java Champion, legendary engineer, and teacher Trisha Gee (@trisha_gee) bout her extraordinary career working at organizations like LMAX, MongoDB, Jetbrains, and her new books, Heads First Java, and Getting to Know IntelliJ IDEA.",
+          "link": "https://spring.io/blog/2022/11/17/a-bootiful-podcast-java-champion-legendary-engineer-and-teacher-trisha-gee",
+          "publishedOn": "2022-11-17T14:00:00.000Z",
+          "wordCount": 559,
+          "title": "A Bootiful Podcast: Java Champion, legendary engineer, and teacher Trisha Gee",
+          "imageUrl": "https://avatars.githubusercontent.com/u/54473?v=4?s=200"
+        },
+        {
           "id": "https://spring.io/blog/2022/11/15/this-week-in-spring-november-15th-2022",
           "author": null,
           "description": "Hi, Spring fans! How’re you doin’ this fine Tuesday morning? I’ve returned home to San Francisco and am up and at ’em nice and early to catch a flight to Seattle, where I’ll speak at the Java User Group tonight. If you’re in Seattle, don’t miss it!\n\r\nWe’ve got a ton of cool stuff to get into this week, but let’s not bury the lede here: Spring Framework 6 comes out tomorrow, Wednesday, the 16th of November, 2022! And you know where to go to get the bits: the Spring Initialzr, start.spring.io!\n\r\nLet’s dive into this week’s roundup!\n\r\n\r\n  \nDid you see the new Reactor 2022.0.0 release? This release contains integration with Micrometer Tracing, context propagation, and plenty of other improvements. See this for more.\n\r\n  \nSpring Boot 3.0.0-RC2 available now\n\r\n  \nSpring Cloud 2021.0.5 (codename Jubilee) Has Been Released\n\r\n  \nSpring Framework 6.0.0-RC4 available now\n\r\n  \nSpring Security 6.0.0-RC2 is available now\n\r\n  \nUpdates on Spring Cloud Stream 4.0.0 Schema Registry Support\n\r\n  \nComing with the RC of Spring Modulith: improved module canvas listing cross-module bean references (first image) and publicly exposed value types (second image).\n\r\n  \nKong Ingress Controller with Spring Boot\n\r\n  \nMocking a Singleton With Mockito\n\r\n  \nDid you know that Jetbrains has a Spotify playlist of music designed for coding called “Pure Flow”? I like it!\n\r\n  \nSpring @EnableMethodSecurity Annotation\n\r\n  \nSpringRunner vs MockitoJUnitRunner",
@@ -1580,6 +1590,26 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/introducing-more-ways-to-deploy-azure-container-apps/ba-p/3678390",
+          "author": "Anthony Chu",
+          "description": "Azure Container Apps is a fully managed serverless container service for building and deploying modern apps at scale. Today, we’re introducing new preview features to make it even easier to build and deploy container apps: \n\nA new GitHub action to build and deploy container apps\nA new Azure Pipelines task to build and deploy container apps\nBuild container images without a Dockerfile\n\nThese features are currently in public preview. Try them out and let us know what you think! \n \nAzure Container Apps GitHub action\n \nWith the azure/container-apps-deploy-action GitHub action, you can build and deploy container apps directly from your GitHub repository. Here's an example GitHub Actions workflow that builds a container image from source code and deploys it to Azure Container Apps: \n \nname: Azure…",
+          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/introducing-more-ways-to-deploy-azure-container-apps/ba-p/3678390",
+          "publishedOn": "2022-11-17T17:00:00.000Z",
+          "wordCount": 9577,
+          "title": "Introducing more ways to deploy Azure Container Apps",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/419524iB9DE4806E231285F/image-size/original?v=v2&px=-1"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/load-patterns-for-holiday-shopping-season-testing/ba-p/3678372",
+          "author": "Nikita_Nallamothu",
+          "description": "You want to make sure your application is prepared for all your new and returning customers during the holiday shopping season, right? Well, we have some tips. \nWe walked through how to set up, run and analyze user loads with Azure Load Testing in part one of this series. In part two we will test different load patterns to show you how simulate them in Apache JMeter. A load pattern specifies how the simulated user load is adjusted during a load test.\nWhile you might run smoke tests regularly with minimal load to avoid regressions, big events present scenarios to consider different types of load testing.\nIn this article we’ll discuss step loads, spike tests, breakpoint testing and soak testing patterns. Let’s get to it!\n \nEstimate the load \nYou could estimate the expected load for your appl…",
+          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/load-patterns-for-holiday-shopping-season-testing/ba-p/3678372",
+          "publishedOn": "2022-11-17T14:51:17.000Z",
+          "wordCount": 10591,
+          "title": "Load patterns for holiday shopping season testing",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/419515i10A5D29E2D7C0187?v=v2"
+        },
+        {
           "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/some-troubleshooting-clue-when-mounting-storage-in-app-service/ba-p/3676348",
           "author": "theringe",
           "description": "In some special cases, we may notice that there is a network path error when mounting an Azure storage in an App Service.\n\n \nError Message: The network path was not found\n \nAccording to the message itself, it is more likely to be a network problem, so we can find some clues regarding such an area.\n \nClue 1: Check domain resolving behavior and network connectivity\n \nJust like most of the network related cases, we firstly want to verify the connectivity between resources, in this case, we could use kudu in app service and try to reach out the storage account.\n \n \nnslookup <your_storage>.file.core.windows.net\nnameresolver <your_storage>.file.core.windows.net\n \n \nThere 2 commands use to figure out the domain resolving behavior, which we could get the IP address from that storage. We might get …",
@@ -2428,16 +2458,6 @@
           "wordCount": 10402,
           "title": "New API backend options in Azure Static Web Apps",
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/381010i2FC2D973E0C5D17C/image-size/original?v=v2&px=-1"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/a-tour-around-durable-functions-for-java/ba-p/3530046",
-          "author": "Chris Gillum",
-          "description": "If you haven't already heard, we recently announced the public preview of Durable Functions for Java. With this release, Durable Functions now supports .NET, Node.js, Python, PowerShell, and finally Java running on Azure Functions. In this post, I'll give a brief tour of Durable Functions for Java to highlight some of the capabilities and differences compared to other languages.\n \nIf this is your first time learning about Azure Durable Functions, I definitely recommend reading through the Durable Functions overview content first.\n \nOrchestrator Functions\nBefore diving too deep into design discussions, let's take a look at the classic \"Hello, cities!\" orchestrator function, written in Java.\n \n/**\n* This is the orchestrator function, which can schedule activity\n* functions, create durable ti…",
-          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/a-tour-around-durable-functions-for-java/ba-p/3530046",
-          "publishedOn": "2022-06-20T22:41:21.000Z",
-          "wordCount": 11226,
-          "title": "A Tour around Durable Functions for Java",
-          "imageUrl": "https://cdn.techcommunity.microsoft.com/assets/MTC_Open_graph_image1.jpg"
         }
       ]
     },
@@ -3416,16 +3436,6 @@
           "wordCount": 5799,
           "title": "MLOPs Blog Series Part 3: Testing scalability of secure machine learning systems using MLOps",
           "imageUrl": "https://azurecomcdn.azureedge.net/cvt-0b95339c25de3ead5c9876ea2353921f110f3a9dfbdc97bdeca9f573aaaa2447/images/shared/social/azure-icon-250x250.png"
-        },
-        {
-          "id": "see-how-3-industryleading-companies-are-driving-innovation-in-a-new-episode-of-inside-azure-for-it",
-          "author": "Erin Chapple",
-          "description": "In this episode, you’ll get a behind-the-scenes look at how three companies are using cutting-edge technologies like high-performance computing, Quantum, and AI to solve complex challenges, power innovation, and generate new kinds of business impact.",
-          "link": "https://azure.microsoft.com/blog/see-how-3-industryleading-companies-are-driving-innovation-in-a-new-episode-of-inside-azure-for-it/",
-          "publishedOn": "2022-06-21T10:00:15.000Z",
-          "wordCount": 6039,
-          "title": "See how 3 industry-leading companies are driving innovation in a new episode of Inside Azure for IT",
-          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-5d42d8308e16339220120c1a6f98c7bbb987886bb59056cba12dc33b53e3fb74/images/shared/social/azure-icon-250x250.png"
         }
       ]
     },
@@ -3982,16 +3992,6 @@
           "wordCount": 4338,
           "title": "July patches for Azure DevOps Server",
           "imageUrl": "https://devblogs.microsoft.com/devops/wp-content/uploads/sites/6/2022/06/HERO-1.jpg"
-        },
-        {
-          "id": "https://devblogs.microsoft.com/devops/?p=64531",
-          "author": "DevOps Dojo",
-          "description": "“I took the road less traveled, and that has made all the difference.\nThe post DevOps Dojo – UX/Accessibility appeared first on Azure DevOps Blog.",
-          "link": "https://devblogs.microsoft.com/devops/devops-dojo-ux-accessibility/",
-          "publishedOn": "2022-06-20T18:21:19.000Z",
-          "wordCount": 8399,
-          "title": "DevOps Dojo – UX/Accessibility",
-          "imageUrl": "https://devblogs.microsoft.com/devops/wp-content/uploads/sites/6/2018/10/Microsoft-Favicon.png"
         }
       ]
     },
@@ -4628,6 +4628,16 @@
       "siteUrl": "https://azure.microsoft.com/en-us/updates/",
       "articles": [
         {
+          "id": "public-preview-license-georedundant-disaster-recovery-for-sql-managed-instance-for-free",
+          "author": null,
+          "description": "Save on business continuity costs and license geographically redundant Disaster Recovery with Azure SQL Managed Instance.",
+          "link": "https://azure.microsoft.com/en-us/updates/public-preview-license-georedundant-disaster-recovery-for-sql-managed-instance-for-free/",
+          "publishedOn": "2022-11-16T16:00:36.000Z",
+          "wordCount": 5271,
+          "title": "Public preview: License Geo-redundant Disaster Recovery for SQL Managed Instance for free",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-342af4abf51292fe470c0f54c8b878f696465f7b08177b0a21f80ffab347bd93/images/shared/social/azure-icon-250x250.png"
+        },
+        {
           "id": "general-availability-dr-secondary-free-with-sql-server-on-azure-virtual-machines",
           "author": null,
           "description": "Optimize business costs by licensing your Disaster Recovery secondary for free with SQL Server on Azure Virtual Machines.",
@@ -4636,6 +4646,26 @@
           "wordCount": 5265,
           "title": "General availability: DR secondary free with SQL Server on Azure Virtual Machines",
           "imageUrl": "https://azurecomcdn.azureedge.net/cvt-0dd186e5b748ea9ebbaa7cb7ab3c15bcc3c54e5a36e7b6a41fa5578faad91cce/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "generally-available-azure-sql-managed-instance-backup-portability-to-sql-server-2022",
+          "author": null,
+          "description": "Backup of your Azure SQL Managed Instance database can now be restored to a SQL Server 2022 instance.",
+          "link": "https://azure.microsoft.com/en-us/updates/generally-available-azure-sql-managed-instance-backup-portability-to-sql-server-2022/",
+          "publishedOn": "2022-11-16T16:00:35.000Z",
+          "wordCount": 5265,
+          "title": "Generally available: Azure SQL Managed Instance backup portability to SQL Server 2022",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-342af4abf51292fe470c0f54c8b878f696465f7b08177b0a21f80ffab347bd93/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "generally-available-azure-synapse-link-for-sql",
+          "author": null,
+          "description": "Azure Synapse Link for SQL enables seamless near-real-time data movement from relational sources in Azure SQL Database and SQL Server 2022 to analytical stores without needing to build ETL pipelines.",
+          "link": "https://azure.microsoft.com/en-us/updates/generally-available-azure-synapse-link-for-sql/",
+          "publishedOn": "2022-11-16T16:00:35.000Z",
+          "wordCount": 5262,
+          "title": "Generally available: Azure Synapse Link for SQL",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-342af4abf51292fe470c0f54c8b878f696465f7b08177b0a21f80ffab347bd93/images/shared/social/azure-icon-250x250.png"
         },
         {
           "id": "generally-available-azure-sql-managed-instance-link-for-sql-server-2022",
@@ -4666,6 +4696,26 @@
           "wordCount": 5308,
           "title": "General availability: Azure SQL Managed Instance feature wave updates for November 2022",
           "imageUrl": "https://azurecomcdn.azureedge.net/cvt-0dd186e5b748ea9ebbaa7cb7ab3c15bcc3c54e5a36e7b6a41fa5578faad91cce/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "azure-sql-public-preview-updates-for-midnovember-2022",
+          "author": null,
+          "description": "Public preview enhancements and updates released for Azure SQL in mid-November 2022.",
+          "link": "https://azure.microsoft.com/en-us/updates/azure-sql-public-preview-updates-for-midnovember-2022/",
+          "publishedOn": "2022-11-16T16:00:14.000Z",
+          "wordCount": 5205,
+          "title": "Azure SQL—Public preview updates for mid-November 2022",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-342af4abf51292fe470c0f54c8b878f696465f7b08177b0a21f80ffab347bd93/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "azure-sql-general-availability-updates-for-midnovember-2022",
+          "author": null,
+          "description": "General availability enhancements and updates released for Azure SQL in mid-November 2022.",
+          "link": "https://azure.microsoft.com/en-us/updates/azure-sql-general-availability-updates-for-midnovember-2022/",
+          "publishedOn": "2022-11-16T16:00:02.000Z",
+          "wordCount": 5256,
+          "title": "Azure SQL—General availability updates for mid-November 2022",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-342af4abf51292fe470c0f54c8b878f696465f7b08177b0a21f80ffab347bd93/images/shared/social/azure-icon-250x250.png"
         },
         {
           "id": "tls1-3-application-gateway-ga",
@@ -8216,56 +8266,6 @@
           "wordCount": 5251,
           "title": "Public preview: Durable Functions for Java",
           "imageUrl": "https://azurecomcdn.azureedge.net/cvt-a58d5f2506bfb8c7aab9f8b0d37369090505fca3b8d7d0ca65919a0b5118290b/images/shared/social/azure-icon-250x250.png"
-        },
-        {
-          "id": "azure-netapp-files-general-availability-of-ldap-signing",
-          "author": null,
-          "description": "Feature has reached general availability.",
-          "link": "https://azure.microsoft.com/en-us/updates/azure-netapp-files-general-availability-of-ldap-signing/",
-          "publishedOn": "2022-06-20T17:00:12.000Z",
-          "wordCount": 5220,
-          "title": "General availability: LDAP signing",
-          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-5d42d8308e16339220120c1a6f98c7bbb987886bb59056cba12dc33b53e3fb74/images/shared/social/azure-icon-250x250.png"
-        },
-        {
-          "id": "azure-netapp-files-smb-continuous-availability-ca-shares-for-citrix-app-layering",
-          "author": null,
-          "description": "New feature added to Azure NetApp Files.",
-          "link": "https://azure.microsoft.com/en-us/updates/azure-netapp-files-smb-continuous-availability-ca-shares-for-citrix-app-layering/",
-          "publishedOn": "2022-06-20T17:00:11.000Z",
-          "wordCount": 5256,
-          "title": "Public preview: SMB Continuous Availability shares for Citrix App Layering",
-          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-be363ab792900c4e62f6bcc22b5fbfb277ee7556b9c823a83ea8eb87e3dfd632/images/shared/social/azure-icon-250x250.png"
-        },
-        {
-          "id": "general-availability-of-azure-gitops-with-flux-v2",
-          "author": null,
-          "description": "Announcing the general availability of GitOps with Flux v2 in Azure Kubernetes Service (AKS) and Azure Arc-enabled Kubernetes (Arc K8s).",
-          "link": "https://azure.microsoft.com/en-us/updates/general-availability-of-azure-gitops-with-flux-v2/",
-          "publishedOn": "2022-06-20T17:00:10.000Z",
-          "wordCount": 5265,
-          "title": "General availability: Azure GitOps with Flux v2",
-          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-5d42d8308e16339220120c1a6f98c7bbb987886bb59056cba12dc33b53e3fb74/images/shared/social/azure-icon-250x250.png"
-        },
-        {
-          "id": "resource-governance-for-client-applications-in-azure-event-hubs-public-preview",
-          "author": null,
-          "description": "Independently throttle your event streaming workloads using application groups and client applications information.",
-          "link": "https://azure.microsoft.com/en-us/updates/resource-governance-for-client-applications-in-azure-event-hubs-public-preview/",
-          "publishedOn": "2022-06-20T16:00:10.000Z",
-          "wordCount": 5283,
-          "title": "Public preview: Resource governance for client applications in Azure Event Hubs",
-          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-be363ab792900c4e62f6bcc22b5fbfb277ee7556b9c823a83ea8eb87e3dfd632/images/shared/social/azure-icon-250x250.png"
-        },
-        {
-          "id": "apache-parquet-capturing-support-in-azure-event-hubs",
-          "author": null,
-          "description": "Load real-time streaming data in Azure Event Hubs to data lakes, warehouses, and other storage services in Parquet format.",
-          "link": "https://azure.microsoft.com/en-us/updates/apache-parquet-capturing-support-in-azure-event-hubs/",
-          "publishedOn": "2022-06-20T16:00:10.000Z",
-          "wordCount": 5239,
-          "title": "Public preview: Apache Parquet capturing support in Azure Event Hubs",
-          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-be363ab792900c4e62f6bcc22b5fbfb277ee7556b9c823a83ea8eb87e3dfd632/images/shared/social/azure-icon-250x250.png"
         }
       ]
     },
@@ -8274,6 +8274,16 @@
       "feedUrl": "https://devblogs.microsoft.com/microsoft365dev/feed/",
       "siteUrl": "https://devblogs.microsoft.com/microsoft365dev/",
       "articles": [
+        {
+          "id": "https://devblogs.microsoft.com/microsoft365dev/?p=12312",
+          "author": "Philip Li",
+          "description": "Learn about the latest innovations in Microsoft Graph Data Connect to enable customers to build analytics applications with data security, governance, and end user privacy in mind.\nThe post Security, governance and privacy built into Microsoft Graph Data Connect appeared first on Microsoft 365 Developer Blog.",
+          "link": "https://devblogs.microsoft.com/microsoft365dev/security-governance-and-privacy-built-into-microsoft-graph-data-connect/",
+          "publishedOn": "2022-11-17T16:50:47.000Z",
+          "wordCount": 4790,
+          "title": "Security, governance and privacy built into Microsoft Graph Data Connect",
+          "imageUrl": "https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2022/11/MicrosoftTeams-image-34.jpg"
+        },
         {
           "id": "https://devblogs.microsoft.com/microsoft365dev/?p=12275",
           "author": "Sreekanth Thirthala Venkata",
