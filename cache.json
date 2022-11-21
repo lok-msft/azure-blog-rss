@@ -2702,6 +2702,273 @@
       ]
     },
     {
+      "title": "Microsoft Tech Community - Latest Blogs - Azure PaaS Blog",
+      "feedUrl": "https://techcommunity.microsoft.com/plugins/custom/microsoft/o365/custom-blog-rss?tid=2015807141232549759&board=AzurePaaSBlog&size=200",
+      "siteUrl": "https://techcommunity.microsoft.com",
+      "articles": [
+        {
+          "id": "https://techcommunity.microsoft.com/t5/azure-paas-blog/common-usage-of-validate-content-policy-in-apim/ba-p/3679392",
+          "author": "Jay_Gong",
+          "description": "This validate-content policy is very helpful while we need to validate the size or content of a request or response body against one or more supported schemas. In this blog, I would like to introduce how to use different Elements and Attributes in validate-content policy to implement multiple requirements of request payload based on JSON schema validation.\n \nWe will cover two sections below mostly:\n\nUsing API level schema definition to restrict request payload\nUsing Service level schema definition to restrict request payload\n\nSection1: Using API level schema definition to restrict request payload\nIn some certain scenarios, we have existing schema definition already while importing the new API. \nIf we don't have schema definition, we could use REST API or create schema definition in the API…",
+          "link": "https://techcommunity.microsoft.com/t5/azure-paas-blog/common-usage-of-validate-content-policy-in-apim/ba-p/3679392",
+          "publishedOn": "2022-11-18T07:43:14.000Z",
+          "wordCount": 10071,
+          "title": "Common usage of validate-content policy in APIM",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/419790i49969895C8DCD0AB?v=v2"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/azure-paas-blog/how-to-calculate-container-level-statistics-in-azure-blob/ba-p/3614650",
+          "author": "ruineiva",
+          "description": "Background\n \nThis article describes how to get container level stats in Azure Blob Storage, and how to work with the information provided by blob inventory.\n \nThe approach presented here uses Azure Databricks and is most suited to be used in storage accounts with a huge amount of data.\n \nAt the end of this article, you would be able to create a script to calculate:\n\nThe total number of blobs in the container \nThe total container capacity (in bytes)\nThe total number of snapshots in the container\nThe total container snapshots capacity (in bytes)\nThe total number of versions in the container\nThe total container versions capacity (in bytes)\nThe total number of blobs in the container by BlobType\nThe total number of blobs in the container by Content-Type\n\nApproach\n \nThis approach is based on two…",
+          "link": "https://techcommunity.microsoft.com/t5/azure-paas-blog/how-to-calculate-container-level-statistics-in-azure-blob/ba-p/3614650",
+          "publishedOn": "2022-11-17T11:47:21.000Z",
+          "wordCount": 10300,
+          "title": "How to calculate Container Level Statistics in Azure Blob Storage with Azure Databricks",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/400637i4042D32801CA9E5B?v=v2"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/azure-paas-blog/deletion-of-logs-from-logs-container-from-adls-gen2-storage/ba-p/3677338",
+          "author": "Deeksha_S_A",
+          "description": "Background: \nMany times, we have a requirement to delete the older logs from $logs as the Retention days as it was not supported for ADLS gen2 storage account.\n \nPlease note Product team already worked on this fix and in case automatic deletion is not working can follow the below steps\n \nPlease refer to article https://docs.microsoft.com/en-us/azure/storage/common/manage-storage-analytics-logs?tabs=azure-portal#modify-log-data-retention-period for more information\n \nDeletion of logs from the $logs can be achieved from the following options\n\nAzure Storage explorer\nREST API\nSDK’s\nPowerShell\nAzure Data Factory\n\n This blog demonstrates how to automate deleting logs from $logs with help PowerShell Runbook and Task Scheduler\n \nPlease refer to below Powershell script which helps to delete blobs f…",
+          "link": "https://techcommunity.microsoft.com/t5/azure-paas-blog/deletion-of-logs-from-logs-container-from-adls-gen2-storage/ba-p/3677338",
+          "publishedOn": "2022-11-16T13:10:17.000Z",
+          "wordCount": 9392,
+          "title": "Deletion of logs from $logs container from ADLS gen2 storage account using PowerShell",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/419206i8FA9925516184B51?v=v2"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/azure-paas-blog/use-python-sdk-to-send-and-receive-events-with-schema-registry/ba-p/3675294",
+          "author": "Jay_Gong",
+          "description": "This blog is the complement of another blog which is related to Azure Event Hub Schema Registry. As we known, it’s not supported to migrate Confluent(Kafka) schema registry into Azure schema registry directly. We need to create and manage the scheme registry in the azure event hub separately. The good news is Azure Event Hub supplies multiple client sdks for us to use to serialize and deserialize payloads containing schema registry identifiers and avro-encoded data. In this section, I’d like to share how to use python sdk to send or receive events with schema registry in the Azure Event Hub mostly.  \n \nPrerequisites:\n1.Create a schema registry group in the event hub portal.\nYou could refer to this official guidance to create schema registry group.\n \n2.Install required python packages with …",
+          "link": "https://techcommunity.microsoft.com/t5/azure-paas-blog/use-python-sdk-to-send-and-receive-events-with-schema-registry/ba-p/3675294",
+          "publishedOn": "2022-11-13T23:17:01.000Z",
+          "wordCount": 9758,
+          "title": "Use python SDK to send and receive events with schema registry in azure event hub",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/418687i1B692198C72CC62B?v=v2"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/azure-paas-blog/search-service-fails-to-update-an-indexer-when-the-storage/ba-p/3671968",
+          "author": "sudeshna",
+          "description": "Scenario:\nYou have created a Search Service and you want to import your data from the Storage account which is behind a firewall.\n \nThere are certain times when you need to update your Indexer for additional properties for a particular search service. So, while trying to update the Indexer, you navigate to “Add Indexer” option and then under Settings tab, you update the required properties.\n \nWhile updating the Indexer, suddenly you encounter that it failed with the below error message.\nFailed to update indexer ‘xxxxxx-indexer', error: 'Error with data source: Credentials provided in the connection string are invalid or have expired. For more information on troubleshooting connection issues to Azure Storage accounts, please see https://go.microsoft.com/fwlink/?linkid=2049388 Please adjust …",
+          "link": "https://techcommunity.microsoft.com/t5/azure-paas-blog/search-service-fails-to-update-an-indexer-when-the-storage/ba-p/3671968",
+          "publishedOn": "2022-11-10T13:06:45.000Z",
+          "wordCount": 9612,
+          "title": "Search Service fails to update an Indexer when the Storage account is behind a firewall",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/417746i3BFE51179ED0C0A0?v=v2"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/azure-paas-blog/how-to-enable-ipv4-ipv6-dual-stack-feature-on-service-fabric/ba-p/3664925",
+          "author": "Jerry",
+          "description": "As the IPv4 addresses are already exhausted, more and more service providers and website hosts start using the IPv6 address on their server. Although the IPv6 is a new version of IPv4, their packet headers and address format are completely different. Due to this reason, users can consider IPv6 as a different protocol from IPv4.\n \nIn order to be able to communicate with a server with IPv6 protocol only, we’ll need to enable the IPv6 protocol on Service Fabric cluster and its related resources. This blog will mainly talk about how to enable this feature on Service Fabric cluster by ARM template.\n \nPrerequisite:\nWe should be familiar with how to deploy a Service Fabric cluster and related resources by ARM template. This is not only about downloading the ARM template from the official document…",
+          "link": "https://techcommunity.microsoft.com/t5/azure-paas-blog/how-to-enable-ipv4-ipv6-dual-stack-feature-on-service-fabric/ba-p/3664925",
+          "publishedOn": "2022-11-02T03:21:52.000Z",
+          "wordCount": 10880,
+          "title": "How to enable IPv4+IPv6 dual-stack feature on Service Fabric cluster",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/415952i02A38ECC1FCD04D1?v=v2"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/azure-paas-blog/supplemental-information-for-self-hosted-gateway-v1-amp-v2/ba-p/3666497",
+          "author": "Hildat",
+          "description": "The self-hosted gateway is an optional, containerized version of the default managed gateway included in every API Management service. It allows you to deploy a gateway in a separate environment where to host your APIs, such as on-prem or AKS. For self-hosted gateway general knowledge, you can refer to this APIM self-hosted gateway official document. \nIn this article, we will not go over the basic concept and usage scenarios. As the self-hosted gateway v2 was released in early 2022, we will focus on the main differences between v1 and v2, as well as some frequently asked questions that are not mentioned in the official document. \n \nSection 1: Dependency differences between Self-hosted gateway v1 & v2  \nSection 2: APIM self-hosted gateway v2 is backward compatible. \nSection 3: Self-hosted g…",
+          "link": "https://techcommunity.microsoft.com/t5/azure-paas-blog/supplemental-information-for-self-hosted-gateway-v1-amp-v2/ba-p/3666497",
+          "publishedOn": "2022-11-01T01:44:07.000Z",
+          "wordCount": 9850,
+          "title": "Supplemental Information for Self-hosted Gateway v1 & v2 Version",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/416264i058D922914E50B2E?v=v2"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/azure-paas-blog/enable-sftp-on-azure-file-share-using-arm-template-and-upload/ba-p/3662578",
+          "author": "Sudipta_Chakraborty",
+          "description": "SFTP is a very widely used protocol which many organizations use today for transferring files within their organization or across organizations. Creating a VM based SFTP is costly and high-maintenance. ACI service is very inexpensive and requires very little maintenance, while data is stored in Azure Files which is a fully managed SMB service in cloud.\nThis template demonstrates an creating a SFTP server using Azure Container Instances (ACI). The template generates two resources:\n\nstorage account is the storage account used for persisting data, and contains the Azure Files share\nsftp-group is a container group with a mounted Azure File Share. The Azure File Share will provide persistent storage after the container is terminated.\n\n \nARM Template for creation of SFTP with New Azure File Shar…",
+          "link": "https://techcommunity.microsoft.com/t5/azure-paas-blog/enable-sftp-on-azure-file-share-using-arm-template-and-upload/ba-p/3662578",
+          "publishedOn": "2022-10-26T10:31:03.000Z",
+          "wordCount": 10142,
+          "title": "Enable SFTP on Azure File Share using ARM Template and upload files using WinScp",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/415546i703E51751A1B16F4/image-size/original?v=v2&px=-1"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/azure-paas-blog/working-with-adf-storage-event-trigger-over-sftp/ba-p/3659652",
+          "author": "Amrinder_Singh",
+          "description": "Storage Event Trigger in Azure Data Factory is the building block to build an event driven ETL/ELT architecture (EDA). Data Factory's native integration with Azure Event Grid let you trigger processing pipeline based upon certain events. Currently, Storage Event Triggers support events with Azure Data Lake Storage Gen2 and General-Purpose version 2 storage accounts, including Blob Created and Blob Deleted.\n \nEvent-driven architecture (EDA) is a common data integration pattern that involves production, detection, consumption, and reaction to events. Data integration scenarios often require customers to trigger pipelines based on events happening in storage account, such as the arrival or deletion of a file in Azure Blob Storage account. Data Factory and Synapse pipelines natively integrate …",
+          "link": "https://techcommunity.microsoft.com/t5/azure-paas-blog/working-with-adf-storage-event-trigger-over-sftp/ba-p/3659652",
+          "publishedOn": "2022-10-24T07:01:15.000Z",
+          "wordCount": 9671,
+          "title": "Working with ADF Storage Event Trigger Over SFTP",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/415020i1220FDC57584A920/image-size/original?v=v2&px=-1"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/azure-paas-blog/service-fabric-explorer-sfx-v1-web-client-risk/ba-p/3657108",
+          "author": "jeffj6123",
+          "description": "Service Fabric Explorer (SFX) is the web client used when accessing a Service Fabric (SF) cluster from a web browser. The version of SFX used is determined by the version of your SF cluster. We are providing this update to make customers aware that switching from the default web client to use the older SFX web client could increase their risk when an attacker has already gained access to a privileged account.\nAffected versions Prior to SF runtime version 8.1.316, the vulnerable version of SFX (SFXv1) was the default client in the SF runtime. From SF version 8.1.316 onward, the default SFX client is SFXv2, which is not vulnerable to this attack.\n· SFXv1 is shipped in current versions of the product, but SFXv2 is the default client.\n· For SF versions starting with 8.2.1235, SFXv1 is accessib…",
+          "link": "https://techcommunity.microsoft.com/t5/azure-paas-blog/service-fabric-explorer-sfx-v1-web-client-risk/ba-p/3657108",
+          "publishedOn": "2022-10-19T17:34:03.000Z",
+          "wordCount": 9680,
+          "title": "Service Fabric Explorer (SFX) v1 web client risk",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/414358i57AB8BBDF095D913?v=v2"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/azure-paas-blog/deployment-failure-of-private-endpoint-via-managed-application/ba-p/3653848",
+          "author": "v-mosh21",
+          "description": "Purpose:\nThe purpose of this blog is to share the one of the failure scenarios that users may encounter during the deployment of Private Endpoint via Managed Application or ARM template.\n \nSymptom:\nIn complete mode (Deployment modes - Azure Resource Manager | Microsoft Learn), the resources in resource group that are not specified in the template will be deleted by Resource Manager. However, during the deployment of Private Endpoint, the Network Interface (NIC) is being generated automatically as a separate resource with random given name so this means that this NIC cannot be defined in the template. As a result, the NIC is not defined in the ARM template will be deleted in the complete mode of deployment, while this action will be blocked because the Private Endpoint is currently referenc…",
+          "link": "https://techcommunity.microsoft.com/t5/azure-paas-blog/deployment-failure-of-private-endpoint-via-managed-application/ba-p/3653848",
+          "publishedOn": "2022-10-17T07:39:14.000Z",
+          "wordCount": 9752,
+          "title": "Deployment Failure of Private Endpoint via Managed Application or ARM template",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/413404iCCFE802D9C28D254?v=v2"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/azure-paas-blog/retrieve-cloud-service-extended-support-detail-via-powershell/ba-p/3645634",
+          "author": "Jerry",
+          "description": "This blog is mainly about how to retrieve the CSES configuration via PowerShell and REST API. It will cover the following sections: \n\nPowerShell command to get the CSES configuration\nPowerShell to send out REST API request to get the CSES configuration \nSample to retrieve OS Family, OS Version and any other data \n\n \nPrerequisites\nNo matter PowerShell command or Rest API request will be used to get the information, the PowerShell Azure Az module is necessary. For the installation details, please refer to this document.\n \nPowerShell command to get the CSES configuration \nTo use Get-AzCloudService (Az.CloudService) | Microsoft Learn to get the CSES configuration data, we can follow these steps: \n\nUse command Connect-AzAccount to login\nUse command Get-AzCloudService to get the full picture of …",
+          "link": "https://techcommunity.microsoft.com/t5/azure-paas-blog/retrieve-cloud-service-extended-support-detail-via-powershell/ba-p/3645634",
+          "publishedOn": "2022-10-13T03:44:27.000Z",
+          "wordCount": 9704,
+          "title": "Retrieve Cloud Service Extended Support detail via PowerShell",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/410430i52556318F369AFE8?v=v2"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/azure-paas-blog/azure-storage-undelete-soft-delete-objects/ba-p/3641624",
+          "author": "jasoncao",
+          "description": "Overview\n \nAzure Storage supports soft delete to protect your data for Blob Storage and Azure Data Lake Storage Gen2. Soft delete allows you to recover data that has been deleted within a retention period. With public documentation Manage and restore soft-deleted blobs - Azure Storage | Microsoft Learn, we can recover a particular soft deleted file via portal, code and Powershell script. The documentation provides some Powershell examples to recover all soft-deleted objects. In some scenarios, you may want to undelete with Powershell scripts to undelete many blobs with certain conditions.\n \nThis article introduces 2 scripts that are used to undelete blobs with condition of path prefix and deletion time for both blob storage and Azure Data Lake Storage Gen2 respectively.\n \nThe scripts in th…",
+          "link": "https://techcommunity.microsoft.com/t5/azure-paas-blog/azure-storage-undelete-soft-delete-objects/ba-p/3641624",
+          "publishedOn": "2022-10-07T01:20:51.000Z",
+          "wordCount": 10428,
+          "title": "Azure Storage - Undelete Soft-delete Objects",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/409380i7709E130BDDF4DA9?v=v2"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/azure-paas-blog/troubleshooting-service-bus-message-abandon-issue-when-using-jms/ba-p/3623702",
+          "author": "Hildat",
+          "description": "Introduction:\nIn the Service Bus Peek&Lock receive mode, there are three API that might be invoked after a message is Peeked.\n\nComplete() API – Message received. Completes the receive operation on a message.\nAbandon() API – Message deliver failed， put the message back to queue with delivery count increased\nDefer() API – Indicates that the receiver wants to defer the processing of the message.\n\nThis article will analyze a scenario where messages are abandoned instead of completed when using the JMS approach of the Service Bus receiver.\nThere are mainly 3 sections in this article:\n\nWhat is JMS?\nJMS and Service Bus integration?\nHow to mitigate the 'messages abandon' issue?\n\nSection 1: What is JMS?\nJMS (Java Message Service) is an API that provides the facility to create, send and read message…",
+          "link": "https://techcommunity.microsoft.com/t5/azure-paas-blog/troubleshooting-service-bus-message-abandon-issue-when-using-jms/ba-p/3623702",
+          "publishedOn": "2022-09-12T08:25:01.000Z",
+          "wordCount": 9670,
+          "title": "Troubleshooting Service Bus Message Abandon Issue when using JMS Listener",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/403774i63EE8CA5F2FD9353?v=v2"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/azure-paas-blog/working-with-api-management-devops-resource-kit/ba-p/3621532",
+          "author": "AditiNagarkar",
+          "description": "This blog helps to set up the Azure API Management-devops-resource-kit , gives details on how to run the creator and extractor tools to generate ARM templates and lists out common questions and answers.\n \nThe generated ARM templates using APIM DevOps toolkit can further be integrated with DevOps tool for automated deployment in different environments.\n \nUnderstanding DevOps\n \n\nIt is a group of procedures, equipment, and cultural ideals that integrate and automate the procedures between IT and software development teams.\nIt increases the effectiveness, speed, and security of software development and delivery compared to conventional approaches by combining development and operations.\nDevOps Life Cycle contains phases shown in below diagram:\n \n \n\n\n\n \nDevOps tools\n \n\nDevOps Tool is an applica…",
+          "link": "https://techcommunity.microsoft.com/t5/azure-paas-blog/working-with-api-management-devops-resource-kit/ba-p/3621532",
+          "publishedOn": "2022-09-09T12:20:41.000Z",
+          "wordCount": 10142,
+          "title": "Working with API management DevOps resource kit",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/402888iD9E2C1C0A9C8011C?v=v2"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/azure-paas-blog/self-hosted-portal-design-and-publish-architecture/ba-p/3610007",
+          "author": "Lundo_Hua",
+          "description": "Objective:\nThis doc will help you have a better understanding of the self-hosted portal architecture, and the binding behind the scene.\n \nIn some cases you might need functionality beyond the customization and styling options supported in the managed developer portal. If you need to implement custom logic, which isn't supported out-of-the-box, you can modify the portal's codebase, available on GitHub . For example, you could create a new widget to integrate with a third-party support system.\n \nHow to build and publish a self-hosted developer:\nPlease go over the following document to build and publish a self-hosted developer portal, we will not expand the section in this article.\n\nhttps://github.com/Azure/api-managemez`nt-developer-portal/wiki/Self-hosting-the-portal \nhttps://github.com/Azu…",
+          "link": "https://techcommunity.microsoft.com/t5/azure-paas-blog/self-hosted-portal-design-and-publish-architecture/ba-p/3610007",
+          "publishedOn": "2022-08-29T01:45:36.000Z",
+          "wordCount": 10216,
+          "title": "Self Hosted Portal Design and Publish Architecture",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/399070iE743DFDF60D23A84?v=v2"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/azure-paas-blog/the-usage-of-managed-identity-in-the-azure-batch-account-and/ba-p/3607014",
+          "author": "v-mosh21",
+          "description": "Overview:\nThe managed identities can be used both in the Azure Batch Account and Azure Batch Pool, which may cause confusion in some situations. This blog is aimed to help you understand the differences between the usage of the managed identity in the Azure Batch Account and in the Azure Batch Pool. The managed identity configured on the Batch account only grants permission for the Azure Batch Account to authenticate to other services but not for Azure Batch nodes (or Pool VMs). If the purpose is to grant the Azure Batch nodes access to other Azure resources, then you are looking for the managed identity configured in the Azure Batch Pool.\n \nOutline:\n\nOverall Pre-requirement\nManaged Identity in the Azure Batch Account\nManaged Identity in the Azure Batch Pool\n\nWhere to associate managed ide…",
+          "link": "https://techcommunity.microsoft.com/t5/azure-paas-blog/the-usage-of-managed-identity-in-the-azure-batch-account-and/ba-p/3607014",
+          "publishedOn": "2022-08-24T03:33:33.000Z",
+          "wordCount": 11310,
+          "title": "The Usage of Managed Identity in the Azure Batch Account and Azure Batch Pool",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/398040i22F5557D008549FF?v=v2"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/azure-paas-blog/common-scenarios-when-exporting-importing-azure-redis-cache/ba-p/3601792",
+          "author": "Ryan_Chen",
+          "description": "Purpose\nThere are several reasons where users may fail to export / import Redis Cache data. To ease the troubleshooting process, this blog will follow the subsequent structure to introduce some possible causes and troubleshooting methods in detail.\n\nScenarios\nSymptoms\nPossible Reasons\nMitigation Methods\n\n \nPossible causes when failed to export Redis Cache\nScenario 1: failed to export Redis Cache with “AuthorizationFailure” – (HTTP 403 at Redis Cache RP log)\nSymptoms:\nError message: “The request to export data from cache ‘testexport’ failed with status ‘error’ and error ‘AuthorizationFailure: this request is not authorized to perform this operation’\nRequest ID: 05e9db08-301e-0068-3d64-a569cd000000\nTime: 2022-08-01T05:09:34.7925950Z”. \n \n\n \nPossible Reasons: target storage account has enable…",
+          "link": "https://techcommunity.microsoft.com/t5/azure-paas-blog/common-scenarios-when-exporting-importing-azure-redis-cache/ba-p/3601792",
+          "publishedOn": "2022-08-17T06:09:03.000Z",
+          "wordCount": 10198,
+          "title": "Common Scenarios When Exporting/Importing Azure Redis Cache",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/396569i38559B18FE000282?v=v2"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/azure-paas-blog/azure-storage-permanent-delete-soft-deleted-objects/ba-p/3600967",
+          "author": "LuisFilipe",
+          "description": "Overview  \nThis PowerShell script allow you to permanent delete Soft Deleted objects, by Container, by Tier, with Prefix, and considering Last Modified Date.Azure Storage blob objects is defined as Base Blobs, Blob Snapshots or Blob Versions.\n \nParameters:\nSpecify each value in the script under \"Parameters - User defined\" section.\nAll values are mandatory and some can be empty, as described below and also in the script.\nOptions available are:\n$storageAccountName - just run the script and the storage account name will be asked.$containerName - specify some Container Name, or empty (default value) to list all containers$prefix - specify some blob prefix (excluding container name) for scanning, or leave empty (default value) to list all objects$blobType - select 'Base' to list only base Blobs…",
+          "link": "https://techcommunity.microsoft.com/t5/azure-paas-blog/azure-storage-permanent-delete-soft-deleted-objects/ba-p/3600967",
+          "publishedOn": "2022-08-16T13:07:50.000Z",
+          "wordCount": 11986,
+          "title": "Azure Storage - Permanent Delete Soft-Deleted objects",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/396257i023E36D19144149F/image-size/original?v=v2&px=-1"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/azure-paas-blog/azure-storage-blob-count-amp-capacity-usage-calculator/ba-p/3516855",
+          "author": "LuisFilipe",
+          "description": "Overview  \nThis PowerShell script allow you to count and calculate Azure Storage blob usage for Soft Deleted / non-Soft Deleted objects, by Container, by Tier, with Prefix, and considering Last Modified Date.Azure Storage blob objects is defined as Base Blobs, Blob Snapshots or Blob Versions.\n \nParameters:\nSpecify each value in the script under \"Parameters - User defined\" section.\nAll values are mandatory and some can be empty, as described below and also in the script.\nOptions available are:\n$storageAccountName - just run the script and the storage account name will be asked.$containerName - specify some Container Name, or empty (default value) to list all containers$prefix - specify some blob prefix (excluding container name) for scanning, or leave empty (default value) to list all objec…",
+          "link": "https://techcommunity.microsoft.com/t5/azure-paas-blog/azure-storage-blob-count-amp-capacity-usage-calculator/ba-p/3516855",
+          "publishedOn": "2022-08-16T11:23:42.000Z",
+          "wordCount": 11194,
+          "title": "Azure Storage Blob Count & Capacity usage Calculator",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/393895iD5A4F8465CE9E47D/image-size/original?v=v2&px=-1"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/azure-paas-blog/required-permissions-while-creating-event-grid-system-topic/ba-p/3594484",
+          "author": "Jay_Gong",
+          "description": "While creating Event Grid System Topic for specific resource type by using Terraform deployment, we may get following error message which indicates that we don’t sufficient permission upon target resource (for example, Storage Account resource type):\n \nError: eventgrid.SystemTopicsClient#CreateOrUpdate: Failure sending request: StatusCode=400 -- Original Error: Code='InvalidRequest' Message='The user does not have permission to perform the operation on the resource /subscriptions/***/resourceGroups/***/providers/Microsoft.Storage/storageAccounts/***.'\n \nOr we may get following error message:\n \nchecking for presence of existing System Topic: (Name \"***\" / Resource Group \"***\"): eventgrid.SystemTopicsClient#Get: Failure responding to request: StatusCode=403 -- Original Error: autorest/azure:…",
+          "link": "https://techcommunity.microsoft.com/t5/azure-paas-blog/required-permissions-while-creating-event-grid-system-topic/ba-p/3594484",
+          "publishedOn": "2022-08-09T04:54:08.000Z",
+          "wordCount": 9277,
+          "title": "Required permissions while creating Event Grid System Topic",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/394315iACE5DF0D69C9EC25?v=v2"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/azure-paas-blog/why-is-the-azure-monitor-chart-showing-dashed-lines-for-the/ba-p/3490110",
+          "author": "c4rlosmarin",
+          "description": "Have you ever noticed the dash lines on the \"Availability\" Azure Monitor metric for your Storage Account? What's that about? Is your Storage Account down?\n \nWhy is it that we see sections where there is a dashed line and other sections where there is a solid line?\n \n\n \nWell, it turns out that Azure metrics charts use dashed line style to indicate that there is a missing value (also known as “null value”) between two known time grain data points. Meaning, this behavior is by design, yes, by design. It is useful for identifying missing data points. The line chart is a superior choice for visualizing trends of high-density metrics but may be difficult to interpret for the metrics with sparse values, especially when corelating values with time grain is important.\n \nThe dashed line makes readin…",
+          "link": "https://techcommunity.microsoft.com/t5/azure-paas-blog/why-is-the-azure-monitor-chart-showing-dashed-lines-for-the/ba-p/3490110",
+          "publishedOn": "2022-08-08T15:18:24.000Z",
+          "wordCount": 9596,
+          "title": "Why is the Azure Monitor chart showing dashed lines for the Availability metric?",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/379130i1DC4E06C4C9C7E2F?v=v2"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/azure-paas-blog/auto-scaling-azure-redis-clustered-cache-using-cache-metrics/ba-p/3573079",
+          "author": "ankitsharma",
+          "description": "Problem statement:\nAzure Cache for Redis has many uses, including data caching and session management. Many a times we see a sudden burst of traffic on our application, pushes our Azure Redis Cache under stress due to increased operations, active connections, memory usage etc. This causes cache's Server Load to spike, which adversely impacts application performance.\n \nServer Load is the percentage of cycles in which the Redis server is busy processing and not waiting idle for messages. If this counter reaches 100, it means the Redis server has hit a performance ceiling and the CPU can't process work any faster. If you're seeing high Redis Server Load, then you see timeout exceptions in the client. In this case, you should consider scaling up or partitioning your data into multiple caches.\n…",
+          "link": "https://techcommunity.microsoft.com/t5/azure-paas-blog/auto-scaling-azure-redis-clustered-cache-using-cache-metrics/ba-p/3573079",
+          "publishedOn": "2022-08-04T13:44:08.000Z",
+          "wordCount": 10876,
+          "title": "Auto scaling Azure Redis Clustered Cache using cache metrics alerts",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/388139i511408454FDE38CD?v=v2"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/azure-paas-blog/how-to-integrate-azure-batch-pool-with-azure-storage-account/ba-p/3588653",
+          "author": "Shuai_Hao",
+          "description": "The Azure Storage Account is a necessary dependent component of Azure Batch account to store resource files, application packages and output files. In many cases, users want to use Azure Storage Account with firewall to enhance the security of the Azure Storage Account. However, this may cause some issues when executing Azure Batch jobs. This Blog will introduce two workarounds of configuring Azure Storage Accounts with firewall and Azure Batch account.\n \nBackground：\n\nWhen executing Azure Batch Jobs, users may encounter errors related to the associated Azure Storage Account.\n\n\n \n       Underlying mechanism:\n\nWhen creating Azure Batch pool, new VMs (Batch nodes) will be provisioned. If the user does not assign a static public IP to the Batch pool, a random public IP will be assigned. Whenev…",
+          "link": "https://techcommunity.microsoft.com/t5/azure-paas-blog/how-to-integrate-azure-batch-pool-with-azure-storage-account/ba-p/3588653",
+          "publishedOn": "2022-08-03T03:52:11.000Z",
+          "wordCount": 9798,
+          "title": "How to integrate Azure Batch pool with Azure Storage Account configured with firewall",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/392689iD8B90D77CBF7FFF9?v=v2"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/azure-paas-blog/403-access-denied-authorization-error-caused-by-sticky-bit-in/ba-p/3588424",
+          "author": "Jerry",
+          "description": "It's common that the user of ADLS Gen2 (Azure Data Lake Storage) need to control the permission of different users. One possible way is to use the ACL (Access Control List). For more details about this permission control mode, it can be found in this official document. This blog will mainly focus on one specific setting of the ACL called Sticky Bit and the authorization failure caused by this setting.\n \nThere are four parts in this blog:\n\nWhat is Sticky Bit in ADLS Gen2?\nHow to identify whether the 403 Access Denied is caused by Sticky Bit?\nHow to verify the Sticky Bit setting of a folder?\nHow to disable/enable Sticky Bit setting?\n\n \nWhat is Sticky Bit in ADLS Gen2?\nAccording to Access control lists in Azure Data Lake Storage Gen2 | Microsoft Docs , ACL is a POSIX-like access control syste…",
+          "link": "https://techcommunity.microsoft.com/t5/azure-paas-blog/403-access-denied-authorization-error-caused-by-sticky-bit-in/ba-p/3588424",
+          "publishedOn": "2022-08-03T03:23:01.000Z",
+          "wordCount": 10725,
+          "title": "403 Access Denied authorization error caused by Sticky Bit in ADLS Gen2",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/392651i751CE010E7F84DBF?v=v2"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/azure-paas-blog/how-to-migrate-schema-registry-from-confluent-to-azure-event-hub/ba-p/3565403",
+          "author": "Jay_Gong",
+          "description": "In many event streaming and messaging scenarios, the event or message payload contains structured data. Schema-driven formats such as Apache Avro are often used to serialize or deserialize such structured data. As we know, Confluent is a general platform that we can use Confluent Registry Schema to implement this functionality. Meanwhile, Azure Event Hub supports Azure Schema Registry as well.\n \nThe target audience for this blog is the developers who were using Confluent Schema Registry and planning to migrate Confluent Schema Registry to Azure Schema Registry in Azure Event hub. This blog won’t introduce common basic Confluent/ Kafka client implementation mostly. If you’d like to integrate KafkaProducer into your event-driven application, you could learn from this tutorial. Instead, this …",
+          "link": "https://techcommunity.microsoft.com/t5/azure-paas-blog/how-to-migrate-schema-registry-from-confluent-to-azure-event-hub/ba-p/3565403",
+          "publishedOn": "2022-07-05T23:08:48.000Z",
+          "wordCount": 10548,
+          "title": "How to Migrate Schema Registry from Confluent to Azure Event Hub",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/385716i6C6EFA9C94F0C0AE?v=v2"
+        }
+      ]
+    },
+    {
       "title": "Microsoft Tech Community - Latest Blogs - Azure Architecture Blog",
       "feedUrl": "https://techcommunity.microsoft.com/plugins/custom/microsoft/o365/custom-blog-rss?tid=2893852362688900935&board=AzureArchitectureBlog&size=50",
       "siteUrl": "https://techcommunity.microsoft.com",
@@ -2945,16 +3212,6 @@
           "wordCount": 10092,
           "title": "Armchair Architects: Using Chaos Engineering to plan for specific failure conditions",
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/383490i9E2837586B2CB029/image-size/original?v=v2&px=-1"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/gov-topics-avd-cross-cloud-cross-tenant-deployment/ba-p/3543939",
-          "author": "Kelbley",
-          "description": "I’ve run into a great many customers with complicated AAD / Azure tenant setups – some the result of mergers and acquisitions, others sometimes to do regulatory reasons.\n \nThousands of Microsoft U.S. government and regulated industry customers use the Office 365 Government Community Cloud (GCC) for end-user identity and productivity services.  Azure Active Directory (AAD) for the GCC lives in a U.S.-only partition of AAD in the Azure Commercial service.\n \nMany governmental agencies leverage Azure Government for non-Office 365 services, which cannot directly leverage the AAD identities of GCC users. \n \nThis post is intended to demonstrate how Azure Virtual Desktop (AVD) might be deployed using Azure Commercial as the control plane, and Azure Government for compute. Such a deployment enables…",
-          "link": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/gov-topics-avd-cross-cloud-cross-tenant-deployment/ba-p/3543939",
-          "publishedOn": "2022-06-23T14:57:12.000Z",
-          "wordCount": 11620,
-          "title": "Gov Topics:  AVD Cross-Cloud / Cross-Tenant Deployment",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/383030i7104790D6E81C833?v=v2"
         }
       ]
     },
@@ -7886,36 +8143,6 @@
           "wordCount": 5207,
           "title": "Public preview: Create an additional 5000 Azure Storage accounts within your subscription",
           "imageUrl": "https://azurecomcdn.azureedge.net/cvt-5aef9660c294a872196e19dba078f0fc62416d38abd9c2d2a18afa5aaf4d7ff2/images/shared/social/azure-icon-250x250.png"
-        },
-        {
-          "id": "azure-sql-public-preview-updates-for-late-june-2022",
-          "author": null,
-          "description": "Public preview updates made in late June 2022 for Azure SQL.",
-          "link": "https://azure.microsoft.com/en-us/updates/azure-sql-public-preview-updates-for-late-june-2022/",
-          "publishedOn": "2022-06-23T16:00:01.000Z",
-          "wordCount": 5176,
-          "title": "Azure SQL—Public preview updates for late June 2022",
-          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-a58d5f2506bfb8c7aab9f8b0d37369090505fca3b8d7d0ca65919a0b5118290b/images/shared/social/azure-icon-250x250.png"
-        },
-        {
-          "id": "azure-sql-generally-available-updates-for-late-june-2022",
-          "author": null,
-          "description": "Generally available updates made in late June 2022 for Azure SQL.",
-          "link": "https://azure.microsoft.com/en-us/updates/azure-sql-generally-available-updates-for-late-june-2022/",
-          "publishedOn": "2022-06-23T16:00:00.000Z",
-          "wordCount": 5186,
-          "title": "Azure SQL—Generally available updates for late June 2022",
-          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-a58d5f2506bfb8c7aab9f8b0d37369090505fca3b8d7d0ca65919a0b5118290b/images/shared/social/azure-icon-250x250.png"
-        },
-        {
-          "id": "general-availability-akv-provider-arc-kubernetes",
-          "author": null,
-          "description": "Enable fetching secrets from an Azure Key Vault directly into the workload running on an Arc connected Kubernetes cluster.",
-          "link": "https://azure.microsoft.com/en-us/updates/general-availability-akv-provider-arc-kubernetes/",
-          "publishedOn": "2022-06-23T15:00:00.000Z",
-          "wordCount": 5217,
-          "title": "General availability: Azure Key Vault secrets provider on Azure Arc enabled Kubernetes",
-          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-a58d5f2506bfb8c7aab9f8b0d37369090505fca3b8d7d0ca65919a0b5118290b/images/shared/social/azure-icon-250x250.png"
         }
       ]
     },
