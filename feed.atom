@@ -2,10 +2,103 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2022-12-07T01:19:06.829Z</updated>
+    <updated>2022-12-08T01:16:42.148Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Log Compaction in Azure Event Hubs – Public Preview]]></title>
+        <id>https://techcommunity.microsoft.com/t5/messaging-on-azure-blog/log-compaction-in-azure-event-hubs-public-preview/ba-p/3691722</id>
+        <link href="https://techcommunity.microsoft.com/t5/messaging-on-azure-blog/log-compaction-in-azure-event-hubs-public-preview/ba-p/3691722"/>
+        <updated>2022-12-08T00:02:35.000Z</updated>
+        <summary type="html"><![CDATA[We are happy to announce the public preview of log compaction feature in Azure Event Hubs. With log compaction, you can create compacted event hubs or compacted Kafka topics in Event Hubs and retain the latest events using key-based retention.
+What is Log Compaction?
+Log compaction is a way of retaining data in Event Hubs using event key. By default, each event hub/Kafka topic is created with time-based retention or delete cleanup policy, where events are purged upon the expiration of the retention time. Rather using coarser-grained time based retention, you can use event key-based retention mechanism where Event Hubs retrains the last known value for each event key of an event hub or a Kafka topic. 
+ 
+Log compaction can be useful in scenarios where you stream the same set of updatable eve…]]></summary>
+        <author>
+            <name>Kasun_Indrasiri</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Do more with Azure Spring Apps – scale to zero and enhance productivity]]></title>
+        <id>https://spring.io/blog/2022/12/07/do-more-with-azure-spring-apps-scale-to-zero-and-enhance-productivity</id>
+        <link href="https://spring.io/blog/2022/12/07/do-more-with-azure-spring-apps-scale-to-zero-and-enhance-productivity"/>
+        <updated>2022-12-07T17:00:00.000Z</updated>
+        <summary type="html"><![CDATA[In 2020, Spotify coined the term "Golden Path” to refer to a supported approach and set of components to build and deploy software. Having these paths simplifies the development process, lets developers focus on their applications instead of infrastructure and speeds time to production. Microsoft and VMware have partnered to make Azure Spring Apps a golden path for deploying and scaling Spring applications in the cloud. And with new capabilities like the scale to zero and developer productivity enhancements, Azure Spring Apps now offers an even more economical and optimized route to get your Spring applications into production.
+1. Start from zero and scale to zero – consumption plan
+
+We are introducing a new consumption pricing plan for Azure Spring Apps – you can start from zero and scal…]]></summary>
+        <author>
+            <name>Spring Engineering</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Do more with Azure Spring Apps – scale to zero and enhance productivity]]></title>
+        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/do-more-with-azure-spring-apps-scale-to-zero-and-enhance/ba-p/3691288</id>
+        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/do-more-with-azure-spring-apps-scale-to-zero-and-enhance/ba-p/3691288"/>
+        <updated>2022-12-07T17:00:00.000Z</updated>
+        <summary type="html"><![CDATA[In 2020, Spotify coined the term "Golden Path” to refer to a supported approach and set of components to build and deploy software. Having these paths simplifies the development process, lets developers focus on their applications instead of infrastructure and speeds time to production. Microsoft and VMware have partnered to make Azure Spring Apps a golden path for deploying and scaling Spring applications in the cloud. And with new capabilities like the scale to zero and developer productivity enhancements, Azure Spring Apps now offers an even more economical and optimized route to get your Spring applications into production.
+ 
+1 Start from zero and scale to zero – consumption plan
+ 
+We are introducing a new consumption pricing plan for Azure Spring Apps – you can start from zero and sca…]]></summary>
+        <author>
+            <name>Asir_Selvasingh</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Accelerate mainframe application modernization with IBM and Microsoft]]></title>
+        <id>https://techcommunity.microsoft.com/t5/azure-migration-and/accelerate-mainframe-application-modernization-with-ibm-and/ba-p/3691322</id>
+        <link href="https://techcommunity.microsoft.com/t5/azure-migration-and/accelerate-mainframe-application-modernization-with-ibm-and/ba-p/3691322"/>
+        <updated>2022-12-07T16:39:59.000Z</updated>
+        <summary type="html"><![CDATA[By Brett Tanzer, Vice President of Product Management, Azure Core - MicrosoftBy Kara Todd, Vice President, IBM zSystems Application Platform - IBM
+ 
+As businesses digitally transform, modernizing mainframe applications is an imperative to improve business agility and innovation. The question asked is what is the right approach to mainframe application modernization and how can organizations optimize costs and maximize return on investment (ROI).
+ 
+In a recent Application modernization on the mainframe IBM Institute for Business Value study, among those surveyed, 71% of executives say mainframe-based applications are central to their business strategy. Four out of five respondents say their organizations need to rapidly transform to keep up with competition, which includes modernizing mainf…]]></summary>
+        <author>
+            <name>BrettTanzer</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Provision Azure Spring Apps using Terraform]]></title>
+        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/provision-azure-spring-apps-using-terraform/ba-p/3651532</id>
+        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/provision-azure-spring-apps-using-terraform/ba-p/3651532"/>
+        <updated>2022-12-07T13:36:46.000Z</updated>
+        <summary type="html"><![CDATA[This blog will demonstrate how to provision an app on Azure Spring Apps using Terraform with easy steps.
+
+Terraform is one of the most popular configuration orchestration tools providing a consistent syntax and structure across cloud platforms. It allows safe and convenient design, management, and improvement of infrastructure as code. If you are working in a relatively small team and running DevOps on your own, you can embed Terraform script in your CI/CD pipeline like GitHub Actions to manage everything as code from the provision and config cloud resources to build, test and deploy the app on it. If you are working in an enterprise with a dedicated infrastructure team, you might have that infrastructure team provisioning virtual networks, databases, and compute resources with Terraform, …]]></summary>
+        <author>
+            <name>Hang_Wang</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Build business case with Azure Migrate - Do More with Less (DMWL)]]></title>
+        <id>https://techcommunity.microsoft.com/t5/azure-migration-and/build-business-case-with-azure-migrate-do-more-with-less-dmwl/ba-p/3691018</id>
+        <link href="https://techcommunity.microsoft.com/t5/azure-migration-and/build-business-case-with-azure-migrate-do-more-with-less-dmwl/ba-p/3691018"/>
+        <updated>2022-12-07T12:37:55.000Z</updated>
+        <summary type="html"><![CDATA[Justifying the move to cloud is a crucial decision for a business and it could be difficult to know where to start. To make an informed decision to move to cloud, customers are looking into all available migration strategies and associated costs. They are also looking for ways to build and validate such proposals to be able to decide quickly. With the current economic situation, it is becoming much more important to address cashflow challenges, add capacity and prevent security attacks while ensuring business continuity. Microsoft is committed to helping you navigate this journey with confidence and eliminate the guess work involved in the cost planning process with Azure Migrate’s new data driven business case capability.  With this feature, you can conduct financial analysis with just a …]]></summary>
+        <author>
+            <name>rashijoshi</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How to Create Azure AD Security Group using Microsoft Graph APIs (Postman & Python Code Sample)]]></title>
+        <id>https://techcommunity.microsoft.com/t5/azure-developer-community-blog/how-to-create-azure-ad-security-group-using-microsoft-graph-apis/ba-p/3691380</id>
+        <link href="https://techcommunity.microsoft.com/t5/azure-developer-community-blog/how-to-create-azure-ad-security-group-using-microsoft-graph-apis/ba-p/3691380"/>
+        <updated>2022-12-07T09:17:32.000Z</updated>
+        <summary type="html"><![CDATA[Azure Active Directory (Azure AD) groups are used to manage users that all need the same access and permissions to resources, such as potentially restricted apps and services. Instead of adding special permissions to individual users, you create a group that applies the special permissions to every member of that group.
+ 
+You can refer to below steps for the scenarios in which you have Azure AD service principle with required permissions to create Security Groups in Azure Active Directory and need to call Microsoft Graph REST APIs from your dev or local environment via Postman or through python code. 
+ 
+First step is to register a client application with Azure AD and assign required permissions to create AD groups
+ 
+1. Sign in the Azure portal, search for and select Azure Active Directory.…]]></summary>
+        <author>
+            <name>MayuriBhavsar</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Take full advantage of Low-Code as a code-first developer]]></title>
         <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/take-full-advantage-of-low-code-as-a-code-first-developer/ba-p/3691184</id>
@@ -50,6 +143,16 @@ The post Now available: Azure DevOps Server 2022 RTW appeared first on Azure Dev
 A Bootiful Podcast: Java Champion Gunnar Mo…]]></summary>
         <author>
             <name>Spring Engineering</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Generally available: Azure Site Recovery update rollup 65 - November 2022]]></title>
+        <id>generally-available-azure-site-recovery-update-rollup-65-november-2022</id>
+        <link href="https://azure.microsoft.com/en-us/updates/generally-available-azure-site-recovery-update-rollup-65-november-2022/"/>
+        <updated>2022-12-05T17:00:00.000Z</updated>
+        <summary type="html"><![CDATA[This article describes the improvements for the latest version of Azure Site Recovery components.]]></summary>
+        <author>
+            <name>Azure service updates</name>
         </author>
     </entry>
     <entry>
