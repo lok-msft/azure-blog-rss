@@ -6,6 +6,16 @@
       "siteUrl": "https://spring.io/blog/category/engineering",
       "articles": [
         {
+          "id": "https://spring.io/blog/2022/12/08/a-bootiful-podcast-vaadin-s-marcus-hellberg-on-rich-uis-spring-boot-3-graalvm-native-images-and-more",
+          "author": null,
+          "description": "Hi, Spring fans! In this installment, Josh Long (@starbuxman) talks to Vaadin’s Marcus Hellberg (@marcushellberg) about rich UIs, Vaadin Flow, the new Hilla Framework, GraalVM native image compilation, and so much more",
+          "link": "https://spring.io/blog/2022/12/08/a-bootiful-podcast-vaadin-s-marcus-hellberg-on-rich-uis-spring-boot-3-graalvm-native-images-and-more",
+          "publishedOn": "2022-12-08T11:00:00.000Z",
+          "wordCount": 559,
+          "title": "A Bootiful Podcast: Vaadin's Marcus Hellberg on rich UIs, Spring Boot 3, GraalVM native images, and more",
+          "imageUrl": "https://avatars.githubusercontent.com/u/54473?v=4?s=200"
+        },
+        {
           "id": "https://spring.io/blog/2022/12/07/do-more-with-azure-spring-apps-scale-to-zero-and-enhance-productivity",
           "author": null,
           "description": "In 2020, Spotify coined the term \"Golden Path” to refer to a supported approach and set of components to build and deploy software. Having these paths simplifies the development process, lets developers focus on their applications instead of infrastructure and speeds time to production. Microsoft and VMware have partnered to make Azure Spring Apps a golden path for deploying and scaling Spring applications in the cloud. And with new capabilities like the scale to zero and developer productivity enhancements, Azure Spring Apps now offers an even more economical and optimized route to get your Spring applications into production.\n1. Start from zero and scale to zero – consumption plan\n\r\nWe are introducing a new consumption pricing plan for Azure Spring Apps – you can start from zero and scal…",
@@ -2398,16 +2408,6 @@
           "wordCount": 9737,
           "title": "Announcing the .NET 7 support for Azure functions in an isolated process in public preview",
           "imageUrl": "https://cdn.techcommunity.microsoft.com/assets/MTC_Open_graph_image1.jpg"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/more-fun-with-azure-container-apps-and-compose-files/ba-p/3570234",
-          "author": "steven_murawski",
-          "description": "One of the main missing pieces for the Compose spec support in az containerapp compose was support for the build key.\n \nWith the 0.2.0 release, there is now support for the build key.  The container image build is handled by Azure Container Registry, so you can either provide ACR credentials or a new container registry will be created for you as part of the creation process.  Only context and dockerfile are currently supported.  \n \nExample Compose File for a .NET Web Api project:\n \n \n \n \nversion: '3'\nservices:\n  api:\n    build:\n      context: ./src\n      dockerfile: ./TodoApi/Dockerfile\n    ports:\n      - 8080:80\n \n \n \n \nExample Repository Layout:\n \n\n \nExample Command:\n \n \n \ncd dotnet_api\naz group create --name dotnet_api_example --location eastus\naz containerapp compose create \\\n            --environment dotnetaca \\\n            --resource-group dotnet_api_example\n\n \n \n \nFor More:\n \nFor more examples of az containerapp compose functionality - check out the examples repository. \n \nLet us know what else you'd like to see at containerapp-compose@microsoft.com or via GitHub.",
-          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/more-fun-with-azure-container-apps-and-compose-files/ba-p/3570234",
-          "publishedOn": "2022-07-11T16:57:56.000Z",
-          "wordCount": 9389,
-          "title": "More Fun with Azure Container Apps and Compose Files",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/387267i112C5A0CA4DE8D07?v=v2"
         }
       ]
     },
@@ -2727,6 +2727,16 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/t5/azure-paas-blog/deploying-an-application-with-azure-ci-cd-pipeline-to-a-service/ba-p/3692239",
+          "author": "PritamSinha",
+          "description": "Prerequisites\n \nBefore you begin this tutorial:\n\nInstall Visual Studio 2019 and install the Azure development and ASP.NET and web development workloads.\nInstall the Service Fabric SDK\nCreate a Windows Service Fabric cluster on Azure, for example by following this tutorial\nCreate an Azure DevOps organization. This allows you to create a project in Azure DevOps and use Azure Pipelines.\n\n \nConfigure the Application on the Visual Studio 2019\n \n1. Clone the Voting Application from the link- https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-tutorial-deploy-app-with-cicd-vsts#download-the-voting-sample-application\n \n\n \n2. After that we can enter link to clone the voting application\n \n\n \n3. After clicking on the Clone button, we can see that application is ready to open on Solu…",
+          "link": "https://techcommunity.microsoft.com/t5/azure-paas-blog/deploying-an-application-with-azure-ci-cd-pipeline-to-a-service/ba-p/3692239",
+          "publishedOn": "2022-12-08T10:24:35.000Z",
+          "wordCount": 10160,
+          "title": "Deploying an application with Azure CI/CD pipeline to a Service Fabric cluster",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/424141iBE25EBA2BC6A26AE?v=v2"
+        },
+        {
           "id": "https://techcommunity.microsoft.com/t5/azure-paas-blog/manually-roll-over-a-common-name-based-service-fabric-cluster/ba-p/3688899",
           "author": "akshitavijay",
           "description": "Applies To: Azure service fabric clusters secured with common name-based certificate. If you are trying to rollover a thumbprint-based certificate, please refer to this article\n \nA certificate is an instrument meant to bind information regarding an entity (the subject) to their possession of a pair of asymmetric cryptographic keys, and so constitutes a core construct of public key cryptography. The keys represented by a certificate can be used for protecting data. The client and server use certificates to ensure the privacy and integrity of their communication, and also to conduct mutual authentication. In service fabric, certificates are used to provide security and for authentication.\n \nWhen a Service Fabric cluster certificate is close to expiry, you need to update the certificate. Cert…",
@@ -3004,6 +3014,16 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/armchair-architects-so-you-want-to-build-a-platform/ba-p/3690100",
+          "author": "EricCharran",
+          "description": "In this episode of the Azure Enablement Show, David Blank-Edelman talks to our Armchair Architects, Uli Homann and Eric Charran about what architects think about different platforms: What are the different kinds of platforms? When should you build one? What factors should be considered when designing them? What business problems can they solve? \n \n \nWhat do we mean when we say platforms? \n \nWe get a lot of questions about platforms. We’ll start off our conversation with a level set about what we mean when we talk about building a platform.  \n \nA platform is a collection of technical capabilities that organizations have, which are intended to solve line-of-business problems. So typically in medium to large sized organizations the IT department will build a big data platform and application …",
+          "link": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/armchair-architects-so-you-want-to-build-a-platform/ba-p/3690100",
+          "publishedOn": "2022-12-08T16:02:04.000Z",
+          "wordCount": 12215,
+          "title": "Armchair Architects: So, you want to build a platform…",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/423956iACF25A476492C8D8/image-size/original?v=v2&px=-1"
+        },
+        {
           "id": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/3-reasons-to-optimize-your-workloads-with-azure-advisor/ba-p/3674044",
           "author": "AntonioOrtoll",
           "description": "As macro-economic uncertainty grows in today’s economy so do expectations to accelerate growth, drive revenue higher, and compete beyond the status quo. Early October, Azure launched a campaign to address this unprecedented situation by empowering businesses to “Do More with Less”. The campaign focuses on three value elements – migrating and saving, optimizing existing cloud investments, and reinvesting to drive growth. Read more about each of these topics here. All three highlight the importance of cost optimization in one way or another. Azure Advisor is at the front and center of making some of these objectives a reality. However, you may wonder how this product may help your business in this journey. If you are sitting nodding as you read this last sentence, you are in the right place.…",
@@ -3231,6 +3251,26 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/control-amp-visibility-for-the-power-platform-with-managed/ba-p/3692040",
+          "author": "Zachary Cavanell",
+          "description": "Build app experiences and automate everyday tasks and processes in Power Platform with the Managed Environments capability for easier, proactive governance. Restrict how broadly apps and flows can be shared with capabilities like sharing limits, set up better guardrails through the built-in Solution checker, and test apps before they move into production with the maker-friendly DevOps capability, Pipelines for Power Platform.\n \n\nGroup Product Manager for Microsoft Power Platform, Evan Lew, joins Jeremy Chapman for a deep dive on updates to the Power Platform.\n \nCustom onboarding, Sharing controls, & DevOps integration.\n\n \nCreate a positive feedback loop with your makers using Managed Environments.\n \nAuto-block unsafe apps from getting to production.\n\nEnforce Solution checker with Managed E…",
+          "link": "https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/control-amp-visibility-for-the-power-platform-with-managed/ba-p/3692040",
+          "publishedOn": "2022-12-07T22:11:07.000Z",
+          "wordCount": 11882,
+          "title": "Control & Visibility for the Power Platform with Managed Environments",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/423998i1D39DD3AD06D32A9?v=v2"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/azure-virtual-desktop-essentials-intro-and-full-tour/ba-p/3691268",
+          "author": "Zachary Cavanell",
+          "description": "This is Microsoft’s cloud VDI solution with centralized security, management, and scalability built-in. It’s an efficient and flexible approach to desktop virtualization without compromising control.\n \n\n \nAzure Virtual Desktop works across your devices and apps, with full-featured experiences for Windows, Mac, iOS and Android. The web client also allows you to access your remote desktops and apps from almost any modern browser.\n \nWe’ll take you on a tour of the essentials for Azure Virtual Desktop, including what it is, how it works and your options for configuring the service as an administrator to meet your organization’s needs.\n \n99.9% or higher availability.\n\nUse Availability Sets and Availability Zones in Azure Virtual Desktop for increased resiliency — Start here.\n \nMultiple users on…",
+          "link": "https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/azure-virtual-desktop-essentials-intro-and-full-tour/ba-p/3691268",
+          "publishedOn": "2022-12-07T04:01:19.000Z",
+          "wordCount": 10872,
+          "title": "Azure Virtual Desktop Essentials | Intro and Full Tour",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/423757iD998027F560A8368?v=v2"
+        },
+        {
           "id": "https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/updates-to-windows-app-management-in-intune-with-winget/ba-p/3685406",
           "author": "Zachary Cavanell",
           "description": "Steps for how to import and publish apps into Intune, without hunting down the packages — including EXEs and MSIs, how to self-install apps from the Company Portal, and best practices to smooth your transition if you’re using the Windows Store for Business. \n \n\n \nAs part of our series on Windows Management, Jason Githens, from the Intune engineering team, joins Jeremy Chapman to give a deep dive on the updates for easily adding apps into Intune, powered by winget, the new Windows Package Manager. \n \nInstall directly from the source of truth.\n\nIntune can now instruct managed PCs to install apps from ISV locations using winget. See how Windows Package Manager works with Intune and get started.\n \n \nSelf-install your own apps from the Company Portal. \n\n \nCheck out Microsoft Intune updates.\n \n …",
@@ -3439,16 +3479,6 @@
           "wordCount": 10524,
           "title": "Easily Scale Your Desktop Automation With Hosted RPA Bots",
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/388737i916B62B64F2DDA27?v=v2"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/manage-windows-updates-from-the-cloud-using-endpoint-manager/ba-p/3563093",
-          "author": "Zachary Cavanell",
-          "description": "Are you a device administrator responsible for updating Windows on dozens, hundreds, or thousands of PCs? Have you used WSUS, Configuration Manager or Intune? In this show, we'll explain all of the options, along with managing Windows Updates from the cloud using Microsoft Endpoint Manager and how it compares to your options in Configuration Manager and WSUS.\n\nJason Githens from the Windows Management team at Microsoft joins Jeremy Chapman for a full tour of Microsoft Endpoint Manager's Windows Update ring, feature update, and quality update policies. These policies add a layer of control on top of Windows Update for Business Group Policy settings and are part of the foundation for Windows Autopatch. We'll take a look at your options and how to use each of them, along with best practice re…",
-          "link": "https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/manage-windows-updates-from-the-cloud-using-endpoint-manager/ba-p/3563093",
-          "publishedOn": "2022-07-11T16:31:52.000Z",
-          "wordCount": 11935,
-          "title": "Manage Windows Updates From the Cloud Using Endpoint Manager",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/386609iC31366001002EA0C?v=v2"
         }
       ]
     },
@@ -3840,6 +3870,16 @@
       "siteUrl": "https://devblogs.microsoft.com/python/",
       "articles": [
         {
+          "id": "https://devblogs.microsoft.com/python/?p=9229",
+          "author": "Courtney Webster",
+          "description": "The December 2022 release of the Python and Jupyter extensions for Visual Studio Code are now available. This release includes auto indentation with Pylance, a preview of Python in the browser and a community highlight. Keep on reading to learn more!\nThe post Python in Visual Studio Code – December 2022 Release appeared first on Python.",
+          "link": "https://devblogs.microsoft.com/python/python-in-visual-studio-code-december-2022-release/",
+          "publishedOn": "2022-12-08T16:22:12.000Z",
+          "wordCount": 5025,
+          "title": "Python in Visual Studio Code – December 2022 Release",
+          "imageUrl": "https://devblogs.microsoft.com/python/wp-content/uploads/sites/12/2022/12/run_python_wasm.png"
+        },
+        {
           "id": "https://devblogs.microsoft.com/python/?p=9205",
           "author": "Courtney Webster",
           "description": "The November 2022 release of the Python and Jupyter extensions for Visual Studio Code are now available. This release includes automatic installation of the isort extension, auto imports turned off by default with Pylance, \"just my code\" cell debugging in Jupyter and more!\nThe post Python in Visual Studio Code – November 2022 Release appeared first on Python.",
@@ -3898,16 +3938,6 @@
           "wordCount": 4417,
           "title": "Python in Visual Studio Code – August 2022 Release",
           "imageUrl": "https://devblogs.microsoft.com/python/wp-content/uploads/sites/12/2022/08/Aug2022-fastapidebugconfig-1024x678.gif"
-        },
-        {
-          "id": "https://devblogs.microsoft.com/python/?p=8997",
-          "author": "Luciana Abud",
-          "description": "We’re thrilled to be a Platinum Sponsor of EuroPython this year, happening from July 11th-17th in Dublin, Ireland. If you can’t make it in person, you can still attend the conference remotely, as EuroPython is a hybrid event this year!   \nJuly 13th at 11:35am IST: Jeffrey Mew will be giving a talk on Python &\nThe post Microsoft at EuroPython 2022 appeared first on Python.",
-          "link": "https://devblogs.microsoft.com/python/microsoft-at-europython-2022/",
-          "publishedOn": "2022-07-11T13:20:09.000Z",
-          "wordCount": 3705,
-          "title": "Microsoft at EuroPython 2022",
-          "imageUrl": "https://devblogs.microsoft.com/python/wp-content/uploads/sites/12/2018/08/pythonfeature.png"
         }
       ]
     },
@@ -4324,6 +4354,16 @@
       "feedUrl": "https://devblogs.microsoft.com/cosmosdb/feed/",
       "siteUrl": "https://devblogs.microsoft.com/cosmosdb/",
       "articles": [
+        {
+          "id": "https://devblogs.microsoft.com/cosmosdb/?p=5305",
+          "author": "Chris Joakim",
+          "description": "AltGraph is the idea of implementing “graph workloads” not with a graph database, but with the more general-purpose Azure Cosmos DB for NoSQL (formerly known as the “SQL API”).  Azure Cosmos DB for NoSQL is highly performant and offers the best integration with the rest of Azure. \nThe post AltGraph – Graph workloads with Azure Cosmos DB for NoSQL appeared first on Azure Cosmos DB Blog.",
+          "link": "https://devblogs.microsoft.com/cosmosdb/altgraph-graph-workloads-with-azure-cosmos-db-for-nosql/",
+          "publishedOn": "2022-12-08T18:00:29.000Z",
+          "wordCount": 5323,
+          "title": "AltGraph – Graph workloads with Azure Cosmos DB for NoSQL",
+          "imageUrl": "https://devblogs.microsoft.com/cosmosdb/wp-content/uploads/sites/52/2022/12/altgraph-integrations-1.png"
+        },
         {
           "id": "https://devblogs.microsoft.com/cosmosdb/?p=5242",
           "author": "Subhasish Ghosh",
