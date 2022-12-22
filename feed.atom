@@ -2,10 +2,87 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2022-12-21T01:10:26.281Z</updated>
+    <updated>2022-12-22T01:14:00.380Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Service Bus Queue Overview - Auto refreshing counters]]></title>
+        <id>https://techcommunity.microsoft.com/t5/messaging-on-azure-blog/service-bus-queue-overview-auto-refreshing-counters/ba-p/3702550</id>
+        <link href="https://techcommunity.microsoft.com/t5/messaging-on-azure-blog/service-bus-queue-overview-auto-refreshing-counters/ba-p/3702550"/>
+        <updated>2022-12-21T22:04:49.000Z</updated>
+        <summary type="html"><![CDATA[We are excited to announce the release of auto-refresh of message counters on the queue overview blades in Service Bus portal experience. This feature updates the queue settings and message counters automatically in specific time intervals selected by the user to provide real time message counts within portal.
+ 
+Queue settings and message counts
+ 
+Every Service Bus queue overview blade on Azure Portal shows valuable information pertaining to the queue settings and messages on the queue. Some of the metrics exposed to users are as shown below:
+
+ 
+
+ 
+Currently, the queue settings and message counts are only updated if the page is voluntarily refreshed by the user. A lot of users are interested in the metrics getting updated automatically when they are in an active queue without voluntarily reloading the page or refreshing the page. This also impacts customers flow introducing a context switch.
+ 
+Enabling auto-refresh of message counters
+ 
+The feature is set to “off” by default. Users are free to turn the Auto-refresh toggle to “on” and select the time interval at which they would like to see the counters refreshed automatically. Turning “on” the auto refresh feature selects 10 seconds refresh by default but users can select from 5 seconds to up to a 1 minute.
+ 
+Steps to enable the feature –
+Default – auto refresh is turned “off”
+
+ 
+Toggle “on” the auto refresh to observe the Refresh after timer selected to 10 seconds by default.
+
+ 
+Click to select more refresh timing option from the dropdown
+
+Done, after you select, the auto refresh feature will be enabled on all the queues on your service bus namespace.
+ 
+NOTES –
+
+This feature once enabled will apply to all queues within the service bus namespace.
+This is a portal specific feature. Hence, users cannot enable/ update/ disable the feature through PowerShell/ CLI]]></summary>
+        <author>
+            <name>SurajIyer</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Azure portal November 2022 updates]]></title>
+        <id>https://techcommunity.microsoft.com/t5/azure-governance-and-management/azure-portal-november-2022-updates/ba-p/3697487</id>
+        <link href="https://techcommunity.microsoft.com/t5/azure-governance-and-management/azure-portal-november-2022-updates/ba-p/3697487"/>
+        <updated>2022-12-21T18:30:08.000Z</updated>
+        <summary type="html"><![CDATA[Databases>SQL Databases
+
+Now generally available: Azure Synapse Link for SQL 
+
+Mobile > Virtual Machines and Network Security Groups 
+
+Manage NSG security rules on mobile
+
+Intune
+
+Updates to Microsoft Intune
+
+Let's look at each of these updates in greater detail.
+Databases>SQL Databases
+ Now generally available: Azure Synapse Link for SQL 
+You can use the Azure Synapse Link for SQL functionality to replicate your operational data into an Azure Synapse Analytics dedicated SQL pool from Azure SQL Database. 
+ 
+If you want a way to move transactional data to a data warehouse without building complex ETL packages, look no further than Synapse Link. This feature allows you specify a source Azure SQL Database and a destination Synapse dedicated SQL pool and have the data automatically replicated …]]></summary>
+        <author>
+            <name>Allison_Cordle</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Microsoft Graph PowerShell v2 is now in public preview, half the size, and will speed up your automations]]></title>
+        <id>https://devblogs.microsoft.com/microsoft365dev/?p=12522</id>
+        <link href="https://devblogs.microsoft.com/microsoft365dev/microsoft-graph-powershell-v2-is-now-in-public-preview-half-the-size-and-will-speed-up-your-automations/"/>
+        <updated>2022-12-21T13:20:20.000Z</updated>
+        <summary type="html"><![CDATA[Automate and manage your Microsoft 365 tenant by using the Microsoft Graph PowerShell SDK that brings the Microsoft Graph API to PowerShell. Focus on what really matters and build scripts to automate your work instead of worrying about throttling, retries, redirects,
+The post Microsoft Graph PowerShell v2 is now in public preview, half the size, and will speed up your automations appeared first on Microsoft 365 Developer Blog.]]></summary>
+        <author>
+            <name>Microsoft Graph team</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[GA: App Insights integration for .NET apps on App Service Linux and On by Default for .NET and Java]]></title>
         <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/ga-app-insights-integration-for-net-apps-on-app-service-linux/ba-p/3701444</id>
