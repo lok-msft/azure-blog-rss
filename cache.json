@@ -6,6 +6,26 @@
       "siteUrl": "https://spring.io/blog/category/engineering",
       "articles": [
         {
+          "id": "https://spring.io/blog/2022/12/22/spring-boot-3-0-1-available-now",
+          "author": null,
+          "description": "On behalf of the team and everyone who has contributed, I’m happy to announce that Spring Boot 3.0.1 has been released and is now available from Maven Central.\n\r\nThis release includes 54 bug fixes, documentation improvements, and dependency upgrades. Thanks to all those who have contributed with issue reports and pull requests.\nHow can you help?\n\r\nIf you’re interested in helping out, check out the “ideal for contribution” tag in the issue repository. If you have general questions, please ask on stackoverflow.com using the spring-boot tag or chat with the community on Gitter.\n\r\nProject Page | GitHub | Issues | Documentation | Stack Overflow | Gitter",
+          "link": "https://spring.io/blog/2022/12/22/spring-boot-3-0-1-available-now",
+          "publishedOn": "2022-12-23T00:00:00.000Z",
+          "wordCount": 608,
+          "title": "Spring Boot 3.0.1 available now",
+          "imageUrl": "https://avatars.githubusercontent.com/u/519772?v=4?s=200"
+        },
+        {
+          "id": "https://spring.io/blog/2022/12/22/a-bootiful-podcast-field-cto-and-chief-evangelist-at-gradle-justin-reock",
+          "author": null,
+          "description": "Hi, Spring fans and happy holidays!! In this installment, Josh Long talks to Field CTO and Chief Evangelist at Gradle Justin Reock.",
+          "link": "https://spring.io/blog/2022/12/22/a-bootiful-podcast-field-cto-and-chief-evangelist-at-gradle-justin-reock",
+          "publishedOn": "2022-12-22T19:00:00.000Z",
+          "wordCount": 539,
+          "title": "A Bootiful Podcast: Field CTO and Chief Evangelist at Gradle Justin Reock",
+          "imageUrl": "https://avatars.githubusercontent.com/u/54473?v=4?s=200"
+        },
+        {
           "id": "https://spring.io/blog/2022/12/20/this-week-in-spring-december-20th-2022",
           "author": null,
           "description": "Hi, Spring fans! It’s the 20th of December, 2022 as I write this, which means that by the time we meet again, here on this humble blog, Tuesday next week, Christmas will already have come and gone. Chanukah is already here! Time is sure flying! So, to those of you who celebrate: Happy Chanukah, Merry Christmas, and happy holidays! \n\r\nThere’s arguably nothing better than the gift of knowledge, so let’s dive right into this week’s roundup:\n\r\n\r\n  \nA Bootiful Podcast: Microsoft’s Brian Benz on the state of Java, Microsoft, Azure, and so much more\n\r\n  \nSpring Framework 6.0.3 available now\n\r\n  \nSpring Security 6.0.1, 5.8.1, 5.7.6 and 5.6.10 available now\n\r\n  \nSpring for Apache Pulsar 0.1.0 available now\n\r\n  \nSpring for GraphQL 1.1.1 released\n\r\n  \nFixing the No Main Manifest Attribute in Spring Boot\n\r\n  \nOracle has a nice post: Go Native with Spring Boot 3 and GraalVM\n\r\n  \nBaeldung has an interesting tutorial on Pinpoint, which looks to be a large APM suite with some interesting capabilities.\n\r\n  \n[Stream Large Byte[] to File With WebClient](https://feeds.feedblitz.com/~/722459996/0/baeldung~Stream-Large-Byte-to-File-With-WebClient)\n\r\n  \nBlog: Kubernetes 1.26: Alpha API For Dynamic Resource Allocation\n\r\n  \nBlog: Kubernetes 1.26: Device Manager graduates to GA\n\r\n  \nBlog: Kubernetes 1.26: Introducing Validating Admission Policies\n\r\n  \nBlog: Kubernetes 1.26: Non-Graceful Node Shutdown Moves to Beta\n\r\n  \nRunning Multiple Thread Groups in JMeter\n\r\n  \nExtract Values using AssertJ in Java\n\r\n  \nInteresting, and well worth bookmarking: how to build a statically linked or mostly-statically linked native executable with GraalVM",
@@ -2817,6 +2837,26 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/t5/azure-paas-blog/azure-event-hub-how-to-stop-the-incurring-cost-on-my-eventhub/ba-p/3700014",
+          "author": "KavyaRK",
+          "description": "Case: In a situation, you observe your EventHub namespace is still incurring the cost, even though you are not doing any operations (read/write/management) on it and your EventHub namespace has no active EventHub instances present.\n \nRoot Cause of the behavior: \n\nAt the time of creating the Azure EventHub namespace (Basic/Standard/Premium/Dedicated tier), you may have to give pre-purchased units of capacity in terms of Throughput units/Processing units/Capacity units based on the tier you choose. These pre-purchased units of capacity controls throughput capacity of the EventHub namespace.\nAmong all the other pricing factors, cost will be incurred based on the number of pre-purchased units of capacity (Throughput units/Processing units/Capacity units) at the EventHub namespace level.\nHere I have attached a document, referring to the Azure EventHub pricing. Pricing - Event Hubs | Microsoft Azure\n\n \n\nAs the pre-purchased units of capacity (Throughput units/Processing units/Capacity units) are defined at the EventHub namespace level, you will be charged per pre-purchased units of capacity configured hourly, even though there are no active EventHub instances present, and you are not performing any kind of operations on it.\n\nHow to mitigate this behavior:\n\nTo stop the incurring cost while EventHub is not in use, you may have to delete the EventHub namespace, instead of disabling the EventHub instances.\nYou can as well export the ARM template to create the same EventHub namespace in future, before deleting the existing EventHub namespace. Export template in Azure portal - Azure Resource Manager | Microsoft Learn",
+          "link": "https://techcommunity.microsoft.com/t5/azure-paas-blog/azure-event-hub-how-to-stop-the-incurring-cost-on-my-eventhub/ba-p/3700014",
+          "publishedOn": "2022-12-22T09:43:04.000Z",
+          "wordCount": 9261,
+          "title": "Azure Event Hub | How to stop the incurring Cost on my EventHub, while not in use",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/427062i2D2CC81D47D18923?v=v2"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/azure-paas-blog/troubleshoot-500-backendconnectionfailure-ssl-tls-error/ba-p/3700074",
+          "author": "jiayiwu",
+          "description": "Background Information\n \nAs we all know, the API management service is nothing but a proxy that helps to forward the request and response between the client and the backend server. Ideally, the API Management server will maintain two connections: the one with the client side, and the one with the backend server. The backend server proceeds the request from APIM when SSL/TLS connection is successfully established between APIM and the backend server. However, if any of the elements within the SSL/TLS connection go wrong, the client server may receive a 500 BackendConnectionFailure error with the message ‘The underlying connection was closed: Could not establish trust relationship for the SSL/TLS secure channel.’\n \nThis article is written to share some common causes of the 500 BackendConnecti…",
+          "link": "https://techcommunity.microsoft.com/t5/azure-paas-blog/troubleshoot-500-backendconnectionfailure-ssl-tls-error/ba-p/3700074",
+          "publishedOn": "2022-12-22T08:31:29.000Z",
+          "wordCount": 11220,
+          "title": "Troubleshoot 500 BackendConnectionFailure SSL/TLS Error",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/427156i16089D2080098077?v=v2"
+        },
+        {
           "id": "https://techcommunity.microsoft.com/t5/azure-paas-blog/deploying-an-application-with-azure-ci-cd-pipeline-to-a-service/ba-p/3692239",
           "author": "PritamSinha",
           "description": "Prerequisites\n \nBefore you begin this tutorial:\n\nInstall Visual Studio 2019 and install the Azure development and ASP.NET and web development workloads.\nInstall the Service Fabric SDK\nCreate a Windows Service Fabric cluster on Azure, for example by following this tutorial\nCreate an Azure DevOps organization. This allows you to create a project in Azure DevOps and use Azure Pipelines.\n\n \nConfigure the Application on the Visual Studio 2019\n \n1. Clone the Voting Application from the link- https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-tutorial-deploy-app-with-cicd-vsts#download-the-voting-sample-application\n \n\n \n2. After that we can enter link to clone the voting application\n \n\n \n3. After clicking on the Clone button, we can see that application is ready to open on Solu…",
@@ -3529,16 +3569,6 @@
           "wordCount": 11813,
           "title": "Manage Objectives and Key Results with Transparency | Microsoft Viva Goals",
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/392248iE51DD26472C4B733?v=v2"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/office-and-microsoft-365-apps-deployment-amp-update-management/ba-p/3580592",
-          "author": "Zachary Cavanell",
-          "description": "If you're running Office 2016 or earlier, see your best options to configure Office for deployment and how you can predictably manage updates for newer versions of Office whether you're targeting a few dozen or a few thousand users. Host Jeremy Chapman answers your top questions for Office and Microsoft 365 app deployment and servicing.\n \n\nImportantly, Office 2016 & 2019 won’t be supported for connecting to Microsoft 365 services, including Exchange Online, starting Oct 2023. And Security updates for Office 2013 will end in April 2023. Don't wait until the last minute - now is a great time to upgrade. \n \n \nWhy it's important to update today. \n\nOffice installation packages have been replaced by Click to Run. Security Update Status provides a 360-degree view of all connected devices that's n…",
-          "link": "https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/office-and-microsoft-365-apps-deployment-amp-update-management/ba-p/3580592",
-          "publishedOn": "2022-07-25T15:03:05.000Z",
-          "wordCount": 11101,
-          "title": "Office and Microsoft 365 Apps Deployment & Update Management 2022",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/390320i93ABCF354952640D?v=v2"
         }
       ]
     },
@@ -4792,16 +4822,6 @@
           "wordCount": 9764,
           "title": "Business Impacts to Healthy Cloud Monitoring",
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/391627i3E8175557D46CCBD?v=v2"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/azure-governance-and-management/azure-portal-june-2022-updates/ba-p/3573261",
-          "author": "Allison_Cordle",
-          "description": "Integration > Messaging Services \n\nNew landing page for Azure Event Grid\n\nMobile > Cost Management\n\nConfidential Highly requested cost management information is now available on the Azure Mobile App\n\nIntune \n\nUpdates to Microsoft Intune\n\nLet’s look at each of these updates in greater detail. \n \nIntegration > Messaging Services \nAzure Event Grid has a new landing page\nThe new Azure Event Grid landing page offers the following features aimed at providing a simple user experience for new and seasoned Azure Event Grid customers:\n\nOverview page that guides you as to the type of Event Grid resource to use depending on your event-driven integration requirements.\n\n\n\nLeft-navigation menu with sections from which you can manage your Event Grid resources.\n\n\n\nEvent Grid concerns grouped into a cohesiv…",
-          "link": "https://techcommunity.microsoft.com/t5/azure-governance-and-management/azure-portal-june-2022-updates/ba-p/3573261",
-          "publishedOn": "2022-07-25T20:01:03.000Z",
-          "wordCount": 9561,
-          "title": "Azure portal June 2022 updates",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/388181i947D0BC97B4E0B19?v=v2"
         }
       ]
     },
@@ -8322,46 +8342,6 @@
           "publishedOn": "2022-07-26T19:00:28.000Z",
           "wordCount": 5198,
           "title": "Public preview: SQL DB output connector improvements in Stream Analytics",
-          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-3f057ebb0edf14bbfcd43b4e569fa7e2568236ce1d889f278f40b27bbd8ff476/images/shared/social/azure-icon-250x250.png"
-        },
-        {
-          "id": "public-preview-share-images-across-subscriptions-and-tenants-with-new-compute-gallery-feature",
-          "author": null,
-          "description": "Using direct shared gallery, a feature of Azure Compute Gallery, you can now share VM images directly with other subscriptions and tenants.",
-          "link": "https://azure.microsoft.com/en-us/updates/public-preview-share-images-across-subscriptions-and-tenants-with-new-compute-gallery-feature/",
-          "publishedOn": "2022-07-25T19:00:17.000Z",
-          "wordCount": 5084,
-          "title": "Public preview: Share images across subscriptions and tenants with new Compute Gallery feature",
-          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-3f057ebb0edf14bbfcd43b4e569fa7e2568236ce1d889f278f40b27bbd8ff476/images/shared/social/azure-icon-250x250.png"
-        },
-        {
-          "id": "microsoft-purview-managed-attributes-public-preview",
-          "author": null,
-          "description": "Append organizational metadata to your technical assets by creating and applying managed attributes in the Microsoft Purview data catalog.",
-          "link": "https://azure.microsoft.com/en-us/updates/microsoft-purview-managed-attributes-public-preview/",
-          "publishedOn": "2022-07-25T16:00:15.000Z",
-          "wordCount": 5049,
-          "title": "Public preview: Managed attributes in Microsoft Purview data catalog",
-          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-3f057ebb0edf14bbfcd43b4e569fa7e2568236ce1d889f278f40b27bbd8ff476/images/shared/social/azure-icon-250x250.png"
-        },
-        {
-          "id": "microsoft-purview-rich-text-editor",
-          "author": null,
-          "description": "Add rich text formatting to asset and term descriptions in the Microsoft Purview data catalog.",
-          "link": "https://azure.microsoft.com/en-us/updates/microsoft-purview-rich-text-editor/",
-          "publishedOn": "2022-07-25T16:00:14.000Z",
-          "wordCount": 5047,
-          "title": "Generally available: Rich text editor in Microsoft Purview data catalog",
-          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-3f057ebb0edf14bbfcd43b4e569fa7e2568236ce1d889f278f40b27bbd8ff476/images/shared/social/azure-icon-250x250.png"
-        },
-        {
-          "id": "cost-details-api",
-          "author": null,
-          "description": "Cost Details API is now generally available for use by EA and MCA customers.",
-          "link": "https://azure.microsoft.com/en-us/updates/cost-details-api/",
-          "publishedOn": "2022-07-25T15:00:14.000Z",
-          "wordCount": 5266,
-          "title": "General availability: Microsoft Cost Details API for EA and MCA customers",
           "imageUrl": "https://azurecomcdn.azureedge.net/cvt-3f057ebb0edf14bbfcd43b4e569fa7e2568236ce1d889f278f40b27bbd8ff476/images/shared/social/azure-icon-250x250.png"
         }
       ]
