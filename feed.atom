@@ -2,10 +2,29 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2022-12-23T01:12:12.617Z</updated>
+    <updated>2022-12-24T01:07:18.713Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Azure Functions OpenAPI Extension Update]]></title>
+        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/azure-functions-openapi-extension-update/ba-p/3702128</id>
+        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/azure-functions-openapi-extension-update/ba-p/3702128"/>
+        <updated>2022-12-23T08:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Since the last update of v1.4.0, this Azure Functions OpenAPI extension has a lot of improvements. Here in this post, let's discuss what improvements have been made.
+Update – v1.5.0
+.NET 7 support for the isolated worker extension
+According to the Azure Functions roadmap, Azure Functions isolated worker model has started supporting .NET 7. Therefore, this OpenAPI extension also starts supporting .NET 7 with the isolated worker model. The migration step is as easy as changing the target framework. Update your .csproj file and find the <TargetFramework> node, and change it from netcoreapp3.1 (.NET Core 3.1), net5.0 (.NET 5) or net6.0 (.NET 6), to net7.0 (.NET 7).
+ 
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <AzureFunctionsVersion>v4…]]></summary>
+        <author>
+            <name>justinyoo</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Spring Boot 3.0.1 available now]]></title>
         <id>https://spring.io/blog/2022/12/22/spring-boot-3-0-1-available-now</id>
@@ -13637,38 +13656,6 @@ For this walkthrough, we will be using a Simple dotnet 7 API, we show its docker
         <summary type="html"><![CDATA[You now have the option to take the phone as a device guided tour when creating a new application in Azure IoT Central.]]></summary>
         <author>
             <name>Azure service updates</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[General availability: VM Applications – Manage and deploy applications to VMs and VMSS]]></title>
-        <id>general-availability-vm-applications-manage-and-deploy-applications-to-virtual-machines-and-scale-sets</id>
-        <link href="https://azure.microsoft.com/en-us/updates/general-availability-vm-applications-manage-and-deploy-applications-to-virtual-machines-and-scale-sets/"/>
-        <updated>2022-07-26T19:30:28.000Z</updated>
-        <summary type="html"><![CDATA[VM Apps is a service that simplifies management, sharing, and global distribution of application packages at scale.]]></summary>
-        <author>
-            <name>Azure service updates</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Public preview: SQL DB output connector improvements in Stream Analytics]]></title>
-        <id>public-preview-azure-stream-analytics-allows-creation-of-new-sql-tables-and-schema-mismatch-detection-for-existing-sql-tables</id>
-        <link href="https://azure.microsoft.com/en-us/updates/public-preview-azure-stream-analytics-allows-creation-of-new-sql-tables-and-schema-mismatch-detection-for-existing-sql-tables/"/>
-        <updated>2022-07-26T19:00:28.000Z</updated>
-        <summary type="html"><![CDATA[You can now configure your Azure Stream Analytics job to write to a SQL table that hasn't yet been created or see schema mismatch detection for an existing SQL table.]]></summary>
-        <author>
-            <name>Azure service updates</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Discover your application’s breakpoint using Azure Load Testing]]></title>
-        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/discover-your-application-s-breakpoint-using-azure-load-testing/ba-p/3581191</id>
-        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/discover-your-application-s-breakpoint-using-azure-load-testing/ba-p/3581191"/>
-        <updated>2022-07-26T16:08:34.000Z</updated>
-        <summary type="html"><![CDATA[You’ve been assessing the performance of your application. You’re confident that it’s functioning well. So, what next?
-You can take it one step further and determine when exactly your application will break by pushing its limits. This is called breakpoint testing. It helps you identify the maximum requests per second that your application can handle before the performance degrades. Even if you don’t expect as many users as requests per second, it’s important to discover your application’s breakpoint and verify that your application can recover without a lot of effort. It also helps in understanding which component of your application fails first and why.
-As the product manager for Azure Load Testing, I've been working with many customers to validate our preview release. Some of them have d…]]></summary>
-        <author>
-            <name>Nikita_Nallamothu</name>
         </author>
     </entry>
 </feed>

@@ -22,11 +22,54 @@
             data-action="toggle-accordions"
             title="Click to toggle the day, Ctrl + click to toggle all."
           >
-            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2022-12-23 datetime="2022-12-23T00:00:00.000Z">2022-12-23</time>
-            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2022-12-23 datetime="2022-12-23T00:00:00.000Z"></time>
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2022-12-23 datetime="2022-12-23T08:00:00.000Z">2022-12-23</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2022-12-23 datetime="2022-12-23T08:00:00.000Z"></time>
           </button>
         </h2>
         <ul class="sources card">
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Microsoft Tech Community - Latest Blogs - Apps on Azure Blog</button>
+                  <a class="source-heading__link" href="https://techcommunity.microsoft.com">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/azure-functions-openapi-extension-update/ba-p/3702128"
+                        open
+                      >
+                        <summary class="article-expander__title">Azure Functions OpenAPI Extension Update</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/azure-functions-openapi-extension-update/ba-p/3702128">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://techcommunity.microsoft.com/t5/image/serverpage/image-id/427933i3EC0FDA61F4EC9DA/image-size/original?v&#x3D;v2&amp;px&#x3D;-1" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>Since the last update of v1.4.0, this Azure Functions OpenAPI extension has a lot of improvements. Here in this post, let&#x27;s discuss what improvements have been made.
+Update – v1.5.0
+.NET 7 support for the isolated worker extension
+According to the Azure Functions roadmap, Azure Functions isolated worker model has started supporting .NET 7. Therefore, this OpenAPI extension also starts supporting .NET 7 with the isolated worker model. The migration step is as easy as changing the target framework. Update your .csproj file and find the  node, and change it from netcoreapp3.1 (.NET Core 3.1), net5.0 (.NET 5) or net6.0 (.NET 6), to net7.0 (.NET 7).
+ 
+
+
+  
+    net7.0
+    v4…</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;33
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
             <li class="card__section">
               <section class="js-toggle-accordions-scope">
                 <h3 class="source-heading">
@@ -30581,114 +30624,10 @@ For this walkthrough, we will be using a Simple dotnet 7 API, we show its docker
             </li>
         </ul>
       </section>
-      <section class="daily-content js-toggle-accordions-scope">
-        <h2 class="daily-heading">
-          <button
-            class="daily-heading-toggle"
-            data-action="toggle-accordions"
-            title="Click to toggle the day, Ctrl + click to toggle all."
-          >
-            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2022-07-27 datetime="2022-07-26T19:30:28.000Z">2022-07-27</time>
-            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2022-07-27 datetime="2022-07-26T19:30:28.000Z"></time>
-          </button>
-        </h2>
-        <ul class="sources card">
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Azure service updates</button>
-                  <a class="source-heading__link" href="https://azure.microsoft.com/en-us/updates/">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="general-availability-vm-applications-manage-and-deploy-applications-to-virtual-machines-and-scale-sets"
-                        open
-                      >
-                        <summary class="article-expander__title">General availability: VM Applications – Manage and deploy applications to VMs and VMSS</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://azure.microsoft.com/en-us/updates/general-availability-vm-applications-manage-and-deploy-applications-to-virtual-machines-and-scale-sets/">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://azurecomcdn.azureedge.net/cvt-3f057ebb0edf14bbfcd43b4e569fa7e2568236ce1d889f278f40b27bbd8ff476/images/shared/social/azure-icon-250x250.png" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>VM Apps is a service that simplifies management, sharing, and global distribution of application packages at scale.</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;18
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="public-preview-azure-stream-analytics-allows-creation-of-new-sql-tables-and-schema-mismatch-detection-for-existing-sql-tables"
-                        open
-                      >
-                        <summary class="article-expander__title">Public preview: SQL DB output connector improvements in Stream Analytics</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://azure.microsoft.com/en-us/updates/public-preview-azure-stream-analytics-allows-creation-of-new-sql-tables-and-schema-mismatch-detection-for-existing-sql-tables/">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://azurecomcdn.azureedge.net/cvt-3f057ebb0edf14bbfcd43b4e569fa7e2568236ce1d889f278f40b27bbd8ff476/images/shared/social/azure-icon-250x250.png" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>You can now configure your Azure Stream Analytics job to write to a SQL table that hasn&#x27;t yet been created or see schema mismatch detection for an existing SQL table.</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;17
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Microsoft Tech Community - Latest Blogs - Apps on Azure Blog</button>
-                  <a class="source-heading__link" href="https://techcommunity.microsoft.com">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/discover-your-application-s-breakpoint-using-azure-load-testing/ba-p/3581191"
-                        open
-                      >
-                        <summary class="article-expander__title">Discover your application’s breakpoint using Azure Load Testing</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/discover-your-application-s-breakpoint-using-azure-load-testing/ba-p/3581191">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://techcommunity.microsoft.com/t5/image/serverpage/image-id/390960i90064EAFAD3FA0AF/image-size/original?v&#x3D;v2&amp;px&#x3D;-1" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>You’ve been assessing the performance of your application. You’re confident that it’s functioning well. So, what next?
-You can take it one step further and determine when exactly your application will break by pushing its limits. This is called breakpoint testing. It helps you identify the maximum requests per second that your application can handle before the performance degrades. Even if you don’t expect as many users as requests per second, it’s important to discover your application’s breakpoint and verify that your application can recover without a lot of effort. It also helps in understanding which component of your application fails first and why.
-As the product manager for Azure Load Testing, I&#x27;ve been working with many customers to validate our preview release. Some of them have d…</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;34
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
-        </ul>
-      </section>
 
     <footer>
-      <a class="footer-link" href="https://github.com/lok-msft/azure-blog-rss/actions/runs/3762339369">
-        <time id="build-timestamp" datetime="2022-12-23T01:12:12.552Z">2022-12-23T01:12:12.552Z</time>
+      <a class="footer-link" href="https://github.com/lok-msft/azure-blog-rss/actions/runs/3769149785">
+        <time id="build-timestamp" datetime="2022-12-24T01:07:18.651Z">2022-12-24T01:07:18.651Z</time>
       </a>
       <a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a>
     </footer>
