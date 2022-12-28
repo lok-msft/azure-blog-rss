@@ -2,10 +2,53 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2022-12-27T01:13:14.457Z</updated>
+    <updated>2022-12-28T01:12:11.155Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[This Week in Spring  - Happy New Year 2023 edition - December 27th, 2022]]></title>
+        <id>https://spring.io/blog/2022/12/27/this-week-in-spring-happy-new-year-2023-edition-december-27th-2022</id>
+        <link href="https://spring.io/blog/2022/12/27/this-week-in-spring-happy-new-year-2023-edition-december-27th-2022"/>
+        <updated>2022-12-27T08:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Hi, Spring fans! Welcome to another installment of This Week in Spring! It’s 27 December as I write this and - being honest - I couldn’t be happier. It’s raining outside. I’m in a warm cozy office. Good music is playing. People are asleep in my home. I can hear the raindrops and wind outside the window. I’m at peace as I code. And code I have. I’ve been updating my blog, and a half dozen little side projects, to the new Spring Boot 3. This has given me a chance to do a little, shall we say, Spring cleaning, and also update my Github Actions to the latest and greatest. I’m pleasantly surprised by how many builds I’ve switched over to 3.0 and then used the AOT engine to build a GraalVM native image and it just worked! 
+
+How were or are your holidays going? My family and I had a lovely Chris…]]></summary>
+        <author>
+            <name>Spring Engineering</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How to Troubleshoot Deny Policy Step by Step]]></title>
+        <id>https://techcommunity.microsoft.com/t5/azure-paas-blog/how-to-troubleshoot-deny-policy-step-by-step/ba-p/3704375</id>
+        <link href="https://techcommunity.microsoft.com/t5/azure-paas-blog/how-to-troubleshoot-deny-policy-step-by-step/ba-p/3704375"/>
+        <updated>2022-12-27T06:42:19.000Z</updated>
+        <summary type="html"><![CDATA[For security or compliance, your subscription administrators might assign policies that limit how resources are deployed. Deny policy, as one policy type, is used to prevent a resource request that does not match defined standards through a policy definition and fails the request. For example, deny policies that prevent creating public IP addresses, network security groups, user-defined routes, or route tables.
+ 
+Document Reference: https://learn.microsoft.com/en-us/azure/governance/policy/concepts/effects#deny
+ 
+This blog will show you how to troubleshoot deny policy related issues and how to fix them.
+ 
+Troubleshoot RequestDisallowedByPolicy errors and non-compliant resources
+ 
+[Example built-in policy]
+Policy Definition Name: Storage accounts should have the specified minimum TLS versio…]]></summary>
+        <author>
+            <name>zoeylan</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Quickstart: Manual Effect in Azure Policy]]></title>
+        <id>https://techcommunity.microsoft.com/t5/azure-paas-blog/quickstart-manual-effect-in-azure-policy/ba-p/3704080</id>
+        <link href="https://techcommunity.microsoft.com/t5/azure-paas-blog/quickstart-manual-effect-in-azure-policy/ba-p/3704080"/>
+        <updated>2022-12-27T01:37:32.000Z</updated>
+        <summary type="html"><![CDATA[Recently, a new feature called “Manual effect” popped out to users and it is still in the PREVIEW stage. It allows users to self-attest the compliance of resources or scopes. In another word, it gives users a chance to determine the compliance result of the specific resource and the reason. Currently, it is mostly used inside the Security related built-in policies and initiatives. In this post, I will briefly introduce what it looks like and how it works.
+ 
+There are multiple built-in policies under the Security category to check the subscription level compliance results with manual effect. For the built-in example, you may check “Issue public key certificates” (policy definition ID: /providers/Microsoft.Authorization/policyDefinitions/97d91b33-7050-237b-3e23-a77d57d84e13). This policy onl…]]></summary>
+        <author>
+            <name>Yi_Yang</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Azure Functions OpenAPI Extension Update]]></title>
         <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/azure-functions-openapi-extension-update/ba-p/3702128</id>
@@ -13527,22 +13570,6 @@ On SWA we have application configuration and you might think this is the startin
 In fact, there's no way to directly control the client "environment" once it's deployed, as the application is bui…]]></summary>
         <author>
             <name>aaronpowell</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Improving the tools for monitoring Log Analytics workspace health]]></title>
-        <id>https://techcommunity.microsoft.com/t5/azure-observability-blog/improving-the-tools-for-monitoring-log-analytics-workspace/ba-p/3566634</id>
-        <link href="https://techcommunity.microsoft.com/t5/azure-observability-blog/improving-the-tools-for-monitoring-log-analytics-workspace/ba-p/3566634"/>
-        <updated>2022-07-31T10:34:13.000Z</updated>
-        <summary type="html"><![CDATA[The Log Analytics product team identified the two important indicators of workspace’s health as ingestion latency and query success percentage.
- 
-Ingestion latency signals measure the time it takes for an event to be reported, processed and become available for search in your logs data store. You can read more about how we calculate the latency and what can influence data latency time.
- 
-Query success percentage measures the number of queries that return a non-Http5XX - for example, when a query completes successfully or fails with user-side errors. This number does not include queries initiated by Azure log search Alerts or Azure Sentinel. This signal will be available via Resource health in the near future.
- 
-We’ve worked to enhance these workspace health indicators with features we rele…]]></summary>
-        <author>
-            <name>shemers</name>
         </author>
     </entry>
     <entry>

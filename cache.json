@@ -6,6 +6,16 @@
       "siteUrl": "https://spring.io/blog/category/engineering",
       "articles": [
         {
+          "id": "https://spring.io/blog/2022/12/27/this-week-in-spring-happy-new-year-2023-edition-december-27th-2022",
+          "author": null,
+          "description": "Hi, Spring fans! Welcome to another installment of This Week in Spring! It’s 27 December as I write this and - being honest - I couldn’t be happier. It’s raining outside. I’m in a warm cozy office. Good music is playing. People are asleep in my home. I can hear the raindrops and wind outside the window. I’m at peace as I code. And code I have. I’ve been updating my blog, and a half dozen little side projects, to the new Spring Boot 3. This has given me a chance to do a little, shall we say, Spring cleaning, and also update my Github Actions to the latest and greatest. I’m pleasantly surprised by how many builds I’ve switched over to 3.0 and then used the AOT engine to build a GraalVM native image and it just worked! \n\r\nHow were or are your holidays going? My family and I had a lovely Chris…",
+          "link": "https://spring.io/blog/2022/12/27/this-week-in-spring-happy-new-year-2023-edition-december-27th-2022",
+          "publishedOn": "2022-12-27T08:00:00.000Z",
+          "wordCount": 1052,
+          "title": "This Week in Spring  - Happy New Year 2023 edition - December 27th, 2022",
+          "imageUrl": "https://avatars.githubusercontent.com/u/54473?v=4?s=200"
+        },
+        {
           "id": "https://spring.io/blog/2022/12/22/spring-boot-3-0-1-available-now",
           "author": null,
           "description": "On behalf of the team and everyone who has contributed, I’m happy to announce that Spring Boot 3.0.1 has been released and is now available from Maven Central.\n\r\nThis release includes 54 bug fixes, documentation improvements, and dependency upgrades. Thanks to all those who have contributed with issue reports and pull requests.\nHow can you help?\n\r\nIf you’re interested in helping out, check out the “ideal for contribution” tag in the issue repository. If you have general questions, please ask on stackoverflow.com using the spring-boot tag or chat with the community on Gitter.\n\r\nProject Page | GitHub | Issues | Documentation | Stack Overflow | Gitter",
@@ -2827,6 +2837,26 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/t5/azure-paas-blog/how-to-troubleshoot-deny-policy-step-by-step/ba-p/3704375",
+          "author": "zoeylan",
+          "description": "For security or compliance, your subscription administrators might assign policies that limit how resources are deployed. Deny policy, as one policy type, is used to prevent a resource request that does not match defined standards through a policy definition and fails the request. For example, deny policies that prevent creating public IP addresses, network security groups, user-defined routes, or route tables.\n \nDocument Reference: https://learn.microsoft.com/en-us/azure/governance/policy/concepts/effects#deny\n \nThis blog will show you how to troubleshoot deny policy related issues and how to fix them.\n \nTroubleshoot RequestDisallowedByPolicy errors and non-compliant resources\n \n[Example built-in policy]\nPolicy Definition Name: Storage accounts should have the specified minimum TLS versio…",
+          "link": "https://techcommunity.microsoft.com/t5/azure-paas-blog/how-to-troubleshoot-deny-policy-step-by-step/ba-p/3704375",
+          "publishedOn": "2022-12-27T06:42:19.000Z",
+          "wordCount": 9569,
+          "title": "How to Troubleshoot Deny Policy Step by Step",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/428626i27C4F537F30A395A?v=v2"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/azure-paas-blog/quickstart-manual-effect-in-azure-policy/ba-p/3704080",
+          "author": "Yi_Yang",
+          "description": "Recently, a new feature called “Manual effect” popped out to users and it is still in the PREVIEW stage. It allows users to self-attest the compliance of resources or scopes. In another word, it gives users a chance to determine the compliance result of the specific resource and the reason. Currently, it is mostly used inside the Security related built-in policies and initiatives. In this post, I will briefly introduce what it looks like and how it works.\n \nThere are multiple built-in policies under the Security category to check the subscription level compliance results with manual effect. For the built-in example, you may check “Issue public key certificates” (policy definition ID: /providers/Microsoft.Authorization/policyDefinitions/97d91b33-7050-237b-3e23-a77d57d84e13). This policy onl…",
+          "link": "https://techcommunity.microsoft.com/t5/azure-paas-blog/quickstart-manual-effect-in-azure-policy/ba-p/3704080",
+          "publishedOn": "2022-12-27T01:37:32.000Z",
+          "wordCount": 9414,
+          "title": "Quickstart: Manual Effect in Azure Policy",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/428623i31A3A9574FC6ECC1?v=v2"
+        },
+        {
           "id": "https://techcommunity.microsoft.com/t5/azure-paas-blog/azure-event-hub-how-to-stop-the-incurring-cost-on-my-eventhub/ba-p/3700014",
           "author": "KavyaRK",
           "description": "Case: In a situation, you observe your EventHub namespace is still incurring the cost, even though you are not doing any operations (read/write/management) on it and your EventHub namespace has no active EventHub instances present.\n \nRoot Cause of the behavior: \n\nAt the time of creating the Azure EventHub namespace (Basic/Standard/Premium/Dedicated tier), you may have to give pre-purchased units of capacity in terms of Throughput units/Processing units/Capacity units based on the tier you choose. These pre-purchased units of capacity controls throughput capacity of the EventHub namespace.\nAmong all the other pricing factors, cost will be incurred based on the number of pre-purchased units of capacity (Throughput units/Processing units/Capacity units) at the EventHub namespace level.\nHere I have attached a document, referring to the Azure EventHub pricing. Pricing - Event Hubs | Microsoft Azure\n\n \n\nAs the pre-purchased units of capacity (Throughput units/Processing units/Capacity units) are defined at the EventHub namespace level, you will be charged per pre-purchased units of capacity configured hourly, even though there are no active EventHub instances present, and you are not performing any kind of operations on it.\n\nHow to mitigate this behavior:\n\nTo stop the incurring cost while EventHub is not in use, you may have to delete the EventHub namespace, instead of disabling the EventHub instances.\nYou can as well export the ARM template to create the same EventHub namespace in future, before deleting the existing EventHub namespace. Export template in Azure portal - Azure Resource Manager | Microsoft Learn",
@@ -4989,16 +5019,6 @@
           "wordCount": 9606,
           "title": "Auto-update of Azure Log Analytics agent and Diagnostics Extension for Linux extension available",
           "imageUrl": "https://cdn.techcommunity.microsoft.com/assets/MTC_Open_graph_image1.jpg"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/azure-observability-blog/improving-the-tools-for-monitoring-log-analytics-workspace/ba-p/3566634",
-          "author": "shemers",
-          "description": "The Log Analytics product team identified the two important indicators of workspace’s health as ingestion latency and query success percentage.\n \nIngestion latency signals measure the time it takes for an event to be reported, processed and become available for search in your logs data store. You can read more about how we calculate the latency and what can influence data latency time.\n \nQuery success percentage measures the number of queries that return a non-Http5XX - for example, when a query completes successfully or fails with user-side errors. This number does not include queries initiated by Azure log search Alerts or Azure Sentinel. This signal will be available via Resource health in the near future.\n \nWe’ve worked to enhance these workspace health indicators with features we rele…",
-          "link": "https://techcommunity.microsoft.com/t5/azure-observability-blog/improving-the-tools-for-monitoring-log-analytics-workspace/ba-p/3566634",
-          "publishedOn": "2022-07-31T10:34:13.000Z",
-          "wordCount": 9459,
-          "title": "Improving the tools for monitoring Log Analytics workspace health",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/386107i887B1D086247B45B/image-size/original?v=v2&px=-1"
         }
       ]
     },
