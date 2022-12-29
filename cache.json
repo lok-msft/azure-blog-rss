@@ -2498,16 +2498,6 @@
           "wordCount": 9753,
           "title": "How to configure URL Rewrite in Tomcat Java App on Azure App Service.",
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/390419i37F6F092437BC0F2?v=v2"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/controlling-blazor-environments-on-static-web-apps/ba-p/3587397",
-          "author": "aaronpowell",
-          "description": "Like all good problems, it started with a tweet:\n\nJT is trying to run a Blazor application, using appsettings.json but load a different one depending on what environment is being deployed to. Given that Blazor has the feature built in to load different configs based on the ASPNETCORE_ENVIRONMENT environment variable, it's something that is doable, but how do we do it?\nUnderstanding Static Web Apps config\nOn SWA we have application configuration and you might think this is the starting point for what you want to do. But this is not quite right, this is actually used to control the configuration for the Azure Functions backend that you use, not the frontend for your application.\nIn fact, there's no way to directly control the client \"environment\" once it's deployed, as the application is bui…",
-          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/controlling-blazor-environments-on-static-web-apps/ba-p/3587397",
-          "publishedOn": "2022-08-01T05:15:21.000Z",
-          "wordCount": 9701,
-          "title": "Controlling Blazor Environments on Static Web Apps",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/392251i93EF2BF39F84C640?v=v2"
         }
       ]
     },
@@ -3163,6 +3153,16 @@
       "feedUrl": "https://techcommunity.microsoft.com/plugins/custom/microsoft/o365/custom-blog-rss?tid=2893852362688900935&board=AzureArchitectureBlog&size=50",
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
+        {
+          "id": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/ot-cloud-enablement-cloud-adoption-models/ba-p/3703379",
+          "author": "sameeraman",
+          "description": "Over the past few years, we have assisted mining and manufacturing organisations in adopting the cloud to stay competitive by utilising the latest cloud technologies. We have observed that some organisations prefer to follow a Segregated Model, where there is a requirement to separate the Operational Technology (OT) and Information Technology (IT) environments in the cloud. This is often the case for large organisations where the operational priorities for OT (Integrity, Availability and Confidentiality) differ from IT (Confidentiality, Integrity, and Availability).\n \nOn the other hand, other organisations, typically small to medium-sized, prefer to adopt a Converged Model which is simpler, more cost-effective and does not require a separation of the OT and IT environments. These organisat…",
+          "link": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/ot-cloud-enablement-cloud-adoption-models/ba-p/3703379",
+          "publishedOn": "2022-12-28T05:15:35.000Z",
+          "wordCount": 9677,
+          "title": "OT Cloud Enablement - Cloud Adoption Models",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/428342i86DB2582427096DE?v=v2"
+        },
         {
           "id": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/armchair-architects-so-you-want-to-build-a-platform/ba-p/3690100",
           "author": "EricCharran",
@@ -3847,6 +3847,21 @@
       "feedUrl": "https://devblogs.microsoft.com/java/feed/",
       "siteUrl": "https://devblogs.microsoft.com/java/",
       "articles": [
+        {
+          "id": "https://devblogs.microsoft.com/java/?p=229686",
+          "author": "Jialuo Gan",
+          "description": "Hi everyone, welcome back to the December update of Java on Azure Tooling. Firstly, Happy New Year to everyone in advance. In this update, we will introduce the new Code Sample feature for Azure SDK Reference Book. Besides, we have made some improvements in the integration with Function Core Tools,\nThe post Java on Azure Tooling Update –  December 2022 appeared first on Microsoft for Java Developers.",
+          "link": "https://devblogs.microsoft.com/java/java-on-azure-tooling-update-december-2022/",
+          "publishedOn": "2022-12-28T02:16:19.000Z",
+          "wordCount": 4967,
+          "title": "Java on Azure Tooling Update –  December 2022",
+          "enclosure": {
+            "url": "https://devblogs.microsoft.com/java/wp-content/uploads/sites/51/2022/12/Entry_DB.mp4",
+            "length": "1225583",
+            "type": "video/mp4"
+          },
+          "imageUrl": "https://devblogs.microsoft.com/java/wp-content/uploads/sites/51/2022/12/Toolkit-background-Eng.png"
+        },
         {
           "id": "https://devblogs.microsoft.com/java/?p=229647",
           "author": "Nick Zhu",
@@ -4673,6 +4688,16 @@
       "feedUrl": "https://techcommunity.microsoft.com/plugins/custom/microsoft/o365/custom-blog-rss?tid=-2574164104208876465&board=AzureGovernanceandManagementBlog&size=100",
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
+        {
+          "id": "https://techcommunity.microsoft.com/t5/azure-governance-and-management/prevent-accidental-deletions-at-scale-using-azure-policy/ba-p/3689186",
+          "author": "kenieva",
+          "description": "Azure Policy is happy to introduce a new preview effect: DenyAction! Unlike other effects that focus on resource configurations, the denyAction effect will block requests based on intended action, regardless of user permissions.  Today this new effect supports deletions, but it's set up to handle other types of actions in the future. With the at-scale power of Azure Policy and the ability to block delete calls, denyAction allows you to prevent accidental deletions of your critical resources. \n \nSample denyAction definition that blocks delete calls on any virtual machines: \n\n \nYou are able to create these definitions in Portal or API. All denyAction definitions will have a compliance state of 'Not Started' during preview, and will introduce a new compliance state of 'Protected' for GA. Check out the documentation to learn more about how this effect works, and keep an eye out for the GA of this effect in the coming months!",
+          "link": "https://techcommunity.microsoft.com/t5/azure-governance-and-management/prevent-accidental-deletions-at-scale-using-azure-policy/ba-p/3689186",
+          "publishedOn": "2022-12-28T17:45:03.000Z",
+          "wordCount": 9124,
+          "title": "Prevent accidental deletions at scale using Azure Policy",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/423056i600A27EE779348DB?v=v2"
+        },
         {
           "id": "https://techcommunity.microsoft.com/t5/azure-governance-and-management/azure-portal-november-2022-updates/ba-p/3697487",
           "author": "Allison_Cordle",
