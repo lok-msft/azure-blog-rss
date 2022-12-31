@@ -2,10 +2,31 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2022-12-30T01:14:37.739Z</updated>
+    <updated>2022-12-31T01:12:45.363Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Track IP addresses consumption with Azure Application Insights – Part 1]]></title>
+        <id>https://techcommunity.microsoft.com/t5/azure-developer-community-blog/track-ip-addresses-consumption-with-azure-application-insights/ba-p/3705404</id>
+        <link href="https://techcommunity.microsoft.com/t5/azure-developer-community-blog/track-ip-addresses-consumption-with-azure-application-insights/ba-p/3705404"/>
+        <updated>2022-12-30T13:13:52.000Z</updated>
+        <summary type="html"><![CDATA[Introduction
+In this article we will demonstrate how to send custom event telemetry to an Azure Application Insights instance through PowerShell.
+We will track our Azure Virtual Network IP addresses consumption but note that after reading this article you will be able to track any kind of information.
+
+ 
+
+What do we want to track?
+We need to track the number of IP addresses that are used on our subnet, to do that we will need to send custom event telemetry with the following information:
+
+The subnet id.
+The number of IP addresses that are used.
+The IP addresses limit in order to track if the subnet is reaching out his number of available IP addresses – > with this information (Get-AzVirtualNetworkUsageList) we will be able to send Azure Monitor alerts when a subnet is almost full :light_bu…]]></summary>
+        <author>
+            <name>Jamesdld23</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[A Bootiful Podcast: DaShaun Carter: amazing human being, father, friend, engineer, and fellow Spring Developer Advocate]]></title>
         <id>https://spring.io/blog/2022/12/29/a-bootiful-podcast-dashaun-carter-amazing-human-being-father-friend-engineer-and-fellow-spring-developer-advocate</id>
@@ -13450,90 +13471,6 @@ Migrating machine learning tasks on the Cloud significantly simplified the data 
         <summary type="html"><![CDATA[Azure Monitor metric alerts with dynamic thresholds detection, leverages advanced machine learning (ML) to learn metrics' historical behavior and identify patterns and anomalies that indicate…]]></summary>
         <author>
             <name>Azure service updates</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[5 steps to prepare developers for cloud modernization]]></title>
-        <id>5-steps-to-prepare-developers-for-cloud-modernization</id>
-        <link href="https://azure.microsoft.com/blog/5-steps-to-prepare-developers-for-cloud-modernization/"/>
-        <updated>2022-08-03T08:00:01.000Z</updated>
-        <summary type="html"><![CDATA[With Microsoft Azure, you’ll find not only the tools and technologies that you need to move to the cloud, but also extensive developer support for cloud modernization. In this article, we’ll walk you through technical documentation, educational resources, and step-by-step guidance to help you build the skills and strategy needed to successfully modernize your applications.]]></summary>
-        <author>
-            <name>Mayunk Jain</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[How to integrate Azure Batch pool with Azure Storage Account configured with firewall]]></title>
-        <id>https://techcommunity.microsoft.com/t5/azure-paas-blog/how-to-integrate-azure-batch-pool-with-azure-storage-account/ba-p/3588653</id>
-        <link href="https://techcommunity.microsoft.com/t5/azure-paas-blog/how-to-integrate-azure-batch-pool-with-azure-storage-account/ba-p/3588653"/>
-        <updated>2022-08-03T03:52:11.000Z</updated>
-        <summary type="html"><![CDATA[The Azure Storage Account is a necessary dependent component of Azure Batch account to store resource files, application packages and output files. In many cases, users want to use Azure Storage Account with firewall to enhance the security of the Azure Storage Account. However, this may cause some issues when executing Azure Batch jobs. This Blog will introduce two workarounds of configuring Azure Storage Accounts with firewall and Azure Batch account.
- 
-Background：
-
-When executing Azure Batch Jobs, users may encounter errors related to the associated Azure Storage Account.
-
-
- 
-       Underlying mechanism:
-
-When creating Azure Batch pool, new VMs (Batch nodes) will be provisioned. If the user does not assign a static public IP to the Batch pool, a random public IP will be assigned. Whenev…]]></summary>
-        <author>
-            <name>Shuai_Hao</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[403 Access Denied authorization error caused by Sticky Bit in ADLS Gen2]]></title>
-        <id>https://techcommunity.microsoft.com/t5/azure-paas-blog/403-access-denied-authorization-error-caused-by-sticky-bit-in/ba-p/3588424</id>
-        <link href="https://techcommunity.microsoft.com/t5/azure-paas-blog/403-access-denied-authorization-error-caused-by-sticky-bit-in/ba-p/3588424"/>
-        <updated>2022-08-03T03:23:01.000Z</updated>
-        <summary type="html"><![CDATA[It's common that the user of ADLS Gen2 (Azure Data Lake Storage) need to control the permission of different users. One possible way is to use the ACL (Access Control List). For more details about this permission control mode, it can be found in this official document. This blog will mainly focus on one specific setting of the ACL called Sticky Bit and the authorization failure caused by this setting.
- 
-There are four parts in this blog:
-
-What is Sticky Bit in ADLS Gen2?
-How to identify whether the 403 Access Denied is caused by Sticky Bit?
-How to verify the Sticky Bit setting of a folder?
-How to disable/enable Sticky Bit setting?
-
- 
-What is Sticky Bit in ADLS Gen2?
-According to Access control lists in Azure Data Lake Storage Gen2 | Microsoft Docs , ACL is a POSIX-like access control syste…]]></summary>
-        <author>
-            <name>Jerry</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[New Boards Hub, Sprint 208 Update]]></title>
-        <id>https://devblogs.microsoft.com/devops/?p=65387</id>
-        <link href="https://devblogs.microsoft.com/devops/new-boards-hub-sprint-208-update/"/>
-        <updated>2022-08-02T17:36:54.000Z</updated>
-        <summary type="html"><![CDATA[Since the March announcement of the New Boards Hub, our team has collected a lot of your feedback. Thank you! We have been hard at work addressing the issues. Every week the experience gets better and better. The issues backlog is getting smaller,
-The post New Boards Hub, Sprint 208 Update appeared first on Azure DevOps Blog.]]></summary>
-        <author>
-            <name>Dan Hellem</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[General availability: Reservation administrator and reader roles in the Azure Portal]]></title>
-        <id>general-availability-reservation-administrator-and-reader-roles-in-azure-portal</id>
-        <link href="https://azure.microsoft.com/en-us/updates/general-availability-reservation-administrator-and-reader-roles-in-azure-portal/"/>
-        <updated>2022-08-02T16:00:26.000Z</updated>
-        <summary type="html"><![CDATA[You can now assign reservation administrator and reader roles in the Azure Portal.]]></summary>
-        <author>
-            <name>Azure service updates</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Using Azure templateSpecs with a Custom UI]]></title>
-        <id>https://techcommunity.microsoft.com/t5/azure-governance-and-management/using-azure-templatespecs-with-a-custom-ui/ba-p/3586173</id>
-        <link href="https://techcommunity.microsoft.com/t5/azure-governance-and-management/using-azure-templatespecs-with-a-custom-ui/ba-p/3586173"/>
-        <updated>2022-08-02T14:58:05.000Z</updated>
-        <summary type="html"><![CDATA[TemplateSpecs provide a great way to govern deployments in your organization by sharing templates users can use to deploy approved or prescribed workloads.  While TemplateSpecs are commonly used in developer and devops scenarios they are also useful for end users to deploy canonical workloads through the Azure Portal.  By default, the Portal will create a simple user experience for any templateSpec you create and deploy through the Portal.  To provide a richer, more robust experience you can also create your own user interface for deploying templateSpecs via the Azure Portal.
- 
-With a customized user experience, you can do things like select existing resources from a list, restrict locations, or even make API calls to Azure to guide the experience.  I'll show you a sample that does just th…]]></summary>
-        <author>
-            <name>bmoore-msft</name>
         </author>
     </entry>
     <entry>

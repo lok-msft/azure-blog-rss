@@ -2673,6 +2673,16 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/t5/azure-developer-community-blog/track-ip-addresses-consumption-with-azure-application-insights/ba-p/3705404",
+          "author": "Jamesdld23",
+          "description": "Introduction\nIn this article we will demonstrate how to send custom event telemetry to an Azure Application Insights instance through PowerShell.\nWe will track our Azure Virtual Network IP addresses consumption but note that after reading this article you will be able to track any kind of information.\n\n \n\nWhat do we want to track?\nWe need to track the number of IP addresses that are used on our subnet, to do that we will need to send custom event telemetry with the following information:\n\nThe subnet id.\nThe number of IP addresses that are used.\nThe IP addresses limit in order to track if the subnet is reaching out his number of available IP addresses – > with this information (Get-AzVirtualNetworkUsageList) we will be able to send Azure Monitor alerts when a subnet is almost full :light_bu…",
+          "link": "https://techcommunity.microsoft.com/t5/azure-developer-community-blog/track-ip-addresses-consumption-with-azure-application-insights/ba-p/3705404",
+          "publishedOn": "2022-12-30T13:13:52.000Z",
+          "wordCount": 10202,
+          "title": "Track IP addresses consumption with Azure Application Insights – Part 1",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/428960i399D2B21AB4AF931?v=v2"
+        },
+        {
           "id": "https://techcommunity.microsoft.com/t5/azure-developer-community-blog/how-to-retrieve-from-cosmosdb-using-azure-api-management/ba-p/3644458",
           "author": "Jeffrey Chilberto",
           "description": "Overview\nIn this How To, I will show a simple mechanism for reading items from CosmosDB using Azure API Management (APIM). Azure Cosmos DB is a fully managed, serverless NoSQL database for high-performance applications of any size or scale. APIM is a API management service offering many features for manging APIs and exposing backend services.\n \nExample Use Case\nThe example use case involves using CosmosDB to maintain a list of information and exposing the information using APIM as a public RSS feed. This will provide a user to illustrate APIM caching and transformation, and how APIM can call CosmosDB securely using managed identity.\n \nSetup\nThe first step is to provision a CosmosDB and APIM service instance. In my resource group, I created the following services:\n\n \nThe first step is to ge…",
@@ -3125,26 +3135,6 @@
           "wordCount": 10876,
           "title": "Auto scaling Azure Redis Clustered Cache using cache metrics alerts",
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/388139i511408454FDE38CD?v=v2"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/azure-paas-blog/how-to-integrate-azure-batch-pool-with-azure-storage-account/ba-p/3588653",
-          "author": "Shuai_Hao",
-          "description": "The Azure Storage Account is a necessary dependent component of Azure Batch account to store resource files, application packages and output files. In many cases, users want to use Azure Storage Account with firewall to enhance the security of the Azure Storage Account. However, this may cause some issues when executing Azure Batch jobs. This Blog will introduce two workarounds of configuring Azure Storage Accounts with firewall and Azure Batch account.\n \nBackground：\n\nWhen executing Azure Batch Jobs, users may encounter errors related to the associated Azure Storage Account.\n\n\n \n       Underlying mechanism:\n\nWhen creating Azure Batch pool, new VMs (Batch nodes) will be provisioned. If the user does not assign a static public IP to the Batch pool, a random public IP will be assigned. Whenev…",
-          "link": "https://techcommunity.microsoft.com/t5/azure-paas-blog/how-to-integrate-azure-batch-pool-with-azure-storage-account/ba-p/3588653",
-          "publishedOn": "2022-08-03T03:52:11.000Z",
-          "wordCount": 9798,
-          "title": "How to integrate Azure Batch pool with Azure Storage Account configured with firewall",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/392689iD8B90D77CBF7FFF9?v=v2"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/azure-paas-blog/403-access-denied-authorization-error-caused-by-sticky-bit-in/ba-p/3588424",
-          "author": "Jerry",
-          "description": "It's common that the user of ADLS Gen2 (Azure Data Lake Storage) need to control the permission of different users. One possible way is to use the ACL (Access Control List). For more details about this permission control mode, it can be found in this official document. This blog will mainly focus on one specific setting of the ACL called Sticky Bit and the authorization failure caused by this setting.\n \nThere are four parts in this blog:\n\nWhat is Sticky Bit in ADLS Gen2?\nHow to identify whether the 403 Access Denied is caused by Sticky Bit?\nHow to verify the Sticky Bit setting of a folder?\nHow to disable/enable Sticky Bit setting?\n\n \nWhat is Sticky Bit in ADLS Gen2?\nAccording to Access control lists in Azure Data Lake Storage Gen2 | Microsoft Docs , ACL is a POSIX-like access control syste…",
-          "link": "https://techcommunity.microsoft.com/t5/azure-paas-blog/403-access-denied-authorization-error-caused-by-sticky-bit-in/ba-p/3588424",
-          "publishedOn": "2022-08-03T03:23:01.000Z",
-          "wordCount": 10725,
-          "title": "403 Access Denied authorization error caused by Sticky Bit in ADLS Gen2",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/392651i751CE010E7F84DBF?v=v2"
         }
       ]
     },
@@ -3813,16 +3803,6 @@
           "wordCount": 6061,
           "title": "Bluware and Microsoft Azure develop OSDU-enabled interactive AI seismic interpretation solution for energy super major",
           "imageUrl": "https://azurecomcdn.azureedge.net/cvt-a7e0362205437bd001caa362ccfe82096680094b5b6a3e91ed7e46d8730853a2/images/shared/social/azure-icon-250x250.png"
-        },
-        {
-          "id": "5-steps-to-prepare-developers-for-cloud-modernization",
-          "author": "Mayunk Jain",
-          "description": "With Microsoft Azure, you’ll find not only the tools and technologies that you need to move to the cloud, but also extensive developer support for cloud modernization. In this article, we’ll walk you through technical documentation, educational resources, and step-by-step guidance to help you build the skills and strategy needed to successfully modernize your applications.",
-          "link": "https://azure.microsoft.com/blog/5-steps-to-prepare-developers-for-cloud-modernization/",
-          "publishedOn": "2022-08-03T08:00:01.000Z",
-          "wordCount": 6062,
-          "title": "5 steps to prepare developers for cloud modernization",
-          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-d9e2936c5d33a39347dec22866d20dc9fa13c06e112314a34f7b7eb57cee8dbb/images/shared/social/azure-icon-250x250.png"
         }
       ]
     },
@@ -4384,16 +4364,6 @@
           "wordCount": 4253,
           "title": "August patches for Azure DevOps Server",
           "imageUrl": "https://devblogs.microsoft.com/devops/wp-content/uploads/sites/6/2022/06/HERO-1.jpg"
-        },
-        {
-          "id": "https://devblogs.microsoft.com/devops/?p=65387",
-          "author": "Dan Hellem",
-          "description": "Since the March announcement of the New Boards Hub, our team has collected a lot of your feedback. Thank you! We have been hard at work addressing the issues. Every week the experience gets better and better. The issues backlog is getting smaller,\nThe post New Boards Hub, Sprint 208 Update appeared first on Azure DevOps Blog.",
-          "link": "https://devblogs.microsoft.com/devops/new-boards-hub-sprint-208-update/",
-          "publishedOn": "2022-08-02T17:36:54.000Z",
-          "wordCount": 4953,
-          "title": "New Boards Hub, Sprint 208 Update",
-          "imageUrl": "https://devblogs.microsoft.com/devops/wp-content/uploads/sites/6/2022/03/agile.png"
         }
       ]
     },
@@ -4817,16 +4787,6 @@
           "wordCount": 9273,
           "title": "Generally available: Apply settings inside machines using Automanage machine configuration",
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/392962i96AB2E5DCA2494F3?v=v2"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/azure-governance-and-management/using-azure-templatespecs-with-a-custom-ui/ba-p/3586173",
-          "author": "bmoore-msft",
-          "description": "TemplateSpecs provide a great way to govern deployments in your organization by sharing templates users can use to deploy approved or prescribed workloads.  While TemplateSpecs are commonly used in developer and devops scenarios they are also useful for end users to deploy canonical workloads through the Azure Portal.  By default, the Portal will create a simple user experience for any templateSpec you create and deploy through the Portal.  To provide a richer, more robust experience you can also create your own user interface for deploying templateSpecs via the Azure Portal.\n \nWith a customized user experience, you can do things like select existing resources from a list, restrict locations, or even make API calls to Azure to guide the experience.  I'll show you a sample that does just th…",
-          "link": "https://techcommunity.microsoft.com/t5/azure-governance-and-management/using-azure-templatespecs-with-a-custom-ui/ba-p/3586173",
-          "publishedOn": "2022-08-02T14:58:05.000Z",
-          "wordCount": 10899,
-          "title": "Using Azure templateSpecs with a Custom UI",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/392026iA2A7CD76F0D01B4C?v=v2"
         }
       ]
     },
@@ -8278,16 +8238,6 @@
           "wordCount": 5105,
           "title": "Generally available: Azure Monitor metric alerts dynamic thresholds outage detection",
           "imageUrl": "https://azurecomcdn.azureedge.net/cvt-d9e2936c5d33a39347dec22866d20dc9fa13c06e112314a34f7b7eb57cee8dbb/images/shared/social/azure-icon-250x250.png"
-        },
-        {
-          "id": "general-availability-reservation-administrator-and-reader-roles-in-azure-portal",
-          "author": null,
-          "description": "You can now assign reservation administrator and reader roles in the Azure Portal.",
-          "link": "https://azure.microsoft.com/en-us/updates/general-availability-reservation-administrator-and-reader-roles-in-azure-portal/",
-          "publishedOn": "2022-08-02T16:00:26.000Z",
-          "wordCount": 5048,
-          "title": "General availability: Reservation administrator and reader roles in the Azure Portal",
-          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-0575bb7a1cf68c8dbe5697224d85b9818047b8965b5b42e076e5aee4946f7128/images/shared/social/azure-icon-250x250.png"
         }
       ]
     },
