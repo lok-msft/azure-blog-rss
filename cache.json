@@ -1560,6 +1560,16 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/how-to-reduce-the-deployment-time-using-the-file-compression/ba-p/3708095",
+          "author": "sarkarsa",
+          "description": "Uncompressed file uploads are slower than uploading the compressed file to the artifact when using the GitHub Workflow.\n \nThe time taken for a sample Node application to Azure App Service was 50mins to an hour for completing the deployment, that was triggered using GitHub Action Workflow.\nThe screenshot below shows the total duration for the task to complete using the default GitHub Action workflow:\n\n \nTo help mitigate the problem for reducing the deployment time significantly I have added the following steps in the GitHub Action workflow. Please note as I am using the ubuntu-latest OS to run the GitHub Action so there might be different method for file compression when using a different OS.\n \nBuild Stage:\n- name: Zip artifact to upload\n   run: zip -r ${{ env.ZIP_PACKAGE_NAME }} ${{ env.AZ…",
+          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/how-to-reduce-the-deployment-time-using-the-file-compression/ba-p/3708095",
+          "publishedOn": "2023-01-04T13:53:25.000Z",
+          "wordCount": 10062,
+          "title": "How to reduce the deployment time using the file compression technique in Azure App Service",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/429877iE8260305FC3D98F5?v=v2"
+        },
+        {
           "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/simulating-desired-throughput-with-azure-load-testing/ba-p/3707149",
           "author": "Nikita_Nallamothu",
           "description": "The most common way to load test applications is to simulate a specific number of virtual users. But what if you want to test the system to make sure it can handle a desired number of requests per second (RPS) ? For example, you may want to load test a payment gateway service for the number of transactions that can be processed every second. RPS or throughput is a crucial metric that reveals fundamental information about the tested system. Every system has a critical point in terms of throughput. Once the system reaches the critical point, it might keep the throughput around the same level, but the response times go up  or the requests get throttled.\nIn this article you’ll learn how to:\n\nCreate and run a load test for a desired RPS by using Azure Load Testing and the JMeter Throughput Shap…",
@@ -2468,16 +2478,6 @@
           "wordCount": 9765,
           "title": "Easily split your CSV dataset with Microsoft Azure Load Testing",
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/394535iE83A5661B092036C/image-size/original?v=v2&px=-1"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/announcing-the-general-availability-of-wordpress-on-azure-app/ba-p/3593481",
-          "author": "abhishekreddy",
-          "description": "We are thrilled to announce that WordPress on Azure App Service, which was running on Public Preview since 15 February 2022, has been made Generally Available on 8 August 2022. To read the Public Preview Announcement read the blog post on The new and better ‘WordPress on App Service’ - Microsoft Tech Community.\n \nYou can start creating your next WordPress website directly from the Azure Portal at Create WordPress on App Service - Microsoft Azure or go to QuickStart: Create a WordPress site - Azure App Service | Microsoft Docs for a guide on how to get started.\n \nDuring the public preview, we had numerous interactions with WordPress developers who contacted us via email and public forums. We have made significant improvements and changes based on their feedback.\n \nSo, what has changed?\n \n\nP…",
-          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/announcing-the-general-availability-of-wordpress-on-azure-app/ba-p/3593481",
-          "publishedOn": "2022-08-08T06:52:05.000Z",
-          "wordCount": 9995,
-          "title": "Announcing the General Availability of WordPress on Azure App Service",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/394060iB44093452E474CC2/image-size/original?v=v2&px=-1"
         }
       ]
     },
@@ -2690,6 +2690,16 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/t5/azure-developer-community-blog/lab-guide-azure-ad-cba-on-mobile/ba-p/3708647",
+          "author": "Andreas Helland",
+          "description": "I like solutions that are both secure and user-friendly at the same. (Who doesn't?) I also know that it can be real hard to build such solutions on your own so I'm happy when the Azure AD teams provide the bits I need for implementing the authentication parts in a good way :)\n \nWhen I noticed a post about Certificate-Based Authentication (CBA) on mobile with YubiKeys I wanted to take things for a spin:\nhttps://techcommunity.microsoft.com/t5/microsoft-entra-azure-ad-blog/azure-ad-certificate-based-authentication-cba-on-mobile/ba-p/2365672\n \nThe blog post itself is just a teaser, but it provides links to the configuration docs so I thought I would follow those. Unfortunately I felt the instructions were missing a few details for doing a quick proof-of-concept in my lab. Which is why I'm writ…",
+          "link": "https://techcommunity.microsoft.com/t5/azure-developer-community-blog/lab-guide-azure-ad-cba-on-mobile/ba-p/3708647",
+          "publishedOn": "2023-01-04T19:59:12.000Z",
+          "wordCount": 10789,
+          "title": "Lab Guide - Azure AD CBA on Mobile",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/430086i4D6303346E143CF2?v=v2"
+        },
+        {
           "id": "https://techcommunity.microsoft.com/t5/azure-developer-community-blog/how-to-create-azure-ad-security-group-using-microsoft-graph-apis/ba-p/3691380",
           "author": "MayuriBhavsar",
           "description": "Azure Active Directory (Azure AD) groups are used to manage users that all need the same access and permissions to resources, such as potentially restricted apps and services. Instead of adding special permissions to individual users, you create a group that applies the special permissions to every member of that group.\n \nYou can refer to below steps for the scenarios in which you have Azure AD service principle with required permissions to create Security Groups in Azure Active Directory and need to call Microsoft Graph REST APIs from your dev or local environment via Postman or through python code. \n \nFirst step is to register a client application with Azure AD and assign required permissions to create AD groups\n \n1. Sign in the Azure portal, search for and select Azure Active Directory.…",
@@ -2816,6 +2826,16 @@
       "feedUrl": "https://techcommunity.microsoft.com/plugins/custom/microsoft/o365/custom-blog-rss?tid=2015807141232549759&board=AzurePaaSBlog&size=200",
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
+        {
+          "id": "https://techcommunity.microsoft.com/t5/azure-paas-blog/unable-to-load-service-fabric-explorer/ba-p/3708178",
+          "author": "Madoori_Geetanjali",
+          "description": "Service Fabric Explorer (SFX) is an open-source tool for inspecting and managing Azure Service Fabric clusters. Service Fabric Explorer is a desktop application for Windows, macOS and Linux. To launch SFX in a web browser, browse to the cluster's HTTP management endpoint from any browser - for example https://clusterFQDN:19080. Service Fabric explorer may not load for numerous reasons. Most frequent reasons could be access denied while trying to access or unable to choose the right certificate. Following steps provide some useful insights on investigation steps and mitigations to be followed in such scenarios.1. Check the status of the cluster and certificate that is being tried to access the cluster. If the cluster state is in “Upgrade service unreachable” then mostly, the certificate mig…",
+          "link": "https://techcommunity.microsoft.com/t5/azure-paas-blog/unable-to-load-service-fabric-explorer/ba-p/3708178",
+          "publishedOn": "2023-01-04T11:11:02.000Z",
+          "wordCount": 9854,
+          "title": "Unable to load Service Fabric Explorer",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/429913i1EAF84F01AEA4EF6?v=v2"
+        },
         {
           "id": "https://techcommunity.microsoft.com/t5/azure-paas-blog/quickstart-denyaction-effect-in-azure-policy/ba-p/3705112",
           "author": "jiayiwu",
@@ -3772,16 +3792,6 @@
           "publishedOn": "2022-08-09T10:00:07.000Z",
           "wordCount": 6099,
           "title": "Microsoft is a Leader in 2022 Gartner Magic Quadrant for Cloud AI Developer Services",
-          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-a7e0362205437bd001caa362ccfe82096680094b5b6a3e91ed7e46d8730853a2/images/shared/social/azure-icon-250x250.png"
-        },
-        {
-          "id": "bluware-and-microsoft-azure-develop-osduenabled-interactive-ai-seismic-interpretation-solution-for-energy-super-major",
-          "author": "Kadri  Umay",
-          "description": "Bluware, which develops cloud-native solutions to help oil and gas operators to increase exploration and production workflow productivity through deep learning by enabling geoscientists to deliver faster and smarter decisions about the subsurface and today announced its collaboration with Microsoft for its next-generation automated interpretation solution, InteractivAI™, which is built on the Azure implementation of the OSDU™ Data Platform.",
-          "link": "https://azure.microsoft.com/blog/bluware-and-microsoft-azure-develop-osduenabled-interactive-ai-seismic-interpretation-solution-for-energy-super-major/",
-          "publishedOn": "2022-08-08T08:00:07.000Z",
-          "wordCount": 6061,
-          "title": "Bluware and Microsoft Azure develop OSDU-enabled interactive AI seismic interpretation solution for energy super major",
           "imageUrl": "https://azurecomcdn.azureedge.net/cvt-a7e0362205437bd001caa362ccfe82096680094b5b6a3e91ed7e46d8730853a2/images/shared/social/azure-icon-250x250.png"
         }
       ]
@@ -4989,6 +4999,36 @@
       "feedUrl": "https://azurecomcdn.azureedge.net/en-us/updates/feed/?updateType=features",
       "siteUrl": "https://azure.microsoft.com/en-us/updates/",
       "articles": [
+        {
+          "id": "sap-hana-database-backup-by-azure-backup-listening-to-customer-requests",
+          "author": null,
+          "description": "In Dec 2022, the following updates and enhancements were made for Azure Backup for SAP HANA – a backint certified database backup solution for SAP HANA databases in Azure VMs.Long term retention for…",
+          "link": "https://azure.microsoft.com/en-us/updates/sap-hana-database-backup-by-azure-backup-listening-to-customer-requests/",
+          "publishedOn": "2023-01-04T18:00:15.000Z",
+          "wordCount": 5522,
+          "title": "Azure Backup for SAP HANA: General availability updates for Dec 2022",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-d0f6a2d46e5c6272660482ed313194be31abd00fcd96d583d09ce5c0ca6f5168/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "general-availability-encryption-using-cmk-for-azure-database-for-postgresql-flexible-server",
+          "author": null,
+          "description": "Use infrastructure encryption to add an additional layer of encryption for data at rest using customer-managed keys.",
+          "link": "https://azure.microsoft.com/en-us/updates/general-availability-encryption-using-cmk-for-azure-database-for-postgresql-flexible-server/",
+          "publishedOn": "2023-01-04T17:00:14.000Z",
+          "wordCount": 5507,
+          "title": "General availability: Encryption using CMK for Azure Database for PostgreSQL – Flexible Server",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-d0f6a2d46e5c6272660482ed313194be31abd00fcd96d583d09ce5c0ca6f5168/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "public-preview-azure-cosmos-db-v2-connector-for-power-bi",
+          "author": null,
+          "description": "Import data into Power BI dashboards using DirectQuery mode when filtering so aggregations can be pushed down to Azure Cosmos DB to reduce data movement and improve performance.",
+          "link": "https://azure.microsoft.com/en-us/updates/public-preview-azure-cosmos-db-v2-connector-for-power-bi/",
+          "publishedOn": "2023-01-04T17:00:13.000Z",
+          "wordCount": 5468,
+          "title": "Public preview: Azure Cosmos DB V2 Connector for Power BI",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-d0f6a2d46e5c6272660482ed313194be31abd00fcd96d583d09ce5c0ca6f5168/images/shared/social/azure-icon-250x250.png"
+        },
         {
           "id": "generally-available-azure-dedicated-host-restart",
           "author": null,
@@ -8046,6 +8086,16 @@
       "feedUrl": "https://devblogs.microsoft.com/microsoft365dev/feed/",
       "siteUrl": "https://devblogs.microsoft.com/microsoft365dev/",
       "articles": [
+        {
+          "id": "https://devblogs.microsoft.com/microsoft365dev/?p=12597",
+          "author": "Waldek Mastykarz",
+          "description": "Build resilient and performant apps with the latest preview version of the Microsoft Graph Developer Proxy.\nThe post New Microsoft Graph Developer Proxy preview v0.3 with support for all APIs appeared first on Microsoft 365 Developer Blog.",
+          "link": "https://devblogs.microsoft.com/microsoft365dev/microsoft-graph-developer-proxy-v0-3/",
+          "publishedOn": "2023-01-04T13:13:57.000Z",
+          "wordCount": 4844,
+          "title": "New Microsoft Graph Developer Proxy preview v0.3 with support for all APIs",
+          "imageUrl": "https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2023/01/MicrosoftTeams-image-53.jpg"
+        },
         {
           "id": "https://devblogs.microsoft.com/microsoft365dev/?p=12522",
           "author": "Microsoft Graph team",
