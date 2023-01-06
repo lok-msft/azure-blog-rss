@@ -6,6 +6,16 @@
       "siteUrl": "https://spring.io/blog/category/engineering",
       "articles": [
         {
+          "id": "https://spring.io/blog/2023/01/05/a-bootiful-podcast-spring-legend-ramnivas-laddad",
+          "author": null,
+          "description": "Hi, Spring fans! In this installment, Josh Long (@starbuxman) talks to Spring and cloud legend, Spring Cloud Connectors founder, and Cloud Foundry founder, Ramnivas Laddad (@ramnivas)",
+          "link": "https://spring.io/blog/2023/01/05/a-bootiful-podcast-spring-legend-ramnivas-laddad",
+          "publishedOn": "2023-01-05T11:00:00.000Z",
+          "wordCount": 533,
+          "title": "A Bootiful Podcast: Spring legend Ramnivas Laddad",
+          "imageUrl": "https://avatars.githubusercontent.com/u/54473?v=4?s=200"
+        },
+        {
           "id": "https://spring.io/blog/2023/01/03/this-week-in-spring-jan-3rd-2023",
           "author": null,
           "description": "Hi, Spring fans! Happy new year! It’s 2023 already! Who saw that comin’? I sure didn’t. This year promises to be more amazing than ever, and I can’t wait to be a part of it.\n\r\nAs usual, the first week of January is when we mark the date of the first installment of this humble roundup, This Week in Spring, waaaay back in the first week of January 2011! 12 years of This Week in Spring! Now that’s consistency! \n\r\nAnd it’s only possible because of you, dear community. Thank you. You, who have been consistently excellent every week of the year for years and years, are truly the reason for the season, and we appreciate you. This week is no exception! There’s a ton of great content, so let’s kick the year off right!\n\r\n\r\n  \nFirst, I’ll be speaking at the Atlanta JUG on the 16th of this month, by the by, so please join me, and we’ll dive headfirst into Spring in 2023!\n\r\n  \nLast week, I had the pleasure of interviewing my friend, and teammate, the legendary DaShaun Carter on a Bootiful Podcast\n\r\n  \nI love this post by Rafael Winterhalter (create of ByteBuddy and Bootiful Podcast guest on the amazing publish/subscribe capabilities of PostgreSQL. I love PostgreSQL. But then he goes even further, turning the mechanism into support in Spring Integration. He explains everything in this epic post, Using Postgres as a Message Queue\n\r\n  \nCreate a new Git branch with no history - not strictly speaking Spring-related, but I thought it was interesting. Unless you’re not using Git… I suppose.\n\r\n  \nNonUniqueResultException in Spring Data JPA\n\r\n  \nObservability with Spring Boot 3\n\r\n  \nOddity with shutdown methods in Spring Boot 3 AOT and GraalVM\n\r\n  \nSpring Boot (3) Spring Native (GraalVM) with Kubernetes & Istio🔥\n\r\n  \nUsing Watermarks with iText in Java\n\r\n  \nBlog: Kubernetes 1.26: Job Tracking, to Support Massively Parallel Batch Workloads, Is Generally Available\n\r\n  \nBlog: Kubernetes v1.26: Advancements in Kubernetes Traffic Engineering\n\r\n  \nBlog: Kubernetes v1.26: Alpha support for cross-namespace storage data sources",
@@ -1560,6 +1570,16 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/azure-container-registry-the-first-cloud-registry-to-support-the/ba-p/3708998",
+          "author": "FeynmanZhou",
+          "description": "Azure Container Registry (ACR) now has support for the OCI v1.1-RC Specifications. The update continues the journey of standardizing OCI Distribution-based registries to store, discover and distribute all types of artifacts, including adding references to existing images and other OCI artifacts.\n \nIt started 4 years ago when ACR added support for Helm Chart distribution using the existing registry services users have already configured for their secure environments. We knew Helm adoption would require support across all registries which initiated the OCI Artifacts and ORAS projects.\n \nAs supply chain initiatives drove the need for distributing detached signatures for container images and signed Software Bill of Materials (SBOM), reference types were needed to add information to the registr…",
+          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/azure-container-registry-the-first-cloud-registry-to-support-the/ba-p/3708998",
+          "publishedOn": "2023-01-05T05:29:26.000Z",
+          "wordCount": 10300,
+          "title": "Azure Container Registry: the first cloud registry to support the OCI Specifications 1.1",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/430278i6667859D011300D5/image-size/original?v=v2&px=-1"
+        },
+        {
           "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/how-to-reduce-the-deployment-time-using-the-file-compression/ba-p/3708095",
           "author": "sarkarsa",
           "description": "Uncompressed file uploads are slower than uploading the compressed file to the artifact when using the GitHub Workflow.\n \nThe time taken for a sample Node application to Azure App Service was 50mins to an hour for completing the deployment, that was triggered using GitHub Action Workflow.\nThe screenshot below shows the total duration for the task to complete using the default GitHub Action workflow:\n\n \nTo help mitigate the problem for reducing the deployment time significantly I have added the following steps in the GitHub Action workflow. Please note as I am using the ubuntu-latest OS to run the GitHub Action so there might be different method for file compression when using a different OS.\n \nBuild Stage:\n- name: Zip artifact to upload\n   run: zip -r ${{ env.ZIP_PACKAGE_NAME }} ${{ env.AZ…",
@@ -2827,6 +2847,16 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/t5/azure-paas-blog/how-to-manage-the-vip-swap-in-cloud-service-extended-support-via/ba-p/3694504",
+          "author": "Frank_Pan",
+          "description": "You can swap between two independent cloud service deployments in Azure Cloud Services (extended support). Unlike in Azure Cloud Services (classic), the Azure Resource Manager model in Azure Cloud Services (extended support) doesn't use deployment slots. In Azure Cloud Services (extended support), when you deploy a new release of a cloud service, you can make the cloud service \"swappable\" with an existing cloud service in Azure Cloud Services (extended support). In this blog, we can see how to have a version update via Powershell and REST API. It will cover the following sections:\n \n\nPowerShell command to create a CSES.\nUsing staging and production static public ip to manage version update.\nPowerShell to send out REST API request and swap public of load balancer’s frontend configuration.  …",
+          "link": "https://techcommunity.microsoft.com/t5/azure-paas-blog/how-to-manage-the-vip-swap-in-cloud-service-extended-support-via/ba-p/3694504",
+          "publishedOn": "2023-01-05T02:44:27.000Z",
+          "wordCount": 10416,
+          "title": "How to manage the VIP swap in cloud service extended support via Powershell",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/425158i3BEC5667353F25F0?v=v2"
+        },
+        {
           "id": "https://techcommunity.microsoft.com/t5/azure-paas-blog/unable-to-load-service-fabric-explorer/ba-p/3708178",
           "author": "Madoori_Geetanjali",
           "description": "Service Fabric Explorer (SFX) is an open-source tool for inspecting and managing Azure Service Fabric clusters. Service Fabric Explorer is a desktop application for Windows, macOS and Linux. To launch SFX in a web browser, browse to the cluster's HTTP management endpoint from any browser - for example https://clusterFQDN:19080. Service Fabric explorer may not load for numerous reasons. Most frequent reasons could be access denied while trying to access or unable to choose the right certificate. Following steps provide some useful insights on investigation steps and mitigations to be followed in such scenarios.1. Check the status of the cluster and certificate that is being tried to access the cluster. If the cluster state is in “Upgrade service unreachable” then mostly, the certificate mig…",
@@ -3115,26 +3145,6 @@
           "wordCount": 11194,
           "title": "Azure Storage Blob Count & Capacity usage Calculator",
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/393895iD5A4F8465CE9E47D/image-size/original?v=v2&px=-1"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/azure-paas-blog/required-permissions-while-creating-event-grid-system-topic/ba-p/3594484",
-          "author": "Jay_Gong",
-          "description": "While creating Event Grid System Topic for specific resource type by using Terraform deployment, we may get following error message which indicates that we don’t sufficient permission upon target resource (for example, Storage Account resource type):\n \nError: eventgrid.SystemTopicsClient#CreateOrUpdate: Failure sending request: StatusCode=400 -- Original Error: Code='InvalidRequest' Message='The user does not have permission to perform the operation on the resource /subscriptions/***/resourceGroups/***/providers/Microsoft.Storage/storageAccounts/***.'\n \nOr we may get following error message:\n \nchecking for presence of existing System Topic: (Name \"***\" / Resource Group \"***\"): eventgrid.SystemTopicsClient#Get: Failure responding to request: StatusCode=403 -- Original Error: autorest/azure:…",
-          "link": "https://techcommunity.microsoft.com/t5/azure-paas-blog/required-permissions-while-creating-event-grid-system-topic/ba-p/3594484",
-          "publishedOn": "2022-08-09T04:54:08.000Z",
-          "wordCount": 9277,
-          "title": "Required permissions while creating Event Grid System Topic",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/394315iACE5DF0D69C9EC25?v=v2"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/azure-paas-blog/why-is-the-azure-monitor-chart-showing-dashed-lines-for-the/ba-p/3490110",
-          "author": "c4rlosmarin",
-          "description": "Have you ever noticed the dash lines on the \"Availability\" Azure Monitor metric for your Storage Account? What's that about? Is your Storage Account down?\n \nWhy is it that we see sections where there is a dashed line and other sections where there is a solid line?\n \n\n \nWell, it turns out that Azure metrics charts use dashed line style to indicate that there is a missing value (also known as “null value”) between two known time grain data points. Meaning, this behavior is by design, yes, by design. It is useful for identifying missing data points. The line chart is a superior choice for visualizing trends of high-density metrics but may be difficult to interpret for the metrics with sparse values, especially when corelating values with time grain is important.\n \nThe dashed line makes readin…",
-          "link": "https://techcommunity.microsoft.com/t5/azure-paas-blog/why-is-the-azure-monitor-chart-showing-dashed-lines-for-the/ba-p/3490110",
-          "publishedOn": "2022-08-08T15:18:24.000Z",
-          "wordCount": 9596,
-          "title": "Why is the Azure Monitor chart showing dashed lines for the Availability metric?",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/379130i1DC4E06C4C9C7E2F?v=v2"
         }
       ]
     },
@@ -3143,6 +3153,26 @@
       "feedUrl": "https://techcommunity.microsoft.com/plugins/custom/microsoft/o365/custom-blog-rss?tid=2893852362688900935&board=AzureArchitectureBlog&size=50",
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
+        {
+          "id": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/ot-cloud-enablement-azure-active-directory-tenant/ba-p/3707898",
+          "author": "Johan Grant",
+          "description": "In our journey to help cloud enable Operational Technology (OT) environments, we have published the following articles:\n\nExtending Operational Technology to Azure\nOT Cloud Enablement - Cloud Adoption Models\n\nToday we are going a little deeper into what was discussed in the OT Cloud Enablement - Cloud Adoption Models article to explore Azure Active Directory (Azure AD) tenant design considerations for an OT environment. Once the Azure AD tenant design has been finalised, decisions on Identity and Access Management (IAM), network topology and connectivity, resource organisation, security, management, governance and, platform automation and DevOps can then be made.\n \nThe importance of the Azure AD tenant design and why we are looking at this first is explained in the Cloud Adoption Framework …",
+          "link": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/ot-cloud-enablement-azure-active-directory-tenant/ba-p/3707898",
+          "publishedOn": "2023-01-05T06:51:19.000Z",
+          "wordCount": 10952,
+          "title": "OT Cloud Enablement – Azure Active Directory Tenant",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/429801iE0D663CA185C8865?v=v2"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/part-3-architectural-cost-optimisation-practical-design-steps/ba-p/3708993",
+          "author": "shanebaldacchino",
+          "description": "Did you miss part one and part two of this this multi part series on ‘Cost Optimisation’?\n\nIn part 3 of this multi-part blog series, I am going to cover, as per the title ‘Architectural Cost Optimisation’.In prior posts I have spoken about foundational primitives, what you can change and tune in the cloud without changing your applications.But you know what? Architectures can evolve, and they should evolve fueled by business efficiency and cost savings.If you are an architect or developer joining us today, you are unbelievably lucky because with every day you get new levers to pull.The major two Hyperscalesrs (Azure and AWS) released more than 2000 new feature updates and or new services in 2022.\n\nYou can pull them up, you can pull them down, it is all about choice. But isn’t it cool with …",
+          "link": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/part-3-architectural-cost-optimisation-practical-design-steps/ba-p/3708993",
+          "publishedOn": "2023-01-05T06:24:49.000Z",
+          "wordCount": 11203,
+          "title": "Part 3: Architectural Cost Optimisation – Practical Design Steps for Architects and Developers",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/430316iC53A6D1F14A8AB58/image-size/original?v=v2&px=-1"
+        },
         {
           "id": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/ot-cloud-enablement-cloud-adoption-models/ba-p/3703379",
           "author": "sameeraman",
@@ -3312,16 +3342,6 @@
           "wordCount": 10541,
           "title": "Armchair Architects: The role of Simplicity in Architecture",
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/395153i588CC448067CFDDB/image-size/original?v=v2&px=-1"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/day-2-of-your-alz-prioritizing-which-workloads-to-deploy-first/ba-p/3592566",
-          "author": "noopman",
-          "description": "You have your first Cloud Adoption Framework “Landing Zone” set up in the Azure cloud. Congratulations, your technical life will never be the same, and the sky is the limit to what you can now do. Having all the possibilities of the cloud, however, can be daunting. Like a cat at an open door, you may hesitate. Left paw first, or the right one, or simply jump right out there? Maybe just stay inside.\n \nNow you must choose how to make your approach to the Cloud with the workloads in your portfolio. I assume you can choose between different workloads and timing, not limited to only very few workloads, and are not for example under an extreme time pressure that will force you to hustle with all you can muster into the cloud. You are reading this because you are about to select the optimal workl…",
-          "link": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/day-2-of-your-alz-prioritizing-which-workloads-to-deploy-first/ba-p/3592566",
-          "publishedOn": "2022-08-08T21:34:57.000Z",
-          "wordCount": 10959,
-          "title": "Day 2 of Your ALZ: Prioritizing Which Workloads to Deploy First",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/394194i55842C9921F1F2E2/image-size/original?v=v2&px=-1"
         }
       ]
     },
@@ -3330,6 +3350,16 @@
       "feedUrl": "https://techcommunity.microsoft.com/plugins/custom/microsoft/o365/custom-blog-rss?tid=6220021871588173833&board=MicrosoftMechanicsBlog&size=100",
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
+        {
+          "id": "https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/manage-your-multi-cloud-identity-infrastructure-with-microsoft/ba-p/3709677",
+          "author": "Zachary Cavanell",
+          "description": "A single solution to centrally manage your entire identity infrastructure with Microsoft Entra. Whether hybrid across your on-premises systems and the Microsoft Cloud, or across services spanning multiple clouds, like AWS, Google Cloud Platform and your favorite SaaS apps.\n \n\nJoey Cruz, from the identity team at Microsoft, highlights the comprehensive capabilities of Microsoft Entra, including unified identity management, that spans beyond your Microsoft estate and beyond Azure Active Directory. He demonstrates new and unique capabilities for the day-to-day management of your users and workloads.\n \nPasswordless auth for non-Microsoft services.\n\nCustom and cross-cloud authentication with Microsoft Entra. Watch the rundown.\n \nCredential verification from third-party digital IDs — automated t…",
+          "link": "https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/manage-your-multi-cloud-identity-infrastructure-with-microsoft/ba-p/3709677",
+          "publishedOn": "2023-01-05T17:55:24.000Z",
+          "wordCount": 11015,
+          "title": "Manage your multi-cloud identity infrastructure with Microsoft Entra",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/430564iE305BA25E372C17B?v=v2"
+        },
         {
           "id": "https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/microsoft-teams-premium-experiences-and-how-to-set-it-up/ba-p/3697553",
           "author": "Zachary Cavanell",
@@ -3706,16 +3736,6 @@
           "wordCount": 9912,
           "title": "Microsoft is headed to VMware Explore 2022 in San Francisco",
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/397643iAEE48267B8F918BE/image-size/original?v=v2&px=-1"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/azure-migration-and/moving-to-the-cloud-your-guide-on-when-to-migrate-and-when-to/ba-p/3594144",
-          "author": "danielstocker",
-          "description": "One key question that many IT leaders ask as their organizations prepare for their move to the cloud is whether they should migrate or modernize workloads. In this article we would like to dive deep into the concepts of “Migrate” and “Modernize”, explain what they mean to us, what they mean to customers, and what the tradeoffs between them are.\n \nRead to the end for links to useful resources that can help support you in your choice of whether you should modernize or migrate parts of your application portfolio.\n \nDefining the concepts\n \nCloud migration is the process of moving applications, infrastructure, and data from one location, often a company’s private, on-site (\"on-premises\") datacenter to a public cloud provider’s infrastructure.  Migrating an on-premises physical or virtual server…",
-          "link": "https://techcommunity.microsoft.com/t5/azure-migration-and/moving-to-the-cloud-your-guide-on-when-to-migrate-and-when-to/ba-p/3594144",
-          "publishedOn": "2022-08-08T21:17:35.000Z",
-          "wordCount": 11164,
-          "title": "Moving to the cloud: Your guide on when to migrate and when to modernize",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/394213iA4C1C10BF1EB5FFE/image-size/original?v=v2&px=-1"
         }
       ]
     },
@@ -3783,16 +3803,6 @@
           "wordCount": 5988,
           "title": "Announcing Microsoft Dev Box Preview",
           "imageUrl": "https://azurecomcdn.azureedge.net/cvt-cc299fb9fc2087d62333fd283f5ed20d283fcddb7f560f553a7bedba73f7a057/images/shared/social/azure-icon-250x250.png"
-        },
-        {
-          "id": "microsoft-is-a-leader-in-2022-gartner-magic-quadrant-for-cloud-ai-developer-services",
-          "author": "Sharieff Mansour",
-          "description": "Gartner has recognized Microsoft as a Leader in the 2022 Gartner® Magic Quadrant™ for Cloud AI Developer Services, with Microsoft placed furthest in “Completeness of Vision”.",
-          "link": "https://azure.microsoft.com/blog/microsoft-is-a-leader-in-2022-gartner-magic-quadrant-for-cloud-ai-developer-services/",
-          "publishedOn": "2022-08-09T10:00:07.000Z",
-          "wordCount": 6099,
-          "title": "Microsoft is a Leader in 2022 Gartner Magic Quadrant for Cloud AI Developer Services",
-          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-a7e0362205437bd001caa362ccfe82096680094b5b6a3e91ed7e46d8730853a2/images/shared/social/azure-icon-250x250.png"
         }
       ]
     },
@@ -4999,6 +5009,16 @@
       "feedUrl": "https://azurecomcdn.azureedge.net/en-us/updates/feed/?updateType=features",
       "siteUrl": "https://azure.microsoft.com/en-us/updates/",
       "articles": [
+        {
+          "id": "general-availability-apache-log4j2-sink-to-azure-data-explorer",
+          "author": null,
+          "description": "Azure Data Explorer now supports ingestion of data from Apache Log4j 2.",
+          "link": "https://azure.microsoft.com/en-us/updates/general-availability-apache-log4j2-sink-to-azure-data-explorer/",
+          "publishedOn": "2023-01-05T18:00:05.000Z",
+          "wordCount": 5454,
+          "title": "General availability: Apache log4J2 sink to Azure Data Explorer",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-d0f6a2d46e5c6272660482ed313194be31abd00fcd96d583d09ce5c0ca6f5168/images/shared/social/azure-icon-250x250.png"
+        },
         {
           "id": "sap-hana-database-backup-by-azure-backup-listening-to-customer-requests",
           "author": null,
@@ -8048,36 +8068,6 @@
           "wordCount": 5090,
           "title": "Generally available: Azure Site Recovery update rollup 63 - August 2022",
           "imageUrl": "https://azurecomcdn.azureedge.net/cvt-e3648df1e5ad757c3efabf790ea6767e5ee61faeef01db78960e54a14992df98/images/shared/social/azure-icon-250x250.png"
-        },
-        {
-          "id": "azure-site-recovery-move-from-classic-to-modernized-experience-for-disaster-recovery-of-vmware-machines",
-          "author": null,
-          "description": "Introducing the migration capability to move existing replications from classic to modernized experience for disaster recovery of VMware virtual machines, enabled using Azure Site Recovery.",
-          "link": "https://azure.microsoft.com/en-us/updates/azure-site-recovery-move-from-classic-to-modernized-experience-for-disaster-recovery-of-vmware-machines/",
-          "publishedOn": "2022-08-08T19:00:10.000Z",
-          "wordCount": 5192,
-          "title": "General availability: Upgrade VMware VMs protected by Site Recovery to modernized experience",
-          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-a7e0362205437bd001caa362ccfe82096680094b5b6a3e91ed7e46d8730853a2/images/shared/social/azure-icon-250x250.png"
-        },
-        {
-          "id": "public-preview-serverless-sql-for-azure-databricks",
-          "author": null,
-          "description": "Serverless SQL for Azure Databricks provides instant compute to users for their BI and SQL workloads without waiting for clusters to start up or scale out.",
-          "link": "https://azure.microsoft.com/en-us/updates/public-preview-serverless-sql-for-azure-databricks/",
-          "publishedOn": "2022-08-08T16:00:09.000Z",
-          "wordCount": 5152,
-          "title": "Public preview: Serverless SQL for Azure Databricks",
-          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-a7e0362205437bd001caa362ccfe82096680094b5b6a3e91ed7e46d8730853a2/images/shared/social/azure-icon-250x250.png"
-        },
-        {
-          "id": "adh-host-restart-preview",
-          "author": null,
-          "description": "Azure Dedicated Host restart is now in public preview.",
-          "link": "https://azure.microsoft.com/en-us/updates/adh-host-restart-preview/",
-          "publishedOn": "2022-08-08T16:00:08.000Z",
-          "wordCount": 5053,
-          "title": "Public preview: Azure Dedicated Host restart",
-          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-a7e0362205437bd001caa362ccfe82096680094b5b6a3e91ed7e46d8730853a2/images/shared/social/azure-icon-250x250.png"
         }
       ]
     },
