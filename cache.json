@@ -1610,6 +1610,26 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/a-method-to-run-multiple-applications-in-single-app-service/ba-p/3708950",
+          "author": "yorkzhang",
+          "description": "Sometimes we want to have applications developed in various languages in one App Service. There is a solution - Docker Compose. However, it is still in Preview status, so it is not recommended to use it in Production environment. There are also some limitations. In this article, I would like to use a sample app service to introduce a method to do the same thing by using nginx and custom docker container.\n \nNote\nThe current method does not obey the recommendation of Docker that a docker container should host only one service, and we actually recommend customers use Azure Container App for hosting multiple applications.\n \nDesign\nWe will create a Docker container to have nginx installed and use it as a reverse proxy to redirect the request from external to different applications.\n\n \nThe above…",
+          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/a-method-to-run-multiple-applications-in-single-app-service/ba-p/3708950",
+          "publishedOn": "2023-01-11T07:20:23.000Z",
+          "wordCount": 9931,
+          "title": "A method to run multiple applications in single App Service",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/430259i0A872F8F00287E02?v=v2"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/deploy-spring-boot-application-to-app-service-tomcat-stack-using/ba-p/3708959",
+          "author": "yorkzhang",
+          "description": "Some people usually choose to follow this document to package the Spring Boot application to a jar file and use cli command to deploy the jar file to the app service with Java SE stack. However, you may also choose to package the Spring Boot project to a war file and deploy it to Tomcat. This article shows how you can do it.\nFirstly, you need to modify your Spring Boot application entrance class to entend SpringBootServletInitializer class and override configure method:\n \n \n \n \n@SpringBootApplication  \npublic class DemoApplication extends SpringBootServletInitializer {  \n    @Override  \n    protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {  \n        return application.sources(DemoApplication.class);  \n    }  \n  \n    public static void main(String[] args) …",
+          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/deploy-spring-boot-application-to-app-service-tomcat-stack-using/ba-p/3708959",
+          "publishedOn": "2023-01-11T07:19:20.000Z",
+          "wordCount": 9520,
+          "title": "Deploy Spring boot application to App Service Tomcat Stack using generated war file",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/430265i0C8BFD7046062546?v=v2"
+        },
+        {
           "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/azure-functions-2022-recap-and-2023-sneak-peek/ba-p/3710636",
           "author": "Anirudh Garg",
           "description": "Firstly wish you all a very happy new year. I sincerely hope that this year brings you much success. As I was doing a perspective of last year of the value that we added for Azure Functions customers - although we shipped 100’s of small improvements - I wanted to share with all of you a recap of all the major releases and provide a sneak peek on what we are working on in this year.\n \nLanguage Versions Support: This year we continued on making sure that our customers have access to the latest language versions for various languages as soon as we can. We believe we have the most comprehensive latest support across all the major languages among all the major cloud serverless vendors. These include support for .NET 7, Python 3.10, NodeJS 18, Java 17, PowerShell 7.2 across all the SKU’s that Az…",
@@ -3863,16 +3883,6 @@
           "wordCount": 5717,
           "title": "Azure Data Explorer: Log and telemetry analytics benchmark",
           "imageUrl": "https://azurecomcdn.azureedge.net/cvt-4331fe769077753c2cbb3d6d6212da4e4e4062fa78e4cbf8f9610391ac057ac9/images/shared/social/azure-icon-250x250.png"
-        },
-        {
-          "id": "announcing-microsoft-dev-box-preview",
-          "author": "Anthony Cangialosi",
-          "description": "Today, we’re excited to announce the preview of Microsoft Dev Box is now available to the public. Microsoft Dev Box is a managed service that enables developers to create on-demand, high-performance, secure, ready-to-code, project-specific workstations in the cloud.",
-          "link": "https://azure.microsoft.com/blog/announcing-microsoft-dev-box-preview/",
-          "publishedOn": "2022-08-15T10:00:07.000Z",
-          "wordCount": 5988,
-          "title": "Announcing Microsoft Dev Box Preview",
-          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-cc299fb9fc2087d62333fd283f5ed20d283fcddb7f560f553a7bedba73f7a057/images/shared/social/azure-icon-250x250.png"
         }
       ]
     },
@@ -3880,7 +3890,18 @@
       "title": "CSE Developer Blog",
       "feedUrl": "https://devblogs.microsoft.com/cse/feed/",
       "siteUrl": "https://devblogs.microsoft.com/cse/",
-      "articles": []
+      "articles": [
+        {
+          "id": "https://devblogs.microsoft.com/cse/?p=14483",
+          "author": "avbalter",
+          "description": "Guidance for setting up a self-hosted, scalable, secured, and easy to maintain CTFd environment, using nothing Azure Platform as a Service components.\nThe post Hosting a Capture-the-Flag event on Azure appeared first on CSE Developer Blog.",
+          "link": "https://devblogs.microsoft.com/cse/2023/01/11/host-ctf-on-azure/",
+          "publishedOn": "2023-01-11T13:41:04.000Z",
+          "wordCount": 4983,
+          "title": "Hosting a Capture-the-Flag event on Azure",
+          "imageUrl": "https://devblogs.microsoft.com/cse/wp-content/uploads/sites/55/2023/01/host-ctf-on-azure-0.png"
+        }
+      ]
     },
     {
       "title": "Microsoft for Java Developers",
@@ -5084,6 +5105,36 @@
       "feedUrl": "https://azurecomcdn.azureedge.net/en-us/updates/feed/?updateType=features",
       "siteUrl": "https://azure.microsoft.com/en-us/updates/",
       "articles": [
+        {
+          "id": "ga-azure-active-directory-authentication-for-exporting-and-importing-managed-disks",
+          "author": null,
+          "description": "New integration with Azure Active Directory (AD) to export and import data to Azure Managed Disks improves security",
+          "link": "https://azure.microsoft.com/en-us/updates/ga-azure-active-directory-authentication-for-exporting-and-importing-managed-disks/",
+          "publishedOn": "2023-01-11T17:00:04.000Z",
+          "wordCount": 5427,
+          "title": "General Availability: Azure Active Directory authentication for exporting and importing Managed Disks",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-93e47cfddd24fa717da6b0b90ace52b64123b1e538f762cc99e03453e6375b99/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "generally-available-azure-ultra-disk-storage-in-switzerland-north-and-korea-south",
+          "author": null,
+          "description": "Now available in Korea South and Switzerland North region, Azure Ultra Disk Storage provides high performance along with sub-millisecond latency for your most demanding workloads.",
+          "link": "https://azure.microsoft.com/en-us/updates/generally-available-azure-ultra-disk-storage-in-switzerland-north-and-korea-south/",
+          "publishedOn": "2023-01-11T17:00:04.000Z",
+          "wordCount": 5395,
+          "title": "Generally available: Azure Ultra Disk Storage in Switzerland North and Korea South",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-93e47cfddd24fa717da6b0b90ace52b64123b1e538f762cc99e03453e6375b99/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "azure-application-consistent-snapshot-tool-azacsnap-7",
+          "author": null,
+          "description": "AzAcSnap Version 7 Release",
+          "link": "https://azure.microsoft.com/en-us/updates/azure-application-consistent-snapshot-tool-azacsnap-7/",
+          "publishedOn": "2023-01-11T17:00:03.000Z",
+          "wordCount": 5435,
+          "title": "General Availability: AzAcSnap 7 — Azure Application Consistent Snapshot tool updates",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-93e47cfddd24fa717da6b0b90ace52b64123b1e538f762cc99e03453e6375b99/images/shared/social/azure-icon-250x250.png"
+        },
         {
           "id": "public-preview-azure-synapse-runtime-for-apache-spark-33",
           "author": null,
@@ -8181,6 +8232,16 @@
       "feedUrl": "https://devblogs.microsoft.com/microsoft365dev/feed/",
       "siteUrl": "https://devblogs.microsoft.com/microsoft365dev/",
       "articles": [
+        {
+          "id": "https://devblogs.microsoft.com/microsoft365dev/?p=12661",
+          "author": "Vesa Juvonen",
+          "description": "We’re excited to announce a new learning module focusing on building Adaptive Card Extensions (ACEs) for Microsoft Viva Connections and for upcoming Microsoft Viva Home. The Create Adaptive Card Extensions (ACE) for Microsoft Viva Connections learning module is the best way to learn how you can extend Viva Connections and Viva home by building extensions with SPFx and Adaptive Cards techniques.\nThe post Learn how to create Adaptive Card Extensions (ACEs) for Microsoft Viva Connections and Viva Home appeared first on Microsoft 365 Developer Blog.",
+          "link": "https://devblogs.microsoft.com/microsoft365dev/learn-how-to-create-adaptive-card-extensions-aces-for-microsoft-viva-connections-and-viva-home/",
+          "publishedOn": "2023-01-11T12:33:09.000Z",
+          "wordCount": 4647,
+          "title": "Learn how to create Adaptive Card Extensions (ACEs) for Microsoft Viva Connections and Viva Home",
+          "imageUrl": "https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2023/01/ace-learning-module.png"
+        },
         {
           "id": "https://devblogs.microsoft.com/microsoft365dev/?p=12581",
           "author": "SharePoint team",
