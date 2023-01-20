@@ -2,10 +2,34 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2023-01-19T01:18:36.247Z</updated>
+    <updated>2023-01-20T01:17:22.202Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Monitoring Azure VMware Solution with Log Analytics]]></title>
+        <id>https://techcommunity.microsoft.com/t5/azure-migration-and/monitoring-azure-vmware-solution-with-log-analytics/ba-p/3720515</id>
+        <link href="https://techcommunity.microsoft.com/t5/azure-migration-and/monitoring-azure-vmware-solution-with-log-analytics/ba-p/3720515"/>
+        <updated>2023-01-19T21:55:47.000Z</updated>
+        <summary type="html"><![CDATA[Overview 
+ 
+A global enterprise wants to migrate thousands of VMware vSphere virtual machines (VMs) to Microsoft Azure as part of their application modernization strategy. Their first step is to exit their on-premises data centers and rapidly relocate their legacy application VMs to the Azure VMware Solution as a staging area for the first phase of their modernization strategy. What should the Azure VMware Solution look like? 
+ 
+Azure VMware Solution is a VMware validated first party Azure service from Microsoft that provides private clouds containing VMware vSphere clusters built from dedicated bare-metal Azure infrastructure. It enables customers to leverage their existing investments in VMware skills and tools, allowing them to focus on developing and running their VMware-based workload…]]></summary>
+        <author>
+            <name>Varun_Hariharan</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[A Bootiful Podcast: Dr. Amanda Martin, Gradle developer advocate]]></title>
+        <id>https://spring.io/blog/2023/01/19/a-bootiful-podcast-dr-amanda-martin-gradle-developer-advocate</id>
+        <link href="https://spring.io/blog/2023/01/19/a-bootiful-podcast-dr-amanda-martin-gradle-developer-advocate"/>
+        <updated>2023-01-19T18:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Hi, Spring fans! In this installment, Josh Long (@starbuxman) talks with Gradle developer advocate Dr. Amanda Martin (@DrAmandaLMartin)]]></summary>
+        <author>
+            <name>Spring Engineering</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[New storage providers for Azure Durable Functions now generally available]]></title>
         <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/new-storage-providers-for-azure-durable-functions-now-generally/ba-p/3719623</id>
@@ -108,6 +132,23 @@ Why we developed the new storage provider…]]></summary>
         <summary type="html"><![CDATA[Author policies that govern the access to Active Directory users directly from Azure to all your SQL Server 2022 data sources at scale.]]></summary>
         <author>
             <name>Azure service updates</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Interesting new filters on Spring Cloud Gateway 4.0]]></title>
+        <id>https://spring.io/blog/2023/01/18/interesting-new-filters-on-spring-cloud-gateway-4-0</id>
+        <link href="https://spring.io/blog/2023/01/18/interesting-new-filters-on-spring-cloud-gateway-4-0"/>
+        <updated>2023-01-18T17:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Spring Cloud Gateway 4.0 is finally here! Thanks to our community contributions we have introduced new features and interesting filters.
+
+This blog post details new noteworthy and explains some of the new filters included, how they work and how you can use it to provide more insights into your applications.
+
+First of all, let’s talk about cache! Cache is a complicated issue and that’s why we have introduced two new filters related to it, but take into account that these filters can make the gateway memory constrained so use them carefully.
+CacheRequestBody
+
+Manipulating the request body can cause issues if not done properly, so we made it easy for you; with this filter we offer the possibility to cache the request body before it to the downstream and get that body from an exchange attri…]]></summary>
+        <author>
+            <name>Spring Engineering</name>
         </author>
     </entry>
     <entry>
@@ -13132,364 +13173,6 @@ Where to associate managed ide…]]></summary>
 The post Build a productivity dashboard with Microsoft Teams Toolkit for Visual Studio appeared first on Microsoft 365 Developer Blog.]]></summary>
         <author>
             <name>Ayca Bas</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[How to leverage Azure Monitor to meet functional and non-functional requirements - No.2 Compute]]></title>
-        <id>https://techcommunity.microsoft.com/t5/azure-observability-blog/how-to-leverage-azure-monitor-to-meet-functional-and-non/ba-p/3597947</id>
-        <link href="https://techcommunity.microsoft.com/t5/azure-observability-blog/how-to-leverage-azure-monitor-to-meet-functional-and-non/ba-p/3597947"/>
-        <updated>2022-08-23T00:48:48.000Z</updated>
-        <summary type="html"><![CDATA[This article is a part of series articles for Azure Monitor. Please refer to How to leverage Azure Monitor to meet functional and non-functional requirements - No.1 overview first before reading this post. This post dives deeply for Compute category among monitoring categories as highlighted blue. 
-
-
-
-
-Article No
-
-monitoring category
-
-
-monitoring target
-
-
-Note
-
-
-
-
-2
-
-
-compute
-
-
-Reboot
-
-
-monitor reboot frequency
-
-
-
-
- 
-
-
- 
-
-
-CPU
-
-
-monitor CPU usage
-
-
-
-
- 
-
-
- 
-
-
-Memory
-
-
-monitor memory usage
-
-
-
-
-3
-
-
-compute/ inside OS
-
-
-log file
-
-
-monitor event log and syslog
-
-
-
-
- 
-
-
- 
-
-
-Process
-
-
-monitor available process
-
-
-
-
-4
-
-
-Storage/Disk
-
-
-Disk
-
-
-monitor disk usage
-
-
-
-
- 
-
-
- 
-
-
-folder/file
-
-
-monitor folder usage and file size
-
-
-
-
-5
-
-
-Endpoint/IPv4 address
-
-
-response/service
-
-
-monitor specific address and …]]></summary>
-        <author>
-            <name>daisami</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[How to leverage Azure Monitor to meat functional and non-functional requirements - No.2 Compute]]></title>
-        <id>https://techcommunity.microsoft.com/t5/azure-observability-blog/how-to-leverage-azure-monitor-to-meat-functional-and-non/ba-p/3597947</id>
-        <link href="https://techcommunity.microsoft.com/t5/azure-observability-blog/how-to-leverage-azure-monitor-to-meat-functional-and-non/ba-p/3597947"/>
-        <updated>2022-08-23T00:48:48.000Z</updated>
-        <summary type="html"><![CDATA[This article is a part of series articles for Azure Monitor. Please refer to How to leverage Azure Monitor to meat functional and non-functional requirements - No.1 overview first before reading this post. This post dives deeply for Compute category among monitoring categories as highlighted blue. 
-
-
-
-
-Article No
-
-monitoring category
-
-
-monitoring target
-
-
-Note
-
-
-
-
-2
-
-
-compute
-
-
-Reboot
-
-
-monitor reboot frequency
-
-
-
-
- 
-
-
- 
-
-
-CPU
-
-
-monitor CPU usage
-
-
-
-
- 
-
-
- 
-
-
-Memory
-
-
-monitor memory usage
-
-
-
-
-3
-
-
-compute/ inside OS
-
-
-log file
-
-
-monitor event log and syslog
-
-
-
-
- 
-
-
- 
-
-
-Process
-
-
-monitor available process
-
-
-
-
-4
-
-
-Storage/Disk
-
-
-Disk
-
-
-monitor disk usage
-
-
-
-
- 
-
-
- 
-
-
-folder/file
-
-
-monitor folder usage and file size
-
-
-
-
-5
-
-
-Endpoint/IPv4 address
-
-
-response/service
-
-
-monitor specific address and …]]></summary>
-        <author>
-            <name>daisami</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[How to leverage Azure Monitor to meet functional and non-functional requirements - No.1 overview]]></title>
-        <id>https://techcommunity.microsoft.com/t5/azure-observability-blog/how-to-leverage-azure-monitor-to-meet-functional-and-non/ba-p/3597906</id>
-        <link href="https://techcommunity.microsoft.com/t5/azure-observability-blog/how-to-leverage-azure-monitor-to-meet-functional-and-non/ba-p/3597906"/>
-        <updated>2022-08-23T00:38:17.000Z</updated>
-        <summary type="html"><![CDATA[Azure Monitor can be used for centralized monitoring and analysis of log data by using Kusto query, thus Azure Monitor allows you to effectively monitor and visualize Azure resources. Azure Arc also empowers Azure Monitor to expand its capability to on-premise and other public clouds. You can monitor every resources across environments, Azure, AWS, GCP, OCI, on-premise and others, with Azure Monitor and Azure Arc, then Azure Monitor minimize your effort to manage all the resources regardless locations or environments. Refer to Azure Monitor overview article for the detail.
-
-
-
-
-
- 
-
-
-
-
-Azure Monitor is a very powerful solution, but customers and partners sometimes have a challenge to map Azure Monitor features to their functional and non-functional requirements. These series articles describ…]]></summary>
-        <author>
-            <name>daisami</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[How to leverage Azure Monitor to meat functional and non-functional requirements - No.1 overview]]></title>
-        <id>https://techcommunity.microsoft.com/t5/azure-observability-blog/how-to-leverage-azure-monitor-to-meat-functional-and-non/ba-p/3597906</id>
-        <link href="https://techcommunity.microsoft.com/t5/azure-observability-blog/how-to-leverage-azure-monitor-to-meat-functional-and-non/ba-p/3597906"/>
-        <updated>2022-08-23T00:38:17.000Z</updated>
-        <summary type="html"><![CDATA[Azure Monitor can be used for centralized monitoring and analysis of log data by using Kusto query, thus Azure Monitor allows you to effectively monitor and visualize Azure resources. Azure Arc also empowers Azure Monitor to expand its capability to on-premise and other public clouds. You can monitor every resources across environments, Azure, AWS, GCP, OCI, on-premise and others, with Azure Monitor and Azure Arc, then Azure Monitor minimize your effort to manage all the resources regardless locations or environments. Refer to Azure Monitor overview article for the detail.
-
-
-
-
-
- 
-
-
-
-
-Azure Monitor is a very powerful solution, but customers and partners sometimes have a challenge to map Azure Monitor features to their functional and non-functional requirements. These series articles describ…]]></summary>
-        <author>
-            <name>daisami</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Public preview: Four new features in no code editor in Event Hubs]]></title>
-        <id>public-preview-4-new-features-in-no-code-editor-in-azure-event-hubs</id>
-        <link href="https://azure.microsoft.com/en-us/updates/public-preview-4-new-features-in-no-code-editor-in-azure-event-hubs/"/>
-        <updated>2022-08-22T16:00:14.000Z</updated>
-        <summary type="html"><![CDATA[Explore four new features in the no code editor in Azure Event Hubs. This editor allows you to easily develop a Stream Analytics job without writing a single line of code.]]></summary>
-        <author>
-            <name>Azure service updates</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Microsoft Purview Insider Risk Management | Admin Set-up Tutorial]]></title>
-        <id>https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/microsoft-purview-insider-risk-management-admin-set-up-tutorial/ba-p/3503018</id>
-        <link href="https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/microsoft-purview-insider-risk-management-admin-set-up-tutorial/ba-p/3503018"/>
-        <updated>2022-08-22T15:20:23.000Z</updated>
-        <summary type="html"><![CDATA[With remote work and a changing data landscape, risk of data theft has reached new heights - Insider Risk Management helps protect against those risks. Watch the step-by-step tutorial for implementing an Insider Risk Management solution for your organization as part of Microsoft Purview.
- 
-
-It's surprisingly simple to build a baseline for managing activity inside your organization - from getting everything running, to setting policy on the types of violations that should raise system alerts, to assigning permissions for those who should have oversight and a level of incident detail they can see. While more advanced settings like intelligent detections define un-allowed and allowed domains and risk score boosters detect unusual activities or previous policy violations.
- 
-Talhah Mir, from th…]]></summary>
-        <author>
-            <name>Zachary Cavanell</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Microsoft is headed to VMware Explore 2022 in San Francisco]]></title>
-        <id>https://techcommunity.microsoft.com/t5/azure-migration-and/microsoft-is-headed-to-vmware-explore-2022-in-san-francisco/ba-p/3605512</id>
-        <link href="https://techcommunity.microsoft.com/t5/azure-migration-and/microsoft-is-headed-to-vmware-explore-2022-in-san-francisco/ba-p/3605512"/>
-        <updated>2022-08-22T15:00:00.000Z</updated>
-        <summary type="html"><![CDATA[A couple of BIG changes this year... 
-We are back to meeting in-person, and VMworld is now called VMware Explore!
- 
-After two years of virtual meetings this conference is going to be super busy with lots to see and learn. If you want to know about Azure, the work we are doing with VMware, or just have a great conversation, don’t be shy and reach out to say hello. We'd love to talk to you so stop by our booth! We may even have some cool stickers too.
- 
-This year we will have a bunch of sessions with Microsoft employees on stage, so if you're building out your schedule check them out:
- 
-Microsoft Keynote: Transform your VMware Workloads with Microsoft Azure
-Speaker:  Jeff Woolsey, Principal PM Manager, Microsoft
-Date/Time:  Wednesday, August 31 @ 9:30 AM - 10:30 AM PDT
- 
-Jeff will share how …]]></summary>
-        <author>
-            <name>KirstenMegahan</name>
         </author>
     </entry>
 </feed>
