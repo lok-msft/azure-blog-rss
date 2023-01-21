@@ -6,6 +6,16 @@
       "siteUrl": "https://spring.io/blog/category/engineering",
       "articles": [
         {
+          "id": "https://spring.io/blog/2023/01/20/spring-modulith-0-3-released",
+          "author": null,
+          "description": "Hot on the heels of Spring Boot 3.0.2, I am excited to announce the 0.3 release of Spring Modulith.\r\nThe release is packed with improvements.\r\nWe have tweaked a couple of things that might require your attention and a couple of adapting changes to your code.\r\nThe most notable changes are:\n\r\n\r\n\r\n\r\n\r\nGH-114 – We renamed the ….modulith.model package to ….modulith.core. This primarily affects ApplicationModules. Please adapt your imports accordingly.\n\r\n\r\n\r\nGH-120 – The documentation support now generates diagram files using the *.puml file extension, as suggested by PlantUML. Please adapt your imports accordingly.\n\r\n\r\n\r\nGH-103 – ApplicationModuleInitializer implementations will be triggered upon application startup, in the order following the application module dependency structure (more core ones are invoked first). Also, ApplicationModules exposes a ….getComparator() to order Spring beans that way. Note, that this requires the JGraphT library to be on the classpath (automatically pulled in via the spring-modulith-runtime artifact). See the reference documentation for details.\n\r\n\r\n\r\nGH-116 – PublishedEvents now sees events published from asynchronous event listeners, too.\n\r\n\r\n\r\nGH-100 – If you’re using AssertJ in your tests, you can now use AssertablePublishedEvents for a more streamlined integration  (for example, assertThat(events).contains(MyEvent.class).matching(…)).\n\r\n\r\n\r\nGH-117 – As we incentivize event-based, asynchronous application module integration, the test starter now also pulls in Awaitility.\n\r\n\r\n\r\nGH-111 – We now publish aggregated Javdoc.\n\r\n\r\n\r\n\r\n\r\nFind a complete change log in the GitHub release page. We are looking forward to your feedback in the GitHub discussions.",
+          "link": "https://spring.io/blog/2023/01/20/spring-modulith-0-3-released",
+          "publishedOn": "2023-01-20T10:51:00.000Z",
+          "wordCount": 734,
+          "title": "Spring Modulith 0.3 released",
+          "imageUrl": "https://avatars.githubusercontent.com/u/128577?v=4?s=200"
+        },
+        {
           "id": "https://spring.io/blog/2023/01/19/a-bootiful-podcast-dr-amanda-martin-gradle-developer-advocate",
           "author": null,
           "description": "Hi, Spring fans! In this installment, Josh Long (@starbuxman) talks with Gradle developer advocate Dr. Amanda Martin (@DrAmandaLMartin)",
@@ -3195,16 +3205,6 @@
           "wordCount": 10216,
           "title": "Self Hosted Portal Design and Publish Architecture",
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/399070iE743DFDF60D23A84?v=v2"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/azure-paas-blog/the-usage-of-managed-identity-in-the-azure-batch-account-and/ba-p/3607014",
-          "author": "v-mosh21",
-          "description": "Overview:\nThe managed identities can be used both in the Azure Batch Account and Azure Batch Pool, which may cause confusion in some situations. This blog is aimed to help you understand the differences between the usage of the managed identity in the Azure Batch Account and in the Azure Batch Pool. The managed identity configured on the Batch account only grants permission for the Azure Batch Account to authenticate to other services but not for Azure Batch nodes (or Pool VMs). If the purpose is to grant the Azure Batch nodes access to other Azure resources, then you are looking for the managed identity configured in the Azure Batch Pool.\n \nOutline:\n\nOverall Pre-requirement\nManaged Identity in the Azure Batch Account\nManaged Identity in the Azure Batch Pool\n\nWhere to associate managed ide…",
-          "link": "https://techcommunity.microsoft.com/t5/azure-paas-blog/the-usage-of-managed-identity-in-the-azure-batch-account-and/ba-p/3607014",
-          "publishedOn": "2022-08-24T03:33:33.000Z",
-          "wordCount": 11310,
-          "title": "The Usage of Managed Identity in the Azure Batch Account and Azure Batch Pool",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/398040i22F5557D008549FF?v=v2"
         }
       ]
     },
@@ -4120,6 +4120,16 @@
       "siteUrl": "https://devblogs.microsoft.com/premier-developer/",
       "articles": [
         {
+          "id": "https://devblogs.microsoft.com/premier-developer/?p=41133",
+          "author": "Developer Support",
+          "description": "In this post, Jin Lee explores how Azure DevOps Pipeline Decorators can bridge the gap in a cloud environment with a customer’s existing security processes on their on-premises IIS server.\nBackground\nThe post Azure DevOps – Leveraging Pipeline Decorators for Custom Process Automation appeared first on Developer Support.",
+          "link": "https://devblogs.microsoft.com/premier-developer/azure-devops-leveraging-pipeline-decorators-for-custom-process-automation/",
+          "publishedOn": "2023-01-20T07:02:00.000Z",
+          "wordCount": 4647,
+          "title": "Azure DevOps – Leveraging Pipeline Decorators for Custom Process Automation",
+          "imageUrl": "https://devblogs.microsoft.com/premier-developer/wp-content/uploads/sites/31/2023/01/pipelinedecorator.png"
+        },
+        {
           "id": "https://devblogs.microsoft.com/premier-developer/?p=41079",
           "author": "Developer Support",
           "description": "Pete Tian spotlights RBAC for PostgreSQL Flexible Server.\nAs more enterprises modernize identity management by using RBAC and simply authentication with Single Sign-On, the efforts of maintaining separate sets of username/password for every legacy database instance is still excessive operational overhead that is considerable for IT admins.\nThe post Introduce RBAC in PostgreSQL Flexible Server appeared first on Developer Support.",
@@ -4186,6 +4196,16 @@
       "feedUrl": "https://devblogs.microsoft.com/devops/feed/",
       "siteUrl": "https://devblogs.microsoft.com/devops/",
       "articles": [
+        {
+          "id": "https://devblogs.microsoft.com/devops/?p=66295",
+          "author": "Dan Hellem",
+          "description": "Because of the holidays, and our deployment schedule, this update includes our progress for both sprint 215 and 216. You will notice a lot of bugs being fixed in these sprints. Some of the issues being significant.\nThe post New Boards Hub, Sprint 216 update appeared first on Azure DevOps Blog.",
+          "link": "https://devblogs.microsoft.com/devops/new-boards-hub-sprint-216-update/",
+          "publishedOn": "2023-01-20T20:44:47.000Z",
+          "wordCount": 5155,
+          "title": "New Boards Hub, Sprint 216 update",
+          "imageUrl": "https://devblogs.microsoft.com/devops/wp-content/uploads/sites/6/2018/08/vstsfeature.png"
+        },
         {
           "id": "https://devblogs.microsoft.com/devops/?p=66263",
           "author": "Andrew Brenner",
@@ -4383,6 +4403,16 @@
       "feedUrl": "https://devblogs.microsoft.com/azure-sql/feed/",
       "siteUrl": "https://devblogs.microsoft.com/azure-sql/",
       "articles": [
+        {
+          "id": "https://devblogs.microsoft.com/azure-sql/?p=1683",
+          "author": "Davide Mauri",
+          "description": "I’ve just finished watching the video from the @GuyInACube about Common Table Expressions\nand I noticed that in several comments there was the request to explain what is the difference between Common Table Expressions, Views and Temp Tables.\nThe post CTEs, Views or Temp Tables? appeared first on Azure SQL Devs’ Corner.",
+          "link": "https://devblogs.microsoft.com/azure-sql/ctes-views-or-temp-tables/",
+          "publishedOn": "2023-01-20T18:11:38.000Z",
+          "wordCount": 6708,
+          "title": "CTEs, Views or Temp Tables?",
+          "imageUrl": "https://devblogs.microsoft.com/azure-sql/wp-content/uploads/sites/56/2023/01/pexels-pixabay-277593-1000x1000-1.jpg"
+        },
         {
           "id": "https://devblogs.microsoft.com/azure-sql/?p=1671",
           "author": "Drew Skwiers-Koballa",
@@ -8481,16 +8511,6 @@
           "wordCount": 4229,
           "title": "How Cloud Storage Partners integrate their services with Microsoft Teams and Office",
           "imageUrl": "https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2022/08/CSPP-blog-image.jpg"
-        },
-        {
-          "id": "https://devblogs.microsoft.com/microsoft365dev/?p=11247",
-          "author": "Ayca Bas",
-          "description": "Follow this tutorial to build your first Teams tab with ASP.NET Core and Teams Toolkit for Visual Studio to boost productivity.nerally available! Learn how to build your first Teams tab with ASP.NET Core, using Teams Toolkit, to boost productivity.\nThe post Build a productivity dashboard with Microsoft Teams Toolkit for Visual Studio appeared first on Microsoft 365 Developer Blog.",
-          "link": "https://devblogs.microsoft.com/microsoft365dev/build-a-productivity-dashboard-with-microsoft-teams-toolkit-for-visual-studio/",
-          "publishedOn": "2022-08-23T16:00:25.000Z",
-          "wordCount": 5313,
-          "title": "Build a productivity dashboard with Microsoft Teams Toolkit for Visual Studio",
-          "imageUrl": "https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2022/08/AycaBlog82322fulljpg.jpg"
         }
       ]
     }
