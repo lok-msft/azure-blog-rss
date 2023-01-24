@@ -22,6 +22,132 @@
             data-action="toggle-accordions"
             title="Click to toggle the day, Ctrl + click to toggle all."
           >
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2023-01-24 datetime="2023-01-23T23:09:04.000Z">2023-01-24</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2023-01-24 datetime="2023-01-23T23:09:04.000Z"></time>
+          </button>
+        </h2>
+        <ul class="sources card">
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Microsoft Tech Community - Latest Blogs - Azure Architecture Blog</button>
+                  <a class="source-heading__link" href="https://techcommunity.microsoft.com">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://techcommunity.microsoft.com/t5/azure-architecture-blog/armchair-architects-architecture-and-ambiguity/ba-p/3723061"
+                        open
+                      >
+                        <summary class="article-expander__title">Armchair Architects: Architecture and Ambiguity</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/t5/azure-architecture-blog/armchair-architects-architecture-and-ambiguity/ba-p/3723061">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://techcommunity.microsoft.com/t5/image/serverpage/image-id/434876i42320BC43C4B880A/image-size/original?v&#x3D;v2&amp;px&#x3D;-1" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>Welcome back to another episode of Armchair Architects as part of the Azure Enablement show. So today we&#x27;re going to talk about something a little theoretical. We&#x27;re going to talk about the relationship between architecture and ambiguity. What do you do when the specs aren&#x27;t entirely clear, or the plans aren&#x27;t entirely clear? What people need isn&#x27;t entirely clear? We&#x27;re going to discuss that with our architects.
+ 
+It&#x27;s not uncommon for people to come to architects with very vague statements or questions that aren&#x27;t really precise. Or a problem needs to be solved, but it&#x27;s not really clear what that problem is.
+ 
+ 
+What can architects do to help with ambiguity?
+ 
+Depending on the depth of your experience, you have to get more comfortable with ambiguity. I think as “answer people” our goal i…</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;36
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+        </ul>
+      </section>
+      <section class="daily-content js-toggle-accordions-scope">
+        <h2 class="daily-heading">
+          <button
+            class="daily-heading-toggle"
+            data-action="toggle-accordions"
+            title="Click to toggle the day, Ctrl + click to toggle all."
+          >
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2023-01-23 datetime="2023-01-23T15:18:16.000Z">2023-01-23</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2023-01-23 datetime="2023-01-23T15:18:16.000Z"></time>
+          </button>
+        </h2>
+        <ul class="sources card">
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Microsoft Tech Community - Latest Blogs - Apps on Azure Blog</button>
+                  <a class="source-heading__link" href="https://techcommunity.microsoft.com">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/app-service-zone-redundancy-support-and-possible-zone-redundancy/ba-p/3722426"
+                        open
+                      >
+                        <summary class="article-expander__title">App Service Zone Redundancy Support And Possible Zone Redundancy Related Issues</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/app-service-zone-redundancy-support-and-possible-zone-redundancy/ba-p/3722426">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://cdn.techcommunity.microsoft.com/assets/MTC_Open_graph_image1.jpg" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>Current Requirements/Limitations for Enabling Zone Redundancy On Azure App Service 
+
+https://azure.github.io/AppService/2021/08/25/App-service-support-for-availability-zones.html
+ 
+
+App Service Possible Issues and Solutions Related with Zone Redundancy
+
+Scenario 1
+Symptom: Web sockets error when accessing an App service web app in an app service plan which has enabled Zone Redundancy.
+Error: Failed to start the transport &#x27;WebSockets&#x27;: Error: There was an error with the transport.
+Root Cause: This issue happened when these 3 conditions are met.
+
+Zone Redundancy enabled.
+Web Sockets set to on (in App service Settings -&gt; Configuration -&gt; General Settings)
+ARR affinity set to off (in App service Settings -&gt; Configuration -&gt; General Settings)
+
+Solution: Enable ARR affinity for the app service
+ 
+Scenario 2
+Symptom:  Failed to scale down a Linux App service plan --e.g. from P1V3 to P1V2, it failed with message ---You cannot change the OS hosting your app at this time. Please recreate your app with the desired OS
+Network trace shows--- http 400 bad request error when sending the PUT request to https://management.azure.com/
+Root Cause:    App Service Plan with fewer than 3 workers are not allowed for zone redundancy. Requested number of workers: 2
+                          App service plan has Zone redundancy enabled with autoscale configured with an Auto Scale out rule, setting the minimum and default instance count to be less than 3.
+Solution:  Update minimum worker rule in Auto Scale to 3 or use Manual Scale</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;31
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+        </ul>
+      </section>
+      <section class="daily-content js-toggle-accordions-scope">
+        <h2 class="daily-heading">
+          <button
+            class="daily-heading-toggle"
+            data-action="toggle-accordions"
+            title="Click to toggle the day, Ctrl + click to toggle all."
+          >
             <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2023-01-21 datetime="2023-01-21T07:45:02.000Z">2023-01-21</time>
             <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2023-01-21 datetime="2023-01-21T07:45:02.000Z"></time>
           </button>
@@ -29443,124 +29569,11 @@ https://github.com/Azu…</span>
             data-action="toggle-accordions"
             title="Click to toggle the day, Ctrl + click to toggle all."
           >
-            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2022-08-27 datetime="2022-08-26T21:12:55.000Z">2022-08-27</time>
-            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2022-08-27 datetime="2022-08-26T21:12:55.000Z"></time>
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2022-08-26 datetime="2022-08-25T16:20:59.000Z">2022-08-26</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2022-08-26 datetime="2022-08-25T16:20:59.000Z"></time>
           </button>
         </h2>
         <ul class="sources card">
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Microsoft Tech Community - Latest Blogs - Azure Architecture Blog</button>
-                  <a class="source-heading__link" href="https://techcommunity.microsoft.com">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://techcommunity.microsoft.com/t5/azure-architecture-blog/high-performance-storage-for-ai-model-training-tasks-using-azure/ba-p/3609189"
-                        open
-                      >
-                        <summary class="article-expander__title">High-performance storage for AI Model Training tasks using Azure ML studio with Azure NetApp Files</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/t5/azure-architecture-blog/high-performance-storage-for-ai-model-training-tasks-using-azure/ba-p/3609189">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://techcommunity.microsoft.com/t5/image/serverpage/image-id/398838i1EF8EDC8DF1B265D/image-size/original?v&#x3D;v2&amp;px&#x3D;-1" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>Table of Contents
-Abstract
-Introduction
-Scenario
-Provision persistent storage in Azure Machine Learning studio with Azure NetApp Files
-Pre-requisites
-Note on Connectivity
-Preparing the working environment
-Azure Cloud Shell and Extensions
-Setting variables
-Deployment steps
-Provisioning of services
-Preparing repository
-Creating Azure Machine Learning studio resources
-Start training job
-Results of training job
-Deployment steps - Azure Machine Learning studio notebooks
-Preparation and requirements
-Provisioning Compute instance
-Configuring compute instance
-Accessing Azure NetApp Files from notebook
-Snapshots
-Creating a Snapshot using the Azure Cloud Shell
-Restoring a snapshot using the Azure Cloud Shell
-Summary
-Additional Information
- 
-Abstract
- 
-This article describes how to create a notebook …</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;42
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
-        </ul>
-      </section>
-      <section class="daily-content js-toggle-accordions-scope">
-        <h2 class="daily-heading">
-          <button
-            class="daily-heading-toggle"
-            data-action="toggle-accordions"
-            title="Click to toggle the day, Ctrl + click to toggle all."
-          >
-            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2022-08-26 datetime="2022-08-26T14:00:50.000Z">2022-08-26</time>
-            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2022-08-26 datetime="2022-08-26T14:00:50.000Z"></time>
-          </button>
-        </h2>
-        <ul class="sources card">
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Microsoft Tech Community - Latest Blogs - Apps on Azure Blog</button>
-                  <a class="source-heading__link" href="https://techcommunity.microsoft.com">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/load-test-endpoints-with-access-restrictions-using-azure-load/ba-p/3610412"
-                        open
-                      >
-                        <summary class="article-expander__title">Load test endpoints with access restrictions using Azure Load Testing</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/load-test-endpoints-with-access-restrictions-using-azure-load/ba-p/3610412">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://techcommunity.microsoft.com/t5/image/serverpage/image-id/399233i8864CB6B36BC17C6/image-size/original?v&#x3D;v2&amp;px&#x3D;-1" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>Often, we see that the endpoints under test are sitting behind a firewall, or they are only accessible from within a virtual network or a network boundary. Yes, we are talking about private endpoints. This is a common practice to meet security requirements. Our customers gave us feedback that they also want to use cloud-based load testing to test such private endpoints. Well, now you can! Azure Load Testing uses VNet injection to inject the load generating virtual machines into the same virtual network as your endpoint to enable this scenario.  
- 
-In this blog post we&#x27;ll take you through the steps to load test a specific type of private endpoint: public endpoints with access restrictions. These are endpoints that have a public IP address and are accessible over the internet, but access to …</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;34
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
             <li class="card__section">
               <section class="js-toggle-accordions-scope">
                 <h3 class="source-heading">
@@ -29603,8 +29616,8 @@ This series is based on the Create Machine Learning models with R and Tidymodels
       </section>
 
     <footer>
-      <a class="footer-link" href="https://github.com/lok-msft/azure-blog-rss/actions/runs/3982475526">
-        <time id="build-timestamp" datetime="2023-01-23T01:14:50.062Z">2023-01-23T01:14:50.062Z</time>
+      <a class="footer-link" href="https://github.com/lok-msft/azure-blog-rss/actions/runs/3992090463">
+        <time id="build-timestamp" datetime="2023-01-24T01:18:10.126Z">2023-01-24T01:18:10.126Z</time>
       </a>
       <a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a>
     </footer>

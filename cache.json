@@ -1600,6 +1600,16 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/app-service-zone-redundancy-support-and-possible-zone-redundancy/ba-p/3722426",
+          "author": "Weizhen_Sun",
+          "description": "Current Requirements/Limitations for Enabling Zone Redundancy On Azure App Service \n\nhttps://azure.github.io/AppService/2021/08/25/App-service-support-for-availability-zones.html\n \n\nApp Service Possible Issues and Solutions Related with Zone Redundancy\n\nScenario 1\nSymptom: Web sockets error when accessing an App service web app in an app service plan which has enabled Zone Redundancy.\nError: Failed to start the transport 'WebSockets': Error: There was an error with the transport.\nRoot Cause: This issue happened when these 3 conditions are met.\n\nZone Redundancy enabled.\nWeb Sockets set to on (in App service Settings -> Configuration -> General Settings)\nARR affinity set to off (in App service Settings -> Configuration -> General Settings)\n\nSolution: Enable ARR affinity for the app service\n \nScenario 2\nSymptom:  Failed to scale down a Linux App service plan --e.g. from P1V3 to P1V2, it failed with message ---You cannot change the OS hosting your app at this time. Please recreate your app with the desired OS\nNetwork trace shows--- http 400 bad request error when sending the PUT request to https://management.azure.com/\nRoot Cause:    App Service Plan with fewer than 3 workers are not allowed for zone redundancy. Requested number of workers: 2\n                          App service plan has Zone redundancy enabled with autoscale configured with an Auto Scale out rule, setting the minimum and default instance count to be less than 3.\nSolution:  Update minimum worker rule in Auto Scale to 3 or use Manual Scale",
+          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/app-service-zone-redundancy-support-and-possible-zone-redundancy/ba-p/3722426",
+          "publishedOn": "2023-01-23T15:18:16.000Z",
+          "wordCount": 9399,
+          "title": "App Service Zone Redundancy Support And Possible Zone Redundancy Related Issues",
+          "imageUrl": "https://cdn.techcommunity.microsoft.com/assets/MTC_Open_graph_image1.jpg"
+        },
+        {
           "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/new-storage-providers-for-azure-durable-functions-now-generally/ba-p/3719623",
           "author": "lily-ma",
           "description": "We’re excited to announce that support for the new Azure Durable Functions storage providers, Netherite and Microsoft SQL Server (MSSQL), is now generally available! Some of you may have learned about these new storage providers during the annual Build conference and/or from this preview announcement blog post.\n \nDurable Functions enables you to write long-running, reliable, event-driven, and stateful logic on the serverless Azure Functions platform using everyday imperative code. We believe the new storage providers will enable a host of new scenarios for apps using Durable Functions because they allow apps to run at a higher scale, with greater price-performance efficiency, and with more portability compared to the default option Azure Storage.\n \nWhy we developed the new storage provider…",
@@ -2518,16 +2528,6 @@
           "wordCount": 9485,
           "title": "Long execution functions with Service Bus Trigger",
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/400244i7B948BD34154BD24?v=v2"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/load-test-endpoints-with-access-restrictions-using-azure-load/ba-p/3610412",
-          "author": "Nagarjuna_V",
-          "description": "Often, we see that the endpoints under test are sitting behind a firewall, or they are only accessible from within a virtual network or a network boundary. Yes, we are talking about private endpoints. This is a common practice to meet security requirements. Our customers gave us feedback that they also want to use cloud-based load testing to test such private endpoints. Well, now you can! Azure Load Testing uses VNet injection to inject the load generating virtual machines into the same virtual network as your endpoint to enable this scenario.  \n \nIn this blog post we'll take you through the steps to load test a specific type of private endpoint: public endpoints with access restrictions. These are endpoints that have a public IP address and are accessible over the internet, but access to …",
-          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/load-test-endpoints-with-access-restrictions-using-azure-load/ba-p/3610412",
-          "publishedOn": "2022-08-26T14:00:50.000Z",
-          "wordCount": 10153,
-          "title": "Load test endpoints with access restrictions using Azure Load Testing",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/399233i8864CB6B36BC17C6/image-size/original?v=v2&px=-1"
         }
       ]
     },
@@ -3194,6 +3194,16 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/armchair-architects-architecture-and-ambiguity/ba-p/3723061",
+          "author": "EricCharran",
+          "description": "Welcome back to another episode of Armchair Architects as part of the Azure Enablement show. So today we're going to talk about something a little theoretical. We're going to talk about the relationship between architecture and ambiguity. What do you do when the specs aren't entirely clear, or the plans aren't entirely clear? What people need isn't entirely clear? We're going to discuss that with our architects.\n \nIt's not uncommon for people to come to architects with very vague statements or questions that aren't really precise. Or a problem needs to be solved, but it's not really clear what that problem is.\n \n \nWhat can architects do to help with ambiguity?\n \nDepending on the depth of your experience, you have to get more comfortable with ambiguity. I think as “answer people” our goal i…",
+          "link": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/armchair-architects-architecture-and-ambiguity/ba-p/3723061",
+          "publishedOn": "2023-01-23T23:09:04.000Z",
+          "wordCount": 10744,
+          "title": "Armchair Architects: Architecture and Ambiguity",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/434876i42320BC43C4B880A/image-size/original?v=v2&px=-1"
+        },
+        {
           "id": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/stream-data-to-your-data-lake-using-azure-data-explorer/ba-p/3705247",
           "author": "sqlzack",
           "description": "Summary\nMicrosoft Azure Data Explorer is a great resource to ingest and process streaming data. Azure Data Lake Storage is a great resource for storing large amounts of data. The end-to-end conceptual architecture contained in the GitHub Repository accompanying this blog focuses on deploying an environment that plays to the strengths of both of these services by using Azure Synapse Analytics to simulate streaming data to them. In this architecture, the core strength of Azure Data Explorer is performant real-time storage and analytics. The core strength of Azure Data Lake Storage is cost-effective and efficient long-term storage. \n \nTarget Audience\n \nEvent Generation section would be replaced by different sources in production streaming scenarios\nData Engineering and Analytics teams that ha…",
@@ -3372,16 +3382,6 @@
           "wordCount": 10715,
           "title": "Why WAF: Driving Technical Excellence in Delivery for your Organization",
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/400405i0CA764C0630C2F6A/image-size/original?v=v2&px=-1"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/high-performance-storage-for-ai-model-training-tasks-using-azure/ba-p/3609189",
-          "author": "GeertVanTeylingen",
-          "description": "Table of Contents\nAbstract\nIntroduction\nScenario\nProvision persistent storage in Azure Machine Learning studio with Azure NetApp Files\nPre-requisites\nNote on Connectivity\nPreparing the working environment\nAzure Cloud Shell and Extensions\nSetting variables\nDeployment steps\nProvisioning of services\nPreparing repository\nCreating Azure Machine Learning studio resources\nStart training job\nResults of training job\nDeployment steps - Azure Machine Learning studio notebooks\nPreparation and requirements\nProvisioning Compute instance\nConfiguring compute instance\nAccessing Azure NetApp Files from notebook\nSnapshots\nCreating a Snapshot using the Azure Cloud Shell\nRestoring a snapshot using the Azure Cloud Shell\nSummary\nAdditional Information\n \nAbstract\n \nThis article describes how to create a notebook …",
-          "link": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/high-performance-storage-for-ai-model-training-tasks-using-azure/ba-p/3609189",
-          "publishedOn": "2022-08-26T21:12:55.000Z",
-          "wordCount": 12492,
-          "title": "High-performance storage for AI Model Training tasks using Azure ML studio with Azure NetApp Files",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/398838i1EF8EDC8DF1B265D/image-size/original?v=v2&px=-1"
         }
       ]
     },
