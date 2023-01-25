@@ -6,6 +6,16 @@
       "siteUrl": "https://spring.io/blog/category/engineering",
       "articles": [
         {
+          "id": "https://spring.io/blog/2023/01/24/this-week-in-spring-springone-essentials-2023-edition-january-24th-2023",
+          "author": null,
+          "description": "Hi, Spring fans! Welcome to another installment of This Week in Spring! Today is a very day for you see, today we kick off SpringOne Essentials, the online incarnation of SpringOne, online. We’ll see you live, on stream, in just a few hours!.\n\r\nSpringOne Essentials is going to be amazing, but before we get there, and learn about all the big things in the Spring ecosystem for the last year, let’s look at all the big things in the last week, with this week’s recap! \n\r\n\r\n  \nSpring Boot 2.7.8 available now\n\r\n  \nSpring Boot 3.0.2 available now\n\r\n  \nSpring Modulith 0.3 released\n\r\n  \nA Bootiful Podcast: Dr. Amanda Martin, Gradle developer advocate\n\r\n  \nAdventures in Maven Dependency Conflict Resolution\n\r\n  \nCreate better Spring libraries with @Enable… Annotations\n\r\n  \nDifferences Between Spring Data JPA findFirst() and findTop()\n\r\n  \nExtracting a Custom Header From the Request in Spring MVC\n\r\n  \nInteresting new filters on Spring Cloud Gateway 4.0\n\r\n  \nSet up and observe a Spring Boot application with Grafana Cloud, Prometheus, and OpenTelemetry",
+          "link": "https://spring.io/blog/2023/01/24/this-week-in-spring-springone-essentials-2023-edition-january-24th-2023",
+          "publishedOn": "2023-01-24T09:00:00.000Z",
+          "wordCount": 680,
+          "title": "This Week in Spring - SpringOne Essentials 2023 edition - January 24th, 2023",
+          "imageUrl": "https://avatars.githubusercontent.com/u/54473?v=4?s=200"
+        },
+        {
           "id": "https://spring.io/blog/2023/01/20/spring-modulith-0-3-released",
           "author": null,
           "description": "Hot on the heels of Spring Boot 3.0.2, I am excited to announce the 0.3 release of Spring Modulith.\r\nThe release is packed with improvements.\r\nWe have tweaked a couple of things that might require your attention and a couple of adapting changes to your code.\r\nThe most notable changes are:\n\r\n\r\n\r\n\r\n\r\nGH-114 – We renamed the ….modulith.model package to ….modulith.core. This primarily affects ApplicationModules. Please adapt your imports accordingly.\n\r\n\r\n\r\nGH-120 – The documentation support now generates diagram files using the *.puml file extension, as suggested by PlantUML. Please adapt your imports accordingly.\n\r\n\r\n\r\nGH-103 – ApplicationModuleInitializer implementations will be triggered upon application startup, in the order following the application module dependency structure (more core ones are invoked first). Also, ApplicationModules exposes a ….getComparator() to order Spring beans that way. Note, that this requires the JGraphT library to be on the classpath (automatically pulled in via the spring-modulith-runtime artifact). See the reference documentation for details.\n\r\n\r\n\r\nGH-116 – PublishedEvents now sees events published from asynchronous event listeners, too.\n\r\n\r\n\r\nGH-100 – If you’re using AssertJ in your tests, you can now use AssertablePublishedEvents for a more streamlined integration  (for example, assertThat(events).contains(MyEvent.class).matching(…)).\n\r\n\r\n\r\nGH-117 – As we incentivize event-based, asynchronous application module integration, the test starter now also pulls in Awaitility.\n\r\n\r\n\r\nGH-111 – We now publish aggregated Javdoc.\n\r\n\r\n\r\n\r\n\r\nFind a complete change log in the GitHub release page. We are looking forward to your feedback in the GitHub discussions.",
@@ -1599,6 +1609,16 @@
       "feedUrl": "https://techcommunity.microsoft.com/plugins/custom/microsoft/o365/custom-blog-rss?tid=2893852362688900935&board=AppsonAzureBlog&size=100",
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
+        {
+          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/an-automated-approach-to-migrate-wordpress-sites-running-on/ba-p/3722925",
+          "author": "RadhikaB",
+          "description": "As PHP support on Windows App Service was ended by Nov 2022, to provide a seamless approach for the customers those who are running their WordPress sites on Windows, we are happy to share a WordPress Migration Tool to migrate your WordPress sites running on Windows App Services to WordPress deployed to Linux App Services, preferably created from Azure Market Place. \n \nAutomated migrations allow you to easily migrate your WordPress site to Linux App Service platform. All you need to do is provide your Source site details (subscription, resource group & App Name) & Destination site details (subscription, resource group & app name) and let the tool do all the heavy lifting.  \n \nDownload the WordPressMigrationTool.zip from this link to your local machine and extract the zip file.  Then follow the steps described here on how to use this tool: wordpress-linux-appservice/WordPress_Migration_Tool.md at main · Azure/wordpress-linux-appservice (github.com)\n \nIn case you need any support, you can open a support request at New support request - Microsoft Azure.\nIf you have any ideas about how we can make WordPress on Azure App Service better, please post your ideas at Post idea · Community (azure.com)\nor you could email us at wordpressonazure@microsoft.com to start a conversation.",
+          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/an-automated-approach-to-migrate-wordpress-sites-running-on/ba-p/3722925",
+          "publishedOn": "2023-01-24T19:15:15.000Z",
+          "wordCount": 9395,
+          "title": "An automated approach to migrate WordPress sites running on Windows App Service to Linux",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/434821iBA37522A01E7C69F/image-size/original?v=v2&px=-1"
+        },
         {
           "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/app-service-zone-redundancy-support-and-possible-zone-redundancy/ba-p/3722426",
           "author": "Weizhen_Sun",
@@ -4177,6 +4197,16 @@
       "siteUrl": "https://devblogs.microsoft.com/devops/",
       "articles": [
         {
+          "id": "https://devblogs.microsoft.com/devops/?p=66315",
+          "author": "Gloridel Morales",
+          "description": "This month, we are releasing fixes that impact Azure DevOps Server 2022.\nTest data was not being deleted, causing the database to grow. With this fix, we updated build retention to prevent creating new orphan test data.\nThe post Azure DevOps Server 2022 Patch 1 appeared first on Azure DevOps Blog.",
+          "link": "https://devblogs.microsoft.com/devops/azure-devops-server-2022-patch-1/",
+          "publishedOn": "2023-01-24T18:06:45.000Z",
+          "wordCount": 4377,
+          "title": "Azure DevOps Server 2022 Patch 1",
+          "imageUrl": "https://devblogs.microsoft.com/devops/wp-content/uploads/sites/6/2019/03/pipelines-hero-1.jpg"
+        },
+        {
           "id": "https://devblogs.microsoft.com/devops/?p=66295",
           "author": "Dan Hellem",
           "description": "Because of the holidays, and our deployment schedule, this update includes our progress for both sprint 215 and 216. You will notice a lot of bugs being fixed in these sprints. Some of the issues being significant.\nThe post New Boards Hub, Sprint 216 update appeared first on Azure DevOps Blog.",
@@ -4470,6 +4500,26 @@
       "feedUrl": "https://devblogs.microsoft.com/cosmosdb/feed/",
       "siteUrl": "https://devblogs.microsoft.com/cosmosdb/",
       "articles": [
+        {
+          "id": "https://localhost/cosmosdb/?p=5597",
+          "author": "Ricky Diep",
+          "description": "Overview\nThe post Performance Improvements in Azure Cosmos DB Kafka Connector appeared first on Azure Cosmos DB Blog.",
+          "link": "https://devblogs.microsoft.com/cosmosdb/performance-improvements-in-azure-cosmos-db-kafka-connector/",
+          "publishedOn": "2023-01-24T23:02:33.000Z",
+          "wordCount": 5573,
+          "title": "Performance Improvements in Azure Cosmos DB Kafka Connector",
+          "imageUrl": "https://devblogs.microsoft.com/cosmosdb/wp-content/uploads/sites/52/2023/01/test-1-300x131.png"
+        },
+        {
+          "id": "https://devblogs.microsoft.com/cosmosdb/?p=5491",
+          "author": "Alp Kaya",
+          "description": "Abstract\nThe post Azure Cosmos DB & Power BI Incremental Refresh appeared first on Azure Cosmos DB Blog.",
+          "link": "https://devblogs.microsoft.com/cosmosdb/cosmos-db-power-bi-incremental-refresh/",
+          "publishedOn": "2023-01-24T14:30:57.000Z",
+          "wordCount": 6062,
+          "title": "Azure Cosmos DB & Power BI Incremental Refresh",
+          "imageUrl": "https://devblogs.microsoft.com/cosmosdb/wp-content/uploads/sites/52/2023/01/importtocosmos.jpg"
+        },
         {
           "id": "https://devblogs.microsoft.com/cosmosdb/?p=5487",
           "author": "Michal Toiba",
@@ -5055,6 +5105,26 @@
       "feedUrl": "https://azurecomcdn.azureedge.net/en-us/updates/feed/?updateType=features",
       "siteUrl": "https://azure.microsoft.com/en-us/updates/",
       "articles": [
+        {
+          "id": "general-availability-application-security-groups-support-for-private-endpoints",
+          "author": null,
+          "description": "Application security groups (ASGs) support for private endpoints is now generally available.",
+          "link": "https://azure.microsoft.com/en-us/updates/general-availability-application-security-groups-support-for-private-endpoints/",
+          "publishedOn": "2023-01-24T17:00:12.000Z",
+          "wordCount": 5613,
+          "title": "General availability: Application security groups support for private endpoints",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-d91f2dd93e0ba7a4a4671a4c2bfb82e03e4d292a316855f3cbefab36b3f28f37/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "general-availability-mount-azure-storage-as-a-local-share-in-app-service-windows-code",
+          "author": null,
+          "description": "Mounting Azure Storage File share as a network share in Windows code (non-container) in App Service is now generally available.",
+          "link": "https://azure.microsoft.com/en-us/updates/general-availability-mount-azure-storage-as-a-local-share-in-app-service-windows-code/",
+          "publishedOn": "2023-01-24T17:00:11.000Z",
+          "wordCount": 5467,
+          "title": "General availability: Mount Azure Storage as a local share in App Service Windows Code",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-d91f2dd93e0ba7a4a4671a4c2bfb82e03e4d292a316855f3cbefab36b3f28f37/images/shared/social/azure-icon-250x250.png"
+        },
         {
           "id": "public-preview-azure-database-for-mysql-logic-apps-and-power-automate-integration",
           "author": null,
