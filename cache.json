@@ -6,6 +6,26 @@
       "siteUrl": "https://spring.io/blog/category/engineering",
       "articles": [
         {
+          "id": "https://spring.io/blog/2023/01/26/a-bootiful-podcast-graalvm-advocate-alina-yurenko-on-a-bootiful-podcast",
+          "author": null,
+          "description": "Liiiive from New York, it’s a Bootiful Podcast! This week I (@starbuxman) talk to Developer Advocate for GraalVM at Oracle Labs, and legend, Alina Yurenko (@alina_yurenko)",
+          "link": "https://spring.io/blog/2023/01/26/a-bootiful-podcast-graalvm-advocate-alina-yurenko-on-a-bootiful-podcast",
+          "publishedOn": "2023-01-26T23:00:00.000Z",
+          "wordCount": 541,
+          "title": "A Bootiful Podcast: GraalVM advocate Alina Yurenko on a Bootiful Podcast",
+          "imageUrl": "https://avatars.githubusercontent.com/u/54473?v=4?s=200"
+        },
+        {
+          "id": "https://spring.io/blog/2023/01/26/spring-cloud-azure-5-0-is-now-generally-available",
+          "author": null,
+          "description": "We’re very pleased to announce that Spring Cloud Azure 5.0 is now generally available.\n\r\nThis major release includes the following features, improvements, and documentation updates:\n\r\n\r\n  \nCompatible with Spring Boot 3 and Spring Cloud 2022.0.0\n\r\n  \nSupports Passwordless Connections\n\r\n  \nUpdated Azure for Spring developers documentation to help Spring developers code, deploy and scale Spring applications on Azure\n\r\n  \nRedesigned Spring Cloud Azure documentation with improved scenarios\n\r\n\r\n\r\nTo try Spring Cloud Azure 5.0, simply add the following dependency BOM to your project:\n\r\n<dependencyManagement>\r\r\n  <dependencies>\r\r\n    <dependency>\r\r\n      <groupId>com.azure.spring</groupId>\r\r\n      <artifactId>spring-cloud-azure-dependencies</artifactId>\r\r\n      <version>5.0.0</version>\r\r\n      <ty…",
+          "link": "https://spring.io/blog/2023/01/26/spring-cloud-azure-5-0-is-now-generally-available",
+          "publishedOn": "2023-01-26T09:00:00.000Z",
+          "wordCount": 1247,
+          "title": "Spring Cloud Azure 5.0 is now Generally Available",
+          "imageUrl": "https://avatars.githubusercontent.com/u/54473?v=4?s=200"
+        },
+        {
           "id": "https://spring.io/blog/2023/01/25/introducing-microservices-patterns-with-spring-integration",
           "author": null,
           "description": "Hey Spring Community!\n\r\n\r\n\r\nI hope you are enjoying Spring One Essentials these days. The most exciting feature for me is an Observability which is spread throughout the Spring portfolio from now on.\r\nNevertheless, today I’d like to share with a project I’m working on since holidays, where the mentioned observability makes a perfect sense, too.\n\r\n\r\n\r\nI’ll start from the far.\r\nLet’s imagine we are learning a new programming language! I do learn Go to better understand Kubernetes, for example.\r\nOf course, we deal with some primitives and basic structures, first of all.\r\nThen we implement some well-known algorithms like bubble sort, Fibonacci number or sqrt function to get used to the language style and expectations.\r\nAnd now what?\r\nWe have some real use-cases where this or that functionality…",
@@ -1620,6 +1640,16 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/custom-scaling-on-azure-container-apps-based-on-redis-streams/ba-p/3723374",
+          "author": "ractando",
+          "description": "Azure Container Apps (ACA) are built on a solid open source foundation. Behind the scenes, it runs on a managed Kubernetes cluster and includes several open source components, including Dapr for microservices creation and execution, Envoy Proxy for ingress functions, and KEDA for event-driven autoscaling. Again, you do not have to install these components yourself. All you need to do is enable and/or configure your container app to use these components.\n \nIn this blog, we will see how can we scale Container Apps based on Redis Streams with the Azure managed instance of Redis, i.e. Azure Cache for Redis. We will be referring to the KEDA trigger specification for Redis Streams (Scale applications based on Redis Streams) to configure our Container App. This specification describes the Redis-s…",
+          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/custom-scaling-on-azure-container-apps-based-on-redis-streams/ba-p/3723374",
+          "publishedOn": "2023-01-26T07:30:14.000Z",
+          "wordCount": 10283,
+          "title": "Custom scaling on Azure Container Apps based on Redis Streams",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/435203i3538610B91295F11?v=v2"
+        },
+        {
           "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/integrating-network-isolated-backends-with-azure-static-web-apps/ba-p/3721136",
           "author": "thomasgauvinmsft",
           "description": "Azure Static Web Apps allows you to easily host your web apps globally, with built-in support for APIs, staging environments and more. With the introduction of the API integration feature for Azure Static Web Apps, we’ve heard many developers indicate that they want to link network isolated backends to their Azure Static Web Apps resources to benefit from this feature’s key benefits: integrated security and seamless routing.\n \nA screenshot of a GitHub issue asking how to integrate Static Web Apps with network-isolated backends\n \nHowever, since Static Web Apps hosts web apps in a distributed manner, Static Web Apps resources can’t be deployed directly into virtual networks directly (only integrated via private endpoint). Therefore, they can’t integrate directly with network isolated backend…",
@@ -1658,6 +1688,16 @@
           "wordCount": 9395,
           "title": "An automated approach to migrate WordPress sites running on Windows App Service to Linux",
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/434821iBA37522A01E7C69F/image-size/original?v=v2&px=-1"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/zone-redundant-app-service-errors-and-solutions/ba-p/3722426",
+          "author": "Weizhen_Sun",
+          "description": "Current requirements/limitations for enabling zone redundancy:\n\nhttps://azure.github.io/AppService/2021/08/25/App-service-support-for-availability-zones.html\n\n \nZone Redundant App Service errors and solutions for different scenarios:\n \nScenario 1\nSymptom: Web sockets error when accessing an App service web app in an app service plan which has enabled Zone Redundancy.\nError: Failed to start the transport 'WebSockets': Error: There was an error with the transport.\nRoot Cause: This issue happened when these 3 conditions are met.\n\nZone Redundancy enabled.\nWeb Sockets set to on (in App service Settings -> Configuration -> General Settings)\nARR affinity set to off (in App service Settings -> Configuration -> General Settings)\n\nSolution: Enable ARR affinity for the app service\n \nScenario 2\nSymptom:  Failed to scale down a Linux App service plan --e.g. from P1V3 to P1V2, it failed with message ---You cannot change the OS hosting your app at this time. Please recreate your app with the desired OS\nNetwork trace shows--- http 400 bad request error when sending the PUT request to https://management.azure.com/\nRoot Cause:    App Service Plan with fewer than 3 workers are not allowed for zone redundancy. Requested number of workers: 2\n                          App service plan has Zone redundancy enabled with autoscale configured with an Auto Scale out rule, setting the minimum and default instance count to be less than 3.\nSolution:  Update minimum worker rule in Auto Scale to 3 or use Manual Scale",
+          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/zone-redundant-app-service-errors-and-solutions/ba-p/3722426",
+          "publishedOn": "2023-01-23T15:18:16.000Z",
+          "wordCount": 9373,
+          "title": "Zone Redundant App Service Errors and Solutions",
+          "imageUrl": "https://cdn.techcommunity.microsoft.com/assets/MTC_Open_graph_image1.jpg"
         },
         {
           "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/app-service-zone-redundancy-support-and-possible-zone-redundancy/ba-p/3722426",
@@ -3244,6 +3284,16 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/armchair-architects-is-big-data-turning-into-dark-data/ba-p/3725726",
+          "author": "EricCharran",
+          "description": "Welcome back to another episode of Armchair Architects as part of the Azure Enablement show. Today we're going to talk about data, but not just any data. We're going to talk about this phenomenon called dark data and what do you do about it. I hadn't heard about this until I got a chance to talk to our architects, and it was super cool to learn about it and they'll help us understand what it is and what areas I should pay attention to. Let's go find out about dark data and let's go talk to our architects.\n \nI think it's time we talk about data and in particular, I want to talk about this thing I think that people are using to scare children at night when they want them to go to bed or something. They talk about dark data, but I don't actually perhaps know what dark data means. I know what …",
+          "link": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/armchair-architects-is-big-data-turning-into-dark-data/ba-p/3725726",
+          "publishedOn": "2023-01-26T21:20:40.000Z",
+          "wordCount": 11576,
+          "title": "Armchair Architects: Is Big Data Turning into Dark Data?",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/435677i1C99202349BC296C/image-size/original?v=v2&px=-1"
+        },
+        {
           "id": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/armchair-architects-architecture-and-ambiguity/ba-p/3723061",
           "author": "EricCharran",
           "description": "Welcome back to another episode of Armchair Architects as part of the Azure Enablement show. So today we're going to talk about something a little theoretical. We're going to talk about the relationship between architecture and ambiguity. What do you do when the specs aren't entirely clear, or the plans aren't entirely clear? What people need isn't entirely clear? We're going to discuss that with our architects.\n \nIt's not uncommon for people to come to architects with very vague statements or questions that aren't really precise. Or a problem needs to be solved, but it's not really clear what that problem is.\n \n \nWhat can architects do to help with ambiguity?\n \nDepending on the depth of your experience, you have to get more comfortable with ambiguity. I think as “answer people” our goal i…",
@@ -3879,6 +3929,16 @@
       "siteUrl": "https://devblogs.microsoft.com/java/",
       "articles": [
         {
+          "id": "https://devblogs.microsoft.com/java/?p=229736",
+          "author": "Bruno Borges",
+          "description": "We are happy to announce the latest January 2023 patch & security update release for the Microsoft Build of OpenJDK. See the release notes for detailed changes present in the Microsoft Build of OpenJDK binaries. And download or install the binaries today.\nThe post Microsoft Build of OpenJDK – January 2023 Release appeared first on Microsoft for Java Developers.",
+          "link": "https://devblogs.microsoft.com/java/microsoft-build-of-openjdk-january-2023-release/",
+          "publishedOn": "2023-01-26T07:51:46.000Z",
+          "wordCount": 4719,
+          "title": "Microsoft Build of OpenJDK – January 2023 Release",
+          "imageUrl": "https://devblogs.microsoft.com/java/wp-content/uploads/sites/51/2019/11/trexduke-blackwhite-cropped-half.png"
+        },
+        {
           "id": "https://devblogs.microsoft.com/java/?p=229723",
           "author": "Ricky Diep",
           "description": "Overview\nThe post Reactor Series: Build Your Own E2E Java Application in Azure! appeared first on Microsoft for Java Developers.",
@@ -4082,6 +4142,16 @@
       "feedUrl": "https://devblogs.microsoft.com/typescript/feed/",
       "siteUrl": "https://devblogs.microsoft.com/typescript/",
       "articles": [
+        {
+          "id": "https://devblogs.microsoft.com/typescript/?p=3682",
+          "author": "Daniel Rosenwasser",
+          "description": "Today we’re excited to announce our beta release of TypeScript 5.0!\nThe post Announcing TypeScript 5.0 Beta appeared first on TypeScript.",
+          "link": "https://devblogs.microsoft.com/typescript/announcing-typescript-5-0-beta/",
+          "publishedOn": "2023-01-26T21:51:47.000Z",
+          "wordCount": 10816,
+          "title": "Announcing TypeScript 5.0 Beta",
+          "imageUrl": "https://devblogs.microsoft.com/typescript/wp-content/uploads/sites/11/2023/01/switchCaseSnippets-5-0_1.gif"
+        },
         {
           "id": "https://devblogs.microsoft.com/typescript/?p=3621",
           "author": "Daniel Rosenwasser",
@@ -4540,6 +4610,21 @@
       "feedUrl": "https://devblogs.microsoft.com/cosmosdb/feed/",
       "siteUrl": "https://devblogs.microsoft.com/cosmosdb/",
       "articles": [
+        {
+          "id": "https://localhost/cosmosdb/?p=5534",
+          "author": "Theo van Kraay",
+          "description": "We’re always busy adding new features, fixes, patches, and improvements to our Java-based client libraries for Azure Cosmos DB API for NoSQL. In this regular blog series we’ll share highlights of recent updates in the last period.\n \nSpark 3.3 support\nThe post Latest NoSQL Java Ecosystem Updates 2022 Q3 & Q4 appeared first on Azure Cosmos DB Blog.",
+          "link": "https://devblogs.microsoft.com/cosmosdb/latest-nosql-java-ecosystem-updates-2022-q3-q4/",
+          "publishedOn": "2023-01-26T15:00:26.000Z",
+          "wordCount": 4956,
+          "title": "Latest NoSQL Java Ecosystem Updates 2022 Q3 & Q4",
+          "enclosure": {
+            "url": "https://devblogs.microsoft.com/cosmosdb/wp-content/uploads/sites/52/2022/11/importdoc.mp4",
+            "length": "956899",
+            "type": "video/mp4"
+          },
+          "imageUrl": "https://devblogs.microsoft.com/cosmosdb/wp-content/uploads/sites/52/2022/12/cosmos-love-java-6.png"
+        },
         {
           "id": "https://localhost/cosmosdb/?p=5597",
           "author": "Ricky Diep",
@@ -8083,26 +8168,6 @@
           "publishedOn": "2022-08-30T16:00:06.000Z",
           "wordCount": 5277,
           "title": "Generally available: IoT Edge 1.4",
-          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-0747fe673b2e8ca5993409bc08d252e543aa7f50e5fa3d6409c621fbdd48b5c7/images/shared/social/azure-icon-250x250.png"
-        },
-        {
-          "id": "generally-available-prevent-a-lifecycle-management-policy-from-archiving-a-recently-rehydrated-blob",
-          "author": null,
-          "description": "Use daysAfterLastTierChangeGreaterThan condition in lifecycle management policy to prevent unintended archiving.",
-          "link": "https://azure.microsoft.com/en-us/updates/generally-available-prevent-a-lifecycle-management-policy-from-archiving-a-recently-rehydrated-blob/",
-          "publishedOn": "2022-08-29T16:00:37.000Z",
-          "wordCount": 5227,
-          "title": "Generally available: Prevent a lifecycle management policy from archiving recently rehydrated blobs",
-          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-0747fe673b2e8ca5993409bc08d252e543aa7f50e5fa3d6409c621fbdd48b5c7/images/shared/social/azure-icon-250x250.png"
-        },
-        {
-          "id": "general-availability-expressroute-ipv6-support-for-global-reach",
-          "author": null,
-          "description": "IPv6 support for Global Reach expands the possibilities for customers building dual-stack, hybrid networks with Azure.",
-          "link": "https://azure.microsoft.com/en-us/updates/general-availability-expressroute-ipv6-support-for-global-reach/",
-          "publishedOn": "2022-08-29T16:00:25.000Z",
-          "wordCount": 5145,
-          "title": "General availability: ExpressRoute IPv6 Support for Global Reach",
           "imageUrl": "https://azurecomcdn.azureedge.net/cvt-0747fe673b2e8ca5993409bc08d252e543aa7f50e5fa3d6409c621fbdd48b5c7/images/shared/social/azure-icon-250x250.png"
         }
       ]
