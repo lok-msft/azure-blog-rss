@@ -1680,6 +1680,16 @@
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/434467iCE75F2CBC70A19A0?v=v2"
         },
         {
+          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/an-automated-tool-to-migrate-your-wordpress-sites-running-on/ba-p/3722925",
+          "author": "RadhikaB",
+          "description": "As PHP support on Windows App Service was ended by Nov 2022, to provide a seamless approach for the customers those who are running their WordPress sites on Windows, we are happy to share a WordPress Migration Tool to migrate your WordPress sites running on Windows App Services to WordPress deployed to Linux App Services, preferably created from Azure Market Place. \n \nAutomated migrations allow you to easily migrate your WordPress site to Linux App Service platform. All you need to do is provide your Source site details (subscription, resource group & App Name) & Destination site details (subscription, resource group & app name) and let the tool do all the heavy lifting.  \n \nDownload the WordPressMigrationTool.zip from this link to your local machine and extract the zip file.  Then follow the steps described here on how to use this tool: wordpress-linux-appservice/WordPress_Migration_Tool.md at main · Azure/wordpress-linux-appservice (github.com)\n \nIn case you need any support, you can open a support request at New support request - Microsoft Azure.\nIf you have any ideas about how we can make WordPress on Azure App Service better, please post your ideas at Post idea · Community (azure.com)\nor you could email us at wordpressonazure@microsoft.com to start a conversation.",
+          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/an-automated-tool-to-migrate-your-wordpress-sites-running-on/ba-p/3722925",
+          "publishedOn": "2023-01-24T19:15:15.000Z",
+          "wordCount": 9403,
+          "title": "An automated tool to migrate your WordPress sites running on Windows App Service to Linux",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/434821iBA37522A01E7C69F/image-size/original?v=v2&px=-1"
+        },
+        {
           "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/an-automated-approach-to-migrate-wordpress-sites-running-on/ba-p/3722925",
           "author": "RadhikaB",
           "description": "As PHP support on Windows App Service was ended by Nov 2022, to provide a seamless approach for the customers those who are running their WordPress sites on Windows, we are happy to share a WordPress Migration Tool to migrate your WordPress sites running on Windows App Services to WordPress deployed to Linux App Services, preferably created from Azure Market Place. \n \nAutomated migrations allow you to easily migrate your WordPress site to Linux App Service platform. All you need to do is provide your Source site details (subscription, resource group & App Name) & Destination site details (subscription, resource group & app name) and let the tool do all the heavy lifting.  \n \nDownload the WordPressMigrationTool.zip from this link to your local machine and extract the zip file.  Then follow the steps described here on how to use this tool: wordpress-linux-appservice/WordPress_Migration_Tool.md at main · Azure/wordpress-linux-appservice (github.com)\n \nIn case you need any support, you can open a support request at New support request - Microsoft Azure.\nIf you have any ideas about how we can make WordPress on Azure App Service better, please post your ideas at Post idea · Community (azure.com)\nor you could email us at wordpressonazure@microsoft.com to start a conversation.",
@@ -2618,16 +2628,6 @@
           "wordCount": 9766,
           "title": "Price Reduction - Azure Spring Apps does more, costs less!",
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/415016iC9BC005581F4D49C/image-size/original?v=v2&px=-1"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/long-execution-functions-with-service-bus-trigger/ba-p/3613575",
-          "author": "theringe",
-          "description": "Function App under at least a Premium plan could have unlimited execution time. However, it might caused a duplicated invocation issue with a ServiceBus trigger because the \"PeekLock\" duration is up to 5 minutes (including renew).\n \nIt is a tutorial to reproduce such the scenario.\n \nSTEP 1: In Azure portal, create a new Premium python Function App and a Service Bus + Queue\n \nSTEP 2: Download the sample code and apply some changes.\nhttps://cchlab.blob.core.windows.net/cchlab/cchlabsbf.zip\nIn \"host.json\", please specify the Function App timeout and the ServiceBus PeekLock timeout as below.\n\nIn \"ServiceBusQueueTrigger1/function.json\", please setup some configuration:\nSBQ_STRING=<your service bus queue name>\n\nThen, deploy the project to Function App.\n \nSTEP 3: Making an experiment with a short execution time.\nVisit: https://<YourAppName>.azurewebsites.net/api/httptrigger1?t=<DurationInSecond>\nPlease specify the \"DurationInSecond\" to 30 this time, and you may see the result like this:\n\nWe apply this operation to send a message to the ServiceBus queue and told the ServiceBus trigger to pause 30 seconds before execution.\nNow, please go to the monitor page:\n\nYou can see it is just a normal short invocation.\n \nSTEP 4: Making an experiment with a long execution time.\nVisit: https://<YourAppName>.azurewebsites.net/api/httptrigger1?t=<DurationInSecond>\nPlease specify the \"DurationInSecond\" to 330 this time, and you may see the result like this:\n\nNow, please go to the monitor page:\n\nAs you can see, there are duplicate invocations with the same message id, which might caused some potential business issues if we ignore them.\n \nConclusion:\nSince we cannot adjust \"maxAutoRenewDuration\" to more than 5 minutes, we could only reduce the execution time from this ServiceBus trigger.",
-          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/long-execution-functions-with-service-bus-trigger/ba-p/3613575",
-          "publishedOn": "2022-08-31T09:02:08.000Z",
-          "wordCount": 9485,
-          "title": "Long execution functions with Service Bus Trigger",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/400244i7B948BD34154BD24?v=v2"
         }
       ]
     },
@@ -2968,16 +2968,6 @@
           "wordCount": 10829,
           "title": "Passwordless Azure for CI/CD, Infrastructure and User Experiences",
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/400269i38BBCC420BC39F12?v=v2"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/azure-developer-community-blog/microsoft-is-committed-to-the-success-of-java-developers/ba-p/3612306",
-          "author": "Julia_Liuson",
-          "description": "As a company, we are committed to making Java developers as efficient and productive as possible. This commitment means empowering you to use any tool, framework, and application server on any operating system. Wherever you are with Java, Microsoft supports your workload with an abundance of choices and with a wide range of developer tools and services.\n \nCode, Deploy, and Scale Java Your Way \n \nToday, more and more Java developers are looking at how they can bring their existing Java applications to the cloud—or how to build new cloud-native applications. We have been working to make it easier for you to bring your Java applications to the cloud using the tools and frameworks you love. You can then deploy and scale easily using the same application servers and open-source technologies you…",
-          "link": "https://techcommunity.microsoft.com/t5/azure-developer-community-blog/microsoft-is-committed-to-the-success-of-java-developers/ba-p/3612306",
-          "publishedOn": "2022-08-30T18:42:23.000Z",
-          "wordCount": 10057,
-          "title": "Microsoft is committed to the success of Java developers",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/399849i0F8A415EC768E7FF?v=v2"
         }
       ]
     },
@@ -4297,6 +4287,16 @@
       "siteUrl": "https://devblogs.microsoft.com/devops/",
       "articles": [
         {
+          "id": "https://devblogs.microsoft.com/devops/?p=66329",
+          "author": "April Edwards",
+          "description": "Azure DevOps is FULL of so many features! Myself and Nana from Techworld with Nana teamed up to bring you an Azure DevOps Zero to Hero video! Many of you reading this blog may already be very experienced with Azure DevOps,\nThe post Learn Azure DevOps from Zero to Hero appeared first on Azure DevOps Blog.",
+          "link": "https://devblogs.microsoft.com/devops/learn-azure-devops-from-zero-to-hero/",
+          "publishedOn": "2023-01-27T12:46:45.000Z",
+          "wordCount": 4908,
+          "title": "Learn Azure DevOps from Zero to Hero",
+          "imageUrl": "https://devblogs.microsoft.com/devops/wp-content/uploads/sites/6/2021/09/AzDOLabs.jpg"
+        },
+        {
           "id": "https://devblogs.microsoft.com/devops/?p=66312",
           "author": "Silviu",
           "description": "YAML pipelines offer the best security for your Azure Pipelines. In contrast to classic build and release pipelines, YAML pipelines:\nCan be code reviewed. YAML pipelines are no different from any other piece of code. You can prevent malicious actors from introducing malicious steps in your pipelines by enforcing the use of Pull Requests to merge changes.\nThe post Disable creation of classic pipelines appeared first on Azure DevOps Blog.",
@@ -5145,16 +5145,6 @@
           "wordCount": 9747,
           "title": "Change Analysis GA announcement",
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/400136iB66C6E2F66C4FB5D?v=v2"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/azure-observability-blog/how-to-leverage-azure-monitor-to-meet-functional-non-functional/ba-p/3607783",
-          "author": "daisami",
-          "description": "This article is a part of series articles for Azure Monitor. Please refer to How to leverage Azure Monitor to meet functional and non-functional requirements - No.1 overview first before reading this post. This post dives deeply for Compute/Inside category among monitoring categories as highlighted blue. \n\n\n\n\nArticle No\n\nmonitoring category\n\n\nmonitoring target\n\n\nNote\n\n\n\n\n2\n\n\nCompute\n\n\nReboot\n\n\nmonitor reboot frequency\n\n\n\n\n \n\n\n \n\n\nCPU\n\n\nmonitor CPU usage\n\n\n\n\n \n\n\n \n\n\nMemory\n\n\nmonitor memory usage\n\n\n\n\n3\n\n\nCompute/Inside OS\n\n\nLog file\n\n\nmonitor event log and syslog\n\n\n\n\n \n\n\n \n\n\nProcess\n\n\nmonitor available process\n\n\n\n\n4\n\n\nStorage/Disk\n\n\nDisk\n\n\nmonitor disk usage\n\n\n\n\n \n\n\n \n\n\nfolder/file\n\n\nmonitor folder usage and file size\n\n\n\n\n5\n\n\nEndpoint/IPv4 address\n\n\nresponse/service\n\n\nmonitor specific addres…",
-          "link": "https://techcommunity.microsoft.com/t5/azure-observability-blog/how-to-leverage-azure-monitor-to-meet-functional-non-functional/ba-p/3607783",
-          "publishedOn": "2022-08-31T07:04:22.000Z",
-          "wordCount": 10362,
-          "title": "How to leverage Azure Monitor to meet functional/non-functional requirements-No.3 Compute/Inside OS",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/399861iA288E91DEBC481CF?v=v2"
         }
       ]
     },
@@ -8149,26 +8139,6 @@
           "wordCount": 5235,
           "title": "Generally available: Enterprise-ready Azure Monitor change analysis capability released",
           "imageUrl": "https://azurecomcdn.azureedge.net/cvt-cb6ad747543fe39b3758e01c8fe905ad578d6349f4a8834da230d0bac398c8d2/images/shared/social/azure-icon-250x250.png"
-        },
-        {
-          "id": "public-preview-ephemeral-os-disks-supports-hostbased-encryption-using-customer-managed-key",
-          "author": null,
-          "description": "Create Ephemeral VMs with customer managed key encryption types for host-based encryption.",
-          "link": "https://azure.microsoft.com/en-us/updates/public-preview-ephemeral-os-disks-supports-hostbased-encryption-using-customer-managed-key/",
-          "publishedOn": "2022-08-30T18:00:08.000Z",
-          "wordCount": 5174,
-          "title": "Public preview: Ephemeral OS disks supports host-based encryption using customer managed key",
-          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-0747fe673b2e8ca5993409bc08d252e543aa7f50e5fa3d6409c621fbdd48b5c7/images/shared/social/azure-icon-250x250.png"
-        },
-        {
-          "id": "generally-available-iot-edge-14-lts",
-          "author": null,
-          "description": "The Azure IoT Edge release 1.4 is the long term servicing (LTS) release of IoT Edge. The companion release of Azure IoT Edge for Linux on Windows (EFLOW) 1.4 long term servicing will be coming later this fall.",
-          "link": "https://azure.microsoft.com/en-us/updates/generally-available-iot-edge-14-lts/",
-          "publishedOn": "2022-08-30T16:00:06.000Z",
-          "wordCount": 5277,
-          "title": "Generally available: IoT Edge 1.4",
-          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-0747fe673b2e8ca5993409bc08d252e543aa7f50e5fa3d6409c621fbdd48b5c7/images/shared/social/azure-icon-250x250.png"
         }
       ]
     },
@@ -8636,26 +8606,6 @@
           "wordCount": 4097,
           "title": "Account linking with Microsoft Teams single sign-on",
           "imageUrl": "https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2022/08/MicrosoftTeams-image-2.jpg"
-        },
-        {
-          "id": "https://devblogs.microsoft.com/microsoft365dev/?p=11369",
-          "author": "Vesa Juvonen",
-          "description": "We are excited to announce the availability of first public preview of the SharePoint Framework (SPFx) 1.16 – with updates for Viva Connections, Microsoft Teams and SharePoint Online experiences. This is baseline release for the upcoming 1.16 and you can expect much more new features within upcoming preview releases before version is officially ready for production use.\nThe post Public preview of SharePoint Framework 1.16 – First release of upcoming features appeared first on Microsoft 365 Developer Blog.",
-          "link": "https://devblogs.microsoft.com/microsoft365dev/public-preview-of-sharepoint-framework-1-16-first-release-of-upcoming-features/",
-          "publishedOn": "2022-08-30T18:16:58.000Z",
-          "wordCount": 4478,
-          "title": "Public preview of SharePoint Framework 1.16 – First release of upcoming features",
-          "imageUrl": "https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2022/08/spfx-116-preview-1.png"
-        },
-        {
-          "id": "https://devblogs.microsoft.com/microsoft365dev/?p=11371",
-          "author": "Bob German",
-          "description": "Learn how to build applications for Microsoft Teams, and how to sell them in the Microsoft Teams App Store in the Microsoft Teams App Camp, which launches today at https://aka.ms/app-camp!\nThe post Introducing Microsoft Teams App Camp appeared first on Microsoft 365 Developer Blog.",
-          "link": "https://devblogs.microsoft.com/microsoft365dev/introducing-microsoft-teams-app-camp/",
-          "publishedOn": "2022-08-30T16:31:47.000Z",
-          "wordCount": 4016,
-          "title": "Introducing Microsoft Teams App Camp",
-          "imageUrl": "https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2022/08/App-Camp-welcome.jpg"
         }
       ]
     }

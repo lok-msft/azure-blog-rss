@@ -2,10 +2,21 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2023-01-27T01:17:52.856Z</updated>
+    <updated>2023-01-28T01:17:00.972Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Learn Azure DevOps from Zero to Hero]]></title>
+        <id>https://devblogs.microsoft.com/devops/?p=66329</id>
+        <link href="https://devblogs.microsoft.com/devops/learn-azure-devops-from-zero-to-hero/"/>
+        <updated>2023-01-27T12:46:45.000Z</updated>
+        <summary type="html"><![CDATA[Azure DevOps is FULL of so many features! Myself and Nana from Techworld with Nana teamed up to bring you an Azure DevOps Zero to Hero video! Many of you reading this blog may already be very experienced with Azure DevOps,
+The post Learn Azure DevOps from Zero to Hero appeared first on Azure DevOps Blog.]]></summary>
+        <author>
+            <name>April Edwards</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[A Bootiful Podcast: GraalVM advocate Alina Yurenko on a Bootiful Podcast]]></title>
         <id>https://spring.io/blog/2023/01/26/a-bootiful-podcast-graalvm-advocate-alina-yurenko-on-a-bootiful-podcast</id>
@@ -258,6 +269,24 @@ The post Disable creation of classic pipelines appeared first on Azure DevOps Bl
 The post Performance Improvements in Azure Cosmos DB Kafka Connector appeared first on Azure Cosmos DB Blog.]]></summary>
         <author>
             <name>Ricky Diep</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[An automated tool to migrate your WordPress sites running on Windows App Service to Linux]]></title>
+        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/an-automated-tool-to-migrate-your-wordpress-sites-running-on/ba-p/3722925</id>
+        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/an-automated-tool-to-migrate-your-wordpress-sites-running-on/ba-p/3722925"/>
+        <updated>2023-01-24T19:15:15.000Z</updated>
+        <summary type="html"><![CDATA[As PHP support on Windows App Service was ended by Nov 2022, to provide a seamless approach for the customers those who are running their WordPress sites on Windows, we are happy to share a WordPress Migration Tool to migrate your WordPress sites running on Windows App Services to WordPress deployed to Linux App Services, preferably created from Azure Market Place. 
+ 
+Automated migrations allow you to easily migrate your WordPress site to Linux App Service platform. All you need to do is provide your Source site details (subscription, resource group & App Name) & Destination site details (subscription, resource group & app name) and let the tool do all the heavy lifting.  
+ 
+Download the WordPressMigrationTool.zip from this link to your local machine and extract the zip file.  Then follow the steps described here on how to use this tool: wordpress-linux-appservice/WordPress_Migration_Tool.md at main · Azure/wordpress-linux-appservice (github.com)
+ 
+In case you need any support, you can open a support request at New support request - Microsoft Azure.
+If you have any ideas about how we can make WordPress on Azure App Service better, please post your ideas at Post idea · Community (azure.com)
+or you could email us at wordpressonazure@microsoft.com to start a conversation.]]></summary>
+        <author>
+            <name>RadhikaB</name>
         </author>
     </entry>
     <entry>
@@ -13208,240 +13237,6 @@ How do I know that what I’m doing incorporates security best practices?
 The Azure Developer CLI helps you answer these questions. It provides you with a clear path for building your application in the cloud. Azure Developer CLI (azd) —a new, open-source tool that accelerates the time it takes to get started on Azure. The Azure Developer CLI provides developer-friendly commands that map to key stages in your workflow: code, build, deploy, mo…]]></summary>
         <author>
             <name>Lee Stott</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Long execution functions with Service Bus Trigger]]></title>
-        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/long-execution-functions-with-service-bus-trigger/ba-p/3613575</id>
-        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/long-execution-functions-with-service-bus-trigger/ba-p/3613575"/>
-        <updated>2022-08-31T09:02:08.000Z</updated>
-        <summary type="html"><![CDATA[Function App under at least a Premium plan could have unlimited execution time. However, it might caused a duplicated invocation issue with a ServiceBus trigger because the "PeekLock" duration is up to 5 minutes (including renew).
- 
-It is a tutorial to reproduce such the scenario.
- 
-STEP 1: In Azure portal, create a new Premium python Function App and a Service Bus + Queue
- 
-STEP 2: Download the sample code and apply some changes.
-https://cchlab.blob.core.windows.net/cchlab/cchlabsbf.zip
-In "host.json", please specify the Function App timeout and the ServiceBus PeekLock timeout as below.
-
-In "ServiceBusQueueTrigger1/function.json", please setup some configuration:
-SBQ_STRING=<your service bus queue name>
-
-Then, deploy the project to Function App.
- 
-STEP 3: Making an experiment with a short execution time.
-Visit: https://<YourAppName>.azurewebsites.net/api/httptrigger1?t=<DurationInSecond>
-Please specify the "DurationInSecond" to 30 this time, and you may see the result like this:
-
-We apply this operation to send a message to the ServiceBus queue and told the ServiceBus trigger to pause 30 seconds before execution.
-Now, please go to the monitor page:
-
-You can see it is just a normal short invocation.
- 
-STEP 4: Making an experiment with a long execution time.
-Visit: https://<YourAppName>.azurewebsites.net/api/httptrigger1?t=<DurationInSecond>
-Please specify the "DurationInSecond" to 330 this time, and you may see the result like this:
-
-Now, please go to the monitor page:
-
-As you can see, there are duplicate invocations with the same message id, which might caused some potential business issues if we ignore them.
- 
-Conclusion:
-Since we cannot adjust "maxAutoRenewDuration" to more than 5 minutes, we could only reduce the execution time from this ServiceBus trigger.]]></summary>
-        <author>
-            <name>theringe</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[How to leverage Azure Monitor to meet functional/non-functional requirements-No.3 Compute/Inside OS]]></title>
-        <id>https://techcommunity.microsoft.com/t5/azure-observability-blog/how-to-leverage-azure-monitor-to-meet-functional-non-functional/ba-p/3607783</id>
-        <link href="https://techcommunity.microsoft.com/t5/azure-observability-blog/how-to-leverage-azure-monitor-to-meet-functional-non-functional/ba-p/3607783"/>
-        <updated>2022-08-31T07:04:22.000Z</updated>
-        <summary type="html"><![CDATA[This article is a part of series articles for Azure Monitor. Please refer to How to leverage Azure Monitor to meet functional and non-functional requirements - No.1 overview first before reading this post. This post dives deeply for Compute/Inside category among monitoring categories as highlighted blue. 
-
-
-
-
-Article No
-
-monitoring category
-
-
-monitoring target
-
-
-Note
-
-
-
-
-2
-
-
-Compute
-
-
-Reboot
-
-
-monitor reboot frequency
-
-
-
-
- 
-
-
- 
-
-
-CPU
-
-
-monitor CPU usage
-
-
-
-
- 
-
-
- 
-
-
-Memory
-
-
-monitor memory usage
-
-
-
-
-3
-
-
-Compute/Inside OS
-
-
-Log file
-
-
-monitor event log and syslog
-
-
-
-
- 
-
-
- 
-
-
-Process
-
-
-monitor available process
-
-
-
-
-4
-
-
-Storage/Disk
-
-
-Disk
-
-
-monitor disk usage
-
-
-
-
- 
-
-
- 
-
-
-folder/file
-
-
-monitor folder usage and file size
-
-
-
-
-5
-
-
-Endpoint/IPv4 address
-
-
-response/service
-
-
-monitor specific addres…]]></summary>
-        <author>
-            <name>daisami</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Microsoft is committed to the success of Java developers]]></title>
-        <id>https://techcommunity.microsoft.com/t5/azure-developer-community-blog/microsoft-is-committed-to-the-success-of-java-developers/ba-p/3612306</id>
-        <link href="https://techcommunity.microsoft.com/t5/azure-developer-community-blog/microsoft-is-committed-to-the-success-of-java-developers/ba-p/3612306"/>
-        <updated>2022-08-30T18:42:23.000Z</updated>
-        <summary type="html"><![CDATA[As a company, we are committed to making Java developers as efficient and productive as possible. This commitment means empowering you to use any tool, framework, and application server on any operating system. Wherever you are with Java, Microsoft supports your workload with an abundance of choices and with a wide range of developer tools and services.
- 
-Code, Deploy, and Scale Java Your Way 
- 
-Today, more and more Java developers are looking at how they can bring their existing Java applications to the cloud—or how to build new cloud-native applications. We have been working to make it easier for you to bring your Java applications to the cloud using the tools and frameworks you love. You can then deploy and scale easily using the same application servers and open-source technologies you…]]></summary>
-        <author>
-            <name>Julia_Liuson</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Public preview of SharePoint Framework 1.16 – First release of upcoming features]]></title>
-        <id>https://devblogs.microsoft.com/microsoft365dev/?p=11369</id>
-        <link href="https://devblogs.microsoft.com/microsoft365dev/public-preview-of-sharepoint-framework-1-16-first-release-of-upcoming-features/"/>
-        <updated>2022-08-30T18:16:58.000Z</updated>
-        <summary type="html"><![CDATA[We are excited to announce the availability of first public preview of the SharePoint Framework (SPFx) 1.16 – with updates for Viva Connections, Microsoft Teams and SharePoint Online experiences. This is baseline release for the upcoming 1.16 and you can expect much more new features within upcoming preview releases before version is officially ready for production use.
-The post Public preview of SharePoint Framework 1.16 – First release of upcoming features appeared first on Microsoft 365 Developer Blog.]]></summary>
-        <author>
-            <name>Vesa Juvonen</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Public preview: Ephemeral OS disks supports host-based encryption using customer managed key]]></title>
-        <id>public-preview-ephemeral-os-disks-supports-hostbased-encryption-using-customer-managed-key</id>
-        <link href="https://azure.microsoft.com/en-us/updates/public-preview-ephemeral-os-disks-supports-hostbased-encryption-using-customer-managed-key/"/>
-        <updated>2022-08-30T18:00:08.000Z</updated>
-        <summary type="html"><![CDATA[Create Ephemeral VMs with customer managed key encryption types for host-based encryption.]]></summary>
-        <author>
-            <name>Azure service updates</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Introducing Microsoft Teams App Camp]]></title>
-        <id>https://devblogs.microsoft.com/microsoft365dev/?p=11371</id>
-        <link href="https://devblogs.microsoft.com/microsoft365dev/introducing-microsoft-teams-app-camp/"/>
-        <updated>2022-08-30T16:31:47.000Z</updated>
-        <summary type="html"><![CDATA[Learn how to build applications for Microsoft Teams, and how to sell them in the Microsoft Teams App Store in the Microsoft Teams App Camp, which launches today at https://aka.ms/app-camp!
-The post Introducing Microsoft Teams App Camp appeared first on Microsoft 365 Developer Blog.]]></summary>
-        <author>
-            <name>Bob German</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Generally available: IoT Edge 1.4]]></title>
-        <id>generally-available-iot-edge-14-lts</id>
-        <link href="https://azure.microsoft.com/en-us/updates/generally-available-iot-edge-14-lts/"/>
-        <updated>2022-08-30T16:00:06.000Z</updated>
-        <summary type="html"><![CDATA[The Azure IoT Edge release 1.4 is the long term servicing (LTS) release of IoT Edge. The companion release of Azure IoT Edge for Linux on Windows (EFLOW) 1.4 long term servicing will be coming later this fall.]]></summary>
-        <author>
-            <name>Azure service updates</name>
         </author>
     </entry>
     <entry>
