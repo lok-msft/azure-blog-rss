@@ -3,8 +3,18 @@
     {
       "title": "Spring Engineering",
       "feedUrl": "https://spring.io/blog/category/engineering.atom",
-      "siteUrl": "https://spring.io/blog/category/engineering",
+      "siteUrl": "https://spring-website.pages.dev",
       "articles": [
+        {
+          "id": "https://spring-website.pages.dev2023/01/31/this-week-in-spring-january-31st-2023",
+          "author": "Josh Long",
+          "description": "",
+          "link": "https://spring-website.pages.dev2023/01/31/this-week-in-spring-january-31st-2023",
+          "publishedOn": "2023-01-31T00:00:00.000Z",
+          "wordCount": null,
+          "title": "This Week in Spring - January 31st, 2023",
+          "imageUrl": null
+        },
         {
           "id": "https://spring.io/blog/2023/01/26/a-bootiful-podcast-graalvm-advocate-alina-yurenko-on-a-bootiful-podcast",
           "author": null,
@@ -26,6 +36,26 @@
           "imageUrl": "https://avatars.githubusercontent.com/u/54473?v=4?s=200"
         },
         {
+          "id": "https://spring-website.pages.dev2023/01/26/a-bootiful-podcast-graalvm-advocate-alina-yurenko-on-a-bootiful-podcast",
+          "author": "Josh Long",
+          "description": "",
+          "link": "https://spring-website.pages.dev2023/01/26/a-bootiful-podcast-graalvm-advocate-alina-yurenko-on-a-bootiful-podcast",
+          "publishedOn": "2023-01-26T00:00:00.000Z",
+          "wordCount": null,
+          "title": "A Bootiful Podcast: GraalVM advocate Alina Yurenko on a Bootiful Podcast",
+          "imageUrl": null
+        },
+        {
+          "id": "https://spring-website.pages.dev2023/01/26/spring-cloud-azure-5-0-is-now-generally-available",
+          "author": "Josh Long",
+          "description": "",
+          "link": "https://spring-website.pages.dev2023/01/26/spring-cloud-azure-5-0-is-now-generally-available",
+          "publishedOn": "2023-01-26T00:00:00.000Z",
+          "wordCount": null,
+          "title": "Spring Cloud Azure 5.0 is now Generally Available",
+          "imageUrl": null
+        },
+        {
           "id": "https://spring.io/blog/2023/01/25/introducing-microservices-patterns-with-spring-integration",
           "author": null,
           "description": "Hey Spring Community!\n\r\n\r\n\r\nI hope you are enjoying Spring One Essentials these days. The most exciting feature for me is an Observability which is spread throughout the Spring portfolio from now on.\r\nNevertheless, today I’d like to share with a project I’m working on since holidays, where the mentioned observability makes a perfect sense, too.\n\r\n\r\n\r\nI’ll start from the far.\r\nLet’s imagine we are learning a new programming language! I do learn Go to better understand Kubernetes, for example.\r\nOf course, we deal with some primitives and basic structures, first of all.\r\nThen we implement some well-known algorithms like bubble sort, Fibonacci number or sqrt function to get used to the language style and expectations.\r\nAnd now what?\r\nWe have some real use-cases where this or that functionality…",
@@ -34,6 +64,16 @@
           "wordCount": 1085,
           "title": "Introducing Microservices Patterns with Spring Integration",
           "imageUrl": "https://avatars.githubusercontent.com/u/1071590?v=4?s=200"
+        },
+        {
+          "id": "https://spring-website.pages.dev2023/01/25/introducing-microservices-patterns-with-spring-integration",
+          "author": "Artem Bilan",
+          "description": "",
+          "link": "https://spring-website.pages.dev2023/01/25/introducing-microservices-patterns-with-spring-integration",
+          "publishedOn": "2023-01-25T00:00:00.000Z",
+          "wordCount": null,
+          "title": "Introducing Microservices Patterns with Spring Integration",
+          "imageUrl": null
         },
         {
           "id": "https://spring.io/blog/2023/01/24/this-week-in-spring-springone-essentials-2023-edition-january-24th-2023",
@@ -46,6 +86,16 @@
           "imageUrl": "https://avatars.githubusercontent.com/u/54473?v=4?s=200"
         },
         {
+          "id": "https://spring-website.pages.dev2023/01/24/this-week-in-spring-springone-essentials-2023-edition-january-24th-2023",
+          "author": "Josh Long",
+          "description": "",
+          "link": "https://spring-website.pages.dev2023/01/24/this-week-in-spring-springone-essentials-2023-edition-january-24th-2023",
+          "publishedOn": "2023-01-24T00:00:00.000Z",
+          "wordCount": null,
+          "title": "This Week in Spring - SpringOne Essentials 2023 edition - January 24th, 2023",
+          "imageUrl": null
+        },
+        {
           "id": "https://spring.io/blog/2023/01/20/spring-modulith-0-3-released",
           "author": null,
           "description": "Hot on the heels of Spring Boot 3.0.2, I am excited to announce the 0.3 release of Spring Modulith.\r\nThe release is packed with improvements.\r\nWe have tweaked a couple of things that might require your attention and a couple of adapting changes to your code.\r\nThe most notable changes are:\n\r\n\r\n\r\n\r\n\r\nGH-114 – We renamed the ….modulith.model package to ….modulith.core. This primarily affects ApplicationModules. Please adapt your imports accordingly.\n\r\n\r\n\r\nGH-120 – The documentation support now generates diagram files using the *.puml file extension, as suggested by PlantUML. Please adapt your imports accordingly.\n\r\n\r\n\r\nGH-103 – ApplicationModuleInitializer implementations will be triggered upon application startup, in the order following the application module dependency structure (more core ones are invoked first). Also, ApplicationModules exposes a ….getComparator() to order Spring beans that way. Note, that this requires the JGraphT library to be on the classpath (automatically pulled in via the spring-modulith-runtime artifact). See the reference documentation for details.\n\r\n\r\n\r\nGH-116 – PublishedEvents now sees events published from asynchronous event listeners, too.\n\r\n\r\n\r\nGH-100 – If you’re using AssertJ in your tests, you can now use AssertablePublishedEvents for a more streamlined integration  (for example, assertThat(events).contains(MyEvent.class).matching(…)).\n\r\n\r\n\r\nGH-117 – As we incentivize event-based, asynchronous application module integration, the test starter now also pulls in Awaitility.\n\r\n\r\n\r\nGH-111 – We now publish aggregated Javdoc.\n\r\n\r\n\r\n\r\n\r\nFind a complete change log in the GitHub release page. We are looking forward to your feedback in the GitHub discussions.",
@@ -54,6 +104,16 @@
           "wordCount": 734,
           "title": "Spring Modulith 0.3 released",
           "imageUrl": "https://avatars.githubusercontent.com/u/128577?v=4?s=200"
+        },
+        {
+          "id": "https://spring-website.pages.dev2023/01/20/spring-modulith-0-3-released",
+          "author": "Oliver Drotbohm",
+          "description": "",
+          "link": "https://spring-website.pages.dev2023/01/20/spring-modulith-0-3-released",
+          "publishedOn": "2023-01-20T00:00:00.000Z",
+          "wordCount": null,
+          "title": "Spring Modulith 0.3 released",
+          "imageUrl": null
         },
         {
           "id": "https://spring.io/blog/2023/01/19/a-bootiful-podcast-dr-amanda-martin-gradle-developer-advocate",
@@ -66,6 +126,16 @@
           "imageUrl": "https://avatars.githubusercontent.com/u/54473?v=4?s=200"
         },
         {
+          "id": "https://spring-website.pages.dev2023/01/19/a-bootiful-podcast-dr-amanda-martin-gradle-developer-advocate",
+          "author": "Josh Long",
+          "description": "",
+          "link": "https://spring-website.pages.dev2023/01/19/a-bootiful-podcast-dr-amanda-martin-gradle-developer-advocate",
+          "publishedOn": "2023-01-19T00:00:00.000Z",
+          "wordCount": null,
+          "title": "A Bootiful Podcast: Dr. Amanda Martin, Gradle developer advocate",
+          "imageUrl": null
+        },
+        {
           "id": "https://spring.io/blog/2023/01/18/interesting-new-filters-on-spring-cloud-gateway-4-0",
           "author": null,
           "description": "Spring Cloud Gateway 4.0 is finally here! Thanks to our community contributions we have introduced new features and interesting filters.\n\r\nThis blog post details new noteworthy and explains some of the new filters included, how they work and how you can use it to provide more insights into your applications.\n\r\nFirst of all, let’s talk about cache! Cache is a complicated issue and that’s why we have introduced two new filters related to it, but take into account that these filters can make the gateway memory constrained so use them carefully.\nCacheRequestBody\n\r\nManipulating the request body can cause issues if not done properly, so we made it easy for you; with this filter we offer the possibility to cache the request body before it to the downstream and get that body from an exchange attri…",
@@ -74,6 +144,16 @@
           "wordCount": 1562,
           "title": "Interesting new filters on Spring Cloud Gateway 4.0",
           "imageUrl": "https://avatars.githubusercontent.com/u/19305424?v=4?s=200"
+        },
+        {
+          "id": "https://spring-website.pages.dev2023/01/18/interesting-new-filters-on-spring-cloud-gateway-4-0",
+          "author": "Marta Medio",
+          "description": "",
+          "link": "https://spring-website.pages.dev2023/01/18/interesting-new-filters-on-spring-cloud-gateway-4-0",
+          "publishedOn": "2023-01-18T00:00:00.000Z",
+          "wordCount": null,
+          "title": "Interesting new filters on Spring Cloud Gateway 4.0",
+          "imageUrl": null
         },
         {
           "id": "https://spring.io/blog/2023/01/17/the-new-spring-boot-version-validation-and-upgrade-support-in-spring-tools",
@@ -94,6 +174,26 @@
           "wordCount": 772,
           "title": "This Week in Spring - January 17th, 2023",
           "imageUrl": "https://avatars.githubusercontent.com/u/54473?v=4?s=200"
+        },
+        {
+          "id": "https://spring-website.pages.dev2023/01/17/the-new-spring-boot-version-validation-and-upgrade-support-in-spring-tools",
+          "author": "Martin Lippert",
+          "description": "",
+          "link": "https://spring-website.pages.dev2023/01/17/the-new-spring-boot-version-validation-and-upgrade-support-in-spring-tools",
+          "publishedOn": "2023-01-17T00:00:00.000Z",
+          "wordCount": null,
+          "title": "The new Spring Boot version validation and upgrade support in Spring Tools",
+          "imageUrl": null
+        },
+        {
+          "id": "https://spring-website.pages.dev2023/01/17/this-week-in-spring-january-17th-2023",
+          "author": "Josh Long",
+          "description": "",
+          "link": "https://spring-website.pages.dev2023/01/17/this-week-in-spring-january-17th-2023",
+          "publishedOn": "2023-01-17T00:00:00.000Z",
+          "wordCount": null,
+          "title": "This Week in Spring - January 17th, 2023",
+          "imageUrl": null
         },
         {
           "id": "https://spring.io/blog/2023/01/12/a-bootiful-podcast-mario-fusco-the-drools-rules-engine-project-lead-and-fellow-java-champion",
@@ -1639,6 +1739,16 @@
       "feedUrl": "https://techcommunity.microsoft.com/plugins/custom/microsoft/o365/custom-blog-rss?tid=2893852362688900935&board=AppsonAzureBlog&size=100",
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
+        {
+          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/how-to-set-up-a-new-wordpress-website-on-azure-app-service/ba-p/3729150",
+          "author": "abhishekreddy",
+          "description": "WordPress on Azure App Service combines the power of WordPress and Azure App Service to bring you a fully managed, scalable, and performant WordPress hosting solution. In this article, we will learn how to create a new WordPress website on Azure App Service, step by step.\n \nIf you like to learn through videos, here is a video by our WordPress on Azure App Service expert guiding you through the steps of creating a WordPress website on Azure App Service.\n \n\n\n\n \nHere are the steps shown in the video:\n \nStep 1: Go to Create WordPress on App Service - Microsoft Azure.\n\n\n\n\n\n\n\n \nStep 2: In the Basics tab, under Project Details, select the correct subscription and click on Create new to create a new Resource group. Give a name to identify your resource group and click on OK.\n\n \nStep 3: Under Hosti…",
+          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/how-to-set-up-a-new-wordpress-website-on-azure-app-service/ba-p/3729150",
+          "publishedOn": "2023-01-31T06:34:00.000Z",
+          "wordCount": 9716,
+          "title": "How to set up a new WordPress website on Azure App Service",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/436986i2F20727FB91541D3/image-size/original?v=v2&px=-1"
+        },
         {
           "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/assess-asp-net-web-apps-at-scale-to-accelerate-your-app/ba-p/3718361",
           "author": "Mayunk Jain",
@@ -3431,6 +3541,16 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/quick-ways-to-reduce-your-azure-costs/ba-p/3728599",
+          "author": "Zachary Cavanell",
+          "description": "Top tips to optimize cost savings using free tools and plans as you run workloads in Azure. Identify unnecessary spend in Azure Advisor through cost cutting, take advantage of new commitment-based savings plans based on expected utilization, employ cost avoidance tactics, such as setting budgets and monitoring with Microsoft Cost Management, and contain spend through new automation options. \n \nMatt McSpirit, Azure expert, shares quick ways to save money for existing Azure customers.\n \n\n \nCut unnecessary spend.\n\nIdentify underutilized resources & implement commitment-based savings plans. Get an automated assessment and recommendations to save costs with Azure Advisor.\n \nUnderstand, monitor, and forecast cloud costs.\n\nSee how to use Microsoft Cost Management.\n \nStart and stop VMs on a schedu…",
+          "link": "https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/quick-ways-to-reduce-your-azure-costs/ba-p/3728599",
+          "publishedOn": "2023-01-31T22:39:21.000Z",
+          "wordCount": 12154,
+          "title": "Quick Ways to Reduce Your Azure Costs",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/436682i7B75B74B0B081D15?v=v2"
+        },
+        {
           "id": "https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/azure-virtual-desktop-quick-setup/ba-p/3725054",
           "author": "Zachary Cavanell",
           "description": "Find what you need to get started with the fastest way to deploy Azure Virtual Desktop with a step-by-step guide. This is a streamlined provisioning experience, with automation built-in based on your parameters, and time saved with directory services setup and integration.\n \n\nHow to set up a fully-operational Azure Virtual Desktop environment:-Prerequisites-Deployment steps-Configure host pools and Remote Apps-Test it out\n \nMatt McSpirit, Azure Expert, walks through the setup, and shares what’s notable and unique to the service.\n \nDirectory services setup in just a few clicks to save time.\n\nGo through these steps to get Azure Virtual Desktop up and running.\n \nImprove utilization, save on cost.\n\nSet up Windows 11 or Windows 10 multi-session — exclusively available through Azure Virtual Desk…",
@@ -3878,6 +3998,16 @@
       "feedUrl": "https://devblogs.microsoft.com/java/feed/",
       "siteUrl": "https://devblogs.microsoft.com/java/",
       "articles": [
+        {
+          "id": "https://devblogs.microsoft.com/java/?p=229706",
+          "author": "Nick Zhu",
+          "description": "Hi everyone, welcome to our first blog post of 2023! There are several exciting updates related to Spring extensions, code editing and performance that we wanted to share with you, so let’s get started.\nThe post Java on Visual Studio Code Update – January 2023 appeared first on Microsoft for Java Developers.",
+          "link": "https://devblogs.microsoft.com/java/java-on-visual-studio-code-update-january-2023/",
+          "publishedOn": "2023-01-31T09:36:48.000Z",
+          "wordCount": 4999,
+          "title": "Java on Visual Studio Code Update – January 2023",
+          "imageUrl": "https://devblogs.microsoft.com/java/wp-content/uploads/sites/51/2023/01/englishcover-1.png"
+        },
         {
           "id": "https://devblogs.microsoft.com/java/?p=229736",
           "author": "Bruno Borges",
@@ -4830,6 +4960,16 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/t5/azure-governance-and-management/azure-portal-december-2022-updates/ba-p/3724055",
+          "author": "Allison_Cordle",
+          "description": "Mobile > Azure Active Directory\n\nMobile Azure AD releases increased user capabilities\n\nIntune\n\nUpdates to Microsoft Intune\n\nLet's look at each of these updates in greater detail.\n \nMobile > Azure Active Directory\n Mobile Azure AD releases increased user capabilities.\n \nBuilding on the initial Azure AD Mobile experience, a new release in December 2022 introduces more user capabilities. This includes enabling users to view their extended profile details and sign-in logs, view other users extended details, search for users within the active tenant, and inviting guest users.\nAll of these capabilities are contingent on the user having the correct level of permissions to do so. The next release, targeted for late February, will introduce more capabilities for groups.\n \n\nSelect the Azure AD card from the Azure Mobile App Home View. Users do not need to have subscriptions to be able to access Azure AD as seen below:\n\n\n\nMy profile summary page. \n\n\n\n \n\n\n\n \nIntune\n  Updates to Microsoft Intune  \nThe Microsoft Intune team has been hard at work on updates as well. You can find the full list of updates to Intune on the  What's new in Microsoft Intune page, including changes that affect your experience using Intune. \n  \nAzure portal “how to” video series  \nHave you checked out our Azure portal “how to” video series yet? The videos highlight specific aspects of the portal so you can be more efficient and productive while deploying your cloud workloads from the portal.  Check out our most recently published videos.  \n \n \n \nNext steps  \nThe Azure portal has a large team of engineers that wants to hear from you, so please keep providing us your feedback in the comments section below or on Twitter @AzurePortal.  \n   \nSign in to the Azure portal now and see for yourself everything that’s new. Download the Azure mobile app to stay connected to your Azure resources anytime, anywhere.  See you next month!",
+          "link": "https://techcommunity.microsoft.com/t5/azure-governance-and-management/azure-portal-december-2022-updates/ba-p/3724055",
+          "publishedOn": "2023-01-31T19:25:17.000Z",
+          "wordCount": 9482,
+          "title": "Azure portal December 2022 updates",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/435158iFBDE1BF4F2D106E1?v=v2"
+        },
+        {
           "id": "https://techcommunity.microsoft.com/t5/azure-governance-and-management/announcing-public-preview-azure-change-tracking-amp-inventory/ba-p/3713308",
           "author": "Swatidevgan",
           "description": "What’s New?\nThe Change Tracking and Inventory service tracks changes to Files, Registry, Software, Services and Daemons and uses the MMA (Microsoft Monitoring Agent)/OMS (Operations Management Suite) agent. This preview supports the new AMA agent and enhances the following:\n\nSecurity/Reliability and Scale - The Azure Monitor Agent enhances security, reliability, and facilitates multi-homing experience to store data.\nSimplified onboarding- You can onboard to Virtual Machines directly to Change Tracking (add link) without needing to configure an Automation account. In new experience, there is\nRules management – Uses Data Collection Rules to configure or customize various aspects of data collection. For example, you can change the frequency of file collection. DCRs let you configure data collection for specific machines connected to a workspace as compared to the \"all or nothing\" approach of legacy agents.\n\nHow to get started?\nYou can onboard to Change Tracking & Inventory with AMA either via Azure Portal or by using Azury Policy (to onboard at scale). To onboard single VM via portal, click on specific VM name from Virtual Machines -> Change Tracking -> Enable using AMA agent (Preview). To know more about the various methods to enable Change Tracking, click here\nOnboarding from Single VM view\n\n \nOnboarding via DINE Policies (at scale onboarding)\n\nIn the public preview, Change Tracking with AMA supports Window Files, Windows Registry and Software data types. We are working towards facilitating the support of Windows services & Linux Daemons by GA. The data configuration can now be regulated at DCR level now. Click here to know more about Data Collection Rules.\n \nYou can check out our complete documentation to get more details. We’d love to hear what you like and don’t like about this feature, and where you’d like us to take it. Please click here to Sign Up and try out the new enhancements.",
@@ -4966,6 +5106,16 @@
       "feedUrl": "https://techcommunity.microsoft.com/plugins/custom/microsoft/o365/custom-blog-rss?tid=-125154990881687013&board=AzureObservabilityBlog&size=100",
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
+        {
+          "id": "https://techcommunity.microsoft.com/t5/azure-observability-blog/making-it-easier-to-manage-your-workspace-with-a-clearer-log/ba-p/3728171",
+          "author": "Meir Mendelovich",
+          "description": "Customers have been using Azure Monitor Log Analytics workspaces to store and analyze logs for almost a decade. Over these years, the service has evolved, with new options being added and old technologies phased out. We’ve tried to keep the workspace administration UI stable without making too many changes, but it’s time for a refresh.\n \nToday we start rolling out a revamped workspace menu that will help you get to the things you need quicker. Key items are now right at the top, where you expect them to be:\n\n \nThe new menu is gradually being exposed, so you might not see it immediately.\n \nAs part of this change, we're also clearly indicating menu options that are in the process of replacement or deprecation. Here are the relevant options and their replacement:\n\n\n\n\nMenu option\n\n\nReplacement…",
+          "link": "https://techcommunity.microsoft.com/t5/azure-observability-blog/making-it-easier-to-manage-your-workspace-with-a-clearer-log/ba-p/3728171",
+          "publishedOn": "2023-01-31T07:49:06.000Z",
+          "wordCount": 9630,
+          "title": "Making it easier to manage your workspace with a clearer Log Analytics Workspace menu",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/436498iF1CA04978992A0DB?v=v2"
+        },
         {
           "id": "https://techcommunity.microsoft.com/t5/azure-observability-blog/announcement-azure-monitor-scom-managed-instance-public-preview/ba-p/3694963",
           "author": "Bhavna_Appayya",
@@ -7937,6 +8087,26 @@
       "feedUrl": "https://devblogs.microsoft.com/microsoft365dev/feed/",
       "siteUrl": "https://devblogs.microsoft.com/microsoft365dev/",
       "articles": [
+        {
+          "id": "https://devblogs.microsoft.com/microsoft365dev/?p=12776",
+          "author": "Dan Wahlin",
+          "description": "Learn about scenarios that use the building blocks for adding Teams capabilities to custom applications through Azure Communication Services, Microsoft Teams, and Microsoft Graph.\nThe post From zero to hero: Build a meetings app with Azure Communication Services and Microsoft Teams – Part 1 appeared first on Microsoft 365 Developer Blog.",
+          "link": "https://devblogs.microsoft.com/microsoft365dev/build-a-meetings-app-with-azure-communication-services-and-microsoft-teams-part-1/",
+          "publishedOn": "2023-01-31T17:32:01.000Z",
+          "wordCount": 5149,
+          "title": "From zero to hero: Build a meetings app with Azure Communication Services and Microsoft Teams – Part 1",
+          "imageUrl": "https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2023/01/MicrosoftTeams-image-62.jpg"
+        },
+        {
+          "id": "https://devblogs.microsoft.com/microsoft365dev/?p=12738",
+          "author": "Waldek Mastykarz",
+          "description": "Build resilient and performant apps with the latest preview version of the Microsoft Graph Developer Proxy. In this new version, we’re excited to introduce improved console output, new guidance for detecting calling beta APIs and support for custom plugins. \nThe post Microsoft Graph Developer Proxy v0.4 with improved output, more guidance, and plugins  appeared first on Microsoft 365 Developer Blog.",
+          "link": "https://devblogs.microsoft.com/microsoft365dev/microsoft-graph-developer-proxy-v0-4-with-improved-output-more-guidance-and-plugins/",
+          "publishedOn": "2023-01-31T07:12:28.000Z",
+          "wordCount": 4496,
+          "title": "Microsoft Graph Developer Proxy v0.4 with improved output, more guidance, and plugins",
+          "imageUrl": "https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2023/01/A_optionwithout.jpg"
+        },
         {
           "id": "https://devblogs.microsoft.com/microsoft365dev/?p=12714",
           "author": "Amit Panchal",
