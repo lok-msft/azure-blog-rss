@@ -2,10 +2,128 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2023-02-10T01:21:17.113Z</updated>
+    <updated>2023-02-11T01:13:01.026Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Powerful Devs 2023 Conference - Feb 15th, 2023]]></title>
+        <id>https://techcommunity.microsoft.com/t5/educator-developer-blog/powerful-devs-2023-conference-feb-15th-2023/ba-p/3738220</id>
+        <link href="https://techcommunity.microsoft.com/t5/educator-developer-blog/powerful-devs-2023-conference-feb-15th-2023/ba-p/3738220"/>
+        <updated>2023-02-10T20:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Powerful Devs 2023 Feb 15th, 2023, 9:00 AM - 12:00 PM PT
+
+
+
+The Powerful Devs Conference will highlight how developers can leverage the Power Platform to build applications faster and with far less effort. Connect with industry recognized ProDev influencers, Microsoft Cloud Advocates, trusted and diverse community leaders, and members of the Power Platform Team.Register NOW
+
+Event Agenda
+
+
+
+
+ 
+Watch live at https://aka.ms/PowerfulDevs2023/Watch
+
+
+
+
+09:00 PT
+Welcome with Dona Sarkar and Greg Hurlman
+
+
+09:05 PT
+Keynote with Charles Lamanna
+
+
+09:35 PT
+The Pro Devs toolbox for Power Platform integration with April Dunnam and Scott Durow
+
+
+10:05 PT
+Power Pages hearts developers with Sandeep Dhanrajani and Dileep Singh
+
+
+10:15 PT
+Enable millions of low code devs by building custom connectors with Nitya Narasimhan and Daniel Laskewitz
+
+
+10:45 PT
+Use your Pro Dev skills to power up you Power Apps front end with Diana Birkelbach
+
+
+11:15 PT
+Integrate OpenAI with the Power Platform with Julia Kasper
+
+
+11:25 PT
+How to do ALM with Power Platform with Kartik Kanakasabesan and Casey Burke
+
+
+11:55 PT
+Wrap Up with Dona Sarkar and Greg Hurlman
+
+
+
+ 
+Resources 
+ 
+Welcome to #LowCode February | Low Code & Fusion Dev (microsoft.github.io)Exam PL-900: Microsoft Power Platform Fundamentals - Certifications | Microsoft LearnStudent Hub - Student Certifications | Microsoft Learn]]></summary>
+        <author>
+            <name>Lee Stott</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Deploy Arc for Azure VMware Solution Simply Using PowerShell]]></title>
+        <id>https://techcommunity.microsoft.com/t5/azure-migration-and/deploy-arc-for-azure-vmware-solution-simply-using-powershell/ba-p/3739411</id>
+        <link href="https://techcommunity.microsoft.com/t5/azure-migration-and/deploy-arc-for-azure-vmware-solution-simply-using-powershell/ba-p/3739411"/>
+        <updated>2023-02-10T16:02:43.000Z</updated>
+        <summary type="html"><![CDATA[What is Arc for Azure VMware Solution? Simply put, it exposes your Azure VMware Solution resources (VMs, networks, datastores, etc.) to the Azure portal.
+ 
+Using Arc for Azure VMware Solution, those resources can be managed via the Azure portal, even though they are within your vSphere cluster running in an Azure datacenter. Even better, there is no cost to deploy Arc for Azure VMware Solution. More blogs to come on Arc for Azure VMware Solution, but if you want to get some more details check out this video from Jeremiah Megie.
+ 
+First things first. Let’s get Arc for Azure VMware Solution installed into your private cloud.
+You will need to collect the following information to input into the PowerShell script, which, if you use it, will make the deployment a bit more straightforward.
+ 
+
+Subscription ID and Resource Group where the Azure VMware Solution private cloud is deployed.
+ Name of the Azure VMware Solution private cloud.
+ /28 network segment for the ARC appliance.
+
+
+The/28 network segment will be an NSX-T segment in the private cloud. Under the covers, the deployment script creates NSX-T segment for use by the ARC appliances. The value must be entered into the script as the gateway to the segment, followed by /28. For example, if 192.168.99.1/28 is entered, there will be a /28 NSX-T segment created with the gateway 192.168.99.1.
+ 
+The other information you can get from the Overview blade of your private cloud.
+ 
+
+ 
+Requirements
+
+Your private cloud must have Internet access.
+Also, because of the appliance size, ideally you would want to run this script as close to the private cloud, or from a machine inside the AVS Private Cloud.
+
+The script can be found here;
+https://virtualworkloads.com/2023/02/deploy-arc-for-azure-vmware-solution-simply-using-powershell/#script]]></summary>
+        <author>
+            <name>tredavis</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Get Started with GitHub Copilot with VSCode and Python Extension]]></title>
+        <id>https://techcommunity.microsoft.com/t5/educator-developer-blog/get-started-with-github-copilot-with-vscode-and-python-extension/ba-p/3736564</id>
+        <link href="https://techcommunity.microsoft.com/t5/educator-developer-blog/get-started-with-github-copilot-with-vscode-and-python-extension/ba-p/3736564"/>
+        <updated>2023-02-10T08:00:00.000Z</updated>
+        <summary type="html"><![CDATA[GitHub Copilot is a code search tool that uses machine learning to provide code suggestions and complete tasks for you while you code. It helps developers write code faster and with greater accuracy, making it easier to explore new code and technologies.
+Github Copilot VSCode Marketplace
+
+GitHub Copilot uses GPT-3, OpenAI's language model, to understand code and generate suggestions based on the context of what you are writing.
+Copilot can suggest code snippets, complete lines of code, and even entire functions based on the patterns it has learned from analyzing billions of lines of code on GitHub. 
+Copilot helps developers write code faster and with greater accuracy, making it easier to explore new code and technologies.
+Copilot uses machine learning to provide code suggestions and comple…]]></summary>
+        <author>
+            <name>Lee Stott</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Java on Azure Tooling Update – January 2023]]></title>
         <id>https://devblogs.microsoft.com/java/?p=229756</id>
@@ -58,6 +176,40 @@ Have questions or comments? Contact us by commenting below.]]></summary>
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[AI-900: Microsoft Azure AI Fundamentals Study Guide]]></title>
+        <id>https://techcommunity.microsoft.com/t5/educator-developer-blog/ai-900-microsoft-azure-ai-fundamentals-study-guide/ba-p/3737182</id>
+        <link href="https://techcommunity.microsoft.com/t5/educator-developer-blog/ai-900-microsoft-azure-ai-fundamentals-study-guide/ba-p/3737182"/>
+        <updated>2023-02-09T08:04:00.000Z</updated>
+        <summary type="html"><![CDATA[With recent announcements about ChatGPT and OpenAI being integrated into services such as Bing and Microsoft Edge, and app development assistant solutions like Copilot from GitHub, Artificial Intelligence (AI) and Machine Learning (ML) are rapidly transforming the software development landscape, making them essential skills for students who want to be at the forefront of this change. The "AI-900: Microsoft Azure AI Fundamentals" exam provides candidates with an excellent opportunity to demonstrate their understanding of AI and ML concepts, as well as their familiarity with associated Microsoft Azure services.
+ 
+Students having a basic understanding of cloud computing and client-server applications will have an advantage, although experience in data science and software engineering is not e…]]></summary>
+        <author>
+            <name>Anthony Bartolo</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Build a Virtual Assistant with Azure Open AI and Azure Speech Service]]></title>
+        <id>https://techcommunity.microsoft.com/t5/educator-developer-blog/build-a-virtual-assistant-with-azure-open-ai-and-azure-speech/ba-p/3735636</id>
+        <link href="https://techcommunity.microsoft.com/t5/educator-developer-blog/build-a-virtual-assistant-with-azure-open-ai-and-azure-speech/ba-p/3735636"/>
+        <updated>2023-02-09T08:00:00.000Z</updated>
+        <summary type="html"><![CDATA[You can now sign up for Azure OpenAI Service!
+ 
+The current releases of this demo uses OpenAI. The OpenAI API is designed for developers with API call or you can use Azure OpenAI studio. The goal of this demos is to make a fun and easy to use fine-tuning model which will answer all student course related questions anytime. The goals of this AI is to save educators’s time. For IVE in Hong Kong, we are speaking Cantonese and students always ask question in traditional Chinese in general.
+Therefore, we decide to make a virtual assistant that make use of Azure Open AI and Azure speech services to solve the problem.
+Students can talk to her with all languages supported by Microsoft Cognitive Services!
+Demo In English
+
+
+Demo In Cantonese
+
+
+
+Please note the current version changes to upload a jso…]]></summary>
+        <author>
+            <name>cyruswong</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Observability on IoT Edge leveraging a push model approach]]></title>
         <id>https://devblogs.microsoft.com/cse/?p=14513</id>
         <link href="https://devblogs.microsoft.com/cse/2023/02/09/observability-on-iotedge/"/>
@@ -76,6 +228,22 @@ The post Observability on IoT Edge leveraging a push model approach appeared fir
         <summary type="html"><![CDATA[Level up your Java code and explore what Spring can do for you.]]></summary>
         <author>
             <name>Josh Long</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Microsoft Student Summit March 2023 - Start and Accelerate Your Career in Tech]]></title>
+        <id>https://techcommunity.microsoft.com/t5/educator-developer-blog/microsoft-student-summit-march-2023-start-and-accelerate-your/ba-p/3736969</id>
+        <link href="https://techcommunity.microsoft.com/t5/educator-developer-blog/microsoft-student-summit-march-2023-start-and-accelerate-your/ba-p/3736969"/>
+        <updated>2023-02-08T20:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Microsoft Student Summit is an annual event designed for students who are passionate about technology and eager to learn new skills and meet like-minded individuals. Attending the Microsoft Student Summit can provide students with a number of benefits, including:
+
+
+Exposure to the Latest Technologies: The Microsoft Student Summit provides students with an opportunity to learn about and experience the latest Microsoft technologies, such as cloud computing and artificial intelligence.
+
+
+Networking Opportunities: The event provides students with an opportunity to network with Microsoft engineers, industry experts, and other students from around the world. This can be a valuable resource for students looking to expand their professional networks and build relationships with others in the techn…]]></summary>
+        <author>
+            <name>Lee Stott</name>
         </author>
     </entry>
     <entry>
@@ -124,6 +292,21 @@ The post Performant on-device inferencing with ONNX Runtime appeared first on Mi
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[Do I need a mentor to succeed in tech?]]></title>
+        <id>https://techcommunity.microsoft.com/t5/educator-developer-blog/do-i-need-a-mentor-to-succeed-in-tech/ba-p/3734710</id>
+        <link href="https://techcommunity.microsoft.com/t5/educator-developer-blog/do-i-need-a-mentor-to-succeed-in-tech/ba-p/3734710"/>
+        <updated>2023-02-08T08:00:00.000Z</updated>
+        <summary type="html"><![CDATA["Tech is fun!", so they said. But getting in, I realized it wasn't as fun as people said it was. I think a much better term I would use is "Tech is wide and confusing". And yes, it is! If you're like me 7years ago, planning to start your tech journey or already started off, I'm sure you can relate with this - it is difficult to pick a specific path to focus on, it's difficult to find the exact resources that point you to the right direction, and even worse, it's difficult to avoid people who would want to exploit you and your skill for their benefit. 
+ 
+Do You Need a Mentor to Succeed in Tech? 
+For me it's a yes. If you can, get one. Having a mentor increases your chances of success in tech. Here are some reasons why you should have one: 
+
+Your mentor helps you stay focused and make the ri…]]></summary>
+        <author>
+            <name>japhletnwamu</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Building a SaaS Application on Azure AKS with Github Actions]]></title>
         <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/building-a-saas-application-on-azure-aks-with-github-actions/ba-p/3736641</id>
         <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/building-a-saas-application-on-azure-aks-with-github-actions/ba-p/3736641"/>
@@ -156,6 +339,22 @@ SaaS infrastructures offer better cost efficiencies by leveraging economies of s
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[Step-by-Step: Setting Up GitHub Student and GitHub Copilot as an Authenticated Student Developer]]></title>
+        <id>https://techcommunity.microsoft.com/t5/educator-developer-blog/step-by-step-setting-up-github-student-and-github-copilot-as-an/ba-p/3736279</id>
+        <link href="https://techcommunity.microsoft.com/t5/educator-developer-blog/step-by-step-setting-up-github-student-and-github-copilot-as-an/ba-p/3736279"/>
+        <updated>2023-02-07T17:29:56.000Z</updated>
+        <summary type="html"><![CDATA[To set up Copilot as an authenticated Github Student Developer, you need to follow these steps:
+Setting up your GitHub Student Account
+
+Create a GitHub account: If you don't already have one, create a GitHub account. GitHub account is free, so if you have not signed up yet feel free to sign up as it is a prerequisite before you can access the Student Developer Pack. https://github.com
+ Verify your student status on GitHub: Go to the GitHub Student Developer Pack and verify your student status on GitHub: https://education.github.com/pack
+
+There are over 100 benefits from various companies that are packed together in the GitHub students developers pack. The GitHub student’s developer pack is strictly for students. Therefore before you can access it you would prove your student identity throu…]]></summary>
+        <author>
+            <name>Lee Stott</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Accelerate Your Java Modernization Journey with the Azure Immersion Workshop]]></title>
         <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/accelerate-your-java-modernization-journey-with-the-azure/ba-p/3731204</id>
         <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/accelerate-your-java-modernization-journey-with-the-azure/ba-p/3731204"/>
@@ -167,6 +366,33 @@ Design solutions that incorporate DevOps tooling and CI/CD, secrets management, 
 Take Java applications to production without worrying about infrastructure, app lifecy…]]></summary>
         <author>
             <name>nceres</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Azure cost management for Azure for Student Subscriptions]]></title>
+        <id>https://techcommunity.microsoft.com/t5/educator-developer-blog/azure-cost-management-for-azure-for-student-subscriptions/ba-p/3734793</id>
+        <link href="https://techcommunity.microsoft.com/t5/educator-developer-blog/azure-cost-management-for-azure-for-student-subscriptions/ba-p/3734793"/>
+        <updated>2023-02-07T09:17:51.000Z</updated>
+        <summary type="html"><![CDATA[Azure Cost Management 
+Microsoft Cost Management is a suite of tools that help you manage, monitor, allocate, and optimize the cost of your Microsoft Cloud Azure for Student Subscription. A few examples of what you can do in Cost Management and Billing include:
+
+Report on and analyze costs in the Azure portal.
+Monitor costs proactively with budget, anomaly, and scheduled alerts.
+
+
+Plan with cost in mind
+
+Before you deploy cloud resources, assess the following items:
+
+The Azure offer that best meets your needs
+The resources you plan to use
+How much they might cost
+
+Azure provides tools to assist you in the assessment process. The tools can give you a good idea of the investment required to enable your workloads. Then you can select the best configuration for your situation.
+
+Estimate the co…]]></summary>
+        <author>
+            <name>Lee Stott</name>
         </author>
     </entry>
     <entry>
@@ -316,6 +542,30 @@ Cloud-native protection is built into apps, services, and devices, eliminating t
 Shilpa Bothra, Product Marketing Manager for Microsoft Purview DLP, shares how to keep data safe and users productive with differentiated data restrictions in p…]]></summary>
         <author>
             <name>Zachary Cavanell</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[General availability: Automatic Backup for App Service Environment and Azure Functions Dedicated Hosting]]></title>
+        <id>general-availability-automatic-backup-for-app-service-environment-and-azure-functions-dedicated-hosting</id>
+        <link href="https://azure.microsoft.com/en-us/updates/general-availability-automatic-backup-for-app-service-environment-and-azure-functions-dedicated-hosting/"/>
+        <updated>2023-02-06T17:00:00.000Z</updated>
+        <summary type="html"><![CDATA[General availability: Automatic Backup for App Service Environment and Azure Functions Dedicated Hosting]]></summary>
+        <author>
+            <name>Azure service updates</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Free Microsoft Fundamentals certifications for worldwide students]]></title>
+        <id>https://techcommunity.microsoft.com/t5/educator-developer-blog/free-microsoft-fundamentals-certifications-for-worldwide/ba-p/3734654</id>
+        <link href="https://techcommunity.microsoft.com/t5/educator-developer-blog/free-microsoft-fundamentals-certifications-for-worldwide/ba-p/3734654"/>
+        <updated>2023-02-06T10:12:04.000Z</updated>
+        <summary type="html"><![CDATA[Microsoft offers several fundamental certification exams for free to eligible students. These exams can help students build their technical skills, knowledge, and credibility in a specific technology area. Here are some of the free certification exams offered by Microsoft for students:
+Microsoft Certified: Microsoft Certified Fundamentals (MCF): The MCF certification covers fundamental computing concepts and provides a foundation for students who are interested in pursuing more advanced technology certifications.
+
+Microsoft Certified: Power Platform Fundamentals (PL-900): This certification covers the basic concepts of the Microsoft Power Platform, including Power Apps, Power Automate, and Power BI.
+Microsoft Certified: Azure Fundamentals (AZ-900): This certification covers the core concep…]]></summary>
+        <author>
+            <name>Lee Stott</name>
         </author>
     </entry>
     <entry>
@@ -12944,345 +13194,6 @@ Ability to configure notifications to a wide range of notification channels supp
 The post Priority Matrix improves user activation through Universal Actions for Adaptive Cards appeared first on Microsoft 365 Developer Blog.]]></summary>
         <author>
             <name>Fabian Williams</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[How to run Bash scripts in WordPress on Azure App Service]]></title>
-        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/how-to-run-bash-scripts-in-wordpress-on-azure-app-service/ba-p/3625692</id>
-        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/how-to-run-bash-scripts-in-wordpress-on-azure-app-service/ba-p/3625692"/>
-        <updated>2022-09-14T05:05:01.000Z</updated>
-        <summary type="html"><![CDATA[You might need to run custom Linux scripts in WordPress on Azure App Service for achieving specific goals, such as, updating Nginx settings, running WP-CLI commands, and installing system packages. This article is intended to guide you in running custom shell or bash scripts.
-There are two ways in which you could run a shell script in WordPress on Azure App Service.
-
-Web SSH – run shell commands and scripts that are non-persistent
-The start-up File – run shell commands and scripts that need to be persistent
-
-1. Using Web SSH
-As we have mentioned earlier, web SSH can be used to run commands and scripts that are non-persistent. For example, navigating folders, reading the contents of a file, or echoing a message. Here, we will learn how to echo “Hello World!” in web SSH.
-Step 1: Go to your W…]]></summary>
-        <author>
-            <name>abhishekreddy</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Generally available: Azure Dedicated Host support for Ultra Disk Storage]]></title>
-        <id>generally-available-azure-dedicated-host-support-for-ultra-ssd</id>
-        <link href="https://azure.microsoft.com/en-us/updates/generally-available-azure-dedicated-host-support-for-ultra-ssd/"/>
-        <updated>2022-09-13T16:00:08.000Z</updated>
-        <summary type="html"><![CDATA[Introducing support for ultra disks on Azure dedicated host.]]></summary>
-        <author>
-            <name>Azure service updates</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Protect data in use with Azure Confidential Computing and Intel SGX]]></title>
-        <id>https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/protect-data-in-use-with-azure-confidential-computing-and-intel/ba-p/3624485</id>
-        <link href="https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/protect-data-in-use-with-azure-confidential-computing-and-intel/ba-p/3624485"/>
-        <updated>2022-09-12T18:32:58.000Z</updated>
-        <summary type="html"><![CDATA[See how to create confidential clouds that host sensitive data in public clouds with Intel Software Guard Extension, as part of Azure confidential computing. Protect your sensitive information in the Cloud.
- 
-
-Mitigate privileged access attacks with hardware enforced protection of sensitive data, and protect against data exfiltration from memory. Beyond security, we’ll demonstrate machine learning analytics on multi-party data.
-Data center security expert, Mike Ferron-Jones from Intel, gives you an exclusive look at Microsoft’s work with Intel.
- 
- 
-Protect in-use data.
-
-Keep sensitive data protected while it is actively in use in the processor and memory. See how with confidential computing.
- 
- 
-Cold boot attack by a rogue administrator? Yeah, we thought of that, too.
-
-Safeguard data store…]]></summary>
-        <author>
-            <name>Zachary Cavanell</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Getting started with Azure Static Web Apps]]></title>
-        <id>https://techcommunity.microsoft.com/t5/educator-developer-blog/getting-started-with-azure-static-web-apps/ba-p/3623154</id>
-        <link href="https://techcommunity.microsoft.com/t5/educator-developer-blog/getting-started-with-azure-static-web-apps/ba-p/3623154"/>
-        <updated>2022-09-11T14:27:36.000Z</updated>
-        <summary type="html"><![CDATA[Where To Start
-The following are a complete set of resources geared to those new to Azure Static Web Apps; what it is, and how best to start learning and utilizing.
-Introduction to Azure Static Web Apps:
-
-5-minute video explaining what Azure Static Web Apps is: https://www.youtube.com/watch?v=w-tLZjO6XMc
-Docs, "What is Azure Static Web Apps?" https://azurestaticwebapps.dev/blog/building-swa
-
-Building first Static Web App:
-
-"#02: Building SWA" article on #30DaysOfSWA https://azurestaticwebapps.dev/blog/building-swa
-Short workshop walking through learn modules https://github.com/microsoft/workshop-library/tree/main/short/intro-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
- 
-What is Azure Static Web Apps? | Microsoft Docs
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-Azure Static Web Apps - Learn Path
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-workshop-library/short/intro-static-web-apps
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-Static Web Apps: Code to Scale - video series
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-Hello from #30DaysOfSWA | #30DaysOfSWA
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-Azure Tips and Tricks - video series
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-SWA Community Gallery
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-Azure Static Web Apps - DEV.to
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Azure SWA CLI
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-Static Web Apps CLI Documentation | Static Web Apps CLI
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-GitHub - Azure/static-web-apps-cli: Azure Static Web Apps CLI
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-Introducing the Azure Static Web Apps CLI - Microsoft Tech Community
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-Intro: Create Static Web Apps using CLI - Azure | Microsoft Docs]]></summary>
-        <author>
-            <name>Lee Stott</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Using Azure AD B2C as an identity provider in Power Pages]]></title>
-        <id>https://techcommunity.microsoft.com/t5/educator-developer-blog/using-azure-ad-b2c-as-an-identity-provider-in-power-pages/ba-p/3574354</id>
-        <link href="https://techcommunity.microsoft.com/t5/educator-developer-blog/using-azure-ad-b2c-as-an-identity-provider-in-power-pages/ba-p/3574354"/>
-        <updated>2022-09-09T16:16:24.000Z</updated>
-        <summary type="html"><![CDATA[Hi! Welcome again to my second article in the series on Power Pages. In the last article, I introduced you to Power Pages, explaining in detail what it entails and it's amazing features. 
-In today's article, we will be going a step further in learning how to use Azure AD B2c as an Identity provider for setting up authentication on your website. 
- 
-I'm Favour Adeshina a Beta Microsoft Learn Student Ambassador from Nigeria, and an advocate of Microsoft 365 and Power Platform. I believe that youths and students should be empowered with tech skills, which will in turn bring about innovations in society. As a Microsoft Learn Student Ambassador, I actively teach and manage a community of over 200 students on campus, as well as leading the Power Platform User Group in my state.
-What is Azure AD B…]]></summary>
-        <author>
-            <name>Favour</name>
         </author>
     </entry>
 </feed>
