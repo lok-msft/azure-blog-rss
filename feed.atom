@@ -2,10 +2,85 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2023-02-17T01:22:27.736Z</updated>
+    <updated>2023-02-18T01:17:54.082Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[New Boards Hub, Sprint 217 update]]></title>
+        <id>https://devblogs.microsoft.com/devops/?p=66413</id>
+        <link href="https://devblogs.microsoft.com/devops/new-boards-hub-sprint-217-update/"/>
+        <updated>2023-02-17T17:41:36.000Z</updated>
+        <summary type="html"><![CDATA[As noted in the New Boards Hub 216 Update, we turned on the “Try me” banner for New Boards Hub to new set of customers. As expected, it has spurred a fury of feedback that has kept us busy. It will be at least a sprint or more to address the current backlog of issues reported.
+The post New Boards Hub, Sprint 217 update appeared first on Azure DevOps Blog.]]></summary>
+        <author>
+            <name>Dan Hellem</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Accelerate your .NET app modernization journey with the Azure Immersion Workshop]]></title>
+        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/accelerate-your-net-app-modernization-journey-with-the-azure/ba-p/3741532</id>
+        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/accelerate-your-net-app-modernization-journey-with-the-azure/ba-p/3741532"/>
+        <updated>2023-02-17T13:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Choosing Azure for your app modernization is an important first step, and figuring out how to effectively leverage all that Azure has to offer is the secret to your success. We believe hands-on experience is key to helping you design a plan to modernize, deploy, and manage your web applications. Azure Immersion Workshops are a collection of digital events designed with a focus on technical learning and inspire usage via hands on experience. We are excited to share that the Azure Immersion Workshop to Modernize .NET apps on Azure App Service is now available. 
+ 
+
+ 
+The Modernize .NET Apps workshop is designed to help you evaluate and prioritize your applications for modernization and gain the practical skills required to map out a successful migration strategy. From practical demonstrations…]]></summary>
+        <author>
+            <name>Mayunk Jain</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How to setup Event Hub Trigger for Azure Function with User-Assigned Managed Identity]]></title>
+        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/how-to-setup-event-hub-trigger-for-azure-function-with-user/ba-p/3740599</id>
+        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/how-to-setup-event-hub-trigger-for-azure-function-with-user/ba-p/3740599"/>
+        <updated>2023-02-17T09:32:19.000Z</updated>
+        <summary type="html"><![CDATA[Background:
+Function App supports to integrate Managed Identities to connect to resources that support Azure Active Directory (Azure AD) authentication. There are two types of Managed Identities: System-assigned and User-assigned. However, customer would choose User-assigned Managed Identity when the use case is like the workloads that run on multiple resources and can share a single identity or the workloads where resources are recycled frequently, but permissions should stay consistent. In this blog, we're going to introduce how to assign a User-Assigned Managed Identity (MI) to Function App that use Azure AD for authorization to access Event Hub resource in Event Hub trigger.
+ 
+Prerequisites: 
+1. Please read following documents for basic concept.
+
+Triggers and bindings in Azure Function…]]></summary>
+        <author>
+            <name>James_Yu320</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Azure Automation Run As accounts retiring on 30 September 2023]]></title>
+        <id>https://techcommunity.microsoft.com/t5/azure-governance-and-management/azure-automation-run-as-accounts-retiring-on-30-september-2023/ba-p/3744308</id>
+        <link href="https://techcommunity.microsoft.com/t5/azure-governance-and-management/azure-automation-run-as-accounts-retiring-on-30-september-2023/ba-p/3744308"/>
+        <updated>2023-02-17T04:20:33.000Z</updated>
+        <summary type="html"><![CDATA[On 30 September 2023, Azure Automation will retire Run As accounts, and completely move to Managed identities. All runbook executions using Run As accounts, including Classic Run As accounts would not be supported after this date. Moreover, starting 1 April 2023, creation of new Run As accounts in Azure Automation will not be possible. Renewing of certificates for existing RunAs accounts would be possible only till the end of support.
+To ensure you are using a supported authentication method, you must migrate all your runbooks to Managed Identities.
+ 
+Benefits of Managed identities
+
+Secure authentication to any Azure service that supports Azure AD authentication.
+Minimised management overhead with easy access to resources.
+No need of Certificate renewals as in case of Run As accounts.
+Simplified runbooks with no requirement to use multi-line code.
+
+ 
+Take immediate action
+
+Review your Automation accounts, Runbooks, GitHub code samples to identify Remove all references to Run As accounts and make necessary changes to reflect Managed Identities only.
+If you have existing Azure Automation runbooks using Run As accounts, you must migrate them to Managed identities.
+If your Run As account certificate is expiring, it’s a good time to start using Managed identities for authentication instead of renewing the certificate.
+Do not create new Run As accounts, ensure to use Managed identities.
+
+ 
+Resources 
+
+Migrate from a Run As account to a managed identity | Microsoft Learn
+Azure Automation migration to managed identity FAQ | Microsoft Learn
+
+If you have questions, ask community experts in Microsoft Q&A.]]></summary>
+        <author>
+            <name>Nikita_Bajaj</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Announcing Public Preview of Caching for ACR]]></title>
         <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/announcing-public-preview-of-caching-for-acr/ba-p/3744655</id>
@@ -13140,80 +13215,6 @@ Suppose you want to build your first connector, what are your options?
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Announcing Public Preview of Soft Delete for Azure Container Registry]]></title>
-        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/announcing-public-preview-of-soft-delete-for-azure-container/ba-p/3632716</id>
-        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/announcing-public-preview-of-soft-delete-for-azure-container/ba-p/3632716"/>
-        <updated>2022-09-20T20:57:24.000Z</updated>
-        <summary type="html"><![CDATA[Microsoft is committed to making Azure Container Registry (ACR) best-in-class for the storage and distribution of container artifacts. Following this commitment, we're excited to announce the public preview of Soft Delete for Azure Container Registry. When Soft Delete is enabled container artifacts that are deleted from your container registry can be restored within a time frame set by you. This feature will empower you to take more control of your registries and protect against accidental deletion of your repositories from your Azure Container Registry.
- 
- 
-What is Soft Delete? 
-Soft Delete is a new feature added to Azure Container Registry (ACR) currently in public preview that will allow users to restore deleted repositories.When Soft Delete is enabled, deleted artifacts will be moved i…]]></summary>
-        <author>
-            <name>MSFTPM</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[General availability: Improvements to Azure Web Application Firewall (WAF) custom rules]]></title>
-        <id>general-availability-improvements-to-web-application-firewall-waf-custom-rules</id>
-        <link href="https://azure.microsoft.com/en-us/updates/general-availability-improvements-to-web-application-firewall-waf-custom-rules/"/>
-        <updated>2022-09-20T19:00:04.000Z</updated>
-        <summary type="html"><![CDATA[Azure regional Web Application Firewall (WAF) supports operators “Any” and “GreaterThanOrEqual”, improving WAF tuning capabilities. Azure's global WAF now supports geo-match filtering using the socket address in addition to remote address.]]></summary>
-        <author>
-            <name>Azure service updates</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Windows Autopatch, How it Works | Automate updates to Windows PCs and devices]]></title>
-        <id>https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/windows-autopatch-how-it-works-automate-updates-to-windows-pcs/ba-p/3632861</id>
-        <link href="https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/windows-autopatch-how-it-works-automate-updates-to-windows-pcs/ba-p/3632861"/>
-        <updated>2022-09-20T18:40:25.000Z</updated>
-        <summary type="html"><![CDATA[Go inside our new cloud service with ring-based deployment built-in for the automation of software update management for Windows, Microsoft Edge and your Office and Microsoft 365 apps, including Teams. Windows Autopatch will provide upcoming support for Windows 11 upgrades. If you’re using our premium subscription services, it may be available to you at no additional cost.
- 
-
-Jeremy Chapman, Microsoft 365 Director, reverse engineers Windows Autopatch service to show how it works (within Intune and Azure Active Directory), how to get it running, and the time saving configurations it makes on your behalf.
- 
-Automate software updates and policies to your Windows PCs and devices.
-
-Automation capabilities save time on updates across Windows, Microsoft 365 Apps, and Edge. Go make it run.
- 
-Deliv…]]></summary>
-        <author>
-            <name>Zachary Cavanell</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[General availability (update): Improved Append Capability on Immutable Storage for Blob Storage]]></title>
-        <id>immutable-storage-for-blob-storage-now-includes-allow-appends-for-block-and-append-blobs-capability</id>
-        <link href="https://azure.microsoft.com/en-us/updates/immutable-storage-for-blob-storage-now-includes-allow-appends-for-block-and-append-blobs-capability/"/>
-        <updated>2022-09-20T17:00:03.000Z</updated>
-        <summary type="html"><![CDATA[Immutable storage for Blob Storage on containers now includes a new append capability.]]></summary>
-        <author>
-            <name>Azure service updates</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Generally available: Immutable storage for Azure Data Lake Storage]]></title>
-        <id>immutable-storage-for-azure-data-lake-storage-is-now-generally-available</id>
-        <link href="https://azure.microsoft.com/en-us/updates/immutable-storage-for-azure-data-lake-storage-is-now-generally-available/"/>
-        <updated>2022-09-20T17:00:03.000Z</updated>
-        <summary type="html"><![CDATA[Immutable storage for Azure Data Lake Storage is now generally available. Immutable storage provides the capability to store data in a write once, read many (WORM) state.]]></summary>
-        <author>
-            <name>Azure service updates</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Hugging Face Transformers now enabled in Apache OpenNLP by ONNX Runtime]]></title>
-        <id>https://cloudblogs.microsoft.com/opensource/2022/09/20/hugging-face-transformers-now-enabled-in-apache-opennlp-by-onnx-runtime/</id>
-        <link href="https://cloudblogs.microsoft.com/opensource/2022/09/20/hugging-face-transformers-now-enabled-in-apache-opennlp-by-onnx-runtime/"/>
-        <updated>2022-09-20T16:00:00.000Z</updated>
-        <summary type="html"><![CDATA[We're excited to share the recent integration of ONNX Runtime in Apache OpenNLP! Apache OpenNLP is a Java machine learning library for natural language processing (NLP) tasks.
-The post Hugging Face Transformers now enabled in Apache OpenNLP by ONNX Runtime appeared first on Microsoft Open Source Blog.]]></summary>
-        <author>
-            <name>Faith Xu</name>
-        </author>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[How YOU can deploy your resume in 2 min using Azure Static Web apps]]></title>
         <id>https://techcommunity.microsoft.com/t5/educator-developer-blog/how-you-can-deploy-your-resume-in-2-min-using-azure-static-web/ba-p/3632676</id>
         <link href="https://techcommunity.microsoft.com/t5/educator-developer-blog/how-you-can-deploy-your-resume-in-2-min-using-azure-static-web/ba-p/3632676"/>
@@ -13248,17 +13249,6 @@ Tools for deployment and app lifecycle
 Azure Static Web apps let's you deploy using more than one way, you can use of any…]]></summary>
         <author>
             <name>Chris_Noring</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Antipatterns on Azure Cosmos DB]]></title>
-        <id>https://devblogs.microsoft.com/cosmosdb/?p=4896</id>
-        <link href="https://devblogs.microsoft.com/cosmosdb/antipatterns-on-azure-cosmos-db/"/>
-        <updated>2022-09-20T14:00:18.000Z</updated>
-        <summary type="html"><![CDATA[This post was authored by Microsoft MVP and Azure Cosmos DB community champion Blaize Stewart.  You can reach Blaize (@theonemule) on Twitter.
-The post Antipatterns on Azure Cosmos DB appeared first on Azure Cosmos DB Blog.]]></summary>
-        <author>
-            <name>Jay Gordon</name>
         </author>
     </entry>
     <entry>
