@@ -2,10 +2,24 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2023-02-20T01:20:31.929Z</updated>
+    <updated>2023-02-21T01:21:45.904Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Working with Stored Access Policy to Control SAS]]></title>
+        <id>https://techcommunity.microsoft.com/t5/azure-paas-blog/working-with-stored-access-policy-to-control-sas/ba-p/3744484</id>
+        <link href="https://techcommunity.microsoft.com/t5/azure-paas-blog/working-with-stored-access-policy-to-control-sas/ba-p/3744484"/>
+        <updated>2023-02-20T06:02:57.000Z</updated>
+        <summary type="html"><![CDATA[The blog talks about controlling SAS in terms of permissions and expiry time via Stored Access Policy.
+ 
+When working with SAS, in case a SAS gets compromised, to prevent any un-authorized access via that SAS, the only option to revoke SAS is to recycle the Access Keys being used to sign the SAS. This in turn will affect all the SAS that have been signed using those set of keys. Also, if you are using those keys anywhere in the application, you will have to update the configuration on all those places.
+ 
+To prevent this, we can make use of a stored access policy. The advantage of using the storage access policy is that you can control expiry time and permissions. Furthermore, if SAS gets compromised, you can edit the permissions of the SAS, make it expired or even delete the access policy …]]></summary>
+        <author>
+            <name>Amrinder_Singh</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Pair Programming and test-driven development with Visual Studio Live Share and GitHub Copilot]]></title>
         <id>https://techcommunity.microsoft.com/t5/educator-developer-blog/pair-programming-and-test-driven-development-with-visual-studio/ba-p/3738695</id>
@@ -13237,19 +13251,6 @@ Installing Terraform is not really an install, it's more of a download and a bin
 Later when running Terraform comm…]]></summary>
         <author>
             <name>Marc Kean</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Announcing TypeScript 4.9 Beta]]></title>
-        <id>https://devblogs.microsoft.com/typescript/?p=3554</id>
-        <link href="https://devblogs.microsoft.com/typescript/announcing-typescript-4-9-beta/"/>
-        <updated>2022-09-23T20:03:24.000Z</updated>
-        <summary type="html"><![CDATA[Today we’re announcing our beta release of TypeScript 4.9!
-You can also get editor support by
-Downloading for Visual Studio 2022/2019
-The post Announcing TypeScript 4.9 Beta appeared first on TypeScript.]]></summary>
-        <author>
-            <name>Daniel Rosenwasser</name>
         </author>
     </entry>
     <entry>
