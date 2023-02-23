@@ -2,10 +2,54 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2023-02-22T01:17:28.968Z</updated>
+    <updated>2023-02-23T01:16:48.781Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[GA: Create disks from CMK-encrypted snapshots across subscriptions and in the same tenant]]></title>
+        <id>ga-create-disks-from-cmkencrypted-snapshots-across-subscriptions-and-in-the-same-tenant</id>
+        <link href="https://azure.microsoft.com/en-us/updates/ga-create-disks-from-cmkencrypted-snapshots-across-subscriptions-and-in-the-same-tenant/"/>
+        <updated>2023-02-22T18:00:31.000Z</updated>
+        <summary type="html"><![CDATA[To ease manageability, we are making disks encrypted with customer-managed keys (CMK) more flexible by allowing creation of disks and snapshots from CMK-encrypted source across subscriptions.]]></summary>
+        <author>
+            <name>Azure service updates</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[End of support for Azure Pipelines agents running on CentOS 6, Debian 4.9, Fedora 32, Ubuntu 16, macOS 10.14, and older versions]]></title>
+        <id>https://devblogs.microsoft.com/devops/?p=66494</id>
+        <link href="https://devblogs.microsoft.com/devops/azdo-end-of-support-v2-net-agent/"/>
+        <updated>2023-02-22T14:38:22.000Z</updated>
+        <summary type="html"><![CDATA[In the blog post Upgrade of .NET agent for Azure Pipelines, we explained our plan to update the agent implementation from .NET Core 3.1 to .NET 6 in order to support newer operating systems. If you run your agents on any operating system supported by .NET 6,
+The post End of support for Azure Pipelines agents running on CentOS 6, Debian 4.9, Fedora 32, Ubuntu 16, macOS 10.14, and older versions appeared first on Azure DevOps Blog.]]></summary>
+        <author>
+            <name>Bohdan Janousek</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Common Pitfalls of using Self-Hosted Build Agents]]></title>
+        <id>https://devblogs.microsoft.com/cse/?p=14520</id>
+        <link href="https://devblogs.microsoft.com/cse/2023/02/22/common-pitfalls-of-using-self-hosted-agents/"/>
+        <updated>2023-02-22T08:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Avoid the common pitfalls of moving from vendor-hosted CI/CD agents to self-hosted ones.
+The post Common Pitfalls of using Self-Hosted Build Agents appeared first on CSE Developer Blog.]]></summary>
+        <author>
+            <name>avbalter</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Leveraging Blob Inventory Report for Gaining Container Level Insights]]></title>
+        <id>https://techcommunity.microsoft.com/t5/azure-paas-blog/leveraging-blob-inventory-report-for-gaining-container-level/ba-p/3744508</id>
+        <link href="https://techcommunity.microsoft.com/t5/azure-paas-blog/leveraging-blob-inventory-report-for-gaining-container-level/ba-p/3744508"/>
+        <updated>2023-02-22T06:21:26.000Z</updated>
+        <summary type="html"><![CDATA[The Blob Inventory feature provides an overview of your containers, blobs, snapshots, and blob versions within a storage account. You can make use of the inventory report to understand various attributes of blobs and containers such as your total data size, age etc. depending upon the available fields for the inventory reports.
+ 
+When it comes to gaining insights on breakup of blobs based on the type, access tier etc., there are certain limitations when it comes to the current available metrics. However, you can make use of the inventory report and merging that with the power of running SQL queries in Synapse help you with further drilldown by parsing these reports to that can help you taking further decisions ahead. By default, the Blob Inventory feature is disabled. You need to enable th…]]></summary>
+        <author>
+            <name>Amrinder_Singh</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Public Preview: Azure NetApp Files support for 2TiB capacity pools]]></title>
         <id>public-preview-azure-netapp-files-support-for-2tib-capacity-pools</id>
@@ -13407,105 +13451,6 @@ Pre-requisite:
 To participate fully, you will need a Microsoft 365 School/Work acc…]]></summary>
         <author>
             <name>theoyinbooke</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Azure Cost Optimisation]]></title>
-        <id>https://techcommunity.microsoft.com/t5/azure-architecture-blog/azure-cost-optimisation/ba-p/3624817</id>
-        <link href="https://techcommunity.microsoft.com/t5/azure-architecture-blog/azure-cost-optimisation/ba-p/3624817"/>
-        <updated>2022-09-26T04:52:37.000Z</updated>
-        <summary type="html"><![CDATA[Table of Contents
- 
-
-Overview
-Storage
-
-Azure Blob Storage lifecycle management
-Orphaned Managed Disks
-Geo-Redundant Storage Accounts
-Recovery Services Vault
-Recovery Services Vault & Backup Vaults
-How to change from GRS to LRS after configuring backup
-
-
-Compute (IaaS)
-
-Azure Spot Virtual Machines for virtual machine scale sets
-Instance size flexibility
-Right-size or shutdown underutilized virtual machines
-VMs running on older sizes
-Scale sets, Spot Priority Mix
-Azure savings plans for compute
-
-
-License costs
-Use Hybrid Benefit
-Azure Hybrid Benefit for AKS and Azure Stack HCI
-Flexible Virtualization Benefit. 12
-Windows Container Base Image Redistribution Rights Change
-Dev/Test benefits
-
-Reservations
-
-Scope reservations
-Reservation scoping options
-Virtual machine reserved instances
-Managed D…]]></summary>
-        <author>
-            <name>Marc Kean</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Terraform with Azure Cloud Shell & State file in Azure Storage]]></title>
-        <id>https://techcommunity.microsoft.com/t5/azure-architecture-blog/terraform-with-azure-cloud-shell-amp-state-file-in-azure-storage/ba-p/3627967</id>
-        <link href="https://techcommunity.microsoft.com/t5/azure-architecture-blog/terraform-with-azure-cloud-shell-amp-state-file-in-azure-storage/ba-p/3627967"/>
-        <updated>2022-09-26T01:26:01.000Z</updated>
-        <summary type="html"><![CDATA[Azure Cloud Shell automatically has the latest version of Terraform installed. Also, as Terraform is run from the cloud it automatically uses information from the current Azure subscription and you can securely save the Terraform state file in Azure Storage. Best of all, you can still do all your authoring of Terraform from VS Code. 
- 
-Btw, the last section on the Terraform state file in Azure storage is documented here on Microsoft Docs, however I have captured the complete solution here.
- 
-Four easy steps:
-
-Connect to CloudDrive (Azure Files Share)
-Copy files from this reop to Azure CloudDrive
-Setup the Terraform State in Azure Blob Storage
-Sign into Azure Cloud Shell from VS Code
-
- 
-1. Connect to CloudDrive (Azure Files Share)
-Assuming you have previously connected to Azure Cloud Shell …]]></summary>
-        <author>
-            <name>Marc Kean</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Terraform locally run from Windows with State file in Azure Storage]]></title>
-        <id>https://techcommunity.microsoft.com/t5/azure-architecture-blog/terraform-locally-run-from-windows-with-state-file-in-azure/ba-p/3637692</id>
-        <link href="https://techcommunity.microsoft.com/t5/azure-architecture-blog/terraform-locally-run-from-windows-with-state-file-in-azure/ba-p/3637692"/>
-        <updated>2022-09-26T01:25:57.000Z</updated>
-        <summary type="html"><![CDATA[Running Terraform locally in Windows along with the Azure CLI gives you a bit more flexibility in large corporates due to eliminating the need to connect to Azure Cloud Shell from VS Code, which in itself can be a challenge with things like conditional access which may block authentication from remote locations where Azure Cloud Shell runs from. 
- 
-To get things setup remotely, you need a few things. 
- 
-Five easy steps:
-
-Install Terraform locally
-Install Bash (optional)
-
-Can use PowerShell or the Command Prompt
-
-
-Install the Azure CLI
-Setup the Terraform State in Azure Blob Storage
-Sign into Azure CLI from VS Code
-
- 
-1. Install Terraform
-Installing Terraform is not really an install, it's more of a download and a binary which you run. Download from here.
- 
-Later when running Terraform comm…]]></summary>
-        <author>
-            <name>Marc Kean</name>
         </author>
     </entry>
 </feed>

@@ -3317,6 +3317,16 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/t5/azure-paas-blog/leveraging-blob-inventory-report-for-gaining-container-level/ba-p/3744508",
+          "author": "Amrinder_Singh",
+          "description": "The Blob Inventory feature provides an overview of your containers, blobs, snapshots, and blob versions within a storage account. You can make use of the inventory report to understand various attributes of blobs and containers such as your total data size, age etc. depending upon the available fields for the inventory reports.\n \nWhen it comes to gaining insights on breakup of blobs based on the type, access tier etc., there are certain limitations when it comes to the current available metrics. However, you can make use of the inventory report and merging that with the power of running SQL queries in Synapse help you with further drilldown by parsing these reports to that can help you taking further decisions ahead. By default, the Blob Inventory feature is disabled. You need to enable th…",
+          "link": "https://techcommunity.microsoft.com/t5/azure-paas-blog/leveraging-blob-inventory-report-for-gaining-container-level/ba-p/3744508",
+          "publishedOn": "2023-02-22T06:21:26.000Z",
+          "wordCount": 9696,
+          "title": "Leveraging Blob Inventory Report for Gaining Container Level Insights",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/442558i413170578DA33090/image-size/original?v=v2&px=-1"
+        },
+        {
           "id": "https://techcommunity.microsoft.com/t5/azure-paas-blog/eventhub-types-of-throttling-errors-and-how-to-mitigate-it/ba-p/3745403",
           "author": "SungGun_Lee",
           "description": "Are you getting 50002 Error or 50008 Error return code in your EventHub? If that’s the case, you are in the right place.\nIn this documentation, we will go through what these two return codes are and how to prevent your EventHub to throttle.\n \n \n[50002 Error - ServerBusyException]\nPre-requisite:\nAre you getting 50002 Error from your EventHub? Is your Throughput appropriately configured? Is your load evenly distributed across all partitions? If so, keep on scrolling down, as you may find the answer to your problem.\n \nI. What is a Throughput Unit?\nThe throughput capacity of Event Hubs is controlled by throughput units (TU). If the TU has gone beyond limit, EventHub is throttled and a ServerBusyException is returned. For more detailed information please visit aka.ms/event-hubs-scalability.\n \nI…",
@@ -3842,36 +3852,6 @@
           "wordCount": 9463,
           "title": "Setup Hybrid Joined AVD Single Sign-On",
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/411235iD7248EE38678305E/image-size/original?v=v2&px=-1"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/azure-cost-optimisation/ba-p/3624817",
-          "author": "Marc Kean",
-          "description": "Table of Contents\n \n\nOverview\nStorage\n\nAzure Blob Storage lifecycle management\nOrphaned Managed Disks\nGeo-Redundant Storage Accounts\nRecovery Services Vault\nRecovery Services Vault & Backup Vaults\nHow to change from GRS to LRS after configuring backup\n\n\nCompute (IaaS)\n\nAzure Spot Virtual Machines for virtual machine scale sets\nInstance size flexibility\nRight-size or shutdown underutilized virtual machines\nVMs running on older sizes\nScale sets, Spot Priority Mix\nAzure savings plans for compute\n\n\nLicense costs\nUse Hybrid Benefit\nAzure Hybrid Benefit for AKS and Azure Stack HCI\nFlexible Virtualization Benefit. 12\nWindows Container Base Image Redistribution Rights Change\nDev/Test benefits\n\nReservations\n\nScope reservations\nReservation scoping options\nVirtual machine reserved instances\nManaged D…",
-          "link": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/azure-cost-optimisation/ba-p/3624817",
-          "publishedOn": "2022-09-26T04:52:37.000Z",
-          "wordCount": 12986,
-          "title": "Azure Cost Optimisation",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/410376iB0AC628618420BA1/image-size/original?v=v2&px=-1"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/terraform-with-azure-cloud-shell-amp-state-file-in-azure-storage/ba-p/3627967",
-          "author": "Marc Kean",
-          "description": "Azure Cloud Shell automatically has the latest version of Terraform installed. Also, as Terraform is run from the cloud it automatically uses information from the current Azure subscription and you can securely save the Terraform state file in Azure Storage. Best of all, you can still do all your authoring of Terraform from VS Code. \n \nBtw, the last section on the Terraform state file in Azure storage is documented here on Microsoft Docs, however I have captured the complete solution here.\n \nFour easy steps:\n\nConnect to CloudDrive (Azure Files Share)\nCopy files from this reop to Azure CloudDrive\nSetup the Terraform State in Azure Blob Storage\nSign into Azure Cloud Shell from VS Code\n\n \n1. Connect to CloudDrive (Azure Files Share)\nAssuming you have previously connected to Azure Cloud Shell …",
-          "link": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/terraform-with-azure-cloud-shell-amp-state-file-in-azure-storage/ba-p/3627967",
-          "publishedOn": "2022-09-26T01:26:01.000Z",
-          "wordCount": 9618,
-          "title": "Terraform with Azure Cloud Shell & State file in Azure Storage",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/408384iB76A2B8175D4C447?v=v2"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/terraform-locally-run-from-windows-with-state-file-in-azure/ba-p/3637692",
-          "author": "Marc Kean",
-          "description": "Running Terraform locally in Windows along with the Azure CLI gives you a bit more flexibility in large corporates due to eliminating the need to connect to Azure Cloud Shell from VS Code, which in itself can be a challenge with things like conditional access which may block authentication from remote locations where Azure Cloud Shell runs from. \n \nTo get things setup remotely, you need a few things. \n \nFive easy steps:\n\nInstall Terraform locally\nInstall Bash (optional)\n\nCan use PowerShell or the Command Prompt\n\n\nInstall the Azure CLI\nSetup the Terraform State in Azure Blob Storage\nSign into Azure CLI from VS Code\n\n \n1. Install Terraform\nInstalling Terraform is not really an install, it's more of a download and a binary which you run. Download from here.\n \nLater when running Terraform comm…",
-          "link": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/terraform-locally-run-from-windows-with-state-file-in-azure/ba-p/3637692",
-          "publishedOn": "2022-09-26T01:25:57.000Z",
-          "wordCount": 9733,
-          "title": "Terraform locally run from Windows with State file in Azure Storage",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/409326i5324DB2CE7BA033C/image-size/original?v=v2&px=-1"
         }
       ]
     },
@@ -4372,6 +4352,16 @@
       "siteUrl": "https://devblogs.microsoft.com/cse/",
       "articles": [
         {
+          "id": "https://devblogs.microsoft.com/cse/?p=14520",
+          "author": "avbalter",
+          "description": "Avoid the common pitfalls of moving from vendor-hosted CI/CD agents to self-hosted ones.\nThe post Common Pitfalls of using Self-Hosted Build Agents appeared first on CSE Developer Blog.",
+          "link": "https://devblogs.microsoft.com/cse/2023/02/22/common-pitfalls-of-using-self-hosted-agents/",
+          "publishedOn": "2023-02-22T08:00:00.000Z",
+          "wordCount": 5432,
+          "title": "Common Pitfalls of using Self-Hosted Build Agents",
+          "imageUrl": "https://devblogs.microsoft.com/cse/wp-content/uploads/sites/55/2023/02/common-pitfalls-01.png"
+        },
+        {
           "id": "https://devblogs.microsoft.com/cse/?p=14513",
           "author": "Jean-Baptiste Ranson",
           "description": "Solution to continuously push logs from IoT Edge devices to a Log Analytics Workspace on Azure.\nThe post Observability on IoT Edge leveraging a push model approach appeared first on CSE Developer Blog.",
@@ -4791,6 +4781,16 @@
       "feedUrl": "https://devblogs.microsoft.com/devops/feed/",
       "siteUrl": "https://devblogs.microsoft.com/devops/",
       "articles": [
+        {
+          "id": "https://devblogs.microsoft.com/devops/?p=66494",
+          "author": "Bohdan Janousek",
+          "description": "In the blog post Upgrade of .NET agent for Azure Pipelines, we explained our plan to update the agent implementation from .NET Core 3.1 to .NET 6 in order to support newer operating systems. If you run your agents on any operating system supported by .NET 6,\nThe post End of support for Azure Pipelines agents running on CentOS 6, Debian 4.9, Fedora 32, Ubuntu 16, macOS 10.14, and older versions appeared first on Azure DevOps Blog.",
+          "link": "https://devblogs.microsoft.com/devops/azdo-end-of-support-v2-net-agent/",
+          "publishedOn": "2023-02-22T14:38:22.000Z",
+          "wordCount": 5127,
+          "title": "End of support for Azure Pipelines agents running on CentOS 6, Debian 4.9, Fedora 32, Ubuntu 16, macOS 10.14, and older versions",
+          "imageUrl": "https://devblogs.microsoft.com/devops/wp-content/uploads/sites/6/2019/02/AzureDevOps.png"
+        },
         {
           "id": "https://devblogs.microsoft.com/devops/?p=66413",
           "author": "Dan Hellem",
@@ -5621,7 +5621,7 @@
     {
       "title": "Microsoft Open Source Blog",
       "feedUrl": "https://cloudblogs.microsoft.com/opensource/feed/",
-      "siteUrl": "https://cloudblogs.microsoft.com/opensource/",
+      "siteUrl": "https://azure.microsoft.com/en-us/blog/7-reasons-to-join-us-at-azure-open-source-day/",
       "articles": [
         {
           "id": "https://azure.microsoft.com/en-us/blog/7-reasons-to-join-us-at-azure-open-source-day/",
@@ -5690,6 +5690,16 @@
       "feedUrl": "https://azurecomcdn.azureedge.net/en-us/updates/feed/?updateType=features",
       "siteUrl": "https://azure.microsoft.com/en-us/updates/",
       "articles": [
+        {
+          "id": "ga-create-disks-from-cmkencrypted-snapshots-across-subscriptions-and-in-the-same-tenant",
+          "author": null,
+          "description": "To ease manageability, we are making disks encrypted with customer-managed keys (CMK) more flexible by allowing creation of disks and snapshots from CMK-encrypted source across subscriptions.",
+          "link": "https://azure.microsoft.com/en-us/updates/ga-create-disks-from-cmkencrypted-snapshots-across-subscriptions-and-in-the-same-tenant/",
+          "publishedOn": "2023-02-22T18:00:31.000Z",
+          "wordCount": 5477,
+          "title": "GA: Create disks from CMK-encrypted snapshots across subscriptions and in the same tenant",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-a1e122d5b491987076d90ede66645c72dc71bc0a915f9984e3728be9f8e04511/images/shared/social/azure-icon-250x250.png"
+        },
         {
           "id": "public-preview-azure-netapp-files-support-for-2tib-capacity-pools",
           "author": null,
