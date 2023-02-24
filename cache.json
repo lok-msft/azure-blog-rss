@@ -6,6 +6,26 @@
       "siteUrl": "https://spring.io",
       "articles": [
         {
+          "id": "https://spring.io/blog/2023/02/23/a-bootiful-podcast-its-glenn-renfro-listen-to-this-episode-if-you-want-to",
+          "author": "Josh Long",
+          "description": "Level up your Java code and explore what Spring can do for you.",
+          "link": "https://spring.io/blog/2023/02/23/a-bootiful-podcast-its-glenn-renfro-listen-to-this-episode-if-you-want-to",
+          "publishedOn": "2023-02-23T00:00:00.000Z",
+          "wordCount": 6873,
+          "title": "A Bootiful Podcast: It's Glenn Renfro! Listen to this episode if you want to feel better",
+          "imageUrl": "https://spring.io/img/og-spring.png"
+        },
+        {
+          "id": "https://spring.io/blog/2023/02/23/from-spring-native-to-spring-boot-3",
+          "author": "Sébastien Deleuze",
+          "description": "Level up your Java code and explore what Spring can do for you.",
+          "link": "https://spring.io/blog/2023/02/23/from-spring-native-to-spring-boot-3",
+          "publishedOn": "2023-02-23T00:00:00.000Z",
+          "wordCount": 7357,
+          "title": "From Spring Native to Spring Boot 3",
+          "imageUrl": "https://spring.io/img/og-spring.png"
+        },
+        {
           "id": "https://spring.io/blog/2023/02/21/this-week-in-spring-february-21-20223",
           "author": "Josh Long",
           "description": "Level up your Java code and explore what Spring can do for you.",
@@ -2070,6 +2090,16 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/remove-nginx-server-header-linux-app-service-php-8-x-blessed/ba-p/3750616",
+          "author": "gaukazure",
+          "description": "We can follow the below steps to remove the Server header from HTTP response for PHP 8.x apps on Linux App Service (which uses Nginx server) - \n \nWe will be following the steps described here to change the configurations of Nginx: https://azureossd.github.io/2021/09/02/php-8-rewrite-rule/index.html\n \n#create a copy of the default configurations\ncp /etc/nginx/sites-available/default /home/site/default#add the following properties in the copied file /home/site/default\n \nserver_tokens off;\n\nmore_clear_headers Server;\n\n \n\n \n#create a startup script /home/site/start.sh (feel free to rename it)\n \n#!/bin/bash\n \ncp /home/site/default /etc/nginx/sites-available/default\nservice nginx reload\n\n \n\n \n\n#Add a startup command on the WebApp and wait for it to restart.\n \n#We can using the cURL command:\ncurl -I https://webappname.azurewebsites.net\n \n[-i, --include Include protocol response headers in the output]",
+          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/remove-nginx-server-header-linux-app-service-php-8-x-blessed/ba-p/3750616",
+          "publishedOn": "2023-02-23T08:55:56.000Z",
+          "wordCount": 9344,
+          "title": "Remove Nginx Server Header - Linux App Service (PHP 8.x blessed image)",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/444678i3E4F23DAD81A40D0?v=v2"
+        },
+        {
           "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/announcing-the-reliable-web-app-pattern-for-net/ba-p/3745270",
           "author": "Mayunk Jain",
           "description": "Consider this scenario: Relecloud is a mid-sized concert ticket selling company that wants to take their on-premises, line of business (LOB) call center web application to the cloud. Traffic to their on-premises application has increased beyond expectations and they quickly realized that the on-premises infrastructure doesn't provide a cost-efficient means to scale. It is clear to Relecloud that a migration to the cloud offers the most return on investment. However, Relecloud has a small IT team because technology is not their core business. The charter for this small IT team is to meet the increased business demand as quickly as possible with minimal investments in the existing monolithic app. Sounds familiar?\n \nWhile Relecloud is a fictional company, this is an all-too-common scenario we…",
@@ -2998,26 +3028,6 @@
           "wordCount": 10260,
           "title": "Delete Passwords: Passwordless Connections for Java Apps to Azure Services",
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/408670iE50E7C609277D0E4/image-size/original?v=v2&px=-1"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/announcing-general-availability-for-azure-functions-v4-net/ba-p/3637605",
-          "author": "MelonyQ",
-          "description": "In light of our recent .NET on Azure Functions Roadmap update, we’re excited to share today that Azure functions v4 now generally supports .NET framework 4.8 in an isolated process.  \n \nYou can now build production Serverless Apps with Azure Functions v4 in the .NET Isolated Worker model with .NET Framework 4.8. The isolation model decouples your function process from the Azure Functions runtime, giving the flexibility to target different versions of .NET, and more efficiently manages dependencies and service registrations.  \n \nThe journey from v1 .NET framework to v4 .NET Framework \n \n\nThe .NET framework in an isolated process is now generally available in Azure functions v4, this means your serverless applications with .NET Framework dependencies can take advantage of the latest versions…",
-          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/announcing-general-availability-for-azure-functions-v4-net/ba-p/3637605",
-          "publishedOn": "2022-09-26T17:30:00.000Z",
-          "wordCount": 9605,
-          "title": "Announcing general availability for Azure Functions v4 .NET framework support in an isolated process",
-          "imageUrl": "https://cdn.techcommunity.microsoft.com/assets/MTC_Open_graph_image1.jpg"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/monitoring-and-troubleshooting-apps-in-azure-functions/ba-p/3638230",
-          "author": "madhurabharadwaj",
-          "description": "This post is part of the Zero To Hero series for #ServerlessSeptember, a month-long initiative to learn, use, and celebrate, all things Serverless On Azure. Check out the main site at https://aka.ms/serverless-september to read other posts, participate in a Cloud Skills Challenge, explore a Serverless Hack and participate in live Q&A with product teams on #AskTheExpert\n \nWhen you’re running a function app, you want to be prepared for any issues that may arise, from 4xx errors to trigger failures. Azure Functions offers built-in integration with Azure Application Insights to monitor function executions. You can also leverage intelligent and interactive diagnostics in Azure Functions to identify and troubleshoot issues without extra configuration.\nMonitoring your Azure Functions:\nAzure Funct…",
-          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/monitoring-and-troubleshooting-apps-in-azure-functions/ba-p/3638230",
-          "publishedOn": "2022-09-26T16:35:56.000Z",
-          "wordCount": 10131,
-          "title": "Monitoring and troubleshooting apps in Azure Functions",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/408506iC96BE672A6CDDB63?v=v2"
         }
       ]
     },
@@ -5517,6 +5527,16 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/t5/azure-observability-blog/azure-monitor-logs-now-supports-availability-zones-in-canada/ba-p/3750894",
+          "author": "Noa Kuperberg",
+          "description": "Azure Availability Zones (AZ) provide protection from datacenter failures by using in-region redundancy between datacenters in separate zones, each with its own independent infrastructure. If a zone is impacted by an outage, another zone will be used instead, automatically. Availability Zone support in Canada Central, France Central and Japan East makes the service processes in these regions more resilient to datacenter outages, without requiring user intervention or extra charges. To ensure you also keep your data safe and available in the face of a datacenter outage, link your workspace to a dedicated cluster that uses Availability Zones (now enabled by default in regions that support AZ).\n \nFor more information see Availability zones in Azure Monitor.",
+          "link": "https://techcommunity.microsoft.com/t5/azure-observability-blog/azure-monitor-logs-now-supports-availability-zones-in-canada/ba-p/3750894",
+          "publishedOn": "2023-02-23T14:40:39.000Z",
+          "wordCount": 9364,
+          "title": "Azure Monitor Logs now supports Availability Zones in Canada Central, France Central and Japan East",
+          "imageUrl": "https://cdn.techcommunity.microsoft.com/assets/MTC_Open_graph_image1.jpg"
+        },
+        {
           "id": "https://techcommunity.microsoft.com/t5/azure-observability-blog/making-it-easier-to-manage-your-workspace-with-a-clearer-log/ba-p/3728171",
           "author": "Meir Mendelovich",
           "description": "Customers have been using Azure Monitor Log Analytics workspaces to store and analyze logs for almost a decade. Over these years, the service has evolved, with new options being added and old technologies phased out. We’ve tried to keep the workspace administration UI stable without making too many changes, but it’s time for a refresh.\n \nToday we start rolling out a revamped workspace menu that will help you get to the things you need quicker. Key items are now right at the top, where you expect them to be:\n\n \nThe new menu is gradually being exposed, so you might not see it immediately.\n \nAs part of this change, we're also clearly indicating menu options that are in the process of replacement or deprecation. Here are the relevant options and their replacement:\n\n\n\n\nMenu option\n\n\nReplacement…",
@@ -5690,6 +5710,46 @@
       "feedUrl": "https://azurecomcdn.azureedge.net/en-us/updates/feed/?updateType=features",
       "siteUrl": "https://azure.microsoft.com/en-us/updates/",
       "articles": [
+        {
+          "id": "public-preview-azure-netapp-files-now-support-large-volumes-up-to-500tib-in-size",
+          "author": null,
+          "description": "You can now create Azure NetApp Files large volumes between 100TiB to 500TiB in size.",
+          "link": "https://azure.microsoft.com/en-us/updates/public-preview-azure-netapp-files-now-support-large-volumes-up-to-500tib-in-size/",
+          "publishedOn": "2023-02-23T18:00:35.000Z",
+          "wordCount": 5583,
+          "title": "Public Preview: Azure NetApp Files now support large volumes up to 500TiB in size",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-6290d9288a34f2ada8f049a988db87cec3b92a596973927ad9dac0543a740636/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "public-preview-incremental-snapshots-for-premium-ssd-v2-disk-storage",
+          "author": null,
+          "description": "To ensure business continuity, incremental snapshots for Premium SSD V2 Disk Storage are now available in public preview in the US East and West Europe Azure region",
+          "link": "https://azure.microsoft.com/en-us/updates/public-preview-incremental-snapshots-for-premium-ssd-v2-disk-storage/",
+          "publishedOn": "2023-02-23T18:00:31.000Z",
+          "wordCount": 5478,
+          "title": "Public preview: Incremental snapshots for Premium SSD v2 Disk Storage",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-6290d9288a34f2ada8f049a988db87cec3b92a596973927ad9dac0543a740636/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "generally-available-azure-red-hat-openshift-in-qatar-central",
+          "author": null,
+          "description": "Azure Red Hat OpenShift is now available in Qatar Central region.",
+          "link": "https://azure.microsoft.com/en-us/updates/generally-available-azure-red-hat-openshift-in-qatar-central/",
+          "publishedOn": "2023-02-23T18:00:29.000Z",
+          "wordCount": 5400,
+          "title": "Generally Available: Azure Red Hat OpenShift in Qatar Central",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-6290d9288a34f2ada8f049a988db87cec3b92a596973927ad9dac0543a740636/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "general-availability-stream-analytics-nocode-editor-updates-in-feb-2023",
+          "author": null,
+          "description": "New features are now available in Stream Analytics no-code editor GA including Power BI output support, and data preview optimization. Power BI output feature enables you to build real-time dashboard in minutes and low-cost.",
+          "link": "https://azure.microsoft.com/en-us/updates/general-availability-stream-analytics-nocode-editor-updates-in-feb-2023/",
+          "publishedOn": "2023-02-23T18:00:05.000Z",
+          "wordCount": 5492,
+          "title": "General availability: Stream Analytics no-code editor updates in Feb 2023",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-6290d9288a34f2ada8f049a988db87cec3b92a596973927ad9dac0543a740636/images/shared/social/azure-icon-250x250.png"
+        },
         {
           "id": "ga-create-disks-from-cmkencrypted-snapshots-across-subscriptions-and-in-the-same-tenant",
           "author": null,
@@ -8539,16 +8599,6 @@
           "wordCount": 5245,
           "title": "General availability: Azure Policy built-in definitions for Azure NetApp Files",
           "imageUrl": "https://azurecomcdn.azureedge.net/cvt-52c494977aadfc830486f221326086e5b577f68114a1571049f851e95453de89/images/shared/social/azure-icon-250x250.png"
-        },
-        {
-          "id": "general-availability-azure-netapp-files-new-regions-and-crossregion-replication",
-          "author": null,
-          "description": "Azure NetApp Files is now available in additional regions and supports new cross-region replication pairs.",
-          "link": "https://azure.microsoft.com/en-us/updates/general-availability-azure-netapp-files-new-regions-and-crossregion-replication/",
-          "publishedOn": "2022-09-26T17:00:03.000Z",
-          "wordCount": 5208,
-          "title": "General availability: Azure NetApp Files new regions and cross-region replication",
-          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-52c494977aadfc830486f221326086e5b577f68114a1571049f851e95453de89/images/shared/social/azure-icon-250x250.png"
         }
       ]
     },
@@ -8557,6 +8607,26 @@
       "feedUrl": "https://devblogs.microsoft.com/microsoft365dev/feed/",
       "siteUrl": "https://devblogs.microsoft.com/microsoft365dev/",
       "articles": [
+        {
+          "id": "https://devblogs.microsoft.com/microsoft365dev/?p=12986",
+          "author": "Vesa Juvonen",
+          "description": "We are excited to announce the first preview of the upcoming SharePoint Framework 1.17 with updates for Microsoft Teams, Microsoft Viva, SharePoint and more.\nThe post Public preview of SharePoint Framework 1.17 – First release of upcoming features appeared first on Microsoft 365 Developer Blog.",
+          "link": "https://devblogs.microsoft.com/microsoft365dev/public-preview-of-sharepoint-framework-1-17-first-release-of-upcoming-features/",
+          "publishedOn": "2023-02-23T18:05:38.000Z",
+          "wordCount": 5241,
+          "title": "Public preview of SharePoint Framework 1.17 – First release of upcoming features",
+          "imageUrl": "https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2023/02/spfx-117-preview-announcement-promo.png"
+        },
+        {
+          "id": "https://devblogs.microsoft.com/microsoft365dev/?p=12974",
+          "author": "Ayca Bas",
+          "description": "Hack Together is a hackathon for beginners to get started building apps with Microsoft Graph and .NET. In this hackathon, you will kick-start learning how to build apps with Microsoft Graph and develop apps based on the given Top Microsoft Graph Scenarios,\nThe post Get ready for the first week of Hack Together: Microsoft Graph and .NET 🦒 appeared first on Microsoft 365 Developer Blog.",
+          "link": "https://devblogs.microsoft.com/microsoft365dev/get-ready-for-the-first-week-of-hack-together-microsoft-graph-and-net/",
+          "publishedOn": "2023-02-23T11:30:42.000Z",
+          "wordCount": 4492,
+          "title": "Get ready for the first week of Hack Together: Microsoft Graph and .NET 🦒",
+          "imageUrl": "https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2023/02/hack-together-kickoff.png"
+        },
         {
           "id": "https://devblogs.microsoft.com/microsoft365dev/?p=12935",
           "author": "Waldek Mastykarz",
