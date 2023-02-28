@@ -2,10 +2,74 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2023-02-27T01:19:27.408Z</updated>
+    <updated>2023-02-28T01:19:01.978Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Serverless URL Shortener]]></title>
+        <id>https://techcommunity.microsoft.com/t5/azure-developer-community-blog/serverless-url-shortener/ba-p/3754120</id>
+        <link href="https://techcommunity.microsoft.com/t5/azure-developer-community-blog/serverless-url-shortener/ba-p/3754120"/>
+        <updated>2023-02-27T20:15:43.000Z</updated>
+        <summary type="html"><![CDATA[Building a URL shortener is much easier now using the Serverless technologies in Azure. In this post, we will discuss developing this solution.
+ 
+Here is the overall architecture of the solution.
+
+ 
+These are the priorities I set for this solution:
+
+Use Serverless component, which inherently makes it scalable & resilient.
+Make sure it is secure.
+Optimize it for cost.
+Use Infrastructure as code.
+
+To create a short URL, we need to generate a unique hash. Azure Cosmos DB for NoSQL is the most suitable datastore for storing the hash, original URL, and additional required data. We will use Azure Functions consumption plan to generate the short URLs triggered by the events to generate the URL. Azure API Management is the logical choice for APIs, for this use case consumption tier will be suitabl…]]></summary>
+        <author>
+            <name>ppraka5h</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Serverless URL Shortener]]></title>
+        <id>https://techcommunity.microsoft.com/t5/azure-developer-community-blog/serverless-url-shortener/ba-p/3754120</id>
+        <link href="https://techcommunity.microsoft.com/t5/azure-developer-community-blog/serverless-url-shortener/ba-p/3754120"/>
+        <updated>2023-02-27T20:15:43.000Z</updated>
+        <summary type="html"><![CDATA[Building a URL shortener is much easier now using the Serverless technologies in Azure. In this post, we will discuss developing this solution.
+ 
+Here is the overall architecture of the solution.
+
+ 
+These are the priorities I set for this solution:
+
+Use Serverless component, which inherently makes it scalable & resilient.
+Make sure it is secure.
+Optimize it for cost.
+Use Infrastructure as code.
+
+To create a short URL, we need to generate a unique hash. Azure Cosmos DB for NoSQL is the most suitable datastore for storing the hash, original URL, and additional required data. We will use Azure Functions consumption plan to generate the short URLs triggered by the events to generate the URL. Azure API Management is the logical choice for APIs, for this use case consumption tier will be suitabl…]]></summary>
+        <author>
+            <name>ppraka5h</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[General availability: Scale improvements and metrics enhancements on Azure’s regional WAF]]></title>
+        <id>general-availability-scale-improvements-and-metrics-enhancements-on-azure-s-regional-waf</id>
+        <link href="https://azure.microsoft.com/en-us/updates/general-availability-scale-improvements-and-metrics-enhancements-on-azure-s-regional-waf/"/>
+        <updated>2023-02-27T18:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Azure’s regional Web Application Firewall (WAF) running on Application Gateway now supports improved scale limits, including HTTP listener count, as well as additional metrics dimensions.]]></summary>
+        <author>
+            <name>Azure service updates</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Web applications and Project Loom]]></title>
+        <id>https://spring.io/blog/2023/02/27/web-applications-and-project-loom</id>
+        <link href="https://spring.io/blog/2023/02/27/web-applications-and-project-loom"/>
+        <updated>2023-02-27T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Level up your Java code and explore what Spring can do for you.]]></summary>
+        <author>
+            <name>Mark Thomas</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Generating Test Data with Azure OpenAI GPT-3 in Spark:]]></title>
         <id>https://techcommunity.microsoft.com/t5/educator-developer-blog/generating-test-data-with-azure-openai-gpt-3-in-spark/ba-p/3751840</id>
@@ -13319,46 +13383,6 @@ Topic:: Cloud Native: Serverless
 Watch on Demand This session is part of the 'Solve real-world problems with Microsoft Azure serverless and IaC' seriesSeries DescriptionThis series will teach you how to use Cloud Development Kit for Terraform (CDK-TF) and Microsoft Azure serverless services. First, you will learn how to build everything as code, and we will teach you how to solve several real-world problems with just Azure Functions and short-lived Azure container instance. All projects covered in the series are opensource.What is the session about?Make learning FUN! This session will explain how the game works and give a recap of Microsoft Azure Automatic Grading Engine 2022 update. We will introduce Azure Static Web Apps and Azure API…]]></summary>
         <author>
             <name>Lee Stott</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Azure Batch Low Priority VMs will be retired on 30 September 2025]]></title>
-        <id>azure-batch-low-priority-vms-will-be-retired-on-30-september-2025</id>
-        <link href="https://azure.microsoft.com/en-us/updates/azure-batch-low-priority-vms-will-be-retired-on-30-september-2025/"/>
-        <updated>2022-09-30T23:00:59.000Z</updated>
-        <summary type="html"><![CDATA[Retirement Notice: Transition to Azure Batch Spot VMs before 30 September 2025.]]></summary>
-        <author>
-            <name>Azure service updates</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Support for Azure API Management self-hosted gateway version 0 and version 1 ends 1 October 2023]]></title>
-        <id>support-for-azure-api-management-selfhosted-gateway-version-0-and-version-1-ends-1-october-2023</id>
-        <link href="https://azure.microsoft.com/en-us/updates/support-for-azure-api-management-selfhosted-gateway-version-0-and-version-1-ends-1-october-2023/"/>
-        <updated>2022-09-30T23:00:54.000Z</updated>
-        <summary type="html"><![CDATA[After 1 October 2023, version 0 and version 1 self-hosted gateway will not be supported.]]></summary>
-        <author>
-            <name>Azure service updates</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Azure Batch TLS 1.0/1.1 will be retired on 31 March 2023]]></title>
-        <id>azure-batch-tls-1011-will-be-retired-on-31-march-2023</id>
-        <link href="https://azure.microsoft.com/en-us/updates/azure-batch-tls-1011-will-be-retired-on-31-march-2023/"/>
-        <updated>2022-09-30T23:00:53.000Z</updated>
-        <summary type="html"><![CDATA[Retirement notice: Transition to Azure Batch TLS 1.2 by 31 March 2023.]]></summary>
-        <author>
-            <name>Azure service updates</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Join Us for Big News at Ignite 2022]]></title>
-        <id>https://devblogs.microsoft.com/cosmosdb/?p=5004</id>
-        <link href="https://devblogs.microsoft.com/cosmosdb/azurecosmosdb-at-msignite-2022/"/>
-        <updated>2022-09-30T14:30:06.000Z</updated>
-        <summary type="html"><![CDATA[The post Join Us for Big News at Ignite 2022 appeared first on Azure Cosmos DB Blog.]]></summary>
-        <author>
-            <name>Michal Toiba</name>
         </author>
     </entry>
 </feed>
