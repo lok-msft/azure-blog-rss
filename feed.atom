@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2023-03-03T03:15:42.982Z</updated>
+    <updated>2023-03-04T01:18:20.471Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
@@ -25,6 +25,17 @@ The post Python in Visual Studio Code – March 2023 Release appeared first on P
         <summary type="html"><![CDATA[General availability enhancements and updates released for Azure SQL in early March 2023]]></summary>
         <author>
             <name>Azure service updates</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Announcing the availability of Feathr 1.0]]></title>
+        <id>https://cloudblogs.microsoft.com/opensource/2023/03/02/announcing-the-availability-of-feathr-1-0/</id>
+        <link href="https://cloudblogs.microsoft.com/opensource/2023/03/02/announcing-the-availability-of-feathr-1-0/"/>
+        <updated>2023-03-02T17:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Today, we are excited to announce the much-anticipated availability of the OSS Feathr 1.0.
+The post Announcing the availability of Feathr 1.0 appeared first on Microsoft Open Source Blog.]]></summary>
+        <author>
+            <name>Mufajjul Ali</name>
         </author>
     </entry>
     <entry>
@@ -148,6 +159,23 @@ The post Announcing TypeScript 5.0 RC appeared first on TypeScript.]]></summary>
 The post Save the Date for Azure Cosmos DB Conf 2023! appeared first on Azure Cosmos DB Blog.]]></summary>
         <author>
             <name>Ricky Diep</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[New Microsoft Intune Suite with Privilege Management, Advanced Analytics, Remote Help & App VPN]]></title>
+        <id>https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/new-microsoft-intune-suite-with-privilege-management-advanced/ba-p/3756619</id>
+        <link href="https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/new-microsoft-intune-suite-with-privilege-management-advanced/ba-p/3756619"/>
+        <updated>2023-03-01T18:22:16.000Z</updated>
+        <summary type="html"><![CDATA[Reduce cost and complexity of multiple solutions. Use advanced cross-platform capabilities that go beyond UEM for one unified endpoint management solution with the Microsoft Intune Suite. Leverage Microsoft’s intelligent services, which include integrated best-in-class solutions to protect against cyberattacks. Capabilities span endpoint privilege management, advanced analytics, secure app-level VPN for personal devices, and Remote Help for Android and Windows users. 
+ 
+
+Matt McSpirit, Azure expert, breaks down new Microsoft Intune Suite essentials to manage endpoint devices, provide secure access to resources, and support end users.
+ 
+Now deploy standard user accounts.
+
+Automate and manage elevated access for authorized apps with Endpoint Privilege Management. Get started with the Microso…]]></summary>
+        <author>
+            <name>Zachary Cavanell</name>
         </author>
     </entry>
     <entry>
@@ -474,6 +502,16 @@ Make sure to register for the sessions
 Get Started wi…]]></summary>
         <author>
             <name>Someleze_Diko</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[General Availability: Customer Initiated Storage Account Conversion]]></title>
+        <id>general-availability-customer-initiated-storage-account-conversion</id>
+        <link href="https://azure.microsoft.com/en-us/updates/general-availability-customer-initiated-storage-account-conversion/"/>
+        <updated>2023-02-28T18:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Increase your data resiliency with our self-service option to convert your storage accounts from non-zonal to zonal redundancy via Azure Portal]]></summary>
+        <author>
+            <name>Azure service updates</name>
         </author>
     </entry>
     <entry>
@@ -13749,81 +13787,6 @@ The first step is to provision a CosmosDB and APIM service instance. In my resou
 The first step is to ge…]]></summary>
         <author>
             <name>Jeffrey Chilberto</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[How to set blob storage firewall accessing from app service only]]></title>
-        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/how-to-set-blob-storage-firewall-accessing-from-app-service-only/ba-p/3638851</id>
-        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/how-to-set-blob-storage-firewall-accessing-from-app-service-only/ba-p/3638851"/>
-        <updated>2022-10-05T02:50:30.000Z</updated>
-        <summary type="html"><![CDATA[Scenario
-Goal: Blob storage can access only from the app service.So, you want to set the blob storage firewall for inbound traffic.
- 
-Blob storage firewall limitation in this scenario
-1. IP address
- IP network rules have no effect on requests originating from the same Azure region as the storage account.
- See Grant access from an internet IP range 
-2. Service tag
- There isn't an App service tag.
-
- 
-ps. When clients request blob storage through app service, blob storage receives not App service IP but Client IP.
- 
-Workaround
-1. Add IP address when app service and storage are located in a different region.
-When resources are located in a different region, the IP address firewall setting works.
-2. Firewall with Virtual Network
-When blob storage uses VNet firewall, app service must be integrated with VNet.
-If you want to read what is VNet integration, see VNet integration 
-
- 
-Before setting VNet integration, you must check limitations.
-Integrate your app with an Azure virtual network - Azure App Service | Microsoft Learn
- 
-1. Set Vnet Integration on the app service
-Add VNet to your app service.
-I use "firwall-storage-vnet" VNet as below.
- 
-
- 
-2. Blob storage firewall setting with VNet which is integrated with app service
-
-3. If you use a function app, please add WEBSITE_CONTENTOVERVNET = 1
-A value of 1 enables your function app to scale when you have your storage account restricted to a virtual network. 
-You can see the detail about this setting website_contentovervnet]]></summary>
-        <author>
-            <name>Youna_Hyun</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Contribute to Open Source with the Pythonistas at Microsoft – Hacktoberfest 2022]]></title>
-        <id>https://devblogs.microsoft.com/python/?p=9127</id>
-        <link href="https://devblogs.microsoft.com/python/python-hacktoberfest-2022/"/>
-        <updated>2022-10-04T20:17:39.000Z</updated>
-        <summary type="html"><![CDATA[Pythonistas at Microsoft are participating in Hacktoberfest 2022. We've gotten together to share with you tips and tricks for contributing, how we got into Open Source and the projects we have our eye on. Join us for our Twitch Stream October 10th, 2022 2PM PT on the Microsoft Developer Channel.
-The post Contribute to Open Source with the Pythonistas at Microsoft – Hacktoberfest 2022 appeared first on Python.]]></summary>
-        <author>
-            <name>Dawn Wages</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Windows Autopilot | How It Works & How to Set It Up]]></title>
-        <id>https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/windows-autopilot-how-it-works-amp-how-to-set-it-up/ba-p/3643231</id>
-        <link href="https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/windows-autopilot-how-it-works-amp-how-to-set-it-up/ba-p/3643231"/>
-        <updated>2022-10-03T16:17:05.000Z</updated>
-        <summary type="html"><![CDATA[These are the best practices and tips to set yourself up for success with Windows Autopilot. Windows Autopilot is a feature within Intune that allows you to send devices directly from hardware providers to end users. 
- 
-
- 
-New device provisioning is foundational to cloud attach and cloud-based update management. During initial Windows setup, Autopilot enables users to enroll their device through Intune device management, so PCs get to a managed and productive state without reimaging. 
-Principal GPM for Microsoft Windows, Jason Githens, compares the benefits and tradeoffs of Azure AD Join versus Windows Autopilot and shows how to enable Windows Autopilot for easy device enrollment. 
- 
- 
-No pre-prep. Direct delivery to end users.
-
-Get automatic policy and app implementation. Compare the bene…]]></summary>
-        <author>
-            <name>Zachary Cavanell</name>
         </author>
     </entry>
 </feed>

@@ -3148,16 +3148,6 @@
           "wordCount": 10151,
           "title": "Extending Next.js support in Azure Static Web Apps",
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/405445iB1C179FD1F1F81C3?v=v2"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/how-to-set-blob-storage-firewall-accessing-from-app-service-only/ba-p/3638851",
-          "author": "Youna_Hyun",
-          "description": "Scenario\nGoal: Blob storage can access only from the app service.So, you want to set the blob storage firewall for inbound traffic.\n \nBlob storage firewall limitation in this scenario\n1. IP address\n IP network rules have no effect on requests originating from the same Azure region as the storage account.\n See Grant access from an internet IP range \n2. Service tag\n There isn't an App service tag.\n\n \nps. When clients request blob storage through app service, blob storage receives not App service IP but Client IP.\n \nWorkaround\n1. Add IP address when app service and storage are located in a different region.\nWhen resources are located in a different region, the IP address firewall setting works.\n2. Firewall with Virtual Network\nWhen blob storage uses VNet firewall, app service must be integrated with VNet.\nIf you want to read what is VNet integration, see VNet integration \n\n \nBefore setting VNet integration, you must check limitations.\nIntegrate your app with an Azure virtual network - Azure App Service | Microsoft Learn\n \n1. Set Vnet Integration on the app service\nAdd VNet to your app service.\nI use \"firwall-storage-vnet\" VNet as below.\n \n\n \n2. Blob storage firewall setting with VNet which is integrated with app service\n\n3. If you use a function app, please add WEBSITE_CONTENTOVERVNET = 1\nA value of 1 enables your function app to scale when you have your storage account restricted to a virtual network. \nYou can see the detail about this setting website_contentovervnet",
-          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/how-to-set-blob-storage-firewall-accessing-from-app-service-only/ba-p/3638851",
-          "publishedOn": "2022-10-05T02:50:30.000Z",
-          "wordCount": 9522,
-          "title": "How to set blob storage firewall accessing from app service only",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/408702iF4BEA9C6DEC6A741?v=v2"
         }
       ]
     },
@@ -4062,6 +4052,16 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/new-microsoft-intune-suite-with-privilege-management-advanced/ba-p/3756619",
+          "author": "Zachary Cavanell",
+          "description": "Reduce cost and complexity of multiple solutions. Use advanced cross-platform capabilities that go beyond UEM for one unified endpoint management solution with the Microsoft Intune Suite. Leverage Microsoft’s intelligent services, which include integrated best-in-class solutions to protect against cyberattacks. Capabilities span endpoint privilege management, advanced analytics, secure app-level VPN for personal devices, and Remote Help for Android and Windows users. \n \n\nMatt McSpirit, Azure expert, breaks down new Microsoft Intune Suite essentials to manage endpoint devices, provide secure access to resources, and support end users.\n \nNow deploy standard user accounts.\n\nAutomate and manage elevated access for authorized apps with Endpoint Privilege Management. Get started with the Microso…",
+          "link": "https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/new-microsoft-intune-suite-with-privilege-management-advanced/ba-p/3756619",
+          "publishedOn": "2023-03-01T18:22:16.000Z",
+          "wordCount": 11029,
+          "title": "New Microsoft Intune Suite with Privilege Management, Advanced Analytics, Remote Help & App VPN",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/446837i80EEDEA02E23E3C9?v=v2"
+        },
+        {
           "id": "https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/simplify-windows-server-management-in-azure-with-automanage-amp/ba-p/3744051",
           "author": "Zachary Cavanell",
           "description": "Simplified management of Windows Server with Automanage and Hotpatch capabilities. Automanage in Azure is a unified solution to automate operations, apply consistent best practices, and enforce policies on the servers you manage via Azure and Azure Arc. Use Hotpatch capabilities for Windows Server Azure Edition VMs to speed up deployment of updates and minimize reboots, so you can apply security updates faster. \n \n\nLead engineer for the Azure control plane, Dean Wells, joins Jeremy Chapman to share updates to Windows Server.\n \nOnboard and configure VMs with default best practices. \n\nEnable Automanage for Windows or Linux Servers. Updates to Windows Server management.\n \nStop drifting servers. \n\nApply proper controls so servers don’t drift from desired states. Save time and effort with Autom…",
@@ -4310,16 +4310,6 @@
           "wordCount": 12182,
           "title": "Enhance, Connect, and Manage Content at Scale | Microsoft Syntex Content AI Services",
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/412130iBE280FD365F1D830?v=v2"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/windows-autopilot-how-it-works-amp-how-to-set-it-up/ba-p/3643231",
-          "author": "Zachary Cavanell",
-          "description": "These are the best practices and tips to set yourself up for success with Windows Autopilot. Windows Autopilot is a feature within Intune that allows you to send devices directly from hardware providers to end users. \n \n\n \nNew device provisioning is foundational to cloud attach and cloud-based update management. During initial Windows setup, Autopilot enables users to enroll their device through Intune device management, so PCs get to a managed and productive state without reimaging. \nPrincipal GPM for Microsoft Windows, Jason Githens, compares the benefits and tradeoffs of Azure AD Join versus Windows Autopilot and shows how to enable Windows Autopilot for easy device enrollment. \n \n \nNo pre-prep. Direct delivery to end users.\n\nGet automatic policy and app implementation. Compare the bene…",
-          "link": "https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/windows-autopilot-how-it-works-amp-how-to-set-it-up/ba-p/3643231",
-          "publishedOn": "2022-10-03T16:17:05.000Z",
-          "wordCount": 11271,
-          "title": "Windows Autopilot | How It Works & How to Set It Up",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/409722iA60E29884AA369D6?v=v2"
         }
       ]
     },
@@ -4830,16 +4820,6 @@
           "wordCount": 4854,
           "title": "Python in Visual Studio Code – October 2022 Release",
           "imageUrl": "https://devblogs.microsoft.com/python/wp-content/uploads/sites/12/2022/10/create_venv-scaled.gif"
-        },
-        {
-          "id": "https://devblogs.microsoft.com/python/?p=9127",
-          "author": "Dawn Wages",
-          "description": "Pythonistas at Microsoft are participating in Hacktoberfest 2022. We've gotten together to share with you tips and tricks for contributing, how we got into Open Source and the projects we have our eye on. Join us for our Twitch Stream October 10th, 2022 2PM PT on the Microsoft Developer Channel.\nThe post Contribute to Open Source with the Pythonistas at Microsoft – Hacktoberfest 2022 appeared first on Python.",
-          "link": "https://devblogs.microsoft.com/python/python-hacktoberfest-2022/",
-          "publishedOn": "2022-10-04T20:17:39.000Z",
-          "wordCount": 5158,
-          "title": "Contribute to Open Source with the Pythonistas at Microsoft – Hacktoberfest 2022",
-          "imageUrl": "https://devblogs.microsoft.com/python/wp-content/uploads/sites/12/2018/08/pythonfeature.png"
         }
       ]
     },
@@ -5865,6 +5845,16 @@
       "siteUrl": "https://cloudblogs.microsoft.com/opensource/",
       "articles": [
         {
+          "id": "https://cloudblogs.microsoft.com/opensource/2023/03/02/announcing-the-availability-of-feathr-1-0/",
+          "author": "Mufajjul Ali",
+          "description": "Today, we are excited to announce the much-anticipated availability of the OSS Feathr 1.0.\nThe post Announcing the availability of Feathr 1.0 appeared first on Microsoft Open Source Blog.",
+          "link": "https://cloudblogs.microsoft.com/opensource/2023/03/02/announcing-the-availability-of-feathr-1-0/",
+          "publishedOn": "2023-03-02T17:00:00.000Z",
+          "wordCount": 2713,
+          "title": "Announcing the availability of Feathr 1.0",
+          "imageUrl": "https://cloudblogs.microsoft.com/opensource/wp-content/uploads/sites/37/2023/02/Picture1-1-1024x464.webp"
+        },
+        {
           "id": "https://cloudblogs.microsoft.com/opensource/2023/02/21/introducing-bash-for-beginners/",
           "author": "Gwyneth Peña-Siguenza",
           "description": "On Azure, more than 50 percent of virtual machine (VM) cores run on Linux. There is no better time to learn Bash.\nThe post Introducing Bash for Beginners appeared first on Microsoft Open Source Blog.",
@@ -6119,6 +6109,16 @@
           "publishedOn": "2023-03-01T17:00:36.000Z",
           "wordCount": 5578,
           "title": "Public preview: AKS NodeOSUpgrade channel",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-023cdcecf58040147f587453add4b610290864bde38704778969c5d148324751/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "general-availability-customer-initiated-storage-account-conversion",
+          "author": null,
+          "description": "Increase your data resiliency with our self-service option to convert your storage accounts from non-zonal to zonal redundancy via Azure Portal",
+          "link": "https://azure.microsoft.com/en-us/updates/general-availability-customer-initiated-storage-account-conversion/",
+          "publishedOn": "2023-02-28T18:00:00.000Z",
+          "wordCount": 5459,
+          "title": "General Availability: Customer Initiated Storage Account Conversion",
           "imageUrl": "https://azurecomcdn.azureedge.net/cvt-023cdcecf58040147f587453add4b610290864bde38704778969c5d148324751/images/shared/social/azure-icon-250x250.png"
         },
         {
