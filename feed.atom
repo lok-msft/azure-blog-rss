@@ -2,10 +2,203 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2023-03-07T01:26:21.682Z</updated>
+    <updated>2023-03-08T01:23:59.868Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Storage Explorer 1.28 New Features]]></title>
+        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/storage-explorer-1-28-new-features/ba-p/3761787</id>
+        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/storage-explorer-1-28-new-features/ba-p/3761787"/>
+        <updated>2023-03-07T23:19:04.000Z</updated>
+        <summary type="html"><![CDATA[We are excited to announce the release of Storage Explorer 1.28.0 that will help enhance our developer’s experience while accessing a variety of storage services!
+ 
+Storage Explorer 1.28.0:
+ 
+Storage Explorer strives to make it easy for developers to quickly access and manage many storage services under different accounts. After analyzing customer research and telemetry, version 1.28.0 will include new updates/features that will benefit our developers’ journey.
+ 
+To highlight a few features, the Storage Explorer 1.28.0 now allows for Text preview enhancements and downloading multiple blobs at once when filtering based on a tag:
+ 
+
+ 
+ 
+
+Text Preview Enhancements
+
+Additional content-types have been added to the built in list of content-types which can be text previewed. These include: - text/xml - application/xml - application/json
+You can now preview files of any size, but only the first 10MB of the file. You can download the file and open it in your default text editor to view the entire file. A status bar will appear at the top of the preview tab that informs you of files greater than 10MB
+
+
+Multi Blob Download When Filtering by Tags
+
+When filtering by tags, you can now download multiple blobs at once by clicking the Download in either the context menu or toolbar of the blob
+
+
+
+ 
+Other features in this update include:
+
+SAS Expiration Warnings
+Trust File Extension During Open
+Copy Between Blob Containers and File Shares
+Filter by Prefix in ADLS Gen2 Blob Containers
+Sub-Directory Prefix Search in File Shares
+Copy Tables with Azure AD Credentials
+Preserving of Blob Tags During Clone
+Lease Operations on ADLS Gen2 Folders
+ADLS Gen2 Soft Delete Feature Flag Removed]]></summary>
+        <author>
+            <name>meerahari</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Generally available: App Insights Extension for Azure Virtual Machines and VM Scale Sets]]></title>
+        <id>generally-available-app-insights-extension-for-azure-virtual-machines-and-vm-scale-sets</id>
+        <link href="https://azure.microsoft.com/en-us/updates/generally-available-app-insights-extension-for-azure-virtual-machines-and-vm-scale-sets/"/>
+        <updated>2023-03-07T23:12:47.000Z</updated>
+        <summary type="html"><![CDATA[Application insights extension enables easy to use application monitoring for IIS-hosted .NET Framework and .NET Core applications running on Azure VMs and VM scale sets.]]></summary>
+        <author>
+            <name>Azure service updates</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Azure function app doesn't work after unlinking to Azure static web app]]></title>
+        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/azure-function-app-doesn-t-work-after-unlinking-to-azure-static/ba-p/3759599</id>
+        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/azure-function-app-doesn-t-work-after-unlinking-to-azure-static/ba-p/3759599"/>
+        <updated>2023-03-07T23:05:58.000Z</updated>
+        <summary type="html"><![CDATA[As we know, we can link existing Azure function app to Azure static web app. After that, the Azure Functions app will be mapped to the /api route of your static web app.
+ 
+In the following example, function app tonytesthttp has been linked to static web app.
+ 
+
+ 
+When we try to access the function app outside static webapp, we will encounter Bad Request error. We understand that the static web app must do something to block the request. We can try to unlink the function app from static web app. However, you will find the function app still encounters the same error. How can we make our function app back to normal?
+ 
+
+ 
+If you read the official document (Bring your own functions to Azure Static Web Apps | Microsoft Learn) carefully, you will find following statement.
+ 
+If authentication and authorization policies aren't already set up on your existing Functions app, then the static web app has exclusive access to the API. To make your Functions app accessible to other applications, add another identity provider or change the security settings to allow unauthenticated access.
+ 
+It seems that the link operation will add authentication limitation to only allow static webapp to access the function app. If you navigate to the authentication setting of the function app, you will find the static webapp was added as an identity provider. Even we unlink the function app to static webapp, the identity provider will not be removed automatically. We need to remove the identity provider manually. After that, the function app will work again.]]></summary>
+        <author>
+            <name>Tony_Ju</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[New Boards Hub, Sprint 218 Update]]></title>
+        <id>https://devblogs.microsoft.com/devops/?p=66586</id>
+        <link href="https://devblogs.microsoft.com/devops/new-boards-hub-sprint-218-update/"/>
+        <updated>2023-03-07T18:45:04.000Z</updated>
+        <summary type="html"><![CDATA[Not a lot to report other than a list of issues fixed 😁. Bug fixes will continue at full speed through sprint 219 as well.
+Issue
+Save Comments permission preventing the saving of images in discussion
+The post New Boards Hub, Sprint 218 Update appeared first on Azure DevOps Blog.]]></summary>
+        <author>
+            <name>Dan Hellem</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Public Preview: Data sharing lineage and search for Azure Storage in Microsoft Purview]]></title>
+        <id>public-preview-data-sharing-lineage-and-search-for-azure-storage-in-microsoft-purview</id>
+        <link href="https://azure.microsoft.com/en-us/updates/public-preview-data-sharing-lineage-and-search-for-azure-storage-in-microsoft-purview/"/>
+        <updated>2023-03-07T18:00:01.000Z</updated>
+        <summary type="html"><![CDATA[Data Sharing Lineage is now available in Microsoft Purview for Azure Data Lake Storage (ADLS) Gen2 and Azure Blob (Blob) Storage in public preview. Data Sharing Lineage is aimed to provide detailed…]]></summary>
+        <author>
+            <name>Azure service updates</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Accelerated Admin Performance with WordPress on Azure App Service]]></title>
+        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/accelerated-admin-performance-with-wordpress-on-azure-app/ba-p/3761299</id>
+        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/accelerated-admin-performance-with-wordpress-on-azure-app/ba-p/3761299"/>
+        <updated>2023-03-07T17:55:41.000Z</updated>
+        <summary type="html"><![CDATA[We are happy to announce that we have made significant improvements in the performance of the WP Admin.  Try out the WordPress site deploying from here.  
+   
+ 
+ Although WordPress is an excellent content management system (CMS), it isn’t without its issues. Sometimes its admin panel can be laggy, preventing you from easily managing your website. We have always made sure that WordPress on Azure App Service meets the performance requirements of our customers. However, we got to learn from customer feedback that we could do better for the admin persona. So we have enhanced the offering with accelerated performance for admin pages.
+ 
+ If you have created the website before 1 March 2023, please follow the steps described in blog post here: How to improve performance of WP Admin - WordPress on Azure App Service - Microsoft Community Hub to improve your WP Admin & overall site performance.
+ 
+Support and Feedback
+ 
+In case you need any support, you can open a support request at New support request - Microsoft Azure.
+ 
+If you have any ideas about how we can make WordPress on Azure App Service better, please post your ideas at Post idea · Community (azure.com)
+ 
+or you could email us at wordpressonazure@microsoft.com to start a conversation.]]></summary>
+        <author>
+            <name>abhishekreddy</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Integrate Azure Load Testing into Azure DevOps]]></title>
+        <id>https://devblogs.microsoft.com/devops/?p=66568</id>
+        <link href="https://devblogs.microsoft.com/devops/integrate-azure-load-testing-into-azure-devops/"/>
+        <updated>2023-03-07T15:45:42.000Z</updated>
+        <summary type="html"><![CDATA[Azure Load Testing became generally available in February 2023. It shipped with a lot of new features that were requested by you, the community. You can get started quickly from within the Azure portal, or upload your own custom JMeter script.
+The post Integrate Azure Load Testing into Azure DevOps appeared first on Azure DevOps Blog.]]></summary>
+        <author>
+            <name>April Edwards</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Hack Together: Microsoft Graph and .NET week 1 recap and what’s coming]]></title>
+        <id>https://devblogs.microsoft.com/microsoft365dev/?p=13108</id>
+        <link href="https://devblogs.microsoft.com/microsoft365dev/hack-together-microsoft-graph-and-dotnet-week-1-recap/"/>
+        <updated>2023-03-07T15:21:33.000Z</updated>
+        <summary type="html"><![CDATA[Last week we launched “Hack Together: Microsoft Graph and .NET” - a virtual hackathon all about building apps with Microsoft Graph and .NET. Here’s what happened last week and what’s still to come.
+The post Hack Together: Microsoft Graph and .NET week 1 recap and what’s coming appeared first on Microsoft 365 Developer Blog.]]></summary>
+        <author>
+            <name>Waldek Mastykarz</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Microsoft Azure and VMware Virtual Event - Simplify and Scale Enterprise Spring Apps in the Cloud]]></title>
+        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/microsoft-azure-and-vmware-virtual-event-simplify-and-scale/ba-p/3756843</id>
+        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/microsoft-azure-and-vmware-virtual-event-simplify-and-scale/ba-p/3756843"/>
+        <updated>2023-03-07T13:00:00.000Z</updated>
+        <summary type="html"><![CDATA[We are thrilled to announce that Adib Saikali, VMware Principal solutions engineer, and Asir Selvasingh, Principal Architect for Java on Azure at Microsoft will team up once again to deliver an exciting virtual event on deploying enterprise applications on Azure Spring Apps. Together, we have helped numerous organizations, including Bosch, Digital Realty, FedEx, Kroger, Liantis, Morgan Stanley, National Life, Raley’s, Swiss Re and others, simplify and scale their application development and deployment processes. We're eager to share our knowledge and insights with you. Our aim is to help you accelerate your cloud migration journey and take your application delivery to the next level.  Register here: https://aka.ms/spring-talk
+ 
+
+ 
+During this 90-minute session, you'll learn:
+
+Ideal use cases for Azure Spring Apps Enterprise
+How to streamline deployment, scaling, patching, and resilience for your apps
+How to simplify cloud-native app architecture with Azure Spring Apps Enterprise, including security, request routing, configuration, discovery, and more
+How Azure Spring Apps simplifies DevSecOps for polyglot applications
+
+Get answers straight from top developers and network with your peers in the live chat and moderated Q&A session. Plus, we'll have live quizzes and giveaways throughout the session.
+ 
+But that’s not all. When you register for this event, you'll also can take advantage of our FREE App Suitability Assessment. Experts from Microsoft and VMware help you identify and prioritize cloud migration for your Java Spring apps and databases. We customize a session for you to demonstrate how easily your application will run in Azure Spring Apps Enterprise.
+ 
+RSVP today to secure your spot to take the first step towards revolutionizing your application development and deployment process with Azure Spring Apps Enterprise.]]></summary>
+        <author>
+            <name>nceres</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Building and Testing Resilience in .NET Azure Functions]]></title>
+        <id>https://devblogs.microsoft.com/cse/?p=14548</id>
+        <link href="https://devblogs.microsoft.com/cse/2023/03/07/build-test-resilience-dotnet-functions/"/>
+        <updated>2023-03-07T08:01:00.000Z</updated>
+        <summary type="html"><![CDATA[An overview of how to use the Polly and Simmy libraries for a hypothesis-driven resilience engineering and chaos testing approach to .NET Azure Functions.
+The post Building and Testing Resilience in .NET Azure Functions appeared first on CSE Developer Blog.]]></summary>
+        <author>
+            <name>Maitreyi Nair</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[This Week in Spring - March 7th, 2023]]></title>
+        <id>https://spring.io/blog/2023/03/07/this-week-in-spring-march-7th-2023</id>
+        <link href="https://spring.io/blog/2023/03/07/this-week-in-spring-march-7th-2023"/>
+        <updated>2023-03-07T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Level up your Java code and explore what Spring can do for you.]]></summary>
+        <author>
+            <name>Josh Long</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[More transactions at no additional cost for Azure Standard SSD]]></title>
         <id>more-transactions-at-no-additional-cost-for-azure-standard-ssd</id>
@@ -13701,21 +13894,6 @@ Suggestion: Check if the database name is correct.]]></summary>
 Want to learn more about event driven architectures, AOT and GraalVM, Apache Kafka, and Spring Boot? SpringOne 2022 is almost here! If you want a chance to learn from the source, then I hope you’ll join us 6-8 December 2022, right here in my hometown of San Francisco, my favorite west coast city in the USA. (Psst.: If you register now, there’s a $200 discount from the pass price with this code S1VM22_Advocate_200.)]]></summary>
         <author>
             <name>Spring Engineering</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Extending Next.js support in Azure Static Web Apps]]></title>
-        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/extending-next-js-support-in-azure-static-web-apps/ba-p/3627975</id>
-        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/extending-next-js-support-in-azure-static-web-apps/ba-p/3627975"/>
-        <updated>2022-10-08T22:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Next.js is one of the most popular JavaScript frameworks for building complex, server-driven React applications, combining the features that make React a useful UI library with server-side rendering, built-in API support and SEO optimizations.
-With today’s preview release, we’re improving support for Next.js on Azure Static Web Apps.
-What’s new
-In this preview we’re focusing on making zero-config deployments with Next.js even easier than it’s been before by including support for Server-Side Rendering and Incremental Static Regeneration (SSR and ISR respectively), API Routes, advanced image compression, and Next.js Auth. In this post, we want to highlight three features that make building Next.js apps on Azure more powerful.
-Server-Side Rendering
-When we first launched Static Web Apps, we e…]]></summary>
-        <author>
-            <name>aaronpowell</name>
         </author>
     </entry>
 </feed>
