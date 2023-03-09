@@ -804,16 +804,6 @@
           "wordCount": 814,
           "title": "This Week in Spring - October 11th, 2022",
           "imageUrl": "https://avatars.githubusercontent.com/u/54473?v=4?s=200"
-        },
-        {
-          "id": "https://spring.io/blog/2022/10/10/spring-tips-spring-boot-apache-kafka",
-          "author": null,
-          "description": "Hi, Spring fans! In this installment of Spring Tips, I look at the venerable Apache Kafka broker and its integrations at various level of abstraction in the Spring Boot ecosystem.\n\r\n\r\nWant to learn more about event driven architectures, AOT and GraalVM, Apache Kafka, and Spring Boot? SpringOne 2022 is almost here! If you want a chance to learn from the source, then I hope you’ll join us 6-8 December 2022, right here in my hometown of San Francisco, my favorite west coast city in the USA. (Psst.: If you register now, there’s a $200 discount from the pass price with this code S1VM22_Advocate_200.)",
-          "link": "https://spring.io/blog/2022/10/10/spring-tips-spring-boot-apache-kafka",
-          "publishedOn": "2022-10-10T07:00:00.000Z",
-          "wordCount": 610,
-          "title": "Spring Tips: Spring Boot & Apache Kafka",
-          "imageUrl": "https://avatars.githubusercontent.com/u/54473?v=4?s=200"
         }
       ]
     },
@@ -3198,16 +3188,6 @@
           "wordCount": 10636,
           "title": "Your ultimate guide to Azure app innovation at Microsoft Ignite 2022",
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/411008iF96A1E34DAFC56D1/image-size/original?v=v2&px=-1"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/wordpress-error-establishing-a-database-connection/ba-p/3647987",
-          "author": "Tony_Ju",
-          "description": "As PHP will only be supported on App Service on Linux after November 28, 2022. We will only discuss wordpress on Linux App service in this blog.\n \nSometimes, we may encounter the following error when accessing wordpress website.\n \n\n \nIt is very easy to understand that there is something wrong with the connection between the website and database. But how can we find more detailed information regarding this error?\n \nWe can enable WordPress debugging mode to check the detailed error message. The steps are as below.\n \n1.Login to the newui of the scm site.(https://{sitename}.scm.azurewebsites.net/newui)\n2.Click File Manager and find the wp-config.php file under site/wwwroot folder.\n \n\n  \n3.Change \"define( 'WP_DEBUG', false);\" to \"define( 'WP_DEBUG', true );\" in wp-config.php file. We can edit it directly from the newui portal.\n \nWith this change, you can try to access the wordpress site again without restarting the app service. You will see the detailed error message when accessing the website.\n\n \nYou may see below possible error messages. I added some suggestions for each kind of error for your reference.\n \nError 1: mysqli_real_connect(): (HY000/1045): Access denied for user 'gyomnlmsxk1'@'10.0.0.254' (using password: YES) in /home/site/wwwroot/wp-includes/wp-db.php on line 1753\n         Access denied for user 'gyomnlmsxk1'@'10.0.0.254' (using password: YES)\nSuggestion: Check if the credential is correct.\n \nError 2: mysqli_real_connect(): (HY000/2002): php_network_getaddresses: getaddrinfo failed: Name does not resolve in /home/site/wwwroot/wp-includes/wp-db.php on line 1753\nSuggestion: Check if the server url is correct. If the server url is correct, check if there is any network limitation between website and database.\n \nError 3: Unknown database 'tonywordpr_83b28fe8295b4846ef6d475eecee129_database'\nSuggestion: Check if the database name is correct.",
-          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/wordpress-error-establishing-a-database-connection/ba-p/3647987",
-          "publishedOn": "2022-10-10T08:28:30.000Z",
-          "wordCount": 9481,
-          "title": "WordPress: Error establishing a database connection",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/411174i0403000D4DF23A79?v=v2"
         }
       ]
     },
@@ -3537,6 +3517,26 @@
       "feedUrl": "https://techcommunity.microsoft.com/plugins/custom/microsoft/o365/custom-blog-rss?tid=2015807141232549759&board=AzurePaaSBlog&size=200",
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
+        {
+          "id": "https://techcommunity.microsoft.com/t5/azure-paas-blog/custom-dns-server-issues-while-connecting-from-databricks-to/ba-p/3762570",
+          "author": "sudeshna",
+          "description": "Scenario:\nYou have an Event hub which receives events from Databricks.  Suddenly, you observe that after receiving few messages, you encounter below error:\n \nAMQPConnectionError: Unable to open authentication session on connection b'EHProducer-xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx'.\nPlease confirm target hostname exists: b'xxxxxxx.servicebus.windows.net'\n \nYou start Wondering!  May be your Event Hub namespace doesn’t exist or someone has deleted accidentally.\nYou navigate to Azure portal and check Event Hub namespace exists and even you were continuously receiving messages in Event Hubs.\nThen what could be the reason for the above error to be encountered?\n \nRoot Cause:\nConnectivity Issue prevailed while connecting Data Bricks to Event Hub. This happens while you have a custom DNS Server in …",
+          "link": "https://techcommunity.microsoft.com/t5/azure-paas-blog/custom-dns-server-issues-while-connecting-from-databricks-to/ba-p/3762570",
+          "publishedOn": "2023-03-08T18:37:51.000Z",
+          "wordCount": 9789,
+          "title": "Custom DNS server issues while connecting from Databricks to Event Hub",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/448800i334B466FE8FEF456?v=v2"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/azure-paas-blog/azure-storage-how-to-migrate-azure-queue-data-from-one-account/ba-p/3758598",
+          "author": "rpadi450",
+          "description": "Storage queues are like service bus queue, the messages are not designed to store permanent like blobs/files, once the receiver processes the messages, they would be deleted. As queues use a publisher subscriber model, and the data is transient it may be easiest to recreate the queue. Please follow the below steps to migrate Azure Queue Data from one Storage account to another storage account:\n\nList all queues from the source storage account.\ncreate queues with the same names in the Target Storage account.\nRead every message from the source and write them to the destination.\n\nGuidelines:\n\nYour client must have network access to both the source and destination storage accounts. To learn how to configure the network settings for each storage account, see Configure Azure Storage firewalls and…",
+          "link": "https://techcommunity.microsoft.com/t5/azure-paas-blog/azure-storage-how-to-migrate-azure-queue-data-from-one-account/ba-p/3758598",
+          "publishedOn": "2023-03-08T04:59:35.000Z",
+          "wordCount": 9833,
+          "title": "Azure Storage | How to migrate Azure Queue Data from One Account to Another",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/447476i8F22C908CB85C38E?v=v2"
+        },
         {
           "id": "https://techcommunity.microsoft.com/t5/azure-paas-blog/leveraging-blob-inventory-report-for-calculating-storage/ba-p/3750539",
           "author": "Deeksha_S_A",
@@ -4091,6 +4091,26 @@
       "feedUrl": "https://techcommunity.microsoft.com/plugins/custom/microsoft/o365/custom-blog-rss?tid=6220021871588173833&board=MicrosoftMechanicsBlog&size=100",
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
+        {
+          "id": "https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/quantum-computing-on-azure-how-it-works-what-s-coming-amp-what/ba-p/3762127",
+          "author": "Zachary Cavanell",
+          "description": "Set up a high performance hybrid quantum compute environment in your own Azure Quantum workspace, and run your code on real quantum machines. See the latest advances, core concepts, and Microsoft’s distinct topological approach to get us closer to realizing the world’s first scalable quantum machine with Azure Quantum Computing. \n \n\n \nMicrosoft Distinguished Engineer and Azure Quantum VP, Krysta Svore, joins host Apoorva Nori, to share what it is and how to set it up. \n \nRun your quantum code on real hardware. \n\nBring the best of classical and quantum computing together. Check it out.\n \nCreate and build a Quantum workspace — all you need is a browser. \n\nSet up a high performance hybrid Quantum compute environment in your Azure Quantum workspace. Get started here.\n \nUse Quantum Intermediate…",
+          "link": "https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/quantum-computing-on-azure-how-it-works-what-s-coming-amp-what/ba-p/3762127",
+          "publishedOn": "2023-03-08T17:34:52.000Z",
+          "wordCount": 12069,
+          "title": "Quantum Computing on Azure | How it Works, What's Coming, & What You Can Try Today",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/448683i322D3D70DC2BD286?v=v2"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/block-storage-options-with-azure-disk-storage-and-elastic-san/ba-p/3761614",
+          "author": "Zachary Cavanell",
+          "description": "Secure the best price performance at scale for block storage options with Azure Disk Storage and Azure Elastic SAN, and benefit from Azure’s industry leading SLAs for high availability, resiliency and disaster recovery. Storage is a major component that determines the cost of running workloads.\n \n\nAzure Disk Storage provides a comprehensive spectrum of block storage options for any workload, regardless of performance needs. This includes the new fully-managed Elastic SAN service in Azure to share storage across workloads in your network and give you a first-time alternative to running your SAN on-premises.\n \nAzure expert, Matt McSpirit, shares how to choose and attach the right OS or data disk storage as you provision VMs in Azure.\n \nProvision faster disks with low capacity.\n\nPremium SSD v…",
+          "link": "https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/block-storage-options-with-azure-disk-storage-and-elastic-san/ba-p/3761614",
+          "publishedOn": "2023-03-07T16:46:49.000Z",
+          "wordCount": 11436,
+          "title": "Block storage options with Azure Disk Storage and Elastic SAN",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/448490iA61C7AC7BF319170?v=v2"
+        },
         {
           "id": "https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/new-microsoft-intune-suite-with-privilege-management-advanced/ba-p/3756619",
           "author": "Zachary Cavanell",
@@ -4793,16 +4813,6 @@
           "wordCount": 4398,
           "title": "Java on Visual Studio Code Update – October 2022",
           "imageUrl": "https://devblogs.microsoft.com/java/wp-content/uploads/sites/51/2022/10/engcvoer.png"
-        },
-        {
-          "id": "https://devblogs.microsoft.com/java/?p=229470",
-          "author": "Jialuo Gan",
-          "description": "Hi everyone, welcome back to September update of Java on Azure Tooling. In this update, we will introduce the Azure Cosmos DB Support, and Azure Virtual Machine Enhancement. In addition, we have made some improvements for users to create/update the dependencies with Azure SDK Reference Book.\nThe post Java on Azure Tooling Update –  September 2022 appeared first on Microsoft for Java Developers.",
-          "link": "https://devblogs.microsoft.com/java/java-on-azure-tooling-update-september-2022/",
-          "publishedOn": "2022-10-10T10:30:25.000Z",
-          "wordCount": 4226,
-          "title": "Java on Azure Tooling Update –  September 2022",
-          "imageUrl": "https://devblogs.microsoft.com/java/wp-content/uploads/sites/51/2022/10/October-2022.png"
         }
       ]
     },
@@ -5032,6 +5042,16 @@
       "feedUrl": "https://devblogs.microsoft.com/devops/feed/",
       "siteUrl": "https://devblogs.microsoft.com/devops/",
       "articles": [
+        {
+          "id": "https://devblogs.microsoft.com/devops/?p=66578",
+          "author": "April Edwards",
+          "description": "The growth of Bicep has increased massively over the last few years for those of you deploying into Azure. The community made it clear that being able to work in Visual Studio and not have to interrupt their workflow was critical to them.\nThe post Write Your Bicep Files in Visual Studio appeared first on Azure DevOps Blog.",
+          "link": "https://devblogs.microsoft.com/devops/write-your-bicep-files-in-visual-studio/",
+          "publishedOn": "2023-03-08T16:39:11.000Z",
+          "wordCount": 4965,
+          "title": "Write Your Bicep Files in Visual Studio",
+          "imageUrl": "https://devblogs.microsoft.com/devops/wp-content/uploads/sites/6/2023/03/bicep.png"
+        },
         {
           "id": "https://devblogs.microsoft.com/devops/?p=66586",
           "author": "Dan Hellem",
@@ -5922,8 +5942,18 @@
     {
       "title": "Microsoft Open Source Blog",
       "feedUrl": "https://cloudblogs.microsoft.com/opensource/feed/",
-      "siteUrl": "https://cloudblogs.microsoft.com/opensource/",
+      "siteUrl": "https://azure.microsoft.com/blog/discover-the-latest-innovations-at-azure-open-source-day-2023",
       "articles": [
+        {
+          "id": "https://azure.microsoft.com/blog/discover-the-latest-innovations-at-azure-open-source-day-2023",
+          "author": "David Dennis",
+          "description": "Azure Open Source Day highlighted Microsoft's commitment to open Source and focused on how Open Source Technologies can be used to build intelligent apps faster and with more flexibility.\nThe post Discover the latest innovations at Azure Open Source Day 2023 appeared first on Microsoft Open Source Blog.",
+          "link": "https://azure.microsoft.com/blog/discover-the-latest-innovations-at-azure-open-source-day-2023",
+          "publishedOn": "2023-03-07T17:00:00.000Z",
+          "wordCount": 7247,
+          "title": "Discover the latest innovations at Azure Open Source Day 2023",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-31e60ccac9f3593812f5d4f41632841ccd1088a7afaf594f030a8765f9d1ce99/images/shared/social/azure-icon-250x250.png"
+        },
         {
           "id": "https://cloudblogs.microsoft.com/opensource/2023/03/02/announcing-the-availability-of-feathr-1-0/",
           "author": "Mufajjul Ali",
@@ -6011,6 +6041,26 @@
       "feedUrl": "https://azurecomcdn.azureedge.net/en-us/updates/feed/?updateType=features",
       "siteUrl": "https://azure.microsoft.com/en-us/updates/",
       "articles": [
+        {
+          "id": "public-preview-azure-monitor-managed-service-for-prometheus-now-supports-querying-promql",
+          "author": null,
+          "description": "Azure Workbooks now have a Prometheus data source allowing users to write PromQL natively in the portal. The Prometheus explorer offers an out of the box querying experience.",
+          "link": "https://azure.microsoft.com/en-us/updates/public-preview-azure-monitor-managed-service-for-prometheus-now-supports-querying-promql/",
+          "publishedOn": "2023-03-08T18:00:25.000Z",
+          "wordCount": 5453,
+          "title": "Public Preview: Azure Monitor managed service for Prometheus now supports querying PromQL",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-31e60ccac9f3593812f5d4f41632841ccd1088a7afaf594f030a8765f9d1ce99/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "public-preview-collect-syslog-from-aks-nodes-using-azure-monitor-container-insights",
+          "author": null,
+          "description": "Customers can now collect Syslog from their AKS Clusters using Azure Monitor – Container Insights.",
+          "link": "https://azure.microsoft.com/en-us/updates/public-preview-collect-syslog-from-aks-nodes-using-azure-monitor-container-insights/",
+          "publishedOn": "2023-03-08T18:00:15.000Z",
+          "wordCount": 5491,
+          "title": "Public Preview: Collect Syslog from AKS nodes using Azure Monitor - Container Insights",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-31e60ccac9f3593812f5d4f41632841ccd1088a7afaf594f030a8765f9d1ce99/images/shared/social/azure-icon-250x250.png"
+        },
         {
           "id": "generally-available-app-insights-extension-for-azure-virtual-machines-and-vm-scale-sets",
           "author": null,
@@ -8848,6 +8898,16 @@
       "feedUrl": "https://devblogs.microsoft.com/microsoft365dev/feed/",
       "siteUrl": "https://devblogs.microsoft.com/microsoft365dev/",
       "articles": [
+        {
+          "id": "https://devblogs.microsoft.com/microsoft365dev/?p=13102",
+          "author": "Maisa Rissi",
+          "description": "Take advantage of a fluent API and models that support retry handling, secure redirects, batching requests, large file management and more with the Microsoft Graph .NET SDK v5, now generally available.\nThe post Microsoft Graph .NET SDK v5 is now generally available  appeared first on Microsoft 365 Developer Blog.",
+          "link": "https://devblogs.microsoft.com/microsoft365dev/microsoft-graph-net-sdk-v5-is-now-generally-available/",
+          "publishedOn": "2023-03-08T16:00:41.000Z",
+          "wordCount": 4619,
+          "title": "Microsoft Graph .NET SDK v5 is now generally available",
+          "imageUrl": "https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2023/03/3.7.23.jpg"
+        },
         {
           "id": "https://devblogs.microsoft.com/microsoft365dev/?p=13108",
           "author": "Waldek Mastykarz",
