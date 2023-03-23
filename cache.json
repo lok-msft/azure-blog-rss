@@ -6,6 +6,16 @@
       "siteUrl": "https://spring.io",
       "articles": [
         {
+          "id": "https://spring.io/blog/2023/03/22/start-from-zero-and-scale-to-zero-azure-spring-apps-consumption-plan",
+          "author": "Josh Long",
+          "description": "Level up your Java code and explore what Spring can do for you.",
+          "link": "https://spring.io/blog/2023/03/22/start-from-zero-and-scale-to-zero-azure-spring-apps-consumption-plan",
+          "publishedOn": "2023-03-22T00:00:00.000Z",
+          "wordCount": 7946,
+          "title": "Start from zero and scale to zero – Azure Spring Apps consumption plan",
+          "imageUrl": "https://spring.io/img/og-spring.png"
+        },
+        {
           "id": "https://spring.io/blog/2023/03/21/this-week-in-spring-march-21st-2023",
           "author": "Josh Long",
           "description": "Level up your Java code and explore what Spring can do for you.",
@@ -763,16 +773,6 @@
           "publishedOn": "2022-10-26T07:00:00.000Z",
           "wordCount": 589,
           "title": "Spring Tips: the road to Spring Boot 3: Spring Framework 6",
-          "imageUrl": "https://avatars.githubusercontent.com/u/54473?v=4?s=200"
-        },
-        {
-          "id": "https://spring.io/blog/2022/10/24/this-week-in-spring-october-25th-2022",
-          "author": null,
-          "description": "Hi, Spring fans! Welcome to another installment of This Week in Spring! When last we spoke, I was in Las Vegas, NV, for the JavaOne show. It was amazing! I’m in sunny Singapore, then off to Malaysia and Thailand. It’s the first time I’ve been to any of these places since 2019! How good it is to be back! I’ve so missed it.\n\r\nThe Spring team is busy preparing for both Spring Boot 3 (and the Spring Framework 6 release that underpins it) and SpringOne 2022. Have you booked your ticket for SpringOne 2022 yet? It’s going to be held in sunny San Francisco, and - of course - it’ll be the absolute best place to learn about Spring Framework 6, Spring Boot 3, GraalVM, the new Ahead-of-time compilation engine in Spring Boot 3, and more. Also, it’s a rare chance to hang out with the Spring team proper.…",
-          "link": "https://spring.io/blog/2022/10/24/this-week-in-spring-october-25th-2022",
-          "publishedOn": "2022-10-24T07:00:00.000Z",
-          "wordCount": 861,
-          "title": "This Week in Spring - October 25th, 2022",
           "imageUrl": "https://avatars.githubusercontent.com/u/54473?v=4?s=200"
         }
       ]
@@ -2310,6 +2310,36 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/part-1b-azd-ify-an-app-template-with-existing-bicep-files/ba-p/3774273",
+          "author": "pcchan",
+          "description": "If you've followed Part 1 and Part 2 of the azdev-ify or azd-ify series and are wondering whether you need to completely rework your Bicep files to `azd up` your app, you're in luck! The solution may be simpler than you think.\n \nIn this post, I'll walk you through the steps involved, which include:\n\ncreating an \"azure.yaml\" file via `azd init`\nadding a \"main.parameters.json\" file\nproperly tagging your resource group and resources with `azd-env-name`\nfor deployment targets, add the corresponding `azd-service-name` tag as defined in \"azure.yaml\"\n\nTo demonstrate the process, I collaborated with my colleague Farhat Saleem in the Customer Success Team to azd-ify a sample integration app template that guides users through the process of setting up API Management policy for sending data to Azure …",
+          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/part-1b-azd-ify-an-app-template-with-existing-bicep-files/ba-p/3774273",
+          "publishedOn": "2023-03-22T16:22:00.000Z",
+          "wordCount": 10013,
+          "title": "Part 1b – azd-ify an App Template with existing Bicep files",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/452757i92309E45D30B16E6?v=v2"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/start-from-zero-and-scale-to-zero-azure-spring-apps-consumption/ba-p/3774825",
+          "author": "Asir_Selvasingh",
+          "description": "We are launching a new way to pay for Azure Spring Apps -- the consumption pricing plan. This plan is now in public preview so you can start creating and deploying apps today. This new plan is super-efficient because you can start from zero and scale to zero vCPU.  You get more straightforward pricing across your containerized applications since it costs the same as Azure Container Apps, but with added value for Spring apps.\n \nHow does this work? With the new plan, you can deploy apps that don’t need to run all the time or apps that have bursts of traffic and only pay for the resources used. This is a “serverless plan”, which means your apps can scale out and in automatically depending on the number of HTTP requests or events they receive or simply run as always-on background jobs.\n \nThis …",
+          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/start-from-zero-and-scale-to-zero-azure-spring-apps-consumption/ba-p/3774825",
+          "publishedOn": "2023-03-22T15:00:00.000Z",
+          "wordCount": 10325,
+          "title": "Start from zero and scale to zero – Azure Spring Apps consumption plan",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/452857i6066AB9A0951C675/image-size/original?v=v2&px=-1"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/downloading-files-from-azure-container-app-to-your-local-machine/ba-p/3774872",
+          "author": "Nikhil_Vetteth",
+          "description": "Azure Container Apps is a powerful tool for running containerized applications in the cloud. However, if you need to transfer files (custom log files, network captures, etc.) from your container app to another destination such as your local machine or Azure Blob Storage, you might find that the process is not as straightforward as you'd like.\nIn this post, we'll walk you through the steps to transfer files from your Azure Container App to Azure Blob Storage using the `curl` command. Once the file is present on your Blob Storage, you can easily download it to your local machine from the Azure Portal itself in case you need to analyze the logs or network traces with a local tool.\n \nStep 1: Accessing the Azure Container App Console\nTo access the Azure Container App Console, navigate to your c…",
+          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/downloading-files-from-azure-container-app-to-your-local-machine/ba-p/3774872",
+          "publishedOn": "2023-03-22T10:41:46.000Z",
+          "wordCount": 9811,
+          "title": "Downloading Files from Azure Container App to your Local Machine via Azure Blob Storage",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/452927i218B888CAA4F7482?v=v2"
+        },
+        {
           "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/simplifying-deploying-azure-container-apps-to-arc-enabled/ba-p/3773194",
           "author": "apwestgarth",
           "description": "Since we launched the early public preview of Azure Container Apps on Arc enabled Kubernetes clusters last December, we have been working to continue to bring new features and capabilities to the preview (Container Apps on Azure Arc Overview | Microsoft Learn).  One area we have been keen to improve is the onboarding process and steps required to deploy your first Azure Container App on an Arc enabled Kubernetes cluster.\n \nThe number of steps and number of CLI extensions required to get to the point of having an app up and running is quite extensive:\n\nConnect a Kubernetes cluster to Azure\nCreate a Log Analytics Workspace for app logs\nDeploy the Azure Container Apps extension to the cluster\nCreate a new or use an existing Custom Location and bind it to the extension on the cluster\nCreate a …",
@@ -3228,16 +3258,6 @@
           "wordCount": 10489,
           "title": "Azure Kubernetes Service KubeCon NA 2022 Announcements",
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/415151i5D118A14BEC2161E?v=v2"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/use-managed-identity-instead-of-azurewebjobsstorage-to-connect-a/ba-p/3657606",
-          "author": "Bobi_Bao",
-          "description": "In a function app, usually we use appsetting AzureWebJobsStorage to connect to storage. This blog shows you how to configure a function app using Azure Active Directory identities instead of secrets or connection strings, where possible. Using identities helps you avoid accidentally leaking sensitive secrets and can provide better visibility into how data is accessed.\n \nThis will not work if the storage account is in a sovereign cloud or has a custom DNS.\n \nBelow are the steps to do configuration.\n \n1. Enable system assigned identity in your function app and save it.\n\n \n2. Give storage access to your function app. Search for Storage Blob Data Owner, select it.\n\n \n \n\n \n\n \n \n \n3. If you configure a blob-triggered function app, repeat the step 2 to add Storage Account Contributor and Storage Queue Data Contributor roles which will be used for blob trigger.\n\n \n\n \n \n4. Return to Access Control (IAM), click Role assignments, search for your function app name to confirm the roles are added successfully.\n\n \n \n5. Navigate to your function app. Select Configuration and edit AzureWebJobsStorage. Change the name to AzureWebJobsStorage__accountname.  Change the value to your storage account name. (The new setting uses a double underscore (__), which is a special character in application settings.) \n\n \n \n6. Delete the previous AzureWebJobsStorage. Then you will find your function app still works fine.",
-          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/use-managed-identity-instead-of-azurewebjobsstorage-to-connect-a/ba-p/3657606",
-          "publishedOn": "2022-10-24T03:45:47.000Z",
-          "wordCount": 9517,
-          "title": "Use managed identity instead of AzureWebJobsStorage to connect a function app to a storage account",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/414510i91300A64BDFCECDD?v=v2"
         }
       ]
     },
@@ -3313,6 +3333,16 @@
       "feedUrl": "https://techcommunity.microsoft.com/plugins/custom/microsoft/o365/custom-blog-rss?tid=2893852362688900935&board=AzureDevCommunityBlog&size=100&label=Best%20Practices",
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
+        {
+          "id": "https://techcommunity.microsoft.com/t5/azure-developer-community-blog/expand-your-skills-in-backend-web-development-using-python/ba-p/3775686",
+          "author": "mubranch",
+          "description": "Join us for PyDay, May 2nd 2023!\n \nAre you interested in learning more about web development using Python? Join us for an exciting online event led by experienced developer and educator Pamela Fox, where you'll learn how to build, test, and deploy HTTP APIs and web applications using three of the most popular Python frameworks: FastAPI, Django, and Flask. This event is perfect for anyone looking to expand their knowledge and skills in backend web development using Python.\n \nNo web application experience is required, but some previous Python experience is encouraged. If you're completely new to Python, head over to https://aka.ms/trypython to kickstart your learning!\nPyDay Schedule:\nSession 1: Build, Test, and Deploy HTTP APIs with FastAPI @ 9:30 AM PST\nIn this session, you'll learn how to …",
+          "link": "https://techcommunity.microsoft.com/t5/azure-developer-community-blog/expand-your-skills-in-backend-web-development-using-python/ba-p/3775686",
+          "publishedOn": "2023-03-22T18:26:33.000Z",
+          "wordCount": 9597,
+          "title": "Expand your skills in backend web development using Python",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/453172iDED03E4260DB4E7A/image-size/original?v=v2&px=-1"
+        },
         {
           "id": "https://techcommunity.microsoft.com/t5/azure-developer-community-blog/how-to-choose-the-right-azure-services-for-java-q-and-a-with/ba-p/3767797",
           "author": "macalde",
@@ -3404,6 +3434,16 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/t5/azure-developer-community-blog/expand-your-skills-in-backend-web-development-using-python/ba-p/3775686",
+          "author": "mubranch",
+          "description": "Join us for PyDay, May 2nd 2023!\n \nAre you interested in learning more about web development using Python? Join us for an exciting online event led by experienced developer and educator Pamela Fox, where you'll learn how to build, test, and deploy HTTP APIs and web applications using three of the most popular Python frameworks: FastAPI, Django, and Flask. This event is perfect for anyone looking to expand their knowledge and skills in backend web development using Python.\n \nNo web application experience is required, but some previous Python experience is encouraged. If you're completely new to Python, head over to https://aka.ms/trypython to kickstart your learning!\nPyDay Schedule:\nSession 1: Build, Test, and Deploy HTTP APIs with FastAPI @ 9:30 AM PST\nIn this session, you'll learn how to …",
+          "link": "https://techcommunity.microsoft.com/t5/azure-developer-community-blog/expand-your-skills-in-backend-web-development-using-python/ba-p/3775686",
+          "publishedOn": "2023-03-22T18:26:33.000Z",
+          "wordCount": 9597,
+          "title": "Expand your skills in backend web development using Python",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/453172iDED03E4260DB4E7A/image-size/original?v=v2&px=-1"
+        },
+        {
           "id": "https://techcommunity.microsoft.com/t5/azure-developer-community-blog/serverless-url-shortener/ba-p/3754120",
           "author": "ppraka5h",
           "description": "Building a URL shortener is much easier now using the Serverless technologies in Azure. In this post, we will discuss developing this solution.\n \nHere is the overall architecture of the solution.\n\n \nThese are the priorities I set for this solution:\n\nUse Serverless component, which inherently makes it scalable & resilient.\nMake sure it is secure.\nOptimize it for cost.\nUse Infrastructure as code.\n\nTo create a short URL, we need to generate a unique hash. Azure Cosmos DB for NoSQL is the most suitable datastore for storing the hash, original URL, and additional required data. We will use Azure Functions consumption plan to generate the short URLs triggered by the events to generate the URL. Azure API Management is the logical choice for APIs, for this use case consumption tier will be suitabl…",
@@ -3430,6 +3470,16 @@
       "feedUrl": "https://techcommunity.microsoft.com/plugins/custom/microsoft/o365/custom-blog-rss?tid=2893852362688900935&board=AzureDevCommunityBlog&size=100&label=Developer",
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
+        {
+          "id": "https://techcommunity.microsoft.com/t5/azure-developer-community-blog/expand-your-skills-in-backend-web-development-using-python/ba-p/3775686",
+          "author": "mubranch",
+          "description": "Join us for PyDay, May 2nd 2023!\n \nAre you interested in learning more about web development using Python? Join us for an exciting online event led by experienced developer and educator Pamela Fox, where you'll learn how to build, test, and deploy HTTP APIs and web applications using three of the most popular Python frameworks: FastAPI, Django, and Flask. This event is perfect for anyone looking to expand their knowledge and skills in backend web development using Python.\n \nNo web application experience is required, but some previous Python experience is encouraged. If you're completely new to Python, head over to https://aka.ms/trypython to kickstart your learning!\nPyDay Schedule:\nSession 1: Build, Test, and Deploy HTTP APIs with FastAPI @ 9:30 AM PST\nIn this session, you'll learn how to …",
+          "link": "https://techcommunity.microsoft.com/t5/azure-developer-community-blog/expand-your-skills-in-backend-web-development-using-python/ba-p/3775686",
+          "publishedOn": "2023-03-22T18:26:33.000Z",
+          "wordCount": 9597,
+          "title": "Expand your skills in backend web development using Python",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/453172iDED03E4260DB4E7A/image-size/original?v=v2&px=-1"
+        },
         {
           "id": "https://techcommunity.microsoft.com/t5/azure-developer-community-blog/how-to-choose-the-right-azure-services-for-java-q-and-a-with/ba-p/3767797",
           "author": "macalde",
@@ -3856,16 +3906,6 @@
           "wordCount": 10142,
           "title": "Enable SFTP on Azure File Share using ARM Template and upload files using WinScp",
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/415546i703E51751A1B16F4/image-size/original?v=v2&px=-1"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/azure-paas-blog/working-with-adf-storage-event-trigger-over-sftp/ba-p/3659652",
-          "author": "Amrinder_Singh",
-          "description": "Storage Event Trigger in Azure Data Factory is the building block to build an event driven ETL/ELT architecture (EDA). Data Factory's native integration with Azure Event Grid let you trigger processing pipeline based upon certain events. Currently, Storage Event Triggers support events with Azure Data Lake Storage Gen2 and General-Purpose version 2 storage accounts, including Blob Created and Blob Deleted.\n \nEvent-driven architecture (EDA) is a common data integration pattern that involves production, detection, consumption, and reaction to events. Data integration scenarios often require customers to trigger pipelines based on events happening in storage account, such as the arrival or deletion of a file in Azure Blob Storage account. Data Factory and Synapse pipelines natively integrate …",
-          "link": "https://techcommunity.microsoft.com/t5/azure-paas-blog/working-with-adf-storage-event-trigger-over-sftp/ba-p/3659652",
-          "publishedOn": "2022-10-24T07:01:15.000Z",
-          "wordCount": 9671,
-          "title": "Working with ADF Storage Event Trigger Over SFTP",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/415020i1220FDC57584A920/image-size/original?v=v2&px=-1"
         }
       ]
     },
@@ -4993,6 +5033,16 @@
       "siteUrl": "https://devblogs.microsoft.com/devops/",
       "articles": [
         {
+          "id": "https://devblogs.microsoft.com/devops/?p=66630",
+          "author": "Dan Hellem",
+          "description": "Sprint 219 was dedicated to fixing bugs. We continue to drive down the bug backlog as quickly as we can. We will also have a couple new preview features coming that will be announced in the 219 sprint notes.\nIssue\nDelivery plans tab name\nThe post New Boards Hub Update, Sprint 219 appeared first on Azure DevOps Blog.",
+          "link": "https://devblogs.microsoft.com/devops/new-boards-hub-update-sprint-219/",
+          "publishedOn": "2023-03-22T17:24:39.000Z",
+          "wordCount": 5548,
+          "title": "New Boards Hub Update, Sprint 219",
+          "imageUrl": "https://devblogs.microsoft.com/devops/wp-content/uploads/sites/6/2023/03/sketch-1.png"
+        },
+        {
           "id": "https://devblogs.microsoft.com/devops/?p=66621",
           "author": "Gloridel Morales",
           "description": "This month, we are releasing fixes that impact our self-hosted product, Azure DevOps Server.\nAddressed issue that required restarting tfsjobagent service and Azure DevOps Server application pool after updating SMTP-related setting in the Azure DevOps Server Management Console.\nThe post March patches for Azure DevOps Server appeared first on Azure DevOps Blog.",
@@ -5377,6 +5427,16 @@
       "siteUrl": "https://devblogs.microsoft.com/cosmosdb/",
       "articles": [
         {
+          "id": "https://devblogs.microsoft.com/cosmosdb/?p=5787",
+          "author": "Mark Brown",
+          "description": "As the need for intelligent applications expands, developers are increasingly relying on artificial intelligence (AI) and machine learning (ML) to enrich their application’s capabilities. Amongst the numerous conversational AI delivery methods, chatbots have become highly sought after. OpenAI’s ChatGPT, a robust large language model (LLM),\nThe post Build Intelligent Applications using Azure OpenAI ChatGPT & Azure Cosmos DB appeared first on Azure Cosmos DB Blog.",
+          "link": "https://devblogs.microsoft.com/cosmosdb/chatgpt-azure-cosmos-db/",
+          "publishedOn": "2023-03-22T22:29:33.000Z",
+          "wordCount": 6554,
+          "title": "Build Intelligent Applications using Azure OpenAI ChatGPT & Azure Cosmos DB",
+          "imageUrl": "https://devblogs.microsoft.com/cosmosdb/wp-content/uploads/sites/52/2023/03/chat-introduction.png"
+        },
+        {
           "id": "https://devblogs.microsoft.com/cosmosdb/?p=5765",
           "author": "Sajeetharan Sinnathurai",
           "description": "We are super excited to announce the public preview of Data API builder. A new feature that allows customers to instantly and securely build a GraphQL API for Azure Cosmos DB for NoSQL and Azure Cosmos DB for PostgreSQL.  \nThe post Announcing Data API builder for Azure Cosmos DB appeared first on Azure Cosmos DB Blog.",
@@ -5600,6 +5660,16 @@
       "feedUrl": "https://techcommunity.microsoft.com/plugins/custom/microsoft/o365/custom-blog-rss?tid=-2574164104208876465&board=AzureGovernanceandManagementBlog&size=100",
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
+        {
+          "id": "https://techcommunity.microsoft.com/t5/azure-governance-and-management/apply-cis-compliant-azure-security-baselines-through-azure/ba-p/3775763",
+          "author": "akanksha_agrawal",
+          "description": "We are thrilled to announce that Azure Automanage Machine Best Practices now enables you to apply CIS aligned Azure security baselines through Automanage Machine Configuration.\n \nAzure Automanage Machine Best Practices is a consolidated management solution that simplifies daily server management through effortless automation by handling the initial setup and configuration of Azure best practice services. Automanage continuously monitors machines across their entire lifecycle, automatically bringing them back into conformance should they drift from the desired state. And the best part - Automanage machine best practices is generally available and free to use! You only pay for the services you enable, just as you would if you were doing it all manually, without any additional cost.\n \nAzure h…",
+          "link": "https://techcommunity.microsoft.com/t5/azure-governance-and-management/apply-cis-compliant-azure-security-baselines-through-azure/ba-p/3775763",
+          "publishedOn": "2023-03-22T19:58:10.000Z",
+          "wordCount": 10033,
+          "title": "Apply CIS compliant Azure Security baselines through Azure Automanage!",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/453207iEFF10B14CDFD2294?v=v2"
+        },
         {
           "id": "https://techcommunity.microsoft.com/t5/azure-governance-and-management/azure-portal-january-2023-updates/ba-p/3750124",
           "author": "Allison_Cordle",
@@ -5901,6 +5971,26 @@
       "feedUrl": "https://azurecomcdn.azureedge.net/en-us/updates/feed/?updateType=features",
       "siteUrl": "https://azure.microsoft.com/en-us/updates/",
       "articles": [
+        {
+          "id": "public-preview-azure-maps-creator-improved-indoor-maps-onboarding-and-new-features-api",
+          "author": null,
+          "description": "An updated Conversion service now allows you to easily onboard indoor maps and a new Features API to read and edit your map features!",
+          "link": "https://azure.microsoft.com/en-us/updates/public-preview-azure-maps-creator-improved-indoor-maps-onboarding-and-new-features-api/",
+          "publishedOn": "2023-03-22T17:00:05.000Z",
+          "wordCount": 5526,
+          "title": "Public preview: Azure Maps Creator – Improved indoor maps onboarding and new Features API",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-434b69e0aa8f4e9bd37a99f77e1625f9fff4f6f706fc5656ac91d847cdf1ce2f/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "general-availability-reserved-namespaces-for-subdomains",
+          "author": null,
+          "description": "Azure Traffic Manager now enables reserving domain labels across all traffic manager profiles.",
+          "link": "https://azure.microsoft.com/en-us/updates/general-availability-reserved-namespaces-for-subdomains/",
+          "publishedOn": "2023-03-22T16:00:04.000Z",
+          "wordCount": 5503,
+          "title": "General availability: Reserved namespaces for subdomains",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-434b69e0aa8f4e9bd37a99f77e1625f9fff4f6f706fc5656ac91d847cdf1ce2f/images/shared/social/azure-icon-250x250.png"
+        },
         {
           "id": "announcment-azure-active-directory-backed-authentication-for-jms-20-api-on-azure-service-bus",
           "author": null,
@@ -8558,6 +8648,16 @@
       "feedUrl": "https://devblogs.microsoft.com/microsoft365dev/feed/",
       "siteUrl": "https://devblogs.microsoft.com/microsoft365dev/",
       "articles": [
+        {
+          "id": "https://devblogs.microsoft.com/microsoft365dev/?p=13220",
+          "author": "Junjie Li",
+          "description": "In this update, we will bring you what’s the latest with Teams app development using Teams Toolkit for Visual Studio Code.\nThe post Teams Toolkit for Visual Studio Code update – March 2023 appeared first on Microsoft 365 Developer Blog.",
+          "link": "https://devblogs.microsoft.com/microsoft365dev/teams-toolkit-for-visual-studio-code-update-march-2023/",
+          "publishedOn": "2023-03-22T15:00:50.000Z",
+          "wordCount": 4878,
+          "title": "Teams Toolkit for Visual Studio Code update – March 2023",
+          "imageUrl": "https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2023/03/03.20.23-ttk-updates-scaled.jpg"
+        },
         {
           "id": "https://devblogs.microsoft.com/microsoft365dev/?p=13265",
           "author": "Vesa Juvonen",
