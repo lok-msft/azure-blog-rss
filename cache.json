@@ -6,6 +6,16 @@
       "siteUrl": "https://spring.io",
       "articles": [
         {
+          "id": "https://spring.io/blog/2023/03/29/context-propagation-with-project-reactor-2-the-bumpy-road-of-spring-cloud",
+          "author": "Dariusz Jędrzejczyk",
+          "description": "Level up your Java code and explore what Spring can do for you.",
+          "link": "https://spring.io/blog/2023/03/29/context-propagation-with-project-reactor-2-the-bumpy-road-of-spring-cloud",
+          "publishedOn": "2023-03-29T00:00:00.000Z",
+          "wordCount": 9988,
+          "title": "Context Propagation with Project Reactor 2 - The bumpy road of Spring Cloud Sleuth",
+          "imageUrl": "https://spring.io/img/og-spring.png"
+        },
+        {
           "id": "https://spring.io/blog/2023/03/28/this-week-in-spring-march-28th-202",
           "author": "Josh Long",
           "description": "Level up your Java code and explore what Spring can do for you.",
@@ -782,6 +792,16 @@
       "feedUrl": "https://techcommunity.microsoft.com/plugins/custom/microsoft/o365/custom-blog-rss?tid=2893852362688900935&board=EducatorDeveloperBlog&size=200",
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
+        {
+          "id": "https://techcommunity.microsoft.com/t5/educator-developer-blog/an-introduction-to-microsoft-graph-sdk-and-how-to-create-a-to-do/ba-p/3779340",
+          "author": "kevin_comba",
+          "description": "What is Microsoft Graph SDK\n\nOverview - Microsoft Graph SDK is a software development kit (SDK) provided by Microsoft that enables developers to easily integrate with the Microsoft Graph API. The Microsoft Graph SDK makes it easier for developers to build applications that leverage the capabilities of Microsoft 365 services by providing a set of libraries, tools, and services. It abstracts away the complexity of working with the underlying HTTP requests and responses required to interact with the Graph API and provides a more intuitive programming model.Supported Languages\n\nC#\nPowerShell\nTypeScript | JavaScript\nJava\nGo\nPHP\nPython (preview)\n\nHow To Create A Microsoft To Do List Using Microsoft Graph SDK And JavaScript\nIn order to create a Microsoft To Do App we need to:\n\nVSCode installed.\nN…",
+          "link": "https://techcommunity.microsoft.com/t5/educator-developer-blog/an-introduction-to-microsoft-graph-sdk-and-how-to-create-a-to-do/ba-p/3779340",
+          "publishedOn": "2023-03-29T07:00:00.000Z",
+          "wordCount": 10233,
+          "title": "An Introduction to Microsoft Graph SDK and How to Create a To-Do List Using JavaScript",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/454600i84B2F0B7EC5E96D4?v=v2"
+        },
         {
           "id": "https://techcommunity.microsoft.com/t5/educator-developer-blog/effortlessly-generate-text-creating-a-chatgpt-workflow-with-ms/ba-p/3768341",
           "author": "primado",
@@ -3308,26 +3328,6 @@
           "wordCount": 9885,
           "title": "How to build a FTP client in Azure Spring App",
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/415928i155A700FDA2D84EF?v=v2"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/how-to-check-if-the-uploaded-certificate-is-added-to-windows-my/ba-p/3666138",
-          "author": "karthi2210",
-          "description": "In Java, the default keystore of windows App Service is windows-MY. This article illustrates you on how to know if the uploaded certificate is part of windows-MY keystore or not.\n \n\nAfter uploading the certificate (public/private) in AppService under TLS/SSL settings.\nLogin to kudu -> navigate to /home/site/wwwroot folder\nCreate a CertTest.java file on KUDU container in /home and copy the below code as per the instructions\n\nIf you already know the subject CN, you can replace the highlighted text part below.\n \nJava code:\n \n \n \n \nimport java.security.KeyStore;\nimport java.security.cert.Certificate;\nimport java.time.LocalDateTime;\nimport java.util.Enumeration;\n\npublic class CertTest {\npublic static void main(String[] args) {\n// TODO Auto-generated method stub\ntry{\nKeyStore ks = KeyStore.getIn…",
-          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/how-to-check-if-the-uploaded-certificate-is-added-to-windows-my/ba-p/3666138",
-          "publishedOn": "2022-10-31T08:43:30.000Z",
-          "wordCount": 9650,
-          "title": "How to check if the uploaded certificate is added to Windows-My keystore on App Service-Windows?",
-          "imageUrl": "https://cdn.techcommunity.microsoft.com/assets/MTC_Open_graph_image1.jpg"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/adding-hsts-header-in-the-nginx-based-app-service/ba-p/3666106",
-          "author": "karthi2210",
-          "description": "Azure App Service on Linux images using PHP 8.x are now bundled with NGINX instead of Apache. The use of .htaccess files will not work for NGINX as these are used for Apache only. This will require the need to setup a custom startup script and modifying the existing NGINX site configuration.\n \n\n \nNavigate to your App Service via the Azure Portal. Under the Development Tools section, select SSH then Go -->.\nModifying the default site config\nYou will want to make a copy of the existing configuration and place the file inside the /home/site directory.\n \n\n\ncp /etc/nginx/sites-available/default /home/site/default\n\n\nOnce you created a default page as in the previous step, please update the location block to add HSTS Header and create the custom startup script as mentioned below\n  \nlocation / {           \nindex  index.php index.html index.htm hostingstart.html;\nadd_header Strict-Transport-Security \"max-age=31536000; includeSubDomains\" always;\n}\nCreating the custom startup script\nYou will now need to create a custom startup script and save the file as /home/site/startup.sh\n\n\n\n#!/bin/bash\n\ncp /home/site/default /etc/nginx/sites-available/default\nservice nginx reload\n\n\nIn the custom startup script, we are doing the following:\n\nOverriding the existing /etc/nginx/sites-available/default file with the /home/site/default file.\nReloading the NGINX service to make the updates take effect.\n\nUpdating the application settings\nNavigate back to your App Service via the Azure Portal. Under the Settings section, select Configuration.\nGo over to the General Settings section of the Configuration blade.\nFor the Startup Command enter the following: /home/site/startup.sh\nSave these settings and navigate to your application https://{sitename}.azurewebsites.net/\n \nPlease refer to the document https://www.nginx.com/blog/http-strict-transport-security-hsts-and-nginx/",
-          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/adding-hsts-header-in-the-nginx-based-app-service/ba-p/3666106",
-          "publishedOn": "2022-10-31T07:23:39.000Z",
-          "wordCount": 9494,
-          "title": "Adding HSTS header in the NGINX based App Service",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/416195iF78852F188B9633C?v=v2"
         }
       ]
     },
@@ -4212,6 +4212,36 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/automatically-classify-amp-protect-documents-amp-data-microsoft/ba-p/3782277",
+          "author": "Zachary Cavanell",
+          "description": "Discover, classify, and protect sensitive information automatically, wherever it lives or travels with Microsoft Purview Information Protection. Built-in protections follow documents on mobile, in the browser, or as you coauthor them, with no add-ins required. Policy tips keep end users compliant without compromising productivity. \n \n\nTony Themelis, Principal Program Manager for Microsoft Information Protection, shows how to automate and enforce classifications through administrative controls, create labels, and put policies in place with Microsoft Purview Information Protection.\n \nProtect sensitive content with watermarks as you present in Microsoft Teams. \n\nSee it here with Microsoft Purview Information Protection.\n \nCreate your own trainable classifiers.\n\nIdentify categories of content,…",
+          "link": "https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/automatically-classify-amp-protect-documents-amp-data-microsoft/ba-p/3782277",
+          "publishedOn": "2023-03-29T16:29:57.000Z",
+          "wordCount": 11068,
+          "title": "Automatically Classify & Protect Documents & Data | Microsoft Purview Information Protection",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/455615i596D99AD4C380068?v=v2"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/multi-cloud-cyberattack-response-how-microsoft-s-siem-amp-xdr/ba-p/3782313",
+          "author": "Zachary Cavanell",
+          "description": "Investigate and contain sophisticated attacks in real-time using updates to Microsoft’s integrated XDR solutions. Get an inside look at a multi-stage and multi-cloud incident inspired by real tactics, techniques, and procedures in Microsoft Sentinel, and visibility into the attack sequence and timeline of alerts with Microsoft 365 Defender. Use Threat Intelligence to investigate and stop threat actors in their tracks with real-time threat disruption, and automate mitigations to contain the damage. \n \n\nMicrosoft cybersecurity expert and CVP, Rob Lefferts, joins Jeremy Chapman to share how to navigate fast-moving cyber attacks that can span across clouds and infrastructure.\n \nGain visibility and depth into an attack sequence.\n\nSee a timeline of alerts from Microsoft 365 Defender. Watch this …",
+          "link": "https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/multi-cloud-cyberattack-response-how-microsoft-s-siem-amp-xdr/ba-p/3782313",
+          "publishedOn": "2023-03-29T16:29:03.000Z",
+          "wordCount": 12209,
+          "title": "Multi-cloud Cyberattack Response | How Microsoft's SIEM & XDR work together",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/455626i99A8256AB8325981?v=v2"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/get-ahead-of-cyberattacks-with-microsoft-defender-threat/ba-p/3782407",
+          "author": "Zachary Cavanell",
+          "description": "With sophisticated cyber-attacks on the rise, get detailed and current intel on trending attacks with Microsoft Defender Threat Intelligence. Enrich investigations and contain threats before they impact your organization with exclusive access to the same raw attack signals our Microsoft Researchers have. Easily gauge the severity of a threat and seek specialist assistance with Threat Profiles that link threats and their methods to known threat actors. \n \n\nLou Manousos, Threat Intelligence expert and Microsoft Security CVP, joins Jeremy Chapman to share how to use raw data on active attacks as they unfold.\n \nA 360 degree view on evolving attacks. \n\nLink threat patterns to investigate users, apps, and devices. See the native integration of RiskIQ data with Microsoft 365 Defender.\n \nConnect a…",
+          "link": "https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/get-ahead-of-cyberattacks-with-microsoft-defender-threat/ba-p/3782407",
+          "publishedOn": "2023-03-29T16:28:10.000Z",
+          "wordCount": 12450,
+          "title": "Get Ahead of Cyberattacks with Microsoft Defender Threat Intelligence",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/455668iA86A37A6B1D49E06?v=v2"
+        },
+        {
           "id": "https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/new-microsoft-loop-app-for-modern-co-creation/ba-p/3774622",
           "author": "Zachary Cavanell",
           "description": "Bring together teams, content, and tasks across your tools and devices with the new Microsoft Loop app, available both on the web and in mobile. It gives you a central place to create real-time content in a simple, collaborative and structured way, from using intelligent search to build your first shared workspaces, where you can enjoy super-fast synchronized collaboration, to leveraging AI with Copilot in Loop, to generate ideas with others on your team. Copilot capabilities in Loop will begin rolling out in the next few months.\n \n\nIf you’re using Loop components today, you might familiar with how you can embed live, auto-updating content seamlessly across apps like Microsoft Teams, Outlook email, Word and even the Whiteboard — all from the same source, freeing you up to work in your pref…",
@@ -4428,6 +4458,16 @@
       "feedUrl": "https://techcommunity.microsoft.com/plugins/custom/microsoft/o365/custom-blog-rss?tid=2893852362688900935&board=AzureMigrationBlog&size=50",
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
+        {
+          "id": "https://techcommunity.microsoft.com/t5/azure-migration-and/the-azure-migration-event-returns-join-us-on-april-26/ba-p/3782566",
+          "author": "Barb_Blanchard7",
+          "description": "At this year’s digital event, Securely Migrate and Optimize with Azure, you’ll learn how to achieve more efficiency and maximize the value of your IT investments. Get tips to migrate, optimize, and modernize your infrastructure, apps, and data—with a spotlight from experts on optimizing migration for Windows Server and SQL Server workloads.\n \nHere’s 5 good reasons to Register Now: \n \n\nGet expert guidance to securely migrate and optimize your Windows Server and SQL Server workloads.\nFind tools, programs, and resources from Azure to migrate and optimize your cloud investments.\nHear real-life success stories of customers who moved to Azure.\nSee demos with step-by-step guidance on how to stay secure and manage complex hybrid IT environments.\nGet a walkthrough of tools for self-guided migration—including how to discover, assess, and migrate with Azure Migrate.\n\nYou’ll also get expert answers to your migration questions during the live chat Q&A.\n \nSecurely Migrate and Optimize with Azure \nWednesday, April 26, 2023\n9:00 AM–11:00 AM Pacific Time (UTC-8)",
+          "link": "https://techcommunity.microsoft.com/t5/azure-migration-and/the-azure-migration-event-returns-join-us-on-april-26/ba-p/3782566",
+          "publishedOn": "2023-03-29T18:56:21.000Z",
+          "wordCount": 9422,
+          "title": "The Azure Migration event returns - join us on April 26.",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/455732iAFB6FAF20B999A79/image-size/original?v=v2&px=-1"
+        },
         {
           "id": "https://techcommunity.microsoft.com/t5/azure-migration-and/migrate-your-microsoft-sql-server-workloads-to-azure-vmware/ba-p/3776447",
           "author": "jurey",
@@ -5390,6 +5430,16 @@
       "siteUrl": "https://devblogs.microsoft.com/azure-sql/",
       "articles": [
         {
+          "id": "https://devblogs.microsoft.com/azure-sql/?p=1802",
+          "author": "Brian Spendolini",
+          "description": "I was fortunate enough to be able to present Data API builder the week of March 20th at VS Live in Las Vegas and what an incredible group of attendees at that conference. During my session, I stepped through a live demo of Data API builder showing off REST and GraphQL endpoints on various database objects.\nThe post Data API Builder Quickstart Demo from VS Live Vegas appeared first on Azure SQL Devs’ Corner.",
+          "link": "https://devblogs.microsoft.com/azure-sql/data-api-builder-quickstart-demo-from-vs-live-vegas/",
+          "publishedOn": "2023-03-29T06:59:42.000Z",
+          "wordCount": 5528,
+          "title": "Data API Builder Quickstart Demo from VS Live Vegas",
+          "imageUrl": "https://devblogs.microsoft.com/azure-sql/wp-content/uploads/sites/56/2020/04/sql-database-3-560.png"
+        },
+        {
           "id": "https://devblogs.microsoft.com/azure-sql/?p=1783",
           "author": "Davide Mauri",
           "description": "I am extremely happy and excited to announce the public preview of Data API builder for Azure SQL Databases. Data API builder is a new product that we are adding to the developer’s toolset to help every developer to be more efficient and effective,\nThe post Data API builder for Azure SQL Databases – Public Preview appeared first on Azure SQL Devs’ Corner.",
@@ -5751,6 +5801,16 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/t5/azure-governance-and-management/generally-available-immutable-vaults-with-azure-backup/ba-p/3782466",
+          "author": "Utsav Raghuvanshi",
+          "description": "Azure Backup recently announced the general availability of immutable vaults that offer improved protection for your backup data better against ransomware attacks and other malicious actors. Immutable vaults protect your backups by blocking any operations that could lead to loss of recovery points if misused. Further, you can lock the immutability setting to make it irreversible, which can prevent malicious actors from disabling immutability and deleting backups.\nImmutability is generally available for Recovery Services vaults as well as Backup vaults.\nHow it works\nBackup data stored using Azure Backup is not accessible directly and the only way to access or manage this data is through the vault. Immutable vaults further help you by preventing any operations that, if used by malicious acto…",
+          "link": "https://techcommunity.microsoft.com/t5/azure-governance-and-management/generally-available-immutable-vaults-with-azure-backup/ba-p/3782466",
+          "publishedOn": "2023-03-29T17:18:55.000Z",
+          "wordCount": 9583,
+          "title": "Generally available: Immutable vaults with Azure Backup",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/455607i84F0D1C3355AA09D?v=v2"
+        },
+        {
           "id": "https://techcommunity.microsoft.com/t5/azure-governance-and-management/now-open-source-nxtools-managing-linux-iac-just-got-simpler/ba-p/3781203",
           "author": "JuliaMWang",
           "description": "We are \"nxcited\" to announce the release of nxtools, an opensource collection of class-based DSC resources for commonly used Linux / Unix modules and built-in Machine Configuration packages for customers. Azure Automanage Machine Configuration (previously known as Azure Policy Guest Configuration) enables configuration as code allowing you to audit and configure OS, app, and workload level settings at scale, both for machines running in Azure and hybrid Azure Arc-enabled servers.\n \nThe nxtools module will be maintained by Automanage Machine Configuration. The module intends to make managing Linux easier for PowerShell users and will help in managing common tasks such as:\n \n\nUser and group management\nFile system operations (changing mode, owner, listing, set/replace content)\nService managem…",
@@ -6031,6 +6091,156 @@
       "feedUrl": "https://azurecomcdn.azureedge.net/en-us/updates/feed/?updateType=features",
       "siteUrl": "https://azure.microsoft.com/en-us/updates/",
       "articles": [
+        {
+          "id": "generally-available-mount-azure-files-and-ephemeral-storage-in-azure-container-apps",
+          "author": null,
+          "description": "Persist data in Azure Container Apps via mounted volumes.",
+          "link": "https://azure.microsoft.com/en-us/updates/generally-available-mount-azure-files-and-ephemeral-storage-in-azure-container-apps/",
+          "publishedOn": "2023-03-29T18:00:29.000Z",
+          "wordCount": 5505,
+          "title": "Generally available: Mount Azure Files and ephemeral storage in Azure Container Apps",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-540a785fc2440efe1537140cf92ef3a8d604f1ea258e4a27de5d3a85d1ded5fe/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "public-preview-simplified-flush-operation-for-caches-using-active-georeplication",
+          "author": null,
+          "description": "Flush all data from active geo-replicated caches using portal, PowerShell, or CLI",
+          "link": "https://azure.microsoft.com/en-us/updates/public-preview-simplified-flush-operation-for-caches-using-active-georeplication/",
+          "publishedOn": "2023-03-29T18:00:17.000Z",
+          "wordCount": 5517,
+          "title": "Public Preview: Simplified flush operation for caches using active geo-replication",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-540a785fc2440efe1537140cf92ef3a8d604f1ea258e4a27de5d3a85d1ded5fe/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "public-preview-inplace-scaling-for-enterprise-caches",
+          "author": null,
+          "description": "Scale enterprise caches up or out without disrupting the operation of the current cache using in-place scaling.",
+          "link": "https://azure.microsoft.com/en-us/updates/public-preview-inplace-scaling-for-enterprise-caches/",
+          "publishedOn": "2023-03-29T18:00:10.000Z",
+          "wordCount": 5485,
+          "title": "Public Preview: In-place scaling for enterprise caches",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-540a785fc2440efe1537140cf92ef3a8d604f1ea258e4a27de5d3a85d1ded5fe/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "public-preview-aks-support-for-kubernetes-126-release",
+          "author": null,
+          "description": "You can now try out Kubernetes v1.26 features with Azure Kubernetes Service",
+          "link": "https://azure.microsoft.com/en-us/updates/public-preview-aks-support-for-kubernetes-126-release/",
+          "publishedOn": "2023-03-29T18:00:03.000Z",
+          "wordCount": 5437,
+          "title": "Public preview: AKS support for Kubernetes 1.26 release",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-540a785fc2440efe1537140cf92ef3a8d604f1ea258e4a27de5d3a85d1ded5fe/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "public-preview-storage-inplace-sharing-in-microsoft-purview-in-additional-regions",
+          "author": null,
+          "description": "Storage in-place data sharing with Microsoft Purview public preview is now supported for Azure Data Lake Gen2 and Blob storage accounts in East US, East US2, North Europe, Southcentral US, West Central US, West Europe, West US, West US2",
+          "link": "https://azure.microsoft.com/en-us/updates/public-preview-storage-inplace-sharing-in-microsoft-purview-in-additional-regions/",
+          "publishedOn": "2023-03-29T17:01:26.000Z",
+          "wordCount": 5535,
+          "title": "Public Preview: Storage in-place sharing in Microsoft Purview in additional regions",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-540a785fc2440efe1537140cf92ef3a8d604f1ea258e4a27de5d3a85d1ded5fe/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "public-preview-connection-audit-logs-for-enterprise-tier-caches",
+          "author": null,
+          "description": "Log all connections to your cache.",
+          "link": "https://azure.microsoft.com/en-us/updates/public-preview-connection-audit-logs-for-enterprise-tier-caches/",
+          "publishedOn": "2023-03-29T17:01:20.000Z",
+          "wordCount": 5475,
+          "title": "Public Preview: Connection audit logs for Enterprise tier caches",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-540a785fc2440efe1537140cf92ef3a8d604f1ea258e4a27de5d3a85d1ded5fe/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "generally-available-larger-skus-for-app-service-environment-v3",
+          "author": null,
+          "description": "Enterprises are now able to operate more securely with large SKUs to support more demanding workloads with App Service Environment v3.",
+          "link": "https://azure.microsoft.com/en-us/updates/generally-available-larger-skus-for-app-service-environment-v3/",
+          "publishedOn": "2023-03-29T17:01:08.000Z",
+          "wordCount": 5463,
+          "title": "Generally Available: Larger SKUs for App Service Environment v3",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-540a785fc2440efe1537140cf92ef3a8d604f1ea258e4a27de5d3a85d1ded5fe/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "preview-customer-managed-key-encryption-for-enterprise-tier-caches",
+          "author": null,
+          "description": "Encrypt Redis persistence files using customer managed keys",
+          "link": "https://azure.microsoft.com/en-us/updates/preview-customer-managed-key-encryption-for-enterprise-tier-caches/",
+          "publishedOn": "2023-03-29T17:01:02.000Z",
+          "wordCount": 5485,
+          "title": "Preview: customer managed key encryption for Enterprise tier caches",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-540a785fc2440efe1537140cf92ef3a8d604f1ea258e4a27de5d3a85d1ded5fe/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "azure-sql-general-availability-updates-for-latemarch-2023",
+          "author": null,
+          "description": "General availability enhancements and updates released for Azure SQL in late-March 2023",
+          "link": "https://azure.microsoft.com/en-us/updates/azure-sql-general-availability-updates-for-latemarch-2023/",
+          "publishedOn": "2023-03-29T17:00:49.000Z",
+          "wordCount": 5417,
+          "title": "Azure SQL—General availability updates for late-March 2023",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-540a785fc2440efe1537140cf92ef3a8d604f1ea258e4a27de5d3a85d1ded5fe/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "generally-available-azure-monitor-alerts-now-support-duplicating-alert-rules",
+          "author": null,
+          "description": "Azure Monitor alert rule can now be duplicated via the Azure portal.",
+          "link": "https://azure.microsoft.com/en-us/updates/generally-available-azure-monitor-alerts-now-support-duplicating-alert-rules/",
+          "publishedOn": "2023-03-29T17:00:37.000Z",
+          "wordCount": 5464,
+          "title": "Generally available: Azure Monitor Alerts now support duplicating alert rules",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-540a785fc2440efe1537140cf92ef3a8d604f1ea258e4a27de5d3a85d1ded5fe/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "multicolumn-distribution-for-dedicated-sql-pools-is-now-available",
+          "author": null,
+          "description": "Multi-Column Distribution (MCD) is highly desirable for easing migrations, promotes faster query performance and reduces data skew.",
+          "link": "https://azure.microsoft.com/en-us/updates/multicolumn-distribution-for-dedicated-sql-pools-is-now-available/",
+          "publishedOn": "2023-03-29T17:00:31.000Z",
+          "wordCount": 5471,
+          "title": "Multi-Column Distribution for Dedicated SQL pools is now available!",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-540a785fc2440efe1537140cf92ef3a8d604f1ea258e4a27de5d3a85d1ded5fe/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "public-preview-azure-migrate-discover-aspnet-java-web-apps-and-assess-aspnet-in-all-environments",
+          "author": null,
+          "description": "Discovery of Java & ASP.NET web apps and assessment of ASP.NET web apps to Azure App Service code (native) on VMware, Hyper-V and Physical servers is now in public preview.",
+          "link": "https://azure.microsoft.com/en-us/updates/public-preview-azure-migrate-discover-aspnet-java-web-apps-and-assess-aspnet-in-all-environments/",
+          "publishedOn": "2023-03-29T17:00:17.000Z",
+          "wordCount": 5602,
+          "title": "Public Preview: Azure Migrate - Discover ASP.NET & Java web apps and assess ASP.NET in all environments",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-540a785fc2440efe1537140cf92ef3a8d604f1ea258e4a27de5d3a85d1ded5fe/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "general-availability-microsoft-purview-devops-policies-for-azure-sql-database",
+          "author": null,
+          "description": "Purview DevOps policies can be used to assign permissions needed for performance monitoring and security auditing at scale and without direct connection to the database.",
+          "link": "https://azure.microsoft.com/en-us/updates/general-availability-microsoft-purview-devops-policies-for-azure-sql-database/",
+          "publishedOn": "2023-03-29T17:00:11.000Z",
+          "wordCount": 5507,
+          "title": "General availability: Microsoft Purview DevOps policies for Azure SQL Database",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-540a785fc2440efe1537140cf92ef3a8d604f1ea258e4a27de5d3a85d1ded5fe/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "generally-available-new-azure-monitor-audit-logging-policy-released",
+          "author": null,
+          "description": "Azure Monitor is announcing the release of new Azure Policy built-in policies and initiatives for enabling platform logging of audit events for Azure services.",
+          "link": "https://azure.microsoft.com/en-us/updates/generally-available-new-azure-monitor-audit-logging-policy-released/",
+          "publishedOn": "2023-03-29T17:00:02.000Z",
+          "wordCount": 5492,
+          "title": "Generally available: New Azure Monitor audit logging policy released",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-540a785fc2440efe1537140cf92ef3a8d604f1ea258e4a27de5d3a85d1ded5fe/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "general-availability-migration-feature-with-azure-database-for-postgresql-flexible-server",
+          "author": null,
+          "description": "Use the new migration tool to migrate workloads from Single Server to Flexible Server on Azure Database for PostgreSQL, a managed service running the open-source Postgres database on Azure.",
+          "link": "https://azure.microsoft.com/en-us/updates/general-availability-migration-feature-with-azure-database-for-postgresql-flexible-server/",
+          "publishedOn": "2023-03-29T17:00:00.000Z",
+          "wordCount": 5531,
+          "title": "General availability: Migration feature with Azure Database for PostgreSQL – Flexible Server",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-540a785fc2440efe1537140cf92ef3a8d604f1ea258e4a27de5d3a85d1ded5fe/images/shared/social/azure-icon-250x250.png"
+        },
         {
           "id": "public-preview-azure-cosmos-db-for-mongodb-vcore",
           "author": null,
@@ -8508,6 +8718,26 @@
       "feedUrl": "https://devblogs.microsoft.com/microsoft365dev/feed/",
       "siteUrl": "https://devblogs.microsoft.com/microsoft365dev/",
       "articles": [
+        {
+          "id": "https://devblogs.microsoft.com/microsoft365dev/?p=13362",
+          "author": "Daniel Carrasco",
+          "description": "Learn about our announcements in our special virtual event showcasing new capabilities for developers to extend Microsoft Teams apps across Microsoft 365.\nThe post Build once, deploy efficiently, connect across Microsoft 365 appeared first on Microsoft 365 Developer Blog.",
+          "link": "https://devblogs.microsoft.com/microsoft365dev/build-once-deploy-efficiently-connect-across-microsoft-365/",
+          "publishedOn": "2023-03-29T16:45:27.000Z",
+          "wordCount": 5172,
+          "title": "Build once, deploy efficiently, connect across Microsoft 365",
+          "imageUrl": "https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2023/03/Twitter-post-1.png"
+        },
+        {
+          "id": "https://devblogs.microsoft.com/microsoft365dev/?p=13341",
+          "author": "Rabia Williams",
+          "description": "In just minutes, you can easily create a Hello World project with both Microsoft Teams tab and Outlook Add-in elements backed by a single unified app manifest.\nThe post Create a Teams tab and Outlook Add-in with a Hello World project appeared first on Microsoft 365 Developer Blog.",
+          "link": "https://devblogs.microsoft.com/microsoft365dev/create-a-teams-tab-and-outlook-add-in-with-a-hello-world-project/",
+          "publishedOn": "2023-03-29T16:30:20.000Z",
+          "wordCount": 4863,
+          "title": "Create a Teams tab and Outlook Add-in with a Hello World project",
+          "imageUrl": "https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2023/03/Teams-Tabs-scaled.jpg"
+        },
         {
           "id": "https://devblogs.microsoft.com/microsoft365dev/?p=13337",
           "author": "Vesa Juvonen",
