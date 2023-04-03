@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2023-04-02T01:13:46.662Z</updated>
+    <updated>2023-04-03T01:08:34.424Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
@@ -13101,112 +13101,6 @@ In the resourceVisualization complex type in the List used – Microsoft Graph
 The post Breaking changes for the Microsoft Graph Insights API   appeared first on Microsoft 365 Developer Blog.]]></summary>
         <author>
             <name>Microsoft Graph team</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Migration app service resources across subscriptions with import certificate]]></title>
-        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/migration-app-service-resources-across-subscriptions-with-import/ba-p/3638773</id>
-        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/migration-app-service-resources-across-subscriptions-with-import/ba-p/3638773"/>
-        <updated>2022-11-04T06:57:33.000Z</updated>
-        <summary type="html"><![CDATA[Move app service resources across subscriptions
-Many customers try to migrate across subscriptions, resource groups, and so on. Sometimes they use uploaded certificates in the App service instead of ASC.This blog will be helpful when they migrate App service resources with uploaded certificates. I wrote this blog for testing based on Azure docs.
- 
-See move across subscriptions 
-
- 
-Testing Steps
-1. Prerequisites
-2. Upload and bind certificates to App Service
-3. Do the migration
-4. Validate the result
- 
-1. Prerequisites
-- App Service- App service domain: in my case, tlsmigrationtest.com- Add a custom domain to App Service: SSL isn't bound yet
-
- 
-2. Upload and bind certificates
-Upload certificate (.pfx) and bind certificate to the app service domain.
-A. App service > TLS/SSL settings > Private Key Certificates (.pfx) > Upload Certificate
-
- 
-B. Upload the certificate
-
-C. Bind certificates
-App Service > Custom domains > Add bindings
-
- 
-After finishing the above steps, you can see the SSL binding to the App Service domain.
-
- 
-3. Migration across subscriptions with uploaded certificates
-A. For migration, go to your resource group.
- 
-B. Before moving resources you must click "show hidden types"
-When you check "show hidden types", you can see uploaded certificates.
-
- 
-C. Check all App service resources and click move to another subscription
-You must move all App Service resources together such as App Service, App service domain, and certificates.
-Check limitation Move Azure App Service resources across resource groups or subscriptions - Azure Resource Manager | Microsoft Learn
-
- 
-D. Validate the result
-Before you migrate app service resources, you can see the validation status.
-If you can see succeeded status like below, you will be able to migrate successfully.
-
- 
-4. Success migration
-Uploaded app service certificates are still bound to the App Service domain in the new subscription.]]></summary>
-        <author>
-            <name>Youna_Hyun</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[CVE Report Published for Spring Tools]]></title>
-        <id>https://spring.io/blog/2022/11/03/cve-report-published-for-spring-tools</id>
-        <link href="https://spring.io/blog/2022/11/03/cve-report-published-for-spring-tools"/>
-        <updated>2022-11-04T01:00:00.000Z</updated>
-        <summary type="html"><![CDATA[We have released STS 4.16.1 for Eclipse and Spring VSCode extensions 1.40.0 to address the following CVE report:
- - CVE-2022-31691: Remote Code Execution via YAML editors in STS4 extensions for Eclipse and VSCode
-
-Please review the information in the CVE report and upgrade immediately.
-
-Eclipse: STS upgrade to 4.16.1
-VSCode: Spring Boot Tools upgrade to 1.40.0
-VSCode: Concourse CI Pipeline Editor upgrade to 1.40.0
-VSCode: Bosh Editor upgrade to 1.40.0
-VSCode: Cloudfoundry Manifest YML Support upgrade to 1.40.0
-
-See Spring Tools page to find the latest releases]]></summary>
-        <author>
-            <name>Spring Engineering</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Python in Visual Studio Code – November 2022 Release]]></title>
-        <id>https://devblogs.microsoft.com/python/?p=9205</id>
-        <link href="https://devblogs.microsoft.com/python/python-in-visual-studio-code-november-2022-release/"/>
-        <updated>2022-11-03T16:33:40.000Z</updated>
-        <summary type="html"><![CDATA[The November 2022 release of the Python and Jupyter extensions for Visual Studio Code are now available. This release includes automatic installation of the isort extension, auto imports turned off by default with Pylance, "just my code" cell debugging in Jupyter and more!
-The post Python in Visual Studio Code – November 2022 Release appeared first on Python.]]></summary>
-        <author>
-            <name>Courtney Webster</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Getting Started with MongoDB Atlas and Azure Functions using Node.js]]></title>
-        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/getting-started-with-mongodb-atlas-and-azure-functions-using/ba-p/3662099</id>
-        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/getting-started-with-mongodb-atlas-and-azure-functions-using/ba-p/3662099"/>
-        <updated>2022-11-03T13:38:20.000Z</updated>
-        <summary type="html"><![CDATA[This article was written in conjunction with the MongoDB Developer Relations Team.
- 
-So you're building serverless applications with Microsoft Azure Functions, but you need to persist data to a database. What do you do about controlling the number of concurrent connections to your database from the function? What happens if the function currently connected to your database shuts down or a new instance comes online to scale with demand?
- 
-The concept of serverless in general, whether that be through a function or database, is great because it is designed for the modern application. Applications that scale on-demand reduce the maintenance overhead and applications that are pay as you go reduce unnecessary costs.
- 
-In this tutorial, we’re going to see just how easy it is to interact with Mong…]]></summary>
-        <author>
-            <name>denverbrittain</name>
         </author>
     </entry>
     <entry>

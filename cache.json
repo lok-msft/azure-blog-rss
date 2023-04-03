@@ -754,16 +754,6 @@
           "wordCount": 737,
           "title": "This Week in Spring - November 8th, 2022",
           "imageUrl": "https://avatars.githubusercontent.com/u/54473?v=4?s=200"
-        },
-        {
-          "id": "https://spring.io/blog/2022/11/03/cve-report-published-for-spring-tools",
-          "author": null,
-          "description": "We have released STS 4.16.1 for Eclipse and Spring VSCode extensions 1.40.0 to address the following CVE report:\n - CVE-2022-31691: Remote Code Execution via YAML editors in STS4 extensions for Eclipse and VSCode\n\r\nPlease review the information in the CVE report and upgrade immediately.\n\r\nEclipse: STS upgrade to 4.16.1\nVSCode: Spring Boot Tools upgrade to 1.40.0\nVSCode: Concourse CI Pipeline Editor upgrade to 1.40.0\nVSCode: Bosh Editor upgrade to 1.40.0\nVSCode: Cloudfoundry Manifest YML Support upgrade to 1.40.0\n\r\nSee Spring Tools page to find the latest releases",
-          "link": "https://spring.io/blog/2022/11/03/cve-report-published-for-spring-tools",
-          "publishedOn": "2022-11-04T01:00:00.000Z",
-          "wordCount": 588,
-          "title": "CVE Report Published for Spring Tools",
-          "imageUrl": "https://avatars.githubusercontent.com/u/6433390?v=4?s=200"
         }
       ]
     },
@@ -3258,26 +3248,6 @@
           "wordCount": 10797,
           "title": "Code-to-cloud with Azure Kubernetes Service (AKS)",
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/417239i2C2D3E885A21C1E1/image-size/original?v=v2&px=-1"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/migration-app-service-resources-across-subscriptions-with-import/ba-p/3638773",
-          "author": "Youna_Hyun",
-          "description": "Move app service resources across subscriptions\nMany customers try to migrate across subscriptions, resource groups, and so on. Sometimes they use uploaded certificates in the App service instead of ASC.This blog will be helpful when they migrate App service resources with uploaded certificates. I wrote this blog for testing based on Azure docs.\n \nSee move across subscriptions \n\n \nTesting Steps\n1. Prerequisites\n2. Upload and bind certificates to App Service\n3. Do the migration\n4. Validate the result\n \n1. Prerequisites\n- App Service- App service domain: in my case, tlsmigrationtest.com- Add a custom domain to App Service: SSL isn't bound yet\n\n \n2. Upload and bind certificates\nUpload certificate (.pfx) and bind certificate to the app service domain.\nA. App service > TLS/SSL settings > Private Key Certificates (.pfx) > Upload Certificate\n\n \nB. Upload the certificate\n\nC. Bind certificates\nApp Service > Custom domains > Add bindings\n\n \nAfter finishing the above steps, you can see the SSL binding to the App Service domain.\n\n \n3. Migration across subscriptions with uploaded certificates\nA. For migration, go to your resource group.\n \nB. Before moving resources you must click \"show hidden types\"\nWhen you check \"show hidden types\", you can see uploaded certificates.\n\n \nC. Check all App service resources and click move to another subscription\nYou must move all App Service resources together such as App Service, App service domain, and certificates.\nCheck limitation Move Azure App Service resources across resource groups or subscriptions - Azure Resource Manager | Microsoft Learn\n\n \nD. Validate the result\nBefore you migrate app service resources, you can see the validation status.\nIf you can see succeeded status like below, you will be able to migrate successfully.\n\n \n4. Success migration\nUploaded app service certificates are still bound to the App Service domain in the new subscription.",
-          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/migration-app-service-resources-across-subscriptions-with-import/ba-p/3638773",
-          "publishedOn": "2022-11-04T06:57:33.000Z",
-          "wordCount": 9535,
-          "title": "Migration app service resources across subscriptions with import certificate",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/408669iD16BE9E2B273007F?v=v2"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/getting-started-with-mongodb-atlas-and-azure-functions-using/ba-p/3662099",
-          "author": "denverbrittain",
-          "description": "This article was written in conjunction with the MongoDB Developer Relations Team.\n \nSo you're building serverless applications with Microsoft Azure Functions, but you need to persist data to a database. What do you do about controlling the number of concurrent connections to your database from the function? What happens if the function currently connected to your database shuts down or a new instance comes online to scale with demand?\n \nThe concept of serverless in general, whether that be through a function or database, is great because it is designed for the modern application. Applications that scale on-demand reduce the maintenance overhead and applications that are pay as you go reduce unnecessary costs.\n \nIn this tutorial, we’re going to see just how easy it is to interact with Mong…",
-          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/getting-started-with-mongodb-atlas-and-azure-functions-using/ba-p/3662099",
-          "publishedOn": "2022-11-03T13:38:20.000Z",
-          "wordCount": 11373,
-          "title": "Getting Started with MongoDB Atlas and Azure Functions using Node.js",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/414854i2AA72610FCB0C036?v=v2"
         }
       ]
     },
@@ -4945,16 +4915,6 @@
           "wordCount": 5025,
           "title": "Python in Visual Studio Code – December 2022 Release",
           "imageUrl": "https://devblogs.microsoft.com/python/wp-content/uploads/sites/12/2022/12/run_python_wasm.png"
-        },
-        {
-          "id": "https://devblogs.microsoft.com/python/?p=9205",
-          "author": "Courtney Webster",
-          "description": "The November 2022 release of the Python and Jupyter extensions for Visual Studio Code are now available. This release includes automatic installation of the isort extension, auto imports turned off by default with Pylance, \"just my code\" cell debugging in Jupyter and more!\nThe post Python in Visual Studio Code – November 2022 Release appeared first on Python.",
-          "link": "https://devblogs.microsoft.com/python/python-in-visual-studio-code-november-2022-release/",
-          "publishedOn": "2022-11-03T16:33:40.000Z",
-          "wordCount": 4415,
-          "title": "Python in Visual Studio Code – November 2022 Release",
-          "imageUrl": "https://devblogs.microsoft.com/python/wp-content/uploads/sites/12/2022/11/Nov2022-PylintPrompt.png"
         }
       ]
     },
