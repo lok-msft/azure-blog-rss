@@ -2,10 +2,27 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2023-04-05T00:59:52.427Z</updated>
+    <updated>2023-04-06T01:07:38.619Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Addressing Cache Retrieval Failures on Azure App Service - Node-Cache Example]]></title>
+        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/addressing-cache-retrieval-failures-on-azure-app-service-node/ba-p/3786901</id>
+        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/addressing-cache-retrieval-failures-on-azure-app-service-node/ba-p/3786901"/>
+        <updated>2023-04-05T01:55:51.000Z</updated>
+        <summary type="html"><![CDATA[I recently encountered an issue when attempting to read cache values using the Node-Cache module on an app service running on multiple instances. However, the module worked fine on my local environment, single virtual machine, or single-instance app service.
+ 
+This behavior occurs because Node-Cache and other private cache solutions are designed to store data in the memory of a single process. The private cache works properly when running on a single instance, as all requests are handled by the same process and have access to the same cache.
+ 
+
+However, in a multi-instance environment like a multi-instance App Service, using a private cache can lead to inconsistent behavior and data inconsistency.
+ 
+For example, you save a value in one cache in an instance. Then, a request tries to read th…]]></summary>
+        <author>
+            <name>yorkzhang</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Armchair Architects: Data Mesh Architecture]]></title>
         <id>https://techcommunity.microsoft.com/t5/azure-architecture-blog/armchair-architects-data-mesh-architecture/ba-p/3787655</id>
@@ -13298,33 +13315,6 @@ CAF & WAF enabl…]]></summary>
 The post Connecting the Dots of Azure SQL CICD Part 2: Local Development appeared first on Azure SQL Devs’ Corner.]]></summary>
         <author>
             <name>Brian Spendolini</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Part 2 – Observability for your azd-compatible app]]></title>
-        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/part-2-observability-for-your-azd-compatible-app/ba-p/3670040</id>
-        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/part-2-observability-for-your-azd-compatible-app/ba-p/3670040"/>
-        <updated>2022-11-06T14:49:42.000Z</updated>
-        <summary type="html"><![CDATA[In Part 1, I walked you through how to azdev-ify a simple Python app. In this post, we will:
-
-add the Azure resources to enable the observability features in azd
-add manual instrumentation code in the app 
-create a launch.json file to run the app locally and make sure we can send data to Application Insights
-deploy the app to Azure
-
- 
-Previously…
-We azdev-ified a simple Python app: TheCatSaidNo and deployed the app to Azure. Don’t worry if you have already deleted everything. I have updated the code for part 1 because of the Bicep modules improvements we shipped in the azure-dev-cli_0.4.0-beta.1 release. You don't need to update your codes, just start from my GitHub repository (branch: part1):
-
-Make sure have the pre-requisites installed:
-
-Python (3.8+)
-azd
-
-
-In a new empty directory, run …]]></summary>
-        <author>
-            <name>pcchan</name>
         </author>
     </entry>
 </feed>
