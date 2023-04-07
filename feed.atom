@@ -2,10 +2,189 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2023-04-06T01:07:38.619Z</updated>
+    <updated>2023-04-07T01:04:58.589Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Building a Crypto News Website in C# using the Microsoft Azure App Service and MongoDB Atlas]]></title>
+        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/building-a-crypto-news-website-in-c-using-the-microsoft-azure/ba-p/3789523</id>
+        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/building-a-crypto-news-website-in-c-using-the-microsoft-azure/ba-p/3789523"/>
+        <updated>2023-04-06T17:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Who said creating a website has to be hard? Writing the code, persisting news, hosting the website. A decade ago this might have been a lot of work. These days, thanks to Microsoft Blazor, Microsoft Azure App Service, and MongoDB Atlas you can get started in minutes. And finish it equally fast!
+ 
+In this tutorial I will walk you through:
+ 
+
+setting up a new Blazor project,
+creating a new page with a simple UI,
+creating data in MongoDB Atlas,
+showing those news on the website and
+making the website available by using Azure App Service to host it.
+
+ 
+All you need is this tutorial and the following pre-requisites, but if you prefer to just read along for now, check out the GitHub repository for this tutorial where you can find the code and the tutorial.
+ 
+Pre-requisites for this tutorial
+ 
+Be…]]></summary>
+        <author>
+            <name>denverbrittain</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Can ChatGPT work with your enterprise data?]]></title>
+        <id>https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/can-chatgpt-work-with-your-enterprise-data/ba-p/3789378</id>
+        <link href="https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/can-chatgpt-work-with-your-enterprise-data/ba-p/3789378"/>
+        <updated>2023-04-06T15:33:40.000Z</updated>
+        <summary type="html"><![CDATA[Bring OpenAI’s ChatGPT model in Azure to your own enterprise-grade app experiences with precise control over the knowledge base, for in-context and relevant responses. Interact with your organization’s private internal data, while respecting the information protection controls put in place.
+ 
+
+ 
+Azure OpenAI service is combined with Azure Cognitive Search to index and retrieve data that is private and external to the ChatGPT large language model. The retrieval step in Azure Cognitive Search finds the most relevant pieces of information and presents the top ranked results to the language model. And because the knowledge lives outside of the ChatGPT model, you’re in control — it’s not used to train the model.
+ 
+Microsoft Distinguished Engineer, Pablo Castro, joins Jeremy Chapman to show how …]]></summary>
+        <author>
+            <name>Zachary Cavanell</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How to control access to identity-specific folders in Azure Blob Storage using ABAC]]></title>
+        <id>https://techcommunity.microsoft.com/t5/azure-paas-blog/how-to-control-access-to-identity-specific-folders-in-azure-blob/ba-p/3746705</id>
+        <link href="https://techcommunity.microsoft.com/t5/azure-paas-blog/how-to-control-access-to-identity-specific-folders-in-azure-blob/ba-p/3746705"/>
+        <updated>2023-04-06T15:19:38.000Z</updated>
+        <summary type="html"><![CDATA[An example use case: 
+ 
+I have an Azure Blob Container named "my-org-documents"; a specific folder should be shared across all the identities. However, each identity can only write into their subfolders. 
+ 
+I will use the below identities as example: 
+ 
+test@my-org.com (AD user) 
+ExampleMI12 (managed identity)
+ 
+I have created a path called test, managedidentity and sharedfolder under the container, so the structure is as below: 
+ 
+my-org-documents/test
+my-org-documents/managedidentity
+my-org-documents/sharedfolder
+ 
+My task is completed when: 
+ 
+- Active Directory user "test" is able to read/write into sharedfolder
+- Active Directory user "test" is able to read/write into test folder but not into managedidentity folder. 
+- Managed Identity "ExampleMI12" is able to read/write into sharedfo…]]></summary>
+        <author>
+            <name>mahmoudsamy</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[License management capabilities for Independent Software Vendors’ (ISV) SaaS apps in Microsoft Teams]]></title>
+        <id>https://devblogs.microsoft.com/microsoft365dev/?p=13424</id>
+        <link href="https://devblogs.microsoft.com/microsoft365dev/license-management-capabilities-for-independent-software-vendors-isv-saas-apps-in-microsoft-teams/"/>
+        <updated>2023-04-06T15:00:17.000Z</updated>
+        <summary type="html"><![CDATA[To help streamline the license management experience, we are now offering a new capability for ISVs to choose to offload the license management capabilities directly in Microsoft Teams.  
+The post License management capabilities for Independent Software Vendors’ (ISV) SaaS apps in Microsoft Teams  appeared first on Microsoft 365 Developer Blog.]]></summary>
+        <author>
+            <name>Chandrika Duggirala</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How To Use WebP Images on Azure WordPress Managed Offering]]></title>
+        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/how-to-use-webp-images-on-azure-wordpress-managed-offering/ba-p/3789326</id>
+        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/how-to-use-webp-images-on-azure-wordpress-managed-offering/ba-p/3789326"/>
+        <updated>2023-04-06T14:02:29.000Z</updated>
+        <summary type="html"><![CDATA[In your WordPress Managed offering, go to webssh of your SCM site -  https://<app name>.scm.azurewebsites.net/webssh/host
+Install the GD extension with Webp support using the below command.
+
+apk add --no-cache --virtual .build-deps autoconf pkgconfig gcc g++ gawk make zlib-dev libpng-dev libwebp-dev \
+&& docker-php-ext-configure gd --with-webp \
+&& docker-php-ext-install gd \
+&& apk del .build-deps
+Copy the newly installed gd.so file to a persistent file storage. 
+mkdir -p /home/dev/extensions
+cp /usr/local/lib/php/extensions/no-debug-non-zts-20200930/gd.so /home/dev/extensions/gd.so
+ 
+
+Now write a post-startup script to restore the updated copy of gd.so everytime the app starts.
+
+Edit the startup script file in /home/dev directory using the below command: 
+vi /home/dev/startup.sh
+Then add the following command to the startup.sh file and save it (type :wq to save).
+ 
+cp /home/dev/extensions/gd.so /usr/local/lib/php/extensions/no-debug-non-zts-20200930/gd.so 
+ 
+
+Now restart your app from Azure Portal and you can upload a sample .webp image to test the changes.]]></summary>
+        <author>
+            <name>Arjun_Baliga</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Configure rate limits for different API operations in Azure API Management]]></title>
+        <id>https://techcommunity.microsoft.com/t5/azure-paas-blog/configure-rate-limits-for-different-api-operations-in-azure-api/ba-p/3789108</id>
+        <link href="https://techcommunity.microsoft.com/t5/azure-paas-blog/configure-rate-limits-for-different-api-operations-in-azure-api/ba-p/3789108"/>
+        <updated>2023-04-06T11:11:45.000Z</updated>
+        <summary type="html"><![CDATA[Azure API Management (APIM) is one of the PaaS products offered by Azure which allows you to publish, manage, secure and monitor APIs. One of the features of APIM is the ability to control the traffic to your APIs using policies such as rate limits and quotas.
+ 
+Rate limits are policies that prevent API usage spikes on a per subscription or per key basis by limiting the call rate to a specified number per a specified time period. Quotas are policies that enforce a hard limit on the number of calls that can be made to an API within a billing period.
+ 
+In this blog post, we will focus on how to configure rate limits for different operations in APIM using the `rate-limit-by-key` policy. This policy allows you to define expressions to identify the keys that are used to track traffic usage. You…]]></summary>
+        <author>
+            <name>anjalidivitha</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[A Bootiful Podcast: José Paumard, Java Champion alumnus and Java legend, on Project Loom, Valhalla, and more, from Devnexus 2023!]]></title>
+        <id>https://spring.io/blog/2023/04/06/a-bootiful-podcast-jose-paumard-java-champion-alumnus-and-java-legend-on</id>
+        <link href="https://spring.io/blog/2023/04/06/a-bootiful-podcast-jose-paumard-java-champion-alumnus-and-java-legend-on"/>
+        <updated>2023-04-06T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Level up your Java code and explore what Spring can do for you.]]></summary>
+        <author>
+            <name>Josh Long</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How to Detect Files of the Same Size on your Computer via PowerShell]]></title>
+        <id>https://techcommunity.microsoft.com/t5/educator-developer-blog/how-to-detect-files-of-the-same-size-on-your-computer-via/ba-p/3787635</id>
+        <link href="https://techcommunity.microsoft.com/t5/educator-developer-blog/how-to-detect-files-of-the-same-size-on-your-computer-via/ba-p/3787635"/>
+        <updated>2023-04-05T07:04:00.000Z</updated>
+        <summary type="html"><![CDATA[File management might be tedious, but it is sometimes required, especially when storage space is limited. PowerShell is an excellent tool for automating most activities including identifying files of the same size on your computer.
+ 
+The script below will detect and report (rather than delete) all files in the directory and subdirectories, group them by size, filter out groups with only one file, and report on the files of the same size with their full path and creation time.
+ 
+NOTE: Please make sure you further investigate the duplicate files this script finds before any other action is taken.
+ 
+ 
+ 
+ 
+ 
+# Get all files in a directory and subdirectories
+$files = Get-ChildItem -Recurse -File
+
+# Group files by size
+$groups = $files | Group-Object Length
+
+# Filter groups with more than one item
+$duplicates = $groups | Where-Object {$_.Count -gt 1}
+
+# Output duplicate files
+foreach ($duplicate in $duplicates) {
+    Write-Host "Duplicate files of size $($duplicate.Name):"
+    $duplicate.Group | Select-Object FullName, CreationTime | Sort-Object CreationTime | Format-Table -AutoSize
+}
+
+ 
+ 
+ 
+ 
+ 
+This script may be run in PowerShell by saving it as a .ps1 file and then running it from the PowerShell command prompt. Please keep in mind that if you have a large number of files on your computer, this script may take some time to run. How to Detect Files of the Same Size on your Computer via PowerShell
+ 
+As always, please share your PowerShell automation scripts in the comments section below so that they can be added to or improved upon the script published above.]]></summary>
+        <author>
+            <name>Anthony Bartolo</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Addressing Cache Retrieval Failures on Azure App Service - Node-Cache Example]]></title>
         <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/addressing-cache-retrieval-failures-on-azure-app-service-node/ba-p/3786901</id>
@@ -13186,135 +13365,6 @@ Microsoft Virtual Training Days
 Whether you're a cloud expert or a novice, or looking for real-world strategies to customise your digital journey, our expert webinars will help you transform your business and achieve full potential using the Microsoft Cloud platform. Many of our Fundamentals training days include an exam voucher for certification at no cost. Please see the individual pages for …]]></summary>
         <author>
             <name>AdamJ89</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Build the "Take a break reminder" app with Microsoft Graph​ - November 14th]]></title>
-        <id>https://techcommunity.microsoft.com/t5/educator-developer-blog/build-the-quot-take-a-break-reminder-quot-app-with-microsoft/ba-p/3671477</id>
-        <link href="https://techcommunity.microsoft.com/t5/educator-developer-blog/build-the-quot-take-a-break-reminder-quot-app-with-microsoft/ba-p/3671477"/>
-        <updated>2022-11-08T10:45:50.000Z</updated>
-        <summary type="html"><![CDATA[Register for this session to learn how to build apps with Microsoft Graph: https://www.meetup.com/microsoft-reactor-mea/events/289347563/
- 
-What is this event about?
-This is the third week of the 30 Days of Microsoft Graph Challenge! It's not too late, join the challenge or catchup on previous weeks content see https://aka.ms/30DaysOfMSGraph/Challenge
- 
-In this first part of this session, we will update you on the 30 Days of Microsoft Graph Challenge:
-
-learning materials of the week
-most asked questions on GitHub discussions
-
-The second part of this session, Glaucia Lemos and Waldek Mastykarz will show you:
-
-How to build a ""take a break reminder app"" from scratch!
-
-Join this session to learn how Microsoft Graph is used in the end-to-end scenarios.
-Please visit here for more details on yo…]]></summary>
-        <author>
-            <name>japhletnwamu</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Getting top marks for your next academic assignment]]></title>
-        <id>https://techcommunity.microsoft.com/t5/educator-developer-blog/getting-top-marks-for-your-next-academic-assignment/ba-p/3671498</id>
-        <link href="https://techcommunity.microsoft.com/t5/educator-developer-blog/getting-top-marks-for-your-next-academic-assignment/ba-p/3671498"/>
-        <updated>2022-11-08T08:39:01.000Z</updated>
-        <summary type="html"><![CDATA[Test driven development (TDD)
-Test driven development, or TDD, is a method of directly coupling testing with every part of your daily development. Developers who use TDD typically start developing by first writing a test that fails, and then writing the code that makes the test pass. This approach means that product code is more likely to get high test coverage, and the tests typically come first.
- 
-Many developers find this pattern useful to help them prioritize good architecture from the start of development, and to stay laser-focused on each part of the functionality they need to implement. This school of thought advocates for testing not being an after-thought of development, but rather a driving force.
- 
-For example, in the following image, you can see that AddTest is written and fail…]]></summary>
-        <author>
-            <name>Lee Stott</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[This Week in Spring - November 8th, 2022]]></title>
-        <id>https://spring.io/blog/2022/11/08/this-week-in-spring-november-8th-2022</id>
-        <link href="https://spring.io/blog/2022/11/08/this-week-in-spring-november-8th-2022"/>
-        <updated>2022-11-08T08:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Hi, Spring fans! Welcome to another installment of This Week in Spring! I’ve been busy this last week! I’ve been visiting with customers and talking to the community here in South East Asia. I was in Malaysia last week, and now I’m in Bangkok, Thailand. I’m near the end of my time here in SE Asia, which makes me sad. I’m dearly going to miss the food and the weather, but time waits for no person, and it’s almost time to go home.
-
-And with time comes a jam-packed roster of new things we can read and learn from. So, without further ado, let’s dive right into it!
-
-
-  
-A Bootiful Podcast: Java Champion, legend, and prolific open source contributor Andres Almiray
-
-  
-CVE Report Published for Spring Tools
-
-  
-Can a Java Application Use More Memory than the Heap Size?
-
-  
-JUnit – Testing Methods That Call System.exit()
-
-  
-Spring Authorization Server 0.4.0-RC1 available now
-
-  
-Spring Authorization Server 1.0.0-RC1 available now
-
-  
-Spring Data 2022.0.0-RC2 available
-
-  
-Spring Modulith 0.1 M2 released
-
-  
-Have you tested your application against the upcoming Spring Boot 3? There’s a ton of amazing new features arriving in this release and you should definitely be kicking the tires now. Remember: Spring Framework 6 is due in about a week’s time and Spring Boot 3 is due less than a few weeks after that! And you know where to go: start.spring.io]]></summary>
-        <author>
-            <name>Spring Engineering</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Why you need a Cloud Adoption Framework (CAF), and probably a WAF too!]]></title>
-        <id>https://techcommunity.microsoft.com/t5/azure-architecture-blog/why-you-need-a-cloud-adoption-framework-caf-and-probably-a-waf/ba-p/3667426</id>
-        <link href="https://techcommunity.microsoft.com/t5/azure-architecture-blog/why-you-need-a-cloud-adoption-framework-caf-and-probably-a-waf/ba-p/3667426"/>
-        <updated>2022-11-07T19:43:12.000Z</updated>
-        <summary type="html"><![CDATA[What are the Microsoft Cloud Adoption Framework for Azure (CAF) and the Microsoft Azure Well-Architected Framework (WAF)? Both are best practice guidance around how to transform your organization to be cloud-centric (CAF) and how to build and manage cloud-hosted applications securely, cost-effectively, etc. (WAF).
- 
-But why are they important, and why should you, and your organization, use them on your cloud transformation journey?
- 
-Based on my experience of 30+ years in IT, including 10 years as CTO of DevOpsGroup (An Amdocs company) and 5yrs as a Microsoft Regional Director, I’ll give you 3 reasons:
- 
-
-CAF helps you understand that cloud isn’t “just a technology” and that your journey to cloud will require a wide-ranging transformation in how you deliver your IT services
-CAF & WAF enabl…]]></summary>
-        <author>
-            <name>Stephen Thair</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Public preview: Exporting ISE and Consumption Logic Apps to Standard SKU]]></title>
-        <id>exporting-ise-and-consumption-logic-apps-to-standard-sku-is-now-on-public-preview</id>
-        <link href="https://azure.microsoft.com/en-us/updates/exporting-ise-and-consumption-logic-apps-to-standard-sku-is-now-on-public-preview/"/>
-        <updated>2022-11-07T16:00:14.000Z</updated>
-        <summary type="html"><![CDATA[Logic Apps Standard VS Code Extension now allows you to export groups of logic apps workflows deployed to Azure.]]></summary>
-        <author>
-            <name>Azure service updates</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[General availability: Default Rule Set 2.1 for Azure Web Application Firewall]]></title>
-        <id>general-availability-default-rule-set-21-for-azure-web-application-firewall</id>
-        <link href="https://azure.microsoft.com/en-us/updates/general-availability-default-rule-set-21-for-azure-web-application-firewall/"/>
-        <updated>2022-11-07T16:00:14.000Z</updated>
-        <summary type="html"><![CDATA[Increase your security posture and reduce false positives with Default Rule Set 2.1, now generally available on Azure's global Web Application Firewall running on Azure Front Door.]]></summary>
-        <author>
-            <name>Azure service updates</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Connecting the Dots of Azure SQL CICD Part 2: Local Development]]></title>
-        <id>https://devblogs.microsoft.com/azure-sql/?p=1483</id>
-        <link href="https://devblogs.microsoft.com/azure-sql/azure-sql-database-change-management/"/>
-        <updated>2022-11-07T15:00:01.000Z</updated>
-        <summary type="html"><![CDATA[Join us for part two of our Azure SQL database change management (CICD) series. This post covers local development environments with Visual Studio Code.
-The post Connecting the Dots of Azure SQL CICD Part 2: Local Development appeared first on Azure SQL Devs’ Corner.]]></summary>
-        <author>
-            <name>Brian Spendolini</name>
         </author>
     </entry>
 </feed>
