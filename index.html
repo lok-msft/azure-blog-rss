@@ -22,8 +22,8 @@
             data-action="toggle-accordions"
             title="Click to toggle the day, Ctrl + click to toggle all."
           >
-            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2023-04-07 datetime="2023-04-06T17:00:00.000Z">2023-04-07</time>
-            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2023-04-07 datetime="2023-04-06T17:00:00.000Z"></time>
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2023-04-07 datetime="2023-04-07T13:44:44.000Z">2023-04-07</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2023-04-07 datetime="2023-04-07T13:44:44.000Z"></time>
           </button>
         </h2>
         <ul class="sources card">
@@ -38,6 +38,137 @@
                   <a class="source-heading__link" href="https://techcommunity.microsoft.com">Open</a>
                 </h3>
                 <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/redirect-from-the-non-www-domain-to-the-www-domain-in-the-azure/ba-p/3790022"
+                        open
+                      >
+                        <summary class="article-expander__title">Redirect from the non WWW domain to the WWW domain in the Azure WordPress Market Place offering-</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/redirect-from-the-non-www-domain-to-the-www-domain-in-the-azure/ba-p/3790022">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://techcommunity.microsoft.com/t5/image/serverpage/image-id/458536iEF630D9C1E4FBF9B?v&#x3D;v2" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>1. Navigate to your App Service via the Azure Portal. Under the Development Tools section, select SSH then Go --&gt;.
+
+ 
+2. Modify the default site config - You would need to make a copy of the existing configuration and place the file inside the /home/site directory by running the below command.
+ 
+ 
+cp /etc/nginx/conf.d/default.conf /home/site/default
+ 
+ 
+ 
+
+ 
+
+Go to https://.scm.azurewebsites.net/newui/fileManager click on Modify site/default file.
+
+
+ 
+
+in the existing server block update the server name to www domain
+
+ 
+ 
+server {
+
+        listen 80;
+
+        ## Your website name goes here.
+
+        server_name www.example.com
+ 
+ 
+ 
+
+In the same default.conf file, you can create a new server block and add the below configurations for non-www to www redirection -
+
+ 
+ 
+server {
+
+    listen 80;
+
+    server_name example.com;
+
+    return 301 $scheme://www.example.com$request_uri;
+
+}
+ 
+ 
+ 
+// This directive tells Nginx to send any request //for http://example.com to http://www.example.com with HTTP redirect code 301.
+
+Copy the following code snippet to /home/dev/startup.sh.
+
+ 
+ 
+cp /home/site/default /etc/nginx/conf.d/default.conf 
+
+/usr/sbin/nginx -s reload
+ 
+ 
+ 
+
+Please restart App Service and verify that the redirect from non www domain to www domain works fine.</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;32
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/running-cronjobs-in-azure-app-service-linux/ba-p/3789879"
+                        open
+                      >
+                        <summary class="article-expander__title">Running cronjobs in Azure App Service Linux</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/running-cronjobs-in-azure-app-service-linux/ba-p/3789879">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://techcommunity.microsoft.com/t5/image/serverpage/image-id/458492iFE78E8B355606DEF?v&#x3D;v2" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>To schedule a cronjob on azure app service Linux web application you can follow the steps outlined below,
+ 
+
+ 
+Navigate to “SSH” from azure app services portal and click on Go -&gt;
+ 
+
+ 
+
+ 
+Create a script file in /home with name as start.sh and add the below lines to the script file and save the file.
+Command to create a script file - touch /home/start.sh
+Open the file using vim editor: vi /home/start.sh and copy the below code
+ 
+# Installing cron 
+apt-get update -qq &amp;&amp; apt-get install cron -yqq 
+# Starting cron 
+service cron start 
+#cron scheduler 
+(crontab -l 2&gt;/dev/null; echo &quot;* * * * * find /home/BackupLogs -type f -size 1k -delete &quot;)|crontab
+ 
+Post that, you can add the created script as a startup command which would install the cron, start the cron and schedule the cron during startup. To add as a startup command, navigate to Azure portal -&gt; Configuration blade -&gt; General settings tab and provide as below,
+ 
+ 
+
+ 
+ 
+In the above sample code, it checks for all the files with size 1KB in /home/BackupLogs and delete them for every minute.
+ 
+Based on your convenience you can adjust the CRON scheduler time and command</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;32
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
                     <article>
                       <details
                         class="article-expander"
@@ -31804,256 +31935,12 @@ If you are a head of a student club of your university or manage a community, on
                 </section>
               </section>
             </li>
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Azure Cosmos DB Blog</button>
-                  <a class="source-heading__link" href="https://devblogs.microsoft.com/cosmosdb/">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://devblogs.microsoft.com/cosmosdb/?p&#x3D;5225"
-                        open
-                      >
-                        <summary class="article-expander__title">Are you up for the Azure Cosmos DB Cloud Skills Challenge!?</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://devblogs.microsoft.com/cosmosdb/azure-cosmos-db-cloud-skills-challenge/">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://devblogs.microsoft.com/cosmosdb/wp-content/uploads/sites/52/2022/11/Fg-f6r2WYAEhbBv.jpg" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>The Azure Cosmos DB Developer Cloud Skills Challenge is here! This is a chance to expand your knowledge of Azure Cosmos DB on the road to certification. The challenge helps developers start building cloud-native applications with a fully managed NoSQL database.
-The post Are you up for the Azure Cosmos DB Cloud Skills Challenge!? appeared first on Azure Cosmos DB Blog.</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;14
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Azure service updates</button>
-                  <a class="source-heading__link" href="https://azure.microsoft.com/en-us/updates/">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="generally-available-functions-now-supports-net-7-in-an-isolated-worker-process"
-                        open
-                      >
-                        <summary class="article-expander__title">Generally available: Functions now supports .NET 7 in an isolated worker process</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://azure.microsoft.com/en-us/updates/generally-available-functions-now-supports-net-7-in-an-isolated-worker-process/">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://azurecomcdn.azureedge.net/cvt-de9ca363d31f6b1491ad067281bec80769be2c19b5b9c925ad39869042c183b5/images/shared/social/azure-icon-250x250.png" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>Create applications with .NET 7 runtime to take advantage of serverless functions in Azure.</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;18
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="generally-available-azure-static-web-apps-now-fully-supports-net-7"
-                        open
-                      >
-                        <summary class="article-expander__title">Generally available: Azure Static Web Apps now fully supports .NET 7</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://azure.microsoft.com/en-us/updates/generally-available-azure-static-web-apps-now-fully-supports-net-7/">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://azurecomcdn.azureedge.net/cvt-de9ca363d31f6b1491ad067281bec80769be2c19b5b9c925ad39869042c183b5/images/shared/social/azure-icon-250x250.png" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>Azure Static Web Apps now supports building and deploying full-stack .NET 7.0 isolated applications.</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;18
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="generally-available-new-node-sizing-for-azure-vmware-solution"
-                        open
-                      >
-                        <summary class="article-expander__title">Generally available: New node sizing for Azure VMware Solution</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://azure.microsoft.com/en-us/updates/generally-available-new-node-sizing-for-azure-vmware-solution/">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://azurecomcdn.azureedge.net/cvt-de9ca363d31f6b1491ad067281bec80769be2c19b5b9c925ad39869042c183b5/images/shared/social/azure-icon-250x250.png" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>Optimize workloads with new node sizes, AV52, and AV36P, now generally available in Azure VMware Solution.</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;18
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Microsoft Tech Community - Latest Blogs - Apps on Azure Blog</button>
-                  <a class="source-heading__link" href="https://techcommunity.microsoft.com">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/announcing-the-net-7-for-azure-functions-isolated-worker-process/ba-p/3671398"
-                        open
-                      >
-                        <summary class="article-expander__title">Announcing the .NET 7 for Azure functions isolated worker process is generally available</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/announcing-the-net-7-for-azure-functions-isolated-worker-process/ba-p/3671398">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://cdn.techcommunity.microsoft.com/assets/MTC_Open_graph_image1.jpg" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>We’re happy to share that Azure functions joins Azure Web Apps and Static Web Apps support for .NET 7.0 GA. Azure Functions is starting to roll out the RTM version of .NET 7.0 across the global infrastructure. 
-Azure Functions will support .NET 7 serverless apps hosted on all Windows and Linux SKUs, including Consumption plan, Elastic Premium plan, and App Service plans. Customers can start to test in limited cloud regions (e.g West Central US, France Central) by the end of today. Additional rollouts to fully deploy the RTM version across our fleet are expected to be done by the 2nd week of November.  
-.NET 7 in Azure Functions is supported by leveraging the .NET Isolated Worker process.  Azure functions .NET Isolated worker process decouples your worker process where your dotnet function …</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;32
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
-        </ul>
-      </section>
-      <section class="daily-content js-toggle-accordions-scope">
-        <h2 class="daily-heading">
-          <button
-            class="daily-heading-toggle"
-            data-action="toggle-accordions"
-            title="Click to toggle the day, Ctrl + click to toggle all."
-          >
-            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2022-11-08 datetime="2022-11-08T15:57:43.000Z">2022-11-08</time>
-            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2022-11-08 datetime="2022-11-08T15:57:43.000Z"></time>
-          </button>
-        </h2>
-        <ul class="sources card">
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Azure service updates</button>
-                  <a class="source-heading__link" href="https://azure.microsoft.com/en-us/updates/">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="general-availability-virtual-machine-software-reservations"
-                        open
-                      >
-                        <summary class="article-expander__title">General availability: Virtual Machine software reservations</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://azure.microsoft.com/en-us/updates/general-availability-virtual-machine-software-reservations/">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://azurecomcdn.azureedge.net/cvt-de9ca363d31f6b1491ad067281bec80769be2c19b5b9c925ad39869042c183b5/images/shared/social/azure-icon-250x250.png" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>You can now save on Virtual Machine software from third-party publishers by purchasing software reservations.</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;17
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Microsoft Tech Community - Latest Blogs - Azure Developer Community Blog</button>
-                  <a class="source-heading__link" href="https://techcommunity.microsoft.com">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://techcommunity.microsoft.com/t5/azure-developer-community-blog/upcoming-developer-amp-technical-events-in-the-uk/ba-p/3671630"
-                        open
-                      >
-                        <summary class="article-expander__title">Upcoming Developer &amp; Technical Events in the UK</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/t5/azure-developer-community-blog/upcoming-developer-amp-technical-events-in-the-uk/ba-p/3671630">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://techcommunity.microsoft.com/t5/image/serverpage/image-id/417656i3C7C9D2BAB10CB26/image-size/original?v&#x3D;v2&amp;px&#x3D;-1" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>Hello from the Microsoft Developer UK team! Here&#x27;s a list of upcoming events taking place in the UK - we hope to see you virtually or in-person!
- 
-Don&#x27;t forget to visit our Microsoft UK Developer site at https://aka.ms/ukdeveloper. There you can find a wide array of tech resources and links to communities across the UK.  
- 
-
-
-
-Date
-Location
-Event Name
-Description
-Registration Link
-
-
-Regularly
-Online
-Microsoft Virtual Training Days
-Whether you&#x27;re a cloud expert or a novice, or looking for real-world strategies to customise your digital journey, our expert webinars will help you transform your business and achieve full potential using the Microsoft Cloud platform. Many of our Fundamentals training days include an exam voucher for certification at no cost. Please see the individual pages for …</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;33
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
         </ul>
       </section>
 
     <footer>
-      <a class="footer-link" href="https://github.com/lok-msft/azure-blog-rss/actions/runs/4634413957">
-        <time id="build-timestamp" datetime="2023-04-07T01:04:58.527Z">2023-04-07T01:04:58.527Z</time>
+      <a class="footer-link" href="https://github.com/lok-msft/azure-blog-rss/actions/runs/4642548744">
+        <time id="build-timestamp" datetime="2023-04-08T01:07:30.672Z">2023-04-08T01:07:30.672Z</time>
       </a>
       <a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a>
     </footer>
