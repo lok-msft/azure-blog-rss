@@ -22,11 +22,622 @@
             data-action="toggle-accordions"
             title="Click to toggle the day, Ctrl + click to toggle all."
           >
-            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2023-04-13 datetime="2023-04-12T21:58:25.000Z">2023-04-13</time>
-            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2023-04-13 datetime="2023-04-12T21:58:25.000Z"></time>
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2023-04-14 datetime="2023-04-14T00:51:10.000Z">2023-04-14</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2023-04-14 datetime="2023-04-14T00:51:10.000Z"></time>
           </button>
         </h2>
         <ul class="sources card">
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Microsoft Tech Community - Latest Blogs - Apps on Azure Blog</button>
+                  <a class="source-heading__link" href="https://techcommunity.microsoft.com">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/remote-certificate-is-invalid-when-calling-an-external-endpoint/ba-p/3785758"
+                        open
+                      >
+                        <summary class="article-expander__title">Remote certificate is invalid when calling an external endpoint from web app</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/remote-certificate-is-invalid-when-calling-an-external-endpoint/ba-p/3785758">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://techcommunity.microsoft.com/t5/image/serverpage/image-id/456828i6E1678933AAB8E32?v&#x3D;v2" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>Using .NET code to resolve “Remote certificate is invalid” when multi-tenant web app is configured as client in client-server model.
+ 
+You can implement the server thumbprint in the .NET application code to resolve “Remote certificate is invalid” when multi-tenant web app is configured as client in client-server model and making HTTS request to a server configured with a private CA.
+ 
+When a web app acts as a client and makes an HTTPS call to an external server secured by a private CA, the web app uses its default installed trusted root CA’s public key to validate the server’s certificate. However, the remote server certificate is signed by a private CA, and since there is no such trusted CA in the web app’s trusted source list, it will not be validated by the web app. You cannot modify th…</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;33
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/troubleshoot-failed-external-calls-between-app-services-using/ba-p/3793204"
+                        open
+                      >
+                        <summary class="article-expander__title">Troubleshoot Failed External Calls Between App Services Using AppServiceIPSecAuditLogs</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/troubleshoot-failed-external-calls-between-app-services-using/ba-p/3793204">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://cdn.techcommunity.microsoft.com/assets/MTC_Open_graph_image1.jpg" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>Azure App Service is a cloud-based service that allows developers to deploy and manage web applications. It provides an easy way to host your web applications without worrying about the underlying infrastructure. Sometimes, you may face issues when making external calls between two App Services. In this blog post, we will discuss how to troubleshoot failed external calls between App Services using the App Service IP Sec audit logs.
+ 
+App Service IP Sec audit logs provide detailed information about the traffic that passes through your IPsec tunnel. This information can be used to troubleshoot issues related to failed external calls between App Services. The audit logs provide details such as source IP address, destination IP address, protocol, and port number.
+ 
+Azure Monitor Logs reference…</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;33
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/azure-logic-apps-plans-consumption-based-vs-standard/ba-p/3793997"
+                        open
+                      >
+                        <summary class="article-expander__title">Azure Logic Apps plans: Consumption based vs Standard</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/azure-logic-apps-plans-consumption-based-vs-standard/ba-p/3793997">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://cdn.techcommunity.microsoft.com/assets/MTC_Open_graph_image1.jpg" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>Azure Logic App is an integration service. It provides you the opportunity to create and run automated workflows that integrates with your application, data, services and systems etc. These workflows can be written with little to no code. While creating a logic apps, when we come across the logic apps plan, there are two choices. 
+
+Standard 
+Consumption based
+
+This is an attempt to help make a decision by comparing both the plans at a high-level. Hopefully, this will be helpful and help me achieve my goal.
+ 
+
+
+
+ 
+Consumption based
+Standard
+
+
+Pricing Plan
+Pay only for usage
+Based on a hosting plan
+
+
+Hosting Infrastructure
+Multi-tenant/Shared
+Single tenant
+
+
+Best suited for
+Entry-level, ad-hoc, for limited use
+Enterprise level
+
+
+Number of workflows
+1
+Multiple
+
+
+Virtual Network and Private Endpoint Support
+No
+Yes
+
+
+VNET Integration 
+No
+Yes
+
+
+Network Isolation
+No
+Yes
+
+
+
+Billing
+
+Trigger and action operations
+
+ 
+ 
+ 
+
+Storage operations
+
+
+
+
+Per execution, after free built-in operations.
+Managed connector operations, per call
+
+
+
+
+Unlimited, included in the plan.
+Managed connector operations, per call
+
+
+
+
+Charges applies only to data retention related storage consumption.
+Any storage operation run by logic app.</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;32
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/how-to-use-azure-functions-with-mongodb-atlas-in-java/ba-p/3795163"
+                        open
+                      >
+                        <summary class="article-expander__title">How to Use Azure Functions with MongoDB Atlas in Java</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/how-to-use-azure-functions-with-mongodb-atlas-in-java/ba-p/3795163">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://techcommunity.microsoft.com/t5/image/serverpage/image-id/460295iBAD0179E061D4A89?v&#x3D;v2" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>Cloud computing is one of the most discussed topics in the tech industry. Having the ability to scale your infrastructure up and down instantly is just one of the many benefits associated with serverless apps. In this article, we are going write the function as a service (FaaS) — i.e., a serverless function that will interact with data via a database, to produce meaningful results. FaaS can also be very useful in A/B testing when you want to quickly release an independent function without going into actual implementation or release. In this article, you&#x27;ll learn how to use MongoDB Atlas, a cloud database, when you&#x27;re getting started with Azure functions in Java.
+ 
+Prerequisites
+ 
+
+A Microsoft Azure account that we will be using for running and deploying our serverless function. If you don&#x27;…</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;38
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Azure service updates</button>
+                  <a class="source-heading__link" href="https://azure.microsoft.com/en-us/updates/">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="asa-azuredataexplorer-managed-private-endpoint"
+                        open
+                      >
+                        <summary class="article-expander__title">Connect Azure Stream Analytics to Azure Data Explorer using managed private endpoint.</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://azure.microsoft.com/en-us/updates/asa-azuredataexplorer-managed-private-endpoint/">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://azurecomcdn.azureedge.net/cvt-eb1805027aba0e3df31d03f4712419264fcdc72201ea2d604c54d68f2c79328d/images/shared/social/azure-icon-250x250.png" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>You can connect your Azure Stream Analytics job to Azure Data Explorer / Kusto clusters using managed private endpoints</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;18
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="asa-applicationinsight"
+                        open
+                      >
+                        <summary class="article-expander__title">Use Stream Analytics to process exported data from Application Insights</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://azure.microsoft.com/en-us/updates/asa-applicationinsight/">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://azurecomcdn.azureedge.net/cvt-eb1805027aba0e3df31d03f4712419264fcdc72201ea2d604c54d68f2c79328d/images/shared/social/azure-icon-250x250.png" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>Use Stream Analytics to process exported data from Application Insights</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;18
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Microsoft 365 Developer Blog</button>
+                  <a class="source-heading__link" href="https://devblogs.microsoft.com/microsoft365dev/">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://devblogs.microsoft.com/microsoft365dev/?p&#x3D;13582"
+                        open
+                      >
+                        <summary class="article-expander__title">Updates to the Microsoft 365 Developer Program</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://devblogs.microsoft.com/microsoft365dev/updates-to-the-microsoft-365-developer-program/">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2023/04/00updates-scaled.jpg" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>Learn about the latest updates to the Microsoft 365 Developer Program.
+The post Updates to the Microsoft 365 Developer Program  appeared first on Microsoft 365 Developer Blog.</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;15
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+        </ul>
+      </section>
+      <section class="daily-content js-toggle-accordions-scope">
+        <h2 class="daily-heading">
+          <button
+            class="daily-heading-toggle"
+            data-action="toggle-accordions"
+            title="Click to toggle the day, Ctrl + click to toggle all."
+          >
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2023-04-13 datetime="2023-04-13T13:24:41.000Z">2023-04-13</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2023-04-13 datetime="2023-04-13T13:24:41.000Z"></time>
+          </button>
+        </h2>
+        <ul class="sources card">
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Azure DevOps Blog</button>
+                  <a class="source-heading__link" href="https://devblogs.microsoft.com/devops/">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://devblogs.microsoft.com/devops/?p&#x3D;66692"
+                        open
+                      >
+                        <summary class="article-expander__title">Service Connection guidance for AKS customers using Kubernetes tasks</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://devblogs.microsoft.com/devops/service-connection-guidance-for-aks-customers-using-kubernetes-tasks/">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://devblogs.microsoft.com/devops/wp-content/uploads/sites/6/2023/04/k8s-sc-authn-method2.png" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>Kubernetes tasks &amp; Service Connections
+AzureFunctionOnKubernetes
+These tasks can be configured to target a Kubernetes cluster in a number of ways, using the connectionType property:
+Connection Type
+Azure Resource Manager
+The post Service Connection guidance for AKS customers using Kubernetes tasks appeared first on Azure DevOps Blog.</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;17
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Microsoft Tech Community - Latest Blogs - Azure PaaS Blog</button>
+                  <a class="source-heading__link" href="https://techcommunity.microsoft.com">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://techcommunity.microsoft.com/t5/azure-paas-blog/monitor-object-replication-status-for-storage-account/ba-p/3766540"
+                        open
+                      >
+                        <summary class="article-expander__title">Monitor Object Replication Status For Storage Account</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/t5/azure-paas-blog/monitor-object-replication-status-for-storage-account/ba-p/3766540">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://techcommunity.microsoft.com/t5/image/serverpage/image-id/450045i5CE23C1E4E0F07A0/image-size/original?v&#x3D;v2&amp;px&#x3D;-1" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>Object replication asynchronously copies block blobs between a source storage account and a destination account. Because block blob data is replicated asynchronously, the source account and destination account are not immediately in sync. There&#x27;s currently no SLA on how long it takes to replicate data to the destination account. In some cases, you might need to check the replication status, in this article we will go over the different methods that you can use to check and monitor the object replication status for the storage account.
+ 
+Using Azure Portal
+To check the replication status for a blob in the source account in the Azure portal, follow these steps:
+
+Navigate to the source account in the Azure portal.
+Locate the container that includes the source blob.
+Select the blob to display …</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;33
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Microsoft Azure Blog &gt; Developer</button>
+                  <a class="source-heading__link" href="https://azure.microsoft.com/blog/topics/developer/">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="manage-your-apis-with-azure-api-management-s-selfhosted-gateway-v2"
+                        open
+                      >
+                        <summary class="article-expander__title">Manage your APIs with Azure API Management’s self-hosted gateway v2</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://azure.microsoft.com/blog/manage-your-apis-with-azure-api-management-s-selfhosted-gateway-v2/">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://azurecomcdn.azureedge.net/cvt-eb1805027aba0e3df31d03f4712419264fcdc72201ea2d604c54d68f2c79328d/images/shared/social/azure-icon-250x250.png" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>With our self-hosted gateway capabilities, customers can use our existing tooling to extend to their on-premises and multi-cloud APIs with the same role-based access controls, API policies, observability options, and management plane that they are already using for their Azure-based APIs.</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;22
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Microsoft Tech Community - Latest Blogs - Educator Developer Blog</button>
+                  <a class="source-heading__link" href="https://techcommunity.microsoft.com">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://techcommunity.microsoft.com/t5/educator-developer-blog/dp-900-microsoft-azure-data-fundamentals-study-guide/ba-p/3791691"
+                        open
+                      >
+                        <summary class="article-expander__title">DP-900: Microsoft Azure Data Fundamentals Study Guide</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/t5/educator-developer-blog/dp-900-microsoft-azure-data-fundamentals-study-guide/ba-p/3791691">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://techcommunity.microsoft.com/t5/image/serverpage/image-id/459324i561AAD2B3B5F237C/image-size/original?v&#x3D;v2&amp;px&#x3D;-1" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>Businesses and other organizations are undergoing a digital transformation thanks to the increase in available data, which enables them to make quick, well-informed decisions. Microsoft Azure&#x27;s many services make it possible to construct comprehensive analytics solutions using cutting-edge methods of data collection, storage, analysis, and presentation. 
+ 
+Anyone wishing to make use of the capability of the cloud to aid decision making must first understand fundamental data principles such as relational data, nonrelational data, big data, and analytics. This is where this study guide can help.
+ 
+What to Expect on the Exam
+ 
+The DP-900 exam evaluates the learner&#x27;s understanding of relational and non-relational data concepts, as well as the various data workloads, such as transactional and a…</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;35
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >CSE Developer Blog</button>
+                  <a class="source-heading__link" href="https://devblogs.microsoft.com/cse/">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://devblogs.microsoft.com/cse/?p&#x3D;14601"
+                        open
+                      >
+                        <summary class="article-expander__title">How to Deploy a Production-Ready Node.js Application in Azure</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://devblogs.microsoft.com/cse/2023/04/13/deploy-production-ready-nodejs-application-in-azure/">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://devblogs.microsoft.com/cse/wp-content/uploads/sites/55/2023/04/node-in-production1.png" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>Step-by-step guide on how to deploy node.js application in production using docker and Azure pipeline
+The post How to Deploy a Production-Ready Node.js Application in Azure appeared first on CSE Developer Blog.</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;16
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Microsoft Tech Community - Latest Blogs - Apps on Azure Blog</button>
+                  <a class="source-heading__link" href="https://techcommunity.microsoft.com">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/this-month-in-azure-container-apps-march-april-2023/ba-p/3794238"
+                        open
+                      >
+                        <summary class="article-expander__title">This Month in Azure Container Apps: March/April 2023</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/this-month-in-azure-container-apps-march-april-2023/ba-p/3794238">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://techcommunity.microsoft.com/t5/image/serverpage/image-id/460084i8AA0CC0F30CACF92/image-size/original?v&#x3D;v2&amp;px&#x3D;-1" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>Welcome to the first monthly Azure Container Apps newsletter! We&#x27;ll share the latest news and community highlights for Container Apps every month here on the Apps on Azure blog.
+ 
+Azure Container Apps monthly community live stream
+ 
+Our next live stream is April 13, 2023 at 11:00AM PDT (18:00 UTC). Join us to discuss our big announcements this month!
+ 
+
+
+
+ 
+Subscribe to the Azure Developers YouTube channel!
+ 
+Community highlights
+ 
+
+.NET Azure Container Apps workshop
+Deploy Container Apps with Pulumi and Go
+Start from zero and scale to zero – Azure Spring Apps consumption plan
+Learn Live – Azure Container Options - YouTube
+Ask the Expert: Deploying a Python Project with Azure Container Apps - YouTube
+Azure Policy for Azure Container Apps? Yes, please - Microsoft Community Hub
+Simplifying deploying Azure Container Apps to Arc enabled Kubernetes using az containerapp up - Microsoft Community Hub
+Using Azure Container Apps at scale instead of building your own NaaS on top of K8s?
+
+ 
+Product news
+ 
+
+Public Preview: New Azure Container Apps Pricing Plan and Enhanced Networking
+Generally Available: Azure Monitor integration with Azure Container Apps
+Generally Available: Mount Azure Files and ephemeral storage in Azure Container Apps
+Public Preview: Session Affinity in Azure Container Apps
+Public Preview: Azure Key Vault references in Container Apps secrets
+New: Azure Container Apps environment now shows current Dapr and KEDA versions
+New: HTTP service discovery via app name
+
+ 
+For more, check out our product roadmap.
+ 
+Documentation
+ 
+
+Networking architecture – locking down your app
+
+ 
+Get notified when we publish future newsletters, subscribe to the Apps on Azure blog. Connect with the Azure Container Apps team on GitHub, Twitter, and Discord.</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;32
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/azure-container-apps-announces-new-pricing-plan-and-enhanced/ba-p/3790723"
+                        open
+                      >
+                        <summary class="article-expander__title">Azure Container Apps Announces New Pricing Plan and Enhanced Networking</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/azure-container-apps-announces-new-pricing-plan-and-enhanced/ba-p/3790723">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://techcommunity.microsoft.com/t5/image/serverpage/image-id/405420i7C02BFB20AA82D7A/image-size/original?v&#x3D;v2&amp;px&#x3D;-1" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>Today, Microsoft announced the public preview of a new plan and pricing structure for Azure Container Apps (ACA). This structure is designed to adapt compute options to individual apps and microservices components for more flexible microservices solutions. Azure Container Apps now supports a Dedicated plan in addition to the existing serverless Consumption plan.
+ 
+The Dedicated plan guarantees single tenancy and specialized compute options including memory-optimized choices. In addition, the new Dedicated plan runs in the same Azure Container Apps environment as the serverless Consumption plan. This allows apps or microservice components that may have different resource requirements depending on component purpose or development stack to run in the same Azure Container Apps environment.  An…</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;37
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Spring Engineering</button>
+                  <a class="source-heading__link" href="https://spring.io">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://spring.io/blog/2023/04/13/a-bootiful-podcast-sonatypes-steve-poole-and-gradles-justin-reock-on"
+                        open
+                      >
+                        <summary class="article-expander__title">A Bootiful Podcast: Sonatype&#x27;s Steve Poole and Gradle&#x27;s Justin Reock on Improving Developer Productivity without compromising on things like security</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://spring.io/blog/2023/04/13/a-bootiful-podcast-sonatypes-steve-poole-and-gradles-justin-reock-on">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://spring.io/img/og-spring.png" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>Level up your Java code and explore what Spring can do for you.</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;23
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
             <li class="card__section">
               <section class="js-toggle-accordions-scope">
                 <h3 class="source-heading">
@@ -595,42 +1206,6 @@ Azure Virtual Desktop lets you publish access tools via RemoteApp for users to c
                 </section>
               </section>
             </li>
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Microsoft Tech Community - Latest Blogs - Apps on Azure Blog</button>
-                  <a class="source-heading__link" href="https://techcommunity.microsoft.com">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/azure-container-apps-announces-new-pricing-plan-and-enhanced/ba-p/3790723"
-                        open
-                      >
-                        <summary class="article-expander__title">Azure Container Apps Announces New Pricing Plan and Enhanced Networking</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/azure-container-apps-announces-new-pricing-plan-and-enhanced/ba-p/3790723">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://techcommunity.microsoft.com/t5/image/serverpage/image-id/405420i7C02BFB20AA82D7A/image-size/original?v&#x3D;v2&amp;px&#x3D;-1" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>Today, Microsoft announced the public preview of a new plan and pricing structure for Azure Container Apps (ACA). This structure is designed to adapt compute options to individual apps and microservices components for more flexible microservices solutions. Azure Container Apps now supports a Dedicated plan in addition to the existing serverless Consumption plan.
- 
-The Dedicated plan guarantees single tenancy and specialized compute options including memory-optimized choices. In addition, the new Dedicated plan runs in the same Azure Container Apps environment as the serverless Consumption plan. This allows apps or microservice components that may have different resource requirements depending on component purpose or development stack to run in the same Azure Container Apps environment.  An…</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;37
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
         </ul>
       </section>
       <section class="daily-content js-toggle-accordions-scope">
@@ -640,11 +1215,53 @@ The Dedicated plan guarantees single tenancy and specialized compute options inc
             data-action="toggle-accordions"
             title="Click to toggle the day, Ctrl + click to toggle all."
           >
-            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2023-04-12 datetime="2023-04-11T23:00:18.000Z">2023-04-12</time>
-            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2023-04-12 datetime="2023-04-11T23:00:18.000Z"></time>
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2023-04-12 datetime="2023-04-12T07:04:00.000Z">2023-04-12</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2023-04-12 datetime="2023-04-12T07:04:00.000Z"></time>
           </button>
         </h2>
         <ul class="sources card">
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Microsoft Tech Community - Latest Blogs - Educator Developer Blog</button>
+                  <a class="source-heading__link" href="https://techcommunity.microsoft.com">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://techcommunity.microsoft.com/t5/educator-developer-blog/a-la-decouverte-de-microsoft-power-platform/ba-p/3783515"
+                        open
+                      >
+                        <summary class="article-expander__title">A La Decouverte De Microsoft Power Platform</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/t5/educator-developer-blog/a-la-decouverte-de-microsoft-power-platform/ba-p/3783515">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://techcommunity.microsoft.com/t5/image/serverpage/image-id/456311iD92C99B76E951618/image-size/original?v&#x3D;v2&amp;px&#x3D;-1" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>Le problème
+ 
+Très souvent, les entreprises rencontrent des problèmes lorsqu&#x27;elles essaient d&#x27;automatiser des processus et de développer des applications. Les employés n&#x27;ont pas toujours des compétences en programmation nécessaires pour faire le travail eux-mêmes et comptent sur le département informatique pour le faire à leur place. Cependant, cela peut souvent entraîner des retards ou des rejets de projets.
+ 
+Pour aider les entreprises à résoudre ce problème, Microsoft a créé la Power Platform. Cette plateforme permet aux employés de développer leurs propres applications, d&#x27;analyser des données et d&#x27;automatiser des processus sans avoir besoin de compétences en programmation. Cette approche est appelée &quot;No Code&quot;/&quot;Low Code&quot;.
+ 
+C’est quoi le « No Code » / « Low Code »
+ 
+No Code/Low Code sig…</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;38
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
             <li class="card__section">
               <section class="js-toggle-accordions-scope">
                 <h3 class="source-heading">
@@ -889,6 +1506,46 @@ The post Data Encryption at rest with Customer Managed keys for Azure Cosmos DB 
                             <span class="media-object__text">
                               <span>We’re excited to announce that the Microsoft Azure Connected Learning Experience (CLX) program now has three new Data and AI tracks designed for data professionals.</span>
                                 &ensp;<span class="article-reading-time">(&hairsp;21
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Microsoft Tech Community - Latest Blogs - Educator Developer Blog</button>
+                  <a class="source-heading__link" href="https://techcommunity.microsoft.com">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://techcommunity.microsoft.com/t5/educator-developer-blog/azure-devops-for-beginners-how-to-set-up-your-account/ba-p/3790002"
+                        open
+                      >
+                        <summary class="article-expander__title">Azure DevOps for Beginners: How to Set Up Your Account, Organization, and Repository</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/t5/educator-developer-blog/azure-devops-for-beginners-how-to-set-up-your-account/ba-p/3790002">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://techcommunity.microsoft.com/t5/image/serverpage/image-id/458520i636E8CF0778B9C62?v&#x3D;v2" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>Welcome to my first blog post on Azure DevOps. My name is Rachel Irabor. I&#x27;m a Microsoft learn student ambassador, Power Platform and Dynamics 365 Customer Engagement developer. 
+ 
+What is Azure DevOps
+ 
+Azure DevOps is a set of tools for developers, project managers, and other contributors to work together on software development. It lets companies create and improve products more quickly than they could with older methods of software development. Azure DevOps has integrated features that you can access through your web browser or IDE client. You can use all of the services that come with Azure DevOps or just the ones you need to add to your current workflows.
+ 
+In this blog post, I will show you how to create a new organisation in Azure DevOps and how to create a new repository in Azure …</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;33
                                   min&hairsp;)</span>
                             </span>
                           </div>
@@ -31656,348 +32313,11 @@ The post More IntelliJ support for Azure Cosmos DB! appeared first on Azure Cosm
             data-action="toggle-accordions"
             title="Click to toggle the day, Ctrl + click to toggle all."
           >
-            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2022-11-15 datetime="2022-11-15T12:14:23.000Z">2022-11-15</time>
-            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2022-11-15 datetime="2022-11-15T12:14:23.000Z"></time>
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2022-11-15 datetime="2022-11-14T16:52:12.000Z">2022-11-15</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2022-11-15 datetime="2022-11-14T16:52:12.000Z"></time>
           </button>
         </h2>
         <ul class="sources card">
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Azure DevOps Blog</button>
-                  <a class="source-heading__link" href="https://devblogs.microsoft.com/devops/">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://devblogs.microsoft.com/devops/?p&#x3D;66066"
-                        open
-                      >
-                        <summary class="article-expander__title">Azure DevOps client libraries migrated to MSAL</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://devblogs.microsoft.com/devops/azure-devops-client-libraries-migrated-to-msal/">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://devblogs.microsoft.com/devops/wp-content/uploads/sites/6/2022/11/Security.png" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>The Microsoft.VisualStudio.Services.InteractiveClient library is a public NuGet package that takes care of authenticating to Azure DevOps Services. It abstracts away the acquisition, management and refreshing of authentication tokens, so developers can focus on their goals and stay productive.
-The post Azure DevOps client libraries migrated to MSAL appeared first on Azure DevOps Blog.</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;14
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Microsoft Tech Community - Latest Blogs - Educator Developer Blog</button>
-                  <a class="source-heading__link" href="https://techcommunity.microsoft.com">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://techcommunity.microsoft.com/t5/educator-developer-blog/what-is-github-codespaces-and-how-can-students-access-it-for/ba-p/3676103"
-                        open
-                      >
-                        <summary class="article-expander__title">What is GitHub Codespaces and how can Students access it for free?</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/t5/educator-developer-blog/what-is-github-codespaces-and-how-can-students-access-it-for/ba-p/3676103">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://techcommunity.microsoft.com/t5/image/serverpage/image-id/418970i81CBE0CC7824AB0E/image-size/original?v&#x3D;v2&amp;px&#x3D;-1" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>GitHub Codespaces are a hosted developer environment operating in the cloud that can be run with Visual Studio Code. You can customize the development experience for any development project on GitHub, pre-installing dependencies, libraries, and even Visual Studio Code extensions and settings. Imagine having the same environment, with the same settings and pre-installed dependencies, for every contributor to a GitHub repository! If you are a teacher or a student, this will significantly simplify most workflows and allow you to focus on being hands-on rather than setting an environment. You can also select the type of virtual machine you wish to utilize based on the resources you require. There are several models available, starting with a 2-core processor, 4 GB of RAM, and 32 GB of storage.…</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;32
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://techcommunity.microsoft.com/t5/educator-developer-blog/can-you-learn-data-science-and-machine-learning-in-30-days/ba-p/3675710"
-                        open
-                      >
-                        <summary class="article-expander__title">Can you learn Data Science and Machine Learning in 30 Days.</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/t5/educator-developer-blog/can-you-learn-data-science-and-machine-learning-in-30-days/ba-p/3675710">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://techcommunity.microsoft.com/t5/image/serverpage/image-id/418790i78517ECA3EED3DA1?v&#x3D;v2" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>On 17th October, we embarked on a #30DaysOfDataScience journey, going from understanding the Python language to working with real life data and finally creating Machine Learning models both on Azure and in Python. Using the knowledge gained we were able to make decisions such as fraud detection, customer segmentation and salary prediction. Therefore, yes, you can learn Data Science in 30 Days! 
- 
-Get Started with the week-by-week roadmap and skills challenge 
-Roadmap: The 30Days Skilling content provides a guided tour of Data Science and Machine Learning in Python and Azure in four themed weeks. Explore the roadmap here. 
-Gear up: You need to set up your Local Environment ready to get started. Learn how to do this for free here 
-Join the Challenge Today: Don&#x27;t be left behind in the learnin…</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;32
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://techcommunity.microsoft.com/t5/educator-developer-blog/using-ml-net-to-estimate-water-consumption-from-acceleration/ba-p/3674357"
-                        open
-                      >
-                        <summary class="article-expander__title">Using ML.NET to estimate water consumption from acceleration measures</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/t5/educator-developer-blog/using-ml-net-to-estimate-water-consumption-from-acceleration/ba-p/3674357">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://techcommunity.microsoft.com/t5/image/serverpage/image-id/418463iF15D33DD5B0CD52F/image-size/original?v&#x3D;v2&amp;px&#x3D;-1" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>Machine learning (ML) is everywhere. You use ML-empowered applications without even noticing it: when clicking on product recommendations on an e-commerce website, or when consulting your navigation app to choose the best itinerary to reach a new place, for example.
-You, as a developer, cannot certainly ignore this evolving tendency. And if you are familiar with .NET framework, ML.NET could be an easy win! In fact, ML.NET is a framework designed for .NET developers that wish to add machine learning capabilities to their applications, without having to leave the .NET ecosystem and by writing code in the languages they are already familiar with. 
-In this blog post, I&#x27;ll show you how I used this framework to build a regression model able to predict how much water a user has drunk from or refi…</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;33
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Spring Engineering</button>
-                  <a class="source-heading__link" href="https://spring.io">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://spring.io/blog/2022/11/15/this-week-in-spring-november-15th-2022"
-                        open
-                      >
-                        <summary class="article-expander__title">This Week in Spring - November 15th, 2022</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://spring.io/blog/2022/11/15/this-week-in-spring-november-15th-2022">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://avatars.githubusercontent.com/u/54473?v&#x3D;4?s&#x3D;200" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>Hi, Spring fans! How’re you doin’ this fine Tuesday morning? I’ve returned home to San Francisco and am up and at ’em nice and early to catch a flight to Seattle, where I’ll speak at the Java User Group tonight. If you’re in Seattle, don’t miss it!
-
-We’ve got a ton of cool stuff to get into this week, but let’s not bury the lede here: Spring Framework 6 comes out tomorrow, Wednesday, the 16th of November, 2022! And you know where to go to get the bits: the Spring Initialzr, start.spring.io!
-
-Let’s dive into this week’s roundup!
-
-
-  
-Did you see the new Reactor 2022.0.0 release? This release contains integration with Micrometer Tracing, context propagation, and plenty of other improvements. See this for more.
-
-  
-Spring Boot 3.0.0-RC2 available now
-
-  
-Spring Cloud 2021.0.5 (codename Jubilee) Has Been Released
-
-  
-Spring Framework 6.0.0-RC4 available now
-
-  
-Spring Security 6.0.0-RC2 is available now
-
-  
-Updates on Spring Cloud Stream 4.0.0 Schema Registry Support
-
-  
-Coming with the RC of Spring Modulith: improved module canvas listing cross-module bean references (first image) and publicly exposed value types (second image).
-
-  
-Kong Ingress Controller with Spring Boot
-
-  
-Mocking a Singleton With Mockito
-
-  
-Did you know that Jetbrains has a Spotify playlist of music designed for coding called “Pure Flow”? I like it!
-
-  
-Spring @EnableMethodSecurity Annotation
-
-  
-SpringRunner vs MockitoJUnitRunner</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;2
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Microsoft Tech Community - Latest Blogs - Apps on Azure Blog</button>
-                  <a class="source-heading__link" href="https://techcommunity.microsoft.com">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/some-troubleshooting-clue-when-mounting-storage-in-app-service/ba-p/3676348"
-                        open
-                      >
-                        <summary class="article-expander__title">Some troubleshooting clue when mounting storage in App Service</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/some-troubleshooting-clue-when-mounting-storage-in-app-service/ba-p/3676348">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://techcommunity.microsoft.com/t5/image/serverpage/image-id/418974i4E86BDF577EAC03F/image-size/original?v&#x3D;v2&amp;px&#x3D;-1" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>In some special cases, we may notice that there is a network path error when mounting an Azure storage in an App Service.
-
- 
-Error Message: The network path was not found
- 
-According to the message itself, it is more likely to be a network problem, so we can find some clues regarding such an area.
- 
-Clue 1: Check domain resolving behavior and network connectivity
- 
-Just like most of the network related cases, we firstly want to verify the connectivity between resources, in this case, we could use kudu in app service and try to reach out the storage account.
- 
- 
-nslookup .file.core.windows.net
-nameresolver .file.core.windows.net
- 
- 
-There 2 commands use to figure out the domain resolving behavior, which we could get the IP address from that storage. We might get …</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;32
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/name-reservation-on-app-service-for-web-apps-and-app-service/ba-p/3675100"
-                        open
-                      >
-                        <summary class="article-expander__title">Name Reservation on App Service for Web Apps and App Service Environment (ASE)</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/name-reservation-on-app-service-for-web-apps-and-app-service/ba-p/3675100">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://cdn.techcommunity.microsoft.com/assets/MTC_Open_graph_image1.jpg" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>App Service will be rolling out a Name Reservation feature to protect customers from the threat of subdomain takeovers.  The rollout is starting now (November 14th) and is expected to run through approximately December 15th. This new built-in feature creates a name reservation for web application names and for App Service Environment (ASE) names during the creation of those resources. No additional changes or configuration are needed by the customer to establish a name reservation.  
- 
-The name reservation for a given resource name will exist from the moment the resource is created and for a lengthy time period after the resource has been deleted (a cooldown period). This means that during the cooldown period after resource deletion, other subscriptions outside of the original creating Azu…</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;32
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Azure service updates</button>
-                  <a class="source-heading__link" href="https://azure.microsoft.com/en-us/updates/">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="general-availability-bot-manager-rule-set-10-on-regional-azure-web-application-firewall"
-                        open
-                      >
-                        <summary class="article-expander__title">General availability: Bot Manager Rule Set 1.0 on regional Web Application Firewall</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://azure.microsoft.com/en-us/updates/general-availability-bot-manager-rule-set-10-on-regional-azure-web-application-firewall/">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://azurecomcdn.azureedge.net/cvt-3a18703617231fb4720416eb68caeaebaefaaadc5796fbeafff027b76cdc2684/images/shared/social/azure-icon-250x250.png" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>This rule set provides you enhanced protection against bots and provides granular control over bots detected by WAF by categorizing bot traffic as good, bad, or unknown bots.</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;18
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="generally-available-encrypt-managed-disks-with-crosstenant-customermanaged-keys"
-                        open
-                      >
-                        <summary class="article-expander__title">Generally available: Encrypt managed disks with cross-tenant customer-managed keys</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://azure.microsoft.com/en-us/updates/generally-available-encrypt-managed-disks-with-crosstenant-customermanaged-keys/">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://azurecomcdn.azureedge.net/cvt-3a18703617231fb4720416eb68caeaebaefaaadc5796fbeafff027b76cdc2684/images/shared/social/azure-icon-250x250.png" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>Protect your data by encrypting Premium SSD, Standard SSD, and Standard HDD managed disks with cross tenant customer-managed keys.</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;18
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="limited-preview-azure-backup-support-for-confidential-virtual-machines-using-platform-managed-keys"
-                        open
-                      >
-                        <summary class="article-expander__title">Limited preview: Azure Backup support for confidential VMs using Platform Managed Keys</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://azure.microsoft.com/en-us/updates/limited-preview-azure-backup-support-for-confidential-virtual-machines-using-platform-managed-keys/">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://azurecomcdn.azureedge.net/cvt-3a18703617231fb4720416eb68caeaebaefaaadc5796fbeafff027b76cdc2684/images/shared/social/azure-icon-250x250.png" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>You can use this feature to back up confidential VMs using Platform Managed Keys.</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;18
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
             <li class="card__section">
               <section class="js-toggle-accordions-scope">
                 <h3 class="source-heading">
@@ -32045,8 +32365,8 @@ Get…</span>
       </section>
 
     <footer>
-      <a class="footer-link" href="https://github.com/lok-msft/azure-blog-rss/actions/runs/4684403838">
-        <time id="build-timestamp" datetime="2023-04-13T01:07:45.355Z">2023-04-13T01:07:45.355Z</time>
+      <a class="footer-link" href="https://github.com/lok-msft/azure-blog-rss/actions/runs/4695290969">
+        <time id="build-timestamp" datetime="2023-04-14T01:10:43.738Z">2023-04-14T01:10:43.738Z</time>
       </a>
       <a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a>
     </footer>
