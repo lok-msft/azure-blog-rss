@@ -2,10 +2,115 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2023-04-17T01:11:25.112Z</updated>
+    <updated>2023-04-18T01:09:22.261Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[General Availability: Azure CNI Overlay]]></title>
+        <id>azurecnioverlay</id>
+        <link href="https://azure.microsoft.com/en-us/updates/azurecnioverlay/"/>
+        <updated>2023-04-17T15:00:17.000Z</updated>
+        <summary type="html"><![CDATA[Azure CNI Overlay utilizes an overlay network to reduce IP utilization while providing better performance and scale.]]></summary>
+        <author>
+            <name>Azure service updates</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Enabling AppServiceAppLogs & AppServiceHTTPLogs diagnostic settings in app services]]></title>
+        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/enabling-appserviceapplogs-amp-appservicehttplogs-diagnostic/ba-p/3793845</id>
+        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/enabling-appserviceapplogs-amp-appservicehttplogs-diagnostic/ba-p/3793845"/>
+        <updated>2023-04-17T13:58:05.000Z</updated>
+        <summary type="html"><![CDATA[Azure provides built-in diagnostics to assist with debugging an App Service app. You can send your logs from your App Service to Storage Accounts, Event Hubs, or Log Analytics.
+ 
+This blog will guide you step-by-step to enable AppServiceHTTPLogs , AppServiceAppLogs and view them in Log Analytics.
+ 
+Step 1:
+Go to Azure Portal > App Service > Diagnostic Settings and enable the required settings you would like to send to the destination . In this blog I have taken an example of HTTP Logs and App Service Application Logs in a Windows App Service ( .Net Core ).
+ 
+
+ 
+You can refer this doc for more details on supported log types.
+ 
+Step 2:
+In your application code you can use the usual logging options and send log messages to application logs. By default, ASP.NET Core uses the Microsoft.Extensions.Logging.AzureAppServices logging provider. For more information, see ASP.NET Core logging in Azure.
+ 
+Below is the code snippet of the logging I am doing in my .Net Core MVC webapp.
+ 
+
+ 
+ 
+Step 3:
+Go to Azure Portal > Log Analytics workspace > Logs and query the AppServiceAppLogs table and you can see the logs being sent. You can use different levels of logging such as Error, Information, Verbose and etc. in your application and this will show up in your logs in Log Analytics under the “Level” field. You can filter out logs based on the level:
+ 
+
+ 
+Similarly, you can also query AppServiceHTTPLogs:
+ 
+
+ 
+Sample Queries in Log Analytics:
+ 
+
+
+
+
+AppServiceAppLogs
+| where TimeGenerated >ago(10m)
+ 
+AppServiceHTTPLogs
+| where TimeGenerated >ago(10m)
+
+
+
+
+ 
+ 
+More information:
+
+AppServiceAppLogs is now available for ASP .NET apps on Windows - Azure App Service
+App Service Integration with Azure Monitor (Preview) - Azure App Service
+Enable diagnostics logging - Azure App Service | Microsoft Learn
+Logging in .NET Core and ASP.NET Core | Microsoft Learn
+
+ 
+If you have any other questions, feel free to comment below!]]></summary>
+        <author>
+            <name>AmritpalSinghNaroo</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Initiation à GitHub Projects - Partie I (Tableau Kanban)]]></title>
+        <id>https://techcommunity.microsoft.com/t5/educator-developer-blog/initiation-%C3%A0-github-projects-partie-i-tableau-kanban/ba-p/3784393</id>
+        <link href="https://techcommunity.microsoft.com/t5/educator-developer-blog/initiation-%C3%A0-github-projects-partie-i-tableau-kanban/ba-p/3784393"/>
+        <updated>2023-04-17T07:04:00.000Z</updated>
+        <summary type="html"><![CDATA[Bonjour, je m’appelle Hamidou TESSILIMI. Je suis étudiant en 4ème année à Epitech et également un Bêta Microsoft Learn Student Ambassador. Depuis ma première année, j’utilise GitHub pour rendre la quasi-totalité de mes projets. Dans la majorité des cas, pour gérer un projet à plusieurs, il faut au moins un outil de communication comme Slack ou Discord et un outil de gestion de projet comme Trello, Jira ou encore GitHub Projects. Dans cet article de blog, nous parlerons de la manière dont on peut gérer un projet avec GitHub Projects. Mais avant ça, parlons d’abord de GitHub et des différentes fonctionnalités qu’il propose.
+ 
+GitHub, qu’est-ce que c’est ?
+ 
+GitHub est un service d'hébergement de code source en ligne largement utilisé par les développeurs et les équipes de développement logic…]]></summary>
+        <author>
+            <name>blacky-yg</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Deploy app service with private endpoint enabled via Azure DevOps]]></title>
+        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/deploy-app-service-with-private-endpoint-enabled-via-azure/ba-p/3789370</id>
+        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/deploy-app-service-with-private-endpoint-enabled-via-azure/ba-p/3789370"/>
+        <updated>2023-04-17T05:47:26.000Z</updated>
+        <summary type="html"><![CDATA[There is a common scenario that customers want their app service being allocated inside private network and cannot be accessed by public network. Therefore, they usually enable private endpoint as well as configure Access Restriction to deny all the public traffic.
+ 
+When the private endpoint is enabled and public traffic is denied to the web app, all the public traffic to this app is cut off. Since there is a range of IP addresses where agents are deployed, they have a public IP. Obviously, these agents are unable to reach web app.
+
+ 
+As a solution, we can either allow the IP ranges list in the firewall or use self-hosted agents to deploy.
+You may check below document for more information Microsoft-hosted-agents for Azure Pipelines
+ 
+In below lab, we will demo 2 tests. One is what if we d…]]></summary>
+        <author>
+            <name>Emma_Yen</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[New Azure Extensions in VSCode.dev!]]></title>
         <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/new-azure-extensions-in-vscode-dev/ba-p/3795806</id>
@@ -13254,21 +13359,6 @@ Mohammad Ali, Principal GPI for Microsoft Power BI, joins Ben Walters, Senior Pr
 Excellent opportunities to apply your skills and to savor the thrill of solving real-world problems in a no-pressure, risk-free environment, these new on-demand games engage you in a variety of role-based activities—including simulations, mini-games, and team challenges. As a player, you can switch between roles throughout the activities, enriching the experience and your understanding of colleagues’ r…]]></summary>
         <author>
             <name>Lee Stott</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Introducing a better way to integrate Azure AD with API Management]]></title>
-        <id>https://techcommunity.microsoft.com/t5/azure-developer-community-blog/introducing-a-better-way-to-integrate-azure-ad-with-api/ba-p/3671864</id>
-        <link href="https://techcommunity.microsoft.com/t5/azure-developer-community-blog/introducing-a-better-way-to-integrate-azure-ad-with-api/ba-p/3671864"/>
-        <updated>2022-11-18T17:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Since, well, the beginning of Azure API Management, you've been able to validate that the Json Web Token (JWT) coming into your Azure API Management service is valid before passing it onto the backend service. The validate-jwt policy is one of the most used policies within Azure API Management, will happily ensure your client applications are using the right client IDs, and have the right audiences and claims. Meanwhile, Azure Active Directory (AAD) is a mainstay of enterprise APIs, providing authentication and authorization controls for a wide variety of APIs from M365 APIs to custom-built APIs.  It's generally the center piece of your enterprise API security infrastructure.
- 
-Wouldn't it be wonderful if they worked better together.
- 
-Introducing validate-azure-ad-token policy
-This week w…]]></summary>
-        <author>
-            <name>adrian_hall</name>
         </author>
     </entry>
 </feed>
