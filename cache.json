@@ -744,26 +744,6 @@
           "wordCount": 886,
           "title": "This Week in Spring - November 29th, 2022 (Spring Boot 3 has arrived)",
           "imageUrl": "https://avatars.githubusercontent.com/u/54473?v=4?s=200"
-        },
-        {
-          "id": "https://spring.io/blog/2022/11/23/spring-tips-the-road-to-spring-framework-6-the-new-ahead-of-time-compilation-engine-and-graalvm",
-          "author": null,
-          "description": "Hi, Spring fans! Spring Boot 3 is here (or will be tomorrow, on the 24th of November, 2022, to be more precise!), bringing a fantastic new Ahead-of-Time (AOT) compilation engine that supports GraalVM native images. Join me, and we’ll dive deep into the engine and its interactions with the Spring component model. \n\r\nThis video is a detailed masterclass on the new AOT engine. It starts by examining the everyday usecases of an application developer and delves deeper and deeper into the engine, treating concerns that library and framework developers will care about. \n\r\nEnjoy! \n\r\n\r\nAlso, Happy thanksgiving (if you celebrate) from us to you!",
-          "link": "https://spring.io/blog/2022/11/23/spring-tips-the-road-to-spring-framework-6-the-new-ahead-of-time-compilation-engine-and-graalvm",
-          "publishedOn": "2022-11-23T08:00:00.000Z",
-          "wordCount": 626,
-          "title": "Spring Tips: the road to Spring Framework 6: the new Ahead-of-Time Compilation Engine and GraalVM",
-          "imageUrl": "https://avatars.githubusercontent.com/u/54473?v=4?s=200"
-        },
-        {
-          "id": "https://spring.io/blog/2022/11/22/this-week-in-spring-november-22nd-2022-spring-boot-3-and-thanksgiving-edition",
-          "author": null,
-          "description": "Hi, Spring fans! It’s Tuesday, the 22nd of November, 2022, as I write this, which means we’re two days away from Spring Boot 3 and Thanksgiving. Spring Boot 3, I’ve written about in abundance so I won’t rehash that. If you want to learn more about some of the amazing new features in Spring Framework 6 and Spring Boot 3, perhaps check out my Spring Tips installment introducing them in this episode:\n\r\n\r\nAnd, of course, a major new feature in Spring Boot 3 is the new ahead-of-time (AOT) engine, about which I speak at great length in tomorrow’s new installment of Spring Tips:\n\r\n\r\nThis video is done so that you can watch the first part as an application developer and get a lot out of it. Folks who want to take the concepts further - as a library, or framework, or developer, can carry on ‘till t…",
-          "link": "https://spring.io/blog/2022/11/22/this-week-in-spring-november-22nd-2022-spring-boot-3-and-thanksgiving-edition",
-          "publishedOn": "2022-11-22T19:00:00.000Z",
-          "wordCount": 929,
-          "title": "This Week in Spring - November 22nd, 2022 - Spring Boot 3 and Thanksgiving edition!",
-          "imageUrl": "https://avatars.githubusercontent.com/u/54473?v=4?s=200"
         }
       ]
     },
@@ -2280,6 +2260,16 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/azure-app-service-logging-how-to-monitor-your-web-apps-in-real/ba-p/3800390",
+          "author": "PedroGuerraPT",
+          "description": "When you're developing and running web applications, things don't always go as planned. You might encounter errors, underperforming response times, or unexpected behavior. The Azure App Service Diagnostics Logging capabilities come to the rescue in such situations. By enabling the application logging features, you can quickly and easily view your application logs to diagnose and fix issues.\n \nHere are a few examples of the types of problems you can solve by consulting your application logs:\n \n\nErrors: When an error occurs in your application, it's important to understand what went wrong and where. By consulting your application logs, you can see the error message and any relevant details, such as the stack trace. This can help you pinpoint the issue and fix it more quickly.\nPerformance iss…",
+          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/azure-app-service-logging-how-to-monitor-your-web-apps-in-real/ba-p/3800390",
+          "publishedOn": "2023-04-21T07:17:32.000Z",
+          "wordCount": 10841,
+          "title": "Azure App Service Logging: How to Monitor Your Web Apps in Real-Time",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/462715i858230EB13B4AF7F?v=v2"
+        },
+        {
           "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/storing-app-service-application-logs-in-blob/ba-p/3800963",
           "author": "AmritpalSinghNaroo",
           "description": "Azure provides built-in diagnostics to assist with debugging an App Service web app. The primary aim of this blog is to guide one step-by-step to add instrumentation to your application, as well as how to access the information logged.\n \nStep 1:\nGo to >App Service Logs> Enable Application Logging (Blob) and select the desired Blob Storage and the Container and select the Level of logging.\n \n\n \nFor more information on different types of logs you can refer this document.\n \nStep 2:\nBelow is the code we have deployed a .Net Core MVC web application in a Windows App Service.\n \n \n public IActionResult Index()\n        {\n            _logger.LogInformation(\"This is a test to send logs to : Blob \");\n\n            return View();\n        }\n\n        public IActionResult Privacy()\n        {\n            return View();\n        }\n \n \nBelow are different level of logs details which you can log:\n \n\n \n\n\n\n\nNote: If you write logs to blobs, the retention policy no longer applies if you delete the app but keep the logs in the blobs. For more information, see Costs that might accrue after resource deletion.\n\n\n\n\n \nStep 3:\nGo to Storage Account> Container and select the folder with your app service name and download the ( .txt ) file to check the logs.\n \n\n \nThe Blob option also includes additional information in the log messages, such as the ID of the origin VM instance of the log message (InstanceId), thread ID (Tid), and a more granular timestamp (EventTickCount) in a ( .csv ) file.\n \nMore information:\n\nEnable diagnostics logging - Azure App Service | Microsoft Learn\nazure-content/web-sites-enable-diagnostic-log.md at master · Huachao/azure-content · GitHub\n\n \nIf you have any other questions, feel free to comment below!",
@@ -3738,6 +3728,16 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/t5/azure-paas-blog/unable-to-delete-azure-eventhub-cluster-namespace-entity/ba-p/3801912",
+          "author": "anuja_nirula",
+          "description": "Issue:\nUnable to delete Azure EventHub Cluster/Namespace/ Entity from Portal/ PowerShell/ CLI.\n \nCase 1:\nWhen EventHub tier is Premium and you are unable to delete Azure EventHub namespace and getting conflict operation error 409.\n\nSample error message : \"statusMessage\":\"{\\\"error\\\":{\\\"code\\\":\\\"Conflict\\\",\\\"message\\\":\\\"Namespace provisioning in transition. For more information visit https://aka.ms/eventhubsarmexceptions.\n \nReason:\nThe reason for stuck state of EventHub namespace or its provisioning failure is due to a known race condition which initiates between two or more internal microservices from premium EventHub  architecture from different namespaces. If we trigger a Premium namespace provisioning and an event hub creation right after that then this race condition initiates and both …",
+          "link": "https://techcommunity.microsoft.com/t5/azure-paas-blog/unable-to-delete-azure-eventhub-cluster-namespace-entity/ba-p/3801912",
+          "publishedOn": "2023-04-21T03:10:01.000Z",
+          "wordCount": 10121,
+          "title": "Unable to delete Azure EventHub Cluster/Namespace/Entity/ConsumerGroup  from Portal/ PowerShell/ CLI",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/462868i010169F5E60BEC3A?v=v2"
+        },
+        {
           "id": "https://techcommunity.microsoft.com/t5/azure-paas-blog/connectivity-issue-troubleshooting-for-azure-cache-for-redis/ba-p/3798802",
           "author": "samsarka",
           "description": "With the evolution of Azure Cache for Redis enterprise and the growing number of Redis Enterprise cache users let us look at few steps to troubleshoot if you are stuck in connecting to Azure cache for Redis. Few thumb rule for Enterprise Cache are below.\n\nAre you connecting to the right port. Enterprise cache uses port 10000, not 63xx like basic, standard, Premium?\nAre Enterprise cache instance configured to require TLS or non-TLS? It only supports one of them at a time.\nAre the client configured to use the TLS or non-TLS setting correctly? (Client must be configured the same as with Enterprise cache instance)\nAre the FQDN of the cache name, correct? Enterprise uses the pattern \"[cacheName].[region].redisenterprise.cache.azure.net\". The domain suffix will be different than basic, standard …",
@@ -4580,16 +4580,6 @@
           "wordCount": 11229,
           "title": "Updates to Windows App Management in Intune with Winget",
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/421635i8849396B258204CA?v=v2"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/power-bi-integration-with-microsoft-365-apps-amp-sharing/ba-p/3676956",
-          "author": "Zachary Cavanell",
-          "description": "Find and use Microsoft Power BI updates through native installation with Microsoft 365 apps. Collaborate on reports and datasets as you work in your favorite Microsoft 365 apps. Work together on reports inside your organization, and share datasets and reports securely outside of your organization — all while using any device. \n \n\n \nNew experiences: • Direct report sharing, whether in OneDrive or SharePoint • Multiple Audiences capability, for internal users to share insights with specific people in their organization, all from a single workspace • Cross-tenant dataset sharing capability, to simplify external sharing and collaboration with people outside of your organization. \nMohammad Ali, Principal GPI for Microsoft Power BI, joins Ben Walters, Senior Product Manager for Microsoft Power P…",
-          "link": "https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/power-bi-integration-with-microsoft-365-apps-amp-sharing/ba-p/3676956",
-          "publishedOn": "2022-11-21T16:18:42.000Z",
-          "wordCount": 11367,
-          "title": "Power BI integration with Microsoft 365 apps & Sharing Improvements",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/419101iBAF9310C4A6C969D?v=v2"
         }
       ]
     },
@@ -5596,16 +5586,6 @@
           "wordCount": 4587,
           "title": "Now available: Azure DevOps Server 2022 RTW",
           "imageUrl": "https://devblogs.microsoft.com/devops/wp-content/uploads/sites/6/2018/09/index-hero.jpg"
-        },
-        {
-          "id": "https://devblogs.microsoft.com/devops/?p=65991",
-          "author": "Bohdan Janousek",
-          "description": "We are upgrading the .NET used by Azure Pipelines agent from current .NET Core 3.1 to .NET 6. This is to support new Apple silicon hardware as well as newer operating systems such as Ubuntu 22.04, or Windows on ARM64. Another reason for the .NET upgrade is the fact the .NET Core 3.1 version is already in maintenance phase and the support ends on December 13th,\nThe post Upgrade of .NET agent for Azure Pipelines appeared first on Azure DevOps Blog.",
-          "link": "https://devblogs.microsoft.com/devops/upgrade-of-net-agent-for-azure-pipelines/",
-          "publishedOn": "2022-11-23T11:20:31.000Z",
-          "wordCount": 5136,
-          "title": "Upgrade of .NET agent for Azure Pipelines",
-          "imageUrl": "https://devblogs.microsoft.com/devops/wp-content/uploads/sites/6/2019/02/AzureDevOps.png"
         }
       ]
     },
@@ -8785,16 +8765,6 @@
           "wordCount": 5310,
           "title": "Private preview: Azure Kubernetes Service (AKS) Backup",
           "imageUrl": "https://azurecomcdn.azureedge.net/cvt-6a5bead1335a068b86c9df6dbb4c568bcd0c78b447d43ae3c7a3a8dafc7fcc10/images/shared/social/azure-icon-250x250.png"
-        },
-        {
-          "id": "preview-cross-subcription-restore-for-azure-virtual-machines",
-          "author": null,
-          "description": "Cross Subscription Restore for Azure Virtual Machines is provides flexibility to choose any subscription during restore.",
-          "link": "https://azure.microsoft.com/en-us/updates/preview-cross-subcription-restore-for-azure-virtual-machines/",
-          "publishedOn": "2022-11-22T16:00:06.000Z",
-          "wordCount": 5316,
-          "title": "Public preview: Cross Subscription Restore for Azure Virtual Machines",
-          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-77cb68a3e93262a26ecaaad8a7c8cc9245ed26744d6b27820548e0fa96e5cfc7/images/shared/social/azure-icon-250x250.png"
         }
       ]
     },
@@ -9361,26 +9331,6 @@
           "publishedOn": "2022-11-28T16:00:25.000Z",
           "wordCount": 4251,
           "title": "Introducing the Microsoft Graph Python SDK now available for public preview",
-          "imageUrl": "https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2021/08/default-image-1.png"
-        },
-        {
-          "id": "https://devblogs.microsoft.com/microsoft365dev/?p=12345",
-          "author": "Microsoft 365 Platform team",
-          "description": "In November 2020, we published a blog for our developer community and another for IT Pros, announcing our plan to deprecate the Outlook REST API v2.0 & Beta endpoints.\nThe post Outlook REST API v2.0 & Beta deprecation update appeared first on Microsoft 365 Developer Blog.",
-          "link": "https://devblogs.microsoft.com/microsoft365dev/outlook-rest-api-v2-0-beta-deprecation-update/",
-          "publishedOn": "2022-11-22T19:16:51.000Z",
-          "wordCount": 3882,
-          "title": "Outlook REST API v2.0 & Beta deprecation update",
-          "imageUrl": "https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2022/11/BlogImageOutlookV2.jpg"
-        },
-        {
-          "id": "https://devblogs.microsoft.com/microsoft365dev/?p=12291",
-          "author": "Altamish Ahmad",
-          "description": "Microsoft Bookings let's enterprise organizations and small business owners manage customer bookings and information with minimal setup. Learn how to use scripts to get information about your organization’s Bookings calendars and mailboxes.\nThe post Using scripts for Microsoft Bookings calendar and mailbox appeared first on Microsoft 365 Developer Blog.",
-          "link": "https://devblogs.microsoft.com/microsoft365dev/using-scripts-for-microsoft-bookings-calendar-and-mailbox/",
-          "publishedOn": "2022-11-22T16:00:21.000Z",
-          "wordCount": 4294,
-          "title": "Using scripts for Microsoft Bookings calendar and mailbox",
           "imageUrl": "https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2021/08/default-image-1.png"
         }
       ]
