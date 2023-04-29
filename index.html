@@ -22,11 +22,137 @@
             data-action="toggle-accordions"
             title="Click to toggle the day, Ctrl + click to toggle all."
           >
-            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2023-04-28 datetime="2023-04-27T23:09:37.000Z">2023-04-28</time>
-            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2023-04-28 datetime="2023-04-27T23:09:37.000Z"></time>
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2023-04-28 datetime="2023-04-28T07:00:00.000Z">2023-04-28</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2023-04-28 datetime="2023-04-28T07:00:00.000Z"></time>
           </button>
         </h2>
         <ul class="sources card">
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Microsoft Tech Community - Latest Blogs - Educator Developer Blog</button>
+                  <a class="source-heading__link" href="https://techcommunity.microsoft.com">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://techcommunity.microsoft.com/t5/educator-developer-blog/build-an-ai-powered-content-manager-app-may-8th-11am-gmt/ba-p/3804629"
+                        open
+                      >
+                        <summary class="article-expander__title">Build an AI Powered Content Manager App - May 8th 11AM GMT</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/t5/educator-developer-blog/build-an-ai-powered-content-manager-app-may-8th-11am-gmt/ba-p/3804629">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://techcommunity.microsoft.com/t5/image/serverpage/image-id/464118iC69164C0B73FF6C4/image-size/original?v&#x3D;v2&amp;px&#x3D;-1" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>This session is part of Build AI Powered Solutions with Azure OpenAI Service series, learn more and register for the events here: Build AI powered apps with Azure OpenAI Service. Make sure to complete the Cloud Skills Challenge we have for this series: https://aka.ms/AI-Powered-Content-Manager-Challenge 
+ 
+Our Use case Project - Content Manager Mobile App (Register Here)
+
+ 
+What is this session about?Content management is a vital aspect of any marketing strategy, and effective content management can make a significant difference in the success of a marketing team. By managing content efficiently, marketing teams can create and distribute content that resonates with their target audience, leading to increased engagement and brand loyalty. In this session, we will build a mobile app focused …</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;33
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Microsoft Tech Community - Latest Blogs - Apps on Azure Blog</button>
+                  <a class="source-heading__link" href="https://techcommunity.microsoft.com">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/how-to-list-all-vnet-subnets-used-for-private-endpoints-of-app/ba-p/3806513"
+                        open
+                      >
+                        <summary class="article-expander__title">How To List All VNET Subnets Used for Private Endpoints of App service using PowerShell Script</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/how-to-list-all-vnet-subnets-used-for-private-endpoints-of-app/ba-p/3806513">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://techcommunity.microsoft.com/t5/image/serverpage/image-id/464466i9CEBDEF9265AC168?v&#x3D;v2" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>Azure App service can enable Private Endpoints for inbound traffic. 
+Customers may want to list all VNET subnets used for Private Endpoints, and enable Network Security Group for the Private Endpoints.
+There is no way to do it from Azure portal. But the below Power shell script can help customers list all the subnets used for Private Endpoints.
+ 
+
+List all VNET subnets used for Private Endpoint using PowerShell script
+
+$privateEndpoints &#x3D; Get-AzPrivateEndpoint
+$subnetIds &#x3D; $privateEndpoints | ForEach-Object { $_.Subnet.Id }
+$uniqueSubnetIds &#x3D; $subnetIds | Sort-Object -Unique
+ 
+foreach ($subnetId in $uniqueSubnetIds) {
+    Get-AzResource -ResourceId $subnetId
+}
+ 
+The output is like this 
+
+ 
+
+Regarding more parameters for Get-AzPrivateEndpoint
+
+         Check Get-AzPrivateEndpoint (Az.Network) | Microsoft Learn
+ 
+
+How To Enable Network Security Group for Private Endpoints 
+By default, network policies are disabled for a subnet in a virtual network.
+You need to assign the NSG name first in this subnet, then enable NSG in “Network Policy for Private Endpoint”, then the PE will be applied the NSG rule. 
+Manage network policies for private endpoints - Azure Private Link | Microsoft Learn</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;32
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/java-spring-boot-mongodb-atlas-app-on-azure-app-service/ba-p/3804121"
+                        open
+                      >
+                        <summary class="article-expander__title">Java Spring Boot, MongoDB Atlas App on Azure App Service</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/java-spring-boot-mongodb-atlas-app-on-azure-app-service/ba-p/3804121">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://techcommunity.microsoft.com/t5/image/serverpage/image-id/463613i77BA947AB1E17FDE?v&#x3D;v2" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>In this tutorial, we’re going to build a resilient Java Spring Boot application that scales automatically and also provides high availability with built-in monitoring and diagnostics.
+ 
+For this, we will be using Microsoft Azure App Service, a PaaS (platform as a service) offering by Microsoft Azure, because it&#x27;s quite suitable for long running applications and web workloads.
+ 
+As we want our application to be fully-managed and scaling automatically in the cloud, MongoDB Atlas is a great choice for our data store since it’s a fully-managed, cloud-native database as a service that can also scale up and down automatically in a cost-effective way to meet the needs of any application.
+ 
+For this particular tutorial, we’ll be using the Spring Initializr plugin for IntelliJ,  connect it to a Mon…</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;41
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
             <li class="card__section">
               <section class="js-toggle-accordions-scope">
                 <h3 class="source-heading">
@@ -97,46 +223,6 @@ The Java Profiler capa…</span>
                             <span class="media-object__text">
                               <span>New capabilities recently released that improve storage, enhance configuration, deliver exceptional endpoint security, and more.</span>
                                 &ensp;<span class="article-reading-time">(&hairsp;19
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Microsoft Tech Community - Latest Blogs - Apps on Azure Blog</button>
-                  <a class="source-heading__link" href="https://techcommunity.microsoft.com">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/java-spring-boot-mongodb-atlas-app-on-azure-app-service/ba-p/3804121"
-                        open
-                      >
-                        <summary class="article-expander__title">Java Spring Boot, MongoDB Atlas App on Azure App Service</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/java-spring-boot-mongodb-atlas-app-on-azure-app-service/ba-p/3804121">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://techcommunity.microsoft.com/t5/image/serverpage/image-id/463613i77BA947AB1E17FDE?v&#x3D;v2" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>In this tutorial, we’re going to build a resilient Java Spring Boot application that scales automatically and also provides high availability with built-in monitoring and diagnostics.
- 
-For this, we will be using Microsoft Azure App Service, a PaaS (platform as a service) offering by Microsoft Azure, because it&#x27;s quite suitable for long running applications and web workloads.
- 
-As we want our application to be fully-managed and scaling automatically in the cloud, MongoDB Atlas is a great choice for our data store since it’s a fully-managed, cloud-native database as a service that can also scale up and down automatically in a cost-effective way to meet the needs of any application.
- 
-For this particular tutorial, we’ll be using the Spring Initializr plugin for IntelliJ,  connect it to a Mon…</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;41
                                   min&hairsp;)</span>
                             </span>
                           </div>
@@ -3090,6 +3176,34 @@ GitHub est un service d&#x27;hébergement de code source en ligne largement util
                   <a class="source-heading__link" href="https://techcommunity.microsoft.com">Open</a>
                 </h3>
                 <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/new-azure-extensions-in-vscode-for-the-web-vscode-dev/ba-p/3795806"
+                        open
+                      >
+                        <summary class="article-expander__title">New Azure Extensions in  VSCode for the Web (VSCode.dev)!</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/new-azure-extensions-in-vscode-for-the-web-vscode-dev/ba-p/3795806">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://techcommunity.microsoft.com/t5/image/serverpage/image-id/460699i5DBA7591FB846F16?v&#x3D;v2" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>We are excited to announce the release of 3 Azure Extensions to vscode.dev! These extensions are Azure Static Web Apps, Azure Container Apps, and Azure Resource Groups.
+ 
+vscode.dev is a development tool that is a lightweight version of VSCode that runs fully in the browser. You can open a folder on your local machine and start coding immediately without any installation required.
+ 
+So you might be wondering, why vscode.dev? What can I do in the browser? There is quite a bit of functionality that’s available at your grasp and that is fully discussed in this in-depth article. But for now, we will focus on the 3 Azure extensions that just shipped in this tool.
+ 
+vscode.dev - Azure Static Web Apps Extension
+ 
+Azure Static Web Apps is a service that automatically builds and deploys full stack …</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;33
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
                     <article>
                       <details
                         class="article-expander"
@@ -33200,176 +33314,6 @@ The Power Platform University Hub provides students with an integrated curriculu
                         </a>
                       </details>
                     </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://techcommunity.microsoft.com/t5/educator-developer-blog/upskill-on-java-with-this-23-part-video-series/ba-p/3687087"
-                        open
-                      >
-                        <summary class="article-expander__title">Upskill on Java with this 23-part video series</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/t5/educator-developer-blog/upskill-on-java-with-this-23-part-video-series/ba-p/3687087">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://techcommunity.microsoft.com/t5/image/serverpage/image-id/422295iEFE1A99A9F0D28A7/image-size/original?v&#x3D;v2&amp;px&#x3D;-1" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>The number of Java developers in the world is estimated at around 7 million. It&#x27;s also used on a variety of platforms from desktop apps, web apps, mobile apps and much more. It was first developed in 1995.
- 
- 
-Java in teaching
-Given the sheer size of the amount of Java developers in the world and that&#x27;s it&#x27;s used by most of the major companies makes Java a good choice to be taught in academia. There are many resources out there for teaching Java outside of videos series discussed in this article like:
-- Learn Java - Dev.java
-- Java Tutorial (w3schools.com)
-- Java Tutorial - GeeksforGeeks
- 
-Web development
-Many of the world&#x27;s Java developers works with web and API though so it&#x27;s a good idea to complement Java fundamentals knowledge with that of web development so looking into the following could be a good idea for your students:
-
-JSP and Servlets, Web Development Using Java Technology For Beginners - GeeksforGeeks
-Getting Started | Building a RESTful Web Service (spring.io)
-JHipster - Full Stack Platform for the Modern Developer!
-Get started with Java on Azure - Training | Microsoft Learn
-
- 
-Video series, Java for beginners
-Here&#x27;s a link to the the 23-part video series
-
-
-
- 
-Here&#x27;s a selection of videos below from the 23-part series:
- 
-Maven. 
-Maven is a so-called project management and comprehension tool. It allows you to build larger Java apps into projects that can use external libraries, produce something you can deploy and much more. Knowing Maven is a must if you build a bigger app. Gradle is another similar tool to Maven.
-
-
-
- 
-JShell
-a read evaluate print loop for evaluating your code. A great thing for beginners to discover the language and its features.
-
-
-
- 
-Java testing
-Learning to test your code is one of the first things you should know how to do as a developer. This video gives you insight on how you can get started with testing:</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;32
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Spring Engineering</button>
-                  <a class="source-heading__link" href="https://spring.io">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://spring.io/blog/2022/11/29/this-week-in-spring-november-29th-2022-spring-boot-3-has-arrived"
-                        open
-                      >
-                        <summary class="article-expander__title">This Week in Spring - November 29th, 2022 (Spring Boot 3 has arrived)</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://spring.io/blog/2022/11/29/this-week-in-spring-november-29th-2022-spring-boot-3-has-arrived">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://avatars.githubusercontent.com/u/54473?v&#x3D;4?s&#x3D;200" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>Hi, Spring fans! It’s here! It’s finally here, at long last! Spring Boot 3!! And of course with Spring Boot 3.0 comes a whole portfolio of integrated projects that have also been updated! Remember, a huge theme in this release is support for GraalVM native images, and that’s now supported across the board. You know what to do: start.spring.io. 
-
-I put together a Spring Tipds video introducing some of the major themes of Spring Framework 6 / Spring Boot 3. 
-
-
-I also did an in-depth look at the new GraalVM support powered by Spring’s ahead-of-time (AOT) engine. 
-
-
-There’s so much else to talk about this week, but I really can’t stress this enough: Spring Boot 3 is here! In some ways, it feels like this release has been more than four years in the making! It’s amazing, and I can’t wait f…</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;3
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Azure Cosmos DB Blog</button>
-                  <a class="source-heading__link" href="https://devblogs.microsoft.com/cosmosdb/">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://devblogs.microsoft.com/cosmosdb/?p&#x3D;5257"
-                        open
-                      >
-                        <summary class="article-expander__title">Enabling PostgreSQL 15 in Azure Cosmos DB for PostgreSQL – how we did it</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://devblogs.microsoft.com/cosmosdb/enabling-postgresql-15-in-azure-cosmos-db-for-postgresql-how-we-did-it/">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://devblogs.microsoft.com/cosmosdb/wp-content/uploads/sites/52/2022/11/Ozan-Saka-Postgres-15-Elephant-Support-in-Azure-Cosmos-DB-for-PostgreSQL-1920x1080-1.jpg" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>As you may have heard, we recently made PostgreSQL 15 generally available in Azure Cosmos DB for PostgreSQL within just 1 week of the PostgreSQL 15 release. The Postgres 15 version is available for you whether you need to create a new cluster in Azure Cosmos DB for PostgreSQL,
-The post Enabling PostgreSQL 15 in Azure Cosmos DB for PostgreSQL – how we did it appeared first on Azure Cosmos DB Blog.</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;20
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Azure service updates</button>
-                  <a class="source-heading__link" href="https://azure.microsoft.com/en-us/updates/">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="private-preview-aks-backup"
-                        open
-                      >
-                        <summary class="article-expander__title">Private preview: Azure Kubernetes Service (AKS) Backup</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://azure.microsoft.com/en-us/updates/private-preview-aks-backup/">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://azurecomcdn.azureedge.net/cvt-6a5bead1335a068b86c9df6dbb4c568bcd0c78b447d43ae3c7a3a8dafc7fcc10/images/shared/social/azure-icon-250x250.png" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>Azure Backup is announcing private preview of AKS Backup providing ability to backup and restore AKS clusters.</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;18
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
                 </section>
               </section>
             </li>
@@ -33377,8 +33321,8 @@ The post Enabling PostgreSQL 15 in Azure Cosmos DB for PostgreSQL – how we did
       </section>
 
     <footer>
-      <a class="footer-link" href="https://github.com/lok-msft/azure-blog-rss/actions/runs/4825958163">
-        <time id="build-timestamp" datetime="2023-04-28T01:11:44.946Z">2023-04-28T01:11:44.946Z</time>
+      <a class="footer-link" href="https://github.com/lok-msft/azure-blog-rss/actions/runs/4836067833">
+        <time id="build-timestamp" datetime="2023-04-29T01:10:39.415Z">2023-04-29T01:10:39.415Z</time>
       </a>
       <a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a>
     </footer>
