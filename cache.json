@@ -6,6 +6,26 @@
       "siteUrl": "https://spring.io",
       "articles": [
         {
+          "id": "https://spring.io/blog/2023/05/11/spring-framework-reference-documentation-update",
+          "author": "Rossen Stoyanchev",
+          "description": "Level up your Java code and explore what Spring can do for you.",
+          "link": "https://spring.io/blog/2023/05/11/spring-framework-reference-documentation-update",
+          "publishedOn": "2023-05-11T00:00:00.000Z",
+          "wordCount": 7538,
+          "title": "Spring Framework Reference Documentation Update",
+          "imageUrl": "https://spring.io/img/og-spring.png"
+        },
+        {
+          "id": "https://spring.io/blog/2023/05/11/a-bootiful-podcast-james-ward-kotlin-product-manager-at-google",
+          "author": "Josh Long",
+          "description": "Level up your Java code and explore what Spring can do for you.",
+          "link": "https://spring.io/blog/2023/05/11/a-bootiful-podcast-james-ward-kotlin-product-manager-at-google",
+          "publishedOn": "2023-05-11T00:00:00.000Z",
+          "wordCount": 6911,
+          "title": "A Bootiful Podcast: James Ward, Kotlin Product Manager at Google",
+          "imageUrl": "https://spring.io/img/og-spring.png"
+        },
+        {
           "id": "https://spring.io/blog/2023/05/09/this-week-in-spring-may-9th-2023",
           "author": "Josh Long",
           "description": "Level up your Java code and explore what Spring can do for you.",
@@ -723,16 +743,6 @@
           "publishedOn": "2022-12-15T11:00:00.000Z",
           "wordCount": 542,
           "title": "A Bootiful Podcast: Microsoft's Brian Benz on the state of Java, Microsoft, Azure, and so much more",
-          "imageUrl": "https://avatars.githubusercontent.com/u/54473?v=4?s=200"
-        },
-        {
-          "id": "https://spring.io/blog/2022/12/13/this-week-in-spring-december-13th-2022",
-          "author": null,
-          "description": "Hi, Spring fans! Welcome to another installment of This Week in Spring! I truly, absolutely, can not believe that we’re nearly done with the year already! Have you made your new years’ resolutions? Submitted your expense reports? It’s that time of the year when I’m going to start focusing on staying warm and avoiding undue work for a while :-) I hope you do too. This is why I’m glad I write these roundups: I hope they save people from extra, undue work! So, with that… let’s dive into the roundup!\n\r\n\r\n  \nA Bootiful Podcast: Vaadin’s Marcus Hellberg on rich UIs, Spring Boot 3, GraalVM native images, and more\n\r\n  \nA Guide to Spring CredHub\n\r\n  \nDo more with Azure Spring Apps – scale to zero and enhance productivity\n\r\n  \nForm Login and Basic Authentication in springdoc-openapi\n\r\n  \nGetting Started with Blaze Persistence\n\r\n  \nGuide to Java PriorityQueue\n\r\n  \nJava Generics PECS – Producer Extends Consumer Super\n\r\n  \nRSocket Security with Spring Boot via Spring Security | VMware Tanzu Developer Center\n\r\n  \nRate Limiting With Client IP in Spring Cloud Gateway\n\r\n  \nReinitialize Singleton Bean in Spring Context\n\r\n  \na very important release - v3.0.0 - of the rickroll-security-spring-boot-starter  · TomCools/rickroll-security-spring-boot-starter!\n\r\n  \nRunning Spring Boot Applications with the Embedded Camunda Engine\n\r\n  \nSecuring RSocket TCP with TLS | VMware Tanzu Developer Center\n\r\n  \nSpring Cloud Data Flow version 2.10.0 released\n\r\n  \nSpring Dependency Injection | VMware Tanzu Developer Center\n\r\n  \nSpring Tools 4.17.0 released\n\r\n  \nTracing a Reactive Kotlin App with Spring Cloud Sleuth | VMware Tanzu Developer Center",
-          "link": "https://spring.io/blog/2022/12/13/this-week-in-spring-december-13th-2022",
-          "publishedOn": "2022-12-13T09:00:00.000Z",
-          "wordCount": 751,
-          "title": "This Week in Spring - December 13th, 2022",
           "imageUrl": "https://avatars.githubusercontent.com/u/54473?v=4?s=200"
         }
       ]
@@ -3548,26 +3558,6 @@
           "wordCount": 9610,
           "title": "Azure Container Apps on Azure Arc enabled Kubernetes – Run your container apps anywhere",
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/421304i4BF7324DA33CC234?v=v2"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/using-operation-results-api-to-check-the-progress-of-deployment/ba-p/3641831",
-          "author": "shuanand",
-          "description": "Currently there is no standard REST API to monitor swap operation, apart from using the activity logs. \n \nWeb Apps - Swap Slot Slot - REST API (Azure App Service) | Microsoft Docs\n \nHowever, we have recently found the following way to monitor the Swap operation and the same API is being used by Azure portal as well to update the Swap status and it's comparatively fast. Please refer to the steps below:\n \n\nFirst call the POST Slot-Swap API & it will trigger the swap operation as shown below:\n\nhttps://management.azure.com/subscriptions/{SubscriptionID}/resourceGroups/{resourceGroupName}/providers/Microsoft.Web/sites/{name}/slots/{slot}/slotsswap?api-version=2022-03-01\n \n \n\n \n2. The above API will have location parameter in Response Headers with Operation Results API call which can be used to continuously poll in a loop until the Response is 200 (Swap completed) or (failure status code in case of swap failure)\n \nGET: https://management.azure.com/subscriptions/{SubscriptionID}/resourceGroups/{resourceGroupName}/providers/Microsoft.Web/sites/{name}/slots/{slot}/operationresults/915677b6-ea92-44c9-865b-95cfc693d5bb?api-version=2018-11-01\n \nPolling: Swap in accepted/in-progress state:\n \n\n \nPolling: Swap completed:\n \n\n \nThanks to @DeependraChaudhary for sharing the approach.\nIf you have any questions or feedback, please add a comment below.",
-          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/using-operation-results-api-to-check-the-progress-of-deployment/ba-p/3641831",
-          "publishedOn": "2022-12-13T07:10:59.000Z",
-          "wordCount": 9445,
-          "title": "Using Operation Results API to check the progress of deployment slots swap operation in App Service",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/409429iE3CAAC9C8F3A17C8/image-size/original?v=v2&px=-1"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/investigate-azure-spring-apps-networking-issue-with-the-new/ba-p/3693455",
-          "author": "Hanli_Ren",
-          "description": "In A Simple Network Connection Test Tool for Azure Spring Cloud we demonstrated a way to build a very simple App for DNS resolve and TCP ping tests in Azure Spring Apps.\n \nAzure Spring Apps published a new Connect Feature that allows you access the shell environment inside your application instances to do advanced troubleshooting.\n \nThis blog aimed to describe how to directly access the shell environment inside your application instances to investigate common networking issues.\n \nStep 1: Connect to an app instance for troubleshooting \nStep 2: Investigate Azure Spring Apps Networking Issue in the Console \nStep 1: Connect to an app instance for troubleshooting\nReference Doc: Connect to an app instance for troubleshooting\n1. Before connecting to an app instance, you must be granted the role A…",
-          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/investigate-azure-spring-apps-networking-issue-with-the-new/ba-p/3693455",
-          "publishedOn": "2022-12-13T05:46:25.000Z",
-          "wordCount": 9814,
-          "title": "Investigate Azure Spring Apps Networking Issue with the new Connect feature",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/424667iE16BFCB608D27510?v=v2"
         }
       ]
     },
@@ -4255,6 +4245,16 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/armchair-architects-concentration-risk/ba-p/3819575",
+          "author": "brauerblogs",
+          "description": "Welcome back to Armchair Architects as part of the Azure Enablement Show. Today we will be discussing the term concentration risk, which means concentrating your solution on one technology and how to avoid what one architect terms ‘silly miracles’. Our hosts will be David Blank-Edelman and our armchair architects Uli Homann and Eric Charran.\n \nEric defines concentration risk and gives an example.\n \nEric has friends in the financial services industry and the term concentration risk to them means over indexing or over investment in a specific area to the harm of the larger portfolio. The term concentration risk is gaining traction in the technology space also, specifically the architecture space because the same dangers of safeguarding your investment also exist.\n \nWhen you're talking about …",
+          "link": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/armchair-architects-concentration-risk/ba-p/3819575",
+          "publishedOn": "2023-05-11T22:50:58.000Z",
+          "wordCount": 11351,
+          "title": "Armchair Architects: Concentration Risk",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/469377iD665D6133490F60D/image-size/original?v=v2&px=-1"
+        },
+        {
           "id": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/azure-api-management-streamline-testing-with-postman-amp-azure/ba-p/3817205",
           "author": "nishapillai",
           "description": "Have you ever needed to test an API that you have exposed via Azure APIM?\nIt can be a tedious and repetitive process… right?\nNot only do you have to redo testing after every minor change, but you also have to repeat it for each environment you deploy to.\nWhat if there was a way to automate the process with minimal coding?\n \nFirst, what exactly is Azure API Management (APIM), if you have not used it before? It's a fully managed service provided by Microsoft Azure that enables you to publish, secure, and manage APIs for your organization. By acting as a gateway between your backend services and the clients that consume them, APIM provides a centralized point of control for your API ecosystem. And with features such as rate limiting, authentication, caching, and analytics, APIM is an essentia…",
@@ -4780,16 +4780,6 @@
           "wordCount": 12660,
           "title": "Use Natural Language & Prompts with AI Models | Azure OpenAI Service",
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/425963iA270C67219AE32C6?v=v2"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/set-up-and-manage-azure-dedicated-host/ba-p/3694757",
-          "author": "Zachary Cavanell",
-          "description": "Deploy your own dedicated servers in the cloud with Azure Dedicated Host. Run apps and services just as you would on premises, but with the added flexibility and operational savings that come with running your workloads in Azure. \n \n\n \nAn Azure Dedicated Host is dedicated to your organization and only hosts your workloads. Azure VMs run on virtualized hardware on top of a host hypervisor, and you can fill your dedicated host with different VM sizes until you run out of space. \nAzure expert, Matt McSpirit, shows how to set up and manage Azure Dedicated Host.\n \nProtect your entire virtual machine with Confidential VMs. \n\nSee how to deploy Confidential VMs to Azure Dedicated Hosts in a hardware-isolated environment.\n \nRun Virtual Machine Scale Sets on Azure Dedicated Hosts.\n\nApply availabilit…",
-          "link": "https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/set-up-and-manage-azure-dedicated-host/ba-p/3694757",
-          "publishedOn": "2022-12-12T16:08:03.000Z",
-          "wordCount": 11269,
-          "title": "Set up and Manage Azure Dedicated Host",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/425229iA1BAF7FB479F6298?v=v2"
         }
       ]
     },
@@ -5012,6 +5002,16 @@
       "feedUrl": "https://devblogs.microsoft.com/cse/feed/",
       "siteUrl": "https://devblogs.microsoft.com/cse/",
       "articles": [
+        {
+          "id": "https://devblogs.microsoft.com/cse/?p=14697",
+          "author": "Jeremy De La Cruz",
+          "description": "Guidance for how to kick off a Litmus Chaos Scenarios programmatically and in an Azure DevOps Pipeline.\nThe post Launching Litmus Chaos Scenarios Programmatically appeared first on CSE Developer Blog.",
+          "link": "https://devblogs.microsoft.com/cse/2023/05/11/launching-litmus-chaos-scenarios-programmatically/",
+          "publishedOn": "2023-05-11T07:00:00.000Z",
+          "wordCount": 5209,
+          "title": "Launching Litmus Chaos Scenarios Programmatically",
+          "imageUrl": "https://devblogs.microsoft.com/cse/wp-content/uploads/sites/55/2023/05/litmus-mascot.png"
+        },
         {
           "id": "https://devblogs.microsoft.com/cse/?p=14686",
           "author": "Maho Pacheco",
@@ -5776,16 +5776,6 @@
           "wordCount": 4375,
           "title": "December patches for Azure DevOps Server",
           "imageUrl": "https://devblogs.microsoft.com/devops/wp-content/uploads/sites/6/2018/09/index-hero.jpg"
-        },
-        {
-          "id": "https://devblogs.microsoft.com/devops/?p=66155",
-          "author": "Dan Hellem",
-          "description": "List of New Boards Hub bugs fixed in sprint 214. We enabled the “Try New Boards Hub” message across another ring of accounts. The process continues to go slower than originally expected. Every time we enable the message, we receive more feedback on issues that need to be fixed.\nThe post New Boards Hub, Sprint 214 Update appeared first on Azure DevOps Blog.",
-          "link": "https://devblogs.microsoft.com/devops/new-boards-hub-sprint-214-update/",
-          "publishedOn": "2022-12-12T15:31:16.000Z",
-          "wordCount": 4949,
-          "title": "New Boards Hub, Sprint 214 Update",
-          "imageUrl": "https://devblogs.microsoft.com/devops/wp-content/uploads/sites/6/2022/03/agile.png"
         }
       ]
     },
@@ -6477,6 +6467,26 @@
       "siteUrl": "https://azure.microsoft.com/en-us/updates/",
       "articles": [
         {
+          "id": "generally-available-azure-bastion-shareable-links",
+          "author": null,
+          "description": "Shareable links allows users to connect to target resources via Azure Bastion without access to the Azure portal.",
+          "link": "https://azure.microsoft.com/en-us/updates/generally-available-azure-bastion-shareable-links/",
+          "publishedOn": "2023-05-10T20:14:44.000Z",
+          "wordCount": 5480,
+          "title": "Generally available: Azure Bastion now support shareable links",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-6589a67885300e5705e5be84e719751523c4206a453432113ca323f9a1f68e92/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "app-service-min-tls-cipher-suite-preview",
+          "author": null,
+          "description": "Disable Weak TLS Cipher Suites for Your App Service Web Apps (Preview)",
+          "link": "https://azure.microsoft.com/en-us/updates/app-service-min-tls-cipher-suite-preview/",
+          "publishedOn": "2023-05-09T15:00:21.000Z",
+          "wordCount": 5471,
+          "title": "Public Preview: App Service Minimum TLS Cipher Suite Now on Azure Portal",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-6589a67885300e5705e5be84e719751523c4206a453432113ca323f9a1f68e92/images/shared/social/azure-icon-250x250.png"
+        },
+        {
           "id": "general-availability-inbound-icmpv4-pings-are-now-supported-on-azure-load-balancer",
           "author": null,
           "description": "Inbound ICMPv4 pings are now supported on Azure Load Balancer.",
@@ -6485,6 +6495,16 @@
           "wordCount": 5510,
           "title": "General availability: Inbound ICMPv4 pings are now supported on Azure Load Balancer",
           "imageUrl": "https://azurecomcdn.azureedge.net/cvt-5f4795262a422c72a1d81acb957d58f0f7b794cbf6ad44f95a817be211becd7b/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "generalized-azure-compute-gallery-custom-image-support-in-update-management-center",
+          "author": null,
+          "description": "VM Image support for Update management center has expanded with the addition of support for generalized Azure Compute Gallery custom images.",
+          "link": "https://azure.microsoft.com/en-us/updates/generalized-azure-compute-gallery-custom-image-support-in-update-management-center/",
+          "publishedOn": "2023-05-08T17:00:00.000Z",
+          "wordCount": 5467,
+          "title": "Generalized Azure Compute Gallery custom image support in Update management center",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-6589a67885300e5705e5be84e719751523c4206a453432113ca323f9a1f68e92/images/shared/social/azure-icon-250x250.png"
         },
         {
           "id": "alwaysserve",
@@ -6705,6 +6725,16 @@
           "wordCount": 5444,
           "title": "Generally Available: TCP support for Azure Container Apps",
           "imageUrl": "https://azurecomcdn.azureedge.net/cvt-8226ca7c659b1248505c88e5d204198e562da59afd410b09da3946e71931344c/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "public-preview-azure-key-vault-references-for-secrets-in-azure-container-apps",
+          "author": null,
+          "description": "You can now source Container Apps secrets values from Azure Key Vault",
+          "link": "https://azure.microsoft.com/en-us/updates/public-preview-azure-key-vault-references-for-secrets-in-azure-container-apps/",
+          "publishedOn": "2023-04-26T17:00:00.000Z",
+          "wordCount": 5478,
+          "title": "Public preview: Azure Key Vault references for secrets in Azure Container Apps",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-6589a67885300e5705e5be84e719751523c4206a453432113ca323f9a1f68e92/images/shared/social/azure-icon-250x250.png"
         },
         {
           "id": "generally-available-synthetic-graphql-2",
@@ -8965,26 +8995,6 @@
           "wordCount": 5252,
           "title": "Azure SQL—General availability updates for mid-December 2022",
           "imageUrl": "https://azurecomcdn.azureedge.net/cvt-df8451ca18eea64f6a06989d7126abd54ee7a8abeb71a634b805489da49e73c3/images/shared/social/azure-icon-250x250.png"
-        },
-        {
-          "id": "announcing-public-preview-of-higher-throughput-for-azure-service-bus-premium-through-partitioning",
-          "author": null,
-          "description": "Scale your Azure Service Bus premium namespaces far beyond the current limitations with two new features.",
-          "link": "https://azure.microsoft.com/en-us/updates/announcing-public-preview-of-higher-throughput-for-azure-service-bus-premium-through-partitioning/",
-          "publishedOn": "2022-12-12T23:02:42.000Z",
-          "wordCount": 5483,
-          "title": "Public preview: Performance improving features for Azure Service Bus premium",
-          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-031d78d2380ba572861f1fc8c37e624c906c3a38f054ceb6fb4444af53de1c2d/images/shared/social/azure-icon-250x250.png"
-        },
-        {
-          "id": "general-availability-stream-analytics-nocode-editor-updates-in-december-2022",
-          "author": null,
-          "description": "New features are now available in Stream Analytics no-code editor GA including multiple parameter built-in functions support, Delta Lake format support in ADLS Gen2 output sink.",
-          "link": "https://azure.microsoft.com/en-us/updates/general-availability-stream-analytics-nocode-editor-updates-in-december-2022/",
-          "publishedOn": "2022-12-12T17:00:00.000Z",
-          "wordCount": 5306,
-          "title": "General availability: Stream Analytics no-code editor updates in December 2022",
-          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-031d78d2380ba572861f1fc8c37e624c906c3a38f054ceb6fb4444af53de1c2d/images/shared/social/azure-icon-250x250.png"
         }
       ]
     },
