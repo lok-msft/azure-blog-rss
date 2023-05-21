@@ -763,6 +763,16 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/t5/educator-developer-blog/exploring-the-power-platform-gpt-prompts-unleashing-the/ba-p/3824706",
+          "author": "Lee Stott",
+          "description": "IntroductionWelcome, students, to the world of Power Platform GPT Prompts. In this blog post, we will dive into the exciting possibilities of using GPT models in the Power Platform and how they can enhance your application experiences and features. The Power Platform, combined with GPT, empowers you to create intelligent and dynamic applications that can revolutionize various domains. So, let's embark on this journey and explore the potential of AI in the Power Platform.\nWhat is the Power Platform GPT Prompts Repository?The Power Platform GPT Prompts repository is a treasure trove of prompt examples specifically designed to be used with GPT models in the Power Platform. Developed by OpenAI, the ChatGPT model is a state-of-the-art language model capable of generating human-like text. By lev…",
+          "link": "https://techcommunity.microsoft.com/t5/educator-developer-blog/exploring-the-power-platform-gpt-prompts-unleashing-the/ba-p/3824706",
+          "publishedOn": "2023-05-19T07:00:00.000Z",
+          "wordCount": 9837,
+          "title": "Exploring the Power Platform GPT Prompts: Unleashing the Potential of AI in the Power Platform",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/471205i834C8846B9B46E6B/image-size/original?v=v2&px=-1"
+        },
+        {
           "id": "https://techcommunity.microsoft.com/t5/educator-developer-blog/building-ci-cd-pipeline-with-azure-devops/ba-p/3823573",
           "author": "BabatundeHammed",
           "description": "Looking to learn more about Azure DevOps and how to build a CI/CD pipeline with it? I am organizing a virtual workshop building and deploying a sentiment analysis web app using Azure DevOps.\n \nAbout the session\nIn this session, I will explore how to use Azure DevOps Pipeline to deploy a sentiment analysis project. I will cover how to use Azure DevOps pipeline to create a CI/CD pipeline for the creation of Azure infrastructures using bicep, tag and push a docker image to Azure Container Registry and deploy Sentiment analysis app to Azure web apps for containers.\n \nBy the end of the session, you will have hands-on experience with using the Azure DevOps Pipelines to deploy a sentiment analysis application using.\n \nYou can register for the workshop here\n \n\n \nWatch on Demand\n\n\n\n \n\nCheck out these resources on Azure DevOps\n- Azure for Student (5 Free DevOps Licenses)- Azure Devops\n- Azure DevOps Documentation \n- Azure DevOps Labs \n- Get started with Azure DevOps learning path - Training | Microsoft Learn- Build applications with Azure DevOps learning path - Training | Microsoft Learn- Deploy applications with Azure DevOps learning path - Training | Microsoft Learn",
@@ -3565,16 +3575,6 @@
           "wordCount": 10020,
           "title": "Azure Event Hubs Dedicated Self-Serve Scalable Clusters GA for Mission-Critical Streaming Workloads",
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/441440i42474981AB73E0AC/image-size/original?v=v2&px=-1"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/messaging-on-azure-blog/service-bus-queue-overview-auto-refreshing-counters/ba-p/3702550",
-          "author": "SurajIyer",
-          "description": "We are excited to announce the release of auto-refresh of message counters on the queue overview blades in Service Bus portal experience. This feature updates the queue settings and message counters automatically in specific time intervals selected by the user to provide real time message counts within portal.\n \nQueue settings and message counts\n \nEvery Service Bus queue overview blade on Azure Portal shows valuable information pertaining to the queue settings and messages on the queue. Some of the metrics exposed to users are as shown below:\n\n \n\n \nCurrently, the queue settings and message counts are only updated if the page is voluntarily refreshed by the user. A lot of users are interested in the metrics getting updated automatically when they are in an active queue without voluntarily reloading the page or refreshing the page. This also impacts customers flow introducing a context switch.\n \nEnabling auto-refresh of message counters\n \nThe feature is set to “off” by default. Users are free to turn the Auto-refresh toggle to “on” and select the time interval at which they would like to see the counters refreshed automatically. Turning “on” the auto refresh feature selects 10 seconds refresh by default but users can select from 5 seconds to up to a 1 minute.\n \nSteps to enable the feature –\nDefault – auto refresh is turned “off”\n\n \nToggle “on” the auto refresh to observe the Refresh after timer selected to 10 seconds by default.\n\n \nClick to select more refresh timing option from the dropdown\n\nDone, after you select, the auto refresh feature will be enabled on all the queues on your service bus namespace.\n \nNOTES –\n\nThis feature once enabled will apply to all queues within the service bus namespace.\nThis is a portal specific feature. Hence, users cannot enable/ update/ disable the feature through PowerShell/ CLI",
-          "link": "https://techcommunity.microsoft.com/t5/messaging-on-azure-blog/service-bus-queue-overview-auto-refreshing-counters/ba-p/3702550",
-          "publishedOn": "2022-12-21T22:04:49.000Z",
-          "wordCount": 9463,
-          "title": "Service Bus Queue Overview - Auto refreshing counters",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/428053i778409A4CD0B6F11?v=v2"
         }
       ]
     },
@@ -4206,26 +4206,6 @@
           "wordCount": 9414,
           "title": "Quickstart: Manual Effect in Azure Policy",
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/428623i31A3A9574FC6ECC1?v=v2"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/azure-paas-blog/azure-event-hub-how-to-stop-the-incurring-cost-on-my-eventhub/ba-p/3700014",
-          "author": "KavyaRK",
-          "description": "Case: In a situation, you observe your EventHub namespace is still incurring the cost, even though you are not doing any operations (read/write/management) on it and your EventHub namespace has no active EventHub instances present.\n \nRoot Cause of the behavior: \n\nAt the time of creating the Azure EventHub namespace (Basic/Standard/Premium/Dedicated tier), you may have to give pre-purchased units of capacity in terms of Throughput units/Processing units/Capacity units based on the tier you choose. These pre-purchased units of capacity controls throughput capacity of the EventHub namespace.\nAmong all the other pricing factors, cost will be incurred based on the number of pre-purchased units of capacity (Throughput units/Processing units/Capacity units) at the EventHub namespace level.\nHere I have attached a document, referring to the Azure EventHub pricing. Pricing - Event Hubs | Microsoft Azure\n\n \n\nAs the pre-purchased units of capacity (Throughput units/Processing units/Capacity units) are defined at the EventHub namespace level, you will be charged per pre-purchased units of capacity configured hourly, even though there are no active EventHub instances present, and you are not performing any kind of operations on it.\n\nHow to mitigate this behavior:\n\nTo stop the incurring cost while EventHub is not in use, you may have to delete the EventHub namespace, instead of disabling the EventHub instances.\nYou can as well export the ARM template to create the same EventHub namespace in future, before deleting the existing EventHub namespace. Export template in Azure portal - Azure Resource Manager | Microsoft Learn",
-          "link": "https://techcommunity.microsoft.com/t5/azure-paas-blog/azure-event-hub-how-to-stop-the-incurring-cost-on-my-eventhub/ba-p/3700014",
-          "publishedOn": "2022-12-22T09:43:04.000Z",
-          "wordCount": 9261,
-          "title": "Azure Event Hub | How to stop the incurring Cost on my EventHub, while not in use",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/427062i2D2CC81D47D18923?v=v2"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/azure-paas-blog/troubleshoot-500-backendconnectionfailure-ssl-tls-error/ba-p/3700074",
-          "author": "jiayiwu",
-          "description": "Background Information\n \nAs we all know, the API management service is nothing but a proxy that helps to forward the request and response between the client and the backend server. Ideally, the API Management server will maintain two connections: the one with the client side, and the one with the backend server. The backend server proceeds the request from APIM when SSL/TLS connection is successfully established between APIM and the backend server. However, if any of the elements within the SSL/TLS connection go wrong, the client server may receive a 500 BackendConnectionFailure error with the message ‘The underlying connection was closed: Could not establish trust relationship for the SSL/TLS secure channel.’\n \nThis article is written to share some common causes of the 500 BackendConnecti…",
-          "link": "https://techcommunity.microsoft.com/t5/azure-paas-blog/troubleshoot-500-backendconnectionfailure-ssl-tls-error/ba-p/3700074",
-          "publishedOn": "2022-12-22T08:31:29.000Z",
-          "wordCount": 11220,
-          "title": "Troubleshoot 500 BackendConnectionFailure SSL/TLS Error",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/427156i16089D2080098077?v=v2"
         }
       ]
     },
@@ -6324,16 +6304,6 @@
           "wordCount": 9124,
           "title": "Prevent accidental deletions at scale using Azure Policy",
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/423056i600A27EE779348DB?v=v2"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/azure-governance-and-management/azure-portal-november-2022-updates/ba-p/3697487",
-          "author": "Allison_Cordle",
-          "description": "Databases>SQL Databases\n\nNow generally available: Azure Synapse Link for SQL \n\nMobile > Virtual Machines and Network Security Groups \n\nManage NSG security rules on mobile\n\nIntune\n\nUpdates to Microsoft Intune\n\nLet's look at each of these updates in greater detail.\nDatabases>SQL Databases\n Now generally available: Azure Synapse Link for SQL \nYou can use the Azure Synapse Link for SQL functionality to replicate your operational data into an Azure Synapse Analytics dedicated SQL pool from Azure SQL Database. \n \nIf you want a way to move transactional data to a data warehouse without building complex ETL packages, look no further than Synapse Link. This feature allows you specify a source Azure SQL Database and a destination Synapse dedicated SQL pool and have the data automatically replicated …",
-          "link": "https://techcommunity.microsoft.com/t5/azure-governance-and-management/azure-portal-november-2022-updates/ba-p/3697487",
-          "publishedOn": "2022-12-21T18:30:08.000Z",
-          "wordCount": 9518,
-          "title": "Azure portal November 2022 updates",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/426162i022D47F708159616?v=v2"
         }
       ]
     },
@@ -9762,16 +9732,6 @@
           "wordCount": 4844,
           "title": "New Microsoft Graph Developer Proxy preview v0.3 with support for all APIs",
           "imageUrl": "https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2023/01/MicrosoftTeams-image-53.jpg"
-        },
-        {
-          "id": "https://devblogs.microsoft.com/microsoft365dev/?p=12522",
-          "author": "Microsoft Graph team",
-          "description": "Automate and manage your Microsoft 365 tenant by using the Microsoft Graph PowerShell SDK that brings the Microsoft Graph API to PowerShell. Focus on what really matters and build scripts to automate your work instead of worrying about throttling, retries, redirects,\nThe post Microsoft Graph PowerShell v2 is now in public preview, half the size, and will speed up your automations appeared first on Microsoft 365 Developer Blog.",
-          "link": "https://devblogs.microsoft.com/microsoft365dev/microsoft-graph-powershell-v2-is-now-in-public-preview-half-the-size-and-will-speed-up-your-automations/",
-          "publishedOn": "2022-12-21T13:20:20.000Z",
-          "wordCount": 6110,
-          "title": "Microsoft Graph PowerShell v2 is now in public preview, half the size, and will speed up your automations",
-          "imageUrl": "https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2022/12/graph-powershell-v2-preview.png"
         }
       ]
     }
