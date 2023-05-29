@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2023-05-28T01:20:41.402Z</updated>
+    <updated>2023-05-29T01:15:31.601Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
@@ -15713,27 +15713,6 @@ Policy Definition
 The DenyAction effect is designed to block the operation of intended action to modify specific resources. Currently, only the DELETE action is supported. When a request is made to delete a resource, which is in the scope of a DenyAction Policy assignment, the request will be blocked. To introduce more details about…]]></summary>
         <author>
             <name>jiayiwu</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Track IP addresses consumption with Azure Application Insights – Part 1]]></title>
-        <id>https://techcommunity.microsoft.com/t5/azure-developer-community-blog/track-ip-addresses-consumption-with-azure-application-insights/ba-p/3705404</id>
-        <link href="https://techcommunity.microsoft.com/t5/azure-developer-community-blog/track-ip-addresses-consumption-with-azure-application-insights/ba-p/3705404"/>
-        <updated>2022-12-30T13:13:52.000Z</updated>
-        <summary type="html"><![CDATA[Introduction
-In this article we will demonstrate how to send custom event telemetry to an Azure Application Insights instance through PowerShell.
-We will track our Azure Virtual Network IP addresses consumption but note that after reading this article you will be able to track any kind of information.
-
- 
-
-What do we want to track?
-We need to track the number of IP addresses that are used on our subnet, to do that we will need to send custom event telemetry with the following information:
-
-The subnet id.
-The number of IP addresses that are used.
-The IP addresses limit in order to track if the subnet is reaching out his number of available IP addresses – > with this information (Get-AzVirtualNetworkUsageList) we will be able to send Azure Monitor alerts when a subnet is almost full :light_bu…]]></summary>
-        <author>
-            <name>Jamesdld23</name>
         </author>
     </entry>
 </feed>
