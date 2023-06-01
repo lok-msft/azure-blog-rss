@@ -4298,6 +4298,16 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/t5/azure-paas-blog/analyze-har-trace-when-importing-function-app-into-api/ba-p/3831530",
+          "author": "Didieroc",
+          "description": "Background introduction\nAPI Management allow us to import a function app as an API, the UI offers a straightforward process to import the function app as described on this Microsoft public document. However, in this article we want to go beyond and explore what actions are performed in the background, it will allow us to understand the import process better and will help us dealing with issues while importing the function app.\n \n \nSteps\nPlease review all the steps carefully, they are executed in the following order.\nNote: The easiest way to see these steps is collecting a HAR trace.\n \n1- It first sends a HEAD request to Microsoft.ApiManagement provider to confirm if the API exists in APIM, (of course it returns a 404 Not Found error which is expected because the API does not exist yet), we…",
+          "link": "https://techcommunity.microsoft.com/t5/azure-paas-blog/analyze-har-trace-when-importing-function-app-into-api/ba-p/3831530",
+          "publishedOn": "2023-05-31T01:43:20.000Z",
+          "wordCount": 10229,
+          "title": "Analyze HAR trace when importing Function App into API Management",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/474103iD121283A40609B2C?v=v2"
+        },
+        {
           "id": "https://techcommunity.microsoft.com/t5/azure-paas-blog/communication-between-apim-and-function-app-as-backend/ba-p/3831997",
           "author": "Didieroc",
           "description": "Background introduction\nWhen a Function App is added as an API in APIM, there are some authorization details we need to consider while communicating from APIM to the backend function app.\nIt does not matter what Authorization level (function or anonymous) the function app has configured, APIM will always attach a function host key to the request. The host key is attached to the request as a header. However, we may experiment unauthorized errors even though the function host key is present in the request header.\nSo, this article is focused on analyzing one of those scenarios when communication between APIM and backend function app is truncated due to unauthorized errors.\n \n \nScenario\nRequest is going through APIM to backend function app, and we are getting a 401 Unauthorized error.\nNote: AP…",
@@ -4666,16 +4676,6 @@
           "wordCount": 9854,
           "title": "Unable to load Service Fabric Explorer",
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/429913i1EAF84F01AEA4EF6?v=v2"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/azure-paas-blog/quickstart-denyaction-effect-in-azure-policy/ba-p/3705112",
-          "author": "jiayiwu",
-          "description": "Background\n \nAzure policy introduced a new policy effect named 'DenyAction' recently, which enables the user to block requests on intended action to resources in case the critical resources are changed. This article introduces the 'DenyAction' effect and the expected behaviors with a demo.\n \nPlease note that the DenyAction effect is now in public preview.\n \nWe will cover two sections in this article:\n\nPolicy definition.\nThe expected behavior of the effect.\n\n \nPolicy Definition\n \nThe DenyAction effect is designed to block the operation of intended action to modify specific resources. Currently, only the DELETE action is supported. When a request is made to delete a resource, which is in the scope of a DenyAction Policy assignment, the request will be blocked. To introduce more details about…",
-          "link": "https://techcommunity.microsoft.com/t5/azure-paas-blog/quickstart-denyaction-effect-in-azure-policy/ba-p/3705112",
-          "publishedOn": "2023-01-02T07:22:42.000Z",
-          "wordCount": 9890,
-          "title": "Quickstart: DenyAction Effect in Azure Policy",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/428966i89A1F9CC1F099C37?v=v2"
         }
       ]
     },
@@ -6038,6 +6038,16 @@
       "siteUrl": "https://devblogs.microsoft.com/devops/",
       "articles": [
         {
+          "id": "https://devblogs.microsoft.com/devops/?p=67042",
+          "author": "Dan Hellem",
+          "description": "We are delighted to announce the long-awaited private preview of the new Markdown editor for the work item discussion. This exciting feature empowers you to utilize the Markdown syntax and editor for all future comments. The Markdown editor aligns with the same experience you encounter in other parts of the product,\nThe post Markdown editor for comments (preview) appeared first on Azure DevOps Blog.",
+          "link": "https://devblogs.microsoft.com/devops/markdown-editor-for-comments-preview/",
+          "publishedOn": "2023-05-31T15:06:33.000Z",
+          "wordCount": 4763,
+          "title": "Markdown editor for comments (preview)",
+          "imageUrl": "https://devblogs.microsoft.com/devops/wp-content/uploads/sites/6/2022/03/agile.png"
+        },
+        {
           "id": "https://devblogs.microsoft.com/devops/?p=67023",
           "author": "Dan Hellem",
           "description": "This sprint marked another milestone for New Boards. We successfully activated the “Try the New Boards Hub” message for a large chunk of customers. As a result, a greater number of users have had the opportunity to engage with the New Boards Hub and share feedback.\nThe post New Boards Hub Update, Sprint 222 appeared first on Azure DevOps Blog.",
@@ -6491,6 +6501,16 @@
       "feedUrl": "https://devblogs.microsoft.com/cosmosdb/feed/",
       "siteUrl": "https://devblogs.microsoft.com/cosmosdb/",
       "articles": [
+        {
+          "id": "https://devblogs.microsoft.com/cosmosdb/?p=6314",
+          "author": "Richa Gaur",
+          "description": "The problem  \nThe post Introducing priority-based execution in Azure Cosmos DB (preview) appeared first on Azure Cosmos DB Blog.",
+          "link": "https://devblogs.microsoft.com/cosmosdb/introducing-priority-based-execution-in-azure-cosmos-db-preview/",
+          "publishedOn": "2023-05-31T15:10:02.000Z",
+          "wordCount": 4786,
+          "title": "Introducing priority-based execution in Azure Cosmos DB (preview)",
+          "imageUrl": "https://devblogs.microsoft.com/cosmosdb/wp-content/uploads/sites/52/2023/05/3.png"
+        },
         {
           "id": "https://devblogs.microsoft.com/cosmosdb/?p=6216",
           "author": "Deborah Chen",
@@ -7216,6 +7236,26 @@
       "feedUrl": "https://azurecomcdn.azureedge.net/en-us/updates/feed/?updateType=features",
       "siteUrl": "https://azure.microsoft.com/en-us/updates/",
       "articles": [
+        {
+          "id": "generally-available-azure-files-scalability-improvement-for-azure-virtual-desktop-and-other-workloads",
+          "author": null,
+          "description": "Azure Files has increased the root directory handle limit per share from 2,000 to 10,000 for standard and premium file shares.",
+          "link": "https://azure.microsoft.com/en-us/updates/generally-available-azure-files-scalability-improvement-for-azure-virtual-desktop-and-other-workloads/",
+          "publishedOn": "2023-05-31T19:00:01.000Z",
+          "wordCount": 5594,
+          "title": "Generally available: Azure Files scalability improvement for Azure Virtual Desktop and other workloads that open root directory handles",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-30f565ded11fb46d7386b724c112db2f502363137e5ae16f1f49b6e120707fc3/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "generally-available-zone-redundant-storage-for-azure-disks-is-now-available-in-more-regions",
+          "author": null,
+          "description": "Zone Redundant Storage (ZRS) for Azure Disks is now available on Azure Premium SSD and Standard SSD in Brazil South, UK South, East US, East US 2, and South-Central US.",
+          "link": "https://azure.microsoft.com/en-us/updates/generally-available-zone-redundant-storage-for-azure-disks-is-now-available-in-more-regions/",
+          "publishedOn": "2023-05-31T17:00:03.000Z",
+          "wordCount": 5582,
+          "title": "Generally available: Zone Redundant Storage for Azure Disks is now available in more regions.",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-30f565ded11fb46d7386b724c112db2f502363137e5ae16f1f49b6e120707fc3/images/shared/social/azure-icon-250x250.png"
+        },
         {
           "id": "general-availability-nlog-sink-for-azure-data-explorer-2",
           "author": null,
@@ -10573,6 +10613,26 @@
       "feedUrl": "https://devblogs.microsoft.com/microsoft365dev/feed/",
       "siteUrl": "https://devblogs.microsoft.com/microsoft365dev/",
       "articles": [
+        {
+          "id": "https://devblogs.microsoft.com/microsoft365dev/?p=14062",
+          "author": "Vesa Juvonen",
+          "description": "We are excited to announce the availability of the “Viva” product type in Microsoft AppSource as a new option for our partner ecosystem.\nThe post Microsoft Viva Connections solutions are now available in the Microsoft AppSource appeared first on Microsoft 365 Developer Blog.",
+          "link": "https://devblogs.microsoft.com/microsoft365dev/viva-connections-solutions-are-now-available-in-the-microsoft-appsource/",
+          "publishedOn": "2023-05-31T11:24:56.000Z",
+          "wordCount": 4791,
+          "title": "Microsoft Viva Connections solutions are now available in the Microsoft AppSource",
+          "imageUrl": "https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2023/05/viva-connections-apps-appsource.png"
+        },
+        {
+          "id": "https://devblogs.microsoft.com/microsoft365dev/?p=14038",
+          "author": "Waldek Mastykarz",
+          "description": "In this new version of Microsoft Graph Developer Proxy, we’re excited to introduce the preview ability to detect minimal permissions for calling Microsoft Graph APIs, improved simulation of throttling, and caching guidance.\nThe post Microsoft Graph Developer Proxy v0.8 with minimal permissions detection and improved simulating throttling appeared first on Microsoft 365 Developer Blog.",
+          "link": "https://devblogs.microsoft.com/microsoft365dev/microsoft-graph-developer-proxy-v0-8-with-minimal-permissions-detection-and-improved-simulating-throttling/",
+          "publishedOn": "2023-05-31T06:23:05.000Z",
+          "wordCount": 4765,
+          "title": "Microsoft Graph Developer Proxy v0.8 with minimal permissions detection and improved simulating throttling",
+          "imageUrl": "https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2023/05/00_Msft_Graph_DevProxy-scaled.jpg"
+        },
         {
           "id": "https://devblogs.microsoft.com/microsoft365dev/?p=13765",
           "author": "Zach Rosenfield",
