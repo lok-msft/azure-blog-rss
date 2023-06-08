@@ -22,11 +22,261 @@
             data-action="toggle-accordions"
             title="Click to toggle the day, Ctrl + click to toggle all."
           >
-            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2023-06-07 datetime="2023-06-06T16:01:13.000Z">2023-06-07</time>
-            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2023-06-07 datetime="2023-06-06T16:01:13.000Z"></time>
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2023-06-08 datetime="2023-06-08T00:28:50.000Z">2023-06-08</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2023-06-08 datetime="2023-06-08T00:28:50.000Z"></time>
           </button>
         </h2>
         <ul class="sources card">
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Microsoft Tech Community - Latest Blogs - Apps on Azure Blog</button>
+                  <a class="source-heading__link" href="https://techcommunity.microsoft.com">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/configure-arraffinity-cookie-when-accessing-azure-app-service/ba-p/3842511"
+                        open
+                      >
+                        <summary class="article-expander__title">Configure ARRAffinity cookie when accessing Azure App Service behind Azure Application Gateway</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/configure-arraffinity-cookie-when-accessing-azure-app-service/ba-p/3842511">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://techcommunity.microsoft.com/t5/image/serverpage/image-id/478035i46B4344F2479513D?v&#x3D;v2" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>ARRAffinity cookie is a feature on Azure App Service that allows an end user to talk to the same Azure App Service worker instance until session finishes.
+ 
+
+ 
+A common problem encountered when having Azure App Service behind Azure Application Gateway is
+whether we can use the cookie-based affinity feature on Azure Application Gateway end instead to maintain session stickiness.
+ 
+
+ 
+Answer is NO. Because as explained at Azure - Inside the Azure App Service Architecture | Microsoft Learn Azure App Service is distributed system 
+and has its own frontend workers and backend workers, 
+enabling cookie-based affinity on Application Gateway side only allows requests from the same end user to 
+get routed to the same App Service frontend workers within a session 
+and we still need the ARR Affinity …</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;33
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Microsoft Tech Community - Latest Blogs - Azure PaaS Blog</button>
+                  <a class="source-heading__link" href="https://techcommunity.microsoft.com">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://techcommunity.microsoft.com/t5/azure-paas-blog/public-access-is-not-permitted-on-this-storage-account/ba-p/3521288"
+                        open
+                      >
+                        <summary class="article-expander__title">Public access is not permitted on this storage account</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/t5/azure-paas-blog/public-access-is-not-permitted-on-this-storage-account/ba-p/3521288">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://techcommunity.microsoft.com/t5/image/serverpage/image-id/475750iFC1E7344B53BD956?v&#x3D;v2" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>Have you ever received an error message saying that public access is not permitted on this storage account while trying to access a blob?
+ 
+
+Just in case you are really needing to allow public access to your Storage Account, I will show you how to set this configuration, but before doing that, please note the following:
+ 
+
+ 
+Disallowing public access for the storage account overrides the public access settings for all containers in that storage account, preventing anonymous access to blob data in that account. When public access is disallowed for the account, it is not possible to configure the public access setting for a container to permit anonymous access, and any future anonymous requests to that account will fail.
+ 
+To set the AllowBlobPublicAccess property for the storage account, a …</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;33
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Azure service updates</button>
+                  <a class="source-heading__link" href="https://azure.microsoft.com/en-us/updates/">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="public-preview-azure-container-instancesaci-spot-containers"
+                        open
+                      >
+                        <summary class="article-expander__title">Public preview: Azure Container Instances(ACI) Spot containers</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://azure.microsoft.com/en-us/updates/public-preview-azure-container-instancesaci-spot-containers/">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://azurecomcdn.azureedge.net/cvt-bcae62b8918d79c6e55536375cce930f8ce540e3b95f722a1544d408d1b50edd/images/shared/social/azure-icon-250x250.png" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>You can now take advantage of unused Azure computing with Azure Container Instances (ACI)</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;19
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+        </ul>
+      </section>
+      <section class="daily-content js-toggle-accordions-scope">
+        <h2 class="daily-heading">
+          <button
+            class="daily-heading-toggle"
+            data-action="toggle-accordions"
+            title="Click to toggle the day, Ctrl + click to toggle all."
+          >
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2023-06-07 datetime="2023-06-07T06:59:54.000Z">2023-06-07</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2023-06-07 datetime="2023-06-07T06:59:54.000Z"></time>
+          </button>
+        </h2>
+        <ul class="sources card">
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Microsoft Tech Community - Latest Blogs - Educator Developer Blog</button>
+                  <a class="source-heading__link" href="https://techcommunity.microsoft.com">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://techcommunity.microsoft.com/t5/educator-developer-blog/unlock-key-insights-with-microsoft-power-bi-experience-the/ba-p/3839980"
+                        open
+                      >
+                        <summary class="article-expander__title">Unlock Key Insights with Microsoft Power BI - Experience the British Red Cross – UCL IXN Project</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/t5/educator-developer-blog/unlock-key-insights-with-microsoft-power-bi-experience-the/ba-p/3839980">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://techcommunity.microsoft.com/t5/image/serverpage/image-id/477129i819EA770A8B415CD?v&#x3D;v2" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>Introduction Unlock Key Insights with Microsoft Power BI - Experience the British Red Cross Reporting Suite
+Microsoft Power BI is a powerful business intelligence tool, allowing for the extraction of key insights and metrics through the use of data visualisation. Our team had the exciting opportunity to use the Power BI tool to produce a reporting suite for the British Red Cross, and we’ve detailed this journey in the article below. This project was completed as part of the Industry Exchange Programme (IXN), in collaboration with our client from the British Red Cross, Russell Craigie, and Microsoft.
+Our Team
+We are a team of second-year computer science students at UCL; Sachi Lad, Bryan Cheong and Charis Tseung.
+Bryan Cheong | LinkedIn @bryancheong  
+Charis Tseung | LinkedIn @charistseung …</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;37
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Microsoft Tech Community - Latest Blogs - Apps on Azure Blog</button>
+                  <a class="source-heading__link" href="https://techcommunity.microsoft.com">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/cloud-testing-at-microsoft-build-2023-videos-available-on-demand/ba-p/3840319"
+                        open
+                      >
+                        <summary class="article-expander__title">Cloud testing at Microsoft Build 2023, Videos available on-demand!</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/cloud-testing-at-microsoft-build-2023-videos-available-on-demand/ba-p/3840319">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://techcommunity.microsoft.com/t5/image/serverpage/image-id/477519i86475466FCC71FC5/image-size/original?v&#x3D;v2&amp;px&#x3D;-1" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>In case you missed any of these sessions, check out the Microsoft Build content for Azure Load Testing, Azure Chaos Studio, and Playwright - now on-demand!! 
+Learn how to use these developer tools, hear best practices and tips to get started, and re-play the AMAs with the engineering teams.
+ 
+Featured sessions: 
+Inject the power of the cloud and AI into your development workflowSpeakers: Amanda Silver, Leslie Richardson, Isidor Nikolic, Shayne Boyer
+Join Amanda Silver and friends to see the exciting new advancements in developer tooling that will enable your team to onboard new developers faster and equip them with everything they need to get coding and be more productive while writing code. See how you can use Dev Box and Deployment Environments, along with Visual Studio, Visual Studio Co…</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;34
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Spring Engineering</button>
+                  <a class="source-heading__link" href="https://spring.io">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://spring.io/blog/2023/06/07/securing-spring-boot-applications-with-ssl"
+                        open
+                      >
+                        <summary class="article-expander__title">Securing Spring Boot Applications With SSL</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://spring.io/blog/2023/06/07/securing-spring-boot-applications-with-ssl">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://spring.io/img/og-spring.png" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>Level up your Java code and explore what Spring can do for you.</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;28
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
             <li class="card__section">
               <section class="js-toggle-accordions-scope">
                 <h3 class="source-heading">
@@ -3808,6 +4058,26 @@ Getting your engineering teams up and running to start their development process
                               <img src="https://azurecomcdn.azureedge.net/cvt-0180e5b972d8b59cd2f439dc330782ee7e4096e6bd581d1f5f15593076923c28/images/shared/social/azure-icon-250x250.png" loading="lazy" class="media-object__media article-image" />
                             <span class="media-object__text">
                               <span>Azure Stream Analytics can now fetch schema from the Schema Registry and deserialize data from Event Hub inputs for Avro format.</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;18
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="public-preview-azure-monitor-announces-network-observability-aks-addon"
+                        open
+                      >
+                        <summary class="article-expander__title">Public Preview: Azure Monitor announces Network Observability AKS add-on</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://azure.microsoft.com/en-us/updates/public-preview-azure-monitor-announces-network-observability-aks-addon/">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://azurecomcdn.azureedge.net/cvt-bcae62b8918d79c6e55536375cce930f8ce540e3b95f722a1544d408d1b50edd/images/shared/social/azure-icon-250x250.png" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>The new Network Observability AKS add-on provides complete observability into the network health and connectivity of your AKS cluster.</span>
                                 &ensp;<span class="article-reading-time">(&hairsp;18
                                   min&hairsp;)</span>
                             </span>
@@ -38197,217 +38467,10 @@ Manage identity …</span>
             </li>
         </ul>
       </section>
-      <section class="daily-content js-toggle-accordions-scope">
-        <h2 class="daily-heading">
-          <button
-            class="daily-heading-toggle"
-            data-action="toggle-accordions"
-            title="Click to toggle the day, Ctrl + click to toggle all."
-          >
-            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2023-01-09 datetime="2023-01-09T13:06:28.000Z">2023-01-09</time>
-            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2023-01-09 datetime="2023-01-09T13:06:28.000Z"></time>
-          </button>
-        </h2>
-        <ul class="sources card">
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Microsoft Tech Community - Latest Blogs - Azure Developer Community Blog</button>
-                  <a class="source-heading__link" href="https://techcommunity.microsoft.com">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://techcommunity.microsoft.com/t5/azure-developer-community-blog/upcoming-developer-amp-technical-events-in-the-uk-updated-for/ba-p/3711599"
-                        open
-                      >
-                        <summary class="article-expander__title">Upcoming Developer &amp; Technical Events in the UK - Updated for 2023</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/t5/azure-developer-community-blog/upcoming-developer-amp-technical-events-in-the-uk-updated-for/ba-p/3711599">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://techcommunity.microsoft.com/t5/image/serverpage/image-id/417656i3C7C9D2BAB10CB26/image-size/original?v&#x3D;v2&amp;px&#x3D;-1" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>Hello from the Microsoft Developer UK team! Here&#x27;s a list of upcoming events taking place in the UK in 2023 - we hope to see you virtually or in-person!
- 
-Don&#x27;t forget to visit our Microsoft UK Developer site at https://aka.ms/ukdeveloper. There you can find a wide array of tech resources and links to communities across the UK.  
- 
-
-
-
-Date
-Location
-Event Name
-Description
-Registration Link
-
-
-
-Daily
-
-
-Virtual
-
-
-Reactor Online Events
-
-
-Join us every day at Microsoft Reactor for online events brought to you by Microsoft Employees, MVPs &amp; the Tech Community. 
-
-
-Microsoft Reactor 
-
-
-
-
-1 Feb
-
-
-London &amp; Hybrid
-
-
-Reactor London Meetup
-
-
-Join us for Microsoft Reactor London&#x27;s very own meetup! Join our Cloud Advocates &amp; Reactor community members for tech talks and demos.
-
-
-Coming Soon
--- will be publ…</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;32
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Microsoft Tech Community - Latest Blogs - Educator Developer Blog</button>
-                  <a class="source-heading__link" href="https://techcommunity.microsoft.com">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://techcommunity.microsoft.com/t5/educator-developer-blog/build-a-training-request-solution-using-the-power-platform/ba-p/3697364"
-                        open
-                      >
-                        <summary class="article-expander__title">Build a Training Request solution using the Power Platform</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/t5/educator-developer-blog/build-a-training-request-solution-using-the-power-platform/ba-p/3697364">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://techcommunity.microsoft.com/t5/image/serverpage/image-id/425847i8F4F457D6CB5EBF9/image-size/original?v&#x3D;v2&amp;px&#x3D;-1" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>Meet Phiwayinkosi Khanye Dludlu
-Introduction
-Hi, I am Phiwayinkosi Khanya Dludlu , a student at the Durban University of Technology doing a Bachelor&#x27;s in Information and Communications Technology. I am an aspiring Power Apps Developer, using Power Apps to solve problems and automate business processes.
- 
-Late last year I was part of a Power Platform Bootcamp hosted by Greenlight Solutions in partnership with the Durban University of Technology and Someleze Diko, a Microsoft Cloud Advocate. As part of the Bootcamp, we were all required to create solutions for different scenarios. I was assigned to create a training request solution. The scenarios is as follows.
- 
-Problem Overview
-The management of a company has been encouraging more training and development amongst employees within the orga…</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;34
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://techcommunity.microsoft.com/t5/educator-developer-blog/start-your-tech-career-in-2023-from-zero-to-hero/ba-p/3707869"
-                        open
-                      >
-                        <summary class="article-expander__title">Start your Tech Career in 2023 from Zero to Hero</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/t5/educator-developer-blog/start-your-tech-career-in-2023-from-zero-to-hero/ba-p/3707869">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://techcommunity.microsoft.com/t5/image/serverpage/image-id/429781iC5417CD435A8A25C/image-size/original?v&#x3D;v2&amp;px&#x3D;-1" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>Welcome to 2023
-Let&#x27;s start with a warm welcome to 2023. This is the year to grow your career in Tech from Zero to Hero. I want you to stay really close to this Tech Blog this year and we have a lot planned to help you grow and realize your tech career dream.
- 
-
-Starting a tech career can be a very daunting task, especially if you&#x27;re not sure where to begin. Since the tech industry is constantly evolving, it is now much more difficult to keep up with the latest trends and technologies. But with the right knowledge and skills, you can land a rewarding and lucrative career in tech. Here&#x27;s what you need to know to get started.
- 
-
-Identify and Chose a Tech Career
-
-One of the first steps to starting a tech career is deciding what you want to do. There are many different areas within the tech in…</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;34
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Microsoft Tech Community - Latest Blogs - Azure PaaS Blog</button>
-                  <a class="source-heading__link" href="https://techcommunity.microsoft.com">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://techcommunity.microsoft.com/t5/azure-paas-blog/instance-level-public-ip-address-configuration-in-the-cloud/ba-p/3711120"
-                        open
-                      >
-                        <summary class="article-expander__title">Instance level public ip address configuration in the cloud service.</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/t5/azure-paas-blog/instance-level-public-ip-address-configuration-in-the-cloud/ba-p/3711120">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://techcommunity.microsoft.com/t5/image/serverpage/image-id/431145i93D31A69603EB385?v&#x3D;v2" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>An Instance-Level Public IP Address (PIP) unlike the Virtual IP Address (VIP) is not load balanced.  While the virtual ip is assigned to the cloud service and shared by all virtual machines and role instances in it, the public ip is associated only with a single instance’s NIC. The public ip is particularly useful in multi-instance deployments where each instance can be reachable independently from the Internet. The picture below illustrates the value of PIP and differentiates it from the VIP. The blog will help you understand how to configure the instance level public ip. 
- 
-
- 
-For some background knowledge, please find the reference Instance-Level Public IP Address | Azure Blog and Updates | Microsoft Azure.
- 
-Classic cloud service:
-
-How to configurate instance level public ip by role:
-
-…</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;32
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
-        </ul>
-      </section>
 
     <footer>
-      <a class="footer-link" href="https://github.com/lok-msft/azure-blog-rss/actions/runs/5194969667">
-        <time id="build-timestamp" datetime="2023-06-07T01:26:10.486Z">2023-06-07T01:26:10.486Z</time>
+      <a class="footer-link" href="https://github.com/lok-msft/azure-blog-rss/actions/runs/5206356276">
+        <time id="build-timestamp" datetime="2023-06-08T01:23:16.920Z">2023-06-08T01:23:16.920Z</time>
       </a>
       <a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a>
     </footer>

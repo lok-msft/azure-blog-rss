@@ -2,10 +2,102 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2023-06-07T01:26:10.555Z</updated>
+    <updated>2023-06-08T01:23:16.990Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Configure ARRAffinity cookie when accessing Azure App Service behind Azure Application Gateway]]></title>
+        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/configure-arraffinity-cookie-when-accessing-azure-app-service/ba-p/3842511</id>
+        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/configure-arraffinity-cookie-when-accessing-azure-app-service/ba-p/3842511"/>
+        <updated>2023-06-08T00:28:50.000Z</updated>
+        <summary type="html"><![CDATA[ARRAffinity cookie is a feature on Azure App Service that allows an end user to talk to the same Azure App Service worker instance until session finishes.
+ 
+
+ 
+A common problem encountered when having Azure App Service behind Azure Application Gateway is
+whether we can use the cookie-based affinity feature on Azure Application Gateway end instead to maintain session stickiness.
+ 
+
+ 
+Answer is NO. Because as explained at Azure - Inside the Azure App Service Architecture | Microsoft Learn Azure App Service is distributed system 
+and has its own frontend workers and backend workers, 
+enabling cookie-based affinity on Application Gateway side only allows requests from the same end user to 
+get routed to the same App Service frontend workers within a session 
+and we still need the ARR Affinity …]]></summary>
+        <author>
+            <name>YangYu</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Public access is not permitted on this storage account]]></title>
+        <id>https://techcommunity.microsoft.com/t5/azure-paas-blog/public-access-is-not-permitted-on-this-storage-account/ba-p/3521288</id>
+        <link href="https://techcommunity.microsoft.com/t5/azure-paas-blog/public-access-is-not-permitted-on-this-storage-account/ba-p/3521288"/>
+        <updated>2023-06-07T22:39:07.000Z</updated>
+        <summary type="html"><![CDATA[Have you ever received an error message saying that public access is not permitted on this storage account while trying to access a blob?
+ 
+
+Just in case you are really needing to allow public access to your Storage Account, I will show you how to set this configuration, but before doing that, please note the following:
+ 
+
+ 
+Disallowing public access for the storage account overrides the public access settings for all containers in that storage account, preventing anonymous access to blob data in that account. When public access is disallowed for the account, it is not possible to configure the public access setting for a container to permit anonymous access, and any future anonymous requests to that account will fail.
+ 
+To set the AllowBlobPublicAccess property for the storage account, a …]]></summary>
+        <author>
+            <name>c4rlosmarin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Public preview: Azure Container Instances(ACI) Spot containers]]></title>
+        <id>public-preview-azure-container-instancesaci-spot-containers</id>
+        <link href="https://azure.microsoft.com/en-us/updates/public-preview-azure-container-instancesaci-spot-containers/"/>
+        <updated>2023-06-07T17:00:09.000Z</updated>
+        <summary type="html"><![CDATA[You can now take advantage of unused Azure computing with Azure Container Instances (ACI)]]></summary>
+        <author>
+            <name>Azure service updates</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Unlock Key Insights with Microsoft Power BI - Experience the British Red Cross – UCL IXN Project]]></title>
+        <id>https://techcommunity.microsoft.com/t5/educator-developer-blog/unlock-key-insights-with-microsoft-power-bi-experience-the/ba-p/3839980</id>
+        <link href="https://techcommunity.microsoft.com/t5/educator-developer-blog/unlock-key-insights-with-microsoft-power-bi-experience-the/ba-p/3839980"/>
+        <updated>2023-06-07T06:59:54.000Z</updated>
+        <summary type="html"><![CDATA[Introduction Unlock Key Insights with Microsoft Power BI - Experience the British Red Cross Reporting Suite
+Microsoft Power BI is a powerful business intelligence tool, allowing for the extraction of key insights and metrics through the use of data visualisation. Our team had the exciting opportunity to use the Power BI tool to produce a reporting suite for the British Red Cross, and we’ve detailed this journey in the article below. This project was completed as part of the Industry Exchange Programme (IXN), in collaboration with our client from the British Red Cross, Russell Craigie, and Microsoft.
+Our Team
+We are a team of second-year computer science students at UCL; Sachi Lad, Bryan Cheong and Charis Tseung.
+Bryan Cheong | LinkedIn @bryancheong  
+Charis Tseung | LinkedIn @charistseung …]]></summary>
+        <author>
+            <name>Sachi_Lad</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Cloud testing at Microsoft Build 2023, Videos available on-demand!]]></title>
+        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/cloud-testing-at-microsoft-build-2023-videos-available-on-demand/ba-p/3840319</id>
+        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/cloud-testing-at-microsoft-build-2023-videos-available-on-demand/ba-p/3840319"/>
+        <updated>2023-06-07T04:00:00.000Z</updated>
+        <summary type="html"><![CDATA[In case you missed any of these sessions, check out the Microsoft Build content for Azure Load Testing, Azure Chaos Studio, and Playwright - now on-demand!! 
+Learn how to use these developer tools, hear best practices and tips to get started, and re-play the AMAs with the engineering teams.
+ 
+Featured sessions: 
+Inject the power of the cloud and AI into your development workflowSpeakers: Amanda Silver, Leslie Richardson, Isidor Nikolic, Shayne Boyer
+Join Amanda Silver and friends to see the exciting new advancements in developer tooling that will enable your team to onboard new developers faster and equip them with everything they need to get coding and be more productive while writing code. See how you can use Dev Box and Deployment Environments, along with Visual Studio, Visual Studio Co…]]></summary>
+        <author>
+            <name>Anna Soracco</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Securing Spring Boot Applications With SSL]]></title>
+        <id>https://spring.io/blog/2023/06/07/securing-spring-boot-applications-with-ssl</id>
+        <link href="https://spring.io/blog/2023/06/07/securing-spring-boot-applications-with-ssl"/>
+        <updated>2023-06-07T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Level up your Java code and explore what Spring can do for you.]]></summary>
+        <author>
+            <name>Scott Frederick</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Public Preview: Azure AD Support for Azure Files SMB shares REST API]]></title>
         <id>azure-files-rest-oauth</id>
@@ -1634,6 +1726,16 @@ Simplifying your developer experience
 Getting your engineering teams up and running to start their development process would usually take process, operational and a bit of development glue to deploy your first application.  Automated deployments great…]]></summary>
         <author>
             <name>Justin Davies</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Public Preview: Azure Monitor announces Network Observability AKS add-on]]></title>
+        <id>public-preview-azure-monitor-announces-network-observability-aks-addon</id>
+        <link href="https://azure.microsoft.com/en-us/updates/public-preview-azure-monitor-announces-network-observability-aks-addon/"/>
+        <updated>2023-05-23T17:00:00.000Z</updated>
+        <summary type="html"><![CDATA[The new Network Observability AKS add-on provides complete observability into the network health and connectivity of your AKS cluster.]]></summary>
+        <author>
+            <name>Azure service updates</name>
         </author>
     </entry>
     <entry>
@@ -16183,117 +16285,6 @@ Manage identity …]]></summary>
         <summary type="html"><![CDATA[Azure Red Hat OpenShift is now available in Brazil Southeast region.]]></summary>
         <author>
             <name>Azure service updates</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Upcoming Developer & Technical Events in the UK - Updated for 2023]]></title>
-        <id>https://techcommunity.microsoft.com/t5/azure-developer-community-blog/upcoming-developer-amp-technical-events-in-the-uk-updated-for/ba-p/3711599</id>
-        <link href="https://techcommunity.microsoft.com/t5/azure-developer-community-blog/upcoming-developer-amp-technical-events-in-the-uk-updated-for/ba-p/3711599"/>
-        <updated>2023-01-09T13:06:28.000Z</updated>
-        <summary type="html"><![CDATA[Hello from the Microsoft Developer UK team! Here's a list of upcoming events taking place in the UK in 2023 - we hope to see you virtually or in-person!
- 
-Don't forget to visit our Microsoft UK Developer site at https://aka.ms/ukdeveloper. There you can find a wide array of tech resources and links to communities across the UK.  
- 
-
-
-
-Date
-Location
-Event Name
-Description
-Registration Link
-
-
-
-Daily
-
-
-Virtual
-
-
-Reactor Online Events
-
-
-Join us every day at Microsoft Reactor for online events brought to you by Microsoft Employees, MVPs & the Tech Community. 
-
-
-Microsoft Reactor 
-
-
-
-
-1 Feb
-
-
-London & Hybrid
-
-
-Reactor London Meetup
-
-
-Join us for Microsoft Reactor London's very own meetup! Join our Cloud Advocates & Reactor community members for tech talks and demos.
-
-
-Coming Soon
--- will be publ…]]></summary>
-        <author>
-            <name>AdamJ89</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Build a Training Request solution using the Power Platform]]></title>
-        <id>https://techcommunity.microsoft.com/t5/educator-developer-blog/build-a-training-request-solution-using-the-power-platform/ba-p/3697364</id>
-        <link href="https://techcommunity.microsoft.com/t5/educator-developer-blog/build-a-training-request-solution-using-the-power-platform/ba-p/3697364"/>
-        <updated>2023-01-09T07:53:10.000Z</updated>
-        <summary type="html"><![CDATA[Meet Phiwayinkosi Khanye Dludlu
-Introduction
-Hi, I am Phiwayinkosi Khanya Dludlu , a student at the Durban University of Technology doing a Bachelor's in Information and Communications Technology. I am an aspiring Power Apps Developer, using Power Apps to solve problems and automate business processes.
- 
-Late last year I was part of a Power Platform Bootcamp hosted by Greenlight Solutions in partnership with the Durban University of Technology and Someleze Diko, a Microsoft Cloud Advocate. As part of the Bootcamp, we were all required to create solutions for different scenarios. I was assigned to create a training request solution. The scenarios is as follows.
- 
-Problem Overview
-The management of a company has been encouraging more training and development amongst employees within the orga…]]></summary>
-        <author>
-            <name>khanya_dludlu</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Start your Tech Career in 2023 from Zero to Hero]]></title>
-        <id>https://techcommunity.microsoft.com/t5/educator-developer-blog/start-your-tech-career-in-2023-from-zero-to-hero/ba-p/3707869</id>
-        <link href="https://techcommunity.microsoft.com/t5/educator-developer-blog/start-your-tech-career-in-2023-from-zero-to-hero/ba-p/3707869"/>
-        <updated>2023-01-09T07:51:21.000Z</updated>
-        <summary type="html"><![CDATA[Welcome to 2023
-Let's start with a warm welcome to 2023. This is the year to grow your career in Tech from Zero to Hero. I want you to stay really close to this Tech Blog this year and we have a lot planned to help you grow and realize your tech career dream.
- 
-
-Starting a tech career can be a very daunting task, especially if you're not sure where to begin. Since the tech industry is constantly evolving, it is now much more difficult to keep up with the latest trends and technologies. But with the right knowledge and skills, you can land a rewarding and lucrative career in tech. Here's what you need to know to get started.
- 
-
-Identify and Chose a Tech Career
-
-One of the first steps to starting a tech career is deciding what you want to do. There are many different areas within the tech in…]]></summary>
-        <author>
-            <name>theoyinbooke</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Instance level public ip address configuration in the cloud service.]]></title>
-        <id>https://techcommunity.microsoft.com/t5/azure-paas-blog/instance-level-public-ip-address-configuration-in-the-cloud/ba-p/3711120</id>
-        <link href="https://techcommunity.microsoft.com/t5/azure-paas-blog/instance-level-public-ip-address-configuration-in-the-cloud/ba-p/3711120"/>
-        <updated>2023-01-09T01:34:47.000Z</updated>
-        <summary type="html"><![CDATA[An Instance-Level Public IP Address (PIP) unlike the Virtual IP Address (VIP) is not load balanced.  While the virtual ip is assigned to the cloud service and shared by all virtual machines and role instances in it, the public ip is associated only with a single instance’s NIC. The public ip is particularly useful in multi-instance deployments where each instance can be reachable independently from the Internet. The picture below illustrates the value of PIP and differentiates it from the VIP. The blog will help you understand how to configure the instance level public ip. 
- 
-
- 
-For some background knowledge, please find the reference Instance-Level Public IP Address | Azure Blog and Updates | Microsoft Azure.
- 
-Classic cloud service:
-
-How to configurate instance level public ip by role:
-
-…]]></summary>
-        <author>
-            <name>Frank_Pan</name>
         </author>
     </entry>
 </feed>
