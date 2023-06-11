@@ -2,10 +2,34 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2023-06-10T01:18:09.905Z</updated>
+    <updated>2023-06-11T01:39:20.507Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[GitHub Copilot Fundamentals Learning Path - Your New AI programming friend!]]></title>
+        <id>https://techcommunity.microsoft.com/t5/educator-developer-blog/github-copilot-fundamentals-learning-path-your-new-ai/ba-p/3844000</id>
+        <link href="https://techcommunity.microsoft.com/t5/educator-developer-blog/github-copilot-fundamentals-learning-path-your-new-ai/ba-p/3844000"/>
+        <updated>2023-06-10T07:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Hi!
+Ready to meet your new best friend? Say hello to GitHub Copilot, the AI pair programmer that's about to change the way you code. It's like having a super-smart friend who's always ready to help. No matter the scenario, writing code, fixing bugs, or just trying to remember that one command you always forget.
+ 
+We've got a brand-new GitHub Copilot Fundamentals Learning Path all about GitHub Copilot. What's a Learning Path, you may ask? Well, it's a sequence of courses that guides you step-by-step to learn new skills and discover the power of Microsoft products. You can find all sorts of Learning Paths on Microsoft Learn.
+ 
+
+ 
+Our new Learning Path is split into two parts: "Introduction to GitHub Copilot" and "Introduction to GitHub Copilot for Business".
+In the first part, you'll get to know GitHub Copilot and all its cool features. It's like having a ChatGPT friend right in your editor, helping you out with code, error messages, and even generating unit tests. Plus, it's got your back when you're working on pull requests or need help with documentation. And let's not forget about the command line - GitHub Copilot CLI is like the ultimate cheat sheet!
+ 
+The second part is all about GitHub Copilot for Business. (Spoiler: this is where things get serious). We're going to review business scenarios like: AI-based security vulnerability filtering, VPN proxy support, and a super simple sign-up process. Imagine having a complete squad of Coding experts ready to help your business code faster and smarter.
+ 
+So, what are you waiting for? Explore our new GitHub Copilot Fundamentals Learning Path and start learning how to code with your new AI friend today!
+ 
+Happy Coding!]]></summary>
+        <author>
+            <name>elbruno</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[HackTogether: The Microsoft Teams Global Hack week 1 recap and what’s coming]]></title>
         <id>https://techcommunity.microsoft.com/t5/educator-developer-blog/hacktogether-the-microsoft-teams-global-hack-week-1-recap-and/ba-p/3843861</id>
@@ -16036,121 +16060,6 @@ The post Organization profile image appeared first on Azure DevOps Blog.]]></sum
 The post Building and deploying Java apps with Spring Cloud and Azure Cosmos DB appeared first on Azure Cosmos DB Blog.]]></summary>
         <author>
             <name>Rory Preddy</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Unable to Load Service Fabric Explorer]]></title>
-        <id>https://techcommunity.microsoft.com/t5/azure-paas-blog/unable-to-load-service-fabric-explorer/ba-p/3704907</id>
-        <link href="https://techcommunity.microsoft.com/t5/azure-paas-blog/unable-to-load-service-fabric-explorer/ba-p/3704907"/>
-        <updated>2023-01-12T09:34:41.000Z</updated>
-        <summary type="html"><![CDATA[Service Fabric Explorer (SFX) is an open-source tool for inspecting and managing Azure Service Fabric clusters. Service Fabric Explorer is a desktop application for Windows, macOS and Linux. To launch SFX in a web browser, browse to the cluster's HTTP management endpoint from any browser - for example https://clusterFQDN:19080. Service Fabric explorer may not load for numerous reasons. Most frequent reasons could be access denied while trying to access or unable to choose the right certificate. Following steps provide some useful insights on investigation steps and mitigations to be followed in such scenarios.1. Check the status of the cluster and certificate that is being tried to access the cluster. If the cluster state is in “Upgrade service unreachable” then mostly, the certificate mig…]]></summary>
-        <author>
-            <name>Madoori_Geetanjali</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Azure Data Factory trigger is not initiated when uploading a file using Java SDK]]></title>
-        <id>https://techcommunity.microsoft.com/t5/azure-paas-blog/azure-data-factory-trigger-is-not-initiated-when-uploading-a/ba-p/3703885</id>
-        <link href="https://techcommunity.microsoft.com/t5/azure-paas-blog/azure-data-factory-trigger-is-not-initiated-when-uploading-a/ba-p/3703885"/>
-        <updated>2023-01-12T09:33:21.000Z</updated>
-        <summary type="html"><![CDATA[Symptoms: 
- 
-
-  Uploading files using Java SDK class DataLakeFileClient fails to initiate the ADF trigger. 
-  Uploading files using Azure Portal initiates the trigger as expected. 
-  ADF trigger is configured to ignore empty blobs. 
-
- 
-Analysis: 
- 
-
-Whenever a file is created using ADLS Gen2 REST API, there are 3 operations called at the backend i.e. CreateFile, AppendFile and FlushFile.
-Microsoft.Storage.BlobCreated event is triggered when a blob is created or replaced. Specifically, this event is triggered when clients use the CreateFile and FlushWithClose operations that are available in the Azure Data Lake Storage Gen2 REST API.
-As CreateFile API created a 0 byte blob, the event will not be triggered. 
-
- 
-Resolution: 
- 
-
-You can initiate the trigger by adding FlushWithResponse method with close parameter as true.
-
-Example: 
- 
-        boolean close = true;
-File file = new File("C:\\Users\\mahmoudsamy\\route.txt");
-        fileClient.uploadFromFile("C:\\Users\\mahmoudsamy\\route.txt");
-        fileClient.flushWithResponse(file.length(), retainUncomittedData, close, httpHeaders, requestConditions, timeout, contect);
- 
-Note: Please make sure to pass the correct parameters when using FlushWithResponse to avoid unexpected results.]]></summary>
-        <author>
-            <name>mahmoudsamy</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[A Bootiful Podcast: Mario Fusco, the Drools rules engine project lead and fellow Java Champion]]></title>
-        <id>https://spring.io/blog/2023/01/12/a-bootiful-podcast-mario-fusco-the-drools-rules-engine-project-lead-and-fellow-java-champion</id>
-        <link href="https://spring.io/blog/2023/01/12/a-bootiful-podcast-mario-fusco-the-drools-rules-engine-project-lead-and-fellow-java-champion"/>
-        <updated>2023-01-12T08:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Hi, Spring fans! In this episode I talk to Drools lead Mario Fusco (@mariofusco) about the rules engine Drools and its integrations with Spring, Olivetti computers, and so much more]]></summary>
-        <author>
-            <name>Spring Engineering</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[What is Zero Trust and is it the Future of Cybersecurity?]]></title>
-        <id>https://techcommunity.microsoft.com/t5/educator-developer-blog/what-is-zero-trust-and-is-it-the-future-of-cybersecurity/ba-p/3712583</id>
-        <link href="https://techcommunity.microsoft.com/t5/educator-developer-blog/what-is-zero-trust-and-is-it-the-future-of-cybersecurity/ba-p/3712583"/>
-        <updated>2023-01-12T08:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Zero Trust is a security concept that questions the traditional perimeter-based security architecture. Instead of trusting that all resources within an organization's firewall are secure, Zero Trust assumes that all access requests, regardless of origin or destination, should be considered as originating from an untrusted network.
- 
-Guiding principles for the Zero Trust security strategy are as follows: 
-
-Verify explicitly: All available data points must be used to authenticate and approve users, devices, and requests.
-Use least privilege access: Users and devices are allowed the bare minimum of access required to execute their functions, and that access is reviewed and revoked when it is no longer required.
-Assume breach: Because the Zero Trust model assumes a breach will occur at some po…]]></summary>
-        <author>
-            <name>Anthony Bartolo</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[General Availability: Azure Active Directory authentication for exporting and importing Managed Disks]]></title>
-        <id>ga-azure-active-directory-authentication-for-exporting-and-importing-managed-disks</id>
-        <link href="https://azure.microsoft.com/en-us/updates/ga-azure-active-directory-authentication-for-exporting-and-importing-managed-disks/"/>
-        <updated>2023-01-11T17:00:04.000Z</updated>
-        <summary type="html"><![CDATA[New integration with Azure Active Directory (AD) to export and import data to Azure Managed Disks improves security]]></summary>
-        <author>
-            <name>Azure service updates</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Generally available: Azure Ultra Disk Storage in Switzerland North and Korea South]]></title>
-        <id>generally-available-azure-ultra-disk-storage-in-switzerland-north-and-korea-south</id>
-        <link href="https://azure.microsoft.com/en-us/updates/generally-available-azure-ultra-disk-storage-in-switzerland-north-and-korea-south/"/>
-        <updated>2023-01-11T17:00:04.000Z</updated>
-        <summary type="html"><![CDATA[Now available in Korea South and Switzerland North region, Azure Ultra Disk Storage provides high performance along with sub-millisecond latency for your most demanding workloads.]]></summary>
-        <author>
-            <name>Azure service updates</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[General Availability: AzAcSnap 7 — Azure Application Consistent Snapshot tool updates]]></title>
-        <id>azure-application-consistent-snapshot-tool-azacsnap-7</id>
-        <link href="https://azure.microsoft.com/en-us/updates/azure-application-consistent-snapshot-tool-azacsnap-7/"/>
-        <updated>2023-01-11T17:00:03.000Z</updated>
-        <summary type="html"><![CDATA[AzAcSnap Version 7 Release]]></summary>
-        <author>
-            <name>Azure service updates</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Hosting a Capture-the-Flag event on Azure]]></title>
-        <id>https://devblogs.microsoft.com/cse/?p=14483</id>
-        <link href="https://devblogs.microsoft.com/cse/2023/01/11/host-ctf-on-azure/"/>
-        <updated>2023-01-11T13:41:04.000Z</updated>
-        <summary type="html"><![CDATA[Guidance for setting up a self-hosted, scalable, secured, and easy to maintain CTFd environment, using nothing Azure Platform as a Service components.
-The post Hosting a Capture-the-Flag event on Azure appeared first on CSE Developer Blog.]]></summary>
-        <author>
-            <name>avbalter</name>
         </author>
     </entry>
 </feed>
