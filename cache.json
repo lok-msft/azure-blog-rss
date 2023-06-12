@@ -3908,16 +3908,6 @@
           "wordCount": 12056,
           "title": "Monitoring Kubernetes clusters activity with Azure Managed Grafana and Calico",
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/432632iB64EBF1ECF6B0BB8?v=v2"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/how-to-use-php8-for-app-service-windows/ba-p/3709106",
-          "author": "KevinLi",
-          "description": "Note that official support for PHP 8 will only be available on Linux, as a result of this App Service will only support PHP 8 on Apps Service Linux instances. For additional information on this topic: PHP on App Service, php.internals: Microsoft Support of PHP on Windows.\n \nThis article will demonstrate on how to use PHP 8 for App Service Windows, since there would be no official support from Microsoft for it, please use at your own risk.\n \nGenerally, we are following this post: How to use a Custom PHP runtime for App Service Windows - (azureossd.github.io) to download a custom PHP runtime and map Handler for it.\n \n1. Create a new Web app for Windows using any available Runtime stack for Windows.\n\n \n2. After the creation complete, go to Kudu site from Azure Portal:\n\n \n3. Create a new directory and download the PHP runtime(Non Thread Safe Version) from PHP For Windows: Binaries and sources Releases and extract it, in this demo, we use php 8.2.1, the output is as below:\n \n \nmkdir php\ncurl https://windows.php.net/downloads/releases/php-8.2.1-nts-Win32-vs16-x64.zip -o php\\php.zip\ncd php\nunzip php.zip\n \n \n\n\n \n4. Go to Path mappings in configuration. Add a new handler mapping. The extension is \"*.php\", the Script processor is \"C:\\home\\php\\php-cgi.exe\". Then save it. All the configuration is done.\n\n \n5. To verify it, we can create an \"index.php\" file under C:\\home\\site\\wwwroot with below content. The result would look like as below:\n \n<?\nphpinfo();\n \n \n\n \nI hope you enjoy it.",
-          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/how-to-use-php8-for-app-service-windows/ba-p/3709106",
-          "publishedOn": "2023-01-13T01:33:54.000Z",
-          "wordCount": 9472,
-          "title": "How to use PHP8 for App Service Windows",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/430334i81D7F9E02EAC5F48?v=v2"
         }
       ]
     },
@@ -6406,16 +6396,6 @@
           "wordCount": 5155,
           "title": "New Boards Hub, Sprint 216 update",
           "imageUrl": "https://devblogs.microsoft.com/devops/wp-content/uploads/sites/6/2018/08/vstsfeature.png"
-        },
-        {
-          "id": "https://devblogs.microsoft.com/devops/?p=66263",
-          "author": "Andrew Brenner",
-          "description": "Well, it’s hard to believe it’s already 2023! Here at Azure DevOps, we want to wish all of you a Happy New Year and share a small improvement we just added to the product roadmap.\nThe post Organization profile image appeared first on Azure DevOps Blog.",
-          "link": "https://devblogs.microsoft.com/devops/organization-profile-image/",
-          "publishedOn": "2023-01-12T22:11:11.000Z",
-          "wordCount": 4610,
-          "title": "Organization profile image",
-          "imageUrl": "https://devblogs.microsoft.com/devops/wp-content/uploads/sites/6/2023/01/OrgProfileS.png"
         }
       ]
     },
@@ -6875,16 +6855,6 @@
           "wordCount": 6165,
           "title": "NoSQL vs. relational: Which database should you use for your app?",
           "imageUrl": "https://devblogs.microsoft.com/cosmosdb/wp-content/uploads/sites/52/2023/01/relational-vs-nosql.png"
-        },
-        {
-          "id": "https://devblogs.microsoft.com/cosmosdb/?p=5291",
-          "author": "Rory Preddy",
-          "description": "On a recent episode of Azure Cosmos DB Live TV, I discussed building Java apps with Azure Cosmos DB and Spring Cloud. The focus of the discussion was how to use Spring Cloud Azure, an open-source project that provides seamless Spring integration with Azure services and gives developers a Spring-idiomatic way to connect and consume Azure services,\nThe post Building and deploying Java apps with Spring Cloud and Azure Cosmos DB appeared first on Azure Cosmos DB Blog.",
-          "link": "https://devblogs.microsoft.com/cosmosdb/building-and-deploying-java-apps-with-spring-cloud-and-azure-cosmos-db/",
-          "publishedOn": "2023-01-12T15:05:46.000Z",
-          "wordCount": 5367,
-          "title": "Building and deploying Java apps with Spring Cloud and Azure Cosmos DB",
-          "imageUrl": "https://devblogs.microsoft.com/cosmosdb/wp-content/uploads/sites/52/2022/12/Picture-2.png"
         }
       ]
     },
@@ -10680,16 +10650,6 @@
           "wordCount": null,
           "title": "Public Preview: Azure App Health Extension - Rich Health States",
           "imageUrl": null
-        },
-        {
-          "id": "azure-automation-extension",
-          "author": null,
-          "description": "Use the Azure Automation extension to perform local authoring and management of automation runbooks using VS Code",
-          "link": "https://azure.microsoft.com/en-us/updates/azure-automation-extension/",
-          "publishedOn": "2023-01-12T17:00:20.000Z",
-          "wordCount": 5414,
-          "title": "Public Preview: Azure Automation Visual Studio Code Extension",
-          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-9515e52c75774de1ac69ee13ab25c095f57f5431a04944a778fae1ac4d16e418/images/shared/social/azure-icon-250x250.png"
         }
       ]
     },

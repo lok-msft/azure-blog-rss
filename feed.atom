@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2023-06-11T01:39:20.507Z</updated>
+    <updated>2023-06-12T01:25:08.979Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
@@ -15983,83 +15983,6 @@ FREE Certification for Students Around the Globe - Learn More
 FREE Certification for Students in the UK - Learn More Here]]></summary>
         <author>
             <name>theoyinbooke</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[How to use PHP8 for App Service Windows]]></title>
-        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/how-to-use-php8-for-app-service-windows/ba-p/3709106</id>
-        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/how-to-use-php8-for-app-service-windows/ba-p/3709106"/>
-        <updated>2023-01-13T01:33:54.000Z</updated>
-        <summary type="html"><![CDATA[Note that official support for PHP 8 will only be available on Linux, as a result of this App Service will only support PHP 8 on Apps Service Linux instances. For additional information on this topic: PHP on App Service, php.internals: Microsoft Support of PHP on Windows.
- 
-This article will demonstrate on how to use PHP 8 for App Service Windows, since there would be no official support from Microsoft for it, please use at your own risk.
- 
-Generally, we are following this post: How to use a Custom PHP runtime for App Service Windows - (azureossd.github.io) to download a custom PHP runtime and map Handler for it.
- 
-1. Create a new Web app for Windows using any available Runtime stack for Windows.
-
- 
-2. After the creation complete, go to Kudu site from Azure Portal:
-
- 
-3. Create a new directory and download the PHP runtime(Non Thread Safe Version) from PHP For Windows: Binaries and sources Releases and extract it, in this demo, we use php 8.2.1, the output is as below:
- 
- 
-mkdir php
-curl https://windows.php.net/downloads/releases/php-8.2.1-nts-Win32-vs16-x64.zip -o php\php.zip
-cd php
-unzip php.zip
- 
- 
-
-
- 
-4. Go to Path mappings in configuration. Add a new handler mapping. The extension is "*.php", the Script processor is "C:\home\php\php-cgi.exe". Then save it. All the configuration is done.
-
- 
-5. To verify it, we can create an "index.php" file under C:\home\site\wwwroot with below content. The result would look like as below:
- 
-<?
-phpinfo();
- 
- 
-
- 
-I hope you enjoy it.]]></summary>
-        <author>
-            <name>KevinLi</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Organization profile image]]></title>
-        <id>https://devblogs.microsoft.com/devops/?p=66263</id>
-        <link href="https://devblogs.microsoft.com/devops/organization-profile-image/"/>
-        <updated>2023-01-12T22:11:11.000Z</updated>
-        <summary type="html"><![CDATA[Well, it’s hard to believe it’s already 2023! Here at Azure DevOps, we want to wish all of you a Happy New Year and share a small improvement we just added to the product roadmap.
-The post Organization profile image appeared first on Azure DevOps Blog.]]></summary>
-        <author>
-            <name>Andrew Brenner</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Public Preview: Azure Automation Visual Studio Code Extension]]></title>
-        <id>azure-automation-extension</id>
-        <link href="https://azure.microsoft.com/en-us/updates/azure-automation-extension/"/>
-        <updated>2023-01-12T17:00:20.000Z</updated>
-        <summary type="html"><![CDATA[Use the Azure Automation extension to perform local authoring and management of automation runbooks using VS Code]]></summary>
-        <author>
-            <name>Azure service updates</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Building and deploying Java apps with Spring Cloud and Azure Cosmos DB]]></title>
-        <id>https://devblogs.microsoft.com/cosmosdb/?p=5291</id>
-        <link href="https://devblogs.microsoft.com/cosmosdb/building-and-deploying-java-apps-with-spring-cloud-and-azure-cosmos-db/"/>
-        <updated>2023-01-12T15:05:46.000Z</updated>
-        <summary type="html"><![CDATA[On a recent episode of Azure Cosmos DB Live TV, I discussed building Java apps with Azure Cosmos DB and Spring Cloud. The focus of the discussion was how to use Spring Cloud Azure, an open-source project that provides seamless Spring integration with Azure services and gives developers a Spring-idiomatic way to connect and consume Azure services,
-The post Building and deploying Java apps with Spring Cloud and Azure Cosmos DB appeared first on Azure Cosmos DB Blog.]]></summary>
-        <author>
-            <name>Rory Preddy</name>
         </author>
     </entry>
 </feed>
