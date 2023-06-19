@@ -684,36 +684,6 @@
           "wordCount": null,
           "title": "This Week in Spring - SpringOne Essentials 2023 edition - January 24th, 2023",
           "imageUrl": null
-        },
-        {
-          "id": "https://spring.io/blog/2023/01/20/spring-modulith-0-3-released",
-          "author": null,
-          "description": "Hot on the heels of Spring Boot 3.0.2, I am excited to announce the 0.3 release of Spring Modulith.\r\nThe release is packed with improvements.\r\nWe have tweaked a couple of things that might require your attention and a couple of adapting changes to your code.\r\nThe most notable changes are:\n\r\n\r\n\r\n\r\n\r\nGH-114 – We renamed the ….modulith.model package to ….modulith.core. This primarily affects ApplicationModules. Please adapt your imports accordingly.\n\r\n\r\n\r\nGH-120 – The documentation support now generates diagram files using the *.puml file extension, as suggested by PlantUML. Please adapt your imports accordingly.\n\r\n\r\n\r\nGH-103 – ApplicationModuleInitializer implementations will be triggered upon application startup, in the order following the application module dependency structure (more core ones are invoked first). Also, ApplicationModules exposes a ….getComparator() to order Spring beans that way. Note, that this requires the JGraphT library to be on the classpath (automatically pulled in via the spring-modulith-runtime artifact). See the reference documentation for details.\n\r\n\r\n\r\nGH-116 – PublishedEvents now sees events published from asynchronous event listeners, too.\n\r\n\r\n\r\nGH-100 – If you’re using AssertJ in your tests, you can now use AssertablePublishedEvents for a more streamlined integration  (for example, assertThat(events).contains(MyEvent.class).matching(…)).\n\r\n\r\n\r\nGH-117 – As we incentivize event-based, asynchronous application module integration, the test starter now also pulls in Awaitility.\n\r\n\r\n\r\nGH-111 – We now publish aggregated Javdoc.\n\r\n\r\n\r\n\r\n\r\nFind a complete change log in the GitHub release page. We are looking forward to your feedback in the GitHub discussions.",
-          "link": "https://spring.io/blog/2023/01/20/spring-modulith-0-3-released",
-          "publishedOn": "2023-01-20T10:51:00.000Z",
-          "wordCount": 734,
-          "title": "Spring Modulith 0.3 released",
-          "imageUrl": "https://avatars.githubusercontent.com/u/128577?v=4?s=200"
-        },
-        {
-          "id": "https://spring-website.pages.dev2023/01/20/spring-modulith-0-3-released",
-          "author": "Oliver Drotbohm",
-          "description": "",
-          "link": "https://spring-website.pages.dev2023/01/20/spring-modulith-0-3-released",
-          "publishedOn": "2023-01-20T00:00:00.000Z",
-          "wordCount": null,
-          "title": "Spring Modulith 0.3 released",
-          "imageUrl": null
-        },
-        {
-          "id": "https://spring.io/blog/2023/01/19/a-bootiful-podcast-dr-amanda-martin-gradle-developer-advocate",
-          "author": null,
-          "description": "Hi, Spring fans! In this installment, Josh Long (@starbuxman) talks with Gradle developer advocate Dr. Amanda Martin (@DrAmandaLMartin)",
-          "link": "https://spring.io/blog/2023/01/19/a-bootiful-podcast-dr-amanda-martin-gradle-developer-advocate",
-          "publishedOn": "2023-01-19T18:00:00.000Z",
-          "wordCount": 529,
-          "title": "A Bootiful Podcast: Dr. Amanda Martin, Gradle developer advocate",
-          "imageUrl": "https://avatars.githubusercontent.com/u/54473?v=4?s=200"
         }
       ]
     },
@@ -5437,16 +5407,6 @@
           "wordCount": 9621,
           "title": "Deploying Microsoft Azure internally at Microsoft",
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/439147i2BE2EBD867A3CDDD/image-size/original?v=v2&px=-1"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/azure-migration-and/monitoring-azure-vmware-solution-with-log-analytics/ba-p/3720515",
-          "author": "Varun_Hariharan",
-          "description": "Overview \n \nA global enterprise wants to migrate thousands of VMware vSphere virtual machines (VMs) to Microsoft Azure as part of their application modernization strategy. Their first step is to exit their on-premises data centers and rapidly relocate their legacy application VMs to the Azure VMware Solution as a staging area for the first phase of their modernization strategy. What should the Azure VMware Solution look like? \n \nAzure VMware Solution is a VMware validated first party Azure service from Microsoft that provides private clouds containing VMware vSphere clusters built from dedicated bare-metal Azure infrastructure. It enables customers to leverage their existing investments in VMware skills and tools, allowing them to focus on developing and running their VMware-based workload…",
-          "link": "https://techcommunity.microsoft.com/t5/azure-migration-and/monitoring-azure-vmware-solution-with-log-analytics/ba-p/3720515",
-          "publishedOn": "2023-01-19T21:55:47.000Z",
-          "wordCount": 10481,
-          "title": "Monitoring Azure VMware Solution with Log Analytics",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/434116i366973B9B463E3C1/image-size/original?v=v2&px=-1"
         }
       ]
     },
@@ -6039,16 +5999,6 @@
           "wordCount": 4318,
           "title": "Deploying Kubernetes Cluster on Azure VMs using kubeadm, CNI and containerd",
           "imageUrl": "https://devblogs.microsoft.com/premier-developer/wp-content/uploads/sites/31/2023/01/kubeadm.png"
-        },
-        {
-          "id": "https://devblogs.microsoft.com/premier-developer/?p=41133",
-          "author": "Developer Support",
-          "description": "In this post, Jin Lee explores how Azure DevOps Pipeline Decorators can bridge the gap in a cloud environment with a customer’s existing security processes on their on-premises IIS server.\nBackground\nThe post Azure DevOps – Leveraging Pipeline Decorators for Custom Process Automation appeared first on Developer Support.",
-          "link": "https://devblogs.microsoft.com/premier-developer/azure-devops-leveraging-pipeline-decorators-for-custom-process-automation/",
-          "publishedOn": "2023-01-20T07:02:00.000Z",
-          "wordCount": 4647,
-          "title": "Azure DevOps – Leveraging Pipeline Decorators for Custom Process Automation",
-          "imageUrl": "https://devblogs.microsoft.com/premier-developer/wp-content/uploads/sites/31/2023/01/pipelinedecorator.png"
         }
       ]
     },
