@@ -2,10 +2,98 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2023-06-28T01:38:48.447Z</updated>
+    <updated>2023-06-29T01:26:31.532Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Mainframe Virtual Tape and Dataset Storage on Azure using Luminex products]]></title>
+        <id>https://techcommunity.microsoft.com/t5/azure-migration-and/mainframe-virtual-tape-and-dataset-storage-on-azure-using/ba-p/3859276</id>
+        <link href="https://techcommunity.microsoft.com/t5/azure-migration-and/mainframe-virtual-tape-and-dataset-storage-on-azure-using/ba-p/3859276"/>
+        <updated>2023-06-28T22:34:41.000Z</updated>
+        <summary type="html"><![CDATA[Using Azure for Mainframe Virtual Tape and Dataset Storage
+ 
+With Luminex products you can send/receive transmitted Mainframe data to/from Azure .  In this document we will share the outcomes of the demo where we send virtual tapes, and Mainframe datasets to and from Azure.  
+ 
+Solution Overview:
+ 
+
+ 
+Archiving and Recalling Virtual Tapes To Azure
+ 
+
+Write Tape to Luminex CGX Device
+
+To send a virtual tape to Azure, you can simply run your normal jobs that output data to tape.  The Luminex Channel Gateway (CGX) can be configured with multiple pools with different storage characteristics.  For instance, one pool can be configured to send all data to Azure, while another could be configured to only use on-premise local storage.   You can use SMS or Esoterics to direct jobs to the correct Lum…]]></summary>
+        <author>
+            <name>Bhuvivatsey</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Azure portal May 2023 updates]]></title>
+        <id>https://techcommunity.microsoft.com/t5/azure-governance-and-management/azure-portal-may-2023-updates/ba-p/3855436</id>
+        <link href="https://techcommunity.microsoft.com/t5/azure-governance-and-management/azure-portal-may-2023-updates/ba-p/3855436"/>
+        <updated>2023-06-28T17:46:59.000Z</updated>
+        <summary type="html"><![CDATA[Compute > Virtual Machine Scale Set
+
+Available Now: "Recommended" Tag for VM/ VMSS sizes 
+
+Intune
+
+Updates to Microsoft Intune 
+
+Let's look at each of these updates in greater detail.
+ 
+Compute > Virtual Machine Scale Set
+ Available Now: "Recommended" Tag for VM/ VMSS sizes
+ 
+One of the promises of the cloud is better efficiency and utilization of infrastructure. Towards this end, Azure provides Azure Advisor recommendations called “Shutdown/Resize your virtual machines” and “Shutdown/Resize your virtual machines scale sets”.  These recommendations provide customers with cost savings opportunities by targeting virtual machines and virtual machine scale sets that are not utilized efficiently. One of the actions recommended as part of these recommendations is to resize your VM/VMSS to a size…]]></summary>
+        <author>
+            <name>Allison_Cordle</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Public preview of SharePoint Framework 1.18 – First release of upcoming features]]></title>
+        <id>https://devblogs.microsoft.com/microsoft365dev/?p=14454</id>
+        <link href="https://devblogs.microsoft.com/microsoft365dev/public-preview-of-sharepoint-framework-1-18-first-release-of-upcoming-features/"/>
+        <updated>2023-06-28T16:08:59.000Z</updated>
+        <summary type="html"><![CDATA[We are excited to announce the first preview of the upcoming SharePoint Framework 1.18 with updates for Microsoft Teams, Microsoft Viva, SharePoint and more.
+The post Public preview of SharePoint Framework 1.18 – First release of upcoming features appeared first on Microsoft 365 Developer Blog.]]></summary>
+        <author>
+            <name>Vesa Juvonen</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Azure access from GitHub and GitLab pipelines - without secrets]]></title>
+        <id>https://techcommunity.microsoft.com/t5/fasttrack-for-azure/azure-access-from-github-and-gitlab-pipelines-without-secrets/ba-p/3858885</id>
+        <link href="https://techcommunity.microsoft.com/t5/fasttrack-for-azure/azure-access-from-github-and-gitlab-pipelines-without-secrets/ba-p/3858885"/>
+        <updated>2023-06-28T14:33:19.000Z</updated>
+        <summary type="html"><![CDATA[tl;dr
+
+Federated credentials / workload identity federation allows your CI/CD pipelines in GitHub and GitLab to access your Azure subscription without any secrets stored in the pipeline config.
+GitHub's azure/login@1 task handles this transparently, but I also explain how it works under the hood. GitLab supplies the necessary token directly to your pipeline run.
+Both GitHub and GitLab are easy to setup and federate securely with your Azure subscription.
+BitBucket can't be setup that way, because tokens issued by BitBucket don't have a predicable subject identifier.
+
+Overview
+This article demonstrates how to configure, and securely access, an Azure environment from within a GitHub and a GitLab CI/CD pipeline, without having to store credentials on the GitHub/GitLab side. The article also br…]]></summary>
+        <author>
+            <name>chgeuer</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Azure AI Neural TTS enhanced expressiveness for Chinese voices with upgraded prosody breaks]]></title>
+        <id>https://techcommunity.microsoft.com/t5/ai-cognitive-services-blog/azure-ai-neural-tts-enhanced-expressiveness-for-chinese-voices/ba-p/3858411</id>
+        <link href="https://techcommunity.microsoft.com/t5/ai-cognitive-services-blog/azure-ai-neural-tts-enhanced-expressiveness-for-chinese-voices/ba-p/3858411"/>
+        <updated>2023-06-28T10:34:29.000Z</updated>
+        <summary type="html"><![CDATA[Co-authors: Zhihang Xu, Yuchao Zhang, Zheng Niu, Xi Wang, Lei He, Sheng Zhao
+ 
+Chinese is one of the most widely spoken languages worldwide. Azure Neural TTS offers dozens of highly human-like digital voices in Chinese for numerous customers. With the emerging trend of using TTS to generate enjoyable AI content, we see higher requirements for more natural and expressive voices.
+Today we are excited to announce our latest update to the prosody model which enhances the synthetic voice experience for Chinese.This update is our response to two key challenges identified: frontend prosody prediction errors, particularly in the Chinese (zh-CN) language, and the growing demand from our valued customers for improved prosody. Noticeably, effective prosody plays a crucial role in making synthetic spe…]]></summary>
+        <author>
+            <name>nickzhao</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Public Preview: Azure OpenAI Service On Your Data]]></title>
         <id>azure-open-ai-service-on-your-data</id>
@@ -17623,21 +17711,6 @@ Use Case Description
 SellCheapy Retail is a chain of department stores that sells a wide range of products, including bikes and different components. Despite having a large customer base, the company has been struggling to increase sales in recent years. The management team is looking to use data analysis to understand customer spending patterns and make changes to their sales and marketing strategies to improv…]]></summary>
         <author>
             <name>theoyinbooke</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Standalone Service Fabric Cluster secured with Windows gMSA]]></title>
-        <id>https://techcommunity.microsoft.com/t5/azure-paas-blog/standalone-service-fabric-cluster-secured-with-windows-gmsa/ba-p/3715287</id>
-        <link href="https://techcommunity.microsoft.com/t5/azure-paas-blog/standalone-service-fabric-cluster-secured-with-windows-gmsa/ba-p/3715287"/>
-        <updated>2023-01-30T05:20:26.000Z</updated>
-        <summary type="html"><![CDATA[Background Information
- 
-To prevent unauthorized access to a Service Fabric cluster, you must secure the cluster. Security is especially important when the cluster runs production workloads. This article describes how to configure node-to-node and client-to-node security by using Windows security, where gMSA is the preferred security model.
- 
-A standalone Managed Service Account (sMSA) is a managed domain account that provides automatic password management, simplified service principal name (SPN) management and the ability to delegate the management to other administrators.
-The group Managed Service Account (gMSA) provides the same functionality within the domain but also extends that functionality over multiple servers. When connecting to a service hosted on a server farm, such as Network…]]></summary>
-        <author>
-            <name>VladSterian</name>
         </author>
     </entry>
 </feed>
