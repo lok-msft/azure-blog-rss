@@ -5416,6 +5416,16 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/building-a-private-chatgpt-interface-with-azure-openai/ba-p/3869522",
+          "author": "shanebaldacchino",
+          "description": "TLDR - You can test my implementation at https://privategpt.baldacchino.net. If this appears slow to first load, what is happening behind the scenes is a 'cold start' within Azure Container Apps. Cold Starts happen due to a lack of load. To reduce costs, I have configured Azure Container Apps to tear down my container environment when there is no load to zero containers. The loading is due to the container starting (Alpine Linux and NodeJS). Cold Starts are not really a thing for workloads under regular load.\nChat GPT is amazing on so many levels, and it's free. But you know what they say. If something is free, then you are the product!\nAs part of OpenAI's T&C, your prompts (the questions you ask) will be used to further train OpenAI's LLM (Large Language Model). Are you okay with this val…",
+          "link": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/building-a-private-chatgpt-interface-with-azure-openai/ba-p/3869522",
+          "publishedOn": "2023-07-10T06:59:04.000Z",
+          "wordCount": 11032,
+          "title": "Building a Private ChatGPT Interface With Azure OpenAI",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/487497i52163211C5CEE2FD/image-size/original?v=v2&px=-1"
+        },
+        {
           "id": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/distributed-ml-training-for-click-through-rate-prediction-with/ba-p/3848262",
           "author": "GeertVanTeylingen",
           "description": "Table of Contents\nAbstract\nIntroduction\nTarget audience\nSolution overview\nTechnology overview\nDask and NVIDIA RAPIDS\nAzure NetApp Files\nCloud resources and services requirements\nSoftware requirements\nDistributed ML training for click-through rate prediction using Dask\nDistributed ML training for click-through rate prediction using the Terabyte Click Logs dataset\nSetting up Azure NetApp Files\nCreate a delegated subnet for Azure NetApp Files\nAzure NetApp Files configuration\nAzure Netapp Files performance tiers\nDynamically change the service level of a volume\nAutomate performance tier change\nSetting up Azure Kubernetes Service\nPeer AKS VNet and Azure NetApp Files VNet\nSetting up Astra Trident\nInstall Astra Trident\nSet up Azure NetApp Files back-end and storage class\nSetting up Dask with RAPID…",
@@ -6128,16 +6138,6 @@
           "wordCount": 12116,
           "title": "Azure VMware Solution Recoverability Design Considerations",
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/443216i52BA870CE52CE828/image-size/original?v=v2&px=-1"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/azure-migration-and/deploy-arc-for-azure-vmware-solution-simply-using-powershell/ba-p/3739411",
-          "author": "tredavis",
-          "description": "What is Arc for Azure VMware Solution? Simply put, it exposes your Azure VMware Solution resources (VMs, networks, datastores, etc.) to the Azure portal.\n \nUsing Arc for Azure VMware Solution, those resources can be managed via the Azure portal, even though they are within your vSphere cluster running in an Azure datacenter. Even better, there is no cost to deploy Arc for Azure VMware Solution. More blogs to come on Arc for Azure VMware Solution, but if you want to get some more details check out this video from Jeremiah Megie.\n \nFirst things first. Let’s get Arc for Azure VMware Solution installed into your private cloud.\nYou will need to collect the following information to input into the PowerShell script, which, if you use it, will make the deployment a bit more straightforward.\n \n\nSubscription ID and Resource Group where the Azure VMware Solution private cloud is deployed.\n Name of the Azure VMware Solution private cloud.\n /28 network segment for the ARC appliance.\n\n\nThe/28 network segment will be an NSX-T segment in the private cloud. Under the covers, the deployment script creates NSX-T segment for use by the ARC appliances. The value must be entered into the script as the gateway to the segment, followed by /28. For example, if 192.168.99.1/28 is entered, there will be a /28 NSX-T segment created with the gateway 192.168.99.1.\n \nThe other information you can get from the Overview blade of your private cloud.\n \n\n \nRequirements\n\nYour private cloud must have Internet access.\nAlso, because of the appliance size, ideally you would want to run this script as close to the private cloud, or from a machine inside the AVS Private Cloud.\n\nThe script can be found here;\nhttps://virtualworkloads.com/2023/02/deploy-arc-for-azure-vmware-solution-simply-using-powershell/#script",
-          "link": "https://techcommunity.microsoft.com/t5/azure-migration-and/deploy-arc-for-azure-vmware-solution-simply-using-powershell/ba-p/3739411",
-          "publishedOn": "2023-02-10T16:02:43.000Z",
-          "wordCount": 9366,
-          "title": "Deploy Arc for Azure VMware Solution Simply Using PowerShell",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/440676iD2B51C415E03C2EA?v=v2"
         }
       ]
     },
@@ -7897,6 +7897,46 @@
       "feedUrl": "https://azurecomcdn.azureedge.net/en-us/updates/feed/?updateType=features",
       "siteUrl": "https://azure.microsoft.com/en-us/updates/",
       "articles": [
+        {
+          "id": "azure-sql-general-availability-updates-for-early-july-2023",
+          "author": null,
+          "description": "General availability enhancements and updates released for Azure SQL in early July 2023.",
+          "link": "https://azure.microsoft.com/en-us/updates/azure-sql-general-availability-updates-for-early-july-2023/",
+          "publishedOn": "2023-07-10T23:07:02.000Z",
+          "wordCount": 5483,
+          "title": "Azure SQL—General availability updates for early July 2023",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-7fa33b83878bfe3e2ee60e62d796419ffbcc62a5cc142826072dfa1c2feee343/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "generally-available-azure-digital-twins-supports-digital-twins-definition-language-version-3",
+          "author": null,
+          "description": "ADT supports defining models using the Digital Twins Definition Language version 3 (DTDL v3)",
+          "link": "https://azure.microsoft.com/en-us/updates/generally-available-azure-digital-twins-supports-digital-twins-definition-language-version-3/",
+          "publishedOn": "2023-07-10T16:00:16.000Z",
+          "wordCount": 5501,
+          "title": "Generally available: Azure Digital Twins supports Digital Twins Definition Language version 3",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-7fa33b83878bfe3e2ee60e62d796419ffbcc62a5cc142826072dfa1c2feee343/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "azure-s-crossregion-load-balancer-is-now-generally-available",
+          "author": null,
+          "description": "Azure Load Balancer support for cross-region load balancing is now generally available. You can now load balance across Azure regions enabling a globally redundant architecture via Azure Load Balancer.",
+          "link": "https://azure.microsoft.com/en-us/updates/azure-s-crossregion-load-balancer-is-now-generally-available/",
+          "publishedOn": "2023-07-10T16:00:14.000Z",
+          "wordCount": 5487,
+          "title": "Azure’s cross-region Load Balancer is now generally available",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-7fa33b83878bfe3e2ee60e62d796419ffbcc62a5cc142826072dfa1c2feee343/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "adx-external-tables",
+          "author": null,
+          "description": "Azure Data Explorer has released three new types of external tables: PostgrSQL, MySQL, and CosmosDB SQL. These new external tables allow users to query data from these sources directly within Azure Data Explorer using the Kusto Query Language (KQL).",
+          "link": "https://azure.microsoft.com/en-us/updates/adx-external-tables/",
+          "publishedOn": "2023-07-10T15:00:14.000Z",
+          "wordCount": 5639,
+          "title": "General availability: Azure Data Explorer adds support for PostgreSQL, MySQL, and CosmosDB SQL external tables",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-7fa33b83878bfe3e2ee60e62d796419ffbcc62a5cc142826072dfa1c2feee343/images/shared/social/azure-icon-250x250.png"
+        },
         {
           "id": "public-preview-azure-virtual-network-encryption-2",
           "author": null,

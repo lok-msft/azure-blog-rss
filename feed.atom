@@ -2,10 +2,62 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2023-07-10T01:28:06.434Z</updated>
+    <updated>2023-07-11T01:21:44.489Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Azure SQL—General availability updates for early July 2023]]></title>
+        <id>azure-sql-general-availability-updates-for-early-july-2023</id>
+        <link href="https://azure.microsoft.com/en-us/updates/azure-sql-general-availability-updates-for-early-july-2023/"/>
+        <updated>2023-07-10T23:07:02.000Z</updated>
+        <summary type="html"><![CDATA[General availability enhancements and updates released for Azure SQL in early July 2023.]]></summary>
+        <author>
+            <name>Azure service updates</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Generally available: Azure Digital Twins supports Digital Twins Definition Language version 3]]></title>
+        <id>generally-available-azure-digital-twins-supports-digital-twins-definition-language-version-3</id>
+        <link href="https://azure.microsoft.com/en-us/updates/generally-available-azure-digital-twins-supports-digital-twins-definition-language-version-3/"/>
+        <updated>2023-07-10T16:00:16.000Z</updated>
+        <summary type="html"><![CDATA[ADT supports defining models using the Digital Twins Definition Language version 3 (DTDL v3)]]></summary>
+        <author>
+            <name>Azure service updates</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Azure’s cross-region Load Balancer is now generally available]]></title>
+        <id>azure-s-crossregion-load-balancer-is-now-generally-available</id>
+        <link href="https://azure.microsoft.com/en-us/updates/azure-s-crossregion-load-balancer-is-now-generally-available/"/>
+        <updated>2023-07-10T16:00:14.000Z</updated>
+        <summary type="html"><![CDATA[Azure Load Balancer support for cross-region load balancing is now generally available. You can now load balance across Azure regions enabling a globally redundant architecture via Azure Load Balancer.]]></summary>
+        <author>
+            <name>Azure service updates</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[General availability: Azure Data Explorer adds support for PostgreSQL, MySQL, and CosmosDB SQL external tables]]></title>
+        <id>adx-external-tables</id>
+        <link href="https://azure.microsoft.com/en-us/updates/adx-external-tables/"/>
+        <updated>2023-07-10T15:00:14.000Z</updated>
+        <summary type="html"><![CDATA[Azure Data Explorer has released three new types of external tables: PostgrSQL, MySQL, and CosmosDB SQL. These new external tables allow users to query data from these sources directly within Azure Data Explorer using the Kusto Query Language (KQL).]]></summary>
+        <author>
+            <name>Azure service updates</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Building a Private ChatGPT Interface With Azure OpenAI]]></title>
+        <id>https://techcommunity.microsoft.com/t5/azure-architecture-blog/building-a-private-chatgpt-interface-with-azure-openai/ba-p/3869522</id>
+        <link href="https://techcommunity.microsoft.com/t5/azure-architecture-blog/building-a-private-chatgpt-interface-with-azure-openai/ba-p/3869522"/>
+        <updated>2023-07-10T06:59:04.000Z</updated>
+        <summary type="html"><![CDATA[TLDR - You can test my implementation at https://privategpt.baldacchino.net. If this appears slow to first load, what is happening behind the scenes is a 'cold start' within Azure Container Apps. Cold Starts happen due to a lack of load. To reduce costs, I have configured Azure Container Apps to tear down my container environment when there is no load to zero containers. The loading is due to the container starting (Alpine Linux and NodeJS). Cold Starts are not really a thing for workloads under regular load.
+Chat GPT is amazing on so many levels, and it's free. But you know what they say. If something is free, then you are the product!
+As part of OpenAI's T&C, your prompts (the questions you ask) will be used to further train OpenAI's LLM (Large Language Model). Are you okay with this val…]]></summary>
+        <author>
+            <name>shanebaldacchino</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[A Comprehensive Guide to Getting Started with Data API Builder for Azure SQL Database or SQL Server]]></title>
         <id>https://techcommunity.microsoft.com/t5/educator-developer-blog/a-comprehensive-guide-to-getting-started-with-data-api-builder/ba-p/3865890</id>
@@ -17222,41 +17274,6 @@ Resources 
 Welcome to #LowCode February | Low Code & Fusion Dev (microsoft.github.io)Exam PL-900: Microsoft Power Platform Fundamentals - Certifications | Microsoft LearnStudent Hub - Student Certifications | Microsoft Learn]]></summary>
         <author>
             <name>Lee Stott</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Deploy Arc for Azure VMware Solution Simply Using PowerShell]]></title>
-        <id>https://techcommunity.microsoft.com/t5/azure-migration-and/deploy-arc-for-azure-vmware-solution-simply-using-powershell/ba-p/3739411</id>
-        <link href="https://techcommunity.microsoft.com/t5/azure-migration-and/deploy-arc-for-azure-vmware-solution-simply-using-powershell/ba-p/3739411"/>
-        <updated>2023-02-10T16:02:43.000Z</updated>
-        <summary type="html"><![CDATA[What is Arc for Azure VMware Solution? Simply put, it exposes your Azure VMware Solution resources (VMs, networks, datastores, etc.) to the Azure portal.
- 
-Using Arc for Azure VMware Solution, those resources can be managed via the Azure portal, even though they are within your vSphere cluster running in an Azure datacenter. Even better, there is no cost to deploy Arc for Azure VMware Solution. More blogs to come on Arc for Azure VMware Solution, but if you want to get some more details check out this video from Jeremiah Megie.
- 
-First things first. Let’s get Arc for Azure VMware Solution installed into your private cloud.
-You will need to collect the following information to input into the PowerShell script, which, if you use it, will make the deployment a bit more straightforward.
- 
-
-Subscription ID and Resource Group where the Azure VMware Solution private cloud is deployed.
- Name of the Azure VMware Solution private cloud.
- /28 network segment for the ARC appliance.
-
-
-The/28 network segment will be an NSX-T segment in the private cloud. Under the covers, the deployment script creates NSX-T segment for use by the ARC appliances. The value must be entered into the script as the gateway to the segment, followed by /28. For example, if 192.168.99.1/28 is entered, there will be a /28 NSX-T segment created with the gateway 192.168.99.1.
- 
-The other information you can get from the Overview blade of your private cloud.
- 
-
- 
-Requirements
-
-Your private cloud must have Internet access.
-Also, because of the appliance size, ideally you would want to run this script as close to the private cloud, or from a machine inside the AVS Private Cloud.
-
-The script can be found here;
-https://virtualworkloads.com/2023/02/deploy-arc-for-azure-vmware-solution-simply-using-powershell/#script]]></summary>
-        <author>
-            <name>tredavis</name>
         </author>
     </entry>
     <entry>
