@@ -2,10 +2,21 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2023-07-16T01:48:48.925Z</updated>
+    <updated>2023-07-17T01:42:02.864Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Jakarta EE on Azure – July 2023]]></title>
+        <id>https://devblogs.microsoft.com/java/?p=229993</id>
+        <link href="https://devblogs.microsoft.com/java/jakarta-ee-on-azure-july-2023/"/>
+        <updated>2023-07-16T06:04:10.000Z</updated>
+        <summary type="html"><![CDATA[Hi everyone, welcome to July update for Jakarta EE on Azure. Microsoft partners with Jakarta EE application server vendors to create Azure Marketplace offers that allow customers to quickly deploy their software on Azure Virtual Machines, Azure Kubernetes Service, Azure Red Hat OpenShift.
+The post Jakarta EE on Azure – July 2023 appeared first on Microsoft for Java Developers.]]></summary>
+        <author>
+            <name>Josephine Qiu</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Best Practices for WordPress on Azure App Service]]></title>
         <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/best-practices-for-wordpress-on-azure-app-service/ba-p/3874941</id>
@@ -17065,20 +17076,6 @@ The post New Boards Hub, Sprint 217 update appeared first on Azure DevOps Blog.]
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Accelerate your .NET app modernization journey with the Azure Immersion Workshop]]></title>
-        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/accelerate-your-net-app-modernization-journey-with-the-azure/ba-p/3741532</id>
-        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/accelerate-your-net-app-modernization-journey-with-the-azure/ba-p/3741532"/>
-        <updated>2023-02-17T13:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Choosing Azure for your app modernization is an important first step, and figuring out how to effectively leverage all that Azure has to offer is the secret to your success. We believe hands-on experience is key to helping you design a plan to modernize, deploy, and manage your web applications. Azure Immersion Workshops are a collection of digital events designed with a focus on technical learning and inspire usage via hands on experience. We are excited to share that the Azure Immersion Workshop to Modernize .NET apps on Azure App Service is now available. 
- 
-
- 
-The Modernize .NET Apps workshop is designed to help you evaluate and prioritize your applications for modernization and gain the practical skills required to map out a successful migration strategy. From practical demonstrations…]]></summary>
-        <author>
-            <name>Mayunk Jain</name>
-        </author>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[Mastering the Command Line: A Beginner's Guide to Bash for Students]]></title>
         <id>https://techcommunity.microsoft.com/t5/educator-developer-blog/mastering-the-command-line-a-beginner-s-guide-to-bash-for/ba-p/3745630</id>
         <link href="https://techcommunity.microsoft.com/t5/educator-developer-blog/mastering-the-command-line-a-beginner-s-guide-to-bash-for/ba-p/3745630"/>
@@ -17094,56 +17091,6 @@ Learning command line skills such bash can be beneficial for students in s…]]>
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[How to setup Event Hub Trigger for Azure Function with User-Assigned Managed Identity]]></title>
-        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/how-to-setup-event-hub-trigger-for-azure-function-with-user/ba-p/3740599</id>
-        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/how-to-setup-event-hub-trigger-for-azure-function-with-user/ba-p/3740599"/>
-        <updated>2023-02-17T09:32:19.000Z</updated>
-        <summary type="html"><![CDATA[Background:
-Function App supports to integrate Managed Identities to connect to resources that support Azure Active Directory (Azure AD) authentication. There are two types of Managed Identities: System-assigned and User-assigned. However, customer would choose User-assigned Managed Identity when the use case is like the workloads that run on multiple resources and can share a single identity or the workloads where resources are recycled frequently, but permissions should stay consistent. In this blog, we're going to introduce how to assign a User-Assigned Managed Identity (MI) to Function App that use Azure AD for authorization to access Event Hub resource in Event Hub trigger.
- 
-Prerequisites: 
-1. Please read following documents for basic concept.
-
-Triggers and bindings in Azure Function…]]></summary>
-        <author>
-            <name>James_Yu320</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Azure Automation Run As accounts retiring on 30 September 2023]]></title>
-        <id>https://techcommunity.microsoft.com/t5/azure-governance-and-management/azure-automation-run-as-accounts-retiring-on-30-september-2023/ba-p/3744308</id>
-        <link href="https://techcommunity.microsoft.com/t5/azure-governance-and-management/azure-automation-run-as-accounts-retiring-on-30-september-2023/ba-p/3744308"/>
-        <updated>2023-02-17T04:20:33.000Z</updated>
-        <summary type="html"><![CDATA[On 30 September 2023, Azure Automation will retire Run As accounts, and completely move to Managed identities. All runbook executions using Run As accounts, including Classic Run As accounts would not be supported after this date. Moreover, starting 1 April 2023, creation of new Run As accounts in Azure Automation will not be possible. Renewing of certificates for existing RunAs accounts would be possible only till the end of support.
-To ensure you are using a supported authentication method, you must migrate all your runbooks to Managed Identities.
- 
-Benefits of Managed identities
-
-Secure authentication to any Azure service that supports Azure AD authentication.
-Minimised management overhead with easy access to resources.
-No need of Certificate renewals as in case of Run As accounts.
-Simplified runbooks with no requirement to use multi-line code.
-
- 
-Take immediate action
-
-Review your Automation accounts, Runbooks, GitHub code samples to identify Remove all references to Run As accounts and make necessary changes to reflect Managed Identities only.
-If you have existing Azure Automation runbooks using Run As accounts, you must migrate them to Managed identities.
-If your Run As account certificate is expiring, it’s a good time to start using Managed identities for authentication instead of renewing the certificate.
-Do not create new Run As accounts, ensure to use Managed identities.
-
- 
-Resources 
-
-Migrate from a Run As account to a managed identity | Microsoft Learn
-Azure Automation migration to managed identity FAQ | Microsoft Learn
-
-If you have questions, ask community experts in Microsoft Q&A.]]></summary>
-        <author>
-            <name>Nikita_Bajaj</name>
-        </author>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[Microsoft Hack Together: Microsoft Graph and .NET 1st - 15th March]]></title>
         <id>https://techcommunity.microsoft.com/t5/educator-developer-blog/microsoft-hack-together-microsoft-graph-and-net-1st-15th-march/ba-p/3742620</id>
         <link href="https://techcommunity.microsoft.com/t5/educator-developer-blog/microsoft-hack-together-microsoft-graph-and-net-1st-15th-march/ba-p/3742620"/>
@@ -17154,56 +17101,6 @@ Hack Together is a virtual hackathon to get started building apps with Microsoft
 Hack Together will run online from March 1-15, 2023. Hear from our…]]></summary>
         <author>
             <name>Lee Stott</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Announcing Public Preview of Caching for ACR]]></title>
-        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/announcing-public-preview-of-caching-for-acr/ba-p/3744655</id>
-        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/announcing-public-preview-of-caching-for-acr/ba-p/3744655"/>
-        <updated>2023-02-16T17:51:46.000Z</updated>
-        <summary type="html"><![CDATA[Microsoft is committed to making Azure Container Registry (ACR) best-in-class for the storage and distribution of container images. Following this commitment, we’re excited to announce the public preview of Caching for ACR. Once configured, Caching for ACR allows you to cache container images from Docker Hub and Microsoft Artifact Registry in your own ACR instance. This helps you continue using the best in public content and add the speed and reliability of using it from your own networks. 
- 
-Why Caching for ACR?  
- 
-Caching for ACR is a new feature added to Azure Container Registry (ACR) currently in preview that allows users to cache container images from Microsoft Artifact Registry and Docker Hub.  
-Caching container images have three main benefits: 
-
-      High-speed and reliable pull …]]></summary>
-        <author>
-            <name>MSFTPM</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Azure Backup: Enhanced experience for creating and managing private endpoints for Recovery Services vaults is now available]]></title>
-        <id>azure-backup-enhanced-experience-for-creating-and-managing-private-endpoints-for-recovery-services-vaults-is-now-available</id>
-        <link href="https://azure.microsoft.com/en-us/updates/azure-backup-enhanced-experience-for-creating-and-managing-private-endpoints-for-recovery-services-vaults-is-now-available/"/>
-        <updated>2023-02-16T17:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Azure Backup now provides an improved experience for creating and using private endpoints for your Recovery Services vaults.]]></summary>
-        <author>
-            <name>Azure service updates</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Generally available: Azure Site Recovery update rollup 66 - February 2023]]></title>
-        <id>generally-available-azure-site-recovery-update-rollup-66-february-2023</id>
-        <link href="https://azure.microsoft.com/en-us/updates/generally-available-azure-site-recovery-update-rollup-66-february-2023/"/>
-        <updated>2023-02-16T17:00:00.000Z</updated>
-        <summary type="html"><![CDATA[This article describes the improvements for the latest version of Azure Site Recovery components.]]></summary>
-        <author>
-            <name>Azure service updates</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[7 reasons to join us at Azure Open Source Day]]></title>
-        <id>https://azure.microsoft.com/en-us/blog/7-reasons-to-join-us-at-azure-open-source-day/</id>
-        <link href="https://azure.microsoft.com/en-us/blog/7-reasons-to-join-us-at-azure-open-source-day/"/>
-        <updated>2023-02-16T16:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Azure Open Source Day is a great opportunity to learn more about Microsoft's role in the open-source community, its contributions, and vision.
-
-
-The post 7 reasons to join us at Azure Open Source Day appeared first on Microsoft Open Source Blog.]]></summary>
-        <author>
-            <name>Katie Fritsch and David Dennis</name>
         </author>
     </entry>
     <entry>
