@@ -654,26 +654,6 @@
           "wordCount": 8057,
           "title": "Spring Cloud Function for Azure Function",
           "imageUrl": "https://spring.io/img/og-spring.png"
-        },
-        {
-          "id": "https://spring.io/blog/2023/02/23/a-bootiful-podcast-its-glenn-renfro-listen-to-this-episode-if-you-want-to",
-          "author": "Josh Long",
-          "description": "Level up your Java code and explore what Spring can do for you.",
-          "link": "https://spring.io/blog/2023/02/23/a-bootiful-podcast-its-glenn-renfro-listen-to-this-episode-if-you-want-to",
-          "publishedOn": "2023-02-23T00:00:00.000Z",
-          "wordCount": 6873,
-          "title": "A Bootiful Podcast: It's Glenn Renfro! Listen to this episode if you want to feel better",
-          "imageUrl": "https://spring.io/img/og-spring.png"
-        },
-        {
-          "id": "https://spring.io/blog/2023/02/23/from-spring-native-to-spring-boot-3",
-          "author": "Sébastien Deleuze",
-          "description": "Level up your Java code and explore what Spring can do for you.",
-          "link": "https://spring.io/blog/2023/02/23/from-spring-native-to-spring-boot-3",
-          "publishedOn": "2023-02-23T00:00:00.000Z",
-          "wordCount": 7357,
-          "title": "From Spring Native to Spring Boot 3",
-          "imageUrl": "https://spring.io/img/og-spring.png"
         }
       ]
     },
@@ -3618,16 +3598,6 @@
           "wordCount": 9914,
           "title": "Unable to access Webapp or Kudu site hosted in ILB ASE",
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/440571i764A6C0D0881BBE2?v=v2"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/remove-nginx-server-header-linux-app-service-php-8-x-blessed/ba-p/3750616",
-          "author": "gaukazure",
-          "description": "We can follow the below steps to remove the Server header from HTTP response for PHP 8.x apps on Linux App Service (which uses Nginx server) - \n \nWe will be following the steps described here to change the configurations of Nginx: https://azureossd.github.io/2021/09/02/php-8-rewrite-rule/index.html\n \n#create a copy of the default configurations\ncp /etc/nginx/sites-available/default /home/site/default#add the following properties in the copied file /home/site/default\n \nserver_tokens off;\n\nmore_clear_headers Server;\n\n \n\n \n#create a startup script /home/site/start.sh (feel free to rename it)\n \n#!/bin/bash\n \ncp /home/site/default /etc/nginx/sites-available/default\nservice nginx reload\n\n \n\n \n\n#Add a startup command on the WebApp and wait for it to restart.\n \n#We can using the cURL command:\ncurl -I https://webappname.azurewebsites.net\n \n[-i, --include Include protocol response headers in the output]",
-          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/remove-nginx-server-header-linux-app-service-php-8-x-blessed/ba-p/3750616",
-          "publishedOn": "2023-02-23T08:55:56.000Z",
-          "wordCount": 9344,
-          "title": "Remove Nginx Server Header - Linux App Service (PHP 8.x blessed image)",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/444678i3E4F23DAD81A40D0?v=v2"
         }
       ]
     },
@@ -7112,16 +7082,6 @@
           "wordCount": 5552,
           "title": "Retrospectives: The Hidden Gem Enabling Teams to Thrive – Part 1",
           "imageUrl": "https://devblogs.microsoft.com/devops/wp-content/uploads/sites/6/2018/08/vstsfeature.png"
-        },
-        {
-          "id": "https://devblogs.microsoft.com/devops/?p=66494",
-          "author": "Bohdan Janousek",
-          "description": "In the blog post Upgrade of .NET agent for Azure Pipelines, we explained our plan to update the agent implementation from .NET Core 3.1 to .NET 6 in order to support newer operating systems. If you run your agents on any operating system supported by .NET 6,\nThe post End of support for Azure Pipelines agents running on CentOS 6, Debian 4.9, Fedora 32, Ubuntu 16, macOS 10.14, and older versions appeared first on Azure DevOps Blog.",
-          "link": "https://devblogs.microsoft.com/devops/azdo-end-of-support-v2-net-agent/",
-          "publishedOn": "2023-02-22T14:38:22.000Z",
-          "wordCount": 5127,
-          "title": "End of support for Azure Pipelines agents running on CentOS 6, Debian 4.9, Fedora 32, Ubuntu 16, macOS 10.14, and older versions",
-          "imageUrl": "https://devblogs.microsoft.com/devops/wp-content/uploads/sites/6/2019/02/AzureDevOps.png"
         }
       ]
     },
@@ -11726,16 +11686,6 @@
           "wordCount": 5492,
           "title": "General availability: Stream Analytics no-code editor updates in Feb 2023",
           "imageUrl": "https://azurecomcdn.azureedge.net/cvt-6290d9288a34f2ada8f049a988db87cec3b92a596973927ad9dac0543a740636/images/shared/social/azure-icon-250x250.png"
-        },
-        {
-          "id": "ga-create-disks-from-cmkencrypted-snapshots-across-subscriptions-and-in-the-same-tenant",
-          "author": null,
-          "description": "To ease manageability, we are making disks encrypted with customer-managed keys (CMK) more flexible by allowing creation of disks and snapshots from CMK-encrypted source across subscriptions.",
-          "link": "https://azure.microsoft.com/en-us/updates/ga-create-disks-from-cmkencrypted-snapshots-across-subscriptions-and-in-the-same-tenant/",
-          "publishedOn": "2023-02-22T18:00:31.000Z",
-          "wordCount": 5477,
-          "title": "GA: Create disks from CMK-encrypted snapshots across subscriptions and in the same tenant",
-          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-a1e122d5b491987076d90ede66645c72dc71bc0a915f9984e3728be9f8e04511/images/shared/social/azure-icon-250x250.png"
         }
       ]
     },
@@ -12573,16 +12523,6 @@
           "wordCount": 5241,
           "title": "Public preview of SharePoint Framework 1.17 – First release of upcoming features",
           "imageUrl": "https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2023/02/spfx-117-preview-announcement-promo.png"
-        },
-        {
-          "id": "https://devblogs.microsoft.com/microsoft365dev/?p=12974",
-          "author": "Ayca Bas",
-          "description": "Hack Together is a hackathon for beginners to get started building apps with Microsoft Graph and .NET. In this hackathon, you will kick-start learning how to build apps with Microsoft Graph and develop apps based on the given Top Microsoft Graph Scenarios,\nThe post Get ready for the first week of Hack Together: Microsoft Graph and .NET 🦒 appeared first on Microsoft 365 Developer Blog.",
-          "link": "https://devblogs.microsoft.com/microsoft365dev/get-ready-for-the-first-week-of-hack-together-microsoft-graph-and-net/",
-          "publishedOn": "2023-02-23T11:30:42.000Z",
-          "wordCount": 4492,
-          "title": "Get ready for the first week of Hack Together: Microsoft Graph and .NET 🦒",
-          "imageUrl": "https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2023/02/hack-together-kickoff.png"
         }
       ]
     }
