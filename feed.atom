@@ -2,10 +2,95 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2023-07-24T01:16:45.475Z</updated>
+    <updated>2023-07-25T01:23:39.080Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[No tenant switching needed | Shared channels in Microsoft Teams]]></title>
+        <id>https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/no-tenant-switching-needed-shared-channels-in-microsoft-teams/ba-p/3881705</id>
+        <link href="https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/no-tenant-switching-needed-shared-channels-in-microsoft-teams/ba-p/3881705"/>
+        <updated>2023-07-24T16:05:38.000Z</updated>
+        <summary type="html"><![CDATA[Stop workflow interruptions by continually switching between your organization and guest tenants in Microsoft Teams. Use shared channels in Microsoft Teams to seamlessly work with external organizations while staying in your home tenant. 
+ 
+
+ 
+Shared channels can include a core team, internal members outside of your team, and invited external participants outside of your organization. Once created, it provides a shared workspace as a secure and more efficient means for transparent and open collaboration. It’s a seamless way to bring everyone together as part of an extended team. Importantly, Microsoft Entra cross-tenant access controls are used to establish trust. Users are securely authenticated and authorized on the backend, with channel access based on their individually scoped permissi…]]></summary>
+        <author>
+            <name>Zachary Cavanell</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Azure OpenAI Landing Zone reference architecture]]></title>
+        <id>https://techcommunity.microsoft.com/t5/azure-architecture-blog/azure-openai-landing-zone-reference-architecture/ba-p/3882102</id>
+        <link href="https://techcommunity.microsoft.com/t5/azure-architecture-blog/azure-openai-landing-zone-reference-architecture/ba-p/3882102"/>
+        <updated>2023-07-24T15:51:45.000Z</updated>
+        <summary type="html"><![CDATA[Azure Landing Zones provide a solid foundation for your cloud environment. When deploying complex AI services such as Azure OpenAI, using a Landing Zone approach helps you manage your resources in a structured, consistent manner, ensuring governance, compliance, and security are properly maintained.
+ 
+In this article, we delve into the synergy of Azure Landing Zones and Azure OpenAI Service, building a secure and scalable AI environment. unpacking the Azure OpenAI Landing Zone architecture, which integrates numerous Azure services for optimal AI workloads. Furthermore we will also explore  security measures and the significance of monitoring for operational success. 
+ 
+Introduction to Azure OpenAI Service
+ 
+Azure OpenAI Service is a managed AI service that enables you to deploy and manage …]]></summary>
+        <author>
+            <name>FreddyAyala</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How to increase concurrency on python function app hosted in app service plan?]]></title>
+        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/how-to-increase-concurrency-on-python-function-app-hosted-in-app/ba-p/3882010</id>
+        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/how-to-increase-concurrency-on-python-function-app-hosted-in-app/ba-p/3882010"/>
+        <updated>2023-07-24T07:26:58.000Z</updated>
+        <summary type="html"><![CDATA[There are multiple ways to increase the concurrency of python function app. I drew an architecture diagram, which can give us an overall understanding of the function app.
+ 
+
+Based on the diagram, we can see we could increase function app concurrency by increasing instance count, python worker count and thread count. To better understand this, I build several labs to validate this. I will not demonstrate instance count as it is easy to understand. All these labs are having 4 concurrent incoming requests and each request takes 10 seconds to complete.
+ 
+Lab1:
+code:
+sync
+
+Configuration:
+maxConcurrentRequests : 4FUNCTIONS_WORKER_PROCESS_COUNT=1PYTHON_THREADPOOL_THREAD_COUNT=1
+Result:
+It took 40 seconds to complete the 4 executions. We can see these 4 executions were triggered at the same time, this is because the function host level is using async. But actually these executions are executed one by one.
+
+Lab2:
+code: The same as Lab1.
+Configuration:
+maxConcurrentRequests : 4FUNCTIONS_WORKER_PROCESS_COUNT=1PYTHON_THREADPOOL_THREAD_COUNT=2
+Result:
+It took 20 seconds to complete the 4 executions.
+
+ 
+Lab3:
+code: The same as Lab1.
+Configuration:
+maxConcurrentRequests : 4FUNCTIONS_WORKER_PROCESS_COUNT=2PYTHON_THREADPOOL_THREAD_COUNT=2
+Result:
+It took 10 seconds to complete the 4 executions.
+
+Lab4:
+code:
+async
+
+Configuration:
+maxConcurrentRequests : 4FUNCTIONS_WORKER_PROCESS_COUNT=1PYTHON_THREADPOOL_THREAD_COUNT=1
+Result:
+It took 10 seconds to complete the 4 executions.
+
+ 
+Conclusion:
+1.We can increase the concurrency by increasing FUNCTIONS_WORKER_PROCESS_COUNT and PYTHON_THREADPOOL_THREAD_COUNT. Just note that we can configure the concurrent setting in host.json file. This is the bottleneck of the concurrency. 
+2.It is more recommended to use async method instead of sync method as async has better performance than sync with the same configuration.
+ 
+Reference link:
+Azure Functions HTTP triggers and bindings | Microsoft Learn
+Improve throughput performance of Python apps in Azure Functions | Microsoft Learn]]></summary>
+        <author>
+            <name>Tony_Ju</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Semantic Kernel: What It Is and Why It Matters]]></title>
         <id>https://techcommunity.microsoft.com/t5/azure-developer-community-blog/semantic-kernel-what-it-is-and-why-it-matters/ba-p/3877022</id>
@@ -553,6 +638,16 @@ The importance of an agile, secure, and innovative IT platform for the continued
 Micros…]]></summary>
         <author>
             <name>SShastri</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[General availability: Partial document update in the Azure Cosmos DB Python SDK]]></title>
+        <id>general-availability-partial-document-update-in-the-azure-cosmos-db-python-sdk</id>
+        <link href="https://azure.microsoft.com/en-us/updates/general-availability-partial-document-update-in-the-azure-cosmos-db-python-sdk/"/>
+        <updated>2023-07-18T15:00:18.000Z</updated>
+        <summary type="html"><![CDATA[Modify just the required fields without having to replace the whole document with partial document update in the Azure Cosmos DB Python SDK.]]></summary>
+        <author>
+            <name>Azure service updates</name>
         </author>
     </entry>
     <entry>
@@ -17025,30 +17120,6 @@ As a low code developer, you understand the power of technology to streamline th
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Optimize Azure Kubernetes Service Node Cost by Combining OnDemand And Spot VMs]]></title>
-        <id>https://techcommunity.microsoft.com/t5/azure-architecture-blog/optimize-azure-kubernetes-service-node-cost-by-combining/ba-p/3751787</id>
-        <link href="https://techcommunity.microsoft.com/t5/azure-architecture-blog/optimize-azure-kubernetes-service-node-cost-by-combining/ba-p/3751787"/>
-        <updated>2023-02-24T21:44:23.000Z</updated>
-        <summary type="html"><![CDATA[While it's possible to run the Kubernetes nodes either in on-demand or spot node pools separately, we can optimize the application cost without compromising the reliability by placing the pods unevenly on spot and OnDemand VMs using the topology spread constraints. With baseline amount of pods deployed in OnDemand node pool offering reliability, we can scale on spot node pool based on the load at a lower cost.Kubernetes Topology Spread
- In this post, we will go through a step by step approach on deploying an application spread unevenly on spot and OnDemand VMs.
- 
-
-Prerequisites
-
-Azure Subscription with permissions to create the required resources
-Azure CLI
-kubectl CLI
-
-
- 
-1. Create a Resource Group and an AKS Cluster
- 
-Create a resource group in your preferred Azure location using Azure CL…]]></summary>
-        <author>
-            <name>p-prakash</name>
-        </author>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[Azure Open Source Day 7th March 2023]]></title>
         <id>https://techcommunity.microsoft.com/t5/educator-developer-blog/azure-open-source-day-7th-march-2023/ba-p/3750433</id>
         <link href="https://techcommunity.microsoft.com/t5/educator-developer-blog/azure-open-source-day-7th-march-2023/ba-p/3750433"/>
@@ -17076,61 +17147,6 @@ Create an open-source program by using GitHub best practices - Training
 Create cloud native apps with Azure and open-source software - TrainingMigrate open-source databases to Azure - TrainingIntroduction to the Open source Analytics Offering - Training]]></summary>
         <author>
             <name>Lee Stott</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Azure portal January 2023 updates]]></title>
-        <id>https://techcommunity.microsoft.com/t5/azure-governance-and-management/azure-portal-january-2023-updates/ba-p/3750124</id>
-        <link href="https://techcommunity.microsoft.com/t5/azure-governance-and-management/azure-portal-january-2023-updates/ba-p/3750124"/>
-        <updated>2023-02-24T19:17:09.000Z</updated>
-        <summary type="html"><![CDATA[Virtual Machines > Virtual Machine Scale Sets
-
-Virtual machine scale sets now default to Flexible orchestration mode 
-
- 
-Virtual Machines > Virtual Machine Scale Sets
-
-Force delete for Virtual Machines and Virtual Machine Scale Sets
-
-Intune
-
-Updates to Microsoft Intune
-
-Let's look at each of these updates in greater detail.
- 
-Virtual Machines > Virtual Machine Scale Sets
- Virtual machine scale sets now default to Flexible orchestration mode 
- 
-New virtual machine scale sets now default to using Flexible orchestration mode. Previously, new virtual machine scale sets used Uniform orchestration. Flexible orchestration mode allows you to achieve high availability at scale (up to 1000 VMs) by spreading VMs across fault domains in a region or within an Availability Zone. It also manages standard…]]></summary>
-        <author>
-            <name>Allison_Cordle</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[New capabilities available in Microsoft Graph To Do APIs]]></title>
-        <id>https://devblogs.microsoft.com/microsoft365dev/?p=12991</id>
-        <link href="https://devblogs.microsoft.com/microsoft365dev/new-capabilities-available-in-microsoft-graph-to-do-apis/"/>
-        <updated>2023-02-24T17:24:21.000Z</updated>
-        <summary type="html"><![CDATA[We are thrilled to announce new capabilities like application permissions support, attachment support and ‘startDateTime’ property on To Do task APIs.  
-The post New capabilities available in Microsoft Graph To Do APIs  appeared first on Microsoft 365 Developer Blog.]]></summary>
-        <author>
-            <name>Swapna Ninan</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Develop 5G Modern Connected Applications using Microsoft accelerators]]></title>
-        <id>https://techcommunity.microsoft.com/t5/azure-developer-community-blog/develop-5g-modern-connected-applications-using-microsoft/ba-p/3748452</id>
-        <link href="https://techcommunity.microsoft.com/t5/azure-developer-community-blog/develop-5g-modern-connected-applications-using-microsoft/ba-p/3748452"/>
-        <updated>2023-02-24T14:42:09.000Z</updated>
-        <summary type="html"><![CDATA[Today, 5G enables new applications for scenarios that were previously out of reach. From smart roads that can notify of obstacles in the road in real time to smart airports that can identify runway issues before they threaten safety, a new breed of real-time and mission-critical applications is emerging.
- 
-These Modern Connected Applications run at the edge, requiring a wireless network with high bandwidth, ultra-reliability, low latency, and large range, all provided by 5G. More than just a new network standard, 5G is a technological breakthrough, powering the future of application architecture.
- 
-
- 
-As the first generation of software-defined networks, 5G is creating a new application paradigm and paving the way for innovative network-intelligent applications. 5G will allow you as applic…]]></summary>
-        <author>
-            <name>cesardl</name>
         </author>
     </entry>
     <entry>

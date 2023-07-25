@@ -2160,6 +2160,16 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/how-to-increase-concurrency-on-python-function-app-hosted-in-app/ba-p/3882010",
+          "author": "Tony_Ju",
+          "description": "There are multiple ways to increase the concurrency of python function app. I drew an architecture diagram, which can give us an overall understanding of the function app.\n \n\nBased on the diagram, we can see we could increase function app concurrency by increasing instance count, python worker count and thread count. To better understand this, I build several labs to validate this. I will not demonstrate instance count as it is easy to understand. All these labs are having 4 concurrent incoming requests and each request takes 10 seconds to complete.\n \nLab1:\ncode:\nsync\n\nConfiguration:\nmaxConcurrentRequests : 4FUNCTIONS_WORKER_PROCESS_COUNT=1PYTHON_THREADPOOL_THREAD_COUNT=1\nResult:\nIt took 40 seconds to complete the 4 executions. We can see these 4 executions were triggered at the same time, this is because the function host level is using async. But actually these executions are executed one by one.\n\nLab2:\ncode: The same as Lab1.\nConfiguration:\nmaxConcurrentRequests : 4FUNCTIONS_WORKER_PROCESS_COUNT=1PYTHON_THREADPOOL_THREAD_COUNT=2\nResult:\nIt took 20 seconds to complete the 4 executions.\n\n \nLab3:\ncode: The same as Lab1.\nConfiguration:\nmaxConcurrentRequests : 4FUNCTIONS_WORKER_PROCESS_COUNT=2PYTHON_THREADPOOL_THREAD_COUNT=2\nResult:\nIt took 10 seconds to complete the 4 executions.\n\nLab4:\ncode:\nasync\n\nConfiguration:\nmaxConcurrentRequests : 4FUNCTIONS_WORKER_PROCESS_COUNT=1PYTHON_THREADPOOL_THREAD_COUNT=1\nResult:\nIt took 10 seconds to complete the 4 executions.\n\n \nConclusion:\n1.We can increase the concurrency by increasing FUNCTIONS_WORKER_PROCESS_COUNT and PYTHON_THREADPOOL_THREAD_COUNT. Just note that we can configure the concurrent setting in host.json file. This is the bottleneck of the concurrency. \n2.It is more recommended to use async method instead of sync method as async has better performance than sync with the same configuration.\n \nReference link:\nAzure Functions HTTP triggers and bindings | Microsoft Learn\nImprove throughput performance of Python apps in Azure Functions | Microsoft Learn",
+          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/how-to-increase-concurrency-on-python-function-app-hosted-in-app/ba-p/3882010",
+          "publishedOn": "2023-07-24T07:26:58.000Z",
+          "wordCount": 9798,
+          "title": "How to increase concurrency on python function app hosted in app service plan?",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/491754i7A5CE1AE2C6A56B8/image-size/large?v=v2&px=999"
+        },
+        {
           "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/scaling-options-in-azure-container-apps/ba-p/3878282",
           "author": "haricky",
           "description": "Azure Container Apps is a fully managed environment that enables you to run microservices and containerized applications on a serverless platform, which manages automatic horizontal scaling through a set of declarative scaling rules. As a container app revision scales out, new instances of the revision are created on-demand. These instances are known as replicas.\nAdding or editing scaling rules creates a new revision of your container app. A revision is an immutable snapshot of your container app. \n \nScaling is driven by different categories of triggers - this blog discusses HTTP and Custom triggers. \n \nHTTP SCALING\nWith an HTTP scaling rule, you have control over the threshold of concurrent HTTP requests that determines how your container app revision scales.\nNavigate to Container App > S…",
@@ -4723,16 +4733,6 @@
           "wordCount": 10543,
           "title": "How to choose the right Azure services for Java: Q and A with Ajai Peddapanga",
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/450494i49067EEF944018D9/image-size/original?v=v2&px=-1"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/azure-developer-community-blog/develop-5g-modern-connected-applications-using-microsoft/ba-p/3748452",
-          "author": "cesardl",
-          "description": "Today, 5G enables new applications for scenarios that were previously out of reach. From smart roads that can notify of obstacles in the road in real time to smart airports that can identify runway issues before they threaten safety, a new breed of real-time and mission-critical applications is emerging.\n \nThese Modern Connected Applications run at the edge, requiring a wireless network with high bandwidth, ultra-reliability, low latency, and large range, all provided by 5G. More than just a new network standard, 5G is a technological breakthrough, powering the future of application architecture.\n \n\n \nAs the first generation of software-defined networks, 5G is creating a new application paradigm and paving the way for innovative network-intelligent applications. 5G will allow you as applic…",
-          "link": "https://techcommunity.microsoft.com/t5/azure-developer-community-blog/develop-5g-modern-connected-applications-using-microsoft/ba-p/3748452",
-          "publishedOn": "2023-02-24T14:42:09.000Z",
-          "wordCount": 10071,
-          "title": "Develop 5G Modern Connected Applications using Microsoft accelerators",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/443830i81595F6BC3B26410?v=v2"
         }
       ]
     },
@@ -5356,6 +5356,16 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/azure-openai-landing-zone-reference-architecture/ba-p/3882102",
+          "author": "FreddyAyala",
+          "description": "Azure Landing Zones provide a solid foundation for your cloud environment. When deploying complex AI services such as Azure OpenAI, using a Landing Zone approach helps you manage your resources in a structured, consistent manner, ensuring governance, compliance, and security are properly maintained.\n \nIn this article, we delve into the synergy of Azure Landing Zones and Azure OpenAI Service, building a secure and scalable AI environment. unpacking the Azure OpenAI Landing Zone architecture, which integrates numerous Azure services for optimal AI workloads. Furthermore we will also explore  security measures and the significance of monitoring for operational success. \n \nIntroduction to Azure OpenAI Service\n \nAzure OpenAI Service is a managed AI service that enables you to deploy and manage …",
+          "link": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/azure-openai-landing-zone-reference-architecture/ba-p/3882102",
+          "publishedOn": "2023-07-24T15:51:45.000Z",
+          "wordCount": 10732,
+          "title": "Azure OpenAI Landing Zone reference architecture",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/491886i62A7A44F8A3B0888/image-size/large?v=v2&px=999"
+        },
+        {
           "id": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/azure-optimization-mindset-drive-business-value-with/ba-p/3880321",
           "author": "AriyaKhamvongsa",
           "description": "As part of digital transformation, an enterprise needs to align both business and technology investments in Azure Cloud services. It’s not just about saving money but to make strategic investments that drive the best return on investment. In the last 4 years, Tanuja has worked with many large organizations and observed common theme of concerns, such as \"Cloud is expensive\", \"I am always over the budget\", \"I don't have an insight into the cloud spend\". The concerns are mostly based on: \n \n\nLack of visibility into their Azure spending patterns and resource optimization. \nBudgets are moving targets due to the elasticity of cloud and ease of adding resources. \nTest environments aren’t shut down and continue to incur cost. \nLimited insight into actions for optimizing Azure resources and spendin…",
@@ -5654,16 +5664,6 @@
           "wordCount": 11138,
           "title": "Armchair Architects: Architectural Erosion and Technical Debt",
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/449379i2C27AFCC6100F57C/image-size/original?v=v2&px=-1"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/optimize-azure-kubernetes-service-node-cost-by-combining/ba-p/3751787",
-          "author": "p-prakash",
-          "description": "While it's possible to run the Kubernetes nodes either in on-demand or spot node pools separately, we can optimize the application cost without compromising the reliability by placing the pods unevenly on spot and OnDemand VMs using the topology spread constraints. With baseline amount of pods deployed in OnDemand node pool offering reliability, we can scale on spot node pool based on the load at a lower cost.Kubernetes Topology Spread\n In this post, we will go through a step by step approach on deploying an application spread unevenly on spot and OnDemand VMs.\n \n\nPrerequisites\n\nAzure Subscription with permissions to create the required resources\nAzure CLI\nkubectl CLI\n\n\n \n1. Create a Resource Group and an AKS Cluster\n \nCreate a resource group in your preferred Azure location using Azure CL…",
-          "link": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/optimize-azure-kubernetes-service-node-cost-by-combining/ba-p/3751787",
-          "publishedOn": "2023-02-24T21:44:23.000Z",
-          "wordCount": 10563,
-          "title": "Optimize Azure Kubernetes Service Node Cost by Combining OnDemand And Spot VMs",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/445003i5735CEB4E2E0AEC5?v=v2"
         }
       ]
     },
@@ -5672,6 +5672,16 @@
       "feedUrl": "https://techcommunity.microsoft.com/plugins/custom/microsoft/o365/custom-blog-rss?tid=6220021871588173833&board=MicrosoftMechanicsBlog&size=100",
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
+        {
+          "id": "https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/no-tenant-switching-needed-shared-channels-in-microsoft-teams/ba-p/3881705",
+          "author": "Zachary Cavanell",
+          "description": "Stop workflow interruptions by continually switching between your organization and guest tenants in Microsoft Teams. Use shared channels in Microsoft Teams to seamlessly work with external organizations while staying in your home tenant. \n \n\n \nShared channels can include a core team, internal members outside of your team, and invited external participants outside of your organization. Once created, it provides a shared workspace as a secure and more efficient means for transparent and open collaboration. It’s a seamless way to bring everyone together as part of an extended team. Importantly, Microsoft Entra cross-tenant access controls are used to establish trust. Users are securely authenticated and authorized on the backend, with channel access based on their individually scoped permissi…",
+          "link": "https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/no-tenant-switching-needed-shared-channels-in-microsoft-teams/ba-p/3881705",
+          "publishedOn": "2023-07-24T16:05:38.000Z",
+          "wordCount": 11311,
+          "title": "No tenant switching needed | Shared channels in Microsoft Teams",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/491680i02CF68E3DAD86928/image-size/large?v=v2&px=999"
+        },
         {
           "id": "https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/how-to-migrate-your-vms-to-azure-and-why-complete-tutorial-with/ba-p/3878009",
           "author": "Zachary Cavanell",
@@ -7675,16 +7685,6 @@
           "wordCount": 10033,
           "title": "Apply CIS compliant Azure Security baselines through Azure Automanage!",
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/453207iEFF10B14CDFD2294?v=v2"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/azure-governance-and-management/azure-portal-january-2023-updates/ba-p/3750124",
-          "author": "Allison_Cordle",
-          "description": "Virtual Machines > Virtual Machine Scale Sets\n\nVirtual machine scale sets now default to Flexible orchestration mode \n\n \nVirtual Machines > Virtual Machine Scale Sets\n\nForce delete for Virtual Machines and Virtual Machine Scale Sets\n\nIntune\n\nUpdates to Microsoft Intune\n\nLet's look at each of these updates in greater detail.\n \nVirtual Machines > Virtual Machine Scale Sets\n Virtual machine scale sets now default to Flexible orchestration mode \n \nNew virtual machine scale sets now default to using Flexible orchestration mode. Previously, new virtual machine scale sets used Uniform orchestration. Flexible orchestration mode allows you to achieve high availability at scale (up to 1000 VMs) by spreading VMs across fault domains in a region or within an Availability Zone. It also manages standard…",
-          "link": "https://techcommunity.microsoft.com/t5/azure-governance-and-management/azure-portal-january-2023-updates/ba-p/3750124",
-          "publishedOn": "2023-02-24T19:17:09.000Z",
-          "wordCount": 10142,
-          "title": "Azure portal January 2023 updates",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/444829iDFFCAAFBBD42DB6C?v=v2"
         }
       ]
     },
@@ -8046,6 +8046,16 @@
           "wordCount": 5453,
           "title": "Public Preview: Vector search, a feature of Azure Cognitive Search",
           "imageUrl": "https://azurecomcdn.azureedge.net/cvt-654ff0c11572f0043b19dd8da7fed50d177ba3060e149008310c11d8b38e15c1/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "general-availability-partial-document-update-in-the-azure-cosmos-db-python-sdk",
+          "author": null,
+          "description": "Modify just the required fields without having to replace the whole document with partial document update in the Azure Cosmos DB Python SDK.",
+          "link": "https://azure.microsoft.com/en-us/updates/general-availability-partial-document-update-in-the-azure-cosmos-db-python-sdk/",
+          "publishedOn": "2023-07-18T15:00:18.000Z",
+          "wordCount": null,
+          "title": "General availability: Partial document update in the Azure Cosmos DB Python SDK",
+          "imageUrl": null
         },
         {
           "id": "alwaysservega",
@@ -12403,16 +12413,6 @@
           "wordCount": 4581,
           "title": "Microsoft Graph To Do API will be available for GCC High and DoD",
           "imageUrl": "https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2023/02/2.28.23-01-1.jpg"
-        },
-        {
-          "id": "https://devblogs.microsoft.com/microsoft365dev/?p=12991",
-          "author": "Swapna Ninan",
-          "description": "We are thrilled to announce new capabilities like application permissions support, attachment support and ‘startDateTime’ property on To Do task APIs.  \nThe post New capabilities available in Microsoft Graph To Do APIs  appeared first on Microsoft 365 Developer Blog.",
-          "link": "https://devblogs.microsoft.com/microsoft365dev/new-capabilities-available-in-microsoft-graph-to-do-apis/",
-          "publishedOn": "2023-02-24T17:24:21.000Z",
-          "wordCount": 4586,
-          "title": "New capabilities available in Microsoft Graph To Do APIs",
-          "imageUrl": "https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2023/02/MicrosoftTeams-image-68.jpg"
         }
       ]
     }
