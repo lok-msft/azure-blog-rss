@@ -2100,6 +2100,26 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/app-services-linux-connectivity-to-azure-sql-server-database/ba-p/3891197",
+          "author": "RineshSPotty",
+          "description": "Overview\nThis guide is to help you troubleshoot Azure SQL connectivity and authentication issues on Linux App Services.\nNote: At the time of writing this cannot be executed in Linux Function Apps, since we don't have access to the environmental variables needed to run the commands. \nOn Windows App Services you can performance such connectivity and authentication troubleshooting by running MSI Validator, but on Linux App Services we need to leverage the WebSSH functionality to troubleshoot.\nSo, to address below you can find a list of commands to test connectivity and access to Azure SQL Server Database on Linux App Services. \nConnectivity troubleshooting steps\nWe would need to follow the 4 steps mentioned below to test the connectivity:\n1. WebSSH into your Web App:\nBrowse to the Kudu site o…",
+          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/app-services-linux-connectivity-to-azure-sql-server-database/ba-p/3891197",
+          "publishedOn": "2023-08-04T09:32:46.000Z",
+          "wordCount": 10167,
+          "title": "App Services (Linux) connectivity to Azure SQL Server Database using Managed Identity",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/495094iA07EFED2110B226A/image-size/original?v=v2&px=-1"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/use-user-managed-identity-to-replace-connection-string-in-quot/ba-p/3891026",
+          "author": "denniszheng",
+          "description": "Managing the connectivity between the function app and the storage account is crucial as the Azure Function runtime is stored in the Azure storage account. In case of a disconnection, you might run into common errors such as \"Azure Functions runtime is unreachable\". Fortunately, Microsoft has a helpful guide to address this issue, which provides self-help troubleshooting steps for recovering your storage account in case of such errors. You can check it out here: https://learn.microsoft.com/en-us/azure/azure-functions/functions-recover-storage-account.\n \nPreviously, the only way to grant the permission for an Azure Function to access its runtime in a storage account was via the connection string in \"azurewebjobsstorage\" configuration. However, a new and more secure approach exists for grant…",
+          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/use-user-managed-identity-to-replace-connection-string-in-quot/ba-p/3891026",
+          "publishedOn": "2023-08-04T03:26:14.000Z",
+          "wordCount": 9817,
+          "title": "Use User managed identity to replace connection string in\"AzureWebJobsStorage\" for function apps",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/495040i8CF0ABEA901FF27B/image-size/original?v=v2&px=-1"
+        },
+        {
           "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/email-support-with-wordpress-on-azure-appservice/ba-p/3890486",
           "author": "RadhikaB",
           "description": "The email feature in WordPress is crucial for effective communication and user engagement. WordPress websites often require communication with users for various purposes, such as user registrations, password resets, campaigns, and contact form submissions etc. WordPress on App Service has been integrated with Azure Email Communication service to enable email feature.\n \nThe email Integration with WordPress on Azure AppService can be achieved in 2 ways:\n\nNewly created sites:  Email integration is enabled and configured out of the box.\nExisting WordPress sites:  It needs an explicit integration setup as per the steps outlined below.  \n\n1.    Configuring Email with New WordPress Websites\n \n\nCreate WordPress site from Azure Marketplace offering\nTo enhance the user experience, we have enabled em…",
@@ -3538,36 +3558,6 @@
           "wordCount": 9899,
           "title": "Build intelligence in your eCommerce applications using Azure Open AI",
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/449712i5934E26C57682620?v=v2"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/storage-explorer-1-28-new-features/ba-p/3761787",
-          "author": "meerahari",
-          "description": "We are excited to announce the release of Storage Explorer 1.28.0 that will help enhance our developer’s experience while accessing a variety of storage services!\n \nStorage Explorer 1.28.0:\n \nStorage Explorer strives to make it easy for developers to quickly access and manage many storage services under different accounts. After analyzing customer research and telemetry, version 1.28.0 will include new updates/features that will benefit our developers’ journey.\n \nTo highlight a few features, the Storage Explorer 1.28.0 now allows for Text preview enhancements and downloading multiple blobs at once when filtering based on a tag:\n \n\n \n \n\nText Preview Enhancements\n\nAdditional content-types have been added to the built in list of content-types which can be text previewed. These include: - text/xml - application/xml - application/json\nYou can now preview files of any size, but only the first 10MB of the file. You can download the file and open it in your default text editor to view the entire file. A status bar will appear at the top of the preview tab that informs you of files greater than 10MB\n\n\nMulti Blob Download When Filtering by Tags\n\nWhen filtering by tags, you can now download multiple blobs at once by clicking the Download in either the context menu or toolbar of the blob\n\n\n\n \nOther features in this update include:\n\nSAS Expiration Warnings\nTrust File Extension During Open\nCopy Between Blob Containers and File Shares\nFilter by Prefix in ADLS Gen2 Blob Containers\nSub-Directory Prefix Search in File Shares\nCopy Tables with Azure AD Credentials\nPreserving of Blob Tags During Clone\nLease Operations on ADLS Gen2 Folders\nADLS Gen2 Soft Delete Feature Flag Removed",
-          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/storage-explorer-1-28-new-features/ba-p/3761787",
-          "publishedOn": "2023-03-07T23:19:04.000Z",
-          "wordCount": 9556,
-          "title": "Storage Explorer 1.28 New Features",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/448546i6A15CBA5C749A0C1?v=v2"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/azure-function-app-doesn-t-work-after-unlinking-to-azure-static/ba-p/3759599",
-          "author": "Tony_Ju",
-          "description": "As we know, we can link existing Azure function app to Azure static web app. After that, the Azure Functions app will be mapped to the /api route of your static web app.\n \nIn the following example, function app tonytesthttp has been linked to static web app.\n \n\n \nWhen we try to access the function app outside static webapp, we will encounter Bad Request error. We understand that the static web app must do something to block the request. We can try to unlink the function app from static web app. However, you will find the function app still encounters the same error. How can we make our function app back to normal?\n \n\n \nIf you read the official document (Bring your own functions to Azure Static Web Apps | Microsoft Learn) carefully, you will find following statement.\n \nIf authentication and authorization policies aren't already set up on your existing Functions app, then the static web app has exclusive access to the API. To make your Functions app accessible to other applications, add another identity provider or change the security settings to allow unauthenticated access.\n \nIt seems that the link operation will add authentication limitation to only allow static webapp to access the function app. If you navigate to the authentication setting of the function app, you will find the static webapp was added as an identity provider. Even we unlink the function app to static webapp, the identity provider will not be removed automatically. We need to remove the identity provider manually. After that, the function app will work again.",
-          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/azure-function-app-doesn-t-work-after-unlinking-to-azure-static/ba-p/3759599",
-          "publishedOn": "2023-03-07T23:05:58.000Z",
-          "wordCount": 9591,
-          "title": "Azure function app doesn't work after unlinking to Azure static web app",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/447855i69180A26401209BF?v=v2"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/accelerated-admin-performance-with-wordpress-on-azure-app/ba-p/3761299",
-          "author": "abhishekreddy",
-          "description": "We are happy to announce that we have made significant improvements in the performance of the WP Admin.  Try out the WordPress site deploying from here.  \n   \n \n Although WordPress is an excellent content management system (CMS), it isn’t without its issues. Sometimes its admin panel can be laggy, preventing you from easily managing your website. We have always made sure that WordPress on Azure App Service meets the performance requirements of our customers. However, we got to learn from customer feedback that we could do better for the admin persona. So we have enhanced the offering with accelerated performance for admin pages.\n \n If you have created the website before 1 March 2023, please follow the steps described in blog post here: How to improve performance of WP Admin - WordPress on Azure App Service - Microsoft Community Hub to improve your WP Admin & overall site performance.\n \nSupport and Feedback\n \nIn case you need any support, you can open a support request at New support request - Microsoft Azure.\n \nIf you have any ideas about how we can make WordPress on Azure App Service better, please post your ideas at Post idea · Community (azure.com)\n \nor you could email us at wordpressonazure@microsoft.com to start a conversation.",
-          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/accelerated-admin-performance-with-wordpress-on-azure-app/ba-p/3761299",
-          "publishedOn": "2023-03-07T17:55:41.000Z",
-          "wordCount": 9519,
-          "title": "Accelerated Admin Performance with WordPress on Azure App Service",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/448409i4D95D61408C1907B/image-size/original?v=v2&px=-1"
         }
       ]
     },
@@ -4000,6 +3990,16 @@
       "feedUrl": "https://techcommunity.microsoft.com/plugins/custom/microsoft/o365/custom-blog-rss?tid=-7989146602148070206&board=FastTrackforAzureBlog&size=100",
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
+        {
+          "id": "https://techcommunity.microsoft.com/t5/fasttrack-for-azure/metadata-driven-pipelines-for-microsoft-fabric/ba-p/3891651",
+          "author": "jehayes",
+          "description": "Metadata-driven pipelines in Azure Data Factory, Synapse Pipelines, and now, Microsoft Fabric, give you the capability to ingest and transform data with less code, reduced maintenance and greater scalability than writing code or pipelines for every data source that needs to be ingested and transformed. The key lies in identifying the data loading and transformation pattern(s) for your data sources and destinations and then building the framework to support each pattern.\n \nIn this blog post, I will provide an overview of a Metadata driven pipeline in Microsoft Fabric that follows the medallion architecture (Bronze, Silver, Gold). The intent is not to provide a full tutorial on building metadata driven pipelines or Microsoft Fabric; rather it is show you some new features of Fabric and give …",
+          "link": "https://techcommunity.microsoft.com/t5/fasttrack-for-azure/metadata-driven-pipelines-for-microsoft-fabric/ba-p/3891651",
+          "publishedOn": "2023-08-04T21:56:02.000Z",
+          "wordCount": 11163,
+          "title": "Metadata Driven Pipelines for Microsoft Fabric",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/495279i05697AD0B962FBCA/image-size/original?v=v2&px=-1"
+        },
         {
           "id": "https://techcommunity.microsoft.com/t5/fasttrack-for-azure/create-an-azure-openai-langchain-chromadb-and-chainlit-chat-app/ba-p/3885602",
           "author": "paolosalvatori",
@@ -5317,16 +5317,6 @@
           "wordCount": 9789,
           "title": "Custom DNS server issues while connecting from Databricks to Event Hub",
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/448800i334B466FE8FEF456?v=v2"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/azure-paas-blog/azure-storage-how-to-migrate-azure-queue-data-from-one-account/ba-p/3758598",
-          "author": "rpadi450",
-          "description": "Storage queues are like service bus queue, the messages are not designed to store permanent like blobs/files, once the receiver processes the messages, they would be deleted. As queues use a publisher subscriber model, and the data is transient it may be easiest to recreate the queue. Please follow the below steps to migrate Azure Queue Data from one Storage account to another storage account:\n\nList all queues from the source storage account.\ncreate queues with the same names in the Target Storage account.\nRead every message from the source and write them to the destination.\n\nGuidelines:\n\nYour client must have network access to both the source and destination storage accounts. To learn how to configure the network settings for each storage account, see Configure Azure Storage firewalls and…",
-          "link": "https://techcommunity.microsoft.com/t5/azure-paas-blog/azure-storage-how-to-migrate-azure-queue-data-from-one-account/ba-p/3758598",
-          "publishedOn": "2023-03-08T04:59:35.000Z",
-          "wordCount": 9833,
-          "title": "Azure Storage | How to migrate Azure Queue Data from One Account to Another",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/447476i8F22C908CB85C38E?v=v2"
         }
       ]
     },
@@ -5335,6 +5325,16 @@
       "feedUrl": "https://techcommunity.microsoft.com/plugins/custom/microsoft/o365/custom-blog-rss?tid=2893852362688900935&board=AzureArchitectureBlog&size=50",
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
+        {
+          "id": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/empowering-ai-building-and-deploying-azure-ai-landing-zones-with/ba-p/3891249",
+          "author": "FreddyAyala",
+          "description": "To harness the true potential of AI technologies, like GPT-4, a robust and efficient infrastructure is crucial. Azure Landing Zones provide a structured approach to create a rock-solid cloud environment, while Azure OpenAI Service seamlessly handles AI model deployment and management.\n \nEnter Terraform—an Infrastructure as Code (IaC) tool that streamlines the process, ensuring repeatability, consistency, and security. With Terraform, developers and IT teams define the entire AI infrastructure in code, making it simpler to build, modify, and version resources.\nIn this article, we delve into leveraging Terraform to deploy the Azure OpenAI Landing Zone architecture concentrating on the connectivity and application aspects. By integrating various Azure services and implementing features like A…",
+          "link": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/empowering-ai-building-and-deploying-azure-ai-landing-zones-with/ba-p/3891249",
+          "publishedOn": "2023-08-04T18:14:59.000Z",
+          "wordCount": 12294,
+          "title": "Empowering AI: Building and Deploying Azure AI Landing Zones with Terraform",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/495112i80DA3D88097DEC9D/image-size/original?v=v2&px=-1"
+        },
         {
           "id": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/empowering-disaster-recovery-for-azure-vms-with-azure-site/ba-p/3885378",
           "author": "FreddyAyala",
@@ -5941,16 +5941,6 @@
           "wordCount": 12069,
           "title": "Quantum Computing on Azure | How it Works, What's Coming, & What You Can Try Today",
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/448683i322D3D70DC2BD286?v=v2"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/block-storage-options-with-azure-disk-storage-and-elastic-san/ba-p/3761614",
-          "author": "Zachary Cavanell",
-          "description": "Secure the best price performance at scale for block storage options with Azure Disk Storage and Azure Elastic SAN, and benefit from Azure’s industry leading SLAs for high availability, resiliency and disaster recovery. Storage is a major component that determines the cost of running workloads.\n \n\nAzure Disk Storage provides a comprehensive spectrum of block storage options for any workload, regardless of performance needs. This includes the new fully-managed Elastic SAN service in Azure to share storage across workloads in your network and give you a first-time alternative to running your SAN on-premises.\n \nAzure expert, Matt McSpirit, shares how to choose and attach the right OS or data disk storage as you provision VMs in Azure.\n \nProvision faster disks with low capacity.\n\nPremium SSD v…",
-          "link": "https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/block-storage-options-with-azure-disk-storage-and-elastic-san/ba-p/3761614",
-          "publishedOn": "2023-03-07T16:46:49.000Z",
-          "wordCount": 11436,
-          "title": "Block storage options with Azure Disk Storage and Elastic SAN",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/448490iA61C7AC7BF319170?v=v2"
         }
       ]
     },
@@ -7022,26 +7012,6 @@
           "wordCount": 4965,
           "title": "Write Your Bicep Files in Visual Studio",
           "imageUrl": "https://devblogs.microsoft.com/devops/wp-content/uploads/sites/6/2023/03/bicep.png"
-        },
-        {
-          "id": "https://devblogs.microsoft.com/devops/?p=66586",
-          "author": "Dan Hellem",
-          "description": "Not a lot to report other than a list of issues fixed 😁. Bug fixes will continue at full speed through sprint 219 as well.\nIssue\nSave Comments permission preventing the saving of images in discussion\nThe post New Boards Hub, Sprint 218 Update appeared first on Azure DevOps Blog.",
-          "link": "https://devblogs.microsoft.com/devops/new-boards-hub-sprint-218-update/",
-          "publishedOn": "2023-03-07T18:45:04.000Z",
-          "wordCount": 4788,
-          "title": "New Boards Hub, Sprint 218 Update",
-          "imageUrl": "https://devblogs.microsoft.com/devops/wp-content/uploads/sites/6/2022/10/sketch-3.png"
-        },
-        {
-          "id": "https://devblogs.microsoft.com/devops/?p=66568",
-          "author": "April Edwards",
-          "description": "Azure Load Testing became generally available in February 2023. It shipped with a lot of new features that were requested by you, the community. You can get started quickly from within the Azure portal, or upload your own custom JMeter script.\nThe post Integrate Azure Load Testing into Azure DevOps appeared first on Azure DevOps Blog.",
-          "link": "https://devblogs.microsoft.com/devops/integrate-azure-load-testing-into-azure-devops/",
-          "publishedOn": "2023-03-07T15:45:42.000Z",
-          "wordCount": 4952,
-          "title": "Integrate Azure Load Testing into Azure DevOps",
-          "imageUrl": "https://devblogs.microsoft.com/devops/wp-content/uploads/sites/6/2022/06/HERO.jpg"
         }
       ]
     },
@@ -7949,16 +7919,6 @@
           "wordCount": 2745,
           "title": "High-performance deep learning in Oracle Cloud with ONNX Runtime",
           "imageUrl": "https://cloudblogs.microsoft.com/opensource/wp-content/uploads/sites/37/2023/03/oracle-ort-1.png"
-        },
-        {
-          "id": "https://azure.microsoft.com/blog/discover-the-latest-innovations-at-azure-open-source-day-2023",
-          "author": "David Dennis",
-          "description": "Azure Open Source Day highlighted Microsoft's commitment to open Source and focused on how Open Source Technologies can be used to build intelligent apps faster and with more flexibility.\nThe post Discover the latest innovations at Azure Open Source Day 2023 appeared first on Microsoft Open Source Blog.",
-          "link": "https://azure.microsoft.com/blog/discover-the-latest-innovations-at-azure-open-source-day-2023",
-          "publishedOn": "2023-03-07T17:00:00.000Z",
-          "wordCount": 7247,
-          "title": "Discover the latest innovations at Azure Open Source Day 2023",
-          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-31e60ccac9f3593812f5d4f41632841ccd1088a7afaf594f030a8765f9d1ce99/images/shared/social/azure-icon-250x250.png"
         }
       ]
     },
@@ -7967,6 +7927,16 @@
       "feedUrl": "https://azurecomcdn.azureedge.net/en-us/updates/feed/?updateType=features",
       "siteUrl": "https://azure.microsoft.com/en-us/updates/",
       "articles": [
+        {
+          "id": "azure-load-testing-now-supports-jmeter-backend-listeners",
+          "author": null,
+          "description": "Azure Load Testing now supports JMeter backend listeners, so you can now configure a backend listener to export load test results to a data store, of your choice.",
+          "link": "https://azure.microsoft.com/en-us/updates/azure-load-testing-now-supports-jmeter-backend-listeners/",
+          "publishedOn": "2023-08-04T15:00:04.000Z",
+          "wordCount": 5407,
+          "title": "Azure Load Testing: Now supports JMeter backend listeners",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-513fe419669553cc61c6f7873fa33a3adf68965ba162b98872b4bea50e8922f1/images/shared/social/azure-icon-250x250.png"
+        },
         {
           "id": "general-availability-azure-netapp-files-smb-continuous-availability-ca-shares",
           "author": null,
@@ -7985,6 +7955,46 @@
           "publishedOn": "2023-08-03T16:00:50.000Z",
           "wordCount": 5458,
           "title": "Public Preview: Azure Chaos Studio supports new faults for App Service and Virtual Machines",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-513fe419669553cc61c6f7873fa33a3adf68965ba162b98872b4bea50e8922f1/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "azure-load-testing-run-tests-for-up-to-24-hours",
+          "author": null,
+          "description": "Azure Load Testing now enables running tests for durations up to 24 hours.",
+          "link": "https://azure.microsoft.com/en-us/updates/azure-load-testing-run-tests-for-up-to-24-hours/",
+          "publishedOn": "2023-08-03T15:00:51.000Z",
+          "wordCount": 5375,
+          "title": "Azure Load Testing: Run tests for up to 24 hours",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-513fe419669553cc61c6f7873fa33a3adf68965ba162b98872b4bea50e8922f1/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "azure-load-testing-create-and-manage-tests-and-test-runs-using-azure-cli",
+          "author": null,
+          "description": "Azure Load Testing now supports managing tests and test runs from Azure CLI",
+          "link": "https://azure.microsoft.com/en-us/updates/azure-load-testing-create-and-manage-tests-and-test-runs-using-azure-cli/",
+          "publishedOn": "2023-08-03T15:00:51.000Z",
+          "wordCount": 5414,
+          "title": "Azure Load Testing: Create and manage tests and test runs using Azure CLI",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-513fe419669553cc61c6f7873fa33a3adf68965ba162b98872b4bea50e8922f1/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "azure-load-testing-run-tests-with-100000-virtual-users",
+          "author": null,
+          "description": "Azure Load Testing now supports running tests with 100,000 virtual users, using up to 400 engine instances.",
+          "link": "https://azure.microsoft.com/en-us/updates/azure-load-testing-run-tests-with-100000-virtual-users/",
+          "publishedOn": "2023-08-03T15:00:50.000Z",
+          "wordCount": 5377,
+          "title": "Azure Load Testing: Run tests with 100,000 virtual users",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-513fe419669553cc61c6f7873fa33a3adf68965ba162b98872b4bea50e8922f1/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "general-availability-jboss-eap-on-app-service-clustering",
+          "author": null,
+          "description": "JBoss EAP on App Service clustering is now generally available on Azure, enabling automatic, efficient clustering and auto-scaling for your high-availability applications.",
+          "link": "https://azure.microsoft.com/en-us/updates/general-availability-jboss-eap-on-app-service-clustering/",
+          "publishedOn": "2023-08-03T15:00:49.000Z",
+          "wordCount": 5443,
+          "title": "General availability: JBoss EAP on App Service Clustering",
           "imageUrl": "https://azurecomcdn.azureedge.net/cvt-513fe419669553cc61c6f7873fa33a3adf68965ba162b98872b4bea50e8922f1/images/shared/social/azure-icon-250x250.png"
         },
         {
@@ -11566,26 +11576,6 @@
           "wordCount": 5491,
           "title": "Public Preview: Collect Syslog from AKS nodes using Azure Monitor - Container Insights",
           "imageUrl": "https://azurecomcdn.azureedge.net/cvt-31e60ccac9f3593812f5d4f41632841ccd1088a7afaf594f030a8765f9d1ce99/images/shared/social/azure-icon-250x250.png"
-        },
-        {
-          "id": "generally-available-app-insights-extension-for-azure-virtual-machines-and-vm-scale-sets",
-          "author": null,
-          "description": "Application insights extension enables easy to use application monitoring for IIS-hosted .NET Framework and .NET Core applications running on Azure VMs and VM scale sets.",
-          "link": "https://azure.microsoft.com/en-us/updates/generally-available-app-insights-extension-for-azure-virtual-machines-and-vm-scale-sets/",
-          "publishedOn": "2023-03-07T23:12:47.000Z",
-          "wordCount": 5683,
-          "title": "Generally available: App Insights Extension for Azure Virtual Machines and VM Scale Sets",
-          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-d3559c0734f4c7c4c6fd6aabd6d0d9f994e32b1ceb5b3c6898f387fe812499a2/images/shared/social/azure-icon-250x250.png"
-        },
-        {
-          "id": "public-preview-data-sharing-lineage-and-search-for-azure-storage-in-microsoft-purview",
-          "author": null,
-          "description": "Data Sharing Lineage is now available in Microsoft Purview for Azure Data Lake Storage (ADLS) Gen2 and Azure Blob (Blob) Storage in public preview. Data Sharing Lineage is aimed to provide detailed…",
-          "link": "https://azure.microsoft.com/en-us/updates/public-preview-data-sharing-lineage-and-search-for-azure-storage-in-microsoft-purview/",
-          "publishedOn": "2023-03-07T18:00:01.000Z",
-          "wordCount": 5568,
-          "title": "Public Preview: Data sharing lineage and search for Azure Storage in Microsoft Purview",
-          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-d3559c0734f4c7c4c6fd6aabd6d0d9f994e32b1ceb5b3c6898f387fe812499a2/images/shared/social/azure-icon-250x250.png"
         }
       ]
     },
@@ -12383,16 +12373,6 @@
           "wordCount": 4619,
           "title": "Microsoft Graph .NET SDK v5 is now generally available",
           "imageUrl": "https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2023/03/3.7.23.jpg"
-        },
-        {
-          "id": "https://devblogs.microsoft.com/microsoft365dev/?p=13108",
-          "author": "Waldek Mastykarz",
-          "description": "Last week we launched “Hack Together: Microsoft Graph and .NET” - a virtual hackathon all about building apps with Microsoft Graph and .NET. Here’s what happened last week and what’s still to come.\nThe post Hack Together: Microsoft Graph and .NET week 1 recap and what’s coming appeared first on Microsoft 365 Developer Blog.",
-          "link": "https://devblogs.microsoft.com/microsoft365dev/hack-together-microsoft-graph-and-dotnet-week-1-recap/",
-          "publishedOn": "2023-03-07T15:21:33.000Z",
-          "wordCount": 4831,
-          "title": "Hack Together: Microsoft Graph and .NET week 1 recap and what’s coming",
-          "imageUrl": "https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2023/03/hack-together-microsoft-graph-dotnet-session-03.png"
         }
       ]
     }
