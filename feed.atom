@@ -2,10 +2,59 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2023-08-17T00:57:32.506Z</updated>
+    <updated>2023-08-18T00:58:12.969Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[New Teams Toolkit for Visual Studio release with exciting features for .NET developers]]></title>
+        <id>https://devblogs.microsoft.com/microsoft365dev/?p=15019</id>
+        <link href="https://devblogs.microsoft.com/microsoft365dev/new-teams-toolkit-for-visual-studio-release-with-exciting-features-for-net-developers/"/>
+        <updated>2023-08-17T15:30:14.000Z</updated>
+        <summary type="html"><![CDATA[Learn about the newest capabilities for .NET developers in the latest version of Teams Toolkit for Visual Studio.
+The post New Teams Toolkit for Visual Studio release with exciting features for .NET developers appeared first on Microsoft 365 Developer Blog.]]></summary>
+        <author>
+            <name>Yu Zhang</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Troubleshooting “InvalidBlock” Exception during upload operation]]></title>
+        <id>https://techcommunity.microsoft.com/t5/azure-paas-blog/troubleshooting-invalidblock-exception-during-upload-operation/ba-p/3901823</id>
+        <link href="https://techcommunity.microsoft.com/t5/azure-paas-blog/troubleshooting-invalidblock-exception-during-upload-operation/ba-p/3901823"/>
+        <updated>2023-08-17T11:31:35.000Z</updated>
+        <summary type="html"><![CDATA[The Put Block operation is used in conjunction with other operations to upload data as blocks to a block blob. This operation is mainly used for uploading large files or data streams in smaller blocks, rather than uploading the entire content in a single request.
+ 
+There can be different types of errors that you might encounter while uploading blobs via Put Block and Put Block List and has been discussed under blog - Troubleshooting InvalidBlock 'The specified block list is invalid’ based errors - Microsoft Community Hub.
+ 
+In this blog, we will mainly focus on how to upload a block blob by PUT Block & PUT Block List APIs using POSTMAN, how to deal with “Invalid Block/Blob 'The specified blob or block content is invalid'” error due to incorrect BlockID and make use of GetBlockList API to i…]]></summary>
+        <author>
+            <name>shailjaT</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Azure PowerShell Functions - connect SFTP and Storage Account]]></title>
+        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/azure-powershell-functions-connect-sftp-and-storage-account/ba-p/3898637</id>
+        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/azure-powershell-functions-connect-sftp-and-storage-account/ba-p/3898637"/>
+        <updated>2023-08-17T07:49:50.000Z</updated>
+        <summary type="html"><![CDATA[Background
+Recently, I have touched on a case when the customer would like to interact with Azure PowerShell Function to work with Storage Account and SFTP server. There are some advantages why customers would like to apply for this solution:
+
+PowerShell allows IT admins to apply system-level integration with other components more easily.
+Azure Functions provide the convenience of URI/timer-triggered maintenance tasks.
+
+Demand Analysis
+We will first start with the demand analysis. The task will be divided into the following sections:
+
+Pull the required file contents from Azure Storage Account, and store them inside Azure Function App.
+Upload files to another VM via SFTP.
+To work with Azure resources, we also need to apply proper authentication to enhance security.
+
+Sample Code
+If you are l…]]></summary>
+        <author>
+            <name>Mengyang</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Public Preview: Azure Elastic SAN Updates: Private endpoints & shared volumes]]></title>
         <id>azure-elastic-san-updates-private-endpoints-shared-volumes</id>
@@ -258,6 +307,17 @@ Azure Static Web Apps is the ideal service for hosting modern frontend web apps 
         <summary type="html"><![CDATA[Introduction:Data partitioning is a data management technique used to divide a large dataset into smaller, more manageable subsets called partitions or shards. Each partition contains a portion of the data, and these partitions can be stored and processed independently. The primary goal of data partitioning is to improve performance, scalability, and manageability in large-scale data systems.Imagine having a vast encyclopedia, and your task is to find a specific page containing a particular word. Instead of searching through the entire encyclopedia, you opt to navigate directly to the relevant section that might contain the desired information. This approach allows you to narrow down your search scope and quickly find the page you need. This concept of narrowing down the search space by di…]]></summary>
         <author>
             <name>Sally_Dabbah</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Exploring the Synergy between Web Development and Artificial Intelligence: A Beginner's Guide]]></title>
+        <id>https://techcommunity.microsoft.com/t5/educator-developer-blog/exploring-the-synergy-between-web-development-and-artificial/ba-p/3894049</id>
+        <link href="https://techcommunity.microsoft.com/t5/educator-developer-blog/exploring-the-synergy-between-web-development-and-artificial/ba-p/3894049"/>
+        <updated>2023-08-15T07:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Artificial intelligence (AI) and web development are two of the most rapidly evolving fields in technology. In recent years, there has been a growing interest in the synergy between these two technologies. AI can be used to automate many of the tasks involved in web development, while web development can be used to create platforms for AI applications. 
+In a world where AI is revolutionizing every aspect of technology, Azure Cognitive Services stands out as a game-changer. Empowering developers and data scientists of all levels, it brings cutting-edge AI models within reach through simple API calls. Today, we embark on a thrilling journey to explore the creation of the Online AI Text Translator - a web application that harnesses the potential of Python Flask and Azure Cognitive Services (T…]]></summary>
+        <author>
+            <name>MuhammadSamiullah</name>
         </author>
     </entry>
     <entry>
@@ -16183,144 +16243,6 @@ The post Updated public preview of SharePoint Framework 1.17 – Preview on upco
 These new models were specifically designed for multi-turn conversations and come with an updated API to facilitate conversational dialogue. When using these models on Azure OpenAI, there are two important changes for you to keep in mind: the introduction of the Chat Completions API (preview) and changes to how we'll be versioning models. This blog post will walk through these changes and what you should keep in mind when getting started with the ChatGPT and GPT-4 mode…]]></summary>
         <author>
             <name>DerekLegenzoff</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[ALM GitHub Sample Workflows for Power Platform: A Comprehensive Guide for Computer Science Students]]></title>
-        <id>https://techcommunity.microsoft.com/t5/educator-developer-blog/alm-github-sample-workflows-for-power-platform-a-comprehensive/ba-p/3773472</id>
-        <link href="https://techcommunity.microsoft.com/t5/educator-developer-blog/alm-github-sample-workflows-for-power-platform-a-comprehensive/ba-p/3773472"/>
-        <updated>2023-03-21T07:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Learn about the new Power Platform workflows on GitHub that add flexibility and functionality to your tasks. Explore the Create Environment, Export, Unpack, and Commit, and Delete Environment workflows, and see how they can streamline your workflows. Perfect for Computer Science students interested in Power Platform or DevOps.
- 
-GitHub Source control is important for students to learn when working with Power Apps (and other software development projects) because it helps them to:
-
-
-Collaborate with others: With source control, multiple people can work on the same project at the same time without interfering with each other's work. This is especially important for group projects, where students need to work together to complete a project.
-
-
-Keep track of changes: Source control allows stude…]]></summary>
-        <author>
-            <name>Lee Stott</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[This Week in Spring - March 21st, 2023]]></title>
-        <id>https://spring.io/blog/2023/03/21/this-week-in-spring-march-21st-2023</id>
-        <link href="https://spring.io/blog/2023/03/21/this-week-in-spring-march-21st-2023"/>
-        <updated>2023-03-21T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Level up your Java code and explore what Spring can do for you.]]></summary>
-        <author>
-            <name>Josh Long</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Spring Data JPA introduces query parser!]]></title>
-        <id>https://spring.io/blog/2023/03/21/spring-data-jpa-introduces-query-parser</id>
-        <link href="https://spring.io/blog/2023/03/21/spring-data-jpa-introduces-query-parser"/>
-        <updated>2023-03-21T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Level up your Java code and explore what Spring can do for you.]]></summary>
-        <author>
-            <name>Greg L. Turnquist</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Certification – Is It Even Relevant, Should You Certify, What Will You Learn & How Do You Pass?]]></title>
-        <id>https://techcommunity.microsoft.com/t5/azure-architecture-blog/certification-is-it-even-relevant-should-you-certify-what-will/ba-p/3773494</id>
-        <link href="https://techcommunity.microsoft.com/t5/azure-architecture-blog/certification-is-it-even-relevant-should-you-certify-what-will/ba-p/3773494"/>
-        <updated>2023-03-20T22:37:15.000Z</updated>
-        <summary type="html"><![CDATA[I pose a lot of questions in this title. IT certifications, do you have any? Perhaps you have none, perhaps you have 10, but does it really matter and what do they really prove? 23 years ago, two months after finishing high school I sat my first IT certification exam, and leading up to where I am today (Chief Architect @ Microsoft ANZ), I have covered on my journey hardware, networking, security, AI, multiple cloud vendors and industry-based frameworks (ITIL / TOGAF). But is certification the silver bullet in building a successful career in IT? The short answer is no, but it's not boolean and certification has played its part.Having a dose of natural curiosity has been a major factor. My journey started at age 5, a 8088 XT based computer (CGA, no HDD, Low density FDD). A lot of what I did …]]></summary>
-        <author>
-            <name>shanebaldacchino</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[New in Speech Studio: Upload Your Own Videos and Audio for Captioning and Call Center Transcription]]></title>
-        <id>https://techcommunity.microsoft.com/t5/ai-cognitive-services-blog/new-in-speech-studio-upload-your-own-videos-and-audio-for/ba-p/3773409</id>
-        <link href="https://techcommunity.microsoft.com/t5/ai-cognitive-services-blog/new-in-speech-studio-upload-your-own-videos-and-audio-for/ba-p/3773409"/>
-        <updated>2023-03-20T20:39:12.000Z</updated>
-        <summary type="html"><![CDATA[Considering incorporating speech AI for your business? Then the Azure AI Speech Studio's new demo experience is perfect for you. Our latest scenario-focused pages allow you to utilize your own audio/video input and envision how Speech services can be tailored specifically to meet your individual requirements, specifically for video captioning and call transcription & analytics solutions.
- 
-Apply Azure Speech AI and GPT to your Own Data
- 
-Until now, you could use Speech Studio's scenario pages to preview our powerful Speech AI and conversation analytics features using pre-selected samples. As of today, our newest feature inside Speech Studio enables you to preview how our Speech and Language AI can be applied to your own data.
- 
-The video captioning experience helps you envision how the Cognitive Service for Speech can be used to caption videos in real-time, or how our batch API could be used to subtitle videos and enhance the experience using features such as phrase list, profanity masking, and stable partials.
- 
-In the call transcription and analytics experience, you can get a transcript of your own agent-customer conversation, along with speaker separation for two channel (stereo) audio, speaker diarization for single channel (mono) audio, sentiment analysis, PII redaction, and conversation summary powered by OpenAI's GPT models.
- 
-Both pages also provide you with sample code, allowing you to kickstart your development and deploy your own solution in a matter of minutes.
- 
-How to Use
- 
-
-
-
- 
-Get Started Today
- 
-Visit Speech Studio today to get started with our scenario experiences and use the sample code to deploy a solution. You can also use our GitHub repository for sample audios and videos, along with sample code.]]></summary>
-        <author>
-            <name>ut-karsh</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[In-App User Experience with Flutter Embedded Web View and Azure Active Directory B2C User Flows]]></title>
-        <id>https://devblogs.microsoft.com/cse/?p=14586</id>
-        <link href="https://devblogs.microsoft.com/cse/2023/03/20/azure_ad_b2c_flutter/"/>
-        <updated>2023-03-20T19:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Guidance on how we can integrate Azure AD B2C's user login workflow within mobile app development using Flutter.
-The post In-App User Experience with Flutter Embedded Web View and Azure Active Directory B2C User Flows appeared first on CSE Developer Blog.]]></summary>
-        <author>
-            <name>Mohana Bhattacharya</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[General Availability: ASP. NET web app migration to Azure App Service using PowerShell Scripts]]></title>
-        <id>general-availability-asp-net-web-app-migration-to-azure-app-service-using-powershell-scripts</id>
-        <link href="https://azure.microsoft.com/en-us/updates/general-availability-asp-net-web-app-migration-to-azure-app-service-using-powershell-scripts/"/>
-        <updated>2023-03-20T17:47:40.000Z</updated>
-        <summary type="html"><![CDATA[ASP. NET web app migration to Azure App Service using PowerShell Scripts is now generally available.]]></summary>
-        <author>
-            <name>Azure service updates</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[General availability: Serilog Sink for Azure Data Explorer]]></title>
-        <id>general-availability-serilog-sink-for-azure-data-explorer</id>
-        <link href="https://azure.microsoft.com/en-us/updates/general-availability-serilog-sink-for-azure-data-explorer/"/>
-        <updated>2023-03-20T17:00:09.000Z</updated>
-        <summary type="html"><![CDATA[Azure Data Explorer now supports ingestion of data from .NET Applications via the Serilog Sink.]]></summary>
-        <author>
-            <name>Azure service updates</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Announcing Azure Active Directory backed authentication for JMS 2.0 API on Azure Service Bus]]></title>
-        <id>https://techcommunity.microsoft.com/t5/messaging-on-azure-blog/announcing-azure-active-directory-backed-authentication-for-jms/ba-p/3771409</id>
-        <link href="https://techcommunity.microsoft.com/t5/messaging-on-azure-blog/announcing-azure-active-directory-backed-authentication-for-jms/ba-p/3771409"/>
-        <updated>2023-03-20T16:00:00.000Z</updated>
-        <summary type="html"><![CDATA[We are excited to share that Azure Service Bus now supports Azure Active Directory (AAD) based access control for its JMS 2.0 API. The azure-servicebus-jms library has been updated and is readily available on Maven Central.
- 
-Although AAD-backed authentication has been an option for Service Bus for some time already, until now, users of the JMS 2.0 API still had to resort to local authentication using Shared Access Signatures (SAS). This new release brings a welcome change as it allows users to leverage AAD-based authentication, using service principals, and system- and user assigned managed identities.
- 
-If you would like to utilize AAD authentication for the JMS 2.0 API on Service Bus instead of SAS based authentication, ensure that the latest library is added to your project's build pat…]]></summary>
-        <author>
-            <name>EldertGrootenboer</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Turn your database into an API in minutes with Data API builder for Azure Databases]]></title>
-        <id>https://techcommunity.microsoft.com/t5/educator-developer-blog/turn-your-database-into-an-api-in-minutes-with-data-api-builder/ba-p/3770345</id>
-        <link href="https://techcommunity.microsoft.com/t5/educator-developer-blog/turn-your-database-into-an-api-in-minutes-with-data-api-builder/ba-p/3770345"/>
-        <updated>2023-03-20T07:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Source: Data API builder GitHub
- 
-After creating and populating a database, the next step is providing access to its data through an API. If you’ve ever faced a scenario like this, you’ve probably written code to create, read, update, or delete, known as CRUD (Create, Read, Update, Delete) operations for each endpoint. What if there was a way to simplify this step?
- 
-What is Data API builder?
-The Data API Builder is a Microsoft open-source engine that converts REST and GraphQL into database queries. With the Data API builder, you can generate code based on your database schema that’s accessible through a REST or GraphQL API that will work with any language, platform, or device. It also comes with support for behaviors for organizing the data that require additional code, like pagination, f…]]></summary>
-        <author>
-            <name>jasminegreenaway</name>
         </author>
     </entry>
 </feed>
