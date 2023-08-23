@@ -6,6 +6,16 @@
       "siteUrl": "https://spring.io",
       "articles": [
         {
+          "id": "https://spring.io/blog/2023/08/22/tackling-the-oauth2-client-component-model-in-spring-security",
+          "author": "Steve Riesenberg",
+          "description": "Level up your Java code and explore what Spring can do for you.",
+          "link": "https://spring.io/blog/2023/08/22/tackling-the-oauth2-client-component-model-in-spring-security",
+          "publishedOn": "2023-08-22T00:00:00.000Z",
+          "wordCount": 8350,
+          "title": "Tackling the OAuth2 Client component model in Spring Security",
+          "imageUrl": "https://spring.io/img/og-spring.png"
+        },
+        {
           "id": "https://spring.io/blog/2023/08/17/a-bootiful-podcast-tadaya-tsuyukubo-creator-of-r2dbc-proxy-datasource-proxy",
           "author": "Josh Long",
           "description": "Level up your Java code and explore what Spring can do for you.",
@@ -1859,6 +1869,26 @@
       "feedUrl": "https://techcommunity.microsoft.com/plugins/custom/microsoft/o365/custom-blog-rss?tid=2893852362688900935&board=AppsonAzureBlog&size=100",
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
+        {
+          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/introducing-microsoft-playwright-testing-private-preview/ba-p/3905705",
+          "author": "Vanshvsingh",
+          "description": "We are excited to introduce Microsoft Playwright Testing, a new service built for running Playwright tests easily at scale. Playwright is a fast-growing, open-source framework that enables reliable end-to-end testing and automation for modern web apps. Microsoft Playwright Testing uses the cloud to enable you to run Playwright tests with much higher parallelization across different operating system-browser combinations simultaneously. This means getting tests done faster, which can help speed up delivery of features without sacrificing quality. \n \nWe are currently in private preview and need your feedback to help shape this service! To get started, join the waitlist. \n \nGet test suite results faster \nAutomating end-to-end tests with Playwright helps ensure your web app works the way you ex…",
+          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/introducing-microsoft-playwright-testing-private-preview/ba-p/3905705",
+          "publishedOn": "2023-08-22T15:01:13.000Z",
+          "wordCount": 9985,
+          "title": "Introducing Microsoft Playwright Testing private preview",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/500396i4689ECC1024CE854/image-size/original?v=v2&px=-1"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/how-to-remove-the-php-x-powered-by-header-from-http-response-for/ba-p/3905880",
+          "author": "Arjun_Baliga",
+          "description": "We can follow the below steps to remove the PHP X-Powered-By header from HTTP response for PHP 8.x apps on Linux App Service –\nBy default, PHP version is getting displayed as in the below screenshot-\n\n \n Updating PHP Settings-\n\nGo to your KUDU site https://<sitename>.scm.azurewebsites.net.\nSelect Bash or SSH from the top menu.\nIn Bash/SSH, go to your \"/home/site\" directory.\nCreate a directory called \"ini\" (i.e. mkdir ini)\nChange directories to \"ini\".\nWe'll need to create an \"ini\" file to add our settings to.  In this example, I'm using \"settings.ini\".  There are no file editors such as Vi, Vim, or Nano so we'll simply use echo to add the settings to the file.  I'm changing the expose_php setting to Off.  Below is the command that I used to add the setting and create an \"settings.ini\" file if one doesn't already exist.\n\n NOTE:  If you already have an extensions.ini file, you can use the same command which will add the new setting to the file. \n/home/site/ini>echo \" expose_php = Off \" >> settings.ini\nIf using SSH, you can use vi to create/edit the settings file using the following commands.\n\n vi settings.ini\n Press \"i\" on your keyboard to start editing and add the following.\n\n expose_php = Off  \n3. Press \"Esc\", then \":wq!\" and enter to save.\nAdd an Application Setting-\nWe'll now need to go to the Azure Portal and add an Application Setting to scan the \"ini\" directory\n              1) Go to the Azure Portal (https://portal.azure.com) and select your App Service Linux PHP application.\n              2) Select Application Settings for the app.\n              3) Under the Application settings section, press the \"+ Add new setting\".\n              4) For the App Setting Name, enter \"PHP_INI_SCAN_DIR\". For the value, enter \"/usr/local/etc/php/conf.d:/home/site/ini\"\n \nTesting – \nGo to kudu site and run the command below and you can verify that PHP header is removed.\nCURL -I <site url pointing to a PHP script>",
+          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/how-to-remove-the-php-x-powered-by-header-from-http-response-for/ba-p/3905880",
+          "publishedOn": "2023-08-22T09:37:50.000Z",
+          "wordCount": 9893,
+          "title": "How to remove the PHP X-Powered-By header from HTTP response for PHP 8.x apps on Linux App Service",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/500397i401FF6E74D8E5D81/image-size/original?v=v2&px=-1"
+        },
         {
           "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/maximizing-value-streamlined-cloud-solutions-with-prime-cost/ba-p/3904599",
           "author": "Asir-Selvasingh",
@@ -5360,6 +5390,16 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/t5/azure-migration-and/announcing-new-enhancements-for-azure-vmware-solution/ba-p/3906272",
+          "author": "BrettTanzer",
+          "description": "Announcing new enhancements for Azure VMware Solution\nI’m writing to you today from VMware Explore in Las Vegas, where my team and I are excited to meet with customers and partners in person! Most organizations recognize that by running workloads in the cloud, they can achieve more resilience and security while setting themselves up for agility and innovation to meet any business challenge or opportunity. Azure VMware Solution allows customers to migrate to the cloud more quickly, leveraging existing skillsets and little need for refactoring.\n \n“We’ve become 100 percent based in Azure in three and a half years, gaining a modern technology footprint and performance improvements using Azure VMware Solution and a modern application stack.”  — Doug Caldwell, Vice President of IT Infrastructure…",
+          "link": "https://techcommunity.microsoft.com/t5/azure-migration-and/announcing-new-enhancements-for-azure-vmware-solution/ba-p/3906272",
+          "publishedOn": "2023-08-22T16:03:21.000Z",
+          "wordCount": 10283,
+          "title": "Announcing new enhancements for Azure VMware Solution",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/500363i78E8ADBB6BE2B8E3/image-size/original?v=v2&px=-1"
+        },
+        {
           "id": "https://techcommunity.microsoft.com/t5/azure-migration-and/azure-vmware-solution-performance-design-considerations/ba-p/3903291",
           "author": "rvandenbedem",
           "description": "Azure VMware Solution Design Series\n \n\nAvailability Design Considerations\nRecoverability Design Considerations\nPerformance Design Considerations\n\n \nOverview\nA global enterprise wants to migrate thousands of VMware vSphere virtual machines (VMs) to Microsoft Azure as part of their application modernization strategy. The first step is to exit their on-premises data centers and rapidly relocate their legacy application VMs to the Azure VMware Solution as a staging area for the first phase of their modernization strategy. What should the Azure VMware Solution look like?\n \nAzure VMware Solution is a VMware validated first party Azure service from Microsoft that provides private clouds containing VMware vSphere clusters built from dedicated bare-metal Azure infrastructure. It enables customers t…",
@@ -5553,6 +5593,16 @@
       "feedUrl": "https://devblogs.microsoft.com/cse/feed/",
       "siteUrl": "https://devblogs.microsoft.com/cse/",
       "articles": [
+        {
+          "id": "https://devblogs.microsoft.com/cse/?p=14970",
+          "author": "Laura Lund (she/her)",
+          "description": "An Easy and Effective Approach to Acceptance Testing for Customer Engagements\nThe post Using Postman to Create Acceptance Tests for Customer Engagements appeared first on CSE Developer Blog.",
+          "link": "https://devblogs.microsoft.com/cse/2023/08/22/using-postman-for-customer-engagement-acceptance-tests/",
+          "publishedOn": "2023-08-22T07:00:00.000Z",
+          "wordCount": 4670,
+          "title": "Using Postman to Create Acceptance Tests for Customer Engagements",
+          "imageUrl": "https://devblogs.microsoft.com/cse/wp-content/uploads/sites/55/2023/08/using-postman-for-customer-engagement-acceptance-tests.png"
+        },
         {
           "id": "https://devblogs.microsoft.com/cse/?p=14937",
           "author": "Kanishk Tantia (HE/HIM)",
@@ -6103,6 +6153,16 @@
       "feedUrl": "https://devblogs.microsoft.com/devops/feed/",
       "siteUrl": "https://devblogs.microsoft.com/devops/",
       "articles": [
+        {
+          "id": "https://devblogs.microsoft.com/devops/?p=67425",
+          "author": "Jorge Fernandez",
+          "description": "Rust is earning its place as a go-to language for developers everywhere. Why? It’s fast, it’s safe, and the community around it is supportive and hands-on. With clear guides and a collective push to help each other out, Rust feels less like just another tool and more like a reliable coding partner for modern programming challenges.\nThe post Introducing Azure Artifacts support for Rust Crates appeared first on Azure DevOps Blog.",
+          "link": "https://devblogs.microsoft.com/devops/introducing-azure-artifacts-support-for-rust-crates/",
+          "publishedOn": "2023-08-22T20:36:44.000Z",
+          "wordCount": 4453,
+          "title": "Introducing Azure Artifacts support for Rust Crates",
+          "imageUrl": "https://devblogs.microsoft.com/devops/wp-content/uploads/sites/6/2019/11/Artifacts.jpg"
+        },
         {
           "id": "https://devblogs.microsoft.com/devops/?p=67389",
           "author": "Gloridel Morales",
@@ -10684,6 +10744,16 @@
       "feedUrl": "https://devblogs.microsoft.com/microsoft365dev/feed/",
       "siteUrl": "https://devblogs.microsoft.com/microsoft365dev/",
       "articles": [
+        {
+          "id": "https://devblogs.microsoft.com/microsoft365dev/?p=15046",
+          "author": "Luyao Wang",
+          "description": "Provide richer experiences and better user engagement with activity feed notification APIs in Microsoft Graph.\nThe post Send Microsoft Teams activity feed notifications using resource-specific content permissions appeared first on Microsoft 365 Developer Blog.",
+          "link": "https://devblogs.microsoft.com/microsoft365dev/send-microsoft-teams-activity-feed-notifications-using-resource-specific-content-permissions/",
+          "publishedOn": "2023-08-22T18:41:06.000Z",
+          "wordCount": 4234,
+          "title": "Send Microsoft Teams activity feed notifications using resource-specific content permissions",
+          "imageUrl": "https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2023/08/cp-scaled.jpg"
+        },
         {
           "id": "https://devblogs.microsoft.com/microsoft365dev/?p=15009",
           "author": "Junjie Li",
