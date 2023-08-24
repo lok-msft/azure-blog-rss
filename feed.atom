@@ -2,10 +2,37 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2023-08-23T00:58:43.691Z</updated>
+    <updated>2023-08-24T00:58:33.956Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Metadata Driven Pipelines for Microsoft Fabric – Part 2, Data Warehouse Style]]></title>
+        <id>https://techcommunity.microsoft.com/t5/fasttrack-for-azure/metadata-driven-pipelines-for-microsoft-fabric-part-2-data/ba-p/3906749</id>
+        <link href="https://techcommunity.microsoft.com/t5/fasttrack-for-azure/metadata-driven-pipelines-for-microsoft-fabric-part-2-data/ba-p/3906749"/>
+        <updated>2023-08-23T21:54:36.000Z</updated>
+        <summary type="html"><![CDATA[Microsoft Fabric provides both Data Lakehouse and Data Warehouse platforms for Data Analytics. In a separate post, I illustrated a Metadata Driven Pipeline pattern for Microsoft Fabric following the medallion architecture with Fabric Data Lakehouses used for both the Bronze and Gold layers and SQL views over tables for the Silver layer. Fabric Data Lakehouse is perfect for landing data into the Bronze layer.  And if I can host my star schema in a Fabric Data Lakehouse, why consider Fabric Data Warehouse as the Gold layer?  Because Fabric
+Data Warehouse has some features that may be a better fit for your organization.
+ 
+Consider Fabric Data Warehouse for the Gold layer when:
+
+Support for multi-table transactions is needed
+Migrating stored procedures for ETL from other SQL platforms
+T-SQL op…]]></summary>
+        <author>
+            <name>jehayes</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[This Week in Spring - August 22, 2023]]></title>
+        <id>https://spring.io/blog/2023/08/23/this-week-in-spring-august-22-2023</id>
+        <link href="https://spring.io/blog/2023/08/23/this-week-in-spring-august-22-2023"/>
+        <updated>2023-08-23T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Level up your Java code and explore what Spring can do for you.]]></summary>
+        <author>
+            <name>Josh Long</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Introducing Azure Artifacts support for Rust Crates]]></title>
         <id>https://devblogs.microsoft.com/devops/?p=67425</id>
@@ -39,6 +66,16 @@ I’m writing to you today from VMware Explore in Las Vegas, where my team and I
 “We’ve become 100 percent based in Azure in three and a half years, gaining a modern technology footprint and performance improvements using Azure VMware Solution and a modern application stack.”  — Doug Caldwell, Vice President of IT Infrastructure…]]></summary>
         <author>
             <name>BrettTanzer</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Public preview: Rate-limit rules for Application Gateway Web Application Firewall]]></title>
+        <id>public-preview-ratelimit-rules-for-application-gateway-web-application-firewall</id>
+        <link href="https://azure.microsoft.com/en-us/updates/public-preview-ratelimit-rules-for-application-gateway-web-application-firewall/"/>
+        <updated>2023-08-22T16:00:39.000Z</updated>
+        <summary type="html"><![CDATA[Protect applications from abnormally high levels of traffic with rate-limit rules on Azure’s regional Web Application Firewall running on Application Gateway.]]></summary>
+        <author>
+            <name>Azure service updates</name>
         </author>
     </entry>
     <entry>
@@ -15800,36 +15837,6 @@ The post Azure Cosmos DB for MongoDB vCore helps developers build intelligent ap
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[How ChatGPT Plugins (could) work]]></title>
-        <id>https://techcommunity.microsoft.com/t5/fasttrack-for-azure/how-chatgpt-plugins-could-work/ba-p/3761483</id>
-        <link href="https://techcommunity.microsoft.com/t5/fasttrack-for-azure/how-chatgpt-plugins-could-work/ba-p/3761483"/>
-        <updated>2023-03-27T12:16:43.000Z</updated>
-        <summary type="html"><![CDATA[OpenAI just announced ChatGPT Plugins - a way to have ChatGPT execute actions in the web. This doesn't just mean it can go to the internet and browse through up-to-date content and news, but also execute actions for us, like buying groceries, booking flights, and so much more!
- 
-The implementation is, at least conceptually, very simple:
-
-The plugin provider writes a specification for an API using the OpenAPI standard. This is a standard that's been around for a while, and is what powers tools like Swagger for API documentation.
-Then, this specification is compiled into a prompt, which explains to ChatGPT how it may use the API to enhance its answers. Think of a detailed prompt, including a description of each endpoint that's available.
-Finally, the user asks new questions. If ChatGPT decid…]]></summary>
-        <author>
-            <name>MarcoCardoso</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Scale-up a primary Nodetype using Powershell]]></title>
-        <id>https://techcommunity.microsoft.com/t5/azure-paas-blog/scale-up-a-primary-nodetype-using-powershell/ba-p/3778583</id>
-        <link href="https://techcommunity.microsoft.com/t5/azure-paas-blog/scale-up-a-primary-nodetype-using-powershell/ba-p/3778583"/>
-        <updated>2023-03-27T11:59:03.000Z</updated>
-        <summary type="html"><![CDATA[This article describes how to scale up a Service Fabric cluster primary node type with minimal downtime using PowerShell. In-place SKU upgrades are not recommended on Service Fabric cluster nodes, as such operations potentially involve data and availability loss so you can refer below method for scaling up a Service Fabric node type.
- 
-Note: We will be making use of PowerShell cmdlets for all the changes we are going to perform in the cluster, so in case you want to go with the ARM template approach to add a VMSS you can refer Scale up an Azure Service Fabric primary node type - Azure Service Fabric | Microsoft Learn. This document is not applicable to add node type which is using remote storage i.e. managed disk.Please take care of these prerequisites before you start the process.
-
-      …]]></summary>
-        <author>
-            <name>radsharma</name>
-        </author>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[Mastering Azure AI: #30DaysOfAzureAI Launches March 27th with Daily Posts Throughout April]]></title>
         <id>https://techcommunity.microsoft.com/t5/educator-developer-blog/mastering-azure-ai-30daysofazureai-launches-march-27th-with/ba-p/3774810</id>
         <link href="https://techcommunity.microsoft.com/t5/educator-developer-blog/mastering-azure-ai-30daysofazureai-launches-march-27th-with/ba-p/3774810"/>
@@ -15848,28 +15855,6 @@ Challenge yourself and others. Join the Azure AI Skill Challenge and learn key A
 You’ll likely need access to Azure. For students, sign up for an Azure for Students free account, no credit card is required. Otherwise, create an…]]></summary>
         <author>
             <name>glovebox</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Transcribe audio to text from blob storage without writing any code using Power Automate]]></title>
-        <id>https://techcommunity.microsoft.com/t5/ai-cognitive-services-blog/transcribe-audio-to-text-from-blob-storage-without-writing-any/ba-p/3778471</id>
-        <link href="https://techcommunity.microsoft.com/t5/ai-cognitive-services-blog/transcribe-audio-to-text-from-blob-storage-without-writing-any/ba-p/3778471"/>
-        <updated>2023-03-27T03:35:43.000Z</updated>
-        <summary type="html"><![CDATA[We are happy to introduce the Power Automate Flow template "Transcribe audio files to text from Azure Blob" that helps you to automatically transcribe audio files to text from Azure Blob storage, then save the transcribed text back to Blob storage. By leveraging the Azure AI Speech Batch Transcription, it is able to support more than 100 languages and dialects with best-in-class transcription accuracy.
- 
-We have created a step-by-step tutorial below to assist you in getting started with the Power Automate Flow template.
- 
-Step-by-step tutorial
-
-
-
- 
-Prerequisites
-
-A Power Automate account is required. If you don’t have any, Sign up and sign in to Power Automate.
-A valid Speech or Cognitive Service multiple-service resource is required. If you don’t have any, Sign up for Speech up or Create …]]></summary>
-        <author>
-            <name>ArcherZ</name>
         </author>
     </entry>
     <entry>
