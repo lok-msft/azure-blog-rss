@@ -2,10 +2,100 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2023-08-25T00:59:54.180Z</updated>
+    <updated>2023-08-26T00:57:27.278Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Automating Migration from SQL Server Authentication to OAuth for Tabular Models: A Python Solution]]></title>
+        <id>https://techcommunity.microsoft.com/t5/azure-migration-and/automating-migration-from-sql-server-authentication-to-oauth-for/ba-p/3910028</id>
+        <link href="https://techcommunity.microsoft.com/t5/azure-migration-and/automating-migration-from-sql-server-authentication-to-oauth-for/ba-p/3910028"/>
+        <updated>2023-08-25T19:57:36.000Z</updated>
+        <summary type="html"><![CDATA[Introduction: The transition from SQL Server Authentication (SSA) to OAuth for our tabular modernization journey required changes in our legacy tabular models. These models used SQL queries in import tables, which are now required to be changed to M queries to implement OAuth authentication. This paper discusses the challenges faced during this migration and presents a Python script as a solution to automate the conversion process.
+Background: Tabular models are structured as BIM files containing various elements like data sources, measures, relationships, dimensions, queries, and roles in a nested JSON format. Changing the data sources from SQL server auth (SSA) which requires hardcoded username and passwords to OAuth which works on AAD required us to change various import statements from…]]></summary>
+        <author>
+            <name>arunsaxena</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Building your own DB Copilot for Azure SQL with Azure OpenAI GPT-4]]></title>
+        <id>https://devblogs.microsoft.com/azure-sql/?p=2290</id>
+        <link href="https://devblogs.microsoft.com/azure-sql/building-your-own-db-copilot-for-azure-sql-with-azure-openai-gpt-4/"/>
+        <updated>2023-08-25T19:42:35.000Z</updated>
+        <summary type="html"><![CDATA[Large Language Models (LLMs) have proven exceptional capabilities in chatting with unstructured, text data. But what if we want to interact with structured data?
+The post Building your own DB Copilot for Azure SQL with Azure OpenAI GPT-4 appeared first on Azure SQL Devs’ Corner.]]></summary>
+        <author>
+            <name>Valentina Alto</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Plotting "unique users" charts from API Management logs]]></title>
+        <id>https://techcommunity.microsoft.com/t5/fasttrack-for-azure/plotting-quot-unique-users-quot-charts-from-api-management-logs/ba-p/3909725</id>
+        <link href="https://techcommunity.microsoft.com/t5/fasttrack-for-azure/plotting-quot-unique-users-quot-charts-from-api-management-logs/ba-p/3909725"/>
+        <updated>2023-08-25T13:59:39.000Z</updated>
+        <summary type="html"><![CDATA[Plotting "unique users" charts from API Management logs
+It is quite a common requirement when working with API gateways (such as Azure API Management) to understand how many users are actively accessing your applications in the backend. However, the solution for that is not the same for everyone. For instance, a metric exposed out-of-the-box is the total number of HTTP requests... but that doesn't tell us how many unique users we have. Normally, an application running in the client devices generates multiple HTTP requests towards the backend.
+So... How can we get the number of active and unique users from Azure API Management data?
+ 
+The source code used in this article is hosted here.
+Defining what is a "unique user" in your context
+The first question we must ask ourselves is: how do you …]]></summary>
+        <author>
+            <name>AndreDewes_MSFT</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Deploying an Event-Driven-Job with Azure Container App Job and Azure Service Bus]]></title>
+        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/deploying-an-event-driven-job-with-azure-container-app-job-and/ba-p/3909279</id>
+        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/deploying-an-event-driven-job-with-azure-container-app-job-and/ba-p/3909279"/>
+        <updated>2023-08-25T08:36:27.000Z</updated>
+        <summary type="html"><![CDATA[Azure Container Apps jobs let you perform specific tasks inside containers that start, run for a short time, and then stop. You can make these tasks happen whenever you want, following a schedule, or when something specific occurs. These jobs work well for things like dealing with data, teaching computers, or situations where you need quick computing power without leaving a trace.
+ 
+This blog helps you in deploying an event driven job using Azure Container apps and Azure Service Bus. In this example, the trigger will be a message in Service bus Queue and the Azure container app Job reads the message present in the queue and prints the message in container app console log.
+ 
+Below are the steps to be performed:
+ 
+
+Create a Container Apps environment to deploy your container apps.
+Create an …]]></summary>
+        <author>
+            <name>karthi</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Calculating Chargebacks for Business Units/Projects Utilizing a Shared Azure OpenAI Instance]]></title>
+        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/calculating-chargebacks-for-business-units-projects-utilizing-a/ba-p/3909202</id>
+        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/calculating-chargebacks-for-business-units-projects-utilizing-a/ba-p/3909202"/>
+        <updated>2023-08-25T02:35:32.000Z</updated>
+        <summary type="html"><![CDATA[Azure OpenAI Service is at the forefront of technological innovation, offering REST API access to OpenAI's suite of revolutionary language models, including GPT-4, GPT-35-Turbo, and the Embeddings model series.
+ 
+Enhancing Throughput for Scale
+As enterprises seek to deploy OpenAI's powerful language models across various business units, they often require granular control over configuration and performance metrics. To address this need, Azure OpenAI Service is introducing dedicated throughput, a feature that provides a dedicated connection to OpenAI models with guaranteed performance levels. Throughput is quantified in terms of tokens per second (tokens/sec), allowing organizations to precisely measure and optimize the performance for both prompts and completions. The model of provisioned …]]></summary>
+        <author>
+            <name>shikhasinha</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Introducing the Azure Business Continuity Guide]]></title>
+        <id>https://techcommunity.microsoft.com/t5/fasttrack-for-azure/introducing-the-azure-business-continuity-guide/ba-p/3905424</id>
+        <link href="https://techcommunity.microsoft.com/t5/fasttrack-for-azure/introducing-the-azure-business-continuity-guide/ba-p/3905424"/>
+        <updated>2023-08-25T01:15:37.000Z</updated>
+        <summary type="html"><![CDATA[What is the Azure Business Continuity Guide (ABCG)?
+The Azure Business Continuity Guide provides a comprehensive set of recommendations to help customers define what BCDR looks like for their applications. Often a customer will ask us for help with their business continuity and disaster recovery plans. Sometimes, the customer simply needs a structured approach to protect one application in Microsoft Azure. In other cases, they have a portfolio of many applications in a hybrid environment that might never have had a good solution to protect everything with a single BCDR framework. In addition, Microsoft Azure offers a variety of services and features to help customers achieve high availability, disaster recovery, and backup for their applications and data. However, planning and implementing…]]></summary>
+        <author>
+            <name>sdolgin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[A Bootiful Podcast: cloud native Chris Richardson]]></title>
+        <id>https://spring.io/blog/2023/08/25/a-bootiful-podcast-cloud-native-chris-richardson</id>
+        <link href="https://spring.io/blog/2023/08/25/a-bootiful-podcast-cloud-native-chris-richardson"/>
+        <updated>2023-08-25T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Level up your Java code and explore what Spring can do for you.]]></summary>
+        <author>
+            <name>Josh Long</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Your Most Important Git Repos]]></title>
         <id>https://devblogs.microsoft.com/engineering-at-microsoft/?p=645</id>
@@ -15709,80 +15799,6 @@ VSCode installed.
 N…]]></summary>
         <author>
             <name>kevin_comba</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Data API Builder Quickstart Demo from VS Live Vegas]]></title>
-        <id>https://devblogs.microsoft.com/azure-sql/?p=1802</id>
-        <link href="https://devblogs.microsoft.com/azure-sql/data-api-builder-quickstart-demo-from-vs-live-vegas/"/>
-        <updated>2023-03-29T06:59:42.000Z</updated>
-        <summary type="html"><![CDATA[I was fortunate enough to be able to present Data API builder the week of March 20th at VS Live in Las Vegas and what an incredible group of attendees at that conference. During my session, I stepped through a live demo of Data API builder showing off REST and GraphQL endpoints on various database objects.
-The post Data API Builder Quickstart Demo from VS Live Vegas appeared first on Azure SQL Devs’ Corner.]]></summary>
-        <author>
-            <name>Brian Spendolini</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Azure OpenAI Service, ChatGPT and more: Explore the latest developer resources]]></title>
-        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/azure-openai-service-chatgpt-and-more-explore-the-latest/ba-p/3741547</id>
-        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/azure-openai-service-chatgpt-and-more-explore-the-latest/ba-p/3741547"/>
-        <updated>2023-03-29T00:02:45.000Z</updated>
-        <summary type="html"><![CDATA[Our April highlight includes Azure OpenAI Service, ChatGPT and open source related technologies to help you better understand the impact they have on today’s development landscape. Start learning with free training and documentation, watch demos to explore new tools, and watch on demand sessions from the recent Azure Open Source Day event to dive deeper.  
-Here’s some of the most recent resources to help you get started. 
- 
-Revolutionize your enterprise data with ChatGPT: Next-gen apps with Azure OpenAI Service and cognitive search   Revolutionize your enterprise data with ChatGPT. Pablo Castro explains how to combine Azure Cognitive Search and Azure OpenAI Service to build a solution that uses your organization’s data as the basis for responses.  
- 
-Microsoft Learn: Introduction to Azure …]]></summary>
-        <author>
-            <name>Jeff Medford</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Context Propagation with Project Reactor 2 - The bumpy road of Spring Cloud Sleuth]]></title>
-        <id>https://spring.io/blog/2023/03/29/context-propagation-with-project-reactor-2-the-bumpy-road-of-spring-cloud</id>
-        <link href="https://spring.io/blog/2023/03/29/context-propagation-with-project-reactor-2-the-bumpy-road-of-spring-cloud"/>
-        <updated>2023-03-29T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Level up your Java code and explore what Spring can do for you.]]></summary>
-        <author>
-            <name>Dariusz Jędrzejczyk</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Now Open Source: nxtools, managing Linux IaC just got simpler using Automanage machine configuration]]></title>
-        <id>https://techcommunity.microsoft.com/t5/azure-governance-and-management/now-open-source-nxtools-managing-linux-iac-just-got-simpler/ba-p/3781203</id>
-        <link href="https://techcommunity.microsoft.com/t5/azure-governance-and-management/now-open-source-nxtools-managing-linux-iac-just-got-simpler/ba-p/3781203"/>
-        <updated>2023-03-28T17:08:50.000Z</updated>
-        <summary type="html"><![CDATA[We are "nxcited" to announce the release of nxtools, an opensource collection of class-based DSC resources for commonly used Linux / Unix modules and built-in Machine Configuration packages for customers. Azure Automanage Machine Configuration (previously known as Azure Policy Guest Configuration) enables configuration as code allowing you to audit and configure OS, app, and workload level settings at scale, both for machines running in Azure and hybrid Azure Arc-enabled servers.
- 
-The nxtools module will be maintained by Automanage Machine Configuration. The module intends to make managing Linux easier for PowerShell users and will help in managing common tasks such as:
- 
-
-User and group management
-File system operations (changing mode, owner, listing, set/replace content)
-Service managem…]]></summary>
-        <author>
-            <name>JuliaMWang</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Public Preview: Azure Cosmos DB for MongoDB vCore]]></title>
-        <id>public-preview-azure-cosmos-db-for-mongodb-vcore</id>
-        <link href="https://azure.microsoft.com/en-us/updates/public-preview-azure-cosmos-db-for-mongodb-vcore/"/>
-        <updated>2023-03-28T17:00:32.000Z</updated>
-        <summary type="html"><![CDATA[Unlock the full potential of the Azure ecosystem with a MongoDB compatible database that simply works. A new architecture designed to provide seamless integration and unbeatable performance.]]></summary>
-        <author>
-            <name>Azure service updates</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Announcing SharePoint Framework 1.17 release candidate]]></title>
-        <id>https://devblogs.microsoft.com/microsoft365dev/?p=13337</id>
-        <link href="https://devblogs.microsoft.com/microsoft365dev/announcing-sharepoint-framework-1-17-release-candidate/"/>
-        <updated>2023-03-28T13:42:09.000Z</updated>
-        <summary type="html"><![CDATA[We are excited to announce a release candidate of the SharePoint Framework (SPFx) 1.17 – with updates for Microsoft Viva, Microsoft Teams, Outlook, Microsoft 365 app and SharePoint Online experiences.
-The post Announcing SharePoint Framework 1.17 release candidate appeared first on Microsoft 365 Developer Blog.]]></summary>
-        <author>
-            <name>Vesa Juvonen</name>
         </author>
     </entry>
     <entry>
