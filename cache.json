@@ -1810,6 +1810,26 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/application-gateway-for-containers-vs-application-gateway/ba-p/3914901",
+          "author": "owaino",
+          "description": "Application gateway for Containers vs Application Gateway Ingress Controller - What's changed?\n \nApplication Gateway for Containers is a new application (layer 7) load balancing and dynamic traffic management product for workloads running in a Kubernetes cluster. At the time of writing this service is currently in public preview. In this article we will look at the differences between AGIC and Application Gateway for containers and some of the great new features available through this new offering. \n \nApplication Gateway for Containers is the evolution of the Application Gateway Ingress Controller (AGIC). AGIC was created to allow customers to leverage Azures native Application Gateway to expose Kubernetes Services externally. AGIC continuously updates the Application Gateway so that the r…",
+          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/application-gateway-for-containers-vs-application-gateway/ba-p/3914901",
+          "publishedOn": "2023-09-01T13:35:19.000Z",
+          "wordCount": 10887,
+          "title": "Application gateway for Containers vs Application Gateway Ingress Controller - What's changed?",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/503562iB768F3F7DFD15E7B/image-size/original?v=v2&px=-1"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/how-to-detect-java-dependency-version-conflict-using-idea-maven/ba-p/3915091",
+          "author": "KevinLi",
+          "description": "A Java dependency version conflict occurs when two or more dependencies in your project have incompatible versions of the same class or resource. This can cause runtime errors, unexpected behavior, or compilation failures in your Java application. Sometimes it is hard to detect them, while with the help of IDEA Maven Helper, it has never been so simple.\n \n1. Install the plugin\nIn IntelliJ IDEA, choose File -> Settings -> Plugins. Within the Marketplace tab, search for Maven Helper and click Install.\n\n \n2. Leverage the plugin\nOpen the pom.xml file of your project and switch to the Dependency Analyzer tab at the bottom.\n\nYou will see three options: Conflicts, All Dependencies as List, and All Dependencies as Tree. Choose Conflicts to see if there are any dependency conflicts in your project.\n\n \n3. Resolve conflict\nTo resolve a conflict, you can right-click on a dependency on the left panel and choose Exclude. This will add an exclusion tag to your pom.xml file and remove the dependency from your project. Alternatively, you can also choose a compatible version of the dependency that works with all other dependencies and declare it explicitly in your pom.xml file using the dependencyManagement section.\nAfter resolving a conflict, you can refresh the Dependency Analyzer tab to see if there are any remaining conflicts. You can also use the All Dependencies as List or All Dependencies as Tree options to see all the dependencies in your project in different formats.\n\n \n4. Conclusion\nDependency conflicts can be difficult to detect, but they can cause a lot of problems in the project. By using the above-mentioned technique and following best practices to prevent dependency conflicts, you can ensure your application runs smoothly without any issues.\nReferences:Troubleshoot dependency version conflicts when using the Azure SDK for Java | Microsoft Learn Maven – Introduction to the Dependency Mechanism (apache.org)",
+          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/how-to-detect-java-dependency-version-conflict-using-idea-maven/ba-p/3915091",
+          "publishedOn": "2023-09-01T01:34:15.000Z",
+          "wordCount": 9847,
+          "title": "How to detect Java dependency version conflict using IDEA Maven Helper",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/503677iA497AD9AA938A077/image-size/original?v=v2&px=-1"
+        },
+        {
           "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/diagnose-performance-bottlenecks-of-your-web-app-with-azure-load/ba-p/3913615",
           "author": "SaloniAgrawal12",
           "description": "With App Service Diagnostics, customers of Azure App Service aim to achieve service availability and resilience of their web applications. In this blog post, we’ll cover how App Service users can navigate to Azure Load Testing amidst diagnosing performance bottlenecks.\n \nAzure Load Testing is a fully managed load testing service that enables you to easily generate large-scale load. It provides actionable insights that can help identify performance, scalability and capacity issues. Azure customers can monitor their applications in Azure Load Testing during the load simulation to analyze the consumption of their resources.\n \nAzure App Service helps you build and host web apps, mobile backends, and RESTful APIs in any programming language. However, it’s prudent to be prepared for any potentia…",
@@ -3188,26 +3208,6 @@
           "wordCount": 9484,
           "title": "How To Use WebP Images on Azure WordPress Managed Offering",
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/458281i3012288A1856A831?v=v2"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/addressing-cache-retrieval-failures-on-azure-app-service-node/ba-p/3786901",
-          "author": "yorkzhang",
-          "description": "I recently encountered an issue when attempting to read cache values using the Node-Cache module on an app service running on multiple instances. However, the module worked fine on my local environment, single virtual machine, or single-instance app service.\n \nThis behavior occurs because Node-Cache and other private cache solutions are designed to store data in the memory of a single process. The private cache works properly when running on a single instance, as all requests are handled by the same process and have access to the same cache.\n \n\nHowever, in a multi-instance environment like a multi-instance App Service, using a private cache can lead to inconsistent behavior and data inconsistency.\n \nFor example, you save a value in one cache in an instance. Then, a request tries to read th…",
-          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/addressing-cache-retrieval-failures-on-azure-app-service-node/ba-p/3786901",
-          "publishedOn": "2023-04-05T01:55:51.000Z",
-          "wordCount": 9837,
-          "title": "Addressing Cache Retrieval Failures on Azure App Service - Node-Cache Example",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/457320iE9766349551E34DE?v=v2"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/scaling-for-demand-deploying-python-applications-using-mongodb/ba-p/3786792",
-          "author": "denverbrittain",
-          "description": "Managing large amounts of data locally can prove to be a challenge, especially as the amount of saved data grows. Fortunately, there is an efficient solution available. By utilizing the features of Flask, MongoDB Atlas, and Azure App Service, you can build and host powerful web applications that are capable of storing and managing tons of data in a centralized, secure, and scalable manner. Say goodbye to unreliable local files and hello to a scalable solution.\n \nThis in-depth tutorial will teach you how to build a functional CRUD (Create, Read, Update, and Delete) Flask application that connects to a MongoDB Atlas database, and is hosted on Azure App Service. Using Azure App Service and MongoDB together can be a great way to build and host web applications. Azure App Service makes it easy …",
-          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/scaling-for-demand-deploying-python-applications-using-mongodb/ba-p/3786792",
-          "publishedOn": "2023-04-04T16:00:00.000Z",
-          "wordCount": 12218,
-          "title": "Scaling for Demand: Deploying Python Applications Using MongoDB Atlas on Azure App Service",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/457265i382968344512F9BB?v=v2"
         }
       ]
     },
@@ -5024,16 +5024,6 @@
           "wordCount": 9922,
           "title": "Secure Linux Access Using Azure Virtual Desktop",
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/459832iF1B5E4F5F444B953?v=v2"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/armchair-architects-data-mesh-architecture/ba-p/3787655",
-          "author": "AriyaKhamvongsa",
-          "description": "Welcome back to Armchair Architects as part of the Azure Enablement Show. Today we will be discussing what data mesh architecture is. Our hosts will be David Blank-Edelman and our armchair architects Uli Homann and Eric Charran.\n \nIn our last blog we talked about how do you get meaning from your data and we started to talk about implementation ideas on how to make data meaningful, and today we will discuss what is data mesh architecture as part of that concept.\n \nData Mesh Architecture has two main components: data silos and implementation.\n \nFrom Eric’s perspective a data mesh architecture encompasses two components or two concepts. It encompasses silos of data which are usually deep in a specific domain that you want to actually democratize and expose to other engines or stores. And then…",
-          "link": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/armchair-architects-data-mesh-architecture/ba-p/3787655",
-          "publishedOn": "2023-04-04T23:59:16.000Z",
-          "wordCount": 11652,
-          "title": "Armchair Architects: Data Mesh Architecture",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/457622i16AAB45CEA5FC105/image-size/original?v=v2&px=-1"
         }
       ]
     },
@@ -5670,6 +5660,21 @@
       "feedUrl": "https://devblogs.microsoft.com/java/feed/",
       "siteUrl": "https://devblogs.microsoft.com/java/",
       "articles": [
+        {
+          "id": "https://devblogs.microsoft.com/java/?p=230107",
+          "author": "Jialuo Gan",
+          "description": "Hi everyone, welcome to the August update of Java on Azure Tooling. In this update, we will introduce new application-centric view support to help developers manage and connect resources in one Project view and deployment status improvement for Azure App Service.\nThe post Java on Azure Tooling Update – August 2023 appeared first on Microsoft for Java Developers.",
+          "link": "https://devblogs.microsoft.com/java/java-on-azure-tooling-update-august-2023/",
+          "publishedOn": "2023-09-01T11:50:35.000Z",
+          "wordCount": 4758,
+          "title": "Java on Azure Tooling Update – August 2023",
+          "enclosure": {
+            "url": "https://devblogs.microsoft.com/java/wp-content/uploads/sites/51/2023/09/Build-Connection-N1.mp4",
+            "length": "1417173",
+            "type": "video/mp4"
+          },
+          "imageUrl": "https://devblogs.microsoft.com/java/wp-content/uploads/sites/51/2023/09/Toolkit-roadmap-Aug-Chn1.png"
+        },
         {
           "id": "https://devblogs.microsoft.com/java/?p=230072",
           "author": "Nick Zhu",
@@ -6641,16 +6646,6 @@
           "wordCount": 4653,
           "title": "Data Encryption at rest with Customer Managed keys for Azure Cosmos DB for PostgreSQL",
           "imageUrl": "https://devblogs.microsoft.com/cosmosdb/wp-content/uploads/sites/52/2023/04/Architecture.png"
-        },
-        {
-          "id": "https://devblogs.microsoft.com/cosmosdb/?p=5623",
-          "author": "Theo van Kraay",
-          "description": "There are many factors to take into account when designing a multi-tenant application in Azure Cosmos DB. We’ve covered many of these aspects at a high level in our documentation on Multitenancy and Azure Cosmos DB.\nThe post Building multi-tenant Java apps using Spring Data and Azure Cosmos DB appeared first on Azure Cosmos DB Blog.",
-          "link": "https://devblogs.microsoft.com/cosmosdb/building-multi-tenant-java-apps-using-spring-data-and-azure-cosmos-db/",
-          "publishedOn": "2023-04-04T16:00:55.000Z",
-          "wordCount": 5252,
-          "title": "Building multi-tenant Java apps using Spring Data and Azure Cosmos DB",
-          "imageUrl": "https://devblogs.microsoft.com/cosmosdb/wp-content/uploads/sites/52/2023/03/spring-multi-tenant-scaled.jpeg"
         }
       ]
     },
@@ -10606,16 +10601,6 @@
           "wordCount": 5479,
           "title": "Azure Monitor managed service for Prometheus has updated our AKS add-on to support Windows nodes",
           "imageUrl": "https://azurecomcdn.azureedge.net/cvt-aa083e2cdea214e1727307014e38934e48b0bd75a99d48560fd20ab5a0ed3ccb/images/shared/social/azure-icon-250x250.png"
-        },
-        {
-          "id": "public-preview-private-application-gateway-v2",
-          "author": null,
-          "description": "Application Gateway v2 is introducing support for private IP only frontend configurations, enhanced control over NSG rules, and support for forced tunneling/route table rules to virtual appliances.",
-          "link": "https://azure.microsoft.com/en-us/updates/public-preview-private-application-gateway-v2/",
-          "publishedOn": "2023-04-04T16:38:38.000Z",
-          "wordCount": 5463,
-          "title": "Public preview: Private Application Gateway v2",
-          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-5a5dc8392fd18e602a996d45857a1f1c9d94a9643c9c830776e6546c8ffd3acd/images/shared/social/azure-icon-250x250.png"
         }
       ]
     },
@@ -10624,6 +10609,16 @@
       "feedUrl": "https://devblogs.microsoft.com/microsoft365dev/feed/",
       "siteUrl": "https://devblogs.microsoft.com/microsoft365dev/",
       "articles": [
+        {
+          "id": "https://devblogs.microsoft.com/microsoft365dev/?p=15179",
+          "author": "Ayan Chakraborty",
+          "description": "On September 1, 2023, we are starting billing in public preview for the Recording and Transcript APIs.\nThe post Microsoft Teams Recording and Transcript APIs billing in public preview appeared first on Microsoft 365 Developer Blog.",
+          "link": "https://devblogs.microsoft.com/microsoft365dev/microsoft-teams-recording-and-transcript-apis-billing-in-public-preview/",
+          "publishedOn": "2023-09-01T15:30:30.000Z",
+          "wordCount": 4429,
+          "title": "Microsoft Teams Recording and Transcript APIs billing in public preview",
+          "imageUrl": "https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2023/08/billing-scaled.jpg"
+        },
         {
           "id": "https://devblogs.microsoft.com/microsoft365dev/?p=15190",
           "author": "Waldek Mastykarz",
@@ -11303,26 +11298,6 @@
           "wordCount": 4927,
           "title": "License management capabilities for Independent Software Vendors’ (ISV) SaaS apps in Microsoft Teams",
           "imageUrl": "https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2023/04/ISVSAAS-scaled.jpg"
-        },
-        {
-          "id": "https://devblogs.microsoft.com/microsoft365dev/?p=13230",
-          "author": "Ayca Bas",
-          "description": "In this tutorial, we will cover how to build a developer assist dashboard for Microsoft Teams using Teams Toolkit for Visual Studio Code and integrate GitHub, Azure DevOps, and Planner widgets. \nThe post Build a developer assist dashboard using Teams Toolkit for Visual Studio Code v5.0 pre-release appeared first on Microsoft 365 Developer Blog.",
-          "link": "https://devblogs.microsoft.com/microsoft365dev/build-a-developer-assist-dashboard-using-teams-toolkit-for-visual-studio-code-v5-0-pre-release/",
-          "publishedOn": "2023-04-04T15:30:50.000Z",
-          "wordCount": 5243,
-          "title": "Build a developer assist dashboard using Teams Toolkit for Visual Studio Code v5.0 pre-release",
-          "imageUrl": "https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2023/04/updateddevassist-scaled.jpg"
-        },
-        {
-          "id": "https://devblogs.microsoft.com/microsoft365dev/?p=13467",
-          "author": "Vesa Juvonen",
-          "description": "We are excited to announce a new public version of the SharePoint Framework, v1.17, with new features, capabilities and fixes for Microsoft Viva, Microsoft Teams and SharePoint.\nThe post Announcing SharePoint Framework 1.17 with updates for Microsoft Teams, Microsoft Viva and SharePoint appeared first on Microsoft 365 Developer Blog.",
-          "link": "https://devblogs.microsoft.com/microsoft365dev/announcing-sharepoint-framework-1-17-with-updates-for-microsoft-teams-microsoft-viva-and-sharepoint/",
-          "publishedOn": "2023-04-04T13:14:16.000Z",
-          "wordCount": 5293,
-          "title": "Announcing SharePoint Framework 1.17 with updates for Microsoft Teams, Microsoft Viva and SharePoint",
-          "imageUrl": "https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2023/04/spfx-117-ga.png"
         }
       ]
     }
