@@ -603,6 +603,16 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/t5/educator-developer-blog/pair-programming-a-game-with-github-copilot-and-a-human/ba-p/3916142",
+          "author": "Chris_Noring",
+          "description": "We've heard a lot about GitHub Copilot, but maybe more specifically about LLMs, large language models and how they can be used to generate code. You might even have used ChatGPT. \n\nGitHub Copilot chat, is a product built by GitHub, it relies on a specific type of LLm a so called codex model and integrates with your IDE. It's a bit like a pair programmer, but one that has seen a lot of code and can help you write it.\n\nSo what will we do today? We'll use GitHub Copilot chat to solve a problem. The problem we have is Rock Paper Scissors. It's a small game that most people knows the rules to. It's also an interesting problem as it's small and contained, but still has some complexity to it.\n\nWhere do we start? The interesting part here is that there are many ways to start which I discovered spe…",
+          "link": "https://techcommunity.microsoft.com/t5/educator-developer-blog/pair-programming-a-game-with-github-copilot-and-a-human/ba-p/3916142",
+          "publishedOn": "2023-09-02T07:00:00.000Z",
+          "wordCount": 11500,
+          "title": "Pair programming a game with GitHub Copilot and a human",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/503955iCCB99BB2510C7D4D/image-size/original?v=v2&px=-1"
+        },
+        {
           "id": "https://techcommunity.microsoft.com/t5/educator-developer-blog/announcing-the-new-foundational-c-certification-with/ba-p/3908818",
           "author": "elbruno",
           "description": "Hello Students and Developers!\n\n\n \nWe are excited to announce the release of the new Foundational C# Certification in collaboration with freeCodeCamp. freeCodeCamp is a charity that creates free learning resources for math, programming, and computer science. The Foundational C# Certification is completely free, globally available, and includes a full 35-hour C# training course hosted on Microsoft Learn.\n \n\nAmplify Your C# Career Trajectory\nC# continues to shine as a leading programming language, essential in creating dynamic web applications, Unity games, comprehensive enterprise solutions, and more. In the rapidly evolving tech landscape, having tangible proof of your skills and dedication can set you apart. \nOur Foundational C# Certification provides just that—a testament to the time and…",
@@ -1761,36 +1771,6 @@
           "wordCount": 9581,
           "title": "Explore Innovative Technologies with Microsoft Reactor's Post Student Summit Event Series",
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/458211i093A2C58C135B9E7?v=v2"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/educator-developer-blog/mastering-azure-ai-30daysofazureai-week-1-recap/ba-p/3786895",
-          "author": "glovebox",
-          "description": "Looking Back: Week 1 Recap​\nWeek one is done, and thank you for joining us on this journey. We hope you've enjoyed the first week of #30DaysOfAzureAI and have learned a lot about Azure AI. We've covered a lot of ground, so let's recap what we've learned so far.\n \n\n \nHere are the highlights for week 1. \n \nWeek 1: Fundamentals​\n\nAZURE AI EVERYONE\n\n\nApril 03 – Unleash the power of Azure OpenAI\nApril 04 – Explore the Azure OpenAI Playground\nApril 05 – Build an AI receipts app with GitHub Copilot\nApril 06 – Learn key Azure ML Concepts\nApril 07 – The Mission of Responsible AI\nApril 08 – Improve accessibility with Azure AI\n\n\n\n \nAzure AI Skills Challenge​\nThe skills challenge started March 29th, and so far 1000 students have signed up, wow! The Skills Challenge is a self-guided learning experience to help you build your skills in Azure AI. Join now, and see how you rank against other participants on the leaderboard.\n \n\n\nTo complete the Azure AI Skills challenge, you’ll need access to Azure. For students, sign up for an Azure for Students free account, no credit card is required. Otherwise, create an Azure free account.\n \n\n\nLooking Ahead: Intelligent App Developers Week!​\nWeek two is for app developers building intelligent apps calling Azure AI Services or incorporating AI models directly into apps. Be sure to review the Week Two Roadmap, don't forget to bookmark the #30DaysOfAzureAI site, and come back tomorrow.​\n\n\n \n\n\n\n \nEnjoy! \n \n@dglover",
-          "link": "https://techcommunity.microsoft.com/t5/educator-developer-blog/mastering-azure-ai-30daysofazureai-week-1-recap/ba-p/3786895",
-          "publishedOn": "2023-04-07T07:00:00.000Z",
-          "wordCount": 9304,
-          "title": "Mastering Azure AI: #30DaysOfAzureAI Week 1 Recap",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/457316iE11A7352AB905415/image-size/original?v=v2&px=-1"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/educator-developer-blog/how-to-detect-files-of-the-same-size-on-your-computer-via/ba-p/3787635",
-          "author": "Anthony Bartolo",
-          "description": "File management might be tedious, but it is sometimes required, especially when storage space is limited. PowerShell is an excellent tool for automating most activities including identifying files of the same size on your computer.\n \nThe script below will detect and report (rather than delete) all files in the directory and subdirectories, group them by size, filter out groups with only one file, and report on the files of the same size with their full path and creation time.\n \nNOTE: Please make sure you further investigate the duplicate files this script finds before any other action is taken.\n \n \n \n \n \n# Get all files in a directory and subdirectories\n$files = Get-ChildItem -Recurse -File\n\n# Group files by size\n$groups = $files | Group-Object Length\n\n# Filter groups with more than one item\n$duplicates = $groups | Where-Object {$_.Count -gt 1}\n\n# Output duplicate files\nforeach ($duplicate in $duplicates) {\n    Write-Host \"Duplicate files of size $($duplicate.Name):\"\n    $duplicate.Group | Select-Object FullName, CreationTime | Sort-Object CreationTime | Format-Table -AutoSize\n}\n\n \n \n \n \n \nThis script may be run in PowerShell by saving it as a .ps1 file and then running it from the PowerShell command prompt. Please keep in mind that if you have a large number of files on your computer, this script may take some time to run. How to Detect Files of the Same Size on your Computer via PowerShell\n \nAs always, please share your PowerShell automation scripts in the comments section below so that they can be added to or improved upon the script published above.",
-          "link": "https://techcommunity.microsoft.com/t5/educator-developer-blog/how-to-detect-files-of-the-same-size-on-your-computer-via/ba-p/3787635",
-          "publishedOn": "2023-04-05T07:04:00.000Z",
-          "wordCount": 9552,
-          "title": "How to Detect Files of the Same Size on your Computer via PowerShell",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/457632i31278A4598E2AB24/image-size/original?v=v2&px=-1"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/educator-developer-blog/revolutionize-your-student-project-app-authentication-with-a/ba-p/3777225",
-          "author": "seths10",
-          "description": "Meet Seth Addo \nMeet Seth Addo, a Gold Microsoft Learn Student Ambassador and Computer Science student at the University of Cape Coast, Ghana. Seth has developed a fantastic PowerApps app sample for performing basic authentication in a Power Platform application. In this app, users can enter their login credentials, which are compared with a table containing usernames and passwords. If the entered credentials match, users are granted access to a protected area of the application. This approach can be extended with additional functionality like password reset and multi-factor authentication to enhance application security. Try the PowerApps Login app today for a simple and secure way to log into your applications.\nIntroduction\nHello everyone! My name is Seth Addo, a Computer Science student…",
-          "link": "https://techcommunity.microsoft.com/t5/educator-developer-blog/revolutionize-your-student-project-app-authentication-with-a/ba-p/3777225",
-          "publishedOn": "2023-04-03T07:00:00.000Z",
-          "wordCount": 10494,
-          "title": "Revolutionize Your Student Project App Authentication with a PowerApps Login App Sample",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/443345i0FBBCDE42D67DE17/image-size/original?v=v2&px=-1"
         }
       ]
     },
@@ -3178,36 +3158,6 @@
           "wordCount": 9554,
           "title": "Redirect from the non WWW domain to the WWW domain in the Azure WordPress Market Place offering-",
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/458536iEF630D9C1E4FBF9B?v=v2"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/running-cronjobs-in-azure-app-service-linux/ba-p/3789879",
-          "author": "karthi",
-          "description": "To schedule a cronjob on azure app service Linux web application you can follow the steps outlined below,\n \n\n \nNavigate to “SSH” from azure app services portal and click on Go ->\n \n\n \n\n \nCreate a script file in /home with name as start.sh and add the below lines to the script file and save the file.\nCommand to create a script file - touch /home/start.sh\nOpen the file using vim editor: vi /home/start.sh and copy the below code\n \n# Installing cron \napt-get update -qq && apt-get install cron -yqq \n# Starting cron \nservice cron start \n#cron scheduler \n(crontab -l 2>/dev/null; echo \"* * * * * find /home/BackupLogs -type f -size 1k -delete \")|crontab\n \nPost that, you can add the created script as a startup command which would install the cron, start the cron and schedule the cron during startup. To add as a startup command, navigate to Azure portal -> Configuration blade -> General settings tab and provide as below,\n \n \n\n \n \nIn the above sample code, it checks for all the files with size 1KB in /home/BackupLogs and delete them for every minute.\n \nBased on your convenience you can adjust the CRON scheduler time and command",
-          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/running-cronjobs-in-azure-app-service-linux/ba-p/3789879",
-          "publishedOn": "2023-04-07T08:06:12.000Z",
-          "wordCount": 9522,
-          "title": "Running cronjobs in Azure App Service Linux",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/458492iFE78E8B355606DEF?v=v2"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/building-a-crypto-news-website-in-c-using-the-microsoft-azure/ba-p/3789523",
-          "author": "denverbrittain",
-          "description": "Who said creating a website has to be hard? Writing the code, persisting news, hosting the website. A decade ago this might have been a lot of work. These days, thanks to Microsoft Blazor, Microsoft Azure App Service, and MongoDB Atlas you can get started in minutes. And finish it equally fast!\n \nIn this tutorial I will walk you through:\n \n\nsetting up a new Blazor project,\ncreating a new page with a simple UI,\ncreating data in MongoDB Atlas,\nshowing those news on the website and\nmaking the website available by using Azure App Service to host it.\n\n \nAll you need is this tutorial and the following pre-requisites, but if you prefer to just read along for now, check out the GitHub repository for this tutorial where you can find the code and the tutorial.\n \nPre-requisites for this tutorial\n \nBe…",
-          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/building-a-crypto-news-website-in-c-using-the-microsoft-azure/ba-p/3789523",
-          "publishedOn": "2023-04-06T17:00:00.000Z",
-          "wordCount": 11604,
-          "title": "Building a Crypto News Website in C# using the Microsoft Azure App Service and MongoDB Atlas",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/458343i62ECD1D620196478?v=v2"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/how-to-use-webp-images-on-azure-wordpress-managed-offering/ba-p/3789326",
-          "author": "Arjun_Baliga",
-          "description": "In your WordPress Managed offering, go to webssh of your SCM site -  https://<app name>.scm.azurewebsites.net/webssh/host\nInstall the GD extension with Webp support using the below command.\n\napk add --no-cache --virtual .build-deps autoconf pkgconfig gcc g++ gawk make zlib-dev libpng-dev libwebp-dev \\\n&& docker-php-ext-configure gd --with-webp \\\n&& docker-php-ext-install gd \\\n&& apk del .build-deps\nCopy the newly installed gd.so file to a persistent file storage. \nmkdir -p /home/dev/extensions\ncp /usr/local/lib/php/extensions/no-debug-non-zts-20200930/gd.so /home/dev/extensions/gd.so\n \n\nNow write a post-startup script to restore the updated copy of gd.so everytime the app starts.\n\nEdit the startup script file in /home/dev directory using the below command: \nvi /home/dev/startup.sh\nThen add the following command to the startup.sh file and save it (type :wq to save).\n \ncp /home/dev/extensions/gd.so /usr/local/lib/php/extensions/no-debug-non-zts-20200930/gd.so \n \n\nNow restart your app from Azure Portal and you can upload a sample .webp image to test the changes.",
-          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/how-to-use-webp-images-on-azure-wordpress-managed-offering/ba-p/3789326",
-          "publishedOn": "2023-04-06T14:02:29.000Z",
-          "wordCount": 9484,
-          "title": "How To Use WebP Images on Azure WordPress Managed Offering",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/458281i3012288A1856A831?v=v2"
         }
       ]
     },
@@ -3959,16 +3909,6 @@
           "wordCount": 11437,
           "title": "Understanding Connectivity Issues in Azure SQL Database",
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/458628i2E5F7C93389937B4?v=v2"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/fasttrack-for-azure/consuming-the-new-microsoft-cloud-for-sustainability-api/ba-p/3789280",
-          "author": "ormeikop-msft",
-          "description": "Introduction\n \nMicrosoft Cloud for Sustainability (MCfS) empowers organizations to accelerate sustainability progress and business growth by bringing together a set of environmental, social, and governance capabilities across the Microsoft cloud portfolio plus solutions from its global ecosystem of partners.\n \nThrough this, organizations are enabled to gain the transparency and insights they need to manage their environmental footprint, embed sustainability through their organization and value chain, and create new value in a changing landscape.\n \nMCfS API (Preview) overview\n \nMCfS provides APIs to access emissions data related to your Azure usage. Accurate carbon accounting requires valuable information from partners, vendors, and suppliers. The MCfS API gives you transparency on the carb…",
-          "link": "https://techcommunity.microsoft.com/t5/fasttrack-for-azure/consuming-the-new-microsoft-cloud-for-sustainability-api/ba-p/3789280",
-          "publishedOn": "2023-04-06T14:20:30.000Z",
-          "wordCount": 11181,
-          "title": "Consuming the new Microsoft Cloud for Sustainability API",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/458261i5BF93D0DFCBBC814/image-size/original?v=v2&px=-1"
         }
       ]
     },
@@ -4667,16 +4607,6 @@
           "wordCount": 9825,
           "title": "Monitor Object Replication Status For Storage Account",
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/450045i5CE23C1E4E0F07A0/image-size/original?v=v2&px=-1"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/azure-paas-blog/how-to-control-access-to-identity-specific-folders-in-azure-blob/ba-p/3746705",
-          "author": "mahmoudsamy",
-          "description": "An example use case: \n \nI have an Azure Blob Container named \"my-org-documents\"; a specific folder should be shared across all the identities. However, each identity can only write into their subfolders. \n \nI will use the below identities as example: \n \ntest@my-org.com (AD user) \nExampleMI12 (managed identity)\n \nI have created a path called test, managedidentity and sharedfolder under the container, so the structure is as below: \n \nmy-org-documents/test\nmy-org-documents/managedidentity\nmy-org-documents/sharedfolder\n \nMy task is completed when: \n \n- Active Directory user \"test\" is able to read/write into sharedfolder\n- Active Directory user \"test\" is able to read/write into test folder but not into managedidentity folder. \n- Managed Identity \"ExampleMI12\" is able to read/write into sharedfo…",
-          "link": "https://techcommunity.microsoft.com/t5/azure-paas-blog/how-to-control-access-to-identity-specific-folders-in-azure-blob/ba-p/3746705",
-          "publishedOn": "2023-04-06T15:19:38.000Z",
-          "wordCount": 9865,
-          "title": "How to control access to identity-specific folders in Azure Blob Storage using ABAC",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/445416iB038630689A78B77/image-size/original?v=v2&px=-1"
         }
       ]
     },
@@ -5211,16 +5141,6 @@
           "wordCount": 12326,
           "title": "Automate document analysis with Azure Form Recognizer using AI and OCR",
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/459880i99E0283B575E73C0?v=v2"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/can-chatgpt-work-with-your-enterprise-data/ba-p/3789378",
-          "author": "Zachary Cavanell",
-          "description": "Bring OpenAI’s ChatGPT model in Azure to your own enterprise-grade app experiences with precise control over the knowledge base, for in-context and relevant responses. Interact with your organization’s private internal data, while respecting the information protection controls put in place.\n \n\n \nAzure OpenAI service is combined with Azure Cognitive Search to index and retrieve data that is private and external to the ChatGPT large language model. The retrieval step in Azure Cognitive Search finds the most relevant pieces of information and presents the top ranked results to the language model. And because the knowledge lives outside of the ChatGPT model, you’re in control — it’s not used to train the model.\n \nMicrosoft Distinguished Engineer, Pablo Castro, joins Jeremy Chapman to show how …",
-          "link": "https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/can-chatgpt-work-with-your-enterprise-data/ba-p/3789378",
-          "publishedOn": "2023-04-06T15:33:40.000Z",
-          "wordCount": 12276,
-          "title": "Can ChatGPT work with your enterprise data?",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/458283i17E784181E8ED042?v=v2"
         }
       ]
     },
@@ -11258,16 +11178,6 @@
           "wordCount": 4415,
           "title": "You can now use Microsoft Kiota within Visual Studio Code",
           "imageUrl": "https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2023/04/kiotavscode-scaled.jpg"
-        },
-        {
-          "id": "https://devblogs.microsoft.com/microsoft365dev/?p=13424",
-          "author": "Chandrika Duggirala",
-          "description": "To help streamline the license management experience, we are now offering a new capability for ISVs to choose to offload the license management capabilities directly in Microsoft Teams.  \nThe post License management capabilities for Independent Software Vendors’ (ISV) SaaS apps in Microsoft Teams  appeared first on Microsoft 365 Developer Blog.",
-          "link": "https://devblogs.microsoft.com/microsoft365dev/license-management-capabilities-for-independent-software-vendors-isv-saas-apps-in-microsoft-teams/",
-          "publishedOn": "2023-04-06T15:00:17.000Z",
-          "wordCount": 4927,
-          "title": "License management capabilities for Independent Software Vendors’ (ISV) SaaS apps in Microsoft Teams",
-          "imageUrl": "https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2023/04/ISVSAAS-scaled.jpg"
         }
       ]
     }

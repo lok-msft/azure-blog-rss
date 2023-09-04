@@ -2,10 +2,26 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2023-09-03T01:03:04.649Z</updated>
+    <updated>2023-09-04T01:00:51.368Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Pair programming a game with GitHub Copilot and a human]]></title>
+        <id>https://techcommunity.microsoft.com/t5/educator-developer-blog/pair-programming-a-game-with-github-copilot-and-a-human/ba-p/3916142</id>
+        <link href="https://techcommunity.microsoft.com/t5/educator-developer-blog/pair-programming-a-game-with-github-copilot-and-a-human/ba-p/3916142"/>
+        <updated>2023-09-02T07:00:00.000Z</updated>
+        <summary type="html"><![CDATA[We've heard a lot about GitHub Copilot, but maybe more specifically about LLMs, large language models and how they can be used to generate code. You might even have used ChatGPT. 
+
+GitHub Copilot chat, is a product built by GitHub, it relies on a specific type of LLm a so called codex model and integrates with your IDE. It's a bit like a pair programmer, but one that has seen a lot of code and can help you write it.
+
+So what will we do today? We'll use GitHub Copilot chat to solve a problem. The problem we have is Rock Paper Scissors. It's a small game that most people knows the rules to. It's also an interesting problem as it's small and contained, but still has some complexity to it.
+
+Where do we start? The interesting part here is that there are many ways to start which I discovered spe…]]></summary>
+        <author>
+            <name>Chris_Noring</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Azure Container Apps Newsletter – August 2023]]></title>
         <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/azure-container-apps-newsletter-august-2023/ba-p/3916409</id>
@@ -15336,283 +15352,6 @@ cp /home/site/default /etc/nginx/conf.d/default.conf
 Please restart App Service and verify that the redirect from non www domain to www domain works fine.]]></summary>
         <author>
             <name>Arjun_Baliga</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Running cronjobs in Azure App Service Linux]]></title>
-        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/running-cronjobs-in-azure-app-service-linux/ba-p/3789879</id>
-        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/running-cronjobs-in-azure-app-service-linux/ba-p/3789879"/>
-        <updated>2023-04-07T08:06:12.000Z</updated>
-        <summary type="html"><![CDATA[To schedule a cronjob on azure app service Linux web application you can follow the steps outlined below,
- 
-
- 
-Navigate to “SSH” from azure app services portal and click on Go ->
- 
-
- 
-
- 
-Create a script file in /home with name as start.sh and add the below lines to the script file and save the file.
-Command to create a script file - touch /home/start.sh
-Open the file using vim editor: vi /home/start.sh and copy the below code
- 
-# Installing cron 
-apt-get update -qq && apt-get install cron -yqq 
-# Starting cron 
-service cron start 
-#cron scheduler 
-(crontab -l 2>/dev/null; echo "* * * * * find /home/BackupLogs -type f -size 1k -delete ")|crontab
- 
-Post that, you can add the created script as a startup command which would install the cron, start the cron and schedule the cron during startup. To add as a startup command, navigate to Azure portal -> Configuration blade -> General settings tab and provide as below,
- 
- 
-
- 
- 
-In the above sample code, it checks for all the files with size 1KB in /home/BackupLogs and delete them for every minute.
- 
-Based on your convenience you can adjust the CRON scheduler time and command]]></summary>
-        <author>
-            <name>karthi</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Mastering Azure AI: #30DaysOfAzureAI Week 1 Recap]]></title>
-        <id>https://techcommunity.microsoft.com/t5/educator-developer-blog/mastering-azure-ai-30daysofazureai-week-1-recap/ba-p/3786895</id>
-        <link href="https://techcommunity.microsoft.com/t5/educator-developer-blog/mastering-azure-ai-30daysofazureai-week-1-recap/ba-p/3786895"/>
-        <updated>2023-04-07T07:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Looking Back: Week 1 Recap​
-Week one is done, and thank you for joining us on this journey. We hope you've enjoyed the first week of #30DaysOfAzureAI and have learned a lot about Azure AI. We've covered a lot of ground, so let's recap what we've learned so far.
- 
-
- 
-Here are the highlights for week 1. 
- 
-Week 1: Fundamentals​
-
-AZURE AI EVERYONE
-
-
-April 03 – Unleash the power of Azure OpenAI
-April 04 – Explore the Azure OpenAI Playground
-April 05 – Build an AI receipts app with GitHub Copilot
-April 06 – Learn key Azure ML Concepts
-April 07 – The Mission of Responsible AI
-April 08 – Improve accessibility with Azure AI
-
-
-
- 
-Azure AI Skills Challenge​
-The skills challenge started March 29th, and so far 1000 students have signed up, wow! The Skills Challenge is a self-guided learning experience to help you build your skills in Azure AI. Join now, and see how you rank against other participants on the leaderboard.
- 
-
-
-To complete the Azure AI Skills challenge, you’ll need access to Azure. For students, sign up for an Azure for Students free account, no credit card is required. Otherwise, create an Azure free account.
- 
-
-
-Looking Ahead: Intelligent App Developers Week!​
-Week two is for app developers building intelligent apps calling Azure AI Services or incorporating AI models directly into apps. Be sure to review the Week Two Roadmap, don't forget to bookmark the #30DaysOfAzureAI site, and come back tomorrow.​
-
-
- 
-
-
-
- 
-Enjoy! 
- 
-@dglover]]></summary>
-        <author>
-            <name>glovebox</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Building a Crypto News Website in C# using the Microsoft Azure App Service and MongoDB Atlas]]></title>
-        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/building-a-crypto-news-website-in-c-using-the-microsoft-azure/ba-p/3789523</id>
-        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/building-a-crypto-news-website-in-c-using-the-microsoft-azure/ba-p/3789523"/>
-        <updated>2023-04-06T17:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Who said creating a website has to be hard? Writing the code, persisting news, hosting the website. A decade ago this might have been a lot of work. These days, thanks to Microsoft Blazor, Microsoft Azure App Service, and MongoDB Atlas you can get started in minutes. And finish it equally fast!
- 
-In this tutorial I will walk you through:
- 
-
-setting up a new Blazor project,
-creating a new page with a simple UI,
-creating data in MongoDB Atlas,
-showing those news on the website and
-making the website available by using Azure App Service to host it.
-
- 
-All you need is this tutorial and the following pre-requisites, but if you prefer to just read along for now, check out the GitHub repository for this tutorial where you can find the code and the tutorial.
- 
-Pre-requisites for this tutorial
- 
-Be…]]></summary>
-        <author>
-            <name>denverbrittain</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Can ChatGPT work with your enterprise data?]]></title>
-        <id>https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/can-chatgpt-work-with-your-enterprise-data/ba-p/3789378</id>
-        <link href="https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/can-chatgpt-work-with-your-enterprise-data/ba-p/3789378"/>
-        <updated>2023-04-06T15:33:40.000Z</updated>
-        <summary type="html"><![CDATA[Bring OpenAI’s ChatGPT model in Azure to your own enterprise-grade app experiences with precise control over the knowledge base, for in-context and relevant responses. Interact with your organization’s private internal data, while respecting the information protection controls put in place.
- 
-
- 
-Azure OpenAI service is combined with Azure Cognitive Search to index and retrieve data that is private and external to the ChatGPT large language model. The retrieval step in Azure Cognitive Search finds the most relevant pieces of information and presents the top ranked results to the language model. And because the knowledge lives outside of the ChatGPT model, you’re in control — it’s not used to train the model.
- 
-Microsoft Distinguished Engineer, Pablo Castro, joins Jeremy Chapman to show how …]]></summary>
-        <author>
-            <name>Zachary Cavanell</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[How to control access to identity-specific folders in Azure Blob Storage using ABAC]]></title>
-        <id>https://techcommunity.microsoft.com/t5/azure-paas-blog/how-to-control-access-to-identity-specific-folders-in-azure-blob/ba-p/3746705</id>
-        <link href="https://techcommunity.microsoft.com/t5/azure-paas-blog/how-to-control-access-to-identity-specific-folders-in-azure-blob/ba-p/3746705"/>
-        <updated>2023-04-06T15:19:38.000Z</updated>
-        <summary type="html"><![CDATA[An example use case: 
- 
-I have an Azure Blob Container named "my-org-documents"; a specific folder should be shared across all the identities. However, each identity can only write into their subfolders. 
- 
-I will use the below identities as example: 
- 
-test@my-org.com (AD user) 
-ExampleMI12 (managed identity)
- 
-I have created a path called test, managedidentity and sharedfolder under the container, so the structure is as below: 
- 
-my-org-documents/test
-my-org-documents/managedidentity
-my-org-documents/sharedfolder
- 
-My task is completed when: 
- 
-- Active Directory user "test" is able to read/write into sharedfolder
-- Active Directory user "test" is able to read/write into test folder but not into managedidentity folder. 
-- Managed Identity "ExampleMI12" is able to read/write into sharedfo…]]></summary>
-        <author>
-            <name>mahmoudsamy</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[License management capabilities for Independent Software Vendors’ (ISV) SaaS apps in Microsoft Teams]]></title>
-        <id>https://devblogs.microsoft.com/microsoft365dev/?p=13424</id>
-        <link href="https://devblogs.microsoft.com/microsoft365dev/license-management-capabilities-for-independent-software-vendors-isv-saas-apps-in-microsoft-teams/"/>
-        <updated>2023-04-06T15:00:17.000Z</updated>
-        <summary type="html"><![CDATA[To help streamline the license management experience, we are now offering a new capability for ISVs to choose to offload the license management capabilities directly in Microsoft Teams.  
-The post License management capabilities for Independent Software Vendors’ (ISV) SaaS apps in Microsoft Teams  appeared first on Microsoft 365 Developer Blog.]]></summary>
-        <author>
-            <name>Chandrika Duggirala</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Consuming the new Microsoft Cloud for Sustainability API]]></title>
-        <id>https://techcommunity.microsoft.com/t5/fasttrack-for-azure/consuming-the-new-microsoft-cloud-for-sustainability-api/ba-p/3789280</id>
-        <link href="https://techcommunity.microsoft.com/t5/fasttrack-for-azure/consuming-the-new-microsoft-cloud-for-sustainability-api/ba-p/3789280"/>
-        <updated>2023-04-06T14:20:30.000Z</updated>
-        <summary type="html"><![CDATA[Introduction
- 
-Microsoft Cloud for Sustainability (MCfS) empowers organizations to accelerate sustainability progress and business growth by bringing together a set of environmental, social, and governance capabilities across the Microsoft cloud portfolio plus solutions from its global ecosystem of partners.
- 
-Through this, organizations are enabled to gain the transparency and insights they need to manage their environmental footprint, embed sustainability through their organization and value chain, and create new value in a changing landscape.
- 
-MCfS API (Preview) overview
- 
-MCfS provides APIs to access emissions data related to your Azure usage. Accurate carbon accounting requires valuable information from partners, vendors, and suppliers. The MCfS API gives you transparency on the carb…]]></summary>
-        <author>
-            <name>ormeikop-msft</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[How To Use WebP Images on Azure WordPress Managed Offering]]></title>
-        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/how-to-use-webp-images-on-azure-wordpress-managed-offering/ba-p/3789326</id>
-        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/how-to-use-webp-images-on-azure-wordpress-managed-offering/ba-p/3789326"/>
-        <updated>2023-04-06T14:02:29.000Z</updated>
-        <summary type="html"><![CDATA[In your WordPress Managed offering, go to webssh of your SCM site -  https://<app name>.scm.azurewebsites.net/webssh/host
-Install the GD extension with Webp support using the below command.
-
-apk add --no-cache --virtual .build-deps autoconf pkgconfig gcc g++ gawk make zlib-dev libpng-dev libwebp-dev \
-&& docker-php-ext-configure gd --with-webp \
-&& docker-php-ext-install gd \
-&& apk del .build-deps
-Copy the newly installed gd.so file to a persistent file storage. 
-mkdir -p /home/dev/extensions
-cp /usr/local/lib/php/extensions/no-debug-non-zts-20200930/gd.so /home/dev/extensions/gd.so
- 
-
-Now write a post-startup script to restore the updated copy of gd.so everytime the app starts.
-
-Edit the startup script file in /home/dev directory using the below command: 
-vi /home/dev/startup.sh
-Then add the following command to the startup.sh file and save it (type :wq to save).
- 
-cp /home/dev/extensions/gd.so /usr/local/lib/php/extensions/no-debug-non-zts-20200930/gd.so 
- 
-
-Now restart your app from Azure Portal and you can upload a sample .webp image to test the changes.]]></summary>
-        <author>
-            <name>Arjun_Baliga</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[How to Detect Files of the Same Size on your Computer via PowerShell]]></title>
-        <id>https://techcommunity.microsoft.com/t5/educator-developer-blog/how-to-detect-files-of-the-same-size-on-your-computer-via/ba-p/3787635</id>
-        <link href="https://techcommunity.microsoft.com/t5/educator-developer-blog/how-to-detect-files-of-the-same-size-on-your-computer-via/ba-p/3787635"/>
-        <updated>2023-04-05T07:04:00.000Z</updated>
-        <summary type="html"><![CDATA[File management might be tedious, but it is sometimes required, especially when storage space is limited. PowerShell is an excellent tool for automating most activities including identifying files of the same size on your computer.
- 
-The script below will detect and report (rather than delete) all files in the directory and subdirectories, group them by size, filter out groups with only one file, and report on the files of the same size with their full path and creation time.
- 
-NOTE: Please make sure you further investigate the duplicate files this script finds before any other action is taken.
- 
- 
- 
- 
- 
-# Get all files in a directory and subdirectories
-$files = Get-ChildItem -Recurse -File
-
-# Group files by size
-$groups = $files | Group-Object Length
-
-# Filter groups with more than one item
-$duplicates = $groups | Where-Object {$_.Count -gt 1}
-
-# Output duplicate files
-foreach ($duplicate in $duplicates) {
-    Write-Host "Duplicate files of size $($duplicate.Name):"
-    $duplicate.Group | Select-Object FullName, CreationTime | Sort-Object CreationTime | Format-Table -AutoSize
-}
-
- 
- 
- 
- 
- 
-This script may be run in PowerShell by saving it as a .ps1 file and then running it from the PowerShell command prompt. Please keep in mind that if you have a large number of files on your computer, this script may take some time to run. How to Detect Files of the Same Size on your Computer via PowerShell
- 
-As always, please share your PowerShell automation scripts in the comments section below so that they can be added to or improved upon the script published above.]]></summary>
-        <author>
-            <name>Anthony Bartolo</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Revolutionize Your Student Project App Authentication with a PowerApps Login App Sample]]></title>
-        <id>https://techcommunity.microsoft.com/t5/educator-developer-blog/revolutionize-your-student-project-app-authentication-with-a/ba-p/3777225</id>
-        <link href="https://techcommunity.microsoft.com/t5/educator-developer-blog/revolutionize-your-student-project-app-authentication-with-a/ba-p/3777225"/>
-        <updated>2023-04-03T07:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Meet Seth Addo 
-Meet Seth Addo, a Gold Microsoft Learn Student Ambassador and Computer Science student at the University of Cape Coast, Ghana. Seth has developed a fantastic PowerApps app sample for performing basic authentication in a Power Platform application. In this app, users can enter their login credentials, which are compared with a table containing usernames and passwords. If the entered credentials match, users are granted access to a protected area of the application. This approach can be extended with additional functionality like password reset and multi-factor authentication to enhance application security. Try the PowerApps Login app today for a simple and secure way to log into your applications.
-Introduction
-Hello everyone! My name is Seth Addo, a Computer Science student…]]></summary>
-        <author>
-            <name>seths10</name>
         </author>
     </entry>
 </feed>
