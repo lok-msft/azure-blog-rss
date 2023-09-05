@@ -3148,16 +3148,6 @@
           "wordCount": 10075,
           "title": "How to setup Multisite in WordPress on Azure App Service",
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/458928i849B5B1ED17D8465/image-size/original?v=v2&px=-1"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/redirect-from-the-non-www-domain-to-the-www-domain-in-the-azure/ba-p/3790022",
-          "author": "Arjun_Baliga",
-          "description": "1. Navigate to your App Service via the Azure Portal. Under the Development Tools section, select SSH then Go -->.\n\n \n2. Modify the default site config - You would need to make a copy of the existing configuration and place the file inside the /home/site directory by running the below command.\n \n \ncp /etc/nginx/conf.d/default.conf /home/site/default\n \n \n \n\n \n\nGo to https://<app name>.scm.azurewebsites.net/newui/fileManager click on Modify site/default file.\n\n\n \n\nin the existing server block update the server name to www domain\n\n \n \nserver {\n\n        listen 80;\n\n        ## Your website name goes here.\n\n        server_name www.example.com\n \n \n \n\nIn the same default.conf file, you can create a new server block and add the below configurations for non-www to www redirection -\n\n \n \nserver {\n\n    listen 80;\n\n    server_name example.com;\n\n    return 301 $scheme://www.example.com$request_uri;\n\n}\n \n \n \n// This directive tells Nginx to send any request //for http://example.com to http://www.example.com with HTTP redirect code 301.\n\nCopy the following code snippet to /home/dev/startup.sh.\n\n \n \ncp /home/site/default /etc/nginx/conf.d/default.conf \n\n/usr/sbin/nginx -s reload\n \n \n \n\nPlease restart App Service and verify that the redirect from non www domain to www domain works fine.",
-          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/redirect-from-the-non-www-domain-to-the-www-domain-in-the-azure/ba-p/3790022",
-          "publishedOn": "2023-04-07T13:44:44.000Z",
-          "wordCount": 9554,
-          "title": "Redirect from the non WWW domain to the WWW domain in the Azure WordPress Market Place offering-",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/458536iEF630D9C1E4FBF9B?v=v2"
         }
       ]
     },
@@ -3480,6 +3470,16 @@
       "feedUrl": "https://techcommunity.microsoft.com/plugins/custom/microsoft/o365/custom-blog-rss?tid=-7989146602148070206&board=FastTrackforAzureBlog&size=100",
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
+        {
+          "id": "https://techcommunity.microsoft.com/t5/fasttrack-for-azure/integrating-microsoft-fabric-with-azure-databricks-delta-tables/ba-p/3916332",
+          "author": "Anu_Singh",
+          "description": "Introduction\nMicrosoft Fabric is a powerful unified analytics solution that allows users to seamlessly connect to various data sources, including Azure Databricks, and create insightful reports and visualizations without the need to move the data.\n \nIn this tutorial, we'll show you step-by-step how to connect to Azure Databricks generated Delta Tables and create a report in Microsoft Fabric.\nBy the end of this tutorial, you'll have the knowledge needed to read Azure Databricks generated Delta Tables from a Microsoft Fabric using Notebook and SQL query. You will also learn how to create a Power BI report that can help drive business decisions. So, let's get started!\n \n\n \nPrerequisites\nBefore you connect, complete these steps:\n\nAn Azure Databricks workspace\nAn ADLS Gen2 account to store delt…",
+          "link": "https://techcommunity.microsoft.com/t5/fasttrack-for-azure/integrating-microsoft-fabric-with-azure-databricks-delta-tables/ba-p/3916332",
+          "publishedOn": "2023-09-04T15:55:54.000Z",
+          "wordCount": 10402,
+          "title": "Integrating Microsoft Fabric with Azure Databricks Delta Tables",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/504102i0CE61B30FB7617B0/image-size/original?v=v2&px=-1"
+        },
         {
           "id": "https://techcommunity.microsoft.com/t5/fasttrack-for-azure/implementing-pagination-with-the-copy-activity-in-microsoft/ba-p/3914977",
           "author": "Sally_Dabbah",
@@ -3917,6 +3917,16 @@
       "feedUrl": "https://techcommunity.microsoft.com/plugins/custom/microsoft/o365/custom-blog-rss?tid=-7989146602148070206&board=AzureObservabilityBlog&size=100",
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
+        {
+          "id": "https://techcommunity.microsoft.com/t5/azure-observability-blog/azure-monitor-cost-optimization-using-azure-advisor/ba-p/3917488",
+          "author": "OREN_SALZBERG",
+          "description": "We in Azure Monitor are committed to assisting you in optimizing your budget allocation, making informed decisions about monitoring options, and discovering features and configurations that enable you to get more out of their infrastructure.\n \nAzure Advisor is a free offering that can help you avoid problems and save money by providing you with proactive best practice guidance.\n \n \n\nConsider configuring the low-cost Basic logs plan on selected tables:\n\nThis recommendation identifies an ingestion of more than 1 GB per month for tables eligible for the low-cost Basic Log data plan.The Basic Log plan gives the you the ability to use search capabilities for debugging and troubleshooting at a much lower cost – Read more about Basic logs.\n \n\n\nConsider Changing Pricing Tier:\n\nEach Log Analytics workspace in Azure Monitor can have a different price tier.\nThis recommendation identifies Log Analytics workspaces that should be in a different pricing tier and tells which tier your workspace should change to – Read more about pricing tiers.\n\n\nConsider removing unused restored tables:\n\nIf you use the restore function, you may forget to delete the restored tables after the operation is complete, resulting in high costs and frustration.This recommendation detects restored data that has been active in your workspace for more than a week.\nIt is then recommends to delete the table to avoid unnecessary costs. Read more about restore tables.\n\n\nHow do I see my recommendations?\n\nLog in to Azure Portal\nNew recommendations will be added in the next few months to help you reduce your overall cost in Azure Monitor and detect anomalies.\nNew recommendations will be added in the next few months to help you reduce your overall cost in Azure Monitor and detect anomalies.\nSearch for Advisor, in the search pane:\n \n\n\nNew recommendations will be added in the next few months to help you reduce your overall cost in Azure Monitor and detect anomalies.",
+          "link": "https://techcommunity.microsoft.com/t5/azure-observability-blog/azure-monitor-cost-optimization-using-azure-advisor/ba-p/3917488",
+          "publishedOn": "2023-09-04T11:08:42.000Z",
+          "wordCount": 9819,
+          "title": "Azure Monitor cost optimization using Azure Advisor",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/504391iC4947B28263C2004/image-size/original?v=v2&px=-1"
+        },
         {
           "id": "https://techcommunity.microsoft.com/t5/azure-observability-blog/integrate-keda-with-your-azure-kubernetes-service-cluster/ba-p/3888112",
           "author": "sunayanasingh",
@@ -6698,6 +6708,16 @@
       "feedUrl": "https://techcommunity.microsoft.com/plugins/custom/microsoft/o365/custom-blog-rss?tid=-125154990881687013&board=AzureObservabilityBlog&size=100",
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
+        {
+          "id": "https://techcommunity.microsoft.com/t5/azure-observability-blog/azure-monitor-cost-optimization-using-azure-advisor/ba-p/3917488",
+          "author": "OREN_SALZBERG",
+          "description": "We in Azure Monitor are committed to assisting you in optimizing your budget allocation, making informed decisions about monitoring options, and discovering features and configurations that enable you to get more out of their infrastructure.\n \nAzure Advisor is a free offering that can help you avoid problems and save money by providing you with proactive best practice guidance.\n \n \n\nConsider configuring the low-cost Basic logs plan on selected tables:\n\nThis recommendation identifies an ingestion of more than 1 GB per month for tables eligible for the low-cost Basic Log data plan.The Basic Log plan gives the you the ability to use search capabilities for debugging and troubleshooting at a much lower cost – Read more about Basic logs.\n \n\n\nConsider Changing Pricing Tier:\n\nEach Log Analytics workspace in Azure Monitor can have a different price tier.\nThis recommendation identifies Log Analytics workspaces that should be in a different pricing tier and tells which tier your workspace should change to – Read more about pricing tiers.\n\n\nConsider removing unused restored tables:\n\nIf you use the restore function, you may forget to delete the restored tables after the operation is complete, resulting in high costs and frustration.This recommendation detects restored data that has been active in your workspace for more than a week.\nIt is then recommends to delete the table to avoid unnecessary costs. Read more about restore tables.\n\n\nHow do I see my recommendations?\n\nLog in to Azure Portal\nNew recommendations will be added in the next few months to help you reduce your overall cost in Azure Monitor and detect anomalies.\nNew recommendations will be added in the next few months to help you reduce your overall cost in Azure Monitor and detect anomalies.\nSearch for Advisor, in the search pane:\n \n\n\nNew recommendations will be added in the next few months to help you reduce your overall cost in Azure Monitor and detect anomalies.",
+          "link": "https://techcommunity.microsoft.com/t5/azure-observability-blog/azure-monitor-cost-optimization-using-azure-advisor/ba-p/3917488",
+          "publishedOn": "2023-09-04T11:08:42.000Z",
+          "wordCount": 9819,
+          "title": "Azure Monitor cost optimization using Azure Advisor",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/504391iC4947B28263C2004/image-size/original?v=v2&px=-1"
+        },
         {
           "id": "https://techcommunity.microsoft.com/t5/azure-observability-blog/integrate-keda-with-your-azure-kubernetes-service-cluster/ba-p/3888112",
           "author": "sunayanasingh",
