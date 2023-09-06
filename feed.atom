@@ -2,10 +2,228 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2023-09-05T00:59:01.751Z</updated>
+    <updated>2023-09-06T01:00:04.552Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Announcing: Azure Developers – Python Day]]></title>
+        <id>https://devblogs.microsoft.com/python/?p=9452</id>
+        <link href="https://devblogs.microsoft.com/python/azure-developers-python-day-2023/"/>
+        <updated>2023-09-05T19:26:43.000Z</updated>
+        <summary type="html"><![CDATA[Experience cloud computing with Python on Azure during Python Day 2023!
+The post Announcing: Azure Developers – Python Day appeared first on Python.]]></summary>
+        <author>
+            <name>Chris Harris (PYTHON)</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Public Preview: Test Single GraphQL Resolver in Azure API Management Portal]]></title>
+        <id>public-preview-test-single-graphql-resolver-in-azure-api-management-portal</id>
+        <link href="https://azure.microsoft.com/en-us/updates/public-preview-test-single-graphql-resolver-in-azure-api-management-portal/"/>
+        <updated>2023-09-05T16:00:10.000Z</updated>
+        <summary type="html"><![CDATA[Customers using Azure API Management can seamlessly evaluate their GraphQL resolvers directly within the portal during the configuration phase in Azure portal.]]></summary>
+        <author>
+            <name>Azure service updates</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[4 Design Patterns to Deal with Large Item Sizes in Azure Cosmos DB for NoSQL]]></title>
+        <id>https://devblogs.microsoft.com/cosmosdb/?p=6622</id>
+        <link href="https://devblogs.microsoft.com/cosmosdb/4-design-patterns-to-deal-with-large-item-sizes/"/>
+        <updated>2023-09-05T14:00:59.000Z</updated>
+        <summary type="html"><![CDATA[Introduction 
+The post 4 Design Patterns to Deal with Large Item Sizes in Azure Cosmos DB for NoSQL appeared first on Azure Cosmos DB Blog.]]></summary>
+        <author>
+            <name>Subhasish Ghosh</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How to install an AKS cluster with Azure Managed Prometheus and Azure Managed Grafana via Bicep]]></title>
+        <id>https://techcommunity.microsoft.com/t5/fasttrack-for-azure/how-to-install-an-aks-cluster-with-azure-managed-prometheus-and/ba-p/3918527</id>
+        <link href="https://techcommunity.microsoft.com/t5/fasttrack-for-azure/how-to-install-an-aks-cluster-with-azure-managed-prometheus-and/ba-p/3918527"/>
+        <updated>2023-09-05T13:56:15.000Z</updated>
+        <summary type="html"><![CDATA[Monitoring the health and performance of an Azure Kubernetes Service(AKS) cluster effectively is a crucial task for the organizations. This ensures the stability, performance, and availability of containerized applications running on the cluster. This article shows how to deploy an Azure Kubernetes Service(AKS) cluster, Azure Monitor managed service for Prometheus, and Azure Managed Grafana for monitoring
+the performance and health status of the cluster and workloads. The article also shows how to:
+ 
+
+Deploy the NGINX Ingress Controller via Helm and configure it to expose metrics in Prometheus format.
+Create an Azure Managed Grafana dashboard to analyze NGINX Ingress Controller metrics.
+Configure the Azure Kubernetes Service(AKS) Network Observability
+Create an Azure Managed Grafana dashbo…]]></summary>
+        <author>
+            <name>paolosalvatori</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Using OpenAI REST Endpoints with Azure SQL Database]]></title>
+        <id>https://devblogs.microsoft.com/azure-sql/?p=2364</id>
+        <link href="https://devblogs.microsoft.com/azure-sql/using-openai-rest-endpoints-with-azure-sql-database/"/>
+        <updated>2023-09-05T11:00:40.000Z</updated>
+        <summary type="html"><![CDATA[Everyone loves OpenAI these days as it can do some amazing things. Here, I asked it to create a picture of a cat in a data center:
+(Go ahead and click the image to see a bigger version of this nightmare fuel)
+The post Using OpenAI REST Endpoints with Azure SQL Database appeared first on Azure SQL Devs’ Corner.]]></summary>
+        <author>
+            <name>Brian Spendolini</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Query Azure Resource Graph from Azure Monitor]]></title>
+        <id>https://techcommunity.microsoft.com/t5/azure-observability-blog/query-azure-resource-graph-from-azure-monitor/ba-p/3918298</id>
+        <link href="https://techcommunity.microsoft.com/t5/azure-observability-blog/query-azure-resource-graph-from-azure-monitor/ba-p/3918298"/>
+        <updated>2023-09-05T10:27:25.000Z</updated>
+        <summary type="html"><![CDATA[Azure Monitor now lets you query data in Azure Resource Graph from your Log Analytics workspace.
+You can utilize this feature to make your Azure Log Analytics queries aware of your resource’s properties such as tags, resource attributes and much more.
+ 
+You can run cross-service queries by using any client tools that support Kusto Query Language (KQL) queries, including the Log Analytics web UI, workbooks, PowerShell, and the REST API. Read more here
+ 
+Query data in Azure Resource Graph
+As Azure Resource Graph continues to expose more valuable data, you can now create cross-service queries between Log Analytics workspaces and Azure Resource Graph.
+Here are some sample Azure Log Analytics queries that use the new Azure Resource Graph cross-service query capabilities:
+ 
+
+Filter a Log Analytics query based on the results of an Azure Resource Graph query
+
+- Filter your KQL query to get only virtual machines that are from Standard_D typle that has data:
+ 
+arg("").Resources
+| where type == "microsoft.compute/virtualmachines" and properties.hardwareProfile.vmSize startswith "Standard_D"
+| join (
+    Heartbeat
+    | where TimeGenerated > ago(1d)
+    | distinct Computer
+    )
+    on $left.name == $right.Computer
+ 
+
+Create an alert rule that applies only to certain resources taken from an ARG query- Exclude resources based on tags – for example, not to trigger alerts for VMs with a “Test” tag.
+
+arg(״״).Resources| where tags.environment=~'Test'| project name - Retrieve performance data related to CPU utilization and filter to resources with the “prod” tag:
+InsightsMetrics
+| where Name == "UtilizationPercentage"
+| lookup (
+    arg("").Resources 
+    | where type == 'microsoft.compute/virtualmachines' 
+    | project _ResourceId=tolower(id), tags
+    )
+    on _ResourceId
+| where tostring(tags.Env) == "Prod"
+ 
+
+ 
+More use cases:- Use a tag to determine whether VMs should be running 24x7 or should be shutdown at night.- Show alerts on any server that contains a certain number of cores.]]></summary>
+        <author>
+            <name>OREN_SALZBERG</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Query Azure Resource Graph from Azure Monitor]]></title>
+        <id>https://techcommunity.microsoft.com/t5/azure-observability-blog/query-azure-resource-graph-from-azure-monitor/ba-p/3918298</id>
+        <link href="https://techcommunity.microsoft.com/t5/azure-observability-blog/query-azure-resource-graph-from-azure-monitor/ba-p/3918298"/>
+        <updated>2023-09-05T10:27:25.000Z</updated>
+        <summary type="html"><![CDATA[Azure Monitor now lets you query data in Azure Resource Graph from your Log Analytics workspace.
+You can utilize this feature to make your Azure Log Analytics queries aware of your resource’s properties such as tags, resource attributes and much more.
+ 
+You can run cross-service queries by using any client tools that support Kusto Query Language (KQL) queries, including the Log Analytics web UI, workbooks, PowerShell, and the REST API. Read more here
+ 
+Query data in Azure Resource Graph
+As Azure Resource Graph continues to expose more valuable data, you can now create cross-service queries between Log Analytics workspaces and Azure Resource Graph.
+Here are some sample Azure Log Analytics queries that use the new Azure Resource Graph cross-service query capabilities:
+ 
+
+Filter a Log Analytics query based on the results of an Azure Resource Graph query
+
+- Filter your KQL query to get only virtual machines that are from Standard_D typle that has data:
+ 
+arg("").Resources
+| where type == "microsoft.compute/virtualmachines" and properties.hardwareProfile.vmSize startswith "Standard_D"
+| join (
+    Heartbeat
+    | where TimeGenerated > ago(1d)
+    | distinct Computer
+    )
+    on $left.name == $right.Computer
+ 
+
+Create an alert rule that applies only to certain resources taken from an ARG query- Exclude resources based on tags – for example, not to trigger alerts for VMs with a “Test” tag.
+
+arg(״״).Resources| where tags.environment=~'Test'| project name - Retrieve performance data related to CPU utilization and filter to resources with the “prod” tag:
+InsightsMetrics
+| where Name == "UtilizationPercentage"
+| lookup (
+    arg("").Resources 
+    | where type == 'microsoft.compute/virtualmachines' 
+    | project _ResourceId=tolower(id), tags
+    )
+    on _ResourceId
+| where tostring(tags.Env) == "Prod"
+ 
+
+ 
+More use cases:- Use a tag to determine whether VMs should be running 24x7 or should be shutdown at night.- Show alerts on any server that contains a certain number of cores.]]></summary>
+        <author>
+            <name>OREN_SALZBERG</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Announcing Public Preview of Free Hosting Plan for WordPress on App Service]]></title>
+        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/announcing-public-preview-of-free-hosting-plan-for-wordpress-on/ba-p/3918254</id>
+        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/announcing-public-preview-of-free-hosting-plan-for-wordpress-on/ba-p/3918254"/>
+        <updated>2023-09-05T09:02:00.000Z</updated>
+        <summary type="html"><![CDATA[We are excited to announce that we have released the public preview of free hosting plan for WordPress on App Service.
+ 
+We announced the General Availability of WordPress on App Service one year ago, in August 2022 with 3 paid hosting plans. We learnt that sometimes you might need to try out the service before you migrate your production applications. So, we are offering you a playground for a limited period - a free hosting plan to and explore and experiment with WordPress on App Service. This will help you understand the offering better before you make a long-term investment.
+ 
+
+
+
+Note: This hosting plan is not suitable for Production workloads. So, it is highly recommended that you do not use this plan for production setup.
+
+
+
+ 
+Updated Hosting Plans:
+ 
+
+
+
+
+Hosting Plan
+
+
+WebApp Server…]]></summary>
+        <author>
+            <name>abhishekreddy</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Troubleshooting guide for Application Configuration Service on Azure Spring Apps]]></title>
+        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/troubleshooting-guide-for-application-configuration-service-on/ba-p/3909442</id>
+        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/troubleshooting-guide-for-application-configuration-service-on/ba-p/3909442"/>
+        <updated>2023-09-05T02:52:53.000Z</updated>
+        <summary type="html"><![CDATA[Application Configuration Service overview
+Application Configuration Service for VMware Tanzu (ACS) is one of the commercial VMware Tanzu components. It enables the management of Kubernetes-native ConfigMap resources that are populated from properties defined in one or more Git repositories.
+ 
+Application Configuration Service is offered in two versions: Gen1 and Gen2. The Gen1 version mainly serves existing customers for backward compatibility purposes and is supported only until April 30, 2024. New service instances should use Gen2. The Gen2 version uses flux as the backend to communicate with Git repositories and provides better performance compared to Gen1.
+ 
+You can check the generation information via Azure Portal
+
+ 
+The below article will introduce the troubleshooting guide for both…]]></summary>
+        <author>
+            <name>Xiaoyun_Ding</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[This Week in Spring - September 5th, 2023]]></title>
+        <id>https://spring.io/blog/2023/09/05/this-week-in-spring-september-5th-2023</id>
+        <link href="https://spring.io/blog/2023/09/05/this-week-in-spring-september-5th-2023"/>
+        <updated>2023-09-05T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Level up your Java code and explore what Spring can do for you.]]></summary>
+        <author>
+            <name>Josh Long</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Integrating Microsoft Fabric with Azure Databricks Delta Tables]]></title>
         <id>https://techcommunity.microsoft.com/t5/fasttrack-for-azure/integrating-microsoft-fabric-with-azure-databricks-delta-tables/ba-p/3916332</id>
