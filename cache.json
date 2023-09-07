@@ -1790,6 +1790,16 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/best-practise-for-private-endpoint-enabled-docker-container-app/ba-p/3917109",
+          "author": "Marina_Liu",
+          "description": "Web App for Containers is a lightweighted way to manage app by docker image. CD (Continuous Deployment) is a common way to pull the updated docker image from docker registry (such as Azure Continer Registray or Docker Hub etc) to App Service automatically.\n\n \n\nWhile if App Service enables Private Endpoint, the webhook from container registry should be blocked with 403 since the public access to the App Service kudu site (advanced tool site) is blocked by default. And when webhook event is trying sent to app service via Private Endpoint, it should fail with IP forbidden.\n\n\n \nWith the situation, this blog provide a workaround by allowing webhook IP to access App Service kudu site via public access and keep the remaining traffic go through Private Endpoint. So the diagram as below:\n\n \n\nIn ord…",
+          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/best-practise-for-private-endpoint-enabled-docker-container-app/ba-p/3917109",
+          "publishedOn": "2023-09-06T07:48:15.000Z",
+          "wordCount": 9948,
+          "title": "Best practise for Private Endpoint Enabled Docker container App Service",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/504238iDB4AB4B4970552A9/image-size/original?v=v2&px=-1"
+        },
+        {
           "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/announcing-public-preview-of-free-hosting-plan-for-wordpress-on/ba-p/3918254",
           "author": "abhishekreddy",
           "description": "We are excited to announce that we have released the public preview of free hosting plan for WordPress on App Service.\n \nWe announced the General Availability of WordPress on App Service one year ago, in August 2022 with 3 paid hosting plans. We learnt that sometimes you might need to try out the service before you migrate your production applications. So, we are offering you a playground for a limited period - a free hosting plan to and explore and experiment with WordPress on App Service. This will help you understand the offering better before you make a long-term investment.\n \n\n\n\nNote: This hosting plan is not suitable for Production workloads. So, it is highly recommended that you do not use this plan for production setup.\n\n\n\n \nUpdated Hosting Plans:\n \n\n\n\n\nHosting Plan\n\n\nWebApp Server…",
@@ -1928,6 +1938,16 @@
           "wordCount": 9967,
           "title": "Socket.IO support on Azure",
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/501202i5069BDB20D6FB761/image-size/original?v=v2&px=-1"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/introducing-microsoft-playwright-testing-service-private-preview/ba-p/3905705",
+          "author": "Vanshvsingh",
+          "description": "We are excited to introduce Microsoft Playwright Testing, a new service built for running Playwright tests easily at scale. Playwright is a fast-growing, open-source framework that enables reliable end-to-end testing and automation for modern web apps. Microsoft Playwright Testing uses the cloud to enable you to run Playwright tests with much higher parallelization across different operating system-browser combinations simultaneously. This means getting tests done faster, which can help speed up delivery of features without sacrificing quality. \n \nWe are currently in private preview and need your feedback to help shape this service! To get started, join the waitlist. \n \nGet test suite results faster \nAutomating end-to-end tests with Playwright helps ensure your web app works the way you ex…",
+          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/introducing-microsoft-playwright-testing-service-private-preview/ba-p/3905705",
+          "publishedOn": "2023-08-22T15:01:13.000Z",
+          "wordCount": 10002,
+          "title": "Introducing Microsoft Playwright Testing service private preview",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/500396i4689ECC1024CE854/image-size/original?v=v2&px=-1"
         },
         {
           "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/introducing-microsoft-playwright-testing-private-preview/ba-p/3905705",
@@ -3158,26 +3178,6 @@
           "wordCount": 11336,
           "title": "Boost efficiency with Power Platform and Azure API Management",
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/459704i8C25B1BFB81D41E7/image-size/original?v=v2&px=-1"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/automated-and-customized-dashboards-for-azure-load-testing/ba-p/3786891",
-          "author": "Nagarjuna_V",
-          "description": "Many of you have been leveraging Azure Load Testing (ALT) to evaluate how your applications respond to high scale load and get actionable insights to fix performance bottlenecks. If you haven’t started yet, you can get started and run your first load test in less than 10 minutes.\n \nAzure Load Testing (ALT) provides a unified dashboard of test statistics, client-side metrics, and server-side metrics so that the performance bottlenecks can be easily identified. While the out of the box dashboard is helpful in most scenarios, you might want the load test results to be available in a tool of your choice –\n\nYou have a dashboard to monitor multiple aspects of service reliability and you want to see load test results in that dashboard.\nYou want to observe the trend of specific metrics across test…",
-          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/automated-and-customized-dashboards-for-azure-load-testing/ba-p/3786891",
-          "publishedOn": "2023-04-10T12:49:05.000Z",
-          "wordCount": 10331,
-          "title": "Automated and customized dashboards for Azure Load Testing",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/457692i9A3F0F53EE1F2F7E/image-size/original?v=v2&px=-1"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/how-to-setup-multisite-in-wordpress-on-azure-app-service/ba-p/3791071",
-          "author": "abhishekreddy",
-          "description": "Try WordPress on Azure App Service here:\n\n \nWhat is WordPress Multisite?\n \nWordPress Multisite is a feature of WordPress that enables you to run and manage multiple WordPress websites using the same WordPress installation. You could update multiple websites in a single click by using the parent WordPress dashboard, and even manage individual sites through their individual dashboards. This feature was previously called WordPress Multi-User.\n \nFor example, a multinational e-commerce store can create multiple country-specific subsites in the same WordPress installation using this feature. The root admin can install plugins and themes required for all the websites at once. They can also assign different admins to each subsite. A lot of our customers use the multisite feature for various scenar…",
-          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/how-to-setup-multisite-in-wordpress-on-azure-app-service/ba-p/3791071",
-          "publishedOn": "2023-04-10T08:00:21.000Z",
-          "wordCount": 10075,
-          "title": "How to setup Multisite in WordPress on Azure App Service",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/458928i849B5B1ED17D8465/image-size/original?v=v2&px=-1"
         }
       ]
     },
@@ -3500,6 +3500,16 @@
       "feedUrl": "https://techcommunity.microsoft.com/plugins/custom/microsoft/o365/custom-blog-rss?tid=-7989146602148070206&board=FastTrackforAzureBlog&size=100",
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
+        {
+          "id": "https://techcommunity.microsoft.com/t5/fasttrack-for-azure/how-to-create-an-aks-cluster-with-azure-managed-prometheus-and/ba-p/3918527",
+          "author": "paolosalvatori",
+          "description": "Monitoring the health and performance of an Azure Kubernetes Service(AKS) cluster effectively is a crucial task for the organizations. This ensures the stability, performance, and availability of containerized applications running on the cluster. This article shows how to deploy an Azure Kubernetes Service(AKS) cluster, Azure Monitor managed service for Prometheus, and Azure Managed Grafana for monitoring\nthe performance and health status of the cluster and workloads. The article also shows how to:\n \n\nDeploy the NGINX Ingress Controller via Helm and configure it to expose metrics in Prometheus format.\nCreate an Azure Managed Grafana dashboard to analyze NGINX Ingress Controller metrics.\nConfigure the Azure Kubernetes Service(AKS) Network Observability\nCreate an Azure Managed Grafana dashbo…",
+          "link": "https://techcommunity.microsoft.com/t5/fasttrack-for-azure/how-to-create-an-aks-cluster-with-azure-managed-prometheus-and/ba-p/3918527",
+          "publishedOn": "2023-09-05T13:56:15.000Z",
+          "wordCount": 20949,
+          "title": "How to create an AKS cluster with Azure Managed Prometheus and Azure Managed Grafana via Bicep",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/504769i284414C24B6D790B/image-size/original?v=v2&px=-1"
+        },
         {
           "id": "https://techcommunity.microsoft.com/t5/fasttrack-for-azure/how-to-install-an-aks-cluster-with-azure-managed-prometheus-and/ba-p/3918527",
           "author": "paolosalvatori",
@@ -4419,6 +4429,16 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/t5/azure-paas-blog/azure-storage-lifecycle-management-lcm-prefixmatch-issues/ba-p/3917300",
+          "author": "hqaffesha",
+          "description": "Azure Storage lifecycle management (LCM) provides a rule-based policy enabling you to efficiently transition data between access tiers or expire it upon reaching the end of its lifecycle. These policies can be applied to a base blob, and optionally, to the blob's versions or snapshots. In this article, we'll delve into troubleshooting LCM Prefix issues and identifying common misconfigurations.\n \nUnderstanding PrefixMatch\nPrefixMatch is a pivotal component of Azure Storage LCM, wherein a prefix is defined to match specific blobs or containers. It's essential to recognize that prefix matching operates in a case-sensitive manner, adhering strictly to the specified rules. Throughout this article, we'll explore various storage content scenarios and analyze the outcomes when LCM is applied with …",
+          "link": "https://techcommunity.microsoft.com/t5/azure-paas-blog/azure-storage-lifecycle-management-lcm-prefixmatch-issues/ba-p/3917300",
+          "publishedOn": "2023-09-06T13:15:25.000Z",
+          "wordCount": 10309,
+          "title": "Azure Storage Lifecycle Management (LCM) PrefixMatch Issues",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/504298i4187B038AB65C8FE/image-size/original?v=v2&px=-1"
+        },
+        {
           "id": "https://techcommunity.microsoft.com/t5/azure-paas-blog/performing-simple-queue-storage-rest-api-operations-using-curl/ba-p/3913613",
           "author": "Amrinder_Singh",
           "description": "The blog points to performing simple Queue REST API operations such as List, Create, Get, Put and Delete using CURL utility.\n \nLet’s look at some of the CURL command syntax to perform REST API operations and will be making use of SAS as the auth scheme for most of the operations. We need to take care of the pointers below while performing the operations via CURL:\n \n\nEnsure the URL is formed correctly as per the operation you are trying to perform.\nThe header needs to be passed and can be done using “-H” parameter.\nEnsure you are appending/removing extra ‘?’ to the SAS token in the URLs accordingly.\nHttp verb can be GET, PUT, PATCH or DELETE as provided by the CURL specifications.\n\n \nList Queues\nList Queues (REST API) - Azure Storage | Microsoft Learn\n \nSyntax:\n \ncurl -i -X <HTTP Verb> -H \"…",
@@ -4992,6 +5012,16 @@
       "feedUrl": "https://techcommunity.microsoft.com/plugins/custom/microsoft/o365/custom-blog-rss?tid=6220021871588173833&board=MicrosoftMechanicsBlog&size=100",
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
+        {
+          "id": "https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/ai-powered-data-classification-microsoft-purview/ba-p/3919206",
+          "author": "Zachary Cavanell",
+          "description": "Identify, classify, and protect information at scale using Microsoft Purview’s AI-powered classifiers. Gain visibility into the data inside of your organization and apply the right protections, especially important if you intend to use generative AI to create content based on the information accessible on your network.\n \n\n \nMicrosoft Purview’s AI-powered classifiers are extensively pre-trained and tested on vast categories of business data and Microsoft domain-specific knowledge, as well as synthetic data and sample files generated from large language models to detect sensitive content. Because these classifiers run on Microsoft’s AI supercomputer, with its specialized hardware and software stack, your sensitive information can be classified and protected at unparalleled speed and scale.\n …",
+          "link": "https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/ai-powered-data-classification-microsoft-purview/ba-p/3919206",
+          "publishedOn": "2023-09-06T15:04:31.000Z",
+          "wordCount": 11403,
+          "title": "AI-powered Data Classification | Microsoft Purview",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/505056iB01E142F6CCCE512/image-size/original?v=v2&px=-1"
+        },
         {
           "id": "https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/frontline-updates-in-microsoft-teams-windows-365-copilot-amp/ba-p/3893283",
           "author": "Zachary Cavanell",
@@ -10619,6 +10649,16 @@
       "feedUrl": "https://devblogs.microsoft.com/microsoft365dev/feed/",
       "siteUrl": "https://devblogs.microsoft.com/microsoft365dev/",
       "articles": [
+        {
+          "id": "https://devblogs.microsoft.com/microsoft365dev/?p=15235",
+          "author": "Luberth Morera",
+          "description": "Today, we are announcing that we will fully deprecate Outlook REST v2.0 and beta endpoints on March 31, 2024.\nThe post Outlook REST API v2.0 and beta endpoints decommissioning update appeared first on Microsoft 365 Developer Blog.",
+          "link": "https://devblogs.microsoft.com/microsoft365dev/outlook-rest-api-v2-0-and-beta-endpoints-decommissioning-update/",
+          "publishedOn": "2023-09-06T18:09:38.000Z",
+          "wordCount": 4523,
+          "title": "Outlook REST API v2.0 and beta endpoints decommissioning update",
+          "imageUrl": "https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2023/09/decom-scaled.jpg"
+        },
         {
           "id": "https://devblogs.microsoft.com/microsoft365dev/?p=15179",
           "author": "Ayan Chakraborty",

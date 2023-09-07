@@ -2,10 +2,71 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2023-09-06T01:00:04.552Z</updated>
+    <updated>2023-09-07T00:59:44.056Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Outlook REST API v2.0 and beta endpoints decommissioning update]]></title>
+        <id>https://devblogs.microsoft.com/microsoft365dev/?p=15235</id>
+        <link href="https://devblogs.microsoft.com/microsoft365dev/outlook-rest-api-v2-0-and-beta-endpoints-decommissioning-update/"/>
+        <updated>2023-09-06T18:09:38.000Z</updated>
+        <summary type="html"><![CDATA[Today, we are announcing that we will fully deprecate Outlook REST v2.0 and beta endpoints on March 31, 2024.
+The post Outlook REST API v2.0 and beta endpoints decommissioning update appeared first on Microsoft 365 Developer Blog.]]></summary>
+        <author>
+            <name>Luberth Morera</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[AI-powered Data Classification | Microsoft Purview]]></title>
+        <id>https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/ai-powered-data-classification-microsoft-purview/ba-p/3919206</id>
+        <link href="https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/ai-powered-data-classification-microsoft-purview/ba-p/3919206"/>
+        <updated>2023-09-06T15:04:31.000Z</updated>
+        <summary type="html"><![CDATA[Identify, classify, and protect information at scale using Microsoft Purview’s AI-powered classifiers. Gain visibility into the data inside of your organization and apply the right protections, especially important if you intend to use generative AI to create content based on the information accessible on your network.
+ 
+
+ 
+Microsoft Purview’s AI-powered classifiers are extensively pre-trained and tested on vast categories of business data and Microsoft domain-specific knowledge, as well as synthetic data and sample files generated from large language models to detect sensitive content. Because these classifiers run on Microsoft’s AI supercomputer, with its specialized hardware and software stack, your sensitive information can be classified and protected at unparalleled speed and scale.
+ …]]></summary>
+        <author>
+            <name>Zachary Cavanell</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Azure Storage Lifecycle Management (LCM) PrefixMatch Issues]]></title>
+        <id>https://techcommunity.microsoft.com/t5/azure-paas-blog/azure-storage-lifecycle-management-lcm-prefixmatch-issues/ba-p/3917300</id>
+        <link href="https://techcommunity.microsoft.com/t5/azure-paas-blog/azure-storage-lifecycle-management-lcm-prefixmatch-issues/ba-p/3917300"/>
+        <updated>2023-09-06T13:15:25.000Z</updated>
+        <summary type="html"><![CDATA[Azure Storage lifecycle management (LCM) provides a rule-based policy enabling you to efficiently transition data between access tiers or expire it upon reaching the end of its lifecycle. These policies can be applied to a base blob, and optionally, to the blob's versions or snapshots. In this article, we'll delve into troubleshooting LCM Prefix issues and identifying common misconfigurations.
+ 
+Understanding PrefixMatch
+PrefixMatch is a pivotal component of Azure Storage LCM, wherein a prefix is defined to match specific blobs or containers. It's essential to recognize that prefix matching operates in a case-sensitive manner, adhering strictly to the specified rules. Throughout this article, we'll explore various storage content scenarios and analyze the outcomes when LCM is applied with …]]></summary>
+        <author>
+            <name>hqaffesha</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Best practise for Private Endpoint Enabled Docker container App Service]]></title>
+        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/best-practise-for-private-endpoint-enabled-docker-container-app/ba-p/3917109</id>
+        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/best-practise-for-private-endpoint-enabled-docker-container-app/ba-p/3917109"/>
+        <updated>2023-09-06T07:48:15.000Z</updated>
+        <summary type="html"><![CDATA[Web App for Containers is a lightweighted way to manage app by docker image. CD (Continuous Deployment) is a common way to pull the updated docker image from docker registry (such as Azure Continer Registray or Docker Hub etc) to App Service automatically.
+
+ 
+
+While if App Service enables Private Endpoint, the webhook from container registry should be blocked with 403 since the public access to the App Service kudu site (advanced tool site) is blocked by default. And when webhook event is trying sent to app service via Private Endpoint, it should fail with IP forbidden.
+
+
+ 
+With the situation, this blog provide a workaround by allowing webhook IP to access App Service kudu site via public access and keep the remaining traffic go through Private Endpoint. So the diagram as below:
+
+ 
+
+In ord…]]></summary>
+        <author>
+            <name>Marina_Liu</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Announcing: Azure Developers – Python Day]]></title>
         <id>https://devblogs.microsoft.com/python/?p=9452</id>
@@ -36,6 +97,23 @@ The post Announcing: Azure Developers – Python Day appeared first on Python.]]
 The post 4 Design Patterns to Deal with Large Item Sizes in Azure Cosmos DB for NoSQL appeared first on Azure Cosmos DB Blog.]]></summary>
         <author>
             <name>Subhasish Ghosh</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How to create an AKS cluster with Azure Managed Prometheus and Azure Managed Grafana via Bicep]]></title>
+        <id>https://techcommunity.microsoft.com/t5/fasttrack-for-azure/how-to-create-an-aks-cluster-with-azure-managed-prometheus-and/ba-p/3918527</id>
+        <link href="https://techcommunity.microsoft.com/t5/fasttrack-for-azure/how-to-create-an-aks-cluster-with-azure-managed-prometheus-and/ba-p/3918527"/>
+        <updated>2023-09-05T13:56:15.000Z</updated>
+        <summary type="html"><![CDATA[Monitoring the health and performance of an Azure Kubernetes Service(AKS) cluster effectively is a crucial task for the organizations. This ensures the stability, performance, and availability of containerized applications running on the cluster. This article shows how to deploy an Azure Kubernetes Service(AKS) cluster, Azure Monitor managed service for Prometheus, and Azure Managed Grafana for monitoring
+the performance and health status of the cluster and workloads. The article also shows how to:
+ 
+
+Deploy the NGINX Ingress Controller via Helm and configure it to expose metrics in Prometheus format.
+Create an Azure Managed Grafana dashboard to analyze NGINX Ingress Controller metrics.
+Configure the Azure Kubernetes Service(AKS) Network Observability
+Create an Azure Managed Grafana dashbo…]]></summary>
+        <author>
+            <name>paolosalvatori</name>
         </author>
     </entry>
     <entry>
@@ -1343,6 +1421,21 @@ I’m writing to you today from VMware Explore in Las Vegas, where my team and I
         <summary type="html"><![CDATA[Protect applications from abnormally high levels of traffic with rate-limit rules on Azure’s regional Web Application Firewall running on Application Gateway.]]></summary>
         <author>
             <name>Azure service updates</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Introducing Microsoft Playwright Testing service private preview]]></title>
+        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/introducing-microsoft-playwright-testing-service-private-preview/ba-p/3905705</id>
+        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/introducing-microsoft-playwright-testing-service-private-preview/ba-p/3905705"/>
+        <updated>2023-08-22T15:01:13.000Z</updated>
+        <summary type="html"><![CDATA[We are excited to introduce Microsoft Playwright Testing, a new service built for running Playwright tests easily at scale. Playwright is a fast-growing, open-source framework that enables reliable end-to-end testing and automation for modern web apps. Microsoft Playwright Testing uses the cloud to enable you to run Playwright tests with much higher parallelization across different operating system-browser combinations simultaneously. This means getting tests done faster, which can help speed up delivery of features without sacrificing quality. 
+ 
+We are currently in private preview and need your feedback to help shape this service! To get started, join the waitlist. 
+ 
+Get test suite results faster 
+Automating end-to-end tests with Playwright helps ensure your web app works the way you ex…]]></summary>
+        <author>
+            <name>Vanshvsingh</name>
         </author>
     </entry>
     <entry>
@@ -15543,38 +15636,6 @@ The post You can now use Microsoft Kiota within Visual Studio Code appeared firs
         <summary type="html"><![CDATA[Azure Monitor managed service for Prometheus has updated our AKS metrics add-on to support Prometheus metric collection from the Windows nodes in your AKS clusters.]]></summary>
         <author>
             <name>Azure service updates</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Automated and customized dashboards for Azure Load Testing]]></title>
-        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/automated-and-customized-dashboards-for-azure-load-testing/ba-p/3786891</id>
-        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/automated-and-customized-dashboards-for-azure-load-testing/ba-p/3786891"/>
-        <updated>2023-04-10T12:49:05.000Z</updated>
-        <summary type="html"><![CDATA[Many of you have been leveraging Azure Load Testing (ALT) to evaluate how your applications respond to high scale load and get actionable insights to fix performance bottlenecks. If you haven’t started yet, you can get started and run your first load test in less than 10 minutes.
- 
-Azure Load Testing (ALT) provides a unified dashboard of test statistics, client-side metrics, and server-side metrics so that the performance bottlenecks can be easily identified. While the out of the box dashboard is helpful in most scenarios, you might want the load test results to be available in a tool of your choice –
-
-You have a dashboard to monitor multiple aspects of service reliability and you want to see load test results in that dashboard.
-You want to observe the trend of specific metrics across test…]]></summary>
-        <author>
-            <name>Nagarjuna_V</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[How to setup Multisite in WordPress on Azure App Service]]></title>
-        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/how-to-setup-multisite-in-wordpress-on-azure-app-service/ba-p/3791071</id>
-        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/how-to-setup-multisite-in-wordpress-on-azure-app-service/ba-p/3791071"/>
-        <updated>2023-04-10T08:00:21.000Z</updated>
-        <summary type="html"><![CDATA[Try WordPress on Azure App Service here:
-
- 
-What is WordPress Multisite?
- 
-WordPress Multisite is a feature of WordPress that enables you to run and manage multiple WordPress websites using the same WordPress installation. You could update multiple websites in a single click by using the parent WordPress dashboard, and even manage individual sites through their individual dashboards. This feature was previously called WordPress Multi-User.
- 
-For example, a multinational e-commerce store can create multiple country-specific subsites in the same WordPress installation using this feature. The root admin can install plugins and themes required for all the websites at once. They can also assign different admins to each subsite. A lot of our customers use the multisite feature for various scenar…]]></summary>
-        <author>
-            <name>abhishekreddy</name>
         </author>
     </entry>
     <entry>
