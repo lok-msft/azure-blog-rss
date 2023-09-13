@@ -6,6 +6,16 @@
       "siteUrl": "https://spring.io",
       "articles": [
         {
+          "id": "https://spring.io/blog/2023/09/12/this-week-in-spring-september-12th-2023",
+          "author": "Josh Long",
+          "description": "Level up your Java code and explore what Spring can do for you.",
+          "link": "https://spring.io/blog/2023/09/12/this-week-in-spring-september-12th-2023",
+          "publishedOn": "2023-09-12T00:00:00.000Z",
+          "wordCount": 7061,
+          "title": "This Week in Spring - September 12th, 2023",
+          "imageUrl": "https://spring.io/img/og-spring.png"
+        },
+        {
           "id": "https://spring.io/blog/2023/09/09/all-together-now-spring-boot-3-2-graalvm-native-images-java-21-and-virtual",
           "author": "Josh Long",
           "description": "Level up your Java code and explore what Spring can do for you.",
@@ -1809,6 +1819,16 @@
       "feedUrl": "https://techcommunity.microsoft.com/plugins/custom/microsoft/o365/custom-blog-rss?tid=2893852362688900935&board=AppsonAzureBlog&size=100",
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
+        {
+          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/navigating-common-vnet-injection-challenges-with-azure-spring/ba-p/3911360",
+          "author": "Hanli_Ren",
+          "description": "This article outlines the typical challenges that customers may come across while operating an Azure Spring Apps service instance using the Standard and Enterprise plans within a virtual network environment. Deploying Azure Spring Apps within a customized Virtual Network introduces a multitude of components into the system. This article will guide you to set network components such as Network Security Groups (NSG), route tables, and custom DNS servers correctly to make sure service is functioning as expected.\n \n\n \nIn the following sections, we've compiled a list of common issues our customers encounter and offer recommendations for effectively resolving them.\n \nVNET Prerequisites not met IssuesCustom Policy issues\nCustom DNS Server Resolution Issues\nOutbound connection issues Route Table I…",
+          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/navigating-common-vnet-injection-challenges-with-azure-spring/ba-p/3911360",
+          "publishedOn": "2023-09-12T02:30:47.000Z",
+          "wordCount": 12033,
+          "title": "Navigating Common VNET Injection Challenges with Azure Spring Apps",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/503052iDB5C5C0D850FA3A4/image-size/original?v=v2&px=-1"
+        },
         {
           "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/run-your-spring-boot-3-app-on-azure-spring-apps/ba-p/3917326",
           "author": "Hang_Wang",
@@ -3878,6 +3898,16 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/t5/azure-observability-blog/explore-the-new-capabilities-with-datadog-an-azure-native-isv/ba-p/3924436",
+          "author": "piyush05",
+          "description": "Datadog – An Azure Native ISV Service seamlessly integrates with Azure, allowing automatic sending of logs and metrics to your Datadog organization for monitoring your Azure workloads. The service can be easily managed through clients such as Azure Portal, Command-Line Interface (CLI), and software development kits (SDKs), without requiring any custom code or connectors. The service, co-developed by Microsoft and Datadog, has continued to grow with deeper integrations based on your feedback.\nHere are some of the top features shipped recently that we would like to highlight:\n\nMulti-Subscription Monitoring – Easily manage monitoring of all your Azure subscriptions with Datadog from one place for a single pane-of-glass view.\nQuickstart Template to provision a new Datadog org - a new template …",
+          "link": "https://techcommunity.microsoft.com/t5/azure-observability-blog/explore-the-new-capabilities-with-datadog-an-azure-native-isv/ba-p/3924436",
+          "publishedOn": "2023-09-12T15:00:00.000Z",
+          "wordCount": 11146,
+          "title": "Explore the new capabilities with Datadog—An Azure Native ISV Service",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/507081iE86B16B889081001/image-size/original?v=v2&px=-1"
+        },
+        {
           "id": "https://techcommunity.microsoft.com/t5/azure-observability-blog/query-azure-resource-graph-from-azure-monitor/ba-p/3918298",
           "author": "OREN_SALZBERG",
           "description": "Azure Monitor now lets you query data in Azure Resource Graph from your Log Analytics workspace.\nYou can utilize this feature to make your Azure Log Analytics queries aware of your resource’s properties such as tags, resource attributes and much more.\n \nYou can run cross-service queries by using any client tools that support Kusto Query Language (KQL) queries, including the Log Analytics web UI, workbooks, PowerShell, and the REST API. Read more here\n \nQuery data in Azure Resource Graph\nAs Azure Resource Graph continues to expose more valuable data, you can now create cross-service queries between Log Analytics workspaces and Azure Resource Graph.\nHere are some sample Azure Log Analytics queries that use the new Azure Resource Graph cross-service query capabilities:\n \n\nFilter a Log Analytics query based on the results of an Azure Resource Graph query\n\n- Filter your KQL query to get only virtual machines that are from Standard_D typle that has data:\n \narg(\"\").Resources\n| where type == \"microsoft.compute/virtualmachines\" and properties.hardwareProfile.vmSize startswith \"Standard_D\"\n| join (\n    Heartbeat\n    | where TimeGenerated > ago(1d)\n    | distinct Computer\n    )\n    on $left.name == $right.Computer\n \n\nCreate an alert rule that applies only to certain resources taken from an ARG query- Exclude resources based on tags – for example, not to trigger alerts for VMs with a “Test” tag.\n\narg(״״).Resources| where tags.environment=~'Test'| project name - Retrieve performance data related to CPU utilization and filter to resources with the “prod” tag:\nInsightsMetrics\n| where Name == \"UtilizationPercentage\"\n| lookup (\n    arg(\"\").Resources \n    | where type == 'microsoft.compute/virtualmachines' \n    | project _ResourceId=tolower(id), tags\n    )\n    on _ResourceId\n| where tostring(tags.Env) == \"Prod\"\n \n\n \nMore use cases:- Use a tag to determine whether VMs should be running 24x7 or should be shutdown at night.- Show alerts on any server that contains a certain number of cores.",
@@ -4616,6 +4646,16 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/build-image-with-containerised-self-hosted-azure-devops-agent/ba-p/3919105",
+          "author": "Ha_Duong",
+          "description": "Introduction\nContainerization has revolutionized the way we deploy and manage software. By packaging applications and their dependencies into a container, we can ensure that our software will run consistently across different environments. This is particularly useful when it comes to setting up self-hosted agents for Azure Pipelines.\nA self-hosted agent is an agent that you set up and manage on your own to run jobs. You can use self-hosted agents in Azure Pipelines or Git Hub Actions. Self-hosted agents give you more control to install dependent software needed for your builds and deployments.\n \nWhy use containerised self-hosted agent\nAs we have seen the benefit of running the workload in container including agility, portability, high density and more. By running your self-hosted agent in …",
+          "link": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/build-image-with-containerised-self-hosted-azure-devops-agent/ba-p/3919105",
+          "publishedOn": "2023-09-12T17:40:25.000Z",
+          "wordCount": 10346,
+          "title": "Build image with containerised self-hosted Azure DevOps agent and private Azure Container Registry",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/505010iD114D7D93BE084F3/image-size/original?v=v2&px=-1"
+        },
+        {
           "id": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/azure-openai-private-endpoints-connecting-across-vnet-s/ba-p/3913325",
           "author": "freddydubon",
           "description": "Introduction to Azure OpenAI Private Endpoints:\n \nAzure OpenAI Private Endpoints emerge as a pivotal solution within the Azure ecosystem. These endpoints play a vital role in fortifying the connection between your Azure resources and OpenAI services, ensuring that data transmission remains shielded from public internet exposure. By establishing a private link, Azure OpenAI Private Endpoints provide a secure and efficient channel for transmitting data between your infrastructure and the OpenAI service, mitigating potential security vulnerabilities associated with traditional public endpoints. This blog post takes you on a comprehensive journey, unraveling the intricate processes involved in setting up, configuring, and optimizing Azure OpenAI Private Endpoints, while shedding light on their…",
@@ -4922,6 +4962,16 @@
       "feedUrl": "https://techcommunity.microsoft.com/plugins/custom/microsoft/o365/custom-blog-rss?tid=6220021871588173833&board=MicrosoftMechanicsBlog&size=100",
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
+        {
+          "id": "https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/data-security-exploit-real-crime-case-how-microsoft-purview-is/ba-p/3924743",
+          "author": "Zachary Cavanell",
+          "description": "Detect and prevent data security incidents with Microsoft Purview. Combine data classification with proactive and adaptive data loss prevention policies aligned to the assessed insider risk level for a multi-layered approach. \n \n\n \nTrusted insiders working for your organization contribute to 25% of data breaches. Many of these breaches remain undetected or are discovered long after the damage is done. We deconstruct what occurred at a prominent company with an account inspired by a true story of corporate espionage and how Microsoft Purview is designed to detect and prevent this type of data security incident.\n \nKnow your sensitive data.\n\nGet a 360 degree view across your data estate — ready to use in Microsoft Purview.\n \nSecure data with adaptive policies, dependent on a user’s risk level…",
+          "link": "https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/data-security-exploit-real-crime-case-how-microsoft-purview-is/ba-p/3924743",
+          "publishedOn": "2023-09-12T16:50:06.000Z",
+          "wordCount": 10604,
+          "title": "Data Security Exploit Real Crime Case + How Microsoft Purview is Designed to Detect & Respond",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/506946iBB26BD75F64FC637/image-size/original?v=v2&px=-1"
+        },
         {
           "id": "https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/ai-powered-data-classification-microsoft-purview/ba-p/3919206",
           "author": "Zachary Cavanell",
@@ -5312,6 +5362,16 @@
       "feedUrl": "https://devblogs.microsoft.com/cse/feed/",
       "siteUrl": "https://devblogs.microsoft.com/cse/",
       "articles": [
+        {
+          "id": "https://devblogs.microsoft.com/cse/?p=15011",
+          "author": "Juan Burckhardt",
+          "description": "This post will highlight some of the challenges teams can experience while CI/CD-ing with Azure Container Apps.\nThe post Lessons Learned In The Field For DevOps And Azure Container Apps appeared first on CSE Developer Blog.",
+          "link": "https://devblogs.microsoft.com/cse/2023/09/12/lessons-learned-in-the-field-for-devops-and-azure-container-app/",
+          "publishedOn": "2023-09-12T19:00:00.000Z",
+          "wordCount": 5680,
+          "title": "Lessons Learned In The Field For DevOps And Azure Container Apps",
+          "imageUrl": "https://devblogs.microsoft.com/cse/wp-content/uploads/sites/55/2023/09/devops-in-containerapps.png"
+        },
         {
           "id": "https://devblogs.microsoft.com/cse/?p=14985",
           "author": "Sweta Kumari",
@@ -5898,6 +5958,16 @@
       "siteUrl": "https://devblogs.microsoft.com/devops/",
       "articles": [
         {
+          "id": "https://devblogs.microsoft.com/devops/?p=67525",
+          "author": "Gloridel Morales",
+          "description": "This month, we are releasing fixes that impact our self-hosted product, Azure DevOps Server.\nAzure DevOps Server 2022.0.1\nAzure DevOps Server 2020.1.2\nAzure DevOps Server 2020.0.2\nAzure DevOps Server 2019.1.2\nAzure DevOps Server 2019.0.1\nTeam Foundation Server 2018.3.2\nAzure DevOps Server 2022.0.1 Patch 3\nNote: If you have Azure DevOps Server 2022,\nThe post September patches for Azure DevOps Server and Team Foundation Server appeared first on Azure DevOps Blog.",
+          "link": "https://devblogs.microsoft.com/devops/september-patches-for-azure-devops-server-2/",
+          "publishedOn": "2023-09-12T19:08:53.000Z",
+          "wordCount": 5361,
+          "title": "September patches for Azure DevOps Server and Team Foundation Server",
+          "imageUrl": "https://devblogs.microsoft.com/devops/wp-content/uploads/sites/6/2019/02/index-hero.jpg"
+        },
+        {
           "id": "https://devblogs.microsoft.com/devops/?p=67467",
           "author": "Eric van Wijk",
           "description": "Do you want to stop storing secrets and certificates in Azure service connections? Are you tired rotating these secrets whenever they expire? We are now announcing a public preview of workload identity federation for Azure service connections. Workload identity federation uses an industry-standard technology,\nThe post Public preview of Workload identity federation for Azure Pipelines appeared first on Azure DevOps Blog.",
@@ -6251,6 +6321,16 @@
       "feedUrl": "https://devblogs.microsoft.com/cosmosdb/feed/",
       "siteUrl": "https://devblogs.microsoft.com/cosmosdb/",
       "articles": [
+        {
+          "id": "https://devblogs.microsoft.com/cosmosdb/?p=6384",
+          "author": "Dileep Rao",
+          "description": "Encryption options for data at rest on Azure Cosmos DB that is available today.\nThe post Configure customer-managed keys for your existing Azure Cosmos DB accounts! appeared first on Azure Cosmos DB Blog.",
+          "link": "https://devblogs.microsoft.com/cosmosdb/configure-customer-managed-keys-for-your-existing-azure-cosmos-db-accounts/",
+          "publishedOn": "2023-09-12T14:00:24.000Z",
+          "wordCount": 5053,
+          "title": "Configure customer-managed keys for your existing Azure Cosmos DB accounts!",
+          "imageUrl": "https://devblogs.microsoft.com/cosmosdb/wp-content/uploads/sites/52/2023/08/free-vector-abstract-secure-technology-background-1.jpeg"
+        },
         {
           "id": "https://devblogs.microsoft.com/cosmosdb/?p=6677",
           "author": "Jay Gordon",
@@ -6648,6 +6728,16 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/t5/azure-observability-blog/explore-the-new-capabilities-with-datadog-an-azure-native-isv/ba-p/3924436",
+          "author": "piyush05",
+          "description": "Datadog – An Azure Native ISV Service seamlessly integrates with Azure, allowing automatic sending of logs and metrics to your Datadog organization for monitoring your Azure workloads. The service can be easily managed through clients such as Azure Portal, Command-Line Interface (CLI), and software development kits (SDKs), without requiring any custom code or connectors. The service, co-developed by Microsoft and Datadog, has continued to grow with deeper integrations based on your feedback.\nHere are some of the top features shipped recently that we would like to highlight:\n\nMulti-Subscription Monitoring – Easily manage monitoring of all your Azure subscriptions with Datadog from one place for a single pane-of-glass view.\nQuickstart Template to provision a new Datadog org - a new template …",
+          "link": "https://techcommunity.microsoft.com/t5/azure-observability-blog/explore-the-new-capabilities-with-datadog-an-azure-native-isv/ba-p/3924436",
+          "publishedOn": "2023-09-12T15:00:00.000Z",
+          "wordCount": 11146,
+          "title": "Explore the new capabilities with Datadog—An Azure Native ISV Service",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/507081iE86B16B889081001/image-size/original?v=v2&px=-1"
+        },
+        {
           "id": "https://techcommunity.microsoft.com/t5/azure-observability-blog/query-azure-resource-graph-from-azure-monitor/ba-p/3918298",
           "author": "OREN_SALZBERG",
           "description": "Azure Monitor now lets you query data in Azure Resource Graph from your Log Analytics workspace.\nYou can utilize this feature to make your Azure Log Analytics queries aware of your resource’s properties such as tags, resource attributes and much more.\n \nYou can run cross-service queries by using any client tools that support Kusto Query Language (KQL) queries, including the Log Analytics web UI, workbooks, PowerShell, and the REST API. Read more here\n \nQuery data in Azure Resource Graph\nAs Azure Resource Graph continues to expose more valuable data, you can now create cross-service queries between Log Analytics workspaces and Azure Resource Graph.\nHere are some sample Azure Log Analytics queries that use the new Azure Resource Graph cross-service query capabilities:\n \n\nFilter a Log Analytics query based on the results of an Azure Resource Graph query\n\n- Filter your KQL query to get only virtual machines that are from Standard_D typle that has data:\n \narg(\"\").Resources\n| where type == \"microsoft.compute/virtualmachines\" and properties.hardwareProfile.vmSize startswith \"Standard_D\"\n| join (\n    Heartbeat\n    | where TimeGenerated > ago(1d)\n    | distinct Computer\n    )\n    on $left.name == $right.Computer\n \n\nCreate an alert rule that applies only to certain resources taken from an ARG query- Exclude resources based on tags – for example, not to trigger alerts for VMs with a “Test” tag.\n\narg(״״).Resources| where tags.environment=~'Test'| project name - Retrieve performance data related to CPU utilization and filter to resources with the “prod” tag:\nInsightsMetrics\n| where Name == \"UtilizationPercentage\"\n| lookup (\n    arg(\"\").Resources \n    | where type == 'microsoft.compute/virtualmachines' \n    | project _ResourceId=tolower(id), tags\n    )\n    on _ResourceId\n| where tostring(tags.Env) == \"Prod\"\n \n\n \nMore use cases:- Use a tag to determine whether VMs should be running 24x7 or should be shutdown at night.- Show alerts on any server that contains a certain number of cores.",
@@ -6941,6 +7031,26 @@
       "feedUrl": "https://azurecomcdn.azureedge.net/en-us/updates/feed/?updateType=features",
       "siteUrl": "https://azure.microsoft.com/en-us/updates/",
       "articles": [
+        {
+          "id": "view-trends-of-clientside-metrics-across-test-runs-in-azure-load-testing",
+          "author": null,
+          "description": "In Azure Load Testing, you can now view how metrics change over your test runs. You can also set a baseline for test results and compare trends to it.",
+          "link": "https://azure.microsoft.com/en-us/updates/view-trends-of-clientside-metrics-across-test-runs-in-azure-load-testing/",
+          "publishedOn": "2023-09-12T15:00:25.000Z",
+          "wordCount": 5392,
+          "title": "View trends of client-side metrics across test runs in Azure Load Testing",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-d9c894a696763e03875cef38baa368671685210ca00e4f94801d26a60a2306a0/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "configure-load-testing-in-your-cicd-pipeline-from-azure-portal",
+          "author": null,
+          "description": "Configure load testing in your CI/CD pipeline from Azure portal in just a few steps.",
+          "link": "https://azure.microsoft.com/en-us/updates/configure-load-testing-in-your-cicd-pipeline-from-azure-portal/",
+          "publishedOn": "2023-09-12T15:00:23.000Z",
+          "wordCount": 5375,
+          "title": "Configure load testing in your CI/CD pipeline from Azure portal",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-d9c894a696763e03875cef38baa368671685210ca00e4f94801d26a60a2306a0/images/shared/social/azure-icon-250x250.png"
+        },
         {
           "id": "azure-front-door-standard-and-premium-support-bring-your-own-certificated-based-domain-validation",
           "author": null,
@@ -10288,6 +10398,16 @@
       "feedUrl": "https://devblogs.microsoft.com/microsoft365dev/feed/",
       "siteUrl": "https://devblogs.microsoft.com/microsoft365dev/",
       "articles": [
+        {
+          "id": "https://devblogs.microsoft.com/microsoft365dev/?p=15267",
+          "author": "Vesa Juvonen",
+          "description": "We are excited to announce a new public version of the SharePoint Framework, v1.18, with new features, capabilities and fixes for Microsoft Viva, Microsoft Teams and SharePoint.\nThe post Announcing SharePoint Framework 1.18 with updates for Microsoft Teams, Microsoft Viva and SharePoint appeared first on Microsoft 365 Developer Blog.",
+          "link": "https://devblogs.microsoft.com/microsoft365dev/announcing-sharepoint-framework-1-18-with-updates-for-microsoft-teams-microsoft-viva-and-sharepoint/",
+          "publishedOn": "2023-09-12T15:33:54.000Z",
+          "wordCount": 5471,
+          "title": "Announcing SharePoint Framework 1.18 with updates for Microsoft Teams, Microsoft Viva and SharePoint",
+          "imageUrl": "https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2023/09/spfx-118-ga.png"
+        },
         {
           "id": "https://devblogs.microsoft.com/microsoft365dev/?p=15260",
           "author": "Patrick Rodgers",
