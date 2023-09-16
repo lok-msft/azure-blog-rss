@@ -3432,16 +3432,6 @@
           "wordCount": 10085,
           "title": "Translate documents using Azure Document Translation",
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/460866i7755D02EF9E7D041?v=v2"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/ai-cognitive-services-blog/introducing-azure-openai-code-repository-your-gateway-to/ba-p/3799701",
-          "author": "Shubhendu_Satsangi",
-          "description": "Introduction\nAre you looking to tap into the power of AI to transform your organization, business or team? Look no further than the Azure OpenAI Service, which provides access to OpenAI's cutting-edge language models like ChatGPT, GPT-4, GPT-3, Codex and Embeddings model series. These models can help you generate content, summarize information, conduct semantic searches, and even translate natural language into code. With REST APIs, Python SDK, and web-based interface options like Azure OpenAI Studio, it's easy to start leveraging the capabilities of Azure OpenAI Service today.\n \nAs AI continues to revolutionize industries across the globe, we at Microsoft understand the need to enable developers with the right tools, resources, and support to harness the full potential of these technologi…",
-          "link": "https://techcommunity.microsoft.com/t5/ai-cognitive-services-blog/introducing-azure-openai-code-repository-your-gateway-to/ba-p/3799701",
-          "publishedOn": "2023-04-19T05:49:41.000Z",
-          "wordCount": 10009,
-          "title": "Introducing Azure OpenAI Code Repository: Your Gateway to Harnessing the Power of Generative AI",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/462150i683A56503870D827?v=v2"
         }
       ]
     },
@@ -3869,16 +3859,6 @@
           "wordCount": 16574,
           "title": "How to install an AKS cluster with the Istio service mesh add-on via Bicep",
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/462916i6A076BCFA9C69516/image-size/original?v=v2&px=-1"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/fasttrack-for-azure/configure-azure-application-gateway-private-link/ba-p/3799926",
-          "author": "paolosalvatori",
-          "description": "Private Link for Application Gateway allows you to connect workloads over a private connection spanning across VNets and subscriptions. When configured, a private endpoint will be placed into a defined virtual network's subnet, providing a private IP address for clients looking to communicate with the gateway. For a list of other PaaS services that support Private Link functionality, see What is Azure Private Link?. For more information on  Application Gateway Private Link, see the following resources:\n \n\nApplication Gateway Private Link \nConfigure Azure Application Gateway Private Link \n\n \nArchitecture\nThe following picture shows the architecture of the demo built by the bash script below. The sample represents a scenario where a SaaS provider exposes a service application to a third part…",
-          "link": "https://techcommunity.microsoft.com/t5/fasttrack-for-azure/configure-azure-application-gateway-private-link/ba-p/3799926",
-          "publishedOn": "2023-04-19T10:47:35.000Z",
-          "wordCount": 14397,
-          "title": "Configure Azure Application Gateway Private Link",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/462199iE374D669E4026F9B/image-size/original?v=v2&px=-1"
         }
       ]
     },
@@ -4379,6 +4359,26 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/t5/azure-paas-blog/installing-azuremonitoringagent-and-linking-it-to-your-log/ba-p/3926214",
+          "author": "akshitavijay",
+          "description": "The current Service Fabric clusters are currently equipped with the MicrosoftMonitoringAgent (MMA) as the default installation. However, it is essential to note that MMA will be deprecated in August 2024, for more details refer- We're retiring the Log Analytics agent in Azure Monitor on 31 August 2024 | Azure updates | Microsoft Azure. Therefore, if you are currently utilizing MMA, it is imperative to initiate the migration process to AzureMonitoringAgent (AMA).\n \nInstallation and Linking of AzureMonitoringAgent to a Log Analytics Workspace:\n\nCreate a Log Analytics Workspace (if not already established):\n\n\nAccess the Azure portal and search for \"Log Analytics Workspace.\"\nProceed to create a new Log Analytics Workspace.\nEnsure that you select the identical resource group and geographical re…",
+          "link": "https://techcommunity.microsoft.com/t5/azure-paas-blog/installing-azuremonitoringagent-and-linking-it-to-your-log/ba-p/3926214",
+          "publishedOn": "2023-09-15T07:46:46.000Z",
+          "wordCount": 10169,
+          "title": "Installing AzureMonitoringAgent and linking it to your Log Analytics Workspace",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/507407i8B3D9A2083149993/image-size/original?v=v2&px=-1"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/azure-paas-blog/eventhub-how-to-receive-diagnostic-log-from-storage-accounts-on/ba-p/3928321",
+          "author": "SungGun_Lee",
+          "description": "In Storage Account, you can set diagnostic log to EventHub. However, did you ever wonder if you could have a centralized EventHub to take care of these logs? Instead of having multiple EventHubs across each Subscription within the same Management Group? In this article, it will explain to you how to centralize your EventHub.\n \n\nI. What is the required Permission configuration?\nBefore reading through this article, be sure to have multiple subscriptions. As this will not explain the steps to add subscriptions to your Management Group. This article is based on the fact that you already have more than one subscription under your Management Group. However, if you still some help with adding a subscription, please visit this link.\n \nNow, let’s get this started. Before setting up anything from th…",
+          "link": "https://techcommunity.microsoft.com/t5/azure-paas-blog/eventhub-how-to-receive-diagnostic-log-from-storage-accounts-on/ba-p/3928321",
+          "publishedOn": "2023-09-15T01:50:00.000Z",
+          "wordCount": 10090,
+          "title": "[Eventhub] How to receive diagnostic log from Storage Accounts on different Subscriptions to EH",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/507970i269A7F8ACB932FCF/image-size/original?v=v2&px=-1"
+        },
+        {
           "id": "https://techcommunity.microsoft.com/t5/azure-paas-blog/securing-network-egress-in-azure-container-apps/ba-p/3915548",
           "author": "SimonKurtz-MSFT",
           "description": "Introduction\nSince its inception nearly two years ago, Azure Container Apps (ACA) has added significant features to make it a relevant container hosting platform. Built atop Kubernetes, Azure Container Apps is a fully managed Platform-as-a-Service that empowers Azure container workloads to focus on the business value they provide, not be mired in infrastructure management. Many of my colleagues and I believe that Azure Container Apps has grown into a viable alternative for hosting many different containers compared to other, more specialized hosting platforms in Azure. No longer must customers learn the ins and outs of Kubernetes, cluster management, Kubernetes versions, etc. The gap to Azure Kubernetes Service (AKS) has been reduced significantly, and while the two products are not intend…",
@@ -4617,16 +4617,6 @@
           "wordCount": 10121,
           "title": "Unable to delete Azure EventHub Cluster/Namespace/Entity/ConsumerGroup  from Portal/ PowerShell/ CLI",
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/462868i010169F5E60BEC3A?v=v2"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/azure-paas-blog/connectivity-issue-troubleshooting-for-azure-cache-for-redis/ba-p/3798802",
-          "author": "samsarka",
-          "description": "With the evolution of Azure Cache for Redis enterprise and the growing number of Redis Enterprise cache users let us look at few steps to troubleshoot if you are stuck in connecting to Azure cache for Redis. Few thumb rule for Enterprise Cache are below.\n\nAre you connecting to the right port. Enterprise cache uses port 10000, not 63xx like basic, standard, Premium?\nAre Enterprise cache instance configured to require TLS or non-TLS? It only supports one of them at a time.\nAre the client configured to use the TLS or non-TLS setting correctly? (Client must be configured the same as with Enterprise cache instance)\nAre the FQDN of the cache name, correct? Enterprise uses the pattern \"[cacheName].[region].redisenterprise.cache.azure.net\". The domain suffix will be different than basic, standard …",
-          "link": "https://techcommunity.microsoft.com/t5/azure-paas-blog/connectivity-issue-troubleshooting-for-azure-cache-for-redis/ba-p/3798802",
-          "publishedOn": "2023-04-19T07:11:33.000Z",
-          "wordCount": 9773,
-          "title": "Connectivity Issue Troubleshooting for Azure Cache for Redis Enterprise.",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/461593i793C25759E6EAC40?v=v2"
         }
       ]
     },
@@ -5161,16 +5151,6 @@
           "wordCount": 10250,
           "title": "Can security be automatic for your files and data? | Microsoft Purview",
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/463461i412B40D4385BC094?v=v2"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/how-to-build-your-first-app-using-power-apps-automatically-with/ba-p/3799164",
-          "author": "Zachary Cavanell",
-          "description": "Create low code Power Apps to automate everyday tasks. AI-driven Copilot capabilities make it easy to interact with your app and its data using natural language. Or simply build an app from scratch. We’ll demo how to build an inventory app for mechanical parts, that anyone can use on the job, to track and enter new parts.\n \n\n \nIf you’re new to Power Apps, it’s a part of Microsoft’s Power Platform for building low code apps and processes. Apps can originate from a task or process you’d like to make easier — like a streamlined approval process, or a way to capture and track information on the go. Run them in the browser or on your favorite mobile platform.\n \nEmma Cooper, Principal PM Manager for Power Apps, shares key steps to build your first app in under ten minutes.\n \nAutomate everyday ta…",
-          "link": "https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/how-to-build-your-first-app-using-power-apps-automatically-with/ba-p/3799164",
-          "publishedOn": "2023-04-18T19:01:14.000Z",
-          "wordCount": 11848,
-          "title": "How to build your first app using Power Apps | Automatically with Copilot or from scratch",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/461830i1640F6E37FEB2959?v=v2"
         }
       ]
     },
@@ -5972,16 +5952,6 @@
           "wordCount": 6230,
           "title": "Introducing Deopt Explorer",
           "imageUrl": "https://devblogs.microsoft.com/typescript/wp-content/uploads/sites/11/2023/05/deopt-explorer-overview.png"
-        },
-        {
-          "id": "https://devblogs.microsoft.com/typescript/?p=3850",
-          "author": "Daniel Rosenwasser",
-          "description": "Today we’re announcing our beta release of TypeScript 5.1!\nHere’s a quick list of what’s new in TypeScript 5.1!\nThe post Announcing TypeScript 5.1 Beta appeared first on TypeScript.",
-          "link": "https://devblogs.microsoft.com/typescript/announcing-typescript-5-1-beta/",
-          "publishedOn": "2023-04-18T23:22:05.000Z",
-          "wordCount": 6677,
-          "title": "Announcing TypeScript 5.1 Beta",
-          "imageUrl": "https://devblogs.microsoft.com/typescript/wp-content/uploads/sites/11/2018/08/typescriptfeature.png"
         }
       ]
     },
@@ -5990,6 +5960,26 @@
       "feedUrl": "https://devblogs.microsoft.com/premier-developer/feed/",
       "siteUrl": "https://devblogs.microsoft.com/premier-developer/",
       "articles": [
+        {
+          "id": "https://devblogs.microsoft.com/premier-developer/?p=41464",
+          "author": "Developer Support",
+          "description": "John Folberth and Joe Fitzgerald share sample guidance for developing and deploying an Azure Data Factory into multiple environments.\nBackground \nThe post Part 4 – Unlock the Power of Azure Data Factory: A Guide to Boosting Your Data Ingestion Process appeared first on Developer Support.",
+          "link": "https://devblogs.microsoft.com/premier-developer/part-4-unlock-the-power-of-azure-data-factory-a-guide-to-boosting-your-data-ingestion-process/",
+          "publishedOn": "2023-09-15T08:00:29.000Z",
+          "wordCount": 5001,
+          "title": "Part 4 – Unlock the Power of Azure Data Factory: A Guide to Boosting Your Data Ingestion Process",
+          "imageUrl": "https://devblogs.microsoft.com/premier-developer/wp-content/uploads/sites/31/2023/09/azpipes_fi.jpg"
+        },
+        {
+          "id": "https://devblogs.microsoft.com/premier-developer/?p=41467",
+          "author": "Developer Support",
+          "description": "Andrew Redman explores how to programmatically create SAS tokens using .NET.\nIntroduction\nThe post Programmatically Create SAS tokens in .NET appeared first on Developer Support.",
+          "link": "https://devblogs.microsoft.com/premier-developer/programmatically-create-sas-tokens-in-net/",
+          "publishedOn": "2023-09-15T08:00:03.000Z",
+          "wordCount": 5026,
+          "title": "Programmatically Create SAS tokens in .NET",
+          "imageUrl": "https://devblogs.microsoft.com/premier-developer/wp-content/uploads/sites/31/2023/09/SAS_Token_FI.jpg"
+        },
         {
           "id": "https://devblogs.microsoft.com/premier-developer/?p=41461",
           "author": "Developer Support",
@@ -7123,16 +7113,6 @@
           "wordCount": 2989,
           "title": "Kubernetes at scale with GitOps and Cluster API",
           "imageUrl": "https://cloudblogs.microsoft.com/opensource/wp-content/uploads/sites/37/2023/04/image-1024x892.webp"
-        },
-        {
-          "id": "https://cloudblogs.microsoft.com/opensource/2023/04/18/join-microsoft-at-kubecon-and-cloudnativecon-europe-2023/",
-          "author": "Brendan Burns",
-          "description": "Welcome to Amsterdam and KubeCon Europe 2023. I'm thrilled to see the continued importance of community and getting together to meet our friends and colleagues across the industry and around the world. As we come together in Amsterdam, there are significant headwinds and challenges facing us, but I'm confident that open-source and cloud-native computing areRead more\nThe post Join Microsoft at KubeCon and CloudNativeCon Europe 2023 appeared first on Microsoft Open Source Blog.",
-          "link": "https://cloudblogs.microsoft.com/opensource/2023/04/18/join-microsoft-at-kubecon-and-cloudnativecon-europe-2023/",
-          "publishedOn": "2023-04-19T06:00:00.000Z",
-          "wordCount": 2419,
-          "title": "Join Microsoft at KubeCon and CloudNativeCon Europe 2023",
-          "imageUrl": "https://cloudblogs.microsoft.com/opensource/wp-content/uploads/sites/37/2019/04/V_1O61BK.jpg"
         }
       ]
     },
@@ -7189,6 +7169,36 @@
           "publishedOn": "2023-09-14T17:00:28.000Z",
           "wordCount": 5432,
           "title": "Generally available: Azure Ultra Disk Storage is now available in UK West",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-8d411a9187e291a9c7bd9c5c52dce8f49aad1750b30d719670e03a7c06c8b034/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "wordpress-on-app-service-free-hosting-plan-now-in-public-preview",
+          "author": null,
+          "description": "Easy way to evaluate WordPress on App Service",
+          "link": "https://azure.microsoft.com/en-us/updates/wordpress-on-app-service-free-hosting-plan-now-in-public-preview/",
+          "publishedOn": "2023-09-14T16:00:29.000Z",
+          "wordCount": 5456,
+          "title": "WordPress on App Service - Free hosting plan now in Public Preview",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-8d411a9187e291a9c7bd9c5c52dce8f49aad1750b30d719670e03a7c06c8b034/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "azurefilesbackupinchinaregionsisgenerallyavailable",
+          "author": null,
+          "description": "Azure Backup now supports Azure Files in China North2, China East 2, China North 3, and China East 3",
+          "link": "https://azure.microsoft.com/en-us/updates/azurefilesbackupinchinaregionsisgenerallyavailable/",
+          "publishedOn": "2023-09-14T16:00:28.000Z",
+          "wordCount": 5503,
+          "title": "General availability: Azure Backup support for Azure Files in China North2, China East 2, China North 3, and China East 3",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-8d411a9187e291a9c7bd9c5c52dce8f49aad1750b30d719670e03a7c06c8b034/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "general-availability-sensitive-data-protection-for-application-gateway-web-application-firewall-logs",
+          "author": null,
+          "description": "Protect the sensitive data getting stored in your Web Application Firewall (WAF) using log scrubbing on Azure’s regional Web Application Firewall running on Application Gateway.",
+          "link": "https://azure.microsoft.com/en-us/updates/general-availability-sensitive-data-protection-for-application-gateway-web-application-firewall-logs/",
+          "publishedOn": "2023-09-14T16:00:28.000Z",
+          "wordCount": 5514,
+          "title": "General availability: Sensitive Data Protection for Application Gateway Web Application Firewall",
           "imageUrl": "https://azurecomcdn.azureedge.net/cvt-8d411a9187e291a9c7bd9c5c52dce8f49aad1750b30d719670e03a7c06c8b034/images/shared/social/azure-icon-250x250.png"
         },
         {
@@ -10530,86 +10540,6 @@
           "wordCount": 5541,
           "title": "General Availability: Support for Linux clients to use identity-based access to Azure file shares over SMB",
           "imageUrl": "https://azurecomcdn.azureedge.net/cvt-63ecd4292b5b621b1726925020e5d1167337e7b7454558bde6330cf793f32e8f/images/shared/social/azure-icon-250x250.png"
-        },
-        {
-          "id": "generally-available-kubernetes-126-support-in-aks",
-          "author": null,
-          "description": "Benefit from Kubernetes 1.26 features in production.",
-          "link": "https://azure.microsoft.com/en-us/updates/generally-available-kubernetes-126-support-in-aks/",
-          "publishedOn": "2023-04-19T06:01:21.000Z",
-          "wordCount": 5426,
-          "title": "Generally Available: Kubernetes 1.26 support in AKS",
-          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-63ecd4292b5b621b1726925020e5d1167337e7b7454558bde6330cf793f32e8f/images/shared/social/azure-icon-250x250.png"
-        },
-        {
-          "id": "public-preview-aks-service-mesh-addon-for-istio",
-          "author": null,
-          "description": "Installing and using Istio on your AKS clusters is now easier.",
-          "link": "https://azure.microsoft.com/en-us/updates/public-preview-aks-service-mesh-addon-for-istio/",
-          "publishedOn": "2023-04-19T06:01:14.000Z",
-          "wordCount": 5498,
-          "title": "Public preview: AKS service mesh addon for Istio",
-          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-63ecd4292b5b621b1726925020e5d1167337e7b7454558bde6330cf793f32e8f/images/shared/social/azure-icon-250x250.png"
-        },
-        {
-          "id": "generally-available-long-term-support-version-in-aks",
-          "author": null,
-          "description": "You now have the option to enable long term support for a specific Kubernetes version.",
-          "link": "https://azure.microsoft.com/en-us/updates/generally-available-long-term-support-version-in-aks/",
-          "publishedOn": "2023-04-19T06:01:02.000Z",
-          "wordCount": 5455,
-          "title": "Generally Available: Long term support version in AKS",
-          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-63ecd4292b5b621b1726925020e5d1167337e7b7454558bde6330cf793f32e8f/images/shared/social/azure-icon-250x250.png"
-        },
-        {
-          "id": "public-preview-fail-fast-upgrade-on-api-breaking-change-detection",
-          "author": null,
-          "description": "Use this feature to reduce time you have to spend on post upgrade workload troubleshooting",
-          "link": "https://azure.microsoft.com/en-us/updates/public-preview-fail-fast-upgrade-on-api-breaking-change-detection/",
-          "publishedOn": "2023-04-19T06:00:55.000Z",
-          "wordCount": 5472,
-          "title": "Public preview: Fail Fast Upgrade on API Breaking change detection",
-          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-63ecd4292b5b621b1726925020e5d1167337e7b7454558bde6330cf793f32e8f/images/shared/social/azure-icon-250x250.png"
-        },
-        {
-          "id": "generally-available-azure-cni-overlay-for-linux",
-          "author": null,
-          "description": "Simplify your AKS cluster management, routing configurations, and efficiently scale your clusters.",
-          "link": "https://azure.microsoft.com/en-us/updates/generally-available-azure-cni-overlay-for-linux/",
-          "publishedOn": "2023-04-19T06:00:49.000Z",
-          "wordCount": 5488,
-          "title": "Generally Available: Azure CNI Overlay for Linux",
-          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-63ecd4292b5b621b1726925020e5d1167337e7b7454558bde6330cf793f32e8f/images/shared/social/azure-icon-250x250.png"
-        },
-        {
-          "id": "ga-azure-active-directory-workload-identity-with-aks-2",
-          "author": null,
-          "description": "You can now use AAD workload identity with AKS in production",
-          "link": "https://azure.microsoft.com/en-us/updates/ga-azure-active-directory-workload-identity-with-aks-2/",
-          "publishedOn": "2023-04-19T06:00:35.000Z",
-          "wordCount": 5600,
-          "title": "GA: Azure Active Directory workload identity with AKS",
-          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-63ecd4292b5b621b1726925020e5d1167337e7b7454558bde6330cf793f32e8f/images/shared/social/azure-icon-250x250.png"
-        },
-        {
-          "id": "generally-available-azure-app-service-new-premium-v3-offerings",
-          "author": null,
-          "description": "Introducing two new offerings in the Premium v3 (Pv3) service tier on Azure App Service",
-          "link": "https://azure.microsoft.com/en-us/updates/generally-available-azure-app-service-new-premium-v3-offerings/",
-          "publishedOn": "2023-04-18T15:00:36.000Z",
-          "wordCount": 5493,
-          "title": "Generally Available:  Azure App Service - New Premium v3 Offerings",
-          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-63ecd4292b5b621b1726925020e5d1167337e7b7454558bde6330cf793f32e8f/images/shared/social/azure-icon-250x250.png"
-        },
-        {
-          "id": "ciliumenterpriseonazuremarketplace",
-          "author": null,
-          "description": "Isovalent Cilium Enterprise is now available to Azure Kubernetes Service (AKS) customers in the Microsoft Azure Marketplace marking a key milestone in delivering the expansive eBPF-powered Cilium and Isovalent Cilium Enterprise to Azure Kubernetes Service and Azure.",
-          "link": "https://azure.microsoft.com/en-us/updates/ciliumenterpriseonazuremarketplace/",
-          "publishedOn": "2023-04-18T15:00:19.000Z",
-          "wordCount": 5540,
-          "title": "Public Preview: Isovalent Cilium Enterprise through Azure Marketplace",
-          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-63ecd4292b5b621b1726925020e5d1167337e7b7454558bde6330cf793f32e8f/images/shared/social/azure-icon-250x250.png"
         }
       ]
     },
@@ -11277,16 +11207,6 @@
           "wordCount": 4802,
           "title": "Teams Toolkit for Visual Studio Code Update – April 2023",
           "imageUrl": "https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2023/04/ttkvsc_april-scaled.jpg"
-        },
-        {
-          "id": "https://devblogs.microsoft.com/microsoft365dev/?p=13620",
-          "author": "Matthew McGrath",
-          "description": "We’re announcing an upcoming breaking change for developers using webhook change notifications for the callRecords Microsoft Graph API.\nThe post OData property changes to callRecords change notifications in Microsoft Graph appeared first on Microsoft 365 Developer Blog.",
-          "link": "https://devblogs.microsoft.com/microsoft365dev/odata-property-changes-to-callrecords-change-notifications-in-microsoft-graph/",
-          "publishedOn": "2023-04-18T20:35:16.000Z",
-          "wordCount": 4335,
-          "title": "OData property changes to callRecords change notifications in Microsoft Graph",
-          "imageUrl": "https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2023/04/graph4.18.23-scaled.jpg"
         }
       ]
     }
