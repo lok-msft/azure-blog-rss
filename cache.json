@@ -594,16 +594,6 @@
           "wordCount": 7072,
           "title": "This Week in Spring - April 25th, 2023",
           "imageUrl": "https://spring.io/img/og-spring.png"
-        },
-        {
-          "id": "https://spring.io/blog/2023/04/20/a-bootiful-podcast-gradle-developer-advocate-java-champion-and-legend-trisha",
-          "author": "Josh Long",
-          "description": "Level up your Java code and explore what Spring can do for you.",
-          "link": "https://spring.io/blog/2023/04/20/a-bootiful-podcast-gradle-developer-advocate-java-champion-and-legend-trisha",
-          "publishedOn": "2023-04-20T00:00:00.000Z",
-          "wordCount": 6907,
-          "title": "A Bootiful Podcast: Gradle Developer Advocate, Java Champion, and legend Trisha Gee",
-          "imageUrl": "https://spring.io/img/og-spring.png"
         }
       ]
     },
@@ -3128,26 +3118,6 @@
           "wordCount": 10841,
           "title": "Azure App Service Logging: How to Monitor Your Web Apps in Real-Time",
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/462715i858230EB13B4AF7F?v=v2"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/storing-app-service-application-logs-in-blob/ba-p/3800963",
-          "author": "AmritpalSinghNaroo",
-          "description": "Azure provides built-in diagnostics to assist with debugging an App Service web app. The primary aim of this blog is to guide one step-by-step to add instrumentation to your application, as well as how to access the information logged.\n \nStep 1:\nGo to >App Service Logs> Enable Application Logging (Blob) and select the desired Blob Storage and the Container and select the Level of logging.\n \n\n \nFor more information on different types of logs you can refer this document.\n \nStep 2:\nBelow is the code we have deployed a .Net Core MVC web application in a Windows App Service.\n \n \n public IActionResult Index()\n        {\n            _logger.LogInformation(\"This is a test to send logs to : Blob \");\n\n            return View();\n        }\n\n        public IActionResult Privacy()\n        {\n            return View();\n        }\n \n \nBelow are different level of logs details which you can log:\n \n\n \n\n\n\n\nNote: If you write logs to blobs, the retention policy no longer applies if you delete the app but keep the logs in the blobs. For more information, see Costs that might accrue after resource deletion.\n\n\n\n\n \nStep 3:\nGo to Storage Account> Container and select the folder with your app service name and download the ( .txt ) file to check the logs.\n \n\n \nThe Blob option also includes additional information in the log messages, such as the ID of the origin VM instance of the log message (InstanceId), thread ID (Tid), and a more granular timestamp (EventTickCount) in a ( .csv ) file.\n \nMore information:\n\nEnable diagnostics logging - Azure App Service | Microsoft Learn\nazure-content/web-sites-enable-diagnostic-log.md at master · Huachao/azure-content · GitHub\n\n \nIf you have any other questions, feel free to comment below!",
-          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/storing-app-service-application-logs-in-blob/ba-p/3800963",
-          "publishedOn": "2023-04-20T09:32:39.000Z",
-          "wordCount": 9596,
-          "title": "Storing App Service application logs in Blob",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/462619iAE0E999F42672C74?v=v2"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/istio-based-service-mesh-add-on-for-azure-kubernetes-service/ba-p/3800229",
-          "author": "shashankbarsin",
-          "description": "Modern applications are typically architected as distributed collections of microservices, with each collection of microservices performing some discrete business function. This distributed microservices architecture allows multiple teams within large organizations to operate independently of each other and release new versions of their microservices at their own cadence. However, this requires an additional level of supervision to address observability, traffic management, and security use cases for service-to-service communication across these distributed workloads. This can be done by embedding logic directly within the application code of each microservice. Or it can be done in a transparent way using service mesh which deploys sidecars to application pods to achieve the same use cases…",
-          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/istio-based-service-mesh-add-on-for-azure-kubernetes-service/ba-p/3800229",
-          "publishedOn": "2023-04-19T15:25:15.000Z",
-          "wordCount": 10077,
-          "title": "Istio-based service mesh add-on for Azure Kubernetes Service - Preview",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/462327iA69EF8B8167AEC91?v=v2"
         }
       ]
     },
@@ -3422,16 +3392,6 @@
           "wordCount": 10163,
           "title": "Azure Neural TTS Web Player: let your website speak for itself",
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/464784iFFF682AD53E01713/image-size/original?v=v2&px=-1"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/ai-cognitive-services-blog/translate-documents-using-azure-document-translation/ba-p/3796919",
-          "author": "smallangi",
-          "description": "Translate documents using Azure Document Translation\nAzure Document Translation service enables the translation of multiple and complex documents across all supported languages and dialects while preserving the original document structure and data format. However, it currently does not support the translation of text from images in digital documents. To address this, there are two options:\n\nConvert the digital document into a scanned document in its entirety.\nSplit the document into two files and process them separately:\n\nOne file containing all pages that only have text. The digital pages are preserved in their original form. The Document Translation service takes advantage of the structure/layout information from the digital text page and translates it more accurately than a scanned page…",
-          "link": "https://techcommunity.microsoft.com/t5/ai-cognitive-services-blog/translate-documents-using-azure-document-translation/ba-p/3796919",
-          "publishedOn": "2023-04-20T02:38:24.000Z",
-          "wordCount": 10085,
-          "title": "Translate documents using Azure Document Translation",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/460866i7755D02EF9E7D041?v=v2"
         }
       ]
     },
@@ -5318,9 +5278,9 @@
       "articles": []
     },
     {
-      "title": "ISE Developer Blog",
+      "title": "CSE Developer Blog",
       "feedUrl": "https://devblogs.microsoft.com/cse/feed/",
-      "siteUrl": "https://devblogs.microsoft.com/ise/",
+      "siteUrl": "https://devblogs.microsoft.com/cse/",
       "articles": [
         {
           "id": "https://devblogs.microsoft.com/cse/?p=15011",
@@ -10530,16 +10490,6 @@
           "wordCount": 5579,
           "title": "Generally available: Cross-region service endpoints for Azure Storage",
           "imageUrl": "https://azurecomcdn.azureedge.net/cvt-525258e84bf464cd11604d01a443df007d1173485d3b7ce623395a2b81122dba/images/shared/social/azure-icon-250x250.png"
-        },
-        {
-          "id": "azurefilessmblinuxad",
-          "author": null,
-          "description": "Linux SMB clients can now use Azure Files identity based authentication and authorization. This capability is available to devices that are domain joined to either customer-managed Microsoft AD DS or Azure AD DS.",
-          "link": "https://azure.microsoft.com/en-us/updates/azurefilessmblinuxad/",
-          "publishedOn": "2023-04-19T19:00:34.000Z",
-          "wordCount": 5541,
-          "title": "General Availability: Support for Linux clients to use identity-based access to Azure file shares over SMB",
-          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-63ecd4292b5b621b1726925020e5d1167337e7b7454558bde6330cf793f32e8f/images/shared/social/azure-icon-250x250.png"
         }
       ]
     },
@@ -11197,16 +11147,6 @@
           "wordCount": 4521,
           "title": "New Azure AD app name for Microsoft Graph PowerShell SDK and CLI",
           "imageUrl": "https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2023/04/01-4.20.22-scaled.jpg"
-        },
-        {
-          "id": "https://devblogs.microsoft.com/microsoft365dev/?p=13589",
-          "author": "Junjie Li",
-          "description": "Welcome to the April 2023 update for Teams Toolkit for Visual Studio Code! Learn what’s new for developers building Teams apps with the prerelease version of Teams Toolkit for Visual Studio Code.\nThe post Teams Toolkit for Visual Studio Code Update – April 2023 appeared first on Microsoft 365 Developer Blog.",
-          "link": "https://devblogs.microsoft.com/microsoft365dev/teams-toolkit-for-visual-studio-code-update-april-2023/",
-          "publishedOn": "2023-04-19T15:00:28.000Z",
-          "wordCount": 4802,
-          "title": "Teams Toolkit for Visual Studio Code Update – April 2023",
-          "imageUrl": "https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2023/04/ttkvsc_april-scaled.jpg"
         }
       ]
     }

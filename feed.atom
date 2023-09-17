@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2023-09-16T00:59:02.769Z</updated>
+    <updated>2023-09-17T01:03:42.508Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
@@ -15149,69 +15149,6 @@ The post New Azure AD app name for Microsoft Graph PowerShell SDK and CLI appear
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Storing App Service application logs in Blob]]></title>
-        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/storing-app-service-application-logs-in-blob/ba-p/3800963</id>
-        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/storing-app-service-application-logs-in-blob/ba-p/3800963"/>
-        <updated>2023-04-20T09:32:39.000Z</updated>
-        <summary type="html"><![CDATA[Azure provides built-in diagnostics to assist with debugging an App Service web app. The primary aim of this blog is to guide one step-by-step to add instrumentation to your application, as well as how to access the information logged.
- 
-Step 1:
-Go to >App Service Logs> Enable Application Logging (Blob) and select the desired Blob Storage and the Container and select the Level of logging.
- 
-
- 
-For more information on different types of logs you can refer this document.
- 
-Step 2:
-Below is the code we have deployed a .Net Core MVC web application in a Windows App Service.
- 
- 
- public IActionResult Index()
-        {
-            _logger.LogInformation("This is a test to send logs to : Blob ");
-
-            return View();
-        }
-
-        public IActionResult Privacy()
-        {
-            return View();
-        }
- 
- 
-Below are different level of logs details which you can log:
- 
-
- 
-
-
-
-
-Note: If you write logs to blobs, the retention policy no longer applies if you delete the app but keep the logs in the blobs. For more information, see Costs that might accrue after resource deletion.
-
-
-
-
- 
-Step 3:
-Go to Storage Account> Container and select the folder with your app service name and download the ( .txt ) file to check the logs.
- 
-
- 
-The Blob option also includes additional information in the log messages, such as the ID of the origin VM instance of the log message (InstanceId), thread ID (Tid), and a more granular timestamp (EventTickCount) in a ( .csv ) file.
- 
-More information:
-
-Enable diagnostics logging - Azure App Service | Microsoft Learn
-azure-content/web-sites-enable-diagnostic-log.md at master · Huachao/azure-content · GitHub
-
- 
-If you have any other questions, feel free to comment below!]]></summary>
-        <author>
-            <name>AmritpalSinghNaroo</name>
-        </author>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[Build a Mobile Sales Application with Power Apps]]></title>
         <id>https://techcommunity.microsoft.com/t5/educator-developer-blog/build-a-mobile-sales-application-with-power-apps/ba-p/3786064</id>
         <link href="https://techcommunity.microsoft.com/t5/educator-developer-blog/build-a-mobile-sales-application-with-power-apps/ba-p/3786064"/>
@@ -15231,63 +15168,6 @@ Solution Considerations before development
 Before you build an application, you should have some thought and break down what you want to do before building. This process is often called "Solution Architecting". While we will not be taking a lot of time doing thi…]]></summary>
         <author>
             <name>RachelIrabor</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Translate documents using Azure Document Translation]]></title>
-        <id>https://techcommunity.microsoft.com/t5/ai-cognitive-services-blog/translate-documents-using-azure-document-translation/ba-p/3796919</id>
-        <link href="https://techcommunity.microsoft.com/t5/ai-cognitive-services-blog/translate-documents-using-azure-document-translation/ba-p/3796919"/>
-        <updated>2023-04-20T02:38:24.000Z</updated>
-        <summary type="html"><![CDATA[Translate documents using Azure Document Translation
-Azure Document Translation service enables the translation of multiple and complex documents across all supported languages and dialects while preserving the original document structure and data format. However, it currently does not support the translation of text from images in digital documents. To address this, there are two options:
-
-Convert the digital document into a scanned document in its entirety.
-Split the document into two files and process them separately:
-
-One file containing all pages that only have text. The digital pages are preserved in their original form. The Document Translation service takes advantage of the structure/layout information from the digital text page and translates it more accurately than a scanned page…]]></summary>
-        <author>
-            <name>smallangi</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[A Bootiful Podcast: Gradle Developer Advocate, Java Champion, and legend Trisha Gee]]></title>
-        <id>https://spring.io/blog/2023/04/20/a-bootiful-podcast-gradle-developer-advocate-java-champion-and-legend-trisha</id>
-        <link href="https://spring.io/blog/2023/04/20/a-bootiful-podcast-gradle-developer-advocate-java-champion-and-legend-trisha"/>
-        <updated>2023-04-20T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Level up your Java code and explore what Spring can do for you.]]></summary>
-        <author>
-            <name>Josh Long</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[General Availability: Support for Linux clients to use identity-based access to Azure file shares over SMB]]></title>
-        <id>azurefilessmblinuxad</id>
-        <link href="https://azure.microsoft.com/en-us/updates/azurefilessmblinuxad/"/>
-        <updated>2023-04-19T19:00:34.000Z</updated>
-        <summary type="html"><![CDATA[Linux SMB clients can now use Azure Files identity based authentication and authorization. This capability is available to devices that are domain joined to either customer-managed Microsoft AD DS or Azure AD DS.]]></summary>
-        <author>
-            <name>Azure service updates</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Istio-based service mesh add-on for Azure Kubernetes Service - Preview]]></title>
-        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/istio-based-service-mesh-add-on-for-azure-kubernetes-service/ba-p/3800229</id>
-        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/istio-based-service-mesh-add-on-for-azure-kubernetes-service/ba-p/3800229"/>
-        <updated>2023-04-19T15:25:15.000Z</updated>
-        <summary type="html"><![CDATA[Modern applications are typically architected as distributed collections of microservices, with each collection of microservices performing some discrete business function. This distributed microservices architecture allows multiple teams within large organizations to operate independently of each other and release new versions of their microservices at their own cadence. However, this requires an additional level of supervision to address observability, traffic management, and security use cases for service-to-service communication across these distributed workloads. This can be done by embedding logic directly within the application code of each microservice. Or it can be done in a transparent way using service mesh which deploys sidecars to application pods to achieve the same use cases…]]></summary>
-        <author>
-            <name>shashankbarsin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Teams Toolkit for Visual Studio Code Update – April 2023]]></title>
-        <id>https://devblogs.microsoft.com/microsoft365dev/?p=13589</id>
-        <link href="https://devblogs.microsoft.com/microsoft365dev/teams-toolkit-for-visual-studio-code-update-april-2023/"/>
-        <updated>2023-04-19T15:00:28.000Z</updated>
-        <summary type="html"><![CDATA[Welcome to the April 2023 update for Teams Toolkit for Visual Studio Code! Learn what’s new for developers building Teams apps with the prerelease version of Teams Toolkit for Visual Studio Code.
-The post Teams Toolkit for Visual Studio Code Update – April 2023 appeared first on Microsoft 365 Developer Blog.]]></summary>
-        <author>
-            <name>Junjie Li</name>
         </author>
     </entry>
     <entry>
