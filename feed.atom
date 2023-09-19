@@ -2,10 +2,244 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2023-09-18T01:00:46.373Z</updated>
+    <updated>2023-09-19T01:01:08.329Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Azure Functions Newsletter – September 2023]]></title>
+        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/azure-functions-newsletter-september-2023/ba-p/3930787</id>
+        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/azure-functions-newsletter-september-2023/ba-p/3930787"/>
+        <updated>2023-09-18T18:10:53.000Z</updated>
+        <summary type="html"><![CDATA[Welcome to this month's Azure Functions newsletter! We'll share the latest news for Azure Functions here on the Apps on Azure blog.
+ 
+Azure Functions monthly community live stream
+Our next live stream is on September 19, 2023 at 10:00AM PDT (17:00 UTC). Join us and our special guests Matthew Henderson and Fabio Cavalcante from the product group to get an overview of all the recent .NET announcements for Azure Functions, including an updated public roadmap, .NET 8 Preview support, and much more!
+ 
+
+
+
+Subscribe to the Azure Developers YouTube channel!
+ 
+Product news
+
+Starting with version 6.0.0 of the Azure Functions Event Hubs extension, a higher default value of 100 will be used for the maxEventBatchSize configuration setting for improved performance. Learn more here. 
+Durable Functions for Python v2 Programming Model now generally available
+.NET Updates:
+
+.NET on Azure Functions – August 2023 roadmap update
+Azure Functions .NET 8 support in Linux plans in preview
+Application Insights integration for the Azure Functions .NET worker generally available
+SDK type bindings in Azure Functions generally available
+ASP.NET Core integration in Azure Functions generally available
+Azure Functions .NET worker cold start improvements in preview
+
+
+
+ 
+Get notified when we publish future newsletters, subscribe to the Apps on Azure blog. Connect with the Azure Functions team on GitHub and Twitter.]]></summary>
+        <author>
+            <name>nzthiago</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Init Containers in Azure Container Apps : File Processing]]></title>
+        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/init-containers-in-azure-container-apps-file-processing/ba-p/3930675</id>
+        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/init-containers-in-azure-container-apps-file-processing/ba-p/3930675"/>
+        <updated>2023-09-18T16:19:28.000Z</updated>
+        <summary type="html"><![CDATA[In some scenarios, you might need to preprocess files before they're used by your application. For instance, you're deploying a machine learning model that relies on precomputed data files. An Init Container can download, extract, or preprocess these files, ensuring they are ready for the main application container. This approach simplifies the deployment process and ensures that your application always has access to the required data.
+ 
+The below example defines a simple Pod that has an init container which downloads a file from some resource to a file share which is shared between the init and main app container. The main app container is running a php-apache image and serves the landing page using the index.php file downloaded into the shared file space.
+ 
+
+ 
+The init container mounts the shared volume at /mydir , and the main application container mounts the shared volume at /var/www/html. The init container runs the following command to download the file and then terminates: wget -O /mydir/index.php http://info.cern.ch. 
+ 
+Configurations and dockerfile for init container:
+ 
+
+Mount the storage file share on the environment level
+Create init container with mounting file share named init on path /mydir:
+
+
+ 
+ 
+
+Dockerfile for init which downloads an index.php file under /mydir:
+
+ 
+FROM busybox:1.28 
+WORKDIR / 
+ENTRYPOINT ["wget", "-O", "/mydir/index.php", "http://info.cern.ch"]
+ 
+ 
+ 
+Configuration for main app container:
+ 
+
+Create main app container mounting file share named init on path /var/www/html:
+
+
+ 
+ 
+
+Main app container configuration which uses php-apache image and serves the index.php file from DocumentRoot /var/www/html:
+
+
+ 
+Output:
+ 
+
+ 
+ 
+ 
+Logs:]]></summary>
+        <author>
+            <name>Astha</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Data suggest Microsoft 365 Certification increases app adoption rates]]></title>
+        <id>https://devblogs.microsoft.com/microsoft365dev/?p=15306</id>
+        <link href="https://devblogs.microsoft.com/microsoft365dev/data-suggest-microsoft-365-certification-increases-app-adoption-rates/"/>
+        <updated>2023-09-18T16:15:40.000Z</updated>
+        <summary type="html"><![CDATA[In recent surveys, enterprise customers report considering Microsoft 365 Certified apps before non-certified apps on average 90% of the time.
+The post Data suggest Microsoft 365 Certification increases app adoption rates appeared first on Microsoft 365 Developer Blog.]]></summary>
+        <author>
+            <name>Leana Gerrard</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Capturing lifecycle events from your Azure Managed Application deployments]]></title>
+        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/capturing-lifecycle-events-from-your-azure-managed-application/ba-p/3902995</id>
+        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/capturing-lifecycle-events-from-your-azure-managed-application/ba-p/3902995"/>
+        <updated>2023-09-18T15:33:08.000Z</updated>
+        <summary type="html"><![CDATA[As a publisher that is offering their software solutions on the Azure Marketplace, in particular Azure Managed Applications, it is essential to monitor the customer deployments to make sure they occur without incidents, and to get notified and act quickly when something fails. While Partner Center provides a dashboard to view your deployed apps, data is not updated in real-time and it make take some time to reflect the latest state. Moreover, it might be challenging to integrate with other Azure services for analytics, alerts, and more. For this reason, we have created a simple Azure Function app that captures real-time events triggered during installation of your Managed Application and persists the information in an Azure Table. This will give you the foundation to consume those events a…]]></summary>
+        <author>
+            <name>polinao</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How Bing Chat Enterprise works with your data using GPT-4]]></title>
+        <id>https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/how-bing-chat-enterprise-works-with-your-data-using-gpt-4/ba-p/3930547</id>
+        <link href="https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/how-bing-chat-enterprise-works-with-your-data-using-gpt-4/ba-p/3930547"/>
+        <updated>2023-09-18T15:17:01.000Z</updated>
+        <summary type="html"><![CDATA[How can your organization use generative AI with the right protections in place for your data today? Bing Chat Enterprise delivers built-in commercial data protection that you can use now. If your organization uses Microsoft 365 E3, E5, Business Standard, or Business Premium, you already have access to Bing Chat Enterprise, included as part of those services. Jared Andersen from the Bing Chat Enterprise team at Microsoft explains how it also uses the latest GPT-4 foundation model, included as part of the service. 
+ 
+
+ 
+Jared also demonstrates what Bing Chat Enterprise is, along with some of the fundamental differences compared to public services like ChatGPT that you might be familiar with, and how Bing Chat Enterprise protects your data. Then for admins, he also explains your available co…]]></summary>
+        <author>
+            <name>Zachary Cavanell</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Join Microsoft at Oracle CloudWorld in Las Vegas]]></title>
+        <id>https://techcommunity.microsoft.com/t5/azure-migration-and/join-microsoft-at-oracle-cloudworld-in-las-vegas/ba-p/3925714</id>
+        <link href="https://techcommunity.microsoft.com/t5/azure-migration-and/join-microsoft-at-oracle-cloudworld-in-las-vegas/ba-p/3925714"/>
+        <updated>2023-09-18T15:00:00.000Z</updated>
+        <summary type="html"><![CDATA[I’m excited to be here at Oracle CloudWorld 2023. Last week we announced our partnership with Oracle to bring Oracle database services to Azure with Oracle Database@Azure. Customers will be able to migrate mission-critical databases directly to Azure, where they can easily integrate with services like Azure Open AI, Microsoft Fabric, and Microsoft Power BI.
+ 
+If you want to learn more about Oracle Database@Azure, the work we are doing with Oracle, or just have a great conversation, don’t be shy – stop by and say hello. We'd love to talk with you!
+ 
+Explore with us  
+ 
+As you build your schedule, plan to hear from Microsoft experts in these sessions:
+ 
+
+
+
+
+Date / Time
+
+
+Session Title / Description
+
+
+
+
+SOLUTION KEYNOTE
+Tuesday, September 19
+12:45 PM -1:30 PM
+
+
+Introducing Oracle Database@Azu…]]></summary>
+        <author>
+            <name>omarkmsft</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[General Availability: Malware Scanning in Defender for Storage]]></title>
+        <id>general-availability-malware-scanning-in-defender-for-storage-2</id>
+        <link href="https://azure.microsoft.com/en-us/updates/general-availability-malware-scanning-in-defender-for-storage-2/"/>
+        <updated>2023-09-18T13:58:21.000Z</updated>
+        <summary type="html"><![CDATA[Malware Scanning in Defender for Storage enables organizations to detect and prevent malware distribution events with content scanning upon upload and near real-time malware detection powered by Microsoft Defender Antivirus technologies.]]></summary>
+        <author>
+            <name>Azure service updates</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Init Containers on Azure Container Apps]]></title>
+        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/init-containers-on-azure-container-apps/ba-p/3930333</id>
+        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/init-containers-on-azure-container-apps/ba-p/3930333"/>
+        <updated>2023-09-18T11:45:19.000Z</updated>
+        <summary type="html"><![CDATA[Azure Container Apps, a service for running apps and microservices with serverless containers now offers support for running init containers.
+ 
+Azure Container App Init Containers are specialized containers that run to completion before application containers are started in a replica, and they can contain utilities or setup scripts not present in your container app image. Init containers are useful for performing initialization logic such as setting up accounts, running setup scripts, and configuring databases.
+ 
+Init containers are exactly like regular containers, except:
+
+Init containers always run to completion.
+Each init container must complete successfully before the next one starts.
+
+ 
+NOTE : Init containers are defined in the initContainers array of the container app template. The c…]]></summary>
+        <author>
+            <name>Astha</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Get certificates with Azure Key Vault extension to your Linux VMs]]></title>
+        <id>https://techcommunity.microsoft.com/t5/fasttrack-for-azure/get-certificates-with-azure-key-vault-extension-to-your-linux/ba-p/3930261</id>
+        <link href="https://techcommunity.microsoft.com/t5/fasttrack-for-azure/get-certificates-with-azure-key-vault-extension-to-your-linux/ba-p/3930261"/>
+        <updated>2023-09-18T10:11:56.000Z</updated>
+        <summary type="html"><![CDATA[Certificate management is one of those IT disciplines that is nobody’s dream, and still it can have quite a dramatic (negative) impact in your web presence if not done properly, such as users being told by the browser that your site is not secure. Azure has a nice little tool to manage certificates and bring them to your virtual machines, but it is not that well documented: welcome to the Azure Key Vault extension.
+ 
+Prompted by my awesome colleague Bruna Moreira, I decided to have a look at it. Long story short: it does what it promises (copying and refreshing digital certificates from Azure Key Vault into your virtual machine) and it does it well, but you need to know a couple of little secrets to make it work.
+ 
+By the way, if you are one of those persons that prefer reading code than p…]]></summary>
+        <author>
+            <name>Jose Moreno</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Generally Available: Azure Update Manager]]></title>
+        <id>https://techcommunity.microsoft.com/t5/azure-governance-and-management/generally-available-azure-update-manager/ba-p/3928878</id>
+        <link href="https://techcommunity.microsoft.com/t5/azure-governance-and-management/generally-available-azure-update-manager/ba-p/3928878"/>
+        <updated>2023-09-18T08:44:45.000Z</updated>
+        <summary type="html"><![CDATA[With the evolution of the IT landscape, there is a growing demand for seamless management of resources across the cloud and edge. We are pleased to announce that Azure Update Manager, previously known as Update Management Center, is now generally available.
+ 
+Azure Update Manager provides a SaaS solution to manage and govern software updates to Windows and Linux machines across Azure, on-premises, and multi cloud environments. It is an evolution of Azure Automation Update management solution with new features and functionality, for assessment and deployment of software updates on a single machine or on multiple machines at scale.
+ 
+
+Oversee update compliance for your entire fleet of machines in Azure (Azure VMs), on-premises, and multi cloud environments (Arc-enabled Servers).
+View and dep…]]></summary>
+        <author>
+            <name>shashban</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Configuring Azure Blob Trigger Identity Based Connection]]></title>
+        <id>https://devblogs.microsoft.com/premier-developer/?p=41471</id>
+        <link href="https://devblogs.microsoft.com/premier-developer/configuring-azure-blob-trigger-identity-based-connection/"/>
+        <updated>2023-09-18T08:00:36.000Z</updated>
+        <summary type="html"><![CDATA[So want to connect your blob triggered function to a storage account, but you don’t want to put your connection string or secrets into the configuration?  Andrew Redman explores how to do it in this blog post.
+What’s the problem?
+The post Configuring Azure Blob Trigger Identity Based Connection appeared first on Developer Support.]]></summary>
+        <author>
+            <name>Developer Support</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Intro to Power Platform Copilots: Power Platform Global AI Hack Sept 18 10AM PST]]></title>
         <id>https://techcommunity.microsoft.com/t5/educator-developer-blog/intro-to-power-platform-copilots-power-platform-global-ai-hack/ba-p/3928945</id>
