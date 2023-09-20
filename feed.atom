@@ -2,10 +2,115 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2023-09-19T01:01:08.329Z</updated>
+    <updated>2023-09-20T01:00:27.433Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Introducing Azure DevOps Server 2022 Update 1 RC1]]></title>
+        <id>https://devblogs.microsoft.com/devops/?p=67633</id>
+        <link href="https://devblogs.microsoft.com/devops/introducing-azure-devops-server-2022-update-1-rc1/"/>
+        <updated>2023-09-19T19:31:33.000Z</updated>
+        <summary type="html"><![CDATA[Today we’re very excited to announce the first release candidate (RC1) of Azure DevOps Server 2022.1!
+Last Accessed column on Delivery Plans page
+There are many more features with this release,
+The post Introducing Azure DevOps Server 2022 Update 1 RC1 appeared first on Azure DevOps Blog.]]></summary>
+        <author>
+            <name>Gloridel Morales</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Retirement of Exchange Web Services in Exchange Online]]></title>
+        <id>https://devblogs.microsoft.com/microsoft365dev/?p=15312</id>
+        <link href="https://devblogs.microsoft.com/microsoft365dev/retirement-of-exchange-web-services-in-exchange-online/"/>
+        <updated>2023-09-19T15:00:59.000Z</updated>
+        <summary type="html"><![CDATA[Today, we are announcing that on October 1, 2026, we will start blocking EWS requests from non-Microsoft apps to Exchange Online.
+The post Retirement of Exchange Web Services in Exchange Online appeared first on Microsoft 365 Developer Blog.]]></summary>
+        <author>
+            <name>Greg Taylor</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Automate your load tests with CI/CD in just a few clicks]]></title>
+        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/automate-your-load-tests-with-ci-cd-in-just-a-few-clicks/ba-p/3931185</id>
+        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/automate-your-load-tests-with-ci-cd-in-just-a-few-clicks/ba-p/3931185"/>
+        <updated>2023-09-19T12:33:05.000Z</updated>
+        <summary type="html"><![CDATA[Ensuring that your applications perform seamlessly under load is crucial. The last thing you want is for a code change or new feature to negatively impact your app's performance. That's where load testing swoops in to save the day. But what if we told you there's an even cooler way to handle load testing? Yep, you guessed it – automating it with Continuous Integration and Continuous Deployment (CI/CD) using Azure Pipelines and Azure Load Testing.
+ 
+Why automate load tests with CI/CD?
+Before we jump into the nitty-gritty, let's understand why automating load tests with CI/CD is a game-changer:
+
+Detect issues early: By integrating load tests into your CI/CD pipeline, you can detect performance issues early . Address problems before they reach production, reducing the impact on end-users.
+Con…]]></summary>
+        <author>
+            <name>Nikita_Nallamothu</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[It's time to 🍂 #FallForIntelligentApps 🍂]]></title>
+        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/it-s-time-to-fallforintelligentapps/ba-p/3931266</id>
+        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/it-s-time-to-fallforintelligentapps/ba-p/3931266"/>
+        <updated>2023-09-19T07:21:54.000Z</updated>
+        <summary type="html"><![CDATA[Get Ready To #FallForIntelligentApps!
+Today, we kick off the Fall season with content and activities to skill you up on all things Intelligent Apps or AI Apps on Azure with content, events, and community interactions. It is time to combine the power of AI, cloud-native application development, and, cloud-scale data to create highly differentiated digital experiences by building and modernizing intelligent applications with Azure for your users.
+ 
+There are a number of initiatives planned for this Fall season to help you learn and skill up on relevant technologies. Learn More > 
+ 
+
+ 
+Click on the links to visit the relevant pages for each.
+
+#30DaysOfIA - 6 themed weeks of daily articles in a structured roadmap
+Learn Live Series – 8 weekly live episodes on Serverless and Kubernetes
+Ask The E…]]></summary>
+        <author>
+            <name>Devanshi_Joshi</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Function app deployment from Azure DevOps never complete]]></title>
+        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/function-app-deployment-from-azure-devops-never-complete/ba-p/3912288</id>
+        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/function-app-deployment-from-azure-devops-never-complete/ba-p/3912288"/>
+        <updated>2023-09-19T01:51:26.000Z</updated>
+        <summary type="html"><![CDATA[Symptom:
+When using zip deploy way to deploy to function app from Azure DevOps, the new deployment never complete at DevOps side until manually cancel it.
+ 
+Bad: 
+
+ 
+Good:
+
+ 
+Resolution: 
+1. Enable debug log at DevOps side and then check if there are many requests to "/api/deployments/latest" with 202, if yes, continue.  
+2. Check under "LogFiles/kudu/trace" in kudu portal, find log with name like below at the same time range for current deployment. If many logs show the deployment is pending at same deployment id, then continue. 
+
+3. Go to "site/deployments" in kudu portal to find the folder whose name is same as the deployment id, then check status.xml or status_complete.xml and log.log inside the folder. If status in status.xml or status_complete.xml is not Success or Failed, then we can try to resolve the issue by removing this folder under "site/deployments".
+4. Check the log with name like below under "LogFiles/kudu/trace" at the same time for the non-completed deployment task to get more details of the cause why the deployment at that time was not completed.]]></summary>
+        <author>
+            <name>Victoria_Xia</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[This Week in Spring - September 19th, 2023 (Java 21 Edition)]]></title>
+        <id>https://spring.io/blog/2023/09/19/this-week-in-spring-september-19th-2023-java-21-edition</id>
+        <link href="https://spring.io/blog/2023/09/19/this-week-in-spring-september-19th-2023-java-21-edition"/>
+        <updated>2023-09-19T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Level up your Java code and explore what Spring can do for you.]]></summary>
+        <author>
+            <name>Josh Long</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Spring Tips: Making the joyful jump to Java 21]]></title>
+        <id>https://spring.io/blog/2023/09/19/spring-tips-making-the-joyful-jump-to-java-21</id>
+        <link href="https://spring.io/blog/2023/09/19/spring-tips-making-the-joyful-jump-to-java-21"/>
+        <updated>2023-09-19T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Level up your Java code and explore what Spring can do for you.]]></summary>
+        <author>
+            <name>Josh Long</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Azure Functions Newsletter – September 2023]]></title>
         <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/azure-functions-newsletter-september-2023/ba-p/3930787</id>
@@ -40,6 +145,36 @@ Azure Functions .NET worker cold start improvements in preview
 Get notified when we publish future newsletters, subscribe to the Apps on Azure blog. Connect with the Azure Functions team on GitHub and Twitter.]]></summary>
         <author>
             <name>nzthiago</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[OpenAI Whisper model in preview in Azure OpenAI service and Azure AI Speech]]></title>
+        <id>openai-whisper-model-in-preview-in-azure-openai-service-and-azure-ai-speech</id>
+        <link href="https://azure.microsoft.com/en-us/updates/openai-whisper-model-in-preview-in-azure-openai-service-and-azure-ai-speech/"/>
+        <updated>2023-09-18T17:00:24.000Z</updated>
+        <summary type="html"><![CDATA[The OpenAI Whisper model has multi-lingual capabilities that offer precise and efficient transcription of human speech in 57 languages, and translation into English.]]></summary>
+        <author>
+            <name>Azure service updates</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Authenticate Azure Monitor logs connector in Logic App with managed identity]]></title>
+        <id>authenticate-azure-monitor-logs-connector</id>
+        <link href="https://azure.microsoft.com/en-us/updates/authenticate-azure-monitor-logs-connector/"/>
+        <updated>2023-09-18T17:00:23.000Z</updated>
+        <summary type="html"><![CDATA[When you enable managed identity authentication in Logic App, and grant it permissions in Log Analytics workspace, or Application Insights component, you can query data without needing...]]></summary>
+        <author>
+            <name>Azure service updates</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Public preview: Alerts timeline view]]></title>
+        <id>public-preview-timeline-view-for-azure-monitor-alerts</id>
+        <link href="https://azure.microsoft.com/en-us/updates/public-preview-timeline-view-for-azure-monitor-alerts/"/>
+        <updated>2023-09-18T17:00:23.000Z</updated>
+        <summary type="html"><![CDATA[A new timeline view simplifies the consumption experience of fired alerts.]]></summary>
+        <author>
+            <name>Azure service updates</name>
         </author>
     </entry>
     <entry>
