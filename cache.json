@@ -6,6 +6,16 @@
       "siteUrl": "https://spring.io",
       "articles": [
         {
+          "id": "https://spring.io/blog/2023/09/20/hello-java-21",
+          "author": "Josh Long",
+          "description": "Level up your Java code and explore what Spring can do for you.",
+          "link": "https://spring.io/blog/2023/09/20/hello-java-21",
+          "publishedOn": "2023-09-20T00:00:00.000Z",
+          "wordCount": 10604,
+          "title": "Hello, Java 21",
+          "imageUrl": "https://spring.io/img/og-spring.png"
+        },
+        {
           "id": "https://spring.io/blog/2023/09/19/this-week-in-spring-september-19th-2023-java-21-edition",
           "author": "Josh Long",
           "description": "Level up your Java code and explore what Spring can do for you.",
@@ -1830,6 +1840,16 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/init-containers-in-azure-container-apps-database-initialization/ba-p/3931271",
+          "author": "Kinsuk",
+          "description": "Suppose you're deploying a web application that relies on a database. Instead of manually configuring the database each time you deploy your application, you can use an Init Container to handle this task. The Init Container can run scripts to create tables, seed initial data, or set up the database schema. Once the database is ready, the main application container can safely start, knowing that the required database structure is in place.\n \nThe below example defines an init container which runs under the same pod as main app container, seeds data to an existing Azure MySQL Database which will be used by the main web app container to serve contents onto the landing page.\n \n\n \nThe init container inserts a record into an existing table named myguests in Azure My SQL DB using a python script. The script contains code for connecting to the Database alongside inserting record into the Database. This data will then be retrieved and used by the main app container which is also running a python Flask based web application and return the value in the landing page.\n \nDockerfile for Init Container\n \n \n \nFROM python\nCOPY . .\nRUN pip install mysql && pip install mysql-connector-python\nCMD [\"python\", \"test.py\"]\n\n \n \n \n \nPython Script for Init Container\n \n \n \nimport mysql.connector\n\nmydb = mysql.connector.connect(\n  host=\"init-test.mysql.database.azure.com\",\n  user=\"*******\",\n  password=\"*******\",\n  database=\"*****\"\n)\n\nmycursor = mydb.cursor()\n\nsql = \"INSERT INTO myguests (firstname, lastname, email) VALUES ('John', 'Doe', 'test@outlook.com')\"\n\nmycursor.execute(sql)\n\nmydb.commit()\n\nprint(mycursor.rowcount, \"record(s) affected\")\n\n \n \n \n \nOutput from Init Container\n \n\n \n \n \nDockerfile for main app container\n \n \n \nFROM python\nCOPY . .\nRUN pip install mysql-connector && pip install flask\nEXPOSE 5000\nCMD [\"python\", \"app.py\"]\n \n \n \nOutput",
+          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/init-containers-in-azure-container-apps-database-initialization/ba-p/3931271",
+          "publishedOn": "2023-09-20T09:25:52.000Z",
+          "wordCount": 9861,
+          "title": "Init Containers in Azure Container Apps : Database Initialization",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/508963iFB344682F6B03679/image-size/original?v=v2&px=-1"
+        },
+        {
           "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/automate-your-load-tests-with-ci-cd-in-just-a-few-clicks/ba-p/3931185",
           "author": "Nikita_Nallamothu",
           "description": "Ensuring that your applications perform seamlessly under load is crucial. The last thing you want is for a code change or new feature to negatively impact your app's performance. That's where load testing swoops in to save the day. But what if we told you there's an even cooler way to handle load testing? Yep, you guessed it – automating it with Continuous Integration and Continuous Deployment (CI/CD) using Azure Pipelines and Azure Load Testing.\n \nWhy automate load tests with CI/CD?\nBefore we jump into the nitty-gritty, let's understand why automating load tests with CI/CD is a game-changer:\n\nDetect issues early: By integrating load tests into your CI/CD pipeline, you can detect performance issues early . Address problems before they reach production, reducing the impact on end-users.\nCon…",
@@ -3461,6 +3481,16 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/t5/fasttrack-for-azure/taking-the-leap-unleashing-the-power-of-azure-cli/ba-p/3932715",
+          "author": "nadavbh",
+          "description": "In my previous article,\nI explained the benefits of Azure CLI and some methods to tailor it to your needs.\nIn this article, I want to explore how to use Azure CLI efficiently to retrieve the data you want, in a quick and reliable manner.\nIn addition, I will share some useful advice to improve your experience with the command-line interface.\n \nUsing JMESPath with Azure CLI\nAzure CLI can fit almost any scenario that you currently have using Azure.\nWith over 9,000 reference commands, there's always a way to achieve your goal.\nPrompt use of JMESPath can enhance your way of getting the precise data that you need.\n \nFor this example, we'll use Azure Kubernetes Service (AKS).\n \nLet's say that you're tasked with getting the number of nodes available on your cluster with their VM size, for FinOps p…",
+          "link": "https://techcommunity.microsoft.com/t5/fasttrack-for-azure/taking-the-leap-unleashing-the-power-of-azure-cli/ba-p/3932715",
+          "publishedOn": "2023-09-20T13:40:36.000Z",
+          "wordCount": 10379,
+          "title": "Taking the leap - Unleashing the power of Azure CLI",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/509458i355DBC2F3C31F370/image-size/original?v=v2&px=-1"
+        },
+        {
           "id": "https://techcommunity.microsoft.com/t5/fasttrack-for-azure/get-certificates-with-azure-key-vault-extension-to-your-linux/ba-p/3930261",
           "author": "Jose Moreno",
           "description": "Certificate management is one of those IT disciplines that is nobody’s dream, and still it can have quite a dramatic (negative) impact in your web presence if not done properly, such as users being told by the browser that your site is not secure. Azure has a nice little tool to manage certificates and bring them to your virtual machines, but it is not that well documented: welcome to the Azure Key Vault extension.\n \nPrompted by my awesome colleague Bruna Moreira, I decided to have a look at it. Long story short: it does what it promises (copying and refreshing digital certificates from Azure Key Vault into your virtual machine) and it does it well, but you need to know a couple of little secrets to make it work.\n \nBy the way, if you are one of those persons that prefer reading code than p…",
@@ -4625,6 +4655,26 @@
       "feedUrl": "https://techcommunity.microsoft.com/plugins/custom/microsoft/o365/custom-blog-rss?tid=2893852362688900935&board=AzureArchitectureBlog&size=50",
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
+        {
+          "id": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/demystifying-azure-openai-networking-for-secure-chatbot/ba-p/3932802",
+          "author": "FreddyAyala",
+          "description": "Introduction\n\nAzure AI Landing Zones provide a solid foundation for deploying advanced AI technologies like OpenAI's GPT-4 models. These environments are designed to support AI enthusiasts, but it's essential to grasp their networking aspects, especially concerning Platform as a Service (PaaS) offerings.\n \nIn this article, we'll dive into the networking details of OpenAI Landing Zones, focusing on how PaaS services handle networking configurations, manage inbound and outbound connectivity, and handle DNS resolution. The knowledge you gain here is applicable not only to OpenAI but also to other PaaS and AI Services within Azure.\n \nBut there's more! We'll walk you through a practical scenario involving the creation of an Open AI Chat Web Application. This application allows for seamless inte…",
+          "link": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/demystifying-azure-openai-networking-for-secure-chatbot/ba-p/3932802",
+          "publishedOn": "2023-09-20T17:29:18.000Z",
+          "wordCount": 13761,
+          "title": "Demystifying Azure OpenAI Networking for Secure Chatbot Deployment",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/509487iEB6C370DBFF008CD/image-size/original?v=v2&px=-1"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/example-reference-network-topologies-for-api-management-in/ba-p/3932001",
+          "author": "Mauricio_Rojas",
+          "description": "The following suggested Network example topologies are thought to follow Vnet integration practices within the API management. Therefore, these revolve around API management in internal mode (Azure API Management with an Azure virtual network | Microsoft Learn). API Management in internal mode requires a Premium SKU or Development (not recommended for production). Please estimate API management cost appropriately using the Azure Pricing calculator.  \n \nConsiderations for Azure API Management Plane.\n \nAzure API Management comprises three essential components: an API gateway (data plane), a management plane, and a developer portal (user plane). These components are hosted on Azure's infrastructure and are fully managed by default.\n \nThe data plane handles end-user traffic, which is generated…",
+          "link": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/example-reference-network-topologies-for-api-management-in/ba-p/3932001",
+          "publishedOn": "2023-09-20T17:27:04.000Z",
+          "wordCount": 11077,
+          "title": "Example Reference Network Topologies for API Management in private mode.",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/509207i311DECDB28C57E91/image-size/original?v=v2&px=-1"
+        },
         {
           "id": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/build-image-with-containerised-self-hosted-azure-devops-agent/ba-p/3919105",
           "author": "Ha_Duong",
@@ -6078,6 +6128,16 @@
       "siteUrl": "https://devblogs.microsoft.com/devops/",
       "articles": [
         {
+          "id": "https://devblogs.microsoft.com/devops/?p=67480",
+          "author": "Bryan Sullivan",
+          "description": "We’re excited to announce that GitHub Advanced Security for Azure DevOps is now generally available and is ready for you to use in your own Azure DevOps repos! You can now enable code, secret, and dependency scanning within Azure Repos and take advantage of the new product updates.\nThe post Now Generally Available: GitHub Advanced Security for Azure DevOps is ready for you to use appeared first on Azure DevOps Blog.",
+          "link": "https://devblogs.microsoft.com/devops/now-generally-available-github-advanced-security-for-azure-devops-is-ready-for-you-to-use/",
+          "publishedOn": "2023-09-20T15:03:50.000Z",
+          "wordCount": 5522,
+          "title": "Now Generally Available: GitHub Advanced Security for Azure DevOps is ready for you to use",
+          "imageUrl": "https://devblogs.microsoft.com/devops/wp-content/uploads/sites/6/2022/10/AzDO-heart-Security.png"
+        },
+        {
           "id": "https://devblogs.microsoft.com/devops/?p=67633",
           "author": "Gloridel Morales",
           "description": "Today we’re very excited to announce the first release candidate (RC1) of Azure DevOps Server 2022.1!\nLast Accessed column on Delivery Plans page\nThere are many more features with this release,\nThe post Introducing Azure DevOps Server 2022 Update 1 RC1 appeared first on Azure DevOps Blog.",
@@ -6304,6 +6364,16 @@
       "feedUrl": "https://devblogs.microsoft.com/azure-sql/feed/",
       "siteUrl": "https://devblogs.microsoft.com/azure-sql/",
       "articles": [
+        {
+          "id": "https://devblogs.microsoft.com/azure-sql/?p=2432",
+          "author": "Jerry Nixon (SQL)",
+          "description": "In September, Data API builder (DAB) revved with some great new features. In this article we’ll talk about controlling environment variables with ENV files. What is Data API builder? DAB is an open source, cross-platform engine that creates instant REST & GraphQL APIs for your database - MySQL, Postgres, Cosmos DB or Microsoft SQL. Without any code, DAB uses only a JSON configuration file that explains how to access your data and what objects to expose.\nThe post Data API builder Now Supports ENV Files appeared first on Azure SQL Devs’ Corner.",
+          "link": "https://devblogs.microsoft.com/azure-sql/dab-envfiles/",
+          "publishedOn": "2023-09-20T19:00:00.000Z",
+          "wordCount": 4923,
+          "title": "Data API builder Now Supports ENV Files",
+          "imageUrl": "https://devblogs.microsoft.com/azure-sql/wp-content/uploads/sites/56/2020/04/sql-database-3-560.png"
+        },
         {
           "id": "https://devblogs.microsoft.com/azure-sql/?p=2364",
           "author": "Brian Spendolini",
