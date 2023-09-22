@@ -2,10 +2,48 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2023-09-21T01:00:07.824Z</updated>
+    <updated>2023-09-22T01:02:02.930Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Configure remote write to send data from ARO to Azure managed Prometheus using AAD authentication.]]></title>
+        <id>https://techcommunity.microsoft.com/t5/fasttrack-for-azure/configure-remote-write-to-send-data-from-aro-to-azure-managed/ba-p/3934721</id>
+        <link href="https://techcommunity.microsoft.com/t5/fasttrack-for-azure/configure-remote-write-to-send-data-from-aro-to-azure-managed/ba-p/3934721"/>
+        <updated>2023-09-21T23:48:46.000Z</updated>
+        <summary type="html"><![CDATA[This blog describes how to configure remote-write to send data from Prometheus running in your Azure Red Hat OpenShift (ARO) cluster to Azure managed Prometheus using Azure Active Directory authentication. Then query and view the data via Azure managed Prometheus and Grafana. 
+ 
+Currently ARO doesn't support Managed Identity, hence we are using Azure Active Directory Service Principal approach. Managed Identity support for ARO is coming soon. One of the major drawbacks with Service Principal approach is that the client secret will have an expiry date.
+ 
+Credit
+Huge thanks to Vishwanath Narasimhan & Rakshith Padmanabha from Microsoft and Paul Czarkowski from Red Hat for providing guidance to accomplish this.
+ 
+Cluster configurations
+This article applies to the following cluster configuratio…]]></summary>
+        <author>
+            <name>UmarMohamedUsman</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[General Availability: Share VM images publicly with community gallery - Azure Compute Gallery feature]]></title>
+        <id>general-availability-share-images-publicly-with-azure-compute-gallery-feature-community-gallery</id>
+        <link href="https://azure.microsoft.com/en-us/updates/general-availability-share-images-publicly-with-azure-compute-gallery-feature-community-gallery/"/>
+        <updated>2023-09-21T19:38:21.000Z</updated>
+        <summary type="html"><![CDATA[With community gallery, you can now share VM images with the broader Azure community.]]></summary>
+        <author>
+            <name>Azure service updates</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[A Bootiful Podcast: Java community legend Sharat Chander]]></title>
+        <id>https://spring.io/blog/2023/09/21/a-bootiful-podcast-java-community-legend-sharat-chander</id>
+        <link href="https://spring.io/blog/2023/09/21/a-bootiful-podcast-java-community-legend-sharat-chander"/>
+        <updated>2023-09-21T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Level up your Java code and explore what Spring can do for you.]]></summary>
+        <author>
+            <name>Josh Long</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Data API builder Now Supports ENV Files]]></title>
         <id>https://devblogs.microsoft.com/azure-sql/?p=2432</id>
@@ -15361,20 +15399,6 @@ The post Supercharge your Teams app development: New integration for Teams Toolk
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Bring Your Own Storage (BYOS) to Azure App Service Web App]]></title>
-        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/bring-your-own-storage-byos-to-azure-app-service-web-app/ba-p/3753649</id>
-        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/bring-your-own-storage-byos-to-azure-app-service-web-app/ba-p/3753649"/>
-        <updated>2023-04-25T09:15:29.000Z</updated>
-        <summary type="html"><![CDATA[Azure App Service Web Apps has been around for many years now and has for a long time been  a very reliable and performant product for running highly utilized workloads.  One of the benefits of Azure App Service Web Apps is the scaling capability which lets you add additional compute resources like CPU and Memory (aka another VM to the web farm) on-demand.  You can add additional compute power to your web site manually or using auto-scaling, as described here.  How this works from an architecture is explained at the location linked in the following bullet point.  The focus of this article however is concentrated on the File Server role which stores your code and static files.
-
-Inside the Azure App Service Architecture
-
-When your website needs to add an additional Web Worker to handle addit…]]></summary>
-        <author>
-            <name>csharpguitar</name>
-        </author>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[Microsoft's Student Opportunities: A Gateway to Professional Growth]]></title>
         <id>https://techcommunity.microsoft.com/t5/educator-developer-blog/microsoft-s-student-opportunities-a-gateway-to-professional/ba-p/3798822</id>
         <link href="https://techcommunity.microsoft.com/t5/educator-developer-blog/microsoft-s-student-opportunities-a-gateway-to-professional/ba-p/3798822"/>
@@ -15386,160 +15410,6 @@ P.S - Almost all of these opportunities provide swag  (shirts, bags, stickers,
 This one is a …]]></summary>
         <author>
             <name>Sarah_Solarin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[App Service does not support Server Push in Http2]]></title>
-        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/app-service-does-not-support-server-push-in-http2/ba-p/3803424</id>
-        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/app-service-does-not-support-server-push-in-http2/ba-p/3803424"/>
-        <updated>2023-04-25T06:18:07.000Z</updated>
-        <summary type="html"><![CDATA[Nowadays, the Internet became so entrenched in our daily lives, with the increasing use of mobile, cloud, websites, we're always looking for a faster and more efficient method of communicating data. It finally came to the new protocol HTTP/2 announced by IETF in 2015, which is a more modernized, faster and more secure version, almost all major web browsers are on board so far.
-As one of the powerful app platform providers, App service team also announced the support for the HTTP/2 protocol  for all apps hosted on App Service in March 2018.
- 
-What are the key differences from HTTP/1.x on app service?
- 
-
-HTTP/2 is binary
-Fully multiplexed, instead of ordered and blocking
-Ability to use one connection for parallelism
-Has one TCP/IP connection per origin
-Uses header compression to reduce overh…]]></summary>
-        <author>
-            <name>XinyuShan</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[This Week in Spring - April 25th, 2023]]></title>
-        <id>https://spring.io/blog/2023/04/25/this-week-in-spring-april-25th-2023</id>
-        <link href="https://spring.io/blog/2023/04/25/this-week-in-spring-april-25th-2023"/>
-        <updated>2023-04-25T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Level up your Java code and explore what Spring can do for you.]]></summary>
-        <author>
-            <name>Josh Long</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Use Power Automate to update Azure DevOps queries]]></title>
-        <id>https://devblogs.microsoft.com/devops/?p=66806</id>
-        <link href="https://devblogs.microsoft.com/devops/use-power-automate-to-update-azure-devops-queries/"/>
-        <updated>2023-04-24T21:00:59.000Z</updated>
-        <summary type="html"><![CDATA[In this blog post, I’ll explain how to set up automation to automatically update Azure DevOps (ADO) queries. Using an automated Power Automate flow, you save time by not having to manually update your queries for each sprint. Everyone using your queries benefits by having data and details that are always current and accurate.
-The post Use Power Automate to update Azure DevOps queries appeared first on Azure DevOps Blog.]]></summary>
-        <author>
-            <name>Erik Reitan</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Min TLS Cipher Suite (Preview) Now Available on Azure Portal and Info on Upcoming Changes Before GA]]></title>
-        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/min-tls-cipher-suite-preview-now-available-on-azure-portal-and/ba-p/3804134</id>
-        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/min-tls-cipher-suite-preview-now-available-on-azure-portal-and/ba-p/3804134"/>
-        <updated>2023-04-24T20:38:36.000Z</updated>
-        <summary type="html"><![CDATA[From a previous announcement on the Minimum TLS Cipher Suite (preview), the feature only supported the configuration through the API. The good news is that now users can configure the minimum TLS cipher suite for incoming requests through the Azure portal! This feature is currently only supported on Premium SKUs and above. This article will go through what cipher suites are and how they work on App Service, the minimum TLS cipher suite experience on Azure portal, and more information about an upcoming change that will happen before General Availability (GA).
- 
-What are cipher suites and how do they work on App Service? 
-A cipher suite is a set of instructions that contains algorithms and protocols to help secure network connections between clients and servers. By default, the front-end's O…]]></summary>
-        <author>
-            <name>YutangL</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Start Your Cloud Journey with Azure App Service]]></title>
-        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/start-your-cloud-journey-with-azure-app-service/ba-p/3804037</id>
-        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/start-your-cloud-journey-with-azure-app-service/ba-p/3804037"/>
-        <updated>2023-04-24T19:32:18.000Z</updated>
-        <summary type="html"><![CDATA[Let’s face it, moving a line-of-business application that’s been designed to run on-prem, or even on a virtual machine, to the cloud can be intimidating. The good news is that you don’t need to go full-on cloud native all at once. Azure App Service offers a comprehensive platform for hosting .NET applications in the cloud with minimal code changes needed to the existing web app.
-In this article I want to talk about how Azure App Service makes an excellent first step for a .NET application’s cloud journey. By the end of this article, I want you to have enough information to have a foundation for taking your taking your app to the cloud – and honestly to decide whether it’s the right decision at all.
- 
-While we think about the first step of the cloud journey, we need to be thoughtful about m…]]></summary>
-        <author>
-            <name>mattsoucoup</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Azure Synapse Analytics CI/CD with Custom Parameters - Made Easy!]]></title>
-        <id>https://techcommunity.microsoft.com/t5/fasttrack-for-azure/azure-synapse-analytics-ci-cd-with-custom-parameters-made-easy/ba-p/3802517</id>
-        <link href="https://techcommunity.microsoft.com/t5/fasttrack-for-azure/azure-synapse-analytics-ci-cd-with-custom-parameters-made-easy/ba-p/3802517"/>
-        <updated>2023-04-24T19:07:54.000Z</updated>
-        <summary type="html"><![CDATA[Introduction
-Custom parameter templates for Azure Synapse Analytics Workspace deployments allow you to parameterize Synapse Pipeline features and settings that are not exposed in the default deployment parameters template. In this blog post, I will demonstrate how to:
-
-Create Synapse Pipelines that simplify the creation of a custom parameters template
-Create the custom parameters template
-Deploy the custom parameters template as part of an Azure DevOps Release Pipeline for Synapse Workspace deployments
-
-
-If you are new to Azure Synapse Analytics Workspace Deployments, I suggest you start with these articles to gain an understanding of CI/CD with Synapse and the Azure DevOps Release Pipeline task for Azure Synapse Workspace Deployments:
-
-Source control in Synapse Studio
-Continuous integrati…]]></summary>
-        <author>
-            <name>jehayes</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Armchair Architects: How Data is Changing – Part 1]]></title>
-        <id>https://techcommunity.microsoft.com/t5/azure-architecture-blog/armchair-architects-how-data-is-changing-part-1/ba-p/3803806</id>
-        <link href="https://techcommunity.microsoft.com/t5/azure-architecture-blog/armchair-architects-how-data-is-changing-part-1/ba-p/3803806"/>
-        <updated>2023-04-24T18:33:10.000Z</updated>
-        <summary type="html"><![CDATA[Welcome back to Armchair Architects as part of the Azure Enablement Show. We've talked a bit on this show in the past about how applications and workloads have changed, but what's that doing to data and how we're dealing with it? Our hosts are David Blank-Edelman and our armchair architects Uli Homann and Eric Charran. 
- 
-On previous episodes, we talked a little bit about how apps were changing for various reasons. They were changing because they were embedded in a team's client and, various other reasons. These changes will have an impact on the data. 
- 
-Data is changing based on the way that people are using apps. 
- 
-From Eric’s perspective, data is changing based on the way that people are using apps, from the customers he has spoken with and the people across multiple verticals. They'r…]]></summary>
-        <author>
-            <name>brauerblogs</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Armchair Architects: How Data is Changing – Part 2]]></title>
-        <id>https://techcommunity.microsoft.com/t5/azure-architecture-blog/armchair-architects-how-data-is-changing-part-2/ba-p/3803912</id>
-        <link href="https://techcommunity.microsoft.com/t5/azure-architecture-blog/armchair-architects-how-data-is-changing-part-2/ba-p/3803912"/>
-        <updated>2023-04-24T18:31:47.000Z</updated>
-        <summary type="html"><![CDATA[Last time we were talking about data and how it's changing in part 1 of this blog, and we realized there's more to be said there. So, let's dive back into that conversation with our host David Blank-Edelman and our armchair architects Uli Homann and Eric Charran. 
- 
-David would like to start talking about the difference between synchronous processing and real time processing of data. 
- 
-Uli discusses the pros and cons of ‘real-enough-time’. 
- 
-In the early 1990s Uli was introduced to a term called “real-enough-time” by Norm Judah at an event and he wondered what does that mean? Norm then provided a couple of examples where architectures can go wrong. This is where architectures go and introduce a very complex technical solution to a very simple business solution and the idea here is if you…]]></summary>
-        <author>
-            <name>brauerblogs</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Generally available: Cross-region service endpoints for Azure Storage]]></title>
-        <id>generally-available-crossregion-service-endpoints-for-azure-storage</id>
-        <link href="https://azure.microsoft.com/en-us/updates/generally-available-crossregion-service-endpoints-for-azure-storage/"/>
-        <updated>2023-04-24T18:00:04.000Z</updated>
-        <summary type="html"><![CDATA[You can now connect Storage Accounts to Virtual Networks in all regions using global service endpoints (cross-region service endpoints).]]></summary>
-        <author>
-            <name>Azure service updates</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Can security be automatic for your files and data? | Microsoft Purview]]></title>
-        <id>https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/can-security-be-automatic-for-your-files-and-data-microsoft/ba-p/3803665</id>
-        <link href="https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/can-security-be-automatic-for-your-files-and-data-microsoft/ba-p/3803665"/>
-        <updated>2023-04-24T15:55:30.000Z</updated>
-        <summary type="html"><![CDATA[Detect data loss, exfiltration, and data theft with intelligent automation solutions in Microsoft Purview. Data lives across apps, databases, and in file sharing locations inside and outside your infrastructure. It can be stored on devices and removable media, and it travels with each interaction. Secure data with a scalable and automated approach — discover and understand the growing volume of sensitive data, apply protections that follow data wherever it lives or travels, take preventative action when there’s a risk of data loss, and elevate or lower data protections based on individual users to balance productivity with data security. 
- 
-
-Information Protection, Data Loss Prevention, and Insider Risk Management provide a unified platform in Microsoft Purview for intelligent, automated d…]]></summary>
-        <author>
-            <name>Zachary Cavanell</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Using Ledger in Azure SQL Database]]></title>
-        <id>https://devblogs.microsoft.com/azure-sql/?p=1867</id>
-        <link href="https://devblogs.microsoft.com/azure-sql/using-ledger-in-azure-sql-database/"/>
-        <updated>2023-04-24T13:00:08.000Z</updated>
-        <summary type="html"><![CDATA[Transactions have to be protected and you need to know when something is altered or prevent altering of records from the start. Ledger, available in Azure SQL Database and SQL Server 2022, helps to protect your database and establish trust, accuracy and integrity in your data.
-The post Using Ledger in Azure SQL Database appeared first on Azure SQL Devs’ Corner.]]></summary>
-        <author>
-            <name>Brian Spendolini</name>
         </author>
     </entry>
     <entry>
