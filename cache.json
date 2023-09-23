@@ -6,6 +6,26 @@
       "siteUrl": "https://spring.io",
       "articles": [
         {
+          "id": "https://spring.io/blog/2023/09/22/paketo-buildpacks-bionic-end-of-support",
+          "author": "Scott Frederick",
+          "description": "Level up your Java code and explore what Spring can do for you.",
+          "link": "https://spring.io/blog/2023/09/22/paketo-buildpacks-bionic-end-of-support",
+          "publishedOn": "2023-09-22T00:00:00.000Z",
+          "wordCount": 7076,
+          "title": "Paketo Buildpacks Bionic End Of Support",
+          "imageUrl": "https://spring.io/img/og-spring.png"
+        },
+        {
+          "id": "https://spring.io/blog/2023/09/22/simplified-event-externalization-with-spring-modulith",
+          "author": "Oliver Drotbohm",
+          "description": "Level up your Java code and explore what Spring can do for you.",
+          "link": "https://spring.io/blog/2023/09/22/simplified-event-externalization-with-spring-modulith",
+          "publishedOn": "2023-09-22T00:00:00.000Z",
+          "wordCount": 7592,
+          "title": "Simplified Event Externalization with Spring Modulith",
+          "imageUrl": "https://spring.io/img/og-spring.png"
+        },
+        {
           "id": "https://spring.io/blog/2023/09/21/a-bootiful-podcast-java-community-legend-sharat-chander",
           "author": "Josh Long",
           "description": "Level up your Java code and explore what Spring can do for you.",
@@ -1840,6 +1860,26 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/azure-app-service-authentication-using-msi-or-service-principal/ba-p/3927161",
+          "author": "wanjing",
+          "description": "Have you ever wondered how to securely access another Azure App Service from your app service without exposing any credentials or secrets? If so, you might be interested in using Managed Identities (MSI) or Service Principals to authenticate and authorize your app service to another app service that is protected by Azure Active Directory (AAD) using built-in authentication (Easy-Auth). \n \nIn this article, I will show you how to use MSI or Service Principal of app1 to access app2, which is a custom resource that requires AAD authentication.\n \nNormally, we would use the MSI-validator tool to test the functionality of MSI. However, it only supports specific resources and requires a pre-defined resource value. Currently, it can only use the following resources: default, keyvault, storage, and …",
+          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/azure-app-service-authentication-using-msi-or-service-principal/ba-p/3927161",
+          "publishedOn": "2023-09-22T09:38:58.000Z",
+          "wordCount": 10116,
+          "title": "Azure App Service Authentication: Using MSI or Service Principal to Call Another App Service",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/507673i4263AB3B180DABB6/image-size/original?v=v2&px=-1"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/monitoring-azure-policy-compliance-across-your-azure-managed/ba-p/3922113",
+          "author": "polinao",
+          "description": "During our recent development work with a partner, they asked a question...\n \nWe want to deploy Azure Policies with our Managed application to ensure the solution stays compliant and security standards are enforced. Is there a way for us, as a publisher, to get alerted if the policies deployed with the Managed application are violated and then quickly engage with the customers to ensure that their deployment is secure? \n \nThe short answer was no, so we built one! \nWe are open-sourcing the code for this solution so that other publishers can adopt this approach to ensure customers' Managed applications are secure. For more context on the solution described here please read Microsoft documentation on planning a Managed application and Azure Policy.\n \nProblem \nWhen creating a Managed applicati…",
+          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/monitoring-azure-policy-compliance-across-your-azure-managed/ba-p/3922113",
+          "publishedOn": "2023-09-22T09:16:48.000Z",
+          "wordCount": 10625,
+          "title": "Monitoring Azure Policy compliance across your Azure Managed Application deployments",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/505934iF1945BB15590BA31/image-size/original?v=v2&px=-1"
+        },
+        {
           "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/init-containers-in-azure-container-apps-database-initialization/ba-p/3931271",
           "author": "Kinsuk",
           "description": "Suppose you're deploying a web application that relies on a database. Instead of manually configuring the database each time you deploy your application, you can use an Init Container to handle this task. The Init Container can run scripts to create tables, seed initial data, or set up the database schema. Once the database is ready, the main application container can safely start, knowing that the required database structure is in place.\n \nThe below example defines an init container which runs under the same pod as main app container, seeds data to an existing Azure MySQL Database which will be used by the main web app container to serve contents onto the landing page.\n \n\n \nThe init container inserts a record into an existing table named myguests in Azure My SQL DB using a python script. The script contains code for connecting to the Database alongside inserting record into the Database. This data will then be retrieved and used by the main app container which is also running a python Flask based web application and return the value in the landing page.\n \nDockerfile for Init Container\n \n \n \nFROM python\nCOPY . .\nRUN pip install mysql && pip install mysql-connector-python\nCMD [\"python\", \"test.py\"]\n\n \n \n \n \nPython Script for Init Container\n \n \n \nimport mysql.connector\n\nmydb = mysql.connector.connect(\n  host=\"init-test.mysql.database.azure.com\",\n  user=\"*******\",\n  password=\"*******\",\n  database=\"*****\"\n)\n\nmycursor = mydb.cursor()\n\nsql = \"INSERT INTO myguests (firstname, lastname, email) VALUES ('John', 'Doe', 'test@outlook.com')\"\n\nmycursor.execute(sql)\n\nmydb.commit()\n\nprint(mycursor.rowcount, \"record(s) affected\")\n\n \n \n \n \nOutput from Init Container\n \n\n \n \n \nDockerfile for main app container\n \n \n \nFROM python\nCOPY . .\nRUN pip install mysql-connector && pip install flask\nEXPOSE 5000\nCMD [\"python\", \"app.py\"]\n \n \n \nOutput",
@@ -3148,16 +3188,6 @@
           "wordCount": 10360,
           "title": "Azure Load Testing Pricing",
           "imageUrl": "https://cdn.techcommunity.microsoft.com/assets/MTC_Open_graph_image1.jpg"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/give-us-your-thoughts-on-running-kubernetes-anywhere-for-a/ba-p/3797779",
-          "author": "SparshAgrawat",
-          "description": "Do you work with Kubernetes? Are you interested in improving Kubernetes experience across hybrid and multicloud environments?  \n \nAzure Arc allows teams to manage servers and apps across data centers, at the edge, and in multicloud environments. The Azure Arc team would love to hear your thoughts on running Kubernetes anywhere. Your feedback will influence the future of Azure Arc and supported Kubernetes solutions. \n \nTake the survey below for a chance to win a $300 USD virtual gift card! Must be 18 or older. Survey ends on May 10, 2023.\n \nRules: https://aka.ms/K8sHybridSurveySweepstakes \n \nTake the survey → https://aka.ms/K8sHybridSurveyTC  \n \nThank you for your time! \n- The Azure Arc Team",
-          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/give-us-your-thoughts-on-running-kubernetes-anywhere-for-a/ba-p/3797779",
-          "publishedOn": "2023-04-25T16:00:00.000Z",
-          "wordCount": 9489,
-          "title": "Give us your thoughts on running Kubernetes anywhere for a chance to win a $300 USD gift card!",
-          "imageUrl": "https://cdn.techcommunity.microsoft.com/assets/MTC_Open_graph_image1.jpg"
         }
       ]
     },
@@ -4359,6 +4389,16 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/t5/azure-paas-blog/using-azure-api-management-for-legacy-apps-xml-to-json/ba-p/3907185",
+          "author": "fabiopadua",
+          "description": "Introduction:\n \nIn the ever-evolving landscape of API development, dealing with legacy systems and formats is a common challenge. This blog post aims to assist you in leveraging Azure API Management (APIM) to address a specific scenario: transforming XML data to JSON and vice versa. We'll delve into the techniques supported by Azure API Management that allow you to bridge the gap between these formats seamlessly.\n \nUnderstanding the Challenge:\n \nLegacy systems often communicate using XML, while modern APIs tend to rely on JSON due to its simplicity and widespread support. In scenarios where your API needs to interact with both formats, a transformation mechanism becomes crucial. Azure API Management can be the solution to ensure a smooth transition between XML and JSON. \n \nThis scenario ca…",
+          "link": "https://techcommunity.microsoft.com/t5/azure-paas-blog/using-azure-api-management-for-legacy-apps-xml-to-json/ba-p/3907185",
+          "publishedOn": "2023-09-22T13:56:43.000Z",
+          "wordCount": 10472,
+          "title": "Using Azure API Management for legacy apps: XML to Json",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/500962iE3CEF52C61D901E7/image-size/original?v=v2&px=-1"
+        },
+        {
           "id": "https://techcommunity.microsoft.com/t5/azure-paas-blog/installing-azuremonitoringagent-and-linking-it-to-your-log/ba-p/3926214",
           "author": "akshitavijay",
           "description": "The current Service Fabric clusters are currently equipped with the MicrosoftMonitoringAgent (MMA) as the default installation. However, it is essential to note that MMA will be deprecated in August 2024, for more details refer- We're retiring the Log Analytics agent in Azure Monitor on 31 August 2024 | Azure updates | Microsoft Azure. Therefore, if you are currently utilizing MMA, it is imperative to initiate the migration process to AzureMonitoringAgent (AMA).\n \nInstallation and Linking of AzureMonitoringAgent to a Log Analytics Workspace:\n\nCreate a Log Analytics Workspace (if not already established):\n\n\nAccess the Azure portal and search for \"Log Analytics Workspace.\"\nProceed to create a new Log Analytics Workspace.\nEnsure that you select the identical resource group and geographical re…",
@@ -4597,16 +4637,6 @@
           "wordCount": 10801,
           "title": "Streamlining API Management with Workspaces: A Comprehensive Guide",
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/466943i58DFEB5E24F466F7?v=v2"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/azure-paas-blog/troubleshooting-common-issues-in-azure-storage-static-websites/ba-p/3803156",
-          "author": "RidhimaSinha",
-          "description": "In this blog post, I will elaborate on some troubleshooting steps in Azure storage static websites. Azure storage static websites are a feature that allows you to host static content (HTML, CSS, JavaScript, and image files) directly from a storage container named $web. This is a great option for scenarios where you don't need a web server to render content, but you still want to leverage Azure services such as Functions, App Service, or CDN.\n \nHowever, sometimes you may encounter some issues when setting up or deploying your static website. Here are some common problems and how to solve them:\n \nHow to Secure Your Azure Static Website?\n \nOne of the challenges of hosting a static website on Azure is that it does not support role-based access control (RBAC) permissions. This means that anyone…",
-          "link": "https://techcommunity.microsoft.com/t5/azure-paas-blog/troubleshooting-common-issues-in-azure-storage-static-websites/ba-p/3803156",
-          "publishedOn": "2023-04-26T07:14:21.000Z",
-          "wordCount": 11112,
-          "title": "Troubleshooting Common Issues in Azure Storage Static Websites",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/463825iCE2DFC82EF68863C/image-size/original?v=v2&px=-1"
         }
       ]
     },
@@ -4615,6 +4645,16 @@
       "feedUrl": "https://techcommunity.microsoft.com/plugins/custom/microsoft/o365/custom-blog-rss?tid=2893852362688900935&board=AzureArchitectureBlog&size=50",
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
+        {
+          "id": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/seamless-integration-leveraging-managed-identities-to-invoke-api/ba-p/3935598",
+          "author": "anammalu",
+          "description": "Organizations are continuously looking for ways to streamline their processes, enhance security, and improve the overall efficiency of their operations. One common challenge faced by businesses is securely accessing and managing APIs  while ensuring the confidentiality and integrity of data.\n \nIn this blog, we'll explore how organizations can leverage Azure Logic App and Managed Identities to achieve seamless integration with Azure API Management, simplifying authentication and enhancing security.\n \nManaged Identities provide a secure way for Azure services and resources to authenticate themselves to other Azure services, eliminating the need for explicit credentials or secrets. They allow services like Azure Functions and Azure Logic Apps to access other resources securely without the com…",
+          "link": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/seamless-integration-leveraging-managed-identities-to-invoke-api/ba-p/3935598",
+          "publishedOn": "2023-09-22T20:03:42.000Z",
+          "wordCount": 10728,
+          "title": "Seamless Integration: Leveraging Managed Identities to Invoke API Management from Azure Logic App",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/510521iEF31A56C1AC8DB4B/image-size/original?v=v2&px=-1"
+        },
         {
           "id": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/demystifying-azure-openai-networking-for-secure-chatbot/ba-p/3932802",
           "author": "FreddyAyala",
@@ -5788,16 +5828,6 @@
           "wordCount": 4512,
           "title": "Java on Visual Studio Update – April 2023",
           "imageUrl": "https://devblogs.microsoft.com/java/wp-content/uploads/sites/51/2023/05/engcover.png"
-        },
-        {
-          "id": "https://devblogs.microsoft.com/java/?p=229859",
-          "author": "Bruno Borges",
-          "description": "We are happy to announce the latest April 2023 patch & security update release for the Microsoft Build of OpenJDK. See the release notes for detailed changes present in the Microsoft Build of OpenJDK binaries. And download or install the binaries today.\nThe post Microsoft Build of OpenJDK – April 2023 Release appeared first on Microsoft for Java Developers.",
-          "link": "https://devblogs.microsoft.com/java/microsoft-build-of-openjdk-april-2023-release/",
-          "publishedOn": "2023-04-25T18:02:25.000Z",
-          "wordCount": 4594,
-          "title": "Microsoft Build of OpenJDK – April 2023 Release",
-          "imageUrl": "https://devblogs.microsoft.com/java/wp-content/uploads/sites/51/2019/11/trexduke-blackwhite-cropped-half.png"
         }
       ]
     },
@@ -7142,6 +7172,16 @@
       "siteUrl": "https://azure.microsoft.com/en-us/updates/",
       "articles": [
         {
+          "id": "azure-monitor-for-aksengine-will-not-be-supported-on-14-september-2026",
+          "author": null,
+          "description": "Azure Monitor for AKS-Engine will not be supported after 14 September 2026 - enable Azure Monitor to monitor AKS clusters migrated from AKS-Engine",
+          "link": "https://azure.microsoft.com/en-us/updates/azure-monitor-for-aksengine-will-not-be-supported-on-14-september-2026/",
+          "publishedOn": "2023-09-22T23:00:58.000Z",
+          "wordCount": 5457,
+          "title": "Azure Monitor for AKS-Engine will not be supported on 14 September 2026",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-7b66d925830facc8a630781d57100b9cc6d7e54734d9736955d1e617e5cae03c/images/shared/social/azure-icon-250x250.png"
+        },
+        {
           "id": "general-availability-share-images-publicly-with-azure-compute-gallery-feature-community-gallery",
           "author": null,
           "description": "With community gallery, you can now share VM images with the broader Azure community.",
@@ -7149,6 +7189,16 @@
           "publishedOn": "2023-09-21T19:38:21.000Z",
           "wordCount": 5528,
           "title": "General Availability: Share VM images publicly with community gallery - Azure Compute Gallery feature",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-7b66d925830facc8a630781d57100b9cc6d7e54734d9736955d1e617e5cae03c/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "public-preview-web-pubsub-support-for-socketio",
+          "author": null,
+          "description": "Use your preferred Socket.IO APIs, while letting Azure handle messages and scaling for you",
+          "link": "https://azure.microsoft.com/en-us/updates/public-preview-web-pubsub-support-for-socketio/",
+          "publishedOn": "2023-09-21T16:00:05.000Z",
+          "wordCount": 5426,
+          "title": "Public Preview:  Web PubSub support for Socket.IO",
           "imageUrl": "https://azurecomcdn.azureedge.net/cvt-7b66d925830facc8a630781d57100b9cc6d7e54734d9736955d1e617e5cae03c/images/shared/social/azure-icon-250x250.png"
         },
         {
@@ -11237,26 +11287,6 @@
           "wordCount": 4754,
           "title": "Microsoft Graph Data Connect pricing updates",
           "imageUrl": "https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2023/02/mgdc_pricingupdate.jpg"
-        },
-        {
-          "id": "https://devblogs.microsoft.com/microsoft365dev/?p=13655",
-          "author": "Maisa Rissi",
-          "description": "We are announcing a change to the NuGet organization that publishes Microsoft Graph .NET SDK on NuGet.org. Starting in May 2023, the NuGet organization will be changing from “Microsoft_Graph_Clients_and_Tooling” to “MicrosoftGraph”.\nThe post Microsoft Graph .NET SDK: New organization name for NuGet packages appeared first on Microsoft 365 Developer Blog.",
-          "link": "https://devblogs.microsoft.com/microsoft365dev/microsoft-graph-net-sdk-new-organization-name-for-nuget-packages/",
-          "publishedOn": "2023-04-25T19:30:09.000Z",
-          "wordCount": 4447,
-          "title": "Microsoft Graph .NET SDK: New organization name for NuGet packages",
-          "imageUrl": "https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2023/04/04.24.23-scaled.jpg"
-        },
-        {
-          "id": "https://devblogs.microsoft.com/microsoft365dev/?p=13425",
-          "author": "Ji Dong",
-          "description": "Have you ever found yourself in a situation where you’ve created a new Teams app in the Developer Portal, but want to add customized code to it? Or you started directly in IDEs like VS Code and VS but are looking for simple app management configuration?\nThe post Supercharge your Teams app development: New integration for Teams Toolkit & Developer Portal appeared first on Microsoft 365 Developer Blog.",
-          "link": "https://devblogs.microsoft.com/microsoft365dev/supercharge-your-teams-app-development-new-integration-for-teams-toolkit-developer-portal/",
-          "publishedOn": "2023-04-25T15:30:56.000Z",
-          "wordCount": 4523,
-          "title": "Supercharge your Teams app development: New integration for Teams Toolkit & Developer Portal",
-          "imageUrl": "https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2023/03/supercharge-v2-scaled.jpg"
         }
       ]
     }
