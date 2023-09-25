@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2023-09-24T01:04:10.110Z</updated>
+    <updated>2023-09-25T01:01:21.865Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
@@ -3601,6 +3601,16 @@ If you are l…]]></summary>
         <link href="https://azure.microsoft.com/en-us/updates/general-availability-terraform-support-for-azure-cosmos-db-for-postgresql/"/>
         <updated>2023-08-16T16:00:10.000Z</updated>
         <summary type="html"><![CDATA[Now you can use Terraform for unified inventory and management operations for Azure Cosmos DB for PostgreSQL clusters.]]></summary>
+        <author>
+            <name>Azure service updates</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Public preview: Azure VNet flow logs]]></title>
+        <id>public-preview-azure-vnet-flow-logs</id>
+        <link href="https://azure.microsoft.com/en-us/updates/public-preview-azure-vnet-flow-logs/"/>
+        <updated>2023-08-16T16:00:09.000Z</updated>
+        <summary type="html"><![CDATA[Gain visibility of IP traffic flowing through your Virtual Networks]]></summary>
         <author>
             <name>Azure service updates</name>
         </author>
@@ -14964,111 +14974,6 @@ Our Use case Project - Content Manager Mobile App (Register Here)
 What is this session about?Content management is a vital aspect of any marketing strategy, and effective content management can make a significant difference in the success of a marketing team. By managing content efficiently, marketing teams can create and distribute content that resonates with their target audience, leading to increased engagement and brand loyalty. In this session, we will build a mobile app focused …]]></summary>
         <author>
             <name>Someleze_Diko</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[How To List All VNET Subnets Used for Private Endpoints of App service using PowerShell Script]]></title>
-        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/how-to-list-all-vnet-subnets-used-for-private-endpoints-of-app/ba-p/3806513</id>
-        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/how-to-list-all-vnet-subnets-used-for-private-endpoints-of-app/ba-p/3806513"/>
-        <updated>2023-04-28T02:14:15.000Z</updated>
-        <summary type="html"><![CDATA[Azure App service can enable Private Endpoints for inbound traffic. 
-Customers may want to list all VNET subnets used for Private Endpoints, and enable Network Security Group for the Private Endpoints.
-There is no way to do it from Azure portal. But the below Power shell script can help customers list all the subnets used for Private Endpoints.
- 
-
-List all VNET subnets used for Private Endpoint using PowerShell script
-
-$privateEndpoints = Get-AzPrivateEndpoint
-$subnetIds = $privateEndpoints | ForEach-Object { $_.Subnet.Id }
-$uniqueSubnetIds = $subnetIds | Sort-Object -Unique
- 
-foreach ($subnetId in $uniqueSubnetIds) {
-    Get-AzResource -ResourceId $subnetId
-}
- 
-The output is like this 
-
- 
-
-Regarding more parameters for Get-AzPrivateEndpoint
-
-         Check Get-AzPrivateEndpoint (Az.Network) | Microsoft Learn
- 
-
-How To Enable Network Security Group for Private Endpoints 
-By default, network policies are disabled for a subnet in a virtual network.
-You need to assign the NSG name first in this subnet, then enable NSG in “Network Policy for Private Endpoint”, then the PE will be applied the NSG rule. 
-Manage network policies for private endpoints - Azure Private Link | Microsoft Learn]]></summary>
-        <author>
-            <name>Weizhen_Sun</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Application Insights Java Profiler April 2023 - Public Preview Update]]></title>
-        <id>https://techcommunity.microsoft.com/t5/azure-observability-blog/application-insights-java-profiler-april-2023-public-preview/ba-p/3801416</id>
-        <link href="https://techcommunity.microsoft.com/t5/azure-observability-blog/application-insights-java-profiler-april-2023-public-preview/ba-p/3801416"/>
-        <updated>2023-04-27T23:09:37.000Z</updated>
-        <summary type="html"><![CDATA[In October 2022, Microsoft announced the Public Preview feature of the Java Profiler feature. The Java Profiler feature allows Java developers and service owners to gather JDK Flight Recorder (JFR) recordings. A JFR recording is created and stored by Application Insights when the application breaches a user-defined SLA[1]. This recording is then ready for end users to download and inspect using tools like JDK Mission Control.
- 
-Since the Public Preview launch of the Java Profiler feature, we have added some additional functionality to enhance the end-user experience.
-
-Java Profiling feature is enabled by default within the agent.
-New profiling triggers based on Open Telemetry Spans.
-Improvements to the discoverability of JFR recordings.
-
- 
-Java Profiling by Default
- 
-The Java Profiler capa…]]></summary>
-        <author>
-            <name>martijnverburg</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Application Insights Java Profiler April 2023 - Public Preview Update]]></title>
-        <id>https://techcommunity.microsoft.com/t5/azure-observability-blog/application-insights-java-profiler-april-2023-public-preview/ba-p/3801416</id>
-        <link href="https://techcommunity.microsoft.com/t5/azure-observability-blog/application-insights-java-profiler-april-2023-public-preview/ba-p/3801416"/>
-        <updated>2023-04-27T23:09:37.000Z</updated>
-        <summary type="html"><![CDATA[In October 2022, Microsoft announced the Public Preview feature of the Java Profiler feature. The Java Profiler feature allows Java developers and service owners to gather JDK Flight Recorder (JFR) recordings. A JFR recording is created and stored by Application Insights when the application breaches a user-defined SLA[1]. This recording is then ready for end users to download and inspect using tools like JDK Mission Control.
- 
-Since the Public Preview launch of the Java Profiler feature, we have added some additional functionality to enhance the end-user experience.
-
-Java Profiling feature is enabled by default within the agent.
-New profiling triggers based on Open Telemetry Spans.
-Improvements to the discoverability of JFR recordings.
-
- 
-Java Profiling by Default
- 
-The Java Profiler capa…]]></summary>
-        <author>
-            <name>martijnverburg</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[New Azure Virtual Desktop features to answer our customers’ top needs]]></title>
-        <id>new-azure-virtual-desktop-features-to-answer-our-customers-top-needs</id>
-        <link href="https://azure.microsoft.com/en-us/updates/new-azure-virtual-desktop-features-to-answer-our-customers-top-needs/"/>
-        <updated>2023-04-27T20:32:54.000Z</updated>
-        <summary type="html"><![CDATA[New capabilities recently released that improve storage, enhance configuration, deliver exceptional endpoint security, and more.]]></summary>
-        <author>
-            <name>Azure service updates</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Java Spring Boot, MongoDB Atlas App on Azure App Service]]></title>
-        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/java-spring-boot-mongodb-atlas-app-on-azure-app-service/ba-p/3804121</id>
-        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/java-spring-boot-mongodb-atlas-app-on-azure-app-service/ba-p/3804121"/>
-        <updated>2023-04-27T16:00:00.000Z</updated>
-        <summary type="html"><![CDATA[In this tutorial, we’re going to build a resilient Java Spring Boot application that scales automatically and also provides high availability with built-in monitoring and diagnostics.
- 
-For this, we will be using Microsoft Azure App Service, a PaaS (platform as a service) offering by Microsoft Azure, because it's quite suitable for long running applications and web workloads.
- 
-As we want our application to be fully-managed and scaling automatically in the cloud, MongoDB Atlas is a great choice for our data store since it’s a fully-managed, cloud-native database as a service that can also scale up and down automatically in a cost-effective way to meet the needs of any application.
- 
-For this particular tutorial, we’ll be using the Spring Initializr plugin for IntelliJ,  connect it to a Mon…]]></summary>
-        <author>
-            <name>denverbrittain</name>
         </author>
     </entry>
     <entry>

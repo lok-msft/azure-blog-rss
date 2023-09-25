@@ -8679,6 +8679,26 @@ If you are l…</span>
                       <details
                         class="article-expander"
                         data-action="toggle-native-accordion"
+                        data-accordion-key="public-preview-azure-vnet-flow-logs"
+                        open
+                      >
+                        <summary class="article-expander__title">Public preview: Azure VNet flow logs</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://azure.microsoft.com/en-us/updates/public-preview-azure-vnet-flow-logs/">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://azurecomcdn.azureedge.net/cvt-7b66d925830facc8a630781d57100b9cc6d7e54734d9736955d1e617e5cae03c/images/shared/social/azure-icon-250x250.png" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>Gain visibility of IP traffic flowing through your Virtual Networks</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;18
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
                         data-accordion-key="general-availability-incremental-snapshots-for-premium-ssd-v2-disk-and-ultra-disk-storage-3"
                         open
                       >
@@ -36315,217 +36335,6 @@ What is this session about?Content management is a vital aspect of any marketing
                 </section>
               </section>
             </li>
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Microsoft Tech Community - Latest Blogs - Apps on Azure Blog</button>
-                  <a class="source-heading__link" href="https://techcommunity.microsoft.com">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/how-to-list-all-vnet-subnets-used-for-private-endpoints-of-app/ba-p/3806513"
-                        open
-                      >
-                        <summary class="article-expander__title">How To List All VNET Subnets Used for Private Endpoints of App service using PowerShell Script</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/how-to-list-all-vnet-subnets-used-for-private-endpoints-of-app/ba-p/3806513">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://techcommunity.microsoft.com/t5/image/serverpage/image-id/464466i9CEBDEF9265AC168?v&#x3D;v2" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>Azure App service can enable Private Endpoints for inbound traffic. 
-Customers may want to list all VNET subnets used for Private Endpoints, and enable Network Security Group for the Private Endpoints.
-There is no way to do it from Azure portal. But the below Power shell script can help customers list all the subnets used for Private Endpoints.
- 
-
-List all VNET subnets used for Private Endpoint using PowerShell script
-
-$privateEndpoints &#x3D; Get-AzPrivateEndpoint
-$subnetIds &#x3D; $privateEndpoints | ForEach-Object { $_.Subnet.Id }
-$uniqueSubnetIds &#x3D; $subnetIds | Sort-Object -Unique
- 
-foreach ($subnetId in $uniqueSubnetIds) {
-    Get-AzResource -ResourceId $subnetId
-}
- 
-The output is like this 
-
- 
-
-Regarding more parameters for Get-AzPrivateEndpoint
-
-         Check Get-AzPrivateEndpoint (Az.Network) | Microsoft Learn
- 
-
-How To Enable Network Security Group for Private Endpoints 
-By default, network policies are disabled for a subnet in a virtual network.
-You need to assign the NSG name first in this subnet, then enable NSG in “Network Policy for Private Endpoint”, then the PE will be applied the NSG rule. 
-Manage network policies for private endpoints - Azure Private Link | Microsoft Learn</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;32
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/java-spring-boot-mongodb-atlas-app-on-azure-app-service/ba-p/3804121"
-                        open
-                      >
-                        <summary class="article-expander__title">Java Spring Boot, MongoDB Atlas App on Azure App Service</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/java-spring-boot-mongodb-atlas-app-on-azure-app-service/ba-p/3804121">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://techcommunity.microsoft.com/t5/image/serverpage/image-id/463613i77BA947AB1E17FDE?v&#x3D;v2" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>In this tutorial, we’re going to build a resilient Java Spring Boot application that scales automatically and also provides high availability with built-in monitoring and diagnostics.
- 
-For this, we will be using Microsoft Azure App Service, a PaaS (platform as a service) offering by Microsoft Azure, because it&#x27;s quite suitable for long running applications and web workloads.
- 
-As we want our application to be fully-managed and scaling automatically in the cloud, MongoDB Atlas is a great choice for our data store since it’s a fully-managed, cloud-native database as a service that can also scale up and down automatically in a cost-effective way to meet the needs of any application.
- 
-For this particular tutorial, we’ll be using the Spring Initializr plugin for IntelliJ,  connect it to a Mon…</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;41
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Microsoft Tech Community - Latest Blogs - Azure Observability Blog</button>
-                  <a class="source-heading__link" href="https://techcommunity.microsoft.com">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://techcommunity.microsoft.com/t5/azure-observability-blog/application-insights-java-profiler-april-2023-public-preview/ba-p/3801416"
-                        open
-                      >
-                        <summary class="article-expander__title">Application Insights Java Profiler April 2023 - Public Preview Update</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/t5/azure-observability-blog/application-insights-java-profiler-april-2023-public-preview/ba-p/3801416">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://techcommunity.microsoft.com/t5/image/serverpage/image-id/462727i77D95D4FCE6793D8?v&#x3D;v2" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>In October 2022, Microsoft announced the Public Preview feature of the Java Profiler feature. The Java Profiler feature allows Java developers and service owners to gather JDK Flight Recorder (JFR) recordings. A JFR recording is created and stored by Application Insights when the application breaches a user-defined SLA[1]. This recording is then ready for end users to download and inspect using tools like JDK Mission Control.
- 
-Since the Public Preview launch of the Java Profiler feature, we have added some additional functionality to enhance the end-user experience.
-
-Java Profiling feature is enabled by default within the agent.
-New profiling triggers based on Open Telemetry Spans.
-Improvements to the discoverability of JFR recordings.
-
- 
-Java Profiling by Default
- 
-The Java Profiler capa…</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;33
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Microsoft Tech Community - Latest Blogs - Azure Observability Blog</button>
-                  <a class="source-heading__link" href="https://techcommunity.microsoft.com">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://techcommunity.microsoft.com/t5/azure-observability-blog/application-insights-java-profiler-april-2023-public-preview/ba-p/3801416"
-                        open
-                      >
-                        <summary class="article-expander__title">Application Insights Java Profiler April 2023 - Public Preview Update</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/t5/azure-observability-blog/application-insights-java-profiler-april-2023-public-preview/ba-p/3801416">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://techcommunity.microsoft.com/t5/image/serverpage/image-id/462727i77D95D4FCE6793D8?v&#x3D;v2" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>In October 2022, Microsoft announced the Public Preview feature of the Java Profiler feature. The Java Profiler feature allows Java developers and service owners to gather JDK Flight Recorder (JFR) recordings. A JFR recording is created and stored by Application Insights when the application breaches a user-defined SLA[1]. This recording is then ready for end users to download and inspect using tools like JDK Mission Control.
- 
-Since the Public Preview launch of the Java Profiler feature, we have added some additional functionality to enhance the end-user experience.
-
-Java Profiling feature is enabled by default within the agent.
-New profiling triggers based on Open Telemetry Spans.
-Improvements to the discoverability of JFR recordings.
-
- 
-Java Profiling by Default
- 
-The Java Profiler capa…</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;33
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Azure service updates</button>
-                  <a class="source-heading__link" href="https://azure.microsoft.com/en-us/updates/">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="new-azure-virtual-desktop-features-to-answer-our-customers-top-needs"
-                        open
-                      >
-                        <summary class="article-expander__title">New Azure Virtual Desktop features to answer our customers’ top needs</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://azure.microsoft.com/en-us/updates/new-azure-virtual-desktop-features-to-answer-our-customers-top-needs/">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://azurecomcdn.azureedge.net/cvt-6621d2173dbcaa3e0e5d80c1ca35949cd1006b45719d213f82d7098845de9ae2/images/shared/social/azure-icon-250x250.png" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>New capabilities recently released that improve storage, enhance configuration, deliver exceptional endpoint security, and more.</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;19
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
         </ul>
       </section>
       <section class="daily-content js-toggle-accordions-scope">
@@ -36787,8 +36596,8 @@ All these questions will be discussed and explained in this blog. ChatGPT has ga
       </section>
 
     <footer>
-      <a class="footer-link" href="https://github.com/lok-msft/azure-blog-rss/actions/runs/6287064583">
-        <time id="build-timestamp" datetime="2023-09-24T01:04:10.016Z">2023-09-24T01:04:10.016Z</time>
+      <a class="footer-link" href="https://github.com/lok-msft/azure-blog-rss/actions/runs/6293557647">
+        <time id="build-timestamp" datetime="2023-09-25T01:01:21.800Z">2023-09-25T01:01:21.800Z</time>
       </a>
       <a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a>
     </footer>

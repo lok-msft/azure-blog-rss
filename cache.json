@@ -3118,26 +3118,6 @@
           "wordCount": 10234,
           "title": "Migrate ASP.NET Web App to Azure App Service",
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/465203iB0077E73BED6B98E/image-size/original?v=v2&px=-1"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/how-to-list-all-vnet-subnets-used-for-private-endpoints-of-app/ba-p/3806513",
-          "author": "Weizhen_Sun",
-          "description": "Azure App service can enable Private Endpoints for inbound traffic. \nCustomers may want to list all VNET subnets used for Private Endpoints, and enable Network Security Group for the Private Endpoints.\nThere is no way to do it from Azure portal. But the below Power shell script can help customers list all the subnets used for Private Endpoints.\n \n\nList all VNET subnets used for Private Endpoint using PowerShell script\n\n$privateEndpoints = Get-AzPrivateEndpoint\n$subnetIds = $privateEndpoints | ForEach-Object { $_.Subnet.Id }\n$uniqueSubnetIds = $subnetIds | Sort-Object -Unique\n \nforeach ($subnetId in $uniqueSubnetIds) {\n    Get-AzResource -ResourceId $subnetId\n}\n \nThe output is like this \n\n \n\nRegarding more parameters for Get-AzPrivateEndpoint\n\n         Check Get-AzPrivateEndpoint (Az.Network) | Microsoft Learn\n \n\nHow To Enable Network Security Group for Private Endpoints \nBy default, network policies are disabled for a subnet in a virtual network.\nYou need to assign the NSG name first in this subnet, then enable NSG in “Network Policy for Private Endpoint”, then the PE will be applied the NSG rule. \nManage network policies for private endpoints - Azure Private Link | Microsoft Learn",
-          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/how-to-list-all-vnet-subnets-used-for-private-endpoints-of-app/ba-p/3806513",
-          "publishedOn": "2023-04-28T02:14:15.000Z",
-          "wordCount": 9556,
-          "title": "How To List All VNET Subnets Used for Private Endpoints of App service using PowerShell Script",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/464466i9CEBDEF9265AC168?v=v2"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/java-spring-boot-mongodb-atlas-app-on-azure-app-service/ba-p/3804121",
-          "author": "denverbrittain",
-          "description": "In this tutorial, we’re going to build a resilient Java Spring Boot application that scales automatically and also provides high availability with built-in monitoring and diagnostics.\n \nFor this, we will be using Microsoft Azure App Service, a PaaS (platform as a service) offering by Microsoft Azure, because it's quite suitable for long running applications and web workloads.\n \nAs we want our application to be fully-managed and scaling automatically in the cloud, MongoDB Atlas is a great choice for our data store since it’s a fully-managed, cloud-native database as a service that can also scale up and down automatically in a cost-effective way to meet the needs of any application.\n \nFor this particular tutorial, we’ll be using the Spring Initializr plugin for IntelliJ,  connect it to a Mon…",
-          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/java-spring-boot-mongodb-atlas-app-on-azure-app-service/ba-p/3804121",
-          "publishedOn": "2023-04-27T16:00:00.000Z",
-          "wordCount": 12309,
-          "title": "Java Spring Boot, MongoDB Atlas App on Azure App Service",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/463613i77BA947AB1E17FDE?v=v2"
         }
       ]
     },
@@ -4026,16 +4006,6 @@
           "wordCount": 9683,
           "title": "Multi Line logging Azure Announcement (Preview Feature)",
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/468459i5F8D7881F9CC3F0C?v=v2"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/azure-observability-blog/application-insights-java-profiler-april-2023-public-preview/ba-p/3801416",
-          "author": "martijnverburg",
-          "description": "In October 2022, Microsoft announced the Public Preview feature of the Java Profiler feature. The Java Profiler feature allows Java developers and service owners to gather JDK Flight Recorder (JFR) recordings. A JFR recording is created and stored by Application Insights when the application breaches a user-defined SLA[1]. This recording is then ready for end users to download and inspect using tools like JDK Mission Control.\n \nSince the Public Preview launch of the Java Profiler feature, we have added some additional functionality to enhance the end-user experience.\n\nJava Profiling feature is enabled by default within the agent.\nNew profiling triggers based on Open Telemetry Spans.\nImprovements to the discoverability of JFR recordings.\n\n \nJava Profiling by Default\n \nThe Java Profiler capa…",
-          "link": "https://techcommunity.microsoft.com/t5/azure-observability-blog/application-insights-java-profiler-april-2023-public-preview/ba-p/3801416",
-          "publishedOn": "2023-04-27T23:09:37.000Z",
-          "wordCount": 9878,
-          "title": "Application Insights Java Profiler April 2023 - Public Preview Update",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/462727i77D95D4FCE6793D8?v=v2"
         }
       ]
     },
@@ -6955,16 +6925,6 @@
           "wordCount": 9669,
           "title": "Multi Line logging Azure Announcement (Preview Feature)",
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/468459i5F8D7881F9CC3F0C?v=v2"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/azure-observability-blog/application-insights-java-profiler-april-2023-public-preview/ba-p/3801416",
-          "author": "martijnverburg",
-          "description": "In October 2022, Microsoft announced the Public Preview feature of the Java Profiler feature. The Java Profiler feature allows Java developers and service owners to gather JDK Flight Recorder (JFR) recordings. A JFR recording is created and stored by Application Insights when the application breaches a user-defined SLA[1]. This recording is then ready for end users to download and inspect using tools like JDK Mission Control.\n \nSince the Public Preview launch of the Java Profiler feature, we have added some additional functionality to enhance the end-user experience.\n\nJava Profiling feature is enabled by default within the agent.\nNew profiling triggers based on Open Telemetry Spans.\nImprovements to the discoverability of JFR recordings.\n\n \nJava Profiling by Default\n \nThe Java Profiler capa…",
-          "link": "https://techcommunity.microsoft.com/t5/azure-observability-blog/application-insights-java-profiler-april-2023-public-preview/ba-p/3801416",
-          "publishedOn": "2023-04-27T23:09:37.000Z",
-          "wordCount": 9782,
-          "title": "Application Insights Java Profiler April 2023 - Public Preview Update",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/462727i77D95D4FCE6793D8?v=v2"
         }
       ]
     },
@@ -7789,6 +7749,16 @@
           "wordCount": 5439,
           "title": "General availability: Terraform support for Azure Cosmos DB for PostgreSQL",
           "imageUrl": "https://azurecomcdn.azureedge.net/cvt-7ca57349f4375e64dd933b959b7c7ab2007a6e2e5ec643e0ba30dc2f7aeec910/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "public-preview-azure-vnet-flow-logs",
+          "author": null,
+          "description": "Gain visibility of IP traffic flowing through your Virtual Networks",
+          "link": "https://azure.microsoft.com/en-us/updates/public-preview-azure-vnet-flow-logs/",
+          "publishedOn": "2023-08-16T16:00:09.000Z",
+          "wordCount": 5447,
+          "title": "Public preview: Azure VNet flow logs",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-7b66d925830facc8a630781d57100b9cc6d7e54734d9736955d1e617e5cae03c/images/shared/social/azure-icon-250x250.png"
         },
         {
           "id": "general-availability-incremental-snapshots-for-premium-ssd-v2-disk-and-ultra-disk-storage-3",
@@ -10369,16 +10339,6 @@
           "wordCount": 5473,
           "title": "Generally available: Azure Event Hubs Dedicated self-serve scalable clusters for mission critical Kafka, AMQP and HTTPs workloads",
           "imageUrl": "https://azurecomcdn.azureedge.net/cvt-2a5c7194f885c3ce720489333449021ad0dec1f43b89cee1062d6eec94aba067/images/shared/social/azure-icon-250x250.png"
-        },
-        {
-          "id": "new-azure-virtual-desktop-features-to-answer-our-customers-top-needs",
-          "author": null,
-          "description": "New capabilities recently released that improve storage, enhance configuration, deliver exceptional endpoint security, and more.",
-          "link": "https://azure.microsoft.com/en-us/updates/new-azure-virtual-desktop-features-to-answer-our-customers-top-needs/",
-          "publishedOn": "2023-04-27T20:32:54.000Z",
-          "wordCount": 5759,
-          "title": "New Azure Virtual Desktop features to answer our customers’ top needs",
-          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-6621d2173dbcaa3e0e5d80c1ca35949cd1006b45719d213f82d7098845de9ae2/images/shared/social/azure-icon-250x250.png"
         }
       ]
     },
