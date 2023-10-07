@@ -2,10 +2,59 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2023-10-06T01:01:12.164Z</updated>
+    <updated>2023-10-07T01:00:33.613Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Support for Azure Machine Learning Explanation and Fairness Dashboards is ending on 14 March 2025]]></title>
+        <id>aml-explanation-fairness-retirement</id>
+        <link href="https://azure.microsoft.com/en-us/updates/aml-explanation-fairness-retirement/"/>
+        <updated>2023-10-06T23:00:17.000Z</updated>
+        <summary type="html"><![CDATA[The Explanation and Fairness Dashboard will be retired on 14 March 2025, please transition to the Responsible AI Dashboard (generally available) by that date.  The Responsible AI dashboard will have feature parity and new additional features. You can still create and view the Explanation and Fairness dashboards with our open-source offerings (InterpretML and Fairlearn respectively), which are free for public use on GitHub and will continue to be maintained.]]></summary>
+        <author>
+            <name>Azure service updates</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Python in Visual Studio Code – October 2023 Release]]></title>
+        <id>https://devblogs.microsoft.com/python/?p=9480</id>
+        <link href="https://devblogs.microsoft.com/python/python-in-visual-studio-code-october-2023-release/"/>
+        <updated>2023-10-06T19:48:44.000Z</updated>
+        <summary type="html"><![CDATA[The October 2023 release of the Python and Jupyter extensions for Visual Studio Code are now available. This month's updates include Python debugger extension updates, deprecation of Python 3.7 support, and a recap of Open Source Day. Keep reading to learn more!
+The post Python in Visual Studio Code – October 2023 Release appeared first on Python.]]></summary>
+        <author>
+            <name>Courtney Webster</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Azure Monitor Baseline Alerts (AMBA) for Azure landing zone (ALZ) is Generally Available (GA)!]]></title>
+        <id>https://techcommunity.microsoft.com/t5/azure-governance-and-management/azure-monitor-baseline-alerts-amba-for-azure-landing-zone-alz-is/ba-p/3936951</id>
+        <link href="https://techcommunity.microsoft.com/t5/azure-governance-and-management/azure-monitor-baseline-alerts-amba-for-azure-landing-zone-alz-is/ba-p/3936951"/>
+        <updated>2023-10-06T09:00:29.000Z</updated>
+        <summary type="html"><![CDATA[Some of you may recall back in June we posted a blog introducing AMBA and since then we've received a huge amount of interest and adoption in its use as well as hearing from you on what you needed to be able to use AMBA in your environment.
+ 
+We've made significant investment and progress in addressing feedback and fixes and I'm pleased to announce the AMBA pattern for ALZ is now GA! As part of GA we're also integrating the recommended alerts into the ALZ Azure Portal reference implementation for new deployments (please visit https://aka.ms/alz/portal) with Bicep and Terraform support planned in the near future.
+ 
+Picture of the Azure landing zone portal page for Baseline Alerts and Monitoring
+As part of GA announcement this comes with some things you should be aware of:
+
+ALZ will be known…]]></summary>
+        <author>
+            <name>PaulGrimley_MSFT</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Patterns for optimizing data retrieval from Cosmos DB]]></title>
+        <id>https://devblogs.microsoft.com/ise/?p=15039</id>
+        <link href="https://devblogs.microsoft.com/ise/2023/10/06/patterns-for-optimizing-data-retrieval-from-cosmos-db/"/>
+        <updated>2023-10-06T07:54:14.000Z</updated>
+        <summary type="html"><![CDATA[In this blog post, we share how our team improved the performance of read operations on documents stored in Cosmos DB. We started out with inefficient queries, taking minutes to return results when working with large databases. Our goal was to reduce the time required to query millions of documents down from minutes to seconds.
+The post Patterns for optimizing data retrieval from Cosmos DB appeared first on ISE Developer Blog.]]></summary>
+        <author>
+            <name>Maggie Salak</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Automate data-driven actions | Data Activator in Microsoft Fabric]]></title>
         <id>https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/automate-data-driven-actions-data-activator-in-microsoft-fabric/ba-p/3946833</id>
@@ -15471,130 +15520,6 @@ En bonus, Laurent nous a montré comment utiliser GitHub Action pour déployer e
 Bon visionnement!]]></summary>
         <author>
             <name>FBoucher</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Multi Line logging Azure Announcement (Preview Feature)]]></title>
-        <id>https://techcommunity.microsoft.com/t5/azure-observability-blog/multi-line-logging-azure-announcement-preview-feature/ba-p/3816941</id>
-        <link href="https://techcommunity.microsoft.com/t5/azure-observability-blog/multi-line-logging-azure-announcement-preview-feature/ba-p/3816941"/>
-        <updated>2023-05-09T22:44:29.000Z</updated>
-        <summary type="html"><![CDATA[We’re excited to let you know that Azure Monitor – Container Insights now supports multiline logging! With this feature enabled, previously split container logs are stitched together and sent as single entries to the ContainerLogV2 table. Customers are able see container log lines up to 64 KB (up from the existing 16 KB limit). If the stitched log line is larger than 64 KB, it gets truncated due to Log Analytics limits. This feature enables the customers to directly consume the logs in meaningful ways without having to spend time stitching them with custom Kusto queries. Additionally, the feature also adds support for .NET and Go stack traces, which appear as single entries instead of being split into multiple entries in ContainerLogV2 table.
- 
-Why this is important:
-Logs are an essential part of monitoring and troubleshooting applications running in containers. However, when logs are split across multiple lines, it can be challenging to consume them effectively. View the example of Multi-Line below:
- 
-Multi-Line Disabled
-
- 
-Multi-Line Enabled
-
- 
- 
-To enable multi-line logging:
-1. Make sure agent is updated to version 3.1.6 or later
-2. Customers must enable ContainerLogV2 for multi-line logging to work. Go to the ConfigMap to enable ContainerLogV2 in Container Insights.
-
-3. Set enable_multiline_logs flag to “true” in the config map.
-
-4. Apply the ConfigMap:
-kubectl apply -f container-azm-ms-agentconfig.yaml
- 
-Next steps for multi-line logging:
-Read more about the ContainerLogV2 schema here.
- 
-Please share any feedback for this feature using this form: https://forms.office.com/r/FCDvikMZ0S]]></summary>
-        <author>
-            <name>ibraraslam</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Multi Line logging Azure Announcement (Preview Feature)]]></title>
-        <id>https://techcommunity.microsoft.com/t5/azure-observability-blog/multi-line-logging-azure-announcement-preview-feature/ba-p/3816941</id>
-        <link href="https://techcommunity.microsoft.com/t5/azure-observability-blog/multi-line-logging-azure-announcement-preview-feature/ba-p/3816941"/>
-        <updated>2023-05-09T22:44:29.000Z</updated>
-        <summary type="html"><![CDATA[We’re excited to let you know that Azure Monitor – Container Insights now supports multiline logging! With this feature enabled, previously split container logs are stitched together and sent as single entries to the ContainerLogV2 table. Customers are able see container log lines up to 64 KB (up from the existing 16 KB limit). If the stitched log line is larger than 64 KB, it gets truncated due to Log Analytics limits. This feature enables the customers to directly consume the logs in meaningful ways without having to spend time stitching them with custom Kusto queries. Additionally, the feature also adds support for .NET and Go stack traces, which appear as single entries instead of being split into multiple entries in ContainerLogV2 table.
- 
-Why this is important:
-Logs are an essential part of monitoring and troubleshooting applications running in containers. However, when logs are split across multiple lines, it can be challenging to consume them effectively. View the example of Multi-Line below:
- 
-Multi-Line Disabled
-
- 
-Multi-Line Enabled
-
- 
- 
-To enable multi-line logging:
-1. Make sure agent is updated to version 3.1.6 or later
-2. Customers must enable ContainerLogV2 for multi-line logging to work. Go to the ConfigMap to enable ContainerLogV2 in Container Insights.
-
-3. Set enable_multiline_logs flag to “true” in the config map.
-
-4. Apply the ConfigMap:
-kubectl apply -f container-azm-ms-agentconfig.yaml
- 
-Next steps for multi-line logging:
-Read more about the ContainerLogV2 schema here.
- 
-Please share any feedback for this feature using this form: https://forms.office.com/r/FCDvikMZ0S]]></summary>
-        <author>
-            <name>ibraraslam</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Now available: Azure DevOps Server 2022.0.1]]></title>
-        <id>https://devblogs.microsoft.com/devops/?p=66918</id>
-        <link href="https://devblogs.microsoft.com/devops/now-available-azure-devops-server-2022-0-1/"/>
-        <updated>2023-05-09T17:56:46.000Z</updated>
-        <summary type="html"><![CDATA[Today, we released Azure DevOps Server 2022.0.1 RTW. This is our final release of Azure DevOps Server 2022.0.1. You can directly install Azure DevOps Server 2022.0.1 or upgrade from Azure DevOps Server 2022.0.1 RC, Azure DevOps Server 2022, Team Foundation Server 2015 or newer versions of the product.
-The post Now available: Azure DevOps Server 2022.0.1 appeared first on Azure DevOps Blog.]]></summary>
-        <author>
-            <name>Gloridel Morales</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Microsoft Teams apps now available in public preview in the Microsoft 365 iOS app]]></title>
-        <id>https://devblogs.microsoft.com/microsoft365dev/?p=13763</id>
-        <link href="https://devblogs.microsoft.com/microsoft365dev/microsoft-teams-apps-now-available-in-public-preview-in-the-microsoft-365-ios-app/"/>
-        <updated>2023-05-09T15:57:40.000Z</updated>
-        <summary type="html"><![CDATA[We’re excited to announce the public preview of Microsoft Teams apps in the Microsoft 365 iOS app, making it easier to extend Teams personal tab apps to both Android and iOS app users with a single code base.
-The post Microsoft Teams apps now available in public preview in the Microsoft 365 iOS app appeared first on Microsoft 365 Developer Blog.]]></summary>
-        <author>
-            <name>Sheena Makker</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Public Preview: App Service Minimum TLS Cipher Suite Now on Azure Portal]]></title>
-        <id>app-service-min-tls-cipher-suite-preview</id>
-        <link href="https://azure.microsoft.com/en-us/updates/app-service-min-tls-cipher-suite-preview/"/>
-        <updated>2023-05-09T15:00:21.000Z</updated>
-        <summary type="html"><![CDATA[Disable Weak TLS Cipher Suites for Your App Service Web Apps (Preview)]]></summary>
-        <author>
-            <name>Azure service updates</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Streamlining API Management with Workspaces: A Comprehensive Guide]]></title>
-        <id>https://techcommunity.microsoft.com/t5/azure-paas-blog/streamlining-api-management-with-workspaces-a-comprehensive/ba-p/3813372</id>
-        <link href="https://techcommunity.microsoft.com/t5/azure-paas-blog/streamlining-api-management-with-workspaces-a-comprehensive/ba-p/3813372"/>
-        <updated>2023-05-09T13:33:59.000Z</updated>
-        <summary type="html"><![CDATA[In this blog post, I will explain the API Management Workspace, how to create a workspace and the key features and benefits that you will get while using the APIM Workspace in your API Management. We will also cover how APIM Workspace will help organizations streamline API governance, collaboration, and deployment.
-Workspace Overview:
-Azure API Management is a popular cloud-based service that allows organizations to create, manage, and secure APIs at scale. One of the key features of API Management that recently got announced is Workspace, which is designed to help organizations streamline API governance, collaboration, and deployment.
-At a high level, Workspace is a logical container that allows you to group related APIs, policies, and configurations together. You can create multiple Work…]]></summary>
-        <author>
-            <name>Saurav_Raghuvanshi</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Announcing SharePoint Framework 1.17.2 for Microsoft 365 extensibility]]></title>
-        <id>https://devblogs.microsoft.com/microsoft365dev/?p=13795</id>
-        <link href="https://devblogs.microsoft.com/microsoft365dev/announcing-sharepoint-framework-1-17-2-for-microsoft-365-extensibility/"/>
-        <updated>2023-05-09T13:30:48.000Z</updated>
-        <summary type="html"><![CDATA[We are excited to announce a new public version of the SharePoint Framework, v1.17.2, with updates and fixes across the different areas of Microsoft 365 extensibility.
-The post Announcing SharePoint Framework 1.17.2 for Microsoft 365 extensibility appeared first on Microsoft 365 Developer Blog.]]></summary>
-        <author>
-            <name>Vesa Juvonen</name>
         </author>
     </entry>
 </feed>

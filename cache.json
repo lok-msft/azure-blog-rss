@@ -4076,16 +4076,6 @@
           "wordCount": 11190,
           "title": "Azure Policy Violation Alert using Logic apps",
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/469730i9F9AB68EE8D154A8?v=v2"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/azure-observability-blog/multi-line-logging-azure-announcement-preview-feature/ba-p/3816941",
-          "author": "ibraraslam",
-          "description": "We’re excited to let you know that Azure Monitor – Container Insights now supports multiline logging! With this feature enabled, previously split container logs are stitched together and sent as single entries to the ContainerLogV2 table. Customers are able see container log lines up to 64 KB (up from the existing 16 KB limit). If the stitched log line is larger than 64 KB, it gets truncated due to Log Analytics limits. This feature enables the customers to directly consume the logs in meaningful ways without having to spend time stitching them with custom Kusto queries. Additionally, the feature also adds support for .NET and Go stack traces, which appear as single entries instead of being split into multiple entries in ContainerLogV2 table.\n \nWhy this is important:\nLogs are an essential part of monitoring and troubleshooting applications running in containers. However, when logs are split across multiple lines, it can be challenging to consume them effectively. View the example of Multi-Line below:\n \nMulti-Line Disabled\n\n \nMulti-Line Enabled\n\n \n \nTo enable multi-line logging:\n1. Make sure agent is updated to version 3.1.6 or later\n2. Customers must enable ContainerLogV2 for multi-line logging to work. Go to the ConfigMap to enable ContainerLogV2 in Container Insights.\n\n3. Set enable_multiline_logs flag to “true” in the config map.\n\n4. Apply the ConfigMap:\nkubectl apply -f container-azm-ms-agentconfig.yaml\n \nNext steps for multi-line logging:\nRead more about the ContainerLogV2 schema here.\n \nPlease share any feedback for this feature using this form: https://forms.office.com/r/FCDvikMZ0S",
-          "link": "https://techcommunity.microsoft.com/t5/azure-observability-blog/multi-line-logging-azure-announcement-preview-feature/ba-p/3816941",
-          "publishedOn": "2023-05-09T22:44:29.000Z",
-          "wordCount": 9683,
-          "title": "Multi Line logging Azure Announcement (Preview Feature)",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/468459i5F8D7881F9CC3F0C?v=v2"
         }
       ]
     },
@@ -4626,16 +4616,6 @@
           "wordCount": 9943,
           "title": "How to send an Azure REST API request",
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/467990i7EB08A47C1C0C7D2?v=v2"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/azure-paas-blog/streamlining-api-management-with-workspaces-a-comprehensive/ba-p/3813372",
-          "author": "Saurav_Raghuvanshi",
-          "description": "In this blog post, I will explain the API Management Workspace, how to create a workspace and the key features and benefits that you will get while using the APIM Workspace in your API Management. We will also cover how APIM Workspace will help organizations streamline API governance, collaboration, and deployment.\nWorkspace Overview:\nAzure API Management is a popular cloud-based service that allows organizations to create, manage, and secure APIs at scale. One of the key features of API Management that recently got announced is Workspace, which is designed to help organizations streamline API governance, collaboration, and deployment.\nAt a high level, Workspace is a logical container that allows you to group related APIs, policies, and configurations together. You can create multiple Work…",
-          "link": "https://techcommunity.microsoft.com/t5/azure-paas-blog/streamlining-api-management-with-workspaces-a-comprehensive/ba-p/3813372",
-          "publishedOn": "2023-05-09T13:33:59.000Z",
-          "wordCount": 10801,
-          "title": "Streamlining API Management with Workspaces: A Comprehensive Guide",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/466943i58DFEB5E24F466F7?v=v2"
         }
       ]
     },
@@ -5342,6 +5322,16 @@
       "siteUrl": "https://devblogs.microsoft.com/ise/",
       "articles": [
         {
+          "id": "https://devblogs.microsoft.com/ise/?p=15039",
+          "author": "Maggie Salak",
+          "description": "In this blog post, we share how our team improved the performance of read operations on documents stored in Cosmos DB. We started out with inefficient queries, taking minutes to return results when working with large databases. Our goal was to reduce the time required to query millions of documents down from minutes to seconds.\nThe post Patterns for optimizing data retrieval from Cosmos DB appeared first on ISE Developer Blog.",
+          "link": "https://devblogs.microsoft.com/ise/2023/10/06/patterns-for-optimizing-data-retrieval-from-cosmos-db/",
+          "publishedOn": "2023-10-06T07:54:14.000Z",
+          "wordCount": 5974,
+          "title": "Patterns for optimizing data retrieval from Cosmos DB",
+          "imageUrl": "https://devblogs.microsoft.com/ise/wp-content/uploads/sites/55/2023/10/Presentation1.jpg"
+        },
+        {
           "id": "https://devblogs.microsoft.com/ise/?p=15032",
           "author": "Benjamin GUINEBERTIERE",
           "description": "How we coded with customer team to build a first version of their federated data catalog, with Microsoft Purview.\nThe post Coding with Customer: A Story of Building a Federated Data Catalog with Microsoft Purview appeared first on ISE Developer Blog.",
@@ -5805,6 +5795,16 @@
       "feedUrl": "https://devblogs.microsoft.com/python/feed/",
       "siteUrl": "https://devblogs.microsoft.com/python/",
       "articles": [
+        {
+          "id": "https://devblogs.microsoft.com/python/?p=9480",
+          "author": "Courtney Webster",
+          "description": "The October 2023 release of the Python and Jupyter extensions for Visual Studio Code are now available. This month's updates include Python debugger extension updates, deprecation of Python 3.7 support, and a recap of Open Source Day. Keep reading to learn more!\nThe post Python in Visual Studio Code – October 2023 Release appeared first on Python.",
+          "link": "https://devblogs.microsoft.com/python/python-in-visual-studio-code-october-2023-release/",
+          "publishedOn": "2023-10-06T19:48:44.000Z",
+          "wordCount": 5399,
+          "title": "Python in Visual Studio Code – October 2023 Release",
+          "imageUrl": "https://devblogs.microsoft.com/python/wp-content/uploads/sites/12/2023/10/debugger-just-my-code-setting-300x40.png"
+        },
         {
           "id": "https://devblogs.microsoft.com/python/?p=9464",
           "author": "Courtney Webster",
@@ -6295,16 +6295,6 @@
           "wordCount": 4825,
           "title": "Azure DevOps Achieves ISO 26262 ASIL D level of Certification",
           "imageUrl": "https://devblogs.microsoft.com/devops/wp-content/uploads/sites/6/2018/08/vstsfeature.png"
-        },
-        {
-          "id": "https://devblogs.microsoft.com/devops/?p=66918",
-          "author": "Gloridel Morales",
-          "description": "Today, we released Azure DevOps Server 2022.0.1 RTW. This is our final release of Azure DevOps Server 2022.0.1. You can directly install Azure DevOps Server 2022.0.1 or upgrade from Azure DevOps Server 2022.0.1 RC, Azure DevOps Server 2022, Team Foundation Server 2015 or newer versions of the product.\nThe post Now available: Azure DevOps Server 2022.0.1 appeared first on Azure DevOps Blog.",
-          "link": "https://devblogs.microsoft.com/devops/now-available-azure-devops-server-2022-0-1/",
-          "publishedOn": "2023-05-09T17:56:46.000Z",
-          "wordCount": 4199,
-          "title": "Now available: Azure DevOps Server 2022.0.1",
-          "imageUrl": "https://devblogs.microsoft.com/devops/wp-content/uploads/sites/6/2019/02/index-hero.jpg"
         }
       ]
     },
@@ -6830,6 +6820,16 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/t5/azure-governance-and-management/azure-monitor-baseline-alerts-amba-for-azure-landing-zone-alz-is/ba-p/3936951",
+          "author": "PaulGrimley_MSFT",
+          "description": "Some of you may recall back in June we posted a blog introducing AMBA and since then we've received a huge amount of interest and adoption in its use as well as hearing from you on what you needed to be able to use AMBA in your environment.\n \nWe've made significant investment and progress in addressing feedback and fixes and I'm pleased to announce the AMBA pattern for ALZ is now GA! As part of GA we're also integrating the recommended alerts into the ALZ Azure Portal reference implementation for new deployments (please visit https://aka.ms/alz/portal) with Bicep and Terraform support planned in the near future.\n \nPicture of the Azure landing zone portal page for Baseline Alerts and Monitoring\nAs part of GA announcement this comes with some things you should be aware of:\n\nALZ will be known…",
+          "link": "https://techcommunity.microsoft.com/t5/azure-governance-and-management/azure-monitor-baseline-alerts-amba-for-azure-landing-zone-alz-is/ba-p/3936951",
+          "publishedOn": "2023-10-06T09:00:29.000Z",
+          "wordCount": 10028,
+          "title": "Azure Monitor Baseline Alerts (AMBA) for Azure landing zone (ALZ) is Generally Available (GA)!",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/513797i1073254F6A540BE5/image-size/original?v=v2&px=-1"
+        },
+        {
           "id": "https://techcommunity.microsoft.com/t5/azure-governance-and-management/generally-available-secure-critical-infrastructure-from/ba-p/3938639",
           "author": "akanksha_agrawal",
           "description": "We are thrilled to announce the general availability of DenyAction, a new effect in Azure Policy! With the introduction of Deny Action, policy enforcement now expands into blocking request based on actions to the resource. These deny action policy assignments can safeguard critical infrastructure by blocking unwarranted delete calls.  \n \nAzure Policy expands its at-scale enforcement capabilities to assess requests based on action. Previously, Policy only supported the ‘deny’ effect which blocks requests based on resource configurations or properties. Now a newly added effect, Deny Action, extends that functionality to block based on intended request.  \n \nDeny Action effect can be leveraged in the existing policy definitions schema. This allows for the conditional flexibility that comes with the “If” structure of a policy definition. Further, by assigning these definitions at subscription or management group level, deny action can help block these actions at-scale. Applicable resources will show a “Protected” compliance state to signify that the resource is protected from an unwanted action.  \n \n \nGet started   \n \nHere’s a sample Custom Deny Action Definition:  \n \n\n \n \nRelated Resources \n \nTo keep learning about this exciting new capability of Azure Policy: \n\nDocumentation on Deny Action: Understand how effects work - Azure Policy | Microsoft Learn  \nDocumentation on Protected State: Azure Policy compliance states - Azure Policy | Microsoft Learn",
@@ -7105,16 +7105,6 @@
           "wordCount": 11071,
           "title": "Azure Policy Violation Alert using Logic apps",
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/469730i9F9AB68EE8D154A8?v=v2"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/azure-observability-blog/multi-line-logging-azure-announcement-preview-feature/ba-p/3816941",
-          "author": "ibraraslam",
-          "description": "We’re excited to let you know that Azure Monitor – Container Insights now supports multiline logging! With this feature enabled, previously split container logs are stitched together and sent as single entries to the ContainerLogV2 table. Customers are able see container log lines up to 64 KB (up from the existing 16 KB limit). If the stitched log line is larger than 64 KB, it gets truncated due to Log Analytics limits. This feature enables the customers to directly consume the logs in meaningful ways without having to spend time stitching them with custom Kusto queries. Additionally, the feature also adds support for .NET and Go stack traces, which appear as single entries instead of being split into multiple entries in ContainerLogV2 table.\n \nWhy this is important:\nLogs are an essential part of monitoring and troubleshooting applications running in containers. However, when logs are split across multiple lines, it can be challenging to consume them effectively. View the example of Multi-Line below:\n \nMulti-Line Disabled\n\n \nMulti-Line Enabled\n\n \n \nTo enable multi-line logging:\n1. Make sure agent is updated to version 3.1.6 or later\n2. Customers must enable ContainerLogV2 for multi-line logging to work. Go to the ConfigMap to enable ContainerLogV2 in Container Insights.\n\n3. Set enable_multiline_logs flag to “true” in the config map.\n\n4. Apply the ConfigMap:\nkubectl apply -f container-azm-ms-agentconfig.yaml\n \nNext steps for multi-line logging:\nRead more about the ContainerLogV2 schema here.\n \nPlease share any feedback for this feature using this form: https://forms.office.com/r/FCDvikMZ0S",
-          "link": "https://techcommunity.microsoft.com/t5/azure-observability-blog/multi-line-logging-azure-announcement-preview-feature/ba-p/3816941",
-          "publishedOn": "2023-05-09T22:44:29.000Z",
-          "wordCount": 9669,
-          "title": "Multi Line logging Azure Announcement (Preview Feature)",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/468459i5F8D7881F9CC3F0C?v=v2"
         }
       ]
     },
@@ -7210,6 +7200,16 @@
       "feedUrl": "https://azurecomcdn.azureedge.net/en-us/updates/feed/?updateType=features",
       "siteUrl": "https://azure.microsoft.com/en-us/updates/",
       "articles": [
+        {
+          "id": "aml-explanation-fairness-retirement",
+          "author": null,
+          "description": "The Explanation and Fairness Dashboard will be retired on 14 March 2025, please transition to the Responsible AI Dashboard (generally available) by that date.  The Responsible AI dashboard will have feature parity and new additional features. You can still create and view the Explanation and Fairness dashboards with our open-source offerings (InterpretML and Fairlearn respectively), which are free for public use on GitHub and will continue to be maintained.",
+          "link": "https://azure.microsoft.com/en-us/updates/aml-explanation-fairness-retirement/",
+          "publishedOn": "2023-10-06T23:00:17.000Z",
+          "wordCount": 5558,
+          "title": "Support for Azure Machine Learning Explanation and Fairness Dashboards is ending on 14 March 2025",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-d59072d4b12dd172584fa4500a278c13648556c53268535a5a0fbf104a2f5d4e/images/shared/social/azure-icon-250x250.png"
+        },
         {
           "id": "app-service-backup-and-restore-over-azure-virtual-network",
           "author": null,
@@ -10739,16 +10739,6 @@
           "wordCount": 5525,
           "title": "Generally available: Azure Monitor Agent supports Linux Hardening for CIS and SELinux",
           "imageUrl": "https://azurecomcdn.azureedge.net/cvt-6589a67885300e5705e5be84e719751523c4206a453432113ca323f9a1f68e92/images/shared/social/azure-icon-250x250.png"
-        },
-        {
-          "id": "app-service-min-tls-cipher-suite-preview",
-          "author": null,
-          "description": "Disable Weak TLS Cipher Suites for Your App Service Web Apps (Preview)",
-          "link": "https://azure.microsoft.com/en-us/updates/app-service-min-tls-cipher-suite-preview/",
-          "publishedOn": "2023-05-09T15:00:21.000Z",
-          "wordCount": 5471,
-          "title": "Public Preview: App Service Minimum TLS Cipher Suite Now on Azure Portal",
-          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-6589a67885300e5705e5be84e719751523c4206a453432113ca323f9a1f68e92/images/shared/social/azure-icon-250x250.png"
         }
       ]
     },
@@ -11436,26 +11426,6 @@
           "wordCount": 5958,
           "title": "Building Go applications with the Microsoft Graph Go SDK, now generally available",
           "imageUrl": "https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2023/05/buildgo_thumb-scaled.jpg"
-        },
-        {
-          "id": "https://devblogs.microsoft.com/microsoft365dev/?p=13763",
-          "author": "Sheena Makker",
-          "description": "We’re excited to announce the public preview of Microsoft Teams apps in the Microsoft 365 iOS app, making it easier to extend Teams personal tab apps to both Android and iOS app users with a single code base.\nThe post Microsoft Teams apps now available in public preview in the Microsoft 365 iOS app appeared first on Microsoft 365 Developer Blog.",
-          "link": "https://devblogs.microsoft.com/microsoft365dev/microsoft-teams-apps-now-available-in-public-preview-in-the-microsoft-365-ios-app/",
-          "publishedOn": "2023-05-09T15:57:40.000Z",
-          "wordCount": 4374,
-          "title": "Microsoft Teams apps now available in public preview in the Microsoft 365 iOS app",
-          "imageUrl": "https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2023/05/00_blogupdated-scaled.jpg"
-        },
-        {
-          "id": "https://devblogs.microsoft.com/microsoft365dev/?p=13795",
-          "author": "Vesa Juvonen",
-          "description": "We are excited to announce a new public version of the SharePoint Framework, v1.17.2, with updates and fixes across the different areas of Microsoft 365 extensibility.\nThe post Announcing SharePoint Framework 1.17.2 for Microsoft 365 extensibility appeared first on Microsoft 365 Developer Blog.",
-          "link": "https://devblogs.microsoft.com/microsoft365dev/announcing-sharepoint-framework-1-17-2-for-microsoft-365-extensibility/",
-          "publishedOn": "2023-05-09T13:30:48.000Z",
-          "wordCount": 4947,
-          "title": "Announcing SharePoint Framework 1.17.2 for Microsoft 365 extensibility",
-          "imageUrl": "https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2023/05/spfx-1172-release.png"
         }
       ]
     }
