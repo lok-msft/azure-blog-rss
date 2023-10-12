@@ -6,6 +6,16 @@
       "siteUrl": "https://spring.io",
       "articles": [
         {
+          "id": "https://spring.io/blog/2023/10/11/transactional-rollback-strategies-with-spring-cloud-stream-and-apache-kafka",
+          "author": "Soby Chacko",
+          "description": "Level up your Java code and explore what Spring can do for you.",
+          "link": "https://spring.io/blog/2023/10/11/transactional-rollback-strategies-with-spring-cloud-stream-and-apache-kafka",
+          "publishedOn": "2023-10-11T00:00:00.000Z",
+          "wordCount": 8982,
+          "title": "Transactional Rollback Strategies with Spring Cloud Stream and Apache Kafka",
+          "imageUrl": "https://spring.io/img/og-spring.png"
+        },
+        {
           "id": "https://spring.io/blog/2023/10/10/this-week-in-spring-october-10th-2023",
           "author": "Josh Long",
           "description": "Level up your Java code and explore what Spring can do for you.",
@@ -3257,6 +3267,16 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/t5/messaging-on-azure-blog/some-azure-service-bus-sdk-libraries-will-be-retired-on-30/ba-p/3917853",
+          "author": "EldertGrootenboer",
+          "description": "On 30 September 2026, we'll retire the Azure Service Bus SDK libraries WindowsAzure.ServiceBus, Microsoft.Azure.ServiceBus, and com.microsoft.azure.servicebus, which don't conform to Azure SDK guidelines. Migrate to the latest Azure SDK libraries, which offer critical security updates and improved capabilities, before that date.\nFor WindowsAzure.ServiceBus:\n\nWe'll also end support of the SBMP protocol, so you'll no longer be able to use this protocol after 30 September 2026. You can keep using this library with the AMQP protocol after that date, but you'll no longer receive support or updates.\nAzure Event Hubs previously used this library, so if you're still using it with Event Hubs you'll need to migrate your library, even if you're not using Service Bus.\nAzure WCF Relay still uses this l…",
+          "link": "https://techcommunity.microsoft.com/t5/messaging-on-azure-blog/some-azure-service-bus-sdk-libraries-will-be-retired-on-30/ba-p/3917853",
+          "publishedOn": "2023-10-11T16:00:00.000Z",
+          "wordCount": 9936,
+          "title": "Some Azure Service Bus SDK libraries will be retired on 30 September 2026—migrate to the latest SDKs",
+          "imageUrl": "https://cdn.techcommunity.microsoft.com/assets/Azure/BlogPreview_default-blue.png"
+        },
+        {
           "id": "https://techcommunity.microsoft.com/t5/messaging-on-azure-blog/steps-to-upgrade-control-plane-api-references-for-azure-service/ba-p/3940126",
           "author": "SurajIyer",
           "description": "This blog describes the areas that will need inspection and further action to reference newer API versions in your application architecture. Customers who are using older control plane API versions (2014-09-01, 2015-08-01, 2016-07-01) to interact with resources need to reference to Api version (2021-11-01) or newer to experience a regionally resilient platform and make sure of newer features that were introduced into the platform.  \n \nThe following section describes the version upgrade instructions depending on the modes you use to interact with Azure Service Bus, Azure Event Hubs and Azure Relay resources (only control plane or management operations). \n \nIf you directly reference APIs in applications \nIf your application is directly referencing 2014-09-01 or 2015-08-01 or 2016-07-01APIs f…",
@@ -3492,16 +3512,6 @@
           "wordCount": 9737,
           "title": "Enhancing Accessibility: Language and Audio Document Translation Solution Architecture",
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/470309iD1A98889A9DB3200?v=v2"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/ai-cognitive-services-blog/scaling-strategies-for-large-scale-azure-cognitive-services/ba-p/3819520",
-          "author": "RK Iyer",
-          "description": "While utilizing Cognitive Services, it's important to understand that each resource comes with a pre-configured static call rate measured in transactions per second (TPS). This call rate acts as a limit on the number of concurrent requests that clients can initiate towards the backend service within a specified time frame. By limiting the number of concurrent calls for the customers, the service provider can allocate resources efficiently and maintain the overall stability, reliability service. This also plays a role in the security aspect of the service, so the service itself can protect customers from malicious behavior attacking their service Additionally, this call rate allows customers to estimate their usage and manage costs effectively by preventing unexpected spikes in traffic that…",
-          "link": "https://techcommunity.microsoft.com/t5/ai-cognitive-services-blog/scaling-strategies-for-large-scale-azure-cognitive-services/ba-p/3819520",
-          "publishedOn": "2023-05-15T02:58:40.000Z",
-          "wordCount": 11948,
-          "title": "Scaling strategies for large scale Azure Cognitive Services deployments",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/469868iF5DD32F13F4DAC0D/image-size/original?v=v2&px=-1"
         }
       ]
     },
@@ -6402,16 +6412,6 @@
           "wordCount": 5349,
           "title": "Model your Supply Chain in a Graph Database | Part 4",
           "imageUrl": "https://devblogs.microsoft.com/azure-sql/wp-content/uploads/sites/56/2023/05/p4-04-GRAPH.png"
-        },
-        {
-          "id": "https://devblogs.microsoft.com/azure-sql/?p=1971",
-          "author": "Brian Spendolini",
-          "description": "Building on my first Azure SQL Bindings blog post and taking inspiration from Drew Skwiers-Koballa’s post on SQL Bindings, we are going to create a change data stream with Azure SQL Database. Now, usually, the first part of these blogs is a prerequisite section that goes over what you need to install locally to get started.\nThe post Implement Change Data Streams with Azure SQL Database, Change Tracking, and Azure SQL Bindings appeared first on Azure SQL Devs’ Corner.",
-          "link": "https://devblogs.microsoft.com/azure-sql/change-data-streams-with-azure-sql-db/",
-          "publishedOn": "2023-05-15T11:30:39.000Z",
-          "wordCount": 6774,
-          "title": "Implement Change Data Streams with Azure SQL Database, Change Tracking, and Azure SQL Bindings",
-          "imageUrl": "https://devblogs.microsoft.com/azure-sql/wp-content/uploads/sites/56/2023/05/Screenshot-2023-05-14-at-6.17.35-PM.png"
         }
       ]
     },
@@ -7171,6 +7171,66 @@
       "siteUrl": "https://azure.microsoft.com/en-us/updates/",
       "articles": [
         {
+          "id": "breaking-change-notice-vmss-create-default-orchestration-mode-changing-from-uniform-to-flexible-on-powershell-azure-cli",
+          "author": null,
+          "description": "Starting November 2023, Virtual Machine Scale Sets created on PowerShell and Azure CLI will automatically default to Flexible orchestration mode.",
+          "link": "https://azure.microsoft.com/en-us/updates/breaking-change-notice-vmss-create-default-orchestration-mode-changing-from-uniform-to-flexible-on-powershell-azure-cli/",
+          "publishedOn": "2023-10-11T20:00:10.000Z",
+          "wordCount": 5789,
+          "title": "Breaking Change Notice: Virtual Machine Scale Set Default Orchestration Mode changing from Uniform to Flexible on PowerShell, Azure CLI",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-95a82e93b8cdf6f5c060f8b1ecd12fff9438ac32318aeb3c24f9c789f2739fc6/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "private-preview-regional-disaster-recovery-by-azure-backup-for-aks",
+          "author": null,
+          "description": "Customers can now utilize Azure Backup for AKS to recover their containerized applications and data during a regional disaster scenario.",
+          "link": "https://azure.microsoft.com/en-us/updates/private-preview-regional-disaster-recovery-by-azure-backup-for-aks/",
+          "publishedOn": "2023-10-11T17:00:09.000Z",
+          "wordCount": 5506,
+          "title": "Private Preview: Regional Disaster Recovery by Azure Backup for AKS",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-95a82e93b8cdf6f5c060f8b1ecd12fff9438ac32318aeb3c24f9c789f2739fc6/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "public-preview-azure-open-ai-use-your-data-integration-with-azure-cosmos-db-for-mongodb-vcore",
+          "author": null,
+          "description": "Now you can easily leverage your data stored in Azure Cosmos DB for Mongo DB vCore for Retrieval Augmented Generation (RAG) with Azure OpenAI models using the \"Use your data\" feature in Azure OpenAI Studio.",
+          "link": "https://azure.microsoft.com/en-us/updates/public-preview-azure-open-ai-use-your-data-integration-with-azure-cosmos-db-for-mongodb-vcore/",
+          "publishedOn": "2023-10-11T16:00:31.000Z",
+          "wordCount": 5443,
+          "title": "Public Preview:  Azure Open AI “Use your data” integration with Azure Cosmos DB for MongoDB vCore",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-95a82e93b8cdf6f5c060f8b1ecd12fff9438ac32318aeb3c24f9c789f2739fc6/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "general-availability-azure-private-link-for-mysql-flexible-server",
+          "author": null,
+          "description": "Use Azure Private Link for private connectivity with MySQL – Flexible Server.",
+          "link": "https://azure.microsoft.com/en-us/updates/general-availability-azure-private-link-for-mysql-flexible-server/",
+          "publishedOn": "2023-10-11T16:00:24.000Z",
+          "wordCount": 5401,
+          "title": "General Availability: Azure Private Link for MySQL – Flexible Server",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-95a82e93b8cdf6f5c060f8b1ecd12fff9438ac32318aeb3c24f9c789f2739fc6/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "general-availability-universal-crossregion-read-replica-on-azure-database-for-mysql-flexible-server",
+          "author": null,
+          "description": "Provision up to 10 read replicas in universal regions on Azure Database for MySQL - Flexible Server.",
+          "link": "https://azure.microsoft.com/en-us/updates/general-availability-universal-crossregion-read-replica-on-azure-database-for-mysql-flexible-server/",
+          "publishedOn": "2023-10-11T16:00:18.000Z",
+          "wordCount": 5421,
+          "title": "General Availability: Universal cross-region read replica on Azure Database for MySQL - Flexible Server",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-95a82e93b8cdf6f5c060f8b1ecd12fff9438ac32318aeb3c24f9c789f2739fc6/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "general-availability-azure-sql-updates-for-earlyoctober-2023",
+          "author": null,
+          "description": "General availability enhancements and updates released for Azure SQL in early-October 2023.",
+          "link": "https://azure.microsoft.com/en-us/updates/general-availability-azure-sql-updates-for-earlyoctober-2023/",
+          "publishedOn": "2023-10-11T16:00:08.000Z",
+          "wordCount": 5358,
+          "title": "General availability: Azure SQL updates for early-October 2023",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-95a82e93b8cdf6f5c060f8b1ecd12fff9438ac32318aeb3c24f9c789f2739fc6/images/shared/social/azure-icon-250x250.png"
+        },
+        {
           "id": "announcing-public-preview-of-azure-api-management-pricing-tiers-basic-v2-and-standard-v2",
           "author": null,
           "description": "We're thrilled to announce the public preview launch of our latest Azure API Management pricing tiers: Basic v2 and Standard v2. These new tiers address highly sought-after customer requests, bring quality-of-service enhancements, and offer a flexible starting point for API Management, allowing organizations of any size to embark on their API journey.",
@@ -7178,6 +7238,36 @@
           "publishedOn": "2023-10-10T17:00:07.000Z",
           "wordCount": 5617,
           "title": "Announcing Public Preview of Azure API Management Pricing Tiers: Basic v2 and Standard v2",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-95a82e93b8cdf6f5c060f8b1ecd12fff9438ac32318aeb3c24f9c789f2739fc6/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "azurefilessupportforunicodecharacters",
+          "author": null,
+          "description": "Azure Files now supports an expanded character set enabling file and directory names with all valid Unicode characters.",
+          "link": "https://azure.microsoft.com/en-us/updates/azurefilessupportforunicodecharacters/",
+          "publishedOn": "2023-10-10T16:00:08.000Z",
+          "wordCount": 5468,
+          "title": "Azure Files has been improved to support all valid Unicode characters",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-95a82e93b8cdf6f5c060f8b1ecd12fff9438ac32318aeb3c24f9c789f2739fc6/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "expressroute-traffic-collector-is-now-generally-available",
+          "author": null,
+          "description": "Use ExpressRoute Traffic Collector to enable collection of flow logs for traffic sent over your ExpressRoute direct circuit.",
+          "link": "https://azure.microsoft.com/en-us/updates/expressroute-traffic-collector-is-now-generally-available/",
+          "publishedOn": "2023-10-10T16:00:07.000Z",
+          "wordCount": 5503,
+          "title": "ExpressRoute Traffic Collector is now generally available",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-95a82e93b8cdf6f5c060f8b1ecd12fff9438ac32318aeb3c24f9c789f2739fc6/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "lsa-payload-update-for-fixes-on-15jan",
+          "author": null,
+          "description": "On the 15-Jan we are going to fix those 2 values in LSA payload to contain the correct values according to our other alerts services.",
+          "link": "https://azure.microsoft.com/en-us/updates/lsa-payload-update-for-fixes-on-15jan/",
+          "publishedOn": "2023-10-10T16:00:06.000Z",
+          "wordCount": 5500,
+          "title": "LSA payload update for fixes on 15-Jan",
           "imageUrl": "https://azurecomcdn.azureedge.net/cvt-95a82e93b8cdf6f5c060f8b1ecd12fff9438ac32318aeb3c24f9c789f2739fc6/images/shared/social/azure-icon-250x250.png"
         },
         {
