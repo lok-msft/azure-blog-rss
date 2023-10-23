@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2023-10-22T01:05:41.501Z</updated>
+    <updated>2023-10-23T01:02:03.358Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
@@ -173,6 +173,17 @@ See how it’s used to manage service licensing for Microsoft 365, Office 365, E
 Jeremy Chapman, director of Microsoft 365 and a long-time endpoint man…]]></summary>
         <author>
             <name>Zachary Cavanell</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Enabling developer collaboration with Radius]]></title>
+        <id>https://cloudblogs.microsoft.com/opensource/2023/10/18/enabling-developer-collaboration-with-radius/</id>
+        <link href="https://cloudblogs.microsoft.com/opensource/2023/10/18/enabling-developer-collaboration-with-radius/"/>
+        <updated>2023-10-18T16:00:00.000Z</updated>
+        <summary type="html"><![CDATA[The Microsoft Azure Incubations team is excited to announce a new open application platform called Radius that places the application at the center of every workflow; redefining how applications are built, managed, and understood.
+The post Enabling developer collaboration with Radius appeared first on Microsoft Open Source Blog.]]></summary>
+        <author>
+            <name>Will Tsai and Aaron Crawfis</name>
         </author>
     </entry>
     <entry>
@@ -13287,31 +13298,6 @@ Open your storage account and go to Access Control (IAM) and assign to this Ap
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[PowerShell script to get the total number of partitions in Event Hub Namespace]]></title>
-        <id>https://techcommunity.microsoft.com/t5/azure-paas-blog/powershell-script-to-get-the-total-number-of-partitions-in-event/ba-p/3788140</id>
-        <link href="https://techcommunity.microsoft.com/t5/azure-paas-blog/powershell-script-to-get-the-total-number-of-partitions-in-event/ba-p/3788140"/>
-        <updated>2023-05-26T12:04:30.000Z</updated>
-        <summary type="html"><![CDATA[Scenario: PowerShell script to get the total number of partitions in Event Hub Namespace.
- 
-You must be wondering how to find out total number of partition count for any Event Hub namespace??
- 
-On the Azure portal you can only see partition count per Event Hub Entity level but not Namespace level. It’s tiresome job to manually sum up partition counts of all the entities especially when you have hundreds of event hub entities under the namespace.
- 
-Here is a simple way to find out total number of Partitions under Event Hub namespace using PowerShell script.
- 
-Solution:
- 
-Use below PowerShell script to see the total number of Partitions under your namespace.
- 
- 
-$EHResourceGroup = "<Resource Group Name>"
-$EHNamespaceName = "<Event Hub Namespace Name>"
-$TotalPartitionCount=0;Get-AzEventHub -R…]]></summary>
-        <author>
-            <name>DivyaSri</name>
-        </author>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[My Journey to Create my first Custom Connector for a Web API from within Visual Studio]]></title>
         <id>https://techcommunity.microsoft.com/t5/educator-developer-blog/my-journey-to-create-my-first-custom-connector-for-a-web-api/ba-p/3827553</id>
         <link href="https://techcommunity.microsoft.com/t5/educator-developer-blog/my-journey-to-create-my-first-custom-connector-for-a-web-api/ba-p/3827553"/>
@@ -13323,33 +13309,6 @@ This post is about my journey to create my first Custom Connector, because it di
 First things first, what is a Custom Connector, and why should you care about it if you already have APIs that developers can use? The answer to the "why" is right in the question: developers. Why would you limit users of your APIs to developers? There are so m…]]></summary>
         <author>
             <name>FBoucher</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[How to keep your WordPress website stack on Azure App Service up to date?]]></title>
-        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/how-to-keep-your-wordpress-website-stack-on-azure-app-service-up/ba-p/3832193</id>
-        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/how-to-keep-your-wordpress-website-stack-on-azure-app-service-up/ba-p/3832193"/>
-        <updated>2023-05-26T06:47:23.000Z</updated>
-        <summary type="html"><![CDATA[Just like any software, it is important that you keep your WordPress website and all underlying technology – PHP, NGINX, Linux, and MySQL, up to date. Reasons why you must keep your website up to date:
- 
-
-Security patches: Updates commonly contain security patches to ensure that any identified vulnerabilities are fixed. Older versions of WordPress or any underlying software makes it easy for bad actors to take advantage of known security vulnerabilities.
-Bug fixes: Although all software undergoes multiple rounds of tests before release, some small bugs might go unnoticed. Developers fix these bugs when they are discovered and ship them via updates.
-Performance enhancements: New updates also come with optimizations which increase performance. Ensuring the system is up to date can have signi…]]></summary>
-        <author>
-            <name>abhishekreddy</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Azure APIM Management: Migrating contents of managed developer portal with source control]]></title>
-        <id>https://techcommunity.microsoft.com/t5/fasttrack-for-azure/azure-apim-management-migrating-contents-of-managed-developer/ba-p/3823985</id>
-        <link href="https://techcommunity.microsoft.com/t5/fasttrack-for-azure/azure-apim-management-migrating-contents-of-managed-developer/ba-p/3823985"/>
-        <updated>2023-05-25T20:57:58.000Z</updated>
-        <summary type="html"><![CDATA[In the scenario I refer to this blog, customer would like to automate the deployment of contents for their APIM developer portal with a source control. While Automate developer portal deployments - Azure API Management | Microsoft Learn gives us the detail about how to automate developer portal deployments using scripts, I will go through how to split the process into multiple steps to apply the concepts of GitOps and DevOps to the developer portal migration.
- 
-The repository mentioned in the Azure document has all the source code and this repository is managed by the Microsoft Azure API Management team. The script and the pipeline migrate the contents of the managed portal from source APIM instance to destination APIM instance, but it does not support the source control of contents and pu…]]></summary>
-        <author>
-            <name>bbanerjee</name>
         </author>
     </entry>
     <entry>
@@ -13380,191 +13339,6 @@ Y…]]></summary>
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Copilot AI updates across the Power Platform | Automate, apps, pages & virtual agents]]></title>
-        <id>https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/copilot-ai-updates-across-the-power-platform-automate-apps-pages/ba-p/3830770</id>
-        <link href="https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/copilot-ai-updates-across-the-power-platform-automate-apps-pages/ba-p/3830770"/>
-        <updated>2023-05-25T18:05:40.000Z</updated>
-        <summary type="html"><![CDATA[Use AI Large Language Models with Microsoft’s Power Platform to create automated workflows, apps, web pages and bots — without knowing how to write code. AI and Copilot help build fully functional experiences. Generate workflows using only natural language prompts in Power Automate, create apps in seconds in Power Apps, build professional websites with Power Pages, and use the new Boost Conversations capability with GPT to create FAQ bots with Power Virtual Agents. 
- 
-
-Stephen Siciliano, Vice President of Microsoft Power Automate, joins Jeremy Chapman to tour the latest Power Platform updates.
- 
-Build workflows using only natural language prompts. 
-
-Ask Copilot to automatically create approval flows with conditions and emails. Check out new Copilot capabilities with Power Automate.
- 
-Copil…]]></summary>
-        <author>
-            <name>Zachary Cavanell</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Public Preview – Support for WebSocket APIs in Azure API Management Self-hosted Gateway]]></title>
-        <id>public-preview-support-for-websocket-apis-in-azure-api-management-selfhosted-gateway</id>
-        <link href="https://azure.microsoft.com/en-us/updates/public-preview-support-for-websocket-apis-in-azure-api-management-selfhosted-gateway/"/>
-        <updated>2023-05-25T17:01:16.000Z</updated>
-        <summary type="html"><![CDATA[We are announcing the native support for WebSocket APIs in the self-hosted gateway feature inside Azure API Management.]]></summary>
-        <author>
-            <name>Azure service updates</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Public Preview: Data mapping designer in Azure Logic Apps (Standard)]]></title>
-        <id>public-preview-data-mapping-designer-in-azure-logic-apps-standard</id>
-        <link href="https://azure.microsoft.com/en-us/updates/public-preview-data-mapping-designer-in-azure-logic-apps-standard/"/>
-        <updated>2023-05-25T17:01:10.000Z</updated>
-        <summary type="html"><![CDATA[Microsoft has re-envisioned data transformations in Azure Logic Apps (Standard) by building a new data mapper experience from the ground up.]]></summary>
-        <author>
-            <name>Azure service updates</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[PublicPreview: Azure API Management: API Center]]></title>
-        <id>publicpreview-azure-api-management-api-center</id>
-        <link href="https://azure.microsoft.com/en-us/updates/publicpreview-azure-api-management-api-center/"/>
-        <updated>2023-05-25T17:01:04.000Z</updated>
-        <summary type="html"><![CDATA[Centrally organize and manage APIs across the entire organization, regardless of API type, deployment location, lifecycle stage, or choice of API gateway or API management solution using Azure API Center.  
-
-Boost developer productivity by facilitating API discovery and promoting API reuse. 
-Establish a governance model for API portfolio across the entire organization. 
-Elevate API inventory management by organizing and enriching APIs with custom metadata, API versions, and deployment details. 
-Click here to learn more.]]></summary>
-        <author>
-            <name>Azure service updates</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[GA: Logic Apps (Standard) adds support for .NET Framework extensibility in XSLT data.]]></title>
-        <id>ga-logic-apps-standard-adds-support-for-net-framework-extensibility-in-xslt-data</id>
-        <link href="https://azure.microsoft.com/en-us/updates/ga-logic-apps-standard-adds-support-for-net-framework-extensibility-in-xslt-data/"/>
-        <updated>2023-05-25T17:00:58.000Z</updated>
-        <summary type="html"><![CDATA[Developers can now add .NET Framework methods to XSLT data transformations in Azure Logic Apps (Standard).]]></summary>
-        <author>
-            <name>Azure service updates</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Generally available: Apache MirrorMaker 2 support in Azure Event Hubs]]></title>
-        <id>generally-available-apache-mirrormaker-2-support-in-azure-event-hubs</id>
-        <link href="https://azure.microsoft.com/en-us/updates/generally-available-apache-mirrormaker-2-support-in-azure-event-hubs/"/>
-        <updated>2023-05-25T17:00:56.000Z</updated>
-        <summary type="html"><![CDATA[Users now can utilize MirrorMaker2 for effortless data replication from their on-premises or managed Kafka cluster directly to Event Hubs.]]></summary>
-        <author>
-            <name>Azure service updates</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Public Preview: JSON Schema support in Azure Event Hubs Schema Registry for Kafka applications]]></title>
-        <id>public-preview-json-schema-support-in-azure-event-hubs-schema-registry-for-kafka-applications</id>
-        <link href="https://azure.microsoft.com/en-us/updates/public-preview-json-schema-support-in-azure-event-hubs-schema-registry-for-kafka-applications/"/>
-        <updated>2023-05-25T17:00:46.000Z</updated>
-        <summary type="html"><![CDATA[The Azure Event Hubs Schema Registry provides support for JSON Schema]]></summary>
-        <author>
-            <name>Azure service updates</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Generally Available – New Azure Event Grid events for Azure API Management Self-hosted gateway]]></title>
-        <id>generally-available-new-azure-event-grid-events-for-azure-api-management-selfhosted-gateway</id>
-        <link href="https://azure.microsoft.com/en-us/updates/generally-available-new-azure-event-grid-events-for-azure-api-management-selfhosted-gateway/"/>
-        <updated>2023-05-25T17:00:41.000Z</updated>
-        <summary type="html"><![CDATA[We are announcing the support for 11 new Azure Event Grid event types in Azure API Management.]]></summary>
-        <author>
-            <name>Azure service updates</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Generally available: Kafka Connect support in Azure Event Hubs]]></title>
-        <id>generally-available-kafka-connect-support-in-azure-event-hubs</id>
-        <link href="https://azure.microsoft.com/en-us/updates/generally-available-kafka-connect-support-in-azure-event-hubs/"/>
-        <updated>2023-05-25T17:00:36.000Z</updated>
-        <summary type="html"><![CDATA[With Kafka Connect support GA, users can seamlessly and reliably stream data between Azure Event Hubs and external systems such as databases, key-value stores, file systems and other data sources.]]></summary>
-        <author>
-            <name>Azure service updates</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Generally Available – Custom domain support for self-hosted gateway configuration endpoint v2]]></title>
-        <id>generally-available-custom-domain-support-for-selfhosted-gateway-configuration-endpoint-v2</id>
-        <link href="https://azure.microsoft.com/en-us/updates/generally-available-custom-domain-support-for-selfhosted-gateway-configuration-endpoint-v2/"/>
-        <updated>2023-05-25T17:00:30.000Z</updated>
-        <summary type="html"><![CDATA[We are announcing the support of custom domain for the self-hosted gateway configuration endpoint v2.]]></summary>
-        <author>
-            <name>Azure service updates</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[GA Azure API Management Self-hosted gateway authentication using Azure Active Directory]]></title>
-        <id>ga-azure-api-management-selfhosted-gateway-authentication-using-azure-active-directory</id>
-        <link href="https://azure.microsoft.com/en-us/updates/ga-azure-api-management-selfhosted-gateway-authentication-using-azure-active-directory/"/>
-        <updated>2023-05-25T17:00:23.000Z</updated>
-        <summary type="html"><![CDATA[New authentication method for the Self-hosted gateway with the configuration endpoint]]></summary>
-        <author>
-            <name>Azure service updates</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Generally available: Managed Identities support for Capture in Event Hubs]]></title>
-        <id>generally-available-managed-identities-support-for-capture-in-event-hubs</id>
-        <link href="https://azure.microsoft.com/en-us/updates/generally-available-managed-identities-support-for-capture-in-event-hubs/"/>
-        <updated>2023-05-25T17:00:18.000Z</updated>
-        <summary type="html"><![CDATA[Users now can use managed identities when capturing event streams to storage services such as Azure Storage Services or Azure Data Lake storage 2.]]></summary>
-        <author>
-            <name>Azure service updates</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Generally available: Kafka compaction support in Azure Event Hubs]]></title>
-        <id>generally-available-kafka-compaction-support-in-azure-event-hubs</id>
-        <link href="https://azure.microsoft.com/en-us/updates/generally-available-kafka-compaction-support-in-azure-event-hubs/"/>
-        <updated>2023-05-25T17:00:09.000Z</updated>
-        <summary type="html"><![CDATA[Log compaction in Event Hubs introduces a key-based retention mechanism where the most recent value associated with each event key in an event hub or Kafka topic is retained.]]></summary>
-        <author>
-            <name>Azure service updates</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Scenarios for AVS connectivity utilizing Private VPN Gateways and ExpressRoute for Azure Virtual WAN]]></title>
-        <id>https://techcommunity.microsoft.com/t5/fasttrack-for-azure/scenarios-for-avs-connectivity-utilizing-private-vpn-gateways/ba-p/3831493</id>
-        <link href="https://techcommunity.microsoft.com/t5/fasttrack-for-azure/scenarios-for-avs-connectivity-utilizing-private-vpn-gateways/ba-p/3831493"/>
-        <updated>2023-05-25T15:36:08.000Z</updated>
-        <summary type="html"><![CDATA[Introduction and Purpose: 
- 
-Existing example reference architectures to implement network connectivity between Azure and Azure VMware Solutions (AVS) recommend the use of ExpressRoute Global Reach where available. However, there are also scenarios where either Global Reach is not available (such as Brazil South), or customers simply might have different requirements and need an alternate solution that substitutes Global Reach entirely.   
- 
-Generally speaking, one viable solution is to implement a public Site-to-Site VPN with Border Gateway Protocol (BGP) while enabling transit capabilities between an ExpressRoute Gateway and a VPN gateway. The goal here is to advertise AVS or other non-overlapping IP address spaces dynamically via BGP. This is commonly referred to as Overlay. For a Hub a…]]></summary>
-        <author>
-            <name>Mauricio_Rojas</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Azure portal April 2023 updates]]></title>
-        <id>https://techcommunity.microsoft.com/t5/azure-governance-and-management/azure-portal-april-2023-updates/ba-p/3823768</id>
-        <link href="https://techcommunity.microsoft.com/t5/azure-governance-and-management/azure-portal-april-2023-updates/ba-p/3823768"/>
-        <updated>2023-05-25T14:43:11.000Z</updated>
-        <summary type="html"><![CDATA[Analytics > Azure Stream Analytics
-
-Simulate a Stream Analytics job running topology before deployment
-
-Analytics > Azure Stream Analytics
-
-Stream Analytics job performance using the Job Diagram feature
-
-Intune
-
-Updates to Microsoft Intune
-
-Let's look at each of these updates in greater detail.
- 
-Analytics > Azure Stream Analytics
- Simulate a Stream Analytics job running topology before deployment
- 
-Before you start running your Stream Analytics job, it's crucial to check your query logic and find out the number of streaming units needed to handle the job's workload. This is where the Job Simulation feature comes in handy. It allows you to adjust the number of streaming units and simulate the job running topology, giving you an idea of how computing resources are allocated and utilized acr…]]></summary>
-        <author>
-            <name>Allison_Cordle</name>
-        </author>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[Empowering Educators: Automated Assignment Scoring via Azure OpenAI Service ChatGPT]]></title>
         <id>https://techcommunity.microsoft.com/t5/educator-developer-blog/empowering-educators-automated-assignment-scoring-via-azure/ba-p/3828127</id>
         <link href="https://techcommunity.microsoft.com/t5/educator-developer-blog/empowering-educators-automated-assignment-scoring-via-azure/ba-p/3828127"/>
@@ -13577,37 +13351,6 @@ Introduction:
 Discover how AI technology can streamline and enhance the grading process for educators with Azure OpenAI ChatGPT. Cyrus Wong, a senior lecturer at the Hong Kong Institute of Vocational Education, shares insights on leveraging AI to automate assignment evaluation and improve the quality of teaching. By utilizing AI-powered tools, such as Azure OpenAI Service ChatGPT, educators can save time on grading tasks and focus on creating engaging educational experiences for the…]]></summary>
         <author>
             <name>cyruswong</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Can cross-cloud data analytics be easy? | Microsoft Fabric]]></title>
-        <id>https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/can-cross-cloud-data-analytics-be-easy-microsoft-fabric/ba-p/3830372</id>
-        <link href="https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/can-cross-cloud-data-analytics-be-easy-microsoft-fabric/ba-p/3830372"/>
-        <updated>2023-05-24T17:33:32.000Z</updated>
-        <summary type="html"><![CDATA[Work with your data in place, wherever it resides, with Microsoft Fabric, our next generation data analytics service powered by one of the first true multi-cloud data lakes, called OneLake. Go from raw data to meaningful insights over data spread across your organization and in other clouds in seconds — without moving it. 
- 
-
-Microsoft Fabric provides a single integrated service that includes data integration capabilities, data engineering for shaping your data, data warehousing, the ability to build data science models, real time analytics, and business intelligence. Data from these different experiences is brought together by one unified data lake for your organization, OneLake, and is accessible regardless of the engine used. 
- 
-Justyna Lucznik, Principal Group PM for Microsoft Fabric, …]]></summary>
-        <author>
-            <name>Zachary Cavanell</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[What runs ChatGPT? Inside Microsoft's AI supercomputer | Featuring Mark Russinovich]]></title>
-        <id>https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/what-runs-chatgpt-inside-microsoft-s-ai-supercomputer-featuring/ba-p/3830281</id>
-        <link href="https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/what-runs-chatgpt-inside-microsoft-s-ai-supercomputer-featuring/ba-p/3830281"/>
-        <updated>2023-05-24T17:31:27.000Z</updated>
-        <summary type="html"><![CDATA[Get an inside look at the AI supercomputer infrastructure built to run ChatGPT and other large language models, and see how to leverage it for your workloads in Azure, at any scale.
- 
-
- 
-Go behind the scenes:
- 
--For how we collaborated with NVIDIA to deliver purpose-built AI infrastructure with NVIDIA GPUs-How Project Forge checkpointing works to restore job states if a long training job fails or needs to be migrated-How we used LoRA fine-tuning to update a fraction of the base model for more training throughput and smaller checkpoints-How UK-based company, Wayve, is using Azure’s AI supercomputer infrastructure for self-driving cars-And how Confidential Computing works with Azure AI to combine datasets without sharing personally identifiable information for secure multiparty collaboration…]]></summary>
-        <author>
-            <name>Zachary Cavanell</name>
         </author>
     </entry>
     <entry>
