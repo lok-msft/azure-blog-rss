@@ -1990,6 +1990,26 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/java-on-azure-functions-2023-update/ba-p/3958581",
+          "author": "kulkarnisonia16",
+          "description": "The Azure Functions team is thrilled to share the key investments made in 2023 to enhance our Java offering on the platform and delight customers. This post will also talk about the roadmap for the next year.  \n \nWhat’s new? \n \n\n[GA] Dependency Injection hooks in Java  \n[GA] Application Insights Distributed Tracing for Java Functions  \n[GA] Azure SQL bindings for Azure Functions Java \nDurable Functions enhancements \nCold Start improvements \n\n \nDependency Injection hooks in Java (GA)  \n \nAzure Functions Java now supports the dependency injection (DI) software design pattern, which is a technique to achieve Inversion of Control (IoC) between classes and their dependencies. Azure Functions Java provides a hook to integrate with popular Dependency Injection frameworks in your Functions Apps. T…",
+          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/java-on-azure-functions-2023-update/ba-p/3958581",
+          "publishedOn": "2023-10-25T20:26:10.000Z",
+          "wordCount": 10108,
+          "title": "Java on Azure Functions - 2023 Update",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/519514iB89F77F230E6C2FB/image-size/original?v=v2&px=-1"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/view-trends-in-performance-metrics-with-azure-load-testing/ba-p/3963689",
+          "author": "Nagarjuna_V",
+          "description": "How do you measure the performance of your applications and services over time? If you run load tests regularly, you probably compare the current trends with the baseline. In this blog post, we will explore how Azure Load Testing helps you track trends in client-side metrics across test runs.\n \nIf you haven’t tried using the service yet, create an Azure Load Testing resource and get started with your first test run in a few minutes.\n \nHere are some situations where you might want to see how the metrics change over time:\n\nYou run load tests on your pre-production environment every month before releasing new updates. You want to quickly see if your application performance is performing better or worse than before.\nYou regularly run load tests as part of your CI/CD pipelines, and you want to …",
+          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/view-trends-in-performance-metrics-with-azure-load-testing/ba-p/3963689",
+          "publishedOn": "2023-10-25T11:41:19.000Z",
+          "wordCount": 10474,
+          "title": "View trends in performance metrics with Azure Load Testing",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/519336i8CD45B76CB2052EB/image-size/original?v=v2&px=-1"
+        },
+        {
           "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/deploy-containers-to-azure-container-apps-workload-profiles/ba-p/3962211",
           "author": "aarthimurugan",
           "description": "Introduction \nThe Azure Container Apps service enables you to run microservices and containerized applications on a serverless platform. With Container Apps, you enjoy the benefits of running containers while you leave behind the concerns of manually configuring cloud infrastructure and complex container orchestrators.  \n \nThe new workload profiles feature on Azure Container Apps enables users to determine the amount of compute and memory resources available to the container apps deployed in an environment. Different profile types like Consumption, Dedicated (general purpose), Dedicated (Memory Optimized) can be configured to fit your application needs. Workload Profiles is also a great way to segregate and better manage the different workloads per team or per workload. \n \nWhy use YAML \nDe…",
@@ -4125,16 +4145,6 @@
           "wordCount": 10229,
           "title": "Analyze HAR trace when importing Function App into API Management",
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/474103iD121283A40609B2C?v=v2"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/azure-paas-blog/communication-between-apim-and-function-app-as-backend/ba-p/3831997",
-          "author": "Didieroc",
-          "description": "Background introduction\nWhen a Function App is added as an API in APIM, there are some authorization details we need to consider while communicating from APIM to the backend function app.\nIt does not matter what Authorization level (function or anonymous) the function app has configured, APIM will always attach a function host key to the request. The host key is attached to the request as a header. However, we may experiment unauthorized errors even though the function host key is present in the request header.\nSo, this article is focused on analyzing one of those scenarios when communication between APIM and backend function app is truncated due to unauthorized errors.\n \n \nScenario\nRequest is going through APIM to backend function app, and we are getting a 401 Unauthorized error.\nNote: AP…",
-          "link": "https://techcommunity.microsoft.com/t5/azure-paas-blog/communication-between-apim-and-function-app-as-backend/ba-p/3831997",
-          "publishedOn": "2023-05-29T03:37:23.000Z",
-          "wordCount": null,
-          "title": "Communication between APIM and function App as backend",
-          "imageUrl": null
         }
       ]
     },
@@ -4380,6 +4390,16 @@
       "feedUrl": "https://techcommunity.microsoft.com/plugins/custom/microsoft/o365/custom-blog-rss?tid=6220021871588173833&board=MicrosoftMechanicsBlog&size=100",
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
+        {
+          "id": "https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/how-vector-search-and-semantic-ranking-improve-your-gpt-prompts/ba-p/3963293",
+          "author": "Zachary Cavanell",
+          "description": "Improve the information retrieval process, so you have the most optimal set of grounding data needed to generate useful AI responses. See how Azure Cognitive Search combines different search strategies out of the box and at scale — so you don’t have to.\n \n\n\nKeyword search — match the exact words to search your grounding data\nVector search — focuses on conceptual similarity, where the app is using part of the dialogue to retrieve grounding information\nHybrid approach — combines both keyword and vector searches\nSemantic ranking — to boost precision, a re-ranking step can re-score the top results using a larger deep learning ranking model\n\nPablo Castro, Azure AI Distinguished Engineer, shows how to improve the quality of generative AI responses using Azure Cognitive Search.\n \n \nGenerate high …",
+          "link": "https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/how-vector-search-and-semantic-ranking-improve-your-gpt-prompts/ba-p/3963293",
+          "publishedOn": "2023-10-25T13:19:49.000Z",
+          "wordCount": 12631,
+          "title": "How vector search and semantic ranking improve your GPT prompts",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/519184i8C654DFB4D4BFAB0/image-size/original?v=v2&px=-1"
+        },
         {
           "id": "https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/microsoft-entra-id-beginner-s-tutorial-azure-active-directory/ba-p/3957514",
           "author": "Zachary Cavanell",
@@ -5017,6 +5037,21 @@
       "feedUrl": "https://devblogs.microsoft.com/java/feed/",
       "siteUrl": "https://devblogs.microsoft.com/java/",
       "articles": [
+        {
+          "id": "https://devblogs.microsoft.com/java/?p=230194",
+          "author": "Jialuo Gan",
+          "description": "Hi everyone, welcome to the September update of Java on Azure Tooling. In this update, we will introduce our support for Azure OpenAI Service and Playground, which lets developers use prompts and settings to experiment with various models from OpenAI, and generate code samples based on Java SDK,\nThe post Java on Azure Tooling Update – September 2023 appeared first on Microsoft for Java Developers.",
+          "link": "https://devblogs.microsoft.com/java/java-on-azure-tooling-update-september-2023/",
+          "publishedOn": "2023-10-25T08:17:57.000Z",
+          "wordCount": 5113,
+          "title": "Java on Azure Tooling Update – September 2023",
+          "enclosure": {
+            "url": "https://devblogs.microsoft.com/java/wp-content/uploads/sites/51/2023/10/OpenAI-Get-Started.mp4",
+            "length": "1298675",
+            "type": "video/mp4"
+          },
+          "imageUrl": "https://devblogs.microsoft.com/java/wp-content/uploads/sites/51/2023/10/Toolkit-roadmap-2023-sep.png"
+        },
         {
           "id": "https://devblogs.microsoft.com/java/?p=230171",
           "author": "Bruno Borges",
@@ -9101,6 +9136,21 @@
       "feedUrl": "https://devblogs.microsoft.com/microsoft365dev/feed/",
       "siteUrl": "https://devblogs.microsoft.com/microsoft365dev/",
       "articles": [
+        {
+          "id": "https://devblogs.microsoft.com/microsoft365dev/?p=15899",
+          "author": "Nnamdi Onuorah",
+          "description": "Get familiar with the latest features that can help you boost your app's visibility and engagement across Microsoft 365.\nThe post Boost your app’s visibility and engagement in Microsoft 365 appeared first on Microsoft 365 Developer Blog.",
+          "link": "https://devblogs.microsoft.com/microsoft365dev/boost-your-apps-visibility-and-engagement-in-microsoft-365/",
+          "publishedOn": "2023-10-25T17:14:11.000Z",
+          "wordCount": 4880,
+          "title": "Boost your app’s visibility and engagement in Microsoft 365",
+          "enclosure": {
+            "url": "https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2023/10/ActionsPrivatePreviewIntroVideo_v2-1.mp4",
+            "length": "7424502",
+            "type": "video/mp4"
+          },
+          "imageUrl": "https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2023/10/m365-1-scaled.jpg"
+        },
         {
           "id": "https://devblogs.microsoft.com/microsoft365dev/?p=15867",
           "author": "Waldek Mastykarz",
