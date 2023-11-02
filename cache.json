@@ -2000,6 +2000,16 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/how-to-choose-the-right-network-plugin-for-your-aks-cluster-a/ba-p/3969292",
+          "author": "tzahiariel",
+          "description": "One of the important decisions you need to make when creating a new Azure Kubernetes Service (AKS) cluster is which network plugin to use.\nThe network plugin determines how the pods and nodes communicate with each other and with external resources. \nEach type has its own advantages and disadvantages, depending on your requirements and preferences.\n \nIn this blog post, I will explain the differences between Kubenet and Azure CNI, and help you choose the best option for your AKS cluster.\n \nHere is a short overview of the network plugin types available to Azure Kubernetes Service:\n \nKubenet\n\nThe default plugin for the AKS cluster \nDesigned for fewer than 400 nodes (only nodes get a \"real IP\")\nPods receive an internal IP address from a logically different address space of the Azure virtual net…",
+          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/how-to-choose-the-right-network-plugin-for-your-aks-cluster-a/ba-p/3969292",
+          "publishedOn": "2023-11-01T08:56:18.000Z",
+          "wordCount": 10410,
+          "title": "How to choose the right network plugin for your AKS cluster: A flowchart guide",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/521158iCCEDB09F6483EFA1/image-size/original?v=v2&px=-1"
+        },
+        {
           "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/tutorial-a-graceful-process-to-develop-and-deploy-docker/ba-p/3968970",
           "author": "yorkzhang",
           "description": "Creating and deploying Docker containers to Azure resources manually can be a complicated and time-consuming process. This tutorial outlines a graceful process for developing and deploying a Linux Docker container on your Windows PC, making it easy to deploy to Azure resources.\n \nThis tutorial emphasizes using the user interface to complete most of the steps, making the process more reliable and understandable. While there are a few steps that require the use of command lines, the majority of tasks can be completed using the UI. This focus on the UI is what makes the process graceful and user-friendly.\n \nIn this tutorial, we will use a Python Flask application as an example, but the steps should be similar for other languages such as Node.js.\n \nPrerequisites:\n \nBefore you begin, you'll nee…",
@@ -3108,26 +3118,6 @@
           "wordCount": 9674,
           "title": "Azure Container Apps Newsletter – June 2023",
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/477173iF1B36809FD37836A/image-size/original?v=v2&px=-1"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/how-to-expose-internal-azure-spring-apps-with-vnet-injection-to/ba-p/3839118",
-          "author": "wanjing",
-          "description": "When an Azure Spring Apps service instance is deployed in your virtual network (VNET), applications on the service instance are only accessible within the private network. To make these applications accessible on the Internet, there are several options available. \n \nIn this article, we will discuss these methods and provide a comprehensive guide on how to set them up from start to finish.\n \nPrerequisites\n \n1. Deploy an ASA instance in VNet following: https://learn.microsoft.com/en-us/azure/spring-apps/how-to-deploy-in-azure-virtual-network?tabs=azure-portal.\n2. Create an Azure Private DNS Zone in your subscription to translate/resolve the private fully qualified domain name (FQDN) to its IP address following: https://learn.microsoft.com/en-us/azure/spring-apps/access-app-virtual-network?ta…",
-          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/how-to-expose-internal-azure-spring-apps-with-vnet-injection-to/ba-p/3839118",
-          "publishedOn": "2023-06-05T06:46:37.000Z",
-          "wordCount": 10658,
-          "title": "How to expose Internal Azure Spring Apps with VNet Injection to the Internet",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/476889i50E341A199C4D10B?v=v2"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/how-to-enable-app-service-proactive-tools-via-powershell/ba-p/3839370",
-          "author": "Calvin_Cai",
-          "description": "Azure App Service provides a set of proactive tools that help you monitor and maintain the health of your application. These tools include \"Auto-Heal\", \"Proactive CPU Monitoring\", and \"Crash Monitoring\". In this document, we will guide you through the process of enabling them using PowerShell scripts, so you can easily automate them in your deployment pipeline.\nSince each tool has its own configuration settings, we will discuss them individually to provide you with a clear understanding of how to enable and configure them for your app.\n \n1. Auto-Heal\nAuto-Heal is a feature in Azure App Service that automatically detects and resolves certain application failures. When Auto-Heal is triggered, it can take actions such as restarting the app, recycling the app pool, or sending an email notifica…",
-          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/how-to-enable-app-service-proactive-tools-via-powershell/ba-p/3839370",
-          "publishedOn": "2023-06-05T03:34:29.000Z",
-          "wordCount": 10123,
-          "title": "How to enable App Service Proactive Tools via PowerShell",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/476847i43474DF73DAF45C5?v=v2"
         }
       ]
     },
@@ -3639,16 +3629,6 @@
           "wordCount": 9709,
           "title": "How to use Power BI API to generate Power BI workspace content",
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/477179iBE72C0FA5C2C386E?v=v2"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/fasttrack-for-azure/deploy-and-run-a-azure-openai-chatgpt-app-on-aks-with-terraform/ba-p/3839611",
-          "author": "paolosalvatori",
-          "description": "This sample shows how to deploy an Azure Kubernetes Service(AKS) cluster and Azure OpenAI Service using Terraform modules with the Azure Provider Terraform Provider and how to deploy a Python chatbot that authenticates against Azure OpenAI using Azure AD workload identity and calls the Chat Completion API of a ChatGPT model.\n \nYou can find the code of the chatbot and Terraform modules to deploy the environment in this GitHub repository. For a Bicep version of the article and companion sample, see How to deploy and run an Azure OpenAI ChatGPT application on AKS via Bicep.\n \nA chatbot is an application that simulates human-like conversations with users via chat. Its key task is to answer user questions with instant messages. Azure Kubernetes Service(AKS) cluster communicates with Azure OpenA…",
-          "link": "https://techcommunity.microsoft.com/t5/fasttrack-for-azure/deploy-and-run-a-azure-openai-chatgpt-app-on-aks-with-terraform/ba-p/3839611",
-          "publishedOn": "2023-06-05T10:10:12.000Z",
-          "wordCount": 19750,
-          "title": "Deploy and run a Azure OpenAI/ChatGPT app on AKS with Terraform",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/476913i1D45C96A8CF9B22F/image-size/original?v=v2&px=-1"
         }
       ]
     },
@@ -4125,36 +4105,6 @@
           "wordCount": 9913,
           "title": "Azure Table Storage Tutorial - Python Azure Tables SDK with NBA Stats API",
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/463455i4971FE8B2AEC4418?v=v2"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/azure-paas-blog/mount-adls-gen2-or-blob-storage-in-azure-databricks/ba-p/3802926",
-          "author": "charleswang",
-          "description": "Scenario:Azure Databricks offers many of the same features as the open-source Databricks platform, such as a web-based workspace for managing Spark clusters, notebooks, and data pipelines, along with Spark-based analytics and machine learning tools. It is fully integrated with Azure cloud services, providing native access to Azure Blob Storage, Azure Data Lake Storage, Azure SQL Database, and other Azure services. This blog shows example of mounting Azure Blob Storage or Azure Data Lake Storage in the Databricks File System (DBFS), with two authentication methods for mount: Access Key and SAS token.\n \nObjective:\nTo become acquainted with Databricks storage mount with ABFS/WASB driver and various authentication methods.Pre-requisites:For this example, you would need:\n\nAn Azure Databricks Se…",
-          "link": "https://techcommunity.microsoft.com/t5/azure-paas-blog/mount-adls-gen2-or-blob-storage-in-azure-databricks/ba-p/3802926",
-          "publishedOn": "2023-06-05T08:32:51.000Z",
-          "wordCount": 10058,
-          "title": "Mount ADLS Gen2 or Blob Storage in Azure Databricks",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/463249iEFF81E75F959A12B?v=v2"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/azure-paas-blog/illustrated-example-of-applying-acls-recursively-with-storage/ba-p/3802971",
-          "author": "charleswang",
-          "description": "Scenario:The Propagate Access Control Lists option is now available in Storage Explorer 1.28.1 or later versions. It is a convenient feature to apply ACL entries recursively on the existing child items of a parent directory without having to make these changes individually for each child item.\n \nObjective:To demonstrate how ACLs propagation works with the help of the Propagate Access Control Lists option in Storage Explorer 1.28.1+.Pre-requisites:For this example, you would need:\n\nAn Azure Data Lake Storage.\nStorage Explorer 1.28.1 or later versions.\n\nStorage File Structure:\n \n\n \nHow to Propagate ACLs:\nTo apply ACL entries recursively, open Storage Explorer, right-click the container or a parent directory, and then select Propagate Access Control Lists.\n \n\n \nExample:\n\n\n\n\n \n\n\npropagete-acl-…",
-          "link": "https://techcommunity.microsoft.com/t5/azure-paas-blog/illustrated-example-of-applying-acls-recursively-with-storage/ba-p/3802971",
-          "publishedOn": "2023-06-05T08:30:15.000Z",
-          "wordCount": 9810,
-          "title": "Illustrated Example of Applying ACLs Recursively with Storage Explorer",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/463265iFADB2494340F9C5B?v=v2"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/azure-paas-blog/use-rdbtools-to-generate-memory-report-for-azure-cache-for-redis/ba-p/3803181",
-          "author": "charleswang",
-          "description": "Scenario:The rdbtools is a handy utility that can parse Redis dump.rdb files, analyze memory, and export data to JSON. This tutorial shows a quick example using rdbtools to generate report for Azure cache for Redis, on memory usage and number of keys categorized by data type and data encoding.Objective:To showcase how to use the rdbtools to analyze memory use and data dumps from an Azure Cache for Redis. It is easy to use and gives more insights than the Memory Usage metrics available on the Azure portal.Pre-requisites:For this example, you would need:\n\nAn Azure Cache for Redis in the Premium, Enterprise, or Enterprise Flash tiers.\n\nSteps:\n\nInstall rdbtools\nAdd some data in the Redis\nExport data to dump\nGenerate memory report\nConvert dump file to JSON\n\n \n[STEP 1]: Install rdbtools\n \n \npip …",
-          "link": "https://techcommunity.microsoft.com/t5/azure-paas-blog/use-rdbtools-to-generate-memory-report-for-azure-cache-for-redis/ba-p/3803181",
-          "publishedOn": "2023-06-05T08:10:35.000Z",
-          "wordCount": 9903,
-          "title": "Use Rdbtools to Generate Memory Report for Azure Cache for Redis and Convert Dump Files to JSON",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/463323i7D49477733870370?v=v2"
         }
       ]
     },
@@ -5456,6 +5406,16 @@
       "siteUrl": "https://devblogs.microsoft.com/devops/",
       "articles": [
         {
+          "id": "https://devblogs.microsoft.com/devops/?p=67877",
+          "author": "Michael Carlson",
+          "description": "Git Partial Clone\nThe post Git Partial Clone Now Supported in Azure DevOps appeared first on Azure DevOps Blog.",
+          "link": "https://devblogs.microsoft.com/devops/git-partial-clone-now-supported-in-azure-devops/",
+          "publishedOn": "2023-11-01T17:29:45.000Z",
+          "wordCount": 4859,
+          "title": "Git Partial Clone Now Supported in Azure DevOps",
+          "imageUrl": "https://devblogs.microsoft.com/devops/wp-content/uploads/sites/6/2018/10/Git-Logo-2Color.png"
+        },
+        {
           "id": "https://devblogs.microsoft.com/devops/?p=67838",
           "author": "Gloridel Morales",
           "description": "We have released Azure DevOps Server 2022.1 RC2. This is our last planned prerelease before our final release of Azure DevOps Server 2022.1. A direct upgrade is supported from Azure DevOps Server 2022.1 RC1, any version of TFS, including Team Foundation Server 2015 and newer.\nThe post Azure DevOps Server 2022.1 RC2 now available appeared first on Azure DevOps Blog.",
@@ -5831,16 +5791,6 @@
           "wordCount": 6252,
           "title": "How to copy data from Azure SQL Managed Instance to Microsoft Fabric DW",
           "imageUrl": "https://devblogs.microsoft.com/azure-sql/wp-content/uploads/sites/56/2023/07/process.png"
-        },
-        {
-          "id": "https://devblogs.microsoft.com/azure-sql/?p=2200",
-          "author": "Davide Mauri",
-          "description": "Vector databases are gaining quite a lot of interest lately due to the fact that using text embeddings and vector operations it is very easy to find similar “things”. Things can be articles, photos, products…everything. As one can easily imagine, this ability is great to easily implement suggestions in applications.\nThe post Vector Similarity Search with Azure SQL database and OpenAI appeared first on Azure SQL Devs’ Corner.",
-          "link": "https://devblogs.microsoft.com/azure-sql/vector-similarity-search-with-azure-sql-database-and-openai/",
-          "publishedOn": "2023-06-04T18:24:16.000Z",
-          "wordCount": 5372,
-          "title": "Vector Similarity Search with Azure SQL database and OpenAI",
-          "imageUrl": "https://devblogs.microsoft.com/azure-sql/wp-content/uploads/sites/56/2023/06/text-embeddings.png"
         }
       ]
     },
@@ -6449,6 +6399,16 @@
       "feedUrl": "https://azurecomcdn.azureedge.net/en-us/updates/feed/?updateType=features",
       "siteUrl": "https://azure.microsoft.com/en-us/updates/",
       "articles": [
+        {
+          "id": "general-availability-default-rule-set-21-for-regional-waf-with-application-gateway",
+          "author": null,
+          "description": "Increase your security posture and reduce false positives with Default Rule Set 2.1, now generally available on the regional WAF with Application Gateway",
+          "link": "https://azure.microsoft.com/en-us/updates/general-availability-default-rule-set-21-for-regional-waf-with-application-gateway/",
+          "publishedOn": "2023-10-31T15:59:28.000Z",
+          "wordCount": 5350,
+          "title": "General availability: Default Rule Set 2.1 for regional WAF with Application Gateway",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-430369ba41c5c637dfafa87f1ac228dad1ab10997c65d7cf1f11b58ebe7191fe/images/shared/social/azure-icon-250x250.png"
+        },
         {
           "id": "azure-bastion-developer-public-preview",
           "author": null,
@@ -9236,6 +9196,26 @@
       "feedUrl": "https://devblogs.microsoft.com/microsoft365dev/feed/",
       "siteUrl": "https://devblogs.microsoft.com/microsoft365dev/",
       "articles": [
+        {
+          "id": "https://devblogs.microsoft.com/microsoft365dev/?p=15817",
+          "author": "Isaac Vargas Chacon",
+          "description": "Access the beta and v1 endpoints of Microsoft Graph, with a fluent experience, designed to facilitate discoverability with the best features of the Python language.\nThe post Introducing the Microsoft Graph Python SDK appeared first on Microsoft 365 Developer Blog.",
+          "link": "https://devblogs.microsoft.com/microsoft365dev/introducing-the-microsoft-graph-python-sdk/",
+          "publishedOn": "2023-11-01T18:30:05.000Z",
+          "wordCount": 4632,
+          "title": "Introducing the Microsoft Graph Python SDK",
+          "imageUrl": "https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2023/10/00_PythonSDK-scaled.jpg"
+        },
+        {
+          "id": "https://devblogs.microsoft.com/microsoft365dev/?p=15999",
+          "author": "Sebastian Holst",
+          "description": "A Forrester Consulting survey commissioned by Microsoft reveals the challenges and opportunities for enterprises in today’s world of modern work and generative AI.\nThe post Eliminate digital drag: Move your organization into the modern work and generative AI fast lane appeared first on Microsoft 365 Developer Blog.",
+          "link": "https://devblogs.microsoft.com/microsoft365dev/eliminate-digital-drag-move-your-organization-into-the-modern-work-and-generative-ai-fast-lane/",
+          "publishedOn": "2023-11-01T15:00:30.000Z",
+          "wordCount": 5657,
+          "title": "Eliminate digital drag: Move your organization into the modern work and generative AI fast lane",
+          "imageUrl": "https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2023/10/webinar5-1-scaled.jpg"
+        },
         {
           "id": "https://devblogs.microsoft.com/microsoft365dev/?p=16028",
           "author": "Ayan Chakraborty",
