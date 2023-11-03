@@ -2,10 +2,147 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2023-11-02T01:01:41.237Z</updated>
+    <updated>2023-11-03T01:01:54.192Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[First Party Services Adoption for Migrated Virtual Machines via Azure Policy]]></title>
+        <id>https://techcommunity.microsoft.com/t5/fasttrack-for-azure/first-party-services-adoption-for-migrated-virtual-machines-via/ba-p/3971674</id>
+        <link href="https://techcommunity.microsoft.com/t5/fasttrack-for-azure/first-party-services-adoption-for-migrated-virtual-machines-via/ba-p/3971674"/>
+        <updated>2023-11-02T23:15:33.000Z</updated>
+        <summary type="html"><![CDATA[Introduction
+Server migrations to Azure Virtual Machines either through Azure Migrate or via a redeploy approach can benefit from Azure policies to accelerate adoption of Azure first party services across BCDR, Security, Monitoring and Management. 
+ 
+Our Cloud Adoption Framework’s guidance for Azure Landing Zones already provides a good baseline of recommended Azure policies. However, a variation to this baseline is described in this article with a focus on newly migrated Azure Virtual Machine resources.  
+ 
+BCDR: 
+To enable Azure Backup and Azure Site Recovery for Virtual Machines, a recovery services vault is needed.  
+ 
+For Azure Backup, the recovery services vault is to be deployed in the same region as the virtual machine. Commonly, the recovery services vault will be used for multipl…]]></summary>
+        <author>
+            <name>alejandra8481</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Announcing App Service Multi-plan subnet join]]></title>
+        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/announcing-app-service-multi-plan-subnet-join/ba-p/3971493</id>
+        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/announcing-app-service-multi-plan-subnet-join/ba-p/3971493"/>
+        <updated>2023-11-02T21:48:10.000Z</updated>
+        <summary type="html"><![CDATA[Virtual network integration in App Service requires one subnet per App Service plan integration today. If you are working with many App Service plans, managing the subnets can be an unnecessary administrative task. Therefore, I am happy to announce that we are introducing Multi-plan subnet join (MPSJ) in limited public preview at Ignite 2023.
+ 
+MPSJ reduces subnet sprawl when dealing with many apps across many plans and simplifies management of networking control such as Network Security Groups and Route tables across App Service plans. With MPSJ you can join a virtual network/subnet in a different subscription, but all App Service plan joining a specific subnet must be in the same subscription.
+ 
+You may still want to use individual subnets if you plan to differentiate on Network Security…]]></summary>
+        <author>
+            <name>jordanselig</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Copy-on-Write in Win32 API Early Access]]></title>
+        <id>https://devblogs.microsoft.com/engineering-at-microsoft/?p=703</id>
+        <link href="https://devblogs.microsoft.com/engineering-at-microsoft/copy-on-write-in-win32-api-early-access/"/>
+        <updated>2023-11-02T21:26:02.000Z</updated>
+        <summary type="html"><![CDATA[On October 25, 2023, the Windows filesystem team released an early preview of copy-on-write (CoW) linking in the Windows 11 Insider Canary channel. This builds automatic CoW linking into the Win32 CopyFile APIs when using Dev Drive or ReFS. If released next year,
+The post Copy-on-Write in Win32 API Early Access appeared first on Engineering@Microsoft.]]></summary>
+        <author>
+            <name>Erik Mavrinac</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[New features for Azure Synapse Link for Azure Cosmos DB]]></title>
+        <id>https://devblogs.microsoft.com/cosmosdb/?p=6958</id>
+        <link href="https://devblogs.microsoft.com/cosmosdb/new-features-for-azure-synapse-link-for-azure-cosmos-db/"/>
+        <updated>2023-11-02T18:46:57.000Z</updated>
+        <summary type="html"><![CDATA[Azure Synapse Link for Azure Cosmos DB is a cloud-native hybrid transactional and analytical processing (HTAP) capability that enables near real-time analytics over operational data in Azure Cosmos DB. Azure Synapse Link creates a tight seamless integration between Azure Cosmos DB and Azure Synapse Analytics.
+The post New features for Azure Synapse Link for Azure Cosmos DB appeared first on Azure Cosmos DB Blog.]]></summary>
+        <author>
+            <name>Rodrigo Souza</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How Sales Copilot Works & How To Set It Up]]></title>
+        <id>https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/how-sales-copilot-works-amp-how-to-set-it-up/ba-p/3970601</id>
+        <link href="https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/how-sales-copilot-works-amp-how-to-set-it-up/ba-p/3970601"/>
+        <updated>2023-11-02T18:38:41.000Z</updated>
+        <summary type="html"><![CDATA[Close sales deals quickly and efficiently with the new generative AI powered Sales Copilot. It provides an intelligent natural language interface to all of your sales data, in CRM systems like Salesforce or Dynamics 365, and connected external data sources. See how Sales Copilot generates insights and content in the flow of work with skills that help you with everyday tasks in Microsoft 365 or embedded within your Dynamics 365 Sales experience. 
+ 
+
+ 
+Eric Boocock, Principal Program Manager for Dynamics 365 Sales, shares how Sales Copilot works safely with your data and the key admin steps to set it up.
+ 
+Optimize your sales process.
+
+Intelligent natural language interface to all your sales data in CRM systems, like Salesforce or Dynamics 365, and connected external data sources. Get starte…]]></summary>
+        <author>
+            <name>Zachary Cavanell</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Python in Visual Studio Code – November 2023 Release]]></title>
+        <id>https://devblogs.microsoft.com/python/?p=9502</id>
+        <link href="https://devblogs.microsoft.com/python/python-in-visual-studio-code-november-2023-release/"/>
+        <updated>2023-11-02T18:05:50.000Z</updated>
+        <summary type="html"><![CDATA[The November 2023 release of the Python and Jupyter extensions for Visual Studio Code are now available. This month's updates include improvements to Shift+Enter when sending code to the terminal, deprecation of linting and formatting features, improvements to Python linting extensions, reconfiguration of test output, and virtual environment deactivation help. Keep reading to learn more!
+The post Python in Visual Studio Code – November 2023 Release appeared first on Python.]]></summary>
+        <author>
+            <name>Courtney Webster</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Public Preview: Azure integration with Canonical’s Snapshot Service for safe deployment]]></title>
+        <id>public-preview-azure-integration-with-canonical-s-snapshot-service-for-safe-deployment</id>
+        <link href="https://azure.microsoft.com/en-us/updates/public-preview-azure-integration-with-canonical-s-snapshot-service-for-safe-deployment/"/>
+        <updated>2023-11-02T17:00:14.000Z</updated>
+        <summary type="html"><![CDATA[Azure Guest Patching Service and Azure Kubernetes Service will now apply the same package update from a specific date to all regions following safe deployment principles.]]></summary>
+        <author>
+            <name>Azure service updates</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Generally available: Azure Premium SSD v2 Disk Storage is now available in more regions]]></title>
+        <id>generally-available-azure-premium-ssd-v2-disk-storage-is-now-available-in-more-regions-pcu</id>
+        <link href="https://azure.microsoft.com/en-us/updates/generally-available-azure-premium-ssd-v2-disk-storage-is-now-available-in-more-regions-pcu/"/>
+        <updated>2023-11-02T17:00:04.000Z</updated>
+        <summary type="html"><![CDATA[Azure Premium SSD v2 Disk Storage is now available in more regions and offers the most advanced general-purpose block storage solution with the best price performance]]></summary>
+        <author>
+            <name>Azure service updates</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Announcing public preview for Microsoft Adaptive Card Previewer]]></title>
+        <id>https://devblogs.microsoft.com/microsoft365dev/?p=15980</id>
+        <link href="https://devblogs.microsoft.com/microsoft365dev/announcing-public-preview-for-microsoft-adaptive-card-previewer/"/>
+        <updated>2023-11-02T16:01:32.000Z</updated>
+        <summary type="html"><![CDATA[Learn more about this extension for Visual Studio Code that uses the latest rendering stack for Microsoft Teams to provide a more accurate preview of Adaptive Cards.
+The post Announcing public preview for Microsoft Adaptive Card Previewer appeared first on Microsoft 365 Developer Blog.]]></summary>
+        <author>
+            <name>Junjie Li</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Effective Kubernetes for JakartaEE and Microprofile Developers]]></title>
+        <id>https://devblogs.microsoft.com/premier-developer/?p=41520</id>
+        <link href="https://devblogs.microsoft.com/premier-developer/effective-kubernetes-for-jakartaee-and-microprofile-developers/"/>
+        <updated>2023-11-02T07:25:20.000Z</updated>
+        <summary type="html"><![CDATA[In this post, David Minkovski explores some best practices to get your deployment up and running on Kubernetes and Azure.
+Motivation
+The post Effective Kubernetes for JakartaEE and Microprofile Developers appeared first on Developer Support.]]></summary>
+        <author>
+            <name>Developer Support</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[4 Key Tips: Production-Ready Spring Boot REST API with PostgreSQL]]></title>
+        <id>https://devblogs.microsoft.com/ise/?p=15100</id>
+        <link href="https://devblogs.microsoft.com/ise/2023/11/02/4-key-tips-production-ready-spring-boot-rest-api-with-postgresql-jpg/"/>
+        <updated>2023-11-02T07:00:00.000Z</updated>
+        <summary type="html"><![CDATA[4 key tips when developing production ready Spring Boot REST API
+The post 4 Key Tips: Production-Ready Spring Boot REST API with PostgreSQL appeared first on ISE Developer Blog.]]></summary>
+        <author>
+            <name>Neeraj Mandal</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Introducing the Microsoft Graph Python SDK]]></title>
         <id>https://devblogs.microsoft.com/microsoft365dev/?p=15817</id>
@@ -26,6 +163,16 @@ The post Introducing the Microsoft Graph Python SDK appeared first on Microsoft 
 The post Git Partial Clone Now Supported in Azure DevOps appeared first on Azure DevOps Blog.]]></summary>
         <author>
             <name>Michael Carlson</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[GA: gRPC support on Azure App Service]]></title>
+        <id>grpcappservice</id>
+        <link href="https://azure.microsoft.com/en-us/updates/grpcappservice/"/>
+        <updated>2023-11-01T16:00:17.000Z</updated>
+        <summary type="html"><![CDATA[Host your gRPC workloads on App Service Linux.]]></summary>
+        <author>
+            <name>Azure service updates</name>
         </author>
     </entry>
     <entry>
@@ -13233,92 +13380,6 @@ Later in the session, Amanda and John talked about developer experiences for Mic
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Azure Container Apps Newsletter – June 2023]]></title>
-        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/azure-container-apps-newsletter-june-2023/ba-p/3840337</id>
-        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/azure-container-apps-newsletter-june-2023/ba-p/3840337"/>
-        <updated>2023-06-06T03:41:38.000Z</updated>
-        <summary type="html"><![CDATA[Welcome to this month's Azure Container Apps newsletter! We'll share the latest news and community highlights for Container Apps every month here on the Apps on Azure blog.
- 
-Azure Container Apps monthly community live stream
- 
-Our next live stream is June 6, 2023 at 11:00AM PDT (18:00 UTC). Join us and our special guests to learn about:
- 
-
-Latest Azure Container Apps from Microsoft Build 2023 and community highlights
-Learn all about one of our newest features: Container Apps jobs
-
- 
-
-
-
- 
-Subscribe to the Azure Developers YouTube channel!
- 
-Community highlights
- 
-Some great content created by our amazing community:
- 
-
-Unleashing the Power of Microservices with Dapr and Azure Container Apps - YouTube
-Azure Container Apps and Bicep - Deploying Dependent Resources - Xebia | Xpirit
-Azure Static Web Apps with Container Apps linked backend (Japanese)
-Private linking an Azure Container App Environment (May'23 update) - The Ops Community
-Building a Flask and MongoDB App with Azure Container Apps - Microsoft Community Hub
-
- 
-Product news
- 
-
-Azure Spring Apps Consumption and Dedicated plans (preview)
-Azure Functions for cloud-native microservices (preview)
-Azure Container Apps add-ons (preview)
-App running status
-Dapr component easy create experience (preview)
-
-New portal experience for creating Dapr components that use Azure resources
-
-
-Secret volume mounts (preview)
-Free and managed TLS certificates (preview)
-Azure Container Apps jobs (preview)
-
- 
-Nice roundup of Container Apps sessions at Build 2023: Cloud-native at Build 2023 - Microsoft Community Hub
- 
-For more, check out our product roadmap.
- 
-Get notified when we publish future newsletters, subscribe to the Apps on Azure blog. Connect with the Azure Container Apps team on GitHub, Twitter, and Discord.]]></summary>
-        <author>
-            <name>Anthony Chu</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[This Week in Spring - June 6th, 2023]]></title>
-        <id>https://spring.io/blog/2023/06/06/this-week-in-spring-june-6th-2023</id>
-        <link href="https://spring.io/blog/2023/06/06/this-week-in-spring-june-6th-2023"/>
-        <updated>2023-06-06T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Level up your Java code and explore what Spring can do for you.]]></summary>
-        <author>
-            <name>Josh Long</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Updating your Azure landing zones]]></title>
-        <id>https://techcommunity.microsoft.com/t5/azure-architecture-blog/updating-your-azure-landing-zones/ba-p/3840204</id>
-        <link href="https://techcommunity.microsoft.com/t5/azure-architecture-blog/updating-your-azure-landing-zones/ba-p/3840204"/>
-        <updated>2023-06-05T21:49:37.000Z</updated>
-        <summary type="html"><![CDATA[Today we're discussing how you can update your Azure landing zones in the Azure environment with your host Thomas Maurer and Jan Faurskov and Paul Grimley from the Azure landing zone team.
- 
-Landing zones are really a great way to build your Azure environment using best practices and building a platform where you can deploy apps and services. Paul and Jan get asked this question a lot as to “once you've deployed Azure landing zones, how do you keep it up to date?”
- 
-What are some of the challenges you face in keeping your Azure landing zone up-to-date?
- 
-Paul wanted to highlight some of the challenges in keeping your Azure landing zone up-to-date. From his experience, maintaining Azure landings zones has various levels of complexity depending on how it's deployed. Whether that's through Bi…]]></summary>
-        <author>
-            <name>AriyaKhamvongsa</name>
-        </author>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[Integrating Power Apps with Azure Machine Learning & OpenAI using Power Automate]]></title>
         <id>https://techcommunity.microsoft.com/t5/educator-developer-blog/integrating-power-apps-with-azure-machine-learning-amp-openai/ba-p/3835949</id>
         <link href="https://techcommunity.microsoft.com/t5/educator-developer-blog/integrating-power-apps-with-azure-machine-learning-amp-openai/ba-p/3835949"/>
@@ -13350,62 +13411,6 @@ Introduction
 Are you interested in harnessing the power of artificial intelligence and machine learning to predict and plan for your health expenses? Are you curious about how Power Apps, Azure Machine Learning, and Open AI can work together to create innovative solutions? Look no further! In this blog post, we will explore how to integrate Power Apps with Azure Machine Learning and Open …]]></summary>
         <author>
             <name>aaryan2134</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Azure Table Storage Tutorial - Python Azure Tables SDK with NBA Stats API]]></title>
-        <id>https://techcommunity.microsoft.com/t5/azure-paas-blog/azure-table-storage-tutorial-python-azure-tables-sdk-with-nba/ba-p/3803674</id>
-        <link href="https://techcommunity.microsoft.com/t5/azure-paas-blog/azure-table-storage-tutorial-python-azure-tables-sdk-with-nba/ba-p/3803674"/>
-        <updated>2023-06-05T18:24:42.000Z</updated>
-        <summary type="html"><![CDATA[Scenario:The NBA playoffs start on 15 April following the conclusion of the Play-In Tournament on 14 April. In this tutorial, we use the nba_api Python API Client for NBA.com to fetch NBA teams stats and then run the Python Azure Tables SDK to create Azure table and entries. Finally, with Azure Storage Explorer we can easily build search query and visualize the results.
- 
-Objective:To illustrate Azure Tables Python SDK usage using NBA API, followed by querying Azure Table Storage with Azure Storage Explorer's Query Builder.Pre-requisites:For this example, you would need:
-
-An Azure Table Storage
-
-Steps:
-
-Install nba_api
-Install Azure Tables client library for Python
-Python code to retrieve data, create table, and insert entries
-Run nba.py
-Visualize the NBA table (with Azure Storage Explorer…]]></summary>
-        <author>
-            <name>charleswang</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Generally available: Azure Data Explorer Kusto Emulator on Linux]]></title>
-        <id>kusto-emulator-linux</id>
-        <link href="https://azure.microsoft.com/en-us/updates/kusto-emulator-linux/"/>
-        <updated>2023-06-05T17:00:01.000Z</updated>
-        <summary type="html"><![CDATA[The Kusto Emulator is now available as a Linux Docker Container!]]></summary>
-        <author>
-            <name>Azure service updates</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[HackTogether: the Microsoft Teams Global Hack keynote recap and what’s coming]]></title>
-        <id>https://devblogs.microsoft.com/microsoft365dev/?p=14138</id>
-        <link href="https://devblogs.microsoft.com/microsoft365dev/hacktogether-the-microsoft-teams-global-hack-keynote-recap-and-whats-coming/"/>
-        <updated>2023-06-05T15:22:49.000Z</updated>
-        <summary type="html"><![CDATA[Last week we launched “HackTogether: the Microsoft Teams Global Hack” – a virtual hackathon all about building apps for Microsoft Teams. Here’s what happened last week and what’s still to come.
-The post HackTogether: the Microsoft Teams Global Hack keynote recap and what’s coming appeared first on Microsoft 365 Developer Blog.]]></summary>
-        <author>
-            <name>Ayca Bas</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[How do LLMs work with Vision AI? | OCR, Image & Video Analysis]]></title>
-        <id>https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/how-do-llms-work-with-vision-ai-ocr-image-amp-video-analysis/ba-p/3835661</id>
-        <link href="https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/how-do-llms-work-with-vision-ai-ocr-image-amp-video-analysis/ba-p/3835661"/>
-        <updated>2023-06-02T13:13:46.000Z</updated>
-        <summary type="html"><![CDATA[Combine vision and language in an AI model with the latest vision AI model in Azure Cognitive Services. Use natural language to fetch visual content in images and videos without needing metadata or location, generate automatic and detailed descriptions of images using the model’s knowledge of the world, and use a verbal description to search video content. 
- 
-
-Cognitive Service for Vision AI combines both natural language models (LLM) with computer vision and is part of the Azure Cognitive Services suite of pre-trained AI capabilities. It can carry out a variety of vision-language tasks including automatic image classification, object detection, and image segmentation. Similar to GPT, the foundational language model, Project Florence, used in this case infuses deeper language skill with vi…]]></summary>
-        <author>
-            <name>Zachary Cavanell</name>
         </author>
     </entry>
     <entry>
