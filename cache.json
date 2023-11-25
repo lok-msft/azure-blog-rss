@@ -2020,6 +2020,16 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/azure-web-pubsub-for-socket-io-is-now-generally-available/ba-p/3991322",
+          "author": "kevinguo",
+          "description": "TL; DR\nSocket.IO library is natively supported on Azure. Since we public previewed this feature, we received positive feedback from users. Now we are happy to share that Web PubSub for Socket.IO is generally available, which means that Azure customers can expect stable APIs, SLAs customer support and it’s suitable for use in production.\n \nSolve the scalability issue without code rewrite.\nWhen we interviewed Socket.IO users, the challenge of scaling out Socket.IO servers came up repeatedly. It’s a challenge that can be met uniquely by Azure. With the input from Socket.IO users, it’s a challenge we aimed to solve when we public previewed the support for Socket.IO on Azure two months ago. \n \nDevelopers can continue using the Socket.IO APIs they know and love and migrate to Azure seamless with…",
+          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/azure-web-pubsub-for-socket-io-is-now-generally-available/ba-p/3991322",
+          "publishedOn": "2023-11-24T03:10:05.000Z",
+          "wordCount": 10297,
+          "title": "Azure Web PubSub for Socket.IO is now generally available",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/529237iFD3E57EF17AB77DD/image-size/original?v=v2&px=-1"
+        },
+        {
           "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/configure-customized-notification-for-function-app/ba-p/3968338",
           "author": "Marina_Liu",
           "description": "For configuring customized notification of function app, Application Insight alter with custom log search is a suitable way to achieve the goal.\nIn this blog, I will take two senarios (function invocation is under long time running and function fails due to timeout) as examples for how to set the customized notifications. Below is one situation which might need customized notification:\nFunction invocations' time duration might span with a wide range (such as function which handles uploaded files whose size might be a few KB or more than tens GB), notification is needed if a function invocation persists for a long time or it fails with timeout.\n \nDetailed steps for creating a customized notification as below:\n\n \nStep 1: Create Alert rule\nFirst, please go to the Application Insight which is …",
@@ -3268,16 +3278,6 @@
           "wordCount": 9910,
           "title": "Get started with .NET apps on Azure App Service",
           "imageUrl": "https://cdn.techcommunity.microsoft.com/assets/MTC_Open_graph_image1.jpg"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/azure-load-testing-you-can-run-load-tests-from-command-line-now/ba-p/3857629",
-          "author": "Nikita_Nallamothu",
-          "description": "Azure Load Testing is a fully managed load testing service that enables you to easily generate large scale load. I am excited to share that you can now run the tests using Azure CLI (Command-Line Interface). \n \nAzure CLI is a powerful tool for managing Azure resources from the command line. It is cross-platform (Windows, macOS, and Linux), offers flexible output options (JSON, YAML, tables, etc.), and enables integration with automation systems (like CI/CD workflows) via scripting.\n \nAzure Load Testing already supports tools like SDKs, Azure DevOps and GitHub extensions. We are launching the support for Azure CLI since it can be easily integrated CI/CD tools and tools and enable templated test creation. The newly available az load extension for Azure enables end-to-end load testing. With t…",
-          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/azure-load-testing-you-can-run-load-tests-from-command-line-now/ba-p/3857629",
-          "publishedOn": "2023-06-27T14:12:36.000Z",
-          "wordCount": 9867,
-          "title": "Azure Load Testing: You can run load tests from command-line now",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/483392iC5CEB6D7379D05CA/image-size/original?v=v2&px=-1"
         }
       ]
     },
@@ -3382,16 +3382,6 @@
           "wordCount": 9776,
           "title": "Introducing new and updated models to Azure OpenAI Service",
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/484404i7327B13F924CF09E/image-size/original?v=v2&px=-1"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/ai-cognitive-services-blog/azure-ai-neural-tts-enhanced-expressiveness-for-chinese-voices/ba-p/3858411",
-          "author": "nickzhao",
-          "description": "Co-authors: Zhihang Xu, Yuchao Zhang, Zheng Niu, Xi Wang, Lei He, Sheng Zhao\n \nChinese is one of the most widely spoken languages worldwide. Azure Neural TTS offers dozens of highly human-like digital voices in Chinese for numerous customers. With the emerging trend of using TTS to generate enjoyable AI content, we see higher requirements for more natural and expressive voices.\nToday we are excited to announce our latest update to the prosody model which enhances the synthetic voice experience for Chinese.This update is our response to two key challenges identified: frontend prosody prediction errors, particularly in the Chinese (zh-CN) language, and the growing demand from our valued customers for improved prosody. Noticeably, effective prosody plays a crucial role in making synthetic spe…",
-          "link": "https://techcommunity.microsoft.com/t5/ai-cognitive-services-blog/azure-ai-neural-tts-enhanced-expressiveness-for-chinese-voices/ba-p/3858411",
-          "publishedOn": "2023-06-28T10:34:29.000Z",
-          "wordCount": 10676,
-          "title": "Azure AI Neural TTS enhanced expressiveness for Chinese voices with upgraded prosody breaks",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/483741i126B09CACE4F767B?v=v2"
         }
       ]
     },
@@ -4207,6 +4197,16 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/t5/azure-paas-blog/troubleshooting-connectivity-to-azure-storage-over-sftp-via/ba-p/3990625",
+          "author": "ShraddhaSwadi",
+          "description": "Azure Storage supports for Secure File Transfer (SFTP) protocol in Azure Storage Account. We can use a SFTP client to securely connect to the Blob Storage endpoint of your Azure Storage account, and then perform upload and download operations over the account. Please note that SFTP feature support is only available for hierarchical namespace (ADLS Gen2) enabled accounts.\nIn this article, we will discuss about how to troubleshoot and isolate connectivity issues to SFTP storage account from your machine to understand whether this is due to port blockage, firewall issues, connectivity using private endpoint, incompatibility of the client being used due to unsupported algorithms whether from Windows or Linux machine. \nLet’s look at some of the steps/actions, you can perform from your side for …",
+          "link": "https://techcommunity.microsoft.com/t5/azure-paas-blog/troubleshooting-connectivity-to-azure-storage-over-sftp-via/ba-p/3990625",
+          "publishedOn": "2023-11-24T05:49:49.000Z",
+          "wordCount": 10545,
+          "title": "Troubleshooting connectivity to Azure Storage over SFTP via Windows or Linux machine",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/529048i455BD4A30583670F/image-size/original?v=v2&px=-1"
+        },
+        {
           "id": "https://techcommunity.microsoft.com/t5/azure-paas-blog/capturing-azure-storage-explorer-rest-api-calls/ba-p/3947791",
           "author": "c4rlosmarin",
           "description": "Azure Storage Explorer is a powerful tool that simplifies working with Azure Storage services such as Blob, Queue, Table, and File storage. While it provides a user-friendly interface, there may be times when you need to inspect the requests it sends and the responses it receives from Azure. In such cases, Fiddler, a widely used web debugging proxy, can come to your rescue.\n \nThis step-by-step guide will walk you through the process of capturing a trace that you can use to evaluate such requests and responses using Fiddler.\n \nPrerequisites:\n\nInstall Azure Storage Explorer: Download and install the Azure Storage Explorer tool from the official Microsoft website.\nInstall Fiddler: Download and install Fiddler Classic from the Telerik website.\n\n \nStep 1: Launch Fiddler:\n\nAfter installing Fiddl…",
@@ -4640,6 +4640,46 @@
       "feedUrl": "https://techcommunity.microsoft.com/plugins/custom/microsoft/o365/custom-blog-rss?tid=6220021871588173833&board=MicrosoftMechanicsBlog&size=100",
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
+        {
+          "id": "https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/microsoft-fabric-data-mirroring-and-copilot-updates/ba-p/3989633",
+          "author": "Zachary Cavanell",
+          "description": "Access quality data, wherever it resides, with Microsoft Fabric, our next generation managed data and analytics service. Make data accessible across your entire data estate, without having to integrate different sources or work across multiple toolsets. Check out new data mirroring capabilities and AI-powered Copilot experiences, from building data pipelines, to creating predictive models and generating Power BI reports.\n \n\n \nMicrosoft Fabric is a single, fully managed service, that helps you derive quality data from raw fragmented data by using built-in capabilities for data integration, data engineering and data warehousing, as well as for building data science models, real-time analytics, business intelligence, and real-time monitoring and alerts to trigger actions when your data change…",
+          "link": "https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/microsoft-fabric-data-mirroring-and-copilot-updates/ba-p/3989633",
+          "publishedOn": "2023-11-22T03:54:04.000Z",
+          "wordCount": 11915,
+          "title": "Microsoft Fabric: Data mirroring and Copilot updates",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/528736iB28426B28AFF3235/image-size/original?v=v2&px=-1"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/microsoft-defender-xdr-security-copilot-amp-microsoft-sentinel/ba-p/3989312",
+          "author": "Zachary Cavanell",
+          "description": "Manage SIEM, XDR, and threat intelligence from one place with new updates in the Microsoft Defender portal. Interact with all of your security data using generative AI with Security Copilot. View incidents across your digital estate — whether they’re related to endpoints, SaaS services, your network in the cloud or on prem. This unified approach eliminates the inefficiency of SOC teams having to switch between multiple systems and manually piece together incident details, while maintaining all the current functionalities of each connected service.\n \n\n \nRob Lefferts joins Jeremy Chapman to discuss how the Defender experience has evolved into a unified security operations platform that combines threat detection, prevention, investigation, and response.\n \n \nManage your entire multicloud secur…",
+          "link": "https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/microsoft-defender-xdr-security-copilot-amp-microsoft-sentinel/ba-p/3989312",
+          "publishedOn": "2023-11-21T20:01:54.000Z",
+          "wordCount": 11505,
+          "title": "Microsoft Defender XDR, Security Copilot & Microsoft Sentinel now in one portal",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/528625i0B14650EEE06664D/image-size/original?v=v2&px=-1"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/what-is-the-windows-app-gpu-support-coming-to-windows-365/ba-p/3986533",
+          "author": "Zachary Cavanell",
+          "description": "Provide powerful Windows experiences on any device based on individual needs. Get a unified experience from the Windows App:\n\nWindows 365- provision Cloud PCs from Intune and manage them just like physical devices, and users get a full, secure desktop accessible from any device, anywhere.\nMicrosoft Dev Box- provision cloud-based developer workstations for specific projects, that can be customized with the tools and the code you need.\nAzure Virtual Desktop- provision and manage full virtual desktops and remote apps. Choose any VM configuration and deploy multi-session shared VMs.\n\n \n\n \nNew to Windows 365, take a closer look at options for more powerful GPU-enabled Cloud PCs, as well as AI-powered Cloud PC re-sizing recommendations. \n \nScott Manchester, who leads the team for Windows 365 and…",
+          "link": "https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/what-is-the-windows-app-gpu-support-coming-to-windows-365/ba-p/3986533",
+          "publishedOn": "2023-11-21T14:29:39.000Z",
+          "wordCount": 11935,
+          "title": "What is the Windows App? + GPU support coming to Windows 365",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/527557i8947E90023883603/image-size/original?v=v2&px=-1"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/how-microsoft-security-copilot-works/ba-p/3988604",
+          "author": "Zachary Cavanell",
+          "description": "Use GPT-powered natural language to investigate and respond to security incidents, threats and vulnerabilities with Microsoft Security Copilot, a new security AI assistant. Skilled with Microsoft’s vast cybersecurity expertise, it helps you perform common security-related tasks quickly using generative AI. This includes embedded experiences within Microsoft Defender XDR, Microsoft Intune for endpoint management, Microsoft Entra for identity and access management, and Microsoft Purview for data security. Security Copilot as an enterprise-grade natural language interface to your organization’s security data.\n \n \n\n \n \nRyan Munsch, from the Security Copilot team, joins host Jeremy Chapman to share how Security Copilot is like an enterprise-grade natural language interface to your organization’…",
+          "link": "https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/how-microsoft-security-copilot-works/ba-p/3988604",
+          "publishedOn": "2023-11-21T06:27:33.000Z",
+          "wordCount": 12803,
+          "title": "How Microsoft Security Copilot works",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/528400i69B7B4E3C01F1B0D/image-size/original?v=v2&px=-1"
+        },
         {
           "id": "https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/macos-management-with-microsoft-intune-deployment-single-sign-on/ba-p/3975717",
           "author": "Zachary Cavanell",
@@ -10398,26 +10438,6 @@
           "wordCount": 5539,
           "title": "Public Preview: Default Rule Set 2.1 for Regional WAF with Application Gateway",
           "imageUrl": "https://azurecomcdn.azureedge.net/cvt-cd7e7d02bb15fac24c2702d9d1eb989bf9cca47b303e484a00e960283d7c0449/images/shared/social/azure-icon-250x250.png"
-        },
-        {
-          "id": "azure-open-ai-service-on-your-data",
-          "author": null,
-          "description": "Introducing Azure OpenAI Service on your data in public preview, which unlocks the power of OpenAI models like ChatGPT and GPT-4 with your own data. It streamlines communication, enhances customer service, boosts productivity without training, provides access to specific data sources for accurate insights, and enables seamless data connectivity, web app deployment, and transformative conversational AI experiences.",
-          "link": "https://azure.microsoft.com/en-us/updates/azure-open-ai-service-on-your-data/",
-          "publishedOn": "2023-06-27T18:00:13.000Z",
-          "wordCount": 5558,
-          "title": "Public Preview: Azure OpenAI Service On Your Data",
-          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c34ccccd7cb5206901b89da17cc492321c45c56283a8d6c1768098aef9936897/images/shared/social/azure-icon-250x250.png"
-        },
-        {
-          "id": "preview-updates-azure-elastic-san-public-preview-improvements",
-          "author": null,
-          "description": "Introducing the latest update to Azure Elastic SAN (in preview), which now offers expanded range of regions, increased support for diverse workloads, and an array of new features.",
-          "link": "https://azure.microsoft.com/en-us/updates/preview-updates-azure-elastic-san-public-preview-improvements/",
-          "publishedOn": "2023-06-27T17:00:12.000Z",
-          "wordCount": 5583,
-          "title": "Preview Updates: Azure Elastic SAN Public Preview improvements",
-          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-c34ccccd7cb5206901b89da17cc492321c45c56283a8d6c1768098aef9936897/images/shared/social/azure-icon-250x250.png"
         }
       ]
     },
@@ -11150,31 +11170,6 @@
           "wordCount": 5317,
           "title": "Public preview of SharePoint Framework 1.18 – First release of upcoming features",
           "imageUrl": "https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2023/06/spfx-118-beta-blog-post.png"
-        },
-        {
-          "id": "https://devblogs.microsoft.com/microsoft365dev/?p=14420",
-          "author": "Brian T. Jackett",
-          "description": "Today, we are announcing the launch of the Microsoft 365 Developer Technology Adoption Program (TAP), an evolution of the Microsoft Graph TAP.\nThe post Announcing the Microsoft 365 Developer Technology Adoption Program (TAP) appeared first on Microsoft 365 Developer Blog.",
-          "link": "https://devblogs.microsoft.com/microsoft365dev/announcing-the-microsoft-365-developer-technology-adoption-program-tap/",
-          "publishedOn": "2023-06-27T17:41:36.000Z",
-          "wordCount": 4504,
-          "title": "Announcing the Microsoft 365 Developer Technology Adoption Program (TAP)",
-          "imageUrl": "https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2023/06/TAP-blog-image.jpg"
-        },
-        {
-          "id": "https://devblogs.microsoft.com/microsoft365dev/?p=14357",
-          "author": "Sébastien Levert",
-          "description": "Microsoft Graph Toolkit v3.0 is now generally available, packed with new features, capabilities and so much more.\nThe post Microsoft Graph Toolkit v3.0 is now generally available appeared first on Microsoft 365 Developer Blog.",
-          "link": "https://devblogs.microsoft.com/microsoft365dev/microsoft-graph-toolkit-v3-0-is-now-generally-available/",
-          "publishedOn": "2023-06-27T14:26:55.000Z",
-          "wordCount": 5388,
-          "title": "Microsoft Graph Toolkit v3.0 is now generally available",
-          "enclosure": {
-            "url": "https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2023/06/MGT-v3.0-Feature-Video.mp4",
-            "length": "6153888",
-            "type": "video/mp4"
-          },
-          "imageUrl": "https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2023/06/MGTv3-general-availability.jpg"
         }
       ]
     }
