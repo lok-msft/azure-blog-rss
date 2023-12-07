@@ -2090,6 +2090,16 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/highlights-from-net-conf-microsoft-ignite-and-github-universe/ba-p/4001895",
+          "author": "mpgraven",
+          "description": "With three big events, November was a month packed with exciting announcements, important product updates, and lots of learning opportunities. For this post, we’re highlighting news and insightful sessions from .NET Conf, Microsoft Ignite, and GitHub Universe.\n \nWatch .NET Conf 2023 on demandSessions from .NET Conf are now available to watch on demand. Find out how to create a full stack web UI with Blazor in .NET 8, build intelligent apps, learn GitHub Copilot tips for .NET developers, explore C# 12 features, and much more.\n \nDownload .NET 8Get started with .NET 8. Download .NET 8 now.\n \nWhat's new in C# 12Watch this session from .NET Conf on demand for a tour of what’s new in C# 12, including collection expressions, primary constructors, and demos of new features.\n \nBuild intelligent app…",
+          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/highlights-from-net-conf-microsoft-ignite-and-github-universe/ba-p/4001895",
+          "publishedOn": "2023-12-06T08:19:29.000Z",
+          "wordCount": 10774,
+          "title": "Highlights from .NET Conf, Microsoft Ignite, and GitHub Universe",
+          "imageUrl": "https://cdn.techcommunity.microsoft.com/assets/Azure/BlogPreview_default-blue.png"
+        },
+        {
           "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/preview-of-durable-functions-extension-v3-0-0/ba-p/4000452",
           "author": "naiyuantian",
           "description": "We have just released the preview of a new major version of the Durable Functions extension! \n \nDurable Functions (DF) enables you to write long-running, reliable, event-driven, and stateful logic on the Azure Functions platform using everyday imperative code. \n \nThere are two major changes introduced in this release: upgrading to the latest version of the Azure Storage SDK (a breaking change for .NET in-process apps) and the introduction of a new partition manager. We describe these and the motivation for each in the sections below. \n \nPlease note: \n\nAt this time, DF extension v3.0.0-rc.1 is only supported in the App Service Plan. Auto-scaling support for the Consumption and Elastic Premium plans will be announced later. \nDurable Functions v3 does not support Azure Functions runtime V1.  …",
@@ -4742,16 +4752,6 @@
           "wordCount": 12605,
           "title": "Disaster Recovery using cross-region replication with Azure NetApp Files datastores for AVS",
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/487836i19F2849BDBF0B0C4/image-size/original?v=v2&px=-1"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/building-a-private-chatgpt-interface-with-azure-openai/ba-p/3869522",
-          "author": "shanebaldacchino",
-          "description": "TLDR - You can test my implementation at https://privategpt.baldacchino.net. If this appears slow to first load, what is happening behind the scenes is a 'cold start' within Azure Container Apps. Cold Starts happen due to a lack of load. To reduce costs, I have configured Azure Container Apps to tear down my container environment when there is no load to zero containers. The loading is due to the container starting (Alpine Linux and NodeJS). Cold Starts are not really a thing for workloads under regular load.\nChat GPT is amazing on so many levels, and it's free. But you know what they say. If something is free, then you are the product!\nAs part of OpenAI's T&C, your prompts (the questions you ask) will be used to further train OpenAI's LLM (Large Language Model). Are you okay with this val…",
-          "link": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/building-a-private-chatgpt-interface-with-azure-openai/ba-p/3869522",
-          "publishedOn": "2023-07-10T06:59:04.000Z",
-          "wordCount": 11032,
-          "title": "Building a Private ChatGPT Interface With Azure OpenAI",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/487497i52163211C5CEE2FD/image-size/original?v=v2&px=-1"
         }
       ]
     },
@@ -5174,11 +5174,31 @@
           "id": "https://devblogs.microsoft.com/ise/?p=15137",
           "author": "Dexter Williams",
           "description": "Our team used Swaggo, a Golang Swagger tool, to expose an OpenAPI spec for a Azure Function hosted Golang API. This post describes what lead to the decision along with guidance on how to expose an OpenAPI spec for an Azure Function hosted Golang API.\nThe post Serving Swagger UI from a Golang Azure Function Custom Handler appeared first on ISE Developer Blog.",
+          "link": "https://devblogs.microsoft.com/ise/swaggerui-from-azfunc-custom-handler/",
+          "publishedOn": "2023-11-30T08:00:00.000Z",
+          "wordCount": 5762,
+          "title": "Serving Swagger UI from a Golang Azure Function Custom Handler",
+          "imageUrl": "https://devblogs.microsoft.com/ise/wp-content/uploads/sites/55/2023/11/azfunc-golang-swagger-flow.png"
+        },
+        {
+          "id": "https://devblogs.microsoft.com/ise/?p=15137",
+          "author": "Dexter Williams",
+          "description": "Our team used Swaggo, a Golang Swagger tool, to expose an OpenAPI spec for a Azure Function hosted Golang API. This post describes what lead to the decision along with guidance on how to expose an OpenAPI spec for an Azure Function hosted Golang API.\nThe post Serving Swagger UI from a Golang Azure Function Custom Handler appeared first on ISE Developer Blog.",
           "link": "https://devblogs.microsoft.com/ise/2023/11/30/swaggerui-from-azfunc-custom-handler/",
           "publishedOn": "2023-11-30T08:00:00.000Z",
           "wordCount": 5702,
           "title": "Serving Swagger UI from a Golang Azure Function Custom Handler",
           "imageUrl": "https://devblogs.microsoft.com/ise/wp-content/uploads/sites/55/2023/11/azfunc-golang-swagger-flow.png"
+        },
+        {
+          "id": "https://devblogs.microsoft.com/ise/?p=15128",
+          "author": "Maggie Salak",
+          "description": "In this blog post, we share how our team improved the performance of read operations on documents stored in Cosmos DB.\nThe post Patterns for optimizing data retrieval from Cosmos DB appeared first on ISE Developer Blog.",
+          "link": "https://devblogs.microsoft.com/ise/patterns-for-optimizing-data-retrieval-from-cosmos-db/",
+          "publishedOn": "2023-11-23T08:00:00.000Z",
+          "wordCount": 6561,
+          "title": "Patterns for optimizing data retrieval from Cosmos DB",
+          "imageUrl": "https://devblogs.microsoft.com/ise/wp-content/uploads/sites/55/2023/11/optimizing-data-retrieval-from-cosmos-db.png"
         },
         {
           "id": "https://devblogs.microsoft.com/ise/?p=15128",
@@ -5194,11 +5214,31 @@
           "id": "https://devblogs.microsoft.com/ise/?p=15118",
           "author": "Peter Lasne",
           "description": "This post shows using Azure Container Instances for job processing such as data generation and ingestion.\nThe post ACI for jobs appeared first on ISE Developer Blog.",
+          "link": "https://devblogs.microsoft.com/ise/aci-gen-ingest/",
+          "publishedOn": "2023-11-16T08:00:00.000Z",
+          "wordCount": 4512,
+          "title": "ACI for jobs",
+          "imageUrl": "https://devblogs.microsoft.com/ise/wp-content/uploads/sites/55/2023/11/aci-for-jobs.png"
+        },
+        {
+          "id": "https://devblogs.microsoft.com/ise/?p=15118",
+          "author": "Peter Lasne",
+          "description": "This post shows using Azure Container Instances for job processing such as data generation and ingestion.\nThe post ACI for jobs appeared first on ISE Developer Blog.",
           "link": "https://devblogs.microsoft.com/ise/2023/11/16/aci-gen-ingest/",
           "publishedOn": "2023-11-16T08:00:00.000Z",
           "wordCount": 4286,
           "title": "ACI for jobs",
           "imageUrl": "https://devblogs.microsoft.com/ise/wp-content/uploads/sites/55/2023/11/aci-for-jobs.png"
+        },
+        {
+          "id": "https://devblogs.microsoft.com/ise/?p=15109",
+          "author": "Tess Ferrandez Norlander",
+          "description": "Saving CO2 using location and time shifting in Azure\nThe post Saving CO2 using location and time shifting in Azure appeared first on ISE Developer Blog.",
+          "link": "https://devblogs.microsoft.com/ise/saving-co2-using-location-and-time-shifting-in-azure/",
+          "publishedOn": "2023-11-09T12:36:25.000Z",
+          "wordCount": 6800,
+          "title": "Saving CO2 using location and time shifting in Azure",
+          "imageUrl": "https://devblogs.microsoft.com/ise/wp-content/uploads/sites/55/2023/11/pexels-snapwire-windturbine.jpeg"
         },
         {
           "id": "https://devblogs.microsoft.com/ise/?p=15109",
@@ -5214,11 +5254,31 @@
           "id": "https://devblogs.microsoft.com/ise/?p=15100",
           "author": "Neeraj Mandal",
           "description": "4 key tips when developing production ready Spring Boot REST API\nThe post 4 Key Tips: Production-Ready Spring Boot REST API with PostgreSQL appeared first on ISE Developer Blog.",
+          "link": "https://devblogs.microsoft.com/ise/4-key-tips-production-ready-spring-boot-rest-api-with-postgresql-jpg/",
+          "publishedOn": "2023-11-02T07:00:00.000Z",
+          "wordCount": 4899,
+          "title": "4 Key Tips: Production-Ready Spring Boot REST API with PostgreSQL",
+          "imageUrl": "https://devblogs.microsoft.com/ise/wp-content/uploads/sites/55/2023/07/MicrosoftTeams-image-33.jpg"
+        },
+        {
+          "id": "https://devblogs.microsoft.com/ise/?p=15100",
+          "author": "Neeraj Mandal",
+          "description": "4 key tips when developing production ready Spring Boot REST API\nThe post 4 Key Tips: Production-Ready Spring Boot REST API with PostgreSQL appeared first on ISE Developer Blog.",
           "link": "https://devblogs.microsoft.com/ise/2023/11/02/4-key-tips-production-ready-spring-boot-rest-api-with-postgresql-jpg/",
           "publishedOn": "2023-11-02T07:00:00.000Z",
           "wordCount": 4851,
           "title": "4 Key Tips: Production-Ready Spring Boot REST API with PostgreSQL",
           "imageUrl": "https://devblogs.microsoft.com/ise/wp-content/uploads/sites/55/2023/07/MicrosoftTeams-image-33.jpg"
+        },
+        {
+          "id": "https://devblogs.microsoft.com/ise/?p=15095",
+          "author": "Kshitij Sharma",
+          "description": "An innovative solution has been developed to address challenges in deploying applications in distributed environments with multiple clusters. These challenges encompass scenarios like edge deployments across regions and distributing components across numerous co-located clusters. While Kubernetes is commonly used for orchestrating deployments through YAML descriptors, GitOps tools such as Flux, ArgoCD, and Jenkins X automate deployment management. However, as cluster numbers increase, issues arise regarding organization, configuration, and scalability. To tackle these challenges, a Control Plane-based deployment application has been created. It functions using a logical data model stored in an inventory database.\nThe post Multi-Cluster Application Deployments to Kubernetes at Scale at Edge appeared first on ISE Developer Blog.",
+          "link": "https://devblogs.microsoft.com/ise/multi-cluster-kubernetes-deployment-at-scale/",
+          "publishedOn": "2023-10-26T07:00:00.000Z",
+          "wordCount": 4910,
+          "title": "Multi-Cluster Application Deployments to Kubernetes at Scale at Edge",
+          "imageUrl": "https://devblogs.microsoft.com/ise/wp-content/uploads/sites/55/2023/10/control-plane-architecture-high-level-880x1024.png"
         },
         {
           "id": "https://devblogs.microsoft.com/ise/?p=15095",
@@ -5234,11 +5294,31 @@
           "id": "https://devblogs.microsoft.com/ise/?p=15081",
           "author": "Shinoj Zacharias",
           "description": "In this post, we will describe how to build a data ingestion framework that receives payment transaction events from internal or external payment service providers and process the events in real-time. The ingested payment data can be used to provide the real time view of the payment transactions to merchants to improve the payment experience of the retail end customers.\nThe post Build a robust transaction processing solutions to improve payment experience of retail end customers appeared first on ISE Developer Blog.",
+          "link": "https://devblogs.microsoft.com/ise/build_robust_transaction_processing_solutions_to_improve_payment_experience_of_retail_end_customers/",
+          "publishedOn": "2023-10-19T07:00:00.000Z",
+          "wordCount": 6870,
+          "title": "Build a robust transaction processing solutions to improve payment experience of retail end customers",
+          "imageUrl": "https://devblogs.microsoft.com/ise/wp-content/uploads/sites/55/2023/10/payment.jpg"
+        },
+        {
+          "id": "https://devblogs.microsoft.com/ise/?p=15081",
+          "author": "Shinoj Zacharias",
+          "description": "In this post, we will describe how to build a data ingestion framework that receives payment transaction events from internal or external payment service providers and process the events in real-time. The ingested payment data can be used to provide the real time view of the payment transactions to merchants to improve the payment experience of the retail end customers.\nThe post Build a robust transaction processing solutions to improve payment experience of retail end customers appeared first on ISE Developer Blog.",
           "link": "https://devblogs.microsoft.com/ise/2023/10/19/build_robust_transaction_processing_solutions_to_improve_payment_experience_of_retail_end_customers/",
           "publishedOn": "2023-10-19T07:00:00.000Z",
           "wordCount": 6516,
           "title": "Build a robust transaction processing solutions to improve payment experience of retail end customers",
           "imageUrl": "https://devblogs.microsoft.com/ise/wp-content/uploads/sites/55/2023/10/payment.jpg"
+        },
+        {
+          "id": "https://devblogs.microsoft.com/ise/?p=15071",
+          "author": "Stewart Adam",
+          "description": "Guidance when writing your own RBAC API for your application.\nThe post Authoring an RBAC API for your application appeared first on ISE Developer Blog.",
+          "link": "https://devblogs.microsoft.com/ise/rbac-api-for-your-application/",
+          "publishedOn": "2023-10-12T07:00:00.000Z",
+          "wordCount": 6209,
+          "title": "Authoring an RBAC API for your application",
+          "imageUrl": "https://devblogs.microsoft.com/ise/wp-content/uploads/sites/55/2023/10/hero-image.jpg"
         },
         {
           "id": "https://devblogs.microsoft.com/ise/?p=15071",
@@ -5264,11 +5344,31 @@
           "id": "https://devblogs.microsoft.com/ise/?p=15032",
           "author": "Benjamin GUINEBERTIERE",
           "description": "How we coded with customer team to build a first version of their federated data catalog, with Microsoft Purview.\nThe post Coding with Customer: A Story of Building a Federated Data Catalog with Microsoft Purview appeared first on ISE Developer Blog.",
+          "link": "https://devblogs.microsoft.com/ise/federated-data-catalog-purview/",
+          "publishedOn": "2023-09-27T07:00:00.000Z",
+          "wordCount": 5721,
+          "title": "Coding with Customer: A Story of Building a Federated Data Catalog with Microsoft Purview",
+          "imageUrl": "https://devblogs.microsoft.com/ise/wp-content/uploads/sites/55/2023/09/marshmallow-challenge.jpeg"
+        },
+        {
+          "id": "https://devblogs.microsoft.com/ise/?p=15032",
+          "author": "Benjamin GUINEBERTIERE",
+          "description": "How we coded with customer team to build a first version of their federated data catalog, with Microsoft Purview.\nThe post Coding with Customer: A Story of Building a Federated Data Catalog with Microsoft Purview appeared first on ISE Developer Blog.",
           "link": "https://devblogs.microsoft.com/ise/2023/09/27/federated-data-catalog-purview/",
           "publishedOn": "2023-09-27T07:00:00.000Z",
           "wordCount": 5418,
           "title": "Coding with Customer: A Story of Building a Federated Data Catalog with Microsoft Purview",
           "imageUrl": "https://devblogs.microsoft.com/ise/wp-content/uploads/sites/55/2023/09/marshmallow-challenge.jpeg"
+        },
+        {
+          "id": "https://devblogs.microsoft.com/cse/?p=15011",
+          "author": "Juan Burckhardt",
+          "description": "This post will highlight some of the challenges teams can experience while CI/CD-ing with Azure Container Apps.\nThe post Lessons Learned In The Field For DevOps And Azure Container Apps appeared first on ISE Developer Blog.",
+          "link": "https://devblogs.microsoft.com/ise/lessons-learned-in-the-field-for-devops-and-azure-container-app/",
+          "publishedOn": "2023-09-12T19:00:00.000Z",
+          "wordCount": 5952,
+          "title": "Lessons Learned In The Field For DevOps And Azure Container Apps",
+          "imageUrl": "https://devblogs.microsoft.com/ise/wp-content/uploads/sites/55/2023/09/devops-in-containerapps.png"
         },
         {
           "id": "https://devblogs.microsoft.com/cse/?p=15011",
@@ -5639,6 +5739,16 @@
       "feedUrl": "https://devblogs.microsoft.com/python/feed/",
       "siteUrl": "https://devblogs.microsoft.com/python/",
       "articles": [
+        {
+          "id": "https://devblogs.microsoft.com/python/?p=9533",
+          "author": "Dawn Wages",
+          "description": "Power user settings when enabling your Python linter in VS Code. The goal is for your developer experience to be intuitive, replicable, and shareable.\nThe post Python Linting in Visual Studio Code – Hinting and Linting Video Series appeared first on Python.",
+          "link": "https://devblogs.microsoft.com/python/python-linting-video/",
+          "publishedOn": "2023-12-06T19:29:39.000Z",
+          "wordCount": 5472,
+          "title": "Python Linting in Visual Studio Code – Hinting and Linting Video Series",
+          "imageUrl": "https://devblogs.microsoft.com/python/wp-content/uploads/sites/12/2023/07/Hinting-and-Linting-in-VS-Code.png"
+        },
         {
           "id": "https://devblogs.microsoft.com/python/?p=9502",
           "author": "Courtney Webster",
@@ -7189,6 +7299,96 @@
       "feedUrl": "https://azurecomcdn.azureedge.net/en-us/updates/feed/?updateType=features",
       "siteUrl": "https://azure.microsoft.com/en-us/updates/",
       "articles": [
+        {
+          "id": "generally-available-aks-support-for-api-breaking-change-detection",
+          "author": null,
+          "description": "AKS now alerts you on API breaking changes on minor version change cluster upgrades.",
+          "link": "https://azure.microsoft.com/en-us/updates/generally-available-aks-support-for-api-breaking-change-detection/",
+          "publishedOn": "2023-12-06T18:00:15.000Z",
+          "wordCount": 5370,
+          "title": "Generally Available: AKS support for API breaking change detection",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-a445e61cfbeff435277248db36d94a9bd1f65e0397ebca433c8537dd4cb810c0/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "ga-azure-sql-trigger-for-azure-functions",
+          "author": null,
+          "description": "Users can now build application logic in Azure Function apps which can be driven by the data from Azure SQL database.",
+          "link": "https://azure.microsoft.com/en-us/updates/ga-azure-sql-trigger-for-azure-functions/",
+          "publishedOn": "2023-12-06T18:00:15.000Z",
+          "wordCount": 5517,
+          "title": "GA: Azure SQL Trigger for Azure Functions",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-a445e61cfbeff435277248db36d94a9bd1f65e0397ebca433c8537dd4cb810c0/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "public-preview-node-autoprovision-support-in-aks",
+          "author": null,
+          "description": "AKS can now take care of VM SKU selection based on the workloads you are scheduling rather than you having to pre-allocate node pools of a certain SKU type.",
+          "link": "https://azure.microsoft.com/en-us/updates/public-preview-node-autoprovision-support-in-aks/",
+          "publishedOn": "2023-12-06T18:00:15.000Z",
+          "wordCount": 5360,
+          "title": "Public preview: Node autoprovision support in AKS",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-a445e61cfbeff435277248db36d94a9bd1f65e0397ebca433c8537dd4cb810c0/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "generally-available-azure-functions-support-on-apple-silicon-macs",
+          "author": null,
+          "description": "You can now develop Azure Functions locally on the new Apple Silicon Macs.",
+          "link": "https://azure.microsoft.com/en-us/updates/generally-available-azure-functions-support-on-apple-silicon-macs/",
+          "publishedOn": "2023-12-06T18:00:13.000Z",
+          "wordCount": 5314,
+          "title": "Generally Available: Azure Functions support on Apple Silicon Macs",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-a445e61cfbeff435277248db36d94a9bd1f65e0397ebca433c8537dd4cb810c0/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "general-availability-connection-audit-logs-for-enterprise-tier-caches-for-azure-cache-for-redis",
+          "author": null,
+          "description": "Log all connections to your cache.",
+          "link": "https://azure.microsoft.com/en-us/updates/general-availability-connection-audit-logs-for-enterprise-tier-caches-for-azure-cache-for-redis/",
+          "publishedOn": "2023-12-06T17:00:14.000Z",
+          "wordCount": 5398,
+          "title": "General Availability: Connection audit logs for Enterprise tier caches for Azure Cache for Redis",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-a445e61cfbeff435277248db36d94a9bd1f65e0397ebca433c8537dd4cb810c0/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "public-preview-accelerated-logs-in-azure-database-for-mysql-flexible-server",
+          "author": null,
+          "description": "Gain a performance boost in the Business-Critical service tier of Azure Database for MySQL - Flexible Server with accelerated logs.",
+          "link": "https://azure.microsoft.com/en-us/updates/public-preview-accelerated-logs-in-azure-database-for-mysql-flexible-server/",
+          "publishedOn": "2023-12-06T17:00:14.000Z",
+          "wordCount": 5349,
+          "title": "Public Preview: Accelerated logs in Azure Database for MySQL - Flexible Server",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-a445e61cfbeff435277248db36d94a9bd1f65e0397ebca433c8537dd4cb810c0/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "generally-available-postgresql-16-support-in-azure-database-for-postgresql-flexible-server",
+          "author": null,
+          "description": "Unlock advanced logical replication, query optimizations, and faster data loading with PostgreSQL 16 on Azure Database for PostgreSQL – Flexible Server.",
+          "link": "https://azure.microsoft.com/en-us/updates/generally-available-postgresql-16-support-in-azure-database-for-postgresql-flexible-server/",
+          "publishedOn": "2023-12-06T17:00:13.000Z",
+          "wordCount": 5440,
+          "title": "Generally available: PostgreSQL 16 support in Azure Database for PostgreSQL – Flexible Server",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-a445e61cfbeff435277248db36d94a9bd1f65e0397ebca433c8537dd4cb810c0/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "public-preview-azure-database-for-postgresql-flexible-server-enhanced-disaster-recovery-features",
+          "author": null,
+          "description": "Explore advanced disaster recovery with Virtual Endpoints and seamless role-swapping in Azure Database for PostgreSQL.",
+          "link": "https://azure.microsoft.com/en-us/updates/public-preview-azure-database-for-postgresql-flexible-server-enhanced-disaster-recovery-features/",
+          "publishedOn": "2023-12-06T17:00:12.000Z",
+          "wordCount": 5456,
+          "title": "Public Preview: Azure Database for PostgreSQL - Flexible Server, enhanced disaster recovery features",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-a445e61cfbeff435277248db36d94a9bd1f65e0397ebca433c8537dd4cb810c0/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "ga-azure-kubernetes-service-aks-support-for-5k-node-limit-by-default-for-standard-tier-clusters",
+          "author": null,
+          "description": "You can now scale your AKS clusters to larger than 1000 nodes without having to request any special limit increases or whitelisting.",
+          "link": "https://azure.microsoft.com/en-us/updates/ga-azure-kubernetes-service-aks-support-for-5k-node-limit-by-default-for-standard-tier-clusters/",
+          "publishedOn": "2023-12-06T16:00:12.000Z",
+          "wordCount": 5417,
+          "title": "GA: Azure Kubernetes Service (AKS) support for 5K Node limit by default for Standard tier clusters",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-a445e61cfbeff435277248db36d94a9bd1f65e0397ebca433c8537dd4cb810c0/images/shared/social/azure-icon-250x250.png"
+        },
         {
           "id": "generally-available-azure-site-recovery-update-rollup-69-november-2023",
           "author": null,
