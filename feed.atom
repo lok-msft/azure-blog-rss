@@ -2,10 +2,134 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2023-12-19T01:04:43.767Z</updated>
+    <updated>2023-12-20T00:53:40.654Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Generally Available: Azure Red Hat OpenShift v4.13 at install time]]></title>
+        <id>generally-available-azure-red-hat-openshift-v413-at-install-time</id>
+        <link href="https://azure.microsoft.com/en-us/updates/generally-available-azure-red-hat-openshift-v413-at-install-time/"/>
+        <updated>2023-12-19T16:00:58.000Z</updated>
+        <summary type="html"><![CDATA[Azure Red Hat OpenShift version 4.13 is now available at install time.]]></summary>
+        <author>
+            <name>Azure service updates</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Top 5 AppSource validation errors for Office Add-ins submissions – December 2023]]></title>
+        <id>https://devblogs.microsoft.com/microsoft365dev/?p=17026</id>
+        <link href="https://devblogs.microsoft.com/microsoft365dev/top-5-appsource-validation-errors-for-office-add-ins-submissions-december-2023/"/>
+        <updated>2023-12-19T15:07:48.000Z</updated>
+        <summary type="html"><![CDATA[AppSource validation ensures your Office Add-in submission follows Microsoft’s quality standards. In this post, you’ll learn about what the affected AppSource policies are looking for so you can be confident your Office Add-in submission won’t hit these issues. 
+The post Top 5 AppSource validation errors for Office Add-ins submissions – December 2023 appeared first on Microsoft 365 Developer Blog.]]></summary>
+        <author>
+            <name>Elizabeth Samuel</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Scaling IoT/Time Series/Metering Workloads with Azure Cosmos DB for PostgreSQL]]></title>
+        <id>https://devblogs.microsoft.com/cosmosdb/?p=7320</id>
+        <link href="https://devblogs.microsoft.com/cosmosdb/scaling-iot-time-series-metering-workloads-with-azure-cosmos-db-for-postgresql/"/>
+        <updated>2023-12-19T15:00:06.000Z</updated>
+        <summary type="html"><![CDATA[Introduction :
+The post Scaling IoT/Time Series/Metering Workloads with Azure Cosmos DB for PostgreSQL appeared first on Azure Cosmos DB Blog.]]></summary>
+        <author>
+            <name>Brian McKerr</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[PowerShell Script to disable Public Network Access for Azure Relay]]></title>
+        <id>https://techcommunity.microsoft.com/t5/azure-paas-blog/powershell-script-to-disable-public-network-access-for-azure/ba-p/3981684</id>
+        <link href="https://techcommunity.microsoft.com/t5/azure-paas-blog/powershell-script-to-disable-public-network-access-for-azure/ba-p/3981684"/>
+        <updated>2023-12-19T14:41:42.000Z</updated>
+        <summary type="html"><![CDATA[Scenario: PowerShell script to disable Public Network access for Azure Relay
+ 
+In today’s azure world, it is always better to do automations rather than do a Manual work. It becomes a headache for all of us to navigate to Azure Portal 
+ 
+Here is the simple way to disable Public Network access by using PowerShell script.
+ 
+Solution:
+ 
+ 
+Connect-AzAccount
+Set-AzContext -SubscriptionId "<Sub ID>"
+$accessToken = $(Get-AzAccessToken).Token
+$body = '{"location": "xxxxxx","properties": {"publicNetworkAccess": "Disabled","defaultAction": "Deny","virtualNetworkRules": [],"ipRules": []}}' | ConvertTo-Json
+$obj = ConvertFrom-Json -InputObject $body
+$uri = 'https://management.azure.com/subscriptions/<Sub ID>/resourceGroups/<RG>/providers/Microsoft.Relay/namespaces/<NS>/networkrulesets/default?api-version=2021-11-01'
+Invoke-RestMethod -Method PUT -Uri $uri -Headers @{ "Authorization" = "Bearer $accessToken" } -Body $obj -ContentType "application/json"
+
+ 
+ 
+ 
+Please find below steps on how to run the PowerShell script to disable Public Network access for Azure Relay. 
+ 
+Step 1: Login to Azure portal
+ 
+Step 2: Open Azure PowerShell terminal and connect to your Azure account using any of options mentioned in Authentication Methods
+ 
+Step 3: Just add the Resource Group name and Subscription Id and Relay namespace.
+ 
+Step 4: Run the above commands to enable Public Network access for Azure Relay
+ 
+Reference Links: -
+Network security for Azure Relay - Azure Relay | Microsoft Learn
+ 
+Happy Learning]]></summary>
+        <author>
+            <name>sudeshna</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How to Get Started with Copilot in Microsoft Dataverse]]></title>
+        <id>https://techcommunity.microsoft.com/t5/educator-developer-blog/how-to-get-started-with-copilot-in-microsoft-dataverse/ba-p/3971451</id>
+        <link href="https://techcommunity.microsoft.com/t5/educator-developer-blog/how-to-get-started-with-copilot-in-microsoft-dataverse/ba-p/3971451"/>
+        <updated>2023-12-19T08:01:00.000Z</updated>
+        <summary type="html"><![CDATA[Microsoft Dataverse is a a scalable cloud database and data service as a result users can define workflows and business rules while still having access to security and data management capabilities. Furthermore, Dataverse facilitates appropriate data modelling by creating relationships between related tables.
+ 
+Copilot in Microsoft Dataverse is amazing especially with being able to provide the table, columns including data types we need and suggested sample data with a simple prompt and can also make changes to the Dataverse table like add and remove columns, change data types of columns and more by the use of prompts.
+ 
+Presently, we have two ways where Copilot works in Microsoft Dataverse. 
+ 
+In this blog post, I will be showing you how you can upload an Employee record excel file to Data…]]></summary>
+        <author>
+            <name>RachelIrabor</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Hands-On Azure Container Apps 101 — Deploying a scalable Go-Backend]]></title>
+        <id>https://devblogs.microsoft.com/premier-developer/?p=41643</id>
+        <link href="https://devblogs.microsoft.com/premier-developer/hands-on-azure-container-apps-101-deploying-a-scalable-go-backend/"/>
+        <updated>2023-12-19T07:41:31.000Z</updated>
+        <summary type="html"><![CDATA[David Minkovski shares a hands-on guide to explore the power and simplicity of Azure Container Apps and Azure Front Door as a great alternative to Azure Kubernetes Services and other Kubernetes implementations for developers.
+Motivation
+The post Hands-On Azure Container Apps 101 — Deploying a scalable Go-Backend appeared first on Developer Support.]]></summary>
+        <author>
+            <name>Developer Support</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Relationship Advice from Data API builder]]></title>
+        <id>https://devblogs.microsoft.com/azure-sql/?p=2751</id>
+        <link href="https://devblogs.microsoft.com/azure-sql/data-api-builder-relationships/"/>
+        <updated>2023-12-19T02:52:46.000Z</updated>
+        <summary type="html"><![CDATA[Data API builder exposes REST endpoints for MySQL, PostgreSQL, Cosmos DB, SQL Server and Azure SQL. REST (Representational State Transfer) endpoints allow developers to easily query a single table, view or stored procedure. However, Data API builder also exposes Graph QL endpoints.
+The post Relationship Advice from Data API builder appeared first on Azure SQL Devs’ Corner.]]></summary>
+        <author>
+            <name>Jerry Nixon (SQL)</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[This Week in Spring - December 19th, 2023]]></title>
+        <id>https://spring.io/blog/2023/12/19/this-week-in-spring-december-19th-2023</id>
+        <link href="https://spring.io/blog/2023/12/19/this-week-in-spring-december-19th-2023"/>
+        <updated>2023-12-19T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Level up your Java code and explore what Spring can do for you.]]></summary>
+        <author>
+            <name>Josh Long</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Generally Available: Multi-line Logging Feature in Azure Monitor - Container Insights]]></title>
         <id>multiline-logging</id>
@@ -111,6 +235,23 @@ In the previous post, we talked about the implementation details of how the dem
 The post How to enhance your chatbot so it can retrieve data from multiple data sources & orchestrate its own plan with C# Semantic Kernel, planner & Azure OpenAI – part 3 (demo app) appeared first on Developer Support.]]></summary>
         <author>
             <name>Developer Support</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[ETL with Python and Jupyter Notebooks in the Cloud]]></title>
+        <id>https://techcommunity.microsoft.com/t5/educator-developer-blog/etl-with-python-and-jupyter-notebooks-in-the-cloud/ba-p/4010455</id>
+        <link href="https://techcommunity.microsoft.com/t5/educator-developer-blog/etl-with-python-and-jupyter-notebooks-in-the-cloud/ba-p/4010455"/>
+        <updated>2023-12-16T20:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Did you know it’s possible to turn a csv file into JSON?  In this article, we'll delve into the intriguing realm of ETL. You’ll learn what it is, how it works, and see it in action with a sample that you can try with the cloud-based development environment GitHub Codespaces.
+ 
+What is ETL?
+ETL, which stands for Extract, Transform and Load is a common process that data professionals (like data engineers and analysts) use to collect data from various sources, refining and processing it into a format that makes it useful for gathering important information, and finally sending it to its final destination so it can be used for further analysis and reporting.
+Orange juice factory - Image generated by Dall-E
+ 
+ 
+You can compare ETL to the journey of an orange that becomes a refreshing glass of o…]]></summary>
+        <author>
+            <name>jasminegreenaway</name>
         </author>
     </entry>
     <entry>
@@ -14771,72 +14912,6 @@ Understanding Microsoft 365 Developer Tenants
 Before we delve into the process of provisioning a developer tenant, let's briefly understand what a Microsoft 365 developer tenant is and its si…]]></summary>
         <author>
             <name>japhletnwamu</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Master the Power Platform: Join the Ultimate Power Apps Challenge by Contoso Estate!]]></title>
-        <id>https://techcommunity.microsoft.com/t5/educator-developer-blog/master-the-power-platform-join-the-ultimate-power-apps-challenge/ba-p/3880333</id>
-        <link href="https://techcommunity.microsoft.com/t5/educator-developer-blog/master-the-power-platform-join-the-ultimate-power-apps-challenge/ba-p/3880333"/>
-        <updated>2023-07-22T07:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Shine with a Power Apps Challenge for Contoso Estate! 
-Learn by doing! Join this beginner challenge to develop your Power Platform skills.
-Benefits:
-- Create a portfolio-worthy project
-- Chance to be featured in Power Apps Gallery
-- Boost your Power Apps development confidence
-About the Challenge:
-Contoso  (Fictional), a real estate company, needs a Power Apps Developer to automate their Estate Management Operations.
-Scenario:
-To ensure security, visitors need a passcode to enter the estate. The passcode comprises:
-Passcode = Street Unique Shortcode + House Number + Word for the day (randomly generated).
-Challenges:
-
-Costly and time-consuming phone calls for passcode requests
-Delay due to multiple callers
-Security team burnout from handling numerous calls daily
-Human resources needed for t…]]></summary>
-        <author>
-            <name>theoyinbooke</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Automate Business Email Management Using AI Builder and Power Apps: Step-by-Step Guide]]></title>
-        <id>https://techcommunity.microsoft.com/t5/educator-developer-blog/automate-business-email-management-using-ai-builder-and-power/ba-p/3871335</id>
-        <link href="https://techcommunity.microsoft.com/t5/educator-developer-blog/automate-business-email-management-using-ai-builder-and-power/ba-p/3871335"/>
-        <updated>2023-07-21T07:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Welcome to our comprehensive blog on efficient inbox management! If you've ever found yourself drowning in a sea of emails, struggling to prioritize and respond to critical messages, this guide is tailor-made for you. We'll walk you through a step-by-step Low-Code to No-Code journey, leveraging the power of AI and Power Apps to streamline your email handling process.
-Imagine having a dedicated inbox for Feedback, Issues, or your usual emails, and being able to automatically categorize them based on their importance. No more sifting through countless messages or missing crucial communications. Whether you're a busy professional, a startup entrepreneur, or just someone seeking better email organization, we've got you covered.
-With a Microsoft 365 subscription and a Power Apps Developer Plan …]]></summary>
-        <author>
-            <name>JohnAziz</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Build Your Own Chatbot in Minutes with Power Virtual Agents: No Coding Required!]]></title>
-        <id>https://techcommunity.microsoft.com/t5/educator-developer-blog/build-your-own-chatbot-in-minutes-with-power-virtual-agents-no/ba-p/3869323</id>
-        <link href="https://techcommunity.microsoft.com/t5/educator-developer-blog/build-your-own-chatbot-in-minutes-with-power-virtual-agents-no/ba-p/3869323"/>
-        <updated>2023-07-20T07:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Introducing the Power of Power Virtual Agent: Building Chatbots Made Easy
- 
-In today's fast-paced digital world, automation and efficiency are key to success. And when it comes to streamlining tasks and reducing manual work, chatbots have emerged as game-changers for organizations and individuals alike. But what if you don't have programming knowledge? Is building a chatbot out of your reach?
- 
-Enter Power Virtual Agent, the groundbreaking platform developed by Microsoft. In this blog, we'll delve into the world of chatbot creation without writing a single line of code. We'll explore how Power Virtual Agent empowers anyone to design and customize AI-powered chatbots effortlessly, regardless of their technical background.
- 
-Our journey begins with a conversation between myself and Lee Stott…]]></summary>
-        <author>
-            <name>Vinayak_Gavariya</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Empowering Medicine with Responsible AI Solutions: A Journey through the Medical-Themed Hackathon]]></title>
-        <id>https://techcommunity.microsoft.com/t5/educator-developer-blog/empowering-medicine-with-responsible-ai-solutions-a-journey/ba-p/3875217</id>
-        <link href="https://techcommunity.microsoft.com/t5/educator-developer-blog/empowering-medicine-with-responsible-ai-solutions-a-journey/ba-p/3875217"/>
-        <updated>2023-07-19T19:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Introduction
-The world of medicine has always been at the forefront of innovation, constantly striving to improve patient care and outcomes. With the rise of Artificial Intelligence (AI), a new era of possibilities has emerged, offering groundbreaking solutions to complex medical challenges. In this context, a medical-themed hackathon took center stage, emphasizing the importance of responsible AI solutions and rapid prototyping using low-code platforms like Microsoft Power Platform.
-This hackathon solution example aims to tackle a pressing issue in healthcare: accurately diagnosing pneumonia, a common and potentially life-threatening lung infection. The challenge lies in distinguishing pneumonia from other lung conditions, such as lung cancer, which can lead to misdiagnoses and delayed tr…]]></summary>
-        <author>
-            <name>PascalBurume</name>
         </author>
     </entry>
 </feed>
