@@ -2040,6 +2040,16 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/troubleshooting-guide-resolving-azure-app-services-image-pull/ba-p/4010201",
+          "author": "AntonioTerra",
+          "description": "Welcome to our comprehensive guide dedicated to resolving challenges that arise when Azure App Services encounter difficulties pulling images from the Azure Container Registry (ACR). Deploying applications seamlessly often hinges on a smooth image retrieval process, and encountering obstacles during this phase can disrupt the entire deployment workflow. \n \nIn this guide, we'll delve into a step-by-step checklist meticulously designed to diagnose and troubleshoot these issues effectively. From initial authentication, those include Admin Credentials, Managed Identity and access permissions to navigating complex network configurations for both Public and Private ingress on the ACR, this resource aims to be your go-to reference for untangling and resolving image pull issues within the Azure ec…",
+          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/troubleshooting-guide-resolving-azure-app-services-image-pull/ba-p/4010201",
+          "publishedOn": "2023-12-20T11:32:04.000Z",
+          "wordCount": 10790,
+          "title": "Troubleshooting Guide: Resolving Azure App Services Image Pull Issues from Azure Container Registry",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/535119i96CA6E0747A1E1D6/image-size/original?v=v2&px=-1"
+        },
+        {
           "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/java-on-azure-container-apps-build-and-deploy-polyglot-apps-in/ba-p/4007360",
           "author": "Sean_Li",
           "description": "Welcome to the first episode of the Java on Azure Container Apps blog series! In case you missed the introductory episode, you can read it here to get a sense of what it’s about and what you can expect to see in the future.\nThis blog is based on the Spring Petclinic project with a REST backend and an Angular frontend. The objective is to build and deploy Petclinic on Azure Container Apps and we’ll carry it out in 2 steps:\n\nBuild and deploy a Spring REST app to Azure Container Apps directly from the source. \nPackage the front-end Angular app in a container first and deploy it to Azure Container Apps.\n\nBuild and deploy a Spring app to Azure Container Apps\nAs a developer, you always want to prioritize retaining the inner loop workflow and developer experience during the coding and testing pha…",
@@ -3248,16 +3258,6 @@
           "wordCount": 10635,
           "title": "What’s new for Windows Containers on Azure App Service?",
           "imageUrl": "https://cdn.techcommunity.microsoft.com/assets/Azure/BlogPreview_default-blue.png"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/how-to-increase-concurrency-on-python-function-app-hosted-in-app/ba-p/3882010",
-          "author": "Tony_Ju",
-          "description": "There are multiple ways to increase the concurrency of python function app. I drew an architecture diagram, which can give us an overall understanding of the function app.\n \n\nBased on the diagram, we can see we could increase function app concurrency by increasing instance count, python worker count and thread count. To better understand this, I build several labs to validate this. I will not demonstrate instance count as it is easy to understand. All these labs are having 4 concurrent incoming requests and each request takes 10 seconds to complete.\n \nLab1:\ncode:\nsync\n\nConfiguration:\nmaxConcurrentRequests : 4FUNCTIONS_WORKER_PROCESS_COUNT=1PYTHON_THREADPOOL_THREAD_COUNT=1\nResult:\nIt took 40 seconds to complete the 4 executions. We can see these 4 executions were triggered at the same time, this is because the function host level is using async. But actually these executions are executed one by one.\n\nLab2:\ncode: The same as Lab1.\nConfiguration:\nmaxConcurrentRequests : 4FUNCTIONS_WORKER_PROCESS_COUNT=1PYTHON_THREADPOOL_THREAD_COUNT=2\nResult:\nIt took 20 seconds to complete the 4 executions.\n\n \nLab3:\ncode: The same as Lab1.\nConfiguration:\nmaxConcurrentRequests : 4FUNCTIONS_WORKER_PROCESS_COUNT=2PYTHON_THREADPOOL_THREAD_COUNT=2\nResult:\nIt took 10 seconds to complete the 4 executions.\n\nLab4:\ncode:\nasync\n\nConfiguration:\nmaxConcurrentRequests : 4FUNCTIONS_WORKER_PROCESS_COUNT=1PYTHON_THREADPOOL_THREAD_COUNT=1\nResult:\nIt took 10 seconds to complete the 4 executions.\n\n \nConclusion:\n1.We can increase the concurrency by increasing FUNCTIONS_WORKER_PROCESS_COUNT and PYTHON_THREADPOOL_THREAD_COUNT. Just note that we can configure the concurrent setting in host.json file. This is the bottleneck of the concurrency. \n2.It is more recommended to use async method instead of sync method as async has better performance than sync with the same configuration.\n \nReference link:\nAzure Functions HTTP triggers and bindings | Microsoft Learn\nImprove throughput performance of Python apps in Azure Functions | Microsoft Learn",
-          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/how-to-increase-concurrency-on-python-function-app-hosted-in-app/ba-p/3882010",
-          "publishedOn": "2023-07-24T07:26:58.000Z",
-          "wordCount": 9798,
-          "title": "How to increase concurrency on python function app hosted in app service plan?",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/491754i7A5CE1AE2C6A56B8/image-size/large?v=v2&px=999"
         }
       ]
     },
@@ -5368,6 +5368,16 @@
       "siteUrl": "https://devblogs.microsoft.com/java/",
       "articles": [
         {
+          "id": "https://devblogs.microsoft.com/java/?p=230327",
+          "author": "Nick Zhu",
+          "description": "Hi everyone, welcome to the December update for Visual Studio Code for Java! We wish everyone a Merry Christmas and Happy New Year! In this blog we have tons of exciting new features including test coverage, UX updates as well as Spring Boot updates.\nThe post Java on Visual Studio Code Update – December 2023 appeared first on Microsoft for Java Developers.",
+          "link": "https://devblogs.microsoft.com/java/java-on-visual-studio-code-update-december-2023/",
+          "publishedOn": "2023-12-20T08:59:15.000Z",
+          "wordCount": 5750,
+          "title": "Java on Visual Studio Code Update – December 2023",
+          "imageUrl": "https://devblogs.microsoft.com/java/wp-content/uploads/sites/51/2023/12/eng.png"
+        },
+        {
           "id": "https://devblogs.microsoft.com/java/?p=230303",
           "author": "Bruno Borges",
           "description": "In a rapidly expanding digital world, the Java community stands out with its remarkable and unprecedented growth. According to a 24th edition of the State of Developer Nation survey, the Java community has seen incredible growth over the last two years,\nThe post Microsoft JDConf is back in 2024! appeared first on Microsoft for Java Developers.",
@@ -7079,6 +7089,26 @@
       "feedUrl": "https://azurecomcdn.azureedge.net/en-us/updates/feed/?updateType=features",
       "siteUrl": "https://azure.microsoft.com/en-us/updates/",
       "articles": [
+        {
+          "id": "general-availability-as-on-premises-sizing-in-azure-migrate-sql-discovery-and-assessment",
+          "author": null,
+          "description": "Quickly create a reliable assessment without waiting for performance data collection with “As on-premises sizing in Azure Migrate SQL Assessments.",
+          "link": "https://azure.microsoft.com/en-us/updates/general-availability-as-on-premises-sizing-in-azure-migrate-sql-discovery-and-assessment/",
+          "publishedOn": "2023-12-20T17:00:15.000Z",
+          "wordCount": 5461,
+          "title": "General availability: “As on-premises” sizing in Azure Migrate SQL Discovery and Assessment",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-9cf0e1cadd84371040ac0779a1539e7dfa1773a055cd29fdb4632f8891a1cda4/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "public-preview-free-sql-managed-instance",
+          "author": null,
+          "description": "Explore the power of SQL Managed Instance for free.  It's perfect for testing out cloud migrations and elevating your database experience.",
+          "link": "https://azure.microsoft.com/en-us/updates/public-preview-free-sql-managed-instance/",
+          "publishedOn": "2023-12-20T17:00:14.000Z",
+          "wordCount": 5372,
+          "title": "Public Preview: Free SQL Managed Instance",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-9cf0e1cadd84371040ac0779a1539e7dfa1773a055cd29fdb4632f8891a1cda4/images/shared/social/azure-icon-250x250.png"
+        },
         {
           "id": "generally-available-azure-red-hat-openshift-v413-at-install-time",
           "author": null,
@@ -10406,6 +10436,16 @@
       "feedUrl": "https://devblogs.microsoft.com/microsoft365dev/feed/",
       "siteUrl": "https://devblogs.microsoft.com/microsoft365dev/",
       "articles": [
+        {
+          "id": "https://devblogs.microsoft.com/microsoft365dev/?p=17100",
+          "author": "Tony Balkan",
+          "description": "Microsoft 365 Certification has been updated with a refreshed control set featuring the latest security and compliance attributes for apps built to run on Teams, SaaS, and Microsoft 365 add-ins.\nThe post New Microsoft 365 Certification framework creates a more streamlined process for ISVs appeared first on Microsoft 365 Developer Blog.",
+          "link": "https://devblogs.microsoft.com/microsoft365dev/new-microsoft-365-certification-framework-creates-a-more-streamlined-process-for-isvs/",
+          "publishedOn": "2023-12-20T14:52:11.000Z",
+          "wordCount": 5172,
+          "title": "New Microsoft 365 Certification framework creates a more streamlined process for ISVs",
+          "imageUrl": "https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2023/12/UpdatedAppCert-scaled.jpg"
+        },
         {
           "id": "https://devblogs.microsoft.com/microsoft365dev/?p=17026",
           "author": "Elizabeth Samuel",

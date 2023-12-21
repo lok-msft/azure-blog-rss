@@ -2,10 +2,64 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2023-12-20T00:53:40.654Z</updated>
+    <updated>2023-12-21T01:03:38.345Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[General availability: “As on-premises” sizing in Azure Migrate SQL Discovery and Assessment]]></title>
+        <id>general-availability-as-on-premises-sizing-in-azure-migrate-sql-discovery-and-assessment</id>
+        <link href="https://azure.microsoft.com/en-us/updates/general-availability-as-on-premises-sizing-in-azure-migrate-sql-discovery-and-assessment/"/>
+        <updated>2023-12-20T17:00:15.000Z</updated>
+        <summary type="html"><![CDATA[Quickly create a reliable assessment without waiting for performance data collection with “As on-premises sizing in Azure Migrate SQL Assessments.]]></summary>
+        <author>
+            <name>Azure service updates</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Public Preview: Free SQL Managed Instance]]></title>
+        <id>public-preview-free-sql-managed-instance</id>
+        <link href="https://azure.microsoft.com/en-us/updates/public-preview-free-sql-managed-instance/"/>
+        <updated>2023-12-20T17:00:14.000Z</updated>
+        <summary type="html"><![CDATA[Explore the power of SQL Managed Instance for free.  It's perfect for testing out cloud migrations and elevating your database experience.]]></summary>
+        <author>
+            <name>Azure service updates</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[New Microsoft 365 Certification framework creates a more streamlined process for ISVs]]></title>
+        <id>https://devblogs.microsoft.com/microsoft365dev/?p=17100</id>
+        <link href="https://devblogs.microsoft.com/microsoft365dev/new-microsoft-365-certification-framework-creates-a-more-streamlined-process-for-isvs/"/>
+        <updated>2023-12-20T14:52:11.000Z</updated>
+        <summary type="html"><![CDATA[Microsoft 365 Certification has been updated with a refreshed control set featuring the latest security and compliance attributes for apps built to run on Teams, SaaS, and Microsoft 365 add-ins.
+The post New Microsoft 365 Certification framework creates a more streamlined process for ISVs appeared first on Microsoft 365 Developer Blog.]]></summary>
+        <author>
+            <name>Tony Balkan</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Troubleshooting Guide: Resolving Azure App Services Image Pull Issues from Azure Container Registry]]></title>
+        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/troubleshooting-guide-resolving-azure-app-services-image-pull/ba-p/4010201</id>
+        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/troubleshooting-guide-resolving-azure-app-services-image-pull/ba-p/4010201"/>
+        <updated>2023-12-20T11:32:04.000Z</updated>
+        <summary type="html"><![CDATA[Welcome to our comprehensive guide dedicated to resolving challenges that arise when Azure App Services encounter difficulties pulling images from the Azure Container Registry (ACR). Deploying applications seamlessly often hinges on a smooth image retrieval process, and encountering obstacles during this phase can disrupt the entire deployment workflow. 
+ 
+In this guide, we'll delve into a step-by-step checklist meticulously designed to diagnose and troubleshoot these issues effectively. From initial authentication, those include Admin Credentials, Managed Identity and access permissions to navigating complex network configurations for both Public and Private ingress on the ACR, this resource aims to be your go-to reference for untangling and resolving image pull issues within the Azure ec…]]></summary>
+        <author>
+            <name>AntonioTerra</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Java on Visual Studio Code Update – December 2023]]></title>
+        <id>https://devblogs.microsoft.com/java/?p=230327</id>
+        <link href="https://devblogs.microsoft.com/java/java-on-visual-studio-code-update-december-2023/"/>
+        <updated>2023-12-20T08:59:15.000Z</updated>
+        <summary type="html"><![CDATA[Hi everyone, welcome to the December update for Visual Studio Code for Java! We wish everyone a Merry Christmas and Happy New Year! In this blog we have tons of exciting new features including test coverage, UX updates as well as Spring Boot updates.
+The post Java on Visual Studio Code Update – December 2023 appeared first on Microsoft for Java Developers.]]></summary>
+        <author>
+            <name>Nick Zhu</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Generally Available: Azure Red Hat OpenShift v4.13 at install time]]></title>
         <id>generally-available-azure-red-hat-openshift-v413-at-install-time</id>
@@ -14842,61 +14896,6 @@ Introduction to Azure OpenAI Service
 Azure OpenAI Service is a managed AI service that enables you to deploy and manage …]]></summary>
         <author>
             <name>FreddyAyala</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[How to increase concurrency on python function app hosted in app service plan?]]></title>
-        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/how-to-increase-concurrency-on-python-function-app-hosted-in-app/ba-p/3882010</id>
-        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/how-to-increase-concurrency-on-python-function-app-hosted-in-app/ba-p/3882010"/>
-        <updated>2023-07-24T07:26:58.000Z</updated>
-        <summary type="html"><![CDATA[There are multiple ways to increase the concurrency of python function app. I drew an architecture diagram, which can give us an overall understanding of the function app.
- 
-
-Based on the diagram, we can see we could increase function app concurrency by increasing instance count, python worker count and thread count. To better understand this, I build several labs to validate this. I will not demonstrate instance count as it is easy to understand. All these labs are having 4 concurrent incoming requests and each request takes 10 seconds to complete.
- 
-Lab1:
-code:
-sync
-
-Configuration:
-maxConcurrentRequests : 4FUNCTIONS_WORKER_PROCESS_COUNT=1PYTHON_THREADPOOL_THREAD_COUNT=1
-Result:
-It took 40 seconds to complete the 4 executions. We can see these 4 executions were triggered at the same time, this is because the function host level is using async. But actually these executions are executed one by one.
-
-Lab2:
-code: The same as Lab1.
-Configuration:
-maxConcurrentRequests : 4FUNCTIONS_WORKER_PROCESS_COUNT=1PYTHON_THREADPOOL_THREAD_COUNT=2
-Result:
-It took 20 seconds to complete the 4 executions.
-
- 
-Lab3:
-code: The same as Lab1.
-Configuration:
-maxConcurrentRequests : 4FUNCTIONS_WORKER_PROCESS_COUNT=2PYTHON_THREADPOOL_THREAD_COUNT=2
-Result:
-It took 10 seconds to complete the 4 executions.
-
-Lab4:
-code:
-async
-
-Configuration:
-maxConcurrentRequests : 4FUNCTIONS_WORKER_PROCESS_COUNT=1PYTHON_THREADPOOL_THREAD_COUNT=1
-Result:
-It took 10 seconds to complete the 4 executions.
-
- 
-Conclusion:
-1.We can increase the concurrency by increasing FUNCTIONS_WORKER_PROCESS_COUNT and PYTHON_THREADPOOL_THREAD_COUNT. Just note that we can configure the concurrent setting in host.json file. This is the bottleneck of the concurrency. 
-2.It is more recommended to use async method instead of sync method as async has better performance than sync with the same configuration.
- 
-Reference link:
-Azure Functions HTTP triggers and bindings | Microsoft Learn
-Improve throughput performance of Python apps in Azure Functions | Microsoft Learn]]></summary>
-        <author>
-            <name>Tony_Ju</name>
         </author>
     </entry>
     <entry>
