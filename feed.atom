@@ -2,10 +2,20 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2023-12-29T00:53:41.363Z</updated>
+    <updated>2023-12-30T01:02:21.397Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[General availability: Security Update for Azure Front Door WAF CVE-2023-50164]]></title>
+        <id>general-availability-security-update-for-azure-front-door-waf-cve202350164</id>
+        <link href="https://azure.microsoft.com/en-us/updates/general-availability-security-update-for-azure-front-door-waf-cve202350164/"/>
+        <updated>2023-12-30T01:00:20.000Z</updated>
+        <summary type="html"><![CDATA[Stay protected against CVE-2023-50164 with the help of Azure’s global WAF running on Azure Front Door.]]></summary>
+        <author>
+            <name>Azure service updates</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Generally available: Azure Site Recovery update rollup 70 - December 2023]]></title>
         <id>generally-available-azure-site-recovery-update-rollup-70-december-2023</id>
@@ -14394,106 +14404,6 @@ Y bueno, antes de entrar a materia, recordemos que Visual Studio Code es un edit
 Antes que nada, ¿qué es una exte…]]></summary>
         <author>
             <name>Vicente Gerardo Guzman Lucio</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Not able to delete files from the Kudu Console on an App Service]]></title>
-        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/not-able-to-delete-files-from-the-kudu-console-on-an-app-service/ba-p/3871032</id>
-        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/not-able-to-delete-files-from-the-kudu-console-on-an-app-service/ba-p/3871032"/>
-        <updated>2023-08-02T10:17:08.000Z</updated>
-        <summary type="html"><![CDATA[Kudu is the engine behind a number of features in Azure App Service related to source control based deployment, and other deployment methods like Dropbox and OneDrive sync.
-Access Kudu for your app
-Anytime you create an app, App Service creates a companion app for it that's secured by HTTPS.
-Reference: https://learn.microsoft.com/en-us/azure/app-service/resources-kudu
- 
-There may be a scenario where we may face issues while deleting the files on the Kudu Console(both from UI and cmd). The error might appear as a 404 Not Found error on UI. When we try to delete the files using the “del <filename>” command, it will be showing the error “Access Is Denied”. The issue might be very intermittent in nature, sometimes we might be able to delete it, sometimes not. Even when there are no locks and e…]]></summary>
-        <author>
-            <name>SiddharthChugh25</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Empowering Disaster Recovery  for Azure VMs with Azure Site Recovery and Terraform]]></title>
-        <id>https://techcommunity.microsoft.com/t5/azure-architecture-blog/empowering-disaster-recovery-for-azure-vms-with-azure-site/ba-p/3885378</id>
-        <link href="https://techcommunity.microsoft.com/t5/azure-architecture-blog/empowering-disaster-recovery-for-azure-vms-with-azure-site/ba-p/3885378"/>
-        <updated>2023-08-01T17:41:11.000Z</updated>
-        <summary type="html"><![CDATA[Azure provides comprehensive backup and disaster recovery solutions that are easy to use, secure, scalable, and budget-friendly. They can also be seamlessly integrated with existing on-premises data protection setups.
- 
-In this article, we'll explore a practical demonstration of implementing Virtual Machine Disaster Recovery using Azure Site Recovery VM Replication through Terraform. This approach ensures the continuity of your business apps and workloads during unexpected outages, replicating your virtual machines from one location to another in a straightforward manner.
- 
-Azure Site Recovery
- 
-Site Recovery helps ensure business continuity by keeping business apps and workloads running during outages. Site Recovery replicates workloads running on physical and virtual machines (VMs) from …]]></summary>
-        <author>
-            <name>FreddyAyala</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[How to visualize Service retirements in Azure Advisor]]></title>
-        <id>https://techcommunity.microsoft.com/t5/azure-architecture-blog/how-to-visualize-service-retirements-in-azure-advisor/ba-p/3885345</id>
-        <link href="https://techcommunity.microsoft.com/t5/azure-architecture-blog/how-to-visualize-service-retirements-in-azure-advisor/ba-p/3885345"/>
-        <updated>2023-08-01T17:38:45.000Z</updated>
-        <summary type="html"><![CDATA[Microsoft maintains 77 services across 13 service categories, everything from Artificial Intelligence to Compute to Databases to Storage to Azure Orbital – this is a lot of code and infrastructure to maintain and evolve, often at pace. Inevitably some of these services will be retired, either as new services replace them or through investments in the Microsoft Partner ecosystem.
- 
-This article will provide an overview of the tooling that exists within Azure to obtain a single centralized view of Service Retirements and reduce the reliance on manually checking the Azure Updates feed and/or Email notifications.
- 
-What is Service Health?
-First, we should define Service Health and include service retirement as a metric that contributes to it. Service Health is the status of a service at a poin…]]></summary>
-        <author>
-            <name>anthkernan</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Generally Available: Azure Monitor container insights offers customizable cost optimization settings]]></title>
-        <id>containerinsightscostoptimization</id>
-        <link href="https://azure.microsoft.com/en-us/updates/containerinsightscostoptimization/"/>
-        <updated>2023-08-01T17:15:22.000Z</updated>
-        <summary type="html"><![CDATA[Azure Monitor container insights now allows customers to configure custom collection settings for the Perf, Inventory, InsightsMetrics, and KubeEvents tables to reduce their Log Analytics ingestion.]]></summary>
-        <author>
-            <name>Azure service updates</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Profile card properties path and permission changes in Microsoft Graph (beta)]]></title>
-        <id>https://devblogs.microsoft.com/microsoft365dev/?p=14803</id>
-        <link href="https://devblogs.microsoft.com/microsoft365dev/profile-card-properties-path-and-permission-changes-in-microsoft-graph-beta/"/>
-        <updated>2023-08-01T15:36:59.000Z</updated>
-        <summary type="html"><![CDATA[Introducing breaking changes to profile card properties APIs on the beta version of Microsoft Graph.
-The post Profile card properties path and permission changes in Microsoft Graph (beta) appeared first on Microsoft 365 Developer Blog.]]></summary>
-        <author>
-            <name>Ruth Waithera</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Enhanced Security and Compliance add-on for Azure Databricks now Generally Available]]></title>
-        <id>enhanced-security-and-compliance-addon-for-azure-databricks-now-generally-available</id>
-        <link href="https://azure.microsoft.com/en-us/updates/enhanced-security-and-compliance-addon-for-azure-databricks-now-generally-available/"/>
-        <updated>2023-08-01T15:00:20.000Z</updated>
-        <summary type="html"><![CDATA[Enhanced Security and Compliance (ESC) add-on helps simplify the complexity of meeting security and regulatory requirements for Azure Databricks customers.]]></summary>
-        <author>
-            <name>Azure service updates</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Introducing ONNX Script: Authoring ONNX with the ease of Python]]></title>
-        <id>https://cloudblogs.microsoft.com/opensource/2023/08/01/introducing-onnx-script-authoring-onnx-with-the-ease-of-python/</id>
-        <link href="https://cloudblogs.microsoft.com/opensource/2023/08/01/introducing-onnx-script-authoring-onnx-with-the-ease-of-python/"/>
-        <updated>2023-08-01T15:00:00.000Z</updated>
-        <summary type="html"><![CDATA[ONNX Script is a new open-source library for directly authoring ONNX models in Python with a focus onclean, idiomatic Pythonsyntax and composability through ONNX-native functions.
-The post Introducing ONNX Script: Authoring ONNX with the ease of Python appeared first on Microsoft Open Source Blog.]]></summary>
-        <author>
-            <name>Aaron Bockover, Maanav Dalal, Ganesan Ramalingam and Justin Chu</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Announcing the Reliable Web App Pattern for Java]]></title>
-        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/announcing-the-reliable-web-app-pattern-for-java/ba-p/3879661</id>
-        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/announcing-the-reliable-web-app-pattern-for-java/ba-p/3879661"/>
-        <updated>2023-08-01T14:59:00.000Z</updated>
-        <summary type="html"><![CDATA[As you navigate the business growth and transformation landscape, you'll find that developers grapple with challenges similar to those our customers face. As business grows, one common challenge is ensuring your legacy web applications cater to a growing user base without overstretching resources and costs. Such companies don’t want to expand the team size or drastically re-factor the existing application, they need a solution that aligns with their growth goals while optimizing their resources.  
- 
-For many, migration from on-prem to cloud offers a compelling return on investment. While the benefits of the cloud are undeniable, the initial transition can present unique challenges and taking the first step can be daunting. Many have succeeded by re-platforming existing apps, with minimal c…]]></summary>
-        <author>
-            <name>nishanil</name>
         </author>
     </entry>
     <entry>
