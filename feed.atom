@@ -2,10 +2,96 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2024-01-11T01:05:57.341Z</updated>
+    <updated>2024-01-12T01:06:18.703Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Using Azure Application Gateway to map custom domain names to Private Endpoint enabled PaaS services]]></title>
+        <id>https://techcommunity.microsoft.com/t5/azure-architecture-blog/using-azure-application-gateway-to-map-custom-domain-names-to/ba-p/4025898</id>
+        <link href="https://techcommunity.microsoft.com/t5/azure-architecture-blog/using-azure-application-gateway-to-map-custom-domain-names-to/ba-p/4025898"/>
+        <updated>2024-01-11T17:43:44.000Z</updated>
+        <summary type="html"><![CDATA[Azure Application Gateway is a web traffic load balancer that enables you to manage traffic to your applications. It can be used as an internal application load balancer or as an internet-facing application load balancer (How an application gateway works | Microsoft Learn).
+ 
+With the recent announce of “Private Application Gateway” you can deploy the Application Gateway without a frontend IP configuration referencing a public IP enabling further control over traffic routing and internet egress.
+ 
+On the other hand, when you create private endpoints for Azure PaaS services (i.e., Azure Functions, Azure Key Vault, Event Hubs, etc.…) the associated FQDN for each service is a public name.
+ 
+Some of our customers, especially in the FSI sector, use Proxies to route all internet bound traffic, a…]]></summary>
+        <author>
+            <name>cmendibl3</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[General Availability: Customer-managed keys for Azure NetApp Files volume encryption]]></title>
+        <id>general-availability-customermanaged-keys-for-azure-netapp-files-volume-encryption</id>
+        <link href="https://azure.microsoft.com/en-us/updates/general-availability-customermanaged-keys-for-azure-netapp-files-volume-encryption/"/>
+        <updated>2024-01-11T17:00:24.000Z</updated>
+        <summary type="html"><![CDATA[Azure NetApp Files volumes supports encryption with customer-managed keys (CMK), using Azure Key Vault for key storage, to enable an extra layer of security for data at rest.]]></summary>
+        <author>
+            <name>Azure service updates</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Azure OpenAI Insights: Monitoring AI with Confidence]]></title>
+        <id>https://techcommunity.microsoft.com/t5/fasttrack-for-azure/azure-openai-insights-monitoring-ai-with-confidence/ba-p/4026850</id>
+        <link href="https://techcommunity.microsoft.com/t5/fasttrack-for-azure/azure-openai-insights-monitoring-ai-with-confidence/ba-p/4026850"/>
+        <updated>2024-01-11T16:49:39.000Z</updated>
+        <summary type="html"><![CDATA[Azure OpenAI Insights: Monitoring AI with Confidence
+ 
+
+
+Welcome to the forefront of AI innovation! In the ever-evolving world of Artificial Intelligence, organizations and entities across various sectors are on a quest to leverage advanced technologies efficiently. Azure OpenAI opens a realm of possibilities, offering both challenges and excitement, particularly for those at the early stages of AI adoption.
+ 
+We recognize these unique challenges. That's why we've crafted this blog post – not as a guide, rather as a companion in your journey towards mastering the native platform Monitoring of Azure OpenAI. Our focus here is not on the technicalities of creating workbooks. Instead, we deep dive into how can workbooks, coupled with Azure OpenAI's comprehensive metrics and diagnostic logs, ca…]]></summary>
+        <author>
+            <name>yodobrin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[The Intrinsic Value of DevOps for the US Department of Defense]]></title>
+        <id>https://techcommunity.microsoft.com/t5/fasttrack-for-azure/the-intrinsic-value-of-devops-for-the-us-department-of-defense/ba-p/4026915</id>
+        <link href="https://techcommunity.microsoft.com/t5/fasttrack-for-azure/the-intrinsic-value-of-devops-for-the-us-department-of-defense/ba-p/4026915"/>
+        <updated>2024-01-11T15:37:28.000Z</updated>
+        <summary type="html"><![CDATA[DevOps is defined as the union of people, process, and technology to remove siloed roles, development, IT operations, quality engineering, and security to coordinate and collaborate to produce better, more reliable products. Every major cloud provider, Independent Software Vendor (ISV), and software consultancy has promoted this approach to reduce time to market, eliminate bugs, introduce new features rapidly, implement governance, and streamline the software development lifecycle. Microsoft has outlined the benefits of DevOps in the following online post By adopting a DevOps culture along with DevOps practices and tools, teams gain the ability to better respond to customer needs, increase confidence in the applications they build, and achieve business goals faster .
+ 
+The challenge of cul…]]></summary>
+        <author>
+            <name>adelagarde</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Azure Cosmos DB design patterns – Part 5: Document versioning]]></title>
+        <id>https://devblogs.microsoft.com/cosmosdb/?p=7451</id>
+        <link href="https://devblogs.microsoft.com/cosmosdb/azure-cosmos-db-design-patterns-part-5-document-versioning/"/>
+        <updated>2024-01-11T15:00:47.000Z</updated>
+        <summary type="html"><![CDATA[Welcome to part five of our series of blog posts focused on sharing common design patterns you can use to build applications with Azure Cosmos DB for NoSQL. Over the years, customers have asked us for help in designing applications around specific scenarios they were trying to achieve.
+The post Azure Cosmos DB design patterns – Part 5: Document versioning appeared first on Azure Cosmos DB Blog.]]></summary>
+        <author>
+            <name>Jay Gordon</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Automate the capturing of test results from Application Insights]]></title>
+        <id>https://devblogs.microsoft.com/ise/?p=15171</id>
+        <link href="https://devblogs.microsoft.com/ise/automating-app-insights-test-results/"/>
+        <updated>2024-01-11T08:00:00.000Z</updated>
+        <summary type="html"><![CDATA[This post provides instructions on how to automate querying application insights test results using a script. It explains how to format the datetime, install the application insights extension, set the offset, and handle the query results. The script can be adapted to other scripting languages. The result is a reusable script that can output results in any format and reduce manual filtering errors.
+The post Automate the capturing of test results from Application Insights appeared first on ISE Developer Blog.]]></summary>
+        <author>
+            <name>David Lee</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[A Bootiful Podcast: Apache Skywalking’s Sheng Wu and Apache ShardingSphere’s Trista Pan]]></title>
+        <id>https://spring.io/blog/2024/01/11/a-bootiful-podcast-apache-skywalkings-sheng-wu-and-apache-shardingspheres</id>
+        <link href="https://spring.io/blog/2024/01/11/a-bootiful-podcast-apache-skywalkings-sheng-wu-and-apache-shardingspheres"/>
+        <updated>2024-01-11T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Level up your Java code and explore what Spring can do for you.]]></summary>
+        <author>
+            <name>Josh Long</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Chat with your Azure DevOps data]]></title>
         <id>https://techcommunity.microsoft.com/t5/fasttrack-for-azure/chat-with-your-azure-devops-data/ba-p/4017784</id>
@@ -14154,16 +14240,6 @@ Azure Static Web Apps is the ideal service for hosting modern frontend web apps 
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Efficient Data Partitioning with Microsoft Fabric: Best Practices and Implementation Guide]]></title>
-        <id>https://techcommunity.microsoft.com/t5/fasttrack-for-azure/efficient-data-partitioning-with-microsoft-fabric-best-practices/ba-p/3890097</id>
-        <link href="https://techcommunity.microsoft.com/t5/fasttrack-for-azure/efficient-data-partitioning-with-microsoft-fabric-best-practices/ba-p/3890097"/>
-        <updated>2023-08-15T09:29:03.000Z</updated>
-        <summary type="html"><![CDATA[Introduction:Data partitioning is a data management technique used to divide a large dataset into smaller, more manageable subsets called partitions or shards. Each partition contains a portion of the data, and these partitions can be stored and processed independently. The primary goal of data partitioning is to improve performance, scalability, and manageability in large-scale data systems.Imagine having a vast encyclopedia, and your task is to find a specific page containing a particular word. Instead of searching through the entire encyclopedia, you opt to navigate directly to the relevant section that might contain the desired information. This approach allows you to narrow down your search scope and quickly find the page you need. This concept of narrowing down the search space by di…]]></summary>
-        <author>
-            <name>Sally_Dabbah</name>
-        </author>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[Exploring the Synergy between Web Development and Artificial Intelligence: A Beginner's Guide]]></title>
         <id>https://techcommunity.microsoft.com/t5/educator-developer-blog/exploring-the-synergy-between-web-development-and-artificial/ba-p/3894049</id>
         <link href="https://techcommunity.microsoft.com/t5/educator-developer-blog/exploring-the-synergy-between-web-development-and-artificial/ba-p/3894049"/>
@@ -14172,113 +14248,6 @@ Azure Static Web Apps is the ideal service for hosting modern frontend web apps 
 In a world where AI is revolutionizing every aspect of technology, Azure Cognitive Services stands out as a game-changer. Empowering developers and data scientists of all levels, it brings cutting-edge AI models within reach through simple API calls. Today, we embark on a thrilling journey to explore the creation of the Online AI Text Translator - a web application that harnesses the potential of Python Flask and Azure Cognitive Services (T…]]></summary>
         <author>
             <name>MuhammadSamiullah</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Developing with Multiple Repositories inside a Single Solution for .NET]]></title>
-        <id>https://devblogs.microsoft.com/cse/?p=14937</id>
-        <link href="https://devblogs.microsoft.com/ise/2023/08/15/dotnet-multi-repo/"/>
-        <updated>2023-08-15T07:00:00.000Z</updated>
-        <summary type="html"><![CDATA[A strategy for working with interdependent .NET repositories locally and remotely.
-The post Developing with Multiple Repositories inside a Single Solution for .NET appeared first on ISE Developer Blog.]]></summary>
-        <author>
-            <name>Kanishk Tantia (HE/HIM)</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Developing with Multiple Repositories inside a Single Solution for .NET]]></title>
-        <id>https://devblogs.microsoft.com/cse/?p=14937</id>
-        <link href="https://devblogs.microsoft.com/cse/2023/08/15/dotnet-multi-repo/"/>
-        <updated>2023-08-15T07:00:00.000Z</updated>
-        <summary type="html"><![CDATA[A strategy for working with interdependent .NET repositories locally and remotely.
-The post Developing with Multiple Repositories inside a Single Solution for .NET appeared first on CSE Developer Blog.]]></summary>
-        <author>
-            <name>Kanishk Tantia (HE/HIM)</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[This Week in Spring - August 15th, 2023]]></title>
-        <id>https://spring.io/blog/2023/08/15/this-week-in-spring-august-15th-2023</id>
-        <link href="https://spring.io/blog/2023/08/15/this-week-in-spring-august-15th-2023"/>
-        <updated>2023-08-15T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Level up your Java code and explore what Spring can do for you.]]></summary>
-        <author>
-            <name>Josh Long</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Public Preview: Azure Backup now supports Cross Region Restore for PostgreSQL backups]]></title>
-        <id>public-preview-azure-backup-now-supports-cross-region-restore-for-postgresql-backups</id>
-        <link href="https://azure.microsoft.com/en-us/updates/public-preview-azure-backup-now-supports-cross-region-restore-for-postgresql-backups/"/>
-        <updated>2023-08-14T18:00:37.000Z</updated>
-        <summary type="html"><![CDATA[Cross Region Restore for PostgreSQL backups fore Azure Backup customers is now supported and is available in multiple public regions.]]></summary>
-        <author>
-            <name>Azure service updates</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Implementing Microsoft Sentinel and Two simulated threats from scratch! Then see Sentinel in action!]]></title>
-        <id>https://techcommunity.microsoft.com/t5/fasttrack-for-azure/implementing-microsoft-sentinel-and-two-simulated-threats-from/ba-p/3899262</id>
-        <link href="https://techcommunity.microsoft.com/t5/fasttrack-for-azure/implementing-microsoft-sentinel-and-two-simulated-threats-from/ba-p/3899262"/>
-        <updated>2023-08-14T17:39:37.000Z</updated>
-        <summary type="html"><![CDATA[What is in this article:
- 
-
-What is this about?
-What is this NOT about?
-Introduction
-Common customer IT environment (used as a background to be attacked)
-creating the environment
-
-creating Azure subscription
-provisioning Azure Log Analytics workspace
-provisioning Microsoft Sentinel
-
-
-navigating through Microsoft Defender for Cloud
-exploring Microsoft Entra
-integration between Microsoft Defender for Endpoint and Sentinel
-building the Virtual Machines (used during the threat simulation)
-initiating the Attacks
-
-brute force attack
-
-using Sentinel to identify the attack.
-
-
-credential theft attack (through anonymous access)
-
-using Sentinel to identify the attack.
-
-
-Final considerations
-Cleaning up the environment
-Where to go next
-Important links for solutions are used throughout this document.
-
-…]]></summary>
-        <author>
-            <name>rudneir</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Public preview: New Monitoring and Logging Updates in Azure Firewall]]></title>
-        <id>new-monitoring-and-logging-updates-in-azure-firewall</id>
-        <link href="https://azure.microsoft.com/en-us/updates/new-monitoring-and-logging-updates-in-azure-firewall/"/>
-        <updated>2023-08-14T16:00:37.000Z</updated>
-        <summary type="html"><![CDATA[Resource Health and Embedded Firewall Workbooks are now in public preview.]]></summary>
-        <author>
-            <name>Azure service updates</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[General availability: New Monitoring and Logging Updates in Azure Firewall]]></title>
-        <id>general-availability-new-monitoring-and-logging-updates-in-azure-firewall</id>
-        <link href="https://azure.microsoft.com/en-us/updates/general-availability-new-monitoring-and-logging-updates-in-azure-firewall/"/>
-        <updated>2023-08-14T16:00:37.000Z</updated>
-        <summary type="html"><![CDATA[Structured Logs and Latency Probe Metric are now in general availability.]]></summary>
-        <author>
-            <name>Azure service updates</name>
         </author>
     </entry>
     <entry>
