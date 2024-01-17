@@ -6,6 +6,16 @@
       "siteUrl": "https://spring.io",
       "articles": [
         {
+          "id": "https://spring.io/blog/2024/01/16/this-week-in-spring-january-16th-2024",
+          "author": "Josh Long",
+          "description": "Level up your Java code and explore what Spring can do for you.",
+          "link": "https://spring.io/blog/2024/01/16/this-week-in-spring-january-16th-2024",
+          "publishedOn": "2024-01-16T00:00:00.000Z",
+          "wordCount": 7314,
+          "title": "This Week in Spring - January 16th, 2024",
+          "imageUrl": "https://spring.io/img/og-spring.png"
+        },
+        {
           "id": "https://spring.io/blog/2024/01/11/a-bootiful-podcast-apache-skywalkings-sheng-wu-and-apache-shardingspheres",
           "author": "Josh Long",
           "description": "Level up your Java code and explore what Spring can do for you.",
@@ -2140,6 +2150,16 @@
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/542114i57A8A3672D1A59F8/image-size/original?v=v2&px=-1"
         },
         {
+          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/with-geo-replica-web-pubsub-resources-are-fault-tolerant-and-can/ba-p/4029482",
+          "author": "kevinguo",
+          "description": "TL; DR \nAzure Web Pub announces the GA status of the geo-replia feature. Having a failover strategy in place is a must for enterprise-grade applications. What used to take much effort and time can now be configured quicky with a few clicks. Plus, end users from geographically distant locations can benefit from low latency they expect from a real-time system. \n\nSet up multi-instance for disaster recovery \nStep-by-step guide to quickly configure geo-replia \n\n \nContext\nWhile it is perfectly normal for companies to have one Azure Web PubSub resource serving all its real-time message delivery, for enterprise-grade applications replying on just one resource does not cut it for two important reasons.  \n \nThe single resource could experience downtime which disrupts the availability of the applicat…",
+          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/with-geo-replica-web-pubsub-resources-are-fault-tolerant-and-can/ba-p/4029482",
+          "publishedOn": "2024-01-15T07:40:24.000Z",
+          "wordCount": 10573,
+          "title": "With geo-replica, Web PubSub resources are fault tolerant and can communicate across regions",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/542074iAB2395587108B6C0/image-size/original?v=v2&px=-1"
+        },
+        {
           "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/with-the-geo-replica-web-pubsub-resources-are-fault-tolerant-and/ba-p/4029482",
           "author": "kevinguo",
           "description": "TL; DR \nAzure Web Pub announces the GA status of the geo-replia feature. Having a failover strategy in place is a must for enterprise-grade applications. What used to take much effort and time can now be configured quicky with a few clicks. Plus, end users from geographically distant locations can benefit from low latency they expect from a real-time system. \n\nSet up multi-instance for disaster recovery \nStep-by-step guide to quickly configure geo-replia \n\n \nContext\nWhile it is perfectly normal for companies to have one Azure Web PubSub resource serving all its real-time message delivery, for enterprise-grade applications replying on just one resource does not cut it for two important reasons.  \n \nThe single resource could experience downtime which disrupts the availability of the applicat…",
@@ -4227,6 +4247,16 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/t5/azure-paas-blog/who-deleted-a-blob/ba-p/3941404",
+          "author": "Rich_McKinnon",
+          "description": "Who Deleted a Blob?It is sometimes useful to know who created/modified/deleted a storage blob. For that information to be recorded in a log the authentication must be done with Azure AD to populate the user information correctly.\nThere are two sets of logs that can help, Azure Monitor logs and classic Analytics logs1. Azure monitor storage columns - https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/storagebloblogs \nColumns of interest\nCallerIpAddress - The IP address of the requester, including the port number\nOperationName - The type of REST operation that was performed\nRequesterObjectId - The OAuth object ID of the requester\nRequesterUpn - The User Principal Names of requestor\n2. Classic Analytics logs columns - https://learn.microsoft.com/en-us/rest/api/storageservices/storage-analytics-log-format(version 2.0 format has the columns that record user info)Columns of interest\noperation-type - The type of REST operation performed\nrequester-ip-address - the IP address of the requester, including the port number\nuser-object-id - The object ID used for authentication. May be any security principal, including a user, managed identity, or service principal\nuser-principal-name - User principal name used in bearer authorization\nDelete a blob using Azure CLI and AAD authentication\n\nQuery Azure Monitor logs for DeleteBlob requests that use OAuth (AAD)\nCheck classic Analytics log for the DeleteBlob request\n\nFurther informationMonitoring Azure Blob Storage\nhttps://learn.microsoft.com/en-us/azure/storage/blobs/monitor-blob-storage?tabs=azure-portal\nAzure Storage analytics logging\nhttps://learn.microsoft.com/en-us/azure/storage/common/storage-analytics-logging",
+          "link": "https://techcommunity.microsoft.com/t5/azure-paas-blog/who-deleted-a-blob/ba-p/3941404",
+          "publishedOn": "2024-01-16T15:13:32.000Z",
+          "wordCount": 9717,
+          "title": "Who Deleted a Blob?",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/512294iC6A82145E47F9C45/image-size/original?v=v2&px=-1"
+        },
+        {
           "id": "https://techcommunity.microsoft.com/t5/azure-paas-blog/change-azure-policy-assignment-s-system-assigned-managed/ba-p/3998027",
           "author": "joaosa",
           "description": "When Azure Policy starts a template deployment when evaluating deployIfNotExists policies or modifies a resource when evaluating modify policies, it does so using a managed identity that is associated with the policy assignment. Policy assignments use managed identities for Azure resource authorization. You can use either a system-assigned managed identity that is created by the policy service or a user-assigned identity provided by the user.\n \nEach Azure Policy assignment can be associated with only one managed identity and, after adding a managed identity to policy assignment, it is possible to edit only some managed identity related settings of the policy assignment. For instance, the type of managed identity can be switched from system assigned and user assigned, but if a system assign…",
@@ -4443,6 +4473,16 @@
       "feedUrl": "https://techcommunity.microsoft.com/plugins/custom/microsoft/o365/custom-blog-rss?tid=2893852362688900935&board=AzureArchitectureBlog&size=50",
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
+        {
+          "id": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/security-best-practices-for-genai-applications-openai-in-azure/ba-p/4027885",
+          "author": "FreddyAyala",
+          "description": "Introduction\n \nGenAI applications are those that use large language models (LLMs) to generate natural language texts or perform natural language understanding tasks. LLMs are powerful tools that can enable various scenarios such as content creation, summarization, translation, question answering, and conversational agents. However, LLMs also pose significant security challenges that need to be addressed by developers and administrators of GenAI applications. These challenges include:\n\nProtecting the confidentiality and integrity of the data used to train and query the LLMs\nEnsuring the availability and reliability of the LLMs and their services\nPreventing the misuse or abuse of the LLMs by malicious actors or unintended users\nMonitoring and auditing the LLMs' outputs and behaviors for qual…",
+          "link": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/security-best-practices-for-genai-applications-openai-in-azure/ba-p/4027885",
+          "publishedOn": "2024-01-16T17:57:49.000Z",
+          "wordCount": 13417,
+          "title": "Security Best Practices for GenAI Applications (OpenAI) in Azure",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/541495i0CC0137D80227FDB/image-size/original?v=v2&px=-1"
+        },
         {
           "id": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/using-azure-application-gateway-to-map-custom-domain-names-to/ba-p/4025898",
           "author": "cmendibl3",
@@ -5465,6 +5505,16 @@
       "siteUrl": "https://devblogs.microsoft.com/python/",
       "articles": [
         {
+          "id": "https://devblogs.microsoft.com/python/?p=9577",
+          "author": "Pamela Fox",
+          "description": "The Microsoft AI Chat App Hack is a two-week virtual hackathon where you can learn how to build a chat app with Python, using the RAG (Retrieval Augmented Generation) approach with OpenAI and Azure AI Search. You’ll also get to meet other Python developers and learn from Microsoft engineers on live streams.\nThe post Join us for AI Chat App Hack from Jan. 29 – Feb.12 appeared first on Python.",
+          "link": "https://devblogs.microsoft.com/python/ai-chat-app-hack/",
+          "publishedOn": "2024-01-17T00:21:28.000Z",
+          "wordCount": 4754,
+          "title": "Join us for AI Chat App Hack from Jan. 29 – Feb.12",
+          "imageUrl": "https://devblogs.microsoft.com/python/wp-content/uploads/sites/12/2024/01/Python-Hack-Banner-2.png"
+        },
+        {
           "id": "https://devblogs.microsoft.com/python/?p=9562",
           "author": "Dawn Wages",
           "description": "Python Data Science Day is a full day of 25 min and 5 min community contributed content March 14th, 2024 streaming on the VS Code YouTube channel. Submission deadline is January 25th AOE (Anywhere on Earth).\nThe post Data Science Day Announcement and Call for Speaker Proposals appeared first on Python.",
@@ -5725,6 +5775,16 @@
       "feedUrl": "https://devblogs.microsoft.com/devops/feed/",
       "siteUrl": "https://devblogs.microsoft.com/devops/",
       "articles": [
+        {
+          "id": "https://devblogs.microsoft.com/devops/?p=68265",
+          "author": "Gloridel Morales",
+          "description": "Azure DevOps Server and Team Foundation Server follow the Microsoft Product Fixed Lifecycle Policy of 10 years. The first 5 years of Mainstream Support provide feature updates, platform updates, security updates, functionality fixes, and quality improvements. The second 5 years of Extended Support provide critical security updates only for the latest release of each version.\nThe post Azure DevOps Server Product Lifecycle and Servicing appeared first on Azure DevOps Blog.",
+          "link": "https://devblogs.microsoft.com/devops/azure-devops-server-product-lifecycle-and-servicing/",
+          "publishedOn": "2024-01-16T18:37:30.000Z",
+          "wordCount": 4914,
+          "title": "Azure DevOps Server Product Lifecycle and Servicing",
+          "imageUrl": "https://devblogs.microsoft.com/devops/wp-content/uploads/sites/6/2019/02/AzureDevOps.png"
+        },
         {
           "id": "https://devblogs.microsoft.com/devops/?p=67966",
           "author": "Gloridel Morales",
