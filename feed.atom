@@ -2,10 +2,43 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2024-01-28T01:05:30.864Z</updated>
+    <updated>2024-01-29T01:01:44.389Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Únete a nosotros para el Hackatón de Aplicaciones de Chat de IA]]></title>
+        <id>https://techcommunity.microsoft.com/t5/educator-developer-blog/%C3%BAnete-a-nosotros-para-el-hackat%C3%B3n-de-aplicaciones-de-chat-de-ia/ba-p/4037996</id>
+        <link href="https://techcommunity.microsoft.com/t5/educator-developer-blog/%C3%BAnete-a-nosotros-para-el-hackat%C3%B3n-de-aplicaciones-de-chat-de-ia/ba-p/4037996"/>
+        <updated>2024-01-28T08:00:00.000Z</updated>
+        <summary type="html"><![CDATA[En los últimos seis meses, hemos conocido a cientos de desarrolladores que están utilizando Python para crear aplicaciones de chat de IA en sus propios campos de conocimiento, utilizando RAG (Recuperación Aumentada de Generación) para enviar fragmentos de información a un modelo de LLM junto con la pregunta del usuario.
+ 
+
+
+ 
+
+También hemos escuchado a muchos desarrolladores que les gustaría aprender a crear sus propias aplicaciones de chat con RAG, pero no saben por dónde empezar. Por eso, estamos organizando un hackathon virtual para ayudarte a aprender a construir tu propia aplicación de chat con RAG en Python.
+
+ 
+
+ 
+
+Del 29 de enero al 12 de febrero, realizaremos transmisiones en vivo en inglés y los días 31 de enero y 2 de febrero en español, donde te mostraremos cómo construir en nuestro repositorio de ejemplo de chat con RAG más popular, al mismo tiempo que explicamos los conceptos clave detrás de todas las aplicaciones de chat con RAG modernas. Los temas de las transmisiones en vivo incluirán búsqueda vectorial, control de acceso, GPT-4 con visión y más.
+ 
+Mantente conectado a tus sesiones locales de Reactor. Esperamos involucrar a desarrolladores de todo el mundo, así que también tendremos transmisiones en vivo en español, portugués y chino. Habrá premios para las mejores aplicaciones e incluso un premio para el miembro más útil de la comunidad. ¡Mantente atento a tus sesiones locales de Reactor!
+ 
+Para obtener más información, visita la página de Reactor para sintonizar tu evento local y visita la página AI Chat App Hack, donde podrás seguir los pasos para registrarte y unirte a la comunidad. ¡Te esperamos ya!
+ 
+Más recursos de RAG para desarrolladores de Python:
+• Tutorial: Introducción al ejemplo de chat corporativo en Python utilizando RAG
+• GitHub Universe: Crea e implementa rápidamente aplicaciones de OpenAI en Azure, infusionadas con tus propios datos
+• Recursos de IA de Azure para desarrolladores Python
+• Utilizando Llamaindex con Azure AI Search
+• Comunidad de IA en Discord]]></summary>
+        <author>
+            <name>PabloLopes</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Image Analysis in Power BI – Using AI Services Vision API]]></title>
         <id>https://techcommunity.microsoft.com/t5/fasttrack-for-azure/image-analysis-in-power-bi-using-ai-services-vision-api/ba-p/3573430</id>
@@ -14244,119 +14277,6 @@ Application Gateway for Containers is a new application (layer 7) load balancin
 Application Gateway for Containers is the evolution of the Application Gateway Ingress Controller (AGIC). AGIC was created to allow customers to leverage Azures native Application Gateway to expose Kubernetes Services externally. AGIC continuously updates the Application Gateway so that the r…]]></summary>
         <author>
             <name>owaino</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Java on Azure Tooling Update – August 2023]]></title>
-        <id>https://devblogs.microsoft.com/java/?p=230107</id>
-        <link href="https://devblogs.microsoft.com/java/java-on-azure-tooling-update-august-2023/"/>
-        <updated>2023-09-01T11:50:35.000Z</updated>
-        <summary type="html"><![CDATA[Hi everyone, welcome to the August update of Java on Azure Tooling. In this update, we will introduce new application-centric view support to help developers manage and connect resources in one Project view and deployment status improvement for Azure App Service.
-The post Java on Azure Tooling Update – August 2023 appeared first on Microsoft for Java Developers.]]></summary>
-        <author>
-            <name>Jialuo Gan</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[How to detect Java dependency version conflict using IDEA Maven Helper]]></title>
-        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/how-to-detect-java-dependency-version-conflict-using-idea-maven/ba-p/3915091</id>
-        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/how-to-detect-java-dependency-version-conflict-using-idea-maven/ba-p/3915091"/>
-        <updated>2023-09-01T01:34:15.000Z</updated>
-        <summary type="html"><![CDATA[A Java dependency version conflict occurs when two or more dependencies in your project have incompatible versions of the same class or resource. This can cause runtime errors, unexpected behavior, or compilation failures in your Java application. Sometimes it is hard to detect them, while with the help of IDEA Maven Helper, it has never been so simple.
- 
-1. Install the plugin
-In IntelliJ IDEA, choose File -> Settings -> Plugins. Within the Marketplace tab, search for Maven Helper and click Install.
-
- 
-2. Leverage the plugin
-Open the pom.xml file of your project and switch to the Dependency Analyzer tab at the bottom.
-
-You will see three options: Conflicts, All Dependencies as List, and All Dependencies as Tree. Choose Conflicts to see if there are any dependency conflicts in your project.
-
- 
-3. Resolve conflict
-To resolve a conflict, you can right-click on a dependency on the left panel and choose Exclude. This will add an exclusion tag to your pom.xml file and remove the dependency from your project. Alternatively, you can also choose a compatible version of the dependency that works with all other dependencies and declare it explicitly in your pom.xml file using the dependencyManagement section.
-After resolving a conflict, you can refresh the Dependency Analyzer tab to see if there are any remaining conflicts. You can also use the All Dependencies as List or All Dependencies as Tree options to see all the dependencies in your project in different formats.
-
- 
-4. Conclusion
-Dependency conflicts can be difficult to detect, but they can cause a lot of problems in the project. By using the above-mentioned technique and following best practices to prevent dependency conflicts, you can ensure your application runs smoothly without any issues.
-References:Troubleshoot dependency version conflicts when using the Azure SDK for Java | Microsoft Learn Maven – Introduction to the Dependency Mechanism (apache.org)]]></summary>
-        <author>
-            <name>KevinLi</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Generally Available: Azure Monitor VM Insights using Azure Monitor Agent]]></title>
-        <id>generally-available-azure-monitor-vm-insights-using-azure-monitor-agent</id>
-        <link href="https://azure.microsoft.com/en-us/updates/generally-available-azure-monitor-vm-insights-using-azure-monitor-agent/"/>
-        <updated>2023-08-31T20:00:19.000Z</updated>
-        <summary type="html"><![CDATA[VM Insights using Azure Monitor Agent provides various benefits like cost savings, simplified management experience and enhanced security & performance.]]></summary>
-        <author>
-            <name>Azure service updates</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Azure Firewall Single-Click Upgrade and Downgrade is now in general availability]]></title>
-        <id>azure-firewall-singleclick-upgrade-and-downgrade-is-now-in-general-availability</id>
-        <link href="https://azure.microsoft.com/en-us/updates/azure-firewall-singleclick-upgrade-and-downgrade-is-now-in-general-availability/"/>
-        <updated>2023-08-31T16:00:03.000Z</updated>
-        <summary type="html"><![CDATA[This feature allows you to upgrade your firewall without service downtime, with a single click of a button.]]></summary>
-        <author>
-            <name>Azure service updates</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Azure Firewall: Poland Central Region is now in general availability]]></title>
-        <id>azure-firewall-poland-central-region-are-now-in-general-availability</id>
-        <link href="https://azure.microsoft.com/en-us/updates/azure-firewall-poland-central-region-are-now-in-general-availability/"/>
-        <updated>2023-08-31T16:00:03.000Z</updated>
-        <summary type="html"><![CDATA[Azure Firewall is now generally available in the Poland Central region.]]></summary>
-        <author>
-            <name>Azure service updates</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Azure Firewall: Explicit Proxy is now in public preview]]></title>
-        <id>azure-firewall-explicit-proxy-is-now-in-public-preview</id>
-        <link href="https://azure.microsoft.com/en-us/updates/azure-firewall-explicit-proxy-is-now-in-public-preview/"/>
-        <updated>2023-08-31T16:00:02.000Z</updated>
-        <summary type="html"><![CDATA[This configuration allows traffic from the sending application to be directed to the private IP address of the firewall, facilitating direct egress from the firewall without the need for a UDR.]]></summary>
-        <author>
-            <name>Azure service updates</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Azure Firewall: Auto-Learn SNAT routes feature is now in public preview]]></title>
-        <id>azure-firewall-autolearn-snat-routes-feature-is-now-in-public-preview</id>
-        <link href="https://azure.microsoft.com/en-us/updates/azure-firewall-autolearn-snat-routes-feature-is-now-in-public-preview/"/>
-        <updated>2023-08-31T16:00:02.000Z</updated>
-        <summary type="html"><![CDATA[Azure Firewall can now learn address ranges and automatically configure them to be excluded from SNAT, to reduce time and complexity spent manually defining SNAT private ranges.]]></summary>
-        <author>
-            <name>Azure service updates</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Public Preview: Azure Log Alerts support for Azure Resource Graph (ARG)]]></title>
-        <id>public-preview-azure-log-alerts-support-for-azure-resource-graph-arg</id>
-        <link href="https://azure.microsoft.com/en-us/updates/public-preview-azure-log-alerts-support-for-azure-resource-graph-arg/"/>
-        <updated>2023-08-31T16:00:00.000Z</updated>
-        <summary type="html"><![CDATA[We are now introducing support for running queries also on Azure Resource Graph (ARG) tables, and even joining data between Azure Resource Graph (ARG) data sources from your Log Analytics workspace and Application Insights resources in a single query.]]></summary>
-        <author>
-            <name>Azure service updates</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Implementing Pagination with the Copy Activity in Microsoft Fabric]]></title>
-        <id>https://techcommunity.microsoft.com/t5/fasttrack-for-azure/implementing-pagination-with-the-copy-activity-in-microsoft/ba-p/3914977</id>
-        <link href="https://techcommunity.microsoft.com/t5/fasttrack-for-azure/implementing-pagination-with-the-copy-activity-in-microsoft/ba-p/3914977"/>
-        <updated>2023-08-31T13:11:07.000Z</updated>
-        <summary type="html"><![CDATA[Introduction:
-APIs often return a large amount of data. Pagination allows you to retrieve a manageable subset of this data at a time, preventing unnecessary strain on resources and reducing the likelihood of timeouts or errors.
-In this example, the client starts by requesting the first page of data from the server. The server responds with both the data and metadata indicating the current page, the total number of records. The client then proceeds to request subsequent pages of data until it reaches the last page. This approach allows for efficient data retrieval and processing without overwhelming the client or the server.
-we want to get a file in ADLS containing all data from API without the need to use other activities like until/forEach, we want the Copy activity to perform all the pag…]]></summary>
-        <author>
-            <name>Sally_Dabbah</name>
         </author>
     </entry>
 </feed>
