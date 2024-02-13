@@ -2,10 +2,83 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2024-02-12T01:01:30.096Z</updated>
+    <updated>2024-02-13T01:01:34.946Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Simplifying Azure Kubernetes Service Authentication Part 2]]></title>
+        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/simplifying-azure-kubernetes-service-authentication-part-2/ba-p/4055332</id>
+        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/simplifying-azure-kubernetes-service-authentication-part-2/ba-p/4055332"/>
+        <updated>2024-02-12T22:12:59.000Z</updated>
+        <summary type="html"><![CDATA[Welcome to the second installment of our multipart series on simplifying Azure Kubernetes Service (AKS) authentication. In this article, we delve deeper into the intricacies of AKS setup, focusing on critical aspects such as deploying demo applications, configuring Cert Manager for TLS certificates (enabling HTTPS), establishing a static IP address, creating a DNS label, and initiating the groundwork for robust authentication. First part here Part 1
+ 
+Let’s dive in!
+ 
+Deploy two demo applications
+In the previous post we set up our AKS cluster and configured NGINX. Now we will deploy two sample applications and deploy them. You can follow the official documentation here Create an unmanaged ingress controller.
+ 
+First create the following two YAML files that define our two applications:
+aks-…]]></summary>
+        <author>
+            <name>emiller635</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Converting an AWS Lambda Function in Go into an Azure Function using LLMs]]></title>
+        <id>https://techcommunity.microsoft.com/t5/azure-architecture-blog/converting-an-aws-lambda-function-in-go-into-an-azure-function/ba-p/4054916</id>
+        <link href="https://techcommunity.microsoft.com/t5/azure-architecture-blog/converting-an-aws-lambda-function-in-go-into-an-azure-function/ba-p/4054916"/>
+        <updated>2024-02-12T18:40:32.000Z</updated>
+        <summary type="html"><![CDATA[Converting an AWS Lambda into an Azure Function using LLMs in Go
+
+The goal of this post is to show some strategies that can be used to convert AWS Lambda Functions into Azure Functions using LLMs.
+ 
+Disclaimer: This article is an experimental implementation about applying LLMs to convert AWS Lambda functions into Azure Functions. It is not intended as a defined guide for the process and does not guarantee successful conversion. The outcome depends on the specific code you intend to convert and the LLM that you are using.
+
+What would it take to convert a Lambda Function into an Azure Function?
+ 
+There are a few things that we need to take into account with Lambda Functions:
+
+1. Unlike Azure Functions, AWS Lambda functions don't use bindings.
+2. Input objects in the entrypoint are received i…]]></summary>
+        <author>
+            <name>afrancoc2000</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Introducing API-based message extensions in Microsoft Teams Developer Portal]]></title>
+        <id>https://devblogs.microsoft.com/microsoft365dev/?p=18077</id>
+        <link href="https://devblogs.microsoft.com/microsoft365dev/introducing-api-based-message-extensions-in-microsoft-teams-developer-portal/"/>
+        <updated>2024-02-12T16:00:13.000Z</updated>
+        <summary type="html"><![CDATA[This cutting-edge functionality allows your apps to interact seamlessly, securely, and efficiently with external services via API.
+The post Introducing API-based message extensions in Microsoft Teams Developer Portal appeared first on Microsoft 365 Developer Blog.]]></summary>
+        <author>
+            <name>Srinidy Ravichandran</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Using AI for Content Moderation with Azure SQL Database]]></title>
+        <id>https://devblogs.microsoft.com/azure-sql/?p=2845</id>
+        <link href="https://devblogs.microsoft.com/azure-sql/using-ai-for-content-moderation-with-azure-sql-database/"/>
+        <updated>2024-02-12T09:00:48.000Z</updated>
+        <summary type="html"><![CDATA[In my previous posts, I have covered using Azure OpenAI services with Azure SQL Database via REST endpoints. This post with further explore that pathway by creating stored procedures you can use to encapsulate the REST calls and combine them with custom business logic for AI content moderation with Azure SQL Database.
+The post Using AI for Content Moderation with Azure SQL Database appeared first on Azure SQL Devs’ Corner.]]></summary>
+        <author>
+            <name>Brian Spendolini</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Migrate classic Cloud Service to CSES when SKU is unsupported without original project]]></title>
+        <id>https://techcommunity.microsoft.com/t5/azure-paas-blog/migrate-classic-cloud-service-to-cses-when-sku-is-unsupported/ba-p/4052877</id>
+        <link href="https://techcommunity.microsoft.com/t5/azure-paas-blog/migrate-classic-cloud-service-to-cses-when-sku-is-unsupported/ba-p/4052877"/>
+        <updated>2024-02-12T07:10:37.000Z</updated>
+        <summary type="html"><![CDATA[With the impending retirement of the classic Cloud Service (CS) on August 31st, 2024, an increasing number of users have initiated the migration of their classic Cloud Service to Cloud Service Extended Support (CSES). To facilitate this transition, an official feature known as in-place migration has been introduced, enabling the seamless migration of classic CS to CSES without incurring any downtime. However, certain limitations exist, with the VM size used by the CS role being a notable factor. As per documentation, the A-series, encompassing Small, Medium, and Large VM sizes, is no longer supported in CSES, necessitating their conversion to corresponding VM sizes as a preliminary step.
+ 
+To apply a change in the VM size utilized in classic CS, a redeployment/upgrade is required subsequen…]]></summary>
+        <author>
+            <name>JerryZhangMS</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Streamlining Azure Marketplace Deployments with MODM]]></title>
         <id>https://techcommunity.microsoft.com/t5/azure-developer-community-blog/streamlining-azure-marketplace-deployments-with-modm/ba-p/4053466</id>
