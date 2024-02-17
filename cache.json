@@ -634,16 +634,6 @@
           "wordCount": 6831,
           "title": "A Bootiful Podcast: Java community legend Sharat Chander",
           "imageUrl": "https://spring.io/img/og-spring.png"
-        },
-        {
-          "id": "https://spring.io/blog/2023/09/20/hello-java-21",
-          "author": "Josh Long",
-          "description": "Level up your Java code and explore what Spring can do for you.",
-          "link": "https://spring.io/blog/2023/09/20/hello-java-21",
-          "publishedOn": "2023-09-20T00:00:00.000Z",
-          "wordCount": 10604,
-          "title": "Hello, Java 21",
-          "imageUrl": "https://spring.io/img/og-spring.png"
         }
       ]
     },
@@ -2220,6 +2210,16 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/azure-functions-newsletter-february-2024/ba-p/4057533",
+          "author": "madhurabharadwaj",
+          "description": "Welcome to the February 2024 edition of Azure Functions newsletter! We'll share the latest news for Azure Functions here on the Apps on Azure blog.\n \nAzure Functions monthly community live stream\n \nJoin us for our upcoming live stream on February 20, 2024, at 10:00 AM PST (18:00 UTC). Tune in to hear from Eamon O'Reilly, Lily Ma, and Madhura Bharadwaj as they discuss the latest releases in Azure Functions, provide insights into building intelligent apps with OpenAI, and unveil an exciting new feature in Durable Functions. Mark your calendars for this informative session!\n \n\n\n\n \nSubscribe to the Azure Developers YouTube channel!\n \nProduct News\n \nFollowing is the list of new Azure Functions features released since October 15 2023 \n \n\n\n\n\nAreas\n\n\nFeature\n\n\n\n\nLanguages\n\n\n\nGA: Support for local …",
+          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/azure-functions-newsletter-february-2024/ba-p/4057533",
+          "publishedOn": "2024-02-16T22:32:58.000Z",
+          "wordCount": 10064,
+          "title": "Azure Functions Newsletter – February 2024",
+          "imageUrl": "https://cdn.techcommunity.microsoft.com/assets/Azure/BlogPreview_default-blue.png"
+        },
+        {
           "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/step-by-step-practical-guide-to-architecting-cloud-native/ba-p/4057960",
           "author": "AbdullahAbuHassan",
           "description": "This is a step by step, no fluff guide to building and architecting cloud native applications.\nCloud application development introduces unique challenges: applications are distributed, scale horizontally, communicate asynchronously, have automated deployments, and are built to handle failures resiliently. This demands a shift in both technical approach and mindset.\nSo Cloud Native is not about technologies, if you can do all of the above, then you are Cloud Native. You don’t have to use Kubernetes for instance, to become Cloud Native.\n \n\n\n \n\n\nSteps:\nSay you want to architect an application in the cloud, and let’s use an E-Commerce Website as an example, how do you go about it and what decisions do you need to make?\nRegardless of the type of application, we have to go through six distinct s…",
@@ -3158,16 +3158,6 @@
           "wordCount": 10625,
           "title": "Monitoring Azure Policy compliance across your Azure Managed Application deployments",
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/505934iF1945BB15590BA31/image-size/original?v=v2&px=-1"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/init-containers-in-azure-container-apps-database-initialization/ba-p/3931271",
-          "author": "Kinsuk",
-          "description": "Suppose you're deploying a web application that relies on a database. Instead of manually configuring the database each time you deploy your application, you can use an Init Container to handle this task. The Init Container can run scripts to create tables, seed initial data, or set up the database schema. Once the database is ready, the main application container can safely start, knowing that the required database structure is in place.\n \nThe below example defines an init container which runs under the same pod as main app container, seeds data to an existing Azure MySQL Database which will be used by the main web app container to serve contents onto the landing page.\n \n\n \nThe init container inserts a record into an existing table named myguests in Azure My SQL DB using a python script. The script contains code for connecting to the Database alongside inserting record into the Database. This data will then be retrieved and used by the main app container which is also running a python Flask based web application and return the value in the landing page.\n \nDockerfile for Init Container\n \n \n \nFROM python\nCOPY . .\nRUN pip install mysql && pip install mysql-connector-python\nCMD [\"python\", \"test.py\"]\n\n \n \n \n \nPython Script for Init Container\n \n \n \nimport mysql.connector\n\nmydb = mysql.connector.connect(\n  host=\"init-test.mysql.database.azure.com\",\n  user=\"*******\",\n  password=\"*******\",\n  database=\"*****\"\n)\n\nmycursor = mydb.cursor()\n\nsql = \"INSERT INTO myguests (firstname, lastname, email) VALUES ('John', 'Doe', 'test@outlook.com')\"\n\nmycursor.execute(sql)\n\nmydb.commit()\n\nprint(mycursor.rowcount, \"record(s) affected\")\n\n \n \n \n \nOutput from Init Container\n \n\n \n \n \nDockerfile for main app container\n \n \n \nFROM python\nCOPY . .\nRUN pip install mysql-connector && pip install flask\nEXPOSE 5000\nCMD [\"python\", \"app.py\"]\n \n \n \nOutput",
-          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/init-containers-in-azure-container-apps-database-initialization/ba-p/3931271",
-          "publishedOn": "2023-09-20T09:25:52.000Z",
-          "wordCount": 9861,
-          "title": "Init Containers in Azure Container Apps : Database Initialization",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/508963iFB344682F6B03679/image-size/original?v=v2&px=-1"
         }
       ]
     },
@@ -4207,6 +4197,16 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/t5/azure-paas-blog/batch-pool-with-user-assigned-managed-identity-and-key-vault/ba-p/4058893",
+          "author": "JerryZhangMS",
+          "description": "On Feb 29th, 2024, the certificate feature in Azure Batch Account will be retired. To continue using the certificate with Batch task, user will need to migrate the Batch account certificates to Azure Key Vault. But since there is not an existing example provided, that might be a little difficult.\n \nThis blog will mainly focus on providing an example about how to recreate the Batch pool with required user assigned Managed Identity and Key Vault extension. Currently the Batch pool with user assigned Managed Identity and extension is only supported by ARM template and REST API call. Creating a pool with extension is unsupported in Azure Portal. Creating a pool with user assigned Managed Identity is unsupported in Az PowerShell module and Azure CLI.\n \nPre-requisite:\nTo follow this blog, please…",
+          "link": "https://techcommunity.microsoft.com/t5/azure-paas-blog/batch-pool-with-user-assigned-managed-identity-and-key-vault/ba-p/4058893",
+          "publishedOn": "2024-02-16T06:08:30.000Z",
+          "wordCount": 10193,
+          "title": "Batch pool with user assigned Managed Identity and Key Vault extension",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/552159i6D15DE809210F763/image-size/original?v=v2&px=-1"
+        },
+        {
           "id": "https://techcommunity.microsoft.com/t5/azure-paas-blog/leveraging-redis-insights-for-azure-cache-for-redis/ba-p/4054484",
           "author": "Amrinder_Singh",
           "description": "The blog talks about how to leverage Redis Insights GUI tool while working with Azure Cache for Redis. We will look at some of the option what will help us with some high-level connectivity troubleshooting and insights to our data present inside the cache. \n \nTo start with, we can leverage this for testing the connectivity to our Redis cache instance. After clicking on Add Redis Database button, we can fill in the other fields ahead: \n \nHost: Complete FQDN or the completed Redis cache Endpoint  \nFor Basic, Standard & Premium Tier - <Cachename>.redis.windows.net \nFor Enterprise Tier - <Cachename>.<regionname>.redisenterprise.cache.azure.net \nPort: 6380 or 6379 (depending on whether we are testing for SSL or non-SSL port respectively) / 10000 for Enterprise Tier \nDatabase Alias: Cache name \n…",
@@ -4948,6 +4948,16 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/t5/azure-migration-and/rapidly-scope-nc2-on-azure-using-nutanix-sizer/ba-p/4059341",
+          "author": "rvandenbedem",
+          "description": "Overview\nA global enterprise wants to migrate thousands of Nutanix AHV or VMware vSphere virtual machines (VMs) to Microsoft Azure as part of their application modernization strategy. The first step is to exit their on-premises data centers and rapidly relocate their legacy application VMs to the Nutanix Cloud Clusters on Azure (NC2 on Azure) service as a staging area for the first phase of their modernization strategy. How can they quickly size NC2 on Azure to meet their workload requirements?\n \nNC2 on Azure is a third-party Azure service from Nutanix that provides private clouds containing Nutanix AHV clusters built from dedicated bare-metal Azure infrastructure. It enables customers to leverage their existing investments in Nutanix skills and tools, allowing them to focus on developing …",
+          "link": "https://techcommunity.microsoft.com/t5/azure-migration-and/rapidly-scope-nc2-on-azure-using-nutanix-sizer/ba-p/4059341",
+          "publishedOn": "2024-02-16T15:12:40.000Z",
+          "wordCount": 11535,
+          "title": "Rapidly scope NC2 on Azure using Nutanix Sizer",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/552363i78D3843E16385A84/image-size/original?v=v2&px=-1"
+        },
+        {
           "id": "https://techcommunity.microsoft.com/t5/azure-migration-and/azure-vmware-solution-security-design-considerations/ba-p/4050496",
           "author": "rvandenbedem",
           "description": "Azure VMware Solution Design Series\n \n\nAvailability Design Considerations\nRecoverability Design Considerations\nPerformance Design Considerations\nSecurity Design Considerations\n\n \nOverview\nA global enterprise wants to migrate thousands of VMware vSphere virtual machines (VMs) to Microsoft Azure as part of their application modernization strategy. The first step is to exit their on-premises data centers and rapidly relocate their legacy application VMs to the Azure VMware Solution as a staging area for the first phase of their modernization strategy. What should the Azure VMware Solution look like?\n \nAzure VMware Solution is a VMware validated first party Azure service from Microsoft that provides private clouds containing VMware vSphere clusters built from dedicated bare-metal Azure infrast…",
@@ -5040,6 +5050,16 @@
       "feedUrl": "https://devblogs.microsoft.com/cse/feed/",
       "siteUrl": "https://devblogs.microsoft.com/ise/",
       "articles": [
+        {
+          "id": "https://devblogs.microsoft.com/ise/?p=15257",
+          "author": "Pramita Winata",
+          "description": "Streamlining Development through Monorepo with Independent Release Cycles\nThe post Streamlining Development through Monorepo with Independent Release Cycles appeared first on ISE Developer Blog.",
+          "link": "https://devblogs.microsoft.com/ise/streamlining-development-through-monorepo-with-independent-release-cycles/",
+          "publishedOn": "2024-02-16T08:00:00.000Z",
+          "wordCount": 5124,
+          "title": "Streamlining Development through Monorepo with Independent Release Cycles",
+          "imageUrl": "https://devblogs.microsoft.com/ise/wp-content/uploads/sites/55/2023/07/MicrosoftTeams-image-33.jpg"
+        },
         {
           "id": "https://devblogs.microsoft.com/ise/?p=15242",
           "author": "Oscar Fimbres",
@@ -5706,6 +5726,16 @@
       "siteUrl": "https://devblogs.microsoft.com/devops/",
       "articles": [
         {
+          "id": "https://devblogs.microsoft.com/devops/?p=68388",
+          "author": "Eric van Wijk",
+          "description": "Azure Pipelines includes around 150 build & release tasks as well as many more task extensions. Various included tasks have multiple (major) versions bringing the total to over included 200 tasks.\nThe post Azure Pipelines deprecated tasks retirement schedule appeared first on Azure DevOps Blog.",
+          "link": "https://devblogs.microsoft.com/devops/azure-pipelines-deprecated-tasks-retirement-schedule/",
+          "publishedOn": "2024-02-16T15:27:19.000Z",
+          "wordCount": 5595,
+          "title": "Azure Pipelines deprecated tasks retirement schedule",
+          "imageUrl": "https://devblogs.microsoft.com/devops/wp-content/uploads/sites/6/2024/02/Screenshot-2024-02-16-at-16.31.33.png"
+        },
+        {
           "id": "https://devblogs.microsoft.com/devops/?p=68534",
           "author": "Bohdan Janousek",
           "description": "Azure Repos provides two methods for users to access a git repository in Azure Repos – HTTPS and SSH. To use SSH, you need to create a key pair using one of the supported encryption methods. In the past we’ve been supporting only SSH-RSA and we’ve asked users to enable the SSH-RSA here.\nThe post End of SSH-RSA support for Azure Repos appeared first on Azure DevOps Blog.",
@@ -5994,16 +6024,6 @@
           "wordCount": 5522,
           "title": "Now Generally Available: GitHub Advanced Security for Azure DevOps is ready for you to use",
           "imageUrl": "https://devblogs.microsoft.com/devops/wp-content/uploads/sites/6/2022/10/AzDO-heart-Security.png"
-        },
-        {
-          "id": "https://devblogs.microsoft.com/devops/?p=67633",
-          "author": "Gloridel Morales",
-          "description": "Today we’re very excited to announce the first release candidate (RC1) of Azure DevOps Server 2022.1!\nLast Accessed column on Delivery Plans page\nThere are many more features with this release,\nThe post Introducing Azure DevOps Server 2022 Update 1 RC1 appeared first on Azure DevOps Blog.",
-          "link": "https://devblogs.microsoft.com/devops/introducing-azure-devops-server-2022-update-1-rc1/",
-          "publishedOn": "2023-09-19T19:31:33.000Z",
-          "wordCount": 4886,
-          "title": "Introducing Azure DevOps Server 2022 Update 1 RC1",
-          "imageUrl": "https://devblogs.microsoft.com/devops/wp-content/uploads/sites/6/2018/09/index-hero.jpg"
         }
       ]
     },
@@ -10680,16 +10700,6 @@
           "wordCount": 4940,
           "title": "Announcing Microsoft Graph CLI v1.0.0 release candidate, now with beta support",
           "imageUrl": "https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2023/09/9.25-scaled.jpg"
-        },
-        {
-          "id": "https://devblogs.microsoft.com/microsoft365dev/?p=15312",
-          "author": "Greg Taylor",
-          "description": "Today, we are announcing that on October 1, 2026, we will start blocking EWS requests from non-Microsoft apps to Exchange Online.\nThe post Retirement of Exchange Web Services in Exchange Online appeared first on Microsoft 365 Developer Blog.",
-          "link": "https://devblogs.microsoft.com/microsoft365dev/retirement-of-exchange-web-services-in-exchange-online/",
-          "publishedOn": "2023-09-19T15:00:59.000Z",
-          "wordCount": 4878,
-          "title": "Retirement of Exchange Web Services in Exchange Online",
-          "imageUrl": "https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2023/09/EWS-scaled.jpg"
         }
       ]
     }
