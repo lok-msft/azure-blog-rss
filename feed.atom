@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2024-02-18T01:04:44.611Z</updated>
+    <updated>2024-02-19T01:02:00.102Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
@@ -13869,96 +13869,6 @@ About Command Prompt
 Command Prompt is a command-line interpreter developed by Micros…]]></summary>
         <author>
             <name>japhletnwamu</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Azure App Service Authentication: Using MSI or Service Principal to Call Another App Service]]></title>
-        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/azure-app-service-authentication-using-msi-or-service-principal/ba-p/3927161</id>
-        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/azure-app-service-authentication-using-msi-or-service-principal/ba-p/3927161"/>
-        <updated>2023-09-22T09:38:58.000Z</updated>
-        <summary type="html"><![CDATA[Have you ever wondered how to securely access another Azure App Service from your app service without exposing any credentials or secrets? If so, you might be interested in using Managed Identities (MSI) or Service Principals to authenticate and authorize your app service to another app service that is protected by Azure Active Directory (AAD) using built-in authentication (Easy-Auth). 
- 
-In this article, I will show you how to use MSI or Service Principal of app1 to access app2, which is a custom resource that requires AAD authentication.
- 
-Normally, we would use the MSI-validator tool to test the functionality of MSI. However, it only supports specific resources and requires a pre-defined resource value. Currently, it can only use the following resources: default, keyvault, storage, and …]]></summary>
-        <author>
-            <name>wanjing</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Monitoring Azure Policy compliance across your Azure Managed Application deployments]]></title>
-        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/monitoring-azure-policy-compliance-across-your-azure-managed/ba-p/3922113</id>
-        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/monitoring-azure-policy-compliance-across-your-azure-managed/ba-p/3922113"/>
-        <updated>2023-09-22T09:16:48.000Z</updated>
-        <summary type="html"><![CDATA[During our recent development work with a partner, they asked a question...
- 
-We want to deploy Azure Policies with our Managed application to ensure the solution stays compliant and security standards are enforced. Is there a way for us, as a publisher, to get alerted if the policies deployed with the Managed application are violated and then quickly engage with the customers to ensure that their deployment is secure? 
- 
-The short answer was no, so we built one! 
-We are open-sourcing the code for this solution so that other publishers can adopt this approach to ensure customers' Managed applications are secure. For more context on the solution described here please read Microsoft documentation on planning a Managed application and Azure Policy.
- 
-Problem 
-When creating a Managed applicati…]]></summary>
-        <author>
-            <name>polinao</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Paketo Buildpacks Bionic End Of Support]]></title>
-        <id>https://spring.io/blog/2023/09/22/paketo-buildpacks-bionic-end-of-support</id>
-        <link href="https://spring.io/blog/2023/09/22/paketo-buildpacks-bionic-end-of-support"/>
-        <updated>2023-09-22T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Level up your Java code and explore what Spring can do for you.]]></summary>
-        <author>
-            <name>Scott Frederick</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Simplified Event Externalization with Spring Modulith]]></title>
-        <id>https://spring.io/blog/2023/09/22/simplified-event-externalization-with-spring-modulith</id>
-        <link href="https://spring.io/blog/2023/09/22/simplified-event-externalization-with-spring-modulith"/>
-        <updated>2023-09-22T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Level up your Java code and explore what Spring can do for you.]]></summary>
-        <author>
-            <name>Oliver Drotbohm</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Configure remote write to send data from ARO to Azure managed Prometheus using AAD authentication.]]></title>
-        <id>https://techcommunity.microsoft.com/t5/fasttrack-for-azure/configure-remote-write-to-send-data-from-aro-to-azure-managed/ba-p/3934721</id>
-        <link href="https://techcommunity.microsoft.com/t5/fasttrack-for-azure/configure-remote-write-to-send-data-from-aro-to-azure-managed/ba-p/3934721"/>
-        <updated>2023-09-21T23:48:46.000Z</updated>
-        <summary type="html"><![CDATA[This blog describes how to configure remote-write to send data from Prometheus running in your Azure Red Hat OpenShift (ARO) cluster to Azure managed Prometheus using Azure Active Directory authentication. Then query and view the data via Azure managed Prometheus and Grafana. 
- 
-Currently ARO doesn't support Managed Identity, hence we are using Azure Active Directory Service Principal approach. Managed Identity support for ARO is coming soon. One of the major drawbacks with Service Principal approach is that the client secret will have an expiry date.
- 
-Credit
-Huge thanks to Vishwanath Narasimhan & Rakshith Padmanabha from Microsoft and Paul Czarkowski from Red Hat for providing guidance to accomplish this.
- 
-Cluster configurations
-This article applies to the following cluster configuratio…]]></summary>
-        <author>
-            <name>UmarMohamedUsman</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[General Availability: Share VM images publicly with community gallery - Azure Compute Gallery feature]]></title>
-        <id>general-availability-share-images-publicly-with-azure-compute-gallery-feature-community-gallery</id>
-        <link href="https://azure.microsoft.com/en-us/updates/general-availability-share-images-publicly-with-azure-compute-gallery-feature-community-gallery/"/>
-        <updated>2023-09-21T19:38:21.000Z</updated>
-        <summary type="html"><![CDATA[With community gallery, you can now share VM images with the broader Azure community.]]></summary>
-        <author>
-            <name>Azure service updates</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Public Preview:  Web PubSub support for Socket.IO]]></title>
-        <id>public-preview-web-pubsub-support-for-socketio</id>
-        <link href="https://azure.microsoft.com/en-us/updates/public-preview-web-pubsub-support-for-socketio/"/>
-        <updated>2023-09-21T16:00:05.000Z</updated>
-        <summary type="html"><![CDATA[Use your preferred Socket.IO APIs, while letting Azure handle messages and scaling for you]]></summary>
-        <author>
-            <name>Azure service updates</name>
         </author>
     </entry>
     <entry>
