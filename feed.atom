@@ -2,10 +2,99 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2024-02-27T01:00:06.233Z</updated>
+    <updated>2024-02-28T00:59:55.928Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[This Week in Spring - February 27th, 2024]]></title>
+        <id>https://spring.io/blog/2024/02/28/this-week-in-spring-february-27th-2024</id>
+        <link href="https://spring.io/blog/2024/02/28/this-week-in-spring-february-27th-2024"/>
+        <updated>2024-02-28T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Level up your Java code and explore what Spring can do for you.]]></summary>
+        <author>
+            <name>Josh Long</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Refreshed Identity and Access Management CAF documentation]]></title>
+        <id>https://techcommunity.microsoft.com/t5/azure-governance-and-management/refreshed-identity-and-access-management-caf-documentation/ba-p/4067862</id>
+        <link href="https://techcommunity.microsoft.com/t5/azure-governance-and-management/refreshed-identity-and-access-management-caf-documentation/ba-p/4067862"/>
+        <updated>2024-02-27T19:46:05.000Z</updated>
+        <summary type="html"><![CDATA[Identity and Access Management for Azure Landing Zones
+ 
+Today, we launched our refreshed guidance for identity and access management (IAM) in Azure Landing Zones. ALZ is a core part of the Cloud Adoption Framework for Azure. It is aligned to the eight CAF design areas, Identity and Access Management being one of them. You can check out the refreshed guidance over at: aka.ms/ALZ/IAM
+ 
+The updated guidance brings IAM to the heart of a robust Azure Landing Zones implementation. ALZ is built to support a Zero Trust strategy, and the guidance is centred around the principle of least privilege to ensure that every administrator and user has the access they need, when they need it, to the right resources, and nothing more. No single administrator or team should have superpowers over everything. …]]></summary>
+        <author>
+            <name>soderholmd</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Best Practices for using Azure Container Registry and Docker Hub]]></title>
+        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/best-practices-for-using-azure-container-registry-and-docker-hub/ba-p/4068979</id>
+        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/best-practices-for-using-azure-container-registry-and-docker-hub/ba-p/4068979"/>
+        <updated>2024-02-27T19:38:17.000Z</updated>
+        <summary type="html"><![CDATA[Many developers rely on Docker Hub to consume public content such as container images, Helm charts, and other artifacts, often without authenticating. However, when you have dependencies on public content you can introduce security and reliability risks into your environment. In this blog, we will describe the best practices for mitigating risks when using public content from Docker Hub and other public registries.
+ 
+Import public content locally whenever possible
+Importing public content to an internal registry is the first step in a set of best practices for your software supply chain . Doing so raises the availability and reliability of your public content pipeline. If you pull public content without using credentials from any public registry, including Docker Hub, you may be limited in…]]></summary>
+        <author>
+            <name>MSFTPM</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[IP address changes for Azure Service Bus and IP/DNS Changes for Azure Relay]]></title>
+        <id>https://techcommunity.microsoft.com/t5/messaging-on-azure-blog/ip-address-changes-for-azure-service-bus-and-ip-dns-changes-for/ba-p/4057565</id>
+        <link href="https://techcommunity.microsoft.com/t5/messaging-on-azure-blog/ip-address-changes-for-azure-service-bus-and-ip-dns-changes-for/ba-p/4057565"/>
+        <updated>2024-02-27T17:00:00.000Z</updated>
+        <summary type="html"><![CDATA[What is Changing? 
+The infrastructure layer of Azure Relay and Service Bus is being upgraded which will cause the IP addresses used by customer namespaces to. For Azure Relay the gateway DNS names are also changing.
+ 
+These changes are being made as part of our continuous improvements to our platform. The IP addresses of our services can change and should not be considered static and unchanging as previously communicated in the communication for Azure Service Bus and Azure Relay.  There is no added charge for this nor are there any service interruptions during the migration.
+ 
+Call to Action 
+If you are using IP addresses in your egress firewalls to your Azure Relay or Azure Service Bus namespaces, you will need to update them to use the namespace DNS names instead. 
+ 
+Azure Service Bus customers
+For Azure Service Bus, configure your firewalls to use the fully qualified domain names for your specific namespaces, or the wildcard “*.servicebus.windows.net” domains. These will automatically resolve to the new IP addresses.
+ 
+Azure Relay customers
+For Azure Relay, configure your firewalls with the DNS names of all the Relay gateways, which can be found by running this script . This script will resolve the fully qualified domain names of all the gateways to which you need to establish a connection.
+Change any rules that previously used the IP addresses to use the namespace DNS name for port 80/443 traffic and the gateway DNS names where you previously were using IP addresses.  WCF uses a number of ports beyond 80/443 including 9351, 9350, 5671, 9352, and 9353 so be sure to check, where you have firewall rules for those ports.]]></summary>
+        <author>
+            <name>EldertGrootenboer</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Microsoft Fabric for multitenant SaaS]]></title>
+        <id>https://techcommunity.microsoft.com/t5/fasttrack-for-azure/microsoft-fabric-for-multitenant-saas/ba-p/4068757</id>
+        <link href="https://techcommunity.microsoft.com/t5/fasttrack-for-azure/microsoft-fabric-for-multitenant-saas/ba-p/4068757"/>
+        <updated>2024-02-27T15:25:38.000Z</updated>
+        <summary type="html"><![CDATA[You have heard this before, Microsoft Fabric is an all-in-one analytics solution that covers everything from data integration to Machine Learning, real-time analytics and Business Intelligence. The big value proposition of Microsoft Fabric is a highly integrated, end-to-end, and easy-to-use service that simplifies your analytics. 
+What is not being highlighted enough, is how compelling this platform really is for ISVs and SaaS creators that want to offer analytics to their customers, either as their main product, or as an add-on to the main offering. This blog post will focus on this use-case specifically and will show what are the features in Fabric that simplify analytics for multitenant SaaS applications. 
+Proposed architecture SaaS Analytics on Microsoft Fabric 
+
+ 
+ 
+Important! The arc…]]></summary>
+        <author>
+            <name>OlgaMolocenco</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Connectivity from IaaS(VM) and PaaS service(ADF) to ADLS account with public network access disabled]]></title>
+        <id>https://techcommunity.microsoft.com/t5/azure-paas-blog/connectivity-from-iaas-vm-and-paas-service-adf-to-adls-account/ba-p/4025728</id>
+        <link href="https://techcommunity.microsoft.com/t5/azure-paas-blog/connectivity-from-iaas-vm-and-paas-service-adf-to-adls-account/ba-p/4025728"/>
+        <updated>2024-02-27T06:39:26.000Z</updated>
+        <summary type="html"><![CDATA[In this blog post, we will investigate the impacts of disabling public network access in the storage account and learn how to establish connections to an Azure Data Lake Storage account from both IaaS (Virtual Machine) and PaaS services (Azure Data Factory), when public network access is disabled. Additionally, we will address common troubleshooting issues that may arise due to this configuration.
+ 
+Introduction
+Azure storage accounts provide a scalable and secure way to store and access data in the cloud. This model enables you to control the level of access to your storage accounts that your applications and enterprise environments demand, based on the type and subset of networks or resources that you use. However, some scenarios may require you to disable public network access to your s…]]></summary>
+        <author>
+            <name>24Deepti</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[GA: Azure API Management Developer Portal Unveils Enhanced Features for Increased Developer Productivity]]></title>
         <id>ga-azure-api-management-developer-portal-unveils-enhanced-features-for-increased-developer-productivity</id>
@@ -13597,17 +13686,6 @@ CACTH UP ON PREVIOUS SESSIONS
 Kicko…]]></summary>
         <author>
             <name>Someleze_Diko</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Postgres 16 available in Azure Cosmos DB for PostgreSQL, powered by Citus]]></title>
-        <id>https://devblogs.microsoft.com/cosmosdb/?p=6760</id>
-        <link href="https://devblogs.microsoft.com/cosmosdb/postgres-16-in-azure-cosmos-db-for-postgresql-2/"/>
-        <updated>2023-09-30T16:00:35.000Z</updated>
-        <summary type="html"><![CDATA[Big news in the Postgres world: PostgreSQL 16 was released just over 2 weeks ago. And today we’re announcing that Postgres 16 is generally available for production workloads on Azure Cosmos DB for PostgreSQL. That’s right, in production: this announcement is not just a preview of Postgres 16 support. 
-The post Postgres 16 available in Azure Cosmos DB for PostgreSQL, powered by Citus appeared first on Azure Cosmos DB Blog.]]></summary>
-        <author>
-            <name>Nik Larin</name>
         </author>
     </entry>
     <entry>
