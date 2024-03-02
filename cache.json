@@ -594,16 +594,6 @@
           "wordCount": 7010,
           "title": "A Bootiful Podcast: Spring Data legend Greg Turnquist on optimizations and queries and more",
           "imageUrl": "https://spring.io/img/og-spring.png"
-        },
-        {
-          "id": "https://spring.io/blog/2023/10/04/synchronizing-with-external-transaction-managers-in-spring-cloud-stream",
-          "author": "Soby Chacko",
-          "description": "Level up your Java code and explore what Spring can do for you.",
-          "link": "https://spring.io/blog/2023/10/04/synchronizing-with-external-transaction-managers-in-spring-cloud-stream",
-          "publishedOn": "2023-10-04T00:00:00.000Z",
-          "wordCount": 10686,
-          "title": "Synchronizing with External Transaction Managers in Spring Cloud Stream Kafka Applications",
-          "imageUrl": "https://spring.io/img/og-spring.png"
         }
       ]
     },
@@ -2180,6 +2170,16 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/path-and-hostname-based-routing-in-azure-container-apps-with/ba-p/4068923",
+          "author": "Cary_Chai",
+          "description": "Azure Container Apps is a fully managed serverless container service that enables you to deploy and run containerized applications without having to manage the infrastructure. \n \nBy default, HTTP apps in Azure Container Apps are accessible via a public URL that is unique to the app. However, you can create a container app to use a reverse proxy like NGINX to control how traffic is routed to multiple apps based on the path or hostname.\n \nIn this tutorial, you'll learn how to use Azure Container Apps to configure path and hostname-based routing for a set of containerized applications using NGINX as a reverse proxy. You'll deploy 4 applications: 1 NGINX container which will be publicly exposed and 3 container apps which will only be accessible from within the environment and that traffic will…",
+          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/path-and-hostname-based-routing-in-azure-container-apps-with/ba-p/4068923",
+          "publishedOn": "2024-03-01T01:10:46.000Z",
+          "wordCount": 11170,
+          "title": "Path and hostname-based routing in Azure Container Apps with NGINX",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/556918i3D08A0DC4DDC2FF5/image-size/original?v=v2&px=-1"
+        },
+        {
           "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/microsoft-and-open-source-software/ba-p/4072418",
           "author": "mpgraven",
           "description": "Microsoft has embraced open-source software—from offering tools for coding and managing open-source projects to making some of its own technologies open source, such as .NET and TypeScript. Even Visual Studio Code is built on open source. For March, we’re celebrating this culture of open-source software at Microsoft. \n \nExplore some of the open-source projects at Microsoft, such as .NET on GitHub. Learn about tools and best practices to help you start contributing to open-source projects. And check out resources to help you work more productively with open-source tools, like Python in Visual Studio Code.\n           \n.NET is open sourceDid you know .NET is open source? .NET is open source and cross-platform, and it’s maintained by Microsoft and the .NET community. Check it out on GitHub.  \n…",
@@ -3210,6 +3210,16 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/t5/fasttrack-for-azure/implementing-mlops-for-training-custom-models-with-azure-ai/ba-p/4072972",
+          "author": "james_croft",
+          "description": "Addressing the challenges of effectively maintaining custom models in Azure AI Document Intelligence, this article explores adapting the concepts of MLOps into your delivery strategy. The goal is to provide guidance on how to ensure that custom document analysis models are not only accurate but remain effective for users throughout their lifecycle.\n \nKey Challenges\n \nBalancing model accuracy with operational scalability\nEnsuring that custom models remain accurate over time while also scalable and efficient in operation is challenging. Teams are required to collect and process many documents while exploring techniques to improve accuracy. The operational overhead of managing document storage, running pre-processing flows, training models, and ensuring they are efficiently deployed without a…",
+          "link": "https://techcommunity.microsoft.com/t5/fasttrack-for-azure/implementing-mlops-for-training-custom-models-with-azure-ai/ba-p/4072972",
+          "publishedOn": "2024-03-01T12:37:24.000Z",
+          "wordCount": 12211,
+          "title": "Implementing MLOps for Training Custom Models with Azure AI Document Intelligence",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/557080iD80751409A3A6732/image-size/original?v=v2&px=-1"
+        },
+        {
           "id": "https://techcommunity.microsoft.com/t5/fasttrack-for-azure/microsoft-fabric-for-multitenant-saas/ba-p/4068757",
           "author": "OlgaMolocenco",
           "description": "You have heard this before, Microsoft Fabric is an all-in-one analytics solution that covers everything from data integration to Machine Learning, real-time analytics and Business Intelligence. The big value proposition of Microsoft Fabric is a highly integrated, end-to-end, and easy-to-use service that simplifies your analytics. \nWhat is not being highlighted enough, is how compelling this platform really is for ISVs and SaaS creators that want to offer analytics to their customers, either as their main product, or as an add-on to the main offering. This blog post will focus on this use-case specifically and will show what are the features in Fabric that simplify analytics for multitenant SaaS applications. \nProposed architecture SaaS Analytics on Microsoft Fabric \n\n \n \nImportant! The arc…",
@@ -3915,13 +3925,34 @@
       "title": "Microsoft Tech Community - Latest Blogs - Azure Developer Community Blog",
       "feedUrl": "https://techcommunity.microsoft.com/plugins/custom/microsoft/o365/custom-blog-rss?tid=2893852362688900935&board=AzureDevCommunityBlog&size=100&label=Functions",
       "siteUrl": "https://techcommunity.microsoft.com",
-      "articles": []
+      "articles": [
+        {
+          "id": "https://techcommunity.microsoft.com/t5/azure-developer-community-blog/draw-io-azure-infrastructure-diagrams-through-code-like-an/ba-p/4071316",
+          "author": "Jamesdld23",
+          "description": "Introduction\n \nIn this article we will see how to create an Azure diagram to reveal all the dependencies between Azure App Services, their Application Insights and finally their workspace-based Log Analytics Workspaces.\n \nThe use case consist in:\n \n\nauditing the current configuration on Azure through a PowerShell script,\nexport the current infrastructure set up on a CSV Draw.io readable file,\nobserve a work of art.\n\n \n\n \n \n\nConcept\n \nTo make this piece of art possible you should have a clear idea of the following concept.\n \n\nAzure resource dependencies: An App Service or Function App can send logs to an Application Insights and Application Insights can send logs to a Log Analytics workspace. This refers to the concept of Workspace-based Application Insights resources.\nDraw.io is a free dia…",
+          "link": "https://techcommunity.microsoft.com/t5/azure-developer-community-blog/draw-io-azure-infrastructure-diagrams-through-code-like-an/ba-p/4071316",
+          "publishedOn": "2024-03-01T07:30:00.000Z",
+          "wordCount": 10574,
+          "title": "Draw.io Azure infrastructure diagrams through code like an artist",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/556574iC76D09CFDC6F4995/image-size/original?v=v2&px=-1"
+        }
+      ]
     },
     {
       "title": "Microsoft Tech Community - Latest Blogs - Azure Developer Community Blog",
       "feedUrl": "https://techcommunity.microsoft.com/plugins/custom/microsoft/o365/custom-blog-rss?tid=2893852362688900935&board=AzureDevCommunityBlog&size=100&label=API%20Design",
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
+        {
+          "id": "https://techcommunity.microsoft.com/t5/azure-developer-community-blog/draw-io-azure-infrastructure-diagrams-through-code-like-an/ba-p/4071316",
+          "author": "Jamesdld23",
+          "description": "Introduction\n \nIn this article we will see how to create an Azure diagram to reveal all the dependencies between Azure App Services, their Application Insights and finally their workspace-based Log Analytics Workspaces.\n \nThe use case consist in:\n \n\nauditing the current configuration on Azure through a PowerShell script,\nexport the current infrastructure set up on a CSV Draw.io readable file,\nobserve a work of art.\n\n \n\n \n \n\nConcept\n \nTo make this piece of art possible you should have a clear idea of the following concept.\n \n\nAzure resource dependencies: An App Service or Function App can send logs to an Application Insights and Application Insights can send logs to a Log Analytics workspace. This refers to the concept of Workspace-based Application Insights resources.\nDraw.io is a free dia…",
+          "link": "https://techcommunity.microsoft.com/t5/azure-developer-community-blog/draw-io-azure-infrastructure-diagrams-through-code-like-an/ba-p/4071316",
+          "publishedOn": "2024-03-01T07:30:00.000Z",
+          "wordCount": 10574,
+          "title": "Draw.io Azure infrastructure diagrams through code like an artist",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/556574iC76D09CFDC6F4995/image-size/original?v=v2&px=-1"
+        },
         {
           "id": "https://techcommunity.microsoft.com/t5/azure-developer-community-blog/how-to-apim-asynch-to-synch-pattern/ba-p/4003964",
           "author": "Jeffrey Chilberto",
@@ -4365,16 +4396,6 @@
           "wordCount": 9958,
           "title": "How to Restrict User Visibility of File Share, Queue, and Table Storage Service",
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/515888i61E8E5DA7476C2D7/image-size/original?v=v2&px=-1"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/azure-paas-blog/step-by-step-guide-setting-up-custom-domain-for-azure-storage/ba-p/3944221",
-          "author": "zoeylan",
-          "description": "If you are using Azure Storage to host your website, you might want to enable HTTPS Only to ensure secure communication between the client and the server. However, setting up a custom domain with HTTPS Only enabled can be a bit tricky. In this blog, we will guide you through the step-by-step process of setting up a custom domain for your Azure Storage account with HTTPS Only enabled. \n \nFirstly, I would like to briefly explain that currently, configuring a custom domain directly on Azure Storage is only supported for HTTP. If HTTP access is allowed, you can follow this official documentation for configuration: https://learn.microsoft.com/en-us/azure/storage/blobs/storage-custom-domain-name?tabs=azure-portal#map-a-custom-domain-with-only-http-enabled \n\n \nOtherwise, if we need to use a custo…",
-          "link": "https://techcommunity.microsoft.com/t5/azure-paas-blog/step-by-step-guide-setting-up-custom-domain-for-azure-storage/ba-p/3944221",
-          "publishedOn": "2023-10-03T14:02:26.000Z",
-          "wordCount": 10999,
-          "title": "Step-by-Step Guide: Setting up Custom Domain for Azure Storage Account with HTTPS Only Enabled",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/513170iC7BA18340846650D/image-size/original?v=v2&px=-1"
         }
       ]
     },
@@ -4991,6 +5012,16 @@
       "siteUrl": "https://devblogs.microsoft.com/ise/",
       "articles": [
         {
+          "id": "https://devblogs.microsoft.com/ise/?p=15294",
+          "author": "Maho Pacheco",
+          "description": "Logging with PowerShell and share insights gained during our development journey, resulting in the development of a highly opinionated set of code to manage logging effectively.\nThe post Crafting an Opinionated Logging and Error Handling Framework for Enhanced Observability in PowerShell appeared first on ISE Developer Blog.",
+          "link": "https://devblogs.microsoft.com/ise/empowering-powershell-with-opinionated-best-practices-for-logging-and-error-handling/",
+          "publishedOn": "2024-03-01T08:00:00.000Z",
+          "wordCount": 6695,
+          "title": "Crafting an Opinionated Logging and Error Handling Framework for Enhanced Observability in PowerShell",
+          "imageUrl": "https://devblogs.microsoft.com/ise/wp-content/uploads/sites/55/2024/02/abstract_observability.png"
+        },
+        {
           "id": "https://devblogs.microsoft.com/ise/?p=15283",
           "author": "Juan Burckhardt",
           "description": "This post will showcase the use of Azure OpenAI from AKS without the need for sharing secrets.\nThe post Consuming Azure OpenAI resources in AKS with Workload Identities appeared first on ISE Developer Blog.",
@@ -5549,16 +5580,6 @@
           "publishedOn": "2023-11-03T17:42:51.000Z",
           "wordCount": 6896,
           "title": "Announcing TypeScript 5.3 RC",
-          "imageUrl": "https://devblogs.microsoft.com/typescript/wp-content/uploads/sites/11/2018/08/typescriptfeature.png"
-        },
-        {
-          "id": "https://devblogs.microsoft.com/typescript/?p=4043",
-          "author": "Daniel Rosenwasser",
-          "description": "Today we are excited to announce the availability of TypeScript 5.3 Beta.\nHere’s a quick list of what’s new in TypeScript 5.3!\nThe post Announcing TypeScript 5.3 Beta appeared first on TypeScript.",
-          "link": "https://devblogs.microsoft.com/typescript/announcing-typescript-5-3-beta/",
-          "publishedOn": "2023-10-03T17:06:28.000Z",
-          "wordCount": 6855,
-          "title": "Announcing TypeScript 5.3 Beta",
           "imageUrl": "https://devblogs.microsoft.com/typescript/wp-content/uploads/sites/11/2018/08/typescriptfeature.png"
         }
       ]
@@ -9778,36 +9799,6 @@
           "wordCount": 5413,
           "title": "General Availability: Upgrade your existing Azure Gen2 VMs to Trusted Launch",
           "imageUrl": "https://azurecomcdn.azureedge.net/cvt-95a82e93b8cdf6f5c060f8b1ecd12fff9438ac32318aeb3c24f9c789f2739fc6/images/shared/social/azure-icon-250x250.png"
-        },
-        {
-          "id": "azure-backup-mua-backup-vaults-ga",
-          "author": null,
-          "description": "Multi-user authorization provides enhanced protection for your backup data against unauthorized critical operations.",
-          "link": "https://azure.microsoft.com/en-us/updates/azure-backup-mua-backup-vaults-ga/",
-          "publishedOn": "2023-10-03T16:00:27.000Z",
-          "wordCount": 5489,
-          "title": "Generally Available: Multi-user authorisation for Backup vaults",
-          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-d59072d4b12dd172584fa4500a278c13648556c53268535a5a0fbf104a2f5d4e/images/shared/social/azure-icon-250x250.png"
-        },
-        {
-          "id": "azure-backup-enhanced-soft-delete-ga",
-          "author": null,
-          "description": "Enhanced soft delete helps you recover your backup data even after it has been deleted, giving you protection against data loss scenarios like ransomwares, malicious actors, and accidental deletes.",
-          "link": "https://azure.microsoft.com/en-us/updates/azure-backup-enhanced-soft-delete-ga/",
-          "publishedOn": "2023-10-03T16:00:26.000Z",
-          "wordCount": 5448,
-          "title": "Generally available: Enhanced soft delete for Azure Backup",
-          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-d59072d4b12dd172584fa4500a278c13648556c53268535a5a0fbf104a2f5d4e/images/shared/social/azure-icon-250x250.png"
-        },
-        {
-          "id": "public-preview-azure-data-explorer-addon-for-splunk",
-          "author": null,
-          "description": "Azure Data Explorer Add-On for Splunk (Public Preview)",
-          "link": "https://azure.microsoft.com/en-us/updates/public-preview-azure-data-explorer-addon-for-splunk/",
-          "publishedOn": "2023-10-03T16:00:15.000Z",
-          "wordCount": 5420,
-          "title": "Public Preview: Azure Data Explorer Add-On for Splunk",
-          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-d59072d4b12dd172584fa4500a278c13648556c53268535a5a0fbf104a2f5d4e/images/shared/social/azure-icon-250x250.png"
         }
       ]
     },
@@ -10500,16 +10491,6 @@
           "wordCount": 4581,
           "title": "Microsoft 365 Developer Program instant sandbox service is restored",
           "imageUrl": "https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2023/10/00_restored-scaled.jpg"
-        },
-        {
-          "id": "https://devblogs.microsoft.com/microsoft365dev/?p=15467",
-          "author": "Waldek Mastykarz",
-          "description": "Learn about Microsoft Graph connectors, how to build them, and how to ensure seamless integration of your data into Microsoft 365 Copilot.\nThe post Find what you need with Microsoft Graph connectors appeared first on Microsoft 365 Developer Blog.",
-          "link": "https://devblogs.microsoft.com/microsoft365dev/find-what-you-need-with-microsoft-graph-connectors/",
-          "publishedOn": "2023-10-03T14:00:32.000Z",
-          "wordCount": 4922,
-          "title": "Find what you need with Microsoft Graph connectors",
-          "imageUrl": "https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2023/10/GraphConnectors-scaled.jpg"
         }
       ]
     }

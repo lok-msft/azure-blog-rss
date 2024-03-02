@@ -2,10 +2,114 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2024-03-01T01:07:05.791Z</updated>
+    <updated>2024-03-02T00:59:15.118Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Implementing MLOps for Training Custom Models with Azure AI Document Intelligence]]></title>
+        <id>https://techcommunity.microsoft.com/t5/fasttrack-for-azure/implementing-mlops-for-training-custom-models-with-azure-ai/ba-p/4072972</id>
+        <link href="https://techcommunity.microsoft.com/t5/fasttrack-for-azure/implementing-mlops-for-training-custom-models-with-azure-ai/ba-p/4072972"/>
+        <updated>2024-03-01T12:37:24.000Z</updated>
+        <summary type="html"><![CDATA[Addressing the challenges of effectively maintaining custom models in Azure AI Document Intelligence, this article explores adapting the concepts of MLOps into your delivery strategy. The goal is to provide guidance on how to ensure that custom document analysis models are not only accurate but remain effective for users throughout their lifecycle.
+ 
+Key Challenges
+ 
+Balancing model accuracy with operational scalability
+Ensuring that custom models remain accurate over time while also scalable and efficient in operation is challenging. Teams are required to collect and process many documents while exploring techniques to improve accuracy. The operational overhead of managing document storage, running pre-processing flows, training models, and ensuring they are efficiently deployed without a…]]></summary>
+        <author>
+            <name>james_croft</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Crafting an Opinionated Logging and Error Handling Framework for Enhanced Observability in PowerShell]]></title>
+        <id>https://devblogs.microsoft.com/ise/?p=15294</id>
+        <link href="https://devblogs.microsoft.com/ise/empowering-powershell-with-opinionated-best-practices-for-logging-and-error-handling/"/>
+        <updated>2024-03-01T08:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Logging with PowerShell and share insights gained during our development journey, resulting in the development of a highly opinionated set of code to manage logging effectively.
+The post Crafting an Opinionated Logging and Error Handling Framework for Enhanced Observability in PowerShell appeared first on ISE Developer Blog.]]></summary>
+        <author>
+            <name>Maho Pacheco</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Draw.io Azure infrastructure diagrams through code like an artist]]></title>
+        <id>https://techcommunity.microsoft.com/t5/azure-developer-community-blog/draw-io-azure-infrastructure-diagrams-through-code-like-an/ba-p/4071316</id>
+        <link href="https://techcommunity.microsoft.com/t5/azure-developer-community-blog/draw-io-azure-infrastructure-diagrams-through-code-like-an/ba-p/4071316"/>
+        <updated>2024-03-01T07:30:00.000Z</updated>
+        <summary type="html"><![CDATA[Introduction
+ 
+In this article we will see how to create an Azure diagram to reveal all the dependencies between Azure App Services, their Application Insights and finally their workspace-based Log Analytics Workspaces.
+ 
+The use case consist in:
+ 
+
+auditing the current configuration on Azure through a PowerShell script,
+export the current infrastructure set up on a CSV Draw.io readable file,
+observe a work of art.
+
+ 
+
+ 
+ 
+
+Concept
+ 
+To make this piece of art possible you should have a clear idea of the following concept.
+ 
+
+Azure resource dependencies: An App Service or Function App can send logs to an Application Insights and Application Insights can send logs to a Log Analytics workspace. This refers to the concept of Workspace-based Application Insights resources.
+Draw.io is a free dia…]]></summary>
+        <author>
+            <name>Jamesdld23</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Draw.io Azure infrastructure diagrams through code like an artist]]></title>
+        <id>https://techcommunity.microsoft.com/t5/azure-developer-community-blog/draw-io-azure-infrastructure-diagrams-through-code-like-an/ba-p/4071316</id>
+        <link href="https://techcommunity.microsoft.com/t5/azure-developer-community-blog/draw-io-azure-infrastructure-diagrams-through-code-like-an/ba-p/4071316"/>
+        <updated>2024-03-01T07:30:00.000Z</updated>
+        <summary type="html"><![CDATA[Introduction
+ 
+In this article we will see how to create an Azure diagram to reveal all the dependencies between Azure App Services, their Application Insights and finally their workspace-based Log Analytics Workspaces.
+ 
+The use case consist in:
+ 
+
+auditing the current configuration on Azure through a PowerShell script,
+export the current infrastructure set up on a CSV Draw.io readable file,
+observe a work of art.
+
+ 
+
+ 
+ 
+
+Concept
+ 
+To make this piece of art possible you should have a clear idea of the following concept.
+ 
+
+Azure resource dependencies: An App Service or Function App can send logs to an Application Insights and Application Insights can send logs to a Log Analytics workspace. This refers to the concept of Workspace-based Application Insights resources.
+Draw.io is a free dia…]]></summary>
+        <author>
+            <name>Jamesdld23</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Path and hostname-based routing in Azure Container Apps with NGINX]]></title>
+        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/path-and-hostname-based-routing-in-azure-container-apps-with/ba-p/4068923</id>
+        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/path-and-hostname-based-routing-in-azure-container-apps-with/ba-p/4068923"/>
+        <updated>2024-03-01T01:10:46.000Z</updated>
+        <summary type="html"><![CDATA[Azure Container Apps is a fully managed serverless container service that enables you to deploy and run containerized applications without having to manage the infrastructure. 
+ 
+By default, HTTP apps in Azure Container Apps are accessible via a public URL that is unique to the app. However, you can create a container app to use a reverse proxy like NGINX to control how traffic is routed to multiple apps based on the path or hostname.
+ 
+In this tutorial, you'll learn how to use Azure Container Apps to configure path and hostname-based routing for a set of containerized applications using NGINX as a reverse proxy. You'll deploy 4 applications: 1 NGINX container which will be publicly exposed and 3 container apps which will only be accessible from within the environment and that traffic will…]]></summary>
+        <author>
+            <name>Cary_Chai</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Optimize and secure your cloud with new Azure Optimization skilling events]]></title>
         <id>https://techcommunity.microsoft.com/t5/azure-architecture-blog/optimize-and-secure-your-cloud-with-new-azure-optimization/ba-p/4072507</id>
@@ -13896,16 +14000,6 @@ Adding, removing, or changing secrets doesn't generat…]]></summary>
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Synchronizing with External Transaction Managers in Spring Cloud Stream Kafka Applications]]></title>
-        <id>https://spring.io/blog/2023/10/04/synchronizing-with-external-transaction-managers-in-spring-cloud-stream</id>
-        <link href="https://spring.io/blog/2023/10/04/synchronizing-with-external-transaction-managers-in-spring-cloud-stream"/>
-        <updated>2023-10-04T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Level up your Java code and explore what Spring can do for you.]]></summary>
-        <author>
-            <name>Soby Chacko</name>
-        </author>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[Unlock AI Excellence: Join 'The Quick AI Decode' Event at Microsoft London Rector - Oct 12, 2023]]></title>
         <id>https://techcommunity.microsoft.com/t5/educator-developer-blog/unlock-ai-excellence-join-the-quick-ai-decode-event-at-microsoft/ba-p/3944796</id>
         <link href="https://techcommunity.microsoft.com/t5/educator-developer-blog/unlock-ai-excellence-join-the-quick-ai-decode-event-at-microsoft/ba-p/3944796"/>
@@ -13922,74 +14016,6 @@ Kicking off the event, this is your chance to connect with like-minded individua
 2. We…]]></summary>
         <author>
             <name>Lee Stott</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Announcing TypeScript 5.3 Beta]]></title>
-        <id>https://devblogs.microsoft.com/typescript/?p=4043</id>
-        <link href="https://devblogs.microsoft.com/typescript/announcing-typescript-5-3-beta/"/>
-        <updated>2023-10-03T17:06:28.000Z</updated>
-        <summary type="html"><![CDATA[Today we are excited to announce the availability of TypeScript 5.3 Beta.
-Here’s a quick list of what’s new in TypeScript 5.3!
-The post Announcing TypeScript 5.3 Beta appeared first on TypeScript.]]></summary>
-        <author>
-            <name>Daniel Rosenwasser</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Generally Available: Multi-user authorisation for Backup vaults]]></title>
-        <id>azure-backup-mua-backup-vaults-ga</id>
-        <link href="https://azure.microsoft.com/en-us/updates/azure-backup-mua-backup-vaults-ga/"/>
-        <updated>2023-10-03T16:00:27.000Z</updated>
-        <summary type="html"><![CDATA[Multi-user authorization provides enhanced protection for your backup data against unauthorized critical operations.]]></summary>
-        <author>
-            <name>Azure service updates</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Generally available: Enhanced soft delete for Azure Backup]]></title>
-        <id>azure-backup-enhanced-soft-delete-ga</id>
-        <link href="https://azure.microsoft.com/en-us/updates/azure-backup-enhanced-soft-delete-ga/"/>
-        <updated>2023-10-03T16:00:26.000Z</updated>
-        <summary type="html"><![CDATA[Enhanced soft delete helps you recover your backup data even after it has been deleted, giving you protection against data loss scenarios like ransomwares, malicious actors, and accidental deletes.]]></summary>
-        <author>
-            <name>Azure service updates</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Public Preview: Azure Data Explorer Add-On for Splunk]]></title>
-        <id>public-preview-azure-data-explorer-addon-for-splunk</id>
-        <link href="https://azure.microsoft.com/en-us/updates/public-preview-azure-data-explorer-addon-for-splunk/"/>
-        <updated>2023-10-03T16:00:15.000Z</updated>
-        <summary type="html"><![CDATA[Azure Data Explorer Add-On for Splunk (Public Preview)]]></summary>
-        <author>
-            <name>Azure service updates</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Step-by-Step Guide: Setting up Custom Domain for Azure Storage Account with HTTPS Only Enabled]]></title>
-        <id>https://techcommunity.microsoft.com/t5/azure-paas-blog/step-by-step-guide-setting-up-custom-domain-for-azure-storage/ba-p/3944221</id>
-        <link href="https://techcommunity.microsoft.com/t5/azure-paas-blog/step-by-step-guide-setting-up-custom-domain-for-azure-storage/ba-p/3944221"/>
-        <updated>2023-10-03T14:02:26.000Z</updated>
-        <summary type="html"><![CDATA[If you are using Azure Storage to host your website, you might want to enable HTTPS Only to ensure secure communication between the client and the server. However, setting up a custom domain with HTTPS Only enabled can be a bit tricky. In this blog, we will guide you through the step-by-step process of setting up a custom domain for your Azure Storage account with HTTPS Only enabled. 
- 
-Firstly, I would like to briefly explain that currently, configuring a custom domain directly on Azure Storage is only supported for HTTP. If HTTP access is allowed, you can follow this official documentation for configuration: https://learn.microsoft.com/en-us/azure/storage/blobs/storage-custom-domain-name?tabs=azure-portal#map-a-custom-domain-with-only-http-enabled 
-
- 
-Otherwise, if we need to use a custo…]]></summary>
-        <author>
-            <name>zoeylan</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Find what you need with Microsoft Graph connectors]]></title>
-        <id>https://devblogs.microsoft.com/microsoft365dev/?p=15467</id>
-        <link href="https://devblogs.microsoft.com/microsoft365dev/find-what-you-need-with-microsoft-graph-connectors/"/>
-        <updated>2023-10-03T14:00:32.000Z</updated>
-        <summary type="html"><![CDATA[Learn about Microsoft Graph connectors, how to build them, and how to ensure seamless integration of your data into Microsoft 365 Copilot.
-The post Find what you need with Microsoft Graph connectors appeared first on Microsoft 365 Developer Blog.]]></summary>
-        <author>
-            <name>Waldek Mastykarz</name>
         </author>
     </entry>
 </feed>
