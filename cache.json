@@ -6,6 +6,16 @@
       "siteUrl": "https://spring.io",
       "articles": [
         {
+          "id": "https://spring.io/blog/2024/03/07/a-bootiful-podcast-cristian-schuszter-on-cern",
+          "author": "Josh Long",
+          "description": "Level up your Java code and explore what Spring can do for you.",
+          "link": "https://spring.io/blog/2024/03/07/a-bootiful-podcast-cristian-schuszter-on-cern",
+          "publishedOn": "2024-03-07T00:00:00.000Z",
+          "wordCount": 7064,
+          "title": "A Bootiful Podcast: Cristian Schuszter on CERN",
+          "imageUrl": "https://spring.io/img/og-spring.png"
+        },
+        {
           "id": "https://spring.io/blog/2024/03/06/function-calling-in-java-and-spring-ai-using-the-latest-mistral-ai-api",
           "author": "Christian Tzolov",
           "description": "Level up your Java code and explore what Spring can do for you.",
@@ -594,16 +604,6 @@
           "wordCount": 6998,
           "title": "Java Language Architect Brian Goetz",
           "imageUrl": "https://spring.io/img/og-spring.png"
-        },
-        {
-          "id": "https://spring.io/blog/2023/10/11/transactional-rollback-strategies-with-spring-cloud-stream-and-apache-kafka",
-          "author": "Soby Chacko",
-          "description": "Level up your Java code and explore what Spring can do for you.",
-          "link": "https://spring.io/blog/2023/10/11/transactional-rollback-strategies-with-spring-cloud-stream-and-apache-kafka",
-          "publishedOn": "2023-10-11T00:00:00.000Z",
-          "wordCount": 8982,
-          "title": "Transactional Rollback Strategies with Spring Cloud Stream and Apache Kafka",
-          "imageUrl": "https://spring.io/img/og-spring.png"
         }
       ]
     },
@@ -612,6 +612,56 @@
       "feedUrl": "https://techcommunity.microsoft.com/plugins/custom/microsoft/o365/custom-blog-rss?tid=2893852362688900935&board=EducatorDeveloperBlog&size=200",
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
+        {
+          "id": "https://techcommunity.microsoft.com/t5/educator-developer-blog/rag-techniques-function-calling-for-more-structured-retrieval/ba-p/4075360",
+          "author": "Pamela_Fox",
+          "description": "Retrieval Augmented Generation (RAG) is a popular technique to get LLMs to provide answers that are grounded in a data source. When we use RAG, we use the user's question to search a knowledge base (like Azure AI Search), then pass along both the question and the relevant content to the LLM (gpt-3.5-turbo or gpt-4), with a directive to answer only according to the sources. In psuedo-code:\n \nuser_query = \"what's in the Northwind Plus plan?\"\nuser_query_vector = create_embedding(user_query, \"ada-002\")\nresults = search(user_query, user_query_vector)\nresponse = create_chat_completion(system_prompt, user_query, results)\n\n \n \nIf the search function can find the right results in the index (assuming the answer is somewhere in the index), then the LLM can typically do a pretty good job of synthesizi…",
+          "link": "https://techcommunity.microsoft.com/t5/educator-developer-blog/rag-techniques-function-calling-for-more-structured-retrieval/ba-p/4075360",
+          "publishedOn": "2024-03-08T08:00:00.000Z",
+          "wordCount": 10886,
+          "title": "RAG techniques: Function calling for more structured retrieval",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/559300i9878A14A81F99CE6/image-size/original?v=v2&px=-1"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/educator-developer-blog/rag-techniques-cleaning-user-questions-with-an-llm/ba-p/4075340",
+          "author": "Pamela_Fox",
+          "description": "When I introduce app developers to the concept of RAG (Retrieval Augmented Generation), I often present a diagram like this:\n\nThe app receives a user question, uses the user question to search a knowledge base, then sends the question and matching bits of information to the LLM, instructing the LLM to adhere to the sources.\n \nThat's the most straightforward RAG approach, but as it turns out, it's not what quite what we do in our most popular open-source RAG solution, azure-search-openai-demo.\n \nThe flow instead looks like this:\n\nAfter the app receives a user question, it makes an initial call to an LLM to turn that user question into a more appropriate search query for Azure AI search. More generally, you can think of this step as turning the user query into a datastore-aware query. This a…",
+          "link": "https://techcommunity.microsoft.com/t5/educator-developer-blog/rag-techniques-cleaning-user-questions-with-an-llm/ba-p/4075340",
+          "publishedOn": "2024-03-06T20:00:00.000Z",
+          "wordCount": 10480,
+          "title": "RAG techniques: Cleaning user questions with an LLM",
+          "imageUrl": "https://cdn.techcommunity.microsoft.com/assets/BlogDefault-082321.png"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/educator-developer-blog/how-to-build-trustworthy-ai-systems-with-responsible-ai/ba-p/4077783",
+          "author": "Lee Stott",
+          "description": "AI is transforming the world in many ways, but it also comes with many challenges and risks. How can we ensure that our AI systems are safe, reliable, and ethical? How can we debug and mitigate issues such as biases, errors, and unfairness? How can we communicate the impact and limitations of our AI solutions to our stakeholders and customers?\nIf you are a technical student who wants to learn how to build trustworthy AI systems, you should check out this upcoming series of events hosted by Microsoft Reactor: Building trustworthy AI systems with Responsible AI Toolbox.\nThis series will introduce you to the Responsible AI Toolbox, a suite of tools and functionalities that help you operationalize responsible AI in practice. You will learn how to use various tools to identify, diagnose, and mi…",
+          "link": "https://techcommunity.microsoft.com/t5/educator-developer-blog/how-to-build-trustworthy-ai-systems-with-responsible-ai/ba-p/4077783",
+          "publishedOn": "2024-03-06T19:05:11.000Z",
+          "wordCount": 10086,
+          "title": "How to Build Trustworthy AI Systems with Responsible AI",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/558767i4F84E85B4C064DB7/image-size/original?v=v2&px=-1"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/educator-developer-blog/descubre-az-interactive-de-azure-cli-como-te-puede-ayudar-y-como/ba-p/4057494",
+          "author": "abrilurena",
+          "description": "La interfaz de línea de comandos (CLI) de Azure es una herramienta de desarrollo que permite a los usuarios controlar los servicios de Azure mediante comandos. Es una herramienta multiplataforma que se puede instalar de varias maneras (Windows, Mac, Linux, Docker y Azure Cloud Shell).\n \nPara agregar funcionalidad adicional, también tiene la capacidad de tener una serie de extensiones instaladas, lo cual te ayuda con el desarrollo e implementaciones en la nube. Una de estas extensiones es la AZ Interactive recientemente lanzada y que ahora está en versión preliminar.\n \nLinks útiles:\n\nInstala Azure CLI\nDocumentación de Azure CLI Interactive\nGuía de GitHub sobre Azure Interactive\n\n \n¿Qué es AZ Interactive?\n \nEl uso de cualquier CLI (a veces) puede ser cansado, especialmente si es tu primera e…",
+          "link": "https://techcommunity.microsoft.com/t5/educator-developer-blog/descubre-az-interactive-de-azure-cli-como-te-puede-ayudar-y-como/ba-p/4057494",
+          "publishedOn": "2024-03-06T08:00:00.000Z",
+          "wordCount": 10862,
+          "title": "¡Descubre AZ Interactive de Azure CLI, como te puede ayudar y como puedes instalarlo! (guía)",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/557529i9CACEF2232CAE5ED/image-size/original?v=v2&px=-1"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/educator-developer-blog/store-and-query-embeddings-in-azure-cosmos-db-for-postgresql/ba-p/4070907",
+          "author": "FoteiniSavvidou",
+          "description": "In the previous post, you learned how to generate vector embeddings for images and text using the multi-modal embeddings APIs of Azure AI Vision and computed the embeddings of the images in our dataset. In this post, we will use Azure Blob Storage to store the images and Azure Cosmos DB for PostgreSQL to store our vector embeddings. Then, we will perform a similarity search on our embeddings by utilizing the pgvector extension.\n \nThe workflow is illustrated in the following image:\n \nImage similarity search workflow\n \nIn this tutorial, you will learn how to:\n\nUpload images to an Azure Blob Storage container using the Python SDK.\nStore vector embeddings on an Azure Cosmos DB for PostgreSQL table.\nWrite SQL queries to detect similar images based on a text prompt or a reference image.\n\n \nThe e…",
+          "link": "https://techcommunity.microsoft.com/t5/educator-developer-blog/store-and-query-embeddings-in-azure-cosmos-db-for-postgresql/ba-p/4070907",
+          "publishedOn": "2024-03-05T08:00:00.000Z",
+          "wordCount": 11408,
+          "title": "Store and query embeddings in Azure Cosmos DB for PostgreSQL with pgvector",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/556396i10F20DF8999BF8B6/image-size/original?v=v2&px=-1"
+        },
         {
           "id": "https://techcommunity.microsoft.com/t5/educator-developer-blog/don-t-miss-the-2024-azure-developers-javascript-day/ba-p/4072966",
           "author": "Julia_Muiruri",
@@ -2101,66 +2151,6 @@
           "wordCount": 10178,
           "title": "Navigating Semantic Kernel v1.0.0-beta1: A Path to Agnostic AI Services",
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/515493i1BDF8FF51C090B55/image-size/original?v=v2&px=-1"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/educator-developer-blog/tech-dreams-no-pc-limits-learn-without-boundaries/ba-p/3943176",
-          "author": "MuhammadSamiullah",
-          "description": "Are you a student with big tech dreams but limited by your PC's capabilities? Is insufficient space, sluggish performance, or endless code compilation times holding you back from reaching your full potential? Fear not! In the dynamic world of technology, there's always a solution, and for you, it's GitHub Codespaces. But guess what? It won't cost you a cent! Curious? Let's embark on a journey where your tech dreams have no boundaries, and learning knows no limits.\n \n\n \nBye-Bye PC problems, Hello GitHub Codespaces! \nLet's face it, not all of us have a powerful PC. Maybe it's cramped for space or takes an eternity to compile your genius code. We've all been there. No worries! Say goodbye to the headache of low storage; GitHub Codespaces is about to make your coding life a whole lot smoother.…",
-          "link": "https://techcommunity.microsoft.com/t5/educator-developer-blog/tech-dreams-no-pc-limits-learn-without-boundaries/ba-p/3943176",
-          "publishedOn": "2023-10-11T07:00:00.000Z",
-          "wordCount": 10037,
-          "title": "Tech Dreams, No PC Limits: Learn Without Boundaries!",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/514410i4255534BF67BE658/image-size/original?v=v2&px=-1"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/educator-developer-blog/the-net-conf-student-zone-is-back/ba-p/3950956",
-          "author": "PabloLopes",
-          "description": "dotNet Conf Student Zone banner\n \nWelcome Beginners and Learners\nEach year, the new .NET release is kicked off with an exciting exploration of .NET through .NET Conf. This notoriously engaging conference is a three-day event that is jam packed with deep dive sessions filled with exciting updates and deep dives into advanced content. As such, we created the pre-Conf Student Zone to provide learners and beginners with a approachable place to get started using .NET. The Student Zone includes beginner-level sessions for everyone – from students to professionals! Come build with us, ask questions, and walk away with some new projects to add to your portfolio.\n \nRegister Now\nRegistration link: https://aka.ms/netconf23/registration\nFor more information on the event, check out the event page: http…",
-          "link": "https://techcommunity.microsoft.com/t5/educator-developer-blog/the-net-conf-student-zone-is-back/ba-p/3950956",
-          "publishedOn": "2023-10-10T19:59:27.000Z",
-          "wordCount": 9986,
-          "title": "The .NET Conf Student Zone is Back!",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/515397i557EC89800A41D15/image-size/original?v=v2&px=-1"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/educator-developer-blog/announcing-github-universe-cloud-skills-challenge/ba-p/3943877",
-          "author": "cynthiazanoni",
-          "description": "GitHub is the home for all developers—a platform where you can share your work with the world, fork projects, collaborate with others, and create your own software. Codespaces and GitHub Copilot set the stage for a new era of developer productivity, enabling you to focus on what matters most: your code.\n \nRegister to the GitHub Universe Cloud Skills Challenge and start your exciting journey in AI! Whether you’re beginning or looking to change your career, this learning experience is designed to introduce you to some of the most requested GitHub tools for AI beginners, and to explore new opportunities. Register now to the challenge and discover new AI essential tools: register here!\n \nDuring this challenge you will explore opportunities to understand how you can build different projects wit…",
-          "link": "https://techcommunity.microsoft.com/t5/educator-developer-blog/announcing-github-universe-cloud-skills-challenge/ba-p/3943877",
-          "publishedOn": "2023-10-10T08:39:27.000Z",
-          "wordCount": 10087,
-          "title": "Announcing GitHub Universe Cloud Skills Challenge!",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/513993i2E3BB09DB13B82F0/image-size/original?v=v2&px=-1"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/educator-developer-blog/tips-and-tricks-to-bring-your-ai-idea-to-life/ba-p/3945685",
-          "author": "cynthiazanoni",
-          "description": "Artificial Intelligence is advancing at an astonishing pace, poised to transform our daily lives in ways we can hardly imagine. Do you have a brilliant idea for an AI project? Are you eager to turn that vision into a reality? Look no further because the \"Tips and Tricks to Bring Your AI Idea to Life\" series is here to guide you on your journey!\nREGISTER NOW!\n \n\n\n \nJoin Abril Ureña and I (Cynthia Zanoni) in this 30-minute weekly series as we embark on an exciting exploration of the robust tools and cutting-edge technologies offered by Microsoft. These tools will serve as your trusted companions in the development of your AI projects. \n \nIn each episode, we will be joined by industry experts who will share their invaluable experiences and insights. Together, we will learn how to transform yo…",
-          "link": "https://techcommunity.microsoft.com/t5/educator-developer-blog/tips-and-tricks-to-bring-your-ai-idea-to-life/ba-p/3945685",
-          "publishedOn": "2023-10-10T04:04:00.000Z",
-          "wordCount": 10100,
-          "title": "Tips and Tricks to Bring Your AI Idea to Life",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/513618iDA321500BC3DA7FF/image-size/original?v=v2&px=-1"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/educator-developer-blog/tips-and-tricks-to-bring-your-ai-idea-to-life-a-new-reactor-show/ba-p/3945685",
-          "author": "cynthiazanoni",
-          "description": "Artificial Intelligence is advancing at an astonishing pace, poised to transform our daily lives in ways we can hardly imagine. Do you have a brilliant idea for an AI project? Are you eager to turn that vision into a reality? Look no further because the \"Tips and Tricks to Bring Your AI Idea to Life\" series is here to guide you on your journey!\n \n REGISTER NOW!\n \nJoin Abril Ureña and I (Cynthia Zanoni) in this 30-minute weekly series as we embark on an exciting exploration of the robust tools and cutting-edge technologies offered by Microsoft. These tools will serve as your trusted companions in the development of your AI projects. \n \n\n\n \nIn each episode, we will be joined by industry experts who will share their invaluable experiences and insights. Together, we will learn how to transform…",
-          "link": "https://techcommunity.microsoft.com/t5/educator-developer-blog/tips-and-tricks-to-bring-your-ai-idea-to-life-a-new-reactor-show/ba-p/3945685",
-          "publishedOn": "2023-10-10T04:04:00.000Z",
-          "wordCount": 10231,
-          "title": "Tips and Tricks to Bring Your AI Idea to Life — a new Reactor show",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/513618iDA321500BC3DA7FF/image-size/original?v=v2&px=-1"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/educator-developer-blog/portfolio-worthy-challenge-build-an-ai-enabled-speech-translator/ba-p/3945937",
-          "author": "theoyinbooke",
-          "description": "How to Become a Founder\nMany great entrepreneurs have not yet started their businesses. The best products are those that address real problems. This may sound like a motivational quote, but it can actually transform your career. Consider this: if you use your skills to solve a problem that meets market demand, you will not only become a founder, but also an employer and, more importantly, a value creator for the world.\nThis challenge will help you use your skills to overcome a language barrier and unleash your entrepreneurial spirit.\n \n \nAbout the Challenge\nCommunication is an essential part of our daily lives. To make life more accessible for people, we will use Power Apps, a LowCode solution, to create a Speech Translator App.\n \nThe app can recognize the user's speech and convert it to t…",
-          "link": "https://techcommunity.microsoft.com/t5/educator-developer-blog/portfolio-worthy-challenge-build-an-ai-enabled-speech-translator/ba-p/3945937",
-          "publishedOn": "2023-10-09T07:00:00.000Z",
-          "wordCount": 9902,
-          "title": "Portfolio Worthy Challenge: Build an AI-Enabled Speech Translator App",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/513681iD24E6767F75C8226/image-size/original?v=v2&px=-1"
         }
       ]
     },
@@ -2169,6 +2159,26 @@
       "feedUrl": "https://techcommunity.microsoft.com/plugins/custom/microsoft/o365/custom-blog-rss?tid=2893852362688900935&board=AppsonAzureBlog&size=100",
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
+        {
+          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/march-2024-exploring-open-source-at-microsoft-and-other/ba-p/4080165",
+          "author": "mpgraven",
+          "description": "Microsoft has developed a strong open source program over the past decade. Many of our tools and approaches are available for you to learn from and contribute to. This blog post explores some of the open-source projects at Microsoft and resources that will help you start contributing to and managing your own open-source projects. To learn more about Open Source at Microsoft, visit opensource.microsoft.com.  \n \n.NET is open source Did you know .NET is open source? .NET is open source and cross-platform, and it’s maintained by Microsoft and the .NET community. Check it out on GitHub.   \nMicrosoft JDConf 2024 Get ready for JDConf 2024—a free virtual event for Java developers. Explore the latest in tooling, architecture, cloud integration, frameworks, and AI. It all happens online March 27-28 …",
+          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/march-2024-exploring-open-source-at-microsoft-and-other/ba-p/4080165",
+          "publishedOn": "2024-03-08T22:38:47.000Z",
+          "wordCount": 10954,
+          "title": "March 2024: Exploring open source at Microsoft, and other highlights for developers",
+          "imageUrl": "https://cdn.techcommunity.microsoft.com/assets/Azure/BlogPreview_default-blue.png"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/tick-tock-upgrade-your-app-service-environment-before-time-runs/ba-p/4079782",
+          "author": "jordanselig",
+          "description": "Attention, procrastinators! The deadline to complete your upgrade to App Service Environment v3 is approaching fast. By now you know about how we’re retiring App Service Environment v1 and v2 and that your organization needs to upgrade version 3 before Aug. 31, 2024. Failure to do so means losing your environments, running apps, and all app data—so we recommend starting the migration process as soon as possible!\n \nEnsuring your services run smoothly is our top priority, so in this article we will review new and existing tools and services available from Microsoft to speed up your upgrade process.\n \nEliminate downtime with our new side by side migration feature\nCustomers have been busy completing self-service upgrades using our free, in-place migration feature. This option upgrades your exi…",
+          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/tick-tock-upgrade-your-app-service-environment-before-time-runs/ba-p/4079782",
+          "publishedOn": "2024-03-08T16:38:33.000Z",
+          "wordCount": 10748,
+          "title": "Tick-tock! Upgrade your App Service Environment before time runs out",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/559466iCC6F7BC812A67253/image-size/original?v=v2&px=-1"
+        },
         {
           "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/improved-next-js-support-preview-for-azure-static-web-apps/ba-p/4078617",
           "author": "thomasgauvinmsft",
@@ -3108,16 +3118,6 @@
           "wordCount": 9925,
           "title": "Join Microsoft at Azure Day & KubeCon North America 2023 in Chicago!",
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/518206iD33AE8ADDA18E3B7/image-size/original?v=v2&px=-1"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/discover-the-new-video-series-mastering-reliable-web-app/ba-p/3947628",
-          "author": "mattsoucoup",
-          "description": "Embarking on a Java web app modernization journey to the cloud can be a challenging feat. How do you transform your apps to be not only functional but also secure, cost-efficient, and reliable in the cloud? We built the Reliable Web App Pattern for Java to help you accelerate your journey to the cloud by making minimal investments in your legacy code, re-platform, and set a base for future modernization. If you've read our announcement blog by Nish Anil or Rory Preddy’s expert take on the subject, you'll know we're deeply committed to helping you succeed in moving Java applications to Azure.\n \nIn this new 6-part video series, I’ll demystify the process of re-platforming Java web applications to Azure. The series deep-dives into Azure Well-Architected Framework, explores a production-grade …",
-          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/discover-the-new-video-series-mastering-reliable-web-app/ba-p/3947628",
-          "publishedOn": "2023-10-10T18:13:11.000Z",
-          "wordCount": 10479,
-          "title": "Discover the New Video Series: Mastering Reliable Web App Patterns for Java on Azure",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/514207i0FCC162F350A37BC/image-size/original?v=v2&px=-1"
         }
       ]
     },
@@ -5032,6 +5032,16 @@
       "siteUrl": "https://devblogs.microsoft.com/ise/",
       "articles": [
         {
+          "id": "https://devblogs.microsoft.com/ise/?p=15301",
+          "author": "Sweta Kumari",
+          "description": "This post focusses on different technology options available for exporting data out of Dataverse based on an event-driven architecture. It also provides guidance on how to achieve it.\nThe post Plugins in Dataverse appeared first on ISE Developer Blog.",
+          "link": "https://devblogs.microsoft.com/ise/registering-plugins-in-dataverse/",
+          "publishedOn": "2024-03-08T08:00:00.000Z",
+          "wordCount": 5204,
+          "title": "Plugins in Dataverse",
+          "imageUrl": "https://devblogs.microsoft.com/ise/wp-content/uploads/sites/55/2024/03/dataverse.png"
+        },
+        {
           "id": "https://devblogs.microsoft.com/ise/?p=15294",
           "author": "Maho Pacheco",
           "description": "Logging with PowerShell and share insights gained during our development journey, resulting in the development of a highly opinionated set of code to manage logging effectively.\nThe post Crafting an Opinionated Logging and Error Handling Framework for Enhanced Observability in PowerShell appeared first on ISE Developer Blog.",
@@ -5995,16 +6005,6 @@
           "wordCount": 5156,
           "title": "Improved Code Coverage Tab Experience",
           "imageUrl": "https://devblogs.microsoft.com/devops/wp-content/uploads/sites/6/2018/08/vstsfeature.png"
-        },
-        {
-          "id": "https://devblogs.microsoft.com/devops/?p=67748",
-          "author": "Gloridel Morales",
-          "description": "This month, we are releasing fixes that impact our self-hosted product, Azure DevOps Server.\nAzure DevOps Server 2022.0.1\nAzure DevOps Server 2020.1.2\nAzure DevOps Server 2020.0.2\nAzure DevOps Server 2022.0.1 Patch 4\nNote: If you have Azure DevOps Server 2022,\nThe post October patches for Azure DevOps Server appeared first on Azure DevOps Blog.",
-          "link": "https://devblogs.microsoft.com/devops/october-patches-for-azure-devops-server-3/",
-          "publishedOn": "2023-10-10T17:26:03.000Z",
-          "wordCount": 4993,
-          "title": "October patches for Azure DevOps Server",
-          "imageUrl": "https://devblogs.microsoft.com/devops/wp-content/uploads/sites/6/2018/10/AzureDevOps.png"
         }
       ]
     },
@@ -6170,6 +6170,16 @@
       "feedUrl": "https://devblogs.microsoft.com/cosmosdb/feed/",
       "siteUrl": "https://devblogs.microsoft.com/cosmosdb/",
       "articles": [
+        {
+          "id": "https://devblogs.microsoft.com/cosmosdb/?p=7683",
+          "author": "Jay Gordon",
+          "description": "We’re thrilled to present the eighth edition of our blog series, focusing on design patterns in Azure Cosmos DB for NoSQL applications. Drawing from real-world customer experiences, our goal is to help you navigate the ins and outs of JSON-based NoSQL databases.\nThe post Azure Cosmos DB design patterns – Part 8: Preallocation appeared first on Azure Cosmos DB Blog.",
+          "link": "https://devblogs.microsoft.com/cosmosdb/azure-cosmos-db-design-patterns-part-8-preallocation/",
+          "publishedOn": "2024-03-08T18:00:15.000Z",
+          "wordCount": 7015,
+          "title": "Azure Cosmos DB design patterns – Part 8: Preallocation",
+          "imageUrl": "https://devblogs.microsoft.com/cosmosdb/wp-content/uploads/sites/52/2024/03/azure-samples-cosmsos-db-design-patterns.jpeg"
+        },
         {
           "id": "https://devblogs.microsoft.com/cosmosdb/?p=7587",
           "author": "Subhasish Ghosh",
@@ -6718,16 +6728,6 @@
           "wordCount": 10478,
           "title": "General Availability of Azure Automation extension for Visual Studio Code",
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/516277i60E5B1D9EC7DA2E8/image-size/original?v=v2&px=-1"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/azure-governance-and-management/optimize-your-cloud-investment-with-new-azure-advisor-workbooks/ba-p/3950911",
-          "author": "anortoll",
-          "description": "Everyone is under pressure to cut costs these days. But in times of economic flux, it’s not just about cutting costs. A successful approach lies in the ability to continuously optimize and prioritize what matters most to drive innovation, productivity, and agility and to realize an ongoing cycle of growth and innovation. Reinvestment opens the opportunity to maintain momentum when everyone else is seeking to downsize – that’s the competitive advantage optimization offers your business.  \n \n\n\n\n \nContinuous optimization starts with adopting best practices as you migrate or onboard workloads to Azure. However, assessing your deployed environment to ensure you’re following those best practices can be challenging. To help you accomplish this, we developed Azure Advisor. Think of it as a free, p…",
-          "link": "https://techcommunity.microsoft.com/t5/azure-governance-and-management/optimize-your-cloud-investment-with-new-azure-advisor-workbooks/ba-p/3950911",
-          "publishedOn": "2023-10-10T19:04:31.000Z",
-          "wordCount": 10677,
-          "title": "Optimize your Cloud investment with new Azure Advisor Workbooks",
-          "imageUrl": "https://cdn.techcommunity.microsoft.com/assets/Azure/BlogPreview_default-blue.png"
         }
       ]
     },
@@ -6892,16 +6892,6 @@
           "wordCount": 3104,
           "title": "Enabling developer collaboration with Radius",
           "imageUrl": "https://cloudblogs.microsoft.com/opensource/wp-content/uploads/sites/37/2023/10/Radius-Logo-300x82.webp"
-        },
-        {
-          "id": "https://cloudblogs.microsoft.com/opensource/2023/10/10/recommenders-joins-lf-ai-data-as-new-sandbox-project/",
-          "author": "Mark Russinovich",
-          "description": "LF AI & Data Foundation announced Recommenders as its latest Sandbox project.\nThe post Recommenders joins LF AI & Data as new Sandbox project appeared first on Microsoft Open Source Blog.",
-          "link": "https://cloudblogs.microsoft.com/opensource/2023/10/10/recommenders-joins-lf-ai-data-as-new-sandbox-project/",
-          "publishedOn": "2023-10-10T16:00:00.000Z",
-          "wordCount": 2378,
-          "title": "Recommenders joins LF AI & Data as new Sandbox project",
-          "imageUrl": "https://cloudblogs.microsoft.com/opensource/wp-content/uploads/sites/37/2023/10/Picture1.png"
         }
       ]
     },
@@ -9768,46 +9758,6 @@
           "publishedOn": "2023-10-11T16:00:08.000Z",
           "wordCount": 5358,
           "title": "General availability: Azure SQL updates for early-October 2023",
-          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-95a82e93b8cdf6f5c060f8b1ecd12fff9438ac32318aeb3c24f9c789f2739fc6/images/shared/social/azure-icon-250x250.png"
-        },
-        {
-          "id": "announcing-public-preview-of-azure-api-management-pricing-tiers-basic-v2-and-standard-v2",
-          "author": null,
-          "description": "We're thrilled to announce the public preview launch of our latest Azure API Management pricing tiers: Basic v2 and Standard v2. These new tiers address highly sought-after customer requests, bring quality-of-service enhancements, and offer a flexible starting point for API Management, allowing organizations of any size to embark on their API journey.",
-          "link": "https://azure.microsoft.com/en-us/updates/announcing-public-preview-of-azure-api-management-pricing-tiers-basic-v2-and-standard-v2/",
-          "publishedOn": "2023-10-10T17:00:07.000Z",
-          "wordCount": 5617,
-          "title": "Announcing Public Preview of Azure API Management Pricing Tiers: Basic v2 and Standard v2",
-          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-95a82e93b8cdf6f5c060f8b1ecd12fff9438ac32318aeb3c24f9c789f2739fc6/images/shared/social/azure-icon-250x250.png"
-        },
-        {
-          "id": "azurefilessupportforunicodecharacters",
-          "author": null,
-          "description": "Azure Files now supports an expanded character set enabling file and directory names with all valid Unicode characters.",
-          "link": "https://azure.microsoft.com/en-us/updates/azurefilessupportforunicodecharacters/",
-          "publishedOn": "2023-10-10T16:00:08.000Z",
-          "wordCount": 5468,
-          "title": "Azure Files has been improved to support all valid Unicode characters",
-          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-95a82e93b8cdf6f5c060f8b1ecd12fff9438ac32318aeb3c24f9c789f2739fc6/images/shared/social/azure-icon-250x250.png"
-        },
-        {
-          "id": "expressroute-traffic-collector-is-now-generally-available",
-          "author": null,
-          "description": "Use ExpressRoute Traffic Collector to enable collection of flow logs for traffic sent over your ExpressRoute direct circuit.",
-          "link": "https://azure.microsoft.com/en-us/updates/expressroute-traffic-collector-is-now-generally-available/",
-          "publishedOn": "2023-10-10T16:00:07.000Z",
-          "wordCount": 5503,
-          "title": "ExpressRoute Traffic Collector is now generally available",
-          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-95a82e93b8cdf6f5c060f8b1ecd12fff9438ac32318aeb3c24f9c789f2739fc6/images/shared/social/azure-icon-250x250.png"
-        },
-        {
-          "id": "lsa-payload-update-for-fixes-on-15jan",
-          "author": null,
-          "description": "On the 15-Jan we are going to fix those 2 values in LSA payload to contain the correct values according to our other alerts services.",
-          "link": "https://azure.microsoft.com/en-us/updates/lsa-payload-update-for-fixes-on-15jan/",
-          "publishedOn": "2023-10-10T16:00:06.000Z",
-          "wordCount": 5500,
-          "title": "LSA payload update for fixes on 15-Jan",
           "imageUrl": "https://azurecomcdn.azureedge.net/cvt-95a82e93b8cdf6f5c060f8b1ecd12fff9438ac32318aeb3c24f9c789f2739fc6/images/shared/social/azure-icon-250x250.png"
         }
       ]

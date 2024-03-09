@@ -2,10 +2,79 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2024-03-08T01:00:43.465Z</updated>
+    <updated>2024-03-09T00:58:40.456Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[March 2024: Exploring open source at Microsoft, and other highlights for developers]]></title>
+        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/march-2024-exploring-open-source-at-microsoft-and-other/ba-p/4080165</id>
+        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/march-2024-exploring-open-source-at-microsoft-and-other/ba-p/4080165"/>
+        <updated>2024-03-08T22:38:47.000Z</updated>
+        <summary type="html"><![CDATA[Microsoft has developed a strong open source program over the past decade. Many of our tools and approaches are available for you to learn from and contribute to. This blog post explores some of the open-source projects at Microsoft and resources that will help you start contributing to and managing your own open-source projects. To learn more about Open Source at Microsoft, visit opensource.microsoft.com.  
+ 
+.NET is open source Did you know .NET is open source? .NET is open source and cross-platform, and it’s maintained by Microsoft and the .NET community. Check it out on GitHub.   
+Microsoft JDConf 2024 Get ready for JDConf 2024—a free virtual event for Java developers. Explore the latest in tooling, architecture, cloud integration, frameworks, and AI. It all happens online March 27-28 …]]></summary>
+        <author>
+            <name>mpgraven</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Azure Cosmos DB design patterns – Part 8: Preallocation]]></title>
+        <id>https://devblogs.microsoft.com/cosmosdb/?p=7683</id>
+        <link href="https://devblogs.microsoft.com/cosmosdb/azure-cosmos-db-design-patterns-part-8-preallocation/"/>
+        <updated>2024-03-08T18:00:15.000Z</updated>
+        <summary type="html"><![CDATA[We’re thrilled to present the eighth edition of our blog series, focusing on design patterns in Azure Cosmos DB for NoSQL applications. Drawing from real-world customer experiences, our goal is to help you navigate the ins and outs of JSON-based NoSQL databases.
+The post Azure Cosmos DB design patterns – Part 8: Preallocation appeared first on Azure Cosmos DB Blog.]]></summary>
+        <author>
+            <name>Jay Gordon</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Tick-tock! Upgrade your App Service Environment before time runs out]]></title>
+        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/tick-tock-upgrade-your-app-service-environment-before-time-runs/ba-p/4079782</id>
+        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/tick-tock-upgrade-your-app-service-environment-before-time-runs/ba-p/4079782"/>
+        <updated>2024-03-08T16:38:33.000Z</updated>
+        <summary type="html"><![CDATA[Attention, procrastinators! The deadline to complete your upgrade to App Service Environment v3 is approaching fast. By now you know about how we’re retiring App Service Environment v1 and v2 and that your organization needs to upgrade version 3 before Aug. 31, 2024. Failure to do so means losing your environments, running apps, and all app data—so we recommend starting the migration process as soon as possible!
+ 
+Ensuring your services run smoothly is our top priority, so in this article we will review new and existing tools and services available from Microsoft to speed up your upgrade process.
+ 
+Eliminate downtime with our new side by side migration feature
+Customers have been busy completing self-service upgrades using our free, in-place migration feature. This option upgrades your exi…]]></summary>
+        <author>
+            <name>jordanselig</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[RAG techniques: Function calling for more structured retrieval]]></title>
+        <id>https://techcommunity.microsoft.com/t5/educator-developer-blog/rag-techniques-function-calling-for-more-structured-retrieval/ba-p/4075360</id>
+        <link href="https://techcommunity.microsoft.com/t5/educator-developer-blog/rag-techniques-function-calling-for-more-structured-retrieval/ba-p/4075360"/>
+        <updated>2024-03-08T08:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Retrieval Augmented Generation (RAG) is a popular technique to get LLMs to provide answers that are grounded in a data source. When we use RAG, we use the user's question to search a knowledge base (like Azure AI Search), then pass along both the question and the relevant content to the LLM (gpt-3.5-turbo or gpt-4), with a directive to answer only according to the sources. In psuedo-code:
+ 
+user_query = "what's in the Northwind Plus plan?"
+user_query_vector = create_embedding(user_query, "ada-002")
+results = search(user_query, user_query_vector)
+response = create_chat_completion(system_prompt, user_query, results)
+
+ 
+ 
+If the search function can find the right results in the index (assuming the answer is somewhere in the index), then the LLM can typically do a pretty good job of synthesizi…]]></summary>
+        <author>
+            <name>Pamela_Fox</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Plugins in Dataverse]]></title>
+        <id>https://devblogs.microsoft.com/ise/?p=15301</id>
+        <link href="https://devblogs.microsoft.com/ise/registering-plugins-in-dataverse/"/>
+        <updated>2024-03-08T08:00:00.000Z</updated>
+        <summary type="html"><![CDATA[This post focusses on different technology options available for exporting data out of Dataverse based on an event-driven architecture. It also provides guidance on how to achieve it.
+The post Plugins in Dataverse appeared first on ISE Developer Blog.]]></summary>
+        <author>
+            <name>Sweta Kumari</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[General Availability: App Service Backup and Restore over Azure Virtual Network]]></title>
         <id>app-service-backup-and-restore-over-azure-virtual-network-2</id>
@@ -69,6 +138,34 @@ The provided reference architecture solves these operational aspects of running 
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[A Bootiful Podcast: Cristian Schuszter on CERN]]></title>
+        <id>https://spring.io/blog/2024/03/07/a-bootiful-podcast-cristian-schuszter-on-cern</id>
+        <link href="https://spring.io/blog/2024/03/07/a-bootiful-podcast-cristian-schuszter-on-cern"/>
+        <updated>2024-03-07T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Level up your Java code and explore what Spring can do for you.]]></summary>
+        <author>
+            <name>Josh Long</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[RAG techniques: Cleaning user questions with an LLM]]></title>
+        <id>https://techcommunity.microsoft.com/t5/educator-developer-blog/rag-techniques-cleaning-user-questions-with-an-llm/ba-p/4075340</id>
+        <link href="https://techcommunity.microsoft.com/t5/educator-developer-blog/rag-techniques-cleaning-user-questions-with-an-llm/ba-p/4075340"/>
+        <updated>2024-03-06T20:00:00.000Z</updated>
+        <summary type="html"><![CDATA[When I introduce app developers to the concept of RAG (Retrieval Augmented Generation), I often present a diagram like this:
+
+The app receives a user question, uses the user question to search a knowledge base, then sends the question and matching bits of information to the LLM, instructing the LLM to adhere to the sources.
+ 
+That's the most straightforward RAG approach, but as it turns out, it's not what quite what we do in our most popular open-source RAG solution, azure-search-openai-demo.
+ 
+The flow instead looks like this:
+
+After the app receives a user question, it makes an initial call to an LLM to turn that user question into a more appropriate search query for Azure AI search. More generally, you can think of this step as turning the user query into a datastore-aware query. This a…]]></summary>
+        <author>
+            <name>Pamela_Fox</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Enrich your Data Estate with Fabric Pipelines and Azure OpenAI]]></title>
         <id>https://techcommunity.microsoft.com/t5/azure-architecture-blog/enrich-your-data-estate-with-fabric-pipelines-and-azure-openai/ba-p/4065836</id>
         <link href="https://techcommunity.microsoft.com/t5/azure-architecture-blog/enrich-your-data-estate-with-fabric-pipelines-and-azure-openai/ba-p/4065836"/>
@@ -81,6 +178,18 @@ The ability to integrate Azure OpenAI into Fabric data processing pipelines enab
 The following example demonstrates how Fabric pipelines can be integrated with Azure OpenAI u…]]></summary>
         <author>
             <name>datalineage</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How to Build Trustworthy AI Systems with Responsible AI]]></title>
+        <id>https://techcommunity.microsoft.com/t5/educator-developer-blog/how-to-build-trustworthy-ai-systems-with-responsible-ai/ba-p/4077783</id>
+        <link href="https://techcommunity.microsoft.com/t5/educator-developer-blog/how-to-build-trustworthy-ai-systems-with-responsible-ai/ba-p/4077783"/>
+        <updated>2024-03-06T19:05:11.000Z</updated>
+        <summary type="html"><![CDATA[AI is transforming the world in many ways, but it also comes with many challenges and risks. How can we ensure that our AI systems are safe, reliable, and ethical? How can we debug and mitigate issues such as biases, errors, and unfairness? How can we communicate the impact and limitations of our AI solutions to our stakeholders and customers?
+If you are a technical student who wants to learn how to build trustworthy AI systems, you should check out this upcoming series of events hosted by Microsoft Reactor: Building trustworthy AI systems with Responsible AI Toolbox.
+This series will introduce you to the Responsible AI Toolbox, a suite of tools and functionalities that help you operationalize responsible AI in practice. You will learn how to use various tools to identify, diagnose, and mi…]]></summary>
+        <author>
+            <name>Lee Stott</name>
         </author>
     </entry>
     <entry>
@@ -102,6 +211,29 @@ The post Announcing TypeScript 5.4 appeared first on TypeScript.]]></summary>
         <summary type="html"><![CDATA[Develop functions using Node.js 20 locally and deploy them to all Azure Functions plans on Linux and Windows.]]></summary>
         <author>
             <name>Azure service updates</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[¡Descubre AZ Interactive de Azure CLI, como te puede ayudar y como puedes instalarlo! (guía)]]></title>
+        <id>https://techcommunity.microsoft.com/t5/educator-developer-blog/descubre-az-interactive-de-azure-cli-como-te-puede-ayudar-y-como/ba-p/4057494</id>
+        <link href="https://techcommunity.microsoft.com/t5/educator-developer-blog/descubre-az-interactive-de-azure-cli-como-te-puede-ayudar-y-como/ba-p/4057494"/>
+        <updated>2024-03-06T08:00:00.000Z</updated>
+        <summary type="html"><![CDATA[La interfaz de línea de comandos (CLI) de Azure es una herramienta de desarrollo que permite a los usuarios controlar los servicios de Azure mediante comandos. Es una herramienta multiplataforma que se puede instalar de varias maneras (Windows, Mac, Linux, Docker y Azure Cloud Shell).
+ 
+Para agregar funcionalidad adicional, también tiene la capacidad de tener una serie de extensiones instaladas, lo cual te ayuda con el desarrollo e implementaciones en la nube. Una de estas extensiones es la AZ Interactive recientemente lanzada y que ahora está en versión preliminar.
+ 
+Links útiles:
+
+Instala Azure CLI
+Documentación de Azure CLI Interactive
+Guía de GitHub sobre Azure Interactive
+
+ 
+¿Qué es AZ Interactive?
+ 
+El uso de cualquier CLI (a veces) puede ser cansado, especialmente si es tu primera e…]]></summary>
+        <author>
+            <name>abrilurena</name>
         </author>
     </entry>
     <entry>
@@ -253,6 +385,29 @@ Prerequisites:-
 SQL Server 2012 SP3 and later, if you're using SQL Server…]]></summary>
         <author>
             <name>sudeshna</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Store and query embeddings in Azure Cosmos DB for PostgreSQL with pgvector]]></title>
+        <id>https://techcommunity.microsoft.com/t5/educator-developer-blog/store-and-query-embeddings-in-azure-cosmos-db-for-postgresql/ba-p/4070907</id>
+        <link href="https://techcommunity.microsoft.com/t5/educator-developer-blog/store-and-query-embeddings-in-azure-cosmos-db-for-postgresql/ba-p/4070907"/>
+        <updated>2024-03-05T08:00:00.000Z</updated>
+        <summary type="html"><![CDATA[In the previous post, you learned how to generate vector embeddings for images and text using the multi-modal embeddings APIs of Azure AI Vision and computed the embeddings of the images in our dataset. In this post, we will use Azure Blob Storage to store the images and Azure Cosmos DB for PostgreSQL to store our vector embeddings. Then, we will perform a similarity search on our embeddings by utilizing the pgvector extension.
+ 
+The workflow is illustrated in the following image:
+ 
+Image similarity search workflow
+ 
+In this tutorial, you will learn how to:
+
+Upload images to an Azure Blob Storage container using the Python SDK.
+Store vector embeddings on an Azure Cosmos DB for PostgreSQL table.
+Write SQL queries to detect similar images based on a text prompt or a reference image.
+
+ 
+The e…]]></summary>
+        <author>
+            <name>FoteiniSavvidou</name>
         </author>
     </entry>
     <entry>
@@ -13848,212 +14003,6 @@ Azure Event Hubs previously used this library, so if you're still using it with 
 Azure WCF Relay still uses this l…]]></summary>
         <author>
             <name>EldertGrootenboer</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Tech Dreams, No PC Limits: Learn Without Boundaries!]]></title>
-        <id>https://techcommunity.microsoft.com/t5/educator-developer-blog/tech-dreams-no-pc-limits-learn-without-boundaries/ba-p/3943176</id>
-        <link href="https://techcommunity.microsoft.com/t5/educator-developer-blog/tech-dreams-no-pc-limits-learn-without-boundaries/ba-p/3943176"/>
-        <updated>2023-10-11T07:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Are you a student with big tech dreams but limited by your PC's capabilities? Is insufficient space, sluggish performance, or endless code compilation times holding you back from reaching your full potential? Fear not! In the dynamic world of technology, there's always a solution, and for you, it's GitHub Codespaces. But guess what? It won't cost you a cent! Curious? Let's embark on a journey where your tech dreams have no boundaries, and learning knows no limits.
- 
-
- 
-Bye-Bye PC problems, Hello GitHub Codespaces! 
-Let's face it, not all of us have a powerful PC. Maybe it's cramped for space or takes an eternity to compile your genius code. We've all been there. No worries! Say goodbye to the headache of low storage; GitHub Codespaces is about to make your coding life a whole lot smoother.…]]></summary>
-        <author>
-            <name>MuhammadSamiullah</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Transactional Rollback Strategies with Spring Cloud Stream and Apache Kafka]]></title>
-        <id>https://spring.io/blog/2023/10/11/transactional-rollback-strategies-with-spring-cloud-stream-and-apache-kafka</id>
-        <link href="https://spring.io/blog/2023/10/11/transactional-rollback-strategies-with-spring-cloud-stream-and-apache-kafka"/>
-        <updated>2023-10-11T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Level up your Java code and explore what Spring can do for you.]]></summary>
-        <author>
-            <name>Soby Chacko</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[The .NET Conf Student Zone is Back!]]></title>
-        <id>https://techcommunity.microsoft.com/t5/educator-developer-blog/the-net-conf-student-zone-is-back/ba-p/3950956</id>
-        <link href="https://techcommunity.microsoft.com/t5/educator-developer-blog/the-net-conf-student-zone-is-back/ba-p/3950956"/>
-        <updated>2023-10-10T19:59:27.000Z</updated>
-        <summary type="html"><![CDATA[dotNet Conf Student Zone banner
- 
-Welcome Beginners and Learners
-Each year, the new .NET release is kicked off with an exciting exploration of .NET through .NET Conf. This notoriously engaging conference is a three-day event that is jam packed with deep dive sessions filled with exciting updates and deep dives into advanced content. As such, we created the pre-Conf Student Zone to provide learners and beginners with a approachable place to get started using .NET. The Student Zone includes beginner-level sessions for everyone – from students to professionals! Come build with us, ask questions, and walk away with some new projects to add to your portfolio.
- 
-Register Now
-Registration link: https://aka.ms/netconf23/registration
-For more information on the event, check out the event page: http…]]></summary>
-        <author>
-            <name>PabloLopes</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Optimize your Cloud investment with new Azure Advisor Workbooks]]></title>
-        <id>https://techcommunity.microsoft.com/t5/azure-governance-and-management/optimize-your-cloud-investment-with-new-azure-advisor-workbooks/ba-p/3950911</id>
-        <link href="https://techcommunity.microsoft.com/t5/azure-governance-and-management/optimize-your-cloud-investment-with-new-azure-advisor-workbooks/ba-p/3950911"/>
-        <updated>2023-10-10T19:04:31.000Z</updated>
-        <summary type="html"><![CDATA[Everyone is under pressure to cut costs these days. But in times of economic flux, it’s not just about cutting costs. A successful approach lies in the ability to continuously optimize and prioritize what matters most to drive innovation, productivity, and agility and to realize an ongoing cycle of growth and innovation. Reinvestment opens the opportunity to maintain momentum when everyone else is seeking to downsize – that’s the competitive advantage optimization offers your business.  
- 
-
-
-
- 
-Continuous optimization starts with adopting best practices as you migrate or onboard workloads to Azure. However, assessing your deployed environment to ensure you’re following those best practices can be challenging. To help you accomplish this, we developed Azure Advisor. Think of it as a free, p…]]></summary>
-        <author>
-            <name>anortoll</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Discover the New Video Series: Mastering Reliable Web App Patterns for Java on Azure]]></title>
-        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/discover-the-new-video-series-mastering-reliable-web-app/ba-p/3947628</id>
-        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/discover-the-new-video-series-mastering-reliable-web-app/ba-p/3947628"/>
-        <updated>2023-10-10T18:13:11.000Z</updated>
-        <summary type="html"><![CDATA[Embarking on a Java web app modernization journey to the cloud can be a challenging feat. How do you transform your apps to be not only functional but also secure, cost-efficient, and reliable in the cloud? We built the Reliable Web App Pattern for Java to help you accelerate your journey to the cloud by making minimal investments in your legacy code, re-platform, and set a base for future modernization. If you've read our announcement blog by Nish Anil or Rory Preddy’s expert take on the subject, you'll know we're deeply committed to helping you succeed in moving Java applications to Azure.
- 
-In this new 6-part video series, I’ll demystify the process of re-platforming Java web applications to Azure. The series deep-dives into Azure Well-Architected Framework, explores a production-grade …]]></summary>
-        <author>
-            <name>mattsoucoup</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[October patches for Azure DevOps Server]]></title>
-        <id>https://devblogs.microsoft.com/devops/?p=67748</id>
-        <link href="https://devblogs.microsoft.com/devops/october-patches-for-azure-devops-server-3/"/>
-        <updated>2023-10-10T17:26:03.000Z</updated>
-        <summary type="html"><![CDATA[This month, we are releasing fixes that impact our self-hosted product, Azure DevOps Server.
-Azure DevOps Server 2022.0.1
-Azure DevOps Server 2020.1.2
-Azure DevOps Server 2020.0.2
-Azure DevOps Server 2022.0.1 Patch 4
-Note: If you have Azure DevOps Server 2022,
-The post October patches for Azure DevOps Server appeared first on Azure DevOps Blog.]]></summary>
-        <author>
-            <name>Gloridel Morales</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Announcing Public Preview of Azure API Management Pricing Tiers: Basic v2 and Standard v2]]></title>
-        <id>announcing-public-preview-of-azure-api-management-pricing-tiers-basic-v2-and-standard-v2</id>
-        <link href="https://azure.microsoft.com/en-us/updates/announcing-public-preview-of-azure-api-management-pricing-tiers-basic-v2-and-standard-v2/"/>
-        <updated>2023-10-10T17:00:07.000Z</updated>
-        <summary type="html"><![CDATA[We're thrilled to announce the public preview launch of our latest Azure API Management pricing tiers: Basic v2 and Standard v2. These new tiers address highly sought-after customer requests, bring quality-of-service enhancements, and offer a flexible starting point for API Management, allowing organizations of any size to embark on their API journey.]]></summary>
-        <author>
-            <name>Azure service updates</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Azure Files has been improved to support all valid Unicode characters]]></title>
-        <id>azurefilessupportforunicodecharacters</id>
-        <link href="https://azure.microsoft.com/en-us/updates/azurefilessupportforunicodecharacters/"/>
-        <updated>2023-10-10T16:00:08.000Z</updated>
-        <summary type="html"><![CDATA[Azure Files now supports an expanded character set enabling file and directory names with all valid Unicode characters.]]></summary>
-        <author>
-            <name>Azure service updates</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[ExpressRoute Traffic Collector is now generally available]]></title>
-        <id>expressroute-traffic-collector-is-now-generally-available</id>
-        <link href="https://azure.microsoft.com/en-us/updates/expressroute-traffic-collector-is-now-generally-available/"/>
-        <updated>2023-10-10T16:00:07.000Z</updated>
-        <summary type="html"><![CDATA[Use ExpressRoute Traffic Collector to enable collection of flow logs for traffic sent over your ExpressRoute direct circuit.]]></summary>
-        <author>
-            <name>Azure service updates</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[LSA payload update for fixes on 15-Jan]]></title>
-        <id>lsa-payload-update-for-fixes-on-15jan</id>
-        <link href="https://azure.microsoft.com/en-us/updates/lsa-payload-update-for-fixes-on-15jan/"/>
-        <updated>2023-10-10T16:00:06.000Z</updated>
-        <summary type="html"><![CDATA[On the 15-Jan we are going to fix those 2 values in LSA payload to contain the correct values according to our other alerts services.]]></summary>
-        <author>
-            <name>Azure service updates</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Recommenders joins LF AI & Data as new Sandbox project]]></title>
-        <id>https://cloudblogs.microsoft.com/opensource/2023/10/10/recommenders-joins-lf-ai-data-as-new-sandbox-project/</id>
-        <link href="https://cloudblogs.microsoft.com/opensource/2023/10/10/recommenders-joins-lf-ai-data-as-new-sandbox-project/"/>
-        <updated>2023-10-10T16:00:00.000Z</updated>
-        <summary type="html"><![CDATA[LF AI & Data Foundation announced Recommenders as its latest Sandbox project.
-The post Recommenders joins LF AI & Data as new Sandbox project appeared first on Microsoft Open Source Blog.]]></summary>
-        <author>
-            <name>Mark Russinovich</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Announcing GitHub Universe Cloud Skills Challenge!]]></title>
-        <id>https://techcommunity.microsoft.com/t5/educator-developer-blog/announcing-github-universe-cloud-skills-challenge/ba-p/3943877</id>
-        <link href="https://techcommunity.microsoft.com/t5/educator-developer-blog/announcing-github-universe-cloud-skills-challenge/ba-p/3943877"/>
-        <updated>2023-10-10T08:39:27.000Z</updated>
-        <summary type="html"><![CDATA[GitHub is the home for all developers—a platform where you can share your work with the world, fork projects, collaborate with others, and create your own software. Codespaces and GitHub Copilot set the stage for a new era of developer productivity, enabling you to focus on what matters most: your code.
- 
-Register to the GitHub Universe Cloud Skills Challenge and start your exciting journey in AI! Whether you’re beginning or looking to change your career, this learning experience is designed to introduce you to some of the most requested GitHub tools for AI beginners, and to explore new opportunities. Register now to the challenge and discover new AI essential tools: register here!
- 
-During this challenge you will explore opportunities to understand how you can build different projects wit…]]></summary>
-        <author>
-            <name>cynthiazanoni</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Tips and Tricks to Bring Your AI Idea to Life]]></title>
-        <id>https://techcommunity.microsoft.com/t5/educator-developer-blog/tips-and-tricks-to-bring-your-ai-idea-to-life/ba-p/3945685</id>
-        <link href="https://techcommunity.microsoft.com/t5/educator-developer-blog/tips-and-tricks-to-bring-your-ai-idea-to-life/ba-p/3945685"/>
-        <updated>2023-10-10T04:04:00.000Z</updated>
-        <summary type="html"><![CDATA[Artificial Intelligence is advancing at an astonishing pace, poised to transform our daily lives in ways we can hardly imagine. Do you have a brilliant idea for an AI project? Are you eager to turn that vision into a reality? Look no further because the "Tips and Tricks to Bring Your AI Idea to Life" series is here to guide you on your journey!
-REGISTER NOW!
- 
-
-
- 
-Join Abril Ureña and I (Cynthia Zanoni) in this 30-minute weekly series as we embark on an exciting exploration of the robust tools and cutting-edge technologies offered by Microsoft. These tools will serve as your trusted companions in the development of your AI projects. 
- 
-In each episode, we will be joined by industry experts who will share their invaluable experiences and insights. Together, we will learn how to transform yo…]]></summary>
-        <author>
-            <name>cynthiazanoni</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Tips and Tricks to Bring Your AI Idea to Life — a new Reactor show]]></title>
-        <id>https://techcommunity.microsoft.com/t5/educator-developer-blog/tips-and-tricks-to-bring-your-ai-idea-to-life-a-new-reactor-show/ba-p/3945685</id>
-        <link href="https://techcommunity.microsoft.com/t5/educator-developer-blog/tips-and-tricks-to-bring-your-ai-idea-to-life-a-new-reactor-show/ba-p/3945685"/>
-        <updated>2023-10-10T04:04:00.000Z</updated>
-        <summary type="html"><![CDATA[Artificial Intelligence is advancing at an astonishing pace, poised to transform our daily lives in ways we can hardly imagine. Do you have a brilliant idea for an AI project? Are you eager to turn that vision into a reality? Look no further because the "Tips and Tricks to Bring Your AI Idea to Life" series is here to guide you on your journey!
- 
- REGISTER NOW!
- 
-Join Abril Ureña and I (Cynthia Zanoni) in this 30-minute weekly series as we embark on an exciting exploration of the robust tools and cutting-edge technologies offered by Microsoft. These tools will serve as your trusted companions in the development of your AI projects. 
- 
-
-
- 
-In each episode, we will be joined by industry experts who will share their invaluable experiences and insights. Together, we will learn how to transform…]]></summary>
-        <author>
-            <name>cynthiazanoni</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Portfolio Worthy Challenge: Build an AI-Enabled Speech Translator App]]></title>
-        <id>https://techcommunity.microsoft.com/t5/educator-developer-blog/portfolio-worthy-challenge-build-an-ai-enabled-speech-translator/ba-p/3945937</id>
-        <link href="https://techcommunity.microsoft.com/t5/educator-developer-blog/portfolio-worthy-challenge-build-an-ai-enabled-speech-translator/ba-p/3945937"/>
-        <updated>2023-10-09T07:00:00.000Z</updated>
-        <summary type="html"><![CDATA[How to Become a Founder
-Many great entrepreneurs have not yet started their businesses. The best products are those that address real problems. This may sound like a motivational quote, but it can actually transform your career. Consider this: if you use your skills to solve a problem that meets market demand, you will not only become a founder, but also an employer and, more importantly, a value creator for the world.
-This challenge will help you use your skills to overcome a language barrier and unleash your entrepreneurial spirit.
- 
- 
-About the Challenge
-Communication is an essential part of our daily lives. To make life more accessible for people, we will use Power Apps, a LowCode solution, to create a Speech Translator App.
- 
-The app can recognize the user's speech and convert it to t…]]></summary>
-        <author>
-            <name>theoyinbooke</name>
         </author>
     </entry>
 </feed>
