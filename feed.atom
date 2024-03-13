@@ -2,10 +2,104 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2024-03-12T01:00:11.550Z</updated>
+    <updated>2024-03-13T01:02:01.076Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Announcing Distributed Functions for Azure Static Web Apps]]></title>
+        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/announcing-distributed-functions-for-azure-static-web-apps/ba-p/4083151</id>
+        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/announcing-distributed-functions-for-azure-static-web-apps/ba-p/4083151"/>
+        <updated>2024-03-12T20:30:42.000Z</updated>
+        <summary type="html"><![CDATA[Azure Static Web Apps is a platform that enables you to build modern web applications with static frontends and serverless functions backends. With Azure Static Web Apps, you can easily deploy your static site to our globally distributed host, and easily add backend functionality with Static Web Apps’ integrated managed functions. However, until now, these managed functions were deployed to a single region, which can result in unnecessary network latencies for audiences far from the functions region.
+ 
+Today, we are excited to announce Distributed Functions for Azure Static Web Apps, a feature that automatically distributes your Static Web Apps’ managed functions to regions of high demand. With distributed functions enabled on your Static Web Apps resource, you can reduce the network laten…]]></summary>
+        <author>
+            <name>thomasgauvinmsft</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[March patches for Azure DevOps Server]]></title>
+        <id>https://devblogs.microsoft.com/devops/?p=68912</id>
+        <link href="https://devblogs.microsoft.com/devops/march-patches-for-azure-devops-server-2/"/>
+        <updated>2024-03-12T20:23:52.000Z</updated>
+        <summary type="html"><![CDATA[This month, we are releasing fixes that impact our self-hosted product, Azure DevOps Server.
+Azure DevOps Server 2022.1
+Azure DevOps Server 2020.1.2
+Azure DevOps Server 2019.1.2
+Azure DevOps Server 2022.1 Patch 3
+The post March patches for Azure DevOps Server appeared first on Azure DevOps Blog.]]></summary>
+        <author>
+            <name>Gloridel Morales</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How to Use SemanticKernel with OpenAI and Azure OpenAI in C#]]></title>
+        <id>https://techcommunity.microsoft.com/t5/educator-developer-blog/how-to-use-semantickernel-with-openai-and-azure-openai-in-c/ba-p/4081648</id>
+        <link href="https://techcommunity.microsoft.com/t5/educator-developer-blog/how-to-use-semantickernel-with-openai-and-azure-openai-in-c/ba-p/4081648"/>
+        <updated>2024-03-12T19:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Hi!
+Today I’m starting a series of posts to describe an “easy way to use” AI Services with Semantic Kernel. I’m a fan of code, so I’ll focus mostly on code samples.
+Semantic Kernel (via Copilot)
+Semantic Kernel is a powerful tool that allows developers to integrate cutting-edge language models into their applications with ease. Semantic Kernel provides a unified interface to access various language models from different sources, such as OpenAI, AzureOpenAI, and Hugging Face. Semantic Kernel also enables developers to store and retrieve memories, create dynamic prompts, and combine functions together with planners.
+With Semantic Kernel, developers can supercharge their problem-solving creativity and build AI solutions that can understand natural language, generate content, answer questions,…]]></summary>
+        <author>
+            <name>elbruno</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Command Override in Azure Container Apps /Container App Job]]></title>
+        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/command-override-in-azure-container-apps-container-app-job/ba-p/4082514</id>
+        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/command-override-in-azure-container-apps-container-app-job/ba-p/4082514"/>
+        <updated>2024-03-12T11:30:00.000Z</updated>
+        <summary type="html"><![CDATA[Introduction
+Azure Container Apps (ACA) provides a flexible and scalable platform for deploying containerized applications. One powerful feature it offers is the ability to customize startup commands and override default CMD or ENTRYPOINT defined in a Dockerfile. In this blog, we'll explore how to leverage the "Command Override" option using various methods in ACA and Container App Jobs.
+ 
+Understanding Command Overrides
+Command overrides come in handy when you need to execute specific CMD or change the ENTRYPOINT of your container at runtime.
+ 
+Example:
+If one wants to run "index.js" during the start of the app, but as per line number 14 in below image, the "server.js" file will execute.
+
+It can be achieved by providing "node", "index.js" to Command Override field in ACA, in easy words, t…]]></summary>
+        <author>
+            <name>sheetal_06</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Evaluating a RAG chat app: Approach, SDKs, and Tools]]></title>
+        <id>https://techcommunity.microsoft.com/t5/educator-developer-blog/evaluating-a-rag-chat-app-approach-sdks-and-tools/ba-p/4079115</id>
+        <link href="https://techcommunity.microsoft.com/t5/educator-developer-blog/evaluating-a-rag-chat-app-approach-sdks-and-tools/ba-p/4079115"/>
+        <updated>2024-03-12T07:00:00.000Z</updated>
+        <summary type="html"><![CDATA[When we’re programming user-facing experiences, we want to feel confident that we’re creating a functional user experience - not a broken one! How do we do that? We write tests, like unit tests, integration tests, smoke tests, accessibility tests, loadtests, property-based tests. We can’t automate all forms of testing, so we test what we can, and hire humans to audit what we can’t.
+ 
+But when we’re building RAG chat apps built on LLMs, we need to introduce an entirely new form of testing to give us confidence that our LLM responses are coherent, grounded, and well-formed.
+ 
+We call this form of testing “evaluation”, and we can now automate it with the help of the most powerful LLM in town: GPT-4.
+ 
+How to evaluate a RAG chat app
+ 
+The general approach is:
+
+Generate a set of “ground truth” …]]></summary>
+        <author>
+            <name>Pamela_Fox</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Seamless Integration: Enhancing your Static Web App by adding an Azure Functions backed AI Chatbot]]></title>
+        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/seamless-integration-enhancing-your-static-web-app-by-adding-an/ba-p/4082212</id>
+        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/seamless-integration-enhancing-your-static-web-app-by-adding-an/ba-p/4082212"/>
+        <updated>2024-03-12T02:41:41.000Z</updated>
+        <summary type="html"><![CDATA[Introduction
+
+Incorporating an AI chatbot into your static web app has never been easier, thanks to the seamless integration offered by Azure's ecosystem. Azure Static Web Apps, paired with the robust capabilities of Azure Functions and OpenAI's sophisticated AI models, simplifies the deployment and management of conversational AI agents. This powerful combination removes the traditional complexities associated with developing and integrating AI chatbots, allowing developers to enhance their websites with intelligent, interactive conversations effortlessly. Whether you're looking to improve user engagement, provide instant support, or gather user feedback through natural language interactions, Azure provides an all-in-one solution to bring your chatbot to life with minimal hassle.
+ 
+Prereq…]]></summary>
+        <author>
+            <name>anninakeller</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Armchair Architects: Considerations for Ethical and Responsible Use of AI in Applications]]></title>
         <id>https://techcommunity.microsoft.com/t5/azure-architecture-blog/armchair-architects-considerations-for-ethical-and-responsible/ba-p/4082133</id>
