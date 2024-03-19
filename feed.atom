@@ -2,10 +2,250 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2024-03-18T01:02:16.211Z</updated>
+    <updated>2024-03-19T01:01:15.078Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Java client changes to support TLS 1.3 with Azure Service Bus and Azure Event Hubs]]></title>
+        <id>https://techcommunity.microsoft.com/t5/messaging-on-azure-blog/java-client-changes-to-support-tls-1-3-with-azure-service-bus/ba-p/4089355</id>
+        <link href="https://techcommunity.microsoft.com/t5/messaging-on-azure-blog/java-client-changes-to-support-tls-1-3-with-azure-service-bus/ba-p/4089355"/>
+        <updated>2024-03-19T00:52:08.000Z</updated>
+        <summary type="html"><![CDATA[Microsoft is looking to enable TLS 1.3 for Azure Service Bus, and Azure Event Hubs.  We found however that there is a problem with some clients that use both Java and our AMQP or JMS interfaces.  Java clients that use Apache Proton-J with a version older than proton-j-0.31.0 along with Java 11+ can't support TLS 1.3.  The Proton-J library is used in AMQP and JMS implementations. The nature of the problem lies in the handshake and is thus not detectable by our application layer.  This means that we can't detect and work around the issue from the service side.  To avoid this problem, customers need to update any instances of Apache Proton-J that have a version older than proton-j-0.31.0.  The link for the Proton-J issue is tracked at https://issues.apache.org/jira/browse/PROTON-1972
+ 
+Required action
+Proton-J may also be in a dependent library and may not be directly used by your code. To determine if you have an incompatibility with TLS 1.3, we have enabled the West Central US region with TLS 1.3 support for AMQP traffic.  To test if you have a compatibility issue
+
+first evaluate if you are using AMQP or JMS
+Second, determine if you are using Java 11+ with your client code
+Third, if you are using AMQP or JMS and also Java 11+, then create a namespace in West Central US and attempt to connect to it with your code. 
+
+If your client fails to connect, you need to find where you are using Proton-J and get the version used updated to a version that is newer than proton-j-0.30.0.
+ 
+Timeline
+As already noted, this only affects AMQP or JMS traffic.  It does not affect web service or Kafka traffic which does have TLS 1.3 enabled now.  We are going to enable TLS 1.3 for AMQP and JMS on October 31, 2024.  That is also the same day that TLS 1.0 and TLS 1.1 is being removed from Azure Event Hubs and Azure Service Bus.  Please take action as soon as possible to guarantee no interruption to your service use when we enable TLS 1.3.]]></summary>
+        <author>
+            <name>Christina Compy</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Public preview: Kubernetes AI Toolchain Operator (KAITO) add-on for AKS]]></title>
+        <id>public-preview-kubernetes-ai-toolchain-operator-kaito-addon-for-aks</id>
+        <link href="https://azure.microsoft.com/en-us/updates/public-preview-kubernetes-ai-toolchain-operator-kaito-addon-for-aks/"/>
+        <updated>2024-03-18T23:00:17.000Z</updated>
+        <summary type="html"><![CDATA[You can now choose from preset LLMs with images hosted by AKS and split inferencing across multiple lower-GPU count VMs]]></summary>
+        <author>
+            <name>Azure service updates</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Generally Available: Cost analysis add-on for AKS]]></title>
+        <id>generally-available-cost-analysis-addon-for-aks</id>
+        <link href="https://azure.microsoft.com/en-us/updates/generally-available-cost-analysis-addon-for-aks/"/>
+        <updated>2024-03-18T23:00:16.000Z</updated>
+        <summary type="html"><![CDATA[You can now better understand the infra costs associated with running applications at the namespace and cluster levels and identify opportunities to optimize resource utilization through an Azure native experience.]]></summary>
+        <author>
+            <name>Azure service updates</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Generally Available: Windows Gen 2 VM support in AKS]]></title>
+        <id>generally-available-windows-gen-2-vm-support-in-aks</id>
+        <link href="https://azure.microsoft.com/en-us/updates/generally-available-windows-gen-2-vm-support-in-aks/"/>
+        <updated>2024-03-18T23:00:15.000Z</updated>
+        <summary type="html"><![CDATA[YOu can now use Gen 2 VM SKUs for Windows nodepools in AKS.]]></summary>
+        <author>
+            <name>Azure service updates</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Public preview: Windows GPU support in AKS]]></title>
+        <id>public-preview-windows-gpu-support-in-aks</id>
+        <link href="https://azure.microsoft.com/en-us/updates/public-preview-windows-gpu-support-in-aks/"/>
+        <updated>2024-03-18T23:00:15.000Z</updated>
+        <summary type="html"><![CDATA[You can now run GPU workloads, such as machine learning, video encoding, large simulations, and gaming, on Windows nodepools in AKS.]]></summary>
+        <author>
+            <name>Azure service updates</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Generally Available: Kubernetes 1.29 support in AKS]]></title>
+        <id>generally-available-kubernetes-129-support-in-aks</id>
+        <link href="https://azure.microsoft.com/en-us/updates/generally-available-kubernetes-129-support-in-aks/"/>
+        <updated>2024-03-18T23:00:14.000Z</updated>
+        <summary type="html"><![CDATA[You can now take advantage of Kubernetes 1.29 version with AKS in production environment.]]></summary>
+        <author>
+            <name>Azure service updates</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Generally Available: Custom kubelet configuration for Windows in AKS]]></title>
+        <id>generally-available-custom-kubelet-configuration-for-windows-in-aks</id>
+        <link href="https://azure.microsoft.com/en-us/updates/generally-available-custom-kubelet-configuration-for-windows-in-aks/"/>
+        <updated>2024-03-18T23:00:14.000Z</updated>
+        <summary type="html"><![CDATA[You can now modify default values for kubelet parameters when using Windows nodepools in AKS.]]></summary>
+        <author>
+            <name>Azure service updates</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Public preview: Azure CNI static block IP allocation support in AKS]]></title>
+        <id>public-preview-azure-cni-static-block-ip-allocation-support-in-aks</id>
+        <link href="https://azure.microsoft.com/en-us/updates/public-preview-azure-cni-static-block-ip-allocation-support-in-aks/"/>
+        <updated>2024-03-18T23:00:13.000Z</updated>
+        <summary type="html"><![CDATA[You can now scale beyond the current 65k Pod IPs and scale up to 1 Million Pods.]]></summary>
+        <author>
+            <name>Azure service updates</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Public preview: Deployment safeguards in AKS]]></title>
+        <id>public-preview-deployment-safeguards-in-aks</id>
+        <link href="https://azure.microsoft.com/en-us/updates/public-preview-deployment-safeguards-in-aks/"/>
+        <updated>2024-03-18T23:00:13.000Z</updated>
+        <summary type="html"><![CDATA[You can now use deployment safeguards to implement Kubernetes best practices and get warnings on deployment or deny the deployment of manifest files that are not following best practices.]]></summary>
+        <author>
+            <name>Azure service updates</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Generally Available: Azure CNI overlay dual stack Support in AKS (Linux only)]]></title>
+        <id>generally-available-azure-cni-overlay-dual-stack-support-in-aks-linux-only</id>
+        <link href="https://azure.microsoft.com/en-us/updates/generally-available-azure-cni-overlay-dual-stack-support-in-aks-linux-only/"/>
+        <updated>2024-03-18T23:00:12.000Z</updated>
+        <summary type="html"><![CDATA[You can now deploy AKS clusters in dual stack mode which now enables resource connection through IPv4 or IPv6.]]></summary>
+        <author>
+            <name>Azure service updates</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Generally Available: VM IP based load balancer in AKS]]></title>
+        <id>generally-available-vm-ip-based-load-balancer-in-aks</id>
+        <link href="https://azure.microsoft.com/en-us/updates/generally-available-vm-ip-based-load-balancer-in-aks/"/>
+        <updated>2024-03-18T23:00:11.000Z</updated>
+        <summary type="html"><![CDATA[You can now choose IP-based backend pool membership for new or existing clusters in AKS.]]></summary>
+        <author>
+            <name>Azure service updates</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Generally Available: Host Network Security Group (NSG) control in AKS]]></title>
+        <id>generally-available-host-network-security-group-nsg-control-in-aks</id>
+        <link href="https://azure.microsoft.com/en-us/updates/generally-available-host-network-security-group-nsg-control-in-aks/"/>
+        <updated>2024-03-18T23:00:11.000Z</updated>
+        <summary type="html"><![CDATA[You can now directly configure allowed ports in your nodepool settings.]]></summary>
+        <author>
+            <name>Azure service updates</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Generally Available: HostPort auto assign in AKS]]></title>
+        <id>generally-available-hostport-auto-assign-in-aks</id>
+        <link href="https://azure.microsoft.com/en-us/updates/generally-available-hostport-auto-assign-in-aks/"/>
+        <updated>2024-03-18T23:00:10.000Z</updated>
+        <summary type="html"><![CDATA[AKS now lets you deploy pods without manually specifying host ports.]]></summary>
+        <author>
+            <name>Azure service updates</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Generally Available: Instance level Public IP tags in AKS]]></title>
+        <id>generally-available-instance-level-public-ip-tags-in-aks</id>
+        <link href="https://azure.microsoft.com/en-us/updates/generally-available-instance-level-public-ip-tags-in-aks/"/>
+        <updated>2024-03-18T23:00:10.000Z</updated>
+        <summary type="html"><![CDATA[You can now utilize Azure routing preference for your cluster, public node IPs in AKS]]></summary>
+        <author>
+            <name>Azure service updates</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Public preview: Trusted launch support in AKS]]></title>
+        <id>public-preview-trusted-launch-support-in-aks</id>
+        <link href="https://azure.microsoft.com/en-us/updates/public-preview-trusted-launch-support-in-aks/"/>
+        <updated>2024-03-18T23:00:09.000Z</updated>
+        <summary type="html"><![CDATA[Administrators can now deploy AKS nodes with verified and signed bootloaders, OS kernels, and drivers.]]></summary>
+        <author>
+            <name>Azure service updates</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Generally Available: Azure Kubernetes Service (AKS) support for 5K Node limit by default for standard tier clusters]]></title>
+        <id>generally-available-azure-kubernetes-service-aks-support-for-5k-node-limit-by-default-for-standard-tier-clusters</id>
+        <link href="https://azure.microsoft.com/en-us/updates/generally-available-azure-kubernetes-service-aks-support-for-5k-node-limit-by-default-for-standard-tier-clusters/"/>
+        <updated>2024-03-18T23:00:08.000Z</updated>
+        <summary type="html"><![CDATA[You can now scale your AKS cluster to larger than 1000 nodes without having to request any special limit increases or whitelisting.]]></summary>
+        <author>
+            <name>Azure service updates</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[My Journey as an M365 PnP Publisher (from Independent Publisher to Verified Publisher)]]></title>
+        <id>https://techcommunity.microsoft.com/t5/educator-developer-blog/my-journey-as-an-m365-pnp-publisher-from-independent-publisher/ba-p/4079967</id>
+        <link href="https://techcommunity.microsoft.com/t5/educator-developer-blog/my-journey-as-an-m365-pnp-publisher-from-independent-publisher/ba-p/4079967"/>
+        <updated>2024-03-18T19:00:00.000Z</updated>
+        <summary type="html"><![CDATA[My journey as an M365 Publisher started when I saw this post by Julia Muiruri Capstone Project: Build an Independent Publisher Connector. I was just a student getting started with backend development. I had some basic knowledge of working with Restful APIs. During that time there was 30DaysOfLowCode skill challenge which was about to start. My curious nature made me join this challenge.
+The Low Code February Challenge was covering various topics ie
+
+Why Low-Code?
+Start low coding with Microsoft!
+What is Fusion Development and why is it important?
+PnP connectors
+Canvas App
+Power Fx
+OpenAI & Microsoft Power Platform
+Power Apps Component Framework
+Power page for ProDevs
+Power Automate, ACS and OpenAI
+API Management & Power Platform
+
+Among other topics.
+These topics we all new to me, but I rem…]]></summary>
+        <author>
+            <name>kevin_comba</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Azure Event Hubs IP address changes]]></title>
+        <id>https://techcommunity.microsoft.com/t5/messaging-on-azure-blog/azure-event-hubs-ip-address-changes/ba-p/4089091</id>
+        <link href="https://techcommunity.microsoft.com/t5/messaging-on-azure-blog/azure-event-hubs-ip-address-changes/ba-p/4089091"/>
+        <updated>2024-03-18T18:31:35.000Z</updated>
+        <summary type="html"><![CDATA[What is Changing? 
+The infrastructure layer of Azure Event Hubs is being upgraded which will cause the IP addresses used by customer namespaces to change. These changes are being made as part of our continuous improvements to our platform. The IP addresses of our services can change and should not be considered static and unchanging. The changes being made will not alter billing or cause any service interruptions.  
+ 
+Call to Action 
+If you are using IP addresses in your egress firewalls to your Azure Event Hubs namespaces, you will need to configure your firewalls to use the fully qualified domain names for your specific namespaces, or the wildcard “*.servicebus.windows.net” domains. These will automatically resolve to the new IP addresses.]]></summary>
+        <author>
+            <name>Christina Compy</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Protect PII information in your Microsoft Fabric Lakehouse with Responsible AI]]></title>
+        <id>https://techcommunity.microsoft.com/t5/educator-developer-blog/protect-pii-information-in-your-microsoft-fabric-lakehouse-with/ba-p/4079416</id>
+        <link href="https://techcommunity.microsoft.com/t5/educator-developer-blog/protect-pii-information-in-your-microsoft-fabric-lakehouse-with/ba-p/4079416"/>
+        <updated>2024-03-18T07:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Organizations, Data analysts and data scientists need to protect the personally identifiable information (PII) of their clients, such as names, addresses, emails, phone numbers, or social security numbers (SSN), that they use to build reports and dashboards. PII can pose risks to both the data subjects and the data holders and can introduce security breach vulnerability, privacy violations or biases that affect the decisions made based on the data. For example, if a source data contains PII in a generative AI application, there's a risk of confidential information such as a bank account information to be returned from a user's prompt inquiry.  One way to protect PII is to use responsible AI, which is a set of principles and practices that help to mask PII with synthetic or anonymized data …]]></summary>
+        <author>
+            <name>Someleze_Diko</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How to connect Azure Key Vault from Python App Service using managed identity]]></title>
+        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/how-to-connect-azure-key-vault-from-python-app-service-using/ba-p/4088152</id>
+        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/how-to-connect-azure-key-vault-from-python-app-service-using/ba-p/4088152"/>
+        <updated>2024-03-18T05:08:21.000Z</updated>
+        <summary type="html"><![CDATA[In this blog, we will explore how to securely access Azure Key Vault from a Python App Service using managed identity. This method enhances security by avoiding the need to store credentials in code or configuration files. If you are interested in connecting to an Azure SQL database from a Python Function App using managed identity, you can find a related post here.
+Azure Key Vault is a cloud service that provides a secure store for secrets, keys, and certificates. With managed identities for Azure resources, you can authenticate to services that support Azure AD authentication without needing credentials in your code.
+Let's dive into the steps to achieve this with a Python App Service.
+ 
+Steps:
+
+
+Create a Python App Service in Azure:
+Start by creating a Python App Service from the Azure p…]]></summary>
+        <author>
+            <name>KevinLi</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Learn Live: Microsoft Learn AI Skills Challenge]]></title>
         <id>https://techcommunity.microsoft.com/t5/educator-developer-blog/learn-live-microsoft-learn-ai-skills-challenge/ba-p/4085078</id>
@@ -1488,8 +1728,72 @@ The post Crafting an Opinionated Logging and Error Handling Framework for Enhanc
     </entry>
     <entry>
         <title type="html"><![CDATA[Draw.io Azure infrastructure diagrams through code like an artist]]></title>
+        <id>https://techcommunity.microsoft.com/t5/microsoft-developer-community/draw-io-azure-infrastructure-diagrams-through-code-like-an/ba-p/4071316</id>
+        <link href="https://techcommunity.microsoft.com/t5/microsoft-developer-community/draw-io-azure-infrastructure-diagrams-through-code-like-an/ba-p/4071316"/>
+        <updated>2024-03-01T07:30:00.000Z</updated>
+        <summary type="html"><![CDATA[Introduction
+ 
+In this article we will see how to create an Azure diagram to reveal all the dependencies between Azure App Services, their Application Insights and finally their workspace-based Log Analytics Workspaces.
+ 
+The use case consist in:
+ 
+
+auditing the current configuration on Azure through a PowerShell script,
+export the current infrastructure set up on a CSV Draw.io readable file,
+observe a work of art.
+
+ 
+
+ 
+ 
+
+Concept
+ 
+To make this piece of art possible you should have a clear idea of the following concept.
+ 
+
+Azure resource dependencies: An App Service or Function App can send logs to an Application Insights and Application Insights can send logs to a Log Analytics workspace. This refers to the concept of Workspace-based Application Insights resources.
+Draw.io is a free dia…]]></summary>
+        <author>
+            <name>Jamesdld23</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Draw.io Azure infrastructure diagrams through code like an artist]]></title>
         <id>https://techcommunity.microsoft.com/t5/azure-developer-community-blog/draw-io-azure-infrastructure-diagrams-through-code-like-an/ba-p/4071316</id>
         <link href="https://techcommunity.microsoft.com/t5/azure-developer-community-blog/draw-io-azure-infrastructure-diagrams-through-code-like-an/ba-p/4071316"/>
+        <updated>2024-03-01T07:30:00.000Z</updated>
+        <summary type="html"><![CDATA[Introduction
+ 
+In this article we will see how to create an Azure diagram to reveal all the dependencies between Azure App Services, their Application Insights and finally their workspace-based Log Analytics Workspaces.
+ 
+The use case consist in:
+ 
+
+auditing the current configuration on Azure through a PowerShell script,
+export the current infrastructure set up on a CSV Draw.io readable file,
+observe a work of art.
+
+ 
+
+ 
+ 
+
+Concept
+ 
+To make this piece of art possible you should have a clear idea of the following concept.
+ 
+
+Azure resource dependencies: An App Service or Function App can send logs to an Application Insights and Application Insights can send logs to a Log Analytics workspace. This refers to the concept of Workspace-based Application Insights resources.
+Draw.io is a free dia…]]></summary>
+        <author>
+            <name>Jamesdld23</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Draw.io Azure infrastructure diagrams through code like an artist]]></title>
+        <id>https://techcommunity.microsoft.com/t5/microsoft-developer-community/draw-io-azure-infrastructure-diagrams-through-code-like-an/ba-p/4071316</id>
+        <link href="https://techcommunity.microsoft.com/t5/microsoft-developer-community/draw-io-azure-infrastructure-diagrams-through-code-like-an/ba-p/4071316"/>
         <updated>2024-03-01T07:30:00.000Z</updated>
         <summary type="html"><![CDATA[Introduction
  
@@ -3015,6 +3319,20 @@ Hello! I'm Ahmet Dedeler, a 16-year-old high school junior from Turkey, and I'm 
     </entry>
     <entry>
         <title type="html"><![CDATA[Microsoft JDConf 2024 Announces Keynote Speaker and Breakout Sessions – Java, Cloud and AI]]></title>
+        <id>https://techcommunity.microsoft.com/t5/microsoft-developer-community/microsoft-jdconf-2024-announces-keynote-speaker-and-breakout/ba-p/4057548</id>
+        <link href="https://techcommunity.microsoft.com/t5/microsoft-developer-community/microsoft-jdconf-2024-announces-keynote-speaker-and-breakout/ba-p/4057548"/>
+        <updated>2024-02-15T16:45:00.000Z</updated>
+        <summary type="html"><![CDATA[Microsoft JDConf 2024 is just around the corner, making it the go-to event for Java developers everywhere. With 21 sessions, more than 10 hours of live streaming content, and even more to watch on-demand from March 27 to 28, this conference is your free ticket to the latest in Java technology, best practices, and what is next. Whether you are interested in JVM improvements, generative AI, cloud deployments, or just getting better at Java development, JDConf has something for everyone. We are also grateful for the huge number of breakout session proposals we got from the community. Thank you all for your enthusiasm and support. JDConf is built for you, offering a sneak peek at the future of Java.
+ 
+The Trio of Java, Cloud and AI: JDConf Keynote
+ 
+We are thrilled to announce the keynote sess…]]></summary>
+        <author>
+            <name>Asir-Selvasingh</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Microsoft JDConf 2024 Announces Keynote Speaker and Breakout Sessions – Java, Cloud and AI]]></title>
         <id>https://techcommunity.microsoft.com/t5/azure-developer-community-blog/microsoft-jdconf-2024-announces-keynote-speaker-and-breakout/ba-p/4057548</id>
         <link href="https://techcommunity.microsoft.com/t5/azure-developer-community-blog/microsoft-jdconf-2024-announces-keynote-speaker-and-breakout/ba-p/4057548"/>
         <updated>2024-02-15T16:45:00.000Z</updated>
@@ -3994,8 +4312,48 @@ The post Python in Visual Studio Code – February 2024 Release appeared first o
     </entry>
     <entry>
         <title type="html"><![CDATA[Infra in Azure for Developers - The How (Part 2)]]></title>
+        <id>https://techcommunity.microsoft.com/t5/microsoft-developer-community/infra-in-azure-for-developers-the-how-part-2/ba-p/4046385</id>
+        <link href="https://techcommunity.microsoft.com/t5/microsoft-developer-community/infra-in-azure-for-developers-the-how-part-2/ba-p/4046385"/>
+        <updated>2024-02-01T19:30:23.000Z</updated>
+        <summary type="html"><![CDATA[Still working our way through infrastructure for developers here. I've done the why & what. Not to mention part one of how, and now we're back with part two of creating stuff. You should work your way through part one first to get the necessary context for this part.
+ 
+
+ 
+When we left off last time we had a network and a private container app environment on top. That could have been done by a non-programmer, but in this part your development experience might come in handy. And that is part of my motivation here - at some point in the deployment cycle developer eyes are needed to cross the finish line.
+ 
+We were implementing our infra as logical layers, and that's where we will continue.
+ 
+All the code can be found here: https://github.com/ahelland/infra-for-devs 
+Level 4
+Actual application…]]></summary>
+        <author>
+            <name>Andreas Helland</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Infra in Azure for Developers - The How (Part 2)]]></title>
         <id>https://techcommunity.microsoft.com/t5/azure-developer-community-blog/infra-in-azure-for-developers-the-how-part-2/ba-p/4046385</id>
         <link href="https://techcommunity.microsoft.com/t5/azure-developer-community-blog/infra-in-azure-for-developers-the-how-part-2/ba-p/4046385"/>
+        <updated>2024-02-01T19:30:23.000Z</updated>
+        <summary type="html"><![CDATA[Still working our way through infrastructure for developers here. I've done the why & what. Not to mention part one of how, and now we're back with part two of creating stuff. You should work your way through part one first to get the necessary context for this part.
+ 
+
+ 
+When we left off last time we had a network and a private container app environment on top. That could have been done by a non-programmer, but in this part your development experience might come in handy. And that is part of my motivation here - at some point in the deployment cycle developer eyes are needed to cross the finish line.
+ 
+We were implementing our infra as logical layers, and that's where we will continue.
+ 
+All the code can be found here: https://github.com/ahelland/infra-for-devs 
+Level 4
+Actual application…]]></summary>
+        <author>
+            <name>Andreas Helland</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Infra in Azure for Developers - The How (Part 2)]]></title>
+        <id>https://techcommunity.microsoft.com/t5/microsoft-developer-community/infra-in-azure-for-developers-the-how-part-2/ba-p/4046385</id>
+        <link href="https://techcommunity.microsoft.com/t5/microsoft-developer-community/infra-in-azure-for-developers-the-how-part-2/ba-p/4046385"/>
         <updated>2024-02-01T19:30:23.000Z</updated>
         <summary type="html"><![CDATA[Still working our way through infrastructure for developers here. I've done the why & what. Not to mention part one of how, and now we're back with part two of creating stuff. You should work your way through part one first to get the necessary context for this part.
  
@@ -4140,6 +4498,37 @@ Responsible generative AI fundamentals: Review the responsible AI guidelines for
 The post APIs testing using HTTP files and Rest Client appeared first on ISE Developer Blog.]]></summary>
         <author>
             <name>Ayman</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Azure Data Factory: How to split a file into multiple output files with Bicep]]></title>
+        <id>https://techcommunity.microsoft.com/t5/microsoft-developer-community/azure-data-factory-how-to-split-a-file-into-multiple-output/ba-p/4039825</id>
+        <link href="https://techcommunity.microsoft.com/t5/microsoft-developer-community/azure-data-factory-how-to-split-a-file-into-multiple-output/ba-p/4039825"/>
+        <updated>2024-02-01T07:45:00.000Z</updated>
+        <summary type="html"><![CDATA[Introduction
+ 
+In this article we will see how to split a csv file located in an Azure Storage Account through Azure Data Factory Data Flow.
+ 
+We will do it through Azure Bicep in order to demonstrate the benefits of Infrastructure as Code (IaC) including:
+
+Reviewing the planned infrastructure that will be deployed through the what-if feature.
+Reproducible and testable infrastructures with templating deployments.
+
+ 
+
+ 
+
+ 
+A complete procedure to deploy the following resources is available here: https://github.com/JamesDLD/bicep-data-factory-data-flow-split-file
+
+Azure Storage Account
+Uploading a test file that will be splitted
+Azure Data Factory
+Azure Data Factory Linked Service to connect Data Factory to our Storage Account
+Azure Data Factory Data Flow that will split our file
+Azure Data …]]></summary>
+        <author>
+            <name>Jamesdld23</name>
         </author>
     </entry>
     <entry>
@@ -4919,8 +5308,34 @@ Common…]]></summary>
     </entry>
     <entry>
         <title type="html"><![CDATA[Build your Web Apps faster with the Azure Cache for Redis: Quick Start Template]]></title>
+        <id>https://techcommunity.microsoft.com/t5/microsoft-developer-community/build-your-web-apps-faster-with-the-azure-cache-for-redis-quick/ba-p/4040663</id>
+        <link href="https://techcommunity.microsoft.com/t5/microsoft-developer-community/build-your-web-apps-faster-with-the-azure-cache-for-redis-quick/ba-p/4040663"/>
+        <updated>2024-01-26T14:23:37.000Z</updated>
+        <summary type="html"><![CDATA[Are you a developer looking to quickly and securely spin up a Webapp with a database and cache? Look no further than the Azure Cache for Redis Quick Start Template, now available in the Azure Marketplace. This template allows developers to work across various databases and languages of their choice, making it easier than ever to get started. 
+The Quick Start Template is compatible with several popular programming languages, including **Java, .NET, Python, Go, PHP, and Node.js**. It also works with a variety of data services, such as **Azure SQL, Azure PostgreSQL, Azure MySQL, and Azure Cosmos DB for MongoDB**. 
+ 
+Azure Cache for Redis is a 1st party service that fully manages caching solutions based on open-source Redis, an in-memory data store that is commonly used for caching, message br…]]></summary>
+        <author>
+            <name>rickydiep</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Build your Web Apps faster with the Azure Cache for Redis: Quick Start Template]]></title>
         <id>https://techcommunity.microsoft.com/t5/azure-developer-community-blog/build-your-web-apps-faster-with-the-azure-cache-for-redis-quick/ba-p/4040663</id>
         <link href="https://techcommunity.microsoft.com/t5/azure-developer-community-blog/build-your-web-apps-faster-with-the-azure-cache-for-redis-quick/ba-p/4040663"/>
+        <updated>2024-01-26T14:23:37.000Z</updated>
+        <summary type="html"><![CDATA[Are you a developer looking to quickly and securely spin up a Webapp with a database and cache? Look no further than the Azure Cache for Redis Quick Start Template, now available in the Azure Marketplace. This template allows developers to work across various databases and languages of their choice, making it easier than ever to get started. 
+The Quick Start Template is compatible with several popular programming languages, including **Java, .NET, Python, Go, PHP, and Node.js**. It also works with a variety of data services, such as **Azure SQL, Azure PostgreSQL, Azure MySQL, and Azure Cosmos DB for MongoDB**. 
+ 
+Azure Cache for Redis is a 1st party service that fully manages caching solutions based on open-source Redis, an in-memory data store that is commonly used for caching, message br…]]></summary>
+        <author>
+            <name>rickydiep</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Build your Web Apps faster with the Azure Cache for Redis: Quick Start Template]]></title>
+        <id>https://techcommunity.microsoft.com/t5/microsoft-developer-community/build-your-web-apps-faster-with-the-azure-cache-for-redis-quick/ba-p/4040663</id>
+        <link href="https://techcommunity.microsoft.com/t5/microsoft-developer-community/build-your-web-apps-faster-with-the-azure-cache-for-redis-quick/ba-p/4040663"/>
         <updated>2024-01-26T14:23:37.000Z</updated>
         <summary type="html"><![CDATA[Are you a developer looking to quickly and securely spin up a Webapp with a database and cache? Look no further than the Azure Cache for Redis Quick Start Template, now available in the Azure Marketplace. This template allows developers to work across various databases and languages of their choice, making it easier than ever to get started. 
 The Quick Start Template is compatible with several popular programming languages, including **Java, .NET, Python, Go, PHP, and Node.js**. It also works with a variety of data services, such as **Azure SQL, Azure PostgreSQL, Azure MySQL, and Azure Cosmos DB for MongoDB**. 
@@ -5069,8 +5484,48 @@ The post Validating Data in Synapse Using Data Flows and Pipelines appeared firs
     </entry>
     <entry>
         <title type="html"><![CDATA[Automatic Image Creation using Azure VM Image Builder is now generally available!]]></title>
+        <id>https://techcommunity.microsoft.com/t5/microsoft-developer-community/automatic-image-creation-using-azure-vm-image-builder-is-now/ba-p/4034711</id>
+        <link href="https://techcommunity.microsoft.com/t5/microsoft-developer-community/automatic-image-creation-using-azure-vm-image-builder-is-now/ba-p/4034711"/>
+        <updated>2024-01-25T00:39:15.000Z</updated>
+        <summary type="html"><![CDATA[We’re happy to announce automatic image creation using Azure Image Builder is now generally available. This feature improves your speed and efficiency by allowing you the ability to start image builds for new base images automatically.
+ 
+Automatic image creation is critical for keeping your images up-to-date and secure. It also minimizes the manual steps required for managing individual security and image update requirements.
+ 
+You no longer have to manually update images that have been patched. Instead, you can create ‘triggers’ for the images you wish to update automatically and allow the Azure Image Builder service to perform the build for you.
+ 
+Getting started 
+You can get started using the auto image creation feature by following the instructions provided in the documentation: How to use Azure Image Builder triggers to set up an automatic image build.
+ 
+Feedback 
+If you have questions or feedback, please reach out to me at kofiforson@microsoft.com.]]></summary>
+        <author>
+            <name>KofiForson</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Automatic Image Creation using Azure VM Image Builder is now generally available!]]></title>
         <id>https://techcommunity.microsoft.com/t5/azure-developer-community-blog/automatic-image-creation-using-azure-vm-image-builder-is-now/ba-p/4034711</id>
         <link href="https://techcommunity.microsoft.com/t5/azure-developer-community-blog/automatic-image-creation-using-azure-vm-image-builder-is-now/ba-p/4034711"/>
+        <updated>2024-01-25T00:39:15.000Z</updated>
+        <summary type="html"><![CDATA[We’re happy to announce automatic image creation using Azure Image Builder is now generally available. This feature improves your speed and efficiency by allowing you the ability to start image builds for new base images automatically.
+ 
+Automatic image creation is critical for keeping your images up-to-date and secure. It also minimizes the manual steps required for managing individual security and image update requirements.
+ 
+You no longer have to manually update images that have been patched. Instead, you can create ‘triggers’ for the images you wish to update automatically and allow the Azure Image Builder service to perform the build for you.
+ 
+Getting started 
+You can get started using the auto image creation feature by following the instructions provided in the documentation: How to use Azure Image Builder triggers to set up an automatic image build.
+ 
+Feedback 
+If you have questions or feedback, please reach out to me at kofiforson@microsoft.com.]]></summary>
+        <author>
+            <name>KofiForson</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Automatic Image Creation using Azure VM Image Builder is now generally available!]]></title>
+        <id>https://techcommunity.microsoft.com/t5/microsoft-developer-community/automatic-image-creation-using-azure-vm-image-builder-is-now/ba-p/4034711</id>
+        <link href="https://techcommunity.microsoft.com/t5/microsoft-developer-community/automatic-image-creation-using-azure-vm-image-builder-is-now/ba-p/4034711"/>
         <updated>2024-01-25T00:39:15.000Z</updated>
         <summary type="html"><![CDATA[We’re happy to announce automatic image creation using Azure Image Builder is now generally available. This feature improves your speed and efficiency by allowing you the ability to start image builds for new base images automatically.
  
@@ -5410,8 +5865,38 @@ We have introduced several cost optimization related recommendations and added A
     </entry>
     <entry>
         <title type="html"><![CDATA[Infra in Azure for Developers - The How (Part 1)]]></title>
+        <id>https://techcommunity.microsoft.com/t5/microsoft-developer-community/infra-in-azure-for-developers-the-how-part-1/ba-p/4036531</id>
+        <link href="https://techcommunity.microsoft.com/t5/microsoft-developer-community/infra-in-azure-for-developers-the-how-part-1/ba-p/4036531"/>
+        <updated>2024-01-22T18:18:35.000Z</updated>
+        <summary type="html"><![CDATA[We've looked at the why and what of infra for developers so now it's time to put it into action with the how. What separates this from a more generic tutorial on Azure infra? This is not meant to cover the whole gamut of Azure services - it is intended to solve an isolated part of the puzzle; namely the deployment of developer output. You can certainly build on this or re-use for other purposes, but this isn't about creating a complete platform as such.
+ 
+Disclaimer: While I strive to follow best practices the focus is on the concepts and not a battle hardened solution. This is not production grade.
+ 
+Hammering out the infrastructure
+I noticed during production that this would become a rather lengthy post, so I have split things into two parts with this laying the foundation with regards t…]]></summary>
+        <author>
+            <name>Andreas Helland</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Infra in Azure for Developers - The How (Part 1)]]></title>
         <id>https://techcommunity.microsoft.com/t5/azure-developer-community-blog/infra-in-azure-for-developers-the-how-part-1/ba-p/4036531</id>
         <link href="https://techcommunity.microsoft.com/t5/azure-developer-community-blog/infra-in-azure-for-developers-the-how-part-1/ba-p/4036531"/>
+        <updated>2024-01-22T18:18:35.000Z</updated>
+        <summary type="html"><![CDATA[We've looked at the why and what of infra for developers so now it's time to put it into action with the how. What separates this from a more generic tutorial on Azure infra? This is not meant to cover the whole gamut of Azure services - it is intended to solve an isolated part of the puzzle; namely the deployment of developer output. You can certainly build on this or re-use for other purposes, but this isn't about creating a complete platform as such.
+ 
+Disclaimer: While I strive to follow best practices the focus is on the concepts and not a battle hardened solution. This is not production grade.
+ 
+Hammering out the infrastructure
+I noticed during production that this would become a rather lengthy post, so I have split things into two parts with this laying the foundation with regards t…]]></summary>
+        <author>
+            <name>Andreas Helland</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Infra in Azure for Developers - The How (Part 1)]]></title>
+        <id>https://techcommunity.microsoft.com/t5/microsoft-developer-community/infra-in-azure-for-developers-the-how-part-1/ba-p/4036531</id>
+        <link href="https://techcommunity.microsoft.com/t5/microsoft-developer-community/infra-in-azure-for-developers-the-how-part-1/ba-p/4036531"/>
         <updated>2024-01-22T18:18:35.000Z</updated>
         <summary type="html"><![CDATA[We've looked at the why and what of infra for developers so now it's time to put it into action with the how. What separates this from a more generic tutorial on Azure infra? This is not meant to cover the whole gamut of Azure services - it is intended to solve an isolated part of the puzzle; namely the deployment of developer output. You can certainly build on this or re-use for other purposes, but this isn't about creating a complete platform as such.
  
@@ -6430,8 +6915,40 @@ This curriculum serves as an introductory guide to cloud services, concentr…]]
     </entry>
     <entry>
         <title type="html"><![CDATA[Infra in Azure for Developers - The What]]></title>
+        <id>https://techcommunity.microsoft.com/t5/microsoft-developer-community/infra-in-azure-for-developers-the-what/ba-p/4026102</id>
+        <link href="https://techcommunity.microsoft.com/t5/microsoft-developer-community/infra-in-azure-for-developers-the-what/ba-p/4026102"/>
+        <updated>2024-01-10T17:22:54.000Z</updated>
+        <summary type="html"><![CDATA[A week ago I gave a quick intro to why developers should look into infrastructure but conveniently (and intentionally) skipped going into details on how to solve things. A few details remain before implementation instructions - let's take a look at the "what" part of the problem.
+ 
+What kind of mess is this?
+ 
+Of course, when you start to think about cloud infra these days the term infrastructure-as-code pops up. Which is what we should strive to use, but we don't want to get ahead of ourselves. You have choices to make before writing that code, and you have an understanding that needs to be in place as well.
+ 
+Maybe this post feels more like a talk on architecture than on coding; it's unavoidable. It is however an integral part of becoming a cloud native developer (in my subjective interp…]]></summary>
+        <author>
+            <name>Andreas Helland</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Infra in Azure for Developers - The What]]></title>
         <id>https://techcommunity.microsoft.com/t5/azure-developer-community-blog/infra-in-azure-for-developers-the-what/ba-p/4026102</id>
         <link href="https://techcommunity.microsoft.com/t5/azure-developer-community-blog/infra-in-azure-for-developers-the-what/ba-p/4026102"/>
+        <updated>2024-01-10T17:22:54.000Z</updated>
+        <summary type="html"><![CDATA[A week ago I gave a quick intro to why developers should look into infrastructure but conveniently (and intentionally) skipped going into details on how to solve things. A few details remain before implementation instructions - let's take a look at the "what" part of the problem.
+ 
+What kind of mess is this?
+ 
+Of course, when you start to think about cloud infra these days the term infrastructure-as-code pops up. Which is what we should strive to use, but we don't want to get ahead of ourselves. You have choices to make before writing that code, and you have an understanding that needs to be in place as well.
+ 
+Maybe this post feels more like a talk on architecture than on coding; it's unavoidable. It is however an integral part of becoming a cloud native developer (in my subjective interp…]]></summary>
+        <author>
+            <name>Andreas Helland</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Infra in Azure for Developers - The What]]></title>
+        <id>https://techcommunity.microsoft.com/t5/microsoft-developer-community/infra-in-azure-for-developers-the-what/ba-p/4026102</id>
+        <link href="https://techcommunity.microsoft.com/t5/microsoft-developer-community/infra-in-azure-for-developers-the-what/ba-p/4026102"/>
         <updated>2024-01-10T17:22:54.000Z</updated>
         <summary type="html"><![CDATA[A week ago I gave a quick intro to why developers should look into infrastructure but conveniently (and intentionally) skipped going into details on how to solve things. A few details remain before implementation instructions - let's take a look at the "what" part of the problem.
  
@@ -6889,8 +7406,40 @@ Dans cette série, vous apprendrez à utiliser des outils d'IA tels que GPT-4 et
     </entry>
     <entry>
         <title type="html"><![CDATA[Infra in Azure for Developers - The Why]]></title>
+        <id>https://techcommunity.microsoft.com/t5/microsoft-developer-community/infra-in-azure-for-developers-the-why/ba-p/4020711</id>
+        <link href="https://techcommunity.microsoft.com/t5/microsoft-developer-community/infra-in-azure-for-developers-the-why/ba-p/4020711"/>
+        <updated>2024-01-03T18:37:58.000Z</updated>
+        <summary type="html"><![CDATA[A few weeks back I wrote a little getting started intro to infrastructure in Azure aimed at developers, looking at features like Azure Dev Box and Azure Deployment Environments. Regardless of what you think about those Azure services a common question from developers when it comes to infra is "why" - which is what we will look closer at today.
+ 
+Why?
+ 
+Even with all the rage about serverless compute models developers understand why infrastructure is required. Even if it's called the cloud your workload doesn't run in thin air. So it is probably more precise to say it is about "why should I care" or "why should I understand infrastructure". After all a developer is allowed to be all about that code.
+ 
+I mentioned both the Azure Developer CLI and .NET Aspire in my last post as well. Both pro…]]></summary>
+        <author>
+            <name>Andreas Helland</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Infra in Azure for Developers - The Why]]></title>
         <id>https://techcommunity.microsoft.com/t5/azure-developer-community-blog/infra-in-azure-for-developers-the-why/ba-p/4020711</id>
         <link href="https://techcommunity.microsoft.com/t5/azure-developer-community-blog/infra-in-azure-for-developers-the-why/ba-p/4020711"/>
+        <updated>2024-01-03T18:37:58.000Z</updated>
+        <summary type="html"><![CDATA[A few weeks back I wrote a little getting started intro to infrastructure in Azure aimed at developers, looking at features like Azure Dev Box and Azure Deployment Environments. Regardless of what you think about those Azure services a common question from developers when it comes to infra is "why" - which is what we will look closer at today.
+ 
+Why?
+ 
+Even with all the rage about serverless compute models developers understand why infrastructure is required. Even if it's called the cloud your workload doesn't run in thin air. So it is probably more precise to say it is about "why should I care" or "why should I understand infrastructure". After all a developer is allowed to be all about that code.
+ 
+I mentioned both the Azure Developer CLI and .NET Aspire in my last post as well. Both pro…]]></summary>
+        <author>
+            <name>Andreas Helland</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Infra in Azure for Developers - The Why]]></title>
+        <id>https://techcommunity.microsoft.com/t5/microsoft-developer-community/infra-in-azure-for-developers-the-why/ba-p/4020711</id>
+        <link href="https://techcommunity.microsoft.com/t5/microsoft-developer-community/infra-in-azure-for-developers-the-why/ba-p/4020711"/>
         <updated>2024-01-03T18:37:58.000Z</updated>
         <summary type="html"><![CDATA[A few weeks back I wrote a little getting started intro to infrastructure in Azure aimed at developers, looking at features like Azure Dev Box and Azure Deployment Environments. Regardless of what you think about those Azure services a common question from developers when it comes to infra is "why" - which is what we will look closer at today.
  
@@ -8012,8 +8561,54 @@ Hands-On Experience: The interactive coding environments and step-by-step guid�
     </entry>
     <entry>
         <title type="html"><![CDATA[How To: APIM Asynch to Synch Pattern]]></title>
+        <id>https://techcommunity.microsoft.com/t5/microsoft-developer-community/how-to-apim-asynch-to-synch-pattern/ba-p/4003964</id>
+        <link href="https://techcommunity.microsoft.com/t5/microsoft-developer-community/how-to-apim-asynch-to-synch-pattern/ba-p/4003964"/>
+        <updated>2023-12-08T03:11:59.000Z</updated>
+        <summary type="html"><![CDATA[In this How To post, I will use APIM to turn an asynchronous messaging into a synchronous messaging by publishing a message to Azure Service Bus and retrieving the response using Azure Blob Storage.
+ 
+The following illustrates the pattern:
+
+Just because you can do something, does not mean you should...
+Most developers I know would solve this by introducing a Function or Logic App to handle the async to sync messaging. I did find some good blog posts on using a Function App or Logic App, but I wanted to discover if this was possible and how well it worked.
+ 
+Even ChatGpt thought I was doomed for failure:
+
+...
+
+Again, this is working, but I would hesitate to push to production until you have confidence in the implemention.
+Setup
+For those of you who want to follow along, you will need to pro…]]></summary>
+        <author>
+            <name>Jeffrey Chilberto</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How To: APIM Asynch to Synch Pattern]]></title>
         <id>https://techcommunity.microsoft.com/t5/azure-developer-community-blog/how-to-apim-asynch-to-synch-pattern/ba-p/4003964</id>
         <link href="https://techcommunity.microsoft.com/t5/azure-developer-community-blog/how-to-apim-asynch-to-synch-pattern/ba-p/4003964"/>
+        <updated>2023-12-08T03:11:59.000Z</updated>
+        <summary type="html"><![CDATA[In this How To post, I will use APIM to turn an asynchronous messaging into a synchronous messaging by publishing a message to Azure Service Bus and retrieving the response using Azure Blob Storage.
+ 
+The following illustrates the pattern:
+
+Just because you can do something, does not mean you should...
+Most developers I know would solve this by introducing a Function or Logic App to handle the async to sync messaging. I did find some good blog posts on using a Function App or Logic App, but I wanted to discover if this was possible and how well it worked.
+ 
+Even ChatGpt thought I was doomed for failure:
+
+...
+
+Again, this is working, but I would hesitate to push to production until you have confidence in the implemention.
+Setup
+For those of you who want to follow along, you will need to pro…]]></summary>
+        <author>
+            <name>Jeffrey Chilberto</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How To: APIM Asynch to Synch Pattern]]></title>
+        <id>https://techcommunity.microsoft.com/t5/microsoft-developer-community/how-to-apim-asynch-to-synch-pattern/ba-p/4003964</id>
+        <link href="https://techcommunity.microsoft.com/t5/microsoft-developer-community/how-to-apim-asynch-to-synch-pattern/ba-p/4003964"/>
         <updated>2023-12-08T03:11:59.000Z</updated>
         <summary type="html"><![CDATA[In this How To post, I will use APIM to turn an asynchronous messaging into a synchronous messaging by publishing a message to Azure Service Bus and retrieving the response using Azure Blob Storage.
  
@@ -8377,6 +8972,22 @@ The PolyGlot-Edu Generator redefines conventional teaching approaches by offerin
     </entry>
     <entry>
         <title type="html"><![CDATA[Getting Started with Infra for Developers in Azure]]></title>
+        <id>https://techcommunity.microsoft.com/t5/microsoft-developer-community/getting-started-with-infra-for-developers-in-azure/ba-p/4001520</id>
+        <link href="https://techcommunity.microsoft.com/t5/microsoft-developer-community/getting-started-with-infra-for-developers-in-azure/ba-p/4001520"/>
+        <updated>2023-12-05T20:44:25.000Z</updated>
+        <summary type="html"><![CDATA[Microsoft launched new tools (and updated existing ones) at Ignite and .NET Conf that can help to bridge the gap between the different breeds of nerds (dev & ops). There were of course good sessions for all of them, but I still thought I'd take a quick tour trying to tie it together.
+ 
+Think of it as getting started with infra for devs if you will.
+
+ 
+Azure Dev Box
+This might be your new starting point with developer experiences. Virtual Desktop Infrastructure (VDI) solutions are not a new thing, and many developers have used profanity when forced to log on to a woefully underspecced remote desktop session to do their work. Dev Box has hardware you might actually want driving it and with good integration to the local desktop feels smoother than ever before. (You can do Teams calls with vid…]]></summary>
+        <author>
+            <name>Andreas Helland</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Getting Started with Infra for Developers in Azure]]></title>
         <id>https://techcommunity.microsoft.com/t5/azure-developer-community-blog/getting-started-with-infra-for-developers-in-azure/ba-p/4001520</id>
         <link href="https://techcommunity.microsoft.com/t5/azure-developer-community-blog/getting-started-with-infra-for-developers-in-azure/ba-p/4001520"/>
         <updated>2023-12-05T20:44:25.000Z</updated>
@@ -8443,6 +9054,21 @@ The post Microsoft JDConf is back in 2024! appeared first on Microsoft for Java 
 In .NET 8, Blazor has introduced a unified full-stack model, the Blazor Web App. This model enables you to opt for any of the various supported rendering modes (client rendering, server-side rende…]]></summary>
         <author>
             <name>thomasgauvinmsft</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Building Securely, Developing Swiftly: Dev Tunnels Updates]]></title>
+        <id>https://techcommunity.microsoft.com/t5/microsoft-developer-community/building-securely-developing-swiftly-dev-tunnels-updates/ba-p/4000375</id>
+        <link href="https://techcommunity.microsoft.com/t5/microsoft-developer-community/building-securely-developing-swiftly-dev-tunnels-updates/ba-p/4000375"/>
+        <updated>2023-12-05T14:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Dev Tunnels is a tunneling service that can enhance your productivity when testing and debugging web apps, webhooks, APIs, and more. You can also simply use Dev Tunnels to share your work with colleagues, demo at conferences, or test your app on other devices. It takes seconds to get started, regardless of if you use Dev Tunnels through Visual Studio, VS Code, or the devtunnel CLI.
+ 
+Today, we have some exciting updates to share with you! Even if you’re new to Dev Tunnels, stick around to discover the latest. If you want to know about the benefits of Dev Tunnels and how to get started though, check out this blog post.
+ 
+Port forwarding in Visual Studio Code
+Previously, Dev Tunnels was only available through Visual Studio and the devtunnel CLI. We’re thrilled to share Dev Tunnels is now sea…]]></summary>
+        <author>
+            <name>carolinauribe</name>
         </author>
     </entry>
     <entry>
@@ -8751,8 +9377,58 @@ Microsoft Fabric brings together new and existing components from Power BI, Azur
     </entry>
     <entry>
         <title type="html"><![CDATA[Monitor git secrets on Azure DevOps with Gitleaks]]></title>
+        <id>https://techcommunity.microsoft.com/t5/microsoft-developer-community/monitor-git-secrets-on-azure-devops-with-gitleaks/ba-p/3998673</id>
+        <link href="https://techcommunity.microsoft.com/t5/microsoft-developer-community/monitor-git-secrets-on-azure-devops-with-gitleaks/ba-p/3998673"/>
+        <updated>2023-12-01T20:09:21.000Z</updated>
+        <summary type="html"><![CDATA[Introduction
+In this article we will see how to scan all repos of an Azure DevOps project.
+ 
+The secret scanning solution will respect the following guidelines:
+
+1 single DevOps pipeline per DevOps project that launches Gitleaks and sends its scan results to an Azure Application Insights.
+This pipeline can be triggered manually for a spot check or through any supported scheduled triggers provided by Microsoft.
+Developers are able to declare a secret as a false positive following Gitleaks procedure.
+1 Azure monitoring Workbook where you can find:
+
+
+An overview tab that displays the total number of secrets found.
+A “Secrets” tab which gives more metrics such as
+the secret trends -> number of secrets observed during each scan,
+count of secrets per repository,
+a complete inventory of results e…]]></summary>
+        <author>
+            <name>Jamesdld23</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Monitor git secrets on Azure DevOps with Gitleaks]]></title>
         <id>https://techcommunity.microsoft.com/t5/azure-developer-community-blog/monitor-git-secrets-on-azure-devops-with-gitleaks/ba-p/3998673</id>
         <link href="https://techcommunity.microsoft.com/t5/azure-developer-community-blog/monitor-git-secrets-on-azure-devops-with-gitleaks/ba-p/3998673"/>
+        <updated>2023-12-01T20:09:21.000Z</updated>
+        <summary type="html"><![CDATA[Introduction
+In this article we will see how to scan all repos of an Azure DevOps project.
+ 
+The secret scanning solution will respect the following guidelines:
+
+1 single DevOps pipeline per DevOps project that launches Gitleaks and sends its scan results to an Azure Application Insights.
+This pipeline can be triggered manually for a spot check or through any supported scheduled triggers provided by Microsoft.
+Developers are able to declare a secret as a false positive following Gitleaks procedure.
+1 Azure monitoring Workbook where you can find:
+
+
+An overview tab that displays the total number of secrets found.
+A “Secrets” tab which gives more metrics such as
+the secret trends -> number of secrets observed during each scan,
+count of secrets per repository,
+a complete inventory of results e…]]></summary>
+        <author>
+            <name>Jamesdld23</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Monitor git secrets on Azure DevOps with Gitleaks]]></title>
+        <id>https://techcommunity.microsoft.com/t5/microsoft-developer-community/monitor-git-secrets-on-azure-devops-with-gitleaks/ba-p/3998673</id>
+        <link href="https://techcommunity.microsoft.com/t5/microsoft-developer-community/monitor-git-secrets-on-azure-devops-with-gitleaks/ba-p/3998673"/>
         <updated>2023-12-01T20:09:21.000Z</updated>
         <summary type="html"><![CDATA[Introduction
 In this article we will see how to scan all repos of an Azure DevOps project.
@@ -8999,6 +9675,19 @@ Application Insights Profiler       
 Application Insights Profiler is a feature in Azure Monitor that helps you ca…]]></summary>
         <author>
             <name>SaloniAgrawal12</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Enriching Container Supply Chains with ORAS]]></title>
+        <id>https://techcommunity.microsoft.com/t5/microsoft-developer-community/enriching-container-supply-chains-with-oras/ba-p/3996629</id>
+        <link href="https://techcommunity.microsoft.com/t5/microsoft-developer-community/enriching-container-supply-chains-with-oras/ba-p/3996629"/>
+        <updated>2023-11-30T08:07:59.000Z</updated>
+        <summary type="html"><![CDATA[Nowadays, more and more registries are evolving to enable users to store, pull, distribute, and view OCI artifacts not only container images. Containers Secure Supply Chain initiatives also drove the need for distributing supply chain artifacts like signatures, vulnerability reports, and signed Software Bill of Materials (SBOM), and attestations alongside container images in the registry, without mutating the existing content.
+How to efficiently build the reference relationship by associating the container images with its supply chain artifacts in the OCI registry? What is the right posture to distribute container images with its supply chain artifacts across registries and file system?
+ 
+ORAS is a client tool for working with OCI artifacts and registries. It allows you to distribute OCI a…]]></summary>
+        <author>
+            <name>FeynmanZhou</name>
         </author>
     </entry>
     <entry>
@@ -9250,6 +9939,19 @@ Our team consists of four members with…]]></summary>
         <summary type="html"><![CDATA[Level up your Java code and explore what Spring can do for you.]]></summary>
         <author>
             <name>Josh Long</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Leverage AI for faster, more productive coding with GitHub Copilot]]></title>
+        <id>https://techcommunity.microsoft.com/t5/microsoft-developer-community/leverage-ai-for-faster-more-productive-coding-with-github/ba-p/3993723</id>
+        <link href="https://techcommunity.microsoft.com/t5/microsoft-developer-community/leverage-ai-for-faster-more-productive-coding-with-github/ba-p/3993723"/>
+        <updated>2023-11-27T23:17:48.000Z</updated>
+        <summary type="html"><![CDATA[Leverage AI for faster, more productive coding with GitHub Copilot
+Innovation knows no bounds. That’s especially true in the ever-evolving landscape of software development and GitHub Copilot is poised to transform the way developers write code. This cutting-edge tool leverages the power of advanced AI models to provide real-time code suggestions, making the process of coding faster, more intuitive, and remarkably efficient.
+ 
+As a developer, you understand the critical importance of striking a balance between creativity and efficiency in your coding endeavors. GitHub Copilot can be a catalyst that propels you into a new era of productivity. In this blog, we'll explore how GitHub Copilot empowers developers to streamline their workflows, from rapidly prototyping applications to effortlessl…]]></summary>
+        <author>
+            <name>AaronStark</name>
         </author>
     </entry>
     <entry>
@@ -11407,6 +12109,17 @@ Apps can have specialized compute needs depending on their custom business logic
     </entry>
     <entry>
         <title type="html"><![CDATA[Azure Deployment Environments optimizes developer experience and adds new enterprise capabilities]]></title>
+        <id>https://techcommunity.microsoft.com/t5/microsoft-developer-community/azure-deployment-environments-optimizes-developer-experience-and/ba-p/3982306</id>
+        <link href="https://techcommunity.microsoft.com/t5/microsoft-developer-community/azure-deployment-environments-optimizes-developer-experience-and/ba-p/3982306"/>
+        <updated>2023-11-15T16:00:03.000Z</updated>
+        <summary type="html"><![CDATA[Over the last 15 years, DevOps practices and new cloud technologies have streamlined and standardized operational processes to help developers focus on what really matters - their code. Yet as applications become more complex, so does the corresponding infrastructure, requiring a new approach. Platform Engineering is an evolution of DevOps practices that provides developers with self-service access to the infrastructure they need within guardrails set by central IT teams. At Microsoft, we’ve been working on several new services that can act as building blocks for implementing platform engineering.
+Earlier this year, at Build, we announced the general availability of Azure Deployment Environments, an Azure service that enables developers to self-serve their own environments from curated, pr…]]></summary>
+        <author>
+            <name>sagar_lankala</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Azure Deployment Environments optimizes developer experience and adds new enterprise capabilities]]></title>
         <id>https://techcommunity.microsoft.com/t5/azure-developer-community-blog/azure-deployment-environments-optimizes-developer-experience-and/ba-p/3982306</id>
         <link href="https://techcommunity.microsoft.com/t5/azure-developer-community-blog/azure-deployment-environments-optimizes-developer-experience-and/ba-p/3982306"/>
         <updated>2023-11-15T16:00:03.000Z</updated>
@@ -11455,6 +12168,23 @@ Earlier this year, at Build, we announced the general availability of Azure Depl
 We are excited to announce the General Availability of Azure Chaos Studio, an experimentation platform for improving application resilience w…]]></summary>
         <author>
             <name>Jeremy_Mohn</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[New capabilities help simplify and streamline the experience with Microsoft Dev Box]]></title>
+        <id>https://techcommunity.microsoft.com/t5/microsoft-developer-community/new-capabilities-help-simplify-and-streamline-the-experience/ba-p/3981481</id>
+        <link href="https://techcommunity.microsoft.com/t5/microsoft-developer-community/new-capabilities-help-simplify-and-streamline-the-experience/ba-p/3981481"/>
+        <updated>2023-11-15T16:00:02.000Z</updated>
+        <summary type="html"><![CDATA[It’s hard to believe that Microsoft Dev Box has already been generally available for almost four months.
+ 
+In this time, we have been blown away by the excitement from administrators and developers about a VDI service purpose-built for developer productivity. With all the real-world usage has also come feedback and suggestions, and we’ve been busy working on new features and capabilities to further improve the Dev Box experience—for devs, admins, and platform engineers alike.
+ 
+From new prebuilt images to streamlined setup, networking, and management features, we’re excited to share the latest Dev Box updates available today and in preview. Read on to learn more.
+ 
+Giving dev teams self-service customization with guardrails
+While we've put a lot of work into making the dev experience great…]]></summary>
+        <author>
+            <name>acangialosi</name>
         </author>
     </entry>
     <entry>
@@ -12578,6 +13308,18 @@ Caching in WordPress is a technique used to improve the performance and speed of
 If your WordPress site operates with multiple instances on the backend and your user base is distributed acros…]]></summary>
         <author>
             <name>RadhikaB</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Open at Microsoft: Radius]]></title>
+        <id>https://techcommunity.microsoft.com/t5/microsoft-developer-community/open-at-microsoft-radius/ba-p/3975237</id>
+        <link href="https://techcommunity.microsoft.com/t5/microsoft-developer-community/open-at-microsoft-radius/ba-p/3975237"/>
+        <updated>2023-11-07T17:59:18.000Z</updated>
+        <summary type="html"><![CDATA[Earlier this year in our blog post highlighting Dapr, we stated our goal to empower all developers to be successful at building any application, using any language, on any platform. In the pursuit of this goal, we are committed to building open, flexible technology that makes it easy for any developer to build adaptable and dynamic applications that run on the cloud and edge.
+ 
+One of the many teams at Microsoft focusing on building open, flexible, technologies is the Azure Open-Source Incubations team. Projects from Azure OSS Incubations include Dapr (https://dapr.io), KEDA (https://keda.sh), Copa (https://project-copacetic.github.io/copacetic), and the most recent project, Radius (https://radapp.io). Each project is open-source, cloud-neutral, and has been donated to (or in the process o…]]></summary>
+        <author>
+            <name>Aaron Crawfis</name>
         </author>
     </entry>
     <entry>
@@ -14193,17 +14935,6 @@ Introduction to Redis Geospatial Indexes
 Azure Cache for Redis Geo-Positioning, or Geospatial, Indexes provide an efficient and robust approach to store and query spatia…]]></summary>
         <author>
             <name>Lee Stott</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Retirement of older SharePoint file services versions]]></title>
-        <id>https://devblogs.microsoft.com/microsoft365dev/?p=15835</id>
-        <link href="https://devblogs.microsoft.com/microsoft365dev/retirement-of-older-sharepoint-file-services-versions/"/>
-        <updated>2023-10-20T13:18:28.000Z</updated>
-        <summary type="html"><![CDATA[We are retiring older SharePoint file services versions in October 2023. These older APIs are replaced by Microsoft Graph Drives and driveItems.
-The post Retirement of older SharePoint file services versions appeared first on Microsoft 365 Developer Blog.]]></summary>
-        <author>
-            <name>Patrick Rodgers</name>
         </author>
     </entry>
 </feed>
