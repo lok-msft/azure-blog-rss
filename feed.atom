@@ -2,10 +2,137 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2024-03-26T01:01:14.460Z</updated>
+    <updated>2024-03-27T01:00:54.692Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[.NET on Azure Functions – March 2024 roadmap update]]></title>
+        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/net-on-azure-functions-march-2024-roadmap-update/ba-p/4097744</id>
+        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/net-on-azure-functions-march-2024-roadmap-update/ba-p/4097744"/>
+        <updated>2024-03-27T00:27:34.000Z</updated>
+        <summary type="html"><![CDATA[Our last roadmap update was in August 2023, in which we discussed the parity milestone for the isolated worker model and our overall plans for .NET 8. In that post, we outlined a plan to stagger the .NET 8 releases, with support first coming to the isolated worker model, and the in-process model option coming a bit later. This is still the plan, and in this post, we wanted to discuss a bit more about how things will work once the option is available.
+ 
+How the in-process model option for .NET 8 will work
+One key difference between this and previous .NET version changes for the in-process model is that it will be an update solely focused on enabling .NET 8 support. There will be no additional Functions-specific breaking changes from the latest host version for .NET 6 that your project would…]]></summary>
+        <author>
+            <name>Matthew Henderson</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Demystifying Azure VM Maintenance: A practical guide to minimizing disruptions]]></title>
+        <id>https://techcommunity.microsoft.com/t5/azure-architecture-blog/demystifying-azure-vm-maintenance-a-practical-guide-to/ba-p/4077523</id>
+        <link href="https://techcommunity.microsoft.com/t5/azure-architecture-blog/demystifying-azure-vm-maintenance-a-practical-guide-to/ba-p/4077523"/>
+        <updated>2024-03-26T19:04:20.000Z</updated>
+        <summary type="html"><![CDATA[Azure regularly updates its platform to enhance the host infrastructure for virtual machines, focusing on reliability, performance, and security. The updates can range from operating system, hypervisor, various networking components/agents deployed on the host, to hardware decommissioning:
+ 
+
+ 
+There are two types of VM maintenance:
+
+Planned maintenance events are periodic updates made by Microsoft to the underlying Azure platform. Most of these updates are totally transparent to customers. However, some maintenance may result in brief freezes or performances degradation, and on very rare occasions, a reboot might be required.
+Unplanned maintenance events occur when the hardware or physical infrastructure underlying your VM has been faulted in some way. When such a failure will occurs, tha…]]></summary>
+        <author>
+            <name>davidsantiago</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Leveraging Knowledge Graphs with Azure OpenAI]]></title>
+        <id>https://techcommunity.microsoft.com/t5/azure-architecture-blog/leveraging-knowledge-graphs-with-azure-openai/ba-p/4093233</id>
+        <link href="https://techcommunity.microsoft.com/t5/azure-architecture-blog/leveraging-knowledge-graphs-with-azure-openai/ba-p/4093233"/>
+        <updated>2024-03-26T18:45:15.000Z</updated>
+        <summary type="html"><![CDATA[Introduction
+In many industries, information can be scattered across multiple documents, or across multiple pages in a very large document. Moreover, combining information across documents and sources is essential for day-to-day operations. In many industries (Legal, Insurance, Medical), information is spread across the documents in the form of Names Entities (E.g. - Address, Phone number, Policy Name etc.) that can be linked to each other through “Relationships”. Manually identifying entities and relationships across thousands of documents can be costly and time intensive. In this document, we go through the process of automating named entity recognition and identifying relationships through knowledge graphs.
+ 
+Knowledge Graphs are a way of structuring and organizing information using/fol…]]></summary>
+        <author>
+            <name>noabenefraim</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[JDConf and Microsoft Reactor: A chance to win prizes]]></title>
+        <id>https://devblogs.microsoft.com/java/?p=230834</id>
+        <link href="https://devblogs.microsoft.com/java/jdconf-and-microsoft-reactor-a-chance-to-win-prizes/"/>
+        <updated>2024-03-26T17:06:58.000Z</updated>
+        <summary type="html"><![CDATA[Have you ever thought about watching a free online event and potentially winning prizes? Microsoft JDConf happens this March 27th and 28th with 3 different editions, each one friendly to major timezones: Americas, Asia, and Europe/Middle East/Africa. If you haven’t already,
+The post JDConf and Microsoft Reactor: A chance to win prizes appeared first on Microsoft for Java Developers.]]></summary>
+        <author>
+            <name>Bruno Borges</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Add a context-grounded AI chatbot to your Azure Static Web Apps with streaming responses]]></title>
+        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/add-a-context-grounded-ai-chatbot-to-your-azure-static-web-apps/ba-p/4097223</id>
+        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/add-a-context-grounded-ai-chatbot-to-your-azure-static-web-apps/ba-p/4097223"/>
+        <updated>2024-03-26T16:48:51.000Z</updated>
+        <summary type="html"><![CDATA[Azure Static Web Apps is the best service to host websites with a lot of static content, such as documentation, marketing, or educational material. But sometimes, these websites are quite large, and with recent developments in large-language models, we can provide our users AI-generated answers to their questions within seconds, grounded in the content of our website.
+ 
+
+ 
+In this article, we demonstrate how we can add a chatbot to allow our users to browse the content of our website quickly and easily with the use of a chatbot grounded in the content of our website. We’ll follow the RAG pattern (retrieval augmented generation), to ground our responses in the static content of our website, and use OpenAI’s APIs to provide responses. We’ll also feature Azure Functions’ Node.js v4 programmin…]]></summary>
+        <author>
+            <name>thomasgauvinmsft</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Now in public preview: Mirroring Azure Cosmos DB in Microsoft Fabric]]></title>
+        <id>https://devblogs.microsoft.com/cosmosdb/?p=7728</id>
+        <link href="https://devblogs.microsoft.com/cosmosdb/public-preview-mirroring-azure-cosmos-db-in-microsoft-fabric/"/>
+        <updated>2024-03-26T14:00:09.000Z</updated>
+        <summary type="html"><![CDATA[This blog is co-authored by Rodrigo Souza.
+The post Now in public preview: Mirroring Azure Cosmos DB in Microsoft Fabric appeared first on Azure Cosmos DB Blog.]]></summary>
+        <author>
+            <name>Anitha Adusumilli</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Assign an existing User-Assigned Managed Identity to VM from another subscription using Azure Policy]]></title>
+        <id>https://techcommunity.microsoft.com/t5/azure-paas-blog/assign-an-existing-user-assigned-managed-identity-to-vm-from/ba-p/4091730</id>
+        <link href="https://techcommunity.microsoft.com/t5/azure-paas-blog/assign-an-existing-user-assigned-managed-identity-to-vm-from/ba-p/4091730"/>
+        <updated>2024-03-26T08:49:44.000Z</updated>
+        <summary type="html"><![CDATA[Azure provides a comprehensive list of built-in policy definitions (grouped by the category property defined in the metadata) which are owned and maintained by Microsoft (where the azure-policy repository contains the direct representation of these).
+ 
+Built-in policy definitions usually cover a specific scenario although some flexibility might be provided through parameters that can be configured. However, customers might have specific needs not covered by an available built-in policy definition and a custom policy definition might be needed.
+ 
+As a rule of thumb, if there is a built-in policy definition that covers part of a scenario, a custom policy definition can be created based on it introducing the necessary modifications.
+ 
+Let’s take into consideration the [Preview]: Assign Built-In User-Assigned Managed Identity to Virtual Machines built-in policy definition that creates and assigns a built-in user-assigned managed identity or assigns a pre-created user-assigned managed identity at scale to virtual machines. This currently provides the user-assigned managed identity name and resource group name as parameters expecting that it is on the same subscription as the virtual machine resource. However, in a scenario where the pre-created user-assigned managed identity exists in a different subscription from the virtual machine resource, a custom policy definition is required.
+ 
+Before creating a custom policy, it is worth checking both the Azure Policy Samples as well as the Community Policy Repository to see whether a policy definition that matches your needs already exists. Coming back to the user-assigned managed identity assignment to virtual machines where the pre-created user-assigned managed identity exists in a different subscription from the virtual machine resource scenario, a custom policy definition is available here where the user assigned managed identity resource URI (which contains the subscription ID) is provided as a parameter.]]></summary>
+        <author>
+            <name>joaosa</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Azure Monitor Availability alerts using Resource Graph Queries]]></title>
+        <id>https://techcommunity.microsoft.com/t5/azure-governance-and-management/azure-monitor-availability-alerts-using-resource-graph-queries/ba-p/4096469</id>
+        <link href="https://techcommunity.microsoft.com/t5/azure-governance-and-management/azure-monitor-availability-alerts-using-resource-graph-queries/ba-p/4096469"/>
+        <updated>2024-03-26T05:57:57.000Z</updated>
+        <summary type="html"><![CDATA[We recently announced how you can use Azure Log Analytics to create alerts on Azure Resource Graph queries. Here, I wanted to discuss possible scenarios and examples on how this can be used to check the availability for services across Azure and even on Azure Arc enabled resources.
+ 
+Azure Resource Graph queries
+Azure Resource Graph is a service within Azure that enhances Azure Resource Management. It allows you to explore resources efficiently and quickly by running queries across a specific group of subscriptions. These queries are written in the Kusto Query Language (KQL), which is a widely used format with other Azure services like Log Analytics.
+ 
+Trivia: Most of the screens you see on Azure portal give you an option to check the KQL query behind getting that data.
+ 
+
+ 
+ 
+Using Graph …]]></summary>
+        <author>
+            <name>shishirgarde</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[This Week in Spring - March 26th, 2024]]></title>
+        <id>https://spring.io/blog/2024/03/26/this-week-in-spring-march-26th-2024</id>
+        <link href="https://spring.io/blog/2024/03/26/this-week-in-spring-march-26th-2024"/>
+        <updated>2024-03-26T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Level up your Java code and explore what Spring can do for you.]]></summary>
+        <author>
+            <name>Josh Long</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Breaking Changes to Azure API Management Workspaces]]></title>
         <id>breaking-changes-to-azure-api-management-workspaces</id>
