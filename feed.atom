@@ -2,10 +2,21 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2024-03-31T01:07:30.524Z</updated>
+    <updated>2024-04-01T01:07:34.571Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Four Strategies for Cost-Effective Azure Monitoring and Log Analytics]]></title>
+        <id>https://techcommunity.microsoft.com/t5/azure-governance-and-management/four-strategies-for-cost-effective-azure-monitoring-and-log/ba-p/4101784</id>
+        <link href="https://techcommunity.microsoft.com/t5/azure-governance-and-management/four-strategies-for-cost-effective-azure-monitoring-and-log/ba-p/4101784"/>
+        <updated>2024-03-31T16:11:44.000Z</updated>
+        <summary type="html"><![CDATA[Effective cost management in Azure Monitor and Azure Log Analytics is essential for controlling cloud expenditures. It involves strategic measures to reduce costs while maximizing the value derived from ingested, processed, and retained data. In Azure, achieving this balance entails adopting efficient data ingestion methods, smart retention policies, and judicious use of table transformations with Kusto Query Language (KQL).
+Understanding the impact of data management practices on costs is crucial since each byte of data ingested and stored in Azure Log Analytics incurs expenses. Table transformations—such as filtering, projecting, aggregating, sorting, joining, and dropping data—are a great way to reduce storage and ingestion costs.  They allow you to filter or modify data before it’s sen…]]></summary>
+        <author>
+            <name>freddydubon</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Long Audio API will be retired on 31 March 2027 – Migrate to the new batch synthesis API]]></title>
         <id>long-audio-api-will-be-retired-on-31-march-2027-migrate-to-the-new-batch-synthesis-api</id>
@@ -14881,59 +14892,6 @@ Let’s dive deep into some innovative GitHub tools and features that can improv
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[A Guide to Creating a Copy of an API Management Instance]]></title>
-        <id>https://techcommunity.microsoft.com/t5/fasttrack-for-azure/a-guide-to-creating-a-copy-of-an-api-management-instance/ba-p/3971227</id>
-        <link href="https://techcommunity.microsoft.com/t5/fasttrack-for-azure/a-guide-to-creating-a-copy-of-an-api-management-instance/ba-p/3971227"/>
-        <updated>2023-11-03T01:26:32.000Z</updated>
-        <summary type="html"><![CDATA[Azure API Management is a service that helps developers to expose their APIs to different consumers in a secure and scalable way. It allows developers to create, publish, and manage APIs, as well as to apply policies, transformations, and analytics to them. With the hosted APIs becoming super critical to the daily operations of any organization, it is important to ensure the availability of the infrastructure for continued operations. Though the service provides inbuilt resiliency features like Availability Zones and Locations, it is required to be prepared to create a replica of your API Management instance for various reasons, such as disaster recovery, testing, or migration. In this blog post, I will show you how to copy the data from one API Management instance to another, including th…]]></summary>
-        <author>
-            <name>srinipadala</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[First Party Services Adoption for Migrated Virtual Machines via Azure Policy]]></title>
-        <id>https://techcommunity.microsoft.com/t5/fasttrack-for-azure/first-party-services-adoption-for-migrated-virtual-machines-via/ba-p/3971674</id>
-        <link href="https://techcommunity.microsoft.com/t5/fasttrack-for-azure/first-party-services-adoption-for-migrated-virtual-machines-via/ba-p/3971674"/>
-        <updated>2023-11-02T23:15:33.000Z</updated>
-        <summary type="html"><![CDATA[Introduction
-Server migrations to Azure Virtual Machines either through Azure Migrate or via a redeploy approach can benefit from Azure policies to accelerate adoption of Azure first party services across BCDR, Security, Monitoring and Management. 
- 
-Our Cloud Adoption Framework’s guidance for Azure Landing Zones already provides a good baseline of recommended Azure policies. However, a variation to this baseline is described in this article with a focus on newly migrated Azure Virtual Machine resources.  
- 
-BCDR: 
-To enable Azure Backup and Azure Site Recovery for Virtual Machines, a recovery services vault is needed.  
- 
-For Azure Backup, the recovery services vault is to be deployed in the same region as the virtual machine. Commonly, the recovery services vault will be used for multipl…]]></summary>
-        <author>
-            <name>alejandra8481</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Announcing App Service Multi-plan subnet join]]></title>
-        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/announcing-app-service-multi-plan-subnet-join/ba-p/3971493</id>
-        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/announcing-app-service-multi-plan-subnet-join/ba-p/3971493"/>
-        <updated>2023-11-02T21:48:10.000Z</updated>
-        <summary type="html"><![CDATA[Virtual network integration in App Service requires one subnet per App Service plan integration today. If you are working with many App Service plans, managing the subnets can be an unnecessary administrative task. Therefore, I am happy to announce that we are introducing Multi-plan subnet join (MPSJ) in limited public preview at Ignite 2023.
- 
-MPSJ reduces subnet sprawl when dealing with many apps across many plans and simplifies management of networking control such as Network Security Groups and Route tables across App Service plans. With MPSJ you can join a virtual network/subnet in a different subscription, but all App Service plan joining a specific subnet must be in the same subscription.
- 
-You may still want to use individual subnets if you plan to differentiate on Network Security…]]></summary>
-        <author>
-            <name>jordanselig</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Copy-on-Write in Win32 API Early Access]]></title>
-        <id>https://devblogs.microsoft.com/engineering-at-microsoft/?p=703</id>
-        <link href="https://devblogs.microsoft.com/engineering-at-microsoft/copy-on-write-in-win32-api-early-access/"/>
-        <updated>2023-11-02T21:26:02.000Z</updated>
-        <summary type="html"><![CDATA[On October 25, 2023, the Windows filesystem team released an early preview of copy-on-write (CoW) linking in the Windows 11 Insider Canary channel. This builds automatic CoW linking into the Win32 CopyFile APIs when using Dev Drive or ReFS. If released next year,
-The post Copy-on-Write in Win32 API Early Access appeared first on Engineering@Microsoft.]]></summary>
-        <author>
-            <name>Erik Mavrinac</name>
-        </author>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[ChatGPT and Beyond: Exploring the language model to build an intelligent search]]></title>
         <id>https://techcommunity.microsoft.com/t5/educator-developer-blog/chatgpt-and-beyond-exploring-the-language-model-to-build-an/ba-p/3971262</id>
         <link href="https://techcommunity.microsoft.com/t5/educator-developer-blog/chatgpt-and-beyond-exploring-the-language-model-to-build-an/ba-p/3971262"/>
@@ -14957,77 +14915,6 @@ In this episode, you will:
 Learn about Retrieval Augmented Generation: Find out how this inn…]]></summary>
         <author>
             <name>PabloLopes</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[New features for Azure Synapse Link for Azure Cosmos DB]]></title>
-        <id>https://devblogs.microsoft.com/cosmosdb/?p=6958</id>
-        <link href="https://devblogs.microsoft.com/cosmosdb/new-features-for-azure-synapse-link-for-azure-cosmos-db/"/>
-        <updated>2023-11-02T18:46:57.000Z</updated>
-        <summary type="html"><![CDATA[Azure Synapse Link for Azure Cosmos DB is a cloud-native hybrid transactional and analytical processing (HTAP) capability that enables near real-time analytics over operational data in Azure Cosmos DB. Azure Synapse Link creates a tight seamless integration between Azure Cosmos DB and Azure Synapse Analytics.
-The post New features for Azure Synapse Link for Azure Cosmos DB appeared first on Azure Cosmos DB Blog.]]></summary>
-        <author>
-            <name>Rodrigo Souza</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[How Sales Copilot Works & How To Set It Up]]></title>
-        <id>https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/how-sales-copilot-works-amp-how-to-set-it-up/ba-p/3970601</id>
-        <link href="https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/how-sales-copilot-works-amp-how-to-set-it-up/ba-p/3970601"/>
-        <updated>2023-11-02T18:38:41.000Z</updated>
-        <summary type="html"><![CDATA[Close sales deals quickly and efficiently with the new generative AI powered Sales Copilot. It provides an intelligent natural language interface to all of your sales data, in CRM systems like Salesforce or Dynamics 365, and connected external data sources. See how Sales Copilot generates insights and content in the flow of work with skills that help you with everyday tasks in Microsoft 365 or embedded within your Dynamics 365 Sales experience. 
- 
-
- 
-Eric Boocock, Principal Program Manager for Dynamics 365 Sales, shares how Sales Copilot works safely with your data and the key admin steps to set it up.
- 
-Optimize your sales process.
-
-Intelligent natural language interface to all your sales data in CRM systems, like Salesforce or Dynamics 365, and connected external data sources. Get starte…]]></summary>
-        <author>
-            <name>Zachary Cavanell</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Python in Visual Studio Code – November 2023 Release]]></title>
-        <id>https://devblogs.microsoft.com/python/?p=9502</id>
-        <link href="https://devblogs.microsoft.com/python/python-in-visual-studio-code-november-2023-release/"/>
-        <updated>2023-11-02T18:05:50.000Z</updated>
-        <summary type="html"><![CDATA[The November 2023 release of the Python and Jupyter extensions for Visual Studio Code are now available. This month's updates include improvements to Shift+Enter when sending code to the terminal, deprecation of linting and formatting features, improvements to Python linting extensions, reconfiguration of test output, and virtual environment deactivation help. Keep reading to learn more!
-The post Python in Visual Studio Code – November 2023 Release appeared first on Python.]]></summary>
-        <author>
-            <name>Courtney Webster</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Public Preview: Azure integration with Canonical’s Snapshot Service for safe deployment]]></title>
-        <id>public-preview-azure-integration-with-canonical-s-snapshot-service-for-safe-deployment</id>
-        <link href="https://azure.microsoft.com/en-us/updates/public-preview-azure-integration-with-canonical-s-snapshot-service-for-safe-deployment/"/>
-        <updated>2023-11-02T17:00:14.000Z</updated>
-        <summary type="html"><![CDATA[Azure Guest Patching Service and Azure Kubernetes Service will now apply the same package update from a specific date to all regions following safe deployment principles.]]></summary>
-        <author>
-            <name>Azure service updates</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Generally available: Azure Premium SSD v2 Disk Storage is now available in more regions]]></title>
-        <id>generally-available-azure-premium-ssd-v2-disk-storage-is-now-available-in-more-regions-pcu</id>
-        <link href="https://azure.microsoft.com/en-us/updates/generally-available-azure-premium-ssd-v2-disk-storage-is-now-available-in-more-regions-pcu/"/>
-        <updated>2023-11-02T17:00:04.000Z</updated>
-        <summary type="html"><![CDATA[Azure Premium SSD v2 Disk Storage is now available in more regions and offers the most advanced general-purpose block storage solution with the best price performance]]></summary>
-        <author>
-            <name>Azure service updates</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Announcing public preview for Microsoft Adaptive Card Previewer]]></title>
-        <id>https://devblogs.microsoft.com/microsoft365dev/?p=15980</id>
-        <link href="https://devblogs.microsoft.com/microsoft365dev/announcing-public-preview-for-microsoft-adaptive-card-previewer/"/>
-        <updated>2023-11-02T16:01:32.000Z</updated>
-        <summary type="html"><![CDATA[Learn more about this extension for Visual Studio Code that uses the latest rendering stack for Microsoft Teams to provide a more accurate preview of Adaptive Cards.
-The post Announcing public preview for Microsoft Adaptive Card Previewer appeared first on Microsoft 365 Developer Blog.]]></summary>
-        <author>
-            <name>Junjie Li</name>
         </author>
     </entry>
     <entry>
