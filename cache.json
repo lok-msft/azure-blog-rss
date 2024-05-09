@@ -2120,6 +2120,26 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/analyse-browser-side-performance-with-web-driver-sampler-on/ba-p/4134396",
+          "author": "SaloniAgrawal12",
+          "description": "Introduction\nPerformance testing is not always a walk in the park. Quite often, it can be challenging and time-consuming, especially when dealing with complex and dynamic web applications that rely on JavaScript, AJAX, or other browser-side technologies.\nFor testing browser latencies under heavy load, JMeter has a built-in component called Web Driver Sampler, which allows testers to use Selenium WebDriver to simulate real browser actions and interactions with web elements. Web Driver Sampler can complement the HTTP Request Sampler, which sends HTTP requests to the server, by adding the browser-side perspective and measuring the rendering time, page load time, and user actions. By running JMeter scripts on Azure Load Testing, you can reliably execute your performance tests without worrying …",
+          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/analyse-browser-side-performance-with-web-driver-sampler-on/ba-p/4134396",
+          "publishedOn": "2024-05-08T08:24:22.000Z",
+          "wordCount": 9179,
+          "title": "Analyse browser-side performance with Web Driver Sampler on Azure Load Testing",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/578702iAD0682F7891BB1C8/image-size/original?v=v2&px=-1"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/automatic-memory-fit-for-java-apps-in-azure-container-apps/ba-p/4134276",
+          "author": "Sean_Li",
+          "description": "Introduction\nContainerization has become the prevailing choice for hosting and managing Java applications, due to its unmatched portability, consistency, and scalability benefits. However, by default, when running a Java app inside containers, the JVM assumes that the OS memory is shared among multiple applications, so it conservatively claims memory for the Java application.\nWith Azure Container Apps, we can optimize memory allocation by simply dedicating more memory to the Java app, since only one Java application can run inside a container. This feature is called automatic memory fit, which is enabled by default when you deploy from Java source code or artifact.\nIn this blog we’ll cover the following:\n\nHighlight Java memory management terms and concepts\nDiscuss how automatic memory fit …",
+          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/automatic-memory-fit-for-java-apps-in-azure-container-apps/ba-p/4134276",
+          "publishedOn": "2024-05-08T06:50:08.000Z",
+          "wordCount": 9279,
+          "title": "Automatic Memory Fit for Java Apps in Azure Container Apps",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/578644i4CC00CE147900DEE/image-size/original?v=v2&px=-1"
+        },
+        {
           "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/how-to-refresh-expired-keys-in-redis-using-azure-functions/ba-p/4131084",
           "author": "kteegarden",
           "description": "Introduction\nRedis is an extremely popular in-memory data store that is used as a cache, session store, message broker, and more. One of the features that makes Redis really useful is the ability to set a time-to-live (TTL) value for any key. A key with a TTL value will be automatically deleted from Redis when the TTL expires. This helps reduce memory usage and ensure data freshness.\n \nFor instance, you might be storing information like inventory or pricing for your e-commerce site in Redis. This is a perfect application for caching in Redis. This type of data will be queried constantly and serving it directly from a database will either slow down your application or make your database implementation very expensive to handle the load! Using a CDN is out of the question because pricing and …",
@@ -3108,16 +3128,6 @@
           "wordCount": 11256,
           "title": "Troubleshoot intermittent connectivity issue in azure app service",
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/521264iF8910356EF6C4081/image-size/original?v=v2&px=-1"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/supercharge-collaboration-apps-with-large-language-models-and/ba-p/4005467",
-          "author": "kevinguo",
-          "description": "Further facilitate teamwork in collaboration apps with Large Language Models\nApps like Microsoft Loop, Figma, Notion, Miro, Framer are redefining remote collaboration. \nBeyond hosting the newest and latest version of a file, these modern collaboration apps allow users to make edits to the same file at the same time as if they were physically next to each other.\n\nWith the rise of large language models (LLMs) and their increasingly sophisticated capabilities, we’d like to explore how AI can further facilitate teamwork using the aforementioned collaboration applications.  \n \nAI agent as another human collaborator\nThe mainstream way of interacting with a language model is through a familiar chat interface. One characteristic about this interaction that’s relevant to our discussion is that it’s…",
-          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/supercharge-collaboration-apps-with-large-language-models-and/ba-p/4005467",
-          "publishedOn": "2023-12-11T06:04:31.000Z",
-          "wordCount": 10673,
-          "title": "Supercharge collaboration apps with Large Language Models and Azure SignalR Service",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/533532i265E2FEA1C24A0ED/image-size/original?v=v2&px=-1"
         }
       ]
     },
@@ -3189,6 +3199,16 @@
       "feedUrl": "https://techcommunity.microsoft.com/plugins/custom/microsoft/o365/custom-blog-rss?tid=-7989146602148070206&board=FastTrackforAzureBlog&size=100",
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
+        {
+          "id": "https://techcommunity.microsoft.com/t5/fasttrack-for-azure/virtual-network-flow-logs-recipes/ba-p/4134337",
+          "author": "Jose Moreno",
+          "description": "You might have heard about the General Availability of Virtual Network Flow Logs in Azure, and even read the announcement blog post. When writing that post with Harsha CS I had the chance to play a bit with VNet Flow Logs and Traffic Analytics, and I would like to share some of the learnings.\n \n \nWhat the heck am I talking about? Let me bring you up to speed very quickly (attention, oversimplification ahead!): NSG Flow Logs is a technology that logs every packet going through an NSG: in and out, allowed and dropped. The main issue of NSG Flow Logs is, well, that you need an NSG, and some resources in Azure do not support them. For example, Azure Firewall, VPN gateways or ExpressRoute gateways. Enter VNet Flow Logs, which you can enable in a whole VNet or subnet, regardless of whether there…",
+          "link": "https://techcommunity.microsoft.com/t5/fasttrack-for-azure/virtual-network-flow-logs-recipes/ba-p/4134337",
+          "publishedOn": "2024-05-08T07:18:07.000Z",
+          "wordCount": 9886,
+          "title": "Virtual Network Flow Logs Recipes",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/578665i72C2E32C68342E61/image-size/original?v=v2&px=-1"
+        },
         {
           "id": "https://techcommunity.microsoft.com/t5/fasttrack-for-azure/ipv6-to-ipv4-workload-communication/ba-p/4132643",
           "author": "brsteph",
@@ -3596,6 +3616,16 @@
       "feedUrl": "https://techcommunity.microsoft.com/plugins/custom/microsoft/o365/custom-blog-rss?tid=-7989146602148070206&board=AzureObservabilityBlog&size=100",
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
+        {
+          "id": "https://techcommunity.microsoft.com/t5/azure-observability-blog/retrieving-more-than-30-000-records-from-log-analytics-workspace/ba-p/4134946",
+          "author": "sabhujba",
+          "description": "Introduction:\nIn the ever-evolving landscape of cloud computing, Log Analytics Workspace is used as a tool in Azure to collect logs, edit/run log queries and interactively analyze query results.\n \nAs organizations scale their infrastructure and applications, the volume of observability data naturally increases.\nA query running in Log Analytics workspace can return a maximum of 30,000 records. However, there are several instances where huge amount of data needs to be extracted and analyzed. Some of the scenarios are:\n\nData over a long period of time: Organization needs several months of data which is high in volume and number of records.\nMonitoring Solution Design: Sometimes there is a need to capture all logs under one workspace for Security/Compliance team to review. Hence, some organizat…",
+          "link": "https://techcommunity.microsoft.com/t5/azure-observability-blog/retrieving-more-than-30-000-records-from-log-analytics-workspace/ba-p/4134946",
+          "publishedOn": "2024-05-08T16:09:45.000Z",
+          "wordCount": 8929,
+          "title": "Retrieving more than 30,000 records from Log Analytics Workspace using Azure Data Explorer",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/578918iE95A9444B02F1B0B/image-size/original?v=v2&px=-1"
+        },
         {
           "id": "https://techcommunity.microsoft.com/t5/azure-observability-blog/accelerate-your-observability-journey-with-azure-monitor/ba-p/4124852",
           "author": "XemaPathak",
@@ -6577,6 +6607,16 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/t5/azure-observability-blog/retrieving-more-than-30-000-records-from-log-analytics-workspace/ba-p/4134946",
+          "author": "sabhujba",
+          "description": "Introduction:\nIn the ever-evolving landscape of cloud computing, Log Analytics Workspace is used as a tool in Azure to collect logs, edit/run log queries and interactively analyze query results.\n \nAs organizations scale their infrastructure and applications, the volume of observability data naturally increases.\nA query running in Log Analytics workspace can return a maximum of 30,000 records. However, there are several instances where huge amount of data needs to be extracted and analyzed. Some of the scenarios are:\n\nData over a long period of time: Organization needs several months of data which is high in volume and number of records.\nMonitoring Solution Design: Sometimes there is a need to capture all logs under one workspace for Security/Compliance team to review. Hence, some organizat…",
+          "link": "https://techcommunity.microsoft.com/t5/azure-observability-blog/retrieving-more-than-30-000-records-from-log-analytics-workspace/ba-p/4134946",
+          "publishedOn": "2024-05-08T16:09:45.000Z",
+          "wordCount": 8929,
+          "title": "Retrieving more than 30,000 records from Log Analytics Workspace using Azure Data Explorer",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/578918iE95A9444B02F1B0B/image-size/original?v=v2&px=-1"
+        },
+        {
           "id": "https://techcommunity.microsoft.com/t5/azure-observability-blog/accelerate-your-observability-journey-with-azure-monitor/ba-p/4124852",
           "author": "XemaPathak",
           "description": "In the ever-evolving landscape of digital infrastructure, transparency in resource and application performance is imperative. Success hinges on visibility, and that’s true whether you’re operating on Azure, on-premise, or at the edge. As organizations scale their infrastructures and applications, the volume of observability data naturally increases. This surge can complicate the management of networking, data storage and ingestion, often forcing a trade-off between cost management and observability.\n \nThe complexity doesn’t end there. The very tools designed to ingest, process, and route this data can be both costly and complex, adding layers of operational challenges. Moreover, edge infrastructure is deployed near IoT devices for optimal data processing, high availability, and reduced lat…",
@@ -6720,6 +6760,96 @@
       "feedUrl": "https://azurecomcdn.azureedge.net/en-us/updates/feed/?updateType=features",
       "siteUrl": "https://azure.microsoft.com/en-us/updates/",
       "articles": [
+        {
+          "id": "public-preview-initialization-taints-in-aks",
+          "author": null,
+          "description": "You can now use node initialization taints in AKS e.g. in scenarios where you may need extra time to setup your nodes.",
+          "link": "https://azure.microsoft.com/en-us/updates/public-preview-initialization-taints-in-aks/",
+          "publishedOn": "2024-05-08T20:43:23.000Z",
+          "wordCount": 5583,
+          "title": "Public preview: Initialization taints in AKS",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-facd1a72a950890c23a4e28b1578bded05f7e6acfba97b5eed282eaeba76bcdf/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "ga-support-for-disabling-windows-outboundnat-in-aks",
+          "author": null,
+          "description": "You can now manually disable Windows outboundNAT when creating new Windows node pools in Azure Kubernetes Service (AKS).",
+          "link": "https://azure.microsoft.com/en-us/updates/ga-support-for-disabling-windows-outboundnat-in-aks/",
+          "publishedOn": "2024-05-08T20:42:01.000Z",
+          "wordCount": 5498,
+          "title": "GA: Support for disabling Windows outboundNAT in AKS",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-facd1a72a950890c23a4e28b1578bded05f7e6acfba97b5eed282eaeba76bcdf/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "public-preview-nfs-azure-files-volume-mount-support-in-azure-container-apps",
+          "author": null,
+          "description": "You can now mount NFS file shares in Azure Container Apps.",
+          "link": "https://azure.microsoft.com/en-us/updates/public-preview-nfs-azure-files-volume-mount-support-in-azure-container-apps/",
+          "publishedOn": "2024-05-08T20:41:36.000Z",
+          "wordCount": 5499,
+          "title": "Public Preview: NFS Azure Files volume mount support in Azure Container Apps",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-facd1a72a950890c23a4e28b1578bded05f7e6acfba97b5eed282eaeba76bcdf/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "general-availability-customermanaged-keys-on-existing-accounts",
+          "author": null,
+          "description": "Configure customer-managed keys for your existing Azure Cosmos DB account.",
+          "link": "https://azure.microsoft.com/en-us/updates/general-availability-customermanaged-keys-on-existing-accounts/",
+          "publishedOn": "2024-05-08T16:01:08.000Z",
+          "wordCount": 5497,
+          "title": "General availability: Customer-managed keys on existing accounts",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-facd1a72a950890c23a4e28b1578bded05f7e6acfba97b5eed282eaeba76bcdf/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "public-preview-sql-server-on-azure-vm-storage-configuration-deployment-experience-with-support-for-premium-ssd-v2",
+          "author": null,
+          "description": "Customers can now choose Premium SSD v2 for the Ebdsv5 and Ebsv5 virtual machine series with the additional ability to opt-in for NVMe support.",
+          "link": "https://azure.microsoft.com/en-us/updates/public-preview-sql-server-on-azure-vm-storage-configuration-deployment-experience-with-support-for-premium-ssd-v2/",
+          "publishedOn": "2024-05-08T16:01:02.000Z",
+          "wordCount": 5562,
+          "title": "Public Preview: SQL Server on Azure VM storage configuration deployment experience with support for Premium SSD v2",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-facd1a72a950890c23a4e28b1578bded05f7e6acfba97b5eed282eaeba76bcdf/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "general-availability-latest-version-of-the-timescaledb-extension-on-azure-database-for-postgresql-flexible-server",
+          "author": null,
+          "description": "Upgrade to the latest TimeScaleDB extension on Azure for enhanced time-series data handling and improved performance.",
+          "link": "https://azure.microsoft.com/en-us/updates/general-availability-latest-version-of-the-timescaledb-extension-on-azure-database-for-postgresql-flexible-server/",
+          "publishedOn": "2024-05-08T16:00:56.000Z",
+          "wordCount": 5536,
+          "title": "General availability: Latest version of the TimeScaleDB extension on Azure Database for PostgreSQL - Flexible Server",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-facd1a72a950890c23a4e28b1578bded05f7e6acfba97b5eed282eaeba76bcdf/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "general-availability-latest-postgresql-minor-versions-supported-by-azure-database-for-postgresql-flexible-server-5",
+          "author": null,
+          "description": "Azure Database for PostgreSQL – Flexible Server now supports minor versions 16.2, 15.6, 14.11, 13.14, and 12.18.",
+          "link": "https://azure.microsoft.com/en-us/updates/general-availability-latest-postgresql-minor-versions-supported-by-azure-database-for-postgresql-flexible-server-5/",
+          "publishedOn": "2024-05-08T16:00:49.000Z",
+          "wordCount": 5532,
+          "title": "General availability: Latest PostgreSQL minor versions supported by Azure Database for PostgreSQL - Flexible Server",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-facd1a72a950890c23a4e28b1578bded05f7e6acfba97b5eed282eaeba76bcdf/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "general-availability-azure-cosmos-db-data-explorer-keyboard-shortcuts",
+          "author": null,
+          "description": "Work Smarter: Enhance Productivity with Azure Cosmos DB Data Explorer shortcut keys.",
+          "link": "https://azure.microsoft.com/en-us/updates/general-availability-azure-cosmos-db-data-explorer-keyboard-shortcuts/",
+          "publishedOn": "2024-05-08T16:00:43.000Z",
+          "wordCount": 5519,
+          "title": "General Availability: Azure Cosmos DB Data Explorer keyboard shortcuts",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-facd1a72a950890c23a4e28b1578bded05f7e6acfba97b5eed282eaeba76bcdf/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "general-availability-azure-cosmos-db-api-for-mongodb-ru-supports-version-50-and-60",
+          "author": null,
+          "description": "Azure Cosmos DB for MongoDB now supports MongoDB v5 and v6.",
+          "link": "https://azure.microsoft.com/en-us/updates/general-availability-azure-cosmos-db-api-for-mongodb-ru-supports-version-50-and-60/",
+          "publishedOn": "2024-05-08T16:00:35.000Z",
+          "wordCount": 5503,
+          "title": "General availability: Azure Cosmos DB API for MongoDB RU supports version 5.0 and 6.0",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-facd1a72a950890c23a4e28b1578bded05f7e6acfba97b5eed282eaeba76bcdf/images/shared/social/azure-icon-250x250.png"
+        },
         {
           "id": "generally-available-azure-red-hat-openshift-v414-at-install-time",
           "author": null,
