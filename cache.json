@@ -4238,6 +4238,16 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/t5/azure-paas-blog/adjusting-vm-size-in-classic-cloud-services-without-csdef-access/ba-p/4136333",
+          "author": "carlosbermudezlopez",
+          "description": "Co-Authors: David Padilla, Pablo CastroScenario  Customers migrating from Classic Cloud Service to Cloud Service (Extended Support) often face a challenge if they have been running Classic Cloud Services for years without changes, leading to lost source code or only having access to the final product (package and .cscfg files).   A frequent migration issue arises when the Classic Cloud Service utilizes a deprecated VM SKU Family like (A-Series), and without the source code, customers are unable to modify the VM size in the Service Definition File and repackage the project.  The following Blog will help in this specific scenario to allow the migration without the need for the source code.  \n\nRequirement Access to the config files. If you do not have access to these files, please reference t…",
+          "link": "https://techcommunity.microsoft.com/t5/azure-paas-blog/adjusting-vm-size-in-classic-cloud-services-without-csdef-access/ba-p/4136333",
+          "publishedOn": "2024-05-10T02:48:32.000Z",
+          "wordCount": 8923,
+          "title": "Adjusting VM Size in Classic Cloud Services Without .csdef access for Migration to CSES",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/579431i1E02265B850A6F06/image-size/original?v=v2&px=-1"
+        },
+        {
           "id": "https://techcommunity.microsoft.com/t5/azure-paas-blog/preserve-disk-space-in-imagestore-for-service-fabric-managed/ba-p/4123505",
           "author": "Ahmed_Khaled",
           "description": "As mentioned in this article: Service Fabric: Best Practices to preserve disk space in Image Store ImageStore keeps copied packages and provisioned packages.\nIn this article, we will discuss how can you configure cleaning up the copied application package for Service Fabric Managed Cluster 'SFMC'.\n \nThe mitigation is to set \"AllowRuntimeCleanupUnusedApplicationTypesPolicy\": \"true\".\nFor properties, specify the following tags:\n...\n    \"applicationTypeVersionsCleanupPolicy\": {\n      \"maxUnusedVersionsToKeep\": 3\n    }\n \nLet me show you a step-by-step guide to automatically remove the unwanted application versions in your Service Fabric Managed cluster below:\n \nScenario:\n- I have deployed 4 versions of my app (1 InUse - 3 UnUsed) to my managed cluster as the following:\n\n \nSymptom:\nI need Servic…",
@@ -5202,6 +5212,16 @@
       "siteUrl": "https://devblogs.microsoft.com/ise/",
       "articles": [
         {
+          "id": "https://devblogs.microsoft.com/ise/?p=15424",
+          "author": "Liam Moat",
+          "description": "summary of the post\nThe post Synchronizing multiple remote Git Repositories appeared first on ISE Developer Blog.",
+          "link": "https://devblogs.microsoft.com/ise/synchronizing-multiple-remote-git-repositories/",
+          "publishedOn": "2024-05-10T07:00:00.000Z",
+          "wordCount": 4824,
+          "title": "Synchronizing multiple remote Git Repositories",
+          "imageUrl": "https://devblogs.microsoft.com/ise/wp-content/uploads/sites/55/2024/05/sync-feature-image.png"
+        },
+        {
           "id": "https://devblogs.microsoft.com/ise/?p=15413",
           "author": "Julia Valder",
           "description": "How to use data mapping to make your application more robust against unexpected third-party data schema changes.\nThe post Making an Application More Robust With Data Mapping appeared first on ISE Developer Blog.",
@@ -5980,16 +6000,6 @@
           "wordCount": 5073,
           "title": "Updates to Azure DevOps Demo Generator and Labs",
           "imageUrl": "https://devblogs.microsoft.com/devops/wp-content/uploads/sites/6/2023/11/ADOlabs.png"
-        },
-        {
-          "id": "https://devblogs.microsoft.com/devops/?p=68208",
-          "author": "Gloridel Morales",
-          "description": "This month, we are releasing fixes that impact our self-hosted product, Azure DevOps Server.\nAzure DevOps Server 2022.1\nAzure DevOps Server 2020.1.2\nAzure DevOps Server 2022.1 Patch 1\nThe post December patches for Azure DevOps Server appeared first on Azure DevOps Blog.",
-          "link": "https://devblogs.microsoft.com/devops/december-patches-for-azure-devops-server-3/",
-          "publishedOn": "2023-12-12T19:05:36.000Z",
-          "wordCount": 4809,
-          "title": "December patches for Azure DevOps Server",
-          "imageUrl": "https://devblogs.microsoft.com/devops/wp-content/uploads/sites/6/2019/02/index-hero.jpg"
         }
       ]
     },
@@ -6126,16 +6136,6 @@
           "publishedOn": "2023-12-19T02:52:46.000Z",
           "wordCount": 6443,
           "title": "Relationship Advice from Data API builder",
-          "imageUrl": "https://devblogs.microsoft.com/azure-sql/wp-content/uploads/sites/56/2023/10/dab-logo.png"
-        },
-        {
-          "id": "https://devblogs.microsoft.com/azure-sql/?p=2692",
-          "author": "Carlos Robles",
-          "description": "Are you tired of spending countless hours building APIs from scratch? With Data API Builder (DAB), you can create your API in just minutes! All you need to do is create a JSON configuration file to describe your database entities (tables,\nThe post Build your APIs with DAB using Containers – Part 1 appeared first on Azure SQL Devs’ Corner.",
-          "link": "https://devblogs.microsoft.com/azure-sql/build-apis-with-dab-using-containers/",
-          "publishedOn": "2023-12-12T17:00:38.000Z",
-          "wordCount": 6634,
-          "title": "Build your APIs with DAB using Containers – Part 1",
           "imageUrl": "https://devblogs.microsoft.com/azure-sql/wp-content/uploads/sites/56/2023/10/dab-logo.png"
         }
       ]
@@ -6760,6 +6760,16 @@
       "feedUrl": "https://azurecomcdn.azureedge.net/en-us/updates/feed/?updateType=features",
       "siteUrl": "https://azure.microsoft.com/en-us/updates/",
       "articles": [
+        {
+          "id": "gpt4-turbo-vision",
+          "author": null,
+          "description": "We are thrilled to announce the general availability of GPT-4 Turbo with Vision on the Azure OpenAI Service, which processes both text and image inputs and replaces several preview models. This multimodal model has already been used by customers in various industries to enhance efficiencies and innovate, with case studies to be featured at the upcoming Build conference. For deployment details and future enhancements, including JSON mode and function calling for image inputs, please refer to our Azure OpenAI Service resources and updates.",
+          "link": "https://azure.microsoft.com/en-us/updates/gpt4-turbo-vision/",
+          "publishedOn": "2024-05-10T14:53:10.000Z",
+          "wordCount": 5619,
+          "title": "Announcing the General Availability of GPT-4 Turbo with Vision on Azure OpenAI Service",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-f31bf63608a55aeb74906d504f765f9720e31ababfb679beae28824b93c6feb6/images/shared/social/azure-icon-250x250.png"
+        },
         {
           "id": "public-preview-initialization-taints-in-aks",
           "author": null,
@@ -9337,6 +9347,16 @@
       "feedUrl": "https://devblogs.microsoft.com/microsoft365dev/feed/",
       "siteUrl": "https://devblogs.microsoft.com/microsoft365dev/",
       "articles": [
+        {
+          "id": "https://devblogs.microsoft.com/microsoft365dev/?p=21153",
+          "author": "Sanjukta Sen",
+          "description": "You can now directly download content of a file (of a Driveitem) in a SharePoint Online site through a single call.\nThe post Direct streaming of SharePoint Driveitem content in Microsoft Graph now available appeared first on Microsoft 365 Developer Blog.",
+          "link": "https://devblogs.microsoft.com/microsoft365dev/direct-streaming-of-sharepoint-driveitem-content-in-microsoft-graph-now-available/",
+          "publishedOn": "2024-05-10T14:50:22.000Z",
+          "wordCount": 4466,
+          "title": "Direct streaming of SharePoint Driveitem content in Microsoft Graph now available",
+          "imageUrl": "https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2024/05/05102024-scaled.jpg"
+        },
         {
           "id": "https://devblogs.microsoft.com/microsoft365dev/?p=21120",
           "author": "Nick Simons",
