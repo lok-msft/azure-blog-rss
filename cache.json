@@ -2100,6 +2100,26 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/intelligent-app-on-azure-container-apps-landing-zone-accelerator/ba-p/4137337",
+          "author": "aarthimurugan",
+          "description": "AI Apps are on the raise with LLMs capabilities made easier for app integration with Azure OpenAI and Azure Container Apps helps developers focus on building the AI apps faster in a serverless container environment without worrying about container orchestration, server configuration and deployments details.\nTo fast-track your journey to production with AI applications, it's crucial to implement your solutions adhering to the most effective practices in security, monitoring, networking, and operational excellence.\nThis blogpost will show you how to leverage Azure Container Apps (ACA) Landing Zone Accelerator (LZA) to deploy the AI apps in a production grade secure baseline.\nApp Overview\nTo demonstrate the deployment, Java Azure AI reference template is used that provides a complete end-to-e…",
+          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/intelligent-app-on-azure-container-apps-landing-zone-accelerator/ba-p/4137337",
+          "publishedOn": "2024-05-13T15:49:49.000Z",
+          "wordCount": 9443,
+          "title": "Intelligent app on Azure Container Apps Landing Zone Accelerator",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/579808iF58E50286DB0B69C/image-size/original?v=v2&px=-1"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/how-to-install-intl-extension-on-wordpress-on-azure-app-service/ba-p/4138353",
+          "author": "Arjun_Baliga",
+          "description": "1.Run the following code in the App Service SSH -\napk add icu-dev && \\\n   docker-php-ext-configure intl && \\\n   docker-php-ext-install intl && \\\n   docker-php-ext-enable intl\n2. Now copy the intl.so & docker-php-ext-intl.ini file to persistent storage located under /home -\nmkdir /home/intl-ext\ncp /usr/local/etc/php/conf.d/docker-php-ext-intl.ini /home/intl-ext/docker-php-ext-intl.ini\ncp /usr/local/lib/php/extensions/no-debug-non-zts-20220829/intl.so /home/intl-ext/intl.so\n3.Insert the following code into the \"/home/dev/startup.sh\" file - \napk add icu-dev\ncp /home/intl-ext/docker-php-ext-intl.ini /usr/local/etc/php/conf.d/docker-php-ext-intl.ini\ncp /home/intl-ext/intl.so /usr/local/lib/php/extensions/no-debug-non-zts-20220829/intl.so\nsupervisorctl restart php-fpm\n4. After completing the previous steps, restart your App Service. Once restarted, navigate to phpinfo.php and verify that the intl extension is successfully installed.",
+          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/how-to-install-intl-extension-on-wordpress-on-azure-app-service/ba-p/4138353",
+          "publishedOn": "2024-05-13T08:33:14.000Z",
+          "wordCount": 8520,
+          "title": "How to install intl extension on WordPress on Azure App Service",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/580206i65E2B6D8E3B6BB0D/image-size/original?v=v2&px=-1"
+        },
+        {
           "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/how-to-access-azure-sql-database-with-managed-identity-in-php-in/ba-p/4129014",
           "author": "Joe_Chen",
           "description": "Introduction\nAfter Microsoft ODBC Driver version 17.3.1.1, we will able to use the system-assigned and user-assigned identities (Using Azure Active Directory with the ODBC Driver - ODBC Driver for SQL Server | Microsoft Learn) to access the Azure SQL Server\n\nMicrosoft ODBC driver version in Azure Web App for PHP 8.1~ in Linux is after this version. We could run below command to check:\n\nodbcinst -j\ncat /etc/odbcinst.ini\n\nThe result could see we have both ODBC 17 and ODBC 18 driver. And both version is greater than the 17.3.1.1. So it shall support to use the system-assigned managed identity to access the Azure SQL database\n\n \nStep by Step Setup\nPrerequisites:\n- Make sure Azure SQL database can use \"Active Directory authentication\" to login DB since we need the run the database commands to g…",
@@ -6046,6 +6066,16 @@
       "siteUrl": "https://devblogs.microsoft.com/cosmosdb/",
       "articles": [
         {
+          "id": "https://devblogs.microsoft.com/cosmosdb/?p=8015",
+          "author": "Jay Gordon",
+          "description": "The fourth annual Azure Cosmos DB Conf, held on April 16, 2024, was an exciting event for developers, product managers and C-Suite executives focused on the cutting-edge of cloud data management and AI-driven applications. Featuring a comprehensive lineup of talks and discussions,\nThe post Azure Cosmos DB Conf 2024: Accelerating Innovation in AI and Data appeared first on Azure Cosmos DB Blog.",
+          "link": "https://devblogs.microsoft.com/cosmosdb/azure-cosmos-db-conf-2024-accelerating-innovation-in-ai-and-data/",
+          "publishedOn": "2024-05-13T17:30:17.000Z",
+          "wordCount": 5927,
+          "title": "Azure Cosmos DB Conf 2024: Accelerating Innovation in AI and Data",
+          "imageUrl": "https://devblogs.microsoft.com/cosmosdb/wp-content/uploads/sites/52/2024/05/Thanks_for_watching_CosmosConf.png"
+        },
+        {
           "id": "https://devblogs.microsoft.com/cosmosdb/?p=6384",
           "author": "Dileep Rao",
           "description": "Encryption options for data at rest on Azure Cosmos DB that is available today.\nThe post Configure customer-managed keys for your existing Azure Cosmos DB accounts! appeared first on Azure Cosmos DB Blog.",
@@ -6660,6 +6690,16 @@
       "feedUrl": "https://azurecomcdn.azureedge.net/en-us/updates/feed/?updateType=features",
       "siteUrl": "https://azure.microsoft.com/en-us/updates/",
       "articles": [
+        {
+          "id": "public-preview-azure-site-recovery-support-for-azure-trusted-launch-vms-windows-os",
+          "author": null,
+          "description": "Azure Site Recovery support for Windows Trusted launch VMs",
+          "link": "https://azure.microsoft.com/en-us/updates/public-preview-azure-site-recovery-support-for-azure-trusted-launch-vms-windows-os/",
+          "publishedOn": "2024-05-13T16:00:59.000Z",
+          "wordCount": 5516,
+          "title": "Public Preview: Azure Site Recovery support for Azure Trusted Launch VMs (Windows OS)",
+          "imageUrl": "https://azurecomcdn.azureedge.net/cvt-0d30b170902023d70ecedf23e0f2c07b0a97fd2ce43bcee91393733e33883d91/images/shared/social/azure-icon-250x250.png"
+        },
         {
           "id": "gpt4-turbo-vision",
           "author": null,
@@ -9237,6 +9277,16 @@
       "feedUrl": "https://devblogs.microsoft.com/microsoft365dev/feed/",
       "siteUrl": "https://devblogs.microsoft.com/microsoft365dev/",
       "articles": [
+        {
+          "id": "https://devblogs.microsoft.com/microsoft365dev/?p=20705",
+          "author": "Bert Jansen",
+          "description": "Announcing the retirement of the domain isolated web parts feature in SharePoint Framework (SPFx).\nThe post Retiring SharePoint Framework domain isolated web parts for SharePoint Online appeared first on Microsoft 365 Developer Blog.",
+          "link": "https://devblogs.microsoft.com/microsoft365dev/retiring-sharepoint-framework-domain-isolated-web-parts-for-sharepoint-online/",
+          "publishedOn": "2024-05-13T15:14:41.000Z",
+          "wordCount": 4985,
+          "title": "Retiring SharePoint Framework domain isolated web parts for SharePoint Online",
+          "imageUrl": "https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2024/05/05132024-scaled.jpg"
+        },
         {
           "id": "https://devblogs.microsoft.com/microsoft365dev/?p=21153",
           "author": "Sanjukta Sen",
