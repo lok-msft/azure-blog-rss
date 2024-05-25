@@ -2,10 +2,157 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2024-05-24T01:06:11.107Z</updated>
+    <updated>2024-05-25T01:04:48.399Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Powering Observability: Dynatrace Integration with Linux App Service through Sidecars]]></title>
+        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/powering-observability-dynatrace-integration-with-linux-app/ba-p/4151677</id>
+        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/powering-observability-dynatrace-integration-with-linux-app/ba-p/4151677"/>
+        <updated>2024-05-24T17:49:53.000Z</updated>
+        <summary type="html"><![CDATA[In this blog we continue to dive into the world of observability with Azure App Service. If you've been following our recent updates, you'll know that we announced the Public Preview for the Sidecar Pattern for Linux App Service. Building upon this architectural pattern, we're going to demonstrate how you can leverage it to integrate Dynatrace, an Azure Native ISV Services partner, with your .NET custom container application. In this blog, we'll guide you through the process of harnessing Dynatrace's powerful monitoring capabilities, allowing you to gain invaluable insights into your application's metrics and traces.
+ 
+Setting up your .NET application
+To get started, you'll need to containerize your .NET application. This tutorial walks you through the process step by step.
+This is what a …]]></summary>
+        <author>
+            <name>TulikaC</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Simplify Your Azure Kubernetes Service Connection Configuration with Service Connector]]></title>
+        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/simplify-your-azure-kubernetes-service-connection-configuration/ba-p/4151594</id>
+        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/simplify-your-azure-kubernetes-service-connection-configuration/ba-p/4151594"/>
+        <updated>2024-05-24T16:24:24.000Z</updated>
+        <summary type="html"><![CDATA[Workloads deployed on an Azure Kubernetes Service (AKS) cluster often need to access Azure backing resources, such as Azure Key Vault, databases, or AI services like Azure OpenAI Service. Users are required to manually configure Microsoft Entra Workload ID or Managed Identities so their AKS workloads can securely access these protected resources.
+The Service Connector integration greatly simplifies the connection configuration experience for AKS workloads and Azure backing services. Service Connector takes care of authentication and network configurations securely and follows Azure best practices, so you can focus on your application code without worrying about your infrastructure connectivity.
+
+Service Connector Action Breakdown
+ 
+Before, in order to connect from AKS pods to a private Azure backing services using workload identity, users needed to perform the following actions manually:
+
+Create a managed identity
+Retrieve the OIDC issuer URL
+Create Kubernetes service account
+Establish federated identity credential trust
+Grant permissions to access Azure Services
+Deploy the application
+
+Now, Service Connector performs steps 2 to 5 automatically. Additionally, for Azure services without public access, Service Connector creates private connection components such as private link, private endpoint, DNS record,
+You can create a connection in the Service Connection blade within AKS.
+
+ 
+Click create and select the target service, authentication method, and networking rule. The connection will then be automatically set up. Here are a few helpful links to for you to learn more about Service Connector.
+
+Create a service connection in an AKS cluster from the Azure portal
+Tutorial: Connect to Azure OpenAI Service in AKS using a connection string (preview)
+Tutorial: Connect to Azure OpenAI Service in AKS using Workload Identity (preview)
+What is Service Connector?]]></summary>
+        <author>
+            <name>CocoWang</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Microsoft Graph town hall APIs now available in beta]]></title>
+        <id>https://devblogs.microsoft.com/microsoft365dev/?p=21516</id>
+        <link href="https://devblogs.microsoft.com/microsoft365dev/microsoft-graph-town-hall-apis-now-available-in-beta/"/>
+        <updated>2024-05-24T15:28:54.000Z</updated>
+        <summary type="html"><![CDATA[With the retirement of Teams live events in favor of Teams town hall, we’re announcing the preview (beta) release of new Microsoft Graph town hall APIs.
+The post Microsoft Graph town hall APIs now available in beta appeared first on Microsoft 365 Developer Blog.]]></summary>
+        <author>
+            <name>Annie Wang</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Deploying Applications With Intune]]></title>
+        <id>https://techcommunity.microsoft.com/t5/educator-developer-blog/deploying-applications-with-intune/ba-p/4125495</id>
+        <link href="https://techcommunity.microsoft.com/t5/educator-developer-blog/deploying-applications-with-intune/ba-p/4125495"/>
+        <updated>2024-05-24T07:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Introduction
+In this blog post, I would like to introduce you to packaging and patching your applications.
+You might have tried to manually package applications into Microsoft Intune before and also made sure to update an application. It takes a lot of time to prepare and test an application before deploying it.
+ 
+Microsoft has luckily come to the rescue and introduced Enterprise App Management! Let's take a closer look at it in this blog and see how it works.
+ 
+Security for Beginners course
+Would you like to expand your knowledge in the security world? I might have found the course for you.
+It's designed to help you get started with the fundamentals behind security. Take a look at the course right here.
+ 
+Cybersecurity for Beginners
+ 
+
+ 
+Enterprise App Management
+The Enterprise App Catalo…]]></summary>
+        <author>
+            <name>NicklasOlsen</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Playwright in Action: From Setup to Best Practices | Azure Developers JavaScript Day 2024]]></title>
+        <id>https://techcommunity.microsoft.com/t5/microsoft-developer-community/playwright-in-action-from-setup-to-best-practices-azure/ba-p/4146371</id>
+        <link href="https://techcommunity.microsoft.com/t5/microsoft-developer-community/playwright-in-action-from-setup-to-best-practices-azure/ba-p/4146371"/>
+        <updated>2024-05-24T07:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Another excellent session was held during the Azure Developers JavaScript Day 2024 event! This time, the focus was on Playwright. But, what is Playwright? And, what are the best practices for using it? Let's find out with the talk "Playwright in Action: From Setup to Best Practices"! Made by Max Schmitt, Software Engineer on the Playwright team at Microsoft and Stefan Judis, Playwright Ambassador!
+ 
+Introduction
+ 
+During the Azure Develoeprs JavaScript Day 2024, Max and Stefan, presented a session titled "Playwright in Action: From Setup to Best Practices". They provided a comprehensive overview of Playwright, a browser automation library, and demonstrated how to leverage it for creating robust, end-to-end tests for modern web applications.
+ 
+If you couldn't make it to the lecture, no prob…]]></summary>
+        <author>
+            <name>glaucia_lemos86</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Start Simple, Scale Fast: Azure Storage for Distributed Computing]]></title>
+        <id>https://devblogs.microsoft.com/ise/?p=15440</id>
+        <link href="https://devblogs.microsoft.com/ise/azure-storage-for-distributed-computing/"/>
+        <updated>2024-05-24T07:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Azure Storage Accounts are one of the simplest resources on Azure, but simultaneously one of the most useful and reused building blocks across the Microsoft Cloud ecosystem. Blobs, leases, and queues are fundamental components that enable powerful patterns. Let's dig into why Storage Accounts should be in your Azure toolkit.
+The post Start Simple, Scale Fast: Azure Storage for Distributed Computing appeared first on ISE Developer Blog.]]></summary>
+        <author>
+            <name>Andrew Vineyard</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Announcing Java on Azure Container Apps Support for Java on Azure Developer Tools]]></title>
+        <id>https://devblogs.microsoft.com/java/?p=231001</id>
+        <link href="https://devblogs.microsoft.com/java/java-on-azure-aca/"/>
+        <updated>2024-05-24T04:17:16.000Z</updated>
+        <summary type="html"><![CDATA[During Build 2024, it was announced that Azure Container Apps now offers a rich set of operational capabilities for Java Developers. (Full details on this blog).
+The post Announcing Java on Azure Container Apps Support for Java on Azure Developer Tools appeared first on Microsoft for Java Developers.]]></summary>
+        <author>
+            <name>Jialuo Gan</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[What runs GPT-4o and Microsoft Copilot? | Largest AI supercomputer in the cloud | Mark Russinovich]]></title>
+        <id>https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/what-runs-gpt-4o-and-microsoft-copilot-largest-ai-supercomputer/ba-p/4150701</id>
+        <link href="https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/what-runs-gpt-4o-and-microsoft-copilot-largest-ai-supercomputer/ba-p/4150701"/>
+        <updated>2024-05-24T02:21:42.000Z</updated>
+        <summary type="html"><![CDATA[Microsoft has built the world’s largest cloud-based AI supercomputer that is already exponentially bigger than it was just 6 months ago, paving the way for a future with agentic systems.
+ 
+For example, its AI infrastructure is capable of training and inferencing the most sophisticated large language models at massive scale on Azure. In parallel, Microsoft is also developing some of the most compact small language models with Phi-3, capable of running offline on your mobile phone.
+ 
+Watch Azure CTO and Microsoft Technical Fellow Mark Russinovich demonstrate this hands-on and go into the mechanics of how Microsoft is able to squeeze as much performance from its AI infrastructure as possible to run AI workloads of any size efficiently on a global scale.
+ 
+This includes a look at: how it desig…]]></summary>
+        <author>
+            <name>Zachary Cavanell</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[SBOM support in Spring Boot 3.3]]></title>
+        <id>https://spring.io/blog/2024/05/24/sbom-support-in-spring-boot-3-3</id>
+        <link href="https://spring.io/blog/2024/05/24/sbom-support-in-spring-boot-3-3"/>
+        <updated>2024-05-24T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Level up your Java code and explore what Spring can do for you.]]></summary>
+        <author>
+            <name>Moritz Halbritter</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Public preview of the App Configuration Extension for AKS]]></title>
         <id>appconfig-aksextension</id>
@@ -28,6 +175,64 @@ First let's review common scenarios of where this added complexity is seen today
 Cleanup: resources with the same lifecycle are often created across multiple scopes. If you ever need to delete these resources, it requires ma…]]></summary>
         <author>
             <name>azcloudfarmer</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Getting started with Azure Cosmos Database (A Deep Dive)]]></title>
+        <id>https://techcommunity.microsoft.com/t5/educator-developer-blog/getting-started-with-azure-cosmos-database-a-deep-dive/ba-p/4145478</id>
+        <link href="https://techcommunity.microsoft.com/t5/educator-developer-blog/getting-started-with-azure-cosmos-database-a-deep-dive/ba-p/4145478"/>
+        <updated>2024-05-23T19:00:00.000Z</updated>
+        <summary type="html"><![CDATA[What is Azure Cosmos Database
+ 
+It’s a fully managed, distributed NOSQL & relational database.  
+ 
+Topics to be covered  
+ 
+
+NoSQL Vs Relational Databases 
+What is Azure Cosmos DB 
+Azure cosmos DB Architecture 
+
+Azure Cosmos Db Components 
+Multi-model (APIs) 
+Partitions 
+Request Units 
+
+
+Azure cosmos DB Access Methods 
+Scenario: Event Database 
+Creating Resources using Azure cosmos DB for NoSQL 
+
+ 
+What is a NoSQL Database? 
+ 
+NoSQL, standing for “Not only SQL,”. It’s a highly scalable storage mechanism for structured, semi-structured, and unstructured data.  
+ 
+ 
+ 
+
+ 
+ 
+What is a Relational Database?  
+ 
+A relational database is a way of storing and organizing data that emphasizes precision and interconnection. It uses a structured table with predefined schemas to store data. 
+ 
+Structura…]]></summary>
+        <author>
+            <name>kevin_comba</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[LLM based development tools: PromptFlow vs LangChain vs Semantic Kernel]]></title>
+        <id>https://techcommunity.microsoft.com/t5/educator-developer-blog/llm-based-development-tools-promptflow-vs-langchain-vs-semantic/ba-p/4149252</id>
+        <link href="https://techcommunity.microsoft.com/t5/educator-developer-blog/llm-based-development-tools-promptflow-vs-langchain-vs-semantic/ba-p/4149252"/>
+        <updated>2024-05-23T19:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Introduction
+Data is the power behind human civilization and knowledge. Over the past decades, we have seen an increase in data shared across the internet. With the massive availability of data as well as advanced compute, models were trained to take advantage of the data to process and understand natural language. Models were trained to produce new and original content bringing about Generative AI.
+ 
+Globally, developers, data scientists, and engineers created new applications or advanced their existing applications to take advantage of LLMs. While building a Question-and-Answer chatbot is simple and you may not need advanced tools, in other more complex scenarios, the AI orchestrator come in and make the process easier. At the center of LLM applications is the AI orchestration layer that…]]></summary>
+        <author>
+            <name>bethanyjep</name>
         </author>
     </entry>
     <entry>
@@ -99,6 +304,23 @@ Workspace replication creates a replica of your workspace on another region, tha
 The second instance of your workspace is created by the service with the same ID and configuration as your primary workspace (future configuration changes you make will be synced as well). This is basically an active-passive setup – at any given time, your workspace has…]]></summary>
         <author>
             <name>Noa Kuperberg</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Extracting data from unstructured forms using Azure AI Document Intelligence.]]></title>
+        <id>https://techcommunity.microsoft.com/t5/educator-developer-blog/extracting-data-from-unstructured-forms-using-azure-ai-document/ba-p/4141679</id>
+        <link href="https://techcommunity.microsoft.com/t5/educator-developer-blog/extracting-data-from-unstructured-forms-using-azure-ai-document/ba-p/4141679"/>
+        <updated>2024-05-23T07:00:00.000Z</updated>
+        <summary type="html"><![CDATA[In this blog we are going to take a scenario where our business is a business-to-business(B2B) product to help other businesses extract data from unstructured forms such as pdfs, emails, websites etc. 
+In this scenario we are faced with manual extraction of relevant information which is time-consuming and prone to error. 
+Let’s see how we can leverage Azure AI Document intelligence and come up with a simple pipeline to ingest data, process and give us structured data. 
+ 
+What you need to get started. 
+
+Azure account with a subscription: To create one use the following link: Azure portal Want to know what azure subscription is? azure subscription 
+Azure blob storage: A storage account to store documents which need to be extracted. Learn more about azure blob storage: Azure blob storage docs…]]></summary>
+        <author>
+            <name>kevin_comba</name>
         </author>
     </entry>
     <entry>
@@ -15908,45 +16130,6 @@ Generally speaking, Azure Application Gateway is an OSI layer 7 service. It can 
         <summary type="html"><![CDATA[Level up your Java code and explore what Spring can do for you.]]></summary>
         <author>
             <name>Josh Long</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Securely uploading blob files to Azure Storage from API Management]]></title>
-        <id>https://techcommunity.microsoft.com/t5/azure-paas-blog/securely-uploading-blob-files-to-azure-storage-from-api/ba-p/4011500</id>
-        <link href="https://techcommunity.microsoft.com/t5/azure-paas-blog/securely-uploading-blob-files-to-azure-storage-from-api/ba-p/4011500"/>
-        <updated>2023-12-27T07:43:43.000Z</updated>
-        <summary type="html"><![CDATA[Agenda
-This article will provide a demonstration on how to utilize either SAS token authentication or managed identity from API Management to make requests to Azure Storage. Furthermore, it will explore and compare the differences between these two options.
- 
-Comparision
-The choice between Managed Identity and SAS Token depends on factors such as the level of control required, the duration of access, and the specific security requirements of your application. Both options offer different levels of access control and security features for accessing Azure Storage.
- 
-Azure Managed Identity vs. SAS (Shared Access Signature) Token
-
-
-
-Authentication
-Advantage
-Disadvantage
-
-
-Azure Managed Identity
-
-
-Azure Managed Identity provides an automatic and seamless way to authenticate with Azure Storage.
-…]]></summary>
-        <author>
-            <name>Una_Chen</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[How to use Azure Front Door with Azure Kubernetes Service (Tips and Tricks)]]></title>
-        <id>https://techcommunity.microsoft.com/t5/azure-architecture-blog/how-to-use-azure-front-door-with-azure-kubernetes-service-tips/ba-p/4016519</id>
-        <link href="https://techcommunity.microsoft.com/t5/azure-architecture-blog/how-to-use-azure-front-door-with-azure-kubernetes-service-tips/ba-p/4016519"/>
-        <updated>2023-12-26T22:11:57.000Z</updated>
-        <summary type="html"><![CDATA[As its definition says – “Azure Front Door is a global, scalable, and secure entry point for fast delivery of your web applications. It offers dynamic site acceleration, SSL offloading, domain and certificate management, application firewall, and URL-based routing”. We can consider this as an Application Gateway at global scale with CDN profile thrown in to spice it up. AGIC or Application Gateway as Ingress Controller is already available and widely used. I received this question recently, asking whether Azure Front Door can be used in the same way. I didn’t have to reinvent the wheel as so many blog posts and YouTube videos are already there on this topic.  In this article, I will only discuss different options to implement Azure Front Door with AKS and will add some critical tips you sh…]]></summary>
-        <author>
-            <name>pranabpaul</name>
         </author>
     </entry>
 </feed>
