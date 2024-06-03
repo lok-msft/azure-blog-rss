@@ -2,10 +2,41 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2024-06-02T01:11:34.410Z</updated>
+    <updated>2024-06-03T01:08:35.567Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Azure PostgreSQL, Entra ID Authentication and .NET]]></title>
+        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/azure-postgresql-entra-id-authentication-and-net/ba-p/4158132</id>
+        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/azure-postgresql-entra-id-authentication-and-net/ba-p/4158132"/>
+        <updated>2024-06-03T00:25:55.000Z</updated>
+        <summary type="html"><![CDATA[I'm currently working on a project in which we are using Entra ID rather than a traditional Postgre username and password. This is a great way to secure your database and ensure that only the right people have access to it.
+Note: For the purpose of this article, I'm going to use Entra ID to refer to a user identity, as well as a managed identity such as a service principal, as the approach is the same in this context here.
+The above linked documentation covers how you would setup the Azure resource with Entra ID as the authentication mode, so I won't go over that here (also, you can configure that when you initial create the database, or using a Bicep script), instead I want to look at how we use that in a .NET application, because when you're connecting using Entra ID you don't have a pas…]]></summary>
+        <author>
+            <name>aaronpowell</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[DevOps in the era of Generative AI: Foundations of LLMOps]]></title>
+        <id>https://techcommunity.microsoft.com/t5/educator-developer-blog/devops-in-the-era-of-generative-ai-foundations-of-llmops/ba-p/4154928</id>
+        <link href="https://techcommunity.microsoft.com/t5/educator-developer-blog/devops-in-the-era-of-generative-ai-foundations-of-llmops/ba-p/4154928"/>
+        <updated>2024-06-02T07:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Spotlight on AI in your DevOps Lifecycle
+
+
+Explore the transformative power of artificial intelligence in DevOps with our comprehensive series, "Spotlight on AI in Your DevOps Lifecycle." This series delves into the integration of AI into every stage of the DevOps process, providing invaluable insights and practical guidance. Whether you're a seasoned professional or new to the field, these episodes will equip you with the knowledge to leverage AI effectively in your development and operations lifecycle.Speakers
+
+ 
+Sessions: Register Now. https://aka.ms/DevOpsAISeries
+ 
+
+DevOps in the era of Generative AI: Foundations of LLMOpsWith the advent of generative AI, the development life cycle of intelligent applications has undergone a significant change. This shift from classical ML to LLMs-bas…]]></summary>
+        <author>
+            <name>Lee Stott</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Navigating the Future with Microsoft Copilot]]></title>
         <id>https://techcommunity.microsoft.com/t5/educator-developer-blog/navigating-the-future-with-microsoft-copilot/ba-p/4153935</id>
@@ -16408,85 +16439,6 @@ The post Deprecation of entity-based contextual Outlook add-ins appeared first o
 Each Azure Policy assignment can be associated with only one managed identity and, after adding a managed identity to policy assignment, it is possible to edit only some managed identity related settings of the policy assignment. For instance, the type of managed identity can be switched from system assigned and user assigned, but if a system assign…]]></summary>
         <author>
             <name>joaosa</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Armchair Architects: Artificial Intelligence, Large Language Models, and Architects (Part 2 of 2)]]></title>
-        <id>https://techcommunity.microsoft.com/t5/azure-architecture-blog/armchair-architects-artificial-intelligence-large-language/ba-p/4021824</id>
-        <link href="https://techcommunity.microsoft.com/t5/azure-architecture-blog/armchair-architects-artificial-intelligence-large-language/ba-p/4021824"/>
-        <updated>2024-01-04T23:02:32.000Z</updated>
-        <summary type="html"><![CDATA[Large Language Models: A Deep Dive
-Welcome to the second part of our exploration into large language models. In this episode, we delve deeper into the intricacies of these models, discussing everything from the formulation of effective prompts to the phenomenon of hallucinations with our host David Blank-Edelman and our armchair architects Uli Homann and Eric Charran.
- 
-Crafting Effective Prompts
-One of the key aspects of working with large language models is the ability to craft effective prompts. These prompts need to be suitably constrained to elicit useful responses. For instance, an architect might want to ask for a solution architecture perspective response that meets specific functional and non-functional requirements.
- 
-Eric used an example where he prompted “from a software archit…]]></summary>
-        <author>
-            <name>AriyaKhamvongsa</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Armchair Architects: Artificial Intelligence, Large Language Models, and Architects (Part 1 of 2)]]></title>
-        <id>https://techcommunity.microsoft.com/t5/azure-architecture-blog/armchair-architects-artificial-intelligence-large-language/ba-p/4021819</id>
-        <link href="https://techcommunity.microsoft.com/t5/azure-architecture-blog/armchair-architects-artificial-intelligence-large-language/ba-p/4021819"/>
-        <updated>2024-01-04T23:01:58.000Z</updated>
-        <summary type="html"><![CDATA[Welcome back to the fourth season of Armchair Architects! You asked for more, and we’re here to deliver. This season, we’re diving deep into the world of Artificial Intelligence (AI), specifically focusing on large language models (LLMs) with our host David Blank-Edelman and our armchair architects Uli Homann and Eric Charran.
- 
-Our conversation kicks off with Eric and Uli, two seasoned architects, discussing their experiences with ChatGPT and Bard. The topic of discussion? Large Language Models (LLMs), a term you’ll hear a lot throughout the season.
- 
-Eric shares his disruptive experience with these hosted foundational models, like ChatGPT, which have changed our lives in unexpected and delightful ways. The most impactful way he’s seen it affect his work as an architect is in supporting h…]]></summary>
-        <author>
-            <name>AriyaKhamvongsa</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Azure Stream Analytics No-code Editor: new features and improvements in Jan 2024]]></title>
-        <id>azure-stream-analytics-nocode-editor-new-features-and-improvements-in-jan-2024</id>
-        <link href="https://azure.microsoft.com/en-us/updates/azure-stream-analytics-nocode-editor-new-features-and-improvements-in-jan-2024/"/>
-        <updated>2024-01-04T17:00:40.000Z</updated>
-        <summary type="html"><![CDATA[Enhancements and new features have been introduced to the Stream Analytics no-code editor, accessible through both the Azure Event Hubs portal and the Azure Stream Analytics portal. These updates aim to deliver a more intuitive and user-friendly experience for users.]]></summary>
-        <author>
-            <name>Azure service updates</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Azure Spring Apps Enterprise is now eligible for Azure savings plan for compute]]></title>
-        <id>asaesavingsplan</id>
-        <link href="https://azure.microsoft.com/en-us/updates/asaesavingsplan/"/>
-        <updated>2024-01-04T17:00:40.000Z</updated>
-        <summary type="html"><![CDATA[Enjoy up to 47% savings when you commit to Azure savings plan for Azure Spring Apps Enterprise.]]></summary>
-        <author>
-            <name>Azure service updates</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Azure Spring Apps Enterprise is now eligible for Azure savings plan for compute]]></title>
-        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/azure-spring-apps-enterprise-is-now-eligible-for-azure-savings/ba-p/4021532</id>
-        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/azure-spring-apps-enterprise-is-now-eligible-for-azure-savings/ba-p/4021532"/>
-        <updated>2024-01-04T17:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Azure Spring Apps Enterprise plan is now eligible for Azure savings plan for compute!
- 
-All Azure Spring Apps regions under the Enterprise plan are eligible for substantial cost savings – 20% for one year and 47% for three years – when you commit to Azure savings Plan.
- 
-Committing to the savings plan allows you to get savings, up to the hourly commitment amount, on the resources you use. You can choose to pay all at once or monthly. The best part? Turning on the Savings Plan will not mess with your current set-ups or apps. You just get the savings while everything runs as usual. If you are running big apps, this plan can optimize your investments. It brings down your overall costs for using Azure Spring Apps Enterprise. 
- 
-
- 
-Here is an example of how Azure savings plan for compute works.…]]></summary>
-        <author>
-            <name>sonjagu</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Azure Cosmos DB design patterns – Part 4: Global distributed lock]]></title>
-        <id>https://devblogs.microsoft.com/cosmosdb/?p=7441</id>
-        <link href="https://devblogs.microsoft.com/cosmosdb/azure-cosmos-db-design-patterns-part-4-global-distributed-lock/"/>
-        <updated>2024-01-04T15:15:34.000Z</updated>
-        <summary type="html"><![CDATA[Over the years, customers have asked us for help in designing applications around specific scenarios they were trying to achieve. In some cases, these centered around implementing certain patterns using a JSON-based NoSQL database. Some of these patterns are very common in the NoSQL world,
-The post Azure Cosmos DB design patterns – Part 4: Global distributed lock appeared first on Azure Cosmos DB Blog.]]></summary>
-        <author>
-            <name>Jay Gordon</name>
         </author>
     </entry>
 </feed>
