@@ -2280,6 +2280,26 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/highlights-from-build-and-what-s-new-with-net/ba-p/4158224",
+          "author": "mpgraven",
+          "description": "Last month’s Microsoft Build event featured exciting announcements and in-depth sessions on the latest developer tools and technologies. Throughout June, we’re looking at highlights from Microsoft Build. Explore news, challenges, training, and announcements. Get started with Dev Box, find out how to build cloud-native apps with the new .NET Aspire, build a custom copilot, and join a challenge to keep building new skills. \n \nMicrosoft Learn Challenge: Build EditionAre you ready for the Microsoft Learn Challenge: Build Edition? Immerse yourself in Azure AI, Copilot, GitHub, and Microsoft Fabric to elevate and learn new skills. Challenge runs through June 21. Start today.\n \nAnnouncing: .NET Aspire is now availableEasily build cloud-native apps with intuitive orchestration tools, comprehensive…",
+          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/highlights-from-build-and-what-s-new-with-net/ba-p/4158224",
+          "publishedOn": "2024-06-03T06:34:23.000Z",
+          "wordCount": 9461,
+          "title": "Highlights from Build and what’s new with .NET",
+          "imageUrl": "https://cdn.techcommunity.microsoft.com/assets/Azure/BlogPreview_default-blue.png"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/use-microsoft-entra-to-connect-azure-database-for-mysql-via/ba-p/4157693",
+          "author": "theringe",
+          "description": "TOC\n\nWhy we use it\nArchitecture\nHow to use it\nReferences\n\n \nWhy we use it\nAn increasing number of security vulnerabilities are caused by sensitive information in the source code being leaked or accidentally uploaded to open repositories GitHub, leading to the exposure of a large amount of user privacy. This information includes, but is not limited to, database credentials, app keys, etc. Traditional MySQL databases use usernames and passwords for login operations, naturally leading to the inclusion of these credentials in project configuration files. Even with proper safeguards, there remain unpredictable risks, such as hacking.\n \nThis tutorial will introduce how to integrate Microsoft Entra with Azure Database for MySQL to avoid using fixed usernames and passwords. By utilizing system-ass…",
+          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/use-microsoft-entra-to-connect-azure-database-for-mysql-via/ba-p/4157693",
+          "publishedOn": "2024-06-03T01:25:04.000Z",
+          "wordCount": 10233,
+          "title": "Use Microsoft Entra to connect Azure Database for MySQL via Function App",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/588040iE2F55B4149965AEB/image-size/original?v=v2&px=-1"
+        },
+        {
           "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/azure-postgresql-entra-id-authentication-and-net/ba-p/4158132",
           "author": "aaronpowell",
           "description": "I'm currently working on a project in which we are using Entra ID rather than a traditional Postgre username and password. This is a great way to secure your database and ensure that only the right people have access to it.\nNote: For the purpose of this article, I'm going to use Entra ID to refer to a user identity, as well as a managed identity such as a service principal, as the approach is the same in this context here.\nThe above linked documentation covers how you would setup the Azure resource with Entra ID as the authentication mode, so I won't go over that here (also, you can configure that when you initial create the database, or using a Bicep script), instead I want to look at how we use that in a .NET application, because when you're connecting using Entra ID you don't have a pas…",
@@ -3638,16 +3658,6 @@
           "wordCount": 10387,
           "title": "Domain and certificate bindings for IDN hostnames in Azure App Service",
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/538523iF1F70D4EC15DEF52/image-size/original?v=v2&px=-1"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/deploy-tensorflow-machine-learning-models-on-azure-container/ba-p/3981763",
-          "author": "owaino",
-          "description": "Introduction\n \nOrganisations are increasingly understanding the value that machine learning and artificial intelligence can deliver across all industries. Subsequently those organisations are also evaluating how to move machine learning projects from experimental stages to production. This surge in AI/ML interest also comes at a time when businesses are prioritising cost optimization of new and existing technology projects.\n \nFrequently customers I am speaking too are asking how they can deploy reliable, robust and cost effective deployment platforms for moving machine learning models into production. Customers using Azure to deploy CPU based ML models have a few different options, batch endpoints on Azure Machine Learning, AKS for those familiar with running enterprise Kubernetes and Azur…",
-          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/deploy-tensorflow-machine-learning-models-on-azure-container/ba-p/3981763",
-          "publishedOn": "2024-01-05T17:10:45.000Z",
-          "wordCount": 12077,
-          "title": "Deploy Tensorflow Machine Learning models on Azure Container Apps",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/525853i4D00E9F7B5455D34/image-size/original?v=v2&px=-1"
         }
       ]
     },
@@ -5156,16 +5166,6 @@
           "wordCount": 9717,
           "title": "Who Deleted a Blob?",
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/512294iC6A82145E47F9C45/image-size/original?v=v2&px=-1"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/azure-paas-blog/change-azure-policy-assignment-s-system-assigned-managed/ba-p/3998027",
-          "author": "joaosa",
-          "description": "When Azure Policy starts a template deployment when evaluating deployIfNotExists policies or modifies a resource when evaluating modify policies, it does so using a managed identity that is associated with the policy assignment. Policy assignments use managed identities for Azure resource authorization. You can use either a system-assigned managed identity that is created by the policy service or a user-assigned identity provided by the user.\n \nEach Azure Policy assignment can be associated with only one managed identity and, after adding a managed identity to policy assignment, it is possible to edit only some managed identity related settings of the policy assignment. For instance, the type of managed identity can be switched from system assigned and user assigned, but if a system assign…",
-          "link": "https://techcommunity.microsoft.com/t5/azure-paas-blog/change-azure-policy-assignment-s-system-assigned-managed/ba-p/3998027",
-          "publishedOn": "2024-01-05T14:14:36.000Z",
-          "wordCount": 10915,
-          "title": "Change Azure Policy assignment's system assigned managed identity location",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/534788i02A4EDA0EDAB34EA/image-size/original?v=v2&px=-1"
         }
       ]
     },
@@ -6128,6 +6128,16 @@
       "feedUrl": "https://devblogs.microsoft.com/java/feed/",
       "siteUrl": "https://devblogs.microsoft.com/java/",
       "articles": [
+        {
+          "id": "https://devblogs.microsoft.com/java/?p=230932",
+          "author": "Nick Zhu",
+          "description": "Hi everyone, welcome to the May update for Visual Studio Code for Java! In this blog we are going to share an exciting new AI related feature for Java developers on Visual Studio Code. In addition, there will be several important Spring updates,\nThe post Java on Visual Studio Code Update – May 2024 appeared first on Microsoft for Java Developers.",
+          "link": "https://devblogs.microsoft.com/java/java-on-visual-studio-code-update-may-2024/",
+          "publishedOn": "2024-06-03T09:43:18.000Z",
+          "wordCount": 5892,
+          "title": "Java on Visual Studio Code Update – May 2024",
+          "imageUrl": "https://devblogs.microsoft.com/java/wp-content/uploads/sites/51/2024/05/202406eng.png"
+        },
         {
           "id": "https://devblogs.microsoft.com/java/?p=231049",
           "author": "Cesar Soares",
@@ -7775,6 +7785,36 @@
       "feedUrl": "https://azurecomcdn.azureedge.net/en-us/updates/feed/?updateType=features",
       "siteUrl": "https://azure.microsoft.com/en-us/updates/",
       "articles": [
+        {
+          "id": "added-support-for-azure-monitor-log-search-alert-rules-in-resource-health",
+          "author": null,
+          "description": "Azure Resource Health helps you diagnose and get support for service problems that affect your Azure resources. Azure Resource Health now supports log search alert rules, so that you can use the activity log to check the health status of your log search alert rules.",
+          "link": "https://azure.microsoft.com/en-us/updates/added-support-for-azure-monitor-log-search-alert-rules-in-resource-health/",
+          "publishedOn": "2024-06-03T17:21:00.000Z",
+          "wordCount": 5506,
+          "title": "Added support for Azure Monitor log search alert rules in Resource Health",
+          "imageUrl": "/azurecdn/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "log-search-alert-rules-using-linked-storage-will-require-using-a-managed-identity-staring-july-2024",
+          "author": null,
+          "description": "Starting July 2024, alert rules using linked storage will require a managed identity to access the linked storage. This requirement will be enforced on alert rules created with API version 2023-12-01 or newer. Creating or updating linked storage rules using an older API version will be blocked.",
+          "link": "https://azure.microsoft.com/en-us/updates/log-search-alert-rules-using-linked-storage-will-require-using-a-managed-identity-staring-july-2024/",
+          "publishedOn": "2024-06-03T16:12:19.000Z",
+          "wordCount": 5685,
+          "title": "Log search alert rules using linked storage will require using a managed identity staring July 2024",
+          "imageUrl": "/azurecdn/images/shared/social/azure-icon-250x250.png"
+        },
+        {
+          "id": "general-availability-audit-logging-in-azure-api-management-developer-portal",
+          "author": null,
+          "description": "We are excited to announce that audit logging for user actions in the Azure API Management developer portal is now generally available. API administrators and managers can now enable a diagnostic setting in Azure API Management to send developer portal audit logs to a storage account, event hub, or Log Analytics workspace.",
+          "link": "https://azure.microsoft.com/en-us/updates/general-availability-audit-logging-in-azure-api-management-developer-portal/",
+          "publishedOn": "2024-06-03T16:00:10.000Z",
+          "wordCount": 5506,
+          "title": "General Availability: Audit logging in Azure API Management developer portal",
+          "imageUrl": "/azurecdn/images/shared/social/azure-icon-250x250.png"
+        },
         {
           "id": "public-preview-analyze-data-using-log-analytics-simple-mode",
           "author": null,
@@ -11203,6 +11243,16 @@
       "siteUrl": "https://devblogs.microsoft.com/microsoft365dev/",
       "articles": [
         {
+          "id": "https://devblogs.microsoft.com/microsoft365dev/?p=21700",
+          "author": "Junjie Li",
+          "description": "Explore how Teams Toolkit can help you build your own custom copilot.\nThe post Build intelligent apps for Microsoft 365 with Teams Toolkit appeared first on Microsoft 365 Developer Blog.",
+          "link": "https://devblogs.microsoft.com/microsoft365dev/build-intelligent-apps-for-microsoft-365-with-teams-toolkit/",
+          "publishedOn": "2024-06-03T17:10:46.000Z",
+          "wordCount": 5043,
+          "title": "Build intelligent apps for Microsoft 365 with Teams Toolkit",
+          "imageUrl": "https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2024/06/06032024-scaled.jpg"
+        },
+        {
           "id": "https://devblogs.microsoft.com/microsoft365dev/?p=21754",
           "author": "Kashif Qureshi",
           "description": "Learn about the exciting new features in Fluid Framework 2 including SharedTree DDS, SharePoint Embedded support, Fluid DevTools, and more.\nThe post Fluid Framework 2 generally available in June appeared first on Microsoft 365 Developer Blog.",
@@ -11791,36 +11841,6 @@
           "wordCount": 5090,
           "title": "Announcing Fluid Framework 2.0 Beta",
           "imageUrl": "https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2024/01/FluidFrameworkBeta2.0-scaled.jpg"
-        },
-        {
-          "id": "https://devblogs.microsoft.com/microsoft365dev/?p=17496",
-          "author": "Richa Misra",
-          "description": "At Ignite, we introduced a brand-new security capability to ensure additional data security measures for your Microsoft 365 datasets. We are happy to share that it is now generally available.\nThe post Custom encryption with customer owned keys now generally available appeared first on Microsoft 365 Developer Blog.",
-          "link": "https://devblogs.microsoft.com/microsoft365dev/custom-encryption-with-customer-owned-keys-now-generally-available/",
-          "publishedOn": "2024-01-05T21:00:09.000Z",
-          "wordCount": 4821,
-          "title": "Custom encryption with customer owned keys now generally available",
-          "imageUrl": "https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2024/01/image.jpg"
-        },
-        {
-          "id": "https://devblogs.microsoft.com/microsoft365dev/?p=17378",
-          "author": "Sam Ramon",
-          "description": "Today, we’re announcing that entity-based contextual add-ins in Outlook will be deprecated in Q2 of 2024.\nThe post Retirement of entity-based contextual Outlook add-ins appeared first on Microsoft 365 Developer Blog.",
-          "link": "https://devblogs.microsoft.com/microsoft365dev/retirement-of-entity-based-contextual-outlook-add-ins/",
-          "publishedOn": "2024-01-05T16:30:06.000Z",
-          "wordCount": 4892,
-          "title": "Retirement of entity-based contextual Outlook add-ins",
-          "imageUrl": "https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2024/01/updated-scaled.jpg"
-        },
-        {
-          "id": "https://devblogs.microsoft.com/microsoft365dev/?p=17378",
-          "author": "Sam Ramon",
-          "description": "Today, we’re announcing that entity-based contextual add-ins in Outlook will be deprecated in Q2 of 2024.\nThe post Deprecation of entity-based contextual Outlook add-ins appeared first on Microsoft 365 Developer Blog.",
-          "link": "https://devblogs.microsoft.com/microsoft365dev/deprecation-of-entity-based-contextual-outlook-add-ins/",
-          "publishedOn": "2024-01-05T16:30:06.000Z",
-          "wordCount": 4596,
-          "title": "Deprecation of entity-based contextual Outlook add-ins",
-          "imageUrl": "https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2023/01/OutlookAddIns-scaled.jpg"
         }
       ]
     }
