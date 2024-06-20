@@ -2,10 +2,121 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2024-06-19T01:09:15.892Z</updated>
+    <updated>2024-06-20T01:07:28.596Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Enhancing Performance in Azure Container Apps]]></title>
+        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/enhancing-performance-in-azure-container-apps/ba-p/4171138</id>
+        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/enhancing-performance-in-azure-container-apps/ba-p/4171138"/>
+        <updated>2024-06-19T21:09:36.000Z</updated>
+        <summary type="html"><![CDATA[Azure Container Apps is a powerful platform for running serverless, containerized applications and microservices. In the team’s ongoing commitment to improving Azure Container Apps’ performance, we’ve recently made significant improvements to make the scaling and load balancing behavior of Azure Container Apps more intuitive and better align with customer expectations to meet their performance needs.
+ 
+Hopefully, some of the insights from our experience in working with Envoy and KEDA will be helpful to you.
+ 
+Load Balancing Algorithm Update
+In the past, Azure Container Apps relied on the ring hash load balancing algorithm to distribute incoming requests across containers. Ring hash aims for minimal distribution by generating a hash based on request properties to match it with a stable upst…]]></summary>
+        <author>
+            <name>Cary_Chai</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[A/B Testing, Session Affinity & Regional Rules for Multi-region AKS clusters with Azure Front Door]]></title>
+        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/a-b-testing-session-affinity-amp-regional-rules-for-multi-region/ba-p/4088901</id>
+        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/a-b-testing-session-affinity-amp-regional-rules-for-multi-region/ba-p/4088901"/>
+        <updated>2024-06-19T18:31:35.000Z</updated>
+        <summary type="html"><![CDATA[In this article we will explore how A/B testing in multi-region environments can be performed leveraging Front Door session affinity and an ingress controller to ensure consistent user pools as we scale up our traffic. We will also explore how we can use origin group rewrite rules on existing paths to ensure traffic is routed for specific user sets to specific locations.
+ 
+Azure Front Door Rulesets and Session Affinity
+ 
+Azure Front Door is a content delivery network (CDN) that provides fast, reliable and secure access between users and applications using edge locations across the globe. Front Door, in this instance is used to route traffic across the globe between the two regionally isolated AKS clusters. Front Door also supports usage of a Web Application Firewall, custom domains and rew…]]></summary>
+        <author>
+            <name>owaino</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Announcing the General Availability of Change Actor]]></title>
+        <id>https://techcommunity.microsoft.com/t5/azure-governance-and-management/announcing-the-general-availability-of-change-actor/ba-p/4171801</id>
+        <link href="https://techcommunity.microsoft.com/t5/azure-governance-and-management/announcing-the-general-availability-of-change-actor/ba-p/4171801"/>
+        <updated>2024-06-19T16:53:50.000Z</updated>
+        <summary type="html"><![CDATA[Change Analysis 
+Identifying who made a change to your Azure resources and how the change was made just became easier! With Change Analysis, you can now see who initiated the change and with which client that change was made, for changes across all your tenants and subscriptions.  
+  
+Audit, troubleshoot, and govern at scale   
+Changes should be available in under five minutes and are queryable for fourteen days. In addition, this support includes the ability to craft charts and pin results to Azure dashboards based on specific change queries.   
+  
+What’s new: Actor Functionality   
+
+Who made the change 
+
+This can be either ‘AppId’ (client or Azure service) or email-ID of the user 
+changedBy: elizabeth@contoso.com 
+
+
+
+
+       With which client the change was made 
+
+clientType: Azure Porta…]]></summary>
+        <author>
+            <name>IanCarter</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[5 ways to dramatically speed up your cloud application teams]]></title>
+        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/5-ways-to-dramatically-speed-up-your-cloud-application-teams/ba-p/4171700</id>
+        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/5-ways-to-dramatically-speed-up-your-cloud-application-teams/ba-p/4171700"/>
+        <updated>2024-06-19T15:52:06.000Z</updated>
+        <summary type="html"><![CDATA[Working with applications teams and partners developing cloud native apps on Azure, you quickly learn developer time is valuable, enthusiasm & flow state is critically important.
+ 
+Whenever an application team has to wait for an environment, wait for a access, a service now ticket, a support case, admin access to install tooling, productivity is dramatically effected, projects can be 2x longer and of lower quality.
+ 
+Equally, it's important to have a designed, governed secure environment when using the public cloud, so your workload teams start right, and stay right! This covers all the normal design pillars of a well architected solution, reliability, security, cost and performance.
+ 
+Application teams work best when they can select their preferred platform services, tooling, languages an…]]></summary>
+        <author>
+            <name>Keith Howling</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Azure Functions triggers and bindings for building intelligent apps with Azure OpenAI]]></title>
+        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/azure-functions-triggers-and-bindings-for-building-intelligent/ba-p/4164385</id>
+        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/azure-functions-triggers-and-bindings-for-building-intelligent/ba-p/4164385"/>
+        <updated>2024-06-19T14:25:36.000Z</updated>
+        <summary type="html"><![CDATA[Azure Functions triggers and bindings for building intelligent apps with Azure OpenAI
+ 
+Over the last year, we have seen a large interest from customers to bring intelligence to their existing and new applications based on the innovation that has recently occurred in artificial intelligence and particularly Azure OpenAI.
+ 
+After working with customers, a few common challenges have shown up when building these intelligent applications.
+
+Developers often feel that they need to become AI engineers to integrate the capabilities into their application.
+Most of the samples are in languages like Python and this is often not the expertise of the existing developers or what the organizations' applications are built with.
+Developers also find it difficult to know how successful their integration usi…]]></summary>
+        <author>
+            <name>Eamon O'Reilly</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Markdown Language: An Essential Tool for Programmers]]></title>
+        <id>https://techcommunity.microsoft.com/t5/educator-developer-blog/markdown-language-an-essential-tool-for-programmers/ba-p/4168565</id>
+        <link href="https://techcommunity.microsoft.com/t5/educator-developer-blog/markdown-language-an-essential-tool-for-programmers/ba-p/4168565"/>
+        <updated>2024-06-19T07:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Hello, I am Anas Abuelhaag, a Microsoft Student Ambassador from Egypt, currently pursuing a degree in Software Engineering.
+Imagine you've written a code that prints "hello world."
+ 
+Next, you decide to upload it onto GitHub, To showcase your work, but hold on a sec, before you commit, Markdown is here to make writing. Markdown makes writing you documentation a joy, a breeze.
+Why is Markdown Important in Programming?
+
+Readability and Simplicity: Easy to see,Markdown's syntax is simple as can be.
+Documentation: For docs, it's the king,Helping you write almost anything.
+Version Control: In Git, it's a must,For messages and logs, in Markdown we trust.
+Portability: Plain text files that move,Across platforms and tools, they easily groove.
+Community and Ecosystem: Tools abound,In GitHub and mor…]]></summary>
+        <author>
+            <name>anaselhaag</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Generative AI Technical Patterns: Chat with Your Data]]></title>
         <id>https://techcommunity.microsoft.com/t5/azure-architecture-blog/generative-ai-technical-patterns-chat-with-your-data/ba-p/4167768</id>
@@ -46,6 +157,18 @@ If I have a working prototype, how fast can I scale it to production?
 You don't want to be outpaced by competitors or newer technologies, and you want to be able to quickly iterate on your ideas or pivot to new ones. This is where LangChain.js comes in. It's a framework that allows you to build AI applications very little adherence to the underlying AI technologies and tools. It abstracts some of the complexity of AI development, allowing you to focus on the business …]]></summary>
         <author>
             <name>sinedied</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Matter WakeUp System AI]]></title>
+        <id>https://techcommunity.microsoft.com/t5/educator-developer-blog/matter-wakeup-system-ai/ba-p/4167129</id>
+        <link href="https://techcommunity.microsoft.com/t5/educator-developer-blog/matter-wakeup-system-ai/ba-p/4167129"/>
+        <updated>2024-06-18T07:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Project Overview
+Developed in partnership with UCL, Great Ormond Street Hospital (GOSH) and Intel, the WakeUp System provides reassurance and support to patients with disabilities in long-term care and the elderly. As mentioned previously, one of the system's main objectives is to enable them to autonomously control their environment, and it is designed for use in both hospital and home settings. Moreover, the project encompasses a research study in Intel's new OpenVINO project.
+The system architecture is divided into three parts: triggers, targets and the WakeUp system. The WakeUp system acts as a message broker, connecting a patient's commands to an appropriate target device and enabling actions to be performed. The system can be configured by a healthcare professional or by the patient …]]></summary>
+        <author>
+            <name>davidfrischer</name>
         </author>
     </entry>
     <entry>
@@ -16217,122 +16340,6 @@ Understanding the deployment process
 Deployment is completed in two steps: first, the target environment and configuration are validated, then the validated configuration is applied to the …]]></summary>
         <author>
             <name>mtbmsft</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Consolidating CSV results files in Azure Load Testing]]></title>
-        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/consolidating-csv-results-files-in-azure-load-testing/ba-p/4033332</id>
-        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/consolidating-csv-results-files-in-azure-load-testing/ba-p/4033332"/>
-        <updated>2024-01-22T11:42:37.000Z</updated>
-        <summary type="html"><![CDATA[Azure Load Testing (ALT) provides a rich and consolidated dashboard to analyze your load test results. However, you can also download or export the test results, build your own dashboards and reporting, for example, using Microsoft Excel or Power BI. You can also use JMeter backend listeners to write the results to a data store of your choice and analyze the data.
-When you use the download results option, the ALT service splits the results into one CSV file per engine. This ensures that the file size is not huge, and it is easy to open the files in tools like notepad, excel to analyze the data. In cases where your input data is split across test engines, you can pick the results file for a specific engine and analyze.
- 
-
-
-If you want to get one consolidated view of the test run results in …]]></summary>
-        <author>
-            <name>Nagarjuna_V</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Empowering Healthcare with Innovative Solutions: A Microsoft Power Apps Project (UCL x NHS)]]></title>
-        <id>https://techcommunity.microsoft.com/t5/educator-developer-blog/empowering-healthcare-with-innovative-solutions-a-microsoft/ba-p/4035630</id>
-        <link href="https://techcommunity.microsoft.com/t5/educator-developer-blog/empowering-healthcare-with-innovative-solutions-a-microsoft/ba-p/4035630"/>
-        <updated>2024-01-22T08:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Introduction:
-Greetings, fellow enthusiasts of technology and innovation! Today, I'm excited to share an incredible journey undertaken by our team of four UCL MSc Computer Science students. Over the past three months, we've had the privilege of working on three transformative projects aimed at optimizing healthcare operations using Microsoft Power Platform. Allow me to take you through the remarkable venture that is Bed Management Power Apps, TasCare, and E-Rostering Power Apps.
- 
-Meet the Team:
-Before we dive into the projects, let me introduce our talented team:
-1. Judy Chin- LinkedIn: https://www.linkedin.com/in/judy-giaying-chin/- Project team lead; Developer of TasCare
-2. Lee-Yu Yeh- LinkedIn: https://www.linkedin.com/in/leeyu-yeh-67378b20a/ - Developer of E-Rostering Manager App
-3. T…]]></summary>
-        <author>
-            <name>JudyGiaYingChin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Send HTTP 2.0 Request to App Service using C#]]></title>
-        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/send-http-2-0-request-to-app-service-using-c/ba-p/4034469</id>
-        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/send-http-2-0-request-to-app-service-using-c/ba-p/4034469"/>
-        <updated>2024-01-22T07:31:43.000Z</updated>
-        <summary type="html"><![CDATA[Azure App Service supports HTTP 2.0. The major advance of HTTP/1.1 was the use of persistent connections to service multiple requests in a row. In HTTP/2, a persistent connection can be used to service multiple simultaneous requests. 
- 
-This blog will demonstrate how you can send HTTP 2.0 Request to app service for testing using C#:
- 
-Step 1:
-Go to > App Service > Configuration > Enable HTTP 2.0
-
- 
-Step 2:
-Create a .Net Core Console Application / Web Application as per requirement . In this example I have taken a .Net Core Console Application:
- 
- 
-var client = new HttpClient() { BaseAddress = new Uri("https://<>.azurewebsites.net") };
-
-            Console.WriteLine("Sending HTTP 2.0 Request.");
-
-            // HTTP/2 request
-            using (var request = new HttpRequestMessage(HttpMethod.Get, "/") { Version = new Version(2, 0) })
-            using (var response = await client.SendAsync(request))
-                Console.WriteLine(response);
-
-
- 
- 
-The HTTPClient class has DefaultRequestVersion property with which you can set the default version of the requests as below:
- 
- 
-var SecondRequest = new HttpClient()
-            {
-                BaseAddress = new Uri("https://<>.azurewebsites.net"),
-                DefaultRequestVersion = new Version(2, 0)
-            };
-
-            // HTTP/2 is default
-            using (var response = await SecondRequest.GetAsync("/"))
-                Console.WriteLine(response);
- 
- 
-You should be able to see a successful HTTP Response once the code executes:
- 
-
- 
-For more information you can refer the below documents:
-
-HttpClient Class (System.Net.Http) | Microsoft Learn
-HttpClient.DefaultRequestVersion Property (System.Net.Http) | Microsoft Learn
-
-
-
-
-
-
-
- 
-If you have any other questions, feel free to comment below!]]></summary>
-        <author>
-            <name>AmritpalSinghNaroo</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[This Week in Spring - January 23rd, 2024]]></title>
-        <id>https://spring.io/blog/2024/01/22/this-week-in-spring-january-23rd-2024</id>
-        <link href="https://spring.io/blog/2024/01/22/this-week-in-spring-january-23rd-2024"/>
-        <updated>2024-01-22T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Level up your Java code and explore what Spring can do for you.]]></summary>
-        <author>
-            <name>Josh Long</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[CVE-2024-22233: Spring Framework server Web DoS Vulnerability]]></title>
-        <id>https://spring.io/blog/2024/01/22/cve-2024-22233-spring-framework-server-web-dos-vulnerability</id>
-        <link href="https://spring.io/blog/2024/01/22/cve-2024-22233-spring-framework-server-web-dos-vulnerability"/>
-        <updated>2024-01-22T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Level up your Java code and explore what Spring can do for you.]]></summary>
-        <author>
-            <name>Brian Clozel</name>
         </author>
     </entry>
     <entry>
