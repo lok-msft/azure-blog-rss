@@ -2,10 +2,80 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2024-06-20T01:07:28.596Z</updated>
+    <updated>2024-06-21T01:07:49.511Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Announcing TypeScript 5.5]]></title>
+        <id>https://devblogs.microsoft.com/typescript/?p=4270</id>
+        <link href="https://devblogs.microsoft.com/typescript/announcing-typescript-5-5/"/>
+        <updated>2024-06-20T18:16:11.000Z</updated>
+        <summary type="html"><![CDATA[Today we’re excited to announce the release of TypeScript 5.5!
+The post Announcing TypeScript 5.5 appeared first on TypeScript.]]></summary>
+        <author>
+            <name>Daniel Rosenwasser</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Fabric Security explained in a Layered Approach]]></title>
+        <id>https://techcommunity.microsoft.com/t5/fasttrack-for-azure/fabric-security-explained-in-a-layered-approach/ba-p/4170798</id>
+        <link href="https://techcommunity.microsoft.com/t5/fasttrack-for-azure/fabric-security-explained-in-a-layered-approach/ba-p/4170798"/>
+        <updated>2024-06-20T11:05:22.000Z</updated>
+        <summary type="html"><![CDATA[Overview
+
+As a SaaS service, Fabric offers a complete security package for the entire platform. The Fabric platform comprises of experiences like include Lakehouse, Data Factory, Synapse Data Engineering, Synapse Data Warehouse, Power BI, and others. To understand the security in Fabric we have broken down Fabric components into the following layers:
+
+Fabric Components
+
+
+Data - Where the data actually resides inside Fabric (Warehouse/Lakehouse/Eventhouse/OneLake/Fabric clusters)
+Items - These are the building blocks of the Fabric platform. They're the objects that you create and manage in Fabric. There are different types of items, such as data warehouses, data pipelines, semantic models, reports, and dashboards.
+Workspace - A logical is a collection of items that brings together different…]]></summary>
+        <author>
+            <name>Kruti_Mehta</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Simple Self-Troubleshooting Steps for Function App Not Seeing Triggers]]></title>
+        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/simple-self-troubleshooting-steps-for-function-app-not-seeing/ba-p/4167100</id>
+        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/simple-self-troubleshooting-steps-for-function-app-not-seeing/ba-p/4167100"/>
+        <updated>2024-06-20T08:16:18.000Z</updated>
+        <summary type="html"><![CDATA[Sometimes, on the Azure portal, you might see an error message on the Function App like "we were not able to load some functions in the list due to errors."
+
+ 
+There are many reasons for this symptom, such as connection errors with the storage account, runtime being down, indexing failure, and the synctriggers failure that we'll discuss.
+ 
+To confirm whether your issue is indeed due to synctriggers, you could press F12 in your browser to activate developer mode and search for the keyword "batch" under the "Network" tab. This endpoint is used by the Azure portal to call various internal services of the Function App (e.g., retrieving app settings, site information, getting host status, etc.), including synctriggers.
+ 
+Under the "Network" tab's "Payload" section, you can find these invocation…]]></summary>
+        <author>
+            <name>theringe</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Introducing Downloadable HTML report for Azure Load Testing]]></title>
+        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/introducing-downloadable-html-report-for-azure-load-testing/ba-p/4172241</id>
+        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/introducing-downloadable-html-report-for-azure-load-testing/ba-p/4172241"/>
+        <updated>2024-06-20T06:36:16.000Z</updated>
+        <summary type="html"><![CDATA[Azure Load Testing is a cloud-based service that helps you run performance and load tests on your web applications and APIs. You can easily create, configure, and execute load tests using JMeter scripts or custom code, and monitor the results in real-time on the Azure portal. You can also integrate your load tests with your CI/CD pipelines using Azure DevOps or GitHub actions.
+Until now, you could only view the load test results on the Azure portal, which required internet access and RBAC permissions. Now, you can download the report as an HTML file and share it with your stakeholders or teammates offline. The HTML report contains the same charts and metrics as the online report, but in a portable and convenient format.
+Why should you download an offline test report?
+By downloading your lo…]]></summary>
+        <author>
+            <name>SaloniAgrawal12</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[A Bootiful Podcast: Thomas Vitale, author of Cloud Native Spring in Action]]></title>
+        <id>https://spring.io/blog/2024/06/20/a-bootiful-podcast-thomas-vitale-author-of-cloud-native-spring-in-action</id>
+        <link href="https://spring.io/blog/2024/06/20/a-bootiful-podcast-thomas-vitale-author-of-cloud-native-spring-in-action"/>
+        <updated>2024-06-20T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Level up your Java code and explore what Spring can do for you.]]></summary>
+        <author>
+            <name>Josh Long</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Enhancing Performance in Azure Container Apps]]></title>
         <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/enhancing-performance-in-azure-container-apps/ba-p/4171138</id>
@@ -169,6 +239,16 @@ Developed in partnership with UCL, Great Ormond Street Hospital (GOSH) and Intel
 The system architecture is divided into three parts: triggers, targets and the WakeUp system. The WakeUp system acts as a message broker, connecting a patient's commands to an appropriate target device and enabling actions to be performed. The system can be configured by a healthcare professional or by the patient …]]></summary>
         <author>
             <name>davidfrischer</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Spring Tips: Introducing Spring Modulith]]></title>
+        <id>https://spring.io/blog/2024/06/20/spring-tips-introducing-spring-modulith</id>
+        <link href="https://spring.io/blog/2024/06/20/spring-tips-introducing-spring-modulith"/>
+        <updated>2024-06-18T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Level up your Java code and explore what Spring can do for you.]]></summary>
+        <author>
+            <name>Josh Long</name>
         </author>
     </entry>
     <entry>
@@ -16136,26 +16216,6 @@ The post A pro-code guide to build your custom copilot faster appeared first on 
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Performing simple FILE Storage REST API operations using CURL]]></title>
-        <id>https://techcommunity.microsoft.com/t5/azure-paas-blog/performing-simple-file-storage-rest-api-operations-using-curl/ba-p/4019533</id>
-        <link href="https://techcommunity.microsoft.com/t5/azure-paas-blog/performing-simple-file-storage-rest-api-operations-using-curl/ba-p/4019533"/>
-        <updated>2024-01-23T12:18:04.000Z</updated>
-        <summary type="html"><![CDATA[The blog aims to perform simple File storage REST API operations such as Create, Copy, Rename and Delete operations using CURL utility.Let’s look at some of the CURL command syntax to perform REST API operations and will be making use of SAS as the auth scheme. 
-We need to take care of the pointers below while performing the operations via CURL:
-
-Ensure the URL is formed correctly as per the operation you are trying to perform.
-The mandatory header needs to be passed and can be done using “-H” parameter.
-Ensure you are appending/removing extra ‘?’ to the SAS token in the URLs accordingly.
-Http verb can be GET, PUT or DELETE as provided by the CURL specifications.
-
-Note:
-If you employ an authentication mechanism different from SAS, please ensure that you are including the required headers.
-…]]></summary>
-        <author>
-            <name>ManjunathS</name>
-        </author>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[O Hackathon de Chat Inteligente da Microsoft]]></title>
         <id>https://techcommunity.microsoft.com/t5/educator-developer-blog/o-hackathon-de-chat-inteligente-da-microsoft/ba-p/4036122</id>
         <link href="https://techcommunity.microsoft.com/t5/educator-developer-blog/o-hackathon-de-chat-inteligente-da-microsoft/ba-p/4036122"/>
@@ -16179,20 +16239,6 @@ De 29 de janeiro a 12 de fevereiro, realizaremos transmissões ao vivo em inglê
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Persisting Data Volumes With .NET Aspire]]></title>
-        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/persisting-data-volumes-with-net-aspire/ba-p/4036980</id>
-        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/persisting-data-volumes-with-net-aspire/ba-p/4036980"/>
-        <updated>2024-01-23T03:28:35.000Z</updated>
-        <summary type="html"><![CDATA[This post is written against the .NET Aspire Preview 2 release, so it may change when the final version is released.
-Recently, I've been building an app using .NET Aspire which I'm using PostgreSQL as the database and Azure Storage Blobs and Queues in.
-.NET Aspire is awesome for this, as you can setup a developer inner loop super simply with the components that ship, and the nice thing about this is that locally PostgreSQL is run in a Docker container and Azure Storage uses the Azurite storage emulator (which also happens to run in a container).
-The problem with this is that when you restart your app, you lose all the data in the database and storage emulator, since they are started fresh each time.
-Turns out, it's a pretty easy fix - all that you need to do is mount a volume into the cont…]]></summary>
-        <author>
-            <name>aaronpowell</name>
-        </author>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[Azure Advisor integration with Azure Monitor Log Analytics Workspace]]></title>
         <id>laadvisor</id>
         <link href="https://azure.microsoft.com/en-us/updates/laadvisor/"/>
@@ -16206,95 +16252,6 @@ We in Azure Monitor believe that observability should be cost effective, and we 
 We have introduced several cost optimization related recommendations and added Azure Advisor to the Log Analytics Workspace admin experience. more recommendations are on the way.]]></summary>
         <author>
             <name>Azure service updates</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Infra in Azure for Developers - The How (Part 1)]]></title>
-        <id>https://techcommunity.microsoft.com/t5/microsoft-developer-community/infra-in-azure-for-developers-the-how-part-1/ba-p/4036531</id>
-        <link href="https://techcommunity.microsoft.com/t5/microsoft-developer-community/infra-in-azure-for-developers-the-how-part-1/ba-p/4036531"/>
-        <updated>2024-01-22T18:18:35.000Z</updated>
-        <summary type="html"><![CDATA[We've looked at the why and what of infra for developers so now it's time to put it into action with the how. What separates this from a more generic tutorial on Azure infra? This is not meant to cover the whole gamut of Azure services - it is intended to solve an isolated part of the puzzle; namely the deployment of developer output. You can certainly build on this or re-use for other purposes, but this isn't about creating a complete platform as such.
- 
-Disclaimer: While I strive to follow best practices the focus is on the concepts and not a battle hardened solution. This is not production grade.
- 
-Hammering out the infrastructure
-I noticed during production that this would become a rather lengthy post, so I have split things into two parts with this laying the foundation with regards t…]]></summary>
-        <author>
-            <name>Andreas Helland</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Infra in Azure for Developers - The How (Part 1)]]></title>
-        <id>https://techcommunity.microsoft.com/t5/azure-developer-community-blog/infra-in-azure-for-developers-the-how-part-1/ba-p/4036531</id>
-        <link href="https://techcommunity.microsoft.com/t5/azure-developer-community-blog/infra-in-azure-for-developers-the-how-part-1/ba-p/4036531"/>
-        <updated>2024-01-22T18:18:35.000Z</updated>
-        <summary type="html"><![CDATA[We've looked at the why and what of infra for developers so now it's time to put it into action with the how. What separates this from a more generic tutorial on Azure infra? This is not meant to cover the whole gamut of Azure services - it is intended to solve an isolated part of the puzzle; namely the deployment of developer output. You can certainly build on this or re-use for other purposes, but this isn't about creating a complete platform as such.
- 
-Disclaimer: While I strive to follow best practices the focus is on the concepts and not a battle hardened solution. This is not production grade.
- 
-Hammering out the infrastructure
-I noticed during production that this would become a rather lengthy post, so I have split things into two parts with this laying the foundation with regards t…]]></summary>
-        <author>
-            <name>Andreas Helland</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Infra in Azure for Developers - The How (Part 1)]]></title>
-        <id>https://techcommunity.microsoft.com/t5/microsoft-developer-community/infra-in-azure-for-developers-the-how-part-1/ba-p/4036531</id>
-        <link href="https://techcommunity.microsoft.com/t5/microsoft-developer-community/infra-in-azure-for-developers-the-how-part-1/ba-p/4036531"/>
-        <updated>2024-01-22T18:18:35.000Z</updated>
-        <summary type="html"><![CDATA[We've looked at the why and what of infra for developers so now it's time to put it into action with the how. What separates this from a more generic tutorial on Azure infra? This is not meant to cover the whole gamut of Azure services - it is intended to solve an isolated part of the puzzle; namely the deployment of developer output. You can certainly build on this or re-use for other purposes, but this isn't about creating a complete platform as such.
- 
-Disclaimer: While I strive to follow best practices the focus is on the concepts and not a battle hardened solution. This is not production grade.
- 
-Hammering out the infrastructure
-I noticed during production that this would become a rather lengthy post, so I have split things into two parts with this laying the foundation with regards t…]]></summary>
-        <author>
-            <name>Andreas Helland</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Infra in Azure for Developers - The How (Part 1)]]></title>
-        <id>https://techcommunity.microsoft.com/t5/azure-developer-community-blog/infra-in-azure-for-developers-the-how-part-1/ba-p/4036531</id>
-        <link href="https://techcommunity.microsoft.com/t5/azure-developer-community-blog/infra-in-azure-for-developers-the-how-part-1/ba-p/4036531"/>
-        <updated>2024-01-22T18:18:35.000Z</updated>
-        <summary type="html"><![CDATA[We've looked at the why and what of infra for developers so now it's time to put it into action with the how. What separates this from a more generic tutorial on Azure infra? This is not meant to cover the whole gamut of Azure services - it is intended to solve an isolated part of the puzzle; namely the deployment of developer output. You can certainly build on this or re-use for other purposes, but this isn't about creating a complete platform as such.
- 
-Disclaimer: While I strive to follow best practices the focus is on the concepts and not a battle hardened solution. This is not production grade.
- 
-Hammering out the infrastructure
-I noticed during production that this would become a rather lengthy post, so I have split things into two parts with this laying the foundation with regards t…]]></summary>
-        <author>
-            <name>Andreas Helland</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[New Microsoft Graph callRecords API capabilities]]></title>
-        <id>https://devblogs.microsoft.com/microsoft365dev/?p=17916</id>
-        <link href="https://devblogs.microsoft.com/microsoft365dev/new-microsoft-graph-callrecords-api-capabilities/"/>
-        <updated>2024-01-22T17:51:27.000Z</updated>
-        <summary type="html"><![CDATA[We are pleased to announce new capabilities for Microsoft Graph callRecords API in response to some of our top customer requests.
-The post New Microsoft Graph callRecords API capabilities appeared first on Microsoft 365 Developer Blog.]]></summary>
-        <author>
-            <name>Matthew McGrath</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[A Practical Guide to Zone Redundant AKS Clusters and Storage]]></title>
-        <id>https://techcommunity.microsoft.com/t5/fasttrack-for-azure/a-practical-guide-to-zone-redundant-aks-clusters-and-storage/ba-p/4036254</id>
-        <link href="https://techcommunity.microsoft.com/t5/fasttrack-for-azure/a-practical-guide-to-zone-redundant-aks-clusters-and-storage/ba-p/4036254"/>
-        <updated>2024-01-22T17:02:33.000Z</updated>
-        <summary type="html"><![CDATA[Resilience is a critical aspect of any modern application infrastructure. When failures occur, a resilient solution is capable of recovering quickly and maintaining functionality. To enhance the intra-region resiliency of an Azure Kubernetes Service (AKS) cluster, creating a zone redundant cluster is of utmost importance. This article explains how you can create a zone redundant AKS cluster and the implications of each approach on the deployment strategy and configuration of the persistent volumes used by the workloads. Here
-re you can find the companion code for this article.
- 
-
- 
-Prerequisites
-
-An active Azure subscription. If you don't have one, create a free Azure account before you begin.
-Visual Studio Code installed on one of the supported platforms along with the HashiCorp Terraform…]]></summary>
-        <author>
-            <name>paolosalvatori</name>
         </author>
     </entry>
     <entry>
@@ -16325,21 +16282,6 @@ Visual Studio Code installed on one of the supported platforms along with the
         <summary type="html"><![CDATA[Recent updates to the Enterprise plan include improved response caching in Spring Cloud Gateway, a more secure try-out option in API Portal, and enhanced application-level settings in Service Connector. Additionally, there's richer build history information to help with troubleshooting. For both Enterprise and Basic/Standard plans, Azure Spring Apps now offer scheduled maintenance for updates and an auto-sync feature for certificates, making application management more efficient and secure.]]></summary>
         <author>
             <name>Azure service updates</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Troubleshooting Azure Stack HCI 23H2 Preview Deployments]]></title>
-        <id>https://techcommunity.microsoft.com/t5/fasttrack-for-azure/troubleshooting-azure-stack-hci-23h2-preview-deployments/ba-p/4036222</id>
-        <link href="https://techcommunity.microsoft.com/t5/fasttrack-for-azure/troubleshooting-azure-stack-hci-23h2-preview-deployments/ba-p/4036222"/>
-        <updated>2024-01-22T16:28:51.000Z</updated>
-        <summary type="html"><![CDATA[Troubleshooting Azure Stack HCI 23H2 Preview Deployments
-With Azure Stack HCI release 23H2 preview, there are significant changes to how clusters are deployed, enabling low touch deployments in edge sites. Running these deployments in customer sites or lab environments may require some troubleshooting as kinks in the process are ironed out. This post aims to give guidance on this troubleshooting.
- 
-The following is written using a rapidly changing preview release, based on field and lab experience. We’re focused on how to start troubleshooting, rather than digging into specific issues you may encounter.
-Understanding the deployment process
-Deployment is completed in two steps: first, the target environment and configuration are validated, then the validated configuration is applied to the …]]></summary>
-        <author>
-            <name>mtbmsft</name>
         </author>
     </entry>
     <entry>

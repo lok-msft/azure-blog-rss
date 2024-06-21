@@ -6,6 +6,26 @@
       "siteUrl": "https://spring.io",
       "articles": [
         {
+          "id": "https://spring.io/blog/2024/06/20/a-bootiful-podcast-thomas-vitale-author-of-cloud-native-spring-in-action",
+          "author": "Josh Long",
+          "description": "Level up your Java code and explore what Spring can do for you.",
+          "link": "https://spring.io/blog/2024/06/20/a-bootiful-podcast-thomas-vitale-author-of-cloud-native-spring-in-action",
+          "publishedOn": "2024-06-20T00:00:00.000Z",
+          "wordCount": 7551,
+          "title": "A Bootiful Podcast: Thomas Vitale, author of Cloud Native Spring in Action",
+          "imageUrl": "https://spring.io/img/og-spring.png"
+        },
+        {
+          "id": "https://spring.io/blog/2024/06/20/spring-tips-introducing-spring-modulith",
+          "author": "Josh Long",
+          "description": "Level up your Java code and explore what Spring can do for you.",
+          "link": "https://spring.io/blog/2024/06/20/spring-tips-introducing-spring-modulith",
+          "publishedOn": "2024-06-18T00:00:00.000Z",
+          "wordCount": 7564,
+          "title": "Spring Tips: Introducing Spring Modulith",
+          "imageUrl": "https://spring.io/img/og-spring.png"
+        },
+        {
           "id": "https://spring.io/blog/2024/06/18/this-week-in-spring-june-18th-2024",
           "author": "Josh Long",
           "description": "Level up your Java code and explore what Spring can do for you.",
@@ -2200,6 +2220,26 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/simple-self-troubleshooting-steps-for-function-app-not-seeing/ba-p/4167100",
+          "author": "theringe",
+          "description": "Sometimes, on the Azure portal, you might see an error message on the Function App like \"we were not able to load some functions in the list due to errors.\"\n\n \nThere are many reasons for this symptom, such as connection errors with the storage account, runtime being down, indexing failure, and the synctriggers failure that we'll discuss.\n \nTo confirm whether your issue is indeed due to synctriggers, you could press F12 in your browser to activate developer mode and search for the keyword \"batch\" under the \"Network\" tab. This endpoint is used by the Azure portal to call various internal services of the Function App (e.g., retrieving app settings, site information, getting host status, etc.), including synctriggers.\n \nUnder the \"Network\" tab's \"Payload\" section, you can find these invocation…",
+          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/simple-self-troubleshooting-steps-for-function-app-not-seeing/ba-p/4167100",
+          "publishedOn": "2024-06-20T08:16:18.000Z",
+          "wordCount": 9814,
+          "title": "Simple Self-Troubleshooting Steps for Function App Not Seeing Triggers",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/591407iB9EBAEB518180025/image-size/original?v=v2&px=-1"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/introducing-downloadable-html-report-for-azure-load-testing/ba-p/4172241",
+          "author": "SaloniAgrawal12",
+          "description": "Azure Load Testing is a cloud-based service that helps you run performance and load tests on your web applications and APIs. You can easily create, configure, and execute load tests using JMeter scripts or custom code, and monitor the results in real-time on the Azure portal. You can also integrate your load tests with your CI/CD pipelines using Azure DevOps or GitHub actions.\nUntil now, you could only view the load test results on the Azure portal, which required internet access and RBAC permissions. Now, you can download the report as an HTML file and share it with your stakeholders or teammates offline. The HTML report contains the same charts and metrics as the online report, but in a portable and convenient format.\nWhy should you download an offline test report?\nBy downloading your lo…",
+          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/introducing-downloadable-html-report-for-azure-load-testing/ba-p/4172241",
+          "publishedOn": "2024-06-20T06:36:16.000Z",
+          "wordCount": 8874,
+          "title": "Introducing Downloadable HTML report for Azure Load Testing",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/593506iBFA1209AF372B2A5/image-size/original?v=v2&px=-1"
+        },
+        {
           "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/enhancing-performance-in-azure-container-apps/ba-p/4171138",
           "author": "Cary_Chai",
           "description": "Azure Container Apps is a powerful platform for running serverless, containerized applications and microservices. In the team’s ongoing commitment to improving Azure Container Apps’ performance, we’ve recently made significant improvements to make the scaling and load balancing behavior of Azure Container Apps more intuitive and better align with customer expectations to meet their performance needs.\n \nHopefully, some of the insights from our experience in working with Envoy and KEDA will be helpful to you.\n \nLoad Balancing Algorithm Update\nIn the past, Azure Container Apps relied on the ring hash load balancing algorithm to distribute incoming requests across containers. Ring hash aims for minimal distribution by generating a hash based on request properties to match it with a stable upst…",
@@ -3608,16 +3648,6 @@
           "wordCount": 10425,
           "title": "Announcing Public Preview of Migration plugin for WordPress on App Service",
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/546746iFCA616D3F897B169/image-size/original?v=v2&px=-1"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/persisting-data-volumes-with-net-aspire/ba-p/4036980",
-          "author": "aaronpowell",
-          "description": "This post is written against the .NET Aspire Preview 2 release, so it may change when the final version is released.\nRecently, I've been building an app using .NET Aspire which I'm using PostgreSQL as the database and Azure Storage Blobs and Queues in.\n.NET Aspire is awesome for this, as you can setup a developer inner loop super simply with the components that ship, and the nice thing about this is that locally PostgreSQL is run in a Docker container and Azure Storage uses the Azurite storage emulator (which also happens to run in a container).\nThe problem with this is that when you restart your app, you lose all the data in the database and storage emulator, since they are started fresh each time.\nTurns out, it's a pretty easy fix - all that you need to do is mount a volume into the cont…",
-          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/persisting-data-volumes-with-net-aspire/ba-p/4036980",
-          "publishedOn": "2024-01-23T03:28:35.000Z",
-          "wordCount": 9967,
-          "title": "Persisting Data Volumes With .NET Aspire",
-          "imageUrl": "https://cdn.techcommunity.microsoft.com/assets/Azure/BlogPreview_default-blue.png"
         }
       ]
     },
@@ -3759,6 +3789,16 @@
       "feedUrl": "https://techcommunity.microsoft.com/plugins/custom/microsoft/o365/custom-blog-rss?tid=-7989146602148070206&board=FastTrackforAzureBlog&size=100",
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
+        {
+          "id": "https://techcommunity.microsoft.com/t5/fasttrack-for-azure/fabric-security-explained-in-a-layered-approach/ba-p/4170798",
+          "author": "Kruti_Mehta",
+          "description": "Overview\n\nAs a SaaS service, Fabric offers a complete security package for the entire platform. The Fabric platform comprises of experiences like include Lakehouse, Data Factory, Synapse Data Engineering, Synapse Data Warehouse, Power BI, and others. To understand the security in Fabric we have broken down Fabric components into the following layers:\n\nFabric Components\n\n\nData - Where the data actually resides inside Fabric (Warehouse/Lakehouse/Eventhouse/OneLake/Fabric clusters)\nItems - These are the building blocks of the Fabric platform. They're the objects that you create and manage in Fabric. There are different types of items, such as data warehouses, data pipelines, semantic models, reports, and dashboards.\nWorkspace - A logical is a collection of items that brings together different…",
+          "link": "https://techcommunity.microsoft.com/t5/fasttrack-for-azure/fabric-security-explained-in-a-layered-approach/ba-p/4170798",
+          "publishedOn": "2024-06-20T11:05:22.000Z",
+          "wordCount": 8887,
+          "title": "Fabric Security explained in a Layered Approach",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/592907i48FB5B1CFC3E68EE/image-size/original?v=v2&px=-1"
+        },
         {
           "id": "https://techcommunity.microsoft.com/t5/fasttrack-for-azure/keeping-your-ai-out-of-trouble/ba-p/4103459",
           "author": "MarcoCardoso",
@@ -4088,26 +4128,6 @@
           "wordCount": 11575,
           "title": "Azure Cognitive Services & Azure Machine Learning Cost Analysis",
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/545524i9567D32FE19701B5/image-size/original?v=v2&px=-1"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/fasttrack-for-azure/a-practical-guide-to-zone-redundant-aks-clusters-and-storage/ba-p/4036254",
-          "author": "paolosalvatori",
-          "description": "Resilience is a critical aspect of any modern application infrastructure. When failures occur, a resilient solution is capable of recovering quickly and maintaining functionality. To enhance the intra-region resiliency of an Azure Kubernetes Service (AKS) cluster, creating a zone redundant cluster is of utmost importance. This article explains how you can create a zone redundant AKS cluster and the implications of each approach on the deployment strategy and configuration of the persistent volumes used by the workloads. Here\nre you can find the companion code for this article.\n \n\n \nPrerequisites\n\nAn active Azure subscription. If you don't have one, create a free Azure account before you begin.\nVisual Studio Code installed on one of the supported platforms along with the HashiCorp Terraform…",
-          "link": "https://techcommunity.microsoft.com/t5/fasttrack-for-azure/a-practical-guide-to-zone-redundant-aks-clusters-and-storage/ba-p/4036254",
-          "publishedOn": "2024-01-22T17:02:33.000Z",
-          "wordCount": 23407,
-          "title": "A Practical Guide to Zone Redundant AKS Clusters and Storage",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/544418i653D9DA9757EFB33/image-size/original?v=v2&px=-1"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/fasttrack-for-azure/troubleshooting-azure-stack-hci-23h2-preview-deployments/ba-p/4036222",
-          "author": "mtbmsft",
-          "description": "Troubleshooting Azure Stack HCI 23H2 Preview Deployments\nWith Azure Stack HCI release 23H2 preview, there are significant changes to how clusters are deployed, enabling low touch deployments in edge sites. Running these deployments in customer sites or lab environments may require some troubleshooting as kinks in the process are ironed out. This post aims to give guidance on this troubleshooting.\n \nThe following is written using a rapidly changing preview release, based on field and lab experience. We’re focused on how to start troubleshooting, rather than digging into specific issues you may encounter.\nUnderstanding the deployment process\nDeployment is completed in two steps: first, the target environment and configuration are validated, then the validated configuration is applied to the …",
-          "link": "https://techcommunity.microsoft.com/t5/fasttrack-for-azure/troubleshooting-azure-stack-hci-23h2-preview-deployments/ba-p/4036222",
-          "publishedOn": "2024-01-22T16:28:51.000Z",
-          "wordCount": 11064,
-          "title": "Troubleshooting Azure Stack HCI 23H2 Preview Deployments",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/544405i4493D3CBE162F5D9/image-size/original?v=v2&px=-1"
         }
       ]
     },
@@ -4372,26 +4392,6 @@
           "wordCount": 9806,
           "title": "Automatic Image Creation using Azure VM Image Builder is now generally available!",
           "imageUrl": "https://cdn.techcommunity.microsoft.com/assets/Azure/BlogPreview_default-blue.png"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/microsoft-developer-community/infra-in-azure-for-developers-the-how-part-1/ba-p/4036531",
-          "author": "Andreas Helland",
-          "description": "We've looked at the why and what of infra for developers so now it's time to put it into action with the how. What separates this from a more generic tutorial on Azure infra? This is not meant to cover the whole gamut of Azure services - it is intended to solve an isolated part of the puzzle; namely the deployment of developer output. You can certainly build on this or re-use for other purposes, but this isn't about creating a complete platform as such.\n \nDisclaimer: While I strive to follow best practices the focus is on the concepts and not a battle hardened solution. This is not production grade.\n \nHammering out the infrastructure\nI noticed during production that this would become a rather lengthy post, so I have split things into two parts with this laying the foundation with regards t…",
-          "link": "https://techcommunity.microsoft.com/t5/microsoft-developer-community/infra-in-azure-for-developers-the-how-part-1/ba-p/4036531",
-          "publishedOn": "2024-01-22T18:18:35.000Z",
-          "wordCount": 12414,
-          "title": "Infra in Azure for Developers - The How (Part 1)",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/544538i7AD23C4280793E4B/image-size/original?v=v2&px=-1"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/azure-developer-community-blog/infra-in-azure-for-developers-the-how-part-1/ba-p/4036531",
-          "author": "Andreas Helland",
-          "description": "We've looked at the why and what of infra for developers so now it's time to put it into action with the how. What separates this from a more generic tutorial on Azure infra? This is not meant to cover the whole gamut of Azure services - it is intended to solve an isolated part of the puzzle; namely the deployment of developer output. You can certainly build on this or re-use for other purposes, but this isn't about creating a complete platform as such.\n \nDisclaimer: While I strive to follow best practices the focus is on the concepts and not a battle hardened solution. This is not production grade.\n \nHammering out the infrastructure\nI noticed during production that this would become a rather lengthy post, so I have split things into two parts with this laying the foundation with regards t…",
-          "link": "https://techcommunity.microsoft.com/t5/azure-developer-community-blog/infra-in-azure-for-developers-the-how-part-1/ba-p/4036531",
-          "publishedOn": "2024-01-22T18:18:35.000Z",
-          "wordCount": 13635,
-          "title": "Infra in Azure for Developers - The How (Part 1)",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/544538i7AD23C4280793E4B/image-size/original?v=v2&px=-1"
         }
       ]
     },
@@ -4769,26 +4769,6 @@
           "wordCount": 9806,
           "title": "Automatic Image Creation using Azure VM Image Builder is now generally available!",
           "imageUrl": "https://cdn.techcommunity.microsoft.com/assets/Azure/BlogPreview_default-blue.png"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/microsoft-developer-community/infra-in-azure-for-developers-the-how-part-1/ba-p/4036531",
-          "author": "Andreas Helland",
-          "description": "We've looked at the why and what of infra for developers so now it's time to put it into action with the how. What separates this from a more generic tutorial on Azure infra? This is not meant to cover the whole gamut of Azure services - it is intended to solve an isolated part of the puzzle; namely the deployment of developer output. You can certainly build on this or re-use for other purposes, but this isn't about creating a complete platform as such.\n \nDisclaimer: While I strive to follow best practices the focus is on the concepts and not a battle hardened solution. This is not production grade.\n \nHammering out the infrastructure\nI noticed during production that this would become a rather lengthy post, so I have split things into two parts with this laying the foundation with regards t…",
-          "link": "https://techcommunity.microsoft.com/t5/microsoft-developer-community/infra-in-azure-for-developers-the-how-part-1/ba-p/4036531",
-          "publishedOn": "2024-01-22T18:18:35.000Z",
-          "wordCount": 12414,
-          "title": "Infra in Azure for Developers - The How (Part 1)",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/544538i7AD23C4280793E4B/image-size/original?v=v2&px=-1"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/azure-developer-community-blog/infra-in-azure-for-developers-the-how-part-1/ba-p/4036531",
-          "author": "Andreas Helland",
-          "description": "We've looked at the why and what of infra for developers so now it's time to put it into action with the how. What separates this from a more generic tutorial on Azure infra? This is not meant to cover the whole gamut of Azure services - it is intended to solve an isolated part of the puzzle; namely the deployment of developer output. You can certainly build on this or re-use for other purposes, but this isn't about creating a complete platform as such.\n \nDisclaimer: While I strive to follow best practices the focus is on the concepts and not a battle hardened solution. This is not production grade.\n \nHammering out the infrastructure\nI noticed during production that this would become a rather lengthy post, so I have split things into two parts with this laying the foundation with regards t…",
-          "link": "https://techcommunity.microsoft.com/t5/azure-developer-community-blog/infra-in-azure-for-developers-the-how-part-1/ba-p/4036531",
-          "publishedOn": "2024-01-22T18:18:35.000Z",
-          "wordCount": 13635,
-          "title": "Infra in Azure for Developers - The How (Part 1)",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/544538i7AD23C4280793E4B/image-size/original?v=v2&px=-1"
         }
       ]
     },
@@ -4996,16 +4976,6 @@
           "wordCount": 10228,
           "title": "Monitoring Life Cycle Management Policy Runs",
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/547324i5C0CD512945DD176/image-size/original?v=v2&px=-1"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/azure-paas-blog/performing-simple-file-storage-rest-api-operations-using-curl/ba-p/4019533",
-          "author": "ManjunathS",
-          "description": "The blog aims to perform simple File storage REST API operations such as Create, Copy, Rename and Delete operations using CURL utility.Let’s look at some of the CURL command syntax to perform REST API operations and will be making use of SAS as the auth scheme. \nWe need to take care of the pointers below while performing the operations via CURL:\n\nEnsure the URL is formed correctly as per the operation you are trying to perform.\nThe mandatory header needs to be passed and can be done using “-H” parameter.\nEnsure you are appending/removing extra ‘?’ to the SAS token in the URLs accordingly.\nHttp verb can be GET, PUT or DELETE as provided by the CURL specifications.\n\nNote:\nIf you employ an authentication mechanism different from SAS, please ensure that you are including the required headers.\n…",
-          "link": "https://techcommunity.microsoft.com/t5/azure-paas-blog/performing-simple-file-storage-rest-api-operations-using-curl/ba-p/4019533",
-          "publishedOn": "2024-01-23T12:18:04.000Z",
-          "wordCount": 10391,
-          "title": "Performing simple FILE Storage REST API operations using CURL",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/540688iA0BA67862E33767D/image-size/original?v=v2&px=-1"
         }
       ]
     },
@@ -6372,6 +6342,16 @@
       "feedUrl": "https://devblogs.microsoft.com/typescript/feed/",
       "siteUrl": "https://devblogs.microsoft.com/typescript/",
       "articles": [
+        {
+          "id": "https://devblogs.microsoft.com/typescript/?p=4270",
+          "author": "Daniel Rosenwasser",
+          "description": "Today we’re excited to announce the release of TypeScript 5.5!\nThe post Announcing TypeScript 5.5 appeared first on TypeScript.",
+          "link": "https://devblogs.microsoft.com/typescript/announcing-typescript-5-5/",
+          "publishedOn": "2024-06-20T18:16:11.000Z",
+          "wordCount": 11901,
+          "title": "Announcing TypeScript 5.5",
+          "imageUrl": "https://devblogs.microsoft.com/typescript/wp-content/uploads/sites/11/2018/08/typescriptfeature.png"
+        },
         {
           "id": "https://devblogs.microsoft.com/typescript/?p=4251",
           "author": "Daniel Rosenwasser",
@@ -11891,16 +11871,6 @@
           "wordCount": 6565,
           "title": "A pro-code guide to build your custom copilot faster",
           "imageUrl": "https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2024/01/0001-scaled.jpg"
-        },
-        {
-          "id": "https://devblogs.microsoft.com/microsoft365dev/?p=17916",
-          "author": "Matthew McGrath",
-          "description": "We are pleased to announce new capabilities for Microsoft Graph callRecords API in response to some of our top customer requests.\nThe post New Microsoft Graph callRecords API capabilities appeared first on Microsoft 365 Developer Blog.",
-          "link": "https://devblogs.microsoft.com/microsoft365dev/new-microsoft-graph-callrecords-api-capabilities/",
-          "publishedOn": "2024-01-22T17:51:27.000Z",
-          "wordCount": 4922,
-          "title": "New Microsoft Graph callRecords API capabilities",
-          "imageUrl": "https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2024/01/01222024-scaled.jpg"
         }
       ]
     }
