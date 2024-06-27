@@ -2,10 +2,126 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2024-06-26T01:09:01.305Z</updated>
+    <updated>2024-06-27T01:09:14.891Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Advanced Network Observability for your Azure Kubernetes Service clusters through Azure Monitor]]></title>
+        <id>https://techcommunity.microsoft.com/t5/azure-observability-blog/advanced-network-observability-for-your-azure-kubernetes-service/ba-p/4176736</id>
+        <link href="https://techcommunity.microsoft.com/t5/azure-observability-blog/advanced-network-observability-for-your-azure-kubernetes-service/ba-p/4176736"/>
+        <updated>2024-06-26T20:15:57.000Z</updated>
+        <summary type="html"><![CDATA[Last year at BUILD we announced the public preview of the Network Observability add-on. Today we’re excited to share a massive upgrade to the network observability capabilities available to AKS customers. 
+ 
+What’s new?
+We are excited to announce Advanced Container Networking Services (ACNS), a suite of services built to significantly enhance the operational capabilities of your Azure Kubernetes Service (AKS) clusters. Advanced Network Observability is the inaugural feature of the ACNS suite bringing the power of Hubble’s control plane to both Cilium and Non-Cilium Linux data planes. With Advanced Network Observability, customers can now pinpoint network-related issues with more precision and detect root causes faster.  The offering provides pod level packet statistics, DNS statistics, L4 connections and enhanced debugging capabilities with network flow logs and DNS error tracking.
+Data flow for Advanced Network Observability
+ 
+How can Azure customers use the new offering?
+ACNS is integrated deeply with existing Azure Monitor capabilities for monitoring AKS clusters. Using the new capabilities requires no extra configuration from customers. Customers can enable advanced network observability with a single command. The metrics are then ingested automatically by Azure Monitor managed service for Prometheus. Additionally, customers can visualize the metrics in pre-built dashboards in Azure Managed Grafana. Customers have access to 6 pre-built dashboards in Azure Managed Grafana covering a breadth of signals from cluster traffic to DNS and pod level flows.
+ 
+Pod flows dashboard built into Azure Manged Grafana
+ 
+ 
+How to get ACNS
+To get started with ACNS capabilities, please see our onboarding documentation
+ 
+Read more about ACNS:
+
+Documentation: What is Advanced Container Networking Services?
+Azure Blog:  Announcing Advanced Container Networking Services for your Azure Kubernetes Service clusters]]></summary>
+        <author>
+            <name>DalanMendonca</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Advanced Network Observability for your Azure Kubernetes Service clusters through Azure Monitor]]></title>
+        <id>https://techcommunity.microsoft.com/t5/azure-observability-blog/advanced-network-observability-for-your-azure-kubernetes-service/ba-p/4176736</id>
+        <link href="https://techcommunity.microsoft.com/t5/azure-observability-blog/advanced-network-observability-for-your-azure-kubernetes-service/ba-p/4176736"/>
+        <updated>2024-06-26T20:15:57.000Z</updated>
+        <summary type="html"><![CDATA[Last year at BUILD we announced the public preview of the Network Observability add-on. Today we’re excited to share a massive upgrade to the network observability capabilities available to AKS customers. 
+ 
+What’s new?
+We are excited to announce Advanced Container Networking Services (ACNS), a suite of services built to significantly enhance the operational capabilities of your Azure Kubernetes Service (AKS) clusters. Advanced Network Observability is the inaugural feature of the ACNS suite bringing the power of Hubble’s control plane to both Cilium and Non-Cilium Linux data planes. With Advanced Network Observability, customers can now pinpoint network-related issues with more precision and detect root causes faster.  The offering provides pod level packet statistics, DNS statistics, L4 connections and enhanced debugging capabilities with network flow logs and DNS error tracking.
+Data flow for Advanced Network Observability
+ 
+How can Azure customers use the new offering?
+ACNS is integrated deeply with existing Azure Monitor capabilities for monitoring AKS clusters. Using the new capabilities requires no extra configuration from customers. Customers can enable advanced network observability with a single command. The metrics are then ingested automatically by Azure Monitor managed service for Prometheus. Additionally, customers can visualize the metrics in pre-built dashboards in Azure Managed Grafana. Customers have access to 6 pre-built dashboards in Azure Managed Grafana covering a breadth of signals from cluster traffic to DNS and pod level flows.
+ 
+Pod flows dashboard built into Azure Manged Grafana
+ 
+ 
+How to get ACNS
+To get started with ACNS capabilities, please see our onboarding documentation
+ 
+Read more about ACNS:
+
+Documentation: What is Advanced Container Networking Services?
+Azure Blog:  Announcing Advanced Container Networking Services for your Azure Kubernetes Service clusters]]></summary>
+        <author>
+            <name>DalanMendonca</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Fluid Framework 2 is now production ready]]></title>
+        <id>https://devblogs.microsoft.com/microsoft365dev/?p=21984</id>
+        <link href="https://devblogs.microsoft.com/microsoft365dev/fluid-framework-2-is-now-production-ready/"/>
+        <updated>2024-06-26T19:50:07.000Z</updated>
+        <summary type="html"><![CDATA[We are excited to announce that Fluid Framework 2 is now generally available and ready for production applications.
+The post Fluid Framework 2 is now production ready appeared first on Microsoft 365 Developer Blog.]]></summary>
+        <author>
+            <name>Kashif Qureshi</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Leverage Microsoft Fabric Delta Lake tables for reporting over billions of rows]]></title>
+        <id>https://techcommunity.microsoft.com/t5/fasttrack-for-azure/leverage-microsoft-fabric-delta-lake-tables-for-reporting-over/ba-p/4174846</id>
+        <link href="https://techcommunity.microsoft.com/t5/fasttrack-for-azure/leverage-microsoft-fabric-delta-lake-tables-for-reporting-over/ba-p/4174846"/>
+        <updated>2024-06-26T18:49:33.000Z</updated>
+        <summary type="html"><![CDATA[Overview
+Believe it or not, not all data is meant for analytics. Sometimes reporting requirements include flat data that is not inherently dimensional. This often includes querying large tables with low cardinality columns. Think of:
+
+Audit trails – understanding who accessed what at a certain point in time or what events occurred when
+Financial transaction data – querying financial transactions by invoice id
+Web analytics – identifying which pages were accessed at what date, time and location
+
+This type of data can have millions or billions of rows to sift through.
+ 
+So where does this type of reporting fit into your reporting environment? In Microsoft Fabric Lakehouse and Power BI Report Developer paginated reports!
+
+ 
+I wanted to test reporting on a Fabric Delta Table with over 6 billio…]]></summary>
+        <author>
+            <name>jehayes</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Improving OpenJDK Scalar Replacement – Part 2/3]]></title>
+        <id>https://devblogs.microsoft.com/java/?p=231151</id>
+        <link href="https://devblogs.microsoft.com/java/improving-openjdk-scalar-replacement-part-2-3/"/>
+        <updated>2024-06-26T17:55:09.000Z</updated>
+        <summary type="html"><![CDATA[In the previous part of this blog series, we explored the foundational concepts and purpose of scalar replacement (SR) in OpenJDK, laying the groundwork for understanding how this optimization can boost the performance of Java applications. Now, in the second installment of the series,
+The post Improving OpenJDK Scalar Replacement – Part 2/3 appeared first on Microsoft for Java Developers.]]></summary>
+        <author>
+            <name>Cesar Soares</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Azure API Center: Centralizing API Management for Enhanced Discovery and Governance]]></title>
+        <id>https://techcommunity.microsoft.com/t5/microsoft-developer-community/azure-api-center-centralizing-api-management-for-enhanced/ba-p/4175756</id>
+        <link href="https://techcommunity.microsoft.com/t5/microsoft-developer-community/azure-api-center-centralizing-api-management-for-enhanced/ba-p/4175756"/>
+        <updated>2024-06-26T07:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Have you ever thought about having a single place to manage all your APIs? It could make it easier to find and control your services. Azure API Center is a solution that will help you do this. It offers a single platform for creating, publishing, managing, and monitoring APIs. In this article, we will learn more about this service, its features, benefits, and how it can help you.
+ 
+New Free Training Course on Microsoft Learn: Introduction to Azure API Center!
+ 
+Before we get started, we just had to share some great news! There's a new free training course on Microsoft Learn about the Azure API Center. It's a great way to get started with this service.
+ 
+Once you've finished the course, you will get a certificate of completion you can share on social media and even on your resume or LinkedI…]]></summary>
+        <author>
+            <name>glaucia_lemos86</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Jakarta EE on Azure – June 2024]]></title>
         <id>https://devblogs.microsoft.com/java/?p=231185</id>
@@ -6697,6 +6813,17 @@ Red Hat OpenShift, the industry’s leading hybrid cloud application platform p
     </entry>
     <entry>
         <title type="html"><![CDATA[Open sourcing MS-DOS 4.0]]></title>
+        <id>https://opensource.microsoft.com/blog/2024/04/25/open-sourcing-ms-dos-4-0/</id>
+        <link href="https://opensource.microsoft.com/blog/2024/04/25/open-sourcing-ms-dos-4-0/"/>
+        <updated>2024-04-25T21:30:00.000Z</updated>
+        <summary type="html"><![CDATA[Today, in partnership with IBM and in the spirit of open innovation, we’re releasing the source code to MS-DOS 4.00 under the MIT license. 
+The post Open sourcing MS-DOS 4.0  appeared first on Microsoft Open Source Blog.]]></summary>
+        <author>
+            <name>Scott Hanselman and Jeff Wilcox</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Open sourcing MS-DOS 4.0]]></title>
         <id>https://cloudblogs.microsoft.com/opensource/2024/04/25/open-sourcing-ms-dos-4-0/</id>
         <link href="https://cloudblogs.microsoft.com/opensource/2024/04/25/open-sourcing-ms-dos-4-0/"/>
         <updated>2024-04-25T21:30:00.000Z</updated>
@@ -7423,6 +7550,17 @@ What is the reliable web app pattern (RWA)? 
 The reliable web app pattern is one of …]]></summary>
         <author>
             <name>mattsoucoup</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Microsoft Open Source Programs Office—Tuning the answers to Open Source questions]]></title>
+        <id>https://opensource.microsoft.com/blog/2024/04/17/microsoft-open-source-programs-office-tuning-the-answers-to-open-source-questions/</id>
+        <link href="https://opensource.microsoft.com/blog/2024/04/17/microsoft-open-source-programs-office-tuning-the-answers-to-open-source-questions/"/>
+        <updated>2024-04-17T15:00:00.000Z</updated>
+        <summary type="html"><![CDATA[With collaboration and partnership in mind, we also think of our Open Source Programs Office as part of an even bigger ensemble of companies, academic institutions, non-profits, communities, and individuals working to get better at Open Source—we are super excited to be attending the Open Source Summit in Seattle on April 16, 2024. 
+The post Microsoft Open Source Programs Office—Tuning the answers to Open Source questions appeared first on Microsoft Open Source Blog.]]></summary>
+        <author>
+            <name>Emma Irwin</name>
         </author>
     </entry>
     <entry>
@@ -8563,6 +8701,17 @@ Join Azure expert, Matt McSpirit, as he sha…]]></summary>
         <summary type="html"><![CDATA[The native support for Delta Lake output in Azure Stream Analytics is now generally available.]]></summary>
         <author>
             <name>Azure service updates</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Join Microsoft at Open Source Summit North America 2024]]></title>
+        <id>https://opensource.microsoft.com/blog/2024/04/09/join-microsoft-at-open-source-summit-north-america-2024/</id>
+        <link href="https://opensource.microsoft.com/blog/2024/04/09/join-microsoft-at-open-source-summit-north-america-2024/"/>
+        <updated>2024-04-09T16:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Join Microsoft at Open Source Summit North America 2024, taking place in Seattle, Washington from April 16 to 18, 2024, bringing together open source developers, technologists, and community leaders to collaborate, share information, solve problems, and gain knowledge.
+The post Join Microsoft at Open Source Summit North America 2024 appeared first on Microsoft Open Source Blog.]]></summary>
+        <author>
+            <name>Henry Yan</name>
         </author>
     </entry>
     <entry>
@@ -10771,6 +10920,17 @@ If you are using IP addresses in your egress firewalls to your Azure Event Hubs 
     </entry>
     <entry>
         <title type="html"><![CDATA[See how Azure is empowering cloud-native development and AI innovation with Kubernetes at KubeCon Europe 2024]]></title>
+        <id>https://opensource.microsoft.com/blog/2024/03/18/see-how-azure-is-empowering-cloud-native-development-and-ai-innovation-with-kubernetes-at-kubecon-europe-2024/</id>
+        <link href="https://opensource.microsoft.com/blog/2024/03/18/see-how-azure-is-empowering-cloud-native-development-and-ai-innovation-with-kubernetes-at-kubecon-europe-2024/"/>
+        <updated>2024-03-18T15:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Greetings and welcome to KubeCon Europe 2024! Microsoft is excited to be able to support and contribute to the cloud-native and open-source communities.
+The post See how Azure is empowering cloud-native development and AI innovation with Kubernetes at KubeCon Europe 2024 appeared first on Microsoft Open Source Blog.]]></summary>
+        <author>
+            <name>Brendan Burns</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[See how Azure is empowering cloud-native development and AI innovation with Kubernetes at KubeCon Europe 2024]]></title>
         <id>https://cloudblogs.microsoft.com/opensource/2024/03/18/see-how-azure-is-empowering-cloud-native-development-and-ai-innovation-with-kubernetes-at-kubecon-europe-2024/</id>
         <link href="https://cloudblogs.microsoft.com/opensource/2024/03/18/see-how-azure-is-empowering-cloud-native-development-and-ai-innovation-with-kubernetes-at-kubecon-europe-2024/"/>
         <updated>2024-03-18T15:00:00.000Z</updated>
@@ -12517,6 +12677,17 @@ Fabric + AI HackTogether Wrap-Up: How to submit and get ready for Fabric Communi
         <summary type="html"><![CDATA[Encryption at host for Premium SSD v2 and Ultra Disks is now available in Canada East, West Europe, South Central US and West US 3.]]></summary>
         <author>
             <name>Azure service updates</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[ONNX Runtime Web unleashes generative AI in the browser using WebGPU]]></title>
+        <id>https://opensource.microsoft.com/blog/2024/02/29/onnx-runtime-web-unleashes-generative-ai-in-the-browser-using-webgpu/</id>
+        <link href="https://opensource.microsoft.com/blog/2024/02/29/onnx-runtime-web-unleashes-generative-ai-in-the-browser-using-webgpu/"/>
+        <updated>2024-02-29T16:00:00.000Z</updated>
+        <summary type="html"><![CDATA[This blog is thrilled to announce the official launch of ONNX Runtime Web featuring WebGPU, now available in the ONNX Runtime 1.17 release. 
+The post ONNX Runtime Web unleashes generative AI in the browser using WebGPU appeared first on Microsoft Open Source Blog.]]></summary>
+        <author>
+            <name>Emma Ning, Yulong Wang and Satya Jandhyala</name>
         </author>
     </entry>
     <entry>
@@ -14704,6 +14875,17 @@ The post Chat with your data in Azure SQL Database appeared first on Azure SQL D
     </entry>
     <entry>
         <title type="html"><![CDATA[On-Device Training: Training a model in browser]]></title>
+        <id>https://opensource.microsoft.com/blog/2024/02/06/on-device-training-training-a-model-in-browser/</id>
+        <link href="https://opensource.microsoft.com/blog/2024/02/06/on-device-training-training-a-model-in-browser/"/>
+        <updated>2024-02-06T16:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Continuing the ONNXRuntime On-Device Training blog series, we are introducing ONNX Runtime Training for Web, a new feature in ONNX Runtime (ORT) that enables training models in the browser. 
+The post On-Device Training: Training a model in browser appeared first on Microsoft Open Source Blog.]]></summary>
+        <author>
+            <name>Caroline Zhu</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[On-Device Training: Training a model in browser]]></title>
         <id>https://cloudblogs.microsoft.com/opensource/2024/02/06/on-device-training-training-a-model-in-browser/</id>
         <link href="https://cloudblogs.microsoft.com/opensource/2024/02/06/on-device-training-training-a-model-in-browser/"/>
         <updated>2024-02-06T16:00:00.000Z</updated>
@@ -15703,78 +15885,6 @@ An added benefit is the simplicity it brings to the deployment. Customers can ef
 VMware Cloud Director Availability can be used to migrate and protect virtual machines, vApps and templates to and from Azure VMware Solution Cloud Director Service site. Azure VMware solution integrates with the classic Data…]]></summary>
         <author>
             <name>RosyDutt</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[How To Monitor Your Multi-Tenant Solution on Azure With Azure Monitor]]></title>
-        <id>https://techcommunity.microsoft.com/t5/azure-observability-blog/how-to-monitor-your-multi-tenant-solution-on-azure-with-azure/ba-p/4042140</id>
-        <link href="https://techcommunity.microsoft.com/t5/azure-observability-blog/how-to-monitor-your-multi-tenant-solution-on-azure-with-azure/ba-p/4042140"/>
-        <updated>2024-01-29T12:05:33.000Z</updated>
-        <summary type="html"><![CDATA[1. Multi Tenant solution
- 
-Often customers are operating using a multi-tenant architecture in Azure for several reasons: cost-effectiveness, scalability and security. However, this architecture will make it challenging to get an overview of the status of resources across the different tenants. E.g., an application with different instances of it running across multiple tenants. The person responsible for the performance and operational effectiveness of the application will have a hard time monitoring the status of each of these instances. In an ideal scenario, this person would be able to assess all this information from a single pane of glass instead of having to log into each tenant to retrieve this data.
-Given the scenario above, it is not possible to send log data from resources in tena…]]></summary>
-        <author>
-            <name>TomClaes</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[How To Monitor Your Multi-Tenant Solution on Azure With Azure Monitor]]></title>
-        <id>https://techcommunity.microsoft.com/t5/azure-observability-blog/how-to-monitor-your-multi-tenant-solution-on-azure-with-azure/ba-p/4042140</id>
-        <link href="https://techcommunity.microsoft.com/t5/azure-observability-blog/how-to-monitor-your-multi-tenant-solution-on-azure-with-azure/ba-p/4042140"/>
-        <updated>2024-01-29T12:05:33.000Z</updated>
-        <summary type="html"><![CDATA[1. Multi Tenant solution
- 
-Often customers are operating using a multi-tenant architecture in Azure for several reasons: cost-effectiveness, scalability and security. However, this architecture will make it challenging to get an overview of the status of resources across the different tenants. E.g., an application with different instances of it running across multiple tenants. The person responsible for the performance and operational effectiveness of the application will have a hard time monitoring the status of each of these instances. In an ideal scenario, this person would be able to assess all this information from a single pane of glass instead of having to log into each tenant to retrieve this data.
-Given the scenario above, it is not possible to send log data from resources in tena…]]></summary>
-        <author>
-            <name>TomClaes</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Announcing Public Preview of Migration plugin for WordPress on App Service]]></title>
-        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/announcing-public-preview-of-migration-plugin-for-wordpress-on/ba-p/4041920</id>
-        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/announcing-public-preview-of-migration-plugin-for-wordpress-on/ba-p/4041920"/>
-        <updated>2024-01-29T05:11:06.000Z</updated>
-        <summary type="html"><![CDATA[We are excited to announce that we have launched the public preview of the App Service migration plugin for WordPress.
- 
-If you want to move your WordPress website from any hosting platform to App Service, this plugin is for you. The plugin copies all your content from your existing site to a new WordPress site in App Service without impacting the existing site, so that you can verify and test your new site before making it available to visitors.
- 
-In this article, we will learn how to use the migration plugin to move your WordPress site to App Service.
- 
-Prerequisites:
- 
-
-The source site. This is the site which has the content that needs to be migrated. For this example, we will use https://thegourmetkitchen.online/
-
-
- 
-
-The destination site. You need a new WordPress on App Service site c…]]></summary>
-        <author>
-            <name>abhishekreddy</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Leverage Azure API Management to distribute API traffic to multiple backend services]]></title>
-        <id>https://techcommunity.microsoft.com/t5/azure-architecture-blog/leverage-azure-api-management-to-distribute-api-traffic-to/ba-p/4041813</id>
-        <link href="https://techcommunity.microsoft.com/t5/azure-architecture-blog/leverage-azure-api-management-to-distribute-api-traffic-to/ba-p/4041813"/>
-        <updated>2024-01-29T03:53:58.000Z</updated>
-        <summary type="html"><![CDATA[This is a summarized edition of the following original articles, both of which were published in Japanese. This is a memo as of 27 January 2024.
-Azure API Managementのバックエンドプール – Logico Inside (logico-jp.io)
-Azure API Managementのバックエンドでサーキットブレーカーを構成する – Logico Inside (logico-jp.io)
-
-
- 
-
-
-Circuit breaker and load balanced pool features have recently been added to the API Management backend. Both are in public preview as of 27 January 2024.
-Azure API Management backends | Microsoft Learn
- 
-In public preview, we must use either Bicep, ARM, or REST APIs (2023-05-01-preview or later) to configure circuit breakers and load-balanced pools. There is no command for either CLI or PowerShell and there is no dedicated configuration page in Azure Portal.
-Backend - REST API (Azure API Management) | Micro…]]></summary>
-        <author>
-            <name>Logico_jp</name>
         </author>
     </entry>
     <entry>

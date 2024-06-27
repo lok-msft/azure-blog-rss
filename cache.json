@@ -3628,16 +3628,6 @@
           "wordCount": 10048,
           "title": "Preview of Distributed Tracing V2 for Durable Functions",
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/545713iBF8583C0727C8B75/image-size/original?v=v2&px=-1"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/announcing-public-preview-of-migration-plugin-for-wordpress-on/ba-p/4041920",
-          "author": "abhishekreddy",
-          "description": "We are excited to announce that we have launched the public preview of the App Service migration plugin for WordPress.\n \nIf you want to move your WordPress website from any hosting platform to App Service, this plugin is for you. The plugin copies all your content from your existing site to a new WordPress site in App Service without impacting the existing site, so that you can verify and test your new site before making it available to visitors.\n \nIn this article, we will learn how to use the migration plugin to move your WordPress site to App Service.\n \nPrerequisites:\n \n\nThe source site. This is the site which has the content that needs to be migrated. For this example, we will use https://thegourmetkitchen.online/\n\n\n \n\nThe destination site. You need a new WordPress on App Service site c…",
-          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/announcing-public-preview-of-migration-plugin-for-wordpress-on/ba-p/4041920",
-          "publishedOn": "2024-01-29T05:11:06.000Z",
-          "wordCount": 10425,
-          "title": "Announcing Public Preview of Migration plugin for WordPress on App Service",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/546746iFCA616D3F897B169/image-size/original?v=v2&px=-1"
         }
       ]
     },
@@ -3799,6 +3789,16 @@
       "feedUrl": "https://techcommunity.microsoft.com/plugins/custom/microsoft/o365/custom-blog-rss?tid=-7989146602148070206&board=FastTrackforAzureBlog&size=100",
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
+        {
+          "id": "https://techcommunity.microsoft.com/t5/fasttrack-for-azure/leverage-microsoft-fabric-delta-lake-tables-for-reporting-over/ba-p/4174846",
+          "author": "jehayes",
+          "description": "Overview\nBelieve it or not, not all data is meant for analytics. Sometimes reporting requirements include flat data that is not inherently dimensional. This often includes querying large tables with low cardinality columns. Think of:\n\nAudit trails – understanding who accessed what at a certain point in time or what events occurred when\nFinancial transaction data – querying financial transactions by invoice id\nWeb analytics – identifying which pages were accessed at what date, time and location\n\nThis type of data can have millions or billions of rows to sift through.\n \nSo where does this type of reporting fit into your reporting environment? In Microsoft Fabric Lakehouse and Power BI Report Developer paginated reports!\n\n \nI wanted to test reporting on a Fabric Delta Table with over 6 billio…",
+          "link": "https://techcommunity.microsoft.com/t5/fasttrack-for-azure/leverage-microsoft-fabric-delta-lake-tables-for-reporting-over/ba-p/4174846",
+          "publishedOn": "2024-06-26T18:49:33.000Z",
+          "wordCount": 9042,
+          "title": "Leverage Microsoft Fabric Delta Lake tables for reporting over billions of rows",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/594361i28A646B21C79879D/image-size/original?v=v2&px=-1"
+        },
         {
           "id": "https://techcommunity.microsoft.com/t5/fasttrack-for-azure/fabric-security-explained-in-a-layered-approach/ba-p/4170798",
           "author": "Kruti_Mehta",
@@ -4097,6 +4097,16 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/t5/azure-observability-blog/advanced-network-observability-for-your-azure-kubernetes-service/ba-p/4176736",
+          "author": "DalanMendonca",
+          "description": "Last year at BUILD we announced the public preview of the Network Observability add-on. Today we’re excited to share a massive upgrade to the network observability capabilities available to AKS customers. \n \nWhat’s new?\nWe are excited to announce Advanced Container Networking Services (ACNS), a suite of services built to significantly enhance the operational capabilities of your Azure Kubernetes Service (AKS) clusters. Advanced Network Observability is the inaugural feature of the ACNS suite bringing the power of Hubble’s control plane to both Cilium and Non-Cilium Linux data planes. With Advanced Network Observability, customers can now pinpoint network-related issues with more precision and detect root causes faster.  The offering provides pod level packet statistics, DNS statistics, L4 connections and enhanced debugging capabilities with network flow logs and DNS error tracking.\nData flow for Advanced Network Observability\n \nHow can Azure customers use the new offering?\nACNS is integrated deeply with existing Azure Monitor capabilities for monitoring AKS clusters. Using the new capabilities requires no extra configuration from customers. Customers can enable advanced network observability with a single command. The metrics are then ingested automatically by Azure Monitor managed service for Prometheus. Additionally, customers can visualize the metrics in pre-built dashboards in Azure Managed Grafana. Customers have access to 6 pre-built dashboards in Azure Managed Grafana covering a breadth of signals from cluster traffic to DNS and pod level flows.\n \nPod flows dashboard built into Azure Manged Grafana\n \n \nHow to get ACNS\nTo get started with ACNS capabilities, please see our onboarding documentation\n \nRead more about ACNS:\n\nDocumentation: What is Advanced Container Networking Services?\nAzure Blog:  Announcing Advanced Container Networking Services for your Azure Kubernetes Service clusters",
+          "link": "https://techcommunity.microsoft.com/t5/azure-observability-blog/advanced-network-observability-for-your-azure-kubernetes-service/ba-p/4176736",
+          "publishedOn": "2024-06-26T20:15:57.000Z",
+          "wordCount": 8619,
+          "title": "Advanced Network Observability for your Azure Kubernetes Service clusters through Azure Monitor",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/595078iAC5106C323CE80F9/image-size/original?v=v2&px=-1"
+        },
+        {
           "id": "https://techcommunity.microsoft.com/t5/azure-observability-blog/analyze-data-using-log-analytics-simple-mode/ba-p/4152447",
           "author": "Ilana_Waitser",
           "description": "Introduction \nAzure Monitor Logs offer a powerful set of capabilities for users to explore their logs and derive meaningful insights from their data estate.\nUntil now, Azure Monitor Logs relied on KQL for users to express their questions as queries.KQL is a powerful, easy to learn query language, however, as any query language it requires some knowledge to operate.\nSimple mode experience was created to bridge this knowledge gap - allowing most popular KQL operators and actions to be utilized using a very simple, point-and-click experience requiring no KQL knowledge at all!  \nKQL Mode gives advanced users the full power of Kusto Query Language (KQL) to derive deeper insights from their logs.\n \nHere's a video that provides a quick overview of how to query logs in Log Analytics using both Sim…",
@@ -4215,16 +4225,6 @@
           "wordCount": 10517,
           "title": "Azure Monitor- Announcing General Availability of Azure Monitor Metrics Data Plane API",
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/547806iC8F1DADCE04897CC/image-size/original?v=v2&px=-1"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/azure-observability-blog/how-to-monitor-your-multi-tenant-solution-on-azure-with-azure/ba-p/4042140",
-          "author": "TomClaes",
-          "description": "1. Multi Tenant solution\n \nOften customers are operating using a multi-tenant architecture in Azure for several reasons: cost-effectiveness, scalability and security. However, this architecture will make it challenging to get an overview of the status of resources across the different tenants. E.g., an application with different instances of it running across multiple tenants. The person responsible for the performance and operational effectiveness of the application will have a hard time monitoring the status of each of these instances. In an ideal scenario, this person would be able to assess all this information from a single pane of glass instead of having to log into each tenant to retrieve this data.\nGiven the scenario above, it is not possible to send log data from resources in tena…",
-          "link": "https://techcommunity.microsoft.com/t5/azure-observability-blog/how-to-monitor-your-multi-tenant-solution-on-azure-with-azure/ba-p/4042140",
-          "publishedOn": "2024-01-29T12:05:33.000Z",
-          "wordCount": 11258,
-          "title": "How To Monitor Your Multi-Tenant Solution on Azure With Azure Monitor",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/546465iEE3A2A2574B54726/image-size/original?v=v2&px=-1"
         }
       ]
     },
@@ -4390,6 +4390,16 @@
       "feedUrl": "https://techcommunity.microsoft.com/plugins/custom/microsoft/o365/custom-blog-rss?tid=2893852362688900935&board=AzureDevCommunityBlog&size=100&label=Developer",
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
+        {
+          "id": "https://techcommunity.microsoft.com/t5/microsoft-developer-community/azure-api-center-centralizing-api-management-for-enhanced/ba-p/4175756",
+          "author": "glaucia_lemos86",
+          "description": "Have you ever thought about having a single place to manage all your APIs? It could make it easier to find and control your services. Azure API Center is a solution that will help you do this. It offers a single platform for creating, publishing, managing, and monitoring APIs. In this article, we will learn more about this service, its features, benefits, and how it can help you.\n \nNew Free Training Course on Microsoft Learn: Introduction to Azure API Center!\n \nBefore we get started, we just had to share some great news! There's a new free training course on Microsoft Learn about the Azure API Center. It's a great way to get started with this service.\n \nOnce you've finished the course, you will get a certificate of completion you can share on social media and even on your resume or LinkedI…",
+          "link": "https://techcommunity.microsoft.com/t5/microsoft-developer-community/azure-api-center-centralizing-api-management-for-enhanced/ba-p/4175756",
+          "publishedOn": "2024-06-26T07:00:00.000Z",
+          "wordCount": 9299,
+          "title": "Azure API Center: Centralizing API Management for Enhanced Discovery and Governance",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/594713i84BF856453B56A95/image-size/original?v=v2&px=-1"
+        },
         {
           "id": "https://techcommunity.microsoft.com/t5/microsoft-developer-community/manage-dev-tunnels-with-group-policies/ba-p/4149472",
           "author": "carolinauribe",
@@ -5183,16 +5193,6 @@
           "wordCount": 12840,
           "title": "Converting an AWS Lambda Function in Go into an Azure Function using LLMs",
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/550891i1B89E83A15CC5A22/image-size/original?v=v2&px=-1"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/leverage-azure-api-management-to-distribute-api-traffic-to/ba-p/4041813",
-          "author": "Logico_jp",
-          "description": "This is a summarized edition of the following original articles, both of which were published in Japanese. This is a memo as of 27 January 2024.\nAzure API Managementのバックエンドプール – Logico Inside (logico-jp.io)\nAzure API Managementのバックエンドでサーキットブレーカーを構成する – Logico Inside (logico-jp.io)\n\n\n \n\n\nCircuit breaker and load balanced pool features have recently been added to the API Management backend. Both are in public preview as of 27 January 2024.\nAzure API Management backends | Microsoft Learn\n \nIn public preview, we must use either Bicep, ARM, or REST APIs (2023-05-01-preview or later) to configure circuit breakers and load-balanced pools. There is no command for either CLI or PowerShell and there is no dedicated configuration page in Azure Portal.\nBackend - REST API (Azure API Management) | Micro…",
-          "link": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/leverage-azure-api-management-to-distribute-api-traffic-to/ba-p/4041813",
-          "publishedOn": "2024-01-29T03:53:58.000Z",
-          "wordCount": 10556,
-          "title": "Leverage Azure API Management to distribute API traffic to multiple backend services",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/546700iCBD3B44E38EB3363/image-size/original?v=v2&px=-1"
         }
       ]
     },
@@ -5808,6 +5808,16 @@
       "feedUrl": "https://devblogs.microsoft.com/java/feed/",
       "siteUrl": "https://devblogs.microsoft.com/java/",
       "articles": [
+        {
+          "id": "https://devblogs.microsoft.com/java/?p=231151",
+          "author": "Cesar Soares",
+          "description": "In the previous part of this blog series, we explored the foundational concepts and purpose of scalar replacement (SR) in OpenJDK, laying the groundwork for understanding how this optimization can boost the performance of Java applications. Now, in the second installment of the series,\nThe post Improving OpenJDK Scalar Replacement – Part 2/3 appeared first on Microsoft for Java Developers.",
+          "link": "https://devblogs.microsoft.com/java/improving-openjdk-scalar-replacement-part-2-3/",
+          "publishedOn": "2024-06-26T17:55:09.000Z",
+          "wordCount": 6399,
+          "title": "Improving OpenJDK Scalar Replacement – Part 2/3",
+          "imageUrl": "https://devblogs.microsoft.com/java/wp-content/uploads/sites/51/2024/06/listing1-300x143.png"
+        },
         {
           "id": "https://devblogs.microsoft.com/java/?p=231185",
           "author": "Josephine Qiu",
@@ -7302,6 +7312,16 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/t5/azure-observability-blog/advanced-network-observability-for-your-azure-kubernetes-service/ba-p/4176736",
+          "author": "DalanMendonca",
+          "description": "Last year at BUILD we announced the public preview of the Network Observability add-on. Today we’re excited to share a massive upgrade to the network observability capabilities available to AKS customers. \n \nWhat’s new?\nWe are excited to announce Advanced Container Networking Services (ACNS), a suite of services built to significantly enhance the operational capabilities of your Azure Kubernetes Service (AKS) clusters. Advanced Network Observability is the inaugural feature of the ACNS suite bringing the power of Hubble’s control plane to both Cilium and Non-Cilium Linux data planes. With Advanced Network Observability, customers can now pinpoint network-related issues with more precision and detect root causes faster.  The offering provides pod level packet statistics, DNS statistics, L4 connections and enhanced debugging capabilities with network flow logs and DNS error tracking.\nData flow for Advanced Network Observability\n \nHow can Azure customers use the new offering?\nACNS is integrated deeply with existing Azure Monitor capabilities for monitoring AKS clusters. Using the new capabilities requires no extra configuration from customers. Customers can enable advanced network observability with a single command. The metrics are then ingested automatically by Azure Monitor managed service for Prometheus. Additionally, customers can visualize the metrics in pre-built dashboards in Azure Managed Grafana. Customers have access to 6 pre-built dashboards in Azure Managed Grafana covering a breadth of signals from cluster traffic to DNS and pod level flows.\n \nPod flows dashboard built into Azure Manged Grafana\n \n \nHow to get ACNS\nTo get started with ACNS capabilities, please see our onboarding documentation\n \nRead more about ACNS:\n\nDocumentation: What is Advanced Container Networking Services?\nAzure Blog:  Announcing Advanced Container Networking Services for your Azure Kubernetes Service clusters",
+          "link": "https://techcommunity.microsoft.com/t5/azure-observability-blog/advanced-network-observability-for-your-azure-kubernetes-service/ba-p/4176736",
+          "publishedOn": "2024-06-26T20:15:57.000Z",
+          "wordCount": 8619,
+          "title": "Advanced Network Observability for your Azure Kubernetes Service clusters through Azure Monitor",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/595078iAC5106C323CE80F9/image-size/original?v=v2&px=-1"
+        },
+        {
           "id": "https://techcommunity.microsoft.com/t5/azure-observability-blog/analyze-data-using-log-analytics-simple-mode/ba-p/4152447",
           "author": "Ilana_Waitser",
           "description": "Introduction \nAzure Monitor Logs offer a powerful set of capabilities for users to explore their logs and derive meaningful insights from their data estate.\nUntil now, Azure Monitor Logs relied on KQL for users to express their questions as queries.KQL is a powerful, easy to learn query language, however, as any query language it requires some knowledge to operate.\nSimple mode experience was created to bridge this knowledge gap - allowing most popular KQL operators and actions to be utilized using a very simple, point-and-click experience requiring no KQL knowledge at all!  \nKQL Mode gives advanced users the full power of Kusto Query Language (KQL) to derive deeper insights from their logs.\n \nHere's a video that provides a quick overview of how to query logs in Log Analytics using both Sim…",
@@ -7420,24 +7440,24 @@
           "wordCount": 10517,
           "title": "Azure Monitor- Announcing General Availability of Azure Monitor Metrics Data Plane API",
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/547806iC8F1DADCE04897CC/image-size/original?v=v2&px=-1"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/azure-observability-blog/how-to-monitor-your-multi-tenant-solution-on-azure-with-azure/ba-p/4042140",
-          "author": "TomClaes",
-          "description": "1. Multi Tenant solution\n \nOften customers are operating using a multi-tenant architecture in Azure for several reasons: cost-effectiveness, scalability and security. However, this architecture will make it challenging to get an overview of the status of resources across the different tenants. E.g., an application with different instances of it running across multiple tenants. The person responsible for the performance and operational effectiveness of the application will have a hard time monitoring the status of each of these instances. In an ideal scenario, this person would be able to assess all this information from a single pane of glass instead of having to log into each tenant to retrieve this data.\nGiven the scenario above, it is not possible to send log data from resources in tena…",
-          "link": "https://techcommunity.microsoft.com/t5/azure-observability-blog/how-to-monitor-your-multi-tenant-solution-on-azure-with-azure/ba-p/4042140",
-          "publishedOn": "2024-01-29T12:05:33.000Z",
-          "wordCount": 11258,
-          "title": "How To Monitor Your Multi-Tenant Solution on Azure With Azure Monitor",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/546465iEE3A2A2574B54726/image-size/original?v=v2&px=-1"
         }
       ]
     },
     {
       "title": "Microsoft Open Source Blog",
       "feedUrl": "https://cloudblogs.microsoft.com/opensource/feed/",
-      "siteUrl": "https://cloudblogs.microsoft.com/opensource/",
+      "siteUrl": "https://opensource.microsoft.com/blog/",
       "articles": [
+        {
+          "id": "https://opensource.microsoft.com/blog/2024/04/25/open-sourcing-ms-dos-4-0/",
+          "author": "Scott Hanselman and Jeff Wilcox",
+          "description": "Today, in partnership with IBM and in the spirit of open innovation, we’re releasing the source code to MS-DOS 4.00 under the MIT license. \nThe post Open sourcing MS-DOS 4.0  appeared first on Microsoft Open Source Blog.",
+          "link": "https://opensource.microsoft.com/blog/2024/04/25/open-sourcing-ms-dos-4-0/",
+          "publishedOn": "2024-04-25T21:30:00.000Z",
+          "wordCount": 2760,
+          "title": "Open sourcing MS-DOS 4.0",
+          "imageUrl": "https://opensource.microsoft.com/blog/wp-content/uploads/2024/04/Azure_Blog_Abstract-01_1260x708-social.jpg"
+        },
         {
           "id": "https://cloudblogs.microsoft.com/opensource/2024/04/25/open-sourcing-ms-dos-4-0/",
           "author": "Scott Hanselman and Jeff Wilcox",
@@ -7447,6 +7467,16 @@
           "wordCount": 2766,
           "title": "Open sourcing MS-DOS 4.0",
           "imageUrl": "https://cloudblogs.microsoft.com/opensource/wp-content/uploads/sites/37/2024/04/Azure_Blog_Abstract-01_1260x708-social.jpg"
+        },
+        {
+          "id": "https://opensource.microsoft.com/blog/2024/04/17/microsoft-open-source-programs-office-tuning-the-answers-to-open-source-questions/",
+          "author": "Emma Irwin",
+          "description": "With collaboration and partnership in mind, we also think of our Open Source Programs Office as part of an even bigger ensemble of companies, academic institutions, non-profits, communities, and individuals working to get better at Open Source—we are super excited to be attending the Open Source Summit in Seattle on April 16, 2024. \nThe post Microsoft Open Source Programs Office—Tuning the answers to Open Source questions appeared first on Microsoft Open Source Blog.",
+          "link": "https://opensource.microsoft.com/blog/2024/04/17/microsoft-open-source-programs-office-tuning-the-answers-to-open-source-questions/",
+          "publishedOn": "2024-04-17T15:00:00.000Z",
+          "wordCount": 3781,
+          "title": "Microsoft Open Source Programs Office—Tuning the answers to Open Source questions",
+          "imageUrl": "https://opensource.microsoft.com/blog/wp-content/uploads/2024/06/STB13_Ken_01-1.png"
         },
         {
           "id": "https://cloudblogs.microsoft.com/opensource/2024/04/17/microsoft-open-source-programs-office-tuning-the-answers-to-open-source-questions/",
@@ -7459,6 +7489,16 @@
           "imageUrl": "https://cloudblogs.microsoft.com/opensource/wp-content/uploads/sites/37/2021/12/Picture1.png"
         },
         {
+          "id": "https://opensource.microsoft.com/blog/2024/04/09/join-microsoft-at-open-source-summit-north-america-2024/",
+          "author": "Henry Yan",
+          "description": "Join Microsoft at Open Source Summit North America 2024, taking place in Seattle, Washington from April 16 to 18, 2024, bringing together open source developers, technologists, and community leaders to collaborate, share information, solve problems, and gain knowledge.\nThe post Join Microsoft at Open Source Summit North America 2024 appeared first on Microsoft Open Source Blog.",
+          "link": "https://opensource.microsoft.com/blog/2024/04/09/join-microsoft-at-open-source-summit-north-america-2024/",
+          "publishedOn": "2024-04-09T16:00:00.000Z",
+          "wordCount": 3254,
+          "title": "Join Microsoft at Open Source Summit North America 2024",
+          "imageUrl": "https://opensource.microsoft.com/blog/wp-content/uploads/2024/06/MSC24-Japan-business-Getty-1024531730-rgb.png"
+        },
+        {
           "id": "https://cloudblogs.microsoft.com/opensource/2024/04/09/join-microsoft-at-open-source-summit-north-america-2024/",
           "author": "Henry Yan",
           "description": "Join Microsoft at Open Source Summit North America 2024, taking place in Seattle, Washington from April 16 to 18, 2024, bringing together open source developers, technologists, and community leaders to collaborate, share information, solve problems, and gain knowledge.\nThe post Join Microsoft at Open Source Summit North America 2024 appeared first on Microsoft Open Source Blog.",
@@ -7467,6 +7507,16 @@
           "wordCount": 3320,
           "title": "Join Microsoft at Open Source Summit North America 2024",
           "imageUrl": "https://cloudblogs.microsoft.com/opensource/wp-content/uploads/sites/37/2019/04/V_1O61BK.jpg"
+        },
+        {
+          "id": "https://opensource.microsoft.com/blog/2024/03/18/see-how-azure-is-empowering-cloud-native-development-and-ai-innovation-with-kubernetes-at-kubecon-europe-2024/",
+          "author": "Brendan Burns",
+          "description": "Greetings and welcome to KubeCon Europe 2024! Microsoft is excited to be able to support and contribute to the cloud-native and open-source communities.\nThe post See how Azure is empowering cloud-native development and AI innovation with Kubernetes at KubeCon Europe 2024 appeared first on Microsoft Open Source Blog.",
+          "link": "https://opensource.microsoft.com/blog/2024/03/18/see-how-azure-is-empowering-cloud-native-development-and-ai-innovation-with-kubernetes-at-kubecon-europe-2024/",
+          "publishedOn": "2024-03-18T15:00:00.000Z",
+          "wordCount": 3573,
+          "title": "See how Azure is empowering cloud-native development and AI innovation with Kubernetes at KubeCon Europe 2024",
+          "imageUrl": "https://opensource.microsoft.com/blog/wp-content/uploads/2024/04/4.24-cta.png"
         },
         {
           "id": "https://cloudblogs.microsoft.com/opensource/2024/03/18/see-how-azure-is-empowering-cloud-native-development-and-ai-innovation-with-kubernetes-at-kubecon-europe-2024/",
@@ -7479,6 +7529,16 @@
           "imageUrl": "https://cloudblogs.microsoft.com/opensource/wp-content/uploads/sites/37/2019/04/V_1O61BK.jpg"
         },
         {
+          "id": "https://opensource.microsoft.com/blog/2024/02/29/onnx-runtime-web-unleashes-generative-ai-in-the-browser-using-webgpu/",
+          "author": "Emma Ning, Yulong Wang and Satya Jandhyala",
+          "description": "This blog is thrilled to announce the official launch of ONNX Runtime Web featuring WebGPU, now available in the ONNX Runtime 1.17 release. \nThe post ONNX Runtime Web unleashes generative AI in the browser using WebGPU appeared first on Microsoft Open Source Blog.",
+          "link": "https://opensource.microsoft.com/blog/2024/02/29/onnx-runtime-web-unleashes-generative-ai-in-the-browser-using-webgpu/",
+          "publishedOn": "2024-02-29T16:00:00.000Z",
+          "wordCount": 3266,
+          "title": "ONNX Runtime Web unleashes generative AI in the browser using WebGPU",
+          "imageUrl": "https://opensource.microsoft.com/blog/wp-content/uploads/2024/06/LogiDock.png"
+        },
+        {
           "id": "https://cloudblogs.microsoft.com/opensource/2024/02/29/onnx-runtime-web-unleashes-generative-ai-in-the-browser-using-webgpu/",
           "author": "Emma Ning, Yulong Wang and Satya Jandhyala",
           "description": "This blog is thrilled to announce the official launch of ONNX Runtime Web featuring WebGPU, now available in the ONNX Runtime 1.17 release. \nThe post ONNX Runtime Web unleashes generative AI in the browser using WebGPU appeared first on Microsoft Open Source Blog.",
@@ -7487,6 +7547,16 @@
           "wordCount": 3278,
           "title": "ONNX Runtime Web unleashes generative AI in the browser using WebGPU",
           "imageUrl": "https://cloudblogs.microsoft.com/opensource/wp-content/uploads/sites/37/2024/02/Picture8-1-1024x393.webp"
+        },
+        {
+          "id": "https://opensource.microsoft.com/blog/2024/02/06/on-device-training-training-a-model-in-browser/",
+          "author": "Caroline Zhu",
+          "description": "Continuing the ONNXRuntime On-Device Training blog series, we are introducing ONNX Runtime Training for Web, a new feature in ONNX Runtime (ORT) that enables training models in the browser. \nThe post On-Device Training: Training a model in browser appeared first on Microsoft Open Source Blog.",
+          "link": "https://opensource.microsoft.com/blog/2024/02/06/on-device-training-training-a-model-in-browser/",
+          "publishedOn": "2024-02-06T16:00:00.000Z",
+          "wordCount": 4227,
+          "title": "On-Device Training: Training a model in browser",
+          "imageUrl": "https://opensource.microsoft.com/blog/wp-content/uploads/2024/06/MSC21_homeGaming_Surface_002.png"
         },
         {
           "id": "https://cloudblogs.microsoft.com/opensource/2024/02/06/on-device-training-training-a-model-in-browser/",
@@ -11022,6 +11092,21 @@
       "feedUrl": "https://devblogs.microsoft.com/microsoft365dev/feed/",
       "siteUrl": "https://devblogs.microsoft.com/microsoft365dev/",
       "articles": [
+        {
+          "id": "https://devblogs.microsoft.com/microsoft365dev/?p=21984",
+          "author": "Kashif Qureshi",
+          "description": "We are excited to announce that Fluid Framework 2 is now generally available and ready for production applications.\nThe post Fluid Framework 2 is now production ready appeared first on Microsoft 365 Developer Blog.",
+          "link": "https://devblogs.microsoft.com/microsoft365dev/fluid-framework-2-is-now-production-ready/",
+          "publishedOn": "2024-06-26T19:50:07.000Z",
+          "wordCount": 5479,
+          "title": "Fluid Framework 2 is now production ready",
+          "enclosure": {
+            "url": "https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2024/06/00-StayInSyncHd_video_en-us-0x1080-6439k.mp4",
+            "length": "2307953",
+            "type": "video/mp4"
+          },
+          "imageUrl": "https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2024/06/FluidFramework2GA-scaled.jpg"
+        },
         {
           "id": "https://devblogs.microsoft.com/microsoft365dev/?p=21932",
           "author": "Sheri Mehmood",
