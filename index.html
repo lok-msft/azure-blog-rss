@@ -22,6 +22,158 @@
             data-action="toggle-accordions"
             title="Click to toggle the day, Ctrl + click to toggle all."
           >
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2024-07-09 datetime="2024-07-08T18:25:57.000Z">2024-07-09</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2024-07-09 datetime="2024-07-08T18:25:57.000Z"></time>
+          </button>
+        </h2>
+        <ul class="sources card">
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Microsoft Tech Community - Latest Blogs - Azure PaaS Blog</button>
+                  <a class="source-heading__link" href="https://techcommunity.microsoft.com">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://techcommunity.microsoft.com/t5/azure-paas-blog/how-to-copy-all-azure-storage-tables-data-between-two-different/ba-p/4161386"
+                        open
+                      >
+                        <summary class="article-expander__title">How to copy all Azure Storage Tables data between two different Storage Accounts with Python</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/t5/azure-paas-blog/how-to-copy-all-azure-storage-tables-data-between-two-different/ba-p/4161386">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://cdn.techcommunity.microsoft.com/assets/Azure/BlogPreview_default-blue.png" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>Background
+This article describes how to copy all Azure Storage Tables data between two different storage accounts.
+ 
+For this, we will use Azure Storage SDK for Python to copy all tables (and the respective data) from one Azure Storage Table to another Azure Storage Table. This approach will keep the data in the source tables, and will create new tables with the respective data in the destination Azure Storage Table.
+ 
+This script was developed and tested using the following versions but it is expected to work with previous versions:
+
+Python 3.11.7
+azure-data-tables (version: 12.5.0)
+azure-core (version: 1.30.1)
+
+ 
+Approach
+ 
+In this section, you can find a sample code to copy all tables data between two Storage Accounts using the Azure Storage SDK for Python.
+ 
+This Python sample code is…</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;29
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+        </ul>
+      </section>
+      <section class="daily-content js-toggle-accordions-scope">
+        <h2 class="daily-heading">
+          <button
+            class="daily-heading-toggle"
+            data-action="toggle-accordions"
+            title="Click to toggle the day, Ctrl + click to toggle all."
+          >
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2024-07-08 datetime="2024-07-08T10:13:44.000Z">2024-07-08</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2024-07-08 datetime="2024-07-08T10:13:44.000Z"></time>
+          </button>
+        </h2>
+        <ul class="sources card">
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Microsoft Tech Community - Latest Blogs - Apps on Azure Blog</button>
+                  <a class="source-heading__link" href="https://techcommunity.microsoft.com">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/capture-and-review-net-profiler-traces-on-app-service-windows/ba-p/4185377"
+                        open
+                      >
+                        <summary class="article-expander__title">Capture and review .Net Profiler Traces on App Service (Windows)</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/capture-and-review-net-profiler-traces-on-app-service-windows/ba-p/4185377">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://techcommunity.microsoft.com/t5/image/serverpage/image-id/598181i25A8F591355EF782/image-size/original?v&#x3D;v2&amp;px&#x3D;-1" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>This blog emphasizes the process of gathering profiler traces for application hosted on App Service that is experiencing slowness. It also provides guidance on how to review these collected traces to pinpoint the root cause and take steps towards resolving it.
+ 
+
+Access the Azure Portal and navigate to the desired App Service.
+Navigate to &quot;Diagnose and Solve Problems&quot; -&gt; &quot;Diagnostic Tools&quot;
+
+
+ 
+
+Choose &quot;Collect .NET Profiler Trace&quot; option.
+Configure the trace options to gather data from the specific application instance, including thread details.
+
+
+ 
+
+Reproduce the issue at step 2.
+
+
+ 
+
+Access and examine the generated report.
+
+
+ 
+
+In the demo application, a delay of approximately 20 seconds was observed. Refer to the browser network traces provided below.
+
+
+ 
+
+Analyze the profiler traces to pinpoint the cause of the reported delay.
+
+
+ 
+
+After examining the demo app&#x27;s code, it was evident that a deliberate 20-second delay was introduced in the Privacy method within the Home Controller.
+
+
+ 
+
+Note: Default profiler log collection time is 60 seconds and it is possible to increase the default profiling duration by setting an application setting IIS_PROFILING_TIMEOUT_IN_SECONDS with a maximum value of 900 (i.e. 15 minutes).</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;29
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+        </ul>
+      </section>
+      <section class="daily-content js-toggle-accordions-scope">
+        <h2 class="daily-heading">
+          <button
+            class="daily-heading-toggle"
+            data-action="toggle-accordions"
+            title="Click to toggle the day, Ctrl + click to toggle all."
+          >
             <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2024-07-06 datetime="2024-07-06T07:00:00.000Z">2024-07-06</time>
             <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2024-07-06 datetime="2024-07-06T07:00:00.000Z"></time>
           </button>
@@ -1386,7 +1538,7 @@ By supporting the new version of OCI, ACR can store, distribute, and discover no
                     data-action="toggle-accordions"
                     title="Click to toggle the source, Ctrl + click to toggle all."
                   >Microsoft Open Source Blog</button>
-                  <a class="source-heading__link" href="https://opensource.microsoft.com/blog/">Open</a>
+                  <a class="source-heading__link" href="https://cloudblogs.microsoft.com/opensource/">Open</a>
                 </h3>
                 <section class="articles-per-source">
                     <article>
@@ -17538,7 +17690,7 @@ Red Hat OpenShift, the industry’s leading hybrid cloud application platform p
                     data-action="toggle-accordions"
                     title="Click to toggle the source, Ctrl + click to toggle all."
                   >Microsoft Open Source Blog</button>
-                  <a class="source-heading__link" href="https://opensource.microsoft.com/blog/">Open</a>
+                  <a class="source-heading__link" href="https://cloudblogs.microsoft.com/opensource/">Open</a>
                 </h3>
                 <section class="articles-per-source">
                     <article>
@@ -19511,7 +19663,7 @@ The post The Reliable Web App Pattern for Java with Enhanced Security and Scalab
                     data-action="toggle-accordions"
                     title="Click to toggle the source, Ctrl + click to toggle all."
                   >Microsoft Open Source Blog</button>
-                  <a class="source-heading__link" href="https://opensource.microsoft.com/blog/">Open</a>
+                  <a class="source-heading__link" href="https://cloudblogs.microsoft.com/opensource/">Open</a>
                 </h3>
                 <section class="articles-per-source">
                     <article>
@@ -22176,7 +22328,7 @@ Perhaps, after reading Pt. 1 of the series, you’ve decided that…</span>
                     data-action="toggle-accordions"
                     title="Click to toggle the source, Ctrl + click to toggle all."
                   >Microsoft Open Source Blog</button>
-                  <a class="source-heading__link" href="https://opensource.microsoft.com/blog/">Open</a>
+                  <a class="source-heading__link" href="https://cloudblogs.microsoft.com/opensource/">Open</a>
                 </h3>
                 <section class="articles-per-source">
                     <article>
@@ -27829,7 +27981,7 @@ If you are using IP addresses in your egress firewalls to your Azure Event Hubs 
                     data-action="toggle-accordions"
                     title="Click to toggle the source, Ctrl + click to toggle all."
                   >Microsoft Open Source Blog</button>
-                  <a class="source-heading__link" href="https://opensource.microsoft.com/blog/">Open</a>
+                  <a class="source-heading__link" href="https://cloudblogs.microsoft.com/opensource/">Open</a>
                 </h3>
                 <section class="articles-per-source">
                     <article>
@@ -32106,7 +32258,7 @@ To help you learn to manage your Azure investments and architecture in key areas
                     data-action="toggle-accordions"
                     title="Click to toggle the source, Ctrl + click to toggle all."
                   >Microsoft Open Source Blog</button>
-                  <a class="source-heading__link" href="https://opensource.microsoft.com/blog/">Open</a>
+                  <a class="source-heading__link" href="https://cloudblogs.microsoft.com/opensource/">Open</a>
                 </h3>
                 <section class="articles-per-source">
                     <article>
@@ -36690,142 +36842,6 @@ To apply a change in the VM size utilized in classic CS, a redeployment/upgrade 
             data-action="toggle-accordions"
             title="Click to toggle the day, Ctrl + click to toggle all."
           >
-            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2024-02-10 datetime="2024-02-09T19:56:40.000Z">2024-02-10</time>
-            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2024-02-10 datetime="2024-02-09T19:56:40.000Z"></time>
-          </button>
-        </h2>
-        <ul class="sources card">
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Microsoft Tech Community - Latest Blogs - Microsoft Developer Community Blog</button>
-                  <a class="source-heading__link" href="https://techcommunity.microsoft.com">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://techcommunity.microsoft.com/t5/azure-developer-community-blog/streamlining-azure-marketplace-deployments-with-modm/ba-p/4053466"
-                        open
-                      >
-                        <summary class="article-expander__title">Streamlining Azure Marketplace Deployments with MODM</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/t5/azure-developer-community-blog/streamlining-azure-marketplace-deployments-with-modm/ba-p/4053466">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://techcommunity.microsoft.com/t5/image/serverpage/image-id/550439iD3D293799D5DDA4B/image-size/original?v&#x3D;v2&amp;px&#x3D;-1" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>Streamlining Azure Marketplace Deployments
- 
-Navigating the complexity of deploying solutions to the Azure Marketplace is a common challenge faced by many of our partners at Microsoft. Recognizing this, our Global Partner Services team has developed a powerful tool to simplify this process: the Commercial Marketplace Offer Deployment Manager, or MODM.
- 
-Introducing MODM
- 
-MODM is a dedicated, first-party installer designed to streamline the deployment of intricate solutions in the Azure Marketplace. It is especially crafted to support deployments using HashiCorp&#x27;s Terraform and Azure Bicep, enhancing the versatility and efficiency of the deployment process.
- 
-How MODM Simplifies Deployment
- 
-The deployment process with MODM is straightforward, involving two main steps:
- 
-Step 1: Create You…</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;34
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Microsoft Tech Community - Latest Blogs - FastTrack for Azure</button>
-                  <a class="source-heading__link" href="https://techcommunity.microsoft.com">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://techcommunity.microsoft.com/t5/fasttrack-for-azure/generate-azure-policy-compliance-alerts-by-sending-custom-data/ba-p/4039114"
-                        open
-                      >
-                        <summary class="article-expander__title">Generate Azure Policy Compliance Alerts By Sending Custom Data to Log Analytics - Part 2 - Automated</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/t5/fasttrack-for-azure/generate-azure-policy-compliance-alerts-by-sending-custom-data/ba-p/4039114">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://techcommunity.microsoft.com/t5/image/serverpage/image-id/550412i987AA7F444CEF674/image-size/original?v&#x3D;v2&amp;px&#x3D;-1" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>Purpose
-This article is Part 2 of the series that shows you how to setup alerting when an Azure Policy Compliance State changes.  Part 1 of this article (https://techcommunity.microsoft.com/t5/fasttrack-for-azure/generate-azure-policy-compliance-alerts-by-sending-custom-data) demonstrated the architecture and the deployment of the resources through the Azure Portal.  This Part 2 will show how to automate the deployment of the resources for this Policy Compliance Alerting Solution.
- 
-Assumptions
-General knowledge of Azure, PowerShell, and the appropriate role-based access control assignment for resource creation, both in the portal and with command-line interfaces.
- 
-Challenge
-The challenge is the same as stated in Part 1 of this series.  The ability to have event-driven alerting of Azure P…</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;37
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Microsoft 365 Developer Blog</button>
-                  <a class="source-heading__link" href="https://devblogs.microsoft.com/microsoft365dev/">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://devblogs.microsoft.com/microsoft365dev/?p&#x3D;18597"
-                        open
-                      >
-                        <summary class="article-expander__title">SharePoint now supports delegated Sites.Selected authentication</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://devblogs.microsoft.com/microsoft365dev/sharepoint-now-supports-delegated-sites-selected-authentication/">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2024/02/spfix-scaled.jpg" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>Today, we are excited to introduce support for delegated Sites.Selected scenarios.
-The post SharePoint now supports delegated Sites.Selected authentication appeared first on Microsoft 365 Developer Blog.</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;16
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
-        </ul>
-      </section>
-      <section class="daily-content js-toggle-accordions-scope">
-        <h2 class="daily-heading">
-          <button
-            class="daily-heading-toggle"
-            data-action="toggle-accordions"
-            title="Click to toggle the day, Ctrl + click to toggle all."
-          >
             <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2024-02-07 datetime="2024-02-06T18:30:07.000Z">2024-02-07</time>
             <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2024-02-07 datetime="2024-02-06T18:30:07.000Z"></time>
           </button>
@@ -38360,8 +38376,8 @@ We have introduced several cost optimization related recommendations and added A
       </section>
 
     <footer>
-      <a class="footer-link" href="https://github.com/lok-msft/azure-blog-rss/actions/runs/9831882466">
-        <time id="build-timestamp" datetime="2024-07-08T01:11:30.134Z">2024-07-08T01:11:30.134Z</time>
+      <a class="footer-link" href="https://github.com/lok-msft/azure-blog-rss/actions/runs/9849279365">
+        <time id="build-timestamp" datetime="2024-07-09T01:10:26.078Z">2024-07-09T01:10:26.078Z</time>
       </a>
       <a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a>
     </footer>

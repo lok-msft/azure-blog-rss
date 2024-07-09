@@ -2,10 +2,86 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2024-07-08T01:11:30.190Z</updated>
+    <updated>2024-07-09T01:10:26.135Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[How to copy all Azure Storage Tables data between two different Storage Accounts with Python]]></title>
+        <id>https://techcommunity.microsoft.com/t5/azure-paas-blog/how-to-copy-all-azure-storage-tables-data-between-two-different/ba-p/4161386</id>
+        <link href="https://techcommunity.microsoft.com/t5/azure-paas-blog/how-to-copy-all-azure-storage-tables-data-between-two-different/ba-p/4161386"/>
+        <updated>2024-07-08T18:25:57.000Z</updated>
+        <summary type="html"><![CDATA[Background
+This article describes how to copy all Azure Storage Tables data between two different storage accounts.
+ 
+For this, we will use Azure Storage SDK for Python to copy all tables (and the respective data) from one Azure Storage Table to another Azure Storage Table. This approach will keep the data in the source tables, and will create new tables with the respective data in the destination Azure Storage Table.
+ 
+This script was developed and tested using the following versions but it is expected to work with previous versions:
+
+Python 3.11.7
+azure-data-tables (version: 12.5.0)
+azure-core (version: 1.30.1)
+
+ 
+Approach
+ 
+In this section, you can find a sample code to copy all tables data between two Storage Accounts using the Azure Storage SDK for Python.
+ 
+This Python sample code is…]]></summary>
+        <author>
+            <name>ruineiva</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Capture and review .Net Profiler Traces on App Service (Windows)]]></title>
+        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/capture-and-review-net-profiler-traces-on-app-service-windows/ba-p/4185377</id>
+        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/capture-and-review-net-profiler-traces-on-app-service-windows/ba-p/4185377"/>
+        <updated>2024-07-08T10:13:44.000Z</updated>
+        <summary type="html"><![CDATA[This blog emphasizes the process of gathering profiler traces for application hosted on App Service that is experiencing slowness. It also provides guidance on how to review these collected traces to pinpoint the root cause and take steps towards resolving it.
+ 
+
+Access the Azure Portal and navigate to the desired App Service.
+Navigate to "Diagnose and Solve Problems" -> "Diagnostic Tools"
+
+
+ 
+
+Choose "Collect .NET Profiler Trace" option.
+Configure the trace options to gather data from the specific application instance, including thread details.
+
+
+ 
+
+Reproduce the issue at step 2.
+
+
+ 
+
+Access and examine the generated report.
+
+
+ 
+
+In the demo application, a delay of approximately 20 seconds was observed. Refer to the browser network traces provided below.
+
+
+ 
+
+Analyze the profiler traces to pinpoint the cause of the reported delay.
+
+
+ 
+
+After examining the demo app's code, it was evident that a deliberate 20-second delay was introduced in the Privacy method within the Home Controller.
+
+
+ 
+
+Note: Default profiler log collection time is 60 seconds and it is possible to increase the default profiling duration by setting an application setting IIS_PROFILING_TIMEOUT_IN_SECONDS with a maximum value of 900 (i.e. 15 minutes).]]></summary>
+        <author>
+            <name>Kunal_KV</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Microsoft Learn Student Ambassadors Program Interview Series Episode 3]]></title>
         <id>https://techcommunity.microsoft.com/t5/educator-developer-blog/microsoft-learn-student-ambassadors-program-interview-series/ba-p/4170883</id>
@@ -15150,56 +15226,6 @@ The post Using AI for Content Moderation with Azure SQL Database appeared first 
 To apply a change in the VM size utilized in classic CS, a redeployment/upgrade is required subsequen…]]></summary>
         <author>
             <name>JerryZhangMS</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Streamlining Azure Marketplace Deployments with MODM]]></title>
-        <id>https://techcommunity.microsoft.com/t5/azure-developer-community-blog/streamlining-azure-marketplace-deployments-with-modm/ba-p/4053466</id>
-        <link href="https://techcommunity.microsoft.com/t5/azure-developer-community-blog/streamlining-azure-marketplace-deployments-with-modm/ba-p/4053466"/>
-        <updated>2024-02-09T19:56:40.000Z</updated>
-        <summary type="html"><![CDATA[Streamlining Azure Marketplace Deployments
- 
-Navigating the complexity of deploying solutions to the Azure Marketplace is a common challenge faced by many of our partners at Microsoft. Recognizing this, our Global Partner Services team has developed a powerful tool to simplify this process: the Commercial Marketplace Offer Deployment Manager, or MODM.
- 
-Introducing MODM
- 
-MODM is a dedicated, first-party installer designed to streamline the deployment of intricate solutions in the Azure Marketplace. It is especially crafted to support deployments using HashiCorp's Terraform and Azure Bicep, enhancing the versatility and efficiency of the deployment process.
- 
-How MODM Simplifies Deployment
- 
-The deployment process with MODM is straightforward, involving two main steps:
- 
-Step 1: Create You…]]></summary>
-        <author>
-            <name>bobjac</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Generate Azure Policy Compliance Alerts By Sending Custom Data to Log Analytics - Part 2 - Automated]]></title>
-        <id>https://techcommunity.microsoft.com/t5/fasttrack-for-azure/generate-azure-policy-compliance-alerts-by-sending-custom-data/ba-p/4039114</id>
-        <link href="https://techcommunity.microsoft.com/t5/fasttrack-for-azure/generate-azure-policy-compliance-alerts-by-sending-custom-data/ba-p/4039114"/>
-        <updated>2024-02-09T18:52:48.000Z</updated>
-        <summary type="html"><![CDATA[Purpose
-This article is Part 2 of the series that shows you how to setup alerting when an Azure Policy Compliance State changes.  Part 1 of this article (https://techcommunity.microsoft.com/t5/fasttrack-for-azure/generate-azure-policy-compliance-alerts-by-sending-custom-data) demonstrated the architecture and the deployment of the resources through the Azure Portal.  This Part 2 will show how to automate the deployment of the resources for this Policy Compliance Alerting Solution.
- 
-Assumptions
-General knowledge of Azure, PowerShell, and the appropriate role-based access control assignment for resource creation, both in the portal and with command-line interfaces.
- 
-Challenge
-The challenge is the same as stated in Part 1 of this series.  The ability to have event-driven alerting of Azure P…]]></summary>
-        <author>
-            <name>DJBartles</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[SharePoint now supports delegated Sites.Selected authentication]]></title>
-        <id>https://devblogs.microsoft.com/microsoft365dev/?p=18597</id>
-        <link href="https://devblogs.microsoft.com/microsoft365dev/sharepoint-now-supports-delegated-sites-selected-authentication/"/>
-        <updated>2024-02-09T16:00:45.000Z</updated>
-        <summary type="html"><![CDATA[Today, we are excited to introduce support for delegated Sites.Selected scenarios.
-The post SharePoint now supports delegated Sites.Selected authentication appeared first on Microsoft 365 Developer Blog.]]></summary>
-        <author>
-            <name>Patrick Rodgers</name>
         </author>
     </entry>
     <entry>

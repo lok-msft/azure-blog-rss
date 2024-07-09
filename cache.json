@@ -2230,6 +2230,16 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/capture-and-review-net-profiler-traces-on-app-service-windows/ba-p/4185377",
+          "author": "Kunal_KV",
+          "description": "This blog emphasizes the process of gathering profiler traces for application hosted on App Service that is experiencing slowness. It also provides guidance on how to review these collected traces to pinpoint the root cause and take steps towards resolving it.\n \n\nAccess the Azure Portal and navigate to the desired App Service.\nNavigate to \"Diagnose and Solve Problems\" -> \"Diagnostic Tools\"\n\n\n \n\nChoose \"Collect .NET Profiler Trace\" option.\nConfigure the trace options to gather data from the specific application instance, including thread details.\n\n\n \n\nReproduce the issue at step 2.\n\n\n \n\nAccess and examine the generated report.\n\n\n \n\nIn the demo application, a delay of approximately 20 seconds was observed. Refer to the browser network traces provided below.\n\n\n \n\nAnalyze the profiler traces to pinpoint the cause of the reported delay.\n\n\n \n\nAfter examining the demo app's code, it was evident that a deliberate 20-second delay was introduced in the Privacy method within the Home Controller.\n\n\n \n\nNote: Default profiler log collection time is 60 seconds and it is possible to increase the default profiling duration by setting an application setting IIS_PROFILING_TIMEOUT_IN_SECONDS with a maximum value of 900 (i.e. 15 minutes).",
+          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/capture-and-review-net-profiler-traces-on-app-service-windows/ba-p/4185377",
+          "publishedOn": "2024-07-08T10:13:44.000Z",
+          "wordCount": 8609,
+          "title": "Capture and review .Net Profiler Traces on App Service (Windows)",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/598181i25A8F591355EF782/image-size/original?v=v2&px=-1"
+        },
+        {
           "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/code-in-the-cloud-explore-tools-training-and-resources/ba-p/4178905",
           "author": "mpgraven",
           "description": "Discover how the cloud can make you a better and more productive developer. It can even improve how you collaborate with other developers. For our July roundup, we’re exploring the latest tools, training, and resources that will help you harness the power of the cloud in your development workflows. We have info on cloud-based dev environments (like Microsoft Dev Box and GitHub Codespaces), coding companions (such as GitHub Copilot for Azure), and cloud-native tools (like .NET Aspire). Read on and find out how you can improve productivity and build better apps. We also touch on other developer-related topics from around Microsoft, including a look at working with Data Wrangler in VS Code and how to add AI to Microsoft Mesh experiences.                                        \n \nSecure AI App…",
@@ -4028,16 +4038,6 @@
           "wordCount": 11346,
           "title": "Relational Data Synchronization between environments",
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/554896iC076765D1E9ED822/image-size/original?v=v2&px=-1"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/fasttrack-for-azure/generate-azure-policy-compliance-alerts-by-sending-custom-data/ba-p/4039114",
-          "author": "DJBartles",
-          "description": "Purpose\nThis article is Part 2 of the series that shows you how to setup alerting when an Azure Policy Compliance State changes.  Part 1 of this article (https://techcommunity.microsoft.com/t5/fasttrack-for-azure/generate-azure-policy-compliance-alerts-by-sending-custom-data) demonstrated the architecture and the deployment of the resources through the Azure Portal.  This Part 2 will show how to automate the deployment of the resources for this Policy Compliance Alerting Solution.\n \nAssumptions\nGeneral knowledge of Azure, PowerShell, and the appropriate role-based access control assignment for resource creation, both in the portal and with command-line interfaces.\n \nChallenge\nThe challenge is the same as stated in Part 1 of this series.  The ability to have event-driven alerting of Azure P…",
-          "link": "https://techcommunity.microsoft.com/t5/fasttrack-for-azure/generate-azure-policy-compliance-alerts-by-sending-custom-data/ba-p/4039114",
-          "publishedOn": "2024-02-09T18:52:48.000Z",
-          "wordCount": 11042,
-          "title": "Generate Azure Policy Compliance Alerts By Sending Custom Data to Log Analytics - Part 2 - Automated",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/550412i987AA7F444CEF674/image-size/original?v=v2&px=-1"
         }
       ]
     },
@@ -4569,16 +4569,6 @@
           "wordCount": 11446,
           "title": "Microsoft JDConf 2024 Announces Keynote Speaker and Breakout Sessions – Java, Cloud and AI",
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/551718iC1DB09331346842F/image-size/original?v=v2&px=-1"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/azure-developer-community-blog/streamlining-azure-marketplace-deployments-with-modm/ba-p/4053466",
-          "author": "bobjac",
-          "description": "Streamlining Azure Marketplace Deployments\n \nNavigating the complexity of deploying solutions to the Azure Marketplace is a common challenge faced by many of our partners at Microsoft. Recognizing this, our Global Partner Services team has developed a powerful tool to simplify this process: the Commercial Marketplace Offer Deployment Manager, or MODM.\n \nIntroducing MODM\n \nMODM is a dedicated, first-party installer designed to streamline the deployment of intricate solutions in the Azure Marketplace. It is especially crafted to support deployments using HashiCorp's Terraform and Azure Bicep, enhancing the versatility and efficiency of the deployment process.\n \nHow MODM Simplifies Deployment\n \nThe deployment process with MODM is straightforward, involving two main steps:\n \nStep 1: Create You…",
-          "link": "https://techcommunity.microsoft.com/t5/azure-developer-community-blog/streamlining-azure-marketplace-deployments-with-modm/ba-p/4053466",
-          "publishedOn": "2024-02-09T19:56:40.000Z",
-          "wordCount": 10177,
-          "title": "Streamlining Azure Marketplace Deployments with MODM",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/550439iD3D293799D5DDA4B/image-size/original?v=v2&px=-1"
         }
       ]
     },
@@ -4587,6 +4577,16 @@
       "feedUrl": "https://techcommunity.microsoft.com/plugins/custom/microsoft/o365/custom-blog-rss?tid=2015807141232549759&board=AzurePaaSBlog&size=200",
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
+        {
+          "id": "https://techcommunity.microsoft.com/t5/azure-paas-blog/how-to-copy-all-azure-storage-tables-data-between-two-different/ba-p/4161386",
+          "author": "ruineiva",
+          "description": "Background\nThis article describes how to copy all Azure Storage Tables data between two different storage accounts.\n \nFor this, we will use Azure Storage SDK for Python to copy all tables (and the respective data) from one Azure Storage Table to another Azure Storage Table. This approach will keep the data in the source tables, and will create new tables with the respective data in the destination Azure Storage Table.\n \nThis script was developed and tested using the following versions but it is expected to work with previous versions:\n\nPython 3.11.7\nazure-data-tables (version: 12.5.0)\nazure-core (version: 1.30.1)\n\n \nApproach\n \nIn this section, you can find a sample code to copy all tables data between two Storage Accounts using the Azure Storage SDK for Python.\n \nThis Python sample code is…",
+          "link": "https://techcommunity.microsoft.com/t5/azure-paas-blog/how-to-copy-all-azure-storage-tables-data-between-two-different/ba-p/4161386",
+          "publishedOn": "2024-07-08T18:25:57.000Z",
+          "wordCount": 8739,
+          "title": "How to copy all Azure Storage Tables data between two different Storage Accounts with Python",
+          "imageUrl": "https://cdn.techcommunity.microsoft.com/assets/Azure/BlogPreview_default-blue.png"
+        },
         {
           "id": "https://techcommunity.microsoft.com/t5/azure-paas-blog/automatically-enable-system-managed-identity-for-app-service/ba-p/4108293",
           "author": "emanuel4ever",
@@ -7271,7 +7271,7 @@
     {
       "title": "Microsoft Open Source Blog",
       "feedUrl": "https://cloudblogs.microsoft.com/opensource/feed/",
-      "siteUrl": "https://opensource.microsoft.com/blog/",
+      "siteUrl": "https://cloudblogs.microsoft.com/opensource/",
       "articles": [
         {
           "id": "https://opensource.microsoft.com/blog/2024/06/27/5-things-we-learned-from-sponsoring-a-sampling-of-our-open-source-dependencies/",
@@ -11461,16 +11461,6 @@
           "wordCount": 4913,
           "title": "Introducing API-based message extensions in Microsoft Teams Developer Portal",
           "imageUrl": "https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2024/01/Updated-1-scaled.jpg"
-        },
-        {
-          "id": "https://devblogs.microsoft.com/microsoft365dev/?p=18597",
-          "author": "Patrick Rodgers",
-          "description": "Today, we are excited to introduce support for delegated Sites.Selected scenarios.\nThe post SharePoint now supports delegated Sites.Selected authentication appeared first on Microsoft 365 Developer Blog.",
-          "link": "https://devblogs.microsoft.com/microsoft365dev/sharepoint-now-supports-delegated-sites-selected-authentication/",
-          "publishedOn": "2024-02-09T16:00:45.000Z",
-          "wordCount": 4897,
-          "title": "SharePoint now supports delegated Sites.Selected authentication",
-          "imageUrl": "https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2024/02/spfix-scaled.jpg"
         }
       ]
     }
