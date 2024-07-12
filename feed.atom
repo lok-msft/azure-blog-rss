@@ -2,10 +2,52 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2024-07-11T01:11:11.794Z</updated>
+    <updated>2024-07-12T01:09:44.424Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Using Azure Automation to perform Azure Site Recovery post failover tasks in virtual machines]]></title>
+        <id>https://techcommunity.microsoft.com/t5/fasttrack-for-azure/using-azure-automation-to-perform-azure-site-recovery-post/ba-p/4188963</id>
+        <link href="https://techcommunity.microsoft.com/t5/fasttrack-for-azure/using-azure-automation-to-perform-azure-site-recovery-post/ba-p/4188963"/>
+        <updated>2024-07-11T13:24:44.000Z</updated>
+        <summary type="html"><![CDATA[Overview
+ 
+Azure Site Recovery (ASR) is a service that often comes to mind when adopting a business continuity and disaster recovery (BCDR) approach. In summary, ASR continuously replicates workloads running on physical and virtual machines (VMs) from a primary to a secondary site. If disaster strikes and causes an outage, ASR will fail over workloads to the secondary site and ensure applications remain accessible, and later fail back to the primary site once it becomes available again. A secondary ‘site’ may be another Azure region, or a different availability zone in the same Azure region.
+ 
+What ‘failing over’ actually means is creating copies of the protected machines in the secondary site, which ideally should retain all the configurations applied to the original VMs in the primary si…]]></summary>
+        <author>
+            <name>BeatrizSilveira</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Deploy a Phi-3 model in Azure AI, and consume it with C# and Semantic Kernel]]></title>
+        <id>https://techcommunity.microsoft.com/t5/educator-developer-blog/deploy-a-phi-3-model-in-azure-ai-and-consume-it-with-c-and/ba-p/4188024</id>
+        <link href="https://techcommunity.microsoft.com/t5/educator-developer-blog/deploy-a-phi-3-model-in-azure-ai-and-consume-it-with-c-and/ba-p/4188024"/>
+        <updated>2024-07-11T07:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Hi friends!
+ 
+Let's keep writing about Phi-3, and today's post is a demo about how to deploy Phi-3 model to Azure AI, and consuming it using C# and Semantic Kernel. This guide will walk you through the process, covering chat completion text scenarios and vision scenarios. 
+Why Phi-3 and Semantic Kernel?
+Phi-3 is a state-of-the-art model that brings advanced AI capabilities to your projects, enhancing both text and vision scenarios. Coupled with the Semantic Kernel, an orchestrator that handles authentication and interactions with the cloud, you have a robust setup for deploying and using AI models efficiently.
+ 
+Bonus: Semantic Kernel allows literally zero code changes to move from a local Phi-3 deployment to a cloud Phi-3 deployment for your applications.
+Step 1: Deploy Phi-3 on Azure AI
+…]]></summary>
+        <author>
+            <name>elbruno</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[A Bootiful Podcast: Cloud Native Cora Iberkleid on architecture, Spring Modulith, and more]]></title>
+        <id>https://spring.io/blog/2024/07/11/a-bootiful-podcast-cloud-native-cora-iberkleid-on-architecture-spring</id>
+        <link href="https://spring.io/blog/2024/07/11/a-bootiful-podcast-cloud-native-cora-iberkleid-on-architecture-spring"/>
+        <updated>2024-07-11T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Level up your Java code and explore what Spring can do for you.]]></summary>
+        <author>
+            <name>Josh Long</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Save Costs with Basic SKU Application Gateway for more features and less fixed costs]]></title>
         <id>https://techcommunity.microsoft.com/t5/fasttrack-for-azure/save-costs-with-basic-sku-application-gateway-for-more-features/ba-p/4099223</id>
@@ -15424,85 +15466,6 @@ Traditional CMS's such as WordPress provide both the ability to edit content and
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Leveraging Redis Insights for Azure Cache for Redis]]></title>
-        <id>https://techcommunity.microsoft.com/t5/azure-paas-blog/leveraging-redis-insights-for-azure-cache-for-redis/ba-p/4054484</id>
-        <link href="https://techcommunity.microsoft.com/t5/azure-paas-blog/leveraging-redis-insights-for-azure-cache-for-redis/ba-p/4054484"/>
-        <updated>2024-02-13T09:08:36.000Z</updated>
-        <summary type="html"><![CDATA[The blog talks about how to leverage Redis Insights GUI tool while working with Azure Cache for Redis. We will look at some of the option what will help us with some high-level connectivity troubleshooting and insights to our data present inside the cache. 
- 
-To start with, we can leverage this for testing the connectivity to our Redis cache instance. After clicking on Add Redis Database button, we can fill in the other fields ahead: 
- 
-Host: Complete FQDN or the completed Redis cache Endpoint  
-For Basic, Standard & Premium Tier - <Cachename>.redis.windows.net 
-For Enterprise Tier - <Cachename>.<regionname>.redisenterprise.cache.azure.net 
-Port: 6380 or 6379 (depending on whether we are testing for SSL or non-SSL port respectively) / 10000 for Enterprise Tier 
-Database Alias: Cache name 
-…]]></summary>
-        <author>
-            <name>Amrinder_Singh</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Workload identity federation for Azure deployments is now generally available]]></title>
-        <id>https://devblogs.microsoft.com/devops/?p=68479</id>
-        <link href="https://devblogs.microsoft.com/devops/workload-identity-federation-for-azure-deployments-is-now-generally-available/"/>
-        <updated>2024-02-13T07:16:32.000Z</updated>
-        <summary type="html"><![CDATA[In September, we announced the ability to configure Azure service connections that do not need a secret. Azure service connections that use workload identity federation are easier to manage and more secure. Many customers have adopted this feature and we’re excited to announce it is now generally available!
-The post Workload identity federation for Azure deployments is now generally available appeared first on Azure DevOps Blog.]]></summary>
-        <author>
-            <name>Eric van Wijk</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[This Week in Spring - February 14th, 2024]]></title>
-        <id>https://spring.io/blog/2024/02/13/this-week-in-spring-february-14th-2024</id>
-        <link href="https://spring.io/blog/2024/02/13/this-week-in-spring-february-14th-2024"/>
-        <updated>2024-02-13T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Level up your Java code and explore what Spring can do for you.]]></summary>
-        <author>
-            <name>Josh Long</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Simplifying Azure Kubernetes Service Authentication Part 2]]></title>
-        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/simplifying-azure-kubernetes-service-authentication-part-2/ba-p/4055332</id>
-        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/simplifying-azure-kubernetes-service-authentication-part-2/ba-p/4055332"/>
-        <updated>2024-02-12T22:12:59.000Z</updated>
-        <summary type="html"><![CDATA[Welcome to the second installment of our multipart series on simplifying Azure Kubernetes Service (AKS) authentication. In this article, we delve deeper into the intricacies of AKS setup, focusing on critical aspects such as deploying demo applications, configuring Cert Manager for TLS certificates (enabling HTTPS), establishing a static IP address, creating a DNS label, and initiating the groundwork for robust authentication. First part here Part 1
- 
-Let’s dive in!
- 
-Deploy two demo applications
-In the previous post we set up our AKS cluster and configured NGINX. Now we will deploy two sample applications and deploy them. You can follow the official documentation here Create an unmanaged ingress controller.
- 
-First create the following two YAML files that define our two applications:
-aks-…]]></summary>
-        <author>
-            <name>emiller635</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Converting an AWS Lambda Function in Go into an Azure Function using LLMs]]></title>
-        <id>https://techcommunity.microsoft.com/t5/azure-architecture-blog/converting-an-aws-lambda-function-in-go-into-an-azure-function/ba-p/4054916</id>
-        <link href="https://techcommunity.microsoft.com/t5/azure-architecture-blog/converting-an-aws-lambda-function-in-go-into-an-azure-function/ba-p/4054916"/>
-        <updated>2024-02-12T18:40:32.000Z</updated>
-        <summary type="html"><![CDATA[Converting an AWS Lambda into an Azure Function using LLMs in Go
-
-The goal of this post is to show some strategies that can be used to convert AWS Lambda Functions into Azure Functions using LLMs.
- 
-Disclaimer: This article is an experimental implementation about applying LLMs to convert AWS Lambda functions into Azure Functions. It is not intended as a defined guide for the process and does not guarantee successful conversion. The outcome depends on the specific code you intend to convert and the LLM that you are using.
-
-What would it take to convert a Lambda Function into an Azure Function?
- 
-There are a few things that we need to take into account with Lambda Functions:
-
-1. Unlike Azure Functions, AWS Lambda functions don't use bindings.
-2. Input objects in the entrypoint are received i…]]></summary>
-        <author>
-            <name>afrancoc2000</name>
-        </author>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[Public preview: AKS cluster control plane metrics in managed Prometheus]]></title>
         <id>public-preview-aks-cluster-control-plane-metrics-in-managed-prometheus</id>
         <link href="https://azure.microsoft.com/en-us/updates/public-preview-aks-cluster-control-plane-metrics-in-managed-prometheus/"/>
@@ -15530,32 +15493,6 @@ There are a few things that we need to take into account with Lambda Functions:
         <summary type="html"><![CDATA[Improvements in Azure Key Vault: FIPS 140-2 Level 3, PCI DSS and PCI 3DS certified for all customers.]]></summary>
         <author>
             <name>Azure service updates</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Introducing API-based message extensions in Microsoft Teams Developer Portal]]></title>
-        <id>https://devblogs.microsoft.com/microsoft365dev/?p=18077</id>
-        <link href="https://devblogs.microsoft.com/microsoft365dev/introducing-api-based-message-extensions-in-microsoft-teams-developer-portal/"/>
-        <updated>2024-02-12T16:00:13.000Z</updated>
-        <summary type="html"><![CDATA[This cutting-edge functionality allows your apps to interact seamlessly, securely, and efficiently with external services via API.
-The post Introducing API-based message extensions in Microsoft Teams Developer Portal appeared first on Microsoft 365 Developer Blog.]]></summary>
-        <author>
-            <name>Srinidy Ravichandran</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[📎Chat Service demo running Phi-2 LLM locally with Semantic Kernel]]></title>
-        <id>https://techcommunity.microsoft.com/t5/educator-developer-blog/chat-service-demo-running-phi-2-llm-locally-with-semantic-kernel/ba-p/4054821</id>
-        <link href="https://techcommunity.microsoft.com/t5/educator-developer-blog/chat-service-demo-running-phi-2-llm-locally-with-semantic-kernel/ba-p/4054821"/>
-        <updated>2024-02-12T13:53:07.000Z</updated>
-        <summary type="html"><![CDATA[Hi!
-It’s time to go back to AI and NET, so today’s post is a small demo on how to run a LLM (large language model, this demo using Phi-2) in local mode, and how to interact with the model using Semantic Kernel.
- 
-LM Studio
-I’ve tested several products and libraries to run LLMs locally, and LM Studio is on my top 3. LM Studio is a desktop application that allows you to run open-source models locally on your computer. You can use LM Studio to discover, download, and chat with models from Hugging Face, or create your own custom models. LM Studio also lets you run a local inference server that mimics the OpenAI API, so you can use any model with your favourite tools and frameworks. LM Studio is available for Mac, Windows, and Linux, and you can download it from their website.
-Source: https://g…]]></summary>
-        <author>
-            <name>elbruno</name>
         </author>
     </entry>
     <entry>
