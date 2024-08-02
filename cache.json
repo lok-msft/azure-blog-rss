@@ -6,6 +6,16 @@
       "siteUrl": "https://spring.io",
       "articles": [
         {
+          "id": "https://spring.io/blog/2024/08/01/a-bootiful-podcast-observability-legend-jonatan-ivanov-on-the-latest-and",
+          "author": "Josh Long",
+          "description": "Level up your Java code and explore what Spring can do for you.",
+          "link": "https://spring.io/blog/2024/08/01/a-bootiful-podcast-observability-legend-jonatan-ivanov-on-the-latest-and",
+          "publishedOn": "2024-08-01T00:00:00.000Z",
+          "wordCount": 7594,
+          "title": "A Bootiful Podcast: Observability legend Jonatan Ivanov on the latest and greatest in Micrometer",
+          "imageUrl": "https://spring.io/img/og-spring.png"
+        },
+        {
           "id": "https://spring.io/blog/2024/07/31/spring-tips-spring-security-method-security-with-special-guest-rob-winch",
           "author": "Josh Long",
           "description": "Level up your Java code and explore what Spring can do for you.",
@@ -723,16 +733,6 @@
           "publishedOn": "2024-03-06T00:00:00.000Z",
           "wordCount": 7063,
           "title": "Spring Tips: the Spring Authorization Server: durability of data",
-          "imageUrl": "https://spring.io/img/og-spring.png"
-        },
-        {
-          "id": "https://spring.io/blog/2024/03/05/this-week-in-spring-march-5th-2024",
-          "author": "Josh Long",
-          "description": "Level up your Java code and explore what Spring can do for you.",
-          "link": "https://spring.io/blog/2024/03/05/this-week-in-spring-march-5th-2024",
-          "publishedOn": "2024-03-05T00:00:00.000Z",
-          "wordCount": 7438,
-          "title": "This Week in Spring - March 5th, 2024",
           "imageUrl": "https://spring.io/img/og-spring.png"
         }
       ]
@@ -2181,16 +2181,6 @@
           "wordCount": 10862,
           "title": "¡Descubre AZ Interactive de Azure CLI, como te puede ayudar y como puedes instalarlo! (guía)",
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/557529i9CACEF2232CAE5ED/image-size/original?v=v2&px=-1"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/educator-developer-blog/store-and-query-embeddings-in-azure-cosmos-db-for-postgresql/ba-p/4070907",
-          "author": "FoteiniSavvidou",
-          "description": "In the previous post, you learned how to generate vector embeddings for images and text using the multi-modal embeddings APIs of Azure AI Vision and computed the embeddings of the images in our dataset. In this post, we will use Azure Blob Storage to store the images and Azure Cosmos DB for PostgreSQL to store our vector embeddings. Then, we will perform a similarity search on our embeddings by utilizing the pgvector extension.\n \nThe workflow is illustrated in the following image:\n \nImage similarity search workflow\n \nIn this tutorial, you will learn how to:\n\nUpload images to an Azure Blob Storage container using the Python SDK.\nStore vector embeddings on an Azure Cosmos DB for PostgreSQL table.\nWrite SQL queries to detect similar images based on a text prompt or a reference image.\n\n \nThe e…",
-          "link": "https://techcommunity.microsoft.com/t5/educator-developer-blog/store-and-query-embeddings-in-azure-cosmos-db-for-postgresql/ba-p/4070907",
-          "publishedOn": "2024-03-05T08:00:00.000Z",
-          "wordCount": 11408,
-          "title": "Store and query embeddings in Azure Cosmos DB for PostgreSQL with pgvector",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/556396i10F20DF8999BF8B6/image-size/original?v=v2&px=-1"
         }
       ]
     },
@@ -2199,6 +2189,16 @@
       "feedUrl": "https://techcommunity.microsoft.com/plugins/custom/microsoft/o365/custom-blog-rss?tid=2893852362688900935&board=AppsonAzureBlog&size=100",
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
+        {
+          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/network-related-issues-for-function-app-synctriggers/ba-p/4205866",
+          "author": "theringe",
+          "description": "In my previous blog: Simple Self-Troubleshooting Steps for Function App Not Seeing Triggers, I've mentioned a simple self-check method for Synctriggers. However, more and more enterprises are leaning towards using more secure network architectures. Due to the involvement of many different components, it is easy for minor configuration issues to cause the entire app to be unusable. Therefore, in this article, I will delve into more detailed content, specifically discussing NSG, UDR, DNS, and Storage Account.\n \nTOC\nNSG rules\nUDR and Firewall\nDNS\nStorage Account\n \nNSG rules\nPlease refer to this network architecture diagram first. Most enterprises want the Function App to run in a completely private network environment, hence this setup.\n\n \n \nFor outbound traffic, since the Function App is set…",
+          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/network-related-issues-for-function-app-synctriggers/ba-p/4205866",
+          "publishedOn": "2024-08-01T06:13:03.000Z",
+          "wordCount": 9567,
+          "title": "Network Related issues  for Function App Synctriggers",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/604951i4BD3AF9F16303E51/image-size/original?v=v2&px=-1"
+        },
         {
           "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/ai-for-developers/ba-p/4206684",
           "author": "mpgraven",
@@ -4646,16 +4646,6 @@
           "wordCount": 8441,
           "title": "Assign an existing User-Assigned Managed Identity to VM from another subscription using Azure Policy",
           "imageUrl": "https://cdn.techcommunity.microsoft.com/assets/Azure/BlogPreview_default-blue.png"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/azure-paas-blog/records-are-not-getting-updated-deleted-in-search-index-despite/ba-p/4073935",
-          "author": "sudeshna",
-          "description": "Symptom:\nThe count of records in the indexer and the index did not align even after activating the change detection policy. Even with record deletions, the entries persisted in the Index Search Explorer.\n \nTo enable incremental indexing, configure the \"dataChangeDetectionPolicy\" property within your data source definition. This setting informs the indexer about the specific change tracking mechanism employed by your table or view.\n \nFor Azure SQL indexers, you can choose the change detection policy below:\n\"SqlIntegratedChangeTrackingPolicy\" (applicable to tables exclusively)\nIt is recommended using \"SqlIntegratedChangeTrackingPolicy\" for its efficiency and its ability to identify deleted rows.\nDatabase requirements:\nPrerequisites:-\n\nSQL Server 2012 SP3 and later, if you're using SQL Server…",
-          "link": "https://techcommunity.microsoft.com/t5/azure-paas-blog/records-are-not-getting-updated-deleted-in-search-index-despite/ba-p/4073935",
-          "publishedOn": "2024-03-05T10:11:26.000Z",
-          "wordCount": 10278,
-          "title": "Records are not getting updated/deleted in Search Index despite enabling Track Deletions in SQL DB",
-          "imageUrl": "https://cdn.techcommunity.microsoft.com/assets/Azure/BlogPreview_default-blue.png"
         }
       ]
     },
@@ -4973,16 +4963,6 @@
           "wordCount": 10490,
           "title": "Enrich your Data Estate with Fabric Pipelines and Azure OpenAI",
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/554555i955294FDFA56F544/image-size/original?v=v2&px=-1"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/new-feature-easily-assign-regulatory-compliance-policies-to-your/ba-p/4074957",
-          "author": "brauerblogs",
-          "description": "We are pleased to announce a new feature for the Azure Landing Zone portal accelerator that will make regulatory compliance at scale more consistent and simple to deploy. Azure Policy initiatives can now be assigned to Azure Management Groups at deployment time with just a few clicks.\n \n\n \nAn Azure landing zone (ALZ) architecture is scalable and modular to meet various deployment needs. A repeatable infrastructure allows you to apply configurations and controls to every subscription consistently. Modules make it easy to deploy and modify specific Azure landing zone architecture components as the Azure Platform and your requirements evolveALZ helps you implement best practices for governance, security, networking, identity, and operations across your cloud environments, enabled primarily by…",
-          "link": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/new-feature-easily-assign-regulatory-compliance-policies-to-your/ba-p/4074957",
-          "publishedOn": "2024-03-04T16:36:52.000Z",
-          "wordCount": 10004,
-          "title": "New feature: easily assign regulatory compliance policies to your Azure Landing Zone",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/557796i17C52BB3A425BD67/image-size/original?v=v2&px=-1"
         }
       ]
     },
@@ -5549,6 +5529,16 @@
       "siteUrl": "https://devblogs.microsoft.com/java/",
       "articles": [
         {
+          "id": "https://devblogs.microsoft.com/java/?p=231303",
+          "author": "Nick Zhu",
+          "description": "Hi everyone, welcome to the July update for Visual Studio Code for Java! This blog will cover the latest Gradle enhancements, user experience improvements and new Spring features, so let’s get started!\nThe post Java on Visual Studio Code Update – July 2024 appeared first on Microsoft for Java Developers.",
+          "link": "https://devblogs.microsoft.com/java/java-on-visual-studio-code-update-july-2024/",
+          "publishedOn": "2024-08-01T09:53:16.000Z",
+          "wordCount": 5447,
+          "title": "Java on Visual Studio Code Update – July 2024",
+          "imageUrl": "https://devblogs.microsoft.com/java/wp-content/uploads/sites/51/2024/08/cover.png"
+        },
+        {
           "id": "https://devblogs.microsoft.com/java/?p=231320",
           "author": "Jialuo Gan",
           "description": "Hi everyone, welcome to the June update of Java on Azure developer tools. In this update, we will introduce our Workload Profiles Support for Azure Container Apps in Azure Toolkit for IntelliJ IDEA. We hope you enjoy these updates and have a smooth experience with our Azure toolkit.\nThe post Java on Azure Tooling Update – June 2024 appeared first on Microsoft for Java Developers.",
@@ -5787,16 +5777,6 @@
           "wordCount": 4987,
           "title": "Java SDK for Semantic Kernel 1.0.0-rc2 Released – Add AI capabilities to your Java app today!",
           "imageUrl": "https://devblogs.microsoft.com/java/wp-content/uploads/sites/51/2019/11/trexduke-blackwhite-cropped-half.png"
-        },
-        {
-          "id": "https://devblogs.microsoft.com/java/?p=230658",
-          "author": "Nick Zhu",
-          "description": "Hi everyone, welcome to the February update for Visual Studio Code for Java! In this blog we are going to share improvements for the project management experience as well as Maven multi-module support, so let’s get started!\nThe post Java on Visual Studio Code Update – February 2024 appeared first on Microsoft for Java Developers.",
-          "link": "https://devblogs.microsoft.com/java/java-on-visual-studio-code-update-february-2024/",
-          "publishedOn": "2024-03-05T06:54:52.000Z",
-          "wordCount": 5199,
-          "title": "Java on Visual Studio Code Update – February 2024",
-          "imageUrl": "https://devblogs.microsoft.com/java/wp-content/uploads/sites/51/2024/03/engcover.png"
         }
       ]
     },
@@ -6128,6 +6108,16 @@
       "feedUrl": "https://devblogs.microsoft.com/azure-sql/feed/",
       "siteUrl": "https://devblogs.microsoft.com/azure-sql/",
       "articles": [
+        {
+          "id": "https://devblogs.microsoft.com/azure-sql/?p=3441",
+          "author": "Muazma Zahid",
+          "description": "In today’s data-driven world, finding similar items within large datasets is a common challenge. Whether it’s recommending products, identifying similar documents, or clustering data points, efficient similarity search is crucial. This blog post will explore how to leverage FAISS (Facebook AI Similarity Search) and Azure SQL to perform similarity searches on Wikipedia movie plots data.\nThe post Similarity Search with FAISS and Azure SQL appeared first on Azure SQL Devs’ Corner.",
+          "link": "https://devblogs.microsoft.com/azure-sql/faiss-and-azure-sql/",
+          "publishedOn": "2024-08-01T14:00:40.000Z",
+          "wordCount": 6127,
+          "title": "Similarity Search with FAISS and Azure SQL",
+          "imageUrl": "https://devblogs.microsoft.com/azure-sql/wp-content/uploads/sites/56/2024/07/FAISS.png"
+        },
         {
           "id": "https://devblogs.microsoft.com/azure-sql/?p=2819",
           "author": "Anagha Todalbagi",
@@ -6686,16 +6676,6 @@
           "wordCount": 8525,
           "title": "How we built “Ask Learn”, the RAG-based knowledge service",
           "imageUrl": "https://devblogs.microsoft.com/engineering-at-microsoft/wp-content/uploads/sites/72/2024/04/ask-learn.png"
-        },
-        {
-          "id": "https://devblogs.microsoft.com/engineering-at-microsoft/?p=843",
-          "author": "Predrag Vlatković",
-          "description": "Microsoft has employed Azure Load Testing to enhance the reliability of Microsoft Fabric and Azure Synapse, ensuring they can handle high loads. Azure Synapse integrates various data analytics technologies, while Microsoft Fabric offers a full enterprise analytics solution. Through rigorous daily and weekly load testing, involving complex scenarios and extensive data sizes, Microsoft aims to identify and rectify potential issues, ensuring optimal performance. This testing, integrated within their development pipelines, supports continuous improvement, leverages Azure's scalability, and utilizes Power BI for detailed reporting, ultimately enhancing service reliability and user experience.\nThe post Enhancing reliability in Microsoft Fabric and Azure Synapse through load testing appeared first on Engineering@Microsoft.",
-          "link": "https://devblogs.microsoft.com/engineering-at-microsoft/enhancing-reliability-in-microsoft-fabric-and-azure-synapse-through-load-testing/",
-          "publishedOn": "2024-03-04T18:00:35.000Z",
-          "wordCount": 5453,
-          "title": "Enhancing reliability in Microsoft Fabric and Azure Synapse through load testing",
-          "imageUrl": "https://devblogs.microsoft.com/engineering-at-microsoft/wp-content/uploads/sites/72/2024/03/blog-post-tile-chart.psd_.jpg"
         }
       ]
     },
@@ -6704,6 +6684,16 @@
       "feedUrl": "https://techcommunity.microsoft.com/plugins/custom/microsoft/o365/custom-blog-rss?tid=-2574164104208876465&board=AzureGovernanceandManagementBlog&size=100",
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
+        {
+          "id": "https://techcommunity.microsoft.com/t5/azure-governance-and-management/general-availability-vaulted-backups-for-azure-blob-storage/ba-p/4207474",
+          "author": "Utsav Raghuvanshi",
+          "description": "We are excited to announce the general availability of vaulted backups for Azure Blob Storage. Vaulted backups can help you achieve complete protection for your blobs data against data loss. We encourage you to consider adding vaulted backup protection to your Azure Blob Storage data protection strategy.\nVaulted backup for Azure Blob Storage is a native, fully-managed backup solution from Azure Backup. It enables comprehensive protection of your blob storage data against data loss scenarios by storing a dedicated backup copy of the data in an Azure . These backups can be used to recover data in the event of any data loss on production systems. Vaulted backups, used in conjunction with other data protection capabilities (for example: soft delete, versioning and operational backups), provide…",
+          "link": "https://techcommunity.microsoft.com/t5/azure-governance-and-management/general-availability-vaulted-backups-for-azure-blob-storage/ba-p/4207474",
+          "publishedOn": "2024-08-01T16:11:05.000Z",
+          "wordCount": 9045,
+          "title": "General Availability: Vaulted backups for Azure Blob Storage",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/605488iD8881005D7E0047B/image-size/original?v=v2&px=-1"
+        },
         {
           "id": "https://techcommunity.microsoft.com/t5/azure-governance-and-management/azure-update-manager-to-support-cis-hardened-images-among-other/ba-p/4195864",
           "author": "riva_yadav1680",
