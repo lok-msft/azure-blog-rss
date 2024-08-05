@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2024-08-04T01:16:58.755Z</updated>
+    <updated>2024-08-05T01:13:26.764Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
@@ -14080,36 +14080,6 @@ Customers have been busy completing self-service upgrades using our free, in-pl
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[RAG techniques: Function calling for more structured retrieval]]></title>
-        <id>https://techcommunity.microsoft.com/t5/educator-developer-blog/rag-techniques-function-calling-for-more-structured-retrieval/ba-p/4075360</id>
-        <link href="https://techcommunity.microsoft.com/t5/educator-developer-blog/rag-techniques-function-calling-for-more-structured-retrieval/ba-p/4075360"/>
-        <updated>2024-03-08T08:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Retrieval Augmented Generation (RAG) is a popular technique to get LLMs to provide answers that are grounded in a data source. When we use RAG, we use the user's question to search a knowledge base (like Azure AI Search), then pass along both the question and the relevant content to the LLM (gpt-3.5-turbo or gpt-4), with a directive to answer only according to the sources. In psuedo-code:
- 
-user_query = "what's in the Northwind Plus plan?"
-user_query_vector = create_embedding(user_query, "ada-002")
-results = search(user_query, user_query_vector)
-response = create_chat_completion(system_prompt, user_query, results)
-
- 
- 
-If the search function can find the right results in the index (assuming the answer is somewhere in the index), then the LLM can typically do a pretty good job of synthesizi…]]></summary>
-        <author>
-            <name>Pamela_Fox</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Plugins in Dataverse]]></title>
-        <id>https://devblogs.microsoft.com/ise/?p=15301</id>
-        <link href="https://devblogs.microsoft.com/ise/registering-plugins-in-dataverse/"/>
-        <updated>2024-03-08T08:00:00.000Z</updated>
-        <summary type="html"><![CDATA[This post focusses on different technology options available for exporting data out of Dataverse based on an event-driven architecture. It also provides guidance on how to achieve it.
-The post Plugins in Dataverse appeared first on ISE Developer Blog.]]></summary>
-        <author>
-            <name>Sweta Kumari</name>
-        </author>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[General Availability: App Service Backup and Restore over Azure Virtual Network]]></title>
         <id>app-service-backup-and-restore-over-azure-virtual-network-2</id>
         <link href="https://azure.microsoft.com/en-us/updates/app-service-backup-and-restore-over-azure-virtual-network-2/"/>
@@ -14117,30 +14087,6 @@ The post Plugins in Dataverse appeared first on ISE Developer Blog.]]></summary>
         <summary type="html"><![CDATA[Customers can now use custom backups, to back up their web app's files and configuration data to a firewall-protected storage account.]]></summary>
         <author>
             <name>Azure service updates</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Improved Next.js support (Preview) for Azure Static Web Apps]]></title>
-        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/improved-next-js-support-preview-for-azure-static-web-apps/ba-p/4078617</id>
-        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/improved-next-js-support-preview-for-azure-static-web-apps/ba-p/4078617"/>
-        <updated>2024-03-07T17:16:56.000Z</updated>
-        <summary type="html"><![CDATA[Next.js is a popular framework for building modern web applications with React, making it a common workload to deploy to Azure Static Web Apps’ optimized hosting of frontend web applications. We are excited to announce that we have improved our support for Next.js on Azure Static Web Apps (preview), increasing the compatibility with recent Next.js features and providing support for the newest Next.js versions, enabling you to deploy and run your Next.js applications with full feature access on Azure.
- 
-What’s new?
-As we continue to iterate on our Next.js support during our preview, we’ve made fundamental improvements to ensure feature compatibility with the most recent and future versions of Next.js. Such improvements include support for the new React Server Components model in Next.js as …]]></summary>
-        <author>
-            <name>thomasgauvinmsft</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Entering The One Billion Row Challenge With GitHub Copilot]]></title>
-        <id>https://devblogs.microsoft.com/java/?p=230753</id>
-        <link href="https://devblogs.microsoft.com/java/entering-the-one-billion-row-challenge-with-github-copilot/"/>
-        <updated>2024-03-07T17:11:14.000Z</updated>
-        <summary type="html"><![CDATA[Let’s say you have a text file with one billion rows. Each row represents a measurement from various weather stations. You must write a Java program which reads the file, calculates the min, mean, and max temperature value per weather station,
-The post Entering The One Billion Row Challenge With GitHub Copilot appeared first on Microsoft for Java Developers.]]></summary>
-        <author>
-            <name>Antonio Goncalves</name>
         </author>
     </entry>
     <entry>
@@ -14171,17 +14117,6 @@ The post Entering The One Billion Row Challenge With GitHub Copilot appeared fir
         <summary type="html"><![CDATA[Change Actor allows you to see who initiated the change and with which client that change was made, for changes across all your tenants and subscriptions.]]></summary>
         <author>
             <name>Azure service updates</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Important update on OneDrive URL upload feature]]></title>
-        <id>https://devblogs.microsoft.com/microsoft365dev/?p=19423</id>
-        <link href="https://devblogs.microsoft.com/microsoft365dev/important-update-on-onedrive-url-upload-feature/"/>
-        <updated>2024-03-07T16:00:03.000Z</updated>
-        <summary type="html"><![CDATA[We are discontinuing support for the preview feature that allows you to upload files to OneDrive from a URL. 
-The post Important update on OneDrive URL upload feature appeared first on Microsoft 365 Developer Blog.]]></summary>
-        <author>
-            <name>Patrick Rodgers</name>
         </author>
     </entry>
     <entry>
