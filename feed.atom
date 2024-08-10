@@ -2,10 +2,83 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2024-08-09T01:13:18.310Z</updated>
+    <updated>2024-08-10T01:12:40.314Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[[Azure Service Bus] JMS messages getting dead-lettered]]></title>
+        <id>https://techcommunity.microsoft.com/t5/azure-paas-blog/azure-service-bus-jms-messages-getting-dead-lettered/ba-p/4215471</id>
+        <link href="https://techcommunity.microsoft.com/t5/azure-paas-blog/azure-service-bus-jms-messages-getting-dead-lettered/ba-p/4215471"/>
+        <updated>2024-08-09T20:39:31.000Z</updated>
+        <summary type="html"><![CDATA[The article discusses a problem where numerous messages end up in the dead letter queue (DLQ) when the JMS service bus consumer connects to the Azure Service Bus using Qpid jars. The reason for the messages being dead-lettered is that they have reached the maximum delivery count.
+ 
+The fundamental issue stems from Apache Qpid's message handling. Qpid utilizes a local buffer to prefetch messages from the Azure Service Bus, storing them prior to delivery to the consumer. The complication occurs when Qpid prefetches an excessive number of messages that the consumer is unable to process within the lock duration. Consequently, the consumer is unable to acknowledge or finalize the processing of these messages before the lock expires, leading to an accumulation of messages in the Dead Letter Queue (DLQ).
+ 
+To address this problem, it is crucial to either turn off Qpid's local buffer or modify the prefetch count. Disabling prefetching is achievable by setting jms.prefetchPolicy.all=0 in the JMS client. This configuration allows the JMS client to directly consume messages from the Azure Service Bus, circumventing Qpid's local buffer. Consequently, the consumer can process messages at a suitable pace, guaranteeing smooth processing and issue-free completion.
+ 
+Why is Prefetch not the default option in Microsoft .NET/Java/Python libs?]]></summary>
+        <author>
+            <name>davidqiu</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Pre-pin Microsoft Teams meeting apps using Teams Admin Center]]></title>
+        <id>https://devblogs.microsoft.com/microsoft365dev/?p=22490</id>
+        <link href="https://devblogs.microsoft.com/microsoft365dev/pre-pin-microsoft-teams-meeting-apps-using-teams-admin-center/"/>
+        <updated>2024-08-09T15:00:35.000Z</updated>
+        <summary type="html"><![CDATA[We are thrilled to announce that tenant admins can now pin apps to Microsoft Teams meetings organized in their organization.
+The post Pre-pin Microsoft Teams meeting apps using Teams Admin Center appeared first on Microsoft 365 Developer Blog.]]></summary>
+        <author>
+            <name>Vikramjit Singh Chug</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[An Absolute Beginner's Guide to LangGraph.js]]></title>
+        <id>https://techcommunity.microsoft.com/t5/educator-developer-blog/an-absolute-beginner-s-guide-to-langgraph-js/ba-p/4212496</id>
+        <link href="https://techcommunity.microsoft.com/t5/educator-developer-blog/an-absolute-beginner-s-guide-to-langgraph-js/ba-p/4212496"/>
+        <updated>2024-08-09T07:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Who is this guide for?
+This guide is designed for absolute beginners new to LangGraph.js who want to build applications powered by Large Language Models (LLMs). I began using LangGraph.js as part of my Microsoft MSc Computer Science IXN Final Project at UCL. During my journey, I noticed a need for more beginner-friendly resources, especially for the TypeScript implementation, and found that the official documentation was still in progress. Through this guide, I aim to bridge that gap and showcase the potential of LangGraph.js and Langchain for creating LLM-powered products.
+The GitHub repo to go along with this tutorial, including full code solutions: https://github.com/anchit-chandran/ms-blog-langraphjs.
+ 
+While prior experience with LangGraph.js is not required, familiarity with the Lang…]]></summary>
+        <author>
+            <name>Anchit</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Measuring Differentials of Product Images in AI-generated Ads]]></title>
+        <id>https://devblogs.microsoft.com/ise/?p=15600</id>
+        <link href="https://devblogs.microsoft.com/ise/ai-ad-image-differential/"/>
+        <updated>2024-08-09T07:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Various methodologies of measuring differentials between a product image and an AI-generated ad for the purpose of product representation integrity in serving AI-generated ads.
+The post Measuring Differentials of Product Images in AI-generated Ads appeared first on ISE Developer Blog.]]></summary>
+        <author>
+            <name>James Kingdon</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Azure Cosmos DB JavaScript SDK 4.1.0 Preview is Here!]]></title>
+        <id>https://devblogs.microsoft.com/cosmosdb/?p=8490</id>
+        <link href="https://devblogs.microsoft.com/cosmosdb/azure-cosmos-db-javascript-sdk-4-1-0-preview-is-here/"/>
+        <updated>2024-08-09T02:55:45.000Z</updated>
+        <summary type="html"><![CDATA[We are excited to announce the release of the Azure Cosmos DB JavaScript SDK 4.1.0 Preview! This latest update brings several improvements, new features, and bug fixes to enhance developer experience and enable advanced data querying capabilities when working with Azure Cosmos DB.
+The post Azure Cosmos DB JavaScript SDK 4.1.0 Preview is Here! appeared first on Azure Cosmos DB Blog.]]></summary>
+        <author>
+            <name>Sajeetharan Sinnathurai</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Spring AI Embraces OpenAI's Structured Outputs: Enhancing JSON Response Reliability]]></title>
+        <id>https://spring.io/blog/2024/08/09/spring-ai-embraces-openais-structured-outputs-enhancing-json-response</id>
+        <link href="https://spring.io/blog/2024/08/09/spring-ai-embraces-openais-structured-outputs-enhancing-json-response"/>
+        <updated>2024-08-09T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Level up your Java code and explore what Spring can do for you.]]></summary>
+        <author>
+            <name>Christian Tzolov</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Operator/CRD support with Azure Monitor managed service for Prometheus is now Generally Available]]></title>
         <id>https://techcommunity.microsoft.com/t5/azure-observability-blog/operator-crd-support-with-azure-monitor-managed-service-for/ba-p/4210644</id>
@@ -14090,159 +14163,6 @@ To learn more, see Azure Container Apps managed certificate documentation.]]></s
 The post Private Link in Azure Cosmos DB for MongoDB vCore is Generally Available! appeared first on Azure Cosmos DB Blog.]]></summary>
         <author>
             <name>Khelan Modi</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Announcing Try Azure Cosmos DB support with Vercel Integration]]></title>
-        <id>https://devblogs.microsoft.com/cosmosdb/?p=7667</id>
-        <link href="https://devblogs.microsoft.com/cosmosdb/announcing-try-azure-cosmos-db-support-with-vercel-integration/"/>
-        <updated>2024-03-13T12:00:20.000Z</updated>
-        <summary type="html"><![CDATA[We’re excited to announce that Vercel now supports Try Azure Cosmos DB. Now, developers can effortlessly create free Azure Cosmos DB accounts within the integration and upgrade as needed. This enhancement streamlines productivity, enabling developers to swiftly create Vercel applications with a new Azure Cosmos DB account.
-The post Announcing Try Azure Cosmos DB support with Vercel Integration appeared first on Azure Cosmos DB Blog.]]></summary>
-        <author>
-            <name>Sajeetharan Sinnathurai</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Maximize your Office Add-in success with free Microsoft Partner programs]]></title>
-        <id>https://devblogs.microsoft.com/microsoft365dev/?p=19584</id>
-        <link href="https://devblogs.microsoft.com/microsoft365dev/maximize-your-office-add-in-success-with-free-microsoft-partner-programs/"/>
-        <updated>2024-03-13T11:24:14.000Z</updated>
-        <summary type="html"><![CDATA[We're excited to continue our commitment to supporting our Office Add-ins developer community with a variety of free Microsoft Partner programs.
-The post Maximize your Office Add-in success with free Microsoft Partner programs appeared first on Microsoft 365 Developer Blog.]]></summary>
-        <author>
-            <name>Steve Jin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Data Science Day 2024 , 14th March 2024 - Schedule Announcement]]></title>
-        <id>https://techcommunity.microsoft.com/t5/educator-developer-blog/data-science-day-2024-14th-march-2024-schedule-announcement/ba-p/4083567</id>
-        <link href="https://techcommunity.microsoft.com/t5/educator-developer-blog/data-science-day-2024-14th-march-2024-schedule-announcement/ba-p/4083567"/>
-        <updated>2024-03-13T07:26:45.000Z</updated>
-        <summary type="html"><![CDATA[We are thrilled to announce Python Data Science Day will be taking place March 14th, 2024; a "PyDay" on Pi Day: 3.14. If you're a Python developer, entrepreneur, data scientist, student, or researcher working on projects from hobbyist and start up to enterprise level, you'll find solutions to modernize your data pipelines and answer complex queries with data.
- 
-
- 
-Register NOW Save the date!
- 
-During the event, you will hear directly from the experts, community members Python and Data Science Microsoft MVPs about the latest in Python Data Science. Whether you're a beginner or an experience Python Data Scientists, this event is for you.
-We'll cover three main areas:
-
-The latest in Data Science with Python
-
-New packages or research
-Teaching Data Science with Python
-Interesting new Data Sets …]]></summary>
-        <author>
-            <name>Lee Stott</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Evaluating a RAG chat app: Can your app say "I don't know"?]]></title>
-        <id>https://techcommunity.microsoft.com/t5/educator-developer-blog/evaluating-a-rag-chat-app-can-your-app-say-quot-i-don-t-know/ba-p/4079118</id>
-        <link href="https://techcommunity.microsoft.com/t5/educator-developer-blog/evaluating-a-rag-chat-app-can-your-app-say-quot-i-don-t-know/ba-p/4079118"/>
-        <updated>2024-03-13T07:00:00.000Z</updated>
-        <summary type="html"><![CDATA[In my previous blog post, I talked about the importance of evaluating the answer quality from any RAG-powered chat app, and I shared my ai-rag-chat-evaluator repo for running bulk evaluations.
- 
-In that post, I focused on evaluating a model’s answers for a set of questions that could be answered by the data. But what about all those questions that can’t be answered by the data? Does your model know how to say “I don’t know?” LLMs are very eager-to-please, so it actually takes a fair bit of prompt engineering to persuade them to answer in the negative, especially for answers in their weights somewhere.
- 
-For example, consider this question for a RAG based on internal company handbooks:
-
- 
-The company handbooks don't actually contain advice on whether employees should stay home when they're …]]></summary>
-        <author>
-            <name>Pamela_Fox</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Azure at KubeCon Europe 2024 | Paris, France - March 19-22]]></title>
-        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/azure-at-kubecon-europe-2024-paris-france-march-19-22/ba-p/4083415</id>
-        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/azure-at-kubecon-europe-2024-paris-france-march-19-22/ba-p/4083415"/>
-        <updated>2024-03-13T03:06:02.000Z</updated>
-        <summary type="html"><![CDATA[Note: Brendan Burns' "Welcome to KubeCon EU 2024" blog post will be live on March 19 at aka.ms/kubeconblog. Please check back at that time.
- 
-Are you as excited as we are for KubeCon + CloudNativeCon Europe 2024? We can't wait and hope you'll join us for some awesome Microsoft Azure KubeCon + CloudNativeCon related events and activities happening in Paris March 18-22!
- 
-Azure Kubernetes Service (AKS) Essentials Day (March 18): New for this KubeCon + CloudNativeCon, we’ve added an in-person, hands-on, introductory workshop for those just getting started with AKS. The full-day event will be in Paris on March 18. Registration is required for this free event and space is limited. Learn more and register.
- 
-Azure Day with Kubernetes (March 19): Join our Microsoft experts in-person in Paris on T…]]></summary>
-        <author>
-            <name>nceres</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Spring Tips: Spring Batch Remote Partitioning, your easy button for data scale!]]></title>
-        <id>https://spring.io/blog/2024/03/13/spring-tips-spring-batch-remote-partitioning-your-easy-button-for-data-scale</id>
-        <link href="https://spring.io/blog/2024/03/13/spring-tips-spring-batch-remote-partitioning-your-easy-button-for-data-scale"/>
-        <updated>2024-03-13T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Level up your Java code and explore what Spring can do for you.]]></summary>
-        <author>
-            <name>Josh Long</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[This Week in Spring - March 12th, 2024]]></title>
-        <id>https://spring.io/blog/2024/03/13/this-week-in-spring-march-12th-2024</id>
-        <link href="https://spring.io/blog/2024/03/13/this-week-in-spring-march-12th-2024"/>
-        <updated>2024-03-13T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Level up your Java code and explore what Spring can do for you.]]></summary>
-        <author>
-            <name>Josh Long</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Announcing Distributed Functions (Preview) for Azure Static Web Apps]]></title>
-        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/announcing-distributed-functions-preview-for-azure-static-web/ba-p/4083151</id>
-        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/announcing-distributed-functions-preview-for-azure-static-web/ba-p/4083151"/>
-        <updated>2024-03-12T20:30:42.000Z</updated>
-        <summary type="html"><![CDATA[With Azure Static Web Apps, you can easily deploy your static site to our globally distributed host, and add backend functionality with Static Web Apps’ integrated managed functions. However, until now, these managed functions were deployed to a single region, which can result in unnecessary network latencies for audiences far from the functions region.
- 
-Today, we are excited to announce Distributed Functions for Azure Static Web Apps, a feature that automatically distributes your Static Web Apps’ managed functions to regions of high demand. With distributed functions enabled on your Static Web Apps resource, you can reduce the network latency for requests to your backend managed functions, improving the performance and responsiveness of your full-stack web app with global audiences.
- 
-Ho…]]></summary>
-        <author>
-            <name>thomasgauvinmsft</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Announcing Distributed Functions for Azure Static Web Apps]]></title>
-        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/announcing-distributed-functions-for-azure-static-web-apps/ba-p/4083151</id>
-        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/announcing-distributed-functions-for-azure-static-web-apps/ba-p/4083151"/>
-        <updated>2024-03-12T20:30:42.000Z</updated>
-        <summary type="html"><![CDATA[Azure Static Web Apps is a platform that enables you to build modern web applications with static frontends and serverless functions backends. With Azure Static Web Apps, you can easily deploy your static site to our globally distributed host, and easily add backend functionality with Static Web Apps’ integrated managed functions. However, until now, these managed functions were deployed to a single region, which can result in unnecessary network latencies for audiences far from the functions region.
- 
-Today, we are excited to announce Distributed Functions for Azure Static Web Apps, a feature that automatically distributes your Static Web Apps’ managed functions to regions of high demand. With distributed functions enabled on your Static Web Apps resource, you can reduce the network laten…]]></summary>
-        <author>
-            <name>thomasgauvinmsft</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[March patches for Azure DevOps Server]]></title>
-        <id>https://devblogs.microsoft.com/devops/?p=68912</id>
-        <link href="https://devblogs.microsoft.com/devops/march-patches-for-azure-devops-server-2/"/>
-        <updated>2024-03-12T20:23:52.000Z</updated>
-        <summary type="html"><![CDATA[This month, we are releasing fixes that impact our self-hosted product, Azure DevOps Server.
-Azure DevOps Server 2022.1
-Azure DevOps Server 2020.1.2
-Azure DevOps Server 2019.1.2
-Azure DevOps Server 2022.1 Patch 3
-The post March patches for Azure DevOps Server appeared first on Azure DevOps Blog.]]></summary>
-        <author>
-            <name>Gloridel Morales</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[How to Use SemanticKernel with OpenAI and Azure OpenAI in C#]]></title>
-        <id>https://techcommunity.microsoft.com/t5/educator-developer-blog/how-to-use-semantickernel-with-openai-and-azure-openai-in-c/ba-p/4081648</id>
-        <link href="https://techcommunity.microsoft.com/t5/educator-developer-blog/how-to-use-semantickernel-with-openai-and-azure-openai-in-c/ba-p/4081648"/>
-        <updated>2024-03-12T19:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Hi!
-Today I’m starting a series of posts to describe an “easy way to use” AI Services with Semantic Kernel. I’m a fan of code, so I’ll focus mostly on code samples.
-Semantic Kernel (via Copilot)
-Semantic Kernel is a powerful tool that allows developers to integrate cutting-edge language models into their applications with ease. Semantic Kernel provides a unified interface to access various language models from different sources, such as OpenAI, AzureOpenAI, and Hugging Face. Semantic Kernel also enables developers to store and retrieve memories, create dynamic prompts, and combine functions together with planners.
-With Semantic Kernel, developers can supercharge their problem-solving creativity and build AI solutions that can understand natural language, generate content, answer questions,…]]></summary>
-        <author>
-            <name>elbruno</name>
         </author>
     </entry>
     <entry>
