@@ -22,6 +22,62 @@
             data-action="toggle-accordions"
             title="Click to toggle the day, Ctrl + click to toggle all."
           >
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2024-08-11 datetime="2024-08-11T11:47:48.000Z">2024-08-11</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2024-08-11 datetime="2024-08-11T11:47:48.000Z"></time>
+          </button>
+        </h2>
+        <ul class="sources card">
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Microsoft Tech Community - Latest Blogs - Azure PaaS Blog</button>
+                  <a class="source-heading__link" href="https://techcommunity.microsoft.com">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://techcommunity.microsoft.com/t5/azure-paas-blog/utilizing-azure-storage-and-runbooks-for-scheduled-automated/ba-p/4207147"
+                        open
+                      >
+                        <summary class="article-expander__title">Utilizing Azure Storage and Runbooks for scheduled automated backups of Azure SQL Databases</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/t5/azure-paas-blog/utilizing-azure-storage-and-runbooks-for-scheduled-automated/ba-p/4207147">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://techcommunity.microsoft.com/t5/image/serverpage/image-id/605405iDD3FA1A7563C4E9D/image-size/original?v&#x3D;v2&amp;px&#x3D;-1" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>In this article, we are going to provide detailed steps to create a scheduled Azure SQL Database backup to storage account using automation. This is a useful technique for maintaining regular backups of your database and storing them in a secure and accessible location. You will get an actual backup of Azure SQL Database stored in a storage account in .bacpac format, which you can restore or migrate as needed. The automation process involves creating an automation account that triggers a PowerShell script through a runbook to run the backup command and save the output to a blob container.
+ 
+Prerequisites
+
+Azure Storage account: The storage account is needed to host the database backups. You are required to set up a container within this account to store the backups.
+
+ 
+
+Azure SQL Database …</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;31
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+        </ul>
+      </section>
+      <section class="daily-content js-toggle-accordions-scope">
+        <h2 class="daily-heading">
+          <button
+            class="daily-heading-toggle"
+            data-action="toggle-accordions"
+            title="Click to toggle the day, Ctrl + click to toggle all."
+          >
             <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2024-08-10 datetime="2024-08-09T20:39:31.000Z">2024-08-10</time>
             <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2024-08-10 datetime="2024-08-09T20:39:31.000Z"></time>
           </button>
@@ -33391,252 +33447,11 @@ To simplify the setup of observability using this newly released API, the Micros
             data-action="toggle-accordions"
             title="Click to toggle the day, Ctrl + click to toggle all."
           >
-            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2024-03-15 datetime="2024-03-15T06:08:37.000Z">2024-03-15</time>
-            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2024-03-15 datetime="2024-03-15T06:08:37.000Z"></time>
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2024-03-15 datetime="2024-03-14T18:00:08.000Z">2024-03-15</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2024-03-15 datetime="2024-03-14T18:00:08.000Z"></time>
           </button>
         </h2>
         <ul class="sources card">
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Microsoft Tech Community - Latest Blogs - Apps on Azure Blog</button>
-                  <a class="source-heading__link" href="https://techcommunity.microsoft.com">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/retrieve-user-claims-in-python-flask-app-for-azure-container/ba-p/4084956"
-                        open
-                      >
-                        <summary class="article-expander__title">Retrieve User Claims in Python Flask App for Azure Container Apps After Authentication</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/retrieve-user-claims-in-python-flask-app-for-azure-container/ba-p/4084956">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://techcommunity.microsoft.com/t5/image/serverpage/image-id/561390i50FA40B78CD47596/image-size/original?v&#x3D;v2&amp;px&#x3D;-1" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>The Token Store feature is currently supported in preview mode and can be enabled via the Azure CLI using the command az containerapp auth update with the --token-store boolean flag.
- 
-At the moment, the implementation only supports Blob Storage, which can be configured using the --sas-url-secret and --sas-url-secret-name parameters. More details on enabling the token store will be available soon in the public documentation.
- 
-However, I am going to talk about in this article that even without enabling the token store, it is still possible to retrieve user claims in the application code for Azure Container Apps after authentication, as described in this documentation: Access User Claims in Application Code. The claims are injected into the request headers, making them accessible whether fr…</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;29
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Microsoft for Java Developers</button>
-                  <a class="source-heading__link" href="https://devblogs.microsoft.com/java/">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://devblogs.microsoft.com/java/?p&#x3D;230816"
-                        open
-                      >
-                        <summary class="article-expander__title">Java on Azure Tooling Update – February 2024</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://devblogs.microsoft.com/java/java-on-azure-tooling-update-february-2024/">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://devblogs.microsoft.com/java/wp-content/uploads/sites/51/2024/03/Toolkit-roadmap-2024-eng-1.png" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>Hi everyone, welcome to our February update of Java on Azure Tooling in 2024. In this update, we will introduce the support for hosting Function apps on Azure Container Apps. Additionally, we will talk about our improvements for Azure Container Registry in the Services View within IntelliJ IDEA.
-The post Java on Azure Tooling Update – February 2024 appeared first on Microsoft for Java Developers.</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;18
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Microsoft Tech Community - Latest Blogs - Microsoft Mechanics Blog</button>
-                  <a class="source-heading__link" href="https://techcommunity.microsoft.com">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/protect-data-used-in-prompts-with-common-ai-apps-microsoft/ba-p/4085973"
-                        open
-                      >
-                        <summary class="article-expander__title">Protect data used in prompts with common AI apps | Microsoft Purview</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/protect-data-used-in-prompts-with-common-ai-apps-microsoft/ba-p/4085973">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://techcommunity.microsoft.com/t5/image/serverpage/image-id/561707iA6B35BFFE02D4921/image-size/original?v&#x3D;v2&amp;px&#x3D;-1" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>Protect data while getting the benefits of generative AI with Microsoft Defender for Cloud Apps and Microsoft Purview. Safeguard against shadow IT risks with Microsoft Defender for Cloud Apps, unveiling hidden generative AI applications. Leverage Microsoft Purview to evaluate data exposure, automating policy enforcement for enhanced security. Ensure compliance with built-in data protections in Copilot for Microsoft 365, aligned with organizational policies set in Microsoft Purview, while maintaining trust and mitigating risks seamlessly across existing and future cloud applications.
- 
-
-Erin Miyake, Microsoft Purview’s Principal Product Manager, shares how to take a unified approach to protecting your data.
- 
- 
-Block sensitive data from being used with generative AI.
- 
-
-See how to use data …</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;34
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Spring Engineering</button>
-                  <a class="source-heading__link" href="https://spring.io">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://spring.io/blog/2024/03/15/hypermedia-and-browser-enhancement"
-                        open
-                      >
-                        <summary class="article-expander__title">Hypermedia and Browser Enhancement</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://spring.io/blog/2024/03/15/hypermedia-and-browser-enhancement">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://spring.io/img/og-spring.png" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>Level up your Java code and explore what Spring can do for you.</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;30
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://spring.io/blog/2024/03/15/spring-boot-testjars-founder-rob-winch"
-                        open
-                      >
-                        <summary class="article-expander__title">Spring Boot Testjars founder Rob Winch</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://spring.io/blog/2024/03/15/spring-boot-testjars-founder-rob-winch">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://spring.io/img/og-spring.png" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>Level up your Java code and explore what Spring can do for you.</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;24
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Microsoft Tech Community - Latest Blogs - Educator Developer Blog</button>
-                  <a class="source-heading__link" href="https://techcommunity.microsoft.com">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://techcommunity.microsoft.com/t5/educator-developer-blog/join-microsoft-at-sigcse-2024/ba-p/4080266"
-                        open
-                      >
-                        <summary class="article-expander__title">Join Microsoft at SIGCSE 2024!</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/t5/educator-developer-blog/join-microsoft-at-sigcse-2024/ba-p/4080266">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://techcommunity.microsoft.com/t5/image/serverpage/image-id/559670i1D313A188286AAF3/image-size/original?v&#x3D;v2&amp;px&#x3D;-1" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>We are excited to be bringing multiple teams this year to SIGCSE, the premier conference for Computer Science education. Microsoft is a Platinum sponsor once again, to show our commitment to research in CS education and CS educators. SIGCSE 2024 is in Portland, Oregon, and is still accepting registrations. If you&#x27;re a K-12 student or teacher, you&#x27;re eligible for discounted rates
- 
-Sponsored sessions 
- 
-We have three sponsored sessions in the program: 
- 
-Degrees + Credentials—preparing students for the skills-first job marketplace and what this means for changes in CS education 
-Thursday, 10:45 AM, Rachel Wortman Morris 
-AI is accelerating the pace of change in the job market and employers are looking for demonstrated knowledge of skills in addition to degrees from candidates. Hiring manage…</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;30
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://techcommunity.microsoft.com/t5/educator-developer-blog/nueva-serie-de-videos-dedicada-a-la-inteligencia-artificial-y/ba-p/4084048"
-                        open
-                      >
-                        <summary class="article-expander__title">Nueva serie de videos dedicada a la Inteligencia Artificial y .NET en español</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/t5/educator-developer-blog/nueva-serie-de-videos-dedicada-a-la-inteligencia-artificial-y/ba-p/4084048">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://techcommunity.microsoft.com/t5/image/serverpage/image-id/561094i263D762B9E64D765/image-size/original?v&#x3D;v2&amp;px&#x3D;-1" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>Buenas
- 
-Estamos entusiasmados de anunciar el lanzamiento de nuestra nueva serie de videos en línea este viernes 15 de marzo, dedicada a explorar las maravillas de la Inteligencia Artificial y .NET en español.
- 
- ¿Qué puedes esperar?
-Aquí tienes un adelanto:
-
-Discusiones sobre los últimos avances en IA: Sumérgete en las novedades más recientes en el mundo de la Inteligencia Artificial. Descubre cómo la IA está transformando diversos sectores y cómo puedes estar a la vanguardia de estas innovaciones.
-Exploración de las capacidades de .NET en proyectos de IA: Aprende cómo .NET, una plataforma sólida y versátil, puede potenciar tus proyectos de Inteligencia Artificial. Desde el desarrollo hasta la implementación, exploraremos cómo .NET se integra perfectamente con soluciones de IA.
-Consejos p…</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;29
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
             <li class="card__section">
               <section class="js-toggle-accordions-scope">
                 <h3 class="source-heading">
@@ -33691,44 +33506,6 @@ Consejos p…</span>
                 </section>
               </section>
             </li>
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Microsoft Tech Community - Latest Blogs - FastTrack for Azure</button>
-                  <a class="source-heading__link" href="https://techcommunity.microsoft.com">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://techcommunity.microsoft.com/t5/fasttrack-for-azure/unlocking-seamless-connectivity-integrating-wordpress-with/ba-p/4075712"
-                        open
-                      >
-                        <summary class="article-expander__title">Unlocking Seamless Connectivity: Integrating WordPress with Microsoft Azure Storage</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/t5/fasttrack-for-azure/unlocking-seamless-connectivity-integrating-wordpress-with/ba-p/4075712">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://techcommunity.microsoft.com/t5/image/serverpage/image-id/558228i57F821C7BB3CADEE/image-size/original?v&#x3D;v2&amp;px&#x3D;-1" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>The Microsoft Azure Storage for WordPress Plugin offers a seamless integration between your WordPress site and Azure Storage accounts.  While it effortlessly connects to Azure commercial storage accounts, connecting to storage accounts that are in different Azure environments, such as Azure Government, requires some modifications within the plugin&#x27;s code.  By using this plugin, users can enhance their WordPress websites with the scalability and reliability of Azure Storage, ensuring efficient handling of media files and improving overall performance.
- 
-Installing the Microsoft Azure Storage for WordPress plugin and connecting to a commercial Azure Blob storage account
- 
-First, let&#x27;s cover how to install and use the Microsoft Azure Storage for WordPress plugin.  To install the Microsoft Azu…</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;31
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
         </ul>
       </section>
       <section class="daily-content js-toggle-accordions-scope">
@@ -33738,101 +33515,11 @@ First, let&#x27;s cover how to install and use the Microsoft Azure Storage for W
             data-action="toggle-accordions"
             title="Click to toggle the day, Ctrl + click to toggle all."
           >
-            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2024-03-14 datetime="2024-03-14T15:44:59.000Z">2024-03-14</time>
-            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2024-03-14 datetime="2024-03-14T15:44:59.000Z"></time>
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2024-03-14 datetime="2024-03-13T18:00:08.000Z">2024-03-14</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2024-03-14 datetime="2024-03-13T18:00:08.000Z"></time>
           </button>
         </h2>
         <ul class="sources card">
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Microsoft Tech Community - Latest Blogs - Microsoft Mechanics Blog</button>
-                  <a class="source-heading__link" href="https://techcommunity.microsoft.com">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/what-is-the-database-behind-chatgpt/ba-p/4076750"
-                        open
-                      >
-                        <summary class="article-expander__title">What is the database behind ChatGPT?</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/what-is-the-database-behind-chatgpt/ba-p/4076750">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://techcommunity.microsoft.com/t5/image/serverpage/image-id/558308iF73B947F047CAFCA/image-size/original?v&#x3D;v2&amp;px&#x3D;-1" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>Take advantage of Azure Cosmos DB for your AI-driven applications. Seamlessly integrate with large language models like ChatGPT, for real-time operational efficiency and limitless scalability. With its built-in vector search engine and multi-model support, Cosmos DB optimizes data retrieval, so you can build cutting-edge solutions at any scale.
- 
-
- 
- 
-Kirill Gavrylyuk, General Manager for the Azure Cosmos DB team, joins Jeremy Chapman to share how you can increase performance and cost-effectiveness, whether managing millions of users globally or building smaller-scale apps.
- 
- 
-Automatic scaling.
- 
-
- 
-See what database runs ChatGPT and how it’s been scaling automatically even during massive throughput spikes.
- 
- 
- 
-Built-in vector indexing and vector search.
- 
-
- 
-Extend Azure Cosmos DB’s v…</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;38
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Microsoft Tech Community - Latest Blogs - Messaging on Azure Blog</button>
-                  <a class="source-heading__link" href="https://techcommunity.microsoft.com">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://techcommunity.microsoft.com/t5/messaging-on-azure-blog/azure-event-grid-s-mqtt-broker-performance/ba-p/4084659"
-                        open
-                      >
-                        <summary class="article-expander__title">Azure Event Grid&#x27;s MQTT Broker Performance</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/t5/messaging-on-azure-blog/azure-event-grid-s-mqtt-broker-performance/ba-p/4084659">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://techcommunity.microsoft.com/t5/image/serverpage/image-id/561289iD1D6DB79C7413366/image-size/original?v&#x3D;v2&amp;px&#x3D;-1" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>Overview
-Azure Event Grid is a pub-sub message broker that enables you to integrate your solutions at scale using HTTP pull delivery, HTTP push delivery, and the MQTT broker capability. The MQTT broker capability in Event Grid enables your clients to communicate on custom MQTT topic names using a publish-subscribe messaging model. This capability fulfills the need for MQTT as the primary communication standard for IoT scenarios that drives the digital transformation efforts across a wide spectrum of industries, including but not limited to automotive, manufacturing, energy, and retail.
-Performance testing is a crucial aspect of software development, especially for services that manage large numbers of client connections and message transfers. Our team has been dedicated to assessing the pe…</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;35
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
             <li class="card__section">
               <section class="js-toggle-accordions-scope">
                 <h3 class="source-heading">
@@ -37071,8 +36758,8 @@ We have introduced several cost optimization related recommendations and added A
       </section>
 
     <footer>
-      <a class="footer-link" href="https://github.com/lok-msft/azure-blog-rss/actions/runs/10335890190">
-        <time id="build-timestamp" datetime="2024-08-11T01:17:57.869Z">2024-08-11T01:17:57.869Z</time>
+      <a class="footer-link" href="https://github.com/lok-msft/azure-blog-rss/actions/runs/10344339939">
+        <time id="build-timestamp" datetime="2024-08-12T01:14:17.331Z">2024-08-12T01:14:17.331Z</time>
       </a>
       <a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a>
     </footer>

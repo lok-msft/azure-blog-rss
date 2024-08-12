@@ -2,10 +2,28 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2024-08-11T01:17:57.922Z</updated>
+    <updated>2024-08-12T01:14:17.386Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Utilizing Azure Storage and Runbooks for scheduled automated backups of Azure SQL Databases]]></title>
+        <id>https://techcommunity.microsoft.com/t5/azure-paas-blog/utilizing-azure-storage-and-runbooks-for-scheduled-automated/ba-p/4207147</id>
+        <link href="https://techcommunity.microsoft.com/t5/azure-paas-blog/utilizing-azure-storage-and-runbooks-for-scheduled-automated/ba-p/4207147"/>
+        <updated>2024-08-11T11:47:48.000Z</updated>
+        <summary type="html"><![CDATA[In this article, we are going to provide detailed steps to create a scheduled Azure SQL Database backup to storage account using automation. This is a useful technique for maintaining regular backups of your database and storing them in a secure and accessible location. You will get an actual backup of Azure SQL Database stored in a storage account in .bacpac format, which you can restore or migrate as needed. The automation process involves creating an automation account that triggers a PowerShell script through a runbook to run the backup command and save the output to a blob container.
+ 
+Prerequisites
+
+Azure Storage account: The storage account is needed to host the database backups. You are required to set up a container within this account to store the backups.
+
+ 
+
+Azure SQL Database …]]></summary>
+        <author>
+            <name>hqaffesha</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[[Azure Service Bus] JMS messages getting dead-lettered]]></title>
         <id>https://techcommunity.microsoft.com/t5/azure-paas-blog/azure-service-bus-jms-messages-getting-dead-lettered/ba-p/4215471</id>
@@ -13792,107 +13810,6 @@ To simplify the setup of observability using this newly released API, the Micros
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Retrieve User Claims in Python Flask App for Azure Container Apps After Authentication]]></title>
-        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/retrieve-user-claims-in-python-flask-app-for-azure-container/ba-p/4084956</id>
-        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/retrieve-user-claims-in-python-flask-app-for-azure-container/ba-p/4084956"/>
-        <updated>2024-03-15T06:08:37.000Z</updated>
-        <summary type="html"><![CDATA[The Token Store feature is currently supported in preview mode and can be enabled via the Azure CLI using the command az containerapp auth update with the --token-store boolean flag.
- 
-At the moment, the implementation only supports Blob Storage, which can be configured using the --sas-url-secret and --sas-url-secret-name parameters. More details on enabling the token store will be available soon in the public documentation.
- 
-However, I am going to talk about in this article that even without enabling the token store, it is still possible to retrieve user claims in the application code for Azure Container Apps after authentication, as described in this documentation: Access User Claims in Application Code. The claims are injected into the request headers, making them accessible whether fr…]]></summary>
-        <author>
-            <name>wanjing</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Java on Azure Tooling Update – February 2024]]></title>
-        <id>https://devblogs.microsoft.com/java/?p=230816</id>
-        <link href="https://devblogs.microsoft.com/java/java-on-azure-tooling-update-february-2024/"/>
-        <updated>2024-03-15T05:50:43.000Z</updated>
-        <summary type="html"><![CDATA[Hi everyone, welcome to our February update of Java on Azure Tooling in 2024. In this update, we will introduce the support for hosting Function apps on Azure Container Apps. Additionally, we will talk about our improvements for Azure Container Registry in the Services View within IntelliJ IDEA.
-The post Java on Azure Tooling Update – February 2024 appeared first on Microsoft for Java Developers.]]></summary>
-        <author>
-            <name>Jialuo Gan</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Protect data used in prompts with common AI apps | Microsoft Purview]]></title>
-        <id>https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/protect-data-used-in-prompts-with-common-ai-apps-microsoft/ba-p/4085973</id>
-        <link href="https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/protect-data-used-in-prompts-with-common-ai-apps-microsoft/ba-p/4085973"/>
-        <updated>2024-03-15T01:34:25.000Z</updated>
-        <summary type="html"><![CDATA[Protect data while getting the benefits of generative AI with Microsoft Defender for Cloud Apps and Microsoft Purview. Safeguard against shadow IT risks with Microsoft Defender for Cloud Apps, unveiling hidden generative AI applications. Leverage Microsoft Purview to evaluate data exposure, automating policy enforcement for enhanced security. Ensure compliance with built-in data protections in Copilot for Microsoft 365, aligned with organizational policies set in Microsoft Purview, while maintaining trust and mitigating risks seamlessly across existing and future cloud applications.
- 
-
-Erin Miyake, Microsoft Purview’s Principal Product Manager, shares how to take a unified approach to protecting your data.
- 
- 
-Block sensitive data from being used with generative AI.
- 
-
-See how to use data …]]></summary>
-        <author>
-            <name>Zachary Cavanell</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Hypermedia and Browser Enhancement]]></title>
-        <id>https://spring.io/blog/2024/03/15/hypermedia-and-browser-enhancement</id>
-        <link href="https://spring.io/blog/2024/03/15/hypermedia-and-browser-enhancement"/>
-        <updated>2024-03-15T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Level up your Java code and explore what Spring can do for you.]]></summary>
-        <author>
-            <name>Dave Syer</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Spring Boot Testjars founder Rob Winch]]></title>
-        <id>https://spring.io/blog/2024/03/15/spring-boot-testjars-founder-rob-winch</id>
-        <link href="https://spring.io/blog/2024/03/15/spring-boot-testjars-founder-rob-winch"/>
-        <updated>2024-03-15T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Level up your Java code and explore what Spring can do for you.]]></summary>
-        <author>
-            <name>Josh Long</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Join Microsoft at SIGCSE 2024!]]></title>
-        <id>https://techcommunity.microsoft.com/t5/educator-developer-blog/join-microsoft-at-sigcse-2024/ba-p/4080266</id>
-        <link href="https://techcommunity.microsoft.com/t5/educator-developer-blog/join-microsoft-at-sigcse-2024/ba-p/4080266"/>
-        <updated>2024-03-14T19:00:00.000Z</updated>
-        <summary type="html"><![CDATA[We are excited to be bringing multiple teams this year to SIGCSE, the premier conference for Computer Science education. Microsoft is a Platinum sponsor once again, to show our commitment to research in CS education and CS educators. SIGCSE 2024 is in Portland, Oregon, and is still accepting registrations. If you're a K-12 student or teacher, you're eligible for discounted rates
- 
-Sponsored sessions 
- 
-We have three sponsored sessions in the program: 
- 
-Degrees + Credentials—preparing students for the skills-first job marketplace and what this means for changes in CS education 
-Thursday, 10:45 AM, Rachel Wortman Morris 
-AI is accelerating the pace of change in the job market and employers are looking for demonstrated knowledge of skills in addition to degrees from candidates. Hiring manage…]]></summary>
-        <author>
-            <name>Pamela_Fox</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Nueva serie de videos dedicada a la Inteligencia Artificial y .NET en español]]></title>
-        <id>https://techcommunity.microsoft.com/t5/educator-developer-blog/nueva-serie-de-videos-dedicada-a-la-inteligencia-artificial-y/ba-p/4084048</id>
-        <link href="https://techcommunity.microsoft.com/t5/educator-developer-blog/nueva-serie-de-videos-dedicada-a-la-inteligencia-artificial-y/ba-p/4084048"/>
-        <updated>2024-03-14T18:50:25.000Z</updated>
-        <summary type="html"><![CDATA[Buenas
- 
-Estamos entusiasmados de anunciar el lanzamiento de nuestra nueva serie de videos en línea este viernes 15 de marzo, dedicada a explorar las maravillas de la Inteligencia Artificial y .NET en español.
- 
- ¿Qué puedes esperar?
-Aquí tienes un adelanto:
-
-Discusiones sobre los últimos avances en IA: Sumérgete en las novedades más recientes en el mundo de la Inteligencia Artificial. Descubre cómo la IA está transformando diversos sectores y cómo puedes estar a la vanguardia de estas innovaciones.
-Exploración de las capacidades de .NET en proyectos de IA: Aprende cómo .NET, una plataforma sólida y versátil, puede potenciar tus proyectos de Inteligencia Artificial. Desde el desarrollo hasta la implementación, exploraremos cómo .NET se integra perfectamente con soluciones de IA.
-Consejos p…]]></summary>
-        <author>
-            <name>elbruno</name>
-        </author>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[Billing for Azure Monitor stateful log search alerts]]></title>
         <id>billing-for-azure-monitor-stateful-log-search-alerts</id>
         <link href="https://azure.microsoft.com/en-us/updates/billing-for-azure-monitor-stateful-log-search-alerts/"/>
@@ -13910,62 +13827,6 @@ Consejos p…]]></summary>
         <summary type="html"><![CDATA[Azure Monitor managed service for Prometheus now supports TLS & mTLS based scraping for Prometheus instance served with TLS. To enable TLS and mTLS based scraping, you can configure the TLS settings in the ConfigMap.]]></summary>
         <author>
             <name>Azure service updates</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Unlocking Seamless Connectivity: Integrating WordPress with Microsoft Azure Storage]]></title>
-        <id>https://techcommunity.microsoft.com/t5/fasttrack-for-azure/unlocking-seamless-connectivity-integrating-wordpress-with/ba-p/4075712</id>
-        <link href="https://techcommunity.microsoft.com/t5/fasttrack-for-azure/unlocking-seamless-connectivity-integrating-wordpress-with/ba-p/4075712"/>
-        <updated>2024-03-14T16:00:00.000Z</updated>
-        <summary type="html"><![CDATA[The Microsoft Azure Storage for WordPress Plugin offers a seamless integration between your WordPress site and Azure Storage accounts.  While it effortlessly connects to Azure commercial storage accounts, connecting to storage accounts that are in different Azure environments, such as Azure Government, requires some modifications within the plugin's code.  By using this plugin, users can enhance their WordPress websites with the scalability and reliability of Azure Storage, ensuring efficient handling of media files and improving overall performance.
- 
-Installing the Microsoft Azure Storage for WordPress plugin and connecting to a commercial Azure Blob storage account
- 
-First, let's cover how to install and use the Microsoft Azure Storage for WordPress plugin.  To install the Microsoft Azu…]]></summary>
-        <author>
-            <name>jewalte</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[What is the database behind ChatGPT?]]></title>
-        <id>https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/what-is-the-database-behind-chatgpt/ba-p/4076750</id>
-        <link href="https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/what-is-the-database-behind-chatgpt/ba-p/4076750"/>
-        <updated>2024-03-14T15:44:59.000Z</updated>
-        <summary type="html"><![CDATA[Take advantage of Azure Cosmos DB for your AI-driven applications. Seamlessly integrate with large language models like ChatGPT, for real-time operational efficiency and limitless scalability. With its built-in vector search engine and multi-model support, Cosmos DB optimizes data retrieval, so you can build cutting-edge solutions at any scale.
- 
-
- 
- 
-Kirill Gavrylyuk, General Manager for the Azure Cosmos DB team, joins Jeremy Chapman to share how you can increase performance and cost-effectiveness, whether managing millions of users globally or building smaller-scale apps.
- 
- 
-Automatic scaling.
- 
-
- 
-See what database runs ChatGPT and how it’s been scaling automatically even during massive throughput spikes.
- 
- 
- 
-Built-in vector indexing and vector search.
- 
-
- 
-Extend Azure Cosmos DB’s v…]]></summary>
-        <author>
-            <name>Zachary Cavanell</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Azure Event Grid's MQTT Broker Performance]]></title>
-        <id>https://techcommunity.microsoft.com/t5/messaging-on-azure-blog/azure-event-grid-s-mqtt-broker-performance/ba-p/4084659</id>
-        <link href="https://techcommunity.microsoft.com/t5/messaging-on-azure-blog/azure-event-grid-s-mqtt-broker-performance/ba-p/4084659"/>
-        <updated>2024-03-14T14:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Overview
-Azure Event Grid is a pub-sub message broker that enables you to integrate your solutions at scale using HTTP pull delivery, HTTP push delivery, and the MQTT broker capability. The MQTT broker capability in Event Grid enables your clients to communicate on custom MQTT topic names using a publish-subscribe messaging model. This capability fulfills the need for MQTT as the primary communication standard for IoT scenarios that drives the digital transformation efforts across a wide spectrum of industries, including but not limited to automotive, manufacturing, energy, and retail.
-Performance testing is a crucial aspect of software development, especially for services that manage large numbers of client connections and message transfers. Our team has been dedicated to assessing the pe…]]></summary>
-        <author>
-            <name>george-guirguis</name>
         </author>
     </entry>
     <entry>
