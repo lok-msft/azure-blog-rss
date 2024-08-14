@@ -2,10 +2,160 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2024-08-13T01:13:50.909Z</updated>
+    <updated>2024-08-14T01:13:12.675Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Creating a Local Network Virtual Appliance in Azure for Oracle Database@Azure]]></title>
+        <id>https://techcommunity.microsoft.com/t5/fasttrack-for-azure/creating-a-local-network-virtual-appliance-in-azure-for-oracle/ba-p/4218101</id>
+        <link href="https://techcommunity.microsoft.com/t5/fasttrack-for-azure/creating-a-local-network-virtual-appliance-in-azure-for-oracle/ba-p/4218101"/>
+        <updated>2024-08-13T20:21:30.000Z</updated>
+        <summary type="html"><![CDATA[Oracle Database@Azure is an Oracle database service running on Oracle Cloud Infrastructure (OCI), collocated in Microsoft data centers. This ensures that the Oracle Database@Azure service has the fastest possible access to Azure resources and applications. The solution is intended to support the migration of Oracle database workloads to Azure, where customers can integrate and innovate with the breadth of Microsoft Cloud services.
+ 
+For more information and to gain a better understanding of Oracle Database@Azure please visit Overview - Oracle Database@Azure | Microsoft Learn
+ 
+Problem Statement
+The current Oracle Database@Azure service has a network limitation where it cannot respond to network connections outside of its Azure virtual network ( VNet ). This limitation places constraints on…]]></summary>
+        <author>
+            <name>adelagarde</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[High Scale log collection in Azure Monitor - Container Insights]]></title>
+        <id>https://techcommunity.microsoft.com/t5/azure-observability-blog/high-scale-log-collection-in-azure-monitor-container-insights/ba-p/4218059</id>
+        <link href="https://techcommunity.microsoft.com/t5/azure-observability-blog/high-scale-log-collection-in-azure-monitor-container-insights/ba-p/4218059"/>
+        <updated>2024-08-13T18:13:48.000Z</updated>
+        <summary type="html"><![CDATA[Container Insights is Azure Monitor’s solution for collecting logs from your Azure Kubernetes Service (AKS) clusters.  As adoption of AKS continues to grow, we are seeing an increasing number of customers with log scaling needs that hit the limits of log collection in Container Insights.
+ 
+We are happy to announce High Scale mode in Container Insights to help customers achieve a higher log collection throughput from their AKS clusters.
+ 
+When High Scale mode is enabled, Container Insights does multiple configuration changes leading to a higher overall throughput. These include using a more powerful agent setup, using a different data pipeline, allocating more memory for agent, and more. All these changes are made in the background by the service and do not require input or configuration from customers. 
+High Scale mode impacts only the data collection layer (with a new DCR) – the rest of the experience remains the same. Data flows to our existing tables, your queries and alerts work as before too. High Scale mode is available to all customers but requires customers to opt-in to use. 
+ 
+To get started with High Scale mode, please see our documentation at https://aka.ms/cihsmode.]]></summary>
+        <author>
+            <name>DalanMendonca</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[High Scale log collection in Azure Monitor - Container Insights]]></title>
+        <id>https://techcommunity.microsoft.com/t5/azure-observability-blog/high-scale-log-collection-in-azure-monitor-container-insights/ba-p/4218059</id>
+        <link href="https://techcommunity.microsoft.com/t5/azure-observability-blog/high-scale-log-collection-in-azure-monitor-container-insights/ba-p/4218059"/>
+        <updated>2024-08-13T18:13:48.000Z</updated>
+        <summary type="html"><![CDATA[Container Insights is Azure Monitor’s solution for collecting logs from your Azure Kubernetes Service (AKS) clusters.  As adoption of AKS continues to grow, we are seeing an increasing number of customers with log scaling needs that hit the limits of log collection in Container Insights.
+ 
+We are happy to announce High Scale mode in Container Insights to help customers achieve a higher log collection throughput from their AKS clusters.
+ 
+When High Scale mode is enabled, Container Insights does multiple configuration changes leading to a higher overall throughput. These include using a more powerful agent setup, using a different data pipeline, allocating more memory for agent, and more. All these changes are made in the background by the service and do not require input or configuration from customers. 
+High Scale mode impacts only the data collection layer (with a new DCR) – the rest of the experience remains the same. Data flows to our existing tables, your queries and alerts work as before too. High Scale mode is available to all customers but requires customers to opt-in to use. 
+ 
+To get started with High Scale mode, please see our documentation at https://aka.ms/cihsmode.]]></summary>
+        <author>
+            <name>DalanMendonca</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How to migrate MongoDB to Azure Cosmos DB for MongoDB using Spark and Databricks]]></title>
+        <id>https://devblogs.microsoft.com/cosmosdb/?p=8467</id>
+        <link href="https://devblogs.microsoft.com/cosmosdb/mongo-migrations-spark-databricks/"/>
+        <updated>2024-08-13T14:00:36.000Z</updated>
+        <summary type="html"><![CDATA[MongoDB is a popular document database that offers high performance, scalability, and flexibility. Many organizations use MongoDB to store and process large volumes of data for various applications. However, managing and maintaining MongoDB clusters can be challenging and costly, especially as the data grows and the demand increases. 
+The post How to migrate MongoDB to Azure Cosmos DB for MongoDB using Spark and Databricks appeared first on Azure Cosmos DB Blog.]]></summary>
+        <author>
+            <name>Sandeep S. Nair</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Let's move away from API keys!]]></title>
+        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/let-s-move-away-from-api-keys/ba-p/4217697</id>
+        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/let-s-move-away-from-api-keys/ba-p/4217697"/>
+        <updated>2024-08-13T12:58:41.000Z</updated>
+        <summary type="html"><![CDATA[API keys management
+This is the first part in a series of security practices on Azure
+ 
+You want enterprise-grade security but don't know where to start. You've heard terms like Entra ID and Managed identity or maybe even Service principal but where do you go from here? Let's start here with this series on security.
+
+
+
+35% of all exposed API keys are still active - 35% of exposed API keys still active, posing major security risks - Help Net Security
+
+
+That's a pretty scary statement, that means services are being misused most likely, data is actively being stolen and so on. 
+
+Let's try to understand why the concept of API keys is a problematic one and how we can move away from it.
+
+What's the problem with using API keys?
+API keys feel great to use right, you get your key, you talk to the A…]]></summary>
+        <author>
+            <name>Chris_Noring</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[What’s New in Azure Cosmos DB Data Explorer: A Better Way to Navigate Your Data]]></title>
+        <id>https://devblogs.microsoft.com/cosmosdb/?p=8482</id>
+        <link href="https://devblogs.microsoft.com/cosmosdb/a-better-way-to-navigate-your-data/"/>
+        <updated>2024-08-13T12:00:06.000Z</updated>
+        <summary type="html"><![CDATA[As a developer, you may have to work on various projects that involve storing and querying data from different regions and devices. Whether you are building a web application, a mobile app, a gaming platform, or an IoT solution, you want a database that can handle the complexity and scale of your data without compromising on performance and availability.
+The post What’s New in Azure Cosmos DB Data Explorer: A Better Way to Navigate Your Data appeared first on Azure Cosmos DB Blog.]]></summary>
+        <author>
+            <name>Meredith Moore</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Asynchronous HTTP APIs with Azure Container Apps jobs]]></title>
+        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/asynchronous-http-apis-with-azure-container-apps-jobs/ba-p/4217431</id>
+        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/asynchronous-http-apis-with-azure-container-apps-jobs/ba-p/4217431"/>
+        <updated>2024-08-13T08:09:34.000Z</updated>
+        <summary type="html"><![CDATA[When building HTTP APIs, it can be tempting to synchronously run long-running tasks in a request handler. This approach can lead to slow responses, timeouts, and resource exhaustion. If a request times out or a connection is dropped, the client won't know if the operation completed or not. For CPU-bound tasks, this approach can also bog down the server, making it unresponsive to other requests.
+ 
+In this post, we'll look at how to build an asynchronous HTTP API with Azure Container Apps. We'll create a simple API that implements the Asynchronous Request-Reply pattern: with the API hosted in a container app and the asynchronous processing done in a job. This approach provides a much more robust and scalable solution for long-running tasks.
+ 
+Long-running API requests in Azure Container Apps…]]></summary>
+        <author>
+            <name>AnthonyChu</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Building Power Apps Canvas App with Multimedia Integration in SharePoint - Audio Player]]></title>
+        <id>https://techcommunity.microsoft.com/t5/educator-developer-blog/building-power-apps-canvas-app-with-multimedia-integration-in/ba-p/4209104</id>
+        <link href="https://techcommunity.microsoft.com/t5/educator-developer-blog/building-power-apps-canvas-app-with-multimedia-integration-in/ba-p/4209104"/>
+        <updated>2024-08-13T07:00:00.000Z</updated>
+        <summary type="html"><![CDATA[In this article, I’ll demonstrate how to build a Power Apps canvas application from within SharePoint that integrates a SharePoint list backend for storing and retrieving images and audio files. The app that you create will have labels, icons, navigation, image containers, and other elements. You’ll use a layout template and customize the built-in audio control to have a distinct appearance and behavior.
+ 
+By following the step-by-step instructions in this article, you will be able to create a powerful and fully functional canvas application that's integrated with SharePoint. By using SharePoint lists for storing and retrieving images and audio files, you can ensure that your app is efficient and easy to manage. The customization options available through Power Apps make it possible to cre…]]></summary>
+        <author>
+            <name>kojo_shaddy</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Transform Application Development with .NET Aspire: Seamless Integration with JavaScript and Node.js]]></title>
+        <id>https://techcommunity.microsoft.com/t5/microsoft-developer-community/transform-application-development-with-net-aspire-seamless/ba-p/4215472</id>
+        <link href="https://techcommunity.microsoft.com/t5/microsoft-developer-community/transform-application-development-with-net-aspire-seamless/ba-p/4215472"/>
+        <updated>2024-08-13T07:00:00.000Z</updated>
+        <summary type="html"><![CDATA[In the ever-evolving landscape of cloud application development, managing configurations, ensuring resilience, and maintaining seamless integration between various components can be quite challenging.
+ 
+This is where .NET Aspire comes into play! A robust application development framework designed to simplify these complexities, allowing developers to focus on creating features rather than dealing with extensive configurations.
+ 
+In this article, we will explore the core aspects of .NET Aspire, examining its benefits, the configuration process, and integration with JavaScript, as presented in an outstanding session at the recent .NET Aspire Developers Day by Chris Noring, Senior Developer Advocate at Microsoft.
+ 
+.NET Aspire Developers Day
+ 
+The latest .NET Aspire Developers Day, which took…]]></summary>
+        <author>
+            <name>Glaucia_Lemos</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[This Week in Spring - August 13th, 2024]]></title>
+        <id>https://spring.io/blog/2024/08/13/this-week-in-spring-august-13th-2024</id>
+        <link href="https://spring.io/blog/2024/08/13/this-week-in-spring-august-13th-2024"/>
+        <updated>2024-08-13T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Level up your Java code and explore what Spring can do for you.]]></summary>
+        <author>
+            <name>Josh Long</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Benchmark Testing puts you on the path to peak API Performance]]></title>
         <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/benchmark-testing-puts-you-on-the-path-to-peak-api-performance/ba-p/4216776</id>
@@ -13764,20 +13914,6 @@ Create a Python App Service in Azure:
 Start by creating a Python App Service from the Azure p…]]></summary>
         <author>
             <name>KevinLi</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Learn Live: Microsoft Learn AI Skills Challenge]]></title>
-        <id>https://techcommunity.microsoft.com/t5/educator-developer-blog/learn-live-microsoft-learn-ai-skills-challenge/ba-p/4085078</id>
-        <link href="https://techcommunity.microsoft.com/t5/educator-developer-blog/learn-live-microsoft-learn-ai-skills-challenge/ba-p/4085078"/>
-        <updated>2024-03-16T19:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Every week starting March 20 to April 18 join us as we embark on a thrilling journey of discovery and learning with our live, interactive series where you'll be in the company of experts and fellow developers from across the globe. Dive into our Learn modules and engage in real-time, gaining not only knowledge but also badges and prepare for certifications—all while learning live.
-Register NOW at https://aka.ms/AISkillsChallenge for a self-learning experience and become eligible for a free Microsoft Certification exam (limit one per customer, terms and conditions apply).  
-Join an interactive Live Streaming series at https://aka.ms/ai-skills-challenge-learn-live to get the precious guidance of Subject Matter Experts. 
- 
-This series is a deep dive into the revolutionary world of Generative …]]></summary>
-        <author>
-            <name>bethanyjep</name>
         </author>
     </entry>
     <entry>
