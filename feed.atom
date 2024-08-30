@@ -2,10 +2,112 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2024-08-29T01:15:28.063Z</updated>
+    <updated>2024-08-30T01:15:30.814Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Introducing granular permissions for Azure Service Bus Explorer]]></title>
+        <id>https://techcommunity.microsoft.com/t5/messaging-on-azure-blog/introducing-granular-permissions-for-azure-service-bus-explorer/ba-p/4232520</id>
+        <link href="https://techcommunity.microsoft.com/t5/messaging-on-azure-blog/introducing-granular-permissions-for-azure-service-bus-explorer/ba-p/4232520"/>
+        <updated>2024-08-29T20:16:57.000Z</updated>
+        <summary type="html"><![CDATA[When working with the Service Bus Explorer in the Azure portal, you may want to grant different permissions to different users, depending on their role and responsibility. For example, you may want to allow some users to send messages to a queue, but not receive them. Or you may want to restrict access to a specific queue, topic, or subscription, but not the entire namespace.
+ 
+To address this challenge, we are excited to announce granular permissions for Service Bus Explorer. To use granular permissions, you need to use Microsoft Entra authentication, and assign one of the following roles, either on the namespace level or on the entity level.
+
+Service Bus Data Owner; Allows to execute both send and receive operations.
+Service Bus Data Sender; Allows to execute send operations.
+Service Bus Data Receiver; Allows to execute peek, receive, and purge operations.
+
+In case you use a role which doesn’t have send or receive permissions, or you do not have permissions on the specific entity, the unavailable operations will be disabled. Furthermore, a notification will be shown showing which permissions are missing.
+ 
+
+ 
+For more information on using the Service Bus Explorer, you can check our documentation.]]></summary>
+        <author>
+            <name>EldertGrootenboer</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Vector Support EAP extended to Azure SQL MI]]></title>
+        <id>https://devblogs.microsoft.com/azure-sql/?p=3544</id>
+        <link href="https://devblogs.microsoft.com/azure-sql/vector-support-eap-extended-to-azure-sql-mi/"/>
+        <updated>2024-08-29T16:36:43.000Z</updated>
+        <summary type="html"><![CDATA[If you are looking forward to build AI-enabled applications on your own data, you’ll be excited to know that the Early Adopter Preview announced for Azure SQL DB on native vector capabilities is now available also for those who have data stored in Azure SQL Managed Instance!
+The post Vector Support EAP extended to Azure SQL MI appeared first on Azure SQL Devs’ Corner.]]></summary>
+        <author>
+            <name>Davide Mauri</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Learn Live: GitHub Universe 2024 en Español]]></title>
+        <id>https://techcommunity.microsoft.com/t5/educator-developer-blog/learn-live-github-universe-2024-en-espa%C3%B1ol/ba-p/4227331</id>
+        <link href="https://techcommunity.microsoft.com/t5/educator-developer-blog/learn-live-github-universe-2024-en-espa%C3%B1ol/ba-p/4227331"/>
+        <updated>2024-08-29T11:40:16.000Z</updated>
+        <summary type="html"><![CDATA[¡Únete al Learn Live GitHub Universe 2024 en Español y construye tu portafolio con 3 proyectos increíbles. Del 10 al 24 de octubre, aprenderás a usar GitHub Copilot, automatizar con GitHub Actions y crear sitios y APIs web. Además, podrás obtener un cupón de descuento para una certificación* técnica de GitHub. Regístrate ahora!
+ 
+*Oferta válida durante 48 horas después de una sesión. Límite de un cupón de descuento de GitHub por persona. Esta oferta no es transferible y no se puede combinar con ninguna otra oferta. Esta oferta finaliza 48 horas después de una sesión y no se puede canjear por dinero en efectivo. Los impuestos, si los hubiera, son responsabilidad exclusiva del destinatario. Microsoft se reserva el derecho de cancelar, cambiar o suspender esta oferta en cualquier momento sin …]]></summary>
+        <author>
+            <name>alfredodeza</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Analytics with Power BI]]></title>
+        <id>https://techcommunity.microsoft.com/t5/educator-developer-blog/analytics-with-power-bi/ba-p/4225560</id>
+        <link href="https://techcommunity.microsoft.com/t5/educator-developer-blog/analytics-with-power-bi/ba-p/4225560"/>
+        <updated>2024-08-29T07:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Data Analytics 
+Analytics can transform raw data into an extensive collection of information that categorizes data to identify and analyze behavioral data 
+and patterns. Data analytics consists of converting raw data into actionable insights.  
+Although having data analytics competencies may be required for some job and optional for others, it makes all data related work easier. If you are a data scientist, for example, a quick and informative analysis could give you an idea related to preprocessing and to the modeling algorithm. 
+Data analytics has several benefits for different segments such as: 
+
+Organization: By examining historical data and recognizing trends, businesses can gain a better understanding of their customers, market conditions and products. Analytics has capacity to help …]]></summary>
+        <author>
+            <name>HadilBENAmor</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Policy for Sending logs to multiple destinations for container apps]]></title>
+        <id>https://techcommunity.microsoft.com/t5/microsoft-developer-community/policy-for-sending-logs-to-multiple-destinations-for-container/ba-p/4218424</id>
+        <link href="https://techcommunity.microsoft.com/t5/microsoft-developer-community/policy-for-sending-logs-to-multiple-destinations-for-container/ba-p/4218424"/>
+        <updated>2024-08-29T07:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Introduction:Welcome Azure developers! If you're looking to add logging policies for your Container Apps in Azure, there are two options to consider. In this blog post, we will walk you through the process of enabling logs using the "logging options" under monitoring and the "Azure Monitor" option under monitoring. We'll also provide solutions for different use cases and reference materials to help guide you along the way.Option 1: Sending Logs to Log Analytics WorkspaceOption 2: Sending Logs to Multiple Destinations (Log Analytics Workspace and Storage Account)The goal This blog provides you with valuable insights on enabling logs for your Azure Container Apps using different methods and custom policies. Stay tuned for more tips, tricks, and tutorials for Azure developers!Lets get started…]]></summary>
+        <author>
+            <name>Shikhaghildiyal</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Policy for Sending logs to multiple destinations for container apps]]></title>
+        <id>https://techcommunity.microsoft.com/t5/microsoft-developer-community/policy-for-sending-logs-to-multiple-destinations-for-container/ba-p/4218424</id>
+        <link href="https://techcommunity.microsoft.com/t5/microsoft-developer-community/policy-for-sending-logs-to-multiple-destinations-for-container/ba-p/4218424"/>
+        <updated>2024-08-29T07:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Introduction:Welcome Azure developers! If you're looking to add logging policies for your Container Apps in Azure, there are two options to consider. In this blog post, we will walk you through the process of enabling logs using the "logging options" under monitoring and the "Azure Monitor" option under monitoring. We'll also provide solutions for different use cases and reference materials to help guide you along the way.Option 1: Sending Logs to Log Analytics WorkspaceOption 2: Sending Logs to Multiple Destinations (Log Analytics Workspace and Storage Account)The goal This blog provides you with valuable insights on enabling logs for your Azure Container Apps using different methods and custom policies. Stay tuned for more tips, tricks, and tutorials for Azure developers!Lets get started…]]></summary>
+        <author>
+            <name>Shikhaghildiyal</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Dev Proxy v0.20 with improved simulating API errors and a new API for building integrations]]></title>
+        <id>https://devblogs.microsoft.com/microsoft365dev/?p=22677</id>
+        <link href="https://devblogs.microsoft.com/microsoft365dev/dev-proxy-v0-20-with-improved-simulating-api-errors-and-a-new-api-for-building-integrations/"/>
+        <updated>2024-08-29T06:44:50.000Z</updated>
+        <summary type="html"><![CDATA[Discover what's new in the latest version of Dev Proxy to help you build robust apps connected to APIs.
+The post Dev Proxy v0.20 with improved simulating API errors and a new API for building integrations appeared first on Microsoft 365 Developer Blog.]]></summary>
+        <author>
+            <name>Waldek Mastykarz</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Spring Boot CDS support and Project Leyden anticipation]]></title>
+        <id>https://spring.io/blog/2024/08/29/spring-boot-cds-support-and-project-leyden-anticipation</id>
+        <link href="https://spring.io/blog/2024/08/29/spring-boot-cds-support-and-project-leyden-anticipation"/>
+        <updated>2024-08-29T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Level up your Java code and explore what Spring can do for you.]]></summary>
+        <author>
+            <name>Sébastien Deleuze</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Microsoft 365 Certification control spotlight: Patch management]]></title>
         <id>https://devblogs.microsoft.com/microsoft365dev/?p=22701</id>
@@ -13285,146 +13387,6 @@ The post Vanna.ai and Azure SQL Database appeared first on Azure SQL Devs’ Cor
         <summary type="html"><![CDATA[Improve your workload’s resiliency and optimize your cloud deployments by reviewing recommendations on Advisor]]></summary>
         <author>
             <name>Azure service updates</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Earn your C# certification with new learning series]]></title>
-        <id>https://techcommunity.microsoft.com/t5/educator-developer-blog/earn-your-c-certification-with-new-learning-series/ba-p/4099954</id>
-        <link href="https://techcommunity.microsoft.com/t5/educator-developer-blog/earn-your-c-certification-with-new-learning-series/ba-p/4099954"/>
-        <updated>2024-04-02T07:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Sign up for the learning series: https://aka.ms/learningseries/csharp/signup
- 
-We are excited to announce our new C# for Certification email learning series. 
-This eight-week email series is intended to provide you with all the resources you need to complete the Foundational C# Certification training and take the exam. The learning series will give you a structured learning path and new content to learn each week.  
- 
-How does the C# Certification learning series work? 
-
-Sign up for the learning series: https://aka.ms/learningseries/csharp/signup  
-Check your inbox each week to view the lesson. Find the topic for the week, what content to complete, and additional help resources. 
-Complete the learning path and hands-on projects.  
-
-What is C#? 
-C# (pronounced "See Sharp") is a modern, object-oriented, and type-safe programming language. C# enables developers to build many types of secure and robust applications that run in .NET. With C#, you can build... 
-
-Business applications to capture, analyze, and process data 
-Dynamic web applications that can be accessed from a web browser 
-Games, both 2D and 3D 
-Financial and scientific applications 
-Cloud-based applications 
-Mobile applications 
-
-...and more! 
- 
-
-
-
- 
-C# Learning Series Roadmap 
-How to learn to code with C#? 
-As a C# beginner, it can be difficult to know where to start. The C# Roadmap below was created by experts at Microsoft.  
-
-Get started! 
-Write your first code using C# 
-Create and run simple C# console applications 
-Add logic to C# console applications 
-Work with variable data in C# console applications 
-Create methods in C# console applications 
-Debug C# console applications 
-Wrap up and additional learning resources 
-
- 
-Sign up for the learning series: https://aka.ms/learningseries/csharp/signup 
- 
-Don’t want to sign up for the series, but still want to access the content? 
-Check out the Foundational C# Certification: https://aka.ms/csharp/certification]]></summary>
-        <author>
-            <name>Katie_Savage</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Helm charts managed through Terraform to deploy an Azure SecretProviderClass on AKS]]></title>
-        <id>https://techcommunity.microsoft.com/t5/microsoft-developer-community/helm-charts-managed-through-terraform-to-deploy-an-azure/ba-p/4101439</id>
-        <link href="https://techcommunity.microsoft.com/t5/microsoft-developer-community/helm-charts-managed-through-terraform-to-deploy-an-azure/ba-p/4101439"/>
-        <updated>2024-04-02T07:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Introduction
- 
-In this article we will see how to benefit from the advantages of two infrastructure and template management solutions: Helm charts and Terraform.
- 
-In order to make the exercise challenging and to prove that the use of these two features works well, I deliberately chose to use the SecretProviderClass because it is a complex Kubernetes resource type to model.
- 
-For more details on the SecretProviderClass, please consult the following article that points out how to create a SecretProviderClass using user-assigned identity to access your key vault.
- 
-
- 
- 
- 
-
-All the code used in this article is available here on GitHub: JamesDLD/terraform-azurerm_kubernetes-helm-chart-SecretProviderClass
-
- 
- 
-Prerequisite
- 
-
-Access to an existing Azure Kubernetes Service (AKS) cluster.
-You alr…]]></summary>
-        <author>
-            <name>Jamesdld23</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Helm charts managed through Terraform to deploy an Azure SecretProviderClass on AKS]]></title>
-        <id>https://techcommunity.microsoft.com/t5/microsoft-developer-community/helm-charts-managed-through-terraform-to-deploy-an-azure/ba-p/4101439</id>
-        <link href="https://techcommunity.microsoft.com/t5/microsoft-developer-community/helm-charts-managed-through-terraform-to-deploy-an-azure/ba-p/4101439"/>
-        <updated>2024-04-02T07:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Introduction
- 
-In this article we will see how to benefit from the advantages of two infrastructure and template management solutions: Helm charts and Terraform.
- 
-In order to make the exercise challenging and to prove that the use of these two features works well, I deliberately chose to use the SecretProviderClass because it is a complex Kubernetes resource type to model.
- 
-For more details on the SecretProviderClass, please consult the following article that points out how to create a SecretProviderClass using user-assigned identity to access your key vault.
- 
-
- 
- 
- 
-
-All the code used in this article is available here on GitHub: JamesDLD/terraform-azurerm_kubernetes-helm-chart-SecretProviderClass
-
- 
- 
-Prerequisite
- 
-
-Access to an existing Azure Kubernetes Service (AKS) cluster.
-You alr…]]></summary>
-        <author>
-            <name>Jamesdld23</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Get ready for Microsoft Build: Explore cloud-native, AI, GitHub Copilot, and more]]></title>
-        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/get-ready-for-microsoft-build-explore-cloud-native-ai-github/ba-p/4102491</id>
-        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/get-ready-for-microsoft-build-explore-cloud-native-ai-github/ba-p/4102491"/>
-        <updated>2024-04-01T19:23:25.000Z</updated>
-        <summary type="html"><![CDATA[Microsoft Build is next month! To get ready for the big event, we're exploring resources from Microsoft Learn so developers can get a head start on key topics by building new skills with the latest developer tools and techniques. We have a curated selection of resources to help you learn more about cloud-native development, adding AI to your apps, working productively with GitHub Copilot, and more. Plus, we have other timely news and announcements for developers from around Microsoft.
- 
-Get started with GitHub and Visual Studio CodeLearn how to use GitHub Copilot to increase your productivity when developing apps with Visual Studio Code.
-Deploy cloud-native apps using Azure Container AppsLearn how to build, deploy, scale, and manage containerized cloud-native apps using Azure Container App…]]></summary>
-        <author>
-            <name>mpgraven</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Deprecation of the Microsoft Graph meeting registration beta APIs]]></title>
-        <id>https://devblogs.microsoft.com/microsoft365dev/?p=20166</id>
-        <link href="https://devblogs.microsoft.com/microsoft365dev/deprecation-of-the-microsoft-graph-meeting-registration-beta-apis/"/>
-        <updated>2024-04-01T19:07:45.000Z</updated>
-        <summary type="html"><![CDATA[The Microsoft Graph meeting registration beta APIs that support the initial version are currently being deprecated and will stop returning data on September 30, 2024.  
-The post Deprecation of the Microsoft Graph meeting registration beta APIs appeared first on Microsoft 365 Developer Blog.]]></summary>
-        <author>
-            <name>Annie Wang</name>
         </author>
     </entry>
     <entry>
