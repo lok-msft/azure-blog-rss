@@ -2,10 +2,136 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2024-09-03T01:14:45.606Z</updated>
+    <updated>2024-09-04T01:16:04.293Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Announcing the Event Hubs Data Explorer: a handy tool for getting started and debugging]]></title>
+        <id>https://techcommunity.microsoft.com/t5/messaging-on-azure-blog/announcing-the-event-hubs-data-explorer-a-handy-tool-for-getting/ba-p/4235950</id>
+        <link href="https://techcommunity.microsoft.com/t5/messaging-on-azure-blog/announcing-the-event-hubs-data-explorer-a-handy-tool-for-getting/ba-p/4235950"/>
+        <updated>2024-09-03T22:14:35.000Z</updated>
+        <summary type="html"><![CDATA[We are excited to announce the launch of the new Event Hubs Data Explorer feature in the Azure portal! This user-friendly yet highly powerful tool allows developers to generate and retrieve event data from an Event Hubs topic, all within the ease of the Azure portal.
+ 
+
+ 
+ 
+ 
+Seamless Onboarding
+ 
+The Data Explorer is a vital tool for new Event Hubs developers, offering an all-encompassing view of event data for quick onboarding. It lets you test event producers and consumers easily, ensuring your systems are correctly configured. Developers have the option to either create custom workloads or utilize predefined datasets to produce mock data for streamlined testing.
+Whether you're experimenting with new data flows or validating your setup, the Data Explorer makes the process straightforwar…]]></summary>
+        <author>
+            <name>ashish-chhabria</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Load optimization in Azure Fluid Relay using Managed Prometheus]]></title>
+        <id>https://devblogs.microsoft.com/microsoft365dev/?p=22753</id>
+        <link href="https://devblogs.microsoft.com/microsoft365dev/load-optimization-in-azure-fluid-relay-using-managed-prometheus/"/>
+        <updated>2024-09-03T16:51:35.000Z</updated>
+        <summary type="html"><![CDATA[Read how Azure Fluid Relay leverages Prometheus metrics in determining cluster load and can restrict the cluster from taking in additional traffic once it reaches certain thresholds.
+The post Load optimization in Azure Fluid Relay using Managed Prometheus appeared first on Microsoft 365 Developer Blog.]]></summary>
+        <author>
+            <name>Bikram Sen</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Restoring Soft-Deleted Blobs with multithreading in Azure Storage Using C#]]></title>
+        <id>https://techcommunity.microsoft.com/t5/azure-paas-blog/restoring-soft-deleted-blobs-with-multithreading-in-azure/ba-p/4234655</id>
+        <link href="https://techcommunity.microsoft.com/t5/azure-paas-blog/restoring-soft-deleted-blobs-with-multithreading-in-azure/ba-p/4234655"/>
+        <updated>2024-09-03T16:02:20.000Z</updated>
+        <summary type="html"><![CDATA[Blob soft delete is an essential feature that safeguards your data against accidental deletions or overwrites. By retaining deleted data for a specified period, it ensures data integrity and availability, even in the event of human error. However, restoring data in the soft delete state can be more labor-intensive, as the undelete API must be called for each individual deleted blob. Currently, there is no option to bulk undelete all blobs.
+ 
+In this blog, we provide a sample C# code that will help you restore soft-deleted data efficiently. The code leverages multiple threads to expedite the restoration process, making it particularly effective if you have a large number of blobs to restore. Additionally, this program can be configured to undelete blobs within a specific container or direct…]]></summary>
+        <author>
+            <name>hqaffesha</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Service Bus Premium SKU Performance Update]]></title>
+        <id>https://techcommunity.microsoft.com/t5/messaging-on-azure-blog/service-bus-premium-sku-performance-update/ba-p/4232600</id>
+        <link href="https://techcommunity.microsoft.com/t5/messaging-on-azure-blog/service-bus-premium-sku-performance-update/ba-p/4232600"/>
+        <updated>2024-09-03T16:00:00.000Z</updated>
+        <summary type="html"><![CDATA[In 2016 we announced the general availability of Service Bus Premium, which offers dedicated resources and consistent performance for mission-critical workloads. At this point we also published a blogpost that showed the results of the performance benchmarks we ran on this SKU.
+ 
+Since then, we have made a variety of improvements to Service Bus Premium, providing even better performance for our customers’ workloads. In this blogpost, we will revisit the performance benchmarks from 2016 and compare them with the current performance of Service Bus Premium in 2024.
+ 
+Methodology
+We ran this benchmark in the same configuration as for the previous blogpost. We used a performance benchmark tool, which can be found on GitHub. The benchmark tool was run on D48 VMs located in the same region as the…]]></summary>
+        <author>
+            <name>EldertGrootenboer</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Post-retirement action for App Service Environment v1/v2, Logic Apps ISE, and APIM stv1]]></title>
+        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/post-retirement-action-for-app-service-environment-v1-v2-logic/ba-p/4233407</id>
+        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/post-retirement-action-for-app-service-environment-v1-v2-logic/ba-p/4233407"/>
+        <updated>2024-09-03T13:00:00.000Z</updated>
+        <summary type="html"><![CDATA[As previously communicated, the following Azure services reached end of life on August 31, 2024:
+
+Azure App Service Environment v1 and v2
+Logic Apps Integration Service Environment
+Azure API Management stv1
+
+Customers running retired environments should migrate immediately to avoid security risk and loss of data. As part of our ongoing communication and assistance to migrate customers safely to their new environments, this article provides more information on the customer experience for any workloads that remain in production beginning 1st September 2024.
+ 
+Please see the call-to-action section for a list of migration resources and guidance.
+ 
+What will happen to applications after August 31, 2024?
+We expect applications to remain available in the days immediately following the retirement …]]></summary>
+        <author>
+            <name>Mayunk_Jain</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Developer Toolbox]]></title>
+        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/developer-toolbox/ba-p/4235091</id>
+        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/developer-toolbox/ba-p/4235091"/>
+        <updated>2024-09-03T06:17:33.000Z</updated>
+        <summary type="html"><![CDATA[Expand your developer toolbox with the latest tools, services, and features for building intelligent, modern applications. Check out the links in this blog to learn more about .NET Aspire, Microsoft DevBox, building distributed apps for the cloud, custom copilots, and more.
+ 
+Register for .NET Aspire Day 2024
+Save the date! Join the .NET Aspire Day 2024 livestream (September 18) to learn how to harness cutting-edge Azure services and components for your .NET Aspire projects. Register now.
+  
+Watch on demand: .NET Aspire Developers Day 
+The .NET Aspire Developers Day event was jam-packed with advanced knowledge and demos that will help take your skills to the next level. Missed the event? No problem. You can still watch the videos on demand for practical skills and insights from .NET Aspire…]]></summary>
+        <author>
+            <name>mpgraven</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Dive into ARM template from a Function App]]></title>
+        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/dive-into-arm-template-from-a-function-app/ba-p/4234337</id>
+        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/dive-into-arm-template-from-a-function-app/ba-p/4234337"/>
+        <updated>2024-09-03T02:02:24.000Z</updated>
+        <summary type="html"><![CDATA[We use ARM templates to create Function Apps (or other Azure resources) to systematically manage related resources and highly customize some properties of these resources. However, without understanding the dependencies between Azure resources (e.g., Function App depends on Storage Account), it is difficult to customize the templates. This article will briefly describe the resource dependencies in ARM templates using Function App as an example.
+ 
+TOC
+Resource Structure of Function App
+ARM's dependsOn Property
+ARM's Run-time Functions
+ARM's Nested Deployment
+Complete Example
+ 
+Resource Structure of Function App
+In short, a Function App is an abstract concept composed of Application, App Service Plan, and Storage. Their roles are as follows:
+
+Application: The Function App itself, responsible…]]></summary>
+        <author>
+            <name>theringe</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[This Week in Spring - September 3rd, 2024]]></title>
+        <id>https://spring.io/blog/2024/09/03/this-week-in-spring-september-3rd-2024</id>
+        <link href="https://spring.io/blog/2024/09/03/this-week-in-spring-september-3rd-2024"/>
+        <updated>2024-09-03T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Level up your Java code and explore what Spring can do for you.]]></summary>
+        <author>
+            <name>Josh Long</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Evaluate Fine-tuned Phi-3 / 3.5 Models in Azure AI Studio Focusing on Microsoft's Responsible AI]]></title>
         <id>https://techcommunity.microsoft.com/t5/educator-developer-blog/evaluate-fine-tuned-phi-3-3-5-models-in-azure-ai-studio-focusing/ba-p/4227850</id>
@@ -13164,32 +13290,6 @@ The HJK company has started making changes to the way they work and one of those
 The post Java on Visual Studio Code Update – March 2024 appeared first on Microsoft for Java Developers.]]></summary>
         <author>
             <name>Nick Zhu</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[VS Code Day Skills Challenge]]></title>
-        <id>https://techcommunity.microsoft.com/t5/educator-developer-blog/vs-code-day-skills-challenge/ba-p/4106687</id>
-        <link href="https://techcommunity.microsoft.com/t5/educator-developer-blog/vs-code-day-skills-challenge/ba-p/4106687"/>
-        <updated>2024-04-07T07:01:00.000Z</updated>
-        <summary type="html"><![CDATA[Image with text "Challenge"
-Register for the VS Code Day Skills Challenge! Whether you're just starting or looking to change your career, this program is designed for you to get to know VS Code and GitHub Copilot in different career areas like Data Science, Artificial Intelligence, and much more! With easy-to-follow lessons, exercises, and live workshops, learn what's new in VS Code. Register now and discover the world of opportunities offered by VS Code at: https://aka.ms/VSCodeDayChallenge!
- 
-VS Code Day is our annual event where you'll learn how to elevate your development workflow with the latest and greatest features of VS Code. This year, we’re excited to delve into AI and you’ll hear from the VS Code team and other industry experts on topics like AI-powered programming with GitHub C…]]></summary>
-        <author>
-            <name>abrilurena</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Transitional approaches in Cloud Transformations: Cutover planning and the role of middleware]]></title>
-        <id>https://techcommunity.microsoft.com/t5/azure-migration-and/transitional-approaches-in-cloud-transformations-cutover/ba-p/4107990</id>
-        <link href="https://techcommunity.microsoft.com/t5/azure-migration-and/transitional-approaches-in-cloud-transformations-cutover/ba-p/4107990"/>
-        <updated>2024-04-06T22:09:16.000Z</updated>
-        <summary type="html"><![CDATA[Transitional approaches in Cloud Transformations: Cutover planning and the role of middleware
- 
-Two key concepts that are typically either planned late or addressed reactively in transformation projects are: 1. Cutover strategy, and 2. Planning the migration of middleware while also reusing the middleware solutions for both one-time migrations and for near-real-time integrations. Having these plans in place makes the changeover more seamless, with little or no impact on the systems’ functioning taking into consideration the time period between the end of the on-premises (or legacy) system and the beginning of the cloud (or modern) system.
-Cloud Transformations require transition planning to cutover applications, databases, middleware, users, administrators, and other stakeholders to the ap…]]></summary>
-        <author>
-            <name>PradyH</name>
         </author>
     </entry>
     <entry>
