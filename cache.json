@@ -643,6 +643,16 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/t5/educator-developer-blog/exploring-windows-on-arm-the-future-of-computing/ba-p/4260186",
+          "author": "SOURABHKUMARVERMA",
+          "description": "Hello! I’m Sourabh Kumar Verma, a Microsoft Learn Student Ambassador from Bangalore, currently pursuing my studies in Computer Science.\n \nRecently, I had the opportunity to explore Windows on ARM (24H2), hosted on an Azure Virtual Machine. Yes, you heard that right—Windows on ARM is available on Azure, and many people aren't aware of it! You don’t need a physical Windows Dev Kit 2023 or Windows Copilot+PC to access it.\n \nWhat is Windows on ARM?Windows on ARM refers to the version of the Windows operating system optimized for devices running ARM-based processors, as opposed to traditional x86 architecture. ARM processors are known for their power efficiency, making them ideal for mobile and energy-conscious devices. Over the past few years, ARM has grown in popularity due to its ability to …",
+          "link": "https://techcommunity.microsoft.com/t5/educator-developer-blog/exploring-windows-on-arm-the-future-of-computing/ba-p/4260186",
+          "publishedOn": "2024-10-09T07:00:00.000Z",
+          "wordCount": 9156,
+          "title": "Exploring Windows on ARM: The Future of Computing",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/625245i2F3EFCB77FD93C60/image-size/original?v=v2&px=-1"
+        },
+        {
           "id": "https://techcommunity.microsoft.com/t5/educator-developer-blog/a-journey-of-innovation-and-inspiration-with-microsoft-imagine/ba-p/4260919",
           "author": "adityaSK1973",
           "description": "As we gear up for the 2025 Imagine Cup, I'm excited to reflect on what this competition truly represents—a platform where student innovators across the world come together to dream big, build groundbreaking solutions, and make a real impact using technology. The Imagine Cup isn’t just about winning; it's about pushing boundaries, solving real-world problems, and transforming ideas into reality. Having followed last year's competition closely, I’ve been inspired by the passion, creativity, and determination that defines the journey to becoming an Imagine Cup champion.\n \nThe 2024 Imagine Cup Champions: From Your Eyes\nOne of the standout stories from the 2024 Imagine Cup is that of FROM YOUR EYES, the world champions. Their innovation is a mobile app and API that provides real-time visual exp…",
@@ -1911,16 +1921,6 @@
           "wordCount": 8674,
           "title": "AI and .NET: Exploring the AI samples repo and the model evaluation sample",
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/581196i796ED61194FD6EFE/image-size/original?v=v2&px=-1"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/educator-developer-blog/getting-started-using-phi-3-mini-4k-instruct-onnx-for-text/ba-p/4136676",
-          "author": "Lee Stott",
-          "description": "The Phi-3 mini models are AI models. The short context version Phi-3-mini-4k-instruct-onnx has a prompt length of 4k words, while the long context version can accept much longer prompts and produce longer output text. In this tutorial, we will be using the short context version of the Phi-3 ONNX models ( Phi-3-mini-4k-instruct-onnx) and using the model available from Hugging Face.Before we begin, it is important to install the git large file system extension and the Hugging Face CLI. These tools are necessary for downloading the ONNX models. Additionally, we will focus this tutorial on using the CPU to run the models. If you have a GPU, you can use DirectML or NVIDIA CUDA GPU setups for optimal performance depending on your operating system. Setting up your Python EnvironmentNavigate to yo…",
-          "link": "https://techcommunity.microsoft.com/t5/educator-developer-blog/getting-started-using-phi-3-mini-4k-instruct-onnx-for-text/ba-p/4136676",
-          "publishedOn": "2024-05-13T07:00:00.000Z",
-          "wordCount": 9719,
-          "title": "Getting Started Using Phi-3-mini-4k-instruct-onnx for Text Generation with NLP Techniques",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/580158i61080BED780F7355/image-size/original?v=v2&px=-1"
         }
       ]
     },
@@ -3078,16 +3078,6 @@
           "wordCount": 9443,
           "title": "Intelligent app on Azure Container Apps Landing Zone Accelerator",
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/579808iF58E50286DB0B69C/image-size/original?v=v2&px=-1"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/how-to-install-intl-extension-on-wordpress-on-azure-app-service/ba-p/4138353",
-          "author": "Arjun_Baliga",
-          "description": "1.Run the following code in the App Service SSH -\napk add icu-dev && \\\n   docker-php-ext-configure intl && \\\n   docker-php-ext-install intl && \\\n   docker-php-ext-enable intl\n2. Now copy the intl.so & docker-php-ext-intl.ini file to persistent storage located under /home -\nmkdir /home/intl-ext\ncp /usr/local/etc/php/conf.d/docker-php-ext-intl.ini /home/intl-ext/docker-php-ext-intl.ini\ncp /usr/local/lib/php/extensions/no-debug-non-zts-20220829/intl.so /home/intl-ext/intl.so\n3.Insert the following code into the \"/home/dev/startup.sh\" file - \napk add icu-dev\ncp /home/intl-ext/docker-php-ext-intl.ini /usr/local/etc/php/conf.d/docker-php-ext-intl.ini\ncp /home/intl-ext/intl.so /usr/local/lib/php/extensions/no-debug-non-zts-20220829/intl.so\nsupervisorctl restart php-fpm\n4. After completing the previous steps, restart your App Service. Once restarted, navigate to phpinfo.php and verify that the intl extension is successfully installed.",
-          "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/how-to-install-intl-extension-on-wordpress-on-azure-app-service/ba-p/4138353",
-          "publishedOn": "2024-05-13T08:33:14.000Z",
-          "wordCount": 8520,
-          "title": "How to install intl extension on WordPress on Azure App Service",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/580206i65E2B6D8E3B6BB0D/image-size/original?v=v2&px=-1"
         }
       ]
     },
@@ -3538,16 +3528,6 @@
           "wordCount": 9355,
           "title": "Step-by-Step Guide: Building and Integrating Custom Package in ADF Workflow Orchestration Manager",
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/582687i2A8A5B136CE93760/image-size/original?v=v2&px=-1"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/fasttrack-for-azure/managing-fabric-data-pipelines-a-step-by-step-guide-to-source/ba-p/4125614",
-          "author": "Eduardo_Noriega",
-          "description": "Introduction. In the post Microsoft Fabric: Integration with ADO Repos and Deployment Pipelines - A Power BI Case Study. we have outlined key best practices for utilizing the seamless integration between Fabric and GIT via Azure DevOps repositories and the use of Fabric Deployment Pipelines, both features intended to improve collaborative development and agile application publishing in the Azure cloud. Quality and value delivery of any data analysis application depends on the quality of the data that we manage to package, from the greatest quantity and diversity of reliable and truthful data sources. Fabric Data Pipelines serve as the backbone of data integration and orchestration, allowing organizations to streamline the flow of data across disparate systems, applications, and services.  …",
-          "link": "https://techcommunity.microsoft.com/t5/fasttrack-for-azure/managing-fabric-data-pipelines-a-step-by-step-guide-to-source/ba-p/4125614",
-          "publishedOn": "2024-05-12T22:17:34.000Z",
-          "wordCount": 9766,
-          "title": "Managing Fabric Data Pipelines: a step-by-step guide to source control and deployment",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/576328i2100924DEECDD14E/image-size/original?v=v2&px=-1"
         }
       ]
     },
@@ -4482,6 +4462,16 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/token-theft-protection-with-microsoft-entra-intune-defender-xdr/ba-p/4265675",
+          "author": "Zachary-Cavanell",
+          "description": "Prevent attackers from stealing your identity and data by protecting your tokens. In single sign-on systems like SAML and OAUTH, tokens are how services know who you are and what you can do. When you sign in to your machine with your Microsoft Entra ID account, you are getting a session token you can use to access things like your email, teams and other apps. Check out new capabilities like Credential Guard in Windows enforced by device policies in Intune, Token Protection enforcement in Microsoft Entra, and Token theft detections in Microsoft Sentinel and Defender XDR.\n \n\n \nAlex Weinert, from the Microsoft Entra team, explains what tokens are and how token theft works. Then, Jeremy Chapman, Director of Microsoft 365 shows how to defend yourself from these attacks.\n \n \nDefend against token…",
+          "link": "https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/token-theft-protection-with-microsoft-entra-intune-defender-xdr/ba-p/4265675",
+          "publishedOn": "2024-10-09T15:10:28.000Z",
+          "wordCount": 10135,
+          "title": "Token theft protection with Microsoft Entra, Intune, Defender XDR & Windows",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/627343i67E785338CC3A14B/image-size/original?v=v2&px=-1"
+        },
+        {
           "id": "https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/microsoft-365-copilot-small-business-guide-to-prepare-your-data/ba-p/4251671",
           "author": "Zachary Cavanell",
           "description": "Find and control oversharing in SharePoint as you get ready for Microsoft 365 Copilot. With simple practices as a SharePoint site owner or a SharePoint admin using the admin center you can adjust site privacy settings and site memberships, ensuring only authorized members can access sensitive content. Microsoft 365 Copilot respects individual access permissions and in turn what each user can find using search in Microsoft 365, so it's important to right-size information access. \n \nSet up test accounts to identify potential oversharing and take corrective actions. By right-sizing permissions you can protect valuable information while also enhancing the relevance of AI-generated responses.\n \n\n \nJeremy Chapman, Director of Microsoft 365, shares how to find and control oversharing, so you can …",
@@ -4650,16 +4640,6 @@
           "wordCount": 11860,
           "title": "What runs GPT-4o and Microsoft Copilot? | Largest AI supercomputer in the cloud | Mark Russinovich",
           "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/585313iE6D89F69F623CBC0/image-size/original?v=v2&px=-1"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/prioritize-security-incidents-based-on-data-importance-microsoft/ba-p/4137525",
-          "author": "Zachary Cavanell",
-          "description": "Prioritize incidents based on data significance, detect insider risks, and adapt protections in real-time with Microsoft Defender XDR and Microsoft Purview. Customize thresholds and risk indicators to detect anomalous behavior and prevent potential breaches with Adaptive Protection. Receive real-time DLP alerts triggered by policy matches, ensuring immediate action to safeguard sensitive data. Gain comprehensive visibility into threats and enforce policies across all devices and applications.\n \n \n\n \nSravan Kumar Mera, Principal Product Manager for Microsoft Purview shares how to stay ahead of evolving threats and maintain data integrity.\n \n \nIdentify and protect sensitive data.\n \n\nPrioritize and contain incidents based on insider risks and the importance of the data. Check out Microsoft De…",
-          "link": "https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/prioritize-security-incidents-based-on-data-importance-microsoft/ba-p/4137525",
-          "publishedOn": "2024-05-13T03:34:01.000Z",
-          "wordCount": 9877,
-          "title": "Prioritize Security Incidents Based on Data Importance | Microsoft Defender with Microsoft Purview",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/579905iEF9CA533BB0F0950/image-size/original?v=v2&px=-1"
         }
       ]
     },
@@ -5208,6 +5188,16 @@
       "siteUrl": "https://devblogs.microsoft.com/typescript/",
       "articles": [
         {
+          "id": "https://devblogs.microsoft.com/typescript/?p=4472",
+          "author": "Daniel Rosenwasser",
+          "description": "Today we are announcing the availability of TypeScript 5.7 Beta. To get started using the beta, you can get it through npm with the following command: npm install -D typescript@beta Let’s take a look at what’s new in TypeScript 5.7! Checks for Never-Initialized Variables For a long time, TypeScript has been able to catch issues […]\nThe post Announcing TypeScript 5.7 Beta appeared first on TypeScript.",
+          "link": "https://devblogs.microsoft.com/typescript/announcing-typescript-5-7-beta/",
+          "publishedOn": "2024-10-09T20:59:51.000Z",
+          "wordCount": 8691,
+          "title": "Announcing TypeScript 5.7 Beta",
+          "imageUrl": "https://devblogs.microsoft.com/typescript/wp-content/uploads/sites/11/2018/08/typescriptfeature.png"
+        },
+        {
           "id": "https://devblogs.microsoft.com/typescript/?p=4429",
           "author": "Daniel Rosenwasser",
           "description": "Today we’re excited to announce the release of TypeScript 5.6! If you’re not familiar with TypeScript, it’s a language that builds on top of JavaScript by adding syntax for types. Types describe the shapes we expect of our variables, parameters, and functions, and the TypeScript type-checker can help catch issues like typos, missing properties, and […]\nThe post Announcing TypeScript 5.6 appeared first on TypeScript.",
@@ -5610,6 +5600,51 @@
       "feedUrl": "https://devblogs.microsoft.com/cosmosdb/feed/",
       "siteUrl": "https://devblogs.microsoft.com/cosmosdb/",
       "articles": [
+        {
+          "id": "https://devblogs.microsoft.com/cosmosdb/?p=8886",
+          "author": "Meredith Moore",
+          "description": "Azure Cosmos DB Data Explorer is a web-based tool available in the Azure Portal that allows you to manage data, as well as track and fix issues with your queries. In this blog post, we will focus on some of the new features in data explorer that improve the error messaging in the query editor, […]\nThe post Debug Queries More Efficiently with the Improved Error Messaging in Azure Cosmos DB Data Explorer appeared first on Azure Cosmos DB Blog.",
+          "link": "https://devblogs.microsoft.com/cosmosdb/improved-error-messaging-in-azure-cosmos-db-data-explorer/",
+          "publishedOn": "2024-10-09T18:00:16.000Z",
+          "wordCount": 7107,
+          "title": "Debug Queries More Efficiently with the Improved Error Messaging in Azure Cosmos DB Data Explorer",
+          "imageUrl": "https://devblogs.microsoft.com/cosmosdb/wp-content/uploads/sites/52/2024/10/Azure-Cosmos-DB_Blog_Template-1.jpg"
+        },
+        {
+          "id": "https://devblogs.microsoft.com/cosmosdb/?p=8894",
+          "author": "Ricky Diep",
+          "description": "Azure Cosmos DB powers some of the world’s most popular intelligent apps like ChatGPT. In a recent hackathon, Over 9,500 developers engaged with Azure Cosmos DB and Azure AI services, making it one of the most popular on Devpost, ranking in the top 0.2% of all Devpost hackathons.  Participants explored AI fundamentals and built their […]\nThe post Meet the Winners | Microsoft Developers Azure AI & Azure Cosmos DB Learning Hackathon appeared first on Azure Cosmos DB Blog.",
+          "link": "https://devblogs.microsoft.com/cosmosdb/meet-the-winners-microsoft-developers-azure-ai-azure-cosmos-db-learning-hackathon/",
+          "publishedOn": "2024-10-09T16:51:59.000Z",
+          "wordCount": 7552,
+          "title": "Meet the Winners | Microsoft Developers Azure AI & Azure Cosmos DB Learning Hackathon",
+          "imageUrl": "https://devblogs.microsoft.com/cosmosdb/wp-content/uploads/sites/52/2024/10/Azure-Cosmos-DB-Hackathon.png"
+        },
+        {
+          "id": "https://devblogs.microsoft.com/cosmosdb/?p=8845",
+          "author": "Meredith Moore",
+          "description": "Managing large amounts of data is exciting. As a dataset grows in complexity and size, finding efficient ways to sort and analyze this info becomes more important. Azure Cosmos DB Data Explorer is a tool to query, review, and manage your data.  We’ve heard from your feedback in our NPS survey that there’s a need […]\nThe post Enhancing Data Explorer: Custom Columns, Filter History, and Query Views Explained appeared first on Azure Cosmos DB Blog.",
+          "link": "https://devblogs.microsoft.com/cosmosdb/data-explorer-custom-columns-filter-history-and-query-views-explained/",
+          "publishedOn": "2024-10-09T16:00:29.000Z",
+          "wordCount": 7589,
+          "title": "Enhancing Data Explorer: Custom Columns, Filter History, and Query Views Explained",
+          "enclosure": {
+            "url": "https://devblogs.microsoft.com/cosmosdb/wp-content/uploads/sites/52/2024/10/customecolumn.mp4",
+            "length": "5254129",
+            "type": "video/mp4"
+          },
+          "imageUrl": "https://devblogs.microsoft.com/cosmosdb/wp-content/uploads/sites/52/2024/10/Azure-Cosmos-DB_Blog_Template.jpg"
+        },
+        {
+          "id": "https://devblogs.microsoft.com/cosmosdb/?p=8793",
+          "author": "Justine Cocchi",
+          "description": "We’re excited to announce new features for the Azure Cosmos DB integrated cache! The integrated cache is built into the dedicated gateway, and now there’s new ways to authenticate your requests. Security is top of mind for many organizations, and you can now use Role-Based Access Control (RBAC) with Microsoft Entra ID to authenticate to […]\nThe post Introducing RBAC Authentication and more for the Azure Cosmos DB Integrated Cache appeared first on Azure Cosmos DB Blog.",
+          "link": "https://devblogs.microsoft.com/cosmosdb/introducing-rbac-authentication-and-more-for-the-azure-cosmos-db-integrated-cache/",
+          "publishedOn": "2024-10-09T14:00:46.000Z",
+          "wordCount": 7495,
+          "title": "Introducing RBAC Authentication and more for the Azure Cosmos DB Integrated Cache",
+          "imageUrl": "https://devblogs.microsoft.com/cosmosdb/wp-content/uploads/sites/52/2024/10/rbac_ai.jpg"
+        },
         {
           "id": "https://devblogs.microsoft.com/cosmosdb/?p=8874",
           "author": "James Codella",
@@ -6049,6 +6084,16 @@
       "feedUrl": "https://techcommunity.microsoft.com/plugins/custom/microsoft/o365/custom-blog-rss?tid=-2574164104208876465&board=AzureGovernanceandManagementBlog&size=100",
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
+        {
+          "id": "https://techcommunity.microsoft.com/t5/azure-governance-and-management/azure-landing-zones-policy-refresh-q1-fy25/ba-p/4266538",
+          "author": "Springstone",
+          "description": "ALZ - Policy Refresh Q1 FY25 is here!\nAs you may be aware, the ALZ team release cadence is now on quarterly basis to help customers and partners manage change in their environments. Additionally, based on feedback from our community, partners and customers that we will only introduce breaking changes every half-year, this release, being 3 months since the last breaking change (FY24 H2), therefore does not contain any breaking changes.\n \nWith the generally \"quiet\" time over the summer (in the northern hemisphere), the ALZ team have taken advantage and worked on enhancing security, quality and reliability of ALZ's Policies. \n \nSecurity\nAs a core priority for Microsoft, security comes first.\n \nWe've updated all our custom minimum TLS version policies to support TLS version 1.2 AND 1.3 as more…",
+          "link": "https://techcommunity.microsoft.com/t5/azure-governance-and-management/azure-landing-zones-policy-refresh-q1-fy25/ba-p/4266538",
+          "publishedOn": "2024-10-09T19:45:25.000Z",
+          "wordCount": 9195,
+          "title": "Azure Landing Zones - Policy Refresh Q1 FY25",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/627676iD65FF1EF830FF263/image-size/original?v=v2&px=-1"
+        },
         {
           "id": "https://techcommunity.microsoft.com/t5/azure-governance-and-management/custom-policy-reusable-logs-templates/ba-p/4259304",
           "author": "Shikhaghildiyal",
