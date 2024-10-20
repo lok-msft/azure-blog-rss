@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2024-10-19T01:19:34.720Z</updated>
+    <updated>2024-10-20T01:26:42.279Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
@@ -9673,99 +9673,6 @@ With multi-region load tests, you can now simulate load from multiple geographie
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Public Preview: Log Analytics Workspace Replication]]></title>
-        <id>https://techcommunity.microsoft.com/t5/azure-observability-blog/public-preview-log-analytics-workspace-replication/ba-p/4150134</id>
-        <link href="https://techcommunity.microsoft.com/t5/azure-observability-blog/public-preview-log-analytics-workspace-replication/ba-p/4150134"/>
-        <updated>2024-05-23T12:50:33.000Z</updated>
-        <summary type="html"><![CDATA[Azure Monitor Log Analytics uses workspaces as a logical container for logs. Workspaces are region-bound, but workspace replication allows you to create cross-regional redundancy to increase workspace resilience to regional incidents.
- 
-What is Workspace Replication?
-Workspace replication creates a replica of your workspace on another region, that you chose from a set of regions. The original instance of your workspace is referred to as the primary workspace, and the replica on the second region is referred to as secondary.
-The second instance of your workspace is created by the service with the same ID and configuration as your primary workspace (future configuration changes you make will be synced as well). This is basically an active-passive setup – at any given time, your workspace has…]]></summary>
-        <author>
-            <name>Noa Kuperberg</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Public Preview: Log Analytics Workspace Replication]]></title>
-        <id>https://techcommunity.microsoft.com/t5/azure-observability-blog/public-preview-log-analytics-workspace-replication/ba-p/4150134</id>
-        <link href="https://techcommunity.microsoft.com/t5/azure-observability-blog/public-preview-log-analytics-workspace-replication/ba-p/4150134"/>
-        <updated>2024-05-23T12:50:33.000Z</updated>
-        <summary type="html"><![CDATA[Azure Monitor Log Analytics uses workspaces as a logical container for logs. Workspaces are region-bound, but workspace replication allows you to create cross-regional redundancy to increase workspace resilience to regional incidents.
- 
-What is Workspace Replication?
-Workspace replication creates a replica of your workspace on another region, that you chose from a set of regions. The original instance of your workspace is referred to as the primary workspace, and the replica on the second region is referred to as secondary.
-The second instance of your workspace is created by the service with the same ID and configuration as your primary workspace (future configuration changes you make will be synced as well). This is basically an active-passive setup – at any given time, your workspace has…]]></summary>
-        <author>
-            <name>Noa Kuperberg</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Extracting data from unstructured forms using Azure AI Document Intelligence.]]></title>
-        <id>https://techcommunity.microsoft.com/t5/educator-developer-blog/extracting-data-from-unstructured-forms-using-azure-ai-document/ba-p/4141679</id>
-        <link href="https://techcommunity.microsoft.com/t5/educator-developer-blog/extracting-data-from-unstructured-forms-using-azure-ai-document/ba-p/4141679"/>
-        <updated>2024-05-23T07:00:00.000Z</updated>
-        <summary type="html"><![CDATA[In this blog we are going to take a scenario where our business is a business-to-business(B2B) product to help other businesses extract data from unstructured forms such as pdfs, emails, websites etc. 
-In this scenario we are faced with manual extraction of relevant information which is time-consuming and prone to error. 
-Let’s see how we can leverage Azure AI Document intelligence and come up with a simple pipeline to ingest data, process and give us structured data. 
- 
-What you need to get started. 
-
-Azure account with a subscription: To create one use the following link: Azure portal Want to know what azure subscription is? azure subscription 
-Azure blob storage: A storage account to store documents which need to be extracted. Learn more about azure blob storage: Azure blob storage docs…]]></summary>
-        <author>
-            <name>kevin_comba</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Automatically enable system managed identity for App Service apps with Azure Policy]]></title>
-        <id>https://techcommunity.microsoft.com/t5/azure-paas-blog/automatically-enable-system-managed-identity-for-app-service/ba-p/4108293</id>
-        <link href="https://techcommunity.microsoft.com/t5/azure-paas-blog/automatically-enable-system-managed-identity-for-app-service/ba-p/4108293"/>
-        <updated>2024-05-23T05:37:05.000Z</updated>
-        <summary type="html"><![CDATA[A common challenge when updating app service apps with the standard App service ARM template is the mandatory "serverFarmId" property. The policy engine is unable to dynamically extract properties from the resource being evaluated during runtime for deployment, making it infeasible to update any App Service property with the conventional App service ARM template in the deployIfNotExists (DINE) policy.
- 
- However, managed identity can be enabled with the Azure PowerShell command: Set-AzWebApp -AssignIdentity. Furthermore, this command can be executed by utilizing a unique resource type known as deploymentScripts. This resource type can run commands/scripts in the deployment section of the DINE policy, thereby enabling managed identity for app services.
- 
-Now, let's take a look at the policy…]]></summary>
-        <author>
-            <name>emanuel4ever</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Automating Azure Remediation for Policy Initiatives with Azure PowerShell]]></title>
-        <id>https://techcommunity.microsoft.com/t5/azure-paas-blog/automating-azure-remediation-for-policy-initiatives-with-azure/ba-p/4113485</id>
-        <link href="https://techcommunity.microsoft.com/t5/azure-paas-blog/automating-azure-remediation-for-policy-initiatives-with-azure/ba-p/4113485"/>
-        <updated>2024-05-23T05:33:40.000Z</updated>
-        <summary type="html"><![CDATA[Introduction and Current Challenges:
-Policy remediation is a critical aspect in Azure Policy, a service in Azure that you use to create, assign, and manage policies. These policies enforce different rules and effects over your resources, so they stay compliant with your corporate standards and service level agreements.
- 
-As part of testing policy initiative, you might encounter an inconvenience where you cannot create remediation tasks for all policies inside an initiative assignment with a single click. Instead, you need to manually select and remediate each policy, which could be time-consuming if you have multiple policies created inside the policy initiative. In this blog post, we aim to address this challenge and provide a method for automation to create remediation tasks that apply t…]]></summary>
-        <author>
-            <name>emanuel4ever</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[A Bootiful Podcast: Tagir Valeev, Fellow Java Champion and IntelliJ IDEA Java legend]]></title>
-        <id>https://spring.io/blog/2024/05/23/a-bootiful-podcast-tagir-valeev-fellow-java-champion-and-intellij-idea-java</id>
-        <link href="https://spring.io/blog/2024/05/23/a-bootiful-podcast-tagir-valeev-fellow-java-champion-and-intellij-idea-java"/>
-        <updated>2024-05-23T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Level up your Java code and explore what Spring can do for you.]]></summary>
-        <author>
-            <name>Josh Long</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[What’s new for Office Add-ins at Build 2024]]></title>
-        <id>https://devblogs.microsoft.com/microsoft365dev/?p=21282</id>
-        <link href="https://devblogs.microsoft.com/microsoft365dev/whats-new-for-office-add-ins-at-build-2024/"/>
-        <updated>2024-05-22T22:45:15.000Z</updated>
-        <summary type="html"><![CDATA[In this blog, the Office Platform team announces the new capabilities and features announced at Build 2024.  
-The post What’s new for Office Add-ins at Build 2024 appeared first on Microsoft 365 Developer Blog.]]></summary>
-        <author>
-            <name>Office Add-ins team</name>
-        </author>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[Azure portal now offers in context observability for AKS object overviews]]></title>
         <id>azure-portal-now-offers-in-context-observability-for-aks-object-overviews</id>
         <link href="https://azure.microsoft.com/en-us/updates/azure-portal-now-offers-in-context-observability-for-aks-object-overviews/"/>
@@ -9786,34 +9693,6 @@ The post What’s new for Office Add-ins at Build 2024 appeared first on Microso
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[General Availability of Kubernetes Event-Driven Autoscaler (KEDA) in Azure Portal]]></title>
-        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/general-availability-of-kubernetes-event-driven-autoscaler-keda/ba-p/4149281</id>
-        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/general-availability-of-kubernetes-event-driven-autoscaler-keda/ba-p/4149281"/>
-        <updated>2024-05-22T18:46:00.000Z</updated>
-        <summary type="html"><![CDATA[Kubernetes Event-Driven Autoscaler (KEDA) is an open-source, lightweight component that allows users to autoscale container workloads on events in external scalers. KEDA extends the functionality of the native Kubernetes Horizontal Pod Autoscaler (HPA) with a wide variety of scalers and scale-to-zero capabilities, thus allowing user applications to meet demand in a more sustainable and cost-efficient manner.
- 
-Today, we are excited to announce that the Azure Portal now supports KEDA scaling on memory, CPU, cron and Azure Service Bus scalers. Users will be able to easily create scaled objects and monitor their scaled objects and jobs all within the Portal interface, and for Azure Service Bus, Portal will handle the deployment and configuration of workload identity. This will streamline the …]]></summary>
-        <author>
-            <name>mjranda</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Azure OpenAI chat baseline architecture in an Azure landing zone]]></title>
-        <id>https://techcommunity.microsoft.com/t5/azure-architecture-blog/azure-openai-chat-baseline-architecture-in-an-azure-landing-zone/ba-p/4149124</id>
-        <link href="https://techcommunity.microsoft.com/t5/azure-architecture-blog/azure-openai-chat-baseline-architecture-in-an-azure-landing-zone/ba-p/4149124"/>
-        <updated>2024-05-22T17:07:06.000Z</updated>
-        <summary type="html"><![CDATA[The excitement surrounding Microsoft Build 2024 brings into focus the significant steps required to integrate AI and ML innovations into Azure workloads effectively. An essential resource for this integration journey is the Azure OpenAI Chat Baseline Architecture within an Azure landing zone – a strategic framework crucial for transitioning generative AI from the experimental phase into production.
- 
-
-
-
- 
-The Azure OpenAI chat baseline architecture in an Azure landing zone provides clear guidance on deploying AI workloads by delineating the management of shared resources, such as networking and access, while maintaining a clear separation of concerns. It outlines how workload-specific configurations can coexist within a broader organizational context, emphasizing the importance of scalabil…]]></summary>
-        <author>
-            <name>FreddyAyala</name>
-        </author>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[Preview: Windows gRPC support is now available on App Service]]></title>
         <id>grpcwinappservice</id>
         <link href="https://azure.microsoft.com/en-us/updates/grpcwinappservice/"/>
@@ -9831,27 +9710,6 @@ The Azure OpenAI chat baseline architecture in an Azure landing zone provides c
         <summary type="html"><![CDATA[Azure Log Analytics is announcing Workspace Replication, a new capability that enhances workspace resilience by enabling you to switch your workspace operation to another region if your primary region isn’t healthy.]]></summary>
         <author>
             <name>Azure service updates</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Setting Up WSL for Secure Redis CLI Connections to Azure Redis Cache on Windows.]]></title>
-        <id>https://techcommunity.microsoft.com/t5/azure-paas-blog/setting-up-wsl-for-secure-redis-cli-connections-to-azure-redis/ba-p/4144256</id>
-        <link href="https://techcommunity.microsoft.com/t5/azure-paas-blog/setting-up-wsl-for-secure-redis-cli-connections-to-azure-redis/ba-p/4144256"/>
-        <updated>2024-05-22T14:55:01.000Z</updated>
-        <summary type="html"><![CDATA[Introduction 
-This blog post is a comprehensive guide to setting up the Windows Subsystem for Linux (WSL) on your Windows machine. This enables you to use the Redis Command-Line Interface (CLI) to connect to an Azure Redis Cache instance securely. By running a Linux environment on Windows, you can use Redis CLI without the need for a separate virtual machine or dual booting.
- 
-Methods to Connect to Redis As of the date of this blog post, there are several ways to connect to Redis:
-
-Redis Insight: A graphical interface offering insights and connectivity troubleshooting for Redis data.
-Redis CLI: A command-line tool for direct interaction with Redis.
-Client Libraries: Connection via libraries available for various programming languages.
-
- 
-Redis Insight
-For those interested in a GUI-based ap…]]></summary>
-        <author>
-            <name>wabarca</name>
         </author>
     </entry>
     <entry>
