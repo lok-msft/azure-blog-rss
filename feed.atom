@@ -2,10 +2,59 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2024-10-23T01:20:04.359Z</updated>
+    <updated>2024-10-24T01:20:16.371Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Specify runtime requirements in app manifest: Your key to success across Microsoft 365]]></title>
+        <id>https://devblogs.microsoft.com/microsoft365dev/?p=22172</id>
+        <link href="https://devblogs.microsoft.com/microsoft365dev/specify-runtime-requirements-in-app-manifest-your-key-to-success-across-microsoft-365/"/>
+        <updated>2024-10-23T22:52:13.000Z</updated>
+        <summary type="html"><![CDATA[Specify Runtime Requirements in App Manifest: Your Key to Success across Microsoft 365 Hosts Through extensive user research, we’ve identified what M365 users value most for boosting productivity. They want uninterrupted workflows, an all-in-one workspace, and minimal context switching. With this insight, we evolved Microsoft 365 into a unified platform across Teams, Outlook, M365 app […]
+The post Specify runtime requirements in app manifest: Your key to success across Microsoft 365 appeared first on Microsoft 365 Developer Blog.]]></summary>
+        <author>
+            <name>Adam Li</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Build Intelligent Apps Code-First with Prompty and Azure AI]]></title>
+        <id>https://techcommunity.microsoft.com/t5/microsoft-developer-community/build-intelligent-apps-code-first-with-prompty-and-azure-ai/ba-p/4274248</id>
+        <link href="https://techcommunity.microsoft.com/t5/microsoft-developer-community/build-intelligent-apps-code-first-with-prompty-and-azure-ai/ba-p/4274248"/>
+        <updated>2024-10-23T04:04:00.000Z</updated>
+        <summary type="html"><![CDATA[Building Generative AI applications can feel daunting for traditional app developers. What does the end-to-end application development cycle look like? What models should I use, and where do I find them? What tools should I be using for build, test, and deploy, my AI application? This blog post gives you a sneak peek at a week-long series of posts that were just published, that give you a hands-on journey through the process. Let’s learn more!
+ 
+Kicking Off Azure AI Week!
+This week we published a 5-part blog on the Build Intelligent Apps initiative’s #30DaysOfIA series. Our focus was application developers who wanted to build a custom copilot code-first on Azure AI, allowing them to have more control over various decisions made in the end-to-end workflow for generative AI applications. We …]]></summary>
+        <author>
+            <name>nitya</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Overcoming Asymmetrical Routing in Azure Virtual WAN: A Collaborative Journey]]></title>
+        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/overcoming-asymmetrical-routing-in-azure-virtual-wan-a/ba-p/4277069</id>
+        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/overcoming-asymmetrical-routing-in-azure-virtual-wan-a/ba-p/4277069"/>
+        <updated>2024-10-23T02:26:36.000Z</updated>
+        <summary type="html"><![CDATA[Overcoming Asymmetrical Routing in Azure Virtual WAN: A Collaborative Journey
+In the rapidly evolving landscape of cloud networking, professionals often encounter complex challenges that demand innovative solutions. This blog post delves into a recent scenario involving Azure Virtual WAN (VWAN), where a team embarked on a collaborative journey to address asymmetrical routing issues. This case study not only highlights the technical intricacies but also underscores the importance of collaboration and knowledge sharing in the tech community.
+
+ 
+ 
+The Challenge:
+The core issue revolved around asymmetrical routing within an Azure VWAN architecture, which included two hubs located in different regions. The primary goal was to ensure seamless connectivity between a Palo Alto NGFW in one hub and Panorama in another, without disrupting the existing VPN default routes. The asymmetry in routing was particularly problematic for traffic intended to reach Panorama from the NGFW, as the return traffic defaulted through the VPN, deviating from the desired path.
+
+The configuration issue with the firewall is acknowledged as a known issue. The only mitigation provided is documented in Microsoft's official documentation. https://learn.microsoft.com/en-us/azure/virtual-wan/whats-new#known-issues
+
+ 
+
+ 
+Possible solutions:
+
+Exposing the Panorama to the public IP and creating a relay subnet for routing / advertising summary route from NCUS to SCUS for NCUS subnet (10.193.0.0/16)]]></summary>
+        <author>
+            <name>psundars</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[How to Choose the Right Models for Your Apps | Azure AI]]></title>
         <id>https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/how-to-choose-the-right-models-for-your-apps-azure-ai/ba-p/4271216</id>
@@ -9433,90 +9482,6 @@ To configure and deploy these policies, you can use the Group Policy Editor.…]
         <summary type="html"><![CDATA[The Graph Semantics extension to Kusto is now generally available. Users are encouraged to integrate this tool into their production workflows to enhance understanding of complex datasets and uncover hidden patterns.]]></summary>
         <author>
             <name>Azure service updates</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Getting Started with Reliability on Azure: Ensuring Cloud Applications Stay Up and Running]]></title>
-        <id>https://techcommunity.microsoft.com/t5/azure-architecture-blog/getting-started-with-reliability-on-azure-ensuring-cloud/ba-p/4152905</id>
-        <link href="https://techcommunity.microsoft.com/t5/azure-architecture-blog/getting-started-with-reliability-on-azure-ensuring-cloud/ba-p/4152905"/>
-        <updated>2024-05-27T13:15:05.000Z</updated>
-        <summary type="html"><![CDATA[As businesses increasingly rely on cloud services, the imperative for robust cloud solutions has never been greater. Azure stands at the forefront of this realm, offering architects and technology leaders a platform where reliability is not just a feature — it's a core tenet.
- 
-The Essence of Reliability in Azure
- 
-Reliability is the bedrock upon which cloud architectures stand, indicative of a system's robustness to persistently deliver expected outcomes. It's defined not only by a service’s uptime but also by its stringent adherence to defined Service Level Objectives (SLOs) and Service Level Agreements (SLAs). These crucial benchmarks encompass aspects such as Recovery Time Objective (RTO)—the time within which functions must be restored post-disruption—and Recovery Point Objective (RPO…]]></summary>
-        <author>
-            <name>FreddyAyala</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Small Language Models with Phi-3 Cookbook: A Guide]]></title>
-        <id>https://techcommunity.microsoft.com/t5/educator-developer-blog/small-language-models-with-phi-3-cookbook-a-guide/ba-p/4149864</id>
-        <link href="https://techcommunity.microsoft.com/t5/educator-developer-blog/small-language-models-with-phi-3-cookbook-a-guide/ba-p/4149864"/>
-        <updated>2024-05-27T07:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Small Language Models and Phi-3: A Guide 
-Small language models (SLMs) are a powerful tool that has gained significant attention in recent years. They are used to generate text, images, and other forms of content with great precision. In this blog post, we will explore the concept of small language models and how you can use them using the Phi-3 cookbook.
- 
-What are Small Language Models?
-Small language models are a type of neural network that is trained on a large corpus of text data. They are designed to generate new text that is similar to the training data, but they can also be used for tasks like image generation and more.
-How do Small Language Models Work?
-Small language models work by predicting the next word in a sequence based on the previous words. This process is known as autore…]]></summary>
-        <author>
-            <name>Lee Stott</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Customize percentiles for response time in Azure Load Testing]]></title>
-        <id>https://techcommunity.microsoft.com/t5/apps-on-azure-blog/customize-percentiles-for-response-time-in-azure-load-testing/ba-p/4152559</id>
-        <link href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/customize-percentiles-for-response-time-in-azure-load-testing/ba-p/4152559"/>
-        <updated>2024-05-27T04:39:33.000Z</updated>
-        <summary type="html"><![CDATA[Introduction
-Azure Load Testing is a cloud-based service that lets you test the performance and scalability of your web applications and APIs. You can create and run load tests, analyze and compare the results, and define test fail criteria based on metrics like response time, error percentage, and throughput.
-Response time is the time your application takes to respond to a user request. It depends on factors like network latency, server load, and application logic. To measure the performance of your application, you need to look at the response time distribution across different percentiles, which show how many requests are completed within a certain time limit. For example, the 90th percentile response time means that 90% of the requests are completed within that time, and the remaining …]]></summary>
-        <author>
-            <name>SaloniAgrawal12</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[This Week in Spring - May 27th, 2024]]></title>
-        <id>https://spring.io/blog/2024/05/27/this-week-in-spring-may-27th-2024</id>
-        <link href="https://spring.io/blog/2024/05/27/this-week-in-spring-may-27th-2024"/>
-        <updated>2024-05-27T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Level up your Java code and explore what Spring can do for you.]]></summary>
-        <author>
-            <name>Josh Long</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Analyze data using Log Analytics Simple mode]]></title>
-        <id>https://techcommunity.microsoft.com/t5/azure-observability-blog/analyze-data-using-log-analytics-simple-mode/ba-p/4152447</id>
-        <link href="https://techcommunity.microsoft.com/t5/azure-observability-blog/analyze-data-using-log-analytics-simple-mode/ba-p/4152447"/>
-        <updated>2024-05-26T21:50:36.000Z</updated>
-        <summary type="html"><![CDATA[Introduction 
-Azure Monitor Logs offer a powerful set of capabilities for users to explore their logs and derive meaningful insights from their data estate.
-Until now, Azure Monitor Logs relied on KQL for users to express their questions as queries.KQL is a powerful, easy to learn query language, however, as any query language it requires some knowledge to operate.
-Simple mode experience was created to bridge this knowledge gap - allowing most popular KQL operators and actions to be utilized using a very simple, point-and-click experience requiring no KQL knowledge at all!  
-KQL Mode gives advanced users the full power of Kusto Query Language (KQL) to derive deeper insights from their logs.
- 
-Here's a video that provides a quick overview of how to query logs in Log Analytics using both Sim…]]></summary>
-        <author>
-            <name>Ilana_Waitser</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Analyze data using Log Analytics Simple mode]]></title>
-        <id>https://techcommunity.microsoft.com/t5/azure-observability-blog/analyze-data-using-log-analytics-simple-mode/ba-p/4152447</id>
-        <link href="https://techcommunity.microsoft.com/t5/azure-observability-blog/analyze-data-using-log-analytics-simple-mode/ba-p/4152447"/>
-        <updated>2024-05-26T21:50:36.000Z</updated>
-        <summary type="html"><![CDATA[Introduction 
-Azure Monitor Logs offer a powerful set of capabilities for users to explore their logs and derive meaningful insights from their data estate.
-Until now, Azure Monitor Logs relied on KQL for users to express their questions as queries.KQL is a powerful, easy to learn query language, however, as any query language it requires some knowledge to operate.
-Simple mode experience was created to bridge this knowledge gap - allowing most popular KQL operators and actions to be utilized using a very simple, point-and-click experience requiring no KQL knowledge at all!  
-KQL Mode gives advanced users the full power of Kusto Query Language (KQL) to derive deeper insights from their logs.
- 
-Here's a video that provides a quick overview of how to query logs in Log Analytics using both Sim…]]></summary>
-        <author>
-            <name>Ilana_Waitser</name>
         </author>
     </entry>
     <entry>
