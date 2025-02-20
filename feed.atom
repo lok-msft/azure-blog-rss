@@ -2,10 +2,133 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2025-02-19T01:20:25.698Z</updated>
+    <updated>2025-02-20T01:20:42.179Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[AI Agents for Beginners Course: 10 Lessons teaching you how to start building AI Agents]]></title>
+        <id>https://devblogs.microsoft.com/semantic-kernel/?p=4195</id>
+        <link href="https://devblogs.microsoft.com/semantic-kernel/ai-agents-for-beginners-course-10-lessons-teaching-you-how-to-start-building-ai-agents/"/>
+        <updated>2025-02-19T22:36:28.000Z</updated>
+        <summary type="html"><![CDATA[10 Lessons teaching everything you need to know to start building AI Agents Today we want to highlight the AI Agents For Beginners course that was released. 🔗https://github.com/microsoft/ai-agents-for-beginners/tree/main 🗃️There are 10 Lessons available today teaching you the basics of building AI Agents, as shown below Lesson Link Intro to AI Agents and Use Cases Link […]
+The post AI Agents for Beginners Course: 10 Lessons teaching you how to start building AI Agents appeared first on Semantic Kernel.]]></summary>
+        <author>
+            <name>Sophia Lagerkrans-Pandey</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[GitHub Copilot for Azure DevOps users]]></title>
+        <id>https://devblogs.microsoft.com/devops/?p=70249</id>
+        <link href="https://devblogs.microsoft.com/devops/github-copilot-for-azure-devops-users/"/>
+        <updated>2025-02-19T19:56:04.000Z</updated>
+        <summary type="html"><![CDATA[Azure DevOps customers frequently ask us when GitHub Copilot will be available to them. What many don’t realize is that GitHub Copilot for Business is already accessible to all customers, including those using Azure DevOps. Even better, much of its powerful functionality is integrated into tools you already use, like Visual Studio and VS Code. […]
+The post GitHub Copilot for Azure DevOps users appeared first on Azure DevOps Blog.]]></summary>
+        <author>
+            <name>Dan Hellem</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Using Semantic Kernel to control a BBC Microbit]]></title>
+        <id>https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/discussions/Azure-AI-Services-blog/using-semantic-kernel-to-control-a-bbc-microbit/4379011</id>
+        <link href="https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/discussions/Azure-AI-Services-blog/using-semantic-kernel-to-control-a-bbc-microbit/4379011"/>
+        <updated>2025-02-19T18:33:37.000Z</updated>
+        <summary type="html"><![CDATA[Background
+The BBC Micro:bit has proved very popular in UK schools as a cheap and simple device that can be used to demonstrate basic coding, either using a building block approach or by using Python code in an editor. There are browser-based tools to allow editing of the code in either mode.
+
+The BBC Micro:bit is then connected via USB and the browser is then able to upload the code to the BBC Micro:bit. Thus making it a very interactive experience.
+What if the power of Azure OpenAI prompts could be combined with the simplicity of the BBC Micro:bit to allow prompts to directly program the BBC Micro:bit?
+This is what this blog explains.
+Semantic Kernel
+This blog assumes the reader has a basic understanding of Azure OpenAI and that there is an API that allows you to send requests and get re…]]></summary>
+        <author>
+            <name>jometzg</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Reproduce Deepseek R1-zero Aha Moment]]></title>
+        <id>https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/discussions/Azure-AI-Services-blog/reproduce-deepseek-r1-zero-aha-moment/4381657</id>
+        <link href="https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/discussions/Azure-AI-Services-blog/reproduce-deepseek-r1-zero-aha-moment/4381657"/>
+        <updated>2025-02-19T18:19:59.000Z</updated>
+        <summary type="html"><![CDATA[The Code
+We used the method of `accelerate` + `deepspeed` + `transformers` + `trl.GRPOTrainer`. Do not use `unsloth` acceleration because it does not yet support distributed training.  
+For faster experimental speed, I used the 0.5B and 1.5B versions of Qwen2.5.  
+The code to config the `deepspeed` backend in `accelerate` is in `train/r1/phi4grpo_zero2.yaml` (yes, the `deepspeed` configuration file is the same as when using `phi4`). Note that the number of `num_processes` should be set to the number of GPUs specified in the `CUDA_VISIBLE_DEVICES` environment variable minus one, because one GPU needs to be reserved for `vllm` to generate the `group relative policy`. Some configuration is as follows:  
+......
+distributed_type: DEEPSPEED
+downcast_bf16: 'no'
+machine_rank: 0
+main_training_funct…]]></summary>
+        <author>
+            <name>GangLuo</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Azure AI Foundry, GitHub Copilot, Fabric and more to Analyze usage stats from Utility Invoices]]></title>
+        <id>https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/discussions/AzureArchitectureBlog/azure-ai-foundry-github-copilot-fabric-and-more-to-analyze-usage-stats-from-util/4369047</id>
+        <link href="https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/discussions/AzureArchitectureBlog/azure-ai-foundry-github-copilot-fabric-and-more-to-analyze-usage-stats-from-util/4369047"/>
+        <updated>2025-02-19T18:15:17.000Z</updated>
+        <summary type="html"><![CDATA[Overview
+With the introduction of Azure AI Foundry, integrating various AI services to streamline AI solution development and deployment of Agentic AI Workflow solutions like multi-modal, multi-model, dynamic & interactive Agents etc. has become more efficient. The platform offers a range of AI services, including Document Intelligence for extracting data from documents, natural language processing and robust machine learning capabilities, and more. Microsoft Fabric further enhances this ecosystem by providing robust data storage, analytics, and data science tools, enabling seamless data management and analysis. Additionally, Copilot and GitHub Copilot assist developers by offering AI-powered code suggestions and automating repetitive coding tasks, significantly boosting productivity and e…]]></summary>
+        <author>
+            <name>PradyH</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Introducing the Adaptive Cards documentation hub and new Adaptive Cards updates]]></title>
+        <id>https://devblogs.microsoft.com/microsoft365dev/?p=23800</id>
+        <link href="https://devblogs.microsoft.com/microsoft365dev/introducing-the-adaptive-cards-documentation-hub-and-new-adaptive-cards-updates/"/>
+        <updated>2025-02-19T16:11:42.000Z</updated>
+        <summary type="html"><![CDATA[Discover how Adaptive Cards can transform your app with rich, interactive experiences that boost productivity and streamline workflows, in our new Adaptive Cards documentation hub.
+The post Introducing the Adaptive Cards documentation hub and new Adaptive Cards updates appeared first on Microsoft 365 Developer Blog.]]></summary>
+        <author>
+            <name>Swarathmika Kakivaya</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Reference Architecture for a High Scale Moodle Environment on Azure]]></title>
+        <id>https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/discussions/AppsonAzureBlog/reference-architecture-for-a-high-scale-moodle-environment-on-azure/4383006</id>
+        <link href="https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/discussions/AppsonAzureBlog/reference-architecture-for-a-high-scale-moodle-environment-on-azure/4383006"/>
+        <updated>2025-02-19T12:44:02.000Z</updated>
+        <summary type="html"><![CDATA[Introduction 
+Moodle is an open-source learning platform that was developed in 1999 by Martin Dougiamas, a computer scientist and educator from Australia. Moodle stands for Modular Object-Oriented Dynamic Learning Environment, and it is written in PHP, a popular web programming language. Moodle aims to provide educators and learners with a flexible and customizable online environment for teaching and learning, where they can create and access courses, activities, resources, and assessments. Moodle also supports collaboration, communication, and feedback among users, as well as various plugins and integrations with other systems and tools. 
+Moodle is widely used around the world by schools, universities, businesses, and other organizations, with over 100 million registered users and 250,000…]]></summary>
+        <author>
+            <name>GuilhermeFrança</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Introducing fabric-cicd Deployment Tool]]></title>
+        <id>introducing-fabric-cicd-deployment-tool</id>
+        <link href="https://blog.fabric.microsoft.com/en/blog/introducing-fabric-cicd-deployment-tool/"/>
+        <updated>2025-02-19T10:00:00.000Z</updated>
+        <summary type="html"><![CDATA[We’re excited to announce the preview of the Fabric CI/CD Python library!  Recognizing the importance of CI/CD in our success, we decided to open source our project to share with the community. As part of the Azure Data Insights & Analytics team, an internal data engineering group focused on supporting product analytics for Azure Data, we’ve been using Fabric as the backbone of our platform for the last two years. Our team is committed to maintaining and evolving this library, and we look forward to collaborating with the community to enhance its capabilities!]]></summary>
+        <author>
+            <name>Microsoft Fabric Blog</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Why SQL database in Fabric is the best choice for low-code/no-code Developers]]></title>
+        <id>18505</id>
+        <link href="https://blog.fabric.microsoft.com/en/blog/18505/"/>
+        <updated>2025-02-19T09:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Low-code/no-code empowers developers to create and manage databases in an Intuitive and user-friendly way. In the fast-evolving world of software development, the low-code/no-code movement has garnered substantial momentum. This paradigm shift is enabling a new wave of developers, citizen developers, to create powerful applications with minimal hand-coding. In Fabric, the heart of this revolution lies … 
+Continue reading “Why SQL database in Fabric is the best choice for low-code/no-code Developers”]]></summary>
+        <author>
+            <name>Microsoft Fabric Blog</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Enterprise Best Practices for Fine-Tuning Azure OpenAI Models]]></title>
+        <id>https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/discussions/Azure-AI-Services-blog/enterprise-best-practices-for-fine-tuning-azure-openai-models/4382540</id>
+        <link href="https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/discussions/Azure-AI-Services-blog/enterprise-best-practices-for-fine-tuning-azure-openai-models/4382540"/>
+        <updated>2025-02-19T07:45:00.000Z</updated>
+        <summary type="html"><![CDATA[Fine-tuning large language models (LLMs) has become increasingly practical within enterprise settings. Recent advancements in both the training procedures and serving infrastructure have dramatically lowered the barriers to creating domain-specific AI solutions. Fine-tuning not only boosts model accuracy but also reduces operational costs related to token consumption. Additionally, by customizing smaller LLM variants (for example, moving from a larger GPT‑4 model to a “GPT‑4-mini” model), teams can accelerate inference speed and more efficiently manage compute resources.
+In this article, we outline a Hub/Spoke architecture strategy for organizations looking to securely orchestrate fine-tuning pipelines, streamline deployment, and maintain critical compliance protocols across multiple envir…]]></summary>
+        <author>
+            <name>jakeatmsft</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Using OpenAI’s o3-mini Reasoning Model in Semantic Kernel]]></title>
         <id>https://devblogs.microsoft.com/semantic-kernel/?p=4184</id>
@@ -2526,6 +2649,30 @@ The post Empowering AI Agents with Tools via OpenAPI: A Hands-On Guide with Micr
         <summary type="html"><![CDATA[Azure NetApp Files, built on NetApp technology, allows file-based applications to benefit from the scale, agility and economics of public cloud.  F5 is a technology company specializing in application security, multi-cloud management, and application delivery networking (ADN).  F5 Distributed Cloud connects, protects, and deploys apps across clouds, on-prem networks and co-location centres, accelerating time-to-service, lowering TCO, and increasing security efficacy with a cloud-native platform. The combination of the solutions lets customers gain greater, secure control and access of their corporate data from the locations of their choice.
 Architecture
 Customer locations are securely connected with an Azure VNET belonging to their organization.   The secure interconnection is provided by …]]></summary>
+        <author>
+            <name>GeertVanTeylingen</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Getting started with the NetApp Connector for Microsoft M365 Copilot and Azure NetApp Files]]></title>
+        <id>https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/discussions/AzureArchitectureBlog/getting-started-with-the-netapp-connector-for-microsoft-m365-copilot-and-azure-n/4358422</id>
+        <link href="https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/discussions/AzureArchitectureBlog/getting-started-with-the-netapp-connector-for-microsoft-m365-copilot-and-azure-n/4358422"/>
+        <updated>2025-01-09T20:12:11.000Z</updated>
+        <summary type="html"><![CDATA[Table of Contents
+Introduction
+Prerequisites
+Install the NetApp Connector for Copilot
+Config.json
+ConnectionInfo.json
+CustomConnectorPortMap.json
+Manifest.json
+Uninstallation
+Demonstration
+Summary
+Additional information
+Introduction
+Imagine a world where your on-premises and enterprise cloud files seamlessly integrate with Microsoft 365 Copilot unleashing AI on your Azure NetApp Files enterprise data, and making your workday smoother and more efficient. Welcome to the future with the NetApp Connector for Microsoft Copilot!
+The NetApp Connector for Microsoft Copilot is a fully managed solution provided by Office 365 that integrates your on-premises and enterprise cloud data, including high-performance Azure NetApp Files, with the AI capabilities of Microsoft 365 Copilot. This enables you to…]]></summary>
         <author>
             <name>GeertVanTeylingen</name>
         </author>
@@ -8899,19 +9046,6 @@ include VNet integration for outbound communications 
 build on the powerful Flex Consum…]]></summary>
         <author>
             <name>shreyab</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Unlock the Power of AI with GitHub Models: A Hands-On Guide]]></title>
-        <id>https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/discussions/EducatorDeveloperBlog/unlock-the-power-of-ai-with-github-models-a-hands-on-guide/4250687</id>
-        <link href="https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/discussions/EducatorDeveloperBlog/unlock-the-power-of-ai-with-github-models-a-hands-on-guide/4250687"/>
-        <updated>2024-09-23T07:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Hi, this is Zil-e-huma a BETA student ambassador and today I am back with another interesting article for my curious tech fellows. Ever thought if there’s a way to seamlessly integrate AI models into your projects without the heavy lifting? Enter GitHub Models—a game-changing hallmark that drives the power of AI right to your fingertips. Suppose you're an AI enthusiast, a passionate developer, or just looking to make your applications smarter. In that case, this guide will show you how to harness the full strength of GitHub Models in a few simple steps.
- 
-Discovering GitHub Models: Your Gateway to AI Magic
-Think of you having a collection of powerful AI models at your disposal—models that can chat, generate code, and much more with just a few tweaks. That’s what GitHub Models have for you.…]]></summary>
-        <author>
-            <name>ZileHuma</name>
         </author>
     </entry>
 </feed>
