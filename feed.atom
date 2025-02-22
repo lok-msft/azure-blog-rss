@@ -2,10 +2,76 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2025-02-21T01:20:58.093Z</updated>
+    <updated>2025-02-22T01:18:28.433Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Deploying Azure ND H100 v5 Instances in AKS with NVIDIA MIG GPU Slicing]]></title>
+        <id>https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/discussions/Azure-AI-Services-blog/deploying-azure-nd-h100-v5-instances-in-aks-with-nvidia-mig-gpu-slicing/4384080</id>
+        <link href="https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/discussions/Azure-AI-Services-blog/deploying-azure-nd-h100-v5-instances-in-aks-with-nvidia-mig-gpu-slicing/4384080"/>
+        <updated>2025-02-21T18:28:17.000Z</updated>
+        <summary type="html"><![CDATA[In this article we will cover:
+
+AKS Cluster Deployment (Latest Version) – creating an AKS cluster using the latest Kubernetes version.
+GPU Node Pool Provisioning – adding an ND H100 v5 node pool on Ubuntu, with --skip-gpu-driver-install to disable automatic driver installation.
+NVIDIA H100 MIG Slicing Configurations – available MIG partition profiles on the H100 GPU and how to enable them.
+Workload Recommendations for MIG Profiles – choosing optimal MIG slice sizes for different AI/ML and HPC scenarios.
+Best Practices for MIG Management and Scheduling – managing MIG in AKS, scheduling pods, and operational tips.
+
+AKS Cluster Deployment (Using the Latest Version)
+
+
+Install/Update Azure CLI: Ensure you have Azure CLI 2.0.64+ (or Azure CLI 1.0.0b2 for preview features)​. This is required for …]]></summary>
+        <author>
+            <name>Agustinmantaras</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Igniting AI Innovation: The VS Code Toolkit -First of AI Sparks Episode]]></title>
+        <id>https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/discussions/EducatorDeveloperBlog/igniting-ai-innovation-the-vs-code-toolkit--first-of-ai-sparks-episode/4383877</id>
+        <link href="https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/discussions/EducatorDeveloperBlog/igniting-ai-innovation-the-vs-code-toolkit--first-of-ai-sparks-episode/4383877"/>
+        <updated>2025-02-21T08:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Our first session covered a range of topics, from model hosting and performance optimization to different execution options using Microsoft AI Toolkit extension for VSCode.  Attendees learned how to leverage AI models via GitHub, local execution, or Azure, each offering varying levels of performance, flexibility, and rate limits.  A key focus was data privacy, with the assurance that user inputs are never used for model training or improvement, regardless of the chosen execution method. This  blog post highlights upcoming sessions of AI Sparks series that will delve further into AI development, including building AI-powered applications and sharing repositories for practical learning. The demand for AI-powered applications is exploding, but integrating  Generative AI models into your workf…]]></summary>
+        <author>
+            <name>shreyanfern</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Supercharge Developer Workflows with GitHub Copilot Workspace Extensions]]></title>
+        <id>https://devblogs.microsoft.com/premier-developer/?p=42450</id>
+        <link href="https://devblogs.microsoft.com/premier-developer/supercharge-developer-workflows-with-github-copilot-workspace-extensions/"/>
+        <updated>2025-02-21T07:31:08.000Z</updated>
+        <summary type="html"><![CDATA[David Minkovski takes you on a hands-on journey to extend GitHub Copilot beyond just being a code assistant — turning it into a true AI-powered teammate inside VS Code. Motivation It is 2025 and Software Developers are faced with an incredibly fast-paced high-tech landscape — full of innovation and automation around every corner. Even with the consideration of AI taking on many roles (and […]
+The post Supercharge Developer Workflows with GitHub Copilot Workspace Extensions appeared first on Developer Support.]]></summary>
+        <author>
+            <name>Reed Robison</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[AI-Powered Customer Support: The Ultimate Multi-Agent System]]></title>
+        <id>https://devblogs.microsoft.com/premier-developer/?p=42447</id>
+        <link href="https://devblogs.microsoft.com/premier-developer/ai-powered-customer-support-the-ultimate-multi-agent-system/"/>
+        <updated>2025-02-21T07:19:41.000Z</updated>
+        <summary type="html"><![CDATA[David Minkovski explores using Azure OpenAI and Rust to Build Intelligent and Scalable AI Systems Motivation For the past few months, I’ve had the pleasure of taking the front seat to some really fascinating and exciting AI projects, thanks to my amazing customers and colleagues at Microsoft. During these sessions, I noticed a common challenge: […]
+The post AI-Powered Customer Support: The Ultimate Multi-Agent System appeared first on Developer Support.]]></summary>
+        <author>
+            <name>Developer Support</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Way to minimize the impact of Allocation Failure issue in Cloud Service Extended Support]]></title>
+        <id>https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/discussions/AzurePaaSBlog/way-to-minimize-the-impact-of-allocation-failure-issue-in-cloud-service-extended/4383984</id>
+        <link href="https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/discussions/AzurePaaSBlog/way-to-minimize-the-impact-of-allocation-failure-issue-in-cloud-service-extended/4383984"/>
+        <updated>2025-02-21T05:29:48.000Z</updated>
+        <summary type="html"><![CDATA[Allocation Failure is a common issue for Cloud Service Extended Support. The cause of this issue is explained in our official document. The best solutions are as documented: Redeploy to a new Cloud Service or Delete Swappable Cloud Services. But for both, the downtime is unavoidable. For real user scenario, it’s almost impossible and very harmful to completely delete a Production environment deployment and recreate it as it will cause a huge impact.
+ 
+This blog will mainly talk about the way to mitigate the Allocation Failure issue by switch the request to newly created Cloud Service in order to minimize the impact.
+P.S. The blog will use a CSES with public IP address as example to explain. If internal Load Balancer is used which means CSES doesn’t have any public IP address, this blog can…]]></summary>
+        <author>
+            <name>JerryZhangMS</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Automating Developer Environments with Microsoft Dev Box and Teams Customizations Part 2]]></title>
         <id>https://devblogs.microsoft.com/develop-from-the-cloud/?p=672</id>
@@ -8946,140 +9012,6 @@ The post Distributing WebAssembly components using OCI registries  appeared fir
 The post Microsoft 365 Certification control spotlight: Secure software development and deployment appeared first on Microsoft 365 Developer Blog.]]></summary>
         <author>
             <name>Krishna Mawani</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[How to Host Your Personal Portfolio Using GitHub Pages]]></title>
-        <id>https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/discussions/EducatorDeveloperBlog/how-to-host-your-personal-portfolio-using-github-pages/4246304</id>
-        <link href="https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/discussions/EducatorDeveloperBlog/how-to-host-your-personal-portfolio-using-github-pages/4246304"/>
-        <updated>2024-09-25T07:00:00.000Z</updated>
-        <summary type="html"><![CDATA[In this era of technology, having a professional portfolio is essential for both academic and career advancement. As we move forward with modernization, our digital footprints become more significant every day. While reading this, you’ve probably guessed what I’m about to suggest — exactly, in today’s blog, I will demonstrate how to host a personal portfolio using GitHub Pages as your hosting platform.
- 
-Before we dive into the technical steps, let me introduce myself. I am Raiyan Bin Sarwar, a third year CSE undergraduate student at Bangladesh University of Professionals. Currently, I’m also a Microsoft Student Ambassador (Beta).
- 
-Now, let’s move forward with the steps to help you create and host your own personal portfolio using GitHub Pages. The method I’ll share here is beginner frien…]]></summary>
-        <author>
-            <name>wizziee</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Customizing the combo of Azure Developer CLI and .NET Aspire]]></title>
-        <id>https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/discussions/AzureDevCommunityBlog/customizing-the-combo-of-azure-developer-cli-and-net-aspire/4250414</id>
-        <link href="https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/discussions/AzureDevCommunityBlog/customizing-the-combo-of-azure-developer-cli-and-net-aspire/4250414"/>
-        <updated>2024-09-25T07:00:00.000Z</updated>
-        <summary type="html"><![CDATA[When in the developer flow the Azure Developer CLI (azd) can provide a good experience when you want to move the code from your machine to the cloud especially in tandem with .NET Aspire. To be clear - it does require your solution to fit into a select number of categories and does not work for everything you can create in Visual Studio. (.NET Aspire drives you towards Azure Container Apps whereas azd on its own can also do things like Azure App Services so there's also the question of whether you want both tools or just the one. But that's a bigger topic not in scope for today.)
-
- 
-
-
-Like other templated solutions it might not suit your use case directly. Based on previous posts where I created the Bicep files (for a web app hosted on Azure Container Apps) by hand and compared to the file…]]></summary>
-        <author>
-            <name>Andreas_Helland</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Build and secure your apps with Azure App Service and Defender for Cloud]]></title>
-        <id>https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/discussions/AppsonAzureBlog/build-and-secure-your-apps-with-azure-app-service-and-defender-for-cloud/4253054</id>
-        <link href="https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/discussions/AppsonAzureBlog/build-and-secure-your-apps-with-azure-app-service-and-defender-for-cloud/4253054"/>
-        <updated>2024-09-24T20:52:55.000Z</updated>
-        <summary type="html"><![CDATA[We are excited to share one of the latest security capabilities within the Better Together tab in Azure portal. It is now easier for Azure App Service customers to secure web apps by enabling Defender for App Service – part of Microsoft Defender for Cloud’s Cloud Native Application Platform (CNAPP) solution. The Better Together experience is designed to enhance your development journey by recommending and deploying the right services precisely when you need them, focusing especially on Azure App Service, Azure Container Apps (ACA), and Azure Kubernetes Service (AKS).
- 
-In this blog, we will discuss the importance of securing your web apps and explore the new enablement options.
- 
-Why secure my web apps in the first place?
-Organizations of all sizes are moving their application development …]]></summary>
-        <author>
-            <name>Mayunk_Jain</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Multimodal Public Preview Blog]]></title>
-        <id>https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/discussions/Azure-AI-Services-blog/multimodal-public-preview-blog/4253816</id>
-        <link href="https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/discussions/Azure-AI-Services-blog/multimodal-public-preview-blog/4253816"/>
-        <updated>2024-09-24T15:08:52.000Z</updated>
-        <summary type="html"><![CDATA[Multimodal Public Preview Blog 
-We are thrilled to announce the Public Preview release of our Multimodal model in Azure AI Content Safety. The Multimodal API analyzes materials containing both image content and text content to help make applications and services safer from harmful user-generated or AI-generated content. 
-The key objectives of the "Multimodal" feature is: 
-
- Detect Harmful Content Across Multiple Modalities: The primary objective is to detect harmful, inappropriate, or unsafe content by analyzing both text and images (including emojis). This includes identifying explicit content, hate speech, violence, self-harm and sexual within text-image combinations. 
-Contextual Analysis Across Text and Visuals: The multimodal is able to understand the context behind both textual and vi…]]></summary>
-        <author>
-            <name>Sherry_Shao</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Watermarks in preview in Azure OpenAI Service]]></title>
-        <id>https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/discussions/Azure-AI-Services-blog/watermarks-in-preview-in-azure-openai-service/4253344</id>
-        <link href="https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/discussions/Azure-AI-Services-blog/watermarks-in-preview-in-azure-openai-service/4253344"/>
-        <updated>2024-09-24T13:45:00.000Z</updated>
-        <summary type="html"><![CDATA[Microsoft is proud to announce the rollout  of a new built-in feature in Azure OpenAI Service. ‘Watermarks’ add invisible watermarks to all images generated using DALL·E, the company’s flagship generative AI image generator. This watermarking technology is designed to provide an additional layer of transparency and disclosure to AI-generated content. 
-  
- 
-The Importance of Watermarking AI-Generated Content 
-  
-To address the risk of bad actors using AI and deepfakes to deceive the public, Microsoft recognizes that we need to take a whole-of-society approach.  And as a technology company and AI leader, we have a special responsibility to lead and collaborate with others.  Microsoft’s approach to combating abusive AI-generated content includes robust collaboration across industry, governmen…]]></summary>
-        <author>
-            <name>kenarcher</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Correction capability helps revise ungrounded content and hallucinations]]></title>
-        <id>https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/discussions/Azure-AI-Services-blog/correction-capability-helps-revise-ungrounded-content-and-hallucinations/4253281</id>
-        <link href="https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/discussions/Azure-AI-Services-blog/correction-capability-helps-revise-ungrounded-content-and-hallucinations/4253281"/>
-        <updated>2024-09-24T13:45:00.000Z</updated>
-        <summary type="html"><![CDATA[Today, we are excited to announce a preview of "correction," a new capability within Azure AI Content Safety's groundedness detection feature. With this enhancement, groundedness detection not only identifies inaccuracies in AI outputs but also corrects them, fostering greater trust in generative AI technologies.
- 
- 
-
- 
- 
-What is Groundedness Detection?
-Groundedness detection is a feature that identifies ungrounded or hallucinated content in AI outputs, helping developers enhance generative AI applications by pinpointing responses that lack a foundation in connected data sources.
- 
-Since we introduced groundedness detection in March of this year, our customers have asked us: “What else can we do with this information once it’s detected besides blocking?” This highlights a significant chall…]]></summary>
-        <author>
-            <name>katelynrothney</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Protected Material Detection for Code now in Preview in Azure AI Content Safety]]></title>
-        <id>https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/discussions/Azure-AI-Services-blog/protected-material-detection-for-code-now-in-preview-in-azure-ai-content-safety/4253346</id>
-        <link href="https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/discussions/Azure-AI-Services-blog/protected-material-detection-for-code-now-in-preview-in-azure-ai-content-safety/4253346"/>
-        <updated>2024-09-24T13:45:00.000Z</updated>
-        <summary type="html"><![CDATA[Today Microsoft announced the launch of Protected Materials Detection for Code, a new feature in the Azure AI Content Safety is a generative AI guardrail that can be used with generative AI applications that generate code. Previously available exclusively in Azure OpenAI Service, this advanced model can now be utilized by developers using a wide range of AI tools, enhancing the protection and detection of intellectual property (IP) in code outputs. 
-  
-How It Works 
-  
-The Protected Materials Detection for Code feature compares AI-generated code against a comprehensive database of all public GitHub repositories. If a significant portion of code matches public code, the system will flag the corresponding GitHub repository and provide a citation link, including license details. This allows d…]]></summary>
-        <author>
-            <name>kenarcher</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Announcing the public preview of Hybrid Azure AI Content Safety (AACS)]]></title>
-        <id>https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/discussions/Azure-AI-Services-blog/announcing-the-public-preview-of-hybrid-azure-ai-content-safety-aacs/4253334</id>
-        <link href="https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/discussions/Azure-AI-Services-blog/announcing-the-public-preview-of-hybrid-azure-ai-content-safety-aacs/4253334"/>
-        <updated>2024-09-24T13:45:00.000Z</updated>
-        <summary type="html"><![CDATA[We are thrilled to announce the public preview of hybrid Azure AI Content Safety (AACS), which will cater to organizations seeking robust, flexible content safety mechanisms both in the cloud and on-device. 
- 
-What is Hybrid AACS? 
-  The Hybrid AACS is an innovative solution that includes a connected or disconnected container for on-premises (customer’s data center consumption and an embedded SDK for on-device processing. It empowers organizations to implement state-of-the-art safety measures, ensuring content is managed securely and efficiently, regardless of the environment. 
-
-Connected or disconnected Container: Utilizing containers in your data centers and environments ensures that sensitive data remains under your control, reduces data processing latency, and helps meet specific secur…]]></summary>
-        <author>
-            <name>Tony_Xing</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Azure AI Confidential Inferencing Preview]]></title>
-        <id>https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/discussions/Azure-AI-Services-blog/azure-ai-confidential-inferencing-preview/4248181</id>
-        <link href="https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/discussions/Azure-AI-Services-blog/azure-ai-confidential-inferencing-preview/4248181"/>
-        <updated>2024-09-24T13:40:00.000Z</updated>
-        <summary type="html"><![CDATA[Customers with the need to protect sensitive and regulated data are looking for end-to-end, verifiable data privacy, even from service providers and cloud operators. Azure’s industry-leading confidential computing (ACC) support extends existing data protection beyond encryption at rest and in transit, ensuring that data is private while in use, such as when being processed by an AI model. Customers in highly regulated industries, including the multi-national banking corporation RBC, have integrated Azure confidential computing into their own platform to garner insights while preserving customer privacy.
- 
-With the preview of Confidential inference for the Azure OpenAI Service Whisper model for speech to text transcription today, Microsoft is the first cloud provider offering confidential A…]]></summary>
-        <author>
-            <name>AlexSutton</name>
         </author>
     </entry>
 </feed>
