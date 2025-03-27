@@ -22,11 +22,144 @@
             data-action="toggle-accordions"
             title="Click to toggle the day, Ctrl + click to toggle all."
           >
-            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2025-03-26 datetime="2025-03-26T00:36:05.000Z">2025-03-26</time>
-            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2025-03-26 datetime="2025-03-26T00:36:05.000Z"></time>
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2025-03-27 datetime="2025-03-26T23:14:41.000Z">2025-03-27</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2025-03-27 datetime="2025-03-26T23:14:41.000Z"></time>
           </button>
         </h2>
         <ul class="sources card">
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Microsoft Tech Community - Latest Blogs - Azure PaaS Blog</button>
+                  <a class="source-heading__link" href="https://techcommunity.microsoft.com">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/blog/AzurePaaSBlog/ai-search-troubleshooting-onelake-files-connection-via-wizard/4397338"
+                        open
+                      >
+                        <summary class="article-expander__title">[AI Search] Troubleshooting OneLake Files Connection via Wizard</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/blog/AzurePaaSBlog/ai-search-troubleshooting-onelake-files-connection-via-wizard/4397338">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Are unable to connect to your OneLakeFiles? In this documentation you will be able to troubleshoot and find the solution for each issue. 
+*This function is at PREVIEW, therefore, please be informed on it (as of 2025.03.26)
+
+Are you are looking for how to integrate I Search with Fabric OneLake, please look at this article which explains an overview of the objective and the instructions. (article link)
+Also make sure that you have all the prerequisites checked before moving down to the article. You can find the prerequisites here.
+If you are still reading this article, that means you are having an issue with Connect to your data section as below .
+[Error 1 - The workspace or the lakehouse specified cannot be found]
+
+ 
+This error can occur if AI Search and Lakehouse are not in the same tenant.  Please make sure that both services are in the same tenant. 
+You can check this article to find out more about how to find the Tenant ID.
+ 
+[Error 2 - Unable to list items within the lakehouse using the specified identity as access to the workspace was denied]
+
+This error occurs for two reasons. In this article, we will demonstrate a situation with system-assigned.
+
+Make sure your AI Search is in system-assigned identity or user-assigned. You can find your configuration under AI Search Services &gt; Settings &gt; Identity
+
+Make sure that Status is ON – If using system-assigned.
+
+ 
+
+Go to your Fabric OneLake Workspace and provide your AI Search service contributor role to the workspace. The process may take 5-15 minutes, please allow some time for it to be processed.
+
+
+If you would like to use user-assigned, here is an example that you can refer to as an example.
+However if you are unable to find your AI Search in your OneLake workspace, make sure to enable the below configuration from Fabric One Lake
+ 
+Go to &quot;app.powerbi.com&quot; and click the configuration &gt; Governance and Insights &gt; Admin Portal
+
+From the Admin Portal &gt; Tenant Settings &gt; Search “API”  
+Make sure to enable Service Principals can use Fabric APIs.</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Microsoft Tech Community - Latest Blogs - Apps on Azure Blog</button>
+                  <a class="source-heading__link" href="https://techcommunity.microsoft.com">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/blog/AppsonAzureBlog/getting-started-with-java-webjobs-on-azure-app-service/4397229"
+                        open
+                      >
+                        <summary class="article-expander__title">Getting Started with Java WebJobs on Azure App Service</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/blog/AppsonAzureBlog/getting-started-with-java-webjobs-on-azure-app-service/4397229">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Getting Started with Linux WebJobs on App Service - Java
+ 
+WebJobs Intro
+WebJobs is a feature of Azure App Service that enables you to run a program or script in the same instance as a web app. All app service plans support WebJobs. There&#x27;s no extra cost to use WebJobs. This sample uses a Triggered (scheduled) WebJob to output the system time once every 15 minutes.
+Create Web App
+Before creating our WebJobs, we need to create an App Service webapp. If you already have an App Service Web App, skip to the next step Otherwise, in the portal, select App Services &gt; Create &gt; Web App. After following the create instructions and selecting one of the Java runtime stacks, create your App Service Web App. The stack must be Java, since we plan on writing our WebJob using Java and a bash startup script…</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Azure DevOps Blog</button>
+                  <a class="source-heading__link" href="https://devblogs.microsoft.com/devops/">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://devblogs.microsoft.com/devops/?p&#x3D;70487"
+                        open
+                      >
+                        <summary class="article-expander__title">New Overlapping Secrets on Azure DevOps OAuth</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://devblogs.microsoft.com/devops/new-overlapping-secrets-on-azure-devops-oauth/">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://devblogs.microsoft.com/devops/wp-content/uploads/sites/6/2025/03/image-11-1.png" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>As you may have read, Azure DevOps OAuth apps are due for deprecation in 2026. All developers are encouraged to migrate their applications to use Microsoft Entra ID OAuth, which can access all Azure DevOps APIs and has the added benefit of enhanced security features and long-term investment. Although we are nearing Azure DevOps OAuth’s […]
+The post New Overlapping Secrets on Azure DevOps OAuth appeared first on Azure DevOps Blog.</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;23
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
             <li class="card__section">
               <section class="js-toggle-accordions-scope">
                 <h3 class="source-heading">
@@ -42,6 +175,149 @@
                       <details
                         class="article-expander"
                         data-action="toggle-native-accordion"
+                        data-accordion-key="https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/blog/Azure-AI-Services-blog/rag-time-journey-4-advanced-multimodal-indexing/4397300"
+                        open
+                      >
+                        <summary class="article-expander__title">RAG Time Journey 4: Advanced Multimodal Indexing</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/blog/Azure-AI-Services-blog/rag-time-journey-4-advanced-multimodal-indexing/4397300">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Introduction
+Welcome to RAG Time Journey 4, the next step in our deep dive into Retrieval-Augmented Generation (RAG). If you’ve been following along, you might remember that in Journey 2 , we explored data ingestion, hybrid search, and semantic reranking—key concepts that laid the groundwork for effective search and retrieval. Now, we’re moving beyond text and into the multimodal world, where text, images, audio, and video coexist in search environments that demand more sophisticated retrieval capabilities.
+Modern AI-powered applications require more than just keyword matching. They need to understand relationships across multiple data types, extract meaning from diverse formats, and provide accurate, context-rich results. That’s where multimodal indexing in Azure AI Search comes into play…</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+        </ul>
+      </section>
+      <section class="daily-content js-toggle-accordions-scope">
+        <h2 class="daily-heading">
+          <button
+            class="daily-heading-toggle"
+            data-action="toggle-accordions"
+            title="Click to toggle the day, Ctrl + click to toggle all."
+          >
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2025-03-26 datetime="2025-03-26T14:23:20.000Z">2025-03-26</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2025-03-26 datetime="2025-03-26T14:23:20.000Z"></time>
+          </button>
+        </h2>
+        <ul class="sources card">
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Develop from the cloud</button>
+                  <a class="source-heading__link" href="https://devblogs.microsoft.com/develop-from-the-cloud/">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://devblogs.microsoft.com/develop-from-the-cloud/?p&#x3D;788"
+                        open
+                      >
+                        <summary class="article-expander__title">Improve performance and security using Standard Load Balancer and Standard SKU public IP addresses in Azure DevTest Labs</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://devblogs.microsoft.com/develop-from-the-cloud/improve-performance-and-security-using-standard-load-balancer-and-standard-sku-public-ip-addresses-in-azure-devtest-labs/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>We are excited to announce preview of enhancements in Azure DevTest Labs designed to accommodate two upcoming retirements in Azure: Retirement Date Details Azure Basic Load Balancer September 30, 2025 The Azure Basic Load Balancer will be retired. You can continue using your existing Basic Load Balancers until this date, but you will not be […]
+The post Improve performance and security using Standard Load Balancer and Standard SKU public IP addresses in Azure DevTest Labs appeared first on Develop from the cloud.</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;22
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Microsoft Open Source Blog</button>
+                  <a class="source-heading__link" href="https://opensource.microsoft.com/blog/">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://opensource.microsoft.com/blog/2025/03/26/hyperlight-wasm-fast-secure-and-os-free/"
+                        open
+                      >
+                        <summary class="article-expander__title">Hyperlight Wasm: Fast, secure, and OS-free</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://opensource.microsoft.com/blog/2025/03/26/hyperlight-wasm-fast-secure-and-os-free/">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://opensource.microsoft.com/blog/wp-content/uploads/2024/06/CLO19_Ubisoft_Azure_055.png" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>We&#x27;re announcing the release of Hyperlight Wasm: a Hyperlight virtual machine “micro-guest” that can run wasm component workloads written in many programming languages.
+The post Hyperlight Wasm: Fast, secure, and OS-free appeared first on Microsoft Open Source Blog.</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;16
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Microsoft Tech Community - Latest Blogs - AI - Azure AI services Blog</button>
+                  <a class="source-heading__link" href="https://techcommunity.microsoft.com">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/blog/Azure-AI-Services-blog/best-practices-for-requesting-quota-increase-for-azure-openai-models/4397533"
+                        open
+                      >
+                        <summary class="article-expander__title">Best Practices for Requesting Quota Increase for Azure OpenAI Models</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/blog/Azure-AI-Services-blog/best-practices-for-requesting-quota-increase-for-azure-openai-models/4397533">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Introduction
+This document outlines a set of best practices to guide users in submitting quota increase requests for Azure OpenAI models. Following these recommendations will help streamline the process, ensure proper documentation, and improve the likelihood of a successful request. 
+Understand the Quota and Limitations
+Before submitting a quota increase request, make sure you have a clear understanding of:
+
+The current quota and limits for your Azure OpenAI instance.
+Your specific use case requirements, including estimated daily/weekly/monthly usage.
+The rate limits for API calls and how they affect your solution&#x27;s performance.
+
+Use the Azure portal or CLI to monitor your current usage and identify patterns that justify the need for a quota increase.
+Provide a Clear and Detailed Justific…</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
                         data-accordion-key="https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/blog/Azure-AI-Services-blog/best-practices-for-structured-extraction-from-documents-using-azure-openai/4397282"
                         open
                       >
@@ -52,6 +328,87 @@
                               <span>Introduction
 In a recent project, a customer needed to extract structured data from legal documents to populate a standardized form. The legal documents varied in length and structure, and the customer required consistent and accurate outputs that mapped directly to the expected form schema. The implemented solution leveraged Azure OpenAI to iteratively process document chunks and update the form output dynamically. A key component to successfully extract the correct output was using Structured Outputs to enforce the desired output fields to populate the form.
 This article outlines best practices derived from this project, with a focus on reliable structure enforcement and iterative processing of unstructured legal data. These lessons learned can be leveraged for additional scenarios and d…</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Microsoft Tech Community - Latest Blogs - Microsoft Developer Community Blog</button>
+                  <a class="source-heading__link" href="https://techcommunity.microsoft.com">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/elevate-your-ai-expertise-with-microsoft-azure-learn-live-series-for-developers/4396825"
+                        open
+                      >
+                        <summary class="article-expander__title">Elevate Your AI Expertise with Microsoft Azure: Learn Live Series for Developers</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/blog/AzureDevCommunityBlog/elevate-your-ai-expertise-with-microsoft-azure-learn-live-series-for-developers/4396825">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Unlock the power of Azure AI and master the art of creating advanced AI agents. Starting from April 15th, embark on a comprehensive learning journey designed specifically for professional developers like you. This series will guide you through the official Microsoft Learn Plan, focused on the latest agentic AI technologies and innovations.
+Generative AI has evolved to become an essential tool for crafting intelligent applications, and AI agents are leading the charge. Here&#x27;s your opportunity to deepen your expertise in building powerful, scalable agent-based solutions using the Azure AI Foundry, Azure AI Agent Service, and the Semantic Kernel Framework.
+Why Attend?
+This Learn Live series will provide you with:
+
+In-depth Knowledge: Understand when to use AI agents, how they function, and th…</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Microsoft Tech Community - Latest Blogs - Educator Developer Blog</button>
+                  <a class="source-heading__link" href="https://techcommunity.microsoft.com">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/kickstart-your-web-development-vs-code-basics--github-integration/4393411"
+                        open
+                      >
+                        <summary class="article-expander__title">Kickstart Your Web Development: VS Code Basics &amp; GitHub Integration</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/blog/EducatorDeveloperBlog/kickstart-your-web-development-vs-code-basics--github-integration/4393411">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>As students we get access to an amazing set of developer resources for FREE! Microsoft offers all registered students world wide $100 of Azure Credit and over 25 FREE services with Microsoft Azure for Student. GitHub offers all students FREE Codespaces and GitHub Copilot with the GitHub Education Pack so let walk through how you can get started with these resources.
+1. Setting Up VS Code
+Installing VS Code
+
+Download VS Code from official site.
+Install it on your system (Windows, macOS, or Linux).
+Open VS Code and customize your settings.
+
+
+Essential Extensions
+Extensions enhance productivity by adding new functionalities. Some must-have extensions are:
+
+GitHub Copilot – AI-powered code suggestions.
+Prettier – Code formatter for clean and consistent code.
+Live Server – For real-time web dev…</span>
                             </span>
                           </div>
                         </a>
@@ -33371,76 +33728,10 @@ The post No new Azure DevOps OAuth apps beginning February 2025 appeared first o
             </li>
         </ul>
       </section>
-      <section class="daily-content js-toggle-accordions-scope">
-        <h2 class="daily-heading">
-          <button
-            class="daily-heading-toggle"
-            data-action="toggle-accordions"
-            title="Click to toggle the day, Ctrl + click to toggle all."
-          >
-            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2024-10-28 datetime="2024-10-28T07:00:00.000Z">2024-10-28</time>
-            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2024-10-28 datetime="2024-10-28T07:00:00.000Z"></time>
-          </button>
-        </h2>
-        <ul class="sources card">
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Microsoft Tech Community - Latest Blogs - Educator Developer Blog</button>
-                  <a class="source-heading__link" href="https://techcommunity.microsoft.com">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/how-to-pass-the-microsoft-fabric-exam-a-comprehensive-guide/4268901"
-                        open
-                      >
-                        <summary class="article-expander__title">How to Pass the Microsoft Fabric Exam: A Comprehensive Guide</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/blog/EducatorDeveloperBlog/how-to-pass-the-microsoft-fabric-exam-a-comprehensive-guide/4268901">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Hello Everyone, I’m Mohamed Faraazman bin Farooq S, a student of Artificial Intelligence and Data Science and a Microsoft Learn Student Ambassador from BSA Crescent University, Chennai, India. My journey toward passing the Microsoft Fabric Certification exam was challenging but incredibly rewarding. The Microsoft Learn Student Ambassador (MLSA) program played a huge role in my success. It provided access to valuable resources, tools, and a vibrant community that helped me throughout my preparation. From hands-on experience with Power BI and Azure Synapse to the various workshops and learning paths, the MLSA program gave me a solid foundation and confidence to take on the exam.
- 
-In this blog, I’ll share how I prepared for the exam and the strategies I used to ace it. Whether you’re just st…</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/discussions/EducatorDeveloperBlog/how-to-pass-the-microsoft-fabric-exam-a-comprehensive-guide/4268901"
-                        open
-                      >
-                        <summary class="article-expander__title">How to Pass the Microsoft Fabric Exam: A Comprehensive Guide</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/discussions/EducatorDeveloperBlog/how-to-pass-the-microsoft-fabric-exam-a-comprehensive-guide/4268901">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Hello Everyone, I’m Mohamed Faraazman bin Farooq S, a student of Artificial Intelligence and Data Science and a Microsoft Learn Student Ambassador from BSA Crescent University, Chennai, India. My journey toward passing the Microsoft Fabric Certification exam was challenging but incredibly rewarding. The Microsoft Learn Student Ambassador (MLSA) program played a huge role in my success. It provided access to valuable resources, tools, and a vibrant community that helped me throughout my preparation. From hands-on experience with Power BI and Azure Synapse to the various workshops and learning paths, the MLSA program gave me a solid foundation and confidence to take on the exam.
- 
-In this blog, I’ll share how I prepared for the exam and the strategies I used to ace it. Whether you’re just st…</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
-        </ul>
-      </section>
 
     <footer>
-      <a class="footer-link" href="https://github.com/lok-msft/azure-blog-rss/actions/runs/14073455623">
-        <time id="build-timestamp" datetime="2025-03-26T01:26:05.058Z">2025-03-26T01:26:05.058Z</time>
+      <a class="footer-link" href="https://github.com/lok-msft/azure-blog-rss/actions/runs/14096820107">
+        <time id="build-timestamp" datetime="2025-03-27T01:25:39.655Z">2025-03-27T01:25:39.655Z</time>
       </a>
       <a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a>
     </footer>

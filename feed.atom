@@ -2,10 +2,170 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2025-03-26T01:26:05.115Z</updated>
+    <updated>2025-03-27T01:25:39.701Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[[AI Search] Troubleshooting OneLake Files Connection via Wizard]]></title>
+        <id>https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/blog/AzurePaaSBlog/ai-search-troubleshooting-onelake-files-connection-via-wizard/4397338</id>
+        <link href="https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/blog/AzurePaaSBlog/ai-search-troubleshooting-onelake-files-connection-via-wizard/4397338"/>
+        <updated>2025-03-26T23:14:41.000Z</updated>
+        <summary type="html"><![CDATA[Are unable to connect to your OneLakeFiles? In this documentation you will be able to troubleshoot and find the solution for each issue. 
+*This function is at PREVIEW, therefore, please be informed on it (as of 2025.03.26)
+
+Are you are looking for how to integrate I Search with Fabric OneLake, please look at this article which explains an overview of the objective and the instructions. (article link)
+Also make sure that you have all the prerequisites checked before moving down to the article. You can find the prerequisites here.
+If you are still reading this article, that means you are having an issue with Connect to your data section as below .
+[Error 1 - The workspace or the lakehouse specified cannot be found]
+
+ 
+This error can occur if AI Search and Lakehouse are not in the same tenant.  Please make sure that both services are in the same tenant. 
+You can check this article to find out more about how to find the Tenant ID.
+ 
+[Error 2 - Unable to list items within the lakehouse using the specified identity as access to the workspace was denied]
+
+This error occurs for two reasons. In this article, we will demonstrate a situation with system-assigned.
+
+Make sure your AI Search is in system-assigned identity or user-assigned. You can find your configuration under AI Search Services > Settings > Identity
+
+Make sure that Status is ON – If using system-assigned.
+
+ 
+
+Go to your Fabric OneLake Workspace and provide your AI Search service contributor role to the workspace. The process may take 5-15 minutes, please allow some time for it to be processed.
+
+
+If you would like to use user-assigned, here is an example that you can refer to as an example.
+However if you are unable to find your AI Search in your OneLake workspace, make sure to enable the below configuration from Fabric One Lake
+ 
+Go to "app.powerbi.com" and click the configuration > Governance and Insights > Admin Portal
+
+From the Admin Portal > Tenant Settings > Search “API”  
+Make sure to enable Service Principals can use Fabric APIs.]]></summary>
+        <author>
+            <name>SungGun_Lee</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Getting Started with Java WebJobs on Azure App Service]]></title>
+        <id>https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/blog/AppsonAzureBlog/getting-started-with-java-webjobs-on-azure-app-service/4397229</id>
+        <link href="https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/blog/AppsonAzureBlog/getting-started-with-java-webjobs-on-azure-app-service/4397229"/>
+        <updated>2025-03-26T17:35:05.000Z</updated>
+        <summary type="html"><![CDATA[Getting Started with Linux WebJobs on App Service - Java
+ 
+WebJobs Intro
+WebJobs is a feature of Azure App Service that enables you to run a program or script in the same instance as a web app. All app service plans support WebJobs. There's no extra cost to use WebJobs. This sample uses a Triggered (scheduled) WebJob to output the system time once every 15 minutes.
+Create Web App
+Before creating our WebJobs, we need to create an App Service webapp. If you already have an App Service Web App, skip to the next step Otherwise, in the portal, select App Services > Create > Web App. After following the create instructions and selecting one of the Java runtime stacks, create your App Service Web App. The stack must be Java, since we plan on writing our WebJob using Java and a bash startup script…]]></summary>
+        <author>
+            <name>denverbrittain</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[New Overlapping Secrets on Azure DevOps OAuth]]></title>
+        <id>https://devblogs.microsoft.com/devops/?p=70487</id>
+        <link href="https://devblogs.microsoft.com/devops/new-overlapping-secrets-on-azure-devops-oauth/"/>
+        <updated>2025-03-26T16:19:22.000Z</updated>
+        <summary type="html"><![CDATA[As you may have read, Azure DevOps OAuth apps are due for deprecation in 2026. All developers are encouraged to migrate their applications to use Microsoft Entra ID OAuth, which can access all Azure DevOps APIs and has the added benefit of enhanced security features and long-term investment. Although we are nearing Azure DevOps OAuth’s […]
+The post New Overlapping Secrets on Azure DevOps OAuth appeared first on Azure DevOps Blog.]]></summary>
+        <author>
+            <name>Angel Wong</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[RAG Time Journey 4: Advanced Multimodal Indexing]]></title>
+        <id>https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/blog/Azure-AI-Services-blog/rag-time-journey-4-advanced-multimodal-indexing/4397300</id>
+        <link href="https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/blog/Azure-AI-Services-blog/rag-time-journey-4-advanced-multimodal-indexing/4397300"/>
+        <updated>2025-03-26T16:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Introduction
+Welcome to RAG Time Journey 4, the next step in our deep dive into Retrieval-Augmented Generation (RAG). If you’ve been following along, you might remember that in Journey 2 , we explored data ingestion, hybrid search, and semantic reranking—key concepts that laid the groundwork for effective search and retrieval. Now, we’re moving beyond text and into the multimodal world, where text, images, audio, and video coexist in search environments that demand more sophisticated retrieval capabilities.
+Modern AI-powered applications require more than just keyword matching. They need to understand relationships across multiple data types, extract meaning from diverse formats, and provide accurate, context-rich results. That’s where multimodal indexing in Azure AI Search comes into play…]]></summary>
+        <author>
+            <name>gia_mondragon</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Improve performance and security using Standard Load Balancer and Standard SKU public IP addresses in Azure DevTest Labs]]></title>
+        <id>https://devblogs.microsoft.com/develop-from-the-cloud/?p=788</id>
+        <link href="https://devblogs.microsoft.com/develop-from-the-cloud/improve-performance-and-security-using-standard-load-balancer-and-standard-sku-public-ip-addresses-in-azure-devtest-labs/"/>
+        <updated>2025-03-26T14:23:20.000Z</updated>
+        <summary type="html"><![CDATA[We are excited to announce preview of enhancements in Azure DevTest Labs designed to accommodate two upcoming retirements in Azure: Retirement Date Details Azure Basic Load Balancer September 30, 2025 The Azure Basic Load Balancer will be retired. You can continue using your existing Basic Load Balancers until this date, but you will not be […]
+The post Improve performance and security using Standard Load Balancer and Standard SKU public IP addresses in Azure DevTest Labs appeared first on Develop from the cloud.]]></summary>
+        <author>
+            <name>Anish Trakru</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Hyperlight Wasm: Fast, secure, and OS-free]]></title>
+        <id>https://opensource.microsoft.com/blog/2025/03/26/hyperlight-wasm-fast-secure-and-os-free/</id>
+        <link href="https://opensource.microsoft.com/blog/2025/03/26/hyperlight-wasm-fast-secure-and-os-free/"/>
+        <updated>2025-03-26T14:00:00.000Z</updated>
+        <summary type="html"><![CDATA[We're announcing the release of Hyperlight Wasm: a Hyperlight virtual machine “micro-guest” that can run wasm component workloads written in many programming languages.
+The post Hyperlight Wasm: Fast, secure, and OS-free appeared first on Microsoft Open Source Blog.]]></summary>
+        <author>
+            <name>Yosh Wuyts and Lucy Menon</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Best Practices for Requesting Quota Increase for Azure OpenAI Models]]></title>
+        <id>https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/blog/Azure-AI-Services-blog/best-practices-for-requesting-quota-increase-for-azure-openai-models/4397533</id>
+        <link href="https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/blog/Azure-AI-Services-blog/best-practices-for-requesting-quota-increase-for-azure-openai-models/4397533"/>
+        <updated>2025-03-26T13:33:07.000Z</updated>
+        <summary type="html"><![CDATA[Introduction
+This document outlines a set of best practices to guide users in submitting quota increase requests for Azure OpenAI models. Following these recommendations will help streamline the process, ensure proper documentation, and improve the likelihood of a successful request. 
+Understand the Quota and Limitations
+Before submitting a quota increase request, make sure you have a clear understanding of:
+
+The current quota and limits for your Azure OpenAI instance.
+Your specific use case requirements, including estimated daily/weekly/monthly usage.
+The rate limits for API calls and how they affect your solution's performance.
+
+Use the Azure portal or CLI to monitor your current usage and identify patterns that justify the need for a quota increase.
+Provide a Clear and Detailed Justific…]]></summary>
+        <author>
+            <name>ellienosrat</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Elevate Your AI Expertise with Microsoft Azure: Learn Live Series for Developers]]></title>
+        <id>https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/elevate-your-ai-expertise-with-microsoft-azure-learn-live-series-for-developers/4396825</id>
+        <link href="https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/blog/AzureDevCommunityBlog/elevate-your-ai-expertise-with-microsoft-azure-learn-live-series-for-developers/4396825"/>
+        <updated>2025-03-26T08:55:32.000Z</updated>
+        <summary type="html"><![CDATA[Unlock the power of Azure AI and master the art of creating advanced AI agents. Starting from April 15th, embark on a comprehensive learning journey designed specifically for professional developers like you. This series will guide you through the official Microsoft Learn Plan, focused on the latest agentic AI technologies and innovations.
+Generative AI has evolved to become an essential tool for crafting intelligent applications, and AI agents are leading the charge. Here's your opportunity to deepen your expertise in building powerful, scalable agent-based solutions using the Azure AI Foundry, Azure AI Agent Service, and the Semantic Kernel Framework.
+Why Attend?
+This Learn Live series will provide you with:
+
+In-depth Knowledge: Understand when to use AI agents, how they function, and th…]]></summary>
+        <author>
+            <name>Lee_Stott</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Kickstart Your Web Development: VS Code Basics & GitHub Integration]]></title>
+        <id>https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/kickstart-your-web-development-vs-code-basics--github-integration/4393411</id>
+        <link href="https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/blog/EducatorDeveloperBlog/kickstart-your-web-development-vs-code-basics--github-integration/4393411"/>
+        <updated>2025-03-26T07:00:00.000Z</updated>
+        <summary type="html"><![CDATA[As students we get access to an amazing set of developer resources for FREE! Microsoft offers all registered students world wide $100 of Azure Credit and over 25 FREE services with Microsoft Azure for Student. GitHub offers all students FREE Codespaces and GitHub Copilot with the GitHub Education Pack so let walk through how you can get started with these resources.
+1. Setting Up VS Code
+Installing VS Code
+
+Download VS Code from official site.
+Install it on your system (Windows, macOS, or Linux).
+Open VS Code and customize your settings.
+
+
+Essential Extensions
+Extensions enhance productivity by adding new functionalities. Some must-have extensions are:
+
+GitHub Copilot – AI-powered code suggestions.
+Prettier – Code formatter for clean and consistent code.
+Live Server – For real-time web dev…]]></summary>
+        <author>
+            <name>MohamedFaraazman</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Best Practices for Structured Extraction from Documents Using Azure OpenAI]]></title>
         <id>https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/blog/Azure-AI-Services-blog/best-practices-for-structured-extraction-from-documents-using-azure-openai/4397282</id>
@@ -16242,30 +16402,6 @@ The f…]]></summary>
 The post No new Azure DevOps OAuth apps beginning February 2025 appeared first on Azure DevOps Blog.]]></summary>
         <author>
             <name>Angel Wong</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[How to Pass the Microsoft Fabric Exam: A Comprehensive Guide]]></title>
-        <id>https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/how-to-pass-the-microsoft-fabric-exam-a-comprehensive-guide/4268901</id>
-        <link href="https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/blog/EducatorDeveloperBlog/how-to-pass-the-microsoft-fabric-exam-a-comprehensive-guide/4268901"/>
-        <updated>2024-10-28T07:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Hello Everyone, I’m Mohamed Faraazman bin Farooq S, a student of Artificial Intelligence and Data Science and a Microsoft Learn Student Ambassador from BSA Crescent University, Chennai, India. My journey toward passing the Microsoft Fabric Certification exam was challenging but incredibly rewarding. The Microsoft Learn Student Ambassador (MLSA) program played a huge role in my success. It provided access to valuable resources, tools, and a vibrant community that helped me throughout my preparation. From hands-on experience with Power BI and Azure Synapse to the various workshops and learning paths, the MLSA program gave me a solid foundation and confidence to take on the exam.
- 
-In this blog, I’ll share how I prepared for the exam and the strategies I used to ace it. Whether you’re just st…]]></summary>
-        <author>
-            <name>MohamedFaraazman</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[How to Pass the Microsoft Fabric Exam: A Comprehensive Guide]]></title>
-        <id>https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/discussions/EducatorDeveloperBlog/how-to-pass-the-microsoft-fabric-exam-a-comprehensive-guide/4268901</id>
-        <link href="https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/discussions/EducatorDeveloperBlog/how-to-pass-the-microsoft-fabric-exam-a-comprehensive-guide/4268901"/>
-        <updated>2024-10-28T07:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Hello Everyone, I’m Mohamed Faraazman bin Farooq S, a student of Artificial Intelligence and Data Science and a Microsoft Learn Student Ambassador from BSA Crescent University, Chennai, India. My journey toward passing the Microsoft Fabric Certification exam was challenging but incredibly rewarding. The Microsoft Learn Student Ambassador (MLSA) program played a huge role in my success. It provided access to valuable resources, tools, and a vibrant community that helped me throughout my preparation. From hands-on experience with Power BI and Azure Synapse to the various workshops and learning paths, the MLSA program gave me a solid foundation and confidence to take on the exam.
- 
-In this blog, I’ll share how I prepared for the exam and the strategies I used to ace it. Whether you’re just st…]]></summary>
-        <author>
-            <name>MohamedFaraazman</name>
         </author>
     </entry>
 </feed>
