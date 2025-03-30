@@ -2,10 +2,43 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2025-03-29T01:25:11.120Z</updated>
+    <updated>2025-03-30T01:39:47.229Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Superfast Installing Code Push Server in a Windows Web App]]></title>
+        <id>https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/blog/AppsonAzureBlog/superfast-installing-code-push-server-in-a-windows-web-app/4398616</id>
+        <link href="https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/blog/AppsonAzureBlog/superfast-installing-code-push-server-in-a-windows-web-app/4398616"/>
+        <updated>2025-03-29T03:23:57.000Z</updated>
+        <summary type="html"><![CDATA[TOC
+
+Introduction
+Setup
+Debugging
+References
+
+1. Introduction
+CodePush Server is a self-hosted backend for Microsoft CodePush, allowing you to manage and deploy over-the-air updates for React Native and Cordova apps. It provides update versioning, deployment history, and authentication controls.
+It is typically designed to run on Linux-based Node environments. If you want to deploy it on Azure Windows Web App, you can follow this tutorial to apply the necessary modifications.
+2. Setup
+1. Create a Windows Node.js Web App. In this example, we use Node.js 20 LTS.
+
+ 
+ 
+2. After the Web App is created, go to the Overview tab and copy its FQDN. You'll need this in later steps.
+
+ 
+ 
+3. Create a standard Storage Account.
+
+ 
+ 
+4. Once created, go to Access keys and copy the Storage Account’s name a…]]></summary>
+        <author>
+            <name>theringe</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Model Mondays: Lights, Prompts, Action!]]></title>
         <id>https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/blog/MachineLearningBlog/model-mondays-lights-prompts-action/4398576</id>
@@ -16091,174 +16124,6 @@ The results from our benchmarks underscore the remarkable efficiency and capabil
 The post Microsoft 365 Certification control spotlight: Business continuity and disaster recovery planning appeared first on Microsoft 365 Developer Blog.]]></summary>
         <author>
             <name>Krishna Mawani</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[ONNX and NPU Acceleration for Speech on ARM]]></title>
-        <id>https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/onnx-and-npu-acceleration-for-speech-on-arm/4278969</id>
-        <link href="https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/blog/EducatorDeveloperBlog/onnx-and-npu-acceleration-for-speech-on-arm/4278969"/>
-        <updated>2024-10-31T07:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Introduction
-Automatic Speech Recognition (ASR) is a technique that enables machines to process and convert human spoken language to written text, and it is widely used in many areas today. However, low inference speed is one of the major challenges in automatic speech recognition.The Project This project aims to investigate the different ways of accelerating inference for the Whisper model, leveraging Open Neural Network Exchange (ONNX) format, with different Runtimes and specialised hardware accelerators like NPUs. This project is a part of the IXN (Industrial Exchange Network) program, which is a teaching framework offering master and undergraduate students opportunities to work with industry companies. This Project is supported by UCL CS, Microsoft, and Intel, supervised by Professor D…]]></summary>
-        <author>
-            <name>ucab202</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[ONNX and NPU Acceleration for Speech on ARM]]></title>
-        <id>https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/discussions/EducatorDeveloperBlog/onnx-and-npu-acceleration-for-speech-on-arm/4278969</id>
-        <link href="https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/discussions/EducatorDeveloperBlog/onnx-and-npu-acceleration-for-speech-on-arm/4278969"/>
-        <updated>2024-10-31T07:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Introduction
-Automatic Speech Recognition (ASR) is a technique that enables machines to process and convert human spoken language to written text, and it is widely used in many areas today. However, low inference speed is one of the major challenges in automatic speech recognition.The Project This project aims to investigate the different ways of accelerating inference for the Whisper model, leveraging Open Neural Network Exchange (ONNX) format, with different Runtimes and specialised hardware accelerators like NPUs. This project is a part of the IXN (Industrial Exchange Network) program, which is a teaching framework offering master and undergraduate students opportunities to work with industry companies. This Project is supported by UCL CS, Microsoft, and Intel, supervised by Professor D…]]></summary>
-        <author>
-            <name>ucab202</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Configure File in Azure Static Web Apps]]></title>
-        <id>https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/blog/AppsonAzureBlog/configure-file-in-azure-static-web-apps/4283470</id>
-        <link href="https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/blog/AppsonAzureBlog/configure-file-in-azure-static-web-apps/4283470"/>
-        <updated>2024-10-31T04:27:23.000Z</updated>
-        <summary type="html"><![CDATA[In Azure Static Web Apps (SWA), customizing settings is often necessary—for example, modifying headers for specific needs. Although settings can be configured through the staticwebapp.config.json file, its placement (i.e., location) depends on the particular context (such as no framework, pre-built framework, or a framework that will be built during deployment).
- 
-This tutorial will guide you through where to place staticwebapp.config.json in different scenarios, along with configuration for popular CI/CD tools like Azure DevOps and GitHub Actions.
-We will use the Access-Control-Allow-Origin response header as a validation example to confirm that the configurations are working correctly.
- 
- 
-TOC:
-
-A No Framework SWA
-A Pre-Built Framework SWA (Using MkDocs as an Example)
-A Framework that Bu…]]></summary>
-        <author>
-            <name>theringe</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Configure File in Azure Static Web Apps]]></title>
-        <id>https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/discussions/AppsonAzureBlog/configure-file-in-azure-static-web-apps/4283470</id>
-        <link href="https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/discussions/AppsonAzureBlog/configure-file-in-azure-static-web-apps/4283470"/>
-        <updated>2024-10-31T04:27:23.000Z</updated>
-        <summary type="html"><![CDATA[In Azure Static Web Apps (SWA), customizing settings is often necessary—for example, modifying headers for specific needs. Although settings can be configured through the staticwebapp.config.json file, its placement (i.e., location) depends on the particular context (such as no framework, pre-built framework, or a framework that will be built during deployment).
- 
-This tutorial will guide you through where to place staticwebapp.config.json in different scenarios, along with configuration for popular CI/CD tools like Azure DevOps and GitHub Actions.
-We will use the Access-Control-Allow-Origin response header as a validation example to confirm that the configurations are working correctly.
- 
- 
-TOC:
-
-A No Framework SWA
-A Pre-Built Framework SWA (Using MkDocs as an Example)
-A Framework that Bu…]]></summary>
-        <author>
-            <name>theringe</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[GitHub Copilot for Azure: 6 Must-Try Features]]></title>
-        <id>https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/github-copilot-for-azure-6-must-try-features/4283126</id>
-        <link href="https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/blog/AzureDevCommunityBlog/github-copilot-for-azure-6-must-try-features/4283126"/>
-        <updated>2024-10-31T04:01:00.000Z</updated>
-        <summary type="html"><![CDATA[As developers, we are constantly seeking tools that streamline our workflows and boost productivity.
-… Enter GitHub Copilot for Azure, now in Public Preview!
-A new addition to your toolkit that seamlessly integrates with GitHub Copilot Chat in Visual Studio Code. Let’s break down some of the details
- 
-
-What is it?: You can think of it as your personal assistant for navigating the Azure cloud.
-Pain Point Solved: Instead of switching between your IDE and the Azure portal many times to manage infrastructure and services, you can stay right in your IDE where you are working.
-Pain Point Solved: Instead of opening the 10th browser tab of documentation for services, commands and arguments, you can stay right in your IDE where you are working.
-How do I use it: Ask ‘@azure’ in GitHub Copilot Chat
-
-…]]></summary>
-        <author>
-            <name>AmyBoyd</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[GitHub Copilot for Azure: 6 Must-Try Features]]></title>
-        <id>https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/discussions/AzureDevCommunityBlog/github-copilot-for-azure-6-must-try-features/4283126</id>
-        <link href="https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/discussions/AzureDevCommunityBlog/github-copilot-for-azure-6-must-try-features/4283126"/>
-        <updated>2024-10-31T04:01:00.000Z</updated>
-        <summary type="html"><![CDATA[As developers, we are constantly seeking tools that streamline our workflows and boost productivity.
-… Enter GitHub Copilot for Azure, now in Public Preview!
-A new addition to your toolkit that seamlessly integrates with GitHub Copilot Chat in Visual Studio Code. Let’s break down some of the details
- 
-
-What is it?: You can think of it as your personal assistant for navigating the Azure cloud.
-Pain Point Solved: Instead of switching between your IDE and the Azure portal many times to manage infrastructure and services, you can stay right in your IDE where you are working.
-Pain Point Solved: Instead of opening the 10th browser tab of documentation for services, commands and arguments, you can stay right in your IDE where you are working.
-How do I use it: Ask ‘@azure’ in GitHub Copilot Chat
-
-…]]></summary>
-        <author>
-            <name>AmyBoyd</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[GitHub Copilot for Azure: 6 Must-Try Features]]></title>
-        <id>https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/github-copilot-for-azure-6-must-try-features/4283126</id>
-        <link href="https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/blog/AzureDevCommunityBlog/github-copilot-for-azure-6-must-try-features/4283126"/>
-        <updated>2024-10-31T04:01:00.000Z</updated>
-        <summary type="html"><![CDATA[As developers, we are constantly seeking tools that streamline our workflows and boost productivity.
-… Enter GitHub Copilot for Azure, now in Public Preview!
-A new addition to your toolkit that seamlessly integrates with GitHub Copilot Chat in Visual Studio Code. Let’s break down some of the details
- 
-
-What is it?: You can think of it as your personal assistant for navigating the Azure cloud.
-Pain Point Solved: Instead of switching between your IDE and the Azure portal many times to manage infrastructure and services, you can stay right in your IDE where you are working.
-Pain Point Solved: Instead of opening the 10th browser tab of documentation for services, commands and arguments, you can stay right in your IDE where you are working.
-How do I use it: Ask ‘@azure’ in GitHub Copilot Chat
-
-…]]></summary>
-        <author>
-            <name>AmyBoyd</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[GitHub Copilot for Azure: 6 Must-Try Features]]></title>
-        <id>https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/discussions/AzureDevCommunityBlog/github-copilot-for-azure-6-must-try-features/4283126</id>
-        <link href="https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/discussions/AzureDevCommunityBlog/github-copilot-for-azure-6-must-try-features/4283126"/>
-        <updated>2024-10-31T04:01:00.000Z</updated>
-        <summary type="html"><![CDATA[As developers, we are constantly seeking tools that streamline our workflows and boost productivity.
-… Enter GitHub Copilot for Azure, now in Public Preview!
-A new addition to your toolkit that seamlessly integrates with GitHub Copilot Chat in Visual Studio Code. Let’s break down some of the details
- 
-
-What is it?: You can think of it as your personal assistant for navigating the Azure cloud.
-Pain Point Solved: Instead of switching between your IDE and the Azure portal many times to manage infrastructure and services, you can stay right in your IDE where you are working.
-Pain Point Solved: Instead of opening the 10th browser tab of documentation for services, commands and arguments, you can stay right in your IDE where you are working.
-How do I use it: Ask ‘@azure’ in GitHub Copilot Chat
-
-…]]></summary>
-        <author>
-            <name>AmyBoyd</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Announcing Serverless Support for Socket.IO in Azure Web PubSub service]]></title>
-        <id>https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/blog/AppsonAzureBlog/announcing-serverless-support-for-socket-io-in-azure-web-pubsub-service/4283032</id>
-        <link href="https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/blog/AppsonAzureBlog/announcing-serverless-support-for-socket-io-in-azure-web-pubsub-service/4283032"/>
-        <updated>2024-10-30T15:02:51.000Z</updated>
-        <summary type="html"><![CDATA[We are excited to announce the public preview of Socket.IO Serverless Mode in Azure Web PubSub service. This new mode eliminates the need for developers to maintain persistent connections on their application servers, offering a more streamlined and scalable approach. In addition to the existing default mode, developers can now deploy Socket.IO applications in a serverless environment using Azure Functions. This provides a stateless, highly scalable infrastructure, simplifying the development of real-time features while reducing both operational costs and maintenance overhead.
- 
-What is Socket.IO Serverless Mode? 
-In the existing default mode, all Socket.IO clients connect directly to Azure Web PubSub. developers don't need to worry about if they have 100 or 1 million concurrent users. The…]]></summary>
-        <author>
-            <name>kevinguo</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Announcing Serverless Support for Socket.IO in Azure Web PubSub service]]></title>
-        <id>https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/discussions/AppsonAzureBlog/announcing-serverless-support-for-socket-io-in-azure-web-pubsub-service/4283032</id>
-        <link href="https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/discussions/AppsonAzureBlog/announcing-serverless-support-for-socket-io-in-azure-web-pubsub-service/4283032"/>
-        <updated>2024-10-30T15:02:51.000Z</updated>
-        <summary type="html"><![CDATA[We are excited to announce the public preview of Socket.IO Serverless Mode in Azure Web PubSub service. This new mode eliminates the need for developers to maintain persistent connections on their application servers, offering a more streamlined and scalable approach. In addition to the existing default mode, developers can now deploy Socket.IO applications in a serverless environment using Azure Functions. This provides a stateless, highly scalable infrastructure, simplifying the development of real-time features while reducing both operational costs and maintenance overhead.
- 
-What is Socket.IO Serverless Mode? 
-In the existing default mode, all Socket.IO clients connect directly to Azure Web PubSub. developers don't need to worry about if they have 100 or 1 million concurrent users. The…]]></summary>
-        <author>
-            <name>kevinguo</name>
         </author>
     </entry>
 </feed>
