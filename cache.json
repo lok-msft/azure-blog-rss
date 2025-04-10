@@ -6,6 +6,16 @@
       "siteUrl": "https://blog.fabric.microsoft.com/en/blog/",
       "articles": [
         {
+          "id": "understanding-real-time-intelligence-cdc-connector-for-postgresql-database",
+          "author": null,
+          "description": "Coauthor: Aazathraj, Chief Data Architect, Apollo Hospitals Real-Time Intelligence in Microsoft Fabric provides multiple database change data capture connectors including SQL database, MySQL, PostgreSQL, and Cosmos DB, which allows anyone to easily react and take actions on database changes in real-time. Each of the databases works differently when it comes to enabling CDC, giving permission … \nContinue reading “Understanding Real-Time Intelligence CDC connector for PostgreSQL database”",
+          "link": "https://blog.fabric.microsoft.com/en/blog/understanding-real-time-intelligence-cdc-connector-for-postgresql-database/",
+          "publishedOn": "2025-04-09T09:00:00.000Z",
+          "wordCount": 2650,
+          "title": "Understanding Real-Time Intelligence CDC connector for PostgreSQL database",
+          "imageUrl": "https://blog.fabric.microsoft.com/images/shared/social/social-image-v2.png"
+        },
+        {
           "id": "announcing-permission-model-changes-for-onelake-events-in-fabric-real-time-hub",
           "author": null,
           "description": "We are excited to announce the latest update to our permission model for OneLake events in the Fabric Real-Time Hub. Previously, users with the ReadAll permission, such as workspace admins, members, and contributors, could subscribe to OneLake events for items like lakehouses, warehouses, SQL databases, mirrored databases, and KQL databases. To provide more granular control, we … \nContinue reading “Announcing permission model changes for OneLake events in Fabric Real-Time Hub”",
@@ -1237,16 +1247,6 @@
           "publishedOn": "2024-12-02T12:00:00.000Z",
           "wordCount": 2002,
           "title": "Using Zipkin and OpenTelemetry on Azure Container Apps",
-          "imageUrl": "https://azureossd.github.io/assets/images/azure-containerapps-logo.png"
-        },
-        {
-          "id": "https://azureossd.github.io/2024/11/11/container-apps-ui-cli-deployments/index.html",
-          "author": null,
-          "description": "This post will cover a few different ways to use CLI / UI with Container Apps, in regards to deployment methods, as well as some general troubleshooting guidance for these methods.",
-          "link": "https://azureossd.github.io/2024/11/11/container-apps-ui-cli-deployments/index.html",
-          "publishedOn": "2024-11-11T12:00:00.000Z",
-          "wordCount": 1255,
-          "title": "Container Apps - Deployments through UI and CLI",
           "imageUrl": "https://azureossd.github.io/assets/images/azure-containerapps-logo.png"
         }
       ]
@@ -2693,6 +2693,46 @@
       "feedUrl": "https://techcommunity.microsoft.com/t5/s/plugins/custom/microsoft/o365/custom-blog-rss?board=AppsonAzureBlog&size=100",
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
+        {
+          "id": "https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/blog/AppsonAzureBlog/connect-azure-sql-server-via-system-assigned-managed-identity-under-asp-net/4402513",
+          "author": "theringe",
+          "description": "TOC\nWhy we use it\nArchitecture\nHow to use it\nReferences\n \nWhy we use it\nThis tutorial will introduce how to integrate Microsoft Entra with Azure SQL Server to avoid using fixed usernames and passwords. By utilizing System-assigned managed identities as a programmatic bridge, it becomes easier for Azure-related PaaS services (such as Container Apps) to communicate with the database without storing connection information in plain text.\n \nArchitecture\n\nI will introduce each service or component and their configurations in subsequent chapters according to the order of A-C:\nA: The company's account administrator needs to create or designate a user as the database administrator. This role can only be assigned to one person within the database and is responsible for basic configuration and the cr…",
+          "link": "https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/blog/AppsonAzureBlog/connect-azure-sql-server-via-system-assigned-managed-identity-under-asp-net/4402513",
+          "publishedOn": "2025-04-09T16:50:54.000Z",
+          "wordCount": null,
+          "title": "Connect Azure SQL Server via System Assigned Managed Identity under ASP.NET",
+          "imageUrl": null
+        },
+        {
+          "id": "https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/blog/AppsonAzureBlog/strapi-on-app-service-quick-start/4401398",
+          "author": "niteshjain11",
+          "description": "Strapi is a widely used open-source headless CMS platform that empowers developers and content creators worldwide to manage and deliver content efficiently. It is known for its flexibility and robustness, having been continuously developed and improved by the community over the years.\nIn this quick start guide, you will learn how to create and deploy your first Strapi site on Azure App Service Linux, using Azure Database for MySQL or PostgreSQL, along with other necessary Azure resources.\nThis guide utilizes an ARM template to install the required resources for hosting your Strapi application, which will incur costs for your Azure Subscription. For pricing details, please refer to our section on estimating pricing.\nFor more information read our Strapi on App Service overview blog.\nWhat is …",
+          "link": "https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/blog/AppsonAzureBlog/strapi-on-app-service-quick-start/4401398",
+          "publishedOn": "2025-04-09T07:53:56.000Z",
+          "wordCount": null,
+          "title": "Strapi on App Service: Quick start",
+          "imageUrl": null
+        },
+        {
+          "id": "https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/blog/AppsonAzureBlog/strapi-on-app-service-faq/4401397",
+          "author": "niteshjain11",
+          "description": "How do I enable a custom domain for my Strapi website?\nCustom domains can be set up with these resources:\n\nUsing custom domains on Azure App Service\nConfiguring custom domains with Azure Front Door\n\nDoes Strapi on App Service have email functionality?\nYes, email functionality is supported through Azure Communication Services. You can also configure custom email domains.  In order to integrate Strapi application with Azure communication services, we use an Email plugin here.\nCan I use other databases with Strapi on Azure App Service?\nStrapi supports MySQL, PostgreSQL, MariaDB and SQL Lite. Our current ARM template solution supports using PostgreSQL or MySQL as database. To use another supported database, you could either modify the ARM template or even set up database manually and update th…",
+          "link": "https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/blog/AppsonAzureBlog/strapi-on-app-service-faq/4401397",
+          "publishedOn": "2025-04-09T07:53:52.000Z",
+          "wordCount": null,
+          "title": "Strapi on App Service: FAQ",
+          "imageUrl": null
+        },
+        {
+          "id": "https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/blog/AppsonAzureBlog/strapi-on-app-service-overview/4401396",
+          "author": "niteshjain11",
+          "description": "What is Strapi on App Service?\nStrapi is an open-source, headless CMS that is highly customizable and developer-friendly. App Service is a fully managed platform for building, deploying, and scaling web apps. Deploying Strapi on App Service brings together the power of Strapi's flexible content management capabilities with the scalability and reliability of Microsoft's cloud infrastructure. This offering integrates key Azure services such as:\n\nAzure App Service: A scalable platform-as-a-service (PaaS) optimized for running Node.js applications such as Strapi.\nAzure Database for MySQL flexible server – A fully managed database service that offers high availability, automated maintenance, and elastic scaling for MySQL databases.\nAzure Database for PostgreSQL flexible server: A fully managed …",
+          "link": "https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/blog/AppsonAzureBlog/strapi-on-app-service-overview/4401396",
+          "publishedOn": "2025-04-09T07:53:34.000Z",
+          "wordCount": null,
+          "title": "Strapi on App Service: Overview",
+          "imageUrl": null
+        },
         {
           "id": "https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/blog/AppsonAzureBlog/getting-started-with-linux-webjobs-on-app-service---nodejs/4402115",
           "author": "denverbrittain",
@@ -4577,6 +4617,16 @@
       "feedUrl": "https://techcommunity.microsoft.com/t5/s/plugins/custom/microsoft/o365/custom-blog-rss?board=Azure-AI-Services-blog&size=150",
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
+        {
+          "id": "https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/blog/Azure-AI-Services-blog/new-scale-options-in-azure-ai-search-change-your-pricing-tier-and-service-upgrad/4402617",
+          "author": "mike_carter_msft",
+          "description": "Introduction\nAzure AI Search is announcing two new preview features that make it easier to scale your search service to avoid production issues from storage limitations as your needs grow.\nAvailable in preview today:\n\nChange your pricing tier: Change the tier of your existing Azure AI Search service via the portal or management plane REST API.\nSelf-service upgrade: Upgrade your search service to enable features previously only available in new services, such as the new storage limits released in April 2024.\n\nChange your pricing tier to scale up\nNow you can change your service tier from the Azure portal or management plane API. It's a simple scaling operation like adding partitions or replicas that ensures uninterrupted growth and operational continuity.\nBefore, if you reached the maximum t…",
+          "link": "https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/blog/Azure-AI-Services-blog/new-scale-options-in-azure-ai-search-change-your-pricing-tier-and-service-upgrad/4402617",
+          "publishedOn": "2025-04-09T20:13:24.000Z",
+          "wordCount": null,
+          "title": "New scale options in Azure AI Search: change your pricing tier and service upgrade",
+          "imageUrl": null
+        },
         {
           "id": "https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/blog/Azure-AI-Services-blog/getting-results-with-ai-agents--bing-grounding/4401115",
           "author": "jakeatmsft",
@@ -6505,6 +6555,16 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/blog/MachineLearningBlog/fast-stress-test-of-deepseek-671b-on-azure-amd-mi300x/4402222",
+          "author": "xinyuwei",
+          "description": "This artical is refer to:\nhttps://techcommunity.microsoft.com/blog/azurehighperformancecomputingblog/running-deepseek-r1-on-a-single-ndv5-mi300x-vm/4372726\n\n \nAzure GPU VM Environment PreparationQuickly create a Spot VM, using Spot VM and password-based authentication:\naz vm create --name <VMNAME> --resource-group <RESOURCE_GROUP_NAME> --location <REGION>  --image microsoft-dsvm:ubuntu-hpc:2204-rocm:22.04.2025030701 --size Standard_ND96isr_MI300X_v5 --security-type Standard --priority Spot --max-price -1 --eviction-policy Deallocate --os-disk-size-gb 256 --os-disk-delete-option Delete --admin-username azureadmin --authentication-type password --admin-password <YOUR_PASSWORD>\n\nThe CLI command I used to create the VM:\nxinyu [ ~ ]$ az vm create --name mi300x-xinyu --resource-group amdrg --loc…",
+          "link": "https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/blog/MachineLearningBlog/fast-stress-test-of-deepseek-671b-on-azure-amd-mi300x/4402222",
+          "publishedOn": "2025-04-09T03:25:45.000Z",
+          "wordCount": null,
+          "title": "Fast Stress Test of DeepSeek 671B on Azure AMD MI300X",
+          "imageUrl": null
+        },
+        {
           "id": "https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/blog/MachineLearningBlog/model-mondays-teaching-your-model-new-tricks-with-fine-tuning/4401129",
           "author": "Sharmichock",
           "description": "Whether you're optimizing a model for a specialized customer service bot, adapting tone for brand voice, or turbocharging domain-specific performance- fine-tuning unlocks the next level of precision and relevance. And this week, we're going hands-on with Mistral models, showing you just how simple, powerful, and cost-efficient fine-tuning can be in Azure AI Foundry.\nWhen: Monday, April 7Time: 1:30 PM ET | 10:30 AM PTWhere: Microsoft Reactor Live Show – RSVP Here\n \n\nWhy Fine-Tune Mistral?\nMistral models are quickly gaining traction thanks to their speed, efficiency, and open-access architecture. But what makes them shine is how easily they can be adapted for your business context.\nIn this episode, we’ll show you how to:\n\nPrepare datasets and configure training parameters\nLaunch a fine-tuning job in Azure AI Foundry (yes, it’s as easy as a few clicks)\nDeploy your fine-tuned model with confidence\n\nAnd if you're wondering whether it's worth the effort, spoiler alert: early adopters are seeing dramatic boosts in accuracy and latency reduction, especially in niche or sensitive use cases.\nWhat’s in it for you?\nEach Model Mondays episode is a 30-minute boost to your AI skillset:\n\nStay updated – A 5-min recap of the week’s hottest model drops and Azure AI Foundry news\nGet hands-on – A 15-min walkthrough focused on how to fine-tune Mistral in Azure\nAsk the experts – Live Q&A with Microsoft and Mistral \n\nAnd the conversation doesn’t stop there. Join us every Friday for a Model Mondays Watercooler Chat at 1:30 PM ET / 10:30 AM PT in our Discord community, where we recap, react, and nerd out with the broader AI community.\nIn Case You Missed It\n\nEpisode 1: GitHub Models – Building better dev experiences\nEpisode 2: Reasoning Models \nEpisode 3: Search & Retrieval Models\nEpisode 4 : Visual Generative Models\n\nBe Part of the Movement\n\nWatch Live on Microsoft Reactor – RSVP Now\nJoin the AI Community – Discord Fridays\nExplore the Tech – Model Mondays GitHub\n\nThe future of AI is happening every Monday—don’t miss it.",
@@ -8419,6 +8479,26 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/blog/AzurePaaSBlog/lease-management-in-azure-storage--common-troubleshooting-scenarios/4402002",
+          "author": "rpadi450",
+          "description": "The blog explains how lease management in Azure Storage works, covering the management of concurrent access to blobs and containers. It discusses key concepts such as acquiring, renewing, changing, releasing, and breaking leases, ensuring only the lease holder can modify or delete a resource for a specified duration. Additionally, it explores common troubleshooting scenarios in Azure Storage Lease Management.\nLease management in Azure Storage allows you to create and manage locks on blobs for write and delete operations. This is particularly useful for ensuring that only one client can write to a blob at a time, preventing conflicts and ensuring data consistency.\nKey Concepts:\n\nLease States: A blob can be in one of several lease states, such as Available, Leased, Expired, Breaking, and Bro…",
+          "link": "https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/blog/AzurePaaSBlog/lease-management-in-azure-storage--common-troubleshooting-scenarios/4402002",
+          "publishedOn": "2025-04-09T12:01:45.000Z",
+          "wordCount": null,
+          "title": "Lease Management in Azure Storage & Common troubleshooting scenarios",
+          "imageUrl": null
+        },
+        {
+          "id": "https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/blog/AzurePaaSBlog/performing-simple-sftp-operations-on-azure-blob-storage-using-curl-commands/4401974",
+          "author": "Lavani_Katepaga",
+          "description": "Introduction\nAzure Blob Storage now supports the SFTP protocol, making it easier to interact with blobs using standard tools like curl. This blog guides you through performing simple upload, download, delete, and list operations using curl over SFTP with Azure Blob Storage.\n \nPre-requisites\n\nAzure Blob Storage with SFTP enabled (Storage Account must have hierarchical namespace enabled)\nEnable SFTP\nLocal user created in Azure Storage Account with SSH Key Pair as Authentication method and appropriate container permissions.\nPrivate key (.pem file) for SFTP authentication.\nCurl tool installed (version 7.55.0+ for SFTP support)\n\nPlease note that the following tests are inclined towards Curl on Windows.\nThe same can be performed with other OS with appropriate format changes.\n \nAuthentication Sup…",
+          "link": "https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/blog/AzurePaaSBlog/performing-simple-sftp-operations-on-azure-blob-storage-using-curl-commands/4401974",
+          "publishedOn": "2025-04-09T11:21:22.000Z",
+          "wordCount": null,
+          "title": "Performing Simple SFTP Operations on Azure Blob Storage using CURL Commands",
+          "imageUrl": null
+        },
+        {
           "id": "https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/blog/AzurePaaSBlog/using-azure-monitor-workbook-to-calculate-azure-storage-used-capacity-for-all-st/4400520",
           "author": "24Deepti",
           "description": "In this blog, we will explore how to use Azure Monitor Workbook to collect and analyze metrics for all or selected storage accounts within a given subscription. We will walk through the steps to set up the workbook, configure metrics, and visualize storage account data to gain valuable insights into usage.\nIntroduction\nFor a given individual blob storage account, we can calculate the used capacity or transactions count or blob count by making use of PowerShell or Metrices available on Portal or Blob Inventory reports. However, if we are supposed to perform the same activity on all the storage accounts under a given subscription and create a consolidated report, it will be a huge task. For such cases, the Blob Inventory reports will not be of much help as it works on individual storage acco…",
@@ -9210,6 +9290,36 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/blog/AzureMigrationBlog/the-smarter-way-to-migrate-to-azure/4401641",
+          "author": "RobbyMillsap",
+          "description": "Cut Through the Chaos\nIf you’ve worked on a cloud migration, you already know—it’s not just about moving workloads. It’s about navigating ambiguity. Mapping services. Aligning teams. Untangling legacy architecture. Making decisions that won’t come back to bite you six months down the line.\nWe built the Azure Migration Hub to bring order to that mess. It’s not a campaign or a marketing layer. It’s a guide—built by architects, engineers, and field teams who’ve done this work at scale—designed to help others do it better. The Migration Hub offers a structured path forward, connecting strategy, architecture patterns, and tooling guidance in the sequence real teams actually need. It also incorporates Azure Essentials best practices, which facilitate a smoother and more efficient transition to t…",
+          "link": "https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/blog/AzureMigrationBlog/the-smarter-way-to-migrate-to-azure/4401641",
+          "publishedOn": "2025-04-09T22:28:00.000Z",
+          "wordCount": null,
+          "title": "The Smarter Way to Migrate to Azure",
+          "imageUrl": null
+        },
+        {
+          "id": "https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/blog/AzureMigrationBlog/future-proof-your-workloads-with-windows-server-updates-and-azure-migration-skil/4399236",
+          "author": "MarcoB",
+          "description": "Windows Server has been a trusted solution for businesses for over 30 years, providing reliability, security, and scalability for critical workloads. With the introduction of Windows Server 2025, Microsoft is enhancing security, performance, and cloud integration to help organizations focus on innovation rather than administrative overhead. Designed for seamless connectivity with Azure, Windows Server 2025 enables your business to leverage cloud-native tools and hybrid management capabilities effortlessly.  \nIn this blog we’ll focus on the value of migrating your on-premises Windows Server workloads to Azure and review official Plans on Microsoft Learn—Migrate and Secure Windows Server Workloads on Azure—that will help your team succeed. We’re also excited to invite you to our upcoming Win…",
+          "link": "https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/blog/AzureMigrationBlog/future-proof-your-workloads-with-windows-server-updates-and-azure-migration-skil/4399236",
+          "publishedOn": "2025-04-09T21:42:54.000Z",
+          "wordCount": null,
+          "title": "Future-proof your workloads with Windows Server updates and Azure migration skilling",
+          "imageUrl": null
+        },
+        {
+          "id": "https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/blog/AzureMigrationBlog/power-your-linux-and-postgresql-innovation-with-azure-migration-skilling-and-com/4399239",
+          "author": "MarcoB",
+          "description": "Power your Linux and PostgreSQL innovation with Azure migration skilling and community events \nManaging on-prem and hybrid Linux and PostgreSQL workloads presents ongoing challenges, from hardware maintenance and scalability limitations to security risks and operational complexity. As workloads grow, so do costs and administrative burdens of keeping them performant and resilient. Migrating to Azure provides a modern, cloud-based solution that enhances security, scalability, and cost efficiency—freeing teams to focus on innovation rather than infrastructure management.  \nIn this blog, we’ll explore not only the value of migrating Linux and PostgreSQL workloads to Azure, but also some crucial, expert-curated skilling resources we provide to help your team master the process. Plus, we’ll disc…",
+          "link": "https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/blog/AzureMigrationBlog/power-your-linux-and-postgresql-innovation-with-azure-migration-skilling-and-com/4399239",
+          "publishedOn": "2025-04-09T21:13:47.000Z",
+          "wordCount": null,
+          "title": "Power your Linux and PostgreSQL innovation with Azure migration skilling and community events",
+          "imageUrl": null
+        },
+        {
           "id": "https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/blog/AzureMigrationBlog/essentials-of-azure-and-ai-project-performance-and-security--new-training/4398579",
           "author": "MeganLordeonPennie",
           "description": "Are you ready to elevate your cloud skills and master the essentials of reliability, security, and performance of Azure and AI project? Join us for comprehensive training in Microsoft Azure Virtual Training Day events, where you'll gain the knowledge and tools to adopt the cloud at scale and optimize your cloud spend.\nEvent Highlights:\n\nTwo-Day Agenda: Dive deep into how-to learning on cloud and AI adoption, financial best practices, workload design, environment management, and more.\nExpert Guidance: Learn from industry experts and gain insights into designing with optimization in mind with the Azure Well-Architected Framework and the Cloud Adoption Framework for Azure.\nHands-On Learning: Participate in interactive sessions and case studies to apply essentials of Azure and AI best practices in real-world scenarios, like reviewing and remediating workloads.\nFinOps in the Era of AI: Discover how to build a culture of cost efficiency and maximize the business value of the cloud with the FinOps Framework, including principles, phases, domains, and capabilities.\n\nWhy Attend?\n\nBuild Reliable and Secure Systems: Understand the shared responsibility between Microsoft and its customers to build resilient and secure systems.\nOptimize Cloud Spend: Learn best practices for cloud spend optimization and drive market differentiation through savings.\nEnhance Productivity: Improve productivity, customer experience, and competitive advantage by elevating the resiliency and security of your critical workloads.\n\nDon't miss the opportunity to transform your cloud strategy and take your skills to the next level. Register now and join us for an insightful and engaging virtual training experience!\nRegister today!  Aka.ms/AzureEssentialsVTD \n\nEager to learn before the next event? Dive into our free self-paced training modules:\n\nCost efficiency of Azure and AI Projects | on Microsoft Learn \nResiliency and security of Azure and AI Projects | on Microsoft Learn  \nOverview of essential skilling for Azure and AI workloads | on Microsoft Learn",
@@ -9628,6 +9738,26 @@
       "feedUrl": "https://devblogs.microsoft.com/semantic-kernel/feed/",
       "siteUrl": "https://devblogs.microsoft.com/semantic-kernel/",
       "articles": [
+        {
+          "id": "https://devblogs.microsoft.com/semantic-kernel/?p=4467",
+          "author": "Wes Steyn",
+          "description": "Today we’re thrilled to announce support for Hybrid search with Semantic Kernel Vector Stores for .NET. What is Hybrid Search? Hybrid search performs two parallel searches on a vector database.  The union of the results of these two searches are then returned to callers with a combined rank, based on the rankings from each of […]\nThe post Announcing Hybrid Search with Semantic Kernel for .NET appeared first on Semantic Kernel.",
+          "link": "https://devblogs.microsoft.com/semantic-kernel/announcing-hybrid-search-with-semantic-kernel-for-net/",
+          "publishedOn": "2025-04-09T19:48:37.000Z",
+          "wordCount": 6837,
+          "title": "Announcing Hybrid Search with Semantic Kernel for .NET",
+          "imageUrl": "https://devblogs.microsoft.com/semantic-kernel/wp-content/uploads/sites/78/2024/03/Feature-announcement-1.png"
+        },
+        {
+          "id": "https://devblogs.microsoft.com/semantic-kernel/?p=4543",
+          "author": "Sophia Lagerkrans-Pandey, Arafat Tehsin",
+          "description": "Today we’re excited to welcome Arafat Tehsin, who’s a Microsoft Most Valuable Professional (MVP) for AI. back as a guest author on the Semantic Kernel blog today to cover his work on a Comprehensive Guide to Agentic AI with Semantic Kernel. We’ll turn it over to Arafat to dive in further. The world of AI is evolving […]\nThe post Guest Blog: A Comprehensive Guide to Agentic AI with Semantic Kernel appeared first on Semantic Kernel.",
+          "link": "https://devblogs.microsoft.com/semantic-kernel/guest-blog-a-comprehensive-guide-to-agentic-ai-with-semantic-kernel/",
+          "publishedOn": "2025-04-09T13:58:59.000Z",
+          "wordCount": 6998,
+          "title": "Guest Blog: A Comprehensive Guide to Agentic AI with Semantic Kernel",
+          "imageUrl": "https://devblogs.microsoft.com/semantic-kernel/wp-content/uploads/sites/78/2024/03/Guest-Blog_-Building-Your-Custom-Copilot-with-Semantic-Kernel-1.png"
+        },
         {
           "id": "https://devblogs.microsoft.com/semantic-kernel/?p=4550",
           "author": "Eduard van Valkenburg",
@@ -10707,6 +10837,16 @@
       "feedUrl": "https://devblogs.microsoft.com/microsoft365dev/feed/",
       "siteUrl": "https://devblogs.microsoft.com/microsoft365dev/",
       "articles": [
+        {
+          "id": "https://devblogs.microsoft.com/microsoft365dev/?p=24030",
+          "author": "Carol Mbasinge Kigoonya",
+          "description": "Learn how to debug your agents within Microsoft 365 Copilot to streamline your workflow using the agent debugging experience, now generally available.\nThe post Introducing the agent debugging experience in Microsoft 365 Copilot appeared first on Microsoft 365 Developer Blog.",
+          "link": "https://devblogs.microsoft.com/microsoft365dev/introducing-the-agent-debugging-experience-in-microsoft-365-copilot/",
+          "publishedOn": "2025-04-09T13:58:31.000Z",
+          "wordCount": 6509,
+          "title": "Introducing the agent debugging experience in Microsoft 365 Copilot",
+          "imageUrl": "https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2025/04/ADE-scaled.jpg"
+        },
         {
           "id": "https://devblogs.microsoft.com/microsoft365dev/?p=24017",
           "author": "SharePoint team",
