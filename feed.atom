@@ -2,10 +2,55 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2025-04-20T01:41:27.711Z</updated>
+    <updated>2025-04-21T01:40:50.957Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Using Azure Functions to read AVS data via Powershell, PowerCLI, and the API]]></title>
+        <id>https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/blog/AzureMigrationBlog/using-azure-functions-to-read-avs-data-via-powershell-powercli-and-the-api/4403200</id>
+        <link href="https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/blog/AzureMigrationBlog/using-azure-functions-to-read-avs-data-via-powershell-powercli-and-the-api/4403200"/>
+        <updated>2025-04-20T15:07:44.000Z</updated>
+        <summary type="html"><![CDATA[Gotcha’s
+
+Functions are region specific.
+Functions require a small (ie /28)
+Do not use “ –  “ if Azure functions, use “ _ “ if you need a spacer.
+Pay attention to the sections on RBAC and system managed identities.
+
+ 
+Build Order
+ 
+
+Create or identify the Log Analytics Workspace that will be used for storage diagnostics.
+
+ 
+
+Create a KeyVault and set the RBAC properties to allow creation of secrets.
+
+ 
+
+Create KeyVault secrets to hold the account IDs and account passwords that will be used to authenticate to the vCenter, NSX-T and HCX appliances.
+
+ 
+
+Create/identify a storage account and an empty subnet that will be used by the function.
+
+ 
+
+Create the Function App
+
+ 
+
+Creating the Functions App common variable retrieval code (shared by all functions)
+
+ 
+
+Example 1: Retrieving vCenter data…]]></summary>
+        <author>
+            <name>FastTrack_Mark</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Arizona Department of Transportation Innovates with Azure AI Vision]]></title>
         <id>https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/blog/Azure-AI-Services-blog/arizona-department-of-transportation-innovates-with-azure-ai-vision/4405832</id>
@@ -15378,37 +15423,6 @@ Jalleen Ringer, Partner GPM for Windows Cloud Endpoints, shows how Windows 365 L
 Get started in …]]></summary>
         <author>
             <name>Zachary-Cavanell</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Java Intelligent Application Templates in the Azure AI Gallery]]></title>
-        <id>https://devblogs.microsoft.com/java/?p=231686</id>
-        <link href="https://devblogs.microsoft.com/java/java-intelligent-application-templates-in-the-azure-ai-gallery/"/>
-        <updated>2024-11-21T21:47:15.000Z</updated>
-        <summary type="html"><![CDATA[Artificial Intelligence (AI) is no longer a futuristic concept—it’s transforming how developers build and innovate applications today. To help Java developers harness the full potential of AI, Microsoft’s Azure AI App Templates gallery offers a growing collection of AI-powered application templates. These templates are designed to streamline development, showcase integration patterns, and accelerate your AI […]
-The post Java Intelligent Application Templates in the Azure AI Gallery appeared first on Microsoft for Java Developers.]]></summary>
-        <author>
-            <name>Bruno Borges</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Announcing an accelerator for GenAI-powered assistants using Azure AI Language and Azure OpenAI]]></title>
-        <id>https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/blog/Azure-AI-Services-blog/announcing-an-accelerator-for-genai-powered-assistants-using-azure-ai-language-a/4320838</id>
-        <link href="https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/blog/Azure-AI-Services-blog/announcing-an-accelerator-for-genai-powered-assistants-using-azure-ai-language-a/4320838"/>
-        <updated>2024-11-21T20:15:59.000Z</updated>
-        <summary type="html"><![CDATA[We’re thrilled to introduce a new accelerator solution in GitHub Azure-Samples library designed specifically for creating and enhancing your GenAI-based conversational assistants with robust, human-controllable workflows. This accelerator uses key services from Azure AI Language  in addition to Azure OpenAI, including PII detection to protect sensitive information, Conversational Language Understanding (CLU) to predict top users’ intents, Custom Question Answering (CQA) to respond to top questions with deterministic answers. Together with Azure OpenAI and Large Language Models (LLMs), the solution is designed to orchestrate and deliver a smooth, human-guided, controllable and deterministic conversational experience. The integration with LLMs will come soon. It’s perfect for developers and …]]></summary>
-        <author>
-            <name>YanlingX</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Announcing an accelerator for GenAI-powered assistants using Azure AI Language and Azure OpenAI]]></title>
-        <id>https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/discussions/Azure-AI-Services-blog/announcing-an-accelerator-for-genai-powered-assistants-using-azure-ai-language-a/4320838</id>
-        <link href="https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/discussions/Azure-AI-Services-blog/announcing-an-accelerator-for-genai-powered-assistants-using-azure-ai-language-a/4320838"/>
-        <updated>2024-11-21T20:15:59.000Z</updated>
-        <summary type="html"><![CDATA[We’re thrilled to introduce a new accelerator solution in GitHub Azure-Samples library designed specifically for creating and enhancing your GenAI-based conversational assistants with robust, human-controllable workflows. This accelerator uses key services from Azure AI Language  in addition to Azure OpenAI, including PII detection to protect sensitive information, Conversational Language Understanding (CLU) to predict top users’ intents, Custom Question Answering (CQA) to respond to top questions with deterministic answers. Together with Azure OpenAI and Large Language Models (LLMs), the solution is designed to orchestrate and deliver a smooth, human-guided, controllable and deterministic conversational experience. The integration with LLMs will come soon. It’s perfect for developers and …]]></summary>
-        <author>
-            <name>YanlingX</name>
         </author>
     </entry>
 </feed>
