@@ -2,10 +2,86 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2025-05-02T01:38:30.013Z</updated>
+    <updated>2025-05-03T01:35:56.388Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Granting Azure Resources Access to SharePoint Online Sites Using Managed Identity]]></title>
+        <id>https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/blog/AzureArchitectureBlog/granting-azure-resources-access-to-sharepoint-online-sites-using-managed-identit/4409633</id>
+        <link href="https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/blog/AzureArchitectureBlog/granting-azure-resources-access-to-sharepoint-online-sites-using-managed-identit/4409633"/>
+        <updated>2025-05-02T23:26:32.000Z</updated>
+        <summary type="html"><![CDATA[When integrating Azure resources like Logic Apps, Function Apps, or Azure VMs with SharePoint Online, you often need secure and granular access control. Rather than handling credentials manually, Managed Identity is the recommended approach to securely authenticate to Microsoft Graph and access SharePoint resources.
+High-level steps:
+Step 1: Enable Managed Identity (or App Registration)
+Step 2: Grant Sites.Selected Permission in Microsoft Entra ID
+Step 3: Assign SharePoint Site-Level Permission
+Step 1: Enable Managed Identity (or App Registration)
+For your Azure resource (e.g., Logic App):
+
+Navigate to the Azure portal.
+Go to the resource (e.g., Logic App).
+Under Identity, enable System-assigned Managed Identity.
+Note the Object ID and Client ID (you’ll need the Client ID later).
+
+Alternat…]]></summary>
+        <author>
+            <name>anammalu</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Guest Blog: Orchestrating AI Agents with Semantic Kernel Plugins: A Technical Deep Dive]]></title>
+        <id>https://devblogs.microsoft.com/semantic-kernel/?p=4751</id>
+        <link href="https://devblogs.microsoft.com/semantic-kernel/guest-blog-orchestrating-ai-agents-with-semantic-kernel-plugins-a-technical-deep-dive/"/>
+        <updated>2025-05-02T21:10:12.000Z</updated>
+        <summary type="html"><![CDATA[Today we’re excited to welcome Jarre Nejatyab as a guest blog to highlight a technical deep dive on orchestrating AI Agents with Semantic Kernel Plugins. In the rapidly evolving world of Large Language Models (LLMs), orchestrating specialized AI agents has become crucial for building sophisticated cognitive architectures capable of complex reasoning and task execution. While […]
+The post Guest Blog: Orchestrating AI Agents with Semantic Kernel Plugins: A Technical Deep Dive appeared first on Semantic Kernel.]]></summary>
+        <author>
+            <name>Sophia Lagerkrans-Pandey, Jarre Nejatyab</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Real-time Speech Transcription with GPT-4o-transcribe and GPT-4o-mini-transcribe using WebSocket]]></title>
+        <id>https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/blog/Azure-AI-Services-blog/real-time-speech-transcription-with-gpt-4o-transcribe-and-gpt-4o-mini-transcribe/4410353</id>
+        <link href="https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/blog/Azure-AI-Services-blog/real-time-speech-transcription-with-gpt-4o-transcribe-and-gpt-4o-mini-transcribe/4410353"/>
+        <updated>2025-05-02T13:07:06.000Z</updated>
+        <summary type="html"><![CDATA[Azure OpenAI has expanded its speech recognition capabilities with two powerful models: GPT-4o-transcribe and GPT-4o-mini-transcribe. These models also leverage WebSocket connections to enable real-time transcription of audio streams, providing developers with cutting-edge tools for speech-to-text applications. In this technical blog, we'll explore how these models work and demonstrate a practical implementation using Python.
+Understanding OpenAI's Realtime Transcription API
+Unlike the regular REST API for audio transcription, Azure OpenAI's Realtime API enables continuous streaming of audio data through WebSockets or WebRTC connections. This approach is particularly valuable for applications requiring immediate transcription feedback, such as live captioning, meeting transcription, or voi…]]></summary>
+        <author>
+            <name>mrajguru</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Introducing Azure DevOps ID Token Refresh and Terraform Task Version 5]]></title>
+        <id>https://devblogs.microsoft.com/devops/?p=71004</id>
+        <link href="https://devblogs.microsoft.com/devops/introducing-azure-devops-id-token-refresh-and-terraform-task-version-5/"/>
+        <updated>2025-05-02T08:16:56.000Z</updated>
+        <summary type="html"><![CDATA[We are excited to share some recent updates that improve the experience of using Workload identity federation (OpenID Connect) with Azure DevOps and Terraform on Microsoft Azure. Many working parts have come together to make this possible and we’ll share those here. We are also very pleased to announce version 5 of the Microsoft DevLabs […]
+The post Introducing Azure DevOps ID Token Refresh and Terraform Task Version 5 appeared first on Azure DevOps Blog.]]></summary>
+        <author>
+            <name>Jared Holgate, Eric van Wijk</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How Networking setting of Batch Account impacts simplified communication mode Batch pool]]></title>
+        <id>https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/blog/AzurePaaSBlog/how-networking-setting-of-batch-account-impacts-simplified-communication-mode-ba/4410258</id>
+        <link href="https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/blog/AzurePaaSBlog/how-networking-setting-of-batch-account-impacts-simplified-communication-mode-ba/4410258"/>
+        <updated>2025-05-02T04:12:44.000Z</updated>
+        <summary type="html"><![CDATA[As described in our official document, the classic communication mode of Batch node will be retired on 31 March 2026. Instead, it’s recommended to use simplified communication mode while creating Batch pool.
+ 
+But while user changes their Batch pool communication mode from classic to simplified and applies the necessary changes of network security group per documentation, they will find out that the node is still stuck in unusable status.
+ 
+A very possible cause of this issue is due to the bad networking setting of Batch Account.
+ 
+This blog will mainly talk about why networking setting can cause node using simplified communication mode stuck in unusable status and how to configure correct networking setting under different user scenarios.
+ 
+Cause:
+As described in this document, the differ…]]></summary>
+        <author>
+            <name>JerryZhangMS</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[A Microsoft Fabric Template for Azure AI Content Understanding is Now Available]]></title>
         <id>https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/blog/Azure-AI-Services-blog/a-microsoft-fabric-template-for-azure-ai-content-understanding-is-now-available/4410225</id>
@@ -15377,43 +15453,6 @@ To start using the Event Hubs Data Explorer, navigate to your Event Hubs namespa
 We are excited to see how you leverage the Event Hubs Data Explorer to drive innovation and efficiency in your projects. Your feedback has been instrumental in shaping this tool, and we look forward to continuing to improve our offerings based on your insights.]]></summary>
         <author>
             <name>ashish-chhabria</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Elasticsearch custom container on Azure App Services]]></title>
-        <id>https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/blog/AppsonAzureBlog/elasticsearch-custom-container-on-azure-app-services/4351148</id>
-        <link href="https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/blog/AppsonAzureBlog/elasticsearch-custom-container-on-azure-app-services/4351148"/>
-        <updated>2024-12-04T06:22:27.000Z</updated>
-        <summary type="html"><![CDATA[In this blog, we will cover how to deploy Elasticsearch container on Azure App Service
-we are using the container image elasticsearch:7.17.25 available on Docker Hub elasticsearch - Official Image | Docker HubWhile deploying the container image on Azure App Service, the Docker container encounters the following error:
-2024-11-14T12:37:41.643855847Z {"type": "server", "timestamp": "2024-11-14T12:37:41,643Z", "level": "INFO", "component": "o.e.x.m.Monitoring", "cluster.name": "docker-cluster", "node.name": "e6413475d15a", "message": "creating template [.monitoring-es] with version [7]" }
-2024-11-14T12:37:41.645055848Z {"type": "server", "timestamp": "2024-11-14T12:37:41,644Z", "level": "INFO", "component": "o.e.x.m.Monitoring", "cluster.name": "docker-cluster", "node.name": "e6413475d15a", "…]]></summary>
-        <author>
-            <name>Susan_Are</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Elasticsearch custom container on Azure App Services]]></title>
-        <id>https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/discussions/AppsonAzureBlog/elasticsearch-custom-container-on-azure-app-services/4351148</id>
-        <link href="https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/discussions/AppsonAzureBlog/elasticsearch-custom-container-on-azure-app-services/4351148"/>
-        <updated>2024-12-04T06:22:27.000Z</updated>
-        <summary type="html"><![CDATA[In this blog, we will cover how to deploy Elasticsearch container on Azure App Service
-we are using the container image elasticsearch:7.17.25 available on Docker Hub elasticsearch - Official Image | Docker HubWhile deploying the container image on Azure App Service, the Docker container encounters the following error:
-2024-11-14T12:37:41.643855847Z {"type": "server", "timestamp": "2024-11-14T12:37:41,643Z", "level": "INFO", "component": "o.e.x.m.Monitoring", "cluster.name": "docker-cluster", "node.name": "e6413475d15a", "message": "creating template [.monitoring-es] with version [7]" }
-2024-11-14T12:37:41.645055848Z {"type": "server", "timestamp": "2024-11-14T12:37:41,644Z", "level": "INFO", "component": "o.e.x.m.Monitoring", "cluster.name": "docker-cluster", "node.name": "e6413475d15a", "…]]></summary>
-        <author>
-            <name>Susan_Are</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Microsoft DevLabs Extensions]]></title>
-        <id>https://devblogs.microsoft.com/devops/?p=69864</id>
-        <link href="https://devblogs.microsoft.com/devops/microsoft-devlabs-extensions/"/>
-        <updated>2024-12-03T20:29:37.000Z</updated>
-        <summary type="html"><![CDATA[The Microsoft DevLabs publisher was created as a hub for internal teams at Microsoft to channel their passion for Azure DevOps into experimental extensions. These extensions helped address product gaps and fostered innovation, ultimately benefiting Azure DevOps customers via the public marketplace. The challenge Over time, as the original creators of these extensions moved on […]
-The post Microsoft DevLabs Extensions appeared first on Azure DevOps Blog.]]></summary>
-        <author>
-            <name>Dan Hellem</name>
         </author>
     </entry>
 </feed>
