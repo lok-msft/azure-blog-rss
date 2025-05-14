@@ -2,10 +2,126 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2025-05-13T01:41:04.309Z</updated>
+    <updated>2025-05-14T01:39:58.186Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Azure NetApp Files solutions for three EDA Cloud-Compute scenarios]]></title>
+        <id>https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/blog/AzureArchitectureBlog/azure-netapp-files-solutions-for-three-eda-cloud-compute-scenarios/4411918</id>
+        <link href="https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/blog/AzureArchitectureBlog/azure-netapp-files-solutions-for-three-eda-cloud-compute-scenarios/4411918"/>
+        <updated>2025-05-14T00:04:12.000Z</updated>
+        <summary type="html"><![CDATA[Table of Contents
+Abstract
+Introduction
+EDA Cloud-Compute scenarios
+Scenario 1: Burst to Azure from on-premises Data Center
+Scenario 2: “24x7 Single Set Workload”
+Scenario 3: "Data Center Supplement"
+Summary
+Abstract
+
+Azure NetApp Files (ANF) is transforming Electronic Design Automation (EDA) workflows in the cloud by delivering unparalleled performance, scalability, and efficiency. This blog explores how ANF addresses critical challenges in three cloud compute scenarios: Cloud Bursting, 24x7 All-in-Cloud, and Cloud-based Data Center Supplement.
+These solutions are tailored to optimize EDA processes, which rely on high-performance NFS file systems to design advanced semiconductor products. With the ability to support clusters exceeding 50,000 cores, ANF enhances productivity, shortens desi…]]></summary>
+        <author>
+            <name>GeertVanTeylingen</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[High-volume batch transaction processing]]></title>
+        <id>https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/blog/AzureMigrationBlog/high-volume-batch-transaction-processing/4413565</id>
+        <link href="https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/blog/AzureMigrationBlog/high-volume-batch-transaction-processing/4413565"/>
+        <updated>2025-05-13T20:58:02.000Z</updated>
+        <summary type="html"><![CDATA[The architecture uses AKS to implement compute clusters of the applications that process high-volume batches of transactions. The applications receive the transactions in messages from Service Bus topics or queues. The topics and queues can be at Azure datacenters in different geographic regions, and multiple AKS clusters can read input from them.
+ 
+Architecture
+ 
+
+ 
+ 
+Workflow
+The numbered circles in the diagram correspond to the numbered steps in the following list.
+
+The architecture uses Service Bus topics and queues to organize the batch processing input and to pass it downstream for processing.
+Azure Load Balancer, a Layer 4 (TCP, UDP) load balancer, distributes incoming traffic among healthy instances of services defined in a load-balanced set. Load balancing and management of connec…]]></summary>
+        <author>
+            <name>bhbandam</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Natural Language to SQL Semantic Kernel Multi-Agent System]]></title>
+        <id>https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/blog/AzureArchitectureBlog/natural-language-to-sql-semantic-kernel-multi-agent-system/4413066</id>
+        <link href="https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/blog/AzureArchitectureBlog/natural-language-to-sql-semantic-kernel-multi-agent-system/4413066"/>
+        <updated>2025-05-13T17:23:58.000Z</updated>
+        <summary type="html"><![CDATA[In today’s data-driven landscape, the ability to access and interpret information in a human-readable format is increasingly valuable. Being able to interact with and query your database in natural language is the game changer. In this post, we’ll walk through how to build a SQL agent using the Semantic Kernel framework to interact with a PostgreSQL database containing DVD rental data. I’ll explain how to define Semantic Kernel functions through plugins and how to incorporate them into agents. We’ll also look at how to set up these agents and guide them with well-structured instructions.
+Our example uses a PostgreSQL database that stores detailed information about DVD rentals. This sample database contains 15 tables and can be found here: PostgreSQL Sample Database. With a natural language…]]></summary>
+        <author>
+            <name>AngelaKunanbaeva</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Introducing Azure AI Content Understanding for Beginners]]></title>
+        <id>https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/blog/Azure-AI-Services-blog/introducing-azure-ai-content-understanding-for-beginners/4413071</id>
+        <link href="https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/blog/Azure-AI-Services-blog/introducing-azure-ai-content-understanding-for-beginners/4413071"/>
+        <updated>2025-05-13T16:18:36.000Z</updated>
+        <summary type="html"><![CDATA[Enterprises today face several challenges in processing and extracting insights from multimodal data, like managing diverse data formats, ensuring data quality, and streamlining workflows efficiently. Ensuring the accuracy and usability of extracted insights often requires advanced AI techniques, while inefficiencies in managing large data volumes increase costs and delay results.
+Azure AI Content Understanding addresses these pain points by offering a unified solution to transform unstructured data into actionable insights, improve data accuracy with schema extraction and confidence scoring, and integrate seamlessly with Azure’s ecosystem to enhance efficiency and reduce costs. Content Understanding makes it easy to extract custom task-specific output without advanced GenAI skills. It ena…]]></summary>
+        <author>
+            <name>jfilcik</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Query vs. Mutation in API for GraphQL &#8211; Understanding the difference]]></title>
+        <id>understanding-differences-between-query-vs-mutation-in-api-for-graphql</id>
+        <link href="https://blog.fabric.microsoft.com/en/blog/understanding-differences-between-query-vs-mutation-in-api-for-graphql/"/>
+        <updated>2025-05-13T10:00:00.000Z</updated>
+        <summary type="html"><![CDATA[GraphQL has revolutionized the way developers interact with APIs by offering a more flexible and efficient alternative to REST.  Before getting started , Create an API for GraphQL in Fabric and add data to use GraphQL in Fabric.
+At the heart of GraphQL are two core operations: queries and mutations. While they may look similar on the surface, they serve very different purposes. Let’s explain it in detail.]]></summary>
+        <author>
+            <name>Microsoft Fabric Blog</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Evaluate your Fabric Data Agents programmatically with the Python SDK (Preview)]]></title>
+        <id>evaluate-your-fabric-data-agents-programmatically-with-the-python-sdk</id>
+        <link href="https://blog.fabric.microsoft.com/en/blog/evaluate-your-fabric-data-agents-programmatically-with-the-python-sdk/"/>
+        <updated>2025-05-13T09:00:00.000Z</updated>
+        <summary type="html"><![CDATA[We’re excited to announce that native support for evaluating Data Agents through the Fabric SDK is now available in Preview. You can now run structured evaluations of your agent’s responses using Python — directly from notebooks or your own automation pipelines. Whether you’re validating accuracy before deploying to production, tuning prompts for better performance, or … 
+Continue reading “Evaluate your Fabric Data Agents programmatically with the Python SDK (Preview)”]]></summary>
+        <author>
+            <name>Microsoft Fabric Blog</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Part 2 - How to Create a VS Code Extension for API Health Checks?]]></title>
+        <id>https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/part-2---how-to-create-a-vs-code-extension-for-api-health-checks/4405688</id>
+        <link href="https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/blog/EducatorDeveloperBlog/part-2---how-to-create-a-vs-code-extension-for-api-health-checks/4405688"/>
+        <updated>2025-05-13T07:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Introduction
+Have you ever thought about to build a Visual Studio Code extension as your capstone project? That’s what I did: Part 1 - Develop a VS Code Extension for Your Capstone Project.
+I have created a Visual Studio Code Extension, API Guardian, that identifies API endpoints in a project and checks their functionality before deployment. This solution was developed to help developers save time spent fixing issues caused by breaking or non-breaking changes and to alleviate the difficulties in performing maintenance due to unclear or outdated documentation.
+Let's build your very own extension!
+Now, let’s do it step by step.
+ 
+Step 1 – Install the NPM package for generator-code
+Ensure Node.js is installed before proceeding. Verify by running node -v, which will display the installed versi…]]></summary>
+        <author>
+            <name>drpeteryau</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Create Your First AI Agent with JavaScript and Azure AI Agent Service!]]></title>
+        <id>https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/create-your-first-ai-agent-with-javascript-and-azure-ai-agent-service/4411723</id>
+        <link href="https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/blog/AzureDevCommunityBlog/create-your-first-ai-agent-with-javascript-and-azure-ai-agent-service/4411723"/>
+        <updated>2025-05-13T07:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Introduction: The Era of AI Agents in JavaScript
+During the AI Agents Hackathon, one of the most anticipated sessions was presented by Wassim Chegham, Senior AI Developer Advocate for JavaScript at Microsoft. The topic? "How to Create Your First AI Agent with JavaScript and Azure AI Agent Service" — a powerful tool designed for modern developers looking to build AI-first applications with security, scalability, and productivity in mind.
+In this article, we explore the main highlights of the session, focusing on how you can create your own AI agent using JavaScript and Azure AI Agent Service.
+The video’s goal is clear: walk through the step-by-step process of creating AI agents using JavaScript and TypeScript with Azure AI Foundry, and explain all the key concepts behind this new developmen…]]></summary>
+        <author>
+            <name>Glaucia_Lemos</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Azure Migrate - Build 2025 updates]]></title>
         <id>https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/blog/AzureMigrationBlog/azure-migrate---build-2025-updates/4411755</id>
