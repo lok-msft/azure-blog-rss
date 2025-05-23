@@ -6,6 +6,36 @@
       "siteUrl": "https://blog.fabric.microsoft.com/en/blog/",
       "articles": [
         {
+          "id": "enhance-data-prep-with-ai-powered-capabilities-in-data-wrangler-preview",
+          "author": null,
+          "description": "With AI-powered capabilities in Data Wrangler, you can now do even more to accelerate exploratory analysis and data preparation in Fabric.",
+          "link": "https://blog.fabric.microsoft.com/en/blog/enhance-data-prep-with-ai-powered-capabilities-in-data-wrangler-preview/",
+          "publishedOn": "2025-05-22T13:00:00.000Z",
+          "wordCount": 1808,
+          "title": "Enhance data prep with AI-powered capabilities in Data Wrangler (Preview)",
+          "imageUrl": "https://blog.fabric.microsoft.com/images/shared/social/social-image-v2.png"
+        },
+        {
+          "id": "sharepoint-files-destination-the-first-file-based-destination-for-dataflows-gen2",
+          "author": null,
+          "description": "The introduction of file-based destinations for Dataflows Gen2 marks a significant step forward in enhancing collaboration, historical tracking, and sharing data for business users. This development begins with SharePoint file destinations in CSV format, offering a streamlined way to share with users on the SharePoint platform. Overview of file-based destinations File-based destinations allow data to … \nContinue reading “SharePoint files destination the first file-based destination for Dataflows Gen2”",
+          "link": "https://blog.fabric.microsoft.com/en/blog/sharepoint-files-destination-the-first-file-based-destination-for-dataflows-gen2/",
+          "publishedOn": "2025-05-22T11:00:00.000Z",
+          "wordCount": 1725,
+          "title": "SharePoint files destination the first file-based destination for Dataflows Gen2",
+          "imageUrl": "https://blog.fabric.microsoft.com/images/shared/social/social-image-v2.png"
+        },
+        {
+          "id": "ai-powered-development-with-copilot-for-data-pipeline-boost-your-productivity-in-understanding-and-updating-pipeline",
+          "author": null,
+          "description": "Understanding complex data pipelines created by others can often be a challenging task, especially when users must review each activity individually to understand its configurations, settings, and functions. Additionally, manul updates to general settings, such as timeout and retry parameters, across multiple activities can be time-consuming and tedious. Copilot for Data pipeline introduces advanced capabilities … \nContinue reading “AI-powered development with Copilot for Data pipeline – Boost your productivity in understanding and updating pipeline”",
+          "link": "https://blog.fabric.microsoft.com/en/blog/ai-powered-development-with-copilot-for-data-pipeline-boost-your-productivity-in-understanding-and-updating-pipeline/",
+          "publishedOn": "2025-05-22T10:00:00.000Z",
+          "wordCount": 1714,
+          "title": "AI-powered development with Copilot for Data pipeline &#8211; Boost your productivity in understanding and updating pipeline",
+          "imageUrl": "https://blog.fabric.microsoft.com/images/shared/social/social-image-v2.png"
+        },
+        {
           "id": "fabric-cli-is-now-generally-available-explore-and-automate-microsoft-fabric-from-your-terminal",
           "author": null,
           "description": "During FabCon Las Vegas, we introduced the Fabric CLI — a developer-first command-line tool that brings a familiar, file-system-like experience to working with Microsoft Fabric. Since then, thousands of developers have jumped in: exploring, scripting, and embedding the CLI into local workflows. But for many enterprise teams, one question kept coming up: “When will it … \nContinue reading “Fabric CLI: explore and automate Microsoft Fabric from your terminal (Generally Available)”",
@@ -3204,6 +3234,16 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/blog/AppsonAzureBlog/how-to-use-openssl-to-send-https-requests/4416403",
+          "author": "KevinLi",
+          "description": "OpenSSL is a powerful tool for working with SSL/TLS, but it can also be used to send custom HTTP requests, which is very useful for debugging and learning how HTTP(S) works at a low level.\n \n1. How It Works\nNormally, tools like curl or your browser handle everything behind the scenes: they perform the TLS handshake and build the HTTP request. With OpenSSL, you manually create the HTTP request, and OpenSSL only handles the encrypted connection.\n\nTLS Handshake: OpenSSL’s s_client command establishes a secure (TLS) connection with the server.\nSend Request: You pipe (or redirect) a raw HTTP request into s_client. The server processes it and sends a response over the secure channel.\n\n \n2. Sending a GET Request\nHere’s how you send a simple GET request to www.bing.com:\n(\n  printf \"GET / HTTP/1.1\\…",
+          "link": "https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/blog/AppsonAzureBlog/how-to-use-openssl-to-send-https-requests/4416403",
+          "publishedOn": "2025-05-22T06:17:31.000Z",
+          "wordCount": null,
+          "title": "How to use OpenSSL to Send HTTP(S) Requests",
+          "imageUrl": null
+        },
+        {
           "id": "https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/blog/AppsonAzureBlog/introducing-ai-powered-actionable-insights-in-azure-load-testing/4415724",
           "author": "Vanshvsingh",
           "description": "We’re excited to announce the preview of AI powered Actionable Insights in Azure Load Testing—a new capability that helps teams quickly identify performance issues and understand test results through AI-driven analysis. \nPerformance testing is an essential part of ensuring application reliability and responsiveness, but interpreting the results can often be challenging. It typically involves manually correlating client-side load test telemetry with backend service metrics, which can be both time-consuming and error-prone. Actionable Insights simplifies this process by automatically analyzing test data, surfacing key issues, and offering clear, actionable recommendations—so teams can focus on fixing what matters, not sifting through raw data. \nAI-powered diagnostics \nActionable Insights use…",
@@ -4731,26 +4771,6 @@
           "publishedOn": "2024-12-26T06:13:13.000Z",
           "wordCount": null,
           "title": "Connection Between Web App and O365 Resources: Using Mail as an Example",
-          "imageUrl": null
-        },
-        {
-          "id": "https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/blog/AppsonAzureBlog/connection-between-web-app-and-o365-resources-using-sharepoint-as-an-example/4360288",
-          "author": "theringe",
-          "description": "TOC\n\nIntroduction\n\n[not recommended] Application permission\n\n[not recommended] Delegate permission with Device Code Flow\nManaged Identity\nMulti-Tenant App Registration\nRestrict Resources for Application permission\nReferences\n\n \nIntroduction\nIn late 2024, Microsoft Entra enforced MFA (Multi-Factor Authentication) for all user login processes. This change has caused some Web Apps using delegated permissions to fail in acquiring access tokens, thereby interrupting communication with O365 resources. This tutorial will present various alternative solutions tailored to different business requirements.\nWe will use a Linux Python Web App as an example in the following sections.\n[not recommended] Application permission\nTraditionally, using delegated permissions has the advantages of being convenien…",
-          "link": "https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/blog/AppsonAzureBlog/connection-between-web-app-and-o365-resources-using-sharepoint-as-an-example/4360288",
-          "publishedOn": "2024-12-24T03:28:27.000Z",
-          "wordCount": null,
-          "title": "Connection Between Web App and O365 Resources: Using SharePoint as an Example",
-          "imageUrl": null
-        },
-        {
-          "id": "https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/discussions/AppsonAzureBlog/connection-between-web-app-and-o365-resources-using-sharepoint-as-an-example/4360288",
-          "author": "theringe",
-          "description": "TOC\n\nIntroduction\n\n[not recommended] Application permission\n\n[not recommended] Delegate permission with Device Code Flow\nManaged Identity\nMulti-Tenant App Registration\nRestrict Resources for Application permission\nReferences\n\n \nIntroduction\nIn late 2024, Microsoft Entra enforced MFA (Multi-Factor Authentication) for all user login processes. This change has caused some Web Apps using delegated permissions to fail in acquiring access tokens, thereby interrupting communication with O365 resources. This tutorial will present various alternative solutions tailored to different business requirements.\nWe will use a Linux Python Web App as an example in the following sections.\n[not recommended] Application permission\nTraditionally, using delegated permissions has the advantages of being convenien…",
-          "link": "https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/discussions/AppsonAzureBlog/connection-between-web-app-and-o365-resources-using-sharepoint-as-an-example/4360288",
-          "publishedOn": "2024-12-24T03:28:27.000Z",
-          "wordCount": null,
-          "title": "Connection Between Web App and O365 Resources: Using SharePoint as an Example",
           "imageUrl": null
         }
       ]
@@ -6376,46 +6396,6 @@
           "wordCount": null,
           "title": "Microsoft Computer Vision Test",
           "imageUrl": null
-        },
-        {
-          "id": "https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/blog/Azure-AI-Services-blog/azure-ai-voices-in-arabic-improved-pronunciation/4360306",
-          "author": "NinaYang",
-          "description": "This blog introduces our work on improving Arabic TTS (Text to Speech) pronunciation with Azure AI Speech.\nA key component in Arabic TTS is the diacritic model, which represents a challenging task. In written Arabic, diacritics, which indicate vowel sounds, are typically omitted. The diacritic task involves predicting the diacritic for each Arabic character in the written form. We enhanced diacritic prediction by utilizing a base model pre-trained with Machine Translation and other NLP tasks, then fine-tuning it on a comprehensive diacritics' corpus. This approach reduced word-level pronunciation errors by 78%.\nAdditionally, we improved the reading of English words in Arabic texts. For English words transcribed using the Arabic alphabet, they can now be read as standard English.\nPronunciat…",
-          "link": "https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/blog/Azure-AI-Services-blog/azure-ai-voices-in-arabic-improved-pronunciation/4360306",
-          "publishedOn": "2024-12-24T08:26:07.000Z",
-          "wordCount": null,
-          "title": "Azure AI voices in Arabic improved pronunciation",
-          "imageUrl": null
-        },
-        {
-          "id": "https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/discussions/Azure-AI-Services-blog/azure-ai-voices-in-arabic-improved-pronunciation/4360306",
-          "author": "NinaYang",
-          "description": "This blog introduces our work on improving Arabic TTS (Text to Speech) pronunciation with Azure AI Speech.\nA key component in Arabic TTS is the diacritic model, which represents a challenging task. In written Arabic, diacritics, which indicate vowel sounds, are typically omitted. The diacritic task involves predicting the diacritic for each Arabic character in the written form. We enhanced diacritic prediction by utilizing a base model pre-trained with Machine Translation and other NLP tasks, then fine-tuning it on a comprehensive diacritics' corpus. This approach reduced word-level pronunciation errors by 78%.\nAdditionally, we improved the reading of English words in Arabic texts. For English words transcribed using the Arabic alphabet, they can now be read as standard English.\nPronunciat…",
-          "link": "https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/discussions/Azure-AI-Services-blog/azure-ai-voices-in-arabic-improved-pronunciation/4360306",
-          "publishedOn": "2024-12-24T08:26:07.000Z",
-          "wordCount": null,
-          "title": "Azure AI voices in Arabic improved pronunciation",
-          "imageUrl": null
-        },
-        {
-          "id": "https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/blog/Azure-AI-Services-blog/the-leading-ai-ecosystem-models-a-comprehensive-comparison/4360190",
-          "author": "SAVITAMITTAL",
-          "description": "In the rapidly evolving field of artificial intelligence, several companies have emerged as leaders, each offering unique AI ecosystem models. These models encompass generative AI, large language models (LLM), multimodal capabilities, and code generation tools. Here's a detailed comparison of the companies and their AI ecosystem models, highlighting their key features, strengths, and notable use cases.\n\n\n\n\nCompany\nAI Ecosystem Model(s)\nType of Model\nSpecialization\nKey Features/Strengths\nNotable Use Cases\n\n\n\n\nMicrosoft (via OpenAI)\nGPT-4, GPT-4 Turbo, GPT-3.5 Turbo, ChatGPT, DALL-E, Whisper, Codex\nNLP, Image Generation, Speech, Code Generation\nOptimized, scalable AI models on Azure\nAdvanced language models; versatile GPT-4; seamless API on Azure; powerful image generation (DALL-E); code gen…",
-          "link": "https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/blog/Azure-AI-Services-blog/the-leading-ai-ecosystem-models-a-comprehensive-comparison/4360190",
-          "publishedOn": "2024-12-23T16:23:38.000Z",
-          "wordCount": null,
-          "title": "The Leading AI Ecosystem Models: A Comprehensive Comparison",
-          "imageUrl": null
-        },
-        {
-          "id": "https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/discussions/Azure-AI-Services-blog/the-leading-ai-ecosystem-models-a-comprehensive-comparison/4360190",
-          "author": "SAVITAMITTAL",
-          "description": "In the rapidly evolving field of artificial intelligence, several companies have emerged as leaders, each offering unique AI ecosystem models. These models encompass generative AI, large language models (LLM), multimodal capabilities, and code generation tools. Here's a detailed comparison of the companies and their AI ecosystem models, highlighting their key features, strengths, and notable use cases.\n\n\n\n\nCompany\nAI Ecosystem Model(s)\nType of Model\nSpecialization\nKey Features/Strengths\nNotable Use Cases\n\n\n\n\nMicrosoft (via OpenAI)\nGPT-4, GPT-4 Turbo, GPT-3.5 Turbo, ChatGPT, DALL-E, Whisper, Codex\nNLP, Image Generation, Speech, Code Generation\nOptimized, scalable AI models on Azure\nAdvanced language models; versatile GPT-4; seamless API on Azure; powerful image generation (DALL-E); code gen…",
-          "link": "https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/discussions/Azure-AI-Services-blog/the-leading-ai-ecosystem-models-a-comprehensive-comparison/4360190",
-          "publishedOn": "2024-12-23T16:23:38.000Z",
-          "wordCount": null,
-          "title": "The Leading AI Ecosystem Models: A Comprehensive Comparison",
-          "imageUrl": null
         }
       ]
     },
@@ -7939,6 +7919,16 @@
       "feedUrl": "https://techcommunity.microsoft.com/t5/s/plugins/custom/microsoft/o365/custom-blog-rss?board=AzurePaaSBlog&size=100",
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
+        {
+          "id": "https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/blog/AzurePaaSBlog/lifecycle-management-of-blobs-deletion-using-automation-tasks/4401441",
+          "author": "thakurmishra",
+          "description": "Background:\nWe often encounter scenarios where we need to delete blobs that have been idle in a storage account for an extended period. For a small number of blobs, deletion can be handled easily using the Azure Portal, Storage Explorer, or inline scripts such as PowerShell or Azure CLI.\nHowever, in most cases, we deal with a large volume of blobs, making manual deletion impractical. In such situations, it's essential to leverage automation tools to streamline the deletion process. One effective option is using Automation Tasks, which can help schedule and manage blob deletions efficiently.\nNote: Behind the scenes, an automation task is actually a logic app resource that runs a workflow. So, the Consumption pricing model of logic-app applies to automation tasks. \n \nScenario’s where “Automa…",
+          "link": "https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/blog/AzurePaaSBlog/lifecycle-management-of-blobs-deletion-using-automation-tasks/4401441",
+          "publishedOn": "2025-05-22T04:17:03.000Z",
+          "wordCount": null,
+          "title": "Lifecycle Management of Blobs (Deletion) using Automation Tasks",
+          "imageUrl": null
+        },
         {
           "id": "https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/blog/AzurePaaSBlog/ai-search-lockedsplresourcefound-error-when-deleting-ai-search/4415849",
           "author": "SungGun_Lee",
@@ -10364,6 +10354,26 @@
       "siteUrl": "https://devblogs.microsoft.com/microsoft365dev/",
       "articles": [
         {
+          "id": "https://devblogs.microsoft.com/microsoft365dev/?p=24258",
+          "author": "Office Add-ins team",
+          "description": "As part of the expanding capabilities for agents across Microsoft 365, Office Platform announces add-in actions for Copilot agents are available in preview. This blog is an overview of all the new capabilities across the platform: APIs, developer tools, and add-in distribution options—making it simpler to build new or iterate on JavaScript add-ins.\nThe post Office Add-ins announces Copilot agents with add-in actions and more at Build 2025 appeared first on Microsoft 365 Developer Blog.",
+          "link": "https://devblogs.microsoft.com/microsoft365dev/office-addins-at-build-2025/",
+          "publishedOn": "2025-05-22T22:29:14.000Z",
+          "wordCount": 9199,
+          "title": "Office Add-ins announces Copilot agents with add-in actions and more at Build 2025",
+          "imageUrl": "https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2025/05/office-addins-build-2025-featured-image-scaled.jpg"
+        },
+        {
+          "id": "https://devblogs.microsoft.com/microsoft365dev/?p=24272",
+          "author": "Siffat Hingorani, Oliver Hu",
+          "description": "We’re excited to introduce the Agent Store — a centralized, curated marketplace that features agents built by Microsoft, trusted partners, and customers. The Agent Store offers a new, immersive experience within Microsoft 365 Copilot that enables users to browse, install, and try agents tailored to their needs.\nThe post Introducing the Agent Store: Build, publish, and discover agents in Microsoft 365 Copilot appeared first on Microsoft 365 Developer Blog.",
+          "link": "https://devblogs.microsoft.com/microsoft365dev/introducing-the-agent-store-build-publish-and-discover-agents-in-microsoft-365-copilot/",
+          "publishedOn": "2025-05-22T16:00:59.000Z",
+          "wordCount": 7099,
+          "title": "Introducing the Agent Store: Build, publish, and discover agents in Microsoft 365 Copilot",
+          "imageUrl": "https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2025/05/AgentStore-scaled.jpg"
+        },
+        {
           "id": "https://devblogs.microsoft.com/microsoft365dev/?p=24215",
           "author": "Zhidi Shang",
           "description": "Read how the Microsoft 365 Agents Toolkit, an evolution of Microsoft Teams Toolkit, is designed to help developers build agents and apps for Microsoft 365 Copilot, Microsoft Teams, and Microsoft 365.\nThe post Introducing the Microsoft 365 Agents Toolkit appeared first on Microsoft 365 Developer Blog.",
@@ -10702,16 +10712,6 @@
           "wordCount": 7280,
           "title": "Teams Toolkit for Visual Studio Code update – January 2025",
           "imageUrl": "https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2025/01/Jan2025TTK-scaled.jpg"
-        },
-        {
-          "id": "https://devblogs.microsoft.com/microsoft365dev/?p=23632",
-          "author": "Mingjia Liu",
-          "description": "The Office Add-ins Development Kit for Visual Studio Code is now generally available! After months of public preview, we've gathered invaluable feedback from the community and improved the experience.\nThe post Announcing the Office Add-ins Development Kit GA appeared first on Microsoft 365 Developer Blog.",
-          "link": "https://devblogs.microsoft.com/microsoft365dev/office-add-ins-development-kit-ga-announcement/",
-          "publishedOn": "2024-12-23T17:08:02.000Z",
-          "wordCount": 6780,
-          "title": "Announcing the Office Add-ins Development Kit GA",
-          "imageUrl": "https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2024/12/office-add-ins-dev-kit-blog-thumbnail-image-scaled.jpg"
         }
       ]
     }
