@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2025-05-25T01:48:17.567Z</updated>
+    <updated>2025-05-26T01:43:46.654Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
@@ -15634,76 +15634,6 @@ Ensuring Security: Leverage enterprise-grade security protocols.
 Avoiding Data Sharing: Prevent your data from being used to train external…]]></summary>
         <author>
             <name>sourabhkv</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Remove unwanted partition data in Azure Synapse (SQL DW)]]></title>
-        <id>https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/remove-unwanted-partition-data-in-azure-synapse-sql-dw/4357231</id>
-        <link href="https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/blog/EducatorDeveloperBlog/remove-unwanted-partition-data-in-azure-synapse-sql-dw/4357231"/>
-        <updated>2024-12-27T10:26:33.000Z</updated>
-        <summary type="html"><![CDATA[Introduction to Partition Switching?
-Azure Synapse Dedicated SQL pool or SQL Server or Azure SQL Database, allows you to create partitions on a target table. Table partitions enable you to divide your data into multiple chunks or partitions. It improves query performance by eliminating partitions that is not necessary. In most cases partitions are built on date column.
-Why don't we simply drop the unwanted Partition?
-because of several regions:
-
-Clustered Columnstore Index: Dropping a partition directly can potentially lead to performance degradation, especially with a CCI. This is because CCIs are optimised for data locality and dropping a partition disrupts that organisation. Rebuilding the CCI after dropping the partition would be required, which can be time-consuming for a large table.…]]></summary>
-        <author>
-            <name>ayush9892</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Remove unwanted partition data in Azure Synapse (SQL DW)]]></title>
-        <id>https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/discussions/EducatorDeveloperBlog/remove-unwanted-partition-data-in-azure-synapse-sql-dw/4357231</id>
-        <link href="https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/discussions/EducatorDeveloperBlog/remove-unwanted-partition-data-in-azure-synapse-sql-dw/4357231"/>
-        <updated>2024-12-27T10:26:33.000Z</updated>
-        <summary type="html"><![CDATA[Introduction to Partition Switching?
-Azure Synapse Dedicated SQL pool or SQL Server or Azure SQL Database, allows you to create partitions on a target table. Table partitions enable you to divide your data into multiple chunks or partitions. It improves query performance by eliminating partitions that is not necessary. In most cases partitions are built on date column.
-Why don't we simply drop the unwanted Partition?
-because of several regions:
-
-Clustered Columnstore Index: Dropping a partition directly can potentially lead to performance degradation, especially with a CCI. This is because CCIs are optimised for data locality and dropping a partition disrupts that organisation. Rebuilding the CCI after dropping the partition would be required, which can be time-consuming for a large table.…]]></summary>
-        <author>
-            <name>ayush9892</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[How to create multiple tasks under a job in Job Scheduler]]></title>
-        <id>https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/blog/AzurePaaSBlog/how-to-create-multiple-tasks-under-a-job-in-job-scheduler/4355796</id>
-        <link href="https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/blog/AzurePaaSBlog/how-to-create-multiple-tasks-under-a-job-in-job-scheduler/4355796"/>
-        <updated>2024-12-27T05:30:05.000Z</updated>
-        <summary type="html"><![CDATA[In this article you will see detailed procedure of how to create jobs with tasks in a Job scheduler.
-You can follow below doc on how to schedule jobs in a job scheduler.
-Schedule Batch jobs for efficiency - Azure Batch | Microsoft Learn
-While creating a job scheduler, you will see Job Specification section. In this section, you would need to update Job configuration task to add jobs.
-
-You will further see below settings.
-
- 
-To add tasks to the Job in the job scheduler, you would need to add Job manager task. A job manager task contains the information that is necessary to create the required tasks for a job. A job manager task is required for jobs that are created by a  job schedule, because it is the only way to define the tasks before the job is instantiated.
- 
-You can further change oth…]]></summary>
-        <author>
-            <name>lakshmijakka</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[How to create multiple tasks under a job in Job Scheduler]]></title>
-        <id>https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/discussions/AzurePaaSBlog/how-to-create-multiple-tasks-under-a-job-in-job-scheduler/4355796</id>
-        <link href="https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/discussions/AzurePaaSBlog/how-to-create-multiple-tasks-under-a-job-in-job-scheduler/4355796"/>
-        <updated>2024-12-27T05:30:05.000Z</updated>
-        <summary type="html"><![CDATA[In this article you will see detailed procedure of how to create jobs with tasks in a Job scheduler.
-You can follow below doc on how to schedule jobs in a job scheduler.
-Schedule Batch jobs for efficiency - Azure Batch | Microsoft Learn
-While creating a job scheduler, you will see Job Specification section. In this section, you would need to update Job configuration task to add jobs.
-
-You will further see below settings.
-
- 
-To add tasks to the Job in the job scheduler, you would need to add Job manager task. A job manager task contains the information that is necessary to create the required tasks for a job. A job manager task is required for jobs that are created by a  job schedule, because it is the only way to define the tasks before the job is instantiated.
- 
-You can further change oth…]]></summary>
-        <author>
-            <name>lakshmijakka</name>
         </author>
     </entry>
 </feed>
