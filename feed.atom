@@ -2,10 +2,144 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2025-06-17T01:44:31.323Z</updated>
+    <updated>2025-06-18T01:43:13.374Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Announcing the Extension of Some Language Understanding Intelligence Service (LUIS) Functionality]]></title>
+        <id>https://techcommunity.microsoft.com/blog/Azure-AI-Services-blog/announcing-the-extension-of-some-language-understanding-intelligence-service-lui/4424921</id>
+        <link href="https://techcommunity.microsoft.com/blog/Azure-AI-Services-blog/announcing-the-extension-of-some-language-understanding-intelligence-service-lui/4424921"/>
+        <updated>2025-06-17T20:00:06.000Z</updated>
+        <summary type="html"><![CDATA[In 2022, we announced the deprecation of LUIS by September 30, 2025 with a recommendation to migrate to conversational language understanding (CLU). In response to feedback from our valued customers, we have decided to extend the availability of certain functionalities in LUIS until March 31, 2026. This extension aims to support our customers in their smooth migration to CLU, ensuring minimal disruption to their operations. 
+Extension Details 
+Here are some details on when and how the LUIS functionality will change: 
+
+October 2022: LUIS resource creation is no longer available.
+October 31, 2025:
+
+The LUIS portal will no longer be available. 
+
+LUIS Authoring (via REST API only) will continue to be available.
+
+
+
+March 31, 2026:
+
+LUIS Authoring, including via REST API, will no longer be available. 
+LUIS Runtime will no longer be available. 
+
+
+
+Before these retirement dates, please migrate to conversational language understanding (CLU), a capability of Azure AI Service for Language. CLU provides many of the same capabilities as LUIS, plus enhancements such as: 
+
+Enhanced AI quality using state-of-the-art machine learning models 
+The LLM-powered Quick Deploy feature to deploy a CLU model with no training
+Multilingual capabilities that allow you to train in one language and predict in 99+ others 
+Built-in routing between conversational language understanding and custom question answering projects using orchestration workflow 
+Access to a suite of features available on Azure AI Service for Language in the Azure AI Foundry 
+
+Looking Ahead 
+On March 31, 2026, LUIS will be fully deprecated, and any LUIS inferencing requests will return an error message. We encourage all our customers to complete their migration to CLU as soon as possible to avoid any disruptions. 
+We appreciate your understanding and cooperation as we work together to ensure a smooth migration.  
+Thank you for your continued support and trust in our services.]]></summary>
+        <author>
+            <name>PeytonFraser</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Connect Spring AI to Local AI Models with Foundry Local]]></title>
+        <id>https://devblogs.microsoft.com/java/?p=232297</id>
+        <link href="https://devblogs.microsoft.com/java/connect-spring-ai-to-local-ai-models-with-foundry-local/"/>
+        <updated>2025-06-17T18:46:40.000Z</updated>
+        <summary type="html"><![CDATA[What is Azure AI Foundry and Foundry Local? Azure AI Foundry is Microsoft’s comprehensive platform for enterprise AI development and deployment, enabling organizations to build, customize, and operate AI solutions at scale. It provides tools, services, and infrastructure to develop, fine-tune and deploy AI models in production environments with enterprise-grade security and compliance. Foundry Local […]
+The post Connect Spring AI to Local AI Models with Foundry Local appeared first on Microsoft for Java Developers.]]></summary>
+        <author>
+            <name>Manfred Riem, Bruno Borges</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Azure DevOps MCP Server, Public Preview]]></title>
+        <id>https://devblogs.microsoft.com/devops/?p=71285</id>
+        <link href="https://devblogs.microsoft.com/devops/azure-devops-mcp-server-public-preview/"/>
+        <updated>2025-06-17T18:40:23.000Z</updated>
+        <summary type="html"><![CDATA[A few weeks ago at BUILD, we announced the upcoming Azure DevOps MCP Server: 👉 Azure DevOps with GitHub Repositories – Your path to Agentic AI Today, we’re excited to share that the local Azure DevOps MCP Server is now available in public preview. This lets GitHub Copilot in Visual Studio and Visual Studio Code […]
+The post Azure DevOps MCP Server, Public Preview appeared first on Azure DevOps Blog.]]></summary>
+        <author>
+            <name>Dan Hellem</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Validating Change Requests with Kubernetes Admission Controllers]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/validating-change-requests-with-kubernetes-admission-controllers/4424699</id>
+        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/validating-change-requests-with-kubernetes-admission-controllers/4424699"/>
+        <updated>2025-06-17T12:56:33.000Z</updated>
+        <summary type="html"><![CDATA[Promoting an application or infrastructure change into production often comes with a requirement to follow a change control process. This ensures that changes to production are properly reviewed and that they adhere to required approvals, change windows and QA process. Often this change request (CR) process will be conducted using a system for recording and auditing the change request and the outcome.
+When deploying a release, there will often be places in the process to go through this change control workflow. This may be as part of a release pipeline, it may be managed in a pull request or it may be a manual process. Ultimately, by the time the actual changes are made to production infrastructure or applications, they should already be approved. This relies on the appropriate controls an…]]></summary>
+        <author>
+            <name>samcogan</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Connecting Azure Kubernetes Service Cluster to Azure Machine Learning for Multi-Node GPU Training]]></title>
+        <id>https://techcommunity.microsoft.com/blog/MachineLearningBlog/connecting-azure-kubernetes-service-cluster-to-azure-machine-learning-for-multi-/4424603</id>
+        <link href="https://techcommunity.microsoft.com/blog/MachineLearningBlog/connecting-azure-kubernetes-service-cluster-to-azure-machine-learning-for-multi-/4424603"/>
+        <updated>2025-06-17T11:34:19.000Z</updated>
+        <summary type="html"><![CDATA[TLDR
+Create an Azure Kubernetes Service cluster with GPU nodes and connect it to Azure Machine Learning to run distributed ML training workloads. This integration provides a managed data science platform while maintaining Kubernetes flexibility under the hood, enables multi-node training that spans multiple GPUs, and bridges the gap between infrastructure and ML teams. The solution works for both new and existing clusters, supporting specialized GPU hardware and hybrid scenarios.
+Why Should You Care?
+Integrating Azure Kubernetes Service (AKS) clusters with GPUs into Azure Machine Learning (AML) offers several key benefits:
+
+Utilize existing infrastructure: Leverage your existing AKS clusters with GPUs via a managed data science platform like AML
+Flexible resource sharing: Allow both AKS wo…]]></summary>
+        <author>
+            <name>christinpohl</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Introducing MCP Support for Real-Time Intelligence (RTI)&nbsp;]]></title>
+        <id>introducing-mcp-support-for-real-time-intelligence-rti</id>
+        <link href="https://blog.fabric.microsoft.com/en/blog/introducing-mcp-support-for-real-time-intelligence-rti/"/>
+        <updated>2025-06-17T10:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Co-author: Alexei Robsky, Data Scientist Manager Overview  As organizations increasingly rely on real-time data to drive decisions, the need for intelligent, responsive systems has never been greater. At the heart of this transformation is Fabric Real-Time Intelligence (RTI), a platform that empowers users to act on data as it arrives. Today, we’re excited to announce … 
+Continue reading “Introducing MCP Support for Real-Time Intelligence (RTI) “]]></summary>
+        <author>
+            <name>Microsoft Fabric Blog</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Fabric Eventhouse now supports Eventstream Derived Streams in Direct Ingestion mode (Preview)]]></title>
+        <id>fabric-eventhouse-now-supports-eventstream-derived-streams-in-direct-ingestion-mode-preview</id>
+        <link href="https://blog.fabric.microsoft.com/en/blog/fabric-eventhouse-now-supports-eventstream-derived-streams-in-direct-ingestion-mode-preview/"/>
+        <updated>2025-06-17T09:30:00.000Z</updated>
+        <summary type="html"><![CDATA[The Eventstreams artifact in the Microsoft Fabric Real-Time Intelligence experience lets you bring real-time events into Fabric, transform them, and then route them to various destinations such as Eventhouse, without writing any code (no-code). You can ingest data from an Eventstream to Eventhouse seamlessly either from Eventstream artifact or Eventhouse Get Data Wizard. This capability … 
+Continue reading “Fabric Eventhouse now supports Eventstream Derived Streams in Direct Ingestion mode (Preview)”]]></summary>
+        <author>
+            <name>Microsoft Fabric Blog</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Surge Protection for Background Operation (Generally Available)]]></title>
+        <id>announcing-surge-protection-for-background-operation-is-generally-available-ga</id>
+        <link href="https://blog.fabric.microsoft.com/en/blog/announcing-surge-protection-for-background-operation-is-generally-available-ga/"/>
+        <updated>2025-06-17T09:00:00.000Z</updated>
+        <summary type="html"><![CDATA[We’re excited to announce Surge Protection for background operations is now Generally Available (GA). Using surge protection, capacity admins can limit overuse by background operations in their capacities.]]></summary>
+        <author>
+            <name>Microsoft Fabric Blog</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Modernizing Loan Processing with Gen AI and Azure AI Foundry Agentic Service]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/modernizing-loan-processing-with-gen-ai-and-azure-ai-foundry-agentic-service/4423030</id>
+        <link href="https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/modernizing-loan-processing-with-gen-ai-and-azure-ai-foundry-agentic-service/4423030"/>
+        <updated>2025-06-17T01:59:04.000Z</updated>
+        <summary type="html"><![CDATA[Scenario
+Once a loan application is submitted, financial institutions must process a variety of supporting documents—including pay stubs, tax returns, credit reports, and bank statements—before a loan can be approved. This post-application phase is often fragmented and manual, involving data retrieval from multiple systems, document verification, eligibility calculations, packet compilation, and signing. Each step typically requires coordination between underwriters, compliance teams, and loan processors, which can stretch the processing time to several weeks.
+This solution automates the post-application loan processing workflow using Azure services and Generative AI agents. Intelligent agents retrieve and validate applicant data, extract and summarize document contents, calculate loan eli…]]></summary>
+        <author>
+            <name>manasa_ramalinga</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Python in Visual Studio Code – June 2025 Release]]></title>
         <id>https://devblogs.microsoft.com/python/?p=10066</id>
