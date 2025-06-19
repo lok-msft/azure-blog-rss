@@ -2,10 +2,52 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2025-06-18T01:43:13.374Z</updated>
+    <updated>2025-06-19T01:44:44.664Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Announcing Public Preview of the Root Cert API in App Service Environment v3]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/announcing-public-preview-of-the-root-cert-api-in-app-service-environment-v3/4423779</id>
+        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/announcing-public-preview-of-the-root-cert-api-in-app-service-environment-v3/4423779"/>
+        <updated>2025-06-18T18:13:25.000Z</updated>
+        <summary type="html"><![CDATA[What is the Root Cert API?
+The Root Cert API allows customers to programmatically add root certificates to their ASE, making them available during the startup of apps.
+Root certificates are public certificates that identify a root certificate authority (CA). These are essential for establishing trust in secure communications. By adding root certificates to your ASE, all web apps hosted within that ASE will have them installed in their root store. This ensures that apps can securely communicate with internal services or APIs that use certificates issued by private or enterprise CAs.
+Previously, this functionality was only available in private preview through a workaround involving certificate uploads and a special app setting and included a number of limitations.
+With the new Root Cert API,…]]></summary>
+        <author>
+            <name>jordanselig</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Mastering Model Context Protocol (MCP): Building Multi Server MCP with Azure OpenAI]]></title>
+        <id>https://techcommunity.microsoft.com/blog/Azure-AI-Services-blog/mastering-model-context-protocol-mcp-building-multi-server-mcp-with-azure-openai/4424993</id>
+        <link href="https://techcommunity.microsoft.com/blog/Azure-AI-Services-blog/mastering-model-context-protocol-mcp-building-multi-server-mcp-with-azure-openai/4424993"/>
+        <updated>2025-06-18T07:26:24.000Z</updated>
+        <summary type="html"><![CDATA[The Model Context Protocol (MCP) is rapidly becoming the prominent framework for building truly agentic, interoperable AI applications.
+ 
+Many articles document MCP servers for single-server use, this project stands out as the starter template that combines Azure OpenAI integration with a Multi-Server MCP architecture on a custom interface, enabling you to connect and orchestrate multiple tool servers—through a customized UI.
+ 
+Here, we will deep dive into Multi Server MCP implementation, connecting both local custom and ready MCP Servers in a single client session through the MultiServerMCP library from Langchain adapters, enabling agentic orchestration across different domains. While most triggers to OOB MCP servers leveraged Github Copilot for input, this project allows for custom app i…]]></summary>
+        <author>
+            <name>delynchoong</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Drive carbon reductions in cloud migrations with Sustainability insights in Azure Migrate]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AzureMigrationBlog/drive-carbon-reductions-in-cloud-migrations-with-sustainability-insights-in-azur/4414246</id>
+        <link href="https://techcommunity.microsoft.com/blog/AzureMigrationBlog/drive-carbon-reductions-in-cloud-migrations-with-sustainability-insights-in-azur/4414246"/>
+        <updated>2025-06-18T06:30:00.000Z</updated>
+        <summary type="html"><![CDATA[Introduction
+As sustainability becomes a core priority for organizations worldwide, Azure Migrate now empowers customers to quantify environmental impact alongside cost savings when planning their cloud journey. With the new Sustainability Benefits capability in Azure Migrate's Business Case, customers can now view estimated emissions savings when migrating from on-premises environments to Azure — making sustainability a first-class consideration in cloud transformation.
+Align with Global Sustainability Goals
+With governments and enterprises racing to meet net-zero targets — including a 55% emissions reduction target by 2030 in the EU and net-zero goals in the US and UK by 2050 — cloud migration offers a meaningful path to emissions reduction.
+With Azure’s carbon-efficient infrastructure p…]]></summary>
+        <author>
+            <name>ajaypartha95</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Announcing the Extension of Some Language Understanding Intelligence Service (LUIS) Functionality]]></title>
         <id>https://techcommunity.microsoft.com/blog/Azure-AI-Services-blog/announcing-the-extension-of-some-language-understanding-intelligence-service-lui/4424921</id>
@@ -114,6 +156,17 @@ Continue reading “Introducing MCP Support for Real-Time Intelligence (RTI) �
         <updated>2025-06-17T09:30:00.000Z</updated>
         <summary type="html"><![CDATA[The Eventstreams artifact in the Microsoft Fabric Real-Time Intelligence experience lets you bring real-time events into Fabric, transform them, and then route them to various destinations such as Eventhouse, without writing any code (no-code). You can ingest data from an Eventstream to Eventhouse seamlessly either from Eventstream artifact or Eventhouse Get Data Wizard. This capability … 
 Continue reading “Fabric Eventhouse now supports Eventstream Derived Streams in Direct Ingestion mode (Preview)”]]></summary>
+        <author>
+            <name>Microsoft Fabric Blog</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Introducing new item creation experience in Fabric]]></title>
+        <id>introducing-new-item-creation-experience-in-fabric</id>
+        <link href="https://blog.fabric.microsoft.com/en/blog/introducing-new-item-creation-experience-in-fabric/"/>
+        <updated>2025-06-17T09:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Have you ever found yourself frustrated by inconsistent item creation? Maybe you’ve struggled to select the right workspace or folder when creating a new item or ended up with a cluttered workspace due to accidental item creation. We hear you—and we’re excited to introduce the new item creation experience in Fabric! This update is designed … 
+Continue reading “Introducing new item creation experience in Fabric”]]></summary>
         <author>
             <name>Microsoft Fabric Blog</name>
         </author>
@@ -22688,90 +22741,6 @@ In this blog post I document my experience of spending a full day using KAITO an
 At the top of this article I want to share my perspective on the future of projects such as KAITO. At the moment I believe KAITO to be somewhat ahead of its time, as most enterprises begin adopting abstracted artificial intelligence it is brilliant to see projects like KAITO being developed ready for the eventual abstraction pendulum to swing back, motivated by usual factors such as increased skills in the market, cost and governance. Enterprises w…]]></summary>
         <author>
             <name>owaino</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[How to Customize Visual Studio Code Chat with GitHub Copilot and Semantic Kernel]]></title>
-        <id>https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/how-to-customize-visual-studio-code-chat-with-github-copilot-and-semantic-kernel/4367996</id>
-        <link href="https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/how-to-customize-visual-studio-code-chat-with-github-copilot-and-semantic-kernel/4367996"/>
-        <updated>2025-01-20T08:00:00.000Z</updated>
-        <summary type="html"><![CDATA[GitHub Copilot can be used to improve developers' programming efficiency with AI. Different chat participants can also enable developers to complete AI empowerment in different scenarios. For example, @workspace can not only create simple projects and notebooks, but also help you maintain project code and generate test environments. You can enter /help in GitHub Copilot Chat to learn about the chat participants that come with the system. Of course, you can also customize various chat participants for your own workflow. Now you can customize chat participants based on Visual Studio Code Chat Extension, or you can directly create Copilot Extensions to support more IDE applications.
-Note: This blog focuses on the chat extension of Visual Studio Code.
-
-In my previous blog, you can see how to u…]]></summary>
-        <author>
-            <name>kinfey</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[How to Customize Visual Studio Code Chat with GitHub Copilot and Semantic Kernel]]></title>
-        <id>https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/how-to-customize-visual-studio-code-chat-with-github-copilot-and-semantic-kernel/4367996</id>
-        <link href="https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/blog/EducatorDeveloperBlog/how-to-customize-visual-studio-code-chat-with-github-copilot-and-semantic-kernel/4367996"/>
-        <updated>2025-01-20T08:00:00.000Z</updated>
-        <summary type="html"><![CDATA[GitHub Copilot can be used to improve developers' programming efficiency with AI. Different chat participants can also enable developers to complete AI empowerment in different scenarios. For example, @workspace can not only create simple projects and notebooks, but also help you maintain project code and generate test environments. You can enter /help in GitHub Copilot Chat to learn about the chat participants that come with the system. Of course, you can also customize various chat participants for your own workflow. Now you can customize chat participants based on Visual Studio Code Chat Extension, or you can directly create Copilot Extensions to support more IDE applications.
-Note: This blog focuses on the chat extension of Visual Studio Code.
-
-In my previous blog, you can see how to u…]]></summary>
-        <author>
-            <name>kinfey</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[How to Customize Visual Studio Code Chat with GitHub Copilot and Semantic Kernel]]></title>
-        <id>https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/discussions/EducatorDeveloperBlog/how-to-customize-visual-studio-code-chat-with-github-copilot-and-semantic-kernel/4367996</id>
-        <link href="https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/discussions/EducatorDeveloperBlog/how-to-customize-visual-studio-code-chat-with-github-copilot-and-semantic-kernel/4367996"/>
-        <updated>2025-01-20T08:00:00.000Z</updated>
-        <summary type="html"><![CDATA[GitHub Copilot can be used to improve developers' programming efficiency with AI. Different chat participants can also enable developers to complete AI empowerment in different scenarios. For example, @workspace can not only create simple projects and notebooks, but also help you maintain project code and generate test environments. You can enter /help in GitHub Copilot Chat to learn about the chat participants that come with the system. Of course, you can also customize various chat participants for your own workflow. Now you can customize chat participants based on Visual Studio Code Chat Extension, or you can directly create Copilot Extensions to support more IDE applications.
-Note: This blog focuses on the chat extension of Visual Studio Code.
-
-In my previous blog, you can see how to u…]]></summary>
-        <author>
-            <name>kinfey</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Nested virtualization on Azure : a step-by-step guide]]></title>
-        <id>https://techcommunity.microsoft.com/blog/Azure-AI-Services-blog/nested-virtualization-on-azure--a-step-by-step-guide/4368074</id>
-        <link href="https://techcommunity.microsoft.com/blog/Azure-AI-Services-blog/nested-virtualization-on-azure--a-step-by-step-guide/4368074"/>
-        <updated>2025-01-19T15:47:18.000Z</updated>
-        <summary type="html"><![CDATA[For many developers, working on a virtual machine (VM) offers several benefits. It allows them to select the configuration that best meets their requirements without investing significantly in physical hardware. VMs provide flexibility and scalability, which can be particularly advantageous for developers, machine learning engineers, and data scientists. They often need to use Docker for their projects, a process known as Nested Virtualization.
-Nested virtualization is a feature that enables running Hyper-V inside a Hyper-V virtual machine (VM). Over time, hardware has improved, and the use cases for Nested Virtualization have increased. For instance, Nested Virtualization can be useful for:
-
-Running applications or emulators in a nested VM
-Testing software releases on VMs
-Reducing deploym…]]></summary>
-        <author>
-            <name>alibekjakupov</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Nested virtualization on Azure : a step-by-step guide]]></title>
-        <id>https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/blog/Azure-AI-Services-blog/nested-virtualization-on-azure--a-step-by-step-guide/4368074</id>
-        <link href="https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/blog/Azure-AI-Services-blog/nested-virtualization-on-azure--a-step-by-step-guide/4368074"/>
-        <updated>2025-01-19T15:47:18.000Z</updated>
-        <summary type="html"><![CDATA[For many developers, working on a virtual machine (VM) offers several benefits. It allows them to select the configuration that best meets their requirements without investing significantly in physical hardware. VMs provide flexibility and scalability, which can be particularly advantageous for developers, machine learning engineers, and data scientists. They often need to use Docker for their projects, a process known as Nested Virtualization.
-Nested virtualization is a feature that enables running Hyper-V inside a Hyper-V virtual machine (VM). Over time, hardware has improved, and the use cases for Nested Virtualization have increased. For instance, Nested Virtualization can be useful for:
-
-Running applications or emulators in a nested VM
-Testing software releases on VMs
-Reducing deploym…]]></summary>
-        <author>
-            <name>alibekjakupov</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Nested virtualization on Azure : a step-by-step guide]]></title>
-        <id>https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/discussions/Azure-AI-Services-blog/nested-virtualization-on-azure--a-step-by-step-guide/4368074</id>
-        <link href="https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/discussions/Azure-AI-Services-blog/nested-virtualization-on-azure--a-step-by-step-guide/4368074"/>
-        <updated>2025-01-19T15:47:18.000Z</updated>
-        <summary type="html"><![CDATA[For many developers, working on a virtual machine (VM) offers several benefits. It allows them to select the configuration that best meets their requirements without investing significantly in physical hardware. VMs provide flexibility and scalability, which can be particularly advantageous for developers, machine learning engineers, and data scientists. They often need to use Docker for their projects, a process known as Nested Virtualization.
-Nested virtualization is a feature that enables running Hyper-V inside a Hyper-V virtual machine (VM). Over time, hardware has improved, and the use cases for Nested Virtualization have increased. For instance, Nested Virtualization can be useful for:
-
-Running applications or emulators in a nested VM
-Testing software releases on VMs
-Reducing deploym…]]></summary>
-        <author>
-            <name>alibekjakupov</name>
         </author>
     </entry>
 </feed>
