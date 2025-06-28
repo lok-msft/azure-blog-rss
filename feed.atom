@@ -2,10 +2,112 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2025-06-27T01:45:32.164Z</updated>
+    <updated>2025-06-28T01:41:29.173Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Microsoft 365 Copilot APIs: Unlocking enterprise knowledge for AI with the Retrieval API — Now in Public Preview]]></title>
+        <id>https://devblogs.microsoft.com/microsoft365dev/?p=24424</id>
+        <link href="https://devblogs.microsoft.com/microsoft365dev/microsoft-365-copilot-apis-unlocking-enterprise-knowledge-for-ai-with-the-retrieval-api/"/>
+        <updated>2025-06-27T17:30:22.000Z</updated>
+        <summary type="html"><![CDATA[Read how the Retrieval API gives developers a secure, compliant and scalable way to integrate enterprise content into their AI workflows.
+The post Microsoft 365 Copilot APIs: Unlocking enterprise knowledge for AI with the Retrieval API — Now in Public Preview appeared first on Microsoft 365 Developer Blog.]]></summary>
+        <author>
+            <name>Zakiullah Khan</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Model Mondays S2:E2 - Understanding Model Context Protocol (MCP)]]></title>
+        <id>https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/model-mondays-s2e2---understanding-model-context-protocol-mcp/4427914</id>
+        <link href="https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/model-mondays-s2e2---understanding-model-context-protocol-mcp/4427914"/>
+        <updated>2025-06-27T15:40:01.000Z</updated>
+        <summary type="html"><![CDATA[This week in Model Mondays, we focus on the Model Context Protocol (MCP) — and learn how to securely connect AI models to real-world tools and services using MCP, Azure AI Foundry, and industry-standard authorization. Read on for my recap
+ 
+
+About Model Mondays
+Model Mondays is a weekly series designed to help you build your Azure AI Foundry Model IQ step by step. Here’s how it works:
+
+5-Minute Highlights – Quick news and updates about Azure AI models and tools on Monday
+15-Minute Spotlight – Deep dive into a key model, protocol, or feature on Monday
+30-Minute AMA on Friday – Live Q&A with subject matter experts from Monday livestream
+
+If you want to grow your skills with the latest in AI model development, Model Mondays is the place to start. Want to follow along?
+
+Register Here - to watc…]]></summary>
+        <author>
+            <name>Sharda_Kaur</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Using Azure API Management as a proxy for Application Insights Telemetry]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/using-azure-api-management-as-a-proxy-for-application-insights-telemetry/4422236</id>
+        <link href="https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/using-azure-api-management-as-a-proxy-for-application-insights-telemetry/4422236"/>
+        <updated>2025-06-27T13:09:48.000Z</updated>
+        <summary type="html"><![CDATA[Introduction
+Organizations enforcing Entra ID authentication on their Application Insights resources often face a sudden problem: browser-based telemetry stops flowing.
+This happens when local authentication is disabled — a necessary step to enforce strict identity controls — but sending data from browser environments comes with inherent security challenges, and the Application Insights JavaScript SDK is no exception. As a result, telemetry from web clients is silently dropped, leaving gaps in monitoring and frustrated teams wondering how to re-enable secure telemetry ingestion.
+This article provides a solution: using Azure API Management (APIM) as a secure proxy that authenticates telemetry using a managed identity before forwarding it to Application Insights. This pattern restores observ…]]></summary>
+        <author>
+            <name>toddfoust</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Deploy Machine Learning Models the Smart Way with Azure Blob & Web App]]></title>
+        <id>https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/deploy-machine-learning-models-the-smart-way-with-azure-blob--web-app/4423731</id>
+        <link href="https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/deploy-machine-learning-models-the-smart-way-with-azure-blob--web-app/4423731"/>
+        <updated>2025-06-27T07:00:00.000Z</updated>
+        <summary type="html"><![CDATA[💡 Why This Approach?
+Traditional deployments often include models inside the app, leading to:
+
+Large container sizes
+Long build times
+Slow cold starts
+Painful updates when models change
+
+With Azure Blob Storage, you can offload the model and only fetch it at runtime — reducing size, improving flexibility, and enabling easier updates.
+What You will Need
+
+An ML model (model.pkl, model.pt, etc.)
+An Azure Blob Storage account
+A Python web app (FastAPI, Flask, or Streamlit)
+Azure Web App (App Service for Python)
+Azure Python SDK: azure-storage-blob
+
+Step 1: Save and Upload Your Model to Blob Storage
+First, save your trained model locally:
+# PyTorch example
+import torch
+torch.save(model.state_dict(), "model.pt")
+
+Then, upload it to Azure Blob Storage:
+from azure.storage.blob import BlobServiceC…]]></summary>
+        <author>
+            <name>MohamedFaraazman</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Anthropic Claude Sonnet 4 and Opus 4 Now Available in GitHub Copilot for JetBrains and Eclipse]]></title>
+        <id>https://devblogs.microsoft.com/java/?p=232305</id>
+        <link href="https://devblogs.microsoft.com/java/anthropic-claude-sonnet-4-and-opus-4-support/"/>
+        <updated>2025-06-27T05:57:37.000Z</updated>
+        <summary type="html"><![CDATA[Anthropic Claude Sonnet 4 and Claude Opus 4 are now available in GitHub Copilot Chat for JetBrains IDEs and Eclipse. Model Availability✨ Claude Sonnet 4: Available for users on Pro, Pro+, Business, and Enterprise plans. Claude Opus 4: Available for users on Pro+ and Enterprise plans. For full details, please see this documentation. How to Get Started🚀 JetBrains IDEs: Click the GitHub Copilot icon –> Open GitHub Copilot Chat-> […]
+The post Anthropic Claude Sonnet 4 and Opus 4 Now Available in GitHub Copilot for JetBrains and Eclipse appeared first on Microsoft for Java Developers.]]></summary>
+        <author>
+            <name>Jialuo Gan</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Announcing Shortcut Transformations: from files to Delta tables. Always in sync, no pipelines required.]]></title>
+        <id>announcing-shortcut-transformations-from-files-to-delta-tables-always-in-sync-no-pipelines-required</id>
+        <link href="https://blog.fabric.microsoft.com/en/blog/announcing-shortcut-transformations-from-files-to-delta-tables-always-in-sync-no-pipelines-required/"/>
+        <updated>2025-06-27T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Shortcut transformations is a new capability in Microsoft Fabric that simplifies the process of converting raw files, starting with .CSV files, into Delta tables. This feature eliminates the need for traditional ETL pipelines, enabling users to transform data directly on top of files with minimal setup. Why use Shortcut transformations Shortcut transformations help users: What … 
+Continue reading “Announcing Shortcut Transformations: from files to Delta tables. Always in sync, no pipelines required.”]]></summary>
+        <author>
+            <name>Microsoft Fabric Blog</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Distributed Databases: Adaptive Optimization with Graph Neural Networks and Causal Inference]]></title>
         <id>https://techcommunity.microsoft.com/blog/MachineLearningBlog/distributed-databases-adaptive-optimization-with-graph-neural-networks-and-causa/4427658</id>
@@ -21972,259 +22074,6 @@ During the preview, we introduced several features that laid the foundation for 
 The post Using DeepSeek models in Microsoft Semantic Kernel appeared first on Semantic Kernel.]]></summary>
         <author>
             <name>Tao Chen</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Private Preview of Migration assistant for Fabric Data Warehouse]]></title>
-        <id>private-preview-of-migration-assistant-for-fabric-datawarehouse</id>
-        <link href="https://blog.fabric.microsoft.com/en/blog/private-preview-of-migration-assistant-for-fabric-datawarehouse/"/>
-        <updated>2025-01-29T11:17:12.000Z</updated>
-        <summary type="html"><![CDATA[Last year we announced a sneak peak of a migration assistant designed to accelerate the migration of SQL Server, Synapse dedicated SQL pools, and other warehouses to the Fabric Data Warehouse. This tool enables users to migrate the code and data from the source database, automatically converting the source schema and code to Fabric Data … 
-Continue reading “Private Preview of Migration assistant for Fabric Data Warehouse”]]></summary>
-        <author>
-            <name>Microsoft Fabric Blog</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Microsoft Startup Spotlight Live Series]]></title>
-        <id>https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/microsoft-startup-spotlight-live-series/4370104</id>
-        <link href="https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/microsoft-startup-spotlight-live-series/4370104"/>
-        <updated>2025-01-29T10:43:13.000Z</updated>
-        <summary type="html"><![CDATA[As a founder, developer, or AI enthusiast, have you ever wondered what AI startups are solving, the technologies they use, or the journeys their founders have taken? How do they tackle challenges and create impactful solutions? These are questions we often ask, and there’s no better way to find answers than by hearing directly from the innovators themselves. 
-I’m excited to introduce the Startup Spotlight Series—a bi-weekly live event hosted on the Microsoft Reactor YouTube channel. This series offers a unique opportunity to:  
-
-Hear exclusive stories from AI startup founders. 
-
-
-See live demonstrations of their technologies. 
-
-
-Learn about the latest AI trends and real-world solutions for customers’ challenges  
-
-💡 Why Should You Tune In? 
-The Startup Spotlight Series isn’t just another …]]></summary>
-        <author>
-            <name>Gabriela_de_Queiroz</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Microsoft Startup Spotlight Live Series]]></title>
-        <id>https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/microsoft-startup-spotlight-live-series/4370104</id>
-        <link href="https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/blog/AzureDevCommunityBlog/microsoft-startup-spotlight-live-series/4370104"/>
-        <updated>2025-01-29T10:43:13.000Z</updated>
-        <summary type="html"><![CDATA[As a founder, developer, or AI enthusiast, have you ever wondered what AI startups are solving, the technologies they use, or the journeys their founders have taken? How do they tackle challenges and create impactful solutions? These are questions we often ask, and there’s no better way to find answers than by hearing directly from the innovators themselves. 
-I’m excited to introduce the Startup Spotlight Series—a bi-weekly live event hosted on the Microsoft Reactor YouTube channel. This series offers a unique opportunity to:  
-
-Hear exclusive stories from AI startup founders. 
-
-
-See live demonstrations of their technologies. 
-
-
-Learn about the latest AI trends and real-world solutions for customers’ challenges  
-
-💡 Why Should You Tune In? 
-The Startup Spotlight Series isn’t just another …]]></summary>
-        <author>
-            <name>Gabriela_de_Queiroz</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Microsoft Startup Spotlight Live Series]]></title>
-        <id>https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/discussions/AzureDevCommunityBlog/microsoft-startup-spotlight-live-series/4370104</id>
-        <link href="https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/discussions/AzureDevCommunityBlog/microsoft-startup-spotlight-live-series/4370104"/>
-        <updated>2025-01-29T10:43:13.000Z</updated>
-        <summary type="html"><![CDATA[As a founder, developer, or AI enthusiast, have you ever wondered what AI startups are solving, the technologies they use, or the journeys their founders have taken? How do they tackle challenges and create impactful solutions? These are questions we often ask, and there’s no better way to find answers than by hearing directly from the innovators themselves. 
-I’m excited to introduce the Startup Spotlight Series—a bi-weekly live event hosted on the Microsoft Reactor YouTube channel. This series offers a unique opportunity to:  
-
-Hear exclusive stories from AI startup founders. 
-
-
-See live demonstrations of their technologies. 
-
-
-Learn about the latest AI trends and real-world solutions for customers’ challenges  
-
-💡 Why Should You Tune In? 
-The Startup Spotlight Series isn’t just another …]]></summary>
-        <author>
-            <name>Gabriela_de_Queiroz</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[SQL Endpoint Connection now available in Microsoft Fabric Eventhouse]]></title>
-        <id>sql-endpoint-connection-now-available-in-microsoft-fabric-eventhouse-2</id>
-        <link href="https://blog.fabric.microsoft.com/en/blog/sql-endpoint-connection-now-available-in-microsoft-fabric-eventhouse-2/"/>
-        <updated>2025-01-29T10:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Microsoft Fabric Eventhouse has expanded its SQL query federation capabilities by supporting query federation to more Tabular Data Stream (TDS) protocol endpoints, like Fabric data warehouses and SQL Analytical endpoints. Through the Create and Alter Azure SQL External Tables command, users can now connect to Fabric SQL Analytical endpoints and warehouses in addition to the … 
-Continue reading “SQL Endpoint Connection now available in Microsoft Fabric Eventhouse”]]></summary>
-        <author>
-            <name>Microsoft Fabric Blog</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Fine-Tuning Language Models with Azure AI Foundry: A Detailed Guide]]></title>
-        <id>https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/fine-tuning-language-models-with-azure-ai-foundry-a-detailed-guide/4369281</id>
-        <link href="https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/fine-tuning-language-models-with-azure-ai-foundry-a-detailed-guide/4369281"/>
-        <updated>2025-01-29T08:00:00.000Z</updated>
-        <summary type="html"><![CDATA[What is Azure AI Foundry?
-Azure AI Foundry is a comprehensive platform designed to simplify the development, deployment, and management of AI models. It provides a user-friendly interface and powerful tools that enable developers to create custom AI solutions without needing extensive machine learning expertise.
-Key Features of Azure AI Foundry
-
-One-Button Fine-Tuning: A streamlined process that allows users to fine-tune models with minimal configuration.
-Integration with Development Tools: Seamless integration with popular development environments, particularly Visual Studio Code.
-Support for Multiple Models: Access to a variety of pre-trained models, including the Phi family of models.
-
-Understanding Fine-Tuning
-Fine-tuning is the process of taking a pre-trained model and adapting it to …]]></summary>
-        <author>
-            <name>Sharda_Kaur</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Fine-Tuning Language Models with Azure AI Foundry: A Detailed Guide]]></title>
-        <id>https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/fine-tuning-language-models-with-azure-ai-foundry-a-detailed-guide/4369281</id>
-        <link href="https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/blog/EducatorDeveloperBlog/fine-tuning-language-models-with-azure-ai-foundry-a-detailed-guide/4369281"/>
-        <updated>2025-01-29T08:00:00.000Z</updated>
-        <summary type="html"><![CDATA[What is Azure AI Foundry?
-Azure AI Foundry is a comprehensive platform designed to simplify the development, deployment, and management of AI models. It provides a user-friendly interface and powerful tools that enable developers to create custom AI solutions without needing extensive machine learning expertise.
-Key Features of Azure AI Foundry
-
-One-Button Fine-Tuning: A streamlined process that allows users to fine-tune models with minimal configuration.
-Integration with Development Tools: Seamless integration with popular development environments, particularly Visual Studio Code.
-Support for Multiple Models: Access to a variety of pre-trained models, including the Phi family of models.
-
-Understanding Fine-Tuning
-Fine-tuning is the process of taking a pre-trained model and adapting it to …]]></summary>
-        <author>
-            <name>Sharda_Kaur</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Fine-Tuning Language Models with Azure AI Foundry: A Detailed Guide]]></title>
-        <id>https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/discussions/EducatorDeveloperBlog/fine-tuning-language-models-with-azure-ai-foundry-a-detailed-guide/4369281</id>
-        <link href="https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/discussions/EducatorDeveloperBlog/fine-tuning-language-models-with-azure-ai-foundry-a-detailed-guide/4369281"/>
-        <updated>2025-01-29T08:00:00.000Z</updated>
-        <summary type="html"><![CDATA[What is Azure AI Foundry?
-Azure AI Foundry is a comprehensive platform designed to simplify the development, deployment, and management of AI models. It provides a user-friendly interface and powerful tools that enable developers to create custom AI solutions without needing extensive machine learning expertise.
-Key Features of Azure AI Foundry
-
-One-Button Fine-Tuning: A streamlined process that allows users to fine-tune models with minimal configuration.
-Integration with Development Tools: Seamless integration with popular development environments, particularly Visual Studio Code.
-Support for Multiple Models: Access to a variety of pre-trained models, including the Phi family of models.
-
-Understanding Fine-Tuning
-Fine-tuning is the process of taking a pre-trained model and adapting it to …]]></summary>
-        <author>
-            <name>Sharda_Kaur</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[DeepSeek-R1 on Azure Container Apps Serverless GPUs]]></title>
-        <id>https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/blog/AppsonAzureBlog/deepseek-r1-on-azure-container-apps-serverless-gpus/4371463</id>
-        <link href="https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/blog/AppsonAzureBlog/deepseek-r1-on-azure-container-apps-serverless-gpus/4371463"/>
-        <updated>2025-01-29T03:12:46.000Z</updated>
-        <summary type="html"><![CDATA[The world of AI is evolving at a breakneck pace with new models constantly being created. With so much rapid innovation, it is essential to have the flexibility to quickly adapt applications to the latest models. This is where Azure Container Apps serverless GPUs come in.
-Azure Container Apps is a managed serverless container platform that enables you to deploy and run containerized applications while reducing infrastructure management and saving costs.
-With serverless GPU support, you get the flexibility to bring any containerized workload, including new language models, and deploy them to a platform that automatically scales with your customer demand. In addition, you get optimized cold start, per-second billing and reduced operational overhead to allow you to focus on the core component…]]></summary>
-        <author>
-            <name>Cary_Chai</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[DeepSeek-R1 on Azure Container Apps Serverless GPUs]]></title>
-        <id>https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/discussions/AppsonAzureBlog/deepseek-r1-on-azure-container-apps-serverless-gpus/4371463</id>
-        <link href="https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/discussions/AppsonAzureBlog/deepseek-r1-on-azure-container-apps-serverless-gpus/4371463"/>
-        <updated>2025-01-29T03:12:46.000Z</updated>
-        <summary type="html"><![CDATA[The world of AI is evolving at a breakneck pace with new models constantly being created. With so much rapid innovation, it is essential to have the flexibility to quickly adapt applications to the latest models. This is where Azure Container Apps serverless GPUs come in.
-Azure Container Apps is a managed serverless container platform that enables you to deploy and run containerized applications while reducing infrastructure management and saving costs.
-With serverless GPU support, you get the flexibility to bring any containerized workload, including new language models, and deploy them to a platform that automatically scales with your customer demand. In addition, you get optimized cold start, per-second billing and reduced operational overhead to allow you to focus on the core component…]]></summary>
-        <author>
-            <name>Cary_Chai</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Upcoming support lifecycle milestones for older on-premises products]]></title>
-        <id>https://devblogs.microsoft.com/devops/?p=69911</id>
-        <link href="https://devblogs.microsoft.com/devops/upcoming-support-lifecycle-milestones-for-older-on-premises-products/"/>
-        <updated>2025-01-28T23:06:56.000Z</updated>
-        <summary type="html"><![CDATA[Multiple versions of our on-premises product will reach the end of support on October 14, 2025. Customers are encouraged to start planning and deploying upgrades now to ensure that installed products remain supported and secure, and to take advantage of new capabilities offered in successor products. The latest version of our on-premises product is Azure […]
-The post Upcoming support lifecycle milestones for older on-premises products appeared first on Azure DevOps Blog.]]></summary>
-        <author>
-            <name>Gloridel Morales</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Changes to provisioning Azure DevOps projects using the Azure DevOps Demo Generator]]></title>
-        <id>https://devblogs.microsoft.com/devops/?p=70157</id>
-        <link href="https://devblogs.microsoft.com/devops/changes-to-provisioning-azure-devops-projects-using-the-azure-devops-demo-generator/"/>
-        <updated>2025-01-28T21:57:13.000Z</updated>
-        <summary type="html"><![CDATA[The Azure DevOps Demo Generator is a tool that allows you to create projects in your Azure DevOps organization, complete with pre-filled sample content. This includes source code, work items, iterations, service connections, and build and release pipelines, all based on a template you select. Starting February 28, 2025, we are eliminating the need for […]
-The post Changes to provisioning Azure DevOps projects using the Azure DevOps Demo Generator appeared first on Azure DevOps Blog.]]></summary>
-        <author>
-            <name>Gloridel Morales</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[autogen & OpenAI Assistants API powered collaborative Report generation]]></title>
-        <id>https://techcommunity.microsoft.com/blog/Azure-AI-Services-blog/autogen--openai-assistants-api-powered-collaborative-report-generation/4371174</id>
-        <link href="https://techcommunity.microsoft.com/blog/Azure-AI-Services-blog/autogen--openai-assistants-api-powered-collaborative-report-generation/4371174"/>
-        <updated>2025-01-28T17:17:14.000Z</updated>
-        <summary type="html"><![CDATA[Sales performance reports must be generated monthly using CSV files stored in the cloud. These files contain both Product Master data and Transaction data. The required analysis typically includes:
-
-Total Product Sales Performance by Category
-Comparison of Total Product Sales by Category (current month vs. previous month)
-Product Performance by Zip Code
-
-Each of these views needs a data table, relevant charts (e.g., bar or pie), and corresponding insights to guide leadership decisions. Traditionally, this would require a developer to connect to the data sources, run analyses, build dashboards (e.g., in Power BI), and then manually assemble everything (tables, charts, and summaries) into a Word document for the leadership team.
-In contrast, a multi-agent system can interpret a free-form, na…]]></summary>
-        <author>
-            <name>srikantan</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[autogen & OpenAI Assistants API powered collaborative Report generation]]></title>
-        <id>https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/blog/Azure-AI-Services-blog/autogen--openai-assistants-api-powered-collaborative-report-generation/4371174</id>
-        <link href="https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/blog/Azure-AI-Services-blog/autogen--openai-assistants-api-powered-collaborative-report-generation/4371174"/>
-        <updated>2025-01-28T17:17:14.000Z</updated>
-        <summary type="html"><![CDATA[Sales performance reports must be generated monthly using CSV files stored in the cloud. These files contain both Product Master data and Transaction data. The required analysis typically includes:
-
-Total Product Sales Performance by Category
-Comparison of Total Product Sales by Category (current month vs. previous month)
-Product Performance by Zip Code
-
-Each of these views needs a data table, relevant charts (e.g., bar or pie), and corresponding insights to guide leadership decisions. Traditionally, this would require a developer to connect to the data sources, run analyses, build dashboards (e.g., in Power BI), and then manually assemble everything (tables, charts, and summaries) into a Word document for the leadership team.
-In contrast, a multi-agent system can interpret a free-form, na…]]></summary>
-        <author>
-            <name>srikantan</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[autogen & OpenAI Assistants API powered collaborative Report generation]]></title>
-        <id>https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/discussions/Azure-AI-Services-blog/autogen--openai-assistants-api-powered-collaborative-report-generation/4371174</id>
-        <link href="https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/discussions/Azure-AI-Services-blog/autogen--openai-assistants-api-powered-collaborative-report-generation/4371174"/>
-        <updated>2025-01-28T17:17:14.000Z</updated>
-        <summary type="html"><![CDATA[Sales performance reports must be generated monthly using CSV files stored in the cloud. These files contain both Product Master data and Transaction data. The required analysis typically includes:
-
-Total Product Sales Performance by Category
-Comparison of Total Product Sales by Category (current month vs. previous month)
-Product Performance by Zip Code
-
-Each of these views needs a data table, relevant charts (e.g., bar or pie), and corresponding insights to guide leadership decisions. Traditionally, this would require a developer to connect to the data sources, run analyses, build dashboards (e.g., in Power BI), and then manually assemble everything (tables, charts, and summaries) into a Word document for the leadership team.
-In contrast, a multi-agent system can interpret a free-form, na…]]></summary>
-        <author>
-            <name>srikantan</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Introducing ownership takeover for Fabric items]]></title>
-        <id>introducing-ownership-takeover-for-fabric-items</id>
-        <link href="https://blog.fabric.microsoft.com/en/blog/introducing-ownership-takeover-for-fabric-items/"/>
-        <updated>2025-01-28T16:36:45.000Z</updated>
-        <summary type="html"><![CDATA[Today, when an item owner leaves the company, their credentials expire, or they lose access, many Fabric items cease to function. For example, Lakehouses and their SQL Endpoints become inoperative, pipelines fail to execute due to user access errors. In these situations, enabling another user to assume ownership would ensure business continuity. We are pleased … 
-Continue reading “Introducing ownership takeover for Fabric items”]]></summary>
-        <author>
-            <name>Microsoft Fabric Blog</name>
         </author>
     </entry>
 </feed>
