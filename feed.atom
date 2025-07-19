@@ -2,10 +2,72 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2025-07-18T01:52:24.427Z</updated>
+    <updated>2025-07-19T01:46:45.291Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[AI for Operations - Copilot Agent Integration]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/ai-for-operations---copilot-agent-integration/4434476</id>
+        <link href="https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/ai-for-operations---copilot-agent-integration/4434476"/>
+        <updated>2025-07-18T18:14:01.000Z</updated>
+        <summary type="html"><![CDATA[Solution ideas
+The original framework introduced several Logic App and Function App patterns for SQL BPA, Update Manager, Cost Management, Anomaly Detection, and Smart Doc creation.
+In this article we add two Copilot Studio Agents, packaged in the GitHub repository Microsoft Azure AI for Operation Framework, designed to be deployed in a dedicated subscription (e.g., OpenAI-CoreIntegration):
+
+Copilot FinOps Agent – interactive cost & usage analysis
+Copilot Update Manager Agent – interactive patch status & one-time updates
+
+Architecture
+
+ 
+Copilot FinOps Agent
+A Copilot Studio agent that lets stakeholders chat in natural language to retrieve, compare, and summarise cost data—without leaving Teams.
+Dataflow
+
+
+#StageDescription
+
+Initial TriggerUser message (Teams / Copilot Studio web) invoke t…]]></summary>
+        <author>
+            <name>TaleTom</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Deep Dive on Availability Zones in Azure App Service]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/deep-dive-on-availability-zones-in-azure-app-service/4433526</id>
+        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/deep-dive-on-availability-zones-in-azure-app-service/4433526"/>
+        <updated>2025-07-18T14:49:13.000Z</updated>
+        <summary type="html"><![CDATA[With the recent release of our new Availability Zone features, a common question we've been getting from our customers is: "How do I know if my existing App Service supports Availability Zones?" While this information is documented in the App Service Resiliency Microsoft Learn Docs, in this blog post I will try and walk you through some essential aspects of enabling Availability Zones in Azure App Service.
+This article outlines how to confirm if your App Service plan supports Availability Zones, guides you through upgrading from Free, Basic, or Standard tiers to Premium SKUs, and describes the process for enabling this feature, including creating new, properly configured plans. The overview also addresses specific considerations for App Service Environments, along with common issues and so…]]></summary>
+        <author>
+            <name>jordanselig</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Take Control of Your Azure VMware Solution Maintenance Schedule]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AzureMigrationBlog/take-control-of-your-azure-vmware-solution-maintenance-schedule/4434496</id>
+        <link href="https://techcommunity.microsoft.com/blog/AzureMigrationBlog/take-control-of-your-azure-vmware-solution-maintenance-schedule/4434496"/>
+        <updated>2025-07-18T13:53:25.000Z</updated>
+        <summary type="html"><![CDATA[Overview
+Azure VMware Solution is a VMware validated first party Azure service from Microsoft that provides private clouds containing VMware vSphere clusters built from dedicated bare-metal Azure infrastructure. It enables customers to leverage their existing investments in VMware skills and tools, allowing them to focus on developing and running their VMware-based workloads on Azure.
+At Microsoft, we’re continuously evolving our services based on customer feedback and Azure VMware Solution is no exception. As a fully Microsoft-managed service, Azure VMware Solution takes care of the end-to-end lifecycle management of your VMware environment, from ESXi host patching to vCenter Server and NSX upgrades. This ensures your private cloud stays secure, compliant, and up-to-date. 
+Historically, p…]]></summary>
+        <author>
+            <name>rvandenbedem</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Accelerating Insights from Unstructured Text with AI Powered OneLake Shortcut Transformations]]></title>
+        <id>accelerating-insights-from-unstructured-text-with-ai-powered-onelake-shortcut-transformations</id>
+        <link href="https://blog.fabric.microsoft.com/en/blog/accelerating-insights-from-unstructured-text-with-ai-powered-onelake-shortcut-transformations/"/>
+        <updated>2025-07-18T10:15:02.000Z</updated>
+        <summary type="html"><![CDATA[Shortcut‑based AI transformations in Microsoft Fabric convert raw text files into governed Delta Lake tables within minutes, removing the need for complex data‑integration pipelines and significantly reducing time to insight. Why adopt AI transformations? Supported AI transforms Transform Purpose Summarization Generates concise summaries from long-form text. Translation Translates text between supported languages. Sentiment analysis Labels text … 
+Continue reading “Accelerating Insights from Unstructured Text with AI Powered OneLake Shortcut Transformations”]]></summary>
+        <author>
+            <name>Microsoft Fabric Blog</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Geo-Replication is Here! Now generally available for Event Hubs Premium & Dedicated]]></title>
         <id>https://techcommunity.microsoft.com/blog/MessagingonAzureBlog/geo-replication-is-here-now-generally-available-for-event-hubs-premium--dedicate/4433976</id>
@@ -19932,185 +19994,6 @@ With the introduction of Azure AI Foundry, integrating various AI services to st
 The post Introducing the Adaptive Cards documentation hub and new Adaptive Cards updates appeared first on Microsoft 365 Developer Blog.]]></summary>
         <author>
             <name>Swarathmika Kakivaya</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Reference Architecture for a High Scale Moodle Environment on Azure]]></title>
-        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/reference-architecture-for-a-high-scale-moodle-environment-on-azure/4383006</id>
-        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/reference-architecture-for-a-high-scale-moodle-environment-on-azure/4383006"/>
-        <updated>2025-02-19T12:44:02.000Z</updated>
-        <summary type="html"><![CDATA[Introduction 
-Moodle is an open-source learning platform that was developed in 1999 by Martin Dougiamas, a computer scientist and educator from Australia. Moodle stands for Modular Object-Oriented Dynamic Learning Environment, and it is written in PHP, a popular web programming language. Moodle aims to provide educators and learners with a flexible and customizable online environment for teaching and learning, where they can create and access courses, activities, resources, and assessments. Moodle also supports collaboration, communication, and feedback among users, as well as various plugins and integrations with other systems and tools. 
-Moodle is widely used around the world by schools, universities, businesses, and other organizations, with over 100 million registered users and 250,000…]]></summary>
-        <author>
-            <name>GuilhermeFrança</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Reference Architecture for a High Scale Moodle Environment on Azure]]></title>
-        <id>https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/blog/AppsonAzureBlog/reference-architecture-for-a-high-scale-moodle-environment-on-azure/4383006</id>
-        <link href="https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/blog/AppsonAzureBlog/reference-architecture-for-a-high-scale-moodle-environment-on-azure/4383006"/>
-        <updated>2025-02-19T12:44:02.000Z</updated>
-        <summary type="html"><![CDATA[Introduction 
-Moodle is an open-source learning platform that was developed in 1999 by Martin Dougiamas, a computer scientist and educator from Australia. Moodle stands for Modular Object-Oriented Dynamic Learning Environment, and it is written in PHP, a popular web programming language. Moodle aims to provide educators and learners with a flexible and customizable online environment for teaching and learning, where they can create and access courses, activities, resources, and assessments. Moodle also supports collaboration, communication, and feedback among users, as well as various plugins and integrations with other systems and tools. 
-Moodle is widely used around the world by schools, universities, businesses, and other organizations, with over 100 million registered users and 250,000…]]></summary>
-        <author>
-            <name>GuilhermeFrança</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Reference Architecture for a High Scale Moodle Environment on Azure]]></title>
-        <id>https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/discussions/AppsonAzureBlog/reference-architecture-for-a-high-scale-moodle-environment-on-azure/4383006</id>
-        <link href="https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/discussions/AppsonAzureBlog/reference-architecture-for-a-high-scale-moodle-environment-on-azure/4383006"/>
-        <updated>2025-02-19T12:44:02.000Z</updated>
-        <summary type="html"><![CDATA[Introduction 
-Moodle is an open-source learning platform that was developed in 1999 by Martin Dougiamas, a computer scientist and educator from Australia. Moodle stands for Modular Object-Oriented Dynamic Learning Environment, and it is written in PHP, a popular web programming language. Moodle aims to provide educators and learners with a flexible and customizable online environment for teaching and learning, where they can create and access courses, activities, resources, and assessments. Moodle also supports collaboration, communication, and feedback among users, as well as various plugins and integrations with other systems and tools. 
-Moodle is widely used around the world by schools, universities, businesses, and other organizations, with over 100 million registered users and 250,000…]]></summary>
-        <author>
-            <name>GuilhermeFrança</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Introducing fabric-cicd Deployment Tool]]></title>
-        <id>introducing-fabric-cicd-deployment-tool</id>
-        <link href="https://blog.fabric.microsoft.com/en/blog/introducing-fabric-cicd-deployment-tool/"/>
-        <updated>2025-02-19T10:00:00.000Z</updated>
-        <summary type="html"><![CDATA[We’re excited to announce the preview of the Fabric CI/CD Python library!  Recognizing the importance of CI/CD in our success, we decided to open source our project to share with the community. As part of the Azure Data Insights & Analytics team, an internal data engineering group focused on supporting product analytics for Azure Data, we’ve been using Fabric as the backbone of our platform for the last two years. Our team is committed to maintaining and evolving this library, and we look forward to collaborating with the community to enhance its capabilities!]]></summary>
-        <author>
-            <name>Microsoft Fabric Blog</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Why SQL database in Fabric is the best choice for low-code/no-code Developers]]></title>
-        <id>18505</id>
-        <link href="https://blog.fabric.microsoft.com/en/blog/18505/"/>
-        <updated>2025-02-19T09:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Low-code/no-code empowers developers to create and manage databases in an Intuitive and user-friendly way. In the fast-evolving world of software development, the low-code/no-code movement has garnered substantial momentum. This paradigm shift is enabling a new wave of developers, citizen developers, to create powerful applications with minimal hand-coding. In Fabric, the heart of this revolution lies … 
-Continue reading “Why SQL database in Fabric is the best choice for low-code/no-code Developers”]]></summary>
-        <author>
-            <name>Microsoft Fabric Blog</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Enterprise Best Practices for Fine-Tuning Azure OpenAI Models]]></title>
-        <id>https://techcommunity.microsoft.com/blog/Azure-AI-Services-blog/enterprise-best-practices-for-fine-tuning-azure-openai-models/4382540</id>
-        <link href="https://techcommunity.microsoft.com/blog/Azure-AI-Services-blog/enterprise-best-practices-for-fine-tuning-azure-openai-models/4382540"/>
-        <updated>2025-02-19T07:45:00.000Z</updated>
-        <summary type="html"><![CDATA[Fine-tuning large language models (LLMs) has become increasingly practical within enterprise settings. Recent advancements in both the training procedures and serving infrastructure have dramatically lowered the barriers to creating domain-specific AI solutions. Fine-tuning not only boosts model accuracy but also reduces operational costs related to token consumption. Additionally, by customizing smaller LLM variants (for example, moving from a larger GPT‑4 model to a “GPT‑4-mini” model), teams can accelerate inference speed and more efficiently manage compute resources.
-In this article, we outline a Hub/Spoke architecture strategy for organizations looking to securely orchestrate fine-tuning pipelines, streamline deployment, and maintain critical compliance protocols across multiple envir…]]></summary>
-        <author>
-            <name>jakeatmsft</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Enterprise Best Practices for Fine-Tuning Azure OpenAI Models]]></title>
-        <id>https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/blog/Azure-AI-Services-blog/enterprise-best-practices-for-fine-tuning-azure-openai-models/4382540</id>
-        <link href="https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/blog/Azure-AI-Services-blog/enterprise-best-practices-for-fine-tuning-azure-openai-models/4382540"/>
-        <updated>2025-02-19T07:45:00.000Z</updated>
-        <summary type="html"><![CDATA[Fine-tuning large language models (LLMs) has become increasingly practical within enterprise settings. Recent advancements in both the training procedures and serving infrastructure have dramatically lowered the barriers to creating domain-specific AI solutions. Fine-tuning not only boosts model accuracy but also reduces operational costs related to token consumption. Additionally, by customizing smaller LLM variants (for example, moving from a larger GPT‑4 model to a “GPT‑4-mini” model), teams can accelerate inference speed and more efficiently manage compute resources.
-In this article, we outline a Hub/Spoke architecture strategy for organizations looking to securely orchestrate fine-tuning pipelines, streamline deployment, and maintain critical compliance protocols across multiple envir…]]></summary>
-        <author>
-            <name>jakeatmsft</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Enterprise Best Practices for Fine-Tuning Azure OpenAI Models]]></title>
-        <id>https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/discussions/Azure-AI-Services-blog/enterprise-best-practices-for-fine-tuning-azure-openai-models/4382540</id>
-        <link href="https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/discussions/Azure-AI-Services-blog/enterprise-best-practices-for-fine-tuning-azure-openai-models/4382540"/>
-        <updated>2025-02-19T07:45:00.000Z</updated>
-        <summary type="html"><![CDATA[Fine-tuning large language models (LLMs) has become increasingly practical within enterprise settings. Recent advancements in both the training procedures and serving infrastructure have dramatically lowered the barriers to creating domain-specific AI solutions. Fine-tuning not only boosts model accuracy but also reduces operational costs related to token consumption. Additionally, by customizing smaller LLM variants (for example, moving from a larger GPT‑4 model to a “GPT‑4-mini” model), teams can accelerate inference speed and more efficiently manage compute resources.
-In this article, we outline a Hub/Spoke architecture strategy for organizations looking to securely orchestrate fine-tuning pipelines, streamline deployment, and maintain critical compliance protocols across multiple envir…]]></summary>
-        <author>
-            <name>jakeatmsft</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Using OpenAI’s o3-mini Reasoning Model in Semantic Kernel]]></title>
-        <id>https://devblogs.microsoft.com/semantic-kernel/?p=4184</id>
-        <link href="https://devblogs.microsoft.com/semantic-kernel/using-openais-o3-mini-reasoning-model-in-semantic-kernel/"/>
-        <updated>2025-02-18T23:56:48.000Z</updated>
-        <summary type="html"><![CDATA[OpenAI’s o3-mini is a newly released small reasoning model (launched January 2025) that delivers advanced problem-solving capabilities at a fraction of the cost of previous models. It excels in STEM domains (science, math, coding) while maintaining low latency and cost similar to the earlier o1-mini model. This model is also available as Azure OpenAI Service, emphasizing its efficiency gains and new features like […]
-The post Using OpenAI’s o3-mini Reasoning Model in Semantic Kernel appeared first on Semantic Kernel.]]></summary>
-        <author>
-            <name>Roger Barreto</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Ingestion of Managed Prometheus metrics from a private AKS cluster using private link]]></title>
-        <id>https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/ingestion-of-managed-prometheus-metrics-from-a-private-aks-cluster-using-private/4377857</id>
-        <link href="https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/ingestion-of-managed-prometheus-metrics-from-a-private-aks-cluster-using-private/4377857"/>
-        <updated>2025-02-18T17:10:31.000Z</updated>
-        <summary type="html"><![CDATA[This article describes the end-to-end instructions on how to configure Managed Prometheus for data ingestion from your private Azure Kubernetes Service (AKS) cluster to an Azure Monitor Workspace.
-Azure Private Link enables you to access Azure platform as a service (PaaS) resources to your virtual network by using private endpoints. An Azure Monitor Private Link Scope (AMPLS) connects a private endpoint to a set of Azure Monitor resources to define the boundaries of your monitoring network. Using private endpoints for Managed Prometheus and your Azure Monitor workspace you can allow clients on a virtual network (VNet) to securely ingest Prometheus metrics over a Private Link.
-Conceptual overview
-
-A private endpoint is a special network interface for an Azure service in your Virtual Network…]]></summary>
-        <author>
-            <name>sunayanasingh</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Ingestion of Managed Prometheus metrics from a private AKS cluster using private link]]></title>
-        <id>https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/blog/AzureObservabilityBlog/ingestion-of-managed-prometheus-metrics-from-a-private-aks-cluster-using-private/4377857</id>
-        <link href="https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/blog/AzureObservabilityBlog/ingestion-of-managed-prometheus-metrics-from-a-private-aks-cluster-using-private/4377857"/>
-        <updated>2025-02-18T17:10:31.000Z</updated>
-        <summary type="html"><![CDATA[This article describes the end-to-end instructions on how to configure Managed Prometheus for data ingestion from your private Azure Kubernetes Service (AKS) cluster to an Azure Monitor Workspace.
-Azure Private Link enables you to access Azure platform as a service (PaaS) resources to your virtual network by using private endpoints. An Azure Monitor Private Link Scope (AMPLS) connects a private endpoint to a set of Azure Monitor resources to define the boundaries of your monitoring network. Using private endpoints for Managed Prometheus and your Azure Monitor workspace you can allow clients on a virtual network (VNet) to securely ingest Prometheus metrics over a Private Link.
-Conceptual overview
-
-A private endpoint is a special network interface for an Azure service in your Virtual Network…]]></summary>
-        <author>
-            <name>sunayanasingh</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Ingestion of Managed Prometheus metrics from a private AKS cluster using private link]]></title>
-        <id>https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/discussions/AzureObservabilityBlog/ingestion-of-managed-prometheus-metrics-from-a-private-aks-cluster-using-private/4377857</id>
-        <link href="https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/discussions/AzureObservabilityBlog/ingestion-of-managed-prometheus-metrics-from-a-private-aks-cluster-using-private/4377857"/>
-        <updated>2025-02-18T17:10:31.000Z</updated>
-        <summary type="html"><![CDATA[This article describes the end-to-end instructions on how to configure Managed Prometheus for data ingestion from your private Azure Kubernetes Service (AKS) cluster to an Azure Monitor Workspace.
-Azure Private Link enables you to access Azure platform as a service (PaaS) resources to your virtual network by using private endpoints. An Azure Monitor Private Link Scope (AMPLS) connects a private endpoint to a set of Azure Monitor resources to define the boundaries of your monitoring network. Using private endpoints for Managed Prometheus and your Azure Monitor workspace you can allow clients on a virtual network (VNet) to securely ingest Prometheus metrics over a Private Link.
-Conceptual overview
-
-A private endpoint is a special network interface for an Azure service in your Virtual Network…]]></summary>
-        <author>
-            <name>sunayanasingh</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Data Storage in Azure OpenAI Service]]></title>
-        <id>https://techcommunity.microsoft.com/blog/Azure-AI-Services-blog/data-storage-in-azure-openai-service/4382502</id>
-        <link href="https://techcommunity.microsoft.com/blog/Azure-AI-Services-blog/data-storage-in-azure-openai-service/4382502"/>
-        <updated>2025-02-18T14:23:39.000Z</updated>
-        <summary type="html"><![CDATA[Data Stored at Rest by Default
-Azure OpenAI does store certain data at rest by default when you use specific features (continue reading)  In general, the base models are stateless and do not retain your prompts or completions from standard API calls (they aren't used to train or improve the base models)​.
-However, some optional service features will persist data in your Azure OpenAI resource. For example, if you upload files for fine-tuning, use the vector store, or enable stateful features like Assistants API Threads or Stored Completions, that data will be stored at rest by the service​. This means content such as training datasets, embeddings, conversation history, or output logs from those features are saved within your Azure environment. Importantly, this storage is within your own Az…]]></summary>
-        <author>
-            <name>Agustinmantaras</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Data Storage in Azure OpenAI Service]]></title>
-        <id>https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/blog/Azure-AI-Services-blog/data-storage-in-azure-openai-service/4382502</id>
-        <link href="https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/blog/Azure-AI-Services-blog/data-storage-in-azure-openai-service/4382502"/>
-        <updated>2025-02-18T14:23:39.000Z</updated>
-        <summary type="html"><![CDATA[Data Stored at Rest by Default
-Azure OpenAI does store certain data at rest by default when you use specific features (continue reading)  In general, the base models are stateless and do not retain your prompts or completions from standard API calls (they aren't used to train or improve the base models)​.
-However, some optional service features will persist data in your Azure OpenAI resource. For example, if you upload files for fine-tuning, use the vector store, or enable stateful features like Assistants API Threads or Stored Completions, that data will be stored at rest by the service​. This means content such as training datasets, embeddings, conversation history, or output logs from those features are saved within your Azure environment. Importantly, this storage is within your own Az…]]></summary>
-        <author>
-            <name>Agustinmantaras</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Data Storage in Azure OpenAI Service]]></title>
-        <id>https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/discussions/Azure-AI-Services-blog/data-storage-in-azure-openai-service/4382502</id>
-        <link href="https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/discussions/Azure-AI-Services-blog/data-storage-in-azure-openai-service/4382502"/>
-        <updated>2025-02-18T14:23:39.000Z</updated>
-        <summary type="html"><![CDATA[Data Stored at Rest by Default
-Azure OpenAI does store certain data at rest by default when you use specific features (continue reading)  In general, the base models are stateless and do not retain your prompts or completions from standard API calls (they aren't used to train or improve the base models)​.
-However, some optional service features will persist data in your Azure OpenAI resource. For example, if you upload files for fine-tuning, use the vector store, or enable stateful features like Assistants API Threads or Stored Completions, that data will be stored at rest by the service​. This means content such as training datasets, embeddings, conversation history, or output logs from those features are saved within your Azure environment. Importantly, this storage is within your own Az…]]></summary>
-        <author>
-            <name>Agustinmantaras</name>
         </author>
     </entry>
 </feed>
