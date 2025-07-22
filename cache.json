@@ -6,6 +6,46 @@
       "siteUrl": "https://blog.fabric.microsoft.com/en/blog/",
       "articles": [
         {
+          "id": "sunsetting-default-semantic-models-microsoft-fabric",
+          "author": null,
+          "description": "Overview Microsoft Fabric is officially sunsetting Default Semantic Models. This change is part of our ongoing efforts to simplify and improve the manageability, deployment, and governance of Fabric items such as warehouse, lakehouse, SQL database, and mirrored databases. Why the Change? Default Semantic Models were initially designed to provide a lightweight, out-of-the-box experience—automatically generating models … \nContinue reading “Sunsetting Default Semantic Models – Microsoft Fabric”",
+          "link": "https://blog.fabric.microsoft.com/en/blog/sunsetting-default-semantic-models-microsoft-fabric/",
+          "publishedOn": "2025-07-21T14:00:00.000Z",
+          "wordCount": 2095,
+          "title": "Sunsetting Default Semantic Models &#8211; Microsoft Fabric",
+          "imageUrl": "https://blog.fabric.microsoft.com/images/shared/social/social-image-v2.png"
+        },
+        {
+          "id": "serve-real-time-predictions-seamlessly-with-ml-model-endpoints",
+          "author": null,
+          "description": "Fabric offers a wide variety of data-science capabilities, from automated machine learning with FLAML to batch inferencing with the SynapseML PREDICT function. We’re pleased to announce that ML models can now serve real-time predictions from secure, scalable, and easy-to-use online endpoints. In addition to generating batch predictions in Spark, you can use endpoints to bring … \nContinue reading “Serve real-time predictions seamlessly with ML model endpoints”",
+          "link": "https://blog.fabric.microsoft.com/en/blog/serve-real-time-predictions-seamlessly-with-ml-model-endpoints/",
+          "publishedOn": "2025-07-21T11:30:00.000Z",
+          "wordCount": 1904,
+          "title": "Serve real-time predictions seamlessly with ML model endpoints",
+          "imageUrl": "https://blog.fabric.microsoft.com/images/shared/social/social-image-v2.png"
+        },
+        {
+          "id": "whats-new-and-coming-soon-in-sql-analytics-endpoint-in-fabric",
+          "author": null,
+          "description": "We’re thrilled to share a series of exciting updates and upcoming enhancements to the SQL analytics endpoint in Microsoft Fabric. These improvements are designed to make your experience more powerful and reliable. From Preview to GA – Metadata sync REST API Last month, we introduced the SQL analytics endpoint metadata sync REST API in preview, … \nContinue reading “What’s new and coming soon in SQL analytics endpoint in Fabric”",
+          "link": "https://blog.fabric.microsoft.com/en/blog/whats-new-and-coming-soon-in-sql-analytics-endpoint-in-fabric/",
+          "publishedOn": "2025-07-21T11:23:17.000Z",
+          "wordCount": 1849,
+          "title": "What’s new and coming soon in SQL analytics endpoint in Fabric",
+          "imageUrl": "https://blog.fabric.microsoft.com/images/shared/social/social-image-v2.png"
+        },
+        {
+          "id": "using-microsoft-fabric-git-integration-for-user-data-functions",
+          "author": null,
+          "description": "Microsoft Fabric offers native Git integration and deployment pipelines to facilitate version control, collaboration, and automated releases for workspace items like user data functions. This guide explains how to set up and manage Git integration for user data functions within a Fabric workspace.\n•\tWorkspace preparation and Git linking: Users start by selecting or creating a Fabric workspace containing user data functions, then enable Git integration via workspace settings by connecting to a Git provider and repository branch, optionally specifying a folder for organization.\n•\tBranching strategy configuration: Teams are advised to adopt branching strategies such as main/develop, feature, and release branches, along with pull request and code review policies to maintain code quality and collaboration.\n•\tManaging user data functions in Git: Each data function is stored in a function_app.py file; users clone the repository locally, edit or add functions, and update the definition.json file to reflect new functions and required libraries like numpy.\n•\tCommitting, syncing, and publishing changes: After committing changes in VS Code, users sync with the Fabric portal, update the function via source control, and publish to deploy the new or updated functions, making them available for invocation.",
+          "link": "https://blog.fabric.microsoft.com/en/blog/using-microsoft-fabric-git-integration-for-user-data-functions/",
+          "publishedOn": "2025-07-21T09:00:00.000Z",
+          "wordCount": 2264,
+          "title": "Using Microsoft Fabric Git integration for User Data Functions",
+          "imageUrl": "https://blog.fabric.microsoft.com/images/shared/social/social-image-v2.png"
+        },
+        {
           "id": "accelerating-insights-from-unstructured-text-with-ai-powered-onelake-shortcut-transformations",
           "author": null,
           "description": "Shortcut‑based AI transformations in Microsoft Fabric convert raw text files into governed Delta Lake tables within minutes, removing the need for complex data‑integration pipelines and significantly reducing time to insight. Why adopt AI transformations? Supported AI transforms Transform Purpose Summarization Generates concise summaries from long-form text. Translation Translates text between supported languages. Sentiment analysis Labels text … \nContinue reading “Accelerating Insights from Unstructured Text with AI Powered OneLake Shortcut Transformations”",
@@ -3633,6 +3673,26 @@
       "feedUrl": "https://techcommunity.microsoft.com/t5/s/plugins/custom/microsoft/o365/custom-blog-rss?board=AppsonAzureBlog&size=100",
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
+        {
+          "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/important-changes-to-app-service-managed-certificates-is-your-certificate-affect/4435193",
+          "author": "YutangLin",
+          "description": "Overview \nAs part of an upcoming industry-wide change, DigiCert, the Certificate Authority (CA) for Azure App Service Managed Certificates (ASMC), is required to migrate to a new validation platform to meet multi-perspective issuance corroboration (MPIC) requirements.  \nWhile most certificates will not be impacted by this change, certain site configurations and setups may prevent certificate issuance or renewal starting July 28, 2025.  \nWhat Will the Change Look Like? \nFor most customers: No disruption. Certificate issuance and renewals will continue as expected for eligible site configurations. \nFor impacted scenarios: Certificate requests will fail (no certificate issued) starting July 28, 2025, if your site configuration is not supported. Existing certificates will remain valid until th…",
+          "link": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/important-changes-to-app-service-managed-certificates-is-your-certificate-affect/4435193",
+          "publishedOn": "2025-07-21T21:26:08.000Z",
+          "wordCount": 10362,
+          "title": "Important Changes to App Service Managed Certificates: Is Your Certificate Affected?",
+          "imageUrl": null
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/customising-node-level-configuration-in-aks/4435038",
+          "author": "samcogan",
+          "description": "When you deploy AKS, you deploy the control plan, which is managed by Microsoft, and one or more node pools, which contain the worker nodes used to run your Kubernetes workloads. These node pools are usually deployed as Virtual Machine Scale Sets. These scale sets are visible in your subscription, but generally you would not make changes to these directly, as they will be managed by AKS and all of the configuration and management of these is done through AKS. However, there are some scenarios where you do need to make changes to the underlying node configuration to be able to handle the workloads you need to run. Whilst you can make some changes to these nodes, you need to make sure you do it in a supported manner, which will be applied consistently to all your nodes.\nAn example of this re…",
+          "link": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/customising-node-level-configuration-in-aks/4435038",
+          "publishedOn": "2025-07-21T11:17:13.000Z",
+          "wordCount": 11356,
+          "title": "Customising Node-Level Configuration in AKS",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDM1MDM4LXFRUzg3eg?revision=3"
+        },
         {
           "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/deep-dive-on-availability-zones-in-azure-app-service/4433526",
           "author": "jordanselig",
@@ -7866,36 +7926,6 @@
           "wordCount": null,
           "title": "Code First Distillation with Stored Completions in Azure OpenAI Service",
           "imageUrl": null
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/Azure-AI-Services-blog/deploying-azure-nd-h100-v5-instances-in-aks-with-nvidia-mig-gpu-slicing/4384080",
-          "author": "Agustinmantaras",
-          "description": "In this article we will cover:\n\nAKS Cluster Deployment (Latest Version) – creating an AKS cluster using the latest Kubernetes version.\nGPU Node Pool Provisioning – adding an ND H100 v5 node pool on Ubuntu, with --skip-gpu-driver-install to disable automatic driver installation.\nNVIDIA H100 MIG Slicing Configurations – available MIG partition profiles on the H100 GPU and how to enable them.\nWorkload Recommendations for MIG Profiles – choosing optimal MIG slice sizes for different AI/ML and HPC scenarios.\nBest Practices for MIG Management and Scheduling – managing MIG in AKS, scheduling pods, and operational tips.\n\nAKS Cluster Deployment (Using the Latest Version)\n\n\nInstall/Update Azure CLI: Ensure you have Azure CLI 2.0.64+ (or Azure CLI 1.0.0b2 for preview features)​. This is required for …",
-          "link": "https://techcommunity.microsoft.com/blog/Azure-AI-Services-blog/deploying-azure-nd-h100-v5-instances-in-aks-with-nvidia-mig-gpu-slicing/4384080",
-          "publishedOn": "2025-02-21T18:28:17.000Z",
-          "wordCount": 23111,
-          "title": "Deploying Azure ND H100 v5 Instances in AKS with NVIDIA MIG GPU Slicing",
-          "imageUrl": null
-        },
-        {
-          "id": "https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/blog/Azure-AI-Services-blog/deploying-azure-nd-h100-v5-instances-in-aks-with-nvidia-mig-gpu-slicing/4384080",
-          "author": "Agustinmantaras",
-          "description": "In this article we will cover:\n\nAKS Cluster Deployment (Latest Version) – creating an AKS cluster using the latest Kubernetes version.\nGPU Node Pool Provisioning – adding an ND H100 v5 node pool on Ubuntu, with --skip-gpu-driver-install to disable automatic driver installation.\nNVIDIA H100 MIG Slicing Configurations – available MIG partition profiles on the H100 GPU and how to enable them.\nWorkload Recommendations for MIG Profiles – choosing optimal MIG slice sizes for different AI/ML and HPC scenarios.\nBest Practices for MIG Management and Scheduling – managing MIG in AKS, scheduling pods, and operational tips.\n\nAKS Cluster Deployment (Using the Latest Version)\n\n\nInstall/Update Azure CLI: Ensure you have Azure CLI 2.0.64+ (or Azure CLI 1.0.0b2 for preview features)​. This is required for …",
-          "link": "https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/blog/Azure-AI-Services-blog/deploying-azure-nd-h100-v5-instances-in-aks-with-nvidia-mig-gpu-slicing/4384080",
-          "publishedOn": "2025-02-21T18:28:17.000Z",
-          "wordCount": null,
-          "title": "Deploying Azure ND H100 v5 Instances in AKS with NVIDIA MIG GPU Slicing",
-          "imageUrl": null
-        },
-        {
-          "id": "https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/discussions/Azure-AI-Services-blog/deploying-azure-nd-h100-v5-instances-in-aks-with-nvidia-mig-gpu-slicing/4384080",
-          "author": "Agustinmantaras",
-          "description": "In this article we will cover:\n\nAKS Cluster Deployment (Latest Version) – creating an AKS cluster using the latest Kubernetes version.\nGPU Node Pool Provisioning – adding an ND H100 v5 node pool on Ubuntu, with --skip-gpu-driver-install to disable automatic driver installation.\nNVIDIA H100 MIG Slicing Configurations – available MIG partition profiles on the H100 GPU and how to enable them.\nWorkload Recommendations for MIG Profiles – choosing optimal MIG slice sizes for different AI/ML and HPC scenarios.\nBest Practices for MIG Management and Scheduling – managing MIG in AKS, scheduling pods, and operational tips.\n\nAKS Cluster Deployment (Using the Latest Version)\n\n\nInstall/Update Azure CLI: Ensure you have Azure CLI 2.0.64+ (or Azure CLI 1.0.0b2 for preview features)​. This is required for …",
-          "link": "https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/discussions/Azure-AI-Services-blog/deploying-azure-nd-h100-v5-instances-in-aks-with-nvidia-mig-gpu-slicing/4384080",
-          "publishedOn": "2025-02-21T18:28:17.000Z",
-          "wordCount": null,
-          "title": "Deploying Azure ND H100 v5 Instances in AKS with NVIDIA MIG GPU Slicing",
-          "imageUrl": null
         }
       ]
     },
@@ -11570,6 +11600,16 @@
       "siteUrl": "https://devblogs.microsoft.com/semantic-kernel/",
       "articles": [
         {
+          "id": "https://devblogs.microsoft.com/semantic-kernel/?p=4967",
+          "author": "Kinfey Lo",
+          "description": "In the rapidly evolving landscape of AI application development, the ability to orchestrate multiple intelligent agents has become crucial for building sophisticated, enterprise-grade solutions. While individual AI agents excel at specific tasks, complex business scenarios often require coordination between specialized agents running on different platforms, frameworks, or even across organizational boundaries. This is where the […]\nThe post Guest Blog: Building Multi-Agent Solutions with Semantic Kernel and A2A Protocol appeared first on Semantic Kernel.",
+          "link": "https://devblogs.microsoft.com/semantic-kernel/guest-blog-building-multi-agent-solutions-with-semantic-kernel-and-a2a-protocol/",
+          "publishedOn": "2025-07-21T08:10:23.000Z",
+          "wordCount": 8660,
+          "title": "Guest Blog: Building Multi-Agent Solutions with Semantic Kernel and A2A Protocol",
+          "imageUrl": "https://devblogs.microsoft.com/semantic-kernel/wp-content/uploads/sites/78/2025/07/SK-and-A2A.jpg"
+        },
+        {
           "id": "https://devblogs.microsoft.com/semantic-kernel/?p=4940",
           "author": "Eduard van Valkenburg",
           "description": "We’re excited to announce a significant update to Semantic Kernel Python’s vector store implementation. Version 1.34 brings a complete overhaul that makes working with vector data simpler, more intuitive, and more powerful. This update consolidates the API, improves developer experience, and adds new capabilities that streamline AI development workflows. What Makes This Release Special? The […]\nThe post Semantic Kernel Python Gets a Major Vector Store Upgrade appeared first on Semantic Kernel.",
@@ -12134,6 +12174,16 @@
       "siteUrl": "https://devblogs.microsoft.com/java/",
       "articles": [
         {
+          "id": "https://devblogs.microsoft.com/java/?p=232360",
+          "author": "Derek Keeler",
+          "description": "Hello Java customers! We are happy to announce the latest July 2025 patch & security update release for the Microsoft Build of OpenJDK. Download and install the binaries today. OpenJDK 21.0.8 OpenJDK 17.0.16 OpenJDK 11.0.28 Check our release notes page for details on fixes and enhancements. The source code of our builds is available now […]\nThe post Java OpenJDK July 2025 Patch & Security Update appeared first on Microsoft for Java Developers.",
+          "link": "https://devblogs.microsoft.com/java/java-openjdk-july-2025-patch-security-update/",
+          "publishedOn": "2025-07-21T22:07:07.000Z",
+          "wordCount": 6467,
+          "title": "Java OpenJDK July 2025 Patch & Security Update",
+          "imageUrl": "https://devblogs.microsoft.com/java/wp-content/uploads/sites/51/2019/11/trexduke-blackwhite-cropped-half.png"
+        },
+        {
           "id": "https://devblogs.microsoft.com/java/?p=232340",
           "author": "Julien Dubois",
           "description": "The artificial intelligence landscape presents unprecedented opportunities for Java developers. With decades of experience building robust enterprise applications using Spring, Quarkus and Jakarta EE, Java developers are uniquely positioned to create sophisticated AI solutions. The emergence of specialized AI libraries like LangChain4j enables them to leverage their existing expertise while building secure, scalable, and maintainable […]\nThe post Microsoft and LangChain4j: A Partnership for Secure, Enterprise-Grade Java AI Applications appeared first on Microsoft for Java Developers.",
@@ -12337,6 +12387,21 @@
       "feedUrl": "https://devblogs.microsoft.com/devops/feed/",
       "siteUrl": "https://devblogs.microsoft.com/devops/",
       "articles": [
+        {
+          "id": "https://devblogs.microsoft.com/devops/?p=71479",
+          "author": "PuiChee (PC) Chan, Kristen Womack",
+          "description": "This post walks through how to implement a “build once, deploy everywhere” pattern using Azure Developer CLI (azd) that provisions environment-specific infrastructure and promotes applications from dev to prod with the same build artifacts. You’ll learn how to use conditional Bicep deployment, environment variable injection, package preservation across environments, and automated CI/CD promotion from development […]\nThe post Azure Developer CLI: From Dev to Prod with One Click appeared first on Azure DevOps Blog.",
+          "link": "https://devblogs.microsoft.com/devops/azure-developer-cli-from-dev-to-prod-with-one-click/",
+          "publishedOn": "2025-07-21T16:17:37.000Z",
+          "wordCount": 7323,
+          "title": "Azure Developer CLI: From Dev to Prod with One Click",
+          "enclosure": {
+            "url": "https://devblogs.microsoft.com/devops/wp-content/uploads/sites/6/2025/07/devToprodWithOneClick-1.mp4",
+            "length": "5331942",
+            "type": "video/mp4"
+          },
+          "imageUrl": "https://devblogs.microsoft.com/devops/wp-content/uploads/sites/6/2025/07/feature-image.png"
+        },
         {
           "id": "https://devblogs.microsoft.com/devops/?p=71446",
           "author": "Gloridel Morales",
@@ -12718,6 +12783,16 @@
       "feedUrl": "https://devblogs.microsoft.com/microsoft365dev/feed/",
       "siteUrl": "https://devblogs.microsoft.com/microsoft365dev/",
       "articles": [
+        {
+          "id": "https://devblogs.microsoft.com/microsoft365dev/?p=24541",
+          "author": "Daniel Carrasco, Yan Jin",
+          "description": "As AI agents become central to how we build and interact with modern productivity apps, developers need tools that are flexible, standard-based, and deeply integrated with AI. That’s where the Microsoft 365 Agents Toolkit MCP Server comes in.  This is a local Model Context Protocol (MCP) server that acts as a bridge between your AI coding agents and […]\nThe post Build Smarter with the Microsoft 365 Agents Toolkit MCP Server appeared first on Microsoft 365 Developer Blog.",
+          "link": "https://devblogs.microsoft.com/microsoft365dev/build-smarter-with-the-microsoft-365-agents-toolkit-mcp-server/",
+          "publishedOn": "2025-07-21T17:00:56.000Z",
+          "wordCount": 7083,
+          "title": "Build Smarter with the Microsoft 365 Agents Toolkit MCP Server",
+          "imageUrl": "https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2025/07/M365-Agents-Toolkit-MCP-Server.png"
+        },
         {
           "id": "https://devblogs.microsoft.com/microsoft365dev/?p=24494",
           "author": "Daniel Carrasco, Bharath Raghunathan",
