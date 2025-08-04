@@ -2,10 +2,23 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2025-08-03T02:01:25.547Z</updated>
+    <updated>2025-08-04T02:01:48.074Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[AI Inference Task Migration from CPU to GPU: Methodology Overview]]></title>
+        <id>https://techcommunity.microsoft.com/blog/MachineLearningBlog/ai-inference-task-migration-from-cpu-to-gpu-methodology-overview/4439377</id>
+        <link href="https://techcommunity.microsoft.com/blog/MachineLearningBlog/ai-inference-task-migration-from-cpu-to-gpu-methodology-overview/4439377"/>
+        <updated>2025-08-03T02:53:26.000Z</updated>
+        <summary type="html"><![CDATA[Please refer to my repo to get more AI resources, wellcome to star it:
+https://github.com/xinyuwei-david/david-share.git 
+This repository ties together the entire methodology with a minimalistic example: first identify computational hotspots on the CPU, then rewrite loops characterized by "high parallelism, sequential memory access, and simple branching" into CUDA kernels to offload CPU workload and unleash GPU computing power. Running the code once can compare CPU and GPU execution times, separate transfer and computation overheads, and verify result errors. This quickly validates the feasibility and expected gains of "CPU → GPU" migration, providing a template for subsequent large-scale migration, pipeline optimization, and MIG resource partitioning in a real business environment.
+Overal…]]></summary>
+        <author>
+            <name>xinyuwei</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Announcing a flexible, predictable billing model for Azure SRE Agent]]></title>
         <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/announcing-a-flexible-predictable-billing-model-for-azure-sre-agent/4427270</id>
@@ -17886,192 +17899,6 @@ For organizations looking to build competitive advantage through AI, building th
 For organizations looking to build competitive advantage through AI, building the cloud foundation needed to support the innovation is critical. However, we also hear that organizations are trying to balance the need to embrace the latest innovations with the need to meet current business challenges. Whether it’s optimizing costs, safeguarding against security threats, or controlling…]]></summary>
         <author>
             <name>TajinderAhluwalia</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Take full control of your AI APIs with Azure API Management Gateway]]></title>
-        <id>https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/take-full-control-of-your-ai-apis-with-azure-api-management-gateway/4373220</id>
-        <link href="https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/take-full-control-of-your-ai-apis-with-azure-api-management-gateway/4373220"/>
-        <updated>2025-03-07T08:00:00.000Z</updated>
-        <summary type="html"><![CDATA[This article is part of a series of articles on API Management and Generative AI. We believe that adding Azure API Management to your AI projects can help you scale your AI models, make them more secure and easier to manage.
-In this article, we will shed some light on capabilities in API Management, which are designed to help you govern and manage Generative AI APIs, ensuring that you are building resilient and secure intelligent applications.
- 
-But why exactly do I need API Management for my AI APIs?
-Common challenges when implementing Gen AI-Powered solutions include: -
-
-Quota, (calculated in tokens-per-minute (TPM)), allocation across multiple client apps,
-How to control and track token consumption for all users,
-Mechanisms to attribute costs to specific client apps, activities, or user…]]></summary>
-        <author>
-            <name>Julia_Muiruri</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Take full control of your AI APIs with Azure API Management Gateway]]></title>
-        <id>https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/take-full-control-of-your-ai-apis-with-azure-api-management-gateway/4373220</id>
-        <link href="https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/blog/AzureDevCommunityBlog/take-full-control-of-your-ai-apis-with-azure-api-management-gateway/4373220"/>
-        <updated>2025-03-07T08:00:00.000Z</updated>
-        <summary type="html"><![CDATA[This article is part of a series of articles on API Management and Generative AI. We believe that adding Azure API Management to your AI projects can help you scale your AI models, make them more secure and easier to manage.
-In this article, we will shed some light on capabilities in API Management, which are designed to help you govern and manage Generative AI APIs, ensuring that you are building resilient and secure intelligent applications.
- 
-But why exactly do I need API Management for my AI APIs?
-Common challenges when implementing Gen AI-Powered solutions include: -
-
-Quota, (calculated in tokens-per-minute (TPM)), allocation across multiple client apps,
-How to control and track token consumption for all users,
-Mechanisms to attribute costs to specific client apps, activities, or user…]]></summary>
-        <author>
-            <name>Julia_Muiruri</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Construyendo una Aplicación Web con Inteligencia Artificial usando Python]]></title>
-        <id>https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/construyendo-una-aplicaci%C3%B3n-web-con-inteligencia-artificial-usando-python/4385353</id>
-        <link href="https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/construyendo-una-aplicaci%C3%B3n-web-con-inteligencia-artificial-usando-python/4385353"/>
-        <updated>2025-03-07T08:00:00.000Z</updated>
-        <summary type="html"><![CDATA[En la segunda sesión del GitHub Copilot Bootcamp LATAM, organizado por Microsoft Reactor, el ingeniero Manuel Ortiz, Embajador de Microsoft Learn y líder comunitario en GitHub, guió a desarrolladores en la creación de una aplicación web con capacidades de inteligencia artificial. Este taller práctico combinó fundamentos de desarrollo backend en Python con técnicas avanzadas de integración de modelos de lenguaje de Azure OpenAI.
-
-Introducción a Azure Open AI
-Azure Open AI es una colaboración entre Microsoft y OpenAI que permite a los desarrolladores integrar modelos avanzados de inteligencia artificial en sus aplicaciones utilizando la infraestructura de Azure. Esto ofrece acceso a modelos poderosos como GPT-4, que pueden ser utilizados para una variedad de tareas, desde procesamiento de le…]]></summary>
-        <author>
-            <name>cynthiazanoni</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Construyendo una Aplicación Web con Inteligencia Artificial usando Python]]></title>
-        <id>https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/construyendo-una-aplicaci%C3%B3n-web-con-inteligencia-artificial-usando-python/4385353</id>
-        <link href="https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/blog/AzureDevCommunityBlog/construyendo-una-aplicaci%C3%B3n-web-con-inteligencia-artificial-usando-python/4385353"/>
-        <updated>2025-03-07T08:00:00.000Z</updated>
-        <summary type="html"><![CDATA[En la segunda sesión del GitHub Copilot Bootcamp LATAM, organizado por Microsoft Reactor, el ingeniero Manuel Ortiz, Embajador de Microsoft Learn y líder comunitario en GitHub, guió a desarrolladores en la creación de una aplicación web con capacidades de inteligencia artificial. Este taller práctico combinó fundamentos de desarrollo backend en Python con técnicas avanzadas de integración de modelos de lenguaje de Azure OpenAI.
-
-Introducción a Azure Open AI
-Azure Open AI es una colaboración entre Microsoft y OpenAI que permite a los desarrolladores integrar modelos avanzados de inteligencia artificial en sus aplicaciones utilizando la infraestructura de Azure. Esto ofrece acceso a modelos poderosos como GPT-4, que pueden ser utilizados para una variedad de tareas, desde procesamiento de le…]]></summary>
-        <author>
-            <name>cynthiazanoni</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Announcing DeepSeek-V3 on Azure AI Foundry and GitHub]]></title>
-        <id>https://techcommunity.microsoft.com/blog/MachineLearningBlog/announcing-deepseek-v3-on-azure-ai-foundry-and-github/4390438</id>
-        <link href="https://techcommunity.microsoft.com/blog/MachineLearningBlog/announcing-deepseek-v3-on-azure-ai-foundry-and-github/4390438"/>
-        <updated>2025-03-07T02:05:09.000Z</updated>
-        <summary type="html"><![CDATA[Building on the interest of DeepSeek-R1, launched one month ago, we are pleased to announce the availability of DeepSeek-V3 on Azure AI Foundry model catalog with token-based billing and GitHub Models free experience. This latest iteration is part of our commitment to enable powerful, efficient, and accessible AI solutions through the breadth and diversity of choice in the model catalog. DeepSeek-V3 is set to empower organizations across industries to unlock value from their data.
-What is DeepSeek-V3?
-As DeepSeek mentions, ​DeepSeek-V3 is an advanced large language model (LLM), that has gained significant attention for its performance and cost-effectiveness. DeepSeek's innovations highlight the potential for achieving high-level AI performance with fewer resources, challenging existing ind…]]></summary>
-        <author>
-            <name>santiagxf</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Announcing DeepSeek-V3 on Azure AI Foundry and GitHub]]></title>
-        <id>https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/blog/MachineLearningBlog/announcing-deepseek-v3-on-azure-ai-foundry-and-github/4390438</id>
-        <link href="https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/blog/MachineLearningBlog/announcing-deepseek-v3-on-azure-ai-foundry-and-github/4390438"/>
-        <updated>2025-03-07T02:05:09.000Z</updated>
-        <summary type="html"><![CDATA[Building on the interest of DeepSeek-R1, launched one month ago, we are pleased to announce the availability of DeepSeek-V3 on Azure AI Foundry model catalog with token-based billing and GitHub Models free experience. This latest iteration is part of our commitment to enable powerful, efficient, and accessible AI solutions through the breadth and diversity of choice in the model catalog. DeepSeek-V3 is set to empower organizations across industries to unlock value from their data.
-What is DeepSeek-V3?
-As DeepSeek mentions, ​DeepSeek-V3 is an advanced large language model (LLM), that has gained significant attention for its performance and cost-effectiveness. DeepSeek's innovations highlight the potential for achieving high-level AI performance with fewer resources, challenging existing ind…]]></summary>
-        <author>
-            <name>santiagxf</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Talk to your agents! Introducing the Realtime API’s in Semantic Kernel!]]></title>
-        <id>https://devblogs.microsoft.com/semantic-kernel/?p=4340</id>
-        <link href="https://devblogs.microsoft.com/semantic-kernel/talk-to-your-agents-introducing-the-realtime-apis-in-semantic-kernel/"/>
-        <updated>2025-03-06T21:17:32.000Z</updated>
-        <summary type="html"><![CDATA[Introducing Realtime Agents in Semantic Kernel for Python! With release 1.23.0 of the Python version of Semantic Kernel we are introducing a new set of clients for interacting with the realtime multi-modal API’s of OpenAI and Azure OpenAI. They provide a abstracted approach to connecting to those services, adding your tools and running apps that […]
-The post Talk to your agents! Introducing the Realtime API’s in Semantic Kernel! appeared first on Semantic Kernel.]]></summary>
-        <author>
-            <name>Eduard van Valkenburg</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Azure App Service Auto-Heal: Capturing Relevant Data During Performance Issues]]></title>
-        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/azure-app-service-auto-heal-capturing-relevant-data-during-performance-issues/4390351</id>
-        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/azure-app-service-auto-heal-capturing-relevant-data-during-performance-issues/4390351"/>
-        <updated>2025-03-06T20:15:09.000Z</updated>
-        <summary type="html"><![CDATA[Introduction
-Azure App Service is a powerful platform that simplifies the deployment and management of web applications. However, maintaining application performance and availability is crucial. When performance issues arise, identifying the root cause can be challenging. This is where Auto-Heal in Azure App Service becomes a game-changer.
-Auto-Heal is a diagnostic and recovery feature that allows you to proactively detect and mitigate issues affecting your application’s performance. It enables automatic corrective actions and helps capture vital diagnostic data to troubleshoot problems efficiently. In this blog, we’ll explore how Auto-Heal works, its configuration, and how it assists in diagnosing performance bottlenecks.
-What is Auto-Heal in Azure App Service?
-Auto-Heal is a self-healing…]]></summary>
-        <author>
-            <name>shagnihotri</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Azure App Service Auto-Heal: Capturing Relevant Data During Performance Issues]]></title>
-        <id>https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/blog/AppsonAzureBlog/azure-app-service-auto-heal-capturing-relevant-data-during-performance-issues/4390351</id>
-        <link href="https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/blog/AppsonAzureBlog/azure-app-service-auto-heal-capturing-relevant-data-during-performance-issues/4390351"/>
-        <updated>2025-03-06T20:15:09.000Z</updated>
-        <summary type="html"><![CDATA[Introduction
-Azure App Service is a powerful platform that simplifies the deployment and management of web applications. However, maintaining application performance and availability is crucial. When performance issues arise, identifying the root cause can be challenging. This is where Auto-Heal in Azure App Service becomes a game-changer.
-Auto-Heal is a diagnostic and recovery feature that allows you to proactively detect and mitigate issues affecting your application’s performance. It enables automatic corrective actions and helps capture vital diagnostic data to troubleshoot problems efficiently. In this blog, we’ll explore how Auto-Heal works, its configuration, and how it assists in diagnosing performance bottlenecks.
-What is Auto-Heal in Azure App Service?
-Auto-Heal is a self-healing…]]></summary>
-        <author>
-            <name>shagnihotri</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[RAG Time  Journey 1: RAG and knowledge retrieval fundamentals]]></title>
-        <id>https://techcommunity.microsoft.com/blog/Azure-AI-Services-blog/rag-time-journey-1-rag-and-knowledge-retrieval-fundamentals/4390174</id>
-        <link href="https://techcommunity.microsoft.com/blog/Azure-AI-Services-blog/rag-time-journey-1-rag-and-knowledge-retrieval-fundamentals/4390174"/>
-        <updated>2025-03-06T17:14:39.000Z</updated>
-        <summary type="html"><![CDATA[Introduction
-Farzad here! Welcome to the first post in RAG Time, a multi-part, multi-format educational series covering all things Retrieval-Augmented Generation (RAG). This series consists of five distinct journeys, each comprising a blog post and a video exploring a key RAG concept, including practical guidance on leveraging Azure AI Search.
-Visit our RAG Time repo to access the complete series and supporting resources.
-Series Overview: RAG Time
-This series consists of 5 journeys, that cover various aspects of a RAG system:
-
-RAG fundamentals
-Building the ultimate retrieval system
-Optimize your vector index at scale
-RAG for all your data
-Hero use cases
-
-
- 
-Journey 1 Overview: RAG Fundamentals
-In Journey 1, we'll introduce core RAG concepts and explore Azure AI Search's role:
-
-What is RAG …]]></summary>
-        <author>
-            <name>fsunavala-msft</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[RAG Time  Journey 1: RAG and knowledge retrieval fundamentals]]></title>
-        <id>https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/blog/Azure-AI-Services-blog/rag-time-journey-1-rag-and-knowledge-retrieval-fundamentals/4390174</id>
-        <link href="https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/blog/Azure-AI-Services-blog/rag-time-journey-1-rag-and-knowledge-retrieval-fundamentals/4390174"/>
-        <updated>2025-03-06T17:14:39.000Z</updated>
-        <summary type="html"><![CDATA[Introduction
-Farzad here! Welcome to the first post in RAG Time, a multi-part, multi-format educational series covering all things Retrieval-Augmented Generation (RAG). This series consists of five distinct journeys, each comprising a blog post and a video exploring a key RAG concept, including practical guidance on leveraging Azure AI Search.
-Visit our RAG Time site to access the complete series and supporting resources.
-Series Overview: RAG Time
-This series consists of 5 journeys, that cover various aspects of a RAG system:
-
-RAG fundamentals
-Retrieval: Building the ultimate retrieval system
-System performance: Optimize your vector index at scale
-Data pipeline and indexing: RAG for all your data
-Hero use cases
-
-Journey 1 Overview: RAG Fundamentals
-In Journey 1, we'll introduce core RAG co…]]></summary>
-        <author>
-            <name>fsunavala-msft</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Effortlessly Integrate xAI’s Grok with Semantic Kernel]]></title>
-        <id>https://devblogs.microsoft.com/semantic-kernel/?p=4308</id>
-        <link href="https://devblogs.microsoft.com/semantic-kernel/integrate-sk-with-xai-grok-easily/"/>
-        <updated>2025-03-06T15:31:25.000Z</updated>
-        <summary type="html"><![CDATA[For Semantic Kernel users, integrating xAI’s Grok API using the OpenAI connector is a breeze thanks to its compatibility with OpenAI’s API format. This tutorial focuses on setting up Grok in your Semantic Kernel projects with minimal fuss, using C# and Python examples. Why Grok? Grok, built by xAI, is a powerful AI model, offers […]
-The post Effortlessly Integrate xAI’s Grok with Semantic Kernel appeared first on Semantic Kernel.]]></summary>
-        <author>
-            <name>Roger Barreto</name>
         </author>
     </entry>
 </feed>

@@ -22,6 +22,57 @@
             data-action="toggle-accordions"
             title="Click to toggle the day, Ctrl + click to toggle all."
           >
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2025-08-03 datetime="2025-08-03T02:53:26.000Z">2025-08-03</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2025-08-03 datetime="2025-08-03T02:53:26.000Z"></time>
+          </button>
+        </h2>
+        <ul class="sources card">
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Microsoft Tech Community - Latest Blogs - AI - Machine Learning Blog</button>
+                  <a class="source-heading__link" href="https://techcommunity.microsoft.com">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://techcommunity.microsoft.com/blog/MachineLearningBlog/ai-inference-task-migration-from-cpu-to-gpu-methodology-overview/4439377"
+                        open
+                      >
+                        <summary class="article-expander__title">AI Inference Task Migration from CPU to GPU: Methodology Overview</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/blog/MachineLearningBlog/ai-inference-task-migration-from-cpu-to-gpu-methodology-overview/4439377">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDM5Mzc3LWdDVndyVw?revision&#x3D;1" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>Please refer to my repo to get more AI resources, wellcome to star it:
+https://github.com/xinyuwei-david/david-share.git 
+This repository ties together the entire methodology with a minimalistic example: first identify computational hotspots on the CPU, then rewrite loops characterized by &quot;high parallelism, sequential memory access, and simple branching&quot; into CUDA kernels to offload CPU workload and unleash GPU computing power. Running the code once can compare CPU and GPU execution times, separate transfer and computation overheads, and verify result errors. This quickly validates the feasibility and expected gains of &quot;CPU → GPU&quot; migration, providing a template for subsequent large-scale migration, pipeline optimization, and MIG resource partitioning in a real business environment.
+Overal…</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;57
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+        </ul>
+      </section>
+      <section class="daily-content js-toggle-accordions-scope">
+        <h2 class="daily-heading">
+          <button
+            class="daily-heading-toggle"
+            data-action="toggle-accordions"
+            title="Click to toggle the day, Ctrl + click to toggle all."
+          >
             <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2025-08-02 datetime="2025-08-01T18:33:28.000Z">2025-08-02</time>
             <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2025-08-02 datetime="2025-08-01T18:33:28.000Z"></time>
           </button>
@@ -38043,426 +38094,10 @@ For organizations looking to build competitive advantage through AI, building th
             </li>
         </ul>
       </section>
-      <section class="daily-content js-toggle-accordions-scope">
-        <h2 class="daily-heading">
-          <button
-            class="daily-heading-toggle"
-            data-action="toggle-accordions"
-            title="Click to toggle the day, Ctrl + click to toggle all."
-          >
-            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2025-03-07 datetime="2025-03-07T08:00:00.000Z">2025-03-07</time>
-            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2025-03-07 datetime="2025-03-07T08:00:00.000Z"></time>
-          </button>
-        </h2>
-        <ul class="sources card">
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Microsoft Tech Community - Latest Blogs - Microsoft Developer Community Blog</button>
-                  <a class="source-heading__link" href="https://techcommunity.microsoft.com">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/take-full-control-of-your-ai-apis-with-azure-api-management-gateway/4373220"
-                        open
-                      >
-                        <summary class="article-expander__title">Take full control of your AI APIs with Azure API Management Gateway</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/take-full-control-of-your-ai-apis-with-azure-api-management-gateway/4373220">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00MzczMjIwLWF5dTEybg?revision&#x3D;3" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>This article is part of a series of articles on API Management and Generative AI. We believe that adding Azure API Management to your AI projects can help you scale your AI models, make them more secure and easier to manage.
-In this article, we will shed some light on capabilities in API Management, which are designed to help you govern and manage Generative AI APIs, ensuring that you are building resilient and secure intelligent applications.
- 
-But why exactly do I need API Management for my AI APIs?
-Common challenges when implementing Gen AI-Powered solutions include: -
-
-Quota, (calculated in tokens-per-minute (TPM)), allocation across multiple client apps,
-How to control and track token consumption for all users,
-Mechanisms to attribute costs to specific client apps, activities, or user…</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;27
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/take-full-control-of-your-ai-apis-with-azure-api-management-gateway/4373220"
-                        open
-                      >
-                        <summary class="article-expander__title">Take full control of your AI APIs with Azure API Management Gateway</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/blog/AzureDevCommunityBlog/take-full-control-of-your-ai-apis-with-azure-api-management-gateway/4373220">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>This article is part of a series of articles on API Management and Generative AI. We believe that adding Azure API Management to your AI projects can help you scale your AI models, make them more secure and easier to manage.
-In this article, we will shed some light on capabilities in API Management, which are designed to help you govern and manage Generative AI APIs, ensuring that you are building resilient and secure intelligent applications.
- 
-But why exactly do I need API Management for my AI APIs?
-Common challenges when implementing Gen AI-Powered solutions include: -
-
-Quota, (calculated in tokens-per-minute (TPM)), allocation across multiple client apps,
-How to control and track token consumption for all users,
-Mechanisms to attribute costs to specific client apps, activities, or user…</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Microsoft Tech Community - Latest Blogs - Microsoft Developer Community Blog</button>
-                  <a class="source-heading__link" href="https://techcommunity.microsoft.com">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/construyendo-una-aplicaci%C3%B3n-web-con-inteligencia-artificial-usando-python/4385353"
-                        open
-                      >
-                        <summary class="article-expander__title">Construyendo una Aplicación Web con Inteligencia Artificial usando Python</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/construyendo-una-aplicaci%C3%B3n-web-con-inteligencia-artificial-usando-python/4385353">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00Mzg1MzUzLUpLM28yNQ?revision&#x3D;4" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>En la segunda sesión del GitHub Copilot Bootcamp LATAM, organizado por Microsoft Reactor, el ingeniero Manuel Ortiz, Embajador de Microsoft Learn y líder comunitario en GitHub, guió a desarrolladores en la creación de una aplicación web con capacidades de inteligencia artificial. Este taller práctico combinó fundamentos de desarrollo backend en Python con técnicas avanzadas de integración de modelos de lenguaje de Azure OpenAI.
-
-Introducción a Azure Open AI
-Azure Open AI es una colaboración entre Microsoft y OpenAI que permite a los desarrolladores integrar modelos avanzados de inteligencia artificial en sus aplicaciones utilizando la infraestructura de Azure. Esto ofrece acceso a modelos poderosos como GPT-4, que pueden ser utilizados para una variedad de tareas, desde procesamiento de le…</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;25
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/construyendo-una-aplicaci%C3%B3n-web-con-inteligencia-artificial-usando-python/4385353"
-                        open
-                      >
-                        <summary class="article-expander__title">Construyendo una Aplicación Web con Inteligencia Artificial usando Python</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/blog/AzureDevCommunityBlog/construyendo-una-aplicaci%C3%B3n-web-con-inteligencia-artificial-usando-python/4385353">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>En la segunda sesión del GitHub Copilot Bootcamp LATAM, organizado por Microsoft Reactor, el ingeniero Manuel Ortiz, Embajador de Microsoft Learn y líder comunitario en GitHub, guió a desarrolladores en la creación de una aplicación web con capacidades de inteligencia artificial. Este taller práctico combinó fundamentos de desarrollo backend en Python con técnicas avanzadas de integración de modelos de lenguaje de Azure OpenAI.
-
-Introducción a Azure Open AI
-Azure Open AI es una colaboración entre Microsoft y OpenAI que permite a los desarrolladores integrar modelos avanzados de inteligencia artificial en sus aplicaciones utilizando la infraestructura de Azure. Esto ofrece acceso a modelos poderosos como GPT-4, que pueden ser utilizados para una variedad de tareas, desde procesamiento de le…</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Microsoft Tech Community - Latest Blogs - AI - Machine Learning Blog</button>
-                  <a class="source-heading__link" href="https://techcommunity.microsoft.com">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://techcommunity.microsoft.com/blog/MachineLearningBlog/announcing-deepseek-v3-on-azure-ai-foundry-and-github/4390438"
-                        open
-                      >
-                        <summary class="article-expander__title">Announcing DeepSeek-V3 on Azure AI Foundry and GitHub</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/blog/MachineLearningBlog/announcing-deepseek-v3-on-azure-ai-foundry-and-github/4390438">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00MzkwNDM4LUpMVVphYg?revision&#x3D;8" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>Building on the interest of DeepSeek-R1, launched one month ago, we are pleased to announce the availability of DeepSeek-V3 on Azure AI Foundry model catalog with token-based billing and GitHub Models free experience. This latest iteration is part of our commitment to enable powerful, efficient, and accessible AI solutions through the breadth and diversity of choice in the model catalog. DeepSeek-V3 is set to empower organizations across industries to unlock value from their data.
-What is DeepSeek-V3?
-As DeepSeek mentions, ​DeepSeek-V3 is an advanced large language model (LLM), that has gained significant attention for its performance and cost-effectiveness. DeepSeek&#x27;s innovations highlight the potential for achieving high-level AI performance with fewer resources, challenging existing ind…</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;24
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/blog/MachineLearningBlog/announcing-deepseek-v3-on-azure-ai-foundry-and-github/4390438"
-                        open
-                      >
-                        <summary class="article-expander__title">Announcing DeepSeek-V3 on Azure AI Foundry and GitHub</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/blog/MachineLearningBlog/announcing-deepseek-v3-on-azure-ai-foundry-and-github/4390438">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Building on the interest of DeepSeek-R1, launched one month ago, we are pleased to announce the availability of DeepSeek-V3 on Azure AI Foundry model catalog with token-based billing and GitHub Models free experience. This latest iteration is part of our commitment to enable powerful, efficient, and accessible AI solutions through the breadth and diversity of choice in the model catalog. DeepSeek-V3 is set to empower organizations across industries to unlock value from their data.
-What is DeepSeek-V3?
-As DeepSeek mentions, ​DeepSeek-V3 is an advanced large language model (LLM), that has gained significant attention for its performance and cost-effectiveness. DeepSeek&#x27;s innovations highlight the potential for achieving high-level AI performance with fewer resources, challenging existing ind…</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Semantic Kernel</button>
-                  <a class="source-heading__link" href="https://devblogs.microsoft.com/semantic-kernel/">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://devblogs.microsoft.com/semantic-kernel/?p&#x3D;4340"
-                        open
-                      >
-                        <summary class="article-expander__title">Talk to your agents! Introducing the Realtime API’s in Semantic Kernel!</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://devblogs.microsoft.com/semantic-kernel/talk-to-your-agents-introducing-the-realtime-apis-in-semantic-kernel/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Introducing Realtime Agents in Semantic Kernel for Python! With release 1.23.0 of the Python version of Semantic Kernel we are introducing a new set of clients for interacting with the realtime multi-modal API’s of OpenAI and Azure OpenAI. They provide a abstracted approach to connecting to those services, adding your tools and running apps that […]
-The post Talk to your agents! Introducing the Realtime API’s in Semantic Kernel! appeared first on Semantic Kernel.</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;24
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Microsoft Tech Community - Latest Blogs - Apps on Azure Blog</button>
-                  <a class="source-heading__link" href="https://techcommunity.microsoft.com">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/azure-app-service-auto-heal-capturing-relevant-data-during-performance-issues/4390351"
-                        open
-                      >
-                        <summary class="article-expander__title">Azure App Service Auto-Heal: Capturing Relevant Data During Performance Issues</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/azure-app-service-auto-heal-capturing-relevant-data-during-performance-issues/4390351">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00MzkwMzUxLTlYQ1M1aw?revision&#x3D;1" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>Introduction
-Azure App Service is a powerful platform that simplifies the deployment and management of web applications. However, maintaining application performance and availability is crucial. When performance issues arise, identifying the root cause can be challenging. This is where Auto-Heal in Azure App Service becomes a game-changer.
-Auto-Heal is a diagnostic and recovery feature that allows you to proactively detect and mitigate issues affecting your application’s performance. It enables automatic corrective actions and helps capture vital diagnostic data to troubleshoot problems efficiently. In this blog, we’ll explore how Auto-Heal works, its configuration, and how it assists in diagnosing performance bottlenecks.
-What is Auto-Heal in Azure App Service?
-Auto-Heal is a self-healing…</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;39
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/blog/AppsonAzureBlog/azure-app-service-auto-heal-capturing-relevant-data-during-performance-issues/4390351"
-                        open
-                      >
-                        <summary class="article-expander__title">Azure App Service Auto-Heal: Capturing Relevant Data During Performance Issues</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/blog/AppsonAzureBlog/azure-app-service-auto-heal-capturing-relevant-data-during-performance-issues/4390351">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Introduction
-Azure App Service is a powerful platform that simplifies the deployment and management of web applications. However, maintaining application performance and availability is crucial. When performance issues arise, identifying the root cause can be challenging. This is where Auto-Heal in Azure App Service becomes a game-changer.
-Auto-Heal is a diagnostic and recovery feature that allows you to proactively detect and mitigate issues affecting your application’s performance. It enables automatic corrective actions and helps capture vital diagnostic data to troubleshoot problems efficiently. In this blog, we’ll explore how Auto-Heal works, its configuration, and how it assists in diagnosing performance bottlenecks.
-What is Auto-Heal in Azure App Service?
-Auto-Heal is a self-healing…</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Microsoft Tech Community - Latest Blogs - AI - Azure AI services Blog</button>
-                  <a class="source-heading__link" href="https://techcommunity.microsoft.com">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://techcommunity.microsoft.com/blog/Azure-AI-Services-blog/rag-time-journey-1-rag-and-knowledge-retrieval-fundamentals/4390174"
-                        open
-                      >
-                        <summary class="article-expander__title">RAG Time  Journey 1: RAG and knowledge retrieval fundamentals</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/blog/Azure-AI-Services-blog/rag-time-journey-1-rag-and-knowledge-retrieval-fundamentals/4390174">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00MzkwMTc0LTV1eDk5YQ?revision&#x3D;5" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>Introduction
-Farzad here! Welcome to the first post in RAG Time, a multi-part, multi-format educational series covering all things Retrieval-Augmented Generation (RAG). This series consists of five distinct journeys, each comprising a blog post and a video exploring a key RAG concept, including practical guidance on leveraging Azure AI Search.
-Visit our RAG Time repo to access the complete series and supporting resources.
-Series Overview: RAG Time
-This series consists of 5 journeys, that cover various aspects of a RAG system:
-
-RAG fundamentals
-Building the ultimate retrieval system
-Optimize your vector index at scale
-RAG for all your data
-Hero use cases
-
-
- 
-Journey 1 Overview: RAG Fundamentals
-In Journey 1, we&#x27;ll introduce core RAG concepts and explore Azure AI Search&#x27;s role:
-
-What is RAG …</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;29
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/blog/Azure-AI-Services-blog/rag-time-journey-1-rag-and-knowledge-retrieval-fundamentals/4390174"
-                        open
-                      >
-                        <summary class="article-expander__title">RAG Time  Journey 1: RAG and knowledge retrieval fundamentals</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/blog/Azure-AI-Services-blog/rag-time-journey-1-rag-and-knowledge-retrieval-fundamentals/4390174">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Introduction
-Farzad here! Welcome to the first post in RAG Time, a multi-part, multi-format educational series covering all things Retrieval-Augmented Generation (RAG). This series consists of five distinct journeys, each comprising a blog post and a video exploring a key RAG concept, including practical guidance on leveraging Azure AI Search.
-Visit our RAG Time site to access the complete series and supporting resources.
-Series Overview: RAG Time
-This series consists of 5 journeys, that cover various aspects of a RAG system:
-
-RAG fundamentals
-Retrieval: Building the ultimate retrieval system
-System performance: Optimize your vector index at scale
-Data pipeline and indexing: RAG for all your data
-Hero use cases
-
-Journey 1 Overview: RAG Fundamentals
-In Journey 1, we&#x27;ll introduce core RAG co…</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
-        </ul>
-      </section>
-      <section class="daily-content js-toggle-accordions-scope">
-        <h2 class="daily-heading">
-          <button
-            class="daily-heading-toggle"
-            data-action="toggle-accordions"
-            title="Click to toggle the day, Ctrl + click to toggle all."
-          >
-            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2025-03-06 datetime="2025-03-06T15:31:25.000Z">2025-03-06</time>
-            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2025-03-06 datetime="2025-03-06T15:31:25.000Z"></time>
-          </button>
-        </h2>
-        <ul class="sources card">
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Semantic Kernel</button>
-                  <a class="source-heading__link" href="https://devblogs.microsoft.com/semantic-kernel/">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://devblogs.microsoft.com/semantic-kernel/?p&#x3D;4308"
-                        open
-                      >
-                        <summary class="article-expander__title">Effortlessly Integrate xAI’s Grok with Semantic Kernel</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://devblogs.microsoft.com/semantic-kernel/integrate-sk-with-xai-grok-easily/">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://devblogs.microsoft.com/semantic-kernel/wp-content/uploads/sites/78/2025/03/grokblog-thumb.png" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>For Semantic Kernel users, integrating xAI’s Grok API using the OpenAI connector is a breeze thanks to its compatibility with OpenAI’s API format. This tutorial focuses on setting up Grok in your Semantic Kernel projects with minimal fuss, using C# and Python examples. Why Grok? Grok, built by xAI, is a powerful AI model, offers […]
-The post Effortlessly Integrate xAI’s Grok with Semantic Kernel appeared first on Semantic Kernel.</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;24
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
-        </ul>
-      </section>
 
     <footer>
-      <a class="footer-link" href="https://github.com/lok-msft/azure-blog-rss/actions/runs/16699975279">
-        <time id="build-timestamp" datetime="2025-08-03T02:01:25.479Z">2025-08-03T02:01:25.479Z</time>
+      <a class="footer-link" href="https://github.com/lok-msft/azure-blog-rss/actions/runs/16712229719">
+        <time id="build-timestamp" datetime="2025-08-04T02:01:48.010Z">2025-08-04T02:01:48.010Z</time>
       </a>
       <a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a>
     </footer>
