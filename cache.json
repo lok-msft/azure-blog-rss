@@ -2044,16 +2044,6 @@
           "wordCount": 2170,
           "title": "Spatial queries in Fabric Data Warehouse",
           "imageUrl": "https://blog.fabric.microsoft.com/images/shared/social/social-image-v2.png"
-        },
-        {
-          "id": "extending-flexibility-default-checkbox-changes-on-tenant-settings-for-sql-database-in-fabric",
-          "author": null,
-          "description": "In our ongoing effort to enhance the visibility, accessibility, and efficiency of SQL database in Fabric, we are making a change that ensures organizations can make an informed decision before default enablement takes effect. We have changed the timeline for when SQL database will be enabled by default. Initially, we planned to roll out the … \nContinue reading “Extending flexibility: default checkbox changes on tenant settings for SQL database in Fabric”",
-          "link": "https://blog.fabric.microsoft.com/en/blog/extending-flexibility-default-checkbox-changes-on-tenant-settings-for-sql-database-in-fabric/",
-          "publishedOn": "2025-03-12T09:00:00.000Z",
-          "wordCount": 1644,
-          "title": "Extending flexibility: default checkbox changes on tenant settings for SQL database in Fabric",
-          "imageUrl": "https://blog.fabric.microsoft.com/images/shared/social/social-image-v2.png"
         }
       ]
     },
@@ -3494,6 +3484,16 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/simplifying-outbound-connectivity-troubleshooting-in-aks-with-connectivity-analy/4441200",
+          "author": "juliayin",
+          "description": "Background\nTroubleshooting outbound connectivity issues in Azure Kubernetes Service (AKS) can be daunting. The complexity arises from the layered nature of Azure networking, which can span NSGs, UDRs, route tables, firewalls, and private endpoints. When a pod fails to reach an external service, pinpointing the root cause often requires deep familiarity with Azure networking and manual inspection of multiple network resources. This complex process slows down resolution and increases operational overhead for cluster operations and platform teams.\nAnnouncing the Connectivity Analysis feature for AKS\nTo simplify the network troubleshooting process, we're excited to announce the Connectivity Analysis feature for AKS, now available in Public Preview. This feature leverages the same underlying en…",
+          "link": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/simplifying-outbound-connectivity-troubleshooting-in-aks-with-connectivity-analy/4441200",
+          "publishedOn": "2025-08-08T18:14:42.000Z",
+          "wordCount": 8165,
+          "title": "Simplifying Outbound Connectivity Troubleshooting in AKS with Connectivity Analysis (Preview)",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDQxMjAwLTVIU3NnRQ?revision=2"
+        },
+        {
           "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/introducing-azure-app-testing-scalable-end-to-end-app-validation/4440496",
           "author": "John_Stallo",
           "description": "Azure App Testing enables developers and QA teams to run large-scale functional and performance tests to pinpoint issues in their applications, across frameworks like Playwright, JMeter, or Locust. It brings together two powerful testing capabilities—Azure Load Testing and Microsoft Playwright Testing—into a single hub in the Azure Portal, providing a consistent experience for resource provisioning, access control, and consolidated billing. With Azure App Testing, our goal is to help you spend less time managing infrastructure and more time harnessing AI-driven test automation to boost quality and innovation.\nKey Benefits\n\nAI-driven testing: Accelerate test creation and insights with AI-powered tooling.\nLimitless scale: Simulate real-world traffic from multiple regions with load tests, and…",
@@ -3502,6 +3502,16 @@
           "wordCount": 6962,
           "title": "Introducing Azure App Testing: Scalable End-to-end App Validation",
           "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDQwNDk2LVc1SDRPTg?revision=9"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/how-to-secure-your-pro-code-custom-engine-agent-of-microsoft-365-copilot/4440495",
+          "author": "daisami",
+          "description": "Prerequisite\nThis article assumes that you’ve already gone through a following post. Please make sure to read it before proceeding:\n\nDeveloping a Custom Engine Agent for Microsoft 365 Copilot Chat Using Pro-Code\n\nWith the article, we have found how to publish a Custom Engine Agent using pro-code approaches such as C#. In this post, I’d like to shift the focus to security, specifically how to protect the endpoint of our custom Microsoft 365 Copilot. Through several architectural explorations, we found an approach that seems to work well. However, I strongly encourage you to review and evaluate it carefully for your production environment.\nWhich Endpoints Can Be Controlled?\nIn the current architecture, there are three key endpoints to consider from a security perspective:\n\nTeams EndpointThis…",
+          "link": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/how-to-secure-your-pro-code-custom-engine-agent-of-microsoft-365-copilot/4440495",
+          "publishedOn": "2025-08-07T05:28:15.000Z",
+          "wordCount": 15977,
+          "title": "How to Secure your pro-code Custom Engine Agent of Microsoft 365 Copilot?",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDQwNDk1LXRsOHRReQ?revision=10"
         },
         {
           "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/how-to-secure-azure-bot-service-endpoints-with-teams-channel/4440495",
@@ -5441,46 +5451,6 @@
           "publishedOn": "2025-03-12T15:16:29.000Z",
           "wordCount": null,
           "title": "Azure Platform Metrics for AKS Control Plane Monitoring",
-          "imageUrl": null
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/superfast-using-web-app-and-managed-identity-to-invoke-function-app-triggers/4392169",
-          "author": "theringe",
-          "description": "TOC\n\nIntroduction\nSetup\nReferences\n\n \n1. Introduction\nMany enterprises prefer not to use App Keys to invoke Function App triggers, as they are concerned that these fixed strings might be exposed.\nThis method allows you to invoke Function App triggers using Managed Identity for enhanced security.\nI will provide examples in both Bash and Node.js.\n \n2. Setup\n1. Create a Linux Python 3.11 Function App\n \n1.1. Configure Authentication to block unauthenticated callers while allowing the Web App’s Managed Identity to authenticate.\n\n\n\n\nIdentity Provider\n\nMicrosoft\n\n\nChoose a tenant for your application and it's users\n\nWorkforce Configuration\n\n\nApp registration type\n\nCreate\n\n\nName\n\n[automatically generated]\n\n\nClient Secret expiration\n\n[fit-in your business purpose]\n\n\nSupported Account Type\n\nAny Micr…",
-          "link": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/superfast-using-web-app-and-managed-identity-to-invoke-function-app-triggers/4392169",
-          "publishedOn": "2025-03-12T03:35:55.000Z",
-          "wordCount": 7502,
-          "title": "Superfast using Web App and Managed Identity to invoke Function App triggers",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00MzkyMTY5LXlxM0tjQQ?revision=2"
-        },
-        {
-          "id": "https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/blog/AppsonAzureBlog/superfast-using-web-app-and-managed-identity-to-invoke-function-app-triggers/4392169",
-          "author": "theringe",
-          "description": "TOC\n\nIntroduction\nSetup\nReferences\n\n \n1. Introduction\nMany enterprises prefer not to use App Keys to invoke Function App triggers, as they are concerned that these fixed strings might be exposed.\nThis method allows you to invoke Function App triggers using Managed Identity for enhanced security.\nI will provide examples in both Bash and Node.js.\n \n2. Setup\n1. Create a Linux Python 3.11 Function App\n \n1.1. Configure Authentication to block unauthenticated callers while allowing the Web App’s Managed Identity to authenticate.\n\n\n\n\nIdentity Provider\n\nMicrosoft\n\n\nChoose a tenant for your application and it's users\n\nWorkforce Configuration\n\n\nApp registration type\n\nCreate\n\n\nName\n\n[automatically generated]\n\n\nClient Secret expiration\n\n[fit-in your business purpose]\n\n\nSupported Account Type\n\nAny Micr…",
-          "link": "https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/blog/AppsonAzureBlog/superfast-using-web-app-and-managed-identity-to-invoke-function-app-triggers/4392169",
-          "publishedOn": "2025-03-12T03:35:55.000Z",
-          "wordCount": null,
-          "title": "Superfast using Web App and Managed Identity to invoke Function App triggers",
-          "imageUrl": null
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/getting-started-with-linux-webjobs-on-app-service/4392011",
-          "author": "denverbrittain",
-          "description": "WebJobs Intro\nWebJobs is a feature of Azure App Service that enables you to run a program or script in the same instance as a web app. All app service plans support WebJobs. There's no extra cost to use WebJobs. This sample uses a Triggered (scheduled) WebJob to output the system time once every 15 minutes.\nCreate Web App\nBefore creating our WebJobs, we need to create an App Service webapp. If you already have an App Service Web App, skip to the next step Otherwise, in the portal, select App Services > Create > Web App. After following the create instructions and selecting a runtime stack (does not matter for this example…we’ll do a more in-depth sample later), create your App Service Web App.\nNext, we’ll add a basic WebJob to our app.\nCreate WebJob Script\nBefore we do anything else, let’s…",
-          "link": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/getting-started-with-linux-webjobs-on-app-service/4392011",
-          "publishedOn": "2025-03-11T19:00:09.000Z",
-          "wordCount": 6808,
-          "title": "Getting Started with Linux WebJobs on App Service",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00MzkyMDExLURoTEFEVg?revision=2"
-        },
-        {
-          "id": "https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/blog/AppsonAzureBlog/getting-started-with-linux-webjobs-on-app-service/4392011",
-          "author": "denverbrittain",
-          "description": "WebJobs Intro\nWebJobs is a feature of Azure App Service that enables you to run a program or script in the same instance as a web app. All app service plans support WebJobs. There's no extra cost to use WebJobs. This sample uses a Triggered (scheduled) WebJob to output the system time once every 15 minutes.\nCreate Web App\nBefore creating our WebJobs, we need to create an App Service webapp. If you already have an App Service Web App, skip to the next step Otherwise, in the portal, select App Services > Create > Web App. After following the create instructions and selecting a runtime stack (does not matter for this example…we’ll do a more in-depth sample later), create your App Service Web App.\nNext, we’ll add a basic WebJob to our app.\nCreate WebJob Script\nBefore we do anything else, let’s…",
-          "link": "https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/blog/AppsonAzureBlog/getting-started-with-linux-webjobs-on-app-service/4392011",
-          "publishedOn": "2025-03-11T19:00:09.000Z",
-          "wordCount": null,
-          "title": "Getting Started with Linux WebJobs on App Service",
           "imageUrl": null
         }
       ]
@@ -10938,16 +10908,6 @@
           "wordCount": 7757,
           "title": "Customer Case Story: Creating a Semantic Kernel Agent for Automated GitHub Code Reviews",
           "imageUrl": "https://devblogs.microsoft.com/semantic-kernel/wp-content/uploads/sites/78/2025/03/case-study.jpeg"
-        },
-        {
-          "id": "https://devblogs.microsoft.com/semantic-kernel/?p=4456",
-          "author": "Sophia Lagerkrans-Pandey, José Camacho",
-          "description": "Customer Case Study: INCM transforms legal accessibility with an AI Search Assistant The Imprensa Nacional-Casa da Moeda (INCM) is responsible for managing and publishing Portugal’s Diário da República (Official Gazette of the Republic of Portugal), which includes essential information for understanding laws, regulations, and legal processes. The quantity of information and the complex language used […]\nThe post Customer Case Study: INCM transforms legal accessibility with an AI Search Assistant appeared first on Semantic Kernel.",
-          "link": "https://devblogs.microsoft.com/semantic-kernel/customer-case-study-incm-transforms-legal-accessibility-with-an-ai-search-assistant/",
-          "publishedOn": "2025-03-11T19:29:25.000Z",
-          "wordCount": 7593,
-          "title": "Customer Case Study: INCM transforms legal accessibility with an AI Search Assistant",
-          "imageUrl": "https://devblogs.microsoft.com/semantic-kernel/wp-content/uploads/sites/78/2025/03/Image-blog-Microsoft.png"
         }
       ]
     },
@@ -11222,16 +11182,6 @@
           "wordCount": 6589,
           "title": "Introducing ABAP Support in GitHub Copilot for Eclipse",
           "imageUrl": "https://devblogs.microsoft.com/java/wp-content/uploads/sites/51/2025/03/ABAPCompletionDemo-1.gif"
-        },
-        {
-          "id": "https://devblogs.microsoft.com/java/?p=231951",
-          "author": "Hang Wang",
-          "description": "Today, GitHub Copilot Chat is available in public preview for Eclipse!  This release follows the initial public preview of GitHub Copilot in Eclipse, which only supported code completions, and is available for all Eclipse users with access to GitHub Copilot.   After installing or updating GitHub Copilot for Eclipse, click on  in the bottom right corner […]\nThe post GitHub Copilot Chat now available in public preview for Eclipse appeared first on Microsoft for Java Developers.",
-          "link": "https://devblogs.microsoft.com/java/github-copilot-chat-now-available-in-public-preview-for-eclipse/",
-          "publishedOn": "2025-03-12T00:11:55.000Z",
-          "wordCount": 6914,
-          "title": "GitHub Copilot Chat now available in public preview for Eclipse",
-          "imageUrl": "https://devblogs.microsoft.com/java/wp-content/uploads/sites/51/2025/03/GitHub-Copilot-Chat-for-Eclipse-Public-Preview.png"
         }
       ]
     },
@@ -11521,26 +11471,6 @@
           "wordCount": 6694,
           "title": "Markdown for large text fields (private preview)",
           "imageUrl": "https://devblogs.microsoft.com/devops/wp-content/uploads/sites/6/2023/03/sketch-1.png"
-        },
-        {
-          "id": "https://devblogs.microsoft.com/devops/?p=70360",
-          "author": "Gloridel Morales",
-          "description": "Today we are releasing patches that impact our self-hosted product, Azure DevOps Server. We strongly encourage and recommend that all customers use the latest, most secure release of Azure DevOps Server. You can download the latest version of the product, Azure DevOps Server 2022.2 from the Azure DevOps Server download page. The following versions of […]\nThe post March Patches for Azure DevOps Server appeared first on Azure DevOps Blog.",
-          "link": "https://devblogs.microsoft.com/devops/march-patches-for-azure-devops-server-3/",
-          "publishedOn": "2025-03-11T19:12:50.000Z",
-          "wordCount": 6787,
-          "title": "March Patches for Azure DevOps Server",
-          "imageUrl": "https://devblogs.microsoft.com/devops/wp-content/uploads/sites/6/2018/09/index-hero.jpg"
-        },
-        {
-          "id": "https://devblogs.microsoft.com/devops/?p=70362",
-          "author": "Dan Hellem",
-          "description": "We’ve reached a major milestone in the rollout of New Boards Hub this week by making it the default experience for all organizations and users. While many users can still temporarily switch back if they encounter a blocking issue, our telemetry shows that 97% of users are staying on New Boards without reverting. This is […]\nThe post New Boards Hub Update appeared first on Azure DevOps Blog.",
-          "link": "https://devblogs.microsoft.com/devops/new-boards-hub-update-spring-2025/",
-          "publishedOn": "2025-03-11T18:20:34.000Z",
-          "wordCount": 6829,
-          "title": "New Boards Hub Update",
-          "imageUrl": "https://devblogs.microsoft.com/devops/wp-content/uploads/sites/6/2025/03/new-boards-hub-1.png"
         }
       ]
     },
