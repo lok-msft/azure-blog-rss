@@ -2,10 +2,76 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2025-09-08T01:38:31.882Z</updated>
+    <updated>2025-09-09T01:27:37.564Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Designing AI Workloads with the Azure Well-Architected Framework]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/designing-ai-workloads-with-the-azure-well-architected-framework/4452252</id>
+        <link href="https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/designing-ai-workloads-with-the-azure-well-architected-framework/4452252"/>
+        <updated>2025-09-08T23:35:59.000Z</updated>
+        <summary type="html"><![CDATA[What Is the Azure Well-Architected Framework?
+The Azure Well-Architected Framework is a set of guiding principles that help cloud architects build high-quality solutions on Azure. It is structured around five key pillars:
+
+Reliability: Ensuring your application can recover from failures and continue to function.
+Security: Protecting applications and data from threats.
+Cost Optimization: Managing costs to maximize the value delivered.
+Operational Excellence: Running and monitoring systems to deliver business value.
+Performance Efficiency: Using IT and computing resources efficiently.
+
+These pillars serve as a foundation for evaluating and improving the architecture of cloud-based applications. They are particularly relevant for AI workloads, which often involve complex data pipelines, high …]]></summary>
+        <author>
+            <name>brauerblogs</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Generally Available - High scale mode in Azure Monitor - Container Insights]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/generally-available---high-scale-mode-in-azure-monitor---container-insights/4452199</id>
+        <link href="https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/generally-available---high-scale-mode-in-azure-monitor---container-insights/4452199"/>
+        <updated>2025-09-08T20:25:35.000Z</updated>
+        <summary type="html"><![CDATA[Container Insights is Azure Monitor’s solution for collecting logs from your Azure Kubernetes Service (AKS) clusters.  As the adoption of AKS continues to grow, we are seeing an increasing number of customers with log scaling needs that hit the limits of log collection in Container Insights. 
+Last August, we announced the public preview of High Scale mode in Container Insights to help customers achieve a higher log collection throughput from their AKS clusters. 
+Today, we are happy to announce the General Availability of High Scale mode. High scale mode is ideal for customers approaching or above 10,000 logs/sec from a single node.  
+When High Scale mode is enabled, Container Insights does multiple configuration changes leading to a higher overall throughput. These include using a more powerful agent setup, using a different data pipeline, allocating more memory for the agent, and more. All these changes are made in the background by the service and do not require input or configuration from customers.  High Scale mode impacts only the data collection layer (with a new DCR) – the rest of the experience remains the same. Data flows to our existing tables, your queries and alerts work as before too.  
+High Scale mode is available to all customers. Today, High scale is turned off by default. In the future, we plan to enable High Scale mode by default for all customers to reduce the chances of log loss when workloads scale.  
+To get started with High Scale mode, please see our documentation at https://aka.ms/cihsmode]]></summary>
+        <author>
+            <name>DalanMendonca</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Building a Runtime JAR inspector in 10 hours]]></title>
+        <id>https://devblogs.microsoft.com/java/?p=232478</id>
+        <link href="https://devblogs.microsoft.com/java/building-a-runtime-jar-inspector-in-10-hours/"/>
+        <updated>2025-09-08T19:17:39.000Z</updated>
+        <summary type="html"><![CDATA[Last Friday I was reviewing our backlog items in the Java Engineering Group, and found an idea we had when Log4Shell happened. To this day, there is still no main stream solution to “find in production where a given JAR is being used“. Why runtime truth matters (Log4Shell) When Log4Shell hit, lots of teams hunted […]
+The post Building a Runtime JAR inspector in 10 hours appeared first on Microsoft for Java Developers.]]></summary>
+        <author>
+            <name>Bruno Borges</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Change to data visibility for Microsoft Graph callRecords APIs in GCC High and DoD]]></title>
+        <id>https://devblogs.microsoft.com/microsoft365dev/?p=24666</id>
+        <link href="https://devblogs.microsoft.com/microsoft365dev/change-to-data-visibility-for-microsoft-graph-callrecords-apis-in-gcc-high-and-dod/"/>
+        <updated>2025-09-08T18:35:58.000Z</updated>
+        <summary type="html"><![CDATA[We're making changes to how Microsoft handles Microsoft Teams call data in GCC High and DoD environments that we expose via the Microsoft Graph callRecords APIs.
+The post Change to data visibility for Microsoft Graph callRecords APIs in GCC High and DoD appeared first on Microsoft 365 Developer Blog.]]></summary>
+        <author>
+            <name>Matthew McGrath</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[GitHub Actions samples: add sidecars to Azure App Service for Linux]]></title>
+        <id>https://azure.github.io/AppService/2025/09/08/GHA-templates-sidecars.html</id>
+        <link href="https://azure.github.io/AppService/2025/09/08/GHA-templates-sidecars.html"/>
+        <updated>2025-09-08T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Sidecars on Azure App Service let you bolt on capabilities like monitoring, caching, or AI—without changing your main app. The Azure team has added two GitHub Actions sample workflows that make it easy to roll this out on App Service for Linux. (Sidecars on Azure App Service)]]></summary>
+        <author>
+            <name>Azure App Service</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Build Multi-Agent AI Systems on Azure App Service]]></title>
         <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/build-multi-agent-ai-systems-on-azure-app-service/4451373</id>
@@ -12706,186 +12772,6 @@ To help illustrate these evaluation strategies, you can find AgenticEvals, a sim
 W…]]></summary>
         <author>
             <name>AlexandreLevret</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Model Mondays: Bringing AI Home with Local Development]]></title>
-        <id>https://techcommunity.microsoft.com/blog/MachineLearningBlog/model-mondays-bringing-ai-home-with-local-development/4403619</id>
-        <link href="https://techcommunity.microsoft.com/blog/MachineLearningBlog/model-mondays-bringing-ai-home-with-local-development/4403619"/>
-        <updated>2025-04-11T22:17:56.000Z</updated>
-        <summary type="html"><![CDATA[As generative AI tools become more powerful, developers are looking for faster, more flexible ways to experiment, fine-tune, and deploy models. But not every workflow starts—or needs to stay—in the cloud. In this episode of Model Mondays, we explore how the AI Toolkit for Visual Studio Code is transforming the development experience by enabling local AI workflows that give you more control, faster iteration, and seamless integration with your existing tools.
-Whether you're working in a constrained environment, or just prefer to prototype locally, this toolkit makes it possible to run and refine AI models right from your own machine.
-
-Whether you're tinkering with models on a plane, prototyping in a coffee shop, or just want to test your prompts in peace, this toolkit has your back. It's like taking your favorite AI models on a road trip... and they actually behave.
-What’s in it for you?
-Each Model Mondays episode is a 30-minute boost to your AI skillset:
-
-Stay updated – A 5-min recap of the week’s hottest model drops and Azure AI Foundry news
-Get hands-on – A 15-min walkthrough focused on how to fine-tune Mistral in Azure
-Ask the experts – Live Q&A with Microsoft and Mistral 
-
-And the conversation doesn’t stop there. Join us every Friday for a Model Mondays Watercooler Chat at 1:30 PM ET / 10:30 AM PT in our Discord community, where we recap, react, and nerd out with the broader AI community.
-In Case You Missed It
-
-Episode 1: GitHub Models – Building better dev experiences
-Episode 2: Reasoning Models 
-Episode 3: Search & Retrieval Models
-Episode 4 : Visual Generative Models
-Episode 5 : Fine-Tuning Models
-
-Be Part of the Movement
-
-Watch Live on Microsoft Reactor – RSVP Now
-Join the AI Community – Discord Fridays
-Explore the Tech – Model Mondays GitHub
-
-So, grab your laptop, launch VS Code, and let’s bring AI development home!!]]></summary>
-        <author>
-            <name>Sharmichock</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Model Mondays: Bringing AI Home with Local Development]]></title>
-        <id>https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/blog/MachineLearningBlog/model-mondays-bringing-ai-home-with-local-development/4403619</id>
-        <link href="https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/blog/MachineLearningBlog/model-mondays-bringing-ai-home-with-local-development/4403619"/>
-        <updated>2025-04-11T22:17:56.000Z</updated>
-        <summary type="html"><![CDATA[As generative AI tools become more powerful, developers are looking for faster, more flexible ways to experiment, fine-tune, and deploy models. But not every workflow starts—or needs to stay—in the cloud. In this episode of Model Mondays, we explore how the AI Toolkit for Visual Studio Code is transforming the development experience by enabling local AI workflows that give you more control, faster iteration, and seamless integration with your existing tools.
-Whether you're working in a constrained environment, or just prefer to prototype locally, this toolkit makes it possible to run and refine AI models right from your own machine.
-
-Whether you're tinkering with models on a plane, prototyping in a coffee shop, or just want to test your prompts in peace, this toolkit has your back. It's like taking your favorite AI models on a road trip... and they actually behave.
-What’s in it for you?
-Each Model Mondays episode is a 30-minute boost to your AI skillset:
-
-Stay updated – A 5-min recap of the week’s hottest model drops and Azure AI Foundry news
-Get hands-on – A 15-min walkthrough focused on how to fine-tune Mistral in Azure
-Ask the experts – Live Q&A with Microsoft and Mistral 
-
-And the conversation doesn’t stop there. Join us every Friday for a Model Mondays Watercooler Chat at 1:30 PM ET / 10:30 AM PT in our Discord community, where we recap, react, and nerd out with the broader AI community.
-In Case You Missed It
-
-Episode 1: GitHub Models – Building better dev experiences
-Episode 2: Reasoning Models 
-Episode 3: Search & Retrieval Models
-Episode 4 : Visual Generative Models
-Episode 5 : Fine-Tuning Models
-
-Be Part of the Movement
-
-Watch Live on Microsoft Reactor – RSVP Now
-Join the AI Community – Discord Fridays
-Explore the Tech – Model Mondays GitHub
-
-So, grab your laptop, launch VS Code, and let’s bring AI development home!!]]></summary>
-        <author>
-            <name>Sharmichock</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Host remote MCP servers in Azure Container Apps]]></title>
-        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/host-remote-mcp-servers-in-azure-container-apps/4403550</id>
-        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/host-remote-mcp-servers-in-azure-container-apps/4403550"/>
-        <updated>2025-04-11T17:58:25.000Z</updated>
-        <summary type="html"><![CDATA[Whether you're building AI agents or using LLM powered tools like GitHub Copilot in Visual Studio Code, you're probably hearing a lot about MCP (Model Context Protocol) lately; maybe you're already using it. It's quickly becoming the standard interoperability layer between different components of the AI stack.
-In this article, we'll explore how to run remote MCP servers as serverless containers in Azure Container Apps and use them in GitHub Copilot in Visual Studio Code.
-MCP servers today
-MCP follows a client-server architecture. It all starts with a client, such as GitHub Copilot in VS Code or Claude Desktop. A client connects to one or more MCP servers.
-Servers are the main extensibility points in MCP. Each server provides new tools, skills, and capabilities to the client. For example, a…]]></summary>
-        <author>
-            <name>AnthonyChu</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Host remote MCP servers in Azure Container Apps]]></title>
-        <id>https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/blog/AppsonAzureBlog/host-remote-mcp-servers-in-azure-container-apps/4403550</id>
-        <link href="https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/blog/AppsonAzureBlog/host-remote-mcp-servers-in-azure-container-apps/4403550"/>
-        <updated>2025-04-11T17:58:25.000Z</updated>
-        <summary type="html"><![CDATA[Whether you're building AI agents or using LLM powered tools like GitHub Copilot in Visual Studio Code, you're probably hearing a lot about MCP (Model Context Protocol) lately; maybe you're already using it. It's quickly becoming the standard interoperability layer between different components of the AI stack.
-In this article, we'll explore how to run remote MCP servers as serverless containers in Azure Container Apps and use them in GitHub Copilot in Visual Studio Code.
-MCP servers today
-MCP follows a client-server architecture. It all starts with a client, such as GitHub Copilot in VS Code or Claude Desktop. A client connects to one or more MCP servers.
-Servers are the main extensibility points in MCP. Each server provides new tools, skills, and capabilities to the client. For example, a…]]></summary>
-        <author>
-            <name>AnthonyChu</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Guest Blog: Revolutionize Business Automation with AI: A Guide to Microsoft’s Semantic Kernel Process Framework]]></title>
-        <id>https://devblogs.microsoft.com/semantic-kernel/?p=4454</id>
-        <link href="https://devblogs.microsoft.com/semantic-kernel/guest-blog-revolutionize-business-automation-with-ai-a-guide-to-microsofts-semantic-kernel-process-framework/"/>
-        <updated>2025-04-11T17:42:14.000Z</updated>
-        <summary type="html"><![CDATA[Revolutionize Business Automation with AI: A Guide to Microsoft’s Semantic Kernel Process Framework Step-by-Step guide on creating your first process with AI Microsoft’s AI Framework, Semantic Kernel, is an easy-to-use C#, Java, and Python-based AI framework that helps you quickly build AI solutions or integrate AI capabilities into your existing app. Semantic Kernel provides various […]
-The post Guest Blog: Revolutionize Business Automation with AI: A Guide to Microsoft’s Semantic Kernel Process Framework appeared first on Semantic Kernel.]]></summary>
-        <author>
-            <name>Sophia Lagerkrans-Pandey, Akshay Kokane</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[How to use any Python AI agent framework with free GitHub Models]]></title>
-        <id>https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/how-to-use-any-python-ai-agent-framework-with-free-github-models/4403526</id>
-        <link href="https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/how-to-use-any-python-ai-agent-framework-with-free-github-models/4403526"/>
-        <updated>2025-04-11T16:43:55.000Z</updated>
-        <summary type="html"><![CDATA[I ❤️ when companies offer free tiers for developer services, since it gives everyone a way to learn new technologies without breaking the bank. Free tiers are especially important for students and people between jobs, when the desire to learn is high but the available cash is low.
-That's why I'm such a fan of GitHub Models: free, high-quality generative AI models available to anyone with a GitHub account. The available models include the latest OpenAI LLMs (like o3-mini), LLMs from the research community (like Phi and Llama), LLMs from other popular providers (like Mistral and Jamba), multimodal models (like gpt-4o and llama-vision-instruct) and even a few embedding models (from OpenAI and Cohere).
-With access to such a range of models, you can prototype complex multi-model workflows to im…]]></summary>
-        <author>
-            <name>Pamela_Fox</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[How to use any Python AI agent framework with free GitHub Models]]></title>
-        <id>https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/how-to-use-any-python-ai-agent-framework-with-free-github-models/4403526</id>
-        <link href="https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/blog/EducatorDeveloperBlog/how-to-use-any-python-ai-agent-framework-with-free-github-models/4403526"/>
-        <updated>2025-04-11T16:43:55.000Z</updated>
-        <summary type="html"><![CDATA[I ❤️ when companies offer free tiers for developer services, since it gives everyone a way to learn new technologies without breaking the bank. Free tiers are especially important for students and people between jobs, when the desire to learn is high but the available cash is low.
-That's why I'm such a fan of GitHub Models: free, high-quality generative AI models available to anyone with a GitHub account. The available models include the latest OpenAI LLMs (like o3-mini), LLMs from the research community (like Phi and Llama), LLMs from other popular providers (like Mistral and Jamba), multimodal models (like gpt-4o and llama-vision-instruct) and even a few embedding models (from OpenAI and Cohere).
-With access to such a range of models, you can prototype complex multi-model workflows to im…]]></summary>
-        <author>
-            <name>Pamela_Fox</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[General-Purpose vs Reasoning Models in Azure OpenAI]]></title>
-        <id>https://techcommunity.microsoft.com/blog/Azure-AI-Services-blog/general-purpose-vs-reasoning-models-in-azure-openai/4403091</id>
-        <link href="https://techcommunity.microsoft.com/blog/Azure-AI-Services-blog/general-purpose-vs-reasoning-models-in-azure-openai/4403091"/>
-        <updated>2025-04-11T16:23:16.000Z</updated>
-        <summary type="html"><![CDATA[1. Introduction
-Since Large Language Models (LLMs) have become mainstream, a wide range of models have emerged to serve different types of tasks—from casual chatbot interactions to advanced scientific reasoning. If you're familiar with GPT-3.5 and GPT-4, you'll know that these models set a high standard for general-purpose AI. But as the field evolves, the distinction between model types has become more pronounced.
-In this blog, we'll explore the differences between two major categories of LLMs:
-
-General-Purpose Models – Designed for broad tasks like conversation, content generation, and multimodal input processing.
-Reasoning Models – Optimized for tasks requiring logic, problem-solving, and step-by-step breakdowns.
-
-We'll use specific models available in Azure OpenAI as examples to illust…]]></summary>
-        <author>
-            <name>WinnieNwanne</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[General-Purpose vs Reasoning Models in Azure OpenAI]]></title>
-        <id>https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/blog/Azure-AI-Services-blog/general-purpose-vs-reasoning-models-in-azure-openai/4403091</id>
-        <link href="https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/blog/Azure-AI-Services-blog/general-purpose-vs-reasoning-models-in-azure-openai/4403091"/>
-        <updated>2025-04-11T16:23:16.000Z</updated>
-        <summary type="html"><![CDATA[1. Introduction
-Since Large Language Models (LLMs) have become mainstream, a wide range of models have emerged to serve different types of tasks—from casual chatbot interactions to advanced scientific reasoning. If you're familiar with GPT-3.5 and GPT-4, you'll know that these models set a high standard for general-purpose AI. But as the field evolves, the distinction between model types has become more pronounced.
-In this blog, we'll explore the differences between two major categories of LLMs:
-
-General-Purpose Models – Designed for broad tasks like conversation, content generation, and multimodal input processing.
-Reasoning Models – Optimized for tasks requiring logic, problem-solving, and step-by-step breakdowns.
-
-We'll use specific models available in Azure OpenAI as examples to illust…]]></summary>
-        <author>
-            <name>WinnieNwanne</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Resolving Microsoft Graph PowerShell 2.26+ compatibility issues with Azure Runbooks]]></title>
-        <id>https://devblogs.microsoft.com/microsoft365dev/?p=24052</id>
-        <link href="https://devblogs.microsoft.com/microsoft365dev/resolving-microsoft-graph-powershell-2-26-compatibility-issues-with-azure-runbooks/"/>
-        <updated>2025-04-11T15:31:22.000Z</updated>
-        <summary type="html"><![CDATA[We know how important Azure Automation workflows and appreciate the critical role played by automation runbooks. Some customers have experienced issues with the release of 2.26.1 of the Microsoft Graph PowerShell SDK, particularly when running PowerShell 7.2 runbooks in Azure Automation. The core challenge is a conflict around .NET 6 where fixing Runbooks would break […]
-The post Resolving Microsoft Graph PowerShell 2.26+ compatibility issues with Azure Runbooks appeared first on Microsoft 365 Developer Blog.]]></summary>
-        <author>
-            <name>Barry Gervin</name>
         </author>
     </entry>
 </feed>
