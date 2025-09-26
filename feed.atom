@@ -2,10 +2,247 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2025-09-25T01:26:26.678Z</updated>
+    <updated>2025-09-26T01:25:40.850Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[AI Azure Landing Zone: Shared Capabilities and Models to Enable AI as a Platform]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/ai-azure-landing-zone-shared-capabilities-and-models-to-enable-ai-as-a-platform/4455951</id>
+        <link href="https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/ai-azure-landing-zone-shared-capabilities-and-models-to-enable-ai-as-a-platform/4455951"/>
+        <updated>2025-09-25T18:31:49.000Z</updated>
+        <summary type="html"><![CDATA[This architecture diagram illustrates a Microsoft Azure AI Landing Zone Pattern — a scalable, secure, and well-governed framework for deploying AI workloads across multiple subscriptions in an enterprise environment. Let's walk through it end-to-end, breaking down each section, the flow, and key Azure services involved.
+🧭 Overview: The architecture is split into 4 major landing zones:
+
+Connectivity Subscription
+AI Apps Landing Zone Subscription
+AI Hub Landing Zone Subscription
+AI Services Landing Zone Subscription
+
+🔁 Step-by-Step Breakdown
+🔹 1. Users → Application Gateway (WAF)
+
+Users (e.g., enterprise employees or external users) access the system via the Application Gateway with Web Application Firewall (WAF).
+This is part of the Connectivity Subscription and provides:
+
+Centralized in…]]></summary>
+        <author>
+            <name>Rohon_Mohapatra</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Access Governance Blueprint for AI Landing Zone]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/access-governance-blueprint-for-ai-landing-zone/4455910</id>
+        <link href="https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/access-governance-blueprint-for-ai-landing-zone/4455910"/>
+        <updated>2025-09-25T18:29:20.000Z</updated>
+        <summary type="html"><![CDATA[Governance Principles
+
+Least Privilege: Grant only the permissions required for each role. 
+
+
+Segregation of Duties (SoD): Separate responsibilities for build, deploy, operate, and secure. 
+
+
+Environment Guardrails: 
+
+
+
+
+Dev → open for experimentation. 
+
+
+
+
+
+
+Nonprod → controlled integration and validation. 
+
+
+
+
+
+
+Prod → no human write, CI/CD only, with Just-in-Time (PIM) access for exceptions. 
+
+
+
+
+Identity Strategy: 
+
+
+
+
+Managed Identities for workloads. 
+
+
+
+
+
+
+Service Principals for pipelines. 
+
+
+
+
+
+
+PIM for human elevation. 
+
+
+
+
+
+
+Break-glass accounts for emergencies only. 
+
+
+
+Key Benefits 
+
+Strong security aligned to enterprise & regulatory needs. 
+
+
+Clear accountability by persona and environment. 
+
+
+Consistency between control-plane and data-plane access. 
+
+
+Built-in operational gua…]]></summary>
+        <author>
+            <name>Madhur_Shukla</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Foundry Fridays: Your Gateway to Azure AI Discovery]]></title>
+        <id>https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/foundry-fridays-your-gateway-to-azure-ai-discovery/4456981</id>
+        <link href="https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/foundry-fridays-your-gateway-to-azure-ai-discovery/4456981"/>
+        <updated>2025-09-25T15:51:02.000Z</updated>
+        <summary type="html"><![CDATA[🎓 What Is Foundry Fridays?
+Every Friday at 1:30 PM ET, join the Azure AI Foundry Discord Community https://aka.ms/model-mondays/discord for a 30-minute live Ask Me Anything (AMA) session. It’s your chance to connect with the experts behind Azure AI—Principal PMs, researchers, and engineers—who are building the tools you’ll use in classrooms, hackathons, and real-world projects.
+Whether you're experimenting with model fine-tuning, curious about local inference, or diving into agentic workflows and open-source tooling, this is where your questions get answered live and unscripted.
+
+
+
+ 
+
+ 
+
+ 
+
+
+💡 Why Students & Educators Should Join
+
+Direct Access to ExpertsAsk your questions live and get real-time insights from the people building Azure AI.
+Weekly Themes That MatterFrom model routing and M…]]></summary>
+        <author>
+            <name>Lee_Stott</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Simplify Image Signing and Verification with Notary Project and Trusted Signing (Public Preview)]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/simplify-image-signing-and-verification-with-notary-project-and-trusted-signing-/4455292</id>
+        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/simplify-image-signing-and-verification-with-notary-project-and-trusted-signing-/4455292"/>
+        <updated>2025-09-25T15:23:36.000Z</updated>
+        <summary type="html"><![CDATA[Supply chain security has become one of the most pressing challenges for modern cloud-native applications. Every container image, Helm chart, SBOM, or AI model that flows through your CI/CD pipeline carries risk if its integrity or authenticity cannot be guaranteed. Attackers may attempt to tamper with artifacts, replace trusted images with malicious ones, or inject unverified base images into builds.  
+Today, we’re excited to highlight how Notary Project and Trusted Signing (Public Preview) make it easier than ever to secure your container image supply chain with strong, standards-based signing and verification.  
+Why image signing matters
+Image signing addresses two fundamental questions in the software supply chain:  
+
+Integrity: Is this artifact exactly the same one that was originally…]]></summary>
+        <author>
+            <name>YiZha</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[View and manage security in the OneLake catalog (Preview)]]></title>
+        <id>view-and-manage-security-in-the-onelake-catalog-now-in-preview</id>
+        <link href="https://blog.fabric.microsoft.com/en/blog/view-and-manage-security-in-the-onelake-catalog-now-in-preview/"/>
+        <updated>2025-09-25T15:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Introducing the Secure tab in the OneLake catalog—your central place to understand and manage access across Fabric items. From a single view, you can workspace roles with the View users experience and inspect or modify role OneLake security roles with View security roles. The Secure tab brings a streamlined view for governance teams and workspace … 
+Continue reading “View and manage security in the OneLake catalog (Preview)”]]></summary>
+        <author>
+            <name>Microsoft Fabric Blog</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[New in Microsoft Fabric: Empowering Workspace Admins with Direct Workload Assignment]]></title>
+        <id>new-in-microsoft-fabric-empowering-workspace-admins-with-direct-workload-assignment</id>
+        <link href="https://blog.fabric.microsoft.com/en/blog/new-in-microsoft-fabric-empowering-workspace-admins-with-direct-workload-assignment/"/>
+        <updated>2025-09-25T13:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Big news for Fabric users, managing workloads just got a lot easier! With the new Workspace-level assignment feature, workspace admins can now add additional workloads directly to their own workspaces—no more waiting on tenant or capacity-level setup. This update makes using additional workloads more accessible than ever. Once a workload is added, you can immediately … 
+Continue reading “New in Microsoft Fabric: Empowering Workspace Admins with Direct Workload Assignment”]]></summary>
+        <author>
+            <name>Microsoft Fabric Blog</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[OpenAI Agent SDK Integration with Azure Durable Functions]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/openai-agent-sdk-integration-with-azure-durable-functions/4453402</id>
+        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/openai-agent-sdk-integration-with-azure-durable-functions/4453402"/>
+        <updated>2025-09-25T12:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Picture this: Your agent authored with the OpenAI Agent SDK is halfway through analyzing 10,000 customer reviews when it hits a rate limit and dies. All that progress? Gone. Your multi-agent workflow that took 30 minutes to orchestrate? Back to square one because of a rate limit throttle.
+If you've deployed AI agents in production, you probably know this frustration first-hand. Today, we're announcing a solution that makes your agents reliable: OpenAI Agent SDK Integration with Azure Durable Functions. This integration provides automatic state persistence, enabling your agents to survive any failure and continue exactly where they stopped. No more lost progress, no more starting over, just reliable agents that work.
+The Challenge with AI Agents
+Building AI agents that work reliably in prod…]]></summary>
+        <author>
+            <name>greenie-msft</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[SharePoint Framework (SPFx) roadmap update – September 2025]]></title>
+        <id>https://devblogs.microsoft.com/microsoft365dev/?p=24757</id>
+        <link href="https://devblogs.microsoft.com/microsoft365dev/sharepoint-framework-spfx-roadmap-update-september-2025/"/>
+        <updated>2025-09-25T11:22:54.000Z</updated>
+        <summary type="html"><![CDATA[SPFx is powering the future of Microsoft 365. From AI-driven portals to seamless integrations across SharePoint, Teams and Viva, SPFx is driving innovation at scale. This new blog series kicks off our journey into the next evolution—transparent, community-driven, and built for the AI era. Let’s shape what’s next, together.
+The post SharePoint Framework (SPFx) roadmap update – September 2025 appeared first on Microsoft 365 Developer Blog.]]></summary>
+        <author>
+            <name>Vesa Juvonen</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Lucid Data Hub + Microsoft Fabric: Empowering Business Users with AI Agents]]></title>
+        <id>27082</id>
+        <link href="https://blog.fabric.microsoft.com/en/blog/27082/"/>
+        <updated>2025-09-25T11:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Coauthored by: Venu Amancha (Lucid Data Hub) and Roy Hasson (Microsoft) Lucid Data Hub is proud to announce Agent Mart Studio for Microsoft Fabric, enabling business users to build and deploy AI agents directly on top of enterprise data in OneLake. This integration enables organizations to automate complex business processes using proven AI agents, enhanced … 
+Continue reading “Lucid Data Hub + Microsoft Fabric: Empowering Business Users with AI Agents”]]></summary>
+        <author>
+            <name>Microsoft Fabric Blog</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[New Innovations for Fabric Data Factory Orchestration at Fabric Conference Europe 2025]]></title>
+        <id>announcing-new-innovations-for-fabric-data-factory-orchestration-at-fabric-conference-europe-2025</id>
+        <link href="https://blog.fabric.microsoft.com/en/blog/announcing-new-innovations-for-fabric-data-factory-orchestration-at-fabric-conference-europe-2025/"/>
+        <updated>2025-09-25T09:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Unveiling the Future of Data Integration and Pipelines at FabCon Europe 2025]]></summary>
+        <author>
+            <name>Microsoft Fabric Blog</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Dev Proxy v1.2 with mock response mirroring and improved performance]]></title>
+        <id>https://devblogs.microsoft.com/microsoft365dev/?p=24754</id>
+        <link href="https://devblogs.microsoft.com/microsoft365dev/dev-proxy-v1-2-with-mock-response-mirroring-and-improved-performance/"/>
+        <updated>2025-09-25T06:56:05.000Z</updated>
+        <summary type="html"><![CDATA[Introducing Dev Proxy v1.2 with mock response mirroring capabilities that make API simulation more realistic.
+The post Dev Proxy v1.2 with mock response mirroring and improved performance appeared first on Microsoft 365 Developer Blog.]]></summary>
+        <author>
+            <name>Waldek Mastykarz, Garry Trinder</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Talk to your data: PostgreSQL gets a voice in VS Code]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/talk-to-your-data-postgresql-gets-a-voice-in-vs-code/4453695</id>
+        <link href="https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/talk-to-your-data-postgresql-gets-a-voice-in-vs-code/4453695"/>
+        <updated>2025-09-25T05:00:00.000Z</updated>
+        <summary type="html"><![CDATA[As product roadmaps accelerate to meet new business needs, developer teams are struggling to maintain productivity, some even reporting that they need to use six or more tools to do their job. To address this, Microsoft has released an improved PostgreSQL extension to aid developers working with PostgreSQL in Visual Studio (VS) Code streamline their workflows and increase productivity. 
+PostgreSQL and VS Code are top choices among developers, but, until now, using PostgreSQL and VS Code together meant constantly Alt-Tabbing or copying queries between windows. The new extension, now in public preview, brings full database management and query capabilities into VS Code, right alongside your code. You can connect to PostgreSQL databases, run queries, explore schemas, and even get AI assistanc…]]></summary>
+        <author>
+            <name>TELAWRENCE</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Announcing the Public Preview of Azure Container Apps Azure Monitor dashboards with Grafana]]></title>
         <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/announcing-the%C2%A0public-preview-of%C2%A0azure-container-apps%C2%A0azure-monitor-dashboards-w/4450958</id>
@@ -11092,224 +11329,6 @@ One way of dealing with this could be to implement Azure Kubernetes Fleet Manage
 However, if you're not ready to implement Fleet, or your AKS estate isn't large enough to warrant it, we can build a…]]></summary>
         <author>
             <name>samcogan</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[FSI Knowledge Mining and Intelligent Document Process Reference Architecture]]></title>
-        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/fsi-knowledge-mining-and-intelligent-document-process-reference-architecture/4392446</id>
-        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/fsi-knowledge-mining-and-intelligent-document-process-reference-architecture/4392446"/>
-        <updated>2025-04-29T09:55:08.000Z</updated>
-        <summary type="html"><![CDATA[FSI customers such as insurance companies and banks rely on their vast amounts of data to provide sometimes hundreds of individual products to their customers. From assessing product suitability, underwriting, fraud investigations, and claims handling, many employees and applications depend on accessing this data to do their jobs efficiently. Since the capabilities of GenAI have been realised, we have been helping our customers in this market transform their business with unified systems that simplify access to this data and speed up the processing times of these core tasks, while remaining compliant with the numerous regulations that govern the FSI space.
-Combining the use of Knowledge Mining with Intelligent Document processing provides a powerful solution to reduce the manual effort and…]]></summary>
-        <author>
-            <name>GeoJames</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[FSI Knowledge Mining and Intelligent Document Process Reference Architecture]]></title>
-        <id>https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/blog/AppsonAzureBlog/fsi-knowledge-mining-and-intelligent-document-process-reference-architecture/4392446</id>
-        <link href="https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/blog/AppsonAzureBlog/fsi-knowledge-mining-and-intelligent-document-process-reference-architecture/4392446"/>
-        <updated>2025-04-29T09:55:08.000Z</updated>
-        <summary type="html"><![CDATA[FSI customers such as insurance companies and banks rely on their vast amounts of data to provide sometimes hundreds of individual products to their customers. From assessing product suitability, underwriting, fraud investigations, and claims handling, many employees and applications depend on accessing this data to do their jobs efficiently. Since the capabilities of GenAI have been realised, we have been helping our customers in this market transform their business with unified systems that simplify access to this data and speed up the processing times of these core tasks, while remaining compliant with the numerous regulations that govern the FSI space.
-Combining the use of Knowledge Mining with Intelligent Document processing provides a powerful solution to reduce the manual effort and…]]></summary>
-        <author>
-            <name>GeoJames</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Fabric SQL Database Integration: Unlocking New Possibilities with Power BI desktop]]></title>
-        <id>fabric-sql-database-integration-unlocking-new-possibilities-with-power-bi-desktop</id>
-        <link href="https://blog.fabric.microsoft.com/en/blog/fabric-sql-database-integration-unlocking-new-possibilities-with-power-bi-desktop/"/>
-        <updated>2025-04-29T09:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Introducing Seamless Connectivity for Enhanced Data Analytics and Reporting. We are thrilled to announce a new SQL database integration with Power BI Desktop! This innovative feature is designed to empower users with streamlined access to their SQL databases, providing greater flexibility and precision for building insightful reports and dashboards. With this integration, users can now … 
-Continue reading “Fabric SQL Database Integration: Unlocking New Possibilities with Power BI desktop”]]></summary>
-        <author>
-            <name>Microsoft Fabric Blog</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[AI Agents Readiness and skilling on Demand Events]]></title>
-        <id>https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/ai-agents-readiness-and-skilling-on-demand-events/4408847</id>
-        <link href="https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/ai-agents-readiness-and-skilling-on-demand-events/4408847"/>
-        <updated>2025-04-29T07:00:00.000Z</updated>
-        <summary type="html"><![CDATA[2025 is the year of AI agents! But what exactly is an agent, and how can you build one? Whether you're a seasoned developer or just starting out, this FREE three-week virtual hackathon is your chance to dive deep into AI agent development.
-On Demand content now available
-
-
-TopicTrack
-
-AI Agents Hackathon KickoffAll
-Build your code-first app with Azure AI Agent ServicePython
-AI Agents for Java using Azure AI FoundryJava
-Build your code-first app with Azure AI Agent ServicePython
-Build and extend agents for Microsoft 365 CopilotCopilots
-Transforming business processes with multi-agent AI using Semantic KernelPython
-Build your code-first app with Azure AI Agent Service (.NET)C#
-
-
-Building custom engine agents with Azure AI Foundry and Visual Studio CodeCopilots
-Your first AI Agent in JS with …]]></summary>
-        <author>
-            <name>Lee_Stott</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[AI Agents Readiness and skilling on Demand Events]]></title>
-        <id>https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/ai-agents-readiness-and-skilling-on-demand-events/4408847</id>
-        <link href="https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/blog/EducatorDeveloperBlog/ai-agents-readiness-and-skilling-on-demand-events/4408847"/>
-        <updated>2025-04-29T07:00:00.000Z</updated>
-        <summary type="html"><![CDATA[2025 is the year of AI agents! But what exactly is an agent, and how can you build one? Whether you're a seasoned developer or just starting out, this FREE three-week virtual hackathon is your chance to dive deep into AI agent development.
-On Demand content now available
-
-
-TopicTrack
-
-AI Agents Hackathon KickoffAll
-Build your code-first app with Azure AI Agent ServicePython
-AI Agents for Java using Azure AI FoundryJava
-Build your code-first app with Azure AI Agent ServicePython
-Build and extend agents for Microsoft 365 CopilotCopilots
-Transforming business processes with multi-agent AI using Semantic KernelPython
-Build your code-first app with Azure AI Agent Service (.NET)C#
-
-
-Building custom engine agents with Azure AI Foundry and Visual Studio CodeCopilots
-Your first AI Agent in JS with …]]></summary>
-        <author>
-            <name>Lee_Stott</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Add-ins and more – WordPress on App Service]]></title>
-        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/add-ins-and-more-%E2%80%93-wordpress-on-app-service/4408925</id>
-        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/add-ins-and-more-%E2%80%93-wordpress-on-app-service/4408925"/>
-        <updated>2025-04-29T04:28:11.000Z</updated>
-        <summary type="html"><![CDATA[The WordPress on App Service create flow offers a streamlined process to set up your site along with all the necessary Azure resources. Let's learn more about add-ins that can enhance your WordPress experience and help you decide which ones to opt for.
-Deploying WordPress on App Service is a breeze thanks to the ARM template approach, which ties together Azure applications to ensure a seamless experience for developers. Whether you're a seasoned pro or new to the create flow, this guide will demystify these additional settings and help you make informed choices.
-Add-ins tab
-
-Managed Identity: Say goodbye to managing credentials! Managed Identities provide secure access to Azure resources without storing sensitive credentials. Enabling this option creates a user-assigned managed identity, c…]]></summary>
-        <author>
-            <name>abhishekreddy</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Add-ins and more – WordPress on App Service]]></title>
-        <id>https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/blog/AppsonAzureBlog/add-ins-and-more-%E2%80%93-wordpress-on-app-service/4408925</id>
-        <link href="https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/blog/AppsonAzureBlog/add-ins-and-more-%E2%80%93-wordpress-on-app-service/4408925"/>
-        <updated>2025-04-29T04:28:11.000Z</updated>
-        <summary type="html"><![CDATA[The WordPress on App Service create flow offers a streamlined process to set up your site along with all the necessary Azure resources. Let's learn more about add-ins that can enhance your WordPress experience and help you decide which ones to opt for.
-Deploying WordPress on App Service is a breeze thanks to the ARM template approach, which ties together Azure applications to ensure a seamless experience for developers. Whether you're a seasoned pro or new to the create flow, this guide will demystify these additional settings and help you make informed choices.
-Add-ins tab
-
-Managed Identity: Say goodbye to managing credentials! Managed Identities provide secure access to Azure resources without storing sensitive credentials. Enabling this option creates a user-assigned managed identity, c…]]></summary>
-        <author>
-            <name>abhishekreddy</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Routine Planned Maintenance Notifications Improvements for App Service]]></title>
-        <id>https://azure.github.io/AppService/2025/04/29/Azure-App-Service-Notifications-Improvements.html</id>
-        <link href="https://azure.github.io/AppService/2025/04/29/Azure-App-Service-Notifications-Improvements.html"/>
-        <updated>2025-04-29T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[As of April 2025, we are happy to announce major improvements to App Service routine maintenance notifications.]]></summary>
-        <author>
-            <name>Azure App Service</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Advancing Fine-Tuning in Azure AI Foundry: April 2025 Updates]]></title>
-        <id>https://techcommunity.microsoft.com/blog/Azure-AI-Services-blog/advancing-fine-tuning-in-azure-ai-foundry-april-2025-updates/4408745</id>
-        <link href="https://techcommunity.microsoft.com/blog/Azure-AI-Services-blog/advancing-fine-tuning-in-azure-ai-foundry-april-2025-updates/4408745"/>
-        <updated>2025-04-28T20:44:09.000Z</updated>
-        <summary type="html"><![CDATA[As organizations increasingly tailor foundation models to meet their domain-specific needs, Azure AI Foundry continues to deliver new capabilities that streamline, scale, and enhance the fine-tuning experience. One such organization, Decagon AI, fine-tuned GPT-4o-mini using Azure OpenAI Service’s supervised fine-tuning for their customer service agents. They were able to improve model accuracy and observed substantially lower latency for inferencing. This is one of my favorite use cases because it combines two cutting edge techniques - agents and fine tuning - for better results!
-“Fine-tuning GPT-4o-mini on Azure dramatically accelerated our delivery timeline,” said Ashwin Sreenvias, CEO at Decagon AI. “The training performance, simplicity of the pipeline, and integrated tooling gave us a …]]></summary>
-        <author>
-            <name>AliciaFrame</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Advancing Fine-Tuning in Azure AI Foundry: April 2025 Updates]]></title>
-        <id>https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/blog/Azure-AI-Services-blog/advancing-fine-tuning-in-azure-ai-foundry-april-2025-updates/4408745</id>
-        <link href="https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/blog/Azure-AI-Services-blog/advancing-fine-tuning-in-azure-ai-foundry-april-2025-updates/4408745"/>
-        <updated>2025-04-28T20:44:09.000Z</updated>
-        <summary type="html"><![CDATA[As organizations increasingly tailor foundation models to meet their domain-specific needs, Azure AI Foundry continues to deliver new capabilities that streamline, scale, and enhance the fine-tuning experience. One such organization, Decagon AI, fine-tuned GPT-4o-mini using Azure OpenAI Service’s supervised fine-tuning for their customer service agents. They were able to improve model accuracy and observed substantially lower latency for inferencing. This is one of my favorite use cases because it combines two cutting edge techniques - agents and fine tuning - for better results!
-“Fine-tuning GPT-4o-mini on Azure dramatically accelerated our delivery timeline,” said Ashwin Sreenvias, CEO at Decagon AI. “The training performance, simplicity of the pipeline, and integrated tooling gave us a …]]></summary>
-        <author>
-            <name>AliciaFrame</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Guest Blog: Letting AI Help Make the World More Accessible – Analyzing Website Accessibility with Semantic Kernel and OmniParser]]></title>
-        <id>https://devblogs.microsoft.com/semantic-kernel/?p=4739</id>
-        <link href="https://devblogs.microsoft.com/semantic-kernel/guest-blog-letting-ai-help-make-the-world-more-accessible-analyzing-website-accessibility-with-semantic-kernel-and-omniparser/"/>
-        <updated>2025-04-28T19:29:13.000Z</updated>
-        <summary type="html"><![CDATA[Today we’re excited to welcome Jonathan David, as a guest author on the Semantic Kernel blog. We’ll turn it over to Jonathan to dive into Letting AI Help Make the World More Accessible – Analyzing Website Accessibility with Semantic Kernel and OmniParser.   With the European Accessibility Act and Germany’s Barrierefreiheitsstärkungsgesetz (which translates to Barrier […]
-The post Guest Blog: Letting AI Help Make the World More Accessible – Analyzing Website Accessibility with Semantic Kernel and OmniParser appeared first on Semantic Kernel.]]></summary>
-        <author>
-            <name>Sophia Lagerkrans-Pandey</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Application Awareness in Azure Migrate]]></title>
-        <id>https://techcommunity.microsoft.com/blog/AzureMigrationBlog/application-awareness-in-azure-migrate/4408784</id>
-        <link href="https://techcommunity.microsoft.com/blog/AzureMigrationBlog/application-awareness-in-azure-migrate/4408784"/>
-        <updated>2025-04-28T17:24:03.000Z</updated>
-        <summary type="html"><![CDATA[Shiva Shastri Sr Product Marketing Manager, Azure Migrate—Product & Ecosystem.
-Intuitive and cost-effective migrations.
-In today's rapidly evolving digital landscape, businesses are constantly seeking ways to stay competitive through innovations while managing costs. By leveraging the power of the cloud, organizations can achieve unparalleled cost-effectiveness and foster sustainable innovation. By transitioning to Azure, any organization can achieve greater financial flexibility, operational efficiency, and access to secure innovations that provide a competitive edge in the marketplace.
-Collocating application resources and data is essential for optimal performance and return on investment (ROI). Once in Azure, secure and responsible AI can help provide insights and lead to actions with b…]]></summary>
-        <author>
-            <name>SShastri</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Application Awareness in Azure Migrate]]></title>
-        <id>https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/blog/AzureMigrationBlog/application-awareness-in-azure-migrate/4408784</id>
-        <link href="https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/blog/AzureMigrationBlog/application-awareness-in-azure-migrate/4408784"/>
-        <updated>2025-04-28T17:24:03.000Z</updated>
-        <summary type="html"><![CDATA[Shiva Shastri Sr Product Marketing Manager, Azure Migrate—Product & Ecosystem.
-Intuitive and cost-effective migrations.
-In today's rapidly evolving digital landscape, businesses are constantly seeking ways to stay competitive through innovations while managing costs. By leveraging the power of the cloud, organizations can achieve unparalleled cost-effectiveness and foster sustainable innovation. By transitioning to Azure, any organization can achieve greater financial flexibility, operational efficiency, and access to secure innovations that provide a competitive edge in the marketplace.
-Collocating application resources and data is essential for optimal performance and return on investment (ROI). Once in Azure, secure and responsible AI can help provide insights and lead to actions with b…]]></summary>
-        <author>
-            <name>SShastri</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Using Azure Machine Learning (AML) for Medical Imaging Vision Model Training and Fine-tuning]]></title>
-        <id>https://techcommunity.microsoft.com/blog/MachineLearningBlog/using-azure-machine-learning-aml-for-medical-imaging-vision-model-training-and-f/4408743</id>
-        <link href="https://techcommunity.microsoft.com/blog/MachineLearningBlog/using-azure-machine-learning-aml-for-medical-imaging-vision-model-training-and-f/4408743"/>
-        <updated>2025-04-28T14:49:11.000Z</updated>
-        <summary type="html"><![CDATA[Vision Model Architectures
-At present, Transformer-based vision model architecture is considered the forefront of advanced vision modeling.  These models are exceptionally versatile, capable of handling a wide range of applications, from object detection and image segmentation to contextual classification.
-Two popular Transformer-based model implementations are often used in real-world applications.  These are:
-
-Masked Autoencoders (MAE) and
-Vision Transformer (ViT)
-
-Masked Autoencoders (MAE)
-Masked Autoencoders (MAE) are a type of Transformer-based vision model architecture. They are designed to handle large-scale vision tasks by leveraging the power of self-supervised learning. The key idea behind MAE is to mask a portion of the input image and then train the model to reconstruct the mis…]]></summary>
-        <author>
-            <name>antonslutsky</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Using Azure Machine Learning (AML) for Medical Imaging Vision Model Training and Fine-tuning]]></title>
-        <id>https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/blog/MachineLearningBlog/using-azure-machine-learning-aml-for-medical-imaging-vision-model-training-and-f/4408743</id>
-        <link href="https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/blog/MachineLearningBlog/using-azure-machine-learning-aml-for-medical-imaging-vision-model-training-and-f/4408743"/>
-        <updated>2025-04-28T14:49:11.000Z</updated>
-        <summary type="html"><![CDATA[Vision Model Architectures
-At present, Transformer-based vision model architecture is considered the forefront of advanced vision modeling.  These models are exceptionally versatile, capable of handling a wide range of applications, from object detection and image segmentation to contextual classification.
-Two popular Transformer-based model implementations are often used in real-world applications.  These are:
-
-Masked Autoencoders (MAE) and
-Vision Transformer (ViT)
-
-Masked Autoencoders (MAE)
-Masked Autoencoders (MAE) are a type of Transformer-based vision model architecture. They are designed to handle large-scale vision tasks by leveraging the power of self-supervised learning. The key idea behind MAE is to mask a portion of the input image and then train the model to reconstruct the mis…]]></summary>
-        <author>
-            <name>antonslutsky</name>
         </author>
     </entry>
 </feed>
