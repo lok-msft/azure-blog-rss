@@ -2,10 +2,166 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2025-10-14T01:26:01.510Z</updated>
+    <updated>2025-10-15T01:28:26.536Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[From Timeouts to Triumph: Optimizing GPT-4o-mini for Speed, Efficiency, and Reliability]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/from-timeouts-to-triumph-optimizing-gpt-4o-mini-for-speed-efficiency-and-reliabi/4461531</id>
+        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/from-timeouts-to-triumph-optimizing-gpt-4o-mini-for-speed-efficiency-and-reliabi/4461531"/>
+        <updated>2025-10-14T17:26:18.000Z</updated>
+        <summary type="html"><![CDATA[The Challenge
+Large-scale generative AI deployments can stretch system boundaries — especially when thousands of concurrent requests require both high throughput and low latency.
+In one such production environment, GPT-4o-mini deployments running under Provisioned Throughput Units (PTUs) began showing sporadic 408 (timeout) and 429 (throttling) errors. Requests that normally completed in seconds were occasionally hitting the 60-second timeout window, causing degraded experiences and unnecessary retries.
+Initial suspicion pointed toward PTU capacity limitations, but deeper telemetry revealed a different cause.
+What the Data Revealed
+Using Azure Data Explorer (Kusto), API Management (APIM) logs, and OpenAI billing telemetry, a detailed investigation uncovered several insights:
+
+Latency was n…]]></summary>
+        <author>
+            <name>psundars</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Modernizing Authentication for Legacy Visual Studio Clients]]></title>
+        <id>https://devblogs.microsoft.com/devops/?p=72028</id>
+        <link href="https://devblogs.microsoft.com/devops/modernizing-authentication-for-legacy-visual-studio-clients/"/>
+        <updated>2025-10-14T15:28:47.000Z</updated>
+        <summary type="html"><![CDATA[As part of our ongoing commitment to security and modernization, we’re updating outdated authentication mechanisms used by older versions of clients reliant on our older Visual Studio client libraries. For full details on all known impacted clients, refer to the official announcement we made in April 2024: End of Support for Microsoft products reliant on […]
+The post Modernizing Authentication for Legacy Visual Studio Clients appeared first on Azure DevOps Blog.]]></summary>
+        <author>
+            <name>Angel Wong</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How to move Active Directory Source of Authority to Microsoft Entra ID and why]]></title>
+        <id>https://techcommunity.microsoft.com/blog/MicrosoftMechanicsBlog/how-to-move-active-directory-source-of-authority-to-microsoft-entra-id-and-why/4459973</id>
+        <link href="https://techcommunity.microsoft.com/blog/MicrosoftMechanicsBlog/how-to-move-active-directory-source-of-authority-to-microsoft-entra-id-and-why/4459973"/>
+        <updated>2025-10-14T15:15:00.000Z</updated>
+        <summary type="html"><![CDATA[This gives you seamless access for your teams, stronger authentication with MFA and passwordless options, and centralized visibility into risks across your environment. Simplify hybrid identity management by reducing dual overhead, prioritizing key groups, migrating users without disruption, and automating policies with Graph or PowerShell. 
+Jeremy Chapman, Microsoft 365 Director, shows how to start minimizing your local directory and make Microsoft Entra your source of authority to protect access everywhere. 
+Strengthen your identity security. 
+
+Sync your on-prem AD with Microsoft Entra ID, adding MFA and Single Sign-on. Start here.
+Gain full visibility into risky sign-ins. 
+
+Minimize dual management by moving the source of authority to Microsoft Entra. Check it out.
+Automate moving group…]]></summary>
+        <author>
+            <name>Zachary-Cavanell</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How Azure NetApp Files Object REST API powers Azure and ISV Data and AI services – on YOUR data]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/how-azure-netapp-files-object-rest-api-powers-azure-and-isv-data-and-ai-services/4459545</id>
+        <link href="https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/how-azure-netapp-files-object-rest-api-powers-azure-and-isv-data-and-ai-services/4459545"/>
+        <updated>2025-10-14T15:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Table of Contents
+Abstract
+Introduction
+Unlocking Business Potential with Azure NetApp Files Object REST API
+Why is matters
+How it works
+OneLake shortcuts
+Direct path (Object REST API, NFS, SMB)
+What are we enabling?
+Use Cases
+Summary
+Learn more
+Abstract
+This article introduces the Azure NetApp Files Object REST API, a transformative solution for enterprises seeking seamless, real-time integration between their data and Azure's advanced analytics and AI services. By enabling direct, secure access to enterprise data—without costly transfers or duplication—the Object REST API accelerates innovation, streamlines workflows, and enhances operational efficiency. With S3-compatible object storage support, it empowers organizations to make faster, data-driven decisions while maintaining compliance…]]></summary>
+        <author>
+            <name>GeertVanTeylingen</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Python on App Service Linux: Dependency conflicts when using the app insights codeless agent]]></title>
+        <id>https://azureossd.github.io/2025/10/14/Python-on-App-Service-Linux-Depedency-conflicts-when-using-the-app-insights-codeless-agent/index.html</id>
+        <link href="https://azureossd.github.io/2025/10/14/Python-on-App-Service-Linux-Depedency-conflicts-when-using-the-app-insights-codeless-agent/index.html"/>
+        <updated>2025-10-14T12:00:00.000Z</updated>
+        <summary type="html"><![CDATA[This post covers why very rarely a dependency conflict may arise when using the “codeless” Application Insights agent on a Python Blessed Image with Azure App Service Linux]]></summary>
+        <author>
+            <name>azureossd.github.io</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Azure Synapse Runtime for Apache Spark 3.5 (Generally Available)]]></title>
+        <id>general-availability-azure-synapse-runtime-for-apache-spark-3-5</id>
+        <link href="https://blog.fabric.microsoft.com/en/blog/general-availability-azure-synapse-runtime-for-apache-spark-3-5/"/>
+        <updated>2025-10-14T10:29:13.000Z</updated>
+        <summary type="html"><![CDATA[We have made Azure Synapse Runtime for Apache Spark 3.5 for our Azure Synapse Spark customers generally available for customers to start using it for their production workloads, while they get ready and prepare for migrating to Microsoft Fabric Spark. What This Mean for You You can now create Azure Synapse Runtime for Apache Spark … 
+Continue reading “Azure Synapse Runtime for Apache Spark 3.5 (Generally Available)”]]></summary>
+        <author>
+            <name>Microsoft Fabric Blog</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Sourcing Schema-Driven Events from EventHub into Fabric Eventstreams (Preview)]]></title>
+        <id>sourcing-schema-driven-events-from-eventhub-into-fabric-eventstreams-preview</id>
+        <link href="https://blog.fabric.microsoft.com/en/blog/sourcing-schema-driven-events-from-eventhub-into-fabric-eventstreams-preview/"/>
+        <updated>2025-10-14T10:00:00.000Z</updated>
+        <summary type="html"><![CDATA[In our previous blog post on Schema Registry and Eventstreams, we introduced how Schema Registry in Microsoft Fabric Real-Time Intelligence enables type-safe, reliable event processing pipelines. With Azure EventHub integration with schema-enabled Eventstreams in preview, this brings enterprise-grade event streaming with schema validation to your real-time analytics workflows. Why EventHub + Schema Registry Matters Azure EventHub … 
+Continue reading “Sourcing Schema-Driven Events from EventHub into Fabric Eventstreams (Preview)”]]></summary>
+        <author>
+            <name>Microsoft Fabric Blog</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Adaptive Target File Size Management in Fabric Spark]]></title>
+        <id>adaptive-target-file-size-management-in-fabric-spark</id>
+        <link href="https://blog.fabric.microsoft.com/en/blog/adaptive-target-file-size-management-in-fabric-spark/"/>
+        <updated>2025-10-14T08:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Set It and Forget It Target File Size Optimization What if you could enable a single setting and never worry about file size tuning again? Or if your tables automatically adjusted their optimal file sizes as they grew from megabytes to terabytes, without any manual intervention? Today’s data teams face a familiar challenge. Too small, … 
+Continue reading “Adaptive Target File Size Management in Fabric Spark”]]></summary>
+        <author>
+            <name>Microsoft Fabric Blog</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Introducing the Job-Level Bursting Switch in Microsoft Fabric]]></title>
+        <id>introducing-the-job-level-bursting-switch-in-microsoft-fabric</id>
+        <link href="https://blog.fabric.microsoft.com/en/blog/introducing-the-job-level-bursting-switch-in-microsoft-fabric/"/>
+        <updated>2025-10-14T07:00:00.000Z</updated>
+        <summary type="html"><![CDATA[We’re introducing a new feature that gives you more granular control over your Spark compute resources in Microsoft Fabric: The Job-Level Bursting Switch. This highly anticipated addition empowers capacity administrators to fine-tune how Spark jobs utilize burst capacity, optimizing for either peak performance or higher concurrency based on your specific workload needs. Microsoft Fabric’s Compute … 
+Continue reading “Introducing the Job-Level Bursting Switch in Microsoft Fabric”]]></summary>
+        <author>
+            <name>Microsoft Fabric Blog</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Transition to Azure Functions V2 on Azure Container Apps]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/transition-to-azure-functions-v2-on-azure-container-apps/4457258</id>
+        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/transition-to-azure-functions-v2-on-azure-container-apps/4457258"/>
+        <updated>2025-10-14T04:39:47.000Z</updated>
+        <summary type="html"><![CDATA[Introduction
+Azure Functions on Azure Container Apps lets you run serverless functions in a flexible, scalable container environment. As the platform evolves, there are two mechanisms to deploy Images with Function Programming Model as Azure Container apps:
+
+Functions V1 (Legacy Microsoft.Web RP Model)
+Functions V2 (New Microsoft.App RP Model)
+
+V2 is latest and recommended approach to host Functions on Azure Container Apps. In this article, we will learn about differences in different approaches and how you can transition to V2 model.
+V1 Limitations (Legacy approach)
+Function App Deployments has limited functionality and experience therefore transition to V2 is encouraged. Below are the limitations of V1
+Feature limitations 
+
+Lacks support for native container apps features such as multi r…]]></summary>
+        <author>
+            <name>DeepGanguly</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Building Agents on Azure Container Apps with Goose AI Agent, Ollama and gpt-oss]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/building-agents-on-azure-container-apps-with-goose-ai-agent-ollama-and-gpt-oss/4460215</id>
+        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/building-agents-on-azure-container-apps-with-goose-ai-agent-ollama-and-gpt-oss/4460215"/>
+        <updated>2025-10-13T15:19:43.000Z</updated>
+        <summary type="html"><![CDATA[Azure Container Apps (ACA) is redefining how developers build and deploy intelligent agents. With serverless scale, GPU-on-demand, and enterprise-grade isolation, ACA provides the ideal foundation for hosting AI agents securely and cost-effectively.
+Last month we highlighted how you can deploy n8n on Azure Container Apps to go from click-to-build to a running AI based automation platform in minutes, with no complex setup or infrastructure management overhead. In this post, we’re extending that same simplicity to AI agents, where we’ll show why Azure Container Apps is the best platform for running open-source agentic frameworks like Goose. Whether you’re experimenting with open-source models or building enterprise-grade automation, ACA gives you the flexibility and security you need.
+Challe…]]></summary>
+        <author>
+            <name>simonjj</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Microsoft Security Copilot agents]]></title>
         <id>https://techcommunity.microsoft.com/blog/MicrosoftMechanicsBlog/microsoft-security-copilot-agents/4458837</id>
@@ -75,6 +231,33 @@ Continue reading “OneLake Table APIs (Preview)”]]></summary>
 The post Python in Visual Studio Code – October 2025 Release appeared first on Microsoft for Python Developers Blog.]]></summary>
         <author>
             <name>Luciana Abud</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Validating Scalable EDA Storage Performance: Azure NetApp Files and SPECstorage Solution 2020]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/validating-scalable-eda-storage-performance-azure-netapp-files-and-specstorage-s/4459517</id>
+        <link href="https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/validating-scalable-eda-storage-performance-azure-netapp-files-and-specstorage-s/4459517"/>
+        <updated>2025-10-10T13:52:12.000Z</updated>
+        <summary type="html"><![CDATA[Table of Contents
+Abstract
+From silicon to speed: How Azure NetApp Files powers EDA's future today
+The Reason: Why Azure NetApp Files for EDA workloads
+Unmatched Performance and Scale for EDA
+Cost and Performance Optimization with Azure NetApp Files
+Global Collaboration and 24×7 Productivity
+Operational Simplicity and Enterprise Reliability
+Key Azure NetApp Files Capabilities & Benefits for EDA at a Glance
+The Proof: Azure NetApp Files delivers at scale
+Understanding and Simulating EDA Workloads
+Results at a glance
+For Starters: Single Large Volume Performance
+Results in detail
+Azure NetApp Files large volume – the starting point
+Azure NetApp Files large volume scale – horizontal scaling
+For Scalers: Large Volumes Performance and Scalability
+The Method: SPECstorage® Solution 2020 Methodolo…]]></summary>
+        <author>
+            <name>GeertVanTeylingen</name>
         </author>
     </entry>
     <entry>
@@ -10011,72 +10194,6 @@ To help developers learn this game-changing technology, Microsoft has created th
 What is MCP and Why Shoul…]]></summary>
         <author>
             <name>Lee_Stott</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Data security for agents and 3rd party AI in Microsoft Purview]]></title>
-        <id>https://techcommunity.microsoft.com/blog/MicrosoftMechanicsBlog/data-security-for-agents-and-3rd-party-ai-in-microsoft-purview/4414788</id>
-        <link href="https://techcommunity.microsoft.com/blog/MicrosoftMechanicsBlog/data-security-for-agents-and-3rd-party-ai-in-microsoft-purview/4414788"/>
-        <updated>2025-05-18T13:00:00.000Z</updated>
-        <summary type="html"><![CDATA[With built-in visibility into how AI apps and agents interact with sensitive data — whether inside Microsoft 365 or across unmanaged consumer tools — you can detect risks early, take decisive action, and enforce the right protections without slowing innovation.
-See usage trends, investigate prompts and responses, and respond to potential data oversharing or policy violations in real time. From compliance-ready audit logs to adaptive data protection, you’ll have the insights and tools to keep data secure as AI becomes a part of everyday work.
-Shilpa Ranganathan, Microsoft Purview Principal Group PM, shares how to balance AI innovation with enterprise-grade data governance and security.
-Move from detection to prevention.
-
-Built-in, pre-configured policies you can activate in seconds. Check o…]]></summary>
-        <author>
-            <name>Zachary-Cavanell</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Data security for agents and 3rd party AI in Microsoft Purview]]></title>
-        <id>https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/blog/MicrosoftMechanicsBlog/data-security-for-agents-and-3rd-party-ai-in-microsoft-purview/4414788</id>
-        <link href="https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/blog/MicrosoftMechanicsBlog/data-security-for-agents-and-3rd-party-ai-in-microsoft-purview/4414788"/>
-        <updated>2025-05-18T13:00:00.000Z</updated>
-        <summary type="html"><![CDATA[With built-in visibility into how AI apps and agents interact with sensitive data — whether inside Microsoft 365 or across unmanaged consumer tools — you can detect risks early, take decisive action, and enforce the right protections without slowing innovation.
-See usage trends, investigate prompts and responses, and respond to potential data oversharing or policy violations in real time. From compliance-ready audit logs to adaptive data protection, you’ll have the insights and tools to keep data secure as AI becomes a part of everyday work.
-Shilpa Ranganathan, Microsoft Purview Principal Group PM, shares how to balance AI innovation with enterprise-grade data governance and security.
-Move from detection to prevention.
-
-Built-in, pre-configured policies you can activate in seconds. Check o…]]></summary>
-        <author>
-            <name>Zachary-Cavanell</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Data security controls in OneLake]]></title>
-        <id>https://techcommunity.microsoft.com/blog/MicrosoftMechanicsBlog/data-security-controls-in-onelake/4414787</id>
-        <link href="https://techcommunity.microsoft.com/blog/MicrosoftMechanicsBlog/data-security-controls-in-onelake/4414787"/>
-        <updated>2025-05-17T23:41:32.000Z</updated>
-        <summary type="html"><![CDATA[Unify and secure your data — no matter where it lives — without sacrificing control using OneLake security, part of Microsoft Fabric. 
-
-With granular permissions down to the row, column, and table level, you can confidently manage access across engines like Power BI, Spark, and T-SQL, all from one place. Discover, label, and govern your data with clarity using the integrated OneLake catalog that surfaces the right items fast. Aaron Merrill, Microsoft Fabric Principal Program Manager, shows how you can stay in control, from security to discoverability — owning, sharing, and protecting data on your terms.
-Protect sensitive information at scale.
-
-Set precise data access rules — down to individual rows. Check out OneLake security in Microsoft Fabric.
-No data duplication needed.
-
-Hide sensitive…]]></summary>
-        <author>
-            <name>Zachary-Cavanell</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Data security controls in OneLake]]></title>
-        <id>https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/blog/MicrosoftMechanicsBlog/data-security-controls-in-onelake/4414787</id>
-        <link href="https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/blog/MicrosoftMechanicsBlog/data-security-controls-in-onelake/4414787"/>
-        <updated>2025-05-17T23:41:32.000Z</updated>
-        <summary type="html"><![CDATA[Unify and secure your data — no matter where it lives — without sacrificing control using OneLake security, part of Microsoft Fabric. 
-
-With granular permissions down to the row, column, and table level, you can confidently manage access across engines like Power BI, Spark, and T-SQL, all from one place. Discover, label, and govern your data with clarity using the integrated OneLake catalog that surfaces the right items fast. Aaron Merrill, Microsoft Fabric Principal Program Manager, shows how you can stay in control, from security to discoverability — owning, sharing, and protecting data on your terms.
-Protect sensitive information at scale.
-
-Set precise data access rules — down to individual rows. Check out OneLake security in Microsoft Fabric.
-No data duplication needed.
-
-Hide sensitive…]]></summary>
-        <author>
-            <name>Zachary-Cavanell</name>
         </author>
     </entry>
 </feed>
