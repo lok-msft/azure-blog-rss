@@ -22,11 +22,67 @@
             data-action="toggle-accordions"
             title="Click to toggle the day, Ctrl + click to toggle all."
           >
-            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2025-10-15 datetime="2025-10-14T17:26:18.000Z">2025-10-15</time>
-            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2025-10-15 datetime="2025-10-14T17:26:18.000Z"></time>
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2025-10-15 datetime="2025-10-15T10:00:00.000Z">2025-10-15</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2025-10-15 datetime="2025-10-15T10:00:00.000Z"></time>
           </button>
         </h2>
         <ul class="sources card">
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Microsoft Fabric Blog</button>
+                  <a class="source-heading__link" href="https://blog.fabric.microsoft.com/en/blog/">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="customer-managed-keys-for-fabric-workspaces-generally-available"
+                        open
+                      >
+                        <summary class="article-expander__title">Customer-managed keys for Fabric workspaces (Generally Available)</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://blog.fabric.microsoft.com/en/blog/customer-managed-keys-for-fabric-workspaces-generally-available/">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://blog.fabric.microsoft.com/images/shared/social/social-image-v2.png" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>Protect your data at rest with keys you own and control  By default, Fabric encrypts all data at rest using Microsoft-managed keys and secures data in transit with TLS 1.2 or higher. Customer-managed keys (CMK), which you create, own, and maintain in your Azure Key Vault (AKV), offer enhanced control over your encryption strategy. With … 
+Continue reading “Customer-managed keys for Fabric workspaces (Generally Available) “</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;6
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="bringing-customer-managed-keys-to-fabric-warehouse-and-sql-analytics-endpoint"
+                        open
+                      >
+                        <summary class="article-expander__title">Bringing Customer-Managed Keys to Fabric Warehouse and SQL Analytics Endpoint</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://blog.fabric.microsoft.com/en/blog/bringing-customer-managed-keys-to-fabric-warehouse-and-sql-analytics-endpoint/">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://blog.fabric.microsoft.com/images/shared/social/social-image-v2.png" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>With this release, customers gain greater control and assurance over the encryption of their most critical analytical workloads. The Value of Customer-Managed Keys Fabric already ensures that your data is encrypted at rest using Microsoft-managed keys. But for many organizations—especially in regulated industries—encryption alone isn’t enough. They need the ability to control and manage the … 
+Continue reading “Bringing Customer-Managed Keys to Fabric Warehouse and SQL Analytics Endpoint”</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;6
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
             <li class="card__section">
               <section class="js-toggle-accordions-scope">
                 <h3 class="source-heading">
@@ -38,6 +94,54 @@
                   <a class="source-heading__link" href="https://techcommunity.microsoft.com">Open</a>
                 </h3>
                 <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/leveraging-low-priority-pods-for-rapid-scaling-in-aks/4461670"
+                        open
+                      >
+                        <summary class="article-expander__title">Leveraging Low Priority Pods for Rapid Scaling in AKS</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/leveraging-low-priority-pods-for-rapid-scaling-in-aks/4461670">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDYxNjcwLXhKc1RuZw?revision&#x3D;2" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>If you&#x27;re running workloads in Kubernetes, you&#x27;ll know that scalability is key to keeping things available and responsive. But there&#x27;s a problem: when your cluster runs out of resources, the node autoscaler needs to spin up new nodes, and this takes anywhere from 5 to 10 minutes. That&#x27;s a long time to wait when you&#x27;re dealing with a traffic spike. One way to handle this is using low priority pods to create buffer nodes that can be preempted when your actual workloads need the resources.
+The Problem
+Cloud-native applications are dynamic, and workload demands can spike quickly. Automatic scaling helps, but the delay in scaling up nodes when you run out of capacity can leave you vulnerable, especially in production. When a cluster runs out of available nodes, the autoscaler provisions new one…</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;39
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/hosting-remote-mcp-server-on-azure-container-apps-aca-using-streamable-http-tran/4459263"
+                        open
+                      >
+                        <summary class="article-expander__title">Hosting Remote MCP Server on Azure Container Apps (ACA) using Streamable HTTP transport mechanism</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/hosting-remote-mcp-server-on-azure-container-apps-aca-using-streamable-http-tran/4459263">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDU5MjYzLVZoNVpxMg?revision&#x3D;9" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>About
+Continuing from the earlier article of Hosting Remote MCP Server on Azure Container Apps (ACA) using SSE transport mechanism
+This blog showcases the Hosting Remote MCP Servers on Azure Container Apps (ACA) as HTTP type transport. 
+Overview
+The Model Context Protocol (MCP) has revolutionized how AI assistants interact with external tools and data sources. While many examples focus on local implementations using stdio transport, this post demonstrates how to build and deploy a production-ready MCP server using HTTP transport in Azure Container Apps.
+In this article, we create a live forex converter that fetches real-time exchange rates from external APIs, showcasing how MCP servers can integrate with third-party services to provide dynamic, up-to-date information to AI assistants.
+What…</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;28
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
                     <article>
                       <details
                         class="article-expander"
@@ -59,6 +163,64 @@ Using Azure Data Explorer (Kusto), API Management (APIM) logs, and OpenAI billin
 
 Latency was n…</span>
                                 &ensp;<span class="article-reading-time">(&hairsp;25
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Microsoft Tech Community - Latest Blogs - Azure Migration and Modernization Blog</button>
+                  <a class="source-heading__link" href="https://techcommunity.microsoft.com">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://techcommunity.microsoft.com/blog/AzureMigrationBlog/unlock-cost-savings-with-utilization-based-storage-recommendations-in-azure-migr/4461634"
+                        open
+                      >
+                        <summary class="article-expander__title">Unlock cost savings with utilization-based storage recommendations in Azure Migrate</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/blog/AzureMigrationBlog/unlock-cost-savings-with-utilization-based-storage-recommendations-in-azure-migr/4461634">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDYxNjM0LWtzcGRuWA?revision&#x3D;1" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>We’re thrilled to announce a game-changing enhancement in Azure Migrate. The storage utilization-based recommendations, a feature designed to help you right-size your storage workloads and maximize savings. By focusing on actual storage usage instead of allocated capacity, you can significantly reduce costs and accelerate their cloud journey. This feature brings a new level of precision to your migration planning and business case.
+Why This Matters
+In our analysis across thousands of on-premises environments, we observed a striking trend: nearly 40% of allocated storage is overprovisioned. This means customers are paying for capacity they don’t actually use. Traditional assessments often rely on allocated storage, leading to inflated cost estimates and suboptimal resource planning.
+What’s New
+Azure Migrate now honors actual storage utilization rather than allocated capacity when generating:
+
+Assessment recommendations for right-sizing your storage workloads.
+Business case calculations for accurate cost projections.
+
+This shift ensures:
+
+Lower migration cost projections: Pay for what you use, not what you’ve overprovisioned.
+Optimized cloud footprint: Reduce unnecessary storage allocation in Azure.
+Faster ROI: Build a business case that reflects true utilization, accelerating decision-making.
+
+Customer Impact
+By leveraging utilization-based insights, organizations can unlock significant savings and operate with greater efficiency. For example, if 40% of your storage is overprovisioned, this feature could cut your projected Azure storage costs dramatically, freeing up budget for innovation.
+How to Get Started
+
+Deploy an appliance in your on-premises environment.
+Build the business case or create an Azure Migrate Assessment for your on-premises workloads.
+Review the utilization-based recommendations in your assessment report or business case.
+
+Learn More
+Visit Azure Migrate documentation for detailed guidance and start optimizing your migration journey today.</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;23
                                   min&hairsp;)</span>
                             </span>
                           </div>
@@ -24036,541 +24198,6 @@ Continue reading “Microsoft Fabric Spark: Native Execution Engine now generall
                         </a>
                       </details>
                     </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="simplify-your-data-strategy-mirroring-for-azure-database-for-postgresql-in-microsoft-fabric-for-effortless-analytics-on-transactional-data"
-                        open
-                      >
-                        <summary class="article-expander__title">Simplify Your Data Strategy: Mirroring for Azure Database for PostgreSQL in Microsoft Fabric for Effortless Analytics on Transactional Data</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://blog.fabric.microsoft.com/en/blog/simplify-your-data-strategy-mirroring-for-azure-database-for-postgresql-in-microsoft-fabric-for-effortless-analytics-on-transactional-data/">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://blog.fabric.microsoft.com/images/shared/social/social-image-v2.png" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>PostgreSQL is a popular relational database in application development, and Azure Database for PostgreSQL provides a fully managed service with enterprise-level security, availability, and scalability. Integrating Azure Database for PostgreSQL with Microsoft Fabric through Mirroring (Preview) enables seamless replication of transactional data for analytics, simplifying data processes and ensuring real-time insights and data consistency. Microsoft … 
-Continue reading “Simplify Your Data Strategy: Mirroring for Azure Database for PostgreSQL in Microsoft Fabric for Effortless Analytics on Transactional Data”</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;8
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="announcing-new-features-in-mirroring-for-azure-sql-managed-instance-private-endpoint-support-and-more"
-                        open
-                      >
-                        <summary class="article-expander__title">New features in Mirroring for Azure SQL Managed Instance – private endpoint support and more</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://blog.fabric.microsoft.com/en/blog/announcing-new-features-in-mirroring-for-azure-sql-managed-instance-private-endpoint-support-and-more/">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://blog.fabric.microsoft.com/images/shared/social/social-image-v2.png" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>Mirroring in Microsoft Fabric allows you to seamlessly reflect your existing data estate from Azure SQL Managed Instance into OneLake. The mirrored data is automatically kept up to date in near real-time, enabling advanced analytics and reporting to generate essential business insights. Since our preview announcement of Mirroring for Azure SQL Managed Instance, we have listened … 
-Continue reading “New features in Mirroring for Azure SQL Managed Instance – private endpoint support and more”</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;6
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="mirroring-in-fabric-innovations-at-microsoft-build-2025"
-                        open
-                      >
-                        <summary class="article-expander__title">What’s new with Mirroring in Fabric at Microsoft Build 2025</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://blog.fabric.microsoft.com/en/blog/mirroring-in-fabric-innovations-at-microsoft-build-2025/">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="//dataplatformblogwebfd-d3h9cbawf0h8ecgf.b01.azurefd.net/wp-content/uploads/2025/05/mirroring-shortcut-roadmap-May-2025.png" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>At Microsoft Build 2025, we are thrilled to show you the latest innovations that we have delivered with Mirroring in Fabric. Mirroring is a powerful feature that allows you to seamlessly reflect your existing data estate continuously from any database or data warehouse into OneLake in Fabric. Once Mirroring starts the replication process, the mirrored … 
-Continue reading “What’s new with Mirroring in Fabric at Microsoft Build 2025”</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;9
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="dataflow-gen2-ci-cd-git-integration-and-public-apis"
-                        open
-                      >
-                        <summary class="article-expander__title">Dataflow Gen2 CI/CD, GIT integration and Public APIs (Generally Available)</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://blog.fabric.microsoft.com/en/blog/dataflow-gen2-ci-cd-git-integration-and-public-apis/">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://blog.fabric.microsoft.com/images/shared/social/social-image-v2.png" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>We’re excited to announce the General Availability of Dataflow Gen2 CI/CD &amp; Git integration support! With this set of features, you can now seamlessly integrate your Dataflow Gen2 items with your existing CI/CD pipelines and version control of your workspace in Fabric. This integration allows for better collaboration, versioning, and automation of your deployment process … 
-Continue reading “Dataflow Gen2 CI/CD, GIT integration and Public APIs (Generally Available)”</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;7
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="encrypt-data-at-rest-in-your-fabric-workspaces-using-customer-managed-keys"
-                        open
-                      >
-                        <summary class="article-expander__title">Encrypt data at rest in your Fabric workspaces using customer-managed keys (Preview)</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://blog.fabric.microsoft.com/en/blog/encrypt-data-at-rest-in-your-fabric-workspaces-using-customer-managed-keys/">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://blog.fabric.microsoft.com/images/shared/social/social-image-v2.png" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>As organizations advance in their cloud platform journey, ensuring robust data security remains fundamental. Encryption plays a crucial role in defense-in-depth strategies used to safeguard sensitive information by adding a layer of protection against unauthorized access. In addition to strengthening your security posture, encryption helps you adhere to your organization’s internal security, data governance and … 
-Continue reading “Encrypt data at rest in your Fabric workspaces using customer-managed keys (Preview)”</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;7
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="warehouse-snapshots-in-microsoft-fabric-public-preview"
-                        open
-                      >
-                        <summary class="article-expander__title">Warehouse Snapshots in Microsoft Fabric (Preview)</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://blog.fabric.microsoft.com/en/blog/warehouse-snapshots-in-microsoft-fabric-public-preview/">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://blog.fabric.microsoft.com/images/shared/social/social-image-v2.png" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>Maintaining data consistency during ETL (Extract, Transform, Load) processes has long been a critical challenge for data engineers. Whether it’s a nightly pipeline overwriting key records or a mid-day transformation introducing schema drift, the risk of disrupting downstream analytics is both real and costly. In today’s fast-paced, data-driven world, even brief inconsistencies can break dashboards, … 
-Continue reading “Warehouse Snapshots in Microsoft Fabric (Preview)”</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;11
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="get-to-insights-faster-with-saas-databases-and-chat-with-your-data-experiences"
-                        open
-                      >
-                        <summary class="article-expander__title">Get to insights faster with SaaS databases and “chat with your data”</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://blog.fabric.microsoft.com/en/blog/get-to-insights-faster-with-saas-databases-and-chat-with-your-data-experiences/">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://blog.fabric.microsoft.com/images/shared/social/social-image-v2.png" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>A recent study from the Social Science Research Network looked at 5,000 developers using generative AI tools in their day-to-day work and found a 26% average increase in completed tasks. The massive opportunity generative AI presents for developers and data professionals was one of the key driving forces behind the initial development of Microsoft Fabric. … 
-Continue reading “Get to insights faster with SaaS databases and “chat with your data””</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;14
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="announcing-materialized-lake-views-at-build-2025"
-                        open
-                      >
-                        <summary class="article-expander__title">Simplifying Medallion Implementation with Materialized Lake Views in Fabric</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://blog.fabric.microsoft.com/en/blog/announcing-materialized-lake-views-at-build-2025/">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://blog.fabric.microsoft.com/images/shared/social/social-image-v2.png" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>We are excited to announce Materialized Lake views (MLV) in Microsoft Fabric. Coming soon in preview, MLV is a new feature that allows you to build declarative data pipelines using SQL, complete with built-in data quality rules and automatic monitoring of data transformations. In essence, an MLV is a persisted, continuously updated view of your … 
-Continue reading “Simplifying Medallion Implementation with Materialized Lake Views in Fabric”</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;9
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="new-shortcut-type-for-azure-blob-storage-in-onelake-shortcuts"
-                        open
-                      >
-                        <summary class="article-expander__title">New Shortcut Type for Azure Blob Storage in OneLake shortcuts</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://blog.fabric.microsoft.com/en/blog/new-shortcut-type-for-azure-blob-storage-in-onelake-shortcuts/">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://blog.fabric.microsoft.com/images/shared/social/social-image-v2.png" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>We’re excited to announce a new shortcut type for Azure Blob Storage in Microsoft Fabric! As a key platform for storing unstructured data — from images and documents to logs and media — Azure Blob Storage plays a vital role in powering AI and advanced analytics solutions. With this new shortcut type, you can easily … 
-Continue reading “New Shortcut Type for Azure Blob Storage in OneLake shortcuts”</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;6
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="22987"
-                        open
-                      >
-                        <summary class="article-expander__title">Announcing Cosmos DB in Microsoft Fabric (Preview)</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://blog.fabric.microsoft.com/en/blog/22987/">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="//dataplatformblogwebfd-d3h9cbawf0h8ecgf.b01.azurefd.net/wp-content/uploads/2025/05/Cosmos-DB-in-Fabric.png" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>Announcing preview of Cosmos DB in Microsoft Fabric. Cosmos DB makes it easy to build AI apps, offering a database that scales automatically, deeply integrated with OneLake ad and is secure right out of the box. It’s built on scalability and performance of Azure Cosmos DB.</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;8
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Microsoft Tech Community - Latest Blogs - Microsoft Mechanics Blog</button>
-                  <a class="source-heading__link" href="https://techcommunity.microsoft.com">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://techcommunity.microsoft.com/blog/MicrosoftMechanicsBlog/agent-management-updates-in-the-copilot-control-system/4414790"
-                        open
-                      >
-                        <summary class="article-expander__title">Agent management updates in the Copilot Control System</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/blog/MicrosoftMechanicsBlog/agent-management-updates-in-the-copilot-control-system/4414790">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDE0NzkwLTBuZFR3bQ?revision&#x3D;2" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>Control who can find, use, and create agents, define permissions, approve or block agent deployments, and configure billing models including pay-as-you-go or prepaid options.
-Get detailed visibility into how agents are used, which users and groups are driving consumption, and how much they’re costing you. With Microsoft Purview integration, get visibility into sensitive data exposure, track compliance risks, and audit agent activity to stay secure and aligned with your organization’s data policies.
-Jeremy Chapman, Director of Microsoft 365, shares how to configure, deploy, monitor, and secure AI agents at scale.
-Define agent access by group or user.
-
-Customize permissions with Microsoft 365 admin controls. See how to use the Copilot Control System.
-Enable pay-as-you-go agent billing with m…</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;38
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/blog/MicrosoftMechanicsBlog/agent-management-updates-in-the-copilot-control-system/4414790"
-                        open
-                      >
-                        <summary class="article-expander__title">Agent management updates in the Copilot Control System</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/blog/MicrosoftMechanicsBlog/agent-management-updates-in-the-copilot-control-system/4414790">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Control who can find, use, and create agents, define permissions, approve or block agent deployments, and configure billing models including pay-as-you-go or prepaid options.
-Get detailed visibility into how agents are used, which users and groups are driving consumption, and how much they’re costing you. With Microsoft Purview integration, get visibility into sensitive data exposure, track compliance risks, and audit agent activity to stay secure and aligned with your organization’s data policies.
-Jeremy Chapman, Director of Microsoft 365, shares how to configure, deploy, monitor, and secure AI agents at scale.
-Define agent access by group or user.
-
-Customize permissions with Microsoft 365 admin controls. See how to use the Copilot Control System.
-Enable pay-as-you-go agent billing with m…</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Microsoft Tech Community - Latest Blogs - Azure Architecture Blog</button>
-                  <a class="source-heading__link" href="https://techcommunity.microsoft.com">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/building-an-enterprise-rag-pipeline-in-azure-with-nvidia-ai-blueprint-for-rag-an/4414301"
-                        open
-                      >
-                        <summary class="article-expander__title">Building an Enterprise RAG Pipeline in Azure with NVIDIA AI Blueprint for RAG and Azure NetApp Files</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/building-an-enterprise-rag-pipeline-in-azure-with-nvidia-ai-blueprint-for-rag-an/4414301">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDE0MzAxLVFJRk9OMg?revision&#x3D;14" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>Table of Contents
-Abstract
-Introduction
-Enterprise RAG: Challenges and Requirements
-NVIDIA AI Blueprint for RAG
-Adapting the Blueprint for Azure Deployment
-Azure NetApp Files: Powering High-Performance RAG Workloads
-Why Azure NetApp Files works well for RAG
-Service Levels for RAG Workloads
-Dynamic Service Level Adjustments
-Snapshot Capabilities for ML Versioning
-Cost Optimization Strategies
-Azure Reference Architecture for Enterprise RAG
-End-to-End Workflow
-Implementation Guide: Building the Pipeline
-Setup your Bash shell
-Setup your Azure Account
-Set environment variables
-Evaluating Your Enterprise RAG Pipeline
-Retrieval Accuracy
-Latency and Throughput
-GPU Utilization
-Cost Analysis
-What’s Coming Next
-Enterprise Use Cases and Real-World Applications
-Enterprise Search
-Customer Support
-Regula…</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;81
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/blog/AzureArchitectureBlog/building-an-enterprise-rag-pipeline-in-azure-with-nvidia-ai-blueprint-for-rag-an/4414301"
-                        open
-                      >
-                        <summary class="article-expander__title">Building an Enterprise RAG Pipeline in Azure with NVIDIA AI Blueprint for RAG and Azure NetApp Files</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/blog/AzureArchitectureBlog/building-an-enterprise-rag-pipeline-in-azure-with-nvidia-ai-blueprint-for-rag-an/4414301">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Table of Contents
-Abstract
-Introduction
-Enterprise RAG: Challenges and Requirements
-NVIDIA AI Blueprint for RAG
-Adapting the Blueprint for Azure Deployment
-Azure NetApp Files: Powering High-Performance RAG Workloads
-Why Azure NetApp Files works well for RAG
-Service Levels for RAG Workloads
-Dynamic Service Level Adjustments
-Snapshot Capabilities for ML Versioning
-Cost Optimization Strategies
-Azure Reference Architecture for Enterprise RAG
-End-to-End Workflow
-Implementation Guide: Building the Pipeline
-Setup your Bash shell
-Setup your Azure Account
-Set environment variables
-Evaluating Your Enterprise RAG Pipeline
-Retrieval Accuracy
-Latency and Throughput
-GPU Utilization
-Cost Analysis
-What’s Coming Next
-Enterprise Use Cases and Real-World Applications
-Enterprise Search
-Customer Support
-Regula…</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Microsoft Tech Community - Latest Blogs - Educator Developer Blog</button>
-                  <a class="source-heading__link" href="https://techcommunity.microsoft.com">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/unlocking-ai-potential-exploring-the-model-context-protocol-with-ai-toolkit/4411198"
-                        open
-                      >
-                        <summary class="article-expander__title">Unlocking AI Potential:  Exploring the Model Context Protocol with AI Toolkit</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/unlocking-ai-potential-exploring-the-model-context-protocol-with-ai-toolkit/4411198">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDExMTk4LTNJemx5Zg?revision&#x3D;5" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>In the ever-evolving world of Generative AI, the pace of innovation is nothing short of breathtaking. Just a few short months ago, Large Language Models (LLMs) and their smaller counterparts, Small Language Models (SLMs), were the talk of the town. Then came Retrieval Augmented Generation (RAG), offering a powerful way to ground these models to specific knowledge bases. The emergence of Agents and Agentic AI further opened doors for new possibilities by using the GenAI Model capabilities. Now, as the next step in this exciting journey, we&#x27;re witnessing the arrival of a new open protocol – one that standardizes how applications provide crucial context to LLMs. This new protocol is MCP.
-Model Context Protocol:
-Currently there is a Challenge while integrating LLMs with specific tools (like da…</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;42
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/unlocking-ai-potential-exploring-the-model-context-protocol-with-ai-toolkit/4411198"
-                        open
-                      >
-                        <summary class="article-expander__title">Unlocking AI Potential:  Exploring the Model Context Protocol with AI Toolkit</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/blog/EducatorDeveloperBlog/unlocking-ai-potential-exploring-the-model-context-protocol-with-ai-toolkit/4411198">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>In the ever-evolving world of Generative AI, the pace of innovation is nothing short of breathtaking. Just a few short months ago, Large Language Models (LLMs) and their smaller counterparts, Small Language Models (SLMs), were the talk of the town. Then came Retrieval Augmented Generation (RAG), offering a powerful way to ground these models to specific knowledge bases. The emergence of Agents and Agentic AI further opened doors for new possibilities by using the GenAI Model capabilities. Now, as the next step in this exciting journey, we&#x27;re witnessing the arrival of a new open protocol – one that standardizes how applications provide crucial context to LLMs. This new protocol is MCP.
-Model Context Protocol:
-Currently there is a Challenge while integrating LLMs with specific tools (like da…</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Azure App Service</button>
-                  <a class="source-heading__link" href="https://azure.github.io/AppService/">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://azure.github.io/AppService/2025/05/19/Aspire-on-App-Service.html"
-                        open
-                      >
-                        <summary class="article-expander__title">Getting Started with .NET Aspire on Azure App Service</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://azure.github.io/AppService/2025/05/19/Aspire-on-App-Service.html">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://azure.github.io/AppService/assets/images/icon.png" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>We’re laying the groundwork to bring .NET Aspire to Azure App Service. While this is just the beginning, we wanted to give you an early preview of how to set up a basic Aspire application on App Service.</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;5
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
-        </ul>
-      </section>
-      <section class="daily-content js-toggle-accordions-scope">
-        <h2 class="daily-heading">
-          <button
-            class="daily-heading-toggle"
-            data-action="toggle-accordions"
-            title="Click to toggle the day, Ctrl + click to toggle all."
-          >
-            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2025-05-18 datetime="2025-05-18T15:07:39.000Z">2025-05-18</time>
-            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2025-05-18 datetime="2025-05-18T15:07:39.000Z"></time>
-          </button>
-        </h2>
-        <ul class="sources card">
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Microsoft Tech Community - Latest Blogs - Educator Developer Blog</button>
-                  <a class="source-heading__link" href="https://techcommunity.microsoft.com">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/kickstart-your-ai-development-with-the-model-context-protocol-mcp-course/4414963"
-                        open
-                      >
-                        <summary class="article-expander__title">Kickstart Your AI Development with the Model Context Protocol (MCP) Course</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/kickstart-your-ai-development-with-the-model-context-protocol-mcp-course/4414963">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDE0OTYzLTdoNmN3dw?revision&#x3D;1" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>Model Context Protocol is an open standard that acts as a universal connector between AI models and the outside world. Think of MCP as “the USB-C of the AI world,” allowing AI systems to plug into APIs, databases, files, and other tools seamlessly. By adopting MCP, developers can create smarter, more useful AI applications that access up-to-date information and perform actions like a human developer would.
-To help developers learn this game-changing technology, Microsoft has created the “MCP for Beginners” course a free, open-source curriculum that guides you from the basics of MCP to building real-world AI integrations. Below, we’ll explore what MCP is, who this course is for, and how it empowers both beginners and intermediate developers to get started with MCP.
-What is MCP and Why Shoul…</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;43
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/kickstart-your-ai-development-with-the-model-context-protocol-mcp-course/4414963"
-                        open
-                      >
-                        <summary class="article-expander__title">Kickstart Your AI Development with the Model Context Protocol (MCP) Course</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/blog/EducatorDeveloperBlog/kickstart-your-ai-development-with-the-model-context-protocol-mcp-course/4414963">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Model Context Protocol is an open standard that acts as a universal connector between AI models and the outside world. Think of MCP as “the USB-C of the AI world,” allowing AI systems to plug into APIs, databases, files, and other tools seamlessly. By adopting MCP, developers can create smarter, more useful AI applications that access up-to-date information and perform actions like a human developer would.
-To help developers learn this game-changing technology, Microsoft has created the “MCP for Beginners” course a free, open-source curriculum that guides you from the basics of MCP to building real-world AI integrations. Below, we’ll explore what MCP is, who this course is for, and how it empowers both beginners and intermediate developers to get started with MCP.
-What is MCP and Why Shoul…</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
                 </section>
               </section>
             </li>
@@ -24578,8 +24205,8 @@ What is MCP and Why Shoul…</span>
       </section>
 
     <footer>
-      <a class="footer-link" href="https://github.com/lok-msft/azure-blog-rss/actions/runs/18514875905">
-        <time id="build-timestamp" datetime="2025-10-15T01:28:26.486Z">2025-10-15T01:28:26.486Z</time>
+      <a class="footer-link" href="https://github.com/lok-msft/azure-blog-rss/actions/runs/18547406312">
+        <time id="build-timestamp" datetime="2025-10-16T01:27:43.118Z">2025-10-16T01:27:43.118Z</time>
       </a>
       <a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a>
     </footer>
