@@ -2,10 +2,107 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2025-10-21T01:37:37.968Z</updated>
+    <updated>2025-10-22T01:40:39.108Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Build Long-Running AI Agents on Azure App Service with Microsoft Agent Framework]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/build-long-running-ai-agents-on-azure-app-service-with-microsoft-agent-framework/4463159</id>
+        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/build-long-running-ai-agents-on-azure-app-service-with-microsoft-agent-framework/4463159"/>
+        <updated>2025-10-21T17:00:40.000Z</updated>
+        <summary type="html"><![CDATA[The AI landscape is evolving rapidly, and with the introduction of Microsoft Agent Framework, developers now have a powerful platform for building sophisticated AI agents that go far beyond simple chat completions. These agents can execute complex, multi-step workflows with persistent state, conversation threads, and structured execution—capabilities that are essential for production AI applications.
+Today, we're excited to share how Azure App Service provides an excellent platform for running Agent Framework workloads, especially those involving long-running operations. Let's explore why App Service is a great choice and walk through a practical example.
+🔗 Quick link to sample app GitHub repo: https://github.com/Azure-Samples/app-service-agent-framework-travel-agent-dotnet
+The Challenge:…]]></summary>
+        <author>
+            <name>jordanselig</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How Great Engineers Make Architectural Decisions — ADRs, Trade-offs, and an ATAM-Lite Checklist]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/how-great-engineers-make-architectural-decisions-%E2%80%94-adrs-trade-offs-and-an-atam-l/4463013</id>
+        <link href="https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/how-great-engineers-make-architectural-decisions-%E2%80%94-adrs-trade-offs-and-an-atam-l/4463013"/>
+        <updated>2025-10-21T11:26:40.000Z</updated>
+        <summary type="html"><![CDATA[Why Decision-Making Matters
+Without a shared framework, context fades and teams' re-debate old choices.ADRs solve that by recording the why behind design decisions — what problem we solved, what options we considered, and what trade-offs we accepted.
+A good ADR:
+
+Lives next to the code in your repo.
+Explains reasoning in plain language.
+Survives personnel changes and version history.
+
+Think of it as your team’s engineering memory.
+The Five Pillars of Trade-offs
+At Microsoft, we frame every major design discussion using the Azure Well-Architected pillars:
+
+Reliability – Will the system recover gracefully from failures?
+Performance Efficiency – Can it meet latency and throughput targets?
+Cost Optimization – Are we using resources efficiently?
+Security – Are we minimizing blast radius and exp…]]></summary>
+        <author>
+            <name>Antony_nganga</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[SSMS 22 Meets Fabric Data Warehouse: Evolving the Developer Experiences]]></title>
+        <id>ssms-22-meets-fabric-data-warehouse-evolving-the-developer-experiences</id>
+        <link href="https://blog.fabric.microsoft.com/en/blog/ssms-22-meets-fabric-data-warehouse-evolving-the-developer-experiences/"/>
+        <updated>2025-10-21T10:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Why this Investment Matters For years, SQL Server Management Studio (SSMS) has been the go-to tool for millions of SQL developers worldwide. With over 3 million active users and 500K downloads per month, SSMS remains the most trusted environment for database professionals. Yet, Fabric Data Warehouse had long lacked deep integration with SSMS, leaving developers … 
+Continue reading “SSMS 22 Meets Fabric Data Warehouse: Evolving the Developer Experiences”]]></summary>
+        <author>
+            <name>Microsoft Fabric Blog</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How Spark Supports OneLake Security with Row and Column Level Policies]]></title>
+        <id>how-spark-supports-onelake-security-with-row-and-column-level-security-policies</id>
+        <link href="https://blog.fabric.microsoft.com/en/blog/how-spark-supports-onelake-security-with-row-and-column-level-security-policies/"/>
+        <updated>2025-10-21T09:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Recently, we announced a significant milestone: public support for Row and Column Level Security within OneLake. This universal security framework applies consistently across all data engines, regardless of how data is accessed. Traditionally, Spark does not provide granular security features and assumes unrestricted access to the required datasets for query execution. To address this limitation, … 
+Continue reading “How Spark Supports OneLake Security with Row and Column Level Policies”]]></summary>
+        <author>
+            <name>Microsoft Fabric Blog</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[What’s in a Name? Fuzzy Matching for Real-World Data]]></title>
+        <id>https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/what%E2%80%99s-in-a-name-fuzzy-matching-for-real-world-data/4462152</id>
+        <link href="https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/what%E2%80%99s-in-a-name-fuzzy-matching-for-real-world-data/4462152"/>
+        <updated>2025-10-21T07:00:00.000Z</updated>
+        <summary type="html"><![CDATA[🎥 Watch the full PyCon AU 2025 talk here
+
+When you work with human-entered data (registrations, surveys, customer forms, you name it!) you soon discover that people are very creative typists. Names, schools, companies, and addresses come in with abbreviations, nicknames, missing words, and typos galore.
+That mess makes it hard to answer even simple questions like: “Do these two records refer to the same person?” or “How many participants came from this organisation?”
+At PyCon AU 2025, I explored how different fuzzy matching techniques, from traditional algorithms to generative AI, can help make sense of that chaos.
+The Fuzzy Matching Challenge
+String comparison looks straightforward until you meet real-world data. “PLC Sydney” might really be “Presbyterian Ladies’ College Sydney.” “Certai…]]></summary>
+        <author>
+            <name>renee-noble</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Postgres as a Distributed Cache Unlocks Speed and Simplicity for Modern .NET Workloads]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/postgres-as-a-distributed-cache-unlocks-speed-and-simplicity-for-modern-net-work/4462139</id>
+        <link href="https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/postgres-as-a-distributed-cache-unlocks-speed-and-simplicity-for-modern-net-work/4462139"/>
+        <updated>2025-10-21T07:00:00.000Z</updated>
+        <summary type="html"><![CDATA[In the world of high-performance, modern software engineering, developers often face a tough tradeoff: how to achieve lightning-fast data retrieval response rates without adding complexity, sacrificing reliability, or getting locked into specialized, external data caching products or platforms. What if you could harness the power and flexibility of your existing Postgres database to solve this challenge? Enter the Microsoft.Extensions.Caching.Postgres library, a new nuget.org package that brings distributed caching to Postgres, unlocking speed, simplicity, and seamless integration for modern .NET workloads.
+In this article, we’re going to take a closer look at the Postgres caching store, which introduces a new option for .NET developers planning on implementing a distributed cache, such as…]]></summary>
+        <author>
+            <name>JaredMeade</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Build Long-Running AI Agents on Azure App Service with Microsoft Agent Framework]]></title>
+        <id>https://azure.github.io/AppService/2025/10/21/app-service-agent-framework.html</id>
+        <link href="https://azure.github.io/AppService/2025/10/21/app-service-agent-framework.html"/>
+        <updated>2025-10-21T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[The AI landscape is evolving rapidly, and with the introduction of Microsoft Agent Framework, developers now have a powerful platform for building sophisticated AI agents that go far beyond simple chat completions. These agents can execute complex, multi-step workflows with persistent state, conversation threads, and structured execution—capabilities that are essential for production AI applications.]]></summary>
+        <author>
+            <name>Azure App Service</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Simplifying Data Ingestion with Copy job – Copy data across tenants using Copy job in Fabric Data Factory]]></title>
         <id>simplifying-data-ingestion-with-copy-job-copy-data-across-tenants-using-copy-job-in-fabric-data-factory</id>
