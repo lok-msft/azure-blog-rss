@@ -1977,6 +1977,16 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/phi-4-small-language-models-that-pack-a-punch/4464167",
+          "author": "Abdulhamid_Onawole",
+          "description": "What Are Small Language Models, and Why Should You Care?\nIf you've been following AI development, you can probably recall \"bigger is better\" being the mantra for years. GPT-3.5 was 175 billion parameters, GPT-4 is even larger, and everyone seemed to be in an arms race to build the biggest model possible.\nBut here's the thing: bigger models are expensive to run, slow to respond, and often overkill for what you actually need. Small Language Models (SLMs) flip this script. These are models with fewer parameters (typically 1-15 billion) that are trained really thoughtfully on high-quality data. The outcome of this is models that can run on your laptop, respond instantly, and still handle complex reasoning tasks. You can extrapolate from this, increased speed, privacy, and cost-effectiveness.\nM…",
+          "link": "https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/phi-4-small-language-models-that-pack-a-punch/4464167",
+          "publishedOn": "2025-10-27T13:10:50.000Z",
+          "wordCount": 9374,
+          "title": "Phi-4: Small Language Models That Pack a Punch",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDY0MTY3LTZIdFVkbA?revision=1"
+        },
+        {
           "id": "https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/building-secure-ai-chat-systems-part-2---securing-your-architecture-from-storage/4462557",
           "author": "Abdulhamid_Onawole",
           "description": "In Part 1 of this series, we tackled the critical challenge of protecting the LLM itself from malicious inputs. We implemented three essential security layers using Azure AI services: harmful content detection with Azure Content Safety, PII protection with Azure Text Analytics, and prompt injection prevention with Prompt Shields. These guardrails ensure that your AI model doesn't process harmful requests or leak sensitive information through cleverly crafted prompts.\nBut even with a perfectly secured LLM, your entire AI chat system can still be compromised through architectural vulnerabilities.\nFor example, the WotNot incident wasn't about prompt injection—it was 346,000 files sitting in an unsecured cloud storage bucket. Likewise the OmniGPT breach with 34 million lines of conversation lo…",
@@ -2533,6 +2543,26 @@
       "feedUrl": "https://techcommunity.microsoft.com/t5/s/plugins/custom/microsoft/o365/custom-blog-rss?board=AppsonAzureBlog&size=100",
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
+        {
+          "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/microsoft-azure-at-kubecon-north-america-2025--atlanta-ga---nov-10-13/4464324",
+          "author": "coryskimming",
+          "description": "KubeCon + CloudNativeCon North America is back - this time in Atlanta, Georgia, and the excitement is real. Whether you’re a developer, operator, architect, or just Kubernetes-curious, Microsoft Azure is showing up with a packed agenda, hands-on demos, and plenty of ways to connect and learn with our team of experts.  Read on for all the ways you can connect with our team!\nKick off with Azure Day with Kubernetes (Nov 10)\n\nBefore the main conference even starts, join us for Azure Day with Kubernetes on November 10. It’s a full day of learning, best practices, deep-dive discussions, and hands-on labs, all designed to help you build cloud-native and AI apps with Kubernetes on Azure. You’ll get to meet Microsoft experts, dive into technical sessions, roll up your sleeves in the afternoon labs …",
+          "link": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/microsoft-azure-at-kubecon-north-america-2025--atlanta-ga---nov-10-13/4464324",
+          "publishedOn": "2025-10-27T18:00:00.000Z",
+          "wordCount": 11667,
+          "title": "Microsoft Azure at KubeCon North America 2025 | Atlanta, GA - Nov 10-13",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDY0MzI0LW04dmFVcA?revision=3"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/implementing-security-headers-in-azure-app-service-and-azure-container-apps/4464250",
+          "author": "AmritpalSinghNaroo",
+          "description": "Why Security Headers Matter?\nSecurity headers are an essential part of web application security. They help protect against common vulnerabilities such as cross-site scripting (XSS), clickjacking, and data exposure. By configuring these headers, you instruct browsers on how to handle your content securely.\nAzure platform does not automatically inject these headers, so developers must configure them at the application level or through middleware.\n \nCommon Security Headers to Implement\n\n Content-Security-Policy (CSP)\n\nControls which resources the browser can load, mitigating XSS attacks.\nContent-Security-Policy: default-src 'self';\n X-Content-Type-Options\n\nPrevents MIME type sniffing.\nX-Content-Type-Options: nosniff\n X-Frame-Options\n\nProtects against clickjacking by disallowing iframe embeddi…",
+          "link": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/implementing-security-headers-in-azure-app-service-and-azure-container-apps/4464250",
+          "publishedOn": "2025-10-27T07:52:59.000Z",
+          "wordCount": 7324,
+          "title": "Implementing Security Headers in Azure App Service and Azure Container Apps",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDY0MjUwLUFJaFJQWg?revision=9"
+        },
         {
           "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/scaling-azure-functions-python-with-orjson/4445780",
           "author": "eroman",
@@ -3331,26 +3361,6 @@
           "publishedOn": "2025-06-02T21:46:39.000Z",
           "wordCount": null,
           "title": "Highlights from Microsoft Build 2025",
-          "imageUrl": null
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/understanding-idle-usage-in-azure-container-apps/4419197",
-          "author": "samcogan",
-          "description": "Introduction\nAzure Container Apps provides a serverless platform for running containers at scale, and one of the big benefits is that you can easily scale workloads to zero when they are not getting any traffic. Scaling to zero ensures you only pay when your workloads are actively receiving traffic or performing work.\nHowever, for some workloads, scaling to zero might not be possible for a variety of reasons. Some workloads must always be able to respond to requests quickly, and the time it takes to scale from 0 to 1 replicas, while short, is too long. Some applications need to be able to always respond to health checks, and so removing all replicas is not possible. In these scenarios, there may still be time periods where there is no traffic, or the application isn't doing any work. While…",
-          "link": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/understanding-idle-usage-in-azure-container-apps/4419197",
-          "publishedOn": "2025-05-30T15:32:33.000Z",
-          "wordCount": 11626,
-          "title": "Understanding Idle Usage in Azure Container Apps",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDE5MTk3LVZVVjN3NQ?revision=1"
-        },
-        {
-          "id": "https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/blog/AppsonAzureBlog/understanding-idle-usage-in-azure-container-apps/4419197",
-          "author": "samcogan",
-          "description": "Introduction\nAzure Container Apps provides a serverless platform for running containers at scale, and one of the big benefits is that you can easily scale workloads to zero when they are not getting any traffic. Scaling to zero ensures you only pay when your workloads are actively receiving traffic or performing work.\nHowever, for some workloads, scaling to zero might not be possible for a variety of reasons. Some workloads must always be able to respond to requests quickly, and the time it takes to scale from 0 to 1 replicas, while short, is too long. Some applications need to be able to always respond to health checks, and so removing all replicas is not possible. In these scenarios, there may still be time periods where there is no traffic, or the application isn't doing any work. While…",
-          "link": "https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/blog/AppsonAzureBlog/understanding-idle-usage-in-azure-container-apps/4419197",
-          "publishedOn": "2025-05-30T15:32:33.000Z",
-          "wordCount": null,
-          "title": "Understanding Idle Usage in Azure Container Apps",
           "imageUrl": null
         }
       ]

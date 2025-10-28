@@ -2,10 +2,62 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2025-10-27T01:45:40.784Z</updated>
+    <updated>2025-10-28T01:28:33.682Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Microsoft Azure at KubeCon North America 2025 | Atlanta, GA - Nov 10-13]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/microsoft-azure-at-kubecon-north-america-2025--atlanta-ga---nov-10-13/4464324</id>
+        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/microsoft-azure-at-kubecon-north-america-2025--atlanta-ga---nov-10-13/4464324"/>
+        <updated>2025-10-27T18:00:00.000Z</updated>
+        <summary type="html"><![CDATA[KubeCon + CloudNativeCon North America is back - this time in Atlanta, Georgia, and the excitement is real. Whether you’re a developer, operator, architect, or just Kubernetes-curious, Microsoft Azure is showing up with a packed agenda, hands-on demos, and plenty of ways to connect and learn with our team of experts.  Read on for all the ways you can connect with our team!
+Kick off with Azure Day with Kubernetes (Nov 10)
+
+Before the main conference even starts, join us for Azure Day with Kubernetes on November 10. It’s a full day of learning, best practices, deep-dive discussions, and hands-on labs, all designed to help you build cloud-native and AI apps with Kubernetes on Azure. You’ll get to meet Microsoft experts, dive into technical sessions, roll up your sleeves in the afternoon labs …]]></summary>
+        <author>
+            <name>coryskimming</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Phi-4: Small Language Models That Pack a Punch]]></title>
+        <id>https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/phi-4-small-language-models-that-pack-a-punch/4464167</id>
+        <link href="https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/phi-4-small-language-models-that-pack-a-punch/4464167"/>
+        <updated>2025-10-27T13:10:50.000Z</updated>
+        <summary type="html"><![CDATA[What Are Small Language Models, and Why Should You Care?
+If you've been following AI development, you can probably recall "bigger is better" being the mantra for years. GPT-3.5 was 175 billion parameters, GPT-4 is even larger, and everyone seemed to be in an arms race to build the biggest model possible.
+But here's the thing: bigger models are expensive to run, slow to respond, and often overkill for what you actually need. Small Language Models (SLMs) flip this script. These are models with fewer parameters (typically 1-15 billion) that are trained really thoughtfully on high-quality data. The outcome of this is models that can run on your laptop, respond instantly, and still handle complex reasoning tasks. You can extrapolate from this, increased speed, privacy, and cost-effectiveness.
+M…]]></summary>
+        <author>
+            <name>Abdulhamid_Onawole</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Implementing Security Headers in Azure App Service and Azure Container Apps]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/implementing-security-headers-in-azure-app-service-and-azure-container-apps/4464250</id>
+        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/implementing-security-headers-in-azure-app-service-and-azure-container-apps/4464250"/>
+        <updated>2025-10-27T07:52:59.000Z</updated>
+        <summary type="html"><![CDATA[Why Security Headers Matter?
+Security headers are an essential part of web application security. They help protect against common vulnerabilities such as cross-site scripting (XSS), clickjacking, and data exposure. By configuring these headers, you instruct browsers on how to handle your content securely.
+Azure platform does not automatically inject these headers, so developers must configure them at the application level or through middleware.
+ 
+Common Security Headers to Implement
+
+ Content-Security-Policy (CSP)
+
+Controls which resources the browser can load, mitigating XSS attacks.
+Content-Security-Policy: default-src 'self';
+ X-Content-Type-Options
+
+Prevents MIME type sniffing.
+X-Content-Type-Options: nosniff
+ X-Frame-Options
+
+Protects against clickjacking by disallowing iframe embeddi…]]></summary>
+        <author>
+            <name>AmritpalSinghNaroo</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Scaling Azure Functions Python with orjson]]></title>
         <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/scaling-azure-functions-python-with-orjson/4445780</id>
@@ -8081,30 +8133,6 @@ Deploying DeepSeek-R1 model on Azure.
 …]]></summary>
         <author>
             <name>sinedied</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Understanding Idle Usage in Azure Container Apps]]></title>
-        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/understanding-idle-usage-in-azure-container-apps/4419197</id>
-        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/understanding-idle-usage-in-azure-container-apps/4419197"/>
-        <updated>2025-05-30T15:32:33.000Z</updated>
-        <summary type="html"><![CDATA[Introduction
-Azure Container Apps provides a serverless platform for running containers at scale, and one of the big benefits is that you can easily scale workloads to zero when they are not getting any traffic. Scaling to zero ensures you only pay when your workloads are actively receiving traffic or performing work.
-However, for some workloads, scaling to zero might not be possible for a variety of reasons. Some workloads must always be able to respond to requests quickly, and the time it takes to scale from 0 to 1 replicas, while short, is too long. Some applications need to be able to always respond to health checks, and so removing all replicas is not possible. In these scenarios, there may still be time periods where there is no traffic, or the application isn't doing any work. While…]]></summary>
-        <author>
-            <name>samcogan</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Understanding Idle Usage in Azure Container Apps]]></title>
-        <id>https://techcommunity.microsoft.comhttps://techcommunity.microsoft.com/blog/AppsonAzureBlog/understanding-idle-usage-in-azure-container-apps/4419197</id>
-        <link href="https://techcommunity.microsoft.comhttps//techcommunity.microsoft.com/blog/AppsonAzureBlog/understanding-idle-usage-in-azure-container-apps/4419197"/>
-        <updated>2025-05-30T15:32:33.000Z</updated>
-        <summary type="html"><![CDATA[Introduction
-Azure Container Apps provides a serverless platform for running containers at scale, and one of the big benefits is that you can easily scale workloads to zero when they are not getting any traffic. Scaling to zero ensures you only pay when your workloads are actively receiving traffic or performing work.
-However, for some workloads, scaling to zero might not be possible for a variety of reasons. Some workloads must always be able to respond to requests quickly, and the time it takes to scale from 0 to 1 replicas, while short, is too long. Some applications need to be able to always respond to health checks, and so removing all replicas is not possible. In these scenarios, there may still be time periods where there is no traffic, or the application isn't doing any work. While…]]></summary>
-        <author>
-            <name>samcogan</name>
         </author>
     </entry>
 </feed>
