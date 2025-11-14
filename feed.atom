@@ -2,10 +2,126 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2025-11-13T01:41:57.356Z</updated>
+    <updated>2025-11-14T01:41:08.052Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Bulletproof agents with the durable task extension for Microsoft Agent Framework]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/bulletproof-agents-with-the-durable-task-extension-for-microsoft-agent-framework/4467122</id>
+        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/bulletproof-agents-with-the-durable-task-extension-for-microsoft-agent-framework/4467122"/>
+        <updated>2025-11-13T20:33:42.000Z</updated>
+        <summary type="html"><![CDATA[Today, we're thrilled to announce the public preview of the durable task extension for Microsoft Agent Framework. This extension transforms how you build production-ready, resilient and scalable AI agents by bringing the proven durable execution (survives crashes and restarts) and distributed execution (runs across multiple instances) capabilities of Azure Durable Functions directly into the Microsoft Agent Framework. Now you can deploy stateful, resilient AI agents to Azure that automatically handle session management, failure recovery, and scaling, freeing you to focus entirely on your agent logic.
+Whether you're building customer service agents that maintain context across multi-day conversations, content pipelines with human-in-the-loop approval workflows, or fully automated multi-agen…]]></summary>
+        <author>
+            <name>greenie-msft</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Python in Visual Studio Code – November 2025 Release]]></title>
+        <id>https://devblogs.microsoft.com/python/?p=10225</id>
+        <link href="https://devblogs.microsoft.com/python/python-in-visual-studio-code-november-2025-release/"/>
+        <updated>2025-11-13T18:41:50.000Z</updated>
+        <summary type="html"><![CDATA[The November 2025 release brings new Pylance features including improvements to Copilot Hover Summaries and a Code Action to convert wildcard imports to explicit imports. Keep on reading to learn more!
+The post Python in Visual Studio Code – November 2025 Release appeared first on Microsoft for Python Developers Blog.]]></summary>
+        <author>
+            <name>Luciana Abud</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Build your first AI Agent with Azure App Service]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/build-your-first-ai-agent-with-azure-app-service/4468725</id>
+        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/build-your-first-ai-agent-with-azure-app-service/4468725"/>
+        <updated>2025-11-13T17:43:25.000Z</updated>
+        <summary type="html"><![CDATA[Want to build your first AI agent? Already have apps you want to add agentic capabilities to? Maybe you've heard of Azure App Service, or you're already running your applications on it. Either way, App Service makes building and deploying AI-powered applications incredibly straightforward—and here's how to get started.
+Azure App Service is the go-to platform for building your first AI application because it eliminates infrastructure complexity while delivering enterprise-grade capabilities. As a fully managed Platform-as-a-Service (PaaS), it offers native integration with Azure AI services like Azure OpenAI, built-in DevOps support with GitHub Actions and Codespaces, and multi-language flexibility so you can build with what you know. Security is built-in with network isolation, encryption,…]]></summary>
+        <author>
+            <name>jordanselig</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Part III: OTEL sidecar extension on Azure App Service for Linux - Language cheat-sheet]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/part-iii-otel-sidecar-extension-on-azure-app-service-for-linux---language-cheat-/4469589</id>
+        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/part-iii-otel-sidecar-extension-on-azure-app-service-for-linux---language-cheat-/4469589"/>
+        <updated>2025-11-13T10:12:33.000Z</updated>
+        <summary type="html"><![CDATA[Building on Part II (and Part I), here’s a concise matrix for PHP, Python, Node.js, and .NET, plus the key app settings and quick troubleshooting steps. 
+ 
+
+
+Lang docOTEL librariesAppSettingsStartup command exampleSample repo
+PHP
+Composer autoloader (vendor/autoload.php); PECL ext opentelemetry via php.ini (extension=opentelemetry.so); Composer plugins (e.g., Slim, PSR-18).
+
+Main: OTEL_PHP_AUTOLOAD_ENABLED=true, SCM_DO_BUILD_DURING_DEPLOYMENT=true, OTEL_EXPORTER_OTLP_ENDPOINT=http://127.0.0.1:4318 Sidecar: map OTEL_PHP_AUTOLOAD_ENABLED
+
+cp /home/site/wwwroot/default /etc/nginx/sites-enabled/default && nginx -s reload && bash /home/site/wwwroot/startup.sh (startup.sh: pecl install opentelemetry; add extension=opentelemetry.so; php-fpm)
+PHP Sample
+Python
+Via opentelemetry-instrument wrapper;…]]></summary>
+        <author>
+            <name>TulikaC</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Part II: OTEL sidecar extension on Azure App Service for Linux - Elastic APM setup]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/part-ii-otel-sidecar-extension-on-azure-app-service-for-linux---elastic-apm-setu/4469576</id>
+        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/part-ii-otel-sidecar-extension-on-azure-app-service-for-linux---elastic-apm-setu/4469576"/>
+        <updated>2025-11-13T08:44:41.000Z</updated>
+        <summary type="html"><![CDATA[Picking up from Part I, this post shows how to obtain the Elastic APM Server URL and Secret token, add the OTEL Elastic sidecar, and validate telemetry in Kibana.
+Most steps are identical to the Azure Monitor walkthrough (create PHP app, add OTEL libraries, deploy, map OTEL_PHP_AUTOLOAD_ENABLED, keep the same startup command, and point your app to the sidecar at http://127.0.0.1:4318).
+The only differences are - get your Elastic APM Server URL and Secret token, choose the OpenTelemetry – Elastic APM extension, and set Elastic-specific app settings.
+ 
+You can use the sample code (based on your language stack) from here - https://github.com/Azure-Samples/sidecar-samples/tree/main/otel-sidecar
+1) Get the Elastic APM Server URL
+In Kibana go to:Observability → Data management → Fleet → Agent po…]]></summary>
+        <author>
+            <name>TulikaC</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Demystifying GitHub Copilot Security Controls: easing concerns for organizational adoption]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/demystifying-github-copilot-security-controls-easing-concerns-for-organizational/4468193</id>
+        <link href="https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/demystifying-github-copilot-security-controls-easing-concerns-for-organizational/4468193"/>
+        <updated>2025-11-13T08:00:00.000Z</updated>
+        <summary type="html"><![CDATA[At a recent developer conference, I delivered a session on Legacy Code Rescue using GitHub Copilot App Modernization. Throughout the day, conversations with developers revealed a clear divide: some have fully embraced Agentic AI in their daily coding, while others remain cautious. Often, this hesitation isn't due to reluctance but stems from organizational concerns around security and regulatory compliance. Having witnessed similar patterns during past technology shifts, I understand how these barriers can slow adoption.
+In this blog, I'll demystify the most common security concerns about GitHub Copilot and explain how its built-in features address them, empowering organizations to confidently modernize their development workflows.
+GitHub Copilot Model Training
+A common question I received…]]></summary>
+        <author>
+            <name>jorgebalderas</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Part I: OTEL sidecar extension on Azure App Service for Linux - Intro + PHP walkthrough]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/part-i-otel-sidecar-extension-on-azure-app-service-for-linux---intro--php-walkth/4469514</id>
+        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/part-i-otel-sidecar-extension-on-azure-app-service-for-linux---intro--php-walkth/4469514"/>
+        <updated>2025-11-13T06:28:27.000Z</updated>
+        <summary type="html"><![CDATA[Sidecar extensions let you attach a companion container to your App Service for Linux app to add capabilities—without changing your core app or container. If you’re new to sidecars on App Service, start here: Sidecars in Azure App Service
+OpenTelemetry (OTEL) is the vendor-neutral standard for collecting traces, metrics, and logs, with auto/manual instrumentation across popular languages and backends. See the official docs for concepts and quick starts. (OpenTelemetry)
+In this post, we’ll use the new sidecar extension—OpenTelemetry - Azure Monitor and show end-to-end setup for a PHP code-based apps (the same extension will also work for other language stacks and container-based apps).
+Walkthrough: add the OpenTelemetry – Azure Monitor sidecar to a PHP (code-based) app
+This section shows th…]]></summary>
+        <author>
+            <name>TulikaC</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Introducing AI Playground on Azure App Service for Linux]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/introducing-ai-playground-on-azure-app-service-for-linux/4469497</id>
+        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/introducing-ai-playground-on-azure-app-service-for-linux/4469497"/>
+        <updated>2025-11-13T04:36:41.000Z</updated>
+        <summary type="html"><![CDATA[If you’re running a Small Language Model (SLM) as a sidecar with your web app, there’s now a faster way to try prompts, measure latency, and copy working code into your app—all without leaving your site. AI Playground is a lightweight, built-in experience available from the Kudu endpoint for every Linux App Service. 
+What is AI Playground? 
+AI Playground is a simple UI that talks to the SLM you’ve attached to your App Service app (for example, Phi or BitNet via the Sidecar extension). It lets you: 
+
+Send system and user prompts and view responses in-line
+See performance metrics like Time to First Token (TTFT), total time, and tokens/sec
+Grab ready-to-use code snippets for popular languages from the right sidebar (when you’re ready to integrate) 
+Confirm whether a sidecar SLM is configured—…]]></summary>
+        <author>
+            <name>TulikaC</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Announcing public preview of query-based metric alerts in Azure Monitor]]></title>
         <id>https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/announcing-public-preview-of-query-based-metric-alerts-in-azure-monitor/4469290</id>
@@ -8128,99 +8244,6 @@ The post Connect Spring AI to Local AI Models with Foundry Local appeared first 
 The post Azure DevOps MCP Server, Public Preview appeared first on Azure DevOps Blog.]]></summary>
         <author>
             <name>Dan Hellem</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Validating Change Requests with Kubernetes Admission Controllers]]></title>
-        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/validating-change-requests-with-kubernetes-admission-controllers/4424699</id>
-        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/validating-change-requests-with-kubernetes-admission-controllers/4424699"/>
-        <updated>2025-06-17T12:56:33.000Z</updated>
-        <summary type="html"><![CDATA[Promoting an application or infrastructure change into production often comes with a requirement to follow a change control process. This ensures that changes to production are properly reviewed and that they adhere to required approvals, change windows and QA process. Often this change request (CR) process will be conducted using a system for recording and auditing the change request and the outcome.
-When deploying a release, there will often be places in the process to go through this change control workflow. This may be as part of a release pipeline, it may be managed in a pull request or it may be a manual process. Ultimately, by the time the actual changes are made to production infrastructure or applications, they should already be approved. This relies on the appropriate controls an…]]></summary>
-        <author>
-            <name>samcogan</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Connecting Azure Kubernetes Service Cluster to Azure Machine Learning for Multi-Node GPU Training]]></title>
-        <id>https://techcommunity.microsoft.com/blog/MachineLearningBlog/connecting-azure-kubernetes-service-cluster-to-azure-machine-learning-for-multi-/4424603</id>
-        <link href="https://techcommunity.microsoft.com/blog/MachineLearningBlog/connecting-azure-kubernetes-service-cluster-to-azure-machine-learning-for-multi-/4424603"/>
-        <updated>2025-06-17T11:34:19.000Z</updated>
-        <summary type="html"><![CDATA[TLDR
-Create an Azure Kubernetes Service cluster with GPU nodes and connect it to Azure Machine Learning to run distributed ML training workloads. This integration provides a managed data science platform while maintaining Kubernetes flexibility under the hood, enables multi-node training that spans multiple GPUs, and bridges the gap between infrastructure and ML teams. The solution works for both new and existing clusters, supporting specialized GPU hardware and hybrid scenarios.
-Why Should You Care?
-Integrating Azure Kubernetes Service (AKS) clusters with GPUs into Azure Machine Learning (AML) offers several key benefits:
-
-Utilize existing infrastructure: Leverage your existing AKS clusters with GPUs via a managed data science platform like AML
-Flexible resource sharing: Allow both AKS wo…]]></summary>
-        <author>
-            <name>christinpohl</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Introducing MCP Support for Real-Time Intelligence (RTI)&nbsp;]]></title>
-        <id>introducing-mcp-support-for-real-time-intelligence-rti</id>
-        <link href="https://blog.fabric.microsoft.com/en/blog/introducing-mcp-support-for-real-time-intelligence-rti/"/>
-        <updated>2025-06-17T10:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Co-author: Alexei Robsky, Data Scientist Manager Overview  As organizations increasingly rely on real-time data to drive decisions, the need for intelligent, responsive systems has never been greater. At the heart of this transformation is Fabric Real-Time Intelligence (RTI), a platform that empowers users to act on data as it arrives. Today, we’re excited to announce … 
-Continue reading “Introducing MCP Support for Real-Time Intelligence (RTI) “]]></summary>
-        <author>
-            <name>Microsoft Fabric Blog</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Fabric Eventhouse now supports Eventstream Derived Streams in Direct Ingestion mode (Preview)]]></title>
-        <id>fabric-eventhouse-now-supports-eventstream-derived-streams-in-direct-ingestion-mode-preview</id>
-        <link href="https://blog.fabric.microsoft.com/en/blog/fabric-eventhouse-now-supports-eventstream-derived-streams-in-direct-ingestion-mode-preview/"/>
-        <updated>2025-06-17T09:30:00.000Z</updated>
-        <summary type="html"><![CDATA[The Eventstreams artifact in the Microsoft Fabric Real-Time Intelligence experience lets you bring real-time events into Fabric, transform them, and then route them to various destinations such as Eventhouse, without writing any code (no-code). You can ingest data from an Eventstream to Eventhouse seamlessly either from Eventstream artifact or Eventhouse Get Data Wizard. This capability … 
-Continue reading “Fabric Eventhouse now supports Eventstream Derived Streams in Direct Ingestion mode (Preview)”]]></summary>
-        <author>
-            <name>Microsoft Fabric Blog</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Introducing new item creation experience in Fabric]]></title>
-        <id>introducing-new-item-creation-experience-in-fabric</id>
-        <link href="https://blog.fabric.microsoft.com/en/blog/introducing-new-item-creation-experience-in-fabric/"/>
-        <updated>2025-06-17T09:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Have you ever found yourself frustrated by inconsistent item creation? Maybe you’ve struggled to select the right workspace or folder when creating a new item or ended up with a cluttered workspace due to accidental item creation. We hear you—and we’re excited to introduce the new item creation experience in Fabric! This update is designed … 
-Continue reading “Introducing new item creation experience in Fabric”]]></summary>
-        <author>
-            <name>Microsoft Fabric Blog</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Surge Protection for Background Operation (Generally Available)]]></title>
-        <id>announcing-surge-protection-for-background-operation-is-generally-available-ga</id>
-        <link href="https://blog.fabric.microsoft.com/en/blog/announcing-surge-protection-for-background-operation-is-generally-available-ga/"/>
-        <updated>2025-06-17T09:00:00.000Z</updated>
-        <summary type="html"><![CDATA[We’re excited to announce Surge Protection for background operations is now Generally Available (GA). Using surge protection, capacity admins can limit overuse by background operations in their capacities.]]></summary>
-        <author>
-            <name>Microsoft Fabric Blog</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Modernizing Loan Processing with Gen AI and Azure AI Foundry Agentic Service]]></title>
-        <id>https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/modernizing-loan-processing-with-gen-ai-and-azure-ai-foundry-agentic-service/4423030</id>
-        <link href="https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/modernizing-loan-processing-with-gen-ai-and-azure-ai-foundry-agentic-service/4423030"/>
-        <updated>2025-06-17T01:59:04.000Z</updated>
-        <summary type="html"><![CDATA[Scenario
-Once a loan application is submitted, financial institutions must process a variety of supporting documents—including pay stubs, tax returns, credit reports, and bank statements—before a loan can be approved. This post-application phase is often fragmented and manual, involving data retrieval from multiple systems, document verification, eligibility calculations, packet compilation, and signing. Each step typically requires coordination between underwriters, compliance teams, and loan processors, which can stretch the processing time to several weeks.
-This solution automates the post-application loan processing workflow using Azure services and Generative AI agents. Intelligent agents retrieve and validate applicant data, extract and summarize document contents, calculate loan eli…]]></summary>
-        <author>
-            <name>manasa_ramalinga</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Python in Visual Studio Code – June 2025 Release]]></title>
-        <id>https://devblogs.microsoft.com/python/?p=10066</id>
-        <link href="https://devblogs.microsoft.com/python/python-in-visual-studio-code-june-2025-release/"/>
-        <updated>2025-06-16T16:38:52.000Z</updated>
-        <summary type="html"><![CDATA[The June 2025 release includes Copilot chat tools in the Python extension, project creation from a template, language server based terminal suggest, and more!
-The post Python in Visual Studio Code – June 2025 Release appeared first on Microsoft for Python Developers Blog.]]></summary>
-        <author>
-            <name>Courtney Webster</name>
         </author>
     </entry>
     <entry>
