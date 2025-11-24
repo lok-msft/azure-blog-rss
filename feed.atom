@@ -2,10 +2,25 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2025-11-23T01:52:31.628Z</updated>
+    <updated>2025-11-24T01:47:35.226Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Announcing public preview of query-based metric alerts in Azure Monitor]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/announcing-public-preview-of-query-based-metric-alerts-in-azure-monitor/4469723</id>
+        <link href="https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/announcing-public-preview-of-query-based-metric-alerts-in-azure-monitor/4469723"/>
+        <updated>2025-11-23T18:55:48.000Z</updated>
+        <summary type="html"><![CDATA[Azure Monitor metric alerts are now more powerful than ever
+Azure Monitor metric alerts now support all Azure metrics - including platform, Prometheus, and custom metrics - giving you complete coverage for your monitoring needs.In addition, metric alerts now offer powerful query capabilities with PromQL, enabling complex logic across multiple metrics and resources. This makes it easier to detect patterns, correlate signals, and customize alerts for modern workloads like Kubernetes clusters, VMs, and custom applications.
+Key Benefits 
+
+Full metrics coverage: metric alerts now support alerting on any Azure metrics including platform metrics, Prometheus metrics and custom metrics.
+PromQL-Powered Conditions: Use PromQL to select, aggregate, and transform metrics for advanced alerting scenarios…]]></summary>
+        <author>
+            <name>yairgil</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Ignite 2025: A Developer’s Guide to Building Agents for Microsoft 365]]></title>
         <id>https://devblogs.microsoft.com/microsoft365dev/?p=25019</id>
@@ -8809,122 +8824,6 @@ If you want to grow your skills with the latest in AI model development, Model M
 Register Here - to watc…]]></summary>
         <author>
             <name>Sharda_Kaur</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Using Azure API Management as a proxy for Application Insights Telemetry]]></title>
-        <id>https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/using-azure-api-management-as-a-proxy-for-application-insights-telemetry/4422236</id>
-        <link href="https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/using-azure-api-management-as-a-proxy-for-application-insights-telemetry/4422236"/>
-        <updated>2025-06-27T13:09:48.000Z</updated>
-        <summary type="html"><![CDATA[Introduction
-Organizations enforcing Entra ID authentication on their Application Insights resources often face a sudden problem: browser-based telemetry stops flowing.
-This happens when local authentication is disabled — a necessary step to enforce strict identity controls — but sending data from browser environments comes with inherent security challenges, and the Application Insights JavaScript SDK is no exception. As a result, telemetry from web clients is silently dropped, leaving gaps in monitoring and frustrated teams wondering how to re-enable secure telemetry ingestion.
-This article provides a solution: using Azure API Management (APIM) as a secure proxy that authenticates telemetry using a managed identity before forwarding it to Application Insights. This pattern restores observ…]]></summary>
-        <author>
-            <name>toddfoust</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Deploy Machine Learning Models the Smart Way with Azure Blob & Web App]]></title>
-        <id>https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/deploy-machine-learning-models-the-smart-way-with-azure-blob--web-app/4423731</id>
-        <link href="https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/deploy-machine-learning-models-the-smart-way-with-azure-blob--web-app/4423731"/>
-        <updated>2025-06-27T07:00:00.000Z</updated>
-        <summary type="html"><![CDATA[💡 Why This Approach?
-Traditional deployments often include models inside the app, leading to:
-
-Large container sizes
-Long build times
-Slow cold starts
-Painful updates when models change
-
-With Azure Blob Storage, you can offload the model and only fetch it at runtime — reducing size, improving flexibility, and enabling easier updates.
-What You will Need
-
-An ML model (model.pkl, model.pt, etc.)
-An Azure Blob Storage account
-A Python web app (FastAPI, Flask, or Streamlit)
-Azure Web App (App Service for Python)
-Azure Python SDK: azure-storage-blob
-
-Step 1: Save and Upload Your Model to Blob Storage
-First, save your trained model locally:
-# PyTorch example
-import torch
-torch.save(model.state_dict(), "model.pt")
-
-Then, upload it to Azure Blob Storage:
-from azure.storage.blob import BlobServiceC…]]></summary>
-        <author>
-            <name>MohamedFaraazman</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Anthropic Claude Sonnet 4 and Opus 4 Now Available in GitHub Copilot for JetBrains and Eclipse]]></title>
-        <id>https://devblogs.microsoft.com/java/?p=232305</id>
-        <link href="https://devblogs.microsoft.com/java/anthropic-claude-sonnet-4-and-opus-4-support/"/>
-        <updated>2025-06-27T05:57:37.000Z</updated>
-        <summary type="html"><![CDATA[Anthropic Claude Sonnet 4 and Claude Opus 4 are now available in GitHub Copilot Chat for JetBrains IDEs and Eclipse. Model Availability✨ Claude Sonnet 4: Available for users on Pro, Pro+, Business, and Enterprise plans. Claude Opus 4: Available for users on Pro+ and Enterprise plans. For full details, please see this documentation. How to Get Started🚀 JetBrains IDEs: Click the GitHub Copilot icon –> Open GitHub Copilot Chat-> […]
-The post Anthropic Claude Sonnet 4 and Opus 4 Now Available in GitHub Copilot for JetBrains and Eclipse appeared first on Microsoft for Java Developers.]]></summary>
-        <author>
-            <name>Jialuo Gan</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Announcing Shortcut Transformations: from files to Delta tables. Always in sync, no pipelines required.]]></title>
-        <id>announcing-shortcut-transformations-from-files-to-delta-tables-always-in-sync-no-pipelines-required</id>
-        <link href="https://blog.fabric.microsoft.com/en/blog/announcing-shortcut-transformations-from-files-to-delta-tables-always-in-sync-no-pipelines-required/"/>
-        <updated>2025-06-27T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Shortcut transformations is a new capability in Microsoft Fabric that simplifies the process of converting raw files, starting with .CSV files, into Delta tables. This feature eliminates the need for traditional ETL pipelines, enabling users to transform data directly on top of files with minimal setup. Why use Shortcut transformations Shortcut transformations help users: What … 
-Continue reading “Announcing Shortcut Transformations: from files to Delta tables. Always in sync, no pipelines required.”]]></summary>
-        <author>
-            <name>Microsoft Fabric Blog</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Distributed Databases: Adaptive Optimization with Graph Neural Networks and Causal Inference]]></title>
-        <id>https://techcommunity.microsoft.com/blog/MachineLearningBlog/distributed-databases-adaptive-optimization-with-graph-neural-networks-and-causa/4427658</id>
-        <link href="https://techcommunity.microsoft.com/blog/MachineLearningBlog/distributed-databases-adaptive-optimization-with-graph-neural-networks-and-causa/4427658"/>
-        <updated>2025-06-27T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Introduction and Motivation
-The explosive growth of data-driven applications has pushed distributed database systems to their limits, especially as organizations demand real-time consistency, high availability, and efficient resource utilization across global infrastructures. The CAP theorem—asserting that a distributed system can guarantee at most two out of consistency, availability, and partition tolerance—forces architects to make challenging trade-offs. Traditional distributed databases rely on static policies and heuristics, which cannot adapt to the dynamic nature of modern workloads and evolving data relationships.
-Recent advances in Graph Neural Networks (GNNs) offer a new paradigm for modeling and optimizing distributed systems. Unlike conventional machine learning, GNNs naturall…]]></summary>
-        <author>
-            <name>Piyush_Patel</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Voice Conversion in Azure AI Speech]]></title>
-        <id>https://techcommunity.microsoft.com/blog/Azure-AI-Services-blog/voice-conversion-in-azure-ai-speech/4427296</id>
-        <link href="https://techcommunity.microsoft.com/blog/Azure-AI-Services-blog/voice-conversion-in-azure-ai-speech/4427296"/>
-        <updated>2025-06-26T23:35:29.000Z</updated>
-        <summary type="html"><![CDATA[We are delighted to announce the availability of the Voice Conversion (VC) feature in Azure AI Speech service, which is currently in preview.
-What is voice Conversion
-Voice Conversion (or voice changer, speech to speech conversion) is the process of transforming the voice characteristics of a given audio to a target voice speaker, and after Voice Conversion, the resulting audio reserves source audio’s linguistic content and prosody while the voice timbre sounds like the target speaker.
-Below is a diagram of Voice Conversion.
-
- 
-The purpose of Voice Conversion
-There are 3 reasons users need Voice Conversion functionality:
-
-Voice Conversion can replicate your content using a different voice identity while maintaining the original prosody and emotion. For instance, in education, teachers can …]]></summary>
-        <author>
-            <name>JieDing</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Microsoft Intune data-driven management | Device Query & Copilot]]></title>
-        <id>https://techcommunity.microsoft.com/blog/MicrosoftMechanicsBlog/microsoft-intune-data-driven-management--device-query-%C2%A0copilot/4424778</id>
-        <link href="https://techcommunity.microsoft.com/blog/MicrosoftMechanicsBlog/microsoft-intune-data-driven-management--device-query-%C2%A0copilot/4424778"/>
-        <updated>2025-06-26T15:15:14.000Z</updated>
-        <summary type="html"><![CDATA[Proactively manage and secure all your devices — whether they run Windows, macOS, iOS, or Android. With cross-platform analytics, multi-device queries, and in-depth troubleshooting tools, you can pinpoint problems fast and take targeted action at scale. 
-
-Even without deep technical expertise, you can generate complex queries, identify vulnerabilities, and deploy remediations — all in a few clicks. With built-in Copilot support, daily tasks like policy validation, device comparison, and risk analysis become faster, smarter, and easier to act on. 
-Jeremy Chapman, Director of Microsoft 365, shares how to stay ahead of potential issues and keep endpoints running smoothly. 
-Spot and fix performance issues before users contact support. 
-
-Use Advanced Analytics in Microsoft Intune. Check it out.…]]></summary>
-        <author>
-            <name>Zachary-Cavanell</name>
         </author>
     </entry>
     <entry>
