@@ -6,6 +6,16 @@
       "siteUrl": "https://blog.fabric.microsoft.com/en/blog/",
       "articles": [
         {
+          "id": "fabric-influencers-spotlight-november-2025",
+          "author": null,
+          "description": "Welcome to the November edition of the Fabric Influencers Spotlight, a recurring monthly post here to shine a bright light on the places on the internet where Microsoft MVPs & Fabric Super Users are doing some amazing work on all aspects of Microsoft Fabric. The Microsoft Fabric Community team has created the Fabric Influencers Spotlight to highlight … \nContinue reading “Fabric Influencers Spotlight November 2025”",
+          "link": "https://blog.fabric.microsoft.com/en/blog/fabric-influencers-spotlight-november-2025/",
+          "publishedOn": "2025-11-28T10:00:00.000Z",
+          "wordCount": 2065,
+          "title": "Fabric Influencers Spotlight November 2025",
+          "imageUrl": "https://blog.fabric.microsoft.com/images/shared/social/social-image-v2.png"
+        },
+        {
           "id": "on-premises-data-gateway-november-2025-release",
           "author": null,
           "description": "Here is the November 2025 release of the on-premises data gateway (version 3000.294).",
@@ -2377,6 +2387,16 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/function-calling-with-small-language-models/4472720",
+          "author": "Abdulhamid_Onawole",
+          "description": "In our previous article on running Phi-4 locally, we built a web-enhanced assistant that could search the internet and provide informed answers. Here's what that implementation looked like:\ndef web_enhanced_query(question):\n    # 1. ALWAYS search (hardcoded decision)\n    search_results = search_web(question)\n    \n    # 2. Inject results into prompt\n    prompt = f\"\"\"Here are recent search results:\n    {search_results}\n    \n    Question: {question}\n    \n    Using only the information above, give a clear answer.\"\"\"\n    \n    # 3. Model just summarizes what it reads\n    return ask_phi4(endpoint, model_id, prompt)\nToday, we're upgrading to true function calling. With this, we have ability to transform small language models from passive text generators into intelligent agents that can:\n\nDecide wh…",
+          "link": "https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/function-calling-with-small-language-models/4472720",
+          "publishedOn": "2025-11-28T09:55:53.000Z",
+          "wordCount": 11311,
+          "title": "Function Calling with Small Language Models",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDcyNzIwLVVkbXVjaw?revision=2"
+        },
+        {
           "id": "https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/tracing-the-conversation-open-telemetry-and-ai-toolkit-for-genai-performance-ins/4471782",
           "author": "shreyanfern",
           "description": "In standard web development, a 'success' is a 200 OK status. In Generative AI, a 200 OK can still contain a hallucination, a refusal to answer, or a gibberish output. Transparency is not a luxury in the Generative AI application lifecycle, it is a requirement. As we discussed in our previous post, tracing is the mechanism that grants this transparency. We looked at the high-level benefits: cost control, performance monitoring, and the ability to iterate with confidence.\nHowever, applying these concepts to the stochastic nature of LLMs requires a specific approach. How to trace a chain of reasoning? How to pinpoint a hallucination in a complex retrieval-augmented generation (RAG) flow? In this article, we move from theory to practice. We will implement tracing for Language Model calls, ensu…",
@@ -2873,6 +2893,16 @@
       "feedUrl": "https://techcommunity.microsoft.com/t5/s/plugins/custom/microsoft/o365/custom-blog-rss?board=AppsonAzureBlog&size=100",
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
+        {
+          "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/azure-app-service-ai-scenarios-complete-sample-with-ai-foundry-integration/4473142",
+          "author": "Nitesh_Jain",
+          "description": "This sample application demonstrates how to implement various AI scenarios on Azure App Service using Azure AI Foundry. It provides production-ready code that you can integrate into your existing Flask applications by copying the AIPlaygroundCode package and following the integration steps.\nIdeal for: Developers looking to add AI capabilities to existing Flask applications, learn Azure AI Foundry integration patterns, and implement enterprise-grade AI features with minimal setup effort.\nKey Scenarios Covered\nConversational AI: Natural language processing with context awareness and session managementReasoning Models: Advanced problem-solving capabilities with step-by-step analytical thinkingStructured Output: JSON-formatted responses with schema validation for system integrationMultimodal P…",
+          "link": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/azure-app-service-ai-scenarios-complete-sample-with-ai-foundry-integration/4473142",
+          "publishedOn": "2025-11-28T10:42:08.000Z",
+          "wordCount": 13446,
+          "title": "Azure App Service AI Scenarios: Complete Sample with AI Foundry Integration",
+          "imageUrl": null
+        },
         {
           "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/azure-sre-agent-expanding-observability-and-multi-cloud-resilience/4472719",
           "author": "dbandaru",
@@ -4236,16 +4266,6 @@
           "wordCount": 4877,
           "title": "Understanding the ICL impact",
           "imageUrl": null
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/Azure-AI-Services-blog/building-safe-ai-powered-data-resilience-with-veeam-and-azure-ai-foundry/4427663",
-          "author": "sarakandil",
-          "description": "Veeam Data Cloud (VDC) provides cloud-native, SaaS-based data resilience for mission-critical environments including Microsoft 365, Entra ID, Azure, and Salesforce. As enterprise data protection needs to evolve, so does the intelligence behind it. With Veeam Intelligence, VDC is leveraging the power of generative AI that helps users get the most value from VDC services using an advanced AI assistant, with the vision to deliver real-time insights through backup telemetry in the future\n \nTo build an assistant delivers accurate, reliable, and safe responses, the VDC team partnered with Azure AI Foundry, Microsoft's AI application development platform which provides built-in responsible AI evaluation and testing  at scale.\n \nFrom Backup to Breakthrough: Enabling Smart, Safe AI Assistance\nVeeam…",
-          "link": "https://techcommunity.microsoft.com/blog/Azure-AI-Services-blog/building-safe-ai-powered-data-resilience-with-veeam-and-azure-ai-foundry/4427663",
-          "publishedOn": "2025-07-01T19:03:21.000Z",
-          "wordCount": 7263,
-          "title": "Building Safe, AI-Powered Data Resilience with Veeam and Azure AI Foundry",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDI3NjYzLVRCT3A2Sg?revision=1"
         }
       ]
     },
@@ -4565,6 +4585,16 @@
           "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDY4MTkzLVVmUTlqcQ?revision=1"
         },
         {
+          "id": "https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/on%E2%80%91device-ai-with-windows-ai-foundry-and-foundry-local/4466236",
+          "author": "Nandhini_Elango",
+          "description": "From “waiting” to “instant”- without sending data away\nAI is everywhere, but speed, privacy, and reliability are critical. Users expect instant answers without compromise. On-device AI makes that possible: fast, private and available, even when the network isn’t - empowering apps to deliver seamless experiences.\nImagine an intelligent assistant that works in seconds, without sending a text to the cloud. This approach brings speed and data control to the places that need it most; while still letting you tap into cloud power when it makes sense.\nWindows AI Foundry: A Local Home for Models\nWindows AI Foundry is a developer toolkit that makes it simple to run AI models directly on Windows devices. It uses ONNX Runtime under the hood and can leverage CPU, GPU (via DirectML), or NPU acceleration…",
+          "link": "https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/on%E2%80%91device-ai-with-windows-ai-foundry-and-foundry-local/4466236",
+          "publishedOn": "2025-11-04T08:00:00.000Z",
+          "wordCount": 9317,
+          "title": "On‑Device AI with Windows AI Foundry and Foundry Local",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDY2MjM2LWQ1ZmlsSg?revision=5"
+        },
+        {
           "id": "https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/on%E2%80%91device-ai-with-windows-ai-foundry/4466236",
           "author": "Nandhini_Elango",
           "description": "From “waiting” to “instant”- without sending data away\nAI is everywhere, but speed, privacy, and reliability are critical. Users expect instant answers without compromise. On-device AI makes that possible: fast, private and available, even when the network isn’t - empowering apps to deliver seamless experiences.\nImagine an intelligent assistant that works in seconds, without sending a text to the cloud. This approach brings speed and data control to the places that need it most; while still letting you tap into cloud power when it makes sense.\nWindows AI Foundry: A Local Home for Models\nWindows AI Foundry is a developer toolkit that makes it simple to run AI models directly on Windows devices. It uses ONNX Runtime under the hood and can leverage CPU, GPU (via DirectML), or NPU acceleration…",
@@ -4762,6 +4792,16 @@
           "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDY4Mjk2LTJScnhlMg?revision=2"
         },
         {
+          "id": "https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/on%E2%80%91device-ai-with-windows-ai-foundry-and-foundry-local/4466236",
+          "author": "Nandhini_Elango",
+          "description": "From “waiting” to “instant”- without sending data away\nAI is everywhere, but speed, privacy, and reliability are critical. Users expect instant answers without compromise. On-device AI makes that possible: fast, private and available, even when the network isn’t - empowering apps to deliver seamless experiences.\nImagine an intelligent assistant that works in seconds, without sending a text to the cloud. This approach brings speed and data control to the places that need it most; while still letting you tap into cloud power when it makes sense.\nWindows AI Foundry: A Local Home for Models\nWindows AI Foundry is a developer toolkit that makes it simple to run AI models directly on Windows devices. It uses ONNX Runtime under the hood and can leverage CPU, GPU (via DirectML), or NPU acceleration…",
+          "link": "https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/on%E2%80%91device-ai-with-windows-ai-foundry-and-foundry-local/4466236",
+          "publishedOn": "2025-11-04T08:00:00.000Z",
+          "wordCount": 9317,
+          "title": "On‑Device AI with Windows AI Foundry and Foundry Local",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDY2MjM2LWQ1ZmlsSg?revision=5"
+        },
+        {
           "id": "https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/on%E2%80%91device-ai-with-windows-ai-foundry/4466236",
           "author": "Nandhini_Elango",
           "description": "From “waiting” to “instant”- without sending data away\nAI is everywhere, but speed, privacy, and reliability are critical. Users expect instant answers without compromise. On-device AI makes that possible: fast, private and available, even when the network isn’t - empowering apps to deliver seamless experiences.\nImagine an intelligent assistant that works in seconds, without sending a text to the cloud. This approach brings speed and data control to the places that need it most; while still letting you tap into cloud power when it makes sense.\nWindows AI Foundry: A Local Home for Models\nWindows AI Foundry is a developer toolkit that makes it simple to run AI models directly on Windows devices. It uses ONNX Runtime under the hood and can leverage CPU, GPU (via DirectML), or NPU acceleration…",
@@ -4930,16 +4970,6 @@
           "wordCount": 6885,
           "title": "AI Repo of the Week: Generative AI for Beginners with JavaScript",
           "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDI5ODE5LXJ5aHBGNw?revision=1"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/lets-learn---mcp-events-a-beginners-guide-to-the-model-context-protocol/4429023",
-          "author": "Katie_Savage",
-          "description": "The Model Context Protocol (MCP) has rapidly become the industry standard for connecting AI agents to a wide range of external tools and services in a consistent way. In a matter of months, this protocol has become a hot topic in developer events and forums and has been implemented by companies large and small. With such rapid change comes the need for training and upskilling to meet the moment! That's why, we're planning a series of virtual training events across different languages (both natural and programming) to introduce you to MCP.\n⭐ Register: https://aka.ms/letslearnmcp\n👩‍💻 Who Should Join?\nWhether you're a beginner developer, a university student, or a seasoned tech professional, this workshop was designed with you in mind. At each event, experts will guide you through an exciti…",
-          "link": "https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/lets-learn---mcp-events-a-beginners-guide-to-the-model-context-protocol/4429023",
-          "publishedOn": "2025-07-02T07:00:00.000Z",
-          "wordCount": 6704,
-          "title": "Let's Learn - MCP Events: A Beginner's Guide to the Model Context Protocol",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDI5MDIzLWI2Q05iTA?revision=4"
         }
       ]
     },
@@ -5302,6 +5332,16 @@
       "feedUrl": "https://techcommunity.microsoft.com/t5/s/plugins/custom/microsoft/o365/custom-blog-rss?board=MicrosoftMechanicsBlog&size=50",
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
+        {
+          "id": "https://techcommunity.microsoft.com/blog/MicrosoftMechanicsBlog/replace-your-vpn-%E2%80%94-global-secure-access-in-microsoft-entra/4473004",
+          "author": "Zachary-Cavanell",
+          "description": "Route authentication through Microsoft Entra before granting resource access, even within legacy on-premises systems.\nBoost performance with intelligent local access that keeps internal traffic local while routing only authentication to the cloud. Protect sensitive data from being uploaded to AI apps, and stop prompt injection attacks — without modifying your applications or AI models.\nAshish Jain, Microsoft Entra Principal GPM, shares how to strengthen your zero trust architecture while simplifying the access experience for users.\nAdvanced Conditional Access controls.\n\nEven for on-prem authentication. Check out SASE capabilities with Microsoft Entra.\nAvoid network roundtripping.\n\n \nImprove speed and reduce risk with Microsoft Entra. Get started.\nBlock prompt injection attacks.\n\n \nNo code …",
+          "link": "https://techcommunity.microsoft.com/blog/MicrosoftMechanicsBlog/replace-your-vpn-%E2%80%94-global-secure-access-in-microsoft-entra/4473004",
+          "publishedOn": "2025-11-28T16:05:56.000Z",
+          "wordCount": 13334,
+          "title": "Replace your VPN — Global Secure Access in Microsoft Entra",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDczMDA0LXpyMHBhMQ?revision=1"
+        },
         {
           "id": "https://techcommunity.microsoft.com/blog/MicrosoftMechanicsBlog/run-local-ai-on-any-pc-or-mac-%E2%80%94-microsoft-foundry-local/4473018",
           "author": "Zachary-Cavanell",
