@@ -2,10 +2,77 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2025-12-01T01:59:07.438Z</updated>
+    <updated>2025-12-02T01:44:20.766Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Cloud as a War Against Entropy]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/cloud-as-a-war-against-entropy/4474111</id>
+        <link href="https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/cloud-as-a-war-against-entropy/4474111"/>
+        <updated>2025-12-02T01:24:03.000Z</updated>
+        <summary type="html"><![CDATA[From Physics and Information Theory to Practical Reliability in the Cloud
+Two years ago I wrote about mitigating downtime and increasing reliability by managing complexity in cloud‑native systems. I used ideas from physics and chaos theory as a lens to explain why cloud architectures feel fragile as they grow: more moving parts, more states, more surprising failure modes.
+Since then, I’ve gone deeper, especially into three concepts:
+
+Thermodynamic entropy: energy spreading out, order decaying.
+Shannon entropy: uncertainty and information in signals.
+Chaos theory: deterministic systems behaving unpredictably due to sensitivity to initial conditions.
+
+What is striking is how naturally these ideas line up with what we experience every day in Azure estates:
+
+The system's that we design and dep…]]></summary>
+        <author>
+            <name>lavann320</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Faster Python on Azure Functions with uvloop]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/faster-python-on-azure-functions-with-uvloop/4455323</id>
+        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/faster-python-on-azure-functions-with-uvloop/4455323"/>
+        <updated>2025-12-01T19:58:50.000Z</updated>
+        <summary type="html"><![CDATA[Python 3.13+ apps on Azure Functions are now faster by default. By replacing the standard event loop with uvloop, the Functions Python worker delivers higher throughput and lower latency for asynchronous workloads — no code changes required.
+Introduction
+Azure Functions powers millions of customer scenarios, from real-time APIs to event-driven automation. For Python developers, scalability often comes down to how efficiently the runtime handles I/O, concurrency, and asynchronous workloads.
+That’s why, starting with Python 3.13, the Azure Functions Python worker now uses uvloop as its default event loop. Built on top of libuv (the same library behind Node.js), uvloop provides a drop-in replacement for Python’s standard asyncio loop with measurable performance improvements.
+For customers, th…]]></summary>
+        <author>
+            <name>eroman</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[The “Golden Triangle” of Agentic Development with Microsoft Agent Framework: AG-UI, DevUI & OpenTelemetry Deep Dive]]></title>
+        <id>https://devblogs.microsoft.com/semantic-kernel/?p=5069</id>
+        <link href="https://devblogs.microsoft.com/semantic-kernel/the-golden-triangle-of-agentic-development-with-microsoft-agent-framework-ag-ui-devui-opentelemetry-deep-dive/"/>
+        <updated>2025-12-01T17:08:48.000Z</updated>
+        <summary type="html"><![CDATA[In the explosive era of Agentic AI, we’re not just seeking more powerful models—we’re searching for a development experience that lets developers actually get some sleep. When building Agents locally, we’ve traditionally faced three major challenges: Black-Box Execution: What is my Agent thinking? Why is it stuck? (Debugging is hard) Interaction Silos: I’ve built my Agent—how do […]
+The post The “Golden Triangle” of Agentic Development with Microsoft Agent Framework: AG-UI, DevUI & OpenTelemetry Deep Dive appeared first on Semantic Kernel.]]></summary>
+        <author>
+            <name>Kinfey Lo</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Simplifying Data Ingestion with Copy job &#8211; Replicate data from Dataverse through Fabric to multiple destinations]]></title>
+        <id>simplifying-data-ingestion-with-copy-job-replicate-data-from-dataverse-through-fabric-to-multiple-destinations</id>
+        <link href="https://blog.fabric.microsoft.com/en/blog/simplifying-data-ingestion-with-copy-job-replicate-data-from-dataverse-through-fabric-to-multiple-destinations/"/>
+        <updated>2025-12-01T09:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Copy job is the recommended approach in Microsoft Fabric Data Factory for moving data from any sources to any destinations in a simplified and efficient way—whether you’re transferring data across clouds, from on-premises systems, or between services. With native support for multiple delivery patterns, including bulk copy, incremental copy, and change data capture (CDC) replication, … 
+Continue reading “Simplifying Data Ingestion with Copy job – Replicate data from Dataverse through Fabric to multiple destinations”]]></summary>
+        <author>
+            <name>Microsoft Fabric Blog</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Securely Access VPC-Protected Amazon S3 Buckets in Microsoft Fabric with Entra Integration (Preview)]]></title>
+        <id>securely-access-vpc-protected-amazon-s3-buckets-in-microsoft-fabric-with-entra-integration-preview</id>
+        <link href="https://blog.fabric.microsoft.com/en/blog/securely-access-vpc-protected-amazon-s3-buckets-in-microsoft-fabric-with-entra-integration-preview/"/>
+        <updated>2025-12-01T09:00:00.000Z</updated>
+        <summary type="html"><![CDATA[When we first introduced Amazon S3 shortcut integration with Microsoft Entra ID, customers gained a powerful new way to connect S3 data to Microsoft Fabric — without storing or rotating AWS access keys. Using OpenID Connect (OIDC), Fabric authenticates directly with AWS Identity and Access Management (IAM), enabling secure, identity-based access to cloud storage. However, … 
+Continue reading “Securely Access VPC-Protected Amazon S3 Buckets in Microsoft Fabric with Entra Integration (Preview)”]]></summary>
+        <author>
+            <name>Microsoft Fabric Blog</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Common Misconceptions When Running Locally vs. Deploying to Azure Linux-based Web Apps]]></title>
         <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/common-misconceptions-when-running-locally-vs-deploying-to-azure-linux-based-web/4473938</id>
@@ -8699,242 +8766,6 @@ What You'll Learn
 Start with t…]]></summary>
         <author>
             <name>DanWahlin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Smart AI Integration with the Model Context Protocol (MCP) ... part 4]]></title>
-        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/smart-ai-integration-with-the-model-context-protocol-mcp-part-4/4430394</id>
-        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/smart-ai-integration-with-the-model-context-protocol-mcp-part-4/4430394"/>
-        <updated>2025-07-04T21:58:31.000Z</updated>
-        <summary type="html"><![CDATA[A discussion on Model Context Protocol:
-
-Part 1 - Why is there a need for MCP Link part 1
-Part 2 - What MCP is, including its architecture and core components Link part 2
-Part 3 - A demo of MCP — including how to configure it so anyone can run it Link part 3
-Part 4 - An example of how to develop an MCP server — a potential starter project for connecting to your own knowledge resources
-
-Part 4 - MCP Development
-In this section we shall discuss creating an MCP Server - specifically, the Colour MCP server that was covered in the previous section, and used in the demo.
-MCP SDK
-To help build MCP servers with minimal effort - there are Software Development Kits (SDKS) for the following languages:
-
-C#
-Java
-Kotlin
-Python
-Ruby
-Swift
-TypeScript
-
-Links to the different SDKS are at https://modelcontex…]]></summary>
-        <author>
-            <name>Mark Harrison (UK)</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Model Context Protocol (MCP) - Why What How ... part 4]]></title>
-        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/model-context-protocol-mcp---why-what-how-part-4/4430394</id>
-        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/model-context-protocol-mcp---why-what-how-part-4/4430394"/>
-        <updated>2025-07-04T21:58:31.000Z</updated>
-        <summary type="html"><![CDATA[A discussion on Model Context Protocol:
-
-Part 1 - Why is there a need for MCP
-Part 2 - What MCP is, including its architecture and core components
-Part 3 - A demo of MCP — including how to configure it so anyone can run it
-Part 4 - An example of how to develop an MCP server — a potential starter project for connecting to your own knowledge resources
-
-Part 4 - MCP Development
-In this section we shall discuss creating an MCP Server - specifically, the Colour MCP server that was covered in the previous section, and used in the demo.
-MCP SDK
-To help build MCP servers with minimal effort - there are Software Development Kits (SDKS) for the following languages:
-
-C#
-Java
-Kotlin
-Python
-Ruby
-Swift
-TypeScript
-
-Links to the different SDKS are at https://modelcontextprotocol.io/
-Colors MCP
-The source …]]></summary>
-        <author>
-            <name>Mark Harrison (UK)</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Smart AI integration with the Model Context Protocol (MCP) ... part 3]]></title>
-        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/smart-ai-integration-with-the-model-context-protocol-mcp-part-3/4430392</id>
-        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/smart-ai-integration-with-the-model-context-protocol-mcp-part-3/4430392"/>
-        <updated>2025-07-04T21:44:55.000Z</updated>
-        <summary type="html"><![CDATA[A discussion on Model Context Protocol:
-
-Part 1 - Why is there a need for MCP Link part 1
-Part 2 - What MCP is, including its architecture and core components Link part 2
-Part 3 - A demo of MCP — including how to configure it so anyone can run it
-Part 4 - An example of how to develop an MCP server — a potential starter project for connecting to your own knowledge resources Link part 4
-
-Part 3 - MCP Demo
-This section shows the use of several MCP tools - specifically, these will provide knowledge about Colors, Timer, Prices and Azure Resources.
-The demo will use Visual Studio Code and GitHub Copilot Agent Mode.
-Demo video
-
-Configuration
-The remainder of this section, explains how to configure and run the demo.
-Project can be cloned from https://github.com/markharrisonorg/mcpdemo. Alternative…]]></summary>
-        <author>
-            <name>Mark Harrison (UK)</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Model Context Protocol (MCP) - Why What How ... part 3]]></title>
-        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/model-context-protocol-mcp---why-what-how-part-3/4430392</id>
-        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/model-context-protocol-mcp---why-what-how-part-3/4430392"/>
-        <updated>2025-07-04T21:44:55.000Z</updated>
-        <summary type="html"><![CDATA[A discussion on Model Context Protocol:Part 1 - Why is there a need for MCP
-Part 2 - What MCP is, including its architecture and core components
-Part 3 - A demo of MCP — including how to configure it so anyone can run it
-Part 4 - An example of how to develop an MCP server — a potential starter project for connecting to your own knowledge resources
-Part 3 - MCP Demo
-This section shows the use of several MCP tools - specifically, these will provide knowledge about Colors, Timer, Prices and Azure Resources.
-The demo will use Visual Studio Code and GitHub Copilot Agent Mode.
-Demo video
-
-Configuration
-The remainder of this section, explains how to configure and run the demo.
-Project can be cloned from https://github.com/markharrisonorg/mcpdemo. Alternatively:
-
-Create an empty folder and open wi…]]></summary>
-        <author>
-            <name>Mark Harrison (UK)</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Smart AI integration with the Model Context Protocol (MCP) ... part 2]]></title>
-        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/smart-ai-integration-with-the-model-context-protocol-mcp-part-2/4430390</id>
-        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/smart-ai-integration-with-the-model-context-protocol-mcp-part-2/4430390"/>
-        <updated>2025-07-04T21:35:31.000Z</updated>
-        <summary type="html"><![CDATA[A discussion on Model Context Protocol:
-
-Part 1 - Why is there a need for MCP Link part 1
-Part 2 - What MCP is, including its architecture and core components
-Part 3 - A demo of MCP — including how to configure it so anyone can run it  Link part 3
-Part 4 - An example of how to develop an MCP server — a potential starter project for connecting to your own knowledge resources Link part 4
-
-Part 2 - What is MCP?
-The Model Context Protocol (MCP) is an open standard designed to enable intelligent AI applications to seamlessly communicate and interoperate with a wide range of external tools and services. MCP abstracts away integration complexities by defining a unified, extensible communication layer that supports context-aware interactions.
-https://modelcontextprotocol.io/
-Overview of MCP
-Archit…]]></summary>
-        <author>
-            <name>Mark Harrison (UK)</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Model Context Protocol (MCP) - Why What How ... part 2]]></title>
-        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/model-context-protocol-mcp---why-what-how-part-2/4430390</id>
-        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/model-context-protocol-mcp---why-what-how-part-2/4430390"/>
-        <updated>2025-07-04T21:35:31.000Z</updated>
-        <summary type="html"><![CDATA[A discussion on Model Context Protocol:
-Part 1 - Why is there a need for MCP
-Part 2 - What MCP is, including its architecture and core components
-Part 3 - A demo of MCP — including how to configure it so anyone can run it
-Part 4 - An example of how to develop an MCP server — a potential starter project for connecting to your own knowledge resources
-Part 2 - What is MCP?
-The Model Context Protocol (MCP) is an open standard designed to enable intelligent AI applications to seamlessly communicate and interoperate with a wide range of external tools and services. MCP abstracts away integration complexities by defining a unified, extensible communication layer that supports context-aware interactions.
-https://modelcontextprotocol.io/
-Overview of MCP
-Architecture
-MCP is structured around a modul…]]></summary>
-        <author>
-            <name>Mark Harrison (UK)</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Smart AI integration with the Model Context Protocol (MCP) ... part 1]]></title>
-        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/smart-ai-integration-with-the-model-context-protocol-mcp-part-1/4430385</id>
-        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/smart-ai-integration-with-the-model-context-protocol-mcp-part-1/4430385"/>
-        <updated>2025-07-04T21:32:10.000Z</updated>
-        <summary type="html"><![CDATA[A discussion on Model Context Protocol:
-
-Part 1 - Why is there a need for MCP 
-Part 2 - What MCP is, including its architecture and core components Link part 2 
-Part 3 - A demo of MCP — including how to configure it so anyone can run it Link Part 3 
-Part 4 - An example of how to develop an MCP server — a potential starter project for connecting to your own knowledge resources Link part 4
-
-Part 1 - Why MCP?
-To understand why the Model Context Protocol (MCP) is needed, lets start by looking at the patterns that modern AI Agents rely on.
-Common AI Patterns
-Chat
-The Chat pattern is a conversational interface between an Agent and an AI Endpoint, typically using natural language, though it can also involve structured inputs or metadata depending on the use case.
- 
-
- 
-The first message sent to an…]]></summary>
-        <author>
-            <name>Mark Harrison (UK)</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Model Context Protocol (MCP) - Why What How ... part 1]]></title>
-        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/model-context-protocol-mcp---why-what-how-part-1/4430385</id>
-        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/model-context-protocol-mcp---why-what-how-part-1/4430385"/>
-        <updated>2025-07-04T21:32:10.000Z</updated>
-        <summary type="html"><![CDATA[A discussion on Model Context Protocol:
-
-Part 1 - Why is there a need for MCP 
-Part 2 - What MCP is, including its architecture and core components
-Part 3 - A demo of MCP — including how to configure it so anyone can run it
-Part 4 - An example of how to develop an MCP server — a potential starter project for connecting to your own knowledge resources
-
-Part 1 - Why MCP?
-To understand why MCP is needed, lets start by looking at the patterns that modern AI Agents rely on.
-Common AI Patterns
-Chat
-The Chat pattern is a conversational interface between an Agent and an AI Endpoint, typically using natural language, though it can also involve structured inputs or metadata depending on the use case.
- 
-
- 
-The first message sent to an AI endpoint includes a system prompt, which defines the AI's behav…]]></summary>
-        <author>
-            <name>Mark Harrison (UK)</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Model Mondays S2:E3 Understanding SLMs and Reasoning with Mojan Javaheripi]]></title>
-        <id>https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/model-mondays-s2e3-understanding-slms-and-reasoning-with-mojan-javaheripi/4429758</id>
-        <link href="https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/model-mondays-s2e3-understanding-slms-and-reasoning-with-mojan-javaheripi/4429758"/>
-        <updated>2025-07-04T18:22:47.000Z</updated>
-        <summary type="html"><![CDATA[This week in Model Mondays, we focus on Small Language Models (SLMs) and Reasoning — and learn how reasoning models leverage inference-time scaling to execute complex tasks, but how can we use these in resource-constrained devices? Read on for my recap of Mojan Javaheripi's insights on Phi-4 reasoning models that are redefining small language models (SLM) for the agentic era of apps.
-About Model Mondays
-Model Mondays is a weekly series designed to help you build your Azure AI Foundry Model IQ step by step. Here's how it works:
-
-5-Minute Highlights – Quick news and updates about Azure AI models and tools on Monday
-15-Minute Spotlight – Deep dive into a key model, protocol, or feature on Monday
-30-Minute AMA on Friday – Live Q&A with subject matter experts from Monday livestream
-
-If you want…]]></summary>
-        <author>
-            <name>Sharda_Kaur</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[S2:E3 Understanding SLMs and Reasoning with Mojan Javaheripi]]></title>
-        <id>https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/s2e3-understanding-slms-and-reasoning-with-mojan-javaheripi/4429758</id>
-        <link href="https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/s2e3-understanding-slms-and-reasoning-with-mojan-javaheripi/4429758"/>
-        <updated>2025-07-04T18:22:47.000Z</updated>
-        <summary type="html"><![CDATA[This week in Model Mondays, we focus on Small Language Models (SLMs) and Reasoning — and learn how reasoning models leverage inference-time scaling to execute complex tasks, but how can we use these in resource-constrained devices? Read on for my recap of Mojan Javaheripi's insights on Phi-4 reasoning models that are redefining small language models (SLM) for the agentic era of apps.
-About Model Mondays
-Model Mondays is a weekly series designed to help you build your Azure AI Foundry Model IQ step by step. Here's how it works:
-
-5-Minute Highlights – Quick news and updates about Azure AI models and tools on Monday
-15-Minute Spotlight – Deep dive into a key model, protocol, or feature on Monday
-30-Minute AMA on Friday – Live Q&A with subject matter experts from Monday livestream
-
-If you want…]]></summary>
-        <author>
-            <name>Sharda_Kaur</name>
         </author>
     </entry>
     <entry>
