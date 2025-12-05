@@ -6,6 +6,36 @@
       "siteUrl": "https://blog.fabric.microsoft.com/en/blog/",
       "articles": [
         {
+          "id": "run-notebooks-in-pipelines-with-service-principal-or-workspace-identity",
+          "author": null,
+          "description": "Notebook activity in Microsoft Fabric Data Factory pipelines now supports connection property—unlocking a more secure and production-ready way to run your notebooks. What’s New? With this update, you can configure Notebook activities to run as Service Principal (SPN) or Workspace Identity (WI). These authentication methods are our recommended approach for production environments, ensuring: Why it … \nContinue reading “Run Notebooks in Pipelines with Service Principal or Workspace Identity”",
+          "link": "https://blog.fabric.microsoft.com/en/blog/run-notebooks-in-pipelines-with-service-principal-or-workspace-identity/",
+          "publishedOn": "2025-12-04T11:00:00.000Z",
+          "wordCount": 1371,
+          "title": "Run Notebooks in Pipelines with Service Principal or Workspace Identity",
+          "imageUrl": "https://blog.fabric.microsoft.com/images/shared/social/social-image-v2.png"
+        },
+        {
+          "id": "unlocking-enterprise-ai-seamless-integration-of-onelake-files-in-microsoft-foundry-knowledge",
+          "author": null,
+          "description": "Microsoft Fabric’s OneLake is redefining how organizations manage and leverage their data. Now, with native integration into Azure AI Foundry Knowledge, teams can unlock the full potential of their unstructured and semi-structured files without the hassle of data duplication or complex pipelines. OneLake brings together structured tables and unstructured files such as documents, images, logs, … \nContinue reading “Unlocking Enterprise AI: Seamless Integration of OneLake Files in Microsoft Foundry Knowledge”",
+          "link": "https://blog.fabric.microsoft.com/en/blog/unlocking-enterprise-ai-seamless-integration-of-onelake-files-in-microsoft-foundry-knowledge/",
+          "publishedOn": "2025-12-04T09:00:00.000Z",
+          "wordCount": 1485,
+          "title": "Unlocking Enterprise AI: Seamless Integration of OneLake Files in Microsoft Foundry Knowledge",
+          "imageUrl": "https://blog.fabric.microsoft.com/images/shared/social/social-image-v2.png"
+        },
+        {
+          "id": "announcing-staging-for-mirroring-for-google-bigquery-in-microsoft-fabricmirroring-for-gbq-staging-blog",
+          "author": null,
+          "description": "Introducing staging support for Mirroring for Google BigQuery (Preview), a major enhancement that dramatically improves the speed and efficiency of initial data replication from Google BigQuery into Microsoft Fabric. Why Staging Matters Previously, initial replication of large datasets from BigQuery into Fabric could be time-consuming. With staging enabled, organizations are now seeing performance improvements of … \nContinue reading “Announcing Staging for Mirroring for Google BigQuery (Preview)”",
+          "link": "https://blog.fabric.microsoft.com/en/blog/announcing-staging-for-mirroring-for-google-bigquery-in-microsoft-fabricmirroring-for-gbq-staging-blog/",
+          "publishedOn": "2025-12-04T08:00:00.000Z",
+          "wordCount": 1408,
+          "title": "Announcing Staging for Mirroring for Google BigQuery (Preview)",
+          "imageUrl": "https://blog.fabric.microsoft.com/images/shared/social/social-image-v2.png"
+        },
+        {
           "id": "turning-everyday-documents-from-sharepoint-and-onedrive-into-analytics-ready-data-with-onelake-shortcuts",
           "author": null,
           "description": "We’re making it easier than ever to bring the files your business lives in every day, such as Word documents, Excel workbooks, PowerPoint decks and PDF files, directly into your analytics in Microsoft OneLake. With OneDrive and SharePoint shortcuts, you can now reference your existing files in Microsoft 365 as if they were part of … \nContinue reading “Turning everyday documents from SharePoint and OneDrive into analytics ready data with OneLake shortcuts”",
@@ -2934,6 +2964,16 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/deploying-a-bun--hono--vite-app-to-azure-app-service/4475356",
+          "author": "theringe",
+          "description": "TOC\n\nIntroduction\nLocal Environment\nDeployment\nConclusion\n\n \n1. Introduction\nAnthropic, the company behind Claude, recently acquired the JavaScript runtime startup Bun, marking one of the most significant shifts in the modern JavaScript ecosystem since the arrival of Node.js and Deno. This acquisition signals more than a business move, it represents a strategic consolidation of performance-oriented tooling, developer ergonomics, and the future of AI-accelerated software development. At the center of this momentum lies a powerful trio: Bun, Hono, and Vite.\n \nBun is a next-generation JavaScript runtime that reimagines everything from dependency installation to HTTP servers, bundling, and execution speed.\n \nOn top of Bun, frameworks like Hono provide an elegant, lightweight approach to buildi…",
+          "link": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/deploying-a-bun--hono--vite-app-to-azure-app-service/4475356",
+          "publishedOn": "2025-12-05T00:09:20.000Z",
+          "wordCount": 10550,
+          "title": "Deploying a Bun + Hono + Vite app to Azure App Service",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDc1MzU2LVRSbnZsaA?revision=3"
+        },
+        {
           "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/faster-python-on-azure-functions-with-uvloop/4455323",
           "author": "eroman",
           "description": "Python 3.13+ apps on Azure Functions are now faster by default. By replacing the standard event loop with uvloop, the Functions Python worker delivers higher throughput and lower latency for asynchronous workloads — no code changes required.\nIntroduction\nAzure Functions powers millions of customer scenarios, from real-time APIs to event-driven automation. For Python developers, scalability often comes down to how efficiently the runtime handles I/O, concurrency, and asynchronous workloads.\nThat’s why, starting with Python 3.13, the Azure Functions Python worker now uses uvloop as its default event loop. Built on top of libuv (the same library behind Node.js), uvloop provides a drop-in replacement for Python’s standard asyncio loop with measurable performance improvements.\nFor customers, th…",
@@ -4186,36 +4226,6 @@
           "wordCount": 6769,
           "title": "AI Agent MCP Tools: QuickStart to MCP Tools Development with Azure AI Foundry SDK",
           "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDMyNDY0LWp0dDV2VA?revision=2"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/Azure-AI-Services-blog/zero-trust-agents-adding-identity-and-access-to-multi-agent-workflows/4427790",
-          "author": "Thia",
-          "description": "Executive Summary\nAI agents need identity and trust just like humans. In this article, we demonstrate a zero-trust approach to autonomous AI agents by integrating Identity and access management into an enterprise agentic workflow. Using a hotel booking scenario, we show how each AI agent has identity and issued access token for every action. This ensures no implicit trust between entities – every interaction is authenticated and authorized, following the principle of “never trust, always verify”[1]. The solution marries Asgardeo by WSO2(for identity and access management) with Microsoft’s Azure OpenAI service on Azure AI Foundry and Autogen (for powerful generative AI model and Multiagent orchestration). The result is a working example of autonomous agents that carry digital ID tokens, ena…",
-          "link": "https://techcommunity.microsoft.com/blog/Azure-AI-Services-blog/zero-trust-agents-adding-identity-and-access-to-multi-agent-workflows/4427790",
-          "publishedOn": "2025-07-08T02:00:00.000Z",
-          "wordCount": 17651,
-          "title": "Zero-Trust Agents: Adding Identity and Access to Multi-Agent Workflows",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDI3NzkwLUZVVmQxNQ?revision=4"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/Azure-AI-Services-blog/june-fine-tuning-updates-preference-alignment-global-training-and-more/4430964",
-          "author": "AliciaFrame",
-          "description": "With all our big announcements at Build, you might think we'd kick back and take a break for a few weeks... but fine tuning never stops! We're wrapping up June with a release of direct preference optimization for the 4.1 family of models, fine tuning available in more regions than ever before, and Responses API support for fine-tuned models. \nGPT-4.1, GPT-4.1-mini support Direct Preference Optimization (DPO) 😍\nGPT-4.1 and GPT-4.1-mini now support Direct Preference Optimization (DPO). DPO is a finetuning technique that adjusts model weights based on human preferences. You provide a prompt along with two responses: a preferred and non-preferred example; using this data, you can align a fine-tuned model to match your own style, preferences, or safety requirements.  \n\nUnlike Reinforcement Lea…",
-          "link": "https://techcommunity.microsoft.com/blog/Azure-AI-Services-blog/june-fine-tuning-updates-preference-alignment-global-training-and-more/4430964",
-          "publishedOn": "2025-07-07T23:25:01.000Z",
-          "wordCount": 6841,
-          "title": "June Fine-Tuning Updates: Preference Alignment, Global Training, and More!",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDMwOTY0LWFXamw2UA?revision=1"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/Azure-AI-Services-blog/what-if-you-could-cut-ai-costs-by-60-without-losing-quality/4430880",
-          "author": "jfilcik",
-          "description": "That’s the promise behind the new pricing model for Azure AI Content Understanding. We’ve restructured how you pay for document, audio, and video analysis—moving from rigid field-based pricing to a flexible, token-based system that lets you pay only for what you use.\nWhether you're extracting layout from documents or identifying actions in a video, the new pricing structure delivers up to 60% cost savings for many typical tasks and more control over your spend.\nWhy We’re Moving to Token-Based Pricing\nField-based pricing was easy to understand, but it didn’t reflect the real work being done. Some fields are simple. Others require deep reasoning, cross-referencing, and contextual understanding.\nSo we asked: What if pricing scaled with complexity?\nEnter tokens. Tokens are the atomic units of …",
-          "link": "https://techcommunity.microsoft.com/blog/Azure-AI-Services-blog/what-if-you-could-cut-ai-costs-by-60-without-losing-quality/4430880",
-          "publishedOn": "2025-07-07T22:40:11.000Z",
-          "wordCount": 10357,
-          "title": "What If You Could Cut AI Costs by 60% Without Losing Quality?",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDMwODgwLXZIbnN6Rg?revision=11"
         }
       ]
     },
@@ -5253,6 +5263,16 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/blog/MicrosoftMechanicsBlog/foundry-iq-for-multi-source-ai-knowledge-bases/4474921",
+          "author": "Zachary-Cavanell",
+          "description": "Pull from multiple sources at once, connect the dots automatically, and getvaccurate, context-rich answers without doing manual orchestration with Foundry IQ in Microsoft Foundry. Navigate complex, distributed data across Azure stores, SharePoint, OneLake, MCP servers, and even the web, all through a single knowledge base that handles query planning and iteration for you. \nReuse the Azure AI Search assets you already have, build new knowledge bases with minimal setup, and control how much reasoning effort your agents apply. As you develop, you can rely on iterative retrieval only when it improves results, saving time, tokens, and development complexity. \nPablo Castro, Azure AI Search CVP and Distinguished Engineer, joins Jeremy Chapman to share how to build smarter, more capable AI agents,…",
+          "link": "https://techcommunity.microsoft.com/blog/MicrosoftMechanicsBlog/foundry-iq-for-multi-source-ai-knowledge-bases/4474921",
+          "publishedOn": "2025-12-04T14:15:00.000Z",
+          "wordCount": 17211,
+          "title": "Foundry IQ for Multi-Source AI Knowledge Bases",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDc0OTIxLUZ5bDB5eg?revision=1"
+        },
+        {
           "id": "https://techcommunity.microsoft.com/blog/MicrosoftMechanicsBlog/microsoft-sentinel-platform-%E2%80%94-unified-graph-enabled-and-ai-ready-security/4473008",
           "author": "Zachary-Cavanell",
           "description": "Visualize relationships across users, devices, and resources to pinpoint vulnerabilities and focus your response where it matters most. Using natural language, you can investigate faster. Ask questions, get context, and act on insights without writing complex queries. Build and extend your own identity graphs to include multicloud systems like Salesforce, enriching your view of risk.\nVandana Mahtani, Microsoft Sentinel Principal PM, shares how to detect, investigate, and disrupt threats in one connected experience with Microsoft Sentinel.\nYou can find more info on custom graphs: https://aka.ms/sentinel/graph/ignite and sign-up for preview at: https://aka.ms/sentinel/graph/customsignup\nUnderstand and mitigate risks.\n\nConnect the dots across users, devices, and resources with blast radius an…",
@@ -5429,6 +5449,16 @@
       "feedUrl": "https://techcommunity.microsoft.com/t5/s/plugins/custom/microsoft/o365/custom-blog-rss?board=AzureMigrationBlog&size=50",
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
+        {
+          "id": "https://techcommunity.microsoft.com/blog/AzureMigrationBlog/migrate-from-amazon-api-gateway-to-azure-api-management/4471524",
+          "author": "dan_lepow",
+          "description": "For teams moving from Amazon API Gateway to Azure API Management, we've published a detailed migration guide that addresses the technical considerations and implementation steps for a successful transition: Migrate Amazon API Gateway to Azure API Management.\nThe guide focuses on helping AWS users map their existing API Gateway configurations to equivalent Azure API Management capabilities while highlighting architectural differences and best practices for the Azure platform.\nWhat the guide covers:\n✅ Detailed feature mapping\nWe provide extensive mapping tables across three categories: infrastructure capabilities, API workloads, and API configurations. For example, you'll find mappings for network isolation (VPC endpoints to virtual networks), WAF integration, custom domains, and observabili…",
+          "link": "https://techcommunity.microsoft.com/blog/AzureMigrationBlog/migrate-from-amazon-api-gateway-to-azure-api-management/4471524",
+          "publishedOn": "2025-12-04T21:23:07.000Z",
+          "wordCount": 7655,
+          "title": "Migrate from Amazon API Gateway to Azure API Management",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDcxNTI0LTJtMEYzUA?revision=6"
+        },
         {
           "id": "https://techcommunity.microsoft.com/blog/AzureMigrationBlog/best-practices-for-migrating-cots-applications-to-microsoft-azure/4473323",
           "author": "srhulsus",
@@ -6184,16 +6214,6 @@
           "wordCount": 6378,
           "title": "July Patches for Azure DevOps Server",
           "imageUrl": "https://devblogs.microsoft.com/devops/wp-content/uploads/sites/6/2022/06/HERO.jpg"
-        },
-        {
-          "id": "https://devblogs.microsoft.com/devops/?p=71431",
-          "author": "Dan Hellem",
-          "description": "After several months in private preview and many bug fixes along the way, we’re excited to announce that Markdown support in large text fields is now generally available! 🎉 🦄 How it works By default, all existing and new work items will continue using the HTML editor for large text fields. However, you now have […]\nThe post Markdown Support Arrives for Work Items appeared first on Azure DevOps Blog.",
-          "link": "https://devblogs.microsoft.com/devops/markdown-support-arrives-for-work-items/",
-          "publishedOn": "2025-07-07T19:32:46.000Z",
-          "wordCount": 7164,
-          "title": "Markdown Support Arrives for Work Items",
-          "imageUrl": "https://devblogs.microsoft.com/devops/wp-content/uploads/sites/6/2023/03/sketch-1.png"
         }
       ]
     },
@@ -6356,6 +6376,16 @@
       "feedUrl": "https://devblogs.microsoft.com/microsoft365dev/feed/",
       "siteUrl": "https://devblogs.microsoft.com/microsoft365dev/",
       "articles": [
+        {
+          "id": "https://devblogs.microsoft.com/microsoft365dev/?p=25092",
+          "author": "Waldek Mastykarz, Garry Trinder",
+          "description": "Introducing Dev Proxy v2.0 with improved AI telemetry, and small breaking changes.\nThe post Dev Proxy v2.0 with improved AI telemetry, and small breaking changes appeared first on Microsoft 365 Developer Blog.",
+          "link": "https://devblogs.microsoft.com/microsoft365dev/dev-proxy-v2-0-with-improved-ai-telemetry-and-small-breaking-changes/",
+          "publishedOn": "2025-12-04T08:32:11.000Z",
+          "wordCount": 7122,
+          "title": "Dev Proxy v2.0 with improved AI telemetry, and small breaking changes",
+          "imageUrl": "https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2025/12/DevProxyv200.webp"
+        },
         {
           "id": "https://devblogs.microsoft.com/microsoft365dev/?p=25058",
           "author": "Sébastien Levert",
