@@ -6,6 +6,36 @@
       "siteUrl": "https://blog.fabric.microsoft.com/en/blog/",
       "articles": [
         {
+          "id": "understanding-operations-agent-capacity-consumption-usage-reporting-and-billing",
+          "author": null,
+          "description": "At Ignite, we announced operations agents that helps create autonomous agents that monitor data, infer goals, and recommend actions. Soon, we will enable billing for these agents as the Preview period continues. Operations agents will use Fabric Capacity Units (CU) like any other Fabric features. In the Capacity Metrics App, you’ll find the following operations show … \nContinue reading “Understanding Operations Agent Capacity Consumption, Usage Reporting and Billing (Preview)”",
+          "link": "https://blog.fabric.microsoft.com/en/blog/understanding-operations-agent-capacity-consumption-usage-reporting-and-billing/",
+          "publishedOn": "2025-12-15T11:59:00.000Z",
+          "wordCount": 1982,
+          "title": "Understanding Operations Agent Capacity Consumption, Usage Reporting and Billing (Preview)",
+          "imageUrl": "https://blog.fabric.microsoft.com/images/shared/social/social-image-v2.png"
+        },
+        {
+          "id": "fabric-environment-library-management-performance-improvement",
+          "author": null,
+          "description": "Major performance improvements are here for Fabric Environment! Environment publishing is now up to 2.5x faster, and session startup speeds have improved by up to 3x, delivering a smoother and more reliable experience for developers. What’s Improved What’s Next? New library installation mode for lightweight packages and quick iteration is around the corner. Stay tuned … \nContinue reading “Fabric Environment Library Management Performance Improvement”",
+          "link": "https://blog.fabric.microsoft.com/en/blog/fabric-environment-library-management-performance-improvement/",
+          "publishedOn": "2025-12-15T10:00:00.000Z",
+          "wordCount": 1572,
+          "title": "Fabric Environment Library Management Performance Improvement",
+          "imageUrl": "https://blog.fabric.microsoft.com/images/shared/social/social-image-v2.png"
+        },
+        {
+          "id": "fabric-runtime-2-0-experimental-public-preview",
+          "author": null,
+          "description": "Fabric Runtime provides seamless integration within the Microsoft Fabric ecosystem, delivering a powerful environment for data engineering and data science projects built on Apache Spark. Fabric Runtime 2.0 is now available in Experimental Public Preview (EPP). This next-generation runtime is purpose-built for large-scale data computations in Microsoft Fabric and introduces key features and components that … \nContinue reading “Fabric Runtime 2.0 (Preview)”",
+          "link": "https://blog.fabric.microsoft.com/en/blog/fabric-runtime-2-0-experimental-public-preview/",
+          "publishedOn": "2025-12-15T09:00:00.000Z",
+          "wordCount": 1634,
+          "title": "Fabric Runtime 2.0 (Preview)",
+          "imageUrl": "https://blog.fabric.microsoft.com/images/shared/social/social-image-v2.png"
+        },
+        {
           "id": "microsoft-recognized-as-a-leader-in-the-2025-gartner-magic-quadrant-for-data-integration-tools-2",
           "author": null,
           "description": "A Leader in Data Integration We’re thrilled to share that Microsoft has been named a Leader in the 2025 Gartner Magic Quadrant for Data Integration Tools—our fifth consecutive year in this position. In our view, this recognition reflects our commitment to help organizations unify their data estate and unlock the full potential of AI. To … \nContinue reading “Microsoft Recognized as a Leader in the 2025 Gartner® Magic Quadrant™ for Data Integration Tools”",
@@ -2824,6 +2854,16 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/industry-wide-certificate-changes-impacting-azure-app-service-certificates/4477924",
+          "author": "YutangLin",
+          "description": "Executive Summary \nIn early 2026, industry-wide changes mandated by browser applications and the CA/B Forum will affect both how TLS certificates are issued as well as their validity period. The CA/B Forum is a vendor body that establishes standards for securing websites and online communications through SSL/TLS certificates. Azure App Service is aligning with these standards for both App Service Managed Certificates (ASMC, free, DigiCert-issued) and App Service Certificates (ASC, paid, GoDaddy-issued).\nMost customers will experience no disruption. Action is required only if you pin certificates or use them for client authentication (mTLS). \nWho Should Read This? \n\nApp Service administrators \nSecurity and compliance teams \nAnyone responsible for certificate management or application securi…",
+          "link": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/industry-wide-certificate-changes-impacting-azure-app-service-certificates/4477924",
+          "publishedOn": "2025-12-15T10:23:57.000Z",
+          "wordCount": 9384,
+          "title": "Industry-Wide Certificate Changes Impacting Azure App Service Certificates",
+          "imageUrl": null
+        },
+        {
           "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/capacity-planning-with-azure-container-apps-workload-profiles/4477085",
           "author": "nesubram",
           "description": "Overview\nAzure Container Apps (ACA) simplifies container orchestration, but capacity planning often confuses developers. Questions like “How do replicas consume node resources?”, “When does ACA add nodes?”, and “How should I model limits and requests?”. This guide pairs official ACA guidance with practical examples to demystify workload profiles, autoscaling, and resource modelling.\nUnderstanding Workload Profiles in Azure Container Apps\nACA offers three profile types:\nConsumption\n\nScales to zero\nPlatform decides node size\nBilling per replica execution time\n\nDedicated\n\nChoose VM SKU (e.g., D4 → 4 vCPU, 16 GiB RAM)\nBilling per node\n\nFlex (Preview)\n\nCombines dedicated isolation with consumption-like billing\n\nEach profile defines node-level resources. For Example: D4 → 4 vCPU, 16 GiB RAM per …",
@@ -3912,16 +3952,6 @@
           "wordCount": 11356,
           "title": "Customising Node-Level Configuration in AKS",
           "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDM1MDM4LXFRUzg3eg?revision=3"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/deep-dive-on-availability-zones-in-azure-app-service/4433526",
-          "author": "jordanselig",
-          "description": "With the recent release of our new Availability Zone features, a common question we've been getting from our customers is: \"How do I know if my existing App Service supports Availability Zones?\" While this information is documented in the App Service Resiliency Microsoft Learn Docs, in this blog post I will try and walk you through some essential aspects of enabling Availability Zones in Azure App Service.\nThis article outlines how to confirm if your App Service plan supports Availability Zones, guides you through upgrading from Free, Basic, or Standard tiers to Premium SKUs, and describes the process for enabling this feature, including creating new, properly configured plans. The overview also addresses specific considerations for App Service Environments, along with common issues and so…",
-          "link": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/deep-dive-on-availability-zones-in-azure-app-service/4433526",
-          "publishedOn": "2025-07-18T14:49:13.000Z",
-          "wordCount": 13335,
-          "title": "Deep Dive on Availability Zones in Azure App Service",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDMzNTI2LUdNS056Ng?revision=5"
         }
       ]
     },
@@ -3930,6 +3960,16 @@
       "feedUrl": "https://techcommunity.microsoft.com/t5/s/plugins/custom/microsoft/o365/custom-blog-rss?board=MessagingonAzureBlog&size=50",
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
+        {
+          "id": "https://techcommunity.microsoft.com/blog/MessagingonAzureBlog/message-brokers-as-the-cornerstone-of-the-next-generation-of-agentic-ai-backends/4478088",
+          "author": "EldertGrootenboer",
+          "description": "We are seeing changes in the way Agentic AI behaves. Instead of one-off model calls, we are starting to see networks of agents and MCP services working together. These are going to bring powerful integrations, with a variety of distributed components. Work is going to arrive in unpredictable bursts. Some services end up overloaded while others sit idle. Every call burns tokens and compute, so wasted effort translates directly into real money.\nDirect calls are no longer enough. We are going to need orchestration. A broker in the middle that absorbs spikes, queues up work until capacity becomes available, and handles retries. This approach helps keep costs predictable by pacing work to match budgets and downstream capacity.\nMessage brokers, such as Azure Service Bus, are ideal for the capabi…",
+          "link": "https://techcommunity.microsoft.com/blog/MessagingonAzureBlog/message-brokers-as-the-cornerstone-of-the-next-generation-of-agentic-ai-backends/4478088",
+          "publishedOn": "2025-12-15T19:00:00.000Z",
+          "wordCount": 9815,
+          "title": "Message brokers as the cornerstone of the next generation of agentic AI backends",
+          "imageUrl": null
+        },
         {
           "id": "https://techcommunity.microsoft.com/blog/MessagingonAzureBlog/general-availability-large-message-support-in-azure-event-hubs/4471094",
           "author": "Sannidhya_Glodha",
@@ -4796,6 +4836,26 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/from-large-semi-structured-docs-to-actionable-data-in-depth-evaluation-approache/4474060",
+          "author": "anishganguli",
+          "description": "Introduction\nExtracting structured data from large, semi-structured documents (the detailed solution implementation overview and architecture is provided in this tech community blog: From Large Semi-Structured Docs to Actionable Data: Reusable Pipelines with ADI, AI Search & OpenAI) demands a rigorous evaluation framework. \nThe goal is to ensure our pipeline is accurate, reliable, and scalable before we trust it with mission-critical data. This framework breaks evaluation into clear phases, from how we prepare the document, to how we find relevant parts, to how we validate the final output. It provides metrics, examples, and best practices at each step, forming a generic pattern that can be applied to various domains.\nFramework Overview\nA very structured and stepwise approach for evaluatio…",
+          "link": "https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/from-large-semi-structured-docs-to-actionable-data-in-depth-evaluation-approache/4474060",
+          "publishedOn": "2025-12-15T20:24:10.000Z",
+          "wordCount": 13128,
+          "title": "From Large Semi-Structured Docs to Actionable Data: In-Depth Evaluation Approaches Guidance",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDc0MDYwLU5rZ0duZQ?revision=9"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/streamline-azure-netapp-files-management%E2%80%94right-from-your-ide/4478122",
+          "author": "GeertVanTeylingen",
+          "description": "Table of Contents\nAbstract\nIntroduction\nThe Traditional Approach\nThe Modern Approach\nStep 1: Generate Infrastructure (10 Minutes)\nStep 2: Instant Validation (10 Minutes)\nStep 3: Optimization & Insights (5 Minutes)\nKey Capabilities\nThe ROI: Why This Matters\nEfficiency Gains\nSummary\nReady to Start? Learn more!\nAbstract\nThe Azure NetApp Files VS Code Extension is designed to streamline storage provisioning and management directly within the developer’s IDE. Traditional workflows often require extensive portal navigation, manual configuration, and policy management, leading to inefficiencies and context switching. The extension addresses these challenges by enabling AI-powered automation through natural language commands, reducing provisioning time from hours to minutes while minimizing errors…",
+          "link": "https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/streamline-azure-netapp-files-management%E2%80%94right-from-your-ide/4478122",
+          "publishedOn": "2025-12-15T20:17:22.000Z",
+          "wordCount": 9710,
+          "title": "Streamline Azure NetApp Files Management—Right from Your IDE",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDc4MTIyLWFHZTNJSA?revision=2"
+        },
+        {
           "id": "https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/from-large-semi-structured-docs-to-actionable-data-reusable-pipelines-with-adi-a/4474054",
           "author": "anishganguli",
           "description": "Problem Space\nLarge semi-structured documents such as contracts, invoices, hospital tariff/rate cards multi-page reports, and compliance records often carry essential information that is difficult to extract reliably with traditional approaches. Their layout can span several pages, the structure is rarely consistent, and related fields may appear far apart even though they must be interpreted together. This makes it hard not only to detect the right pieces of information but also to understand how those pieces relate across the document.\nLLM can help, but when documents are long and contain complex cross-references, they may still miss subtle dependencies or generate hallucinated information. That becomes risky in environments where small errors can cascade into incorrect decisions. At the…",
@@ -5064,16 +5124,6 @@
           "wordCount": 5681,
           "title": "Introducing Azure Local Training: Empowering You to Succeed",
           "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDQ3OTU3LVpjZXBTYQ?revision=2"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/ai-for-operations---copilot-agent-integration/4434476",
-          "author": "TaleTom",
-          "description": "Solution ideas\nThe original framework introduced several Logic App and Function App patterns for SQL BPA, Update Manager, Cost Management, Anomaly Detection, and Smart Doc creation.\nIn this article we add two Copilot Studio Agents, packaged in the GitHub repository Microsoft Azure AI for Operation Framework, designed to be deployed in a dedicated subscription (e.g., OpenAI-CoreIntegration):\n\nCopilot FinOps Agent – interactive cost & usage analysis\nCopilot Update Manager Agent – interactive patch status & one-time updates\n\nArchitecture\n\n \nCopilot FinOps Agent\nA Copilot Studio agent that lets stakeholders chat in natural language to retrieve, compare, and summarise cost data—without leaving Teams.\nDataflow\n\n\n#StageDescription\n\nInitial TriggerUser message (Teams / Copilot Studio web) invoke t…",
-          "link": "https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/ai-for-operations---copilot-agent-integration/4434476",
-          "publishedOn": "2025-07-18T18:14:01.000Z",
-          "wordCount": 8152,
-          "title": "AI for Operations - Copilot Agent Integration",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDM0NDc2LUZZZUl0Tw?revision=7"
         }
       ]
     },
@@ -5458,16 +5508,6 @@
           "wordCount": 5638,
           "title": "Azure VMware Solution now available in Spain Central",
           "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDM1NTUwLWdtclZCSQ?revision=2"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AzureMigrationBlog/take-control-of-your-azure-vmware-solution-maintenance-schedule/4434496",
-          "author": "rvandenbedem",
-          "description": "Overview\nAzure VMware Solution is a VMware validated first party Azure service from Microsoft that provides private clouds containing VMware vSphere clusters built from dedicated bare-metal Azure infrastructure. It enables customers to leverage their existing investments in VMware skills and tools, allowing them to focus on developing and running their VMware-based workloads on Azure.\nAt Microsoft, we’re continuously evolving our services based on customer feedback and Azure VMware Solution is no exception. As a fully Microsoft-managed service, Azure VMware Solution takes care of the end-to-end lifecycle management of your VMware environment, from ESXi host patching to vCenter Server and NSX upgrades. This ensures your private cloud stays secure, compliant, and up-to-date. \nHistorically, p…",
-          "link": "https://techcommunity.microsoft.com/blog/AzureMigrationBlog/take-control-of-your-azure-vmware-solution-maintenance-schedule/4434496",
-          "publishedOn": "2025-07-18T13:53:25.000Z",
-          "wordCount": 7606,
-          "title": "Take Control of Your Azure VMware Solution Maintenance Schedule",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDM0NDk2LVhvMmRvSg?revision=3"
         }
       ]
     },
@@ -6136,6 +6176,16 @@
       "feedUrl": "https://devblogs.microsoft.com/microsoft365dev/feed/",
       "siteUrl": "https://devblogs.microsoft.com/microsoft365dev/",
       "articles": [
+        {
+          "id": "https://devblogs.microsoft.com/microsoft365dev/?p=25124",
+          "author": "Rishabh Agrawal",
+          "description": "With introduction of MCP support, it’s now much easier for developers to integrate their business workflows, SaaS, and LoB systems into Copilot via declarative agent.  \nThe post Build declarative agents for Microsoft 365 Copilot with MCP appeared first on Microsoft 365 Developer Blog.",
+          "link": "https://devblogs.microsoft.com/microsoft365dev/build-declarative-agents-for-microsoft-365-copilot-with-mcp/",
+          "publishedOn": "2025-12-15T19:28:28.000Z",
+          "wordCount": 7430,
+          "title": "Build declarative agents for Microsoft 365 Copilot with MCP",
+          "imageUrl": "https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2025/12/MCP-agent-1.webp"
+        },
         {
           "id": "https://devblogs.microsoft.com/microsoft365dev/?p=25104",
           "author": "Vesa Juvonen",
