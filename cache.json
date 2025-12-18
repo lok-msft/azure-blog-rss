@@ -2194,36 +2194,6 @@
           "wordCount": 2095,
           "title": "Sunsetting Default Semantic Models &#8211; Microsoft Fabric",
           "imageUrl": "https://blog.fabric.microsoft.com/images/shared/social/social-image-v2.png"
-        },
-        {
-          "id": "serve-real-time-predictions-seamlessly-with-ml-model-endpoints",
-          "author": null,
-          "description": "Fabric offers a wide variety of data-science capabilities, from automated machine learning with FLAML to batch inferencing with the SynapseML PREDICT function. We’re pleased to announce that ML models can now serve real-time predictions from secure, scalable, and easy-to-use online endpoints. In addition to generating batch predictions in Spark, you can use endpoints to bring … \nContinue reading “Serve real-time predictions seamlessly with ML model endpoints”",
-          "link": "https://blog.fabric.microsoft.com/en/blog/serve-real-time-predictions-seamlessly-with-ml-model-endpoints/",
-          "publishedOn": "2025-07-21T11:30:00.000Z",
-          "wordCount": 1904,
-          "title": "Serve real-time predictions seamlessly with ML model endpoints",
-          "imageUrl": "https://blog.fabric.microsoft.com/images/shared/social/social-image-v2.png"
-        },
-        {
-          "id": "whats-new-and-coming-soon-in-sql-analytics-endpoint-in-fabric",
-          "author": null,
-          "description": "We’re thrilled to share a series of exciting updates and upcoming enhancements to the SQL analytics endpoint in Microsoft Fabric. These improvements are designed to make your experience more powerful and reliable. From Preview to GA – Metadata sync REST API Last month, we introduced the SQL analytics endpoint metadata sync REST API in preview, … \nContinue reading “What’s new and coming soon in SQL analytics endpoint in Fabric”",
-          "link": "https://blog.fabric.microsoft.com/en/blog/whats-new-and-coming-soon-in-sql-analytics-endpoint-in-fabric/",
-          "publishedOn": "2025-07-21T11:23:17.000Z",
-          "wordCount": 1849,
-          "title": "What’s new and coming soon in SQL analytics endpoint in Fabric",
-          "imageUrl": "https://blog.fabric.microsoft.com/images/shared/social/social-image-v2.png"
-        },
-        {
-          "id": "using-microsoft-fabric-git-integration-for-user-data-functions",
-          "author": null,
-          "description": "Microsoft Fabric offers native Git integration and deployment pipelines to facilitate version control, collaboration, and automated releases for workspace items like user data functions. This guide explains how to set up and manage Git integration for user data functions within a Fabric workspace.\n•\tWorkspace preparation and Git linking: Users start by selecting or creating a Fabric workspace containing user data functions, then enable Git integration via workspace settings by connecting to a Git provider and repository branch, optionally specifying a folder for organization.\n•\tBranching strategy configuration: Teams are advised to adopt branching strategies such as main/develop, feature, and release branches, along with pull request and code review policies to maintain code quality and collaboration.\n•\tManaging user data functions in Git: Each data function is stored in a function_app.py file; users clone the repository locally, edit or add functions, and update the definition.json file to reflect new functions and required libraries like numpy.\n•\tCommitting, syncing, and publishing changes: After committing changes in VS Code, users sync with the Fabric portal, update the function via source control, and publish to deploy the new or updated functions, making them available for invocation.",
-          "link": "https://blog.fabric.microsoft.com/en/blog/using-microsoft-fabric-git-integration-for-user-data-functions/",
-          "publishedOn": "2025-07-21T09:00:00.000Z",
-          "wordCount": 2264,
-          "title": "Using Microsoft Fabric Git integration for User Data Functions",
-          "imageUrl": "https://blog.fabric.microsoft.com/images/shared/social/social-image-v2.png"
         }
       ]
     },
@@ -3992,16 +3962,6 @@
           "wordCount": 10362,
           "title": "Important Changes to App Service Managed Certificates: Is Your Certificate Affected?",
           "imageUrl": null
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/customising-node-level-configuration-in-aks/4435038",
-          "author": "samcogan",
-          "description": "When you deploy AKS, you deploy the control plan, which is managed by Microsoft, and one or more node pools, which contain the worker nodes used to run your Kubernetes workloads. These node pools are usually deployed as Virtual Machine Scale Sets. These scale sets are visible in your subscription, but generally you would not make changes to these directly, as they will be managed by AKS and all of the configuration and management of these is done through AKS. However, there are some scenarios where you do need to make changes to the underlying node configuration to be able to handle the workloads you need to run. Whilst you can make some changes to these nodes, you need to make sure you do it in a supported manner, which will be applied consistently to all your nodes.\nAn example of this re…",
-          "link": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/customising-node-level-configuration-in-aks/4435038",
-          "publishedOn": "2025-07-21T11:17:13.000Z",
-          "wordCount": 11356,
-          "title": "Customising Node-Level Configuration in AKS",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDM1MDM4LXFRUzg3eg?revision=3"
         }
       ]
     },
@@ -4010,6 +3970,26 @@
       "feedUrl": "https://techcommunity.microsoft.com/t5/s/plugins/custom/microsoft/o365/custom-blog-rss?board=MessagingonAzureBlog&size=50",
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
+        {
+          "id": "https://techcommunity.microsoft.com/blog/MessagingonAzureBlog/announcing-general-availability-of-geo-replication-for-azure-service-bus-premium/4413164",
+          "author": "EldertGrootenboer",
+          "description": "Today we are excited to announce general availability of the Geo-Replication feature for Azure Service Bus in the premium tier. This feature ensures that the metadata and data of a namespace are continuously replicated from a primary region to a secondary region. Moreover, this feature allows promoting a secondary region at any time. The Geo-Replication feature is the latest option to insulate Azure Service Bus applications against outages and disasters. Other options are Geo-Disaster Recovery and Availability Zones.\nDifferentiation\nThere are currently two features that provide Geo-Disaster Recovery in Azure Service Bus for the Premium tier. First, there is Geo-Disaster Recovery (Metadata DR) that just provides replication of metadata. Second, Geo-Replication, which is now GA, provides rep…",
+          "link": "https://techcommunity.microsoft.com/blog/MessagingonAzureBlog/announcing-general-availability-of-geo-replication-for-azure-service-bus-premium/4413164",
+          "publishedOn": "2025-12-17T17:00:00.000Z",
+          "wordCount": 8208,
+          "title": "Announcing General Availability of Geo-Replication for Azure Service Bus Premium",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDEzMTY0LXNxZUlrRg?revision=3"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/blog/MessagingonAzureBlog/json-structure-a-json-schema-language-youll-love/4476852",
+          "author": "clemensv",
+          "description": "We talk to many customers moving structured data through queues and event streams and topics, and we see a strong desire to create more efficient and less brittle communication paths governed by rich data definitions well understood by all parties. The way those definitions are often shared are schema documents. While there is great need, the available schema options and related tool chains are often not great.\nJSON Schema is popular for its relative simplicity in trivial cases, but quickly becomes unmanageable as users employ more complex constructs. The industry has largely settled on \"Draft 7,\" with subsequent releases seeing weak adoption. There's substantial frustration among developers who try to use JSON Schema for code generation or database mapping—scenarios it was never designed …",
+          "link": "https://techcommunity.microsoft.com/blog/MessagingonAzureBlog/json-structure-a-json-schema-language-youll-love/4476852",
+          "publishedOn": "2025-12-17T08:03:09.000Z",
+          "wordCount": 12202,
+          "title": "JSON Structure: A JSON schema language you'll love",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDc2ODUyLVo3akxJOQ?revision=2"
+        },
         {
           "id": "https://techcommunity.microsoft.com/blog/MessagingonAzureBlog/message-brokers-as-the-cornerstone-of-the-next-generation-of-agentic-ai-backends/4478088",
           "author": "EldertGrootenboer",
@@ -5632,16 +5612,6 @@
           "wordCount": 7134,
           "title": "Azure Authentication Changes in Semantic Kernel Python",
           "imageUrl": "https://devblogs.microsoft.com/semantic-kernel/wp-content/uploads/sites/78/2025/08/security-image.png"
-        },
-        {
-          "id": "https://devblogs.microsoft.com/semantic-kernel/?p=4967",
-          "author": "Kinfey Lo",
-          "description": "In the rapidly evolving landscape of AI application development, the ability to orchestrate multiple intelligent agents has become crucial for building sophisticated, enterprise-grade solutions. While individual AI agents excel at specific tasks, complex business scenarios often require coordination between specialized agents running on different platforms, frameworks, or even across organizational boundaries. This is where the […]\nThe post Guest Blog: Building Multi-Agent Solutions with Semantic Kernel and A2A Protocol appeared first on Semantic Kernel.",
-          "link": "https://devblogs.microsoft.com/semantic-kernel/guest-blog-building-multi-agent-solutions-with-semantic-kernel-and-a2a-protocol/",
-          "publishedOn": "2025-07-21T08:10:23.000Z",
-          "wordCount": 8660,
-          "title": "Guest Blog: Building Multi-Agent Solutions with Semantic Kernel and A2A Protocol",
-          "imageUrl": "https://devblogs.microsoft.com/semantic-kernel/wp-content/uploads/sites/78/2025/07/SK-and-A2A.jpg"
         }
       ]
     },
@@ -6236,6 +6206,21 @@
       "feedUrl": "https://devblogs.microsoft.com/microsoft365dev/feed/",
       "siteUrl": "https://devblogs.microsoft.com/microsoft365dev/",
       "articles": [
+        {
+          "id": "https://devblogs.microsoft.com/microsoft365dev/?p=24789",
+          "author": "Karishma S",
+          "description": "Email is a key part of how people get things done, whether it’s booking a reservation, confirming a package delivery, or managing a cab reservation. But as inboxes become increasingly cluttered, important transactional information often gets buried. Users are forced to open multiple emails, search through text, and manually look for key details such as […]\nThe post Unlock your email potential with Schema.org appeared first on Microsoft 365 Developer Blog.",
+          "link": "https://devblogs.microsoft.com/microsoft365dev/unlock-your-email-potential-with-schema-org/",
+          "publishedOn": "2025-12-17T06:58:11.000Z",
+          "wordCount": 7946,
+          "title": "Unlock your email potential with Schema.org",
+          "enclosure": {
+            "url": "https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2025/11/Schemaorg_validation.mp4",
+            "length": "8950996",
+            "type": "video/mp4"
+          },
+          "imageUrl": "https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2025/12/Schema-image.webp"
+        },
         {
           "id": "https://devblogs.microsoft.com/microsoft365dev/?p=25124",
           "author": "Rishabh Agrawal",
