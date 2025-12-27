@@ -2,10 +2,22 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2025-12-26T01:47:04.174Z</updated>
+    <updated>2025-12-27T01:45:11.978Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Context Engineering Lessons from Building Azure SRE Agent]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/context-engineering-lessons-from-building-azure-sre-agent/4481200</id>
+        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/context-engineering-lessons-from-building-azure-sre-agent/4481200"/>
+        <updated>2025-12-26T21:21:42.000Z</updated>
+        <summary type="html"><![CDATA[We spent a long time chasing model upgrades, polishing prompts, and debating orchestration strategies. The gains were visible in offline evals, but they didn’t translate into the reliability and outcomes we wanted in production. The real breakthrough came when we started caring much more about what we were adding to the context, when, and in what form. In other words: context engineering.
+Every context decision involves tradeoffs: latency, autonomy (how far the agent goes without asking), user oversight, pre-work (retrieve/verify/compute before answering), how the agent decides it has sufficient evidence, and the cost of being wrong. Push on one dimension, and you usually pay for it elsewhere.
+This blog is our journey building Azure SRE Agent – a cloud AI agent that takes care of your Azur…]]></summary>
+        <author>
+            <name>sanchitmehta</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Data Security: Azure key Vault in Data bricks]]></title>
         <id>https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/data-security-azure-key-vault-in-data-bricks/4479785</id>
@@ -8274,69 +8286,6 @@ August 28, 6:00 PM
 MC…]]></summary>
         <author>
             <name>cynthiazanoni</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[On-premises data gateway July 2025 release]]></title>
-        <id>on-premises-data-gateway-july-2025-release</id>
-        <link href="https://blog.fabric.microsoft.com/en/blog/on-premises-data-gateway-july-2025-release/"/>
-        <updated>2025-07-30T11:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Here is the July 2025 release of the on-premises data gateway (version 3000.278).]]></summary>
-        <author>
-            <name>Microsoft Fabric Blog</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Autoscale Billing for Spark in Microsoft Fabric (Generally Available)]]></title>
-        <id>now-generally-available-autoscale-billing-for-spark-in-microsoft-fabric</id>
-        <link href="https://blog.fabric.microsoft.com/en/blog/now-generally-available-autoscale-billing-for-spark-in-microsoft-fabric/"/>
-        <updated>2025-07-30T10:00:00.000Z</updated>
-        <summary type="html"><![CDATA[We’re thrilled to announce the general availability (GA) of Autoscale Billing for Apache Spark in Microsoft Fabric — a serverless billing model designed to offer greater flexibility, transparency, and cost efficiency for running Spark workloads at scale. With this model now fully supported, Spark Jobs can run independently of your Fabric capacity and are billed … 
-Continue reading “Autoscale Billing for Spark in Microsoft Fabric (Generally Available)”]]></summary>
-        <author>
-            <name>Microsoft Fabric Blog</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Fabric July 2025 Feature Summary]]></title>
-        <id>fabric-july-2025-feature-summary</id>
-        <link href="https://blog.fabric.microsoft.com/en/blog/fabric-july-2025-feature-summary/"/>
-        <updated>2025-07-30T09:05:00.000Z</updated>
-        <summary type="html"><![CDATA[Welcome to the July 2025 Fabric Feature Summary! This month’s update covers major events like the return of the Microsoft Fabric Community Conference in Vienna, and the 10th anniversary of Power BI. Key platform enhancements include new domain tags and updates to the default category in the OneLake catalog. You’ll also find highlights on data … 
-Continue reading “Fabric July 2025 Feature Summary”]]></summary>
-        <author>
-            <name>Microsoft Fabric Blog</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Terraform Provider for Microsoft Fabric: #3 Creating a workload identity with Fabric permissions]]></title>
-        <id>terraform-provider-for-microsoft-fabric-3-creating-a-workload-identity-with-fabric-permissions</id>
-        <link href="https://blog.fabric.microsoft.com/en/blog/terraform-provider-for-microsoft-fabric-3-creating-a-workload-identity-with-fabric-permissions/"/>
-        <updated>2025-07-30T07:00:00.000Z</updated>
-        <summary type="html"><![CDATA[The Microsoft Fabric tooling ecosystem has evolved in recent months as both the Fabric CLI and the Terraform Provider for Microsoft Fabric have become generally available, providing new opportunities for automating Fabric Administration tasks for those already experienced with Terraform for declarative deployment of infrastructure as code. This short blog series will provide practical guidance … 
-Continue reading “Terraform Provider for Microsoft Fabric: #3 Creating a workload identity with Fabric permissions”]]></summary>
-        <author>
-            <name>Microsoft Fabric Blog</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[New data lake in Microsoft Sentinel]]></title>
-        <id>https://techcommunity.microsoft.com/blog/MicrosoftMechanicsBlog/new-data-lake-in-microsoft-sentinel/4436734</id>
-        <link href="https://techcommunity.microsoft.com/blog/MicrosoftMechanicsBlog/new-data-lake-in-microsoft-sentinel/4436734"/>
-        <updated>2025-07-29T23:53:17.000Z</updated>
-        <summary type="html"><![CDATA[Correlate signals, run advanced analytics, and perform forensic investigations from a single copy of data — without costly migrations or data silos. Detect persistent, low-and-slow attacks with greater visibility, automate responses using scheduled jobs, and generate predictive insights by combining Copilot, KQL, and machine learning.
- 
-
- 
-Vandana Mahtani, Microsoft Sentinel Principal Product Manager shows how to uncover long-running threats, streamline investigations, and automate defenses — all within a unified, AI-powered SIEM experience.
-Store security data for up to 12 years.
-
-Perfect for long-term investigations and compliance. Check out our new data lake in Microsoft Sentinel.
-Streamline your data strategy.
-
-Send high-volume logs to the new low-cost data lake tier and control retent…]]></summary>
-        <author>
-            <name>Zachary-Cavanell</name>
         </author>
     </entry>
     <entry>
