@@ -2714,6 +2714,16 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/from-vibe-coding-to-working-app-how-sre-agent-completes-the-developer-loop/4482000",
+          "author": "dchelupati",
+          "description": "The Most Common Challenge in Modern Cloud Apps\nThere's a category of bugs that drive engineers crazy: multi-layer infrastructure issues.\nYour app deploys successfully. Every Azure resource shows \"Succeeded.\" But the app fails at runtime with a vague error like Login failed for user ''.\nWhere do you even start?\nYou're checking the Web App, the SQL Server, the VNet, the private endpoint, the DNS zone, the identity configuration... and each one looks fine in isolation. The problem is how they connect and that's invisible in the portal.\nNetworking issues are especially brutal. The error says \"Login failed\" but the actual causes could be DNS, firewall, identity, or all three. The symptom and the root causes are in completely different resources. Without deep Azure networking knowledge, you're j…",
+          "link": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/from-vibe-coding-to-working-app-how-sre-agent-completes-the-developer-loop/4482000",
+          "publishedOn": "2025-12-30T16:22:54.000Z",
+          "wordCount": 9603,
+          "title": "From Vibe Coding to Working App: How SRE Agent Completes the Developer Loop",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDgyMDAwLXJERnFVWA?revision=1"
+        },
+        {
           "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/context-engineering-lessons-from-building-azure-sre-agent/4481200",
           "author": "sanchitmehta",
           "description": "We spent a long time chasing model upgrades, polishing prompts, and debating orchestration strategies. The gains were visible in offline evals, but they didn’t translate into the reliability and outcomes we wanted in production. The real breakthrough came when we started caring much more about what we were adding to the context, when, and in what form. In other words: context engineering.\nEvery context decision involves tradeoffs: latency, autonomy (how far the agent goes without asking), user oversight, pre-work (retrieve/verify/compute before answering), how the agent decides it has sufficient evidence, and the cost of being wrong. Push on one dimension, and you usually pay for it elsewhere.\nThis blog is our journey building Azure SRE Agent – a cloud AI agent that takes care of your Azur…",
@@ -3933,16 +3943,6 @@
           "wordCount": 6354,
           "title": "Exciting News: Azure AI Blogs Have Come Together in the New Azure AI Foundry Blog",
           "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDQyNjczLWtZVVY0TA?revision=9"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/MachineLearningBlog/ai-inference-task-migration-from-cpu-to-gpu-methodology-overview/4439377",
-          "author": "xinyuwei",
-          "description": "Please refer to my repo to get more AI resources, wellcome to star it:\nhttps://github.com/xinyuwei-david/david-share.git \nThis repository ties together the entire methodology with a minimalistic example: first identify computational hotspots on the CPU, then rewrite loops characterized by \"high parallelism, sequential memory access, and simple branching\" into CUDA kernels to offload CPU workload and unleash GPU computing power. Running the code once can compare CPU and GPU execution times, separate transfer and computation overheads, and verify result errors. This quickly validates the feasibility and expected gains of \"CPU → GPU\" migration, providing a template for subsequent large-scale migration, pipeline optimization, and MIG resource partitioning in a real business environment.\nOveral…",
-          "link": "https://techcommunity.microsoft.com/blog/MachineLearningBlog/ai-inference-task-migration-from-cpu-to-gpu-methodology-overview/4439377",
-          "publishedOn": "2025-08-03T02:53:26.000Z",
-          "wordCount": 17183,
-          "title": "AI Inference Task Migration from CPU to GPU: Methodology Overview",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDM5Mzc3LWdDVndyVw?revision=1"
         }
       ]
     },
@@ -4175,6 +4175,16 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/how-to-ensure-seamless-data-recovery-and-deployment-in-microsoft-azure/4478395",
+          "author": "ravimodi",
+          "description": "Overcoming Cosmos DB Backup and Restore Challenges with Azure Databricks\nThe Challenge of Backing Up and Restoring Azure Cosmos DB\nOne of the significant pain points when working with Azure Cosmos DB is the lack of instant, self-service backup restoration. While Cosmos DB is engineered for global scalability and high availability, its backup and recovery process introduces a crucial bottleneck for organizations that demand agility. Backups in Cosmos DB are created automatically, but restoring them isn’t a seamless, on-demand operation. Instead, it often involves lengthy procedures and sometimes requires intervention from Microsoft support, causing delays that can stretch from hours to even longer—depending on the size and complexity of your data.\n\nDowntime Risks: During the drawn-out resto…",
+          "link": "https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/how-to-ensure-seamless-data-recovery-and-deployment-in-microsoft-azure/4478395",
+          "publishedOn": "2025-12-30T08:00:00.000Z",
+          "wordCount": 8611,
+          "title": "How to Ensure Seamless Data Recovery and Deployment in Microsoft Azure",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDc4Mzk1LWJGeTVjeQ?revision=2"
+        },
+        {
           "id": "https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/data-security-azure-key-vault-in-data-bricks/4479785",
           "author": "bhramesh",
           "description": "Why this article?\nTo remove the vulnerability of exposing the data base connection string in Databricks notebook directly, by using Azure key vault.\nDatabase connection strings are extremely confidential/vulnerable data, that we should not be exposed in the DataBricks notebook explicitly. Azure key vault is a secure option to read the secrets and establish connection.\nWhat do we need?\n\nTenant Id of the app from the app registration with access to the azure key vault secrets\nClient Id of the of the app from the app registration with access to the azure key vault secrets\nClient secret of the app from the app registration with access to the azure key vault\n\nWhere to find this information?\n\nUnder the App registration, you can find the (application) Client Id, Directory (tenant) Id.\n\n       \nAz…",
@@ -4320,6 +4330,16 @@
       "feedUrl": "https://techcommunity.microsoft.com/t5/s/plugins/custom/microsoft/o365/custom-blog-rss?board=AzureDevCommunityBlog&size=100&label=Developer",
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
+        {
+          "id": "https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/how-to-ensure-seamless-data-recovery-and-deployment-in-microsoft-azure/4478395",
+          "author": "ravimodi",
+          "description": "Overcoming Cosmos DB Backup and Restore Challenges with Azure Databricks\nThe Challenge of Backing Up and Restoring Azure Cosmos DB\nOne of the significant pain points when working with Azure Cosmos DB is the lack of instant, self-service backup restoration. While Cosmos DB is engineered for global scalability and high availability, its backup and recovery process introduces a crucial bottleneck for organizations that demand agility. Backups in Cosmos DB are created automatically, but restoring them isn’t a seamless, on-demand operation. Instead, it often involves lengthy procedures and sometimes requires intervention from Microsoft support, causing delays that can stretch from hours to even longer—depending on the size and complexity of your data.\n\nDowntime Risks: During the drawn-out resto…",
+          "link": "https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/how-to-ensure-seamless-data-recovery-and-deployment-in-microsoft-azure/4478395",
+          "publishedOn": "2025-12-30T08:00:00.000Z",
+          "wordCount": 8611,
+          "title": "How to Ensure Seamless Data Recovery and Deployment in Microsoft Azure",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDc4Mzk1LWJGeTVjeQ?revision=2"
+        },
         {
           "id": "https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/data-security-azure-key-vault-in-data-bricks/4479785",
           "author": "bhramesh",

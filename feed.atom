@@ -2,10 +2,53 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2025-12-30T01:48:07.690Z</updated>
+    <updated>2025-12-31T01:49:07.984Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[From Vibe Coding to Working App: How SRE Agent Completes the Developer Loop]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/from-vibe-coding-to-working-app-how-sre-agent-completes-the-developer-loop/4482000</id>
+        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/from-vibe-coding-to-working-app-how-sre-agent-completes-the-developer-loop/4482000"/>
+        <updated>2025-12-30T16:22:54.000Z</updated>
+        <summary type="html"><![CDATA[The Most Common Challenge in Modern Cloud Apps
+There's a category of bugs that drive engineers crazy: multi-layer infrastructure issues.
+Your app deploys successfully. Every Azure resource shows "Succeeded." But the app fails at runtime with a vague error like Login failed for user ''.
+Where do you even start?
+You're checking the Web App, the SQL Server, the VNet, the private endpoint, the DNS zone, the identity configuration... and each one looks fine in isolation. The problem is how they connect and that's invisible in the portal.
+Networking issues are especially brutal. The error says "Login failed" but the actual causes could be DNS, firewall, identity, or all three. The symptom and the root causes are in completely different resources. Without deep Azure networking knowledge, you're j…]]></summary>
+        <author>
+            <name>dchelupati</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How to Ensure Seamless Data Recovery and Deployment in Microsoft Azure]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/how-to-ensure-seamless-data-recovery-and-deployment-in-microsoft-azure/4478395</id>
+        <link href="https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/how-to-ensure-seamless-data-recovery-and-deployment-in-microsoft-azure/4478395"/>
+        <updated>2025-12-30T08:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Overcoming Cosmos DB Backup and Restore Challenges with Azure Databricks
+The Challenge of Backing Up and Restoring Azure Cosmos DB
+One of the significant pain points when working with Azure Cosmos DB is the lack of instant, self-service backup restoration. While Cosmos DB is engineered for global scalability and high availability, its backup and recovery process introduces a crucial bottleneck for organizations that demand agility. Backups in Cosmos DB are created automatically, but restoring them isn’t a seamless, on-demand operation. Instead, it often involves lengthy procedures and sometimes requires intervention from Microsoft support, causing delays that can stretch from hours to even longer—depending on the size and complexity of your data.
+
+Downtime Risks: During the drawn-out resto…]]></summary>
+        <author>
+            <name>ravimodi</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How to Ensure Seamless Data Recovery and Deployment in Microsoft Azure]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/how-to-ensure-seamless-data-recovery-and-deployment-in-microsoft-azure/4478395</id>
+        <link href="https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/how-to-ensure-seamless-data-recovery-and-deployment-in-microsoft-azure/4478395"/>
+        <updated>2025-12-30T08:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Overcoming Cosmos DB Backup and Restore Challenges with Azure Databricks
+The Challenge of Backing Up and Restoring Azure Cosmos DB
+One of the significant pain points when working with Azure Cosmos DB is the lack of instant, self-service backup restoration. While Cosmos DB is engineered for global scalability and high availability, its backup and recovery process introduces a crucial bottleneck for organizations that demand agility. Backups in Cosmos DB are created automatically, but restoring them isn’t a seamless, on-demand operation. Instead, it often involves lengthy procedures and sometimes requires intervention from Microsoft support, causing delays that can stretch from hours to even longer—depending on the size and complexity of your data.
+
+Downtime Risks: During the drawn-out resto…]]></summary>
+        <author>
+            <name>ravimodi</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Context Engineering Lessons from Building Azure SRE Agent]]></title>
         <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/context-engineering-lessons-from-building-azure-sre-agent/4481200</id>
@@ -8136,19 +8179,6 @@ Tool Discovery: Exposes a list of available tools (like listing VMs, deploying 
 Na…]]></summary>
         <author>
             <name>Sharda_Kaur</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[AI Inference Task Migration from CPU to GPU: Methodology Overview]]></title>
-        <id>https://techcommunity.microsoft.com/blog/MachineLearningBlog/ai-inference-task-migration-from-cpu-to-gpu-methodology-overview/4439377</id>
-        <link href="https://techcommunity.microsoft.com/blog/MachineLearningBlog/ai-inference-task-migration-from-cpu-to-gpu-methodology-overview/4439377"/>
-        <updated>2025-08-03T02:53:26.000Z</updated>
-        <summary type="html"><![CDATA[Please refer to my repo to get more AI resources, wellcome to star it:
-https://github.com/xinyuwei-david/david-share.git 
-This repository ties together the entire methodology with a minimalistic example: first identify computational hotspots on the CPU, then rewrite loops characterized by "high parallelism, sequential memory access, and simple branching" into CUDA kernels to offload CPU workload and unleash GPU computing power. Running the code once can compare CPU and GPU execution times, separate transfer and computation overheads, and verify result errors. This quickly validates the feasibility and expected gains of "CPU → GPU" migration, providing a template for subsequent large-scale migration, pipeline optimization, and MIG resource partitioning in a real business environment.
-Overal…]]></summary>
-        <author>
-            <name>xinyuwei</name>
         </author>
     </entry>
     <entry>
