@@ -2,10 +2,23 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2026-01-07T01:49:50.828Z</updated>
+    <updated>2026-01-08T01:50:02.858Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Building scalable, cost-effective real-time multiplayer games with Azure Web PubSub]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/building-scalable-cost-effective-real-time-multiplayer-games-with-azure-web-pubs/4483584</id>
+        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/building-scalable-cost-effective-real-time-multiplayer-games-with-azure-web-pubs/4483584"/>
+        <updated>2026-01-07T05:13:26.000Z</updated>
+        <summary type="html"><![CDATA[Modern multiplayer games demand more than fast servers - they require persistent, reliable, low-latency communication at massive scale, often under highly unpredictable traffic patterns. Launch days, seasonal events, and promotions can generate connection spikes that dwarf steady-state traffic, while players still expect real-time responsiveness and stability.
+In this post, we’ll explore how a game studio building a large-scale online RPG addressed these challenges using Azure Web PubSub, and what lessons other game developers can apply when designing their own real-time backend architectures.
+The challenge: from polling to real-time multiplayer
+The studio began with a backend architecture that relied heavily on polling a centralized data store to synchronize multiplayer state - such as pa…]]></summary>
+        <author>
+            <name>kevinguo</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Find the Alerts You Didn't Know You Were Missing with Azure SRE Agent]]></title>
         <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/find-the-alerts-you-didnt-know-you-were-missing-with-azure-sre-agent/4483494</id>
@@ -7811,69 +7824,6 @@ Understanding gpt-oss
 OpenAI has released gpt-oss-120b and gpt-oss-20b, the first open-weight language models since GPT-2. Both models utilize mixture-of-experts (MoE) architecture with MXFP4 quantization, delivering exceptional reasoning capabilities and tool use functio…]]></summary>
         <author>
             <name>kinfey</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Customer-managed keys for Fabric workspaces is now in Public Preview]]></title>
-        <id>customer-managed-keys-for-fabric-workspaces-available-in-all-public-regions-now-preview</id>
-        <link href="https://blog.fabric.microsoft.com/en/blog/customer-managed-keys-for-fabric-workspaces-available-in-all-public-regions-now-preview/"/>
-        <updated>2025-08-11T11:57:18.000Z</updated>
-        <summary type="html"><![CDATA[We’re excited to share that customer-managed keys (CMK) for Microsoft Fabric workspaces are now available in public preview in all public regions! This expansion makes it easier for customers worldwide to meet compliance requirements and implement robust data protection strategies. Note: This feature was released in public preview in a limited set of regions earlier … 
-Continue reading “Customer-managed keys for Fabric workspaces is now in Public Preview”]]></summary>
-        <author>
-            <name>Microsoft Fabric Blog</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Introducing support for Workspace Identity Authentication in Fabric Connectors]]></title>
-        <id>announcing-support-for-workspace-identity-authentication-in-new-fabric-connectors-and-for-dataflow-gen2</id>
-        <link href="https://blog.fabric.microsoft.com/en/blog/announcing-support-for-workspace-identity-authentication-in-new-fabric-connectors-and-for-dataflow-gen2/"/>
-        <updated>2025-08-11T10:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Co-author: Meenal Srivastva Managing secure, seamless access to data sources is a top priority for organizations using Microsoft Fabric. With workspace identity authentication, teams can simplify credential management, enhance security, and streamline data access across their enterprise. Workspace identity in Fabric is an automatically managed service principal associated with workspaces (excluding My Workspaces). When you … 
-Continue reading “Introducing support for Workspace Identity Authentication in Fabric Connectors”]]></summary>
-        <author>
-            <name>Microsoft Fabric Blog</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Finding the Right Page number in PDFs with AI Search]]></title>
-        <id>https://techcommunity.microsoft.com/blog/AzurePaaSBlog/finding-the-right-page-number-in-pdfs-with-ai-search/4440758</id>
-        <link href="https://techcommunity.microsoft.com/blog/AzurePaaSBlog/finding-the-right-page-number-in-pdfs-with-ai-search/4440758"/>
-        <updated>2025-08-11T09:10:39.000Z</updated>
-        <summary type="html"><![CDATA[Why Page Numbers Matter in AI Search
-When users search for content within large PDFs—such as contracts, manuals, or reports—they often need to know not just what was found, but where it was found. Associating search results with page numbers enables:
-
-Contextual navigation within documents.
-Precise citations in knowledge bases or chatbots.
-Improved user trust in AI-generated responses.
-
-Prerequisites for Azure Blob Storage & Azure AI Search Setup Summary
-1. Azure Blob Storage
-A container is configured to store PDF files.
-2. Appropriate permissions:
-
-The AI search service must have Storage Blob Data Reader access to the container. If using RBAC, ensure the managed identity is properly assigned. 
-Ref: 
-
-AI search Search-blob-indexer-role-based-access
-How to Index Azure Blobs
-
-
- 
-Technical Ap…]]></summary>
-        <author>
-            <name>samsarka</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[How Microsoft OneLake seamlessly provides Apache Iceberg support for all Fabric Data]]></title>
-        <id>how-to-access-your-microsoft-fabric-tables-in-apache-iceberg-format</id>
-        <link href="https://blog.fabric.microsoft.com/en/blog/how-to-access-your-microsoft-fabric-tables-in-apache-iceberg-format/"/>
-        <updated>2025-08-11T09:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Co-authored with Kevin Liu, Apache Iceberg Committer and Principal Engineer at Microsoft.  Microsoft Fabric is a unified SaaS data and analytics platform designed for the era of AI. All workloads in Microsoft Fabric use Delta Lake as the standard, open-source table format. With Microsoft OneLake, Fabric’s unified SaaS data lake, customers can unify their data … 
-Continue reading “How Microsoft OneLake seamlessly provides Apache Iceberg support for all Fabric Data”]]></summary>
-        <author>
-            <name>Microsoft Fabric Blog</name>
         </author>
     </entry>
     <entry>
