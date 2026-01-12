@@ -2138,16 +2138,6 @@
           "wordCount": 2823,
           "title": "Pod ephemeral storage exceeded with Container Apps",
           "imageUrl": "https://azureossd.github.io/assets/images/azure-containerapps-logo.png"
-        },
-        {
-          "id": "https://azureossd.github.io/2025/08/15/Case-study-TypeError-Invalid-URL-with-Nextjs/index.html",
-          "author": null,
-          "description": "This blog covers a niche issue with Next.js, but potentially any node.js-based app, when using the Node.js URI API",
-          "link": "https://azureossd.github.io/2025/08/15/Case-study-TypeError-Invalid-URL-with-Nextjs/index.html",
-          "publishedOn": "2025-08-15T12:00:00.000Z",
-          "wordCount": 1693,
-          "title": "Case study: TypeError: Invalid URL - ERR_INVALID_URL with Next.js (and Node.js) apps",
-          "imageUrl": "https://azureossd.github.io/assets/images/nextjs.png"
         }
       ]
     },
@@ -3492,56 +3482,6 @@
           "wordCount": 9491,
           "title": "Supercharge Your App Service Apps with AI Foundry Agents Connected to MCP servers",
           "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDQ0MzEwLVVPV0xUZg?revision=4"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/send-signals-from-micronaut-applications-to-azure-monitor-through-zero-code-inst/4443884",
-          "author": "Logico_jp",
-          "description": "The original post (Japanese) was written on 13 August 2025.\nZero code instrumentationでMicronautアプリケーションからAzure Monitorにtraceやmetricを送信したい – Logico Inside\nThis entry is a series posts below. Please take a look for background information.\nSend signals from Micronaut native image applications to Azure Monitor | Microsoft Community Hub\nReceived another question from the customer.\n\nI understand that I can get metrics and traces, but is it possible to send them to Azure Monitor (Application Insights) without using code?\n\nIf you are not familiar with zero-code instrumentation, please check the following URL.\nZero-code | OpenTelemetry\nThe customer wondered if the dependencies would take care of everything else when they only specified the dependencies and destinations. To confirm this (and to prov…",
-          "link": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/send-signals-from-micronaut-applications-to-azure-monitor-through-zero-code-inst/4443884",
-          "publishedOn": "2025-08-15T04:52:26.000Z",
-          "wordCount": 10700,
-          "title": "Send signals from Micronaut applications to Azure Monitor through zero-code instrumentation",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDQzODg0LUo3OTRXQw?revision=2"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/send-logs-from-micronaut-native-image-applications-to-azure-monitor/4443867",
-          "author": "Logico_jp",
-          "description": "The original post (Japanese) was written on 29 July 2025.\nMicronautからAzure Monitorにlogを送信したい – Logico Inside\nThis entry is related to the following one. Please take a look for background information.\nSend signals from Micronaut native image applications to Azure Monitor | Microsoft Community Hub\nWhere can we post logs?\nLog destination differs depending upon managed services such as App Service, Container Apps, etc. We can also send logs to specified destination which is different destination from the default one. In the case of Azure Container Apps, for instance, we have several options to send logs.\n\n\nTypeDestinationHow to\nWrite console output to a log\nContainerAppConsoleLogs_CL\nIf diagnostic settings are configured, destination table may differ from the above.\nThe output destination can …",
-          "link": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/send-logs-from-micronaut-native-image-applications-to-azure-monitor/4443867",
-          "publishedOn": "2025-08-15T04:23:49.000Z",
-          "wordCount": 11936,
-          "title": "Send logs from Micronaut native image applications to Azure Monitor",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDQzODY3LUwxbExxdw?revision=4"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/send-traces-from-micronaut-native-image-applications-to-azure-monitor/4443791",
-          "author": "Logico_jp",
-          "description": "The original post (Japanese) was written on 23 July 2025.\nMicronautからAzure Monitorにtraceを送信したい – Logico Inside\nThis entry is related to the following one. Please take a look for background information.\nSend signals from Micronaut native image applications to Azure Monitor | Microsoft Community Hub\nPrerequisites\n\nMaven: 3.9.10\nJDK version 21\nMicronaut: 4.9.0 or later\n\nThe following tutorial was used as a reference.\nOpenTelemetry Tracing with Oracle Cloud and the Micronaut Framework\nAs of 13 August 2025, GDK (Graal Dev Kit) guides are also available.\nCreate and Trace a Micronaut Application Using Azure Monitor\nCreate an archetype\nWe can create an archetype using Micronaut’s CLI (mn) or Micronaut Launch. In this entry, use application.yml instead of application.properties for application conf…",
-          "link": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/send-traces-from-micronaut-native-image-applications-to-azure-monitor/4443791",
-          "publishedOn": "2025-08-15T03:03:33.000Z",
-          "wordCount": 9425,
-          "title": "Send traces from Micronaut native image applications to Azure Monitor",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDQzNzkxLXBpVHhRRQ?revision=3"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/send-signals-from-micronaut-native-image-applications-to-azure-monitor/4443735",
-          "author": "Logico_jp",
-          "description": "The original post (Japanese) was written on 20 July 2025.\nMicronautアプリケーションからAzure Monitorにlog/metric/traceを送信したい – Logico Inside\nQuery\nOne of my customers, using Micronaut to develop their applications, asked me about the following question.\n\nWe are currently creating microservices with Micronaut and orchestrating them on Azure (Azure Container Apps). We would like to ask about the following two points.\n\nWe found information on how to send logs and metrics to Azure Monitor in the Micronaut documentation and guides, but we need to know how to send traces.\nIs it also available with GraalVM Native Image?\n\n\nTheir query is, in short, Spring Boot provides Spring Boot Starter and Quarkus provides Quarkus as dependencies, but does Micronaut do the same?\nSpring Boot starter\nQuarkus Opentelemetry E…",
-          "link": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/send-signals-from-micronaut-native-image-applications-to-azure-monitor/4443735",
-          "publishedOn": "2025-08-15T02:27:28.000Z",
-          "wordCount": 7247,
-          "title": "Send signals from Micronaut native image applications to Azure Monitor",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDQzNzM1LUp3SkNiUg?revision=8"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/send-metrics-from-micronaut-native-image-applications-to-azure-monitor/4443763",
-          "author": "Logico_jp",
-          "description": "The original post (Japanese) was written on 20 July 2025.MicronautからAzure Monitorにmetricを送信したい – Logico Inside\nThis entry is related to the following one. Please take a look for background information.Send signals from Micronaut native image applications to Azure Monitor | Microsoft Community Hub\nPrerequisites\n\nMaven: 3.9.10\nJDK version 21\nMicronaut: 4.9.0 or later\n\nThe following tutorials were used as a reference.\nCreate a Micronaut Application to Collect Metrics and Monitor Them on Azure Monitor Metrics\nCollect Metrics with Micronaut\nCreate an archetype\nWe can create an archetype using Micronaut’s CLI (mn) or Micronaut Launch. In this entry, use application.yml instead of application.properties for application configuration. So, we need to specify the feature “yaml” so that we can includ…",
-          "link": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/send-metrics-from-micronaut-native-image-applications-to-azure-monitor/4443763",
-          "publishedOn": "2025-08-15T02:21:41.000Z",
-          "wordCount": 11235,
-          "title": "Send metrics from Micronaut native image applications to Azure Monitor",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDQzNzYzLVZaZFBUTQ?revision=3"
         }
       ]
     },
