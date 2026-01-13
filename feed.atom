@@ -2,10 +2,88 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2026-01-12T01:55:51.587Z</updated>
+    <updated>2026-01-13T01:47:32.607Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Static Egress Gateway in AKS: The Native Way to Control Multiple Outbound IPs]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/static-egress-gateway-in-aks-the-native-way-to-control-multiple-outbound-ips/4484179</id>
+        <link href="https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/static-egress-gateway-in-aks-the-native-way-to-control-multiple-outbound-ips/4484179"/>
+        <updated>2026-01-13T00:22:15.000Z</updated>
+        <summary type="html"><![CDATA[Introduction
+Back in late 2023, I published a blog post outlining how to provision multiple egress IP addresses in AKS, using multiple node pools running in multiple subnets to achieve this outcome.
+In July 2024, the AKS product group released the open-source kube-egress-gateway project to help customers provide multiple egress paths from their AKS clusters, and in September 2025 AKS added preview support for Static Egress Gateway, making the whole process simpler.
+The purpose of this blog post is to re-visit the problem statement from the original blog post, and then look at how we can achieve this using the Static Egress Gateway feature built into AKS, and see how much simpler the modern solution is.
+Problem Statement
+To recap the original problem statement: some applications in a single…]]></summary>
+        <author>
+            <name>pjlewis</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Secure Unique Default Hostnames Now GA for Functions and Logic Apps]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/secure-unique-default-hostnames-now-ga-for-functions-and-logic-apps/4484237</id>
+        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/secure-unique-default-hostnames-now-ga-for-functions-and-logic-apps/4484237"/>
+        <updated>2026-01-12T15:00:00.000Z</updated>
+        <summary type="html"><![CDATA[We are pleased to announce that Secure Unique Default Hostnames are now generally available (GA) for Azure Functions and Logic Apps (Standard). This expands the security model previously available for Web Apps to the entire App Service ecosystem and provides customers with stronger, more secure, and standardized hostname behavior across all workloads. 
+Why This Feature Matters 
+Historically, App Service resources have used default hostname format such as: 
+
+<SiteName>.azurewebsites.net 
+
+While straightforward, this pattern introduced potential security risks, particularly in scenarios where DNS records were left behind after deleting a resource. In those situations, a different user could create a new resource with the same name and unintentionally receive traffic or bindings associated wi…]]></summary>
+        <author>
+            <name>YutangLin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Understanding Fabric Eventstream Pricing]]></title>
+        <id>understanding-fabric-eventstream-pricing</id>
+        <link href="https://blog.fabric.microsoft.com/en/blog/understanding-fabric-eventstream-pricing/"/>
+        <updated>2026-01-12T14:00:00.000Z</updated>
+        <summary type="html"><![CDATA[In this blog post, we’ll walk through Eventstream’s pricing model to give you a clear understanding of how it works and help you navigate it with confidence. By the end of this post, you will be able to: Eventstream Components & Cost Drivers First, let’s summarize the components of a Fabric Eventstream: Each component maps … 
+Continue reading “Understanding Fabric Eventstream Pricing”]]></summary>
+        <author>
+            <name>Microsoft Fabric Blog</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[AI Didn’t Break Your Production — Your Architecture Did]]></title>
+        <id>https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/ai-didn%E2%80%99t-break-your-production-%E2%80%94-your-architecture-did/4482848</id>
+        <link href="https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/ai-didn%E2%80%99t-break-your-production-%E2%80%94-your-architecture-did/4482848"/>
+        <updated>2026-01-12T13:37:27.000Z</updated>
+        <summary type="html"><![CDATA[Most AI systems don’t fail in the lab. They fail the moment production touches them.
+I’m Hazem Ali — Microsoft AI MVP, Principal AI & ML Engineer / Architect, and Founder & CEO of Skytells.
+With a strong foundation in AI and deep learning from low-level fundamentals to production-scale, backed by rigorous cybersecurity and software engineering expertise, I design and deliver enterprise AI systems end-to-end. I often speak about what happens after the pilot goes live: real users arrive, data drifts, security constraints tighten, and incidents force your architecture to prove it can survive. My focus is building production AI with a security-first mindset: identity boundaries, enforceable governance, incident-ready operations, and reliability at scale.
+My mission is simple: Architect and eng…]]></summary>
+        <author>
+            <name>hazem</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Gain even more trust and compliance with OneLake diagnostics immutability (Generally Available)]]></title>
+        <id>gain-even-more-trust-and-compliance-with-onelake-diagnostics-immutability-generally-available</id>
+        <link href="https://blog.fabric.microsoft.com/en/blog/gain-even-more-trust-and-compliance-with-onelake-diagnostics-immutability-generally-available/"/>
+        <updated>2026-01-12T12:00:00.000Z</updated>
+        <summary type="html"><![CDATA[In October 2025, we introduced OneLake diagnostics—a powerful capability that helps teams “answer who accessed what, when, and how” across your Fabric Lakehouse environment. OneLake diagnostics streams JSON-based activity logs into a Lakehouse you choose, enabling rich analysis, governance, and compliance workflows. A powerful capability that helps teams “answer who accessed what, when, and how” … 
+Continue reading “Gain even more trust and compliance with OneLake diagnostics immutability (Generally Available)”]]></summary>
+        <author>
+            <name>Microsoft Fabric Blog</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Identity Bindings: A Cleaner Model for Multi‑Cluster Identity in AKS]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/identity-bindings-a-cleaner-model-for-multi%E2%80%91cluster-identity-in-aks/4478282</id>
+        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/identity-bindings-a-cleaner-model-for-multi%E2%80%91cluster-identity-in-aks/4478282"/>
+        <updated>2026-01-12T10:42:40.000Z</updated>
+        <summary type="html"><![CDATA[AKS has supported assigning Azure Managed Identities to pods for some time, first through Pod Identity and then later through Workload Identity. Using these tools it is possible to give a pod an Azure Identity that it can use to interact with other Azure services - pull secrets from Key Vault, read a file from Blob Storage or write to a database.
+Workload Identity is the latest incarnation of this feature and significantly simplified this feature, removing the need to run additional management pods in the cluster and to have the identity injected in every node however it does have some issues of it's own. These issues are particularly evident when operating at scale and wanting to share the same Managed Identity across multiple workloads in the same cluster, or across multiple clusters.
+Wo…]]></summary>
+        <author>
+            <name>samcogan</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Create Embeddings in Fabric Eventhouse with built-in Small Language Models (SLMs)]]></title>
         <id>create-embeddings-in-fabric-eventhouse-with-built-in-small-language-models-slms</id>
@@ -7453,44 +7531,6 @@ Why Do We Need to Convert AI Models?
 When you download AI models from websites like Hugging Face (think of it as G…]]></summary>
         <author>
             <name>kinfey</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Supercharge Your App Service Apps with AI Foundry Agents Connected to MCP servers]]></title>
-        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/supercharge-your-app-service-apps-with-ai-foundry-agents-connected-to-mcp-server/4444310</id>
-        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/supercharge-your-app-service-apps-with-ai-foundry-agents-connected-to-mcp-server/4444310"/>
-        <updated>2025-08-16T01:09:45.000Z</updated>
-        <summary type="html"><![CDATA[Introduction
-The integration of AI into web applications has reached a new milestone with the introduction of Model Context Protocol (MCP) support in Azure AI Foundry Agent Service. This powerful new feature allows developers to extend the capabilities of their Azure AI Foundry agents by connecting them to tools hosted on remote MCP servers—and the best part? Both your applications and MCP servers can be hosted seamlessly on Azure App Service. No custom code is required to get your agents hooked up to these MCP servers either, it's built right into this new functionality.
-In this blog post, we'll explore how this new functionality works, demonstrate a practical implementation, and show you how to get started with your own MCP-enabled applications on App Service.
-What is Model Context Proto…]]></summary>
-        <author>
-            <name>jordanselig</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Building AI Agents with Ease: Function Calling in VS Code AI Toolkit]]></title>
-        <id>https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/building-ai-agents-with-ease-function-calling-in-vs-code-ai-toolkit/4442637</id>
-        <link href="https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/building-ai-agents-with-ease-function-calling-in-vs-code-ai-toolkit/4442637"/>
-        <updated>2025-08-15T17:00:24.000Z</updated>
-        <summary type="html"><![CDATA[Function calling is a powerful technique that allows Large Language Models (LLMs) to go beyond their static training data and interact with real-world, dynamic information sources like databases and APIs. This capability turns a simple chat interface into a powerful tool for fetching real-time data, executing code, and much more.
-The process of Tool/Function calling typically involves two main components: a client application and the LLM. A user's request, such as "Do I need to carry an umbrella in Bangalore today?", is sent from the client application to the LLM. Along with this message, a tool definition is provided. This definition gives the LLM the context it needs to understand what tools are available along usage methods.
-The LLM analyses the user's request and the list of available …]]></summary>
-        <author>
-            <name>shreyanfern</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Deploying OpenAI’s First Open-Source Model on Azure AKS with KAITO]]></title>
-        <id>https://techcommunity.microsoft.com/blog/MachineLearningBlog/deploying-openai%E2%80%99s-first-open-source-model-on-azure-aks-with-kaito/4444234</id>
-        <link href="https://techcommunity.microsoft.com/blog/MachineLearningBlog/deploying-openai%E2%80%99s-first-open-source-model-on-azure-aks-with-kaito/4444234"/>
-        <updated>2025-08-15T16:55:04.000Z</updated>
-        <summary type="html"><![CDATA[Special ThanksThanks to Andrew Thomas, Kurt Niebuhr, and Sachi Desai for their invaluable support, insightful discussions, and for providing the compute resources that made testing this deployment possible. Your contributions were essential in bringing this project to life.Introduction
-OpenAI recently released GPT-OSS, its first open-source large language model. With the rise of high-performance GPUs in the cloud, running advanced AI inference workloads has become easier than ever.
-Microsoft Azure’s AKS (Azure Kubernetes Service) paired with KAITO (Kubernetes AI Toolchain Operator) provides a powerful, scalable environment for deploying such models. KAITO simplifies provisioning GPU nodes, managing inference workloads, and integrating AI-optimized runtimes like vLLM.
-In this tutorial, we’l…]]></summary>
-        <author>
-            <name>maljazaery</name>
         </author>
     </entry>
     <entry>
