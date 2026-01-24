@@ -2,10 +2,38 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2026-01-23T01:50:47.941Z</updated>
+    <updated>2026-01-24T01:47:56.331Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[How to Connect Azure SRE Agent to Azure MCP]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/how-to-connect-azure-sre-agent-to-azure-mcp/4488905</id>
+        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/how-to-connect-azure-sre-agent-to-azure-mcp/4488905"/>
+        <updated>2026-01-23T20:35:55.000Z</updated>
+        <summary type="html"><![CDATA[Prerequisites
+Before you begin, ensure you have:
+
+An active Azure subscription
+An Azure SRE Agent deployed and accessible
+
+Step 1: Add an MCP Connector Using the Portal UI
+To connect Azure MCP to your SRE Agent, you need to add an MCP connector through the Azure Portal. This connector tells the SRE Agent how to communicate with the Azure MCP server.
+Navigate to the MCP Connectors section:
+
+Open the Azure Portal and navigate to your SRE Agent resource
+In the left navigation menu, select Connectors under the Settings section
+Click + Add MCP Connector to open the configuration panel
+
+
+Configure the connector settings:
+
+Name: Enter a descriptive name for your connector (for example, "Azure MCP Server")
+Connection Type: Select stdio from the dropdown menu. This tells the agent to communicate wi…]]></summary>
+        <author>
+            <name>dbandaru</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Five Reasons to attend SQLCon]]></title>
         <id>32624</id>
@@ -7781,72 +7809,6 @@ Since preview, we’ve seen rapid adoption across industries as teams bring agen
 U…]]></summary>
         <author>
             <name>BalaPV</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Meet Your Healthcare Regulation and Compliance Requirements with Purview Data Loss Prevention (DLP) Policies]]></title>
-        <id>meet-your-healthcare-regulation-and-compliance-requirements-with-purview-data-loss-prevention-dlp-policies</id>
-        <link href="https://blog.fabric.microsoft.com/en/blog/meet-your-healthcare-regulation-and-compliance-requirements-with-purview-data-loss-prevention-dlp-policies/"/>
-        <updated>2025-08-27T10:30:00.000Z</updated>
-        <summary type="html"><![CDATA[In healthcare, data security is not just a technical priority—it’s an ethical and legal imperative. From electronic health records (EHRs) to population health analytics and research data, healthcare organizations working with platforms like Microsoft Fabric must protect sensitive health information while navigating a complex web of regulatory requirements, most notably HIPAA and regional health privacy … 
-Continue reading “Meet Your Healthcare Regulation and Compliance Requirements with Purview Data Loss Prevention (DLP) Policies “]]></summary>
-        <author>
-            <name>Microsoft Fabric Blog</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Gain Deeper Insights into Spark Jobs with JobInsight in Microsoft Fabric]]></title>
-        <id>gain-deeper-insights-into-spark-jobs-with-jobinsight-in-microsoft-fabric</id>
-        <link href="https://blog.fabric.microsoft.com/en/blog/gain-deeper-insights-into-spark-jobs-with-jobinsight-in-microsoft-fabric/"/>
-        <updated>2025-08-27T10:20:00.000Z</updated>
-        <summary type="html"><![CDATA[JobInsight is a powerful Java-based diagnostic library designed to help developers and data engineers analyze completed Spark applications in Microsoft Fabric. With JobInsight, you can programmatically access Spark execution metrics and logs—all from within a Fabric Notebook. Whether you’re investigating performance bottlenecks, debugging task execution, or conducting post-run analysis across jobs, stages, or executors, JobInsight … 
-Continue reading “Gain Deeper Insights into Spark Jobs with JobInsight in Microsoft Fabric”]]></summary>
-        <author>
-            <name>Microsoft Fabric Blog</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[August 2025 Fabric Feature Summary]]></title>
-        <id>august-2025-fabric-feature-summary</id>
-        <link href="https://blog.fabric.microsoft.com/en/blog/august-2025-fabric-feature-summary/"/>
-        <updated>2025-08-27T09:14:00.000Z</updated>
-        <summary type="html"><![CDATA[The August 2025 Fabric Feature Summary showcases several exciting updates designed to streamline workflows and enhance platform capabilities. Notably, users will benefit from the new flat list view in Deployment pipelines, making navigation and management more intuitive. In addition, expanded support for service principals and cross-tenant integration with Azure DevOps reflects Microsoft’s commitment to versatile … 
-Continue reading “August 2025 Fabric Feature Summary”]]></summary>
-        <author>
-            <name>Microsoft Fabric Blog</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Encoding Changes for Template Arguments in Semantic Kernel]]></title>
-        <id>https://devblogs.microsoft.com/semantic-kernel/?p=4997</id>
-        <link href="https://devblogs.microsoft.com/semantic-kernel/encoding-changes-for-template-arguments-in-semantic-kernel/"/>
-        <updated>2025-08-27T05:17:18.000Z</updated>
-        <summary type="html"><![CDATA[In previous versions of the Semantic Kernel, the encoding of template arguments was performed automatically if the argument type was a string. The encoding was not applied for custom types, anonymous types, or collections. With the latest changes, we’ve introduced stricter rules: if automatic encoding is enabled (the default behavior), an exception will now be […]
-The post Encoding Changes for Template Arguments in Semantic Kernel appeared first on Semantic Kernel.]]></summary>
-        <author>
-            <name>Dmytro Struk</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Azure Authentication Changes in Semantic Kernel Python]]></title>
-        <id>https://devblogs.microsoft.com/semantic-kernel/?p=4988</id>
-        <link href="https://devblogs.microsoft.com/semantic-kernel/azure-authentication-changes-in-semantic-kernel-python/"/>
-        <updated>2025-08-27T05:16:27.000Z</updated>
-        <summary type="html"><![CDATA[In previous versions of the Semantic Kernel Python, the default fallback authentication mechanism for Azure services like AzureChatCompletion was DefaultAzureCredential from the Azure Identity library. This provided a convenient way to authenticate without explicitly passing credentials, especially during development. However, with the latest package version 1.36.0, this fallback is being removed to encourage more secure […]
-The post Azure Authentication Changes in Semantic Kernel Python appeared first on Semantic Kernel.]]></summary>
-        <author>
-            <name>Dmytro Struk</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Mastering Declarative Data Transformations with Materialized Lake Views]]></title>
-        <id>mastering-declarative-data-transformations-with-materialized-lake-views</id>
-        <link href="https://blog.fabric.microsoft.com/en/blog/mastering-declarative-data-transformations-with-materialized-lake-views/"/>
-        <updated>2025-08-26T16:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Organizations often face challenges when trying to scale analytics across large volumes of data stored in centralized SQL databases. As business teams demand faster, more tailored insights, traditional reporting pipelines can become bottlenecks. By adopting Lakehouse architecture with Microsoft Fabric, business groups can mirror their SQL data into OneLake and organize it using the Medallion … 
-Continue reading “Mastering Declarative Data Transformations with Materialized Lake Views”]]></summary>
-        <author>
-            <name>Microsoft Fabric Blog</name>
         </author>
     </entry>
     <entry>

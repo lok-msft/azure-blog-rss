@@ -1924,46 +1924,6 @@
           "wordCount": 2293,
           "title": "Fabric Influencers Spotlight August 2025",
           "imageUrl": "https://blog.fabric.microsoft.com/images/shared/social/social-image-v2.png"
-        },
-        {
-          "id": "meet-your-healthcare-regulation-and-compliance-requirements-with-purview-data-loss-prevention-dlp-policies",
-          "author": null,
-          "description": "In healthcare, data security is not just a technical priority—it’s an ethical and legal imperative. From electronic health records (EHRs) to population health analytics and research data, healthcare organizations working with platforms like Microsoft Fabric must protect sensitive health information while navigating a complex web of regulatory requirements, most notably HIPAA and regional health privacy … \nContinue reading “Meet Your Healthcare Regulation and Compliance Requirements with Purview Data Loss Prevention (DLP) Policies “",
-          "link": "https://blog.fabric.microsoft.com/en/blog/meet-your-healthcare-regulation-and-compliance-requirements-with-purview-data-loss-prevention-dlp-policies/",
-          "publishedOn": "2025-08-27T10:30:00.000Z",
-          "wordCount": 2060,
-          "title": "Meet Your Healthcare Regulation and Compliance Requirements with Purview Data Loss Prevention (DLP) Policies",
-          "imageUrl": "https://blog.fabric.microsoft.com/images/shared/social/social-image-v2.png"
-        },
-        {
-          "id": "gain-deeper-insights-into-spark-jobs-with-jobinsight-in-microsoft-fabric",
-          "author": null,
-          "description": "JobInsight is a powerful Java-based diagnostic library designed to help developers and data engineers analyze completed Spark applications in Microsoft Fabric. With JobInsight, you can programmatically access Spark execution metrics and logs—all from within a Fabric Notebook. Whether you’re investigating performance bottlenecks, debugging task execution, or conducting post-run analysis across jobs, stages, or executors, JobInsight … \nContinue reading “Gain Deeper Insights into Spark Jobs with JobInsight in Microsoft Fabric”",
-          "link": "https://blog.fabric.microsoft.com/en/blog/gain-deeper-insights-into-spark-jobs-with-jobinsight-in-microsoft-fabric/",
-          "publishedOn": "2025-08-27T10:20:00.000Z",
-          "wordCount": 1888,
-          "title": "Gain Deeper Insights into Spark Jobs with JobInsight in Microsoft Fabric",
-          "imageUrl": "https://blog.fabric.microsoft.com/images/shared/social/social-image-v2.png"
-        },
-        {
-          "id": "august-2025-fabric-feature-summary",
-          "author": null,
-          "description": "The August 2025 Fabric Feature Summary showcases several exciting updates designed to streamline workflows and enhance platform capabilities. Notably, users will benefit from the new flat list view in Deployment pipelines, making navigation and management more intuitive. In addition, expanded support for service principals and cross-tenant integration with Azure DevOps reflects Microsoft’s commitment to versatile … \nContinue reading “August 2025 Fabric Feature Summary”",
-          "link": "https://blog.fabric.microsoft.com/en/blog/august-2025-fabric-feature-summary/",
-          "publishedOn": "2025-08-27T09:14:00.000Z",
-          "wordCount": 7997,
-          "title": "August 2025 Fabric Feature Summary",
-          "imageUrl": "https://blog.fabric.microsoft.com/images/shared/social/social-image-v2.png"
-        },
-        {
-          "id": "mastering-declarative-data-transformations-with-materialized-lake-views",
-          "author": null,
-          "description": "Organizations often face challenges when trying to scale analytics across large volumes of data stored in centralized SQL databases. As business teams demand faster, more tailored insights, traditional reporting pipelines can become bottlenecks. By adopting Lakehouse architecture with Microsoft Fabric, business groups can mirror their SQL data into OneLake and organize it using the Medallion … \nContinue reading “Mastering Declarative Data Transformations with Materialized Lake Views”",
-          "link": "https://blog.fabric.microsoft.com/en/blog/mastering-declarative-data-transformations-with-materialized-lake-views/",
-          "publishedOn": "2025-08-26T16:00:00.000Z",
-          "wordCount": 1772,
-          "title": "Mastering Declarative Data Transformations with Materialized Lake Views",
-          "imageUrl": "https://blog.fabric.microsoft.com/images/shared/social/social-image-v2.png"
         }
       ]
     },
@@ -2463,6 +2423,16 @@
       "feedUrl": "https://techcommunity.microsoft.com/t5/s/plugins/custom/microsoft/o365/custom-blog-rss?board=AppsonAzureBlog&size=100",
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
+        {
+          "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/how-to-connect-azure-sre-agent-to-azure-mcp/4488905",
+          "author": "dbandaru",
+          "description": "Prerequisites\nBefore you begin, ensure you have:\n\nAn active Azure subscription\nAn Azure SRE Agent deployed and accessible\n\nStep 1: Add an MCP Connector Using the Portal UI\nTo connect Azure MCP to your SRE Agent, you need to add an MCP connector through the Azure Portal. This connector tells the SRE Agent how to communicate with the Azure MCP server.\nNavigate to the MCP Connectors section:\n\nOpen the Azure Portal and navigate to your SRE Agent resource\nIn the left navigation menu, select Connectors under the Settings section\nClick + Add MCP Connector to open the configuration panel\n\n\nConfigure the connector settings:\n\nName: Enter a descriptive name for your connector (for example, \"Azure MCP Server\")\nConnection Type: Select stdio from the dropdown menu. This tells the agent to communicate wi…",
+          "link": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/how-to-connect-azure-sre-agent-to-azure-mcp/4488905",
+          "publishedOn": "2026-01-23T20:35:55.000Z",
+          "wordCount": 8709,
+          "title": "How to Connect Azure SRE Agent to Azure MCP",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDg4OTA1LVB5d1FReA?revision=3"
+        },
         {
           "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/simplifying-image-signing-with-notary-project-and-artifact-signing-ga/4487942",
           "author": "YiZha",
@@ -5080,26 +5050,6 @@
           "wordCount": 7124,
           "title": "Semantic Kernel and Microsoft Agent Framework",
           "imageUrl": "https://devblogs.microsoft.com/semantic-kernel/wp-content/uploads/sites/78/2025/10/Screenshot-2025-10-07-233551.png"
-        },
-        {
-          "id": "https://devblogs.microsoft.com/semantic-kernel/?p=4997",
-          "author": "Dmytro Struk",
-          "description": "In previous versions of the Semantic Kernel, the encoding of template arguments was performed automatically if the argument type was a string. The encoding was not applied for custom types, anonymous types, or collections. With the latest changes, we’ve introduced stricter rules: if automatic encoding is enabled (the default behavior), an exception will now be […]\nThe post Encoding Changes for Template Arguments in Semantic Kernel appeared first on Semantic Kernel.",
-          "link": "https://devblogs.microsoft.com/semantic-kernel/encoding-changes-for-template-arguments-in-semantic-kernel/",
-          "publishedOn": "2025-08-27T05:17:18.000Z",
-          "wordCount": 7294,
-          "title": "Encoding Changes for Template Arguments in Semantic Kernel",
-          "imageUrl": "https://devblogs.microsoft.com/semantic-kernel/wp-content/uploads/sites/78/2025/08/ai-and-prompts.png"
-        },
-        {
-          "id": "https://devblogs.microsoft.com/semantic-kernel/?p=4988",
-          "author": "Dmytro Struk",
-          "description": "In previous versions of the Semantic Kernel Python, the default fallback authentication mechanism for Azure services like AzureChatCompletion was DefaultAzureCredential from the Azure Identity library. This provided a convenient way to authenticate without explicitly passing credentials, especially during development. However, with the latest package version 1.36.0, this fallback is being removed to encourage more secure […]\nThe post Azure Authentication Changes in Semantic Kernel Python appeared first on Semantic Kernel.",
-          "link": "https://devblogs.microsoft.com/semantic-kernel/azure-authentication-changes-in-semantic-kernel-python/",
-          "publishedOn": "2025-08-27T05:16:27.000Z",
-          "wordCount": 7134,
-          "title": "Azure Authentication Changes in Semantic Kernel Python",
-          "imageUrl": "https://devblogs.microsoft.com/semantic-kernel/wp-content/uploads/sites/78/2025/08/security-image.png"
         }
       ]
     },
