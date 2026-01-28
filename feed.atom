@@ -2,10 +2,88 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2026-01-27T01:57:43.739Z</updated>
+    <updated>2026-01-28T01:53:50.912Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Build AI Agents with GitHub Copilot SDK and Microsoft Agent Framework]]></title>
+        <id>https://devblogs.microsoft.com/semantic-kernel/?p=5106</id>
+        <link href="https://devblogs.microsoft.com/semantic-kernel/build-ai-agents-with-github-copilot-sdk-and-microsoft-agent-framework/"/>
+        <updated>2026-01-27T21:37:26.000Z</updated>
+        <summary type="html"><![CDATA[Microsoft Agent Framework now integrates with the GitHub Copilot SDK, enabling you to build AI agents powered by GitHub Copilot. This integration brings together the Agent Framework’s consistent agent abstraction with GitHub Copilot’s capabilities, including function calling, streaming responses, multi-turn conversations, shell command execution, file operations, URL fetching, and Model Context Protocol (MCP) server integration […]
+The post Build AI Agents with GitHub Copilot SDK and Microsoft Agent Framework appeared first on Semantic Kernel.]]></summary>
+        <author>
+            <name>Dmytro Struk</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Transforming Retry-After Headers in Azure APIM: A Step-by-Step Guide]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/transforming-retry-after-headers-in-azure-apim-a-step-by-step-guide/4489762</id>
+        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/transforming-retry-after-headers-in-azure-apim-a-step-by-step-guide/4489762"/>
+        <updated>2026-01-27T14:18:10.000Z</updated>
+        <summary type="html"><![CDATA[In this blog post, you'll learn how to customize the Retry-After response header in Azure API Management (APIM) rate-limiting policies, enhancing your API's flexibility and user experience. While it does not delve into the specifics of the rate-limit or rate-limit-by-key policies, it provides a practical guide for altering the Retry-After header. For detailed information on the rate-limit policy, please visit Azure API Management policy reference - rate-limit | Microsoft Learn.
+Understanding Rate Limiting: Protecting Your API from Overuse
+Rate limiting is a technique used to control how often requests are made to a resource. It helps prevent excessive or abusive use and ensures the resource is available to all users.
+Rate limiting is often used to protect against denial-of-service (DoS) at…]]></summary>
+        <author>
+            <name>pratikpanda</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[The Hidden Memory Architecture of LLMs]]></title>
+        <id>https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/the-hidden-memory-architecture-of-llms/4485367</id>
+        <link href="https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/the-hidden-memory-architecture-of-llms/4485367"/>
+        <updated>2026-01-27T08:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Your LLM is not running out of intelligence. It is often hitting context and runtime memory limits.
+I’m Hazem Ali — Microsoft AI MVP, Distinguished AI and ML Engineer / Architect, and Founder and CEO of Skytells.
+I’ve built and led engineering work that turns deep learning research into production systems that survive real-world constraints. I speak at major conferences and technical communities, and I regularly deliver deep technical sessions on enterprise AI and agent architectures.
+If there’s one thing you’ll notice about me, it’s that I’m drawn to the deepest layers of engineering, the parts most teams only discover when systems are under real pressure. My specialization spans the full AI stack, from deep learning and system design to enterprise architecture and security.
+One of the mo…]]></summary>
+        <author>
+            <name>hazem</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Azure Arc for SQL Server: Executive Summary for Enterprise Clients]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/azure-arc-for-sql-server-executive-summary-for-enterprise-clients/4489549</id>
+        <link href="https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/azure-arc-for-sql-server-executive-summary-for-enterprise-clients/4489549"/>
+        <updated>2026-01-27T05:34:34.000Z</updated>
+        <summary type="html"><![CDATA[Key Considerations Before Implementation
+Licensing and Software Assurance Benefits
+Understanding your licensing options is critical before deploying Azure Arc. If your SQL Server licenses include active Software Assurance, you unlock significant benefits through Azure Arc including Extended Security Updates at no additional cost for end of support versions, Azure Hybrid Benefit for potential cost savings, and eligibility for Azure Arc enabled SQL Managed Instance features.
+When configuring license type in Azure Arc, you will choose between License Only for servers licensed through Volume Licensing without Software Assurance, Paid for licenses with active Software Assurance which enables all premium benefits, or Pay As You Go for consumption based billing through Azure.
+Infrastructure and N…]]></summary>
+        <author>
+            <name>NaufalPrawironegoro</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Unifying Scattered Observability Data from Dynatrace + Azure for Self-Healing with SRE Agent]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/unifying-scattered-observability-data-from-dynatrace--azure-for-self-healing-wit/4489547</id>
+        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/unifying-scattered-observability-data-from-dynatrace--azure-for-self-healing-wit/4489547"/>
+        <updated>2026-01-27T05:34:14.000Z</updated>
+        <summary type="html"><![CDATA[What if your deployments could fix themselves?
+The Deployment Remediation Challenge
+Modern operations teams face a recurring nightmare:
+
+A deployment ships at 9 AM
+Errors spike at 9:15 AM  
+By the time you correlate logs, identify the bad revision, and execute a rollback—it's 10:30 AM
+Your users felt 75 minutes of degraded experience
+
+The data to detect and fix this existed the entire time—but it was scattered across clouds and platforms:
+
+Error logs and traces → Dynatrace (third-party observability cloud)
+Deployment history and revisions → Azure Container Apps API
+Resource health and metrics → Azure Monitor
+Rollback commands → Azure CLI
+
+Your observability data lives in one cloud. Your deployment data lives in another. Stitching together log analysis from Dynatrace with deployment correla…]]></summary>
+        <author>
+            <name>Vineela-Suri</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[How SRE Agent Pulls Logs from Grafana and Creates Jira Tickets Without Native Integrations]]></title>
         <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/how-sre-agent-pulls-logs-from-grafana-and-creates-jira-tickets-without-native-in/4489527</id>
