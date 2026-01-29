@@ -6,6 +6,36 @@
       "siteUrl": "https://blog.fabric.microsoft.com/en/blog/",
       "articles": [
         {
+          "id": "32822",
+          "author": null,
+          "description": "The Get Data with Cloud Connection is a cross-Fabric capability that supports a broad range of data sources—including Azure Blob Storage, PostgreSQL, Azure Key Vault, S3, and many more. Now available directly within notebooks, this feature empowers users to efficiently and securely access and manage data from diverse sources. Importantly, it provides a secure way … \nContinue reading “Fabric Connection inside Notebook (Preview)”",
+          "link": "https://blog.fabric.microsoft.com/en/blog/32822/",
+          "publishedOn": "2026-01-28T14:00:00.000Z",
+          "wordCount": 2003,
+          "title": "Fabric Connection inside Notebook (Preview)",
+          "imageUrl": "https://blog.fabric.microsoft.com/images/shared/social/social-image-v2.png"
+        },
+        {
+          "id": "take-control-of-fabric-identities-limit-for-your-tenant-generally-available",
+          "author": null,
+          "description": "Fabric Identity governance at scale just got easier. We are introducing a new tenant admin setting that gives you control over the maximum number of Fabric identities (hence Workspace identities) in your organization. With this update, Fabric tenant admins can: How it works The new setting “Define maximum number of Fabric identities in a tenant” … \nContinue reading “Take control of Fabric Identities limit for your tenant (Generally Available)”",
+          "link": "https://blog.fabric.microsoft.com/en/blog/take-control-of-fabric-identities-limit-for-your-tenant-generally-available/",
+          "publishedOn": "2026-01-28T10:00:00.000Z",
+          "wordCount": 1759,
+          "title": "Take control of Fabric Identities limit for your tenant (Generally Available)",
+          "imageUrl": "https://blog.fabric.microsoft.com/images/shared/social/social-image-v2.png"
+        },
+        {
+          "id": "fabric-january-2026-feature-summary",
+          "author": null,
+          "description": "If you’ve been trying to keep up with everything shipping in Microsoft Fabric, this January 2026 round-up is for you—covering the biggest updates across the platform, from new AI-powered catalog experiences and OneLake governance improvements to enhancements in Data Engineering, Data Warehouse, Real-Time Intelligence, and Data Factory. If you haven’t already, make sure FabCon Atlanta … \nContinue reading “Fabric January 2026 Feature Summary”",
+          "link": "https://blog.fabric.microsoft.com/en/blog/fabric-january-2026-feature-summary/",
+          "publishedOn": "2026-01-28T09:00:00.000Z",
+          "wordCount": 5580,
+          "title": "Fabric January 2026 Feature Summary",
+          "imageUrl": "https://blog.fabric.microsoft.com/images/shared/social/social-image-v2.png"
+        },
+        {
           "id": "surge-protection-gets-smarter-introducing-workspace-level-controls-preview",
           "author": null,
           "description": "Surge protection in Microsoft Fabric has been a key feature for managing capacity usage and preventing overload. Today, it helps you: Until now, surge protection applied only at the capacity level—meaning all workspaces shared the same rules. What’s new: workspace-level surge protection We’re taking surge protection to the next level with workspace-level controls. This update … \nContinue reading “Surge protection gets smarter: introducing workspace-level controls (Preview)”",
@@ -2594,6 +2624,16 @@
           "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDg3MDU5LTRPQ3U3eg?revision=4"
         },
         {
+          "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/run-playwright-tests-on-cloud-browsers-using-playwright-workspaces/4487103",
+          "author": "Adyshasnotes",
+          "description": "Overview\nEnd‑to‑end testing at scale is a common challenge when teams need reliable, cross‑browser validation without managing infrastructure. Azure Playwright Testing Service (Preview) simplifies this by allowing you to run Playwright tests on cloud-hosted browsers directly from your local setup.\nIn this post, I’ll walk through how to:\n\nSet up Azure Playwright Testing Service\nConfigure your Playwright project\nRun UI and API tests on remote browsers\nView execution logs, HTML reports, and traces\n\nThis guide uses Playwright with TypeScript in Visual Studio / VS Code and is based on hands‑on setup steps.\n \nUnderstanding Playwright Workspaces\nPlaywright Workspaces is an Azure App Testing capability that provides cloud execution environments for Playwright tests. The entire experience is manage…",
+          "link": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/run-playwright-tests-on-cloud-browsers-using-playwright-workspaces/4487103",
+          "publishedOn": "2026-01-19T11:44:18.000Z",
+          "wordCount": 9164,
+          "title": "Run Playwright Tests on Cloud Browsers using Playwright Workspaces",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDg3MTAzLXVaTlRxcw?revision=3"
+        },
+        {
           "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/azure-playwright-testing-service-preview-run-playwright-tests-on-cloud-browsers/4487103",
           "author": "Adyshasnotes",
           "description": "Overview\nEnd‑to‑end testing at scale is a common challenge when teams need reliable, cross‑browser validation without managing infrastructure. Azure Playwright Testing Service (Preview) simplifies this by allowing you to run Playwright tests on cloud-hosted browsers directly from your local setup.\nIn this post, I’ll walk through how to:\n\nSet up Azure Playwright Testing Service\nConfigure your Playwright project\nRun UI and API tests on remote browsers\nView execution logs, HTML reports, and traces\n\nThis guide uses Playwright with TypeScript in Visual Studio / VS Code and is based on hands‑on setup steps.\nPrerequisites\nBefore you begin, ensure you have:\n\nAn active Azure subscription\nNode.js installed\nA Playwright project using TypeScript\nVisual Studio or Visual Studio Code\n\nStep 1: Create a Pl…",
@@ -4343,6 +4383,16 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/from-ingress-to-gateway-api-a-pragmatic-path-forward-and-why-it-matters-now/4489779",
+          "author": "Jack Stromberg",
+          "description": "If you operate Kubernetes at scale, you've felt it: \"Ingress YAML sprawl\", annotation archaeology, and the creeping sense that your edge configuration is one upstream change away from becoming fragile. Over the last couple of years, the Kubernetes networking community has been steadily moving toward a clearer, more expressive model for north-south traffic management: Gateway API.\nThat shift has accelerated recently for a very practical reason: Ingress NGINX (the community ingress-nginx controller) is on a retirement timeline. For many teams, that controller wasn't a \"nice to have\" - it was the default ingress path. Now, you have to make two decisions in short order:\n\nPick a proxy / gateway implementation that you can run confidently for years.\nLearn Gateway API (or at least build a migrati…",
+          "link": "https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/from-ingress-to-gateway-api-a-pragmatic-path-forward-and-why-it-matters-now/4489779",
+          "publishedOn": "2026-01-28T23:19:40.000Z",
+          "wordCount": 14369,
+          "title": "From Ingress to Gateway API: A pragmatic path forward (and why it matters now)",
+          "imageUrl": null
+        },
+        {
           "id": "https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/azure-arc-for-sql-server-executive-summary-for-enterprise-clients/4489549",
           "author": "NaufalPrawironegoro",
           "description": "Key Considerations Before Implementation\nLicensing and Software Assurance Benefits\nUnderstanding your licensing options is critical before deploying Azure Arc. If your SQL Server licenses include active Software Assurance, you unlock significant benefits through Azure Arc including Extended Security Updates at no additional cost for end of support versions, Azure Hybrid Benefit for potential cost savings, and eligibility for Azure Arc enabled SQL Managed Instance features.\nWhen configuring license type in Azure Arc, you will choose between License Only for servers licensed through Volume Licensing without Software Assurance, Paid for licenses with active Software Assurance which enables all premium benefits, or Pay As You Go for consumption based billing through Azure.\nInfrastructure and N…",
@@ -5495,6 +5545,16 @@
       "siteUrl": "https://devblogs.microsoft.com/engineering-at-microsoft/",
       "articles": [
         {
+          "id": "https://devblogs.microsoft.com/engineering-at-microsoft/?p=1233",
+          "author": "Aditya Challapally",
+          "description": "On January 28, 2026, Hugging Face announced that they have upstreamed the Post-Training Toolkit into TRL as a first-party integration, making these diagnostics directly usable in production RL and agent post-training pipelines. This enables closed-loop monitoring and control patterns that are increasingly necessary for long-running and continuously adapted agent systems. Documentation @ https://huggingface.co/docs/trl/main/en/ptt_integration. Overview In […]\nThe post Diagnosing instability in production-scale agent reinforcement learning appeared first on Engineering@Microsoft.",
+          "link": "https://devblogs.microsoft.com/engineering-at-microsoft/diagnosing-instability-in-production-scale-agent-rl/",
+          "publishedOn": "2026-01-28T18:07:38.000Z",
+          "wordCount": 8476,
+          "title": "Diagnosing instability in production-scale agent reinforcement learning",
+          "imageUrl": "https://devblogs.microsoft.com/engineering-at-microsoft/wp-content/uploads/sites/72/2023/07/load-testing-cover-image-copy.png"
+        },
+        {
           "id": "https://devblogs.microsoft.com/engineering-at-microsoft/?p=1182",
           "author": "Jenny Ferries",
           "description": "Discover how treating AI agents as collaborators, not automation, transforms engineering workflows and accelerates complex projects\nThe post The Interaction Changes Everything: Treating AI Agents as Collaborators, Not Automation appeared first on Engineering@Microsoft.",
@@ -5638,6 +5698,26 @@
       "feedUrl": "https://devblogs.microsoft.com/microsoft365dev/feed/",
       "siteUrl": "https://devblogs.microsoft.com/microsoft365dev/",
       "articles": [
+        {
+          "id": "https://devblogs.microsoft.com/microsoft365dev/?p=25248",
+          "author": "Cameron Parker",
+          "description": "The User Configuration API is now available in the beta endpoint in Microsoft Graph.  Use it to create, read, update, and delete user configuration objects in Exchange Online mail folders.\nThe post Introducing the Microsoft Graph User Configuration API (preview) appeared first on Microsoft 365 Developer Blog.",
+          "link": "https://devblogs.microsoft.com/microsoft365dev/introducing-the-microsoft-graph-user-configuration-api-preview/",
+          "publishedOn": "2026-01-28T18:59:42.000Z",
+          "wordCount": 7354,
+          "title": "Introducing the Microsoft Graph User Configuration API (preview)",
+          "imageUrl": null
+        },
+        {
+          "id": "https://devblogs.microsoft.com/microsoft365dev/?p=25239",
+          "author": "Vesa Juvonen",
+          "description": "SPFx is powering the future of Microsoft 365 with AI driven portals and deep integrations across SharePoint Teams and Viva. The January 2026 update shares new features and the roadmap for the next evolution built for the AI era. This is a transparent community driven journey that we shape together.\nThe post SharePoint Framework (SPFx) roadmap update – January 2026 appeared first on Microsoft 365 Developer Blog.",
+          "link": "https://devblogs.microsoft.com/microsoft365dev/sharepoint-framework-spfx-roadmap-update-january-2026/",
+          "publishedOn": "2026-01-28T15:18:00.000Z",
+          "wordCount": 8707,
+          "title": "SharePoint Framework (SPFx) roadmap update – January 2026",
+          "imageUrl": "https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2026/01/spfx-roadmap-2026-january.webp"
+        },
         {
           "id": "https://devblogs.microsoft.com/microsoft365dev/?p=25113",
           "author": "Aadharsh Kannan",
