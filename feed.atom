@@ -2,10 +2,81 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2026-02-17T02:12:14.147Z</updated>
+    <updated>2026-02-18T02:23:35.189Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[How Azure SRE Agent Can Investigate Resources in a Private Network]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/how-azure-sre-agent-can-investigate-resources-in-a-private-network/4494911</id>
+        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/how-azure-sre-agent-can-investigate-resources-in-a-private-network/4494911"/>
+        <updated>2026-02-17T23:01:58.000Z</updated>
+        <summary type="html"><![CDATA[⚠️ Important Note on Network Communication: In this pattern, Azure SRE Agent communicates over the public network to reach the Azure Function proxy. The proxy endpoint is secured with Easy Auth (Microsoft Entra ID) and only authenticated callers can invoke it. We are also actively working on enabling SRE Agent to be injected directly into private networks, which will eliminate the need for a public proxy altogether. Stay tuned for updates on private network injection support.
+
+TL;DR
+When you configure Azure Monitor Private Link Scope (AMPLS) with publicNetworkAccessForQuery: Disabled, all public queries to your Log Analytics Workspace are blocked. To enable Azure SRE Agent to query these protected workspaces, deploy Azure Functions inside your VNet as a secure query proxy.
+
+What We Built: …]]></summary>
+        <author>
+            <name>dbandaru</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[AI with Zero Trust Security]]></title>
+        <id>https://techcommunity.microsoft.com/blog/MicrosoftMechanicsBlog/ai-with-zero-trust%C2%A0security/4495445</id>
+        <link href="https://techcommunity.microsoft.com/blog/MicrosoftMechanicsBlog/ai-with-zero-trust%C2%A0security/4495445"/>
+        <updated>2026-02-17T21:09:55.000Z</updated>
+        <summary type="html"><![CDATA[Adopt a Zero Trust approach that lets you verify every access request — human, machine, or AI — before it reaches your most critical resources. As AI agents, semantic search, and automation accelerate how work gets done, you can reduce risk by explicitly validating identity, enforcing least-privilege access, and assuming breach across every step of your environment. Apply layered, continuous protection across identities, endpoints, networks, data, AI resources, applications, and infrastructure so attackers can’t exploit any weak links. 
+Michael Madrigal, Security Product Manager, shares how you can protect productivity and keep pace with an evolving threat landscape, by continuously assessing risk, securing resources at runtime, and adapting policies as conditions change.
+Govern AI agents …]]></summary>
+        <author>
+            <name>Zachary-Cavanell</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Meet the First Round of Speakers for Microsoft JDConf 2026]]></title>
+        <id>https://devblogs.microsoft.com/java/?p=232877</id>
+        <link href="https://devblogs.microsoft.com/java/meet-the-first-round-of-speakers-for-microsoft-jdconf-2026/"/>
+        <updated>2026-02-17T15:59:51.000Z</updated>
+        <summary type="html"><![CDATA[We’re excited to announce the first wave of speakers for Microsoft JDConf 2026, our flagship community event for Java at Microsoft. Whether you’re architecting enterprise microservices, modernizing legacy systems, or building intelligent applications, JDConf 2026 will equip you with the insights and tools to stay ahead. Live streamed across three time zones, the event gives […]
+The post Meet the First Round of Speakers for Microsoft JDConf 2026 appeared first on Microsoft for Java Developers.]]></summary>
+        <author>
+            <name>Bruno Borges</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Billing updates: new operations for Fabric AI functions and AI services]]></title>
+        <id>billing-updates-new-operations-for-fabric-ai-functions-and-ai-services</id>
+        <link href="https://blog.fabric.microsoft.com/en/blog/billing-updates-new-operations-for-fabric-ai-functions-and-ai-services/"/>
+        <updated>2026-02-17T12:00:00.000Z</updated>
+        <summary type="html"><![CDATA[We’re introducing billing reporting updates that make it easier to track AI-related usage in Microsoft Fabric. New AI Functions operation Until now, Fabric AI functions usage was reported under other operations, such as Spark-related operations, or Dataflows Gen2-related operations, depending on where the functions were used. To provide more transparency, Fabric AI functions will have … 
+Continue reading “Billing updates: new operations for Fabric AI functions and AI services”]]></summary>
+        <author>
+            <name>Microsoft Fabric Blog</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[No more excuses: AI-powered assistants are in SSMS, VS Code, and Fabric]]></title>
+        <id>no-more-excuses-ai-powered-assistants-are-in-ssms-vs-code-and-fabric</id>
+        <link href="https://blog.fabric.microsoft.com/en/blog/no-more-excuses-ai-powered-assistants-are-in-ssms-vs-code-and-fabric/"/>
+        <updated>2026-02-17T12:00:00.000Z</updated>
+        <summary type="html"><![CDATA[You like writing T-SQL. You’re good at it. Or maybe you’re not. But let’s be honest—there are days when you’d rather not write that same GROUP BY clause for the hundredth time or spend twenty minutes deciphering a stored procedure someone wrote in 2014. Good news: AI-powered assistants are now available wherever you write SQL … 
+Continue reading “No more excuses: AI-powered assistants are in SSMS, VS Code, and Fabric”]]></summary>
+        <author>
+            <name>Microsoft Fabric Blog</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Snowflake Key-Pair Authentication (Generally Available)]]></title>
+        <id>snowflake-key-pair-authentication-generally-available</id>
+        <link href="https://blog.fabric.microsoft.com/en/blog/snowflake-key-pair-authentication-generally-available/"/>
+        <updated>2026-02-17T10:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Coauthor: Abhishek Narain Ensuring secure connectivity to your data sources is critical for modern data estates. We have released the Key-Pair authentication for Snowflake connections Preview in October and are happy to announce it is now Generally Available (GA). This release offers an enhanced security alternative to basic authentication methods, such as username and password, … 
+Continue reading “Snowflake Key-Pair Authentication (Generally Available)”]]></summary>
+        <author>
+            <name>Microsoft Fabric Blog</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Condensed views on Kanban and Sprint boards]]></title>
         <id>https://devblogs.microsoft.com/devops/?p=72437</id>
@@ -8292,18 +8363,6 @@ Continue reading “Maps in Microsoft Fabric – Geospatial Insights for Real-Ti
 Continue reading “Fabric Spark Applications Comparison (Preview)”]]></summary>
         <author>
             <name>Microsoft Fabric Blog</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Azure Migrate: Connected Experiences]]></title>
-        <id>https://techcommunity.microsoft.com/blog/AzureMigrationBlog/azure-migrate-connected-experiences/4454927</id>
-        <link href="https://techcommunity.microsoft.com/blog/AzureMigrationBlog/azure-migrate-connected-experiences/4454927"/>
-        <updated>2025-09-20T22:15:06.000Z</updated>
-        <summary type="html"><![CDATA[Shiva Shastri Sr Product Marketing Manager, Azure Migrate—Product & Ecosystem.
-Modernization in motion: Evolving at the speed of change.
-Modernization is the process of transforming legacy IT systems into technologies and architectures that improve agility, scalability, performance and cost-efficiency. It enables businesses to stay competitive by aligning their capabilities with evolving customer and market demands. Modernization is not a one-time event with a finish-line but a continuous journey of evolution. As technology, customer expectations, and competitive landscapes shift, so must the systems and processes that support them. Cloud-native architectures are inherently aligned with modernization while providing access to innovations such as AI. By treating modernization as an ongoing …]]></summary>
-        <author>
-            <name>SShastri</name>
         </author>
     </entry>
     <entry>
