@@ -2,10 +2,86 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2026-03-06T02:09:19.637Z</updated>
+    <updated>2026-03-07T02:02:29.982Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[The LLM Inference Optimization Stack: A Prioritized Playbook for Enterprise Teams]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/the-llm-inference-optimization-stack-a-prioritized-playbook-for-enterprise-teams/4498818</id>
+        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/the-llm-inference-optimization-stack-a-prioritized-playbook-for-enterprise-teams/4498818"/>
+        <updated>2026-03-06T23:26:22.000Z</updated>
+        <summary type="html"><![CDATA[The Solutions — An Optimization Stack for Enterprise Inference
+The optimizations below are ordered by implementation priority — starting with the highest-leverage.
+The Three-Layer Serving Stack
+Most enterprise LLM deployments operate across three layers, each responsible for a different part of the inference pipeline. Understanding which layer a bottleneck belongs to is often the fastest path to improving inference performance.
+
+Azure Kubernetes Service (AKS) orchestrates the infrastructure — GPU nodes, networking, and container lifecycle.
+Ray Serve provides the distributed model serving layer — handling request routing, autoscaling, batching, replica placement, and multi-model serving.
+Inference engines such as vLLM execute the model forward passes and implement token-generation optimizat…]]></summary>
+        <author>
+            <name>bobmital</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Prepare your add-in for Outlook ribbon improvements]]></title>
+        <id>https://devblogs.microsoft.com/microsoft365dev/?p=25368</id>
+        <link href="https://devblogs.microsoft.com/microsoft365dev/prepare-your-addin-for-outlook-ribbon-improvements/"/>
+        <updated>2026-03-06T21:43:22.000Z</updated>
+        <summary type="html"><![CDATA[We’re improving how add-ins appear on the ribbon in Outlook on the web and the new Outlook on Windows. These updates make add-ins easier to find and align the experience across Outlook clients.
+The post Prepare your add-in for Outlook ribbon improvements appeared first on Microsoft 365 Developer Blog.]]></summary>
+        <author>
+            <name>Office Add-ins team</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[MCP vs mcp-cli: Dynamic Tool Discovery for Token-Efficient AI Agents]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/mcp-vs-mcp-cli-dynamic-tool-discovery-for-token-efficient-ai-agents/4494272</id>
+        <link href="https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/mcp-vs-mcp-cli-dynamic-tool-discovery-for-token-efficient-ai-agents/4494272"/>
+        <updated>2026-03-06T08:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Introduction
+The AI agent ecosystem is evolving rapidly, and with it comes a scaling challenge that many developers are hitting context window bloat. When building systems that integrate with multiple MCP (Model Context Protocol) servers, you're forced to load all tool definitions upfront—consuming thousands of tokens just to describe what tools could be available.
+mcp-cli: a lightweight tool that changes how we interact with MCP servers. But before diving into mcp-cli, it's essential to understand the foundational protocol itself, the design trade-offs between static and dynamic approaches, and how they differ fundamentally.
+Part 1: Understanding MCP (Model Context Protocol)
+What is MCP?
+The Model Context Protocol (MCP) is an open standard for connecting AI agents and applications to exte…]]></summary>
+        <author>
+            <name>anbonagi</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[MCP vs mcp-cli: Dynamic Tool Discovery for Token-Efficient AI Agents]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/mcp-vs-mcp-cli-dynamic-tool-discovery-for-token-efficient-ai-agents/4494272</id>
+        <link href="https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/mcp-vs-mcp-cli-dynamic-tool-discovery-for-token-efficient-ai-agents/4494272"/>
+        <updated>2026-03-06T08:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Introduction
+The AI agent ecosystem is evolving rapidly, and with it comes a scaling challenge that many developers are hitting context window bloat. When building systems that integrate with multiple MCP (Model Context Protocol) servers, you're forced to load all tool definitions upfront—consuming thousands of tokens just to describe what tools could be available.
+mcp-cli: a lightweight tool that changes how we interact with MCP servers. But before diving into mcp-cli, it's essential to understand the foundational protocol itself, the design trade-offs between static and dynamic approaches, and how they differ fundamentally.
+Part 1: Understanding MCP (Model Context Protocol)
+What is MCP?
+The Model Context Protocol (MCP) is an open standard for connecting AI agents and applications to exte…]]></summary>
+        <author>
+            <name>anbonagi</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Decision Matrix: API vs MCP Tools — The Great Integration Showdown 🥊]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/decision-matrix-api-vs-mcp-tools-%E2%80%94-the-great-integration-showdown-/4499385</id>
+        <link href="https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/decision-matrix-api-vs-mcp-tools-%E2%80%94-the-great-integration-showdown-/4499385"/>
+        <updated>2026-03-06T06:38:07.000Z</updated>
+        <summary type="html"><![CDATA[Audience: Engineers + Stakeholders (and anyone who's ever argued about API architecture at lunch)Date: March 2026Author: Sabyasachi Samaddar
+Purpose
+Somewhere, right now, two engineers are arguing about the "right" way to call an API. One swears by raw HTTP. The other just discovered MCP and thinks it's the greatest thing since 'git blame'. A third quietly uses their custom SDK and wonders why anyone would do it differently.
+This document settles the argument — with data, not opinions.
+It provides a fact-based, honest comparison of three approaches for integrating with backend APIs:
+
+Custom REST API — the bare-knuckles fighter. You, a URL, and sheer willpower.
+Custom SDK / Client Library — the Swiss Army knife. You build the library; consumers use it.
+Custom MCP Server (Model Context Proto…]]></summary>
+        <author>
+            <name>Sabyasachi-Samaddar</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Even simpler to Safely Execute AI-generated Code with Azure Container Apps Dynamic Sessions]]></title>
         <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/even-simpler-to-safely-execute-ai-generated-code-with-azure-container-apps-dynam/4499795</id>
@@ -8072,75 +8148,6 @@ Introducing Azure AI Foundry Voice Live API
 Launched into general availability on October 1, 2025, the Azure AI Foundry Voice Live API is a game-changer for developers building voice-enabled agents. It unifies the entire voice stack—speech-to-text, generative AI, text-to-speech, avatars, and conversational enhancements, …]]></summary>
         <author>
             <name>Lee_Stott</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Fabric Data Agent now supports CI/CD, ALM Flow, and Git Integration]]></title>
-        <id>fabric-data-agent-now-supports-ci-cd-alm-flow-and-git-integration</id>
-        <link href="https://blog.fabric.microsoft.com/en/blog/fabric-data-agent-now-supports-ci-cd-alm-flow-and-git-integration/"/>
-        <updated>2025-10-08T10:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Fabric data agents now support CI/CD, ALM flow, and Git integration. These enhancements help you implement best practices for managing your data agent artifacts and tracking changes, leading to more reliable and collaborative development. Benefits of CI/CD and ALM Flow Fabric data agents support a variety of data sources, including Lakehouse, Warehouse, Power BI Semantic … 
-Continue reading “Fabric Data Agent now supports CI/CD, ALM Flow, and Git Integration”]]></summary>
-        <author>
-            <name>Microsoft Fabric Blog</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Understanding Locking and DDL Blocking in Microsoft Fabric Data Warehouse]]></title>
-        <id>locking-and-ddl-blocking-behavior-in-microsoft-fabric-data-warehouse-what-you-need-to-know</id>
-        <link href="https://blog.fabric.microsoft.com/en/blog/locking-and-ddl-blocking-behavior-in-microsoft-fabric-data-warehouse-what-you-need-to-know/"/>
-        <updated>2025-10-08T07:03:26.000Z</updated>
-        <summary type="html"><![CDATA[As adoption of Microsoft Fabric Data Warehouse accelerates, understanding its concurrency model becomes essential for developers, architects, and data engineers. In this post, we’ll explore how Fabric DW handles locking, the nuances of DDL blocking, and how these behaviors impact your workloads. Locking Behavior in Fabric Data Warehouse Fabric DW supports ACID-compliant transactions using standard … 
-Continue reading “Understanding Locking and DDL Blocking in Microsoft Fabric Data Warehouse”]]></summary>
-        <author>
-            <name>Microsoft Fabric Blog</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Resolving Write Conflicts in Microsoft Fabric Data Warehouse]]></title>
-        <id>concurrency-control-and-conflict-resolution-in-microsoft-fabric-data-warehouse</id>
-        <link href="https://blog.fabric.microsoft.com/en/blog/concurrency-control-and-conflict-resolution-in-microsoft-fabric-data-warehouse/"/>
-        <updated>2025-10-08T07:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Fabric Data Warehouse (DW) supports ACID-compliant transactions using standard T-SQL (BEGIN TRANSACTION, COMMIT, ROLLBACK) and uses Snapshot Isolation (SI) as its exclusive concurrency control model. All operations within a transaction are treated atomically—either all succeed or all fail. This ensures that each transaction operates on a consistent snapshot of the data as it existed at … 
-Continue reading “Resolving Write Conflicts in Microsoft Fabric Data Warehouse”]]></summary>
-        <author>
-            <name>Microsoft Fabric Blog</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Microsoft’s A-Grade Azure AI Stack: From Dissertation Prototype to Smart Campus Pilot]]></title>
-        <id>https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/microsoft%E2%80%99s-a-grade-azure-ai-stack-from-dissertation-prototype-to-smart-campus-p/4459620</id>
-        <link href="https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/microsoft%E2%80%99s-a-grade-azure-ai-stack-from-dissertation-prototype-to-smart-campus-p/4459620"/>
-        <updated>2025-10-08T07:00:00.000Z</updated>
-        <summary type="html"><![CDATA[This post isn't just about the Student Support Agent (SSA) I built, which earned me a Distinction. It's about how Microsoft's tools made it possible to go from a rough concept to a robust pilot, proving their developer stack is one of the most convenient and powerful options for building intelligent, ethical, and scalable educational systems.
-The Vision: Cutting Through Campus Complexity
-University life is full of fragmented systems. Students constantly juggle multiple logins, websites, and interfaces just to check a timetable, book a room, or find a policy. My goal was simple: reduce that cognitive load by creating a unified assistant that could manage all these tasks through a single, intelligent conversation.
-CampusConnect dashboard and numbered widgets powered by Azure OpenAI
-The Stack…]]></summary>
-        <author>
-            <name>tyana</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Semantic Kernel and Microsoft Agent Framework]]></title>
-        <id>https://devblogs.microsoft.com/semantic-kernel/?p=5041</id>
-        <link href="https://devblogs.microsoft.com/semantic-kernel/semantic-kernel-and-microsoft-agent-framework/"/>
-        <updated>2025-10-08T06:51:06.000Z</updated>
-        <summary type="html"><![CDATA[Last week we announced Microsoft Agent Framework, you can find all the details: In the blog post here: Introducing Microsoft Agent Framework: The Open-Source Engine for Agentic AI Apps | Azure AI Foundry Blog Explore documentation for more details: https://aka.ms/AgentFramework/Docs See it in action: Watch demos on AI Show and Open at Microsoft Learn step by step: Microsoft Learn modules for […]
-The post Semantic Kernel and Microsoft Agent Framework appeared first on Semantic Kernel.]]></summary>
-        <author>
-            <name>Shawn Henry</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Announcing the new Azure DevOps Server RC Release]]></title>
-        <id>https://devblogs.microsoft.com/devops/?p=71856</id>
-        <link href="https://devblogs.microsoft.com/devops/announcing-the-new-azure-devops-server-rc-release/"/>
-        <updated>2025-10-07T20:14:45.000Z</updated>
-        <summary type="html"><![CDATA[We’re excited to announce the release candidate (RC) of Azure DevOps Server, bringing new features previously available in our hosted version. You can  download Azure DevOps Server RC today. A direct upgrade to Azure DevOps Server RC is supported from any version of Team Foundation Server, including Team Foundation Server 2015 and newer. Note: October […]
-The post Announcing the new Azure DevOps Server RC Release appeared first on Azure DevOps Blog.]]></summary>
-        <author>
-            <name>Gloridel Morales</name>
         </author>
     </entry>
 </feed>
