@@ -2,10 +2,127 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2026-03-17T02:12:37.201Z</updated>
+    <updated>2026-03-18T02:24:44.275Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[After Ingress NGINX: Migrating to Application Gateway for Containers]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/after-ingress-nginx-migrating-to-application-gateway-for-containers/4503110</id>
+        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/after-ingress-nginx-migrating-to-application-gateway-for-containers/4503110"/>
+        <updated>2026-03-17T21:03:22.000Z</updated>
+        <summary type="html"><![CDATA[If you're running Ingress NGINX on AKS, you've probably seen the announcements by now. The community Ingress Nginx project is being retired, upstream maintenance ends in March 2026, and Microsoft's extended support for the Application Routing add-on runs out in November 2026. A requirement to migrate to another solution is inevitable.
+There are a few places you can go. This post focuses on Application Gateway for Containers: what it is, why it's worth the move, and how to actually do it. Microsoft has also released a migration utility that handles most of the translation work from your existing Ingress resources, so we'll cover that too.
+Ingress NGINX Retirement
+Ingress NGINX has been the default choice for Kubernetes HTTP routing for years. It's reliable, well-understood, and it appears i…]]></summary>
+        <author>
+            <name>samcogan</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Building an Enterprise Platform for Inference at Scale]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/building-an-enterprise-platform-for-inference-at-scale/4498820</id>
+        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/building-an-enterprise-platform-for-inference-at-scale/4498820"/>
+        <updated>2026-03-17T18:28:24.000Z</updated>
+        <summary type="html"><![CDATA[Architecture Decisions
+With the optimization stack in place, the next layer of decisions is architectural — how you distribute compute across GPUs, nodes, and deployment environments to match your model size and traffic profile.
+GPU Parallelism Strategy on AKS
+
+
+
+Strategy
+
+How It Works
+
+When to Use
+
+Tradeoff
+
+
+
+Tensor Parallelism
+
+Splits weight matrices within each layer across GPUs (intra-layer sharding); all GPUs participate in every forward pass.
+
+Model exceeds single-GPU memory (e.g., 70B on A100 GPUs once weights, KV cache, runtime overhead are included) 
+
+Inter-GPU communication overhead; requires fast interconnects (NVLink on ND-series) — costly to scale beyond a single node without them
+
+
+Pipeline Parallelism
+
+Distributes layers sequentially across nodes, with each stage processing…]]></summary>
+        <author>
+            <name>bobmital</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Azure DevOps Remote MCP Server (public preview)]]></title>
+        <id>https://devblogs.microsoft.com/devops/?p=72519</id>
+        <link href="https://devblogs.microsoft.com/devops/azure-devops-remote-mcp-server-public-preview/"/>
+        <updated>2026-03-17T13:52:29.000Z</updated>
+        <summary type="html"><![CDATA[When we released the local Azure DevOps MCP Server, it gave customers a way to connect Azure DevOps data with tools like Visual Studio and Visual Studio Code through GitHub Copilot Chat. The next step was to make this experience easier to get started with and to enable it for services that support only remote […]
+The post Azure DevOps Remote MCP Server (public preview) appeared first on Azure DevOps Blog.]]></summary>
+        <author>
+            <name>Dan Hellem</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Porting C++ from IBM Power to x86: Solving Silent Endianness Corruption with C++and Github Copilot]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AzureMigrationBlog/porting-c-from-ibm-power-to-x86-solving-silent-endianness-corruption-with-cand-g/4501666</id>
+        <link href="https://techcommunity.microsoft.com/blog/AzureMigrationBlog/porting-c-from-ibm-power-to-x86-solving-silent-endianness-corruption-with-cand-g/4501666"/>
+        <updated>2026-03-17T07:34:04.000Z</updated>
+        <summary type="html"><![CDATA[Migrating C++ applications from IBM Power Systems to Azure x86 involves a subtle but critical architectural difference that is the byte order. When legacy code compiled for Big-Endian hardware is recompiled for Little-Endian x86 without modification, multi-byte integers silently corrupt. There are no compile errors, no runtime exceptions, just wrong values in production. This guide walks through the endianness challenge, demonstrates a practical refactoring workflow using GitHub Copilot, and provides a companion repository you can use immediately.
+Why this migration is different
+C++ code written for IBM Power (OS/400, IBM i) compiles for virtually every platform. The language is not the problem. The problem is how decades of development on a Big-Endian, vertically scaled, single-system arc…]]></summary>
+        <author>
+            <name>OsvaldoDaibert</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Resiliency Patterns for Azure Front Door: Field Lessons]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/resiliency-patterns-for-azure-front-door-field-lessons/4501252</id>
+        <link href="https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/resiliency-patterns-for-azure-front-door-field-lessons/4501252"/>
+        <updated>2026-03-17T07:19:43.000Z</updated>
+        <summary type="html"><![CDATA[Abstract
+Azure Front Door (AFD) sits at the edge of Microsoft’s global cloud, delivering secure, performant, and highly available applications to users worldwide. As adoption has grown—especially for mission‑critical workloads—the need for resilient application architectures that can tolerate rare but impactful platform incidents has become essential.
+This article summarizes key lessons from Azure Front Door incidents in October 2025, outlines how Microsoft is hardening the platform, and—most importantly—describes proven architectural patterns customers can adopt today to maintain business continuity when global load‑balancing services are unavailable.
+Who this is for
+This article is intended for:
+
+Cloud and solution architects designing mission‑critical internet‑facing workloads
+Platform …]]></summary>
+        <author>
+            <name>pbeegala</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Foundry IQ: Give Your AI Agents a Knowledge Upgrade]]></title>
+        <id>https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/foundry-iq-give-your-ai-agents-a-knowledge-upgrade/4502615</id>
+        <link href="https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/foundry-iq-give-your-ai-agents-a-knowledge-upgrade/4502615"/>
+        <updated>2026-03-17T07:00:00.000Z</updated>
+        <summary type="html"><![CDATA[If you’re learning to build AI agents, you’ve probably hit a familiar wall: your agent can generate text, but it doesn’t actually know anything about your data. It can’t look up your documents, search across your files, or pull facts from multiple sources to answer a real question.
+That’s the gap Foundry IQ fills. It gives your AI agents structured access to knowledge, so they can retrieve, reason over, and synthesize information from real data sources instead of relying on what’s baked into the model.
+Why Should You Care?
+As a student or early-career developer, understanding how AI systems work with external knowledge is one of the most valuable skills you can build right now. Retrieval-Augmented Generation (RAG), knowledge bases, and multi-source querying are at the core of every product…]]></summary>
+        <author>
+            <name>Lee_Stott</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Announcing the IQ Series: Foundry IQ]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/announcing-the-iq-series-foundry-iq/4501862</id>
+        <link href="https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/announcing-the-iq-series-foundry-iq/4501862"/>
+        <updated>2026-03-17T07:00:00.000Z</updated>
+        <summary type="html"><![CDATA[AI agents are rapidly becoming a new way to build applications. But for agents to be truly useful, they need access to the knowledge and context that helps them reason about the world they operate in.
+That’s where Foundry IQ comes in.
+Today we’re announcing the IQ Series: Foundry IQ, a new set of developer-focused episodes exploring how to build knowledge-centric AI systems using Foundry IQ.
+The series focuses on the core ideas behind how modern AI systems work with knowledge, how they retrieve information, reason across sources, synthesize answers, and orchestrate multi-step interactions.
+Instead of treating retrieval as a single step in a pipeline, Foundry IQ approaches knowledge as something that AI systems actively work with throughout the reasoning process. The IQ Series breaks down t…]]></summary>
+        <author>
+            <name>aycabas</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Health-Aware Failover for Azure Container Registry Geo-Replication]]></title>
         <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/health-aware-failover-for-azure-container-registry-geo-replication/4501730</id>
@@ -8059,17 +8176,6 @@ Bring your questions. Bring your curiosity. Build with the best.]]></summary>
         <summary type="html"><![CDATA[The App Service team is working closely with the .NET team to address a set of issues that have impacted our ability to deliver updates to the .NET runtime versions provided by the platform on Windows.]]></summary>
         <author>
             <name>Azure App Service</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Upcoming Updates for Azure Pipelines Agents Images]]></title>
-        <id>https://devblogs.microsoft.com/devops/?p=70399</id>
-        <link href="https://devblogs.microsoft.com/devops/upcoming-updates-for-azure-pipelines-agents-images/"/>
-        <updated>2025-10-18T18:40:30.000Z</updated>
-        <summary type="html"><![CDATA[To ensure our hosted agents in Azure Pipelines are operating in the most secure and up-to-date environments, we continuously update the supported images and phase out older ones. In October 2024, we announced support for Ubuntu-24.04. Soon, we plan to update the ubuntu-latest image to map to Ubuntu-24.04. Additionally, MacOS 15 Sequoia and Windows 2025 […]
-The post Upcoming Updates for Azure Pipelines Agents Images appeared first on Azure DevOps Blog.]]></summary>
-        <author>
-            <name>Shubham Agarwal, Eric van Wijk</name>
         </author>
     </entry>
 </feed>
