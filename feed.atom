@@ -2,10 +2,177 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2026-03-18T02:24:44.275Z</updated>
+    <updated>2026-03-19T02:25:43.035Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Introducing Azure Managed Grafana MCP: The Managed Data Gateway for AI Agents]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/introducing-azure-managed-grafana-mcp-the-managed-data-gateway-for-ai-agents/4503619</id>
+        <link href="https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/introducing-azure-managed-grafana-mcp-the-managed-data-gateway-for-ai-agents/4503619"/>
+        <updated>2026-03-18T23:30:40.000Z</updated>
+        <summary type="html"><![CDATA[AI agents are rapidly becoming a core part of how teams build, operate, and improve cloud systems, from coding assistants to autonomous remediation workflows. To deliver on that promise in the enterprise, agents need a secure, governed way to access real production telemetry. Azure Managed Grafana MCP lets AI agents securely query the same production telemetry you already connect to Azure Managed Grafana, like Azure Monitor metrics and logs, Application Insights, and Kusto, using your existing Azure RBAC and managed identities.
+How do you securely connect AI agents to real production telemetry, without standing up yet another piece of infrastructure?
+Today, enabling an agent to query systems like Azure Monitor, Application Insights, or Kusto often requires deploying and operating a self‑ho…]]></summary>
+        <author>
+            <name>aayodeji</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Authentication Tokens Are Not a Data Contract]]></title>
+        <id>https://devblogs.microsoft.com/devops/?p=72568</id>
+        <link href="https://devblogs.microsoft.com/devops/authentication-tokens-are-not-a-data-contract/"/>
+        <updated>2026-03-18T18:46:49.000Z</updated>
+        <summary type="html"><![CDATA[Authentication tokens exist to answer one question: is this caller authorized to do this? They are not intended to be a stable data interface, a schema you can depend on, or an input into application logic. If your application decodes tokens and reads claims from them, this is an important heads-up. Token Claims Were Never […]
+The post Authentication Tokens Are Not a Data Contract appeared first on Azure DevOps Blog.]]></summary>
+        <author>
+            <name>Angel Wong</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[The Swarm Diaries: What Happens When You Let AI Agents Loose on a Codebase]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/the-swarm-diaries-what-happens-when-you-let-ai-agents-loose-on-a-codebase/4501393</id>
+        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/the-swarm-diaries-what-happens-when-you-let-ai-agents-loose-on-a-codebase/4501393"/>
+        <updated>2026-03-18T18:08:04.000Z</updated>
+        <summary type="html"><![CDATA[The Idea
+Single-agent coding assistants are impressive, but they have a fundamental bottleneck: they think serially. Ask one to build a full CLI app with a database layer, a command parser, pretty output, and tests, and it’ll grind through each piece one by one. Industry benchmarks bear this out: AIMultiple’s 2026 agentic coding benchmark measured Claude Code CLI completing full-stack tasks in ~12 minutes on average, with other CLI agents ranging from 3 to 14 minutes depending on the tool. A three-week real-world test by Render.com found single-agent coding workflows taking 10–30 minutes for multi-file feature work.
+But these subtasks don’t depend on each other. A storage agent doesn’t need to wait for the CLI agent. A test writer doesn’t need to watch the renderer work. What if they all r…]]></summary>
+        <author>
+            <name>larohra</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Handling Long-Running Operations with Background Responses]]></title>
+        <id>https://devblogs.microsoft.com/agent-framework/?p=5202</id>
+        <link href="https://devblogs.microsoft.com/agent-framework/handling-long-running-operations-with-background-responses/"/>
+        <updated>2026-03-18T16:37:00.000Z</updated>
+        <summary type="html"><![CDATA[Handling Long-Running Operations with Background Responses AI agents powered by reasoning models can take minutes to work through complex problems — deep research, multi-step analysis, lengthy content generation. In a traditional request-response pattern, that means your client sits idle waiting for a connection that may time out, or worse, fails silently and loses all progress. […]
+The post Handling Long-Running Operations with Background Responses appeared first on Microsoft Agent Framework.]]></summary>
+        <author>
+            <name>Sergey Menshykh, Eduard van Valkenburg</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Materialized Lake Views in Microsoft Fabric (Generally Available)]]></title>
+        <id>materialized-lake-views-in-microsoft-fabric-generally-available</id>
+        <link href="https://blog.fabric.microsoft.com/en/blog/materialized-lake-views-in-microsoft-fabric-generally-available/"/>
+        <updated>2026-03-18T16:30:00.000Z</updated>
+        <summary type="html"><![CDATA[If you haven’t already, check out Arun Ulag’s hero blog “FabCon and SQLCon 2026: Unifying databases and Fabric on a single, complete platform” for a complete look at all of our FabCon and SQLCon announcements across both Fabric and our database offerings.  Since introducing MLVs (Preview) at Build 2025, data engineers have used them to replace … 
+Continue reading “Materialized Lake Views in Microsoft Fabric (Generally Available)”]]></summary>
+        <author>
+            <name>Microsoft Fabric Blog</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Changes to attachment IDs for inline images in Outlook add-ins]]></title>
+        <id>https://devblogs.microsoft.com/microsoft365dev/?p=25421</id>
+        <link href="https://devblogs.microsoft.com/microsoft365dev/changes-to-attachment-ids-for-inline-images-in-outlook-add-ins/"/>
+        <updated>2026-03-18T15:28:31.000Z</updated>
+        <summary type="html"><![CDATA[Read how inline image attachments are handled when they’re programmatically added to a mail item's signature or body in Outlook on the web and the new Outlook for Windows
+The post Changes to attachment IDs for inline images in Outlook add-ins appeared first on Microsoft 365 Developer Blog.]]></summary>
+        <author>
+            <name>Office Extensibility team</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Fabric Data Factory at FabCon Atlanta: Built for modern data integration]]></title>
+        <id>fabric-data-factory-at-fabcon-atlanta-built-for-modern-data-integration</id>
+        <link href="https://blog.fabric.microsoft.com/en/blog/fabric-data-factory-at-fabcon-atlanta-built-for-modern-data-integration/"/>
+        <updated>2026-03-18T05:49:18.000Z</updated>
+        <summary type="html"><![CDATA[If you haven’t already, check out Arun Ulag’s hero blog “FabCon and SQLCon 2026: Unifying databases and Fabric on a single, complete platform” for a complete look at all of our FabCon and SQLCon announcements across both Fabric and our database offerings.  At FabCon Atlanta, we’re doubling down on a simple truth: every successful analytics, … 
+Continue reading “Fabric Data Factory at FabCon Atlanta: Built for modern data integration”]]></summary>
+        <author>
+            <name>Microsoft Fabric Blog</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[From Azure Synapse and Azure Data Factory to Microsoft Fabric: The Next-Gen Analytics Leap]]></title>
+        <id>from-azure-synapse-and-azure-data-factory-to-microsoft-fabric-the-next-gen-analytics-leap</id>
+        <link href="https://blog.fabric.microsoft.com/en/blog/from-azure-synapse-and-azure-data-factory-to-microsoft-fabric-the-next-gen-analytics-leap/"/>
+        <updated>2026-03-18T05:49:01.000Z</updated>
+        <summary type="html"><![CDATA[If you haven’t already, check out Arun Ulag’s hero blog “FabCon and SQLCon 2026: Unifying databases and Fabric on a single, complete platform” for a complete look at all of our FabCon and SQLCon announcements across both Fabric and our database offerings.  Coauthor: Bogdan Crivat Across industries, organizations are rethinking their analytics foundation. The era … 
+Continue reading “From Azure Synapse and Azure Data Factory to Microsoft Fabric: The Next-Gen Analytics Leap”]]></summary>
+        <author>
+            <name>Microsoft Fabric Blog</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[The power of the Microsoft Fabric ecosystem: ISVs building natively on Fabric]]></title>
+        <id>the-power-of-the-microsoft-fabric-ecosystem-isvs-building-natively-on-fabric</id>
+        <link href="https://blog.fabric.microsoft.com/en/blog/the-power-of-the-microsoft-fabric-ecosystem-isvs-building-natively-on-fabric/"/>
+        <updated>2026-03-18T05:48:42.000Z</updated>
+        <summary type="html"><![CDATA[If you haven’t already, check out Arun Ulag’s hero blog “FabCon and SQLCon 2026: Unifying databases and Fabric on a single, complete platform” for a complete look at all of our FabCon and SQLCon announcements across both Fabric and our database offerings.  At Microsoft, we’ve always believed that platforms win when ecosystems thrive. Each year, … 
+Continue reading “The power of the Microsoft Fabric ecosystem: ISVs building natively on Fabric”]]></summary>
+        <author>
+            <name>Microsoft Fabric Blog</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Introducing Planning in Microsoft Fabric IQ: From historical data to forecasting the future]]></title>
+        <id>introducing-planning-in-microsoft-fabric-iq-from-historical-data-to-forecasting-the-future</id>
+        <link href="https://blog.fabric.microsoft.com/en/blog/introducing-planning-in-microsoft-fabric-iq-from-historical-data-to-forecasting-the-future/"/>
+        <updated>2026-03-18T05:48:20.000Z</updated>
+        <summary type="html"><![CDATA[If you haven’t already, check out Arun Ulag’s hero blog “FabCon and SQLCon 2026: Unifying databases and Fabric on a single, complete platform” for a complete look at all of our FabCon and SQLCon announcements across both Fabric and our database offerings.  For years, organizations have invested heavily in analytics to understand what happened in … 
+Continue reading “Introducing Planning in Microsoft Fabric IQ: From historical data to forecasting the future”]]></summary>
+        <author>
+            <name>Microsoft Fabric Blog</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[FabCon and SQLCon 2026: What’s new in Microsoft OneLake]]></title>
+        <id>fabcon-and-sqlcon-2026-whats-new-in-microsoft-onelake</id>
+        <link href="https://blog.fabric.microsoft.com/en/blog/fabcon-and-sqlcon-2026-whats-new-in-microsoft-onelake/"/>
+        <updated>2026-03-18T05:47:58.000Z</updated>
+        <summary type="html"><![CDATA[If you haven’t already, check out Arun Ulag’s hero blog “FabCon and SQLCon 2026: Unifying databases and Fabric on a single, complete platform” for a complete look at all of our FabCon and SQLCon announcements across both Fabric and our database offerings.  As AI reshapes every industry, one reality is clear: data is no longer … 
+Continue reading “FabCon and SQLCon 2026: What’s new in Microsoft OneLake”]]></summary>
+        <author>
+            <name>Microsoft Fabric Blog</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[From unified data to decisive action: advancing supply chain autonomy with Microsoft Fabric and Auger]]></title>
+        <id>from-unified-data-to-decisive-action-advancing-supply-chain-autonomy-with-microsoft-fabric-and-auger</id>
+        <link href="https://blog.fabric.microsoft.com/en/blog/from-unified-data-to-decisive-action-advancing-supply-chain-autonomy-with-microsoft-fabric-and-auger/"/>
+        <updated>2026-03-18T05:47:40.000Z</updated>
+        <summary type="html"><![CDATA[Co-authored by: Dave Clark, Founder and CEO of Auger The platform shift is underway In a short period of time, Microsoft Fabric has emerged as one of the fastest growing analytics platforms in the industry, unifying data engineering, analytics, governance, and AI into a single, integrated experience. For many organizations, Fabric represents a long-awaited shift … 
+Continue reading “From unified data to decisive action: advancing supply chain autonomy with Microsoft Fabric and Auger”]]></summary>
+        <author>
+            <name>Microsoft Fabric Blog</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Advancing Databases for the Next Generation of Applications]]></title>
+        <id>advancing-databases-for-the-next-generation-of-applications</id>
+        <link href="https://blog.fabric.microsoft.com/en/blog/advancing-databases-for-the-next-generation-of-applications/"/>
+        <updated>2026-03-18T05:47:11.000Z</updated>
+        <summary type="html"><![CDATA[If you haven’t already, check out Arun Ulag’s hero blog “FabCon and SQLCon 2026: Unifying databases and Fabric on a single, complete platform” for a complete look at all of our FabCon and SQLCon announcements across both Fabric and our database offerings.  New announcements from FabCon | SQLCon As organizations accelerate their AI adoption, the … 
+Continue reading “Advancing Databases for the Next Generation of Applications”]]></summary>
+        <author>
+            <name>Microsoft Fabric Blog</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[On-premises data gateway auto-update (admin triggered) (Generally Available)]]></title>
+        <id>on-premises-data-gateway-auto-update-admin-triggered-generally-available</id>
+        <link href="https://blog.fabric.microsoft.com/en/blog/on-premises-data-gateway-auto-update-admin-triggered-generally-available/"/>
+        <updated>2026-03-18T05:46:50.000Z</updated>
+        <summary type="html"><![CDATA[If you haven’t already, check out Arun Ulag’s hero blog “FabCon and SQLCon 2026: Unifying databases and Fabric on a single, complete platform” for a complete look at all of our FabCon and SQLCon announcements across both Fabric and our database offerings.  The on-premises data gateway auto-update (admin triggered), this capability gives administrators greater control … 
+Continue reading “On-premises data gateway auto-update (admin triggered) (Generally Available)”]]></summary>
+        <author>
+            <name>Microsoft Fabric Blog</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Trusted AI starts with Microsoft Fabric: Unified real-time intelligence and IQ context]]></title>
+        <id>trusted-ai-starts-with-microsoft-fabric-unified-real-time-intelligence-and-iq-context</id>
+        <link href="https://blog.fabric.microsoft.com/en/blog/trusted-ai-starts-with-microsoft-fabric-unified-real-time-intelligence-and-iq-context/"/>
+        <updated>2026-03-18T05:46:22.000Z</updated>
+        <summary type="html"><![CDATA[If you haven’t already, check out Arun Ulag’s hero blog “FabCon and SQLCon 2026: Unifying databases and Fabric on a single, complete platform” for a complete look at all of our FabCon and SQLCon announcements across both Fabric and our database offerings.  Modern businesses operate in environments where conditions change continuously, and many decisions cannot … 
+Continue reading “Trusted AI starts with Microsoft Fabric: Unified real-time intelligence and IQ context”]]></summary>
+        <author>
+            <name>Microsoft Fabric Blog</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[After Ingress NGINX: Migrating to Application Gateway for Containers]]></title>
         <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/after-ingress-nginx-migrating-to-application-gateway-for-containers/4503110</id>
@@ -8069,111 +8236,6 @@ In this article, we’re going to take a closer look at the Postgres caching sto
         <link href="https://azure.github.io/AppService/2025/10/21/app-service-agent-framework.html"/>
         <updated>2025-10-21T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[The AI landscape is evolving rapidly, and with the introduction of Microsoft Agent Framework, developers now have a powerful platform for building sophisticated AI agents that go far beyond simple chat completions. These agents can execute complex, multi-step workflows with persistent state, conversation threads, and structured execution—capabilities that are essential for production AI applications.]]></summary>
-        <author>
-            <name>Azure App Service</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Simplifying Data Ingestion with Copy job – Copy data across tenants using Copy job in Fabric Data Factory]]></title>
-        <id>simplifying-data-ingestion-with-copy-job-copy-data-across-tenants-using-copy-job-in-fabric-data-factory</id>
-        <link href="https://blog.fabric.microsoft.com/en/blog/simplifying-data-ingestion-with-copy-job-copy-data-across-tenants-using-copy-job-in-fabric-data-factory/"/>
-        <updated>2025-10-20T12:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Copy job is the go-to solution in Microsoft Fabric Data Factory for simplified data movement, whether you’re moving data across clouds, from on-premises systems, or between services. With native support for multiple delivery styles, including bulk copy, incremental copy, and change data capture (CDC) replication, Copy job offers the flexibility to handle a wide range … 
-Continue reading “Simplifying Data Ingestion with Copy job – Copy data across tenants using Copy job in Fabric Data Factory “]]></summary>
-        <author>
-            <name>Microsoft Fabric Blog</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Capacity usage enabled date for Test capability in User Data Functions]]></title>
-        <id>capacity-usage-enabled-date-for-test-capability-in-user-data-functions</id>
-        <link href="https://blog.fabric.microsoft.com/en/blog/capacity-usage-enabled-date-for-test-capability-in-user-data-functions/"/>
-        <updated>2025-10-20T12:00:00.000Z</updated>
-        <summary type="html"><![CDATA[User Data Functions is an item that allows you to create fully managed Python functions to run on Fabric. You can use this item to embed your business logic in your Fabric data architectures across all the different integrations, such as Fabric data sources, Power BI reports, Pipelines, Notebooks, and more. The use of the … 
-Continue reading “Capacity usage enabled date for Test capability in User Data Functions”]]></summary>
-        <author>
-            <name>Microsoft Fabric Blog</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Unlock Real-Time Intelligence with the Eventhouse Endpoint for Lakehouse]]></title>
-        <id>unlock-real-time-intelligence-with-the-eventhouse-endpoint-for-lakehouse</id>
-        <link href="https://blog.fabric.microsoft.com/en/blog/unlock-real-time-intelligence-with-the-eventhouse-endpoint-for-lakehouse/"/>
-        <updated>2025-10-20T11:00:00.000Z</updated>
-        <summary type="html"><![CDATA[The Eventhouse Endpoint for Lakehouse is a powerful new capability in Microsoft Fabric that enables users to query Lakehouse tables with exceptional speed and ease, delivering real-time insights with high performance with large data volume, flexibility, advanced analytics capabilities, support for enhanced data formats such as strings and dynamic types and simplicity. Whether you’re working … 
-Continue reading “Unlock Real-Time Intelligence with the Eventhouse Endpoint for Lakehouse”]]></summary>
-        <author>
-            <name>Microsoft Fabric Blog</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[External data materialization in Fabric Data Warehouse]]></title>
-        <id>external-data-materialization-in-fabric-data-warehouse</id>
-        <link href="https://blog.fabric.microsoft.com/en/blog/external-data-materialization-in-fabric-data-warehouse/"/>
-        <updated>2025-10-20T09:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Data warehouses are at the core of modern analytics, enabling organizations to turn raw data into actionable insights. Fabric Data Warehouse empowers data professionals to analyze various types of data from the classic DW table to the Parquet, CSV, and JSONL files. One of the most important decisions when working with external data is how … 
-Continue reading “External data materialization in Fabric Data Warehouse”]]></summary>
-        <author>
-            <name>Microsoft Fabric Blog</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Building a Multi-Agent System with Azure AI Agent Service: Campus Event Management]]></title>
-        <id>https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/building-a-multi-agent-system-with-azure-ai-agent-service-campus-event-managemen/4461991</id>
-        <link href="https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/building-a-multi-agent-system-with-azure-ai-agent-service-campus-event-managemen/4461991"/>
-        <updated>2025-10-20T07:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Personal Background
-My name is Peace Silly. I studied French and Spanish at the University of Oxford, where I developed a strong interest in how language is structured and interpreted. That curiosity about syntax and meaning eventually led me to computer science, which I came to see as another language built on logic and structure. In the academic year 2024–2025, I completed the MSc Computer Science at University College London, where I developed this project as part of my Master’s thesis.
-Project Introduction
-Can large-scale event management be handled through a simple chat interface?This was the question that guided my Master’s thesis project at UCL. As part of the Industry Exchange Network (IXN) and in collaboration with Microsoft, I set out to explore how conversational interfaces and …]]></summary>
-        <author>
-            <name>PeaceSilly</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[AMA Spotlight: Build Smarter with Azure Developer CLI 'AZD']]></title>
-        <id>https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/ama-spotlight-build-smarter-with-azure-developer-cli-azd/4462308</id>
-        <link href="https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/ama-spotlight-build-smarter-with-azure-developer-cli-azd/4462308"/>
-        <updated>2025-10-20T07:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Weekly AMA 'Ask Me Anything': Build Smarter with Azure Developer CLI 
-Calling all AI engineers, developers, and builders of the future, this is your backstage pass to the tools shaping scalable, agentic AI deployments.
-Join Kristen Womack, Product Manager for the AzureAzure Developer CLI (azd) Developer CLI (azd), and the engineering team behind azd for a live Ask Me Anything session every Thursday at 12:30pm PT in the Azure AI Foundry Discord.
-Whether you're:
-
-🧠 Orchestrating multi-agent systems
-📦 Deploying LLM-powered apps with Azure AI Foundry
-🔐 Navigating least-privilege infrastructure setups
-🛠️ Debugging and optimizing reproducible workflows
-
-…this AMA is your chance to connect directly with the team building the CLI that powers it all.
-💡 Why Join?
-
-Real-time answers from the azd engineers and product team
-Deployment walkthroughs for Foundry templates, from chatbots to document processors
-Tips for CI/CD, debugging, and reproducibility in enterprise environments
-Community-first mindset: bring your feedback, challenges, and ideas
-
-Kristen Womack brings deep insight into developer experience and product strategy; this is a rare opportunity to learn from the source and shape the future of AI tooling.
-🔧 Get Ready
-Before you join:
-
-Install azd 👉 Install Guide
-Explore Kristen’s work 👉 www.kristenwomack.io
-Join the Discord 👉 Azure AI Foundry Community
-
-🗓️ Weekly Schedule
-🕧 Thursdays at 12:30pm PT📍 Azure AI Foundry Discord
-Bring your questions. Bring your curiosity. Build with the best.]]></summary>
-        <author>
-            <name>Lee_Stott</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Platform updates for .NET on App Service Windows]]></title>
-        <id>https://azure.github.io/AppService/2025/10/20/dotnet-on-windows.html</id>
-        <link href="https://azure.github.io/AppService/2025/10/20/dotnet-on-windows.html"/>
-        <updated>2025-10-20T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[The App Service team is working closely with the .NET team to address a set of issues that have impacted our ability to deliver updates to the .NET runtime versions provided by the platform on Windows.]]></summary>
         <author>
             <name>Azure App Service</name>
         </author>
