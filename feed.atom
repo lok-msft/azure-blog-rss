@@ -2,10 +2,49 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2026-03-28T02:22:31.891Z</updated>
+    <updated>2026-03-29T02:34:45.983Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Autonomous Self-Healing for Azure VMware Solution Private Clouds]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AzureMigrationBlog/autonomous-self-healing-for-azure-vmware-solution-private-clouds/4506374</id>
+        <link href="https://techcommunity.microsoft.com/blog/AzureMigrationBlog/autonomous-self-healing-for-azure-vmware-solution-private-clouds/4506374"/>
+        <updated>2026-03-27T23:51:43.000Z</updated>
+        <summary type="html"><![CDATA[Overview
+Azure VMware Solution operates a global fleet of production private clouds, each running a full VMware NSX and vCenter Server control plane. As an example, when a VMware NSX Manager cluster loses quorum, NSX can surface multiple related alarms, but the documented impact is more specific than a single simultaneous cascade: management and control-plane updates stop, cluster health may degrade, and some Edge or transport-node symptoms can follow, while existing Tier-0 dynamic routing generally remains operational. In summary, multiple symptoms may share an upstream fault and must be verified against cluster status, service health, storage, Compute Manager state, and transport-node connectivity. Without a model encoding directional dependency relationships between those layers, the al…]]></summary>
+        <author>
+            <name>RohanB</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[What AI Agents for Modernization Look Like in Practice]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/what-ai-agents-for-modernization-look-like-in-practice/4506366</id>
+        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/what-ai-agents-for-modernization-look-like-in-practice/4506366"/>
+        <updated>2026-03-27T19:50:30.000Z</updated>
+        <summary type="html"><![CDATA[We’ve all been put onto an initiative to “modernize” our company’s applications. But talk about a haphazard and confusing project to be put on. Apps are older than anyone first thought, there are dependencies nobody can explain, and business critical services blocked behind another team's roadmap. Yet all of them are competing for the same developers.
+It’s overwhelming! What can you do?
+AI agents are helping teams unravel the modernization maze. Mandy Whaley wrote a recent post introducing some of the latest tech let’s take a bit of a deeper look.
+Most teams do not have a one-app problem
+
+ 
+ 
+GitHub Copilot modernization helps solve the problem of having to sort through several applications to modernize. You don’t have to be alone managing different complexities, dependencies, urgency, and…]]></summary>
+        <author>
+            <name>PabloLopes</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Building the agentic future together at JDConf 2026]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/building-the-agentic-future-together-at-jdconf-2026/4505367</id>
+        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/building-the-agentic-future-together-at-jdconf-2026/4505367"/>
+        <updated>2026-03-27T11:00:00.000Z</updated>
+        <summary type="html"><![CDATA[JDConf 2026 is just weeks away, and I’m excited to welcome Java developers, architects, and engineering leaders from around the world for two days of learning and connection. Now in its sixth year, JDConf has become a place where the Java community compares notes on their real-world production experience: patterns, tooling, and hard-earned lessons you can take back to your team, while we keep moving the Java systems that run businesses and services forward in the AI era.
+This year’s program lines up with a shift many of us are seeing first-hand: delivery is getting more intelligent, more automated, and more tightly coupled to the systems and data we already own. Agentic approaches are moving from demos to backlog items, and that raises practical questions: what’s the right architecture, wh…]]></summary>
+        <author>
+            <name>Mayunk_Jain</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Introducing capacity overage: Flexibility when you need it most (Preview)]]></title>
         <id>introducing-capacity-overage-preview-flexibility-when-you-need-it-most</id>
@@ -45,6 +84,51 @@ Continue reading “Introducing capacity overage: Flexibility when you need it m
         <summary type="html"><![CDATA[Modern analytics workloads demand more than fast queries — they demand observability.]]></summary>
         <author>
             <name>Microsoft Fabric Blog</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Unit Testing Helm Charts with Terratest: A Pattern Guide for Type-Safe Validation]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/unit-testing-helm-charts-with-terratest-a-pattern-guide-for-type-safe-validation/4506165</id>
+        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/unit-testing-helm-charts-with-terratest-a-pattern-guide-for-type-safe-validation/4506165"/>
+        <updated>2026-03-27T07:33:36.000Z</updated>
+        <summary type="html"><![CDATA[Helm charts are the de facto standard for packaging Kubernetes applications. But here's a question worth asking: how do you know your chart actually produces the manifests you expect, across every environment, before it reaches a cluster?
+If you're like most teams, the answer is some combination of helm template eyeball checks, catching issues in staging, or hoping for the best. That's slow, error-prone, and doesn't scale. In this post, we'll walk through a better way: a render-and-assert approach to unit testing Helm charts using Terratest and Go. The result? Type-safe, automated tests that run locally in seconds with no cluster required.
+The Problem
+Let's start with why this matters. Helm charts are templates that produce YAML, and templates have logic: conditionals, loops, value overrid…]]></summary>
+        <author>
+            <name>pratikpanda</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Building an Offline AI Interview Coach with Foundry Local, RAG, and SQLite]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/building-an-offline-ai-interview-coach-with-foundry-local-rag-and-sqlite/4500614</id>
+        <link href="https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/building-an-offline-ai-interview-coach-with-foundry-local-rag-and-sqlite/4500614"/>
+        <updated>2026-03-27T07:00:00.000Z</updated>
+        <summary type="html"><![CDATA[How to build a 100% offline, AI-powered interview preparation tool using Microsoft Foundry Local, Retrieval-Augmented Generation, and nothing but JavaScript.
+Foundry Local 100% Offline RAG + TF-IDF JavaScript / Node.js
+
+
+Contents
+
+Introduction
+What is RAG and Why Offline?
+Architecture Overview
+Setting Up Foundry Local
+Building the RAG Pipeline
+The Chat Engine
+Dual Interfaces: Web & CLI
+Testing
+Adapting for Your Own Use Case
+What I Learned
+Getting Started
+
+
+Introduction
+Imagine preparing for a job interview with an AI assistant that knows your CV inside and out, understands the job you're applying for, and generates tailored questions, all without ever sending your data to the cloud. That's exactly what Interview Doctor does.
+
+Interview Doctor's web UI, a polished, dark-themed interface run…]]></summary>
+        <author>
+            <name>Lee_Stott</name>
         </author>
     </entry>
     <entry>
@@ -8650,245 +8734,6 @@ The main .NET Conf dives deep into professional-level sessions - the Student Zon
         <summary type="html"><![CDATA[Last week, I shared how to build long-running AI agents on Azure App Service with Microsoft Agent Framework. If you haven’t seen that post yet, I would recommend starting there as this post builds on the foundations introduced there including getting started with Microsoft Agent Framework. The response so far was great, and one comment in particular stood out:]]></summary>
         <author>
             <name>Azure App Service</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[SharePoint Framework (SPFx) roadmap update – October 2025]]></title>
-        <id>https://devblogs.microsoft.com/microsoft365dev/?p=24896</id>
-        <link href="https://devblogs.microsoft.com/microsoft365dev/sharepoint-framework-spfx-roadmap-update-october-2025/"/>
-        <updated>2025-10-30T12:34:45.000Z</updated>
-        <summary type="html"><![CDATA[SPFx is powering the future of Microsoft 365. From AI-driven portals to seamless integrations across SharePoint, Teams and Viva, SPFx is driving innovation at scale. This blog series kicks off our journey into the next evolution—transparent, community-driven, and built for the AI era. Let’s shape what’s next, together.
-The post SharePoint Framework (SPFx) roadmap update – October 2025 appeared first on Microsoft 365 Developer Blog.]]></summary>
-        <author>
-            <name>Vesa Juvonen</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[On-premises data gateway October 2025 release]]></title>
-        <id>on-premises-data-gateway-october-2025-release</id>
-        <link href="https://blog.fabric.microsoft.com/en/blog/on-premises-data-gateway-october-2025-release/"/>
-        <updated>2025-10-30T11:21:57.000Z</updated>
-        <summary type="html"><![CDATA[Here is the October 2025 release of the on-premises data gateway (version 3000.290).]]></summary>
-        <author>
-            <name>Microsoft Fabric Blog</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Dev Proxy v1.3 with exporting to HAR, LLM usage tracking, and enhanced permissions analysis]]></title>
-        <id>https://devblogs.microsoft.com/microsoft365dev/?p=24891</id>
-        <link href="https://devblogs.microsoft.com/microsoft365dev/dev-proxy-v1-3-with-exporting-to-har-llm-usage-tracking-and-enhanced-permissions-analysis/"/>
-        <updated>2025-10-30T10:47:35.000Z</updated>
-        <summary type="html"><![CDATA[Introducing Dev Proxy v1.3 with new plugins for inspecting and debugging API requests, along with enhanced permissions analysis and improved OpenAPI spec generation for complex testing scenarios.
-The post Dev Proxy v1.3 with exporting to HAR, LLM usage tracking, and enhanced permissions analysis appeared first on Microsoft 365 Developer Blog.]]></summary>
-        <author>
-            <name>Waldek Mastykarz, Garry Trinder</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Edge AI for Beginners : Getting Started with Foundry Local]]></title>
-        <id>https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/edge-ai-for-beginners--getting-started-with-foundry-local/4464637</id>
-        <link href="https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/edge-ai-for-beginners--getting-started-with-foundry-local/4464637"/>
-        <updated>2025-10-30T07:00:00.000Z</updated>
-        <summary type="html"><![CDATA[In Module 08 of the EdgeAI for Beginners course,  Microsoft introduces Foundry Local a toolkit that helps you deploy and test Small Language Models (SLMs) completely offline. In this blog, I’ll share how I installed Foundry Local, ran the Phi-3.5-mini model on my windows laptop, and what I learned through the process.
-What Is Foundry Local?
-Foundry Local allows developers to run AI models locally on their own hardware. It supports text generation, summarization, and code completion — all without sending data to the cloud. Unlike cloud-based systems, everything happens on your computer, so your data never leaves your device.
-Prerequisites
-Before starting, make sure you have:
-
-Windows 10 or 11
-Python 3.10 or newer
-Git
-Internet connection (for the first-time model download)
-Foundry Local inst…]]></summary>
-        <author>
-            <name>Sharda_Kaur</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Build an AI-Powered Chat App in Minutes with AI Toolkit]]></title>
-        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/build-an-ai-powered-chat-app-in-minutes-with-ai-toolkit/4464967</id>
-        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/build-an-ai-powered-chat-app-in-minutes-with-ai-toolkit/4464967"/>
-        <updated>2025-10-30T04:56:45.000Z</updated>
-        <summary type="html"><![CDATA[AI Toolkit VS Code extension is a great place for developers to experiment, prototype, and learn about AI workflows. Developers exploring AI often start in "Model Playground" — experimenting with models, testing prompts, and iterating on ideas. But turning those experiments into real applications can take time.
- 
-
- 
-That’s why we partnered with the AI Toolkit team to introduce a new project scaffold experience. With just a few clicks, you can now generate a complete AI-powered chat app.
-From playground to real app — in one click
-AI Toolkit helps developers learn, prototype, and experiment with AI workflows. Until now, it provided code snippets — great for exploration, but still a few steps away from a runnable project.
-To bridge that gap, the latest release introduces project scaffolding. …]]></summary>
-        <author>
-            <name>kevinguo</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Add Sidecars to Azure App Service for Linux—via GitHub Actions or Azure Pipelines]]></title>
-        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/add-sidecars-to-azure-app-service-for-linux%E2%80%94via-github-actions-or-azure-pipeline/4465419</id>
-        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/add-sidecars-to-azure-app-service-for-linux%E2%80%94via-github-actions-or-azure-pipeline/4465419"/>
-        <updated>2025-10-30T04:08:13.000Z</updated>
-        <summary type="html"><![CDATA[Sidecars on Azure App Service let you run helper containers (telemetry, OTEL/monitoring agents, lightweight APIs, caches, AI helpers) alongside your main app—same app, shared lifecycle, localhost networking—without changing your core code. We’ve published ready-to-use templates for both GitHub Actions and Azure Pipelines (VSTS) so you can pick your CI/CD flavor and ship. 
-Pick your CI/CD
-
-GitHub Actions: Two sample workflows—one for built-in runtimes (code-based apps) and one for containerized apps—to attach one or more sidecars via App Service’s sitecontainers configuration. 
-Azure Pipelines (VSTS): Two YAML templates—AzureWebApp@1 for code-based apps and AzureWebAppContainer@1 for containerized apps—that build and deploy your app and declare sidecars in a single run (mark one container isMain: true, others as sidecars). 
-
-When to use which
-
-Code-based app on built-in Linux runtime (Python/Node/.NET/Java/PHP, etc.)Use the “blessed/built-in runtime” template; your app keeps running on the App Service runtime, sidecars run next to it.
-Custom container (Web App for Containers)Use the “containers” template to build/push multiple images and deploy them together. 
-
-Quick start (both options)
-
-Add the template to your repo (workflow for GitHub; YAML for VSTS). 
-Wire up auth (OIDC or service connection) and set app name, resource group, registry, and sidecar images/ports. 
-Run the pipeline; in the Azure portal you’ll see your main app plus defined sidecars. 
-
-Links
-
-GitHub Actions samples (code-based & container) — GitHub Actions samples: add sidecars to Azure App Service for Linux.
-Azure Pipelines samples (code-based & container) — Azure Pipeline samples: add sidecars to Azure App Service for Linux.
-
-Drop in a template, describe your sidecars, and ship—same App Service, more capability.]]></summary>
-        <author>
-            <name>TulikaC</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Ubuntu-Powered Runtimes on Azure App Service for Linux: Leaner, Faster, Stronger]]></title>
-        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/ubuntu-powered-runtimes-on-azure-app-service-for-linux-leaner-faster-stronger/4465414</id>
-        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/ubuntu-powered-runtimes-on-azure-app-service-for-linux-leaner-faster-stronger/4465414"/>
-        <updated>2025-10-30T04:00:28.000Z</updated>
-        <summary type="html"><![CDATA[We’re updating the OS foundation for new code-based stacks on Azure App Service for Linux. Every new major version of our supported stacks will target Ubuntu going forward - this includes the new versions for .NET 10, Python 3.14, Node 24, PHP 8.5 and Java 25 - all expected to rollout in the next couple of months. Existing stacks remain on Debian, and nothing changes for your current apps unless you choose to move.
-Why Ubuntu?
-Because we manage the OS for you, this change is about platform gains that quietly benefit your apps without adding work for your teams.
-
-Builds on Debian’s ecosystem: Ubuntu inherits Debian’s rich package universe while moving faster upstream. This lets the platform adopt newer toolchains and libraries more predictably, improving compatibility and unblocking modern …]]></summary>
-        <author>
-            <name>TulikaC</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Python 3.14 is now available on Azure App Service for Linux]]></title>
-        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/python-3-14-is-now-available-on-azure-app-service-for-linux/4465404</id>
-        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/python-3-14-is-now-available-on-azure-app-service-for-linux/4465404"/>
-        <updated>2025-10-30T03:47:54.000Z</updated>
-        <summary type="html"><![CDATA[If you’ve been waiting to run Python 3.14 in on Azure App Service - it’s here. Azure App Service for Linux now offers Python 3.14 as a first-class runtime. You can create a new 3.14 app through the Azure portal, automate it with the Azure CLI, or roll it out using your favorite ARM/Bicep templates — and App Service continues to handle the OS, runtime updates, and patching for you so you can stay focused on code.
-Why Python 3.14 matters
-Python 3.14 (released October 7, 2025) lands with real performance and runtime improvements.
-
-Faster under load. Internal interpreter work reduces overhead in common call paths and improves memory behavior, which can translate to lower latency and less CPU churn in web apps and APIs.
-Smarter concurrency. Python 3.14 continues the rollout of subinterpreters and a free-threaded build (no GIL), making it easier to take advantage of multi-core parallelism for CPU-bound or high-throughput workloads. In 3.14, that free-threaded mode is more mature and shows significantly better multi-threaded performance than earlier releases.
-Developer quality-of-life. You get a more helpful interactive REPL (better highlighting and error hints), cleaner typing through deferred annotations, and new template string syntax (“t-strings”) for safe, structured interpolation.
-
-All of that is now available to you on App Service for Linux.
-What you should do next
-If you’re currently running an older Python version on App Service for Linux, this is a good moment to validate on 3.14:
-
-Stand up a staging app or deployment slot on Python 3.14.
-Run your normal tests and watch request latency, CPU, and memory.
-Confirm that any native wheels or pinned dependencies you rely on install and import cleanly.
-
-Most apps will only need minor adjustments — and you’ll walk away with a faster, more capable runtime on a platform that keeps the underlying infrastructure patched and production-ready for you.]]></summary>
-        <author>
-            <name>TulikaC</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Java OpenJDK October 2025 Patch & Security Update]]></title>
-        <id>https://devblogs.microsoft.com/java/?p=232561</id>
-        <link href="https://devblogs.microsoft.com/java/java-openjdk-oct-2025-patch-security-update/"/>
-        <updated>2025-10-29T21:19:50.000Z</updated>
-        <summary type="html"><![CDATA[Hello Java customers! We are happy to announce the latest July 2025 patch & security update release for the Microsoft Build of OpenJDK. Download and install the binaries today. OpenJDK 25.0.1 OpenJDK 21.0.9 OpenJDK 17.0.17 OpenJDK 11.0.29 Check our release notes page for details on fixes and enhancements. The source code of our builds is […]
-The post Java OpenJDK October 2025 Patch & Security Update appeared first on Microsoft for Java Developers.]]></summary>
-        <author>
-            <name>Derek Keeler</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Migrating from IDCRL authentication to modern authentication in SharePoint]]></title>
-        <id>https://devblogs.microsoft.com/microsoft365dev/?p=24883</id>
-        <link href="https://devblogs.microsoft.com/microsoft365dev/migrating-from-idcrl-authentication-to-modern-authentication-in-sharepoint/"/>
-        <updated>2025-10-29T19:59:35.000Z</updated>
-        <summary type="html"><![CDATA[In the next few months, Microsoft will be removing the legacy authentication protocol known as IDCRL (Identity Client Run Time Library) in SharePoint.
-The post Migrating from IDCRL authentication to modern authentication in SharePoint appeared first on Microsoft 365 Developer Blog.]]></summary>
-        <author>
-            <name>SharePoint team</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Announcing Public Preview: AI Toolkit for GitHub Copilot Prompt-First Agent Development]]></title>
-        <id>https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/announcing-public-preview-ai-toolkit-for-github-copilot-prompt-first-agent-devel/4465069</id>
-        <link href="https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/announcing-public-preview-ai-toolkit-for-github-copilot-prompt-first-agent-devel/4465069"/>
-        <updated>2025-10-29T17:26:57.000Z</updated>
-        <summary type="html"><![CDATA[This week at GitHub Universe, we’re announcing the Public Preview of the GitHub Copilot prompt-first agent development in the AI Toolkit for Visual Studio Code. With this release, building powerful AI agents is now simpler and faster - no need to wrestle with complex frameworks or orchestrators. Just start with natural language prompts and let GitHub Copilot guide you from concept to working agent code. 
-Accelerate Agent Development in VS Code 
-The AI Toolkit embeds agent development workflows directly into Visual Studio Code and GitHub Copilot, enabling you to transform ideas into production-ready agents within minutes. This unified experience empowers developers and product teams to: 
-
-Select the best model for your agent scenario 
-
-
-Build and orchestrate agents using Microsoft Agent Fra…]]></summary>
-        <author>
-            <name>Lee_Stott</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Deprecation of the previewImageUrl property for Insights items that reference file attachments]]></title>
-        <id>https://devblogs.microsoft.com/microsoft365dev/?p=24816</id>
-        <link href="https://devblogs.microsoft.com/microsoft365dev/deprecation-of-the-previewimageurl-property-for-insights-items-that-reference-file-attachments/"/>
-        <updated>2025-10-29T15:33:20.000Z</updated>
-        <summary type="html"><![CDATA[The previewImageUrl property is no longer returned for file attachment items.
-The post Deprecation of the previewImageUrl property for Insights items that reference file attachments appeared first on Microsoft 365 Developer Blog.]]></summary>
-        <author>
-            <name>Microsoft Graph team</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Level up your Python + AI skills with our complete series]]></title>
-        <id>https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/level-up-your-python--ai-skills-with-our-complete-series/4464546</id>
-        <link href="https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/level-up-your-python--ai-skills-with-our-complete-series/4464546"/>
-        <updated>2025-10-29T09:31:11.000Z</updated>
-        <summary type="html"><![CDATA[We've just wrapped up our live series on Python + AI, a comprehensive nine-part journey diving deep into how to use generative AI models from Python.
-The series introduced multiple types of models, including LLMs, embedding models, and vision models. We dug into popular techniques like RAG, tool calling, and structured outputs. We assessed AI quality and safety using automated evaluations and red-teaming. Finally, we developed AI agents using popular Python agents frameworks and explored the new Model Context Protocol (MCP).
-To help you apply what you've learned, all of our code examples work with GitHub Models, a service that provides free models to every GitHub account holder for experimentation and education.
-Even if you missed the live series, you can still access all the material usin…]]></summary>
-        <author>
-            <name>Pamela_Fox</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Accelerating Cloud-Native Development with AI-Powered Azure NetApp Files VS Code Extension]]></title>
-        <id>https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/accelerating-cloud-native-development-with-ai-powered-azure-netapp-files-vs-code/4464852</id>
-        <link href="https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/accelerating-cloud-native-development-with-ai-powered-azure-netapp-files-vs-code/4464852"/>
-        <updated>2025-10-28T20:54:43.000Z</updated>
-        <summary type="html"><![CDATA[Table of Contents
-Abstract
-The Enterprise Challenge: Storage Complexity at Scale
-Introducing the Azure NetApp Files VS Code Extension
-Technical Architecture: Building for Developer Productivity
-Intelligent Interface Layer
-Template Generation Engine
-Azure Integration Framework
-Azure NetApp Files VS Code Extension – High-Level Architecture overview
-Real-World Impact: Measurable Business Value
-Productivity Gains
-Cost Optimization
-Operational Excellence
-Example Scenario: Enterprise Development Team
-The Challenge
-The Solution
-Expected Results
-Key Capabilities for Enterprise Teams
-Template Generation and Standardization
-Multi-subscription support
-Developer-centric workflow
-Getting Started: Enterprise Deployment Guide
-Prerequisites
-Extension Deployment using UI
-Post-Installation Verification
-Conc…]]></summary>
-        <author>
-            <name>GeertVanTeylingen</name>
         </author>
     </entry>
 </feed>
