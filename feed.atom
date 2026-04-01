@@ -2,10 +2,96 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2026-03-31T02:31:38.044Z</updated>
+    <updated>2026-04-01T02:43:49.882Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Resolving MachineWithSameBiosIdAndFqdnAlreadyExists During Azure Migrate Mobility Agent Registration]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AzureMigrationBlog/resolving-machinewithsamebiosidandfqdnalreadyexists-during-azure-migrate-mobilit/4492307</id>
+        <link href="https://techcommunity.microsoft.com/blog/AzureMigrationBlog/resolving-machinewithsamebiosidandfqdnalreadyexists-during-azure-migrate-mobilit/4492307"/>
+        <updated>2026-04-01T00:24:27.000Z</updated>
+        <summary type="html"><![CDATA[While working on an Azure Migrate project, we encountered a failure during Mobility Agent registration with the error:
+
+<ErrorCode>MachineWithSameBiosIdAndFqdnAlreadyExists</ErrorCode>
+
+This error code is identified in C:\ProgramData\ASRSetupLogs\ASRUnifiedAgentConfigurator.log file on Source Server.
+This issue surfaced after a server was initially onboarded using credential-based discovery, followed by a manual Mobility Agent installation via credential-less discovery.
+In this blog, we’ll walk you through:
+
+Why this issue occurs
+What it means technically
+The exact step-by-step resolution
+
+🚨 Problem Statement
+Here’s what happened in our scenario:
+
+A source server was successfully discovered using credential-based discovery via Azure Migrate.
+Later, the Mobility Agent was manually re-insta…]]></summary>
+        <author>
+            <name>vihegde</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[AWS to Azure Migration — From the Cloud Economics & FinOps Lens]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AzureMigrationBlog/aws-to-azure-migration-%E2%80%94-from-the-cloud-economics--finops-lens/4506746</id>
+        <link href="https://techcommunity.microsoft.com/blog/AzureMigrationBlog/aws-to-azure-migration-%E2%80%94-from-the-cloud-economics--finops-lens/4506746"/>
+        <updated>2026-04-01T00:09:32.000Z</updated>
+        <summary type="html"><![CDATA[“ROI fails when FinOps joins late.” That single pattern explains why many cloud migrations deliver technical success but financial disappointment. Workloads move. SLAs hold. Teams celebrate go‑live. Then the CFO asks: Where are the savings we modeled?
+In most cases, FinOps was engaged after architecture decisions were locked, licenses were double‑paid, and governance debt had already accumulated. This article frames AWS‑to‑Azure migration through a FinOps lens—not to chase immediate modernization, but to deliver defensible, incremental cost savings during and after migration, without increasing risk.
+ 
+Azure migration guidance consistently emphasizes a structured, phased approach—discover, migrate like‑for‑like, stabilize, then optimize.  From a FinOps perspective, this sequencing is not c…]]></summary>
+        <author>
+            <name>sakshimalhotra</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Continued Investment in Azure App Service]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/continued-investment-in-azure-app-service/4507398</id>
+        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/continued-investment-in-azure-app-service/4507398"/>
+        <updated>2026-03-31T17:23:11.000Z</updated>
+        <summary type="html"><![CDATA[This blog was originally published to the App Service team blog
+
+Recent Investments
+Premium v4 (Pv4)
+Azure App Service Premium v4 delivers higher performance and scalability on newer Azure infrastructure while preserving the fully managed PaaS experience developers rely on.
+Premium v4 offers expanded CPU and memory options, improved price-performance, and continued support for App Service capabilities such as deployment slots, integrated monitoring, and availability zone resiliency.
+These improvements help teams modernize and scale demanding workloads without taking on additional operational complexity.
+App Service Managed Instance
+App Service Managed Instance extends the App Service model to support Windows web applications that require deeper environment control. It enables plan-level is…]]></summary>
+        <author>
+            <name>Byron Tardif</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[The Durable Task Scheduler Consumption SKU is now Generally Available]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/the-durable-task-scheduler-consumption-sku-is-now-generally-available/4506682</id>
+        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/the-durable-task-scheduler-consumption-sku-is-now-generally-available/4506682"/>
+        <updated>2026-03-31T12:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Today, we're excited to announce that the Durable Task Scheduler Consumption SKU has reached General Availability. Developers can now run durable workflows and agents on Azure with pay-per-use pricing, no storage to manage, no capacity to plan, and no idle costs. Just create a scheduler, connect your app, and start orchestrating. Whether you're coordinating AI agent workflows, processing event-driven pipelines, or running background jobs, the Consumption SKU is ready to go.
+GET STARTED WITH THE DURABLE TASK SCHEDULER CONSUMPTION SKU 
+Since launching the Consumption SKU in public preview last November, we've seen incredible adoption and have incorporated feedback from developers around the world to ensure the GA release is truly production ready.
+“The Durable Task Scheduler has become a fou…]]></summary>
+        <author>
+            <name>greenie-msft</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Powering Event Driven Payments with Stripe and Azure Event Grid]]></title>
+        <id>https://techcommunity.microsoft.com/blog/MessagingonAzureBlog/powering-event-driven-payments-with-stripe-and-azure-event-grid/4507094</id>
+        <link href="https://techcommunity.microsoft.com/blog/MessagingonAzureBlog/powering-event-driven-payments-with-stripe-and-azure-event-grid/4507094"/>
+        <updated>2026-03-31T02:47:29.000Z</updated>
+        <summary type="html"><![CDATA[Introduction
+Modern commerce systems are increasingly event-driven. Payments, subscriptions, refunds, disputes, and customer updates all generate signals that downstream systems must react quickly and reliably.
+Stripe events give developers real-time visibility into what is happening inside their Stripe accounts. With the new Azure Event Grid destination for events from Stripe — now available in Public Preview — developers can now route those events directly into Azure and build scalable, event-driven architectures without managing webhook infrastructure or custom brokers.
+ 
+
+Stripe events meet Azure Event Grid
+Stripe produces events for changes across a wide range of objects, including payments, customers, subscriptions, accounts, meters, and more, covering hundreds of distinct event type…]]></summary>
+        <author>
+            <name>robece</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Continued Investment in Azure App Service]]></title>
         <id>https://azure.github.io/AppService/2026/03/31/continued-investment.html</id>
@@ -14,6 +100,24 @@
         <summary type="html"><![CDATA[Developers care deeply about the long-term trajectory of the platforms they build on. Predictability, transparency, and continued investment all factor into trust. Azure App Service remains in active development, with ongoing improvements to runtime support, infrastructure, deployment workflows, and integrations across the platform.]]></summary>
         <author>
             <name>Azure App Service</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Labeling Files is Worth It | Speed & Protection Benefits in Microsoft Purview]]></title>
+        <id>https://techcommunity.microsoft.com/blog/MicrosoftMechanicsBlog/labeling-files-is-worth-it--speed--protection-benefits-in-microsoft-purview/4505234</id>
+        <link href="https://techcommunity.microsoft.com/blog/MicrosoftMechanicsBlog/labeling-files-is-worth-it--speed--protection-benefits-in-microsoft-purview/4505234"/>
+        <updated>2026-03-30T15:13:47.000Z</updated>
+        <summary type="html"><![CDATA[Classify your data, apply clear labels, and enforce protections that automatically adapt to human and AI interactions so you can reduce risk without slowing down workflows. Proactively monitor, assess, and respond to risk in real time. Use labeling and layered policies to stop accidental sharing, manage AI access, and maintain consistent protection across your organization. 
+
+Matt McSpirit, Microsoft Mechanics expert, joins Jeremy Chapman to share how to turn scattered data into actionable security that moves as fast as your team and AI.
+Scan your environment beyond standard detection. 
+
+Identify gaps where AI or big files might expose sensitive data. Get started with Microsoft Purview Information Protection.
+Reduce the risk of accidental sharing. 
+
+Label sensitive data, including propriet…]]></summary>
+        <author>
+            <name>Zachary-Cavanell</name>
         </author>
     </entry>
     <entry>
@@ -35,6 +139,43 @@
 Continue reading “Compute auto-scaling choices to better optimize price-performance for SQL databases in Microsoft Fabric (Preview)”]]></summary>
         <author>
             <name>Microsoft Fabric Blog</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Getting Started with Foundry Local: A Student Guide to the Microsoft Foundry Local Lab]]></title>
+        <id>https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/getting-started-with-foundry-local-a-student-guide-to-the-microsoft-foundry-loca/4503604</id>
+        <link href="https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/getting-started-with-foundry-local-a-student-guide-to-the-microsoft-foundry-loca/4503604"/>
+        <updated>2026-03-30T07:00:00.000Z</updated>
+        <summary type="html"><![CDATA[If you want to start building AI applications on your own machine, the Microsoft Foundry Local Lab is one of the most useful places to begin. It is a practical workshop that takes you from first-time setup through to agents, retrieval, evaluation, speech transcription, tool calling, and a browser-based interface. The material is hands-on, cross-language, and designed to show how modern AI apps can run locally rather than depending on a cloud service for every step.
+This blog post is aimed at students, self-taught developers, and anyone learning how AI applications are put together in practice. Instead of treating large language models as a black box, the lab shows you how to install and manage local models, connect to them with code, structure tasks into workflows, and test whether the res…]]></summary>
+        <author>
+            <name>Lee_Stott</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Building Your First Local RAG Application with Foundry Local]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/building-your-first-local-rag-application-with-foundry-local/4501968</id>
+        <link href="https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/building-your-first-local-rag-application-with-foundry-local/4501968"/>
+        <updated>2026-03-30T07:00:00.000Z</updated>
+        <summary type="html"><![CDATA[A developer's guide to building an offline, mobile-responsive AI support agent using Retrieval-Augmented Generation, the Foundry Local SDK, and JavaScript.
+Imagine you are a gas field engineer standing beside a pipeline in a remote location. There is no Wi-Fi, no mobile signal, and you need a safety procedure right now. What do you do?
+This is the exact problem that inspired this project: a fully offline RAG-powered support agent that runs entirely on your machine. No cloud. No API keys. No outbound network calls. Just a local language model, a local vector store, and your own documents, all accessible from a browser on any device.
+In this post, you will learn how it works, how to build your own, and the key architectural decisions behind it. If you have ever wanted to build an AI applicat…]]></summary>
+        <author>
+            <name>Lee_Stott</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Gain Visibility into Cloud Browser Usage with Browser Activity Logs in Playwright Workspaces]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/gain-visibility-into-cloud-browser-usage-with-browser-activity-logs-in-playwrigh/4506706</id>
+        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/gain-visibility-into-cloud-browser-usage-with-browser-activity-logs-in-playwrigh/4506706"/>
+        <updated>2026-03-30T05:39:04.000Z</updated>
+        <summary type="html"><![CDATA[Today, we're announcing a new feature to view the usage metrics for a browser session using the Browser Activity Logs in Playwright Workspaces. Modern test automation and browser-based workflows increasingly rely on cloud-hosted browsers. As teams scale their usage across test runs, automation tools, and AI-driven agents, visibility and traceability into browser usage become critical, not just for debugging, but also for cost awareness and governance.
+To address this, Browser Activity Logs in Playwright Workspaces provide a centralized view of every cloud browser session provisioned by Playwright Workspaces. In this post, we’ll walk through what Browser Activity Logs are, what insights they offer, and how you can access them from the Azure portal.
+What is a Browser Session?
+In Playwright W…]]></summary>
+        <author>
+            <name>AbhinavPremsekhar</name>
         </author>
     </entry>
     <entry>
@@ -8693,53 +8834,6 @@ Every digital transformation journey encounters this challenge: information scat
 As a Solution Engineer at Mazik Global, I identified the problem and wanted to fix it in a way that ensures we don’t lose anything important. So, I put Copilot and specifically GitHub…]]></summary>
         <author>
             <name>MuhammadSamiullah</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Agentic Integration with SAP, ServiceNow, and Salesforce]]></title>
-        <id>https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/agentic-integration-with-sap-servicenow-and-salesforce/4466049</id>
-        <link href="https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/agentic-integration-with-sap-servicenow-and-salesforce/4466049"/>
-        <updated>2025-10-31T20:41:25.000Z</updated>
-        <summary type="html"><![CDATA[Copilot/Copilot Studio Integration with SAP (No Code)
-
-By integrating SAP Cloud Identity Services with Microsoft Entra ID, organizations can establish secure, federated identity management across platforms. This configuration enables Microsoft Copilot and Teams to seamlessly connect with SAP’s Joule digital assistant, supporting natural language interactions and automating business processes efficiently.
-Key Resources as given in SAP docs (Image courtesy SAP):
-
-
-
-Configuring SAP Cloud Identity Services and Microsoft Entra ID for Joule
-Enable Microsoft Copilot and Teams to Pass Requests to Joule
-
-
-
- 
-
- 
-
- Copilot Studio Integration with ServiceNow and Salesforce (No Code)
-
-Integration with ServiceNow and Salesforce, has two main approaches:
-
-
-
-Copilot Agents using Copilot Studio:Custom agen…]]></summary>
-        <author>
-            <name>pranabpaul</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Part 2: Build Long-Running AI Agents on Azure App Service with Microsoft Agent Framework]]></title>
-        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/part-2-build-long-running-ai-agents-on-azure-app-service-with-microsoft-agent-fr/4465825</id>
-        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/part-2-build-long-running-ai-agents-on-azure-app-service-with-microsoft-agent-fr/4465825"/>
-        <updated>2025-10-31T15:31:38.000Z</updated>
-        <summary type="html"><![CDATA[Last week, I shared how to build long-running AI agents on Azure App Service with Microsoft Agent Framework. If you haven't seen that post yet, I would recommend starting there as this post builds on the foundations introduced there including getting started with Microsoft Agent Framework. The response so far was great, and one comment in particular stood out:
-
-"Thanks for the example. Nice job! Just curious (I still have to investigate the ins and outs of MAF) but why didn't you use the workflow pattern/classes of MAF? I thought that was meant to be the way to connect agents and let them cooperate (even in long running job situations)."
-— Michel_Schep​
-
-Great question! You're absolutely right in questioning this—the initial sample I created was designed to demonstrate the async request-re…]]></summary>
-        <author>
-            <name>jordanselig</name>
         </author>
     </entry>
 </feed>
