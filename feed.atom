@@ -2,10 +2,156 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2026-04-02T02:28:59.455Z</updated>
+    <updated>2026-04-03T02:30:32.153Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Bring Your Own Model (BYOM) for Azure AI Applications using Azure Machine Learning]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/bring-your-own-model-byom-for-azure-ai-applications-using-azure-machine-learning/4508211</id>
+        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/bring-your-own-model-byom-for-azure-ai-applications-using-azure-machine-learning/4508211"/>
+        <updated>2026-04-03T02:00:40.000Z</updated>
+        <summary type="html"><![CDATA[Modern AI-powered applications running on Azure increasingly require flexibility in model choice. While managed model catalogs accelerate time to value, real-world enterprise applications often need to:
+
+Host open‑source or fine‑tuned models
+Deploy domain‑specific or regulated models inside a tenant boundary
+Maintain tight control over runtime environments and versions
+Integrate AI inference into existing application architectures
+
+This is where Bring Your Own Model (BYOM) becomes a core architectural capability, not just an AI feature.
+In this post, we’ll walk through a production-ready BYOM pattern for Azure applications, using:
+
+Azure Machine Learning as the model lifecycle and inference platform
+Azure-hosted applications (and optionally Microsoft Foundry) as the orchestration layer
+
+Th…]]></summary>
+        <author>
+            <name>vaibhavpandey</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[MCP Apps on Azure Functions: Quick Start with TypeScript]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/mcp-apps-on-azure-functions-quick-start-with-typescript/4507859</id>
+        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/mcp-apps-on-azure-functions-quick-start-with-typescript/4507859"/>
+        <updated>2026-04-03T01:21:43.000Z</updated>
+        <summary type="html"><![CDATA[Azure Functions makes hosting MCP apps simple: build locally, create a secure endpoint, and deploy fast with azd.
+What Are MCP Apps?
+MCP (Model Context Protocol) apps add new features to AI assistants and clients:
+
+MCP Tools: Remote functions that clients call to perform actions (for example, fetch data, update records, call APIs)
+MCP Resources: Static or dynamic content that clients can read and reference (for example, documents, formatted data, UI payloads)
+Two-way Communication: Tools return structured data and resources serve formatted responses, enabling rich interactions
+
+When you host MCP apps on Azure Functions, you get serverless hosting with security, autoscaling, and easy deployment.
+MCP App Hosting as a Feature
+With this pattern, you can host MCP apps that include:
+
+MCP tools (…]]></summary>
+        <author>
+            <name>swapnil_nagar</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[AKS cluster with AGIC hits the Azure Application Gateway backend pool limit (100)]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/aks-cluster-with-agic-hits-the-azure-application-gateway-backend-pool-limit-100/4508201</id>
+        <link href="https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/aks-cluster-with-agic-hits-the-azure-application-gateway-backend-pool-limit-100/4508201"/>
+        <updated>2026-04-03T00:34:48.000Z</updated>
+        <summary type="html"><![CDATA[I’m writing this article to document a real-world scaling issue we hit while exposing many applications from an Azure Kubernetes Service (AKS) cluster using Application Gateway Ingress Controller (AGIC). The problem is easy to miss because Kubernetes resources keep applying successfully, but the underlying Azure Application Gateway has a hard platform limit of 100 backend pools—so once your deployment pattern requires the 101st pool, AGIC can’t reconcile the gateway configuration and traffic stops flowing for new apps. This post explains how the limit is triggered, how to reproduce and recognize it, and what practical mitigation paths exist as you grow.
+ 
+A real-world scalability limit, reproduction steps, and recommended mitigation options:
+
+AGIC typically creates one Application Gateway …]]></summary>
+        <author>
+            <name>kkaushal</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[An update to the active flow billing model for Azure SRE Agent]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/an-update-to-the-active-flow-billing-model-for-azure-sre-agent/4507866</id>
+        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/an-update-to-the-active-flow-billing-model-for-azure-sre-agent/4507866"/>
+        <updated>2026-04-02T22:44:44.000Z</updated>
+        <summary type="html"><![CDATA[Earlier today, we announced that Azure SRE Agent now supports multiple AI model providers, starting with Anthropic.
+To support multi-model choice, and make active usage costs easier to understand, we’re updating how active flow usage is measured, effective April 15, 2026. 
+At a glance 
+What’s changing 
+
+Active flow billing moves from time-based to token-based usage. You’ll be billed based on the tokens consumed when SRE Agent is actively doing work (for example, investigating an incident, responding to an alert, or helping in chat). 
+
+
+Each model provider has its own published rate (AAUs per million tokens), so you can choose the model provider that fits your scenario and budget. 
+
+What stays the same 
+
+Azure Agent Unit (AAU) remains the billing unit. 
+
+
+Always-on flow pricing is unchanged…]]></summary>
+        <author>
+            <name>Mayunk_Jain</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Azure SRE Agent now supports multiple model providers, including Anthropic Claude]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/azure-sre-agent-now-supports-multiple-model-providers-including-anthropic-claude/4508111</id>
+        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/azure-sre-agent-now-supports-multiple-model-providers-including-anthropic-claude/4508111"/>
+        <updated>2026-04-02T22:23:15.000Z</updated>
+        <summary type="html"><![CDATA[Today, Azure SRE Agent adds model provider selection—choose between Azure OpenAI and Anthropic to match the right AI provider to your incident workflow. SRE Agent has saved over 20,000 engineering hours by pulling together logs, deployments, and signals into a single investigation thread, turning scattered data into clearer mitigation steps. Customers like Ecolab have seen daily alerts drop by up to 75%.
+Choose your model provider: Azure OpenAI or Anthropic
+Azure SRE Agent has always used Azure OpenAI. Now, Anthropic is also available as a model provider, with Claude Opus 4.6 as the baseline model.
+Different reliability tasks demand different reasoning capabilities. A quick health check isn't the same as a multi-hour root cause investigation spanning dozens of log streams, deployment histo…]]></summary>
+        <author>
+            <name>dchelupati</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Give your Foundry Agent Custom Tools with MCP Servers on Azure Functions]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/give-your-foundry-agent-custom-tools-with-mcp-servers-on-azure-functions/4507828</id>
+        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/give-your-foundry-agent-custom-tools-with-mcp-servers-on-azure-functions/4507828"/>
+        <updated>2026-04-02T21:50:08.000Z</updated>
+        <summary type="html"><![CDATA[This blog post is for developers who have an MCP server deployed to Azure Functions and want to connect it to Microsoft Foundry agents. It walks through why you'd want to do this, the different authentication options available, and how to get your agent calling your MCP tools.
+Connect your MCP server on Azure Functions to Foundry Agent
+If you've been following along with this blog series, you know that Azure Functions is a great place to host remote MCP servers. You get scalable infrastructure, built-in auth, and serverless billing. All the good stuff. But hosting an MCP server is only half the picture. The real value comes when something actually uses those tools. 
+Microsoft Foundry lets you build AI agents that can reason, plan, and take actions. By connecting your MCP server to an agent…]]></summary>
+        <author>
+            <name>lily-ma</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Introducing the Agent Governance Toolkit: Open-source runtime security for AI agents]]></title>
+        <id>https://opensource.microsoft.com/blog/2026/04/02/introducing-the-agent-governance-toolkit-open-source-runtime-security-for-ai-agents/</id>
+        <link href="https://opensource.microsoft.com/blog/2026/04/02/introducing-the-agent-governance-toolkit-open-source-runtime-security-for-ai-agents/"/>
+        <updated>2026-04-02T17:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Microsoft unveils the Agent Governance Toolkit to bring OS‑level security, trust, and compliance to autonomous AI agents.
+The post Introducing the Agent Governance Toolkit: Open-source runtime security for AI agents appeared first on Microsoft Open Source Blog.]]></summary>
+        <author>
+            <name>Imran Siddique</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Five reasons to attend SQLBits in the UK]]></title>
+        <id>34973</id>
+        <link href="https://blog.fabric.microsoft.com/en/blog/34973/"/>
+        <updated>2026-04-02T10:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Microsoft SQL team is returning as headline sponsor of SQLBits 2026, taking place from 22–25 April at ICC Wales in Newport. I’m speaking for the whole team when I say we’d love to see you there. I’m here today to give you five reasons you should attend SQLBits. This year we’re teaming up with AMD … 
+Continue reading “Five reasons to attend SQLBits in the UK”]]></summary>
+        <author>
+            <name>Microsoft Fabric Blog</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Build a Fully Offline AI App with Foundry Local and CAG]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/build-a-fully-offline-ai-app-with-foundry-local-and-cag/4502124</id>
+        <link href="https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/build-a-fully-offline-ai-app-with-foundry-local-and-cag/4502124"/>
+        <updated>2026-04-02T07:00:00.000Z</updated>
+        <summary type="html"><![CDATA[A hands-on guide to building an on-device AI support agent using Context-Augmented Generation, JavaScript, and Foundry Local.
+You have probably heard the AI pitch: "just call our API." But what happens when your application needs to work without an internet connection? Perhaps your users are field engineers standing next to a pipeline in the middle of nowhere, or your organisation has strict data privacy requirements, or you simply want to build something that works without a cloud bill.
+This post walks you through how to build a fully offline, on-device AI application using Foundry Local and a pattern called Context-Augmented Generation (CAG). By the end, you will have a clear understanding of what CAG is, how it compares to RAG, and the practical steps to build your own solution.
+
+The fi…]]></summary>
+        <author>
+            <name>Lee_Stott</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Python in Visual Studio Code – March 2026 Release]]></title>
         <id>https://devblogs.microsoft.com/python/?p=10276</id>
@@ -8759,134 +8905,6 @@ With these enhancements, query troubleshooting is made easier - All within the f
 Learn more: Optimize log queries in Azure Monitor - Azure Monitor | Microsoft Learn]]></summary>
         <author>
             <name>Ron Frenkel</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Creator Improvements in the Data Agent]]></title>
-        <id>creator-improvements-in-the-data-agent</id>
-        <link href="https://blog.fabric.microsoft.com/en/blog/creator-improvements-in-the-data-agent/"/>
-        <updated>2025-11-04T11:00:00.000Z</updated>
-        <summary type="html"><![CDATA[We’re introducing a set of new enhancements for Data Agent creators — designed to make it easier to debug, improve, and express your agent’s logic. Whether you’re tuning example queries, refining instructions, or validating performance, these updates make it faster to iterate and deliver high-quality experiences to your users. New Debugging Tools View referenced example … 
-Continue reading “Creator Improvements in the Data Agent”]]></summary>
-        <author>
-            <name>Microsoft Fabric Blog</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[On‑Device AI with Windows AI Foundry and Foundry Local]]></title>
-        <id>https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/on%E2%80%91device-ai-with-windows-ai-foundry-and-foundry-local/4466236</id>
-        <link href="https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/on%E2%80%91device-ai-with-windows-ai-foundry-and-foundry-local/4466236"/>
-        <updated>2025-11-04T08:00:00.000Z</updated>
-        <summary type="html"><![CDATA[From “waiting” to “instant”- without sending data away
-AI is everywhere, but speed, privacy, and reliability are critical. Users expect instant answers without compromise. On-device AI makes that possible: fast, private and available, even when the network isn’t - empowering apps to deliver seamless experiences.
-Imagine an intelligent assistant that works in seconds, without sending a text to the cloud. This approach brings speed and data control to the places that need it most; while still letting you tap into cloud power when it makes sense.
-Windows AI Foundry: A Local Home for Models
-Windows AI Foundry is a developer toolkit that makes it simple to run AI models directly on Windows devices. It uses ONNX Runtime under the hood and can leverage CPU, GPU (via DirectML), or NPU acceleration…]]></summary>
-        <author>
-            <name>Nandhini_Elango</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[On‑Device AI with Windows AI Foundry]]></title>
-        <id>https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/on%E2%80%91device-ai-with-windows-ai-foundry/4466236</id>
-        <link href="https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/on%E2%80%91device-ai-with-windows-ai-foundry/4466236"/>
-        <updated>2025-11-04T08:00:00.000Z</updated>
-        <summary type="html"><![CDATA[From “waiting” to “instant”- without sending data away
-AI is everywhere, but speed, privacy, and reliability are critical. Users expect instant answers without compromise. On-device AI makes that possible: fast, private and available, even when the network isn’t - empowering apps to deliver seamless experiences.
-Imagine an intelligent assistant that works in seconds, without sending a text to the cloud. This approach brings speed and data control to the places that need it most; while still letting you tap into cloud power when it makes sense.
-Windows AI Foundry: A Local Home for Models
-Windows AI Foundry is a developer toolkit that makes it simple to run AI models directly on Windows devices. It uses ONNX Runtime under the hood and can leverage CPU, GPU (via DirectML), or NPU acceleration…]]></summary>
-        <author>
-            <name>Nandhini_Elango</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[On‑Device AI with Windows AI Foundry and Foundry Local]]></title>
-        <id>https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/on%E2%80%91device-ai-with-windows-ai-foundry-and-foundry-local/4466236</id>
-        <link href="https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/on%E2%80%91device-ai-with-windows-ai-foundry-and-foundry-local/4466236"/>
-        <updated>2025-11-04T08:00:00.000Z</updated>
-        <summary type="html"><![CDATA[From “waiting” to “instant”- without sending data away
-AI is everywhere, but speed, privacy, and reliability are critical. Users expect instant answers without compromise. On-device AI makes that possible: fast, private and available, even when the network isn’t - empowering apps to deliver seamless experiences.
-Imagine an intelligent assistant that works in seconds, without sending a text to the cloud. This approach brings speed and data control to the places that need it most; while still letting you tap into cloud power when it makes sense.
-Windows AI Foundry: A Local Home for Models
-Windows AI Foundry is a developer toolkit that makes it simple to run AI models directly on Windows devices. It uses ONNX Runtime under the hood and can leverage CPU, GPU (via DirectML), or NPU acceleration…]]></summary>
-        <author>
-            <name>Nandhini_Elango</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[On‑Device AI with Windows AI Foundry]]></title>
-        <id>https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/on%E2%80%91device-ai-with-windows-ai-foundry/4466236</id>
-        <link href="https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/on%E2%80%91device-ai-with-windows-ai-foundry/4466236"/>
-        <updated>2025-11-04T08:00:00.000Z</updated>
-        <summary type="html"><![CDATA[From “waiting” to “instant”- without sending data away
-AI is everywhere, but speed, privacy, and reliability are critical. Users expect instant answers without compromise. On-device AI makes that possible: fast, private and available, even when the network isn’t - empowering apps to deliver seamless experiences.
-Imagine an intelligent assistant that works in seconds, without sending a text to the cloud. This approach brings speed and data control to the places that need it most; while still letting you tap into cloud power when it makes sense.
-Windows AI Foundry: A Local Home for Models
-Windows AI Foundry is a developer toolkit that makes it simple to run AI models directly on Windows devices. It uses ONNX Runtime under the hood and can leverage CPU, GPU (via DirectML), or NPU acceleration…]]></summary>
-        <author>
-            <name>Nandhini_Elango</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Low-Light Image Enhancer (Python + OpenCV) on Azure App Service]]></title>
-        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/low-light-image-enhancer-python--opencv-on-azure-app-service/4466837</id>
-        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/low-light-image-enhancer-python--opencv-on-azure-app-service/4466837"/>
-        <updated>2025-11-04T07:33:04.000Z</updated>
-        <summary type="html"><![CDATA[Low-light photos are everywhere: indoor team shots, dim restaurant pics, grainy docs. This post shows a tiny Python app (Flask + OpenCV) that fixes them with explainable image processing—not a heavyweight model. We’ll walk the code that does the real work (CLAHE → gamma → brightness → subtle saturation) and deploy it to Azure App Service for Linux.
-What you’ll build
-A Flask web app that accepts an image upload, runs a fast enhancement pipeline (CLAHE → gamma → brightness → subtle saturation), and returns base64 data URIs for an instant before/after view in the browser—no storage required for the basic demo.
-Architecture at a glance
-
-Browser → /enhance (multipart form): sends an image + optional tunables (clip_limit, gamma, brightness).
-Flask → Enhancer: converts the upload to a NumPy RGB a…]]></summary>
-        <author>
-            <name>TulikaC</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Part 3: Client-Side Multi-Agent Orchestration on Azure App Service with Microsoft Agent Framework]]></title>
-        <id>https://azure.github.io/AppService/2025/11/04/app-service-agent-framework-part-3.html</id>
-        <link href="https://azure.github.io/AppService/2025/11/04/app-service-agent-framework-part-3.html"/>
-        <updated>2025-11-04T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[In Part 2 of this series, I showed you how to build sophisticated multi-agent systems on Azure App Service using Azure AI Foundry Agents—server-side managed agents that run as Azure resources. Now I want to show you another alternative that gives you full control over agent orchestration, chat history management, and provider flexibility: client-side agents using ChatClientAgent. But this alternative raises an important question:]]></summary>
-        <author>
-            <name>Azure App Service</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[New developer resource page for Microsoft 365 interoperability and data portability]]></title>
-        <id>https://devblogs.microsoft.com/microsoft365dev/?p=24851</id>
-        <link href="https://devblogs.microsoft.com/microsoft365dev/new-developer-resource-page-for-microsoft-365-interoperability-and-data-portability/"/>
-        <updated>2025-11-03T20:00:15.000Z</updated>
-        <summary type="html"><![CDATA[Microsoft is launching a centralized developer resource page that consolidates interoperability and data portability information, tools, and feedback channels to help partners and customers use Microsoft 365 more effectively.
-The post New developer resource page for Microsoft 365 interoperability and data portability appeared first on Microsoft 365 Developer Blog.]]></summary>
-        <author>
-            <name>Microsoft Teams team</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Follow-Up to ‘Important Changes to App Service Managed Certificates’: November 2025 Update]]></title>
-        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/follow-up-to-%E2%80%98important-changes-to-app-service-managed-certificates%E2%80%99-november-20/4466120</id>
-        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/follow-up-to-%E2%80%98important-changes-to-app-service-managed-certificates%E2%80%99-november-20/4466120"/>
-        <updated>2025-11-03T15:30:00.000Z</updated>
-        <summary type="html"><![CDATA[This post provides an update to the Tech Community article ‘Important Changes to App Service Managed Certificates: Is Your Certificate Affected?’ and covers the latest changes introduced since July 2025. With the November 2025 update, ASMC now remains supported even if the site is not publicly accessible, provided all other requirements are met. Details on requirements, exceptions, and validation steps are included below.
-Background Context to July 2025 Changes
-As of July 2025, all ASMC certificate issuance and renewals use HTTP token validation. Previously, public access was required because DigiCert needed to access the endpoint https://<hostname>/.well-known/pki-validation/fileauth.txt to verify the token before issuing the certificate. App Service automatically places this token during…]]></summary>
-        <author>
-            <name>YutangLin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Follow-Up to ‘Important Changes to App Service Managed Certificates’: October 2025 Update]]></title>
-        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/follow-up-to-%E2%80%98important-changes-to-app-service-managed-certificates%E2%80%99-october-202/4466120</id>
-        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/follow-up-to-%E2%80%98important-changes-to-app-service-managed-certificates%E2%80%99-october-202/4466120"/>
-        <updated>2025-11-03T15:30:00.000Z</updated>
-        <summary type="html"><![CDATA[This post provides an update to the Tech Community article ‘Important Changes to App Service Managed Certificates: Is Your Certificate Affected?’ and covers the latest changes introduced since July 2025. With the November 2025 update, ASMC now remains supported even if the site is not publicly accessible, provided all other requirements are met. Details on requirements, exceptions, and validation steps are included below.
-Background Context to July 2025 Changes
-As of July 2025, all ASMC certificate issuance and renewals use HTTP token validation. Previously, public access was required because DigiCert needed to access the endpoint https://<hostname>/.well-known/pki-validation/fileauth.txt to verify the token before issuing the certificate. App Service automatically places this token during…]]></summary>
-        <author>
-            <name>YutangLin</name>
         </author>
     </entry>
 </feed>

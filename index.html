@@ -22,11 +22,330 @@
             data-action="toggle-accordions"
             title="Click to toggle the day, Ctrl + click to toggle all."
           >
-            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2026-04-02 datetime="2026-04-02T00:27:15.000Z">2026-04-02</time>
-            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2026-04-02 datetime="2026-04-02T00:27:15.000Z"></time>
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2026-04-03 datetime="2026-04-03T02:00:40.000Z">2026-04-03</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2026-04-03 datetime="2026-04-03T02:00:40.000Z"></time>
           </button>
         </h2>
         <ul class="sources card">
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Microsoft Tech Community - Latest Blogs - Apps on Azure Blog</button>
+                  <a class="source-heading__link" href="https://techcommunity.microsoft.com">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/bring-your-own-model-byom-for-azure-ai-applications-using-azure-machine-learning/4508211"
+                        open
+                      >
+                        <summary class="article-expander__title">Bring Your Own Model (BYOM) for Azure AI Applications using Azure Machine Learning</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/bring-your-own-model-byom-for-azure-ai-applications-using-azure-machine-learning/4508211">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Modern AI-powered applications running on Azure increasingly require flexibility in model choice. While managed model catalogs accelerate time to value, real-world enterprise applications often need to:
+
+Host open‑source or fine‑tuned models
+Deploy domain‑specific or regulated models inside a tenant boundary
+Maintain tight control over runtime environments and versions
+Integrate AI inference into existing application architectures
+
+This is where Bring Your Own Model (BYOM) becomes a core architectural capability, not just an AI feature.
+In this post, we’ll walk through a production-ready BYOM pattern for Azure applications, using:
+
+Azure Machine Learning as the model lifecycle and inference platform
+Azure-hosted applications (and optionally Microsoft Foundry) as the orchestration layer
+
+Th…</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;38
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/mcp-apps-on-azure-functions-quick-start-with-typescript/4507859"
+                        open
+                      >
+                        <summary class="article-expander__title">MCP Apps on Azure Functions: Quick Start with TypeScript</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/mcp-apps-on-azure-functions-quick-start-with-typescript/4507859">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTA3ODU5LUxObGhUYg?revision&#x3D;5" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>Azure Functions makes hosting MCP apps simple: build locally, create a secure endpoint, and deploy fast with azd.
+What Are MCP Apps?
+MCP (Model Context Protocol) apps add new features to AI assistants and clients:
+
+MCP Tools: Remote functions that clients call to perform actions (for example, fetch data, update records, call APIs)
+MCP Resources: Static or dynamic content that clients can read and reference (for example, documents, formatted data, UI payloads)
+Two-way Communication: Tools return structured data and resources serve formatted responses, enabling rich interactions
+
+When you host MCP apps on Azure Functions, you get serverless hosting with security, autoscaling, and easy deployment.
+MCP App Hosting as a Feature
+With this pattern, you can host MCP apps that include:
+
+MCP tools (…</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;28
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/an-update-to-the-active-flow-billing-model-for-azure-sre-agent/4507866"
+                        open
+                      >
+                        <summary class="article-expander__title">An update to the active flow billing model for Azure SRE Agent</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/an-update-to-the-active-flow-billing-model-for-azure-sre-agent/4507866">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTA3ODY2LU12UDZOQg?revision&#x3D;6" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>Earlier today, we announced that Azure SRE Agent now supports multiple AI model providers, starting with Anthropic.
+To support multi-model choice, and make active usage costs easier to understand, we’re updating how active flow usage is measured, effective April 15, 2026. 
+At a glance 
+What’s changing 
+
+Active flow billing moves from time-based to token-based usage. You’ll be billed based on the tokens consumed when SRE Agent is actively doing work (for example, investigating an incident, responding to an alert, or helping in chat). 
+
+
+Each model provider has its own published rate (AAUs per million tokens), so you can choose the model provider that fits your scenario and budget. 
+
+What stays the same 
+
+Azure Agent Unit (AAU) remains the billing unit. 
+
+
+Always-on flow pricing is unchanged…</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;28
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/azure-sre-agent-now-supports-multiple-model-providers-including-anthropic-claude/4508111"
+                        open
+                      >
+                        <summary class="article-expander__title">Azure SRE Agent now supports multiple model providers, including Anthropic Claude</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/azure-sre-agent-now-supports-multiple-model-providers-including-anthropic-claude/4508111">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTA4MTExLXA5Mk1zcg?revision&#x3D;6" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>Today, Azure SRE Agent adds model provider selection—choose between Azure OpenAI and Anthropic to match the right AI provider to your incident workflow. SRE Agent has saved over 20,000 engineering hours by pulling together logs, deployments, and signals into a single investigation thread, turning scattered data into clearer mitigation steps. Customers like Ecolab have seen daily alerts drop by up to 75%.
+Choose your model provider: Azure OpenAI or Anthropic
+Azure SRE Agent has always used Azure OpenAI. Now, Anthropic is also available as a model provider, with Claude Opus 4.6 as the baseline model.
+Different reliability tasks demand different reasoning capabilities. A quick health check isn&#x27;t the same as a multi-hour root cause investigation spanning dozens of log streams, deployment histo…</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;27
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/give-your-foundry-agent-custom-tools-with-mcp-servers-on-azure-functions/4507828"
+                        open
+                      >
+                        <summary class="article-expander__title">Give your Foundry Agent Custom Tools with MCP Servers on Azure Functions</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/give-your-foundry-agent-custom-tools-with-mcp-servers-on-azure-functions/4507828">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTA3ODI4LUxnVUtiZg?revision&#x3D;5" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>This blog post is for developers who have an MCP server deployed to Azure Functions and want to connect it to Microsoft Foundry agents. It walks through why you&#x27;d want to do this, the different authentication options available, and how to get your agent calling your MCP tools.
+Connect your MCP server on Azure Functions to Foundry Agent
+If you&#x27;ve been following along with this blog series, you know that Azure Functions is a great place to host remote MCP servers. You get scalable infrastructure, built-in auth, and serverless billing. All the good stuff. But hosting an MCP server is only half the picture. The real value comes when something actually uses those tools. 
+Microsoft Foundry lets you build AI agents that can reason, plan, and take actions. By connecting your MCP server to an agent…</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;30
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Microsoft Tech Community - Latest Blogs - Azure Architecture Blog</button>
+                  <a class="source-heading__link" href="https://techcommunity.microsoft.com">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/aks-cluster-with-agic-hits-the-azure-application-gateway-backend-pool-limit-100/4508201"
+                        open
+                      >
+                        <summary class="article-expander__title">AKS cluster with AGIC hits the Azure Application Gateway backend pool limit (100)</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/aks-cluster-with-agic-hits-the-azure-application-gateway-backend-pool-limit-100/4508201">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTA4MjAxLURxMlRaSw?revision&#x3D;4" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>I’m writing this article to document a real-world scaling issue we hit while exposing many applications from an Azure Kubernetes Service (AKS) cluster using Application Gateway Ingress Controller (AGIC). The problem is easy to miss because Kubernetes resources keep applying successfully, but the underlying Azure Application Gateway has a hard platform limit of 100 backend pools—so once your deployment pattern requires the 101st pool, AGIC can’t reconcile the gateway configuration and traffic stops flowing for new apps. This post explains how the limit is triggered, how to reproduce and recognize it, and what practical mitigation paths exist as you grow.
+ 
+A real-world scalability limit, reproduction steps, and recommended mitigation options:
+
+AGIC typically creates one Application Gateway …</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;30
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Microsoft Open Source Blog</button>
+                  <a class="source-heading__link" href="https://opensource.microsoft.com/blog/">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://opensource.microsoft.com/blog/2026/04/02/introducing-the-agent-governance-toolkit-open-source-runtime-security-for-ai-agents/"
+                        open
+                      >
+                        <summary class="article-expander__title">Introducing the Agent Governance Toolkit: Open-source runtime security for AI agents</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://opensource.microsoft.com/blog/2026/04/02/introducing-the-agent-governance-toolkit-open-source-runtime-security-for-ai-agents/">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://opensource.microsoft.com/blog/wp-content/uploads/2024/06/CLO19_Ubisoft_Azure_055.png" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>Microsoft unveils the Agent Governance Toolkit to bring OS‑level security, trust, and compliance to autonomous AI agents.
+The post Introducing the Agent Governance Toolkit: Open-source runtime security for AI agents appeared first on Microsoft Open Source Blog.</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;16
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+        </ul>
+      </section>
+      <section class="daily-content js-toggle-accordions-scope">
+        <h2 class="daily-heading">
+          <button
+            class="daily-heading-toggle"
+            data-action="toggle-accordions"
+            title="Click to toggle the day, Ctrl + click to toggle all."
+          >
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2026-04-02 datetime="2026-04-02T10:00:00.000Z">2026-04-02</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2026-04-02 datetime="2026-04-02T10:00:00.000Z"></time>
+          </button>
+        </h2>
+        <ul class="sources card">
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Microsoft Fabric Blog</button>
+                  <a class="source-heading__link" href="https://blog.fabric.microsoft.com/en/blog/">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="34973"
+                        open
+                      >
+                        <summary class="article-expander__title">Five reasons to attend SQLBits in the UK</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://blog.fabric.microsoft.com/en/blog/34973/">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://blog.fabric.microsoft.com/images/shared/social/social-image-v2.png" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>Microsoft SQL team is returning as headline sponsor of SQLBits 2026, taking place from 22–25 April at ICC Wales in Newport. I’m speaking for the whole team when I say we’d love to see you there. I’m here today to give you five reasons you should attend SQLBits. This year we’re teaming up with AMD … 
+Continue reading “Five reasons to attend SQLBits in the UK”</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;7
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Microsoft Tech Community - Latest Blogs - Microsoft Developer Community Blog</button>
+                  <a class="source-heading__link" href="https://techcommunity.microsoft.com">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/build-a-fully-offline-ai-app-with-foundry-local-and-cag/4502124"
+                        open
+                      >
+                        <summary class="article-expander__title">Build a Fully Offline AI App with Foundry Local and CAG</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/build-a-fully-offline-ai-app-with-foundry-local-and-cag/4502124">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTAyMTI0LWh3NVk5bg?revision&#x3D;2" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>A hands-on guide to building an on-device AI support agent using Context-Augmented Generation, JavaScript, and Foundry Local.
+You have probably heard the AI pitch: &quot;just call our API.&quot; But what happens when your application needs to work without an internet connection? Perhaps your users are field engineers standing next to a pipeline in the middle of nowhere, or your organisation has strict data privacy requirements, or you simply want to build something that works without a cloud bill.
+This post walks you through how to build a fully offline, on-device AI application using Foundry Local and a pattern called Context-Augmented Generation (CAG). By the end, you will have a clear understanding of what CAG is, how it compares to RAG, and the practical steps to build your own solution.
+
+The fi…</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;62
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
             <li class="card__section">
               <section class="js-toggle-accordions-scope">
                 <h3 class="source-heading">
@@ -22166,31 +22485,6 @@ This is an important question that points to a fundamental choice in Agent Frame
                         </a>
                       </details>
                     </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/low-light-image-enhancer-python--opencv-on-azure-app-service/4466837"
-                        open
-                      >
-                        <summary class="article-expander__title">Low-Light Image Enhancer (Python + OpenCV) on Azure App Service</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/low-light-image-enhancer-python--opencv-on-azure-app-service/4466837">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Low-light photos are everywhere: indoor team shots, dim restaurant pics, grainy docs. This post shows a tiny Python app (Flask + OpenCV) that fixes them with explainable image processing—not a heavyweight model. We’ll walk the code that does the real work (CLAHE → gamma → brightness → subtle saturation) and deploy it to Azure App Service for Linux.
-What you’ll build
-A Flask web app that accepts an image upload, runs a fast enhancement pipeline (CLAHE → gamma → brightness → subtle saturation), and returns base64 data URIs for an instant before/after view in the browser—no storage required for the basic demo.
-Architecture at a glance
-
-Browser → /enhance (multipart form): sends an image + optional tunables (clip_limit, gamma, brightness).
-Flask → Enhancer: converts the upload to a NumPy RGB a…</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;29
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
                 </section>
               </section>
             </li>
@@ -22252,312 +22546,12 @@ Learn more: Optimize log queries in Azure Monitor - Azure Monitor | Microsoft Le
                 </section>
               </section>
             </li>
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Microsoft Fabric Blog</button>
-                  <a class="source-heading__link" href="https://blog.fabric.microsoft.com/en/blog/">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="creator-improvements-in-the-data-agent"
-                        open
-                      >
-                        <summary class="article-expander__title">Creator Improvements in the Data Agent</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://blog.fabric.microsoft.com/en/blog/creator-improvements-in-the-data-agent/">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="//dataplatformblogwebfd-d3h9cbawf0h8ecgf.b01.azurefd.net/wp-content/uploads/2025/10/screenshot-of-the-referenced-example-queries-in-th-1.png" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>We’re introducing a set of new enhancements for Data Agent creators — designed to make it easier to debug, improve, and express your agent’s logic. Whether you’re tuning example queries, refining instructions, or validating performance, these updates make it faster to iterate and deliver high-quality experiences to your users. New Debugging Tools View referenced example … 
-Continue reading “Creator Improvements in the Data Agent”</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;6
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Microsoft Tech Community - Latest Blogs - Microsoft Developer Community Blog</button>
-                  <a class="source-heading__link" href="https://techcommunity.microsoft.com">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/on%E2%80%91device-ai-with-windows-ai-foundry-and-foundry-local/4466236"
-                        open
-                      >
-                        <summary class="article-expander__title">On‑Device AI with Windows AI Foundry and Foundry Local</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/on%E2%80%91device-ai-with-windows-ai-foundry-and-foundry-local/4466236">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDY2MjM2LWQ1ZmlsSg?revision&#x3D;5" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>From “waiting” to “instant”- without sending data away
-AI is everywhere, but speed, privacy, and reliability are critical. Users expect instant answers without compromise. On-device AI makes that possible: fast, private and available, even when the network isn’t - empowering apps to deliver seamless experiences.
-Imagine an intelligent assistant that works in seconds, without sending a text to the cloud. This approach brings speed and data control to the places that need it most; while still letting you tap into cloud power when it makes sense.
-Windows AI Foundry: A Local Home for Models
-Windows AI Foundry is a developer toolkit that makes it simple to run AI models directly on Windows devices. It uses ONNX Runtime under the hood and can leverage CPU, GPU (via DirectML), or NPU acceleration…</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;31
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/on%E2%80%91device-ai-with-windows-ai-foundry/4466236"
-                        open
-                      >
-                        <summary class="article-expander__title">On‑Device AI with Windows AI Foundry</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/on%E2%80%91device-ai-with-windows-ai-foundry/4466236">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDY2MjM2LWQ1ZmlsSg?revision&#x3D;4" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>From “waiting” to “instant”- without sending data away
-AI is everywhere, but speed, privacy, and reliability are critical. Users expect instant answers without compromise. On-device AI makes that possible: fast, private and available, even when the network isn’t - empowering apps to deliver seamless experiences.
-Imagine an intelligent assistant that works in seconds, without sending a text to the cloud. This approach brings speed and data control to the places that need it most; while still letting you tap into cloud power when it makes sense.
-Windows AI Foundry: A Local Home for Models
-Windows AI Foundry is a developer toolkit that makes it simple to run AI models directly on Windows devices. It uses ONNX Runtime under the hood and can leverage CPU, GPU (via DirectML), or NPU acceleration…</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;30
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Microsoft Tech Community - Latest Blogs - Microsoft Developer Community Blog</button>
-                  <a class="source-heading__link" href="https://techcommunity.microsoft.com">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/on%E2%80%91device-ai-with-windows-ai-foundry-and-foundry-local/4466236"
-                        open
-                      >
-                        <summary class="article-expander__title">On‑Device AI with Windows AI Foundry and Foundry Local</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/on%E2%80%91device-ai-with-windows-ai-foundry-and-foundry-local/4466236">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDY2MjM2LWQ1ZmlsSg?revision&#x3D;5" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>From “waiting” to “instant”- without sending data away
-AI is everywhere, but speed, privacy, and reliability are critical. Users expect instant answers without compromise. On-device AI makes that possible: fast, private and available, even when the network isn’t - empowering apps to deliver seamless experiences.
-Imagine an intelligent assistant that works in seconds, without sending a text to the cloud. This approach brings speed and data control to the places that need it most; while still letting you tap into cloud power when it makes sense.
-Windows AI Foundry: A Local Home for Models
-Windows AI Foundry is a developer toolkit that makes it simple to run AI models directly on Windows devices. It uses ONNX Runtime under the hood and can leverage CPU, GPU (via DirectML), or NPU acceleration…</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;31
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/on%E2%80%91device-ai-with-windows-ai-foundry/4466236"
-                        open
-                      >
-                        <summary class="article-expander__title">On‑Device AI with Windows AI Foundry</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/on%E2%80%91device-ai-with-windows-ai-foundry/4466236">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDY2MjM2LWQ1ZmlsSg?revision&#x3D;4" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>From “waiting” to “instant”- without sending data away
-AI is everywhere, but speed, privacy, and reliability are critical. Users expect instant answers without compromise. On-device AI makes that possible: fast, private and available, even when the network isn’t - empowering apps to deliver seamless experiences.
-Imagine an intelligent assistant that works in seconds, without sending a text to the cloud. This approach brings speed and data control to the places that need it most; while still letting you tap into cloud power when it makes sense.
-Windows AI Foundry: A Local Home for Models
-Windows AI Foundry is a developer toolkit that makes it simple to run AI models directly on Windows devices. It uses ONNX Runtime under the hood and can leverage CPU, GPU (via DirectML), or NPU acceleration…</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;30
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Azure App Service</button>
-                  <a class="source-heading__link" href="https://azure.github.io/AppService/">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://azure.github.io/AppService/2025/11/04/app-service-agent-framework-part-3.html"
-                        open
-                      >
-                        <summary class="article-expander__title">Part 3: Client-Side Multi-Agent Orchestration on Azure App Service with Microsoft Agent Framework</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://azure.github.io/AppService/2025/11/04/app-service-agent-framework-part-3.html">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://azure.github.io/AppService/assets/images/icon.png" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>In Part 2 of this series, I showed you how to build sophisticated multi-agent systems on Azure App Service using Azure AI Foundry Agents—server-side managed agents that run as Azure resources. Now I want to show you another alternative that gives you full control over agent orchestration, chat history management, and provider flexibility: client-side agents using ChatClientAgent. But this alternative raises an important question:</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;10
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Microsoft 365 Developer Blog</button>
-                  <a class="source-heading__link" href="https://devblogs.microsoft.com/microsoft365dev/">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://devblogs.microsoft.com/microsoft365dev/?p&#x3D;24851"
-                        open
-                      >
-                        <summary class="article-expander__title">New developer resource page for Microsoft 365 interoperability and data portability</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://devblogs.microsoft.com/microsoft365dev/new-developer-resource-page-for-microsoft-365-interoperability-and-data-portability/">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2025/10/Teams_256@2x.jpg" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>Microsoft is launching a centralized developer resource page that consolidates interoperability and data portability information, tools, and feedback channels to help partners and customers use Microsoft 365 more effectively.
-The post New developer resource page for Microsoft 365 interoperability and data portability appeared first on Microsoft 365 Developer Blog.</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;21
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
-        </ul>
-      </section>
-      <section class="daily-content js-toggle-accordions-scope">
-        <h2 class="daily-heading">
-          <button
-            class="daily-heading-toggle"
-            data-action="toggle-accordions"
-            title="Click to toggle the day, Ctrl + click to toggle all."
-          >
-            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2025-11-03 datetime="2025-11-03T15:30:00.000Z">2025-11-03</time>
-            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2025-11-03 datetime="2025-11-03T15:30:00.000Z"></time>
-          </button>
-        </h2>
-        <ul class="sources card">
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Microsoft Tech Community - Latest Blogs - Apps on Azure Blog</button>
-                  <a class="source-heading__link" href="https://techcommunity.microsoft.com">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/follow-up-to-%E2%80%98important-changes-to-app-service-managed-certificates%E2%80%99-november-20/4466120"
-                        open
-                      >
-                        <summary class="article-expander__title">Follow-Up to ‘Important Changes to App Service Managed Certificates’: November 2025 Update</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/follow-up-to-%E2%80%98important-changes-to-app-service-managed-certificates%E2%80%99-november-20/4466120">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>This post provides an update to the Tech Community article ‘Important Changes to App Service Managed Certificates: Is Your Certificate Affected?’ and covers the latest changes introduced since July 2025. With the November 2025 update, ASMC now remains supported even if the site is not publicly accessible, provided all other requirements are met. Details on requirements, exceptions, and validation steps are included below.
-Background Context to July 2025 Changes
-As of July 2025, all ASMC certificate issuance and renewals use HTTP token validation. Previously, public access was required because DigiCert needed to access the endpoint https://
-/.well-known/pki-validation/fileauth.txt to verify the token before issuing the certificate. App Service automatically places this token during…</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;25
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/follow-up-to-%E2%80%98important-changes-to-app-service-managed-certificates%E2%80%99-october-202/4466120"
-                        open
-                      >
-                        <summary class="article-expander__title">Follow-Up to ‘Important Changes to App Service Managed Certificates’: October 2025 Update</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/follow-up-to-%E2%80%98important-changes-to-app-service-managed-certificates%E2%80%99-october-202/4466120">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>This post provides an update to the Tech Community article ‘Important Changes to App Service Managed Certificates: Is Your Certificate Affected?’ and covers the latest changes introduced since July 2025. With the November 2025 update, ASMC now remains supported even if the site is not publicly accessible, provided all other requirements are met. Details on requirements, exceptions, and validation steps are included below.
-Background Context to July 2025 Changes
-As of July 2025, all ASMC certificate issuance and renewals use HTTP token validation. Previously, public access was required because DigiCert needed to access the endpoint https://
-/.well-known/pki-validation/fileauth.txt to verify the token before issuing the certificate. App Service automatically places this token during…</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;24
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
         </ul>
       </section>
 
     <footer>
-      <a class="footer-link" href="https://github.com/lok-msft/azure-blog-rss/actions/runs/23880745590">
-        <time id="build-timestamp" datetime="2026-04-02T02:28:59.407Z">2026-04-02T02:28:59.407Z</time>
+      <a class="footer-link" href="https://github.com/lok-msft/azure-blog-rss/actions/runs/23931105385">
+        <time id="build-timestamp" datetime="2026-04-03T02:30:32.103Z">2026-04-03T02:30:32.103Z</time>
       </a>
       <a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a>
     </footer>
