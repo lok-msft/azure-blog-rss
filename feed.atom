@@ -2,10 +2,113 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2026-04-03T02:30:32.153Z</updated>
+    <updated>2026-04-04T02:22:30.010Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Secure HTTP‑Only AKS Ingress with Azure Front Door Premium, Firewall DNAT, and Private AGIC]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/secure-http%E2%80%91only-aks-ingress-with-azure-front-door-premium-firewall-dnat-and-pri/4508167</id>
+        <link href="https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/secure-http%E2%80%91only-aks-ingress-with-azure-front-door-premium-firewall-dnat-and-pri/4508167"/>
+        <updated>2026-04-03T19:15:55.000Z</updated>
+        <summary type="html"><![CDATA[Reference architecture and runbook (Part 1: HTTP-only) for Hub-Spoke networking with private Application Gateway (AGIC), Azure Firewall DNAT, and Azure Front Door Premium (WAF)
+0. When and Why to Use This Architecture
+Series note: This document is Part 1 and uses HTTP to keep the focus on routing and control points. A follow-up Part 2 will extend the same architecture to HTTPS (end-to-end TLS) with the recommended certificate and policy configuration.
+What this document contains
+Scope: Architecture overview and traffic flow, build/run steps, sample Kubernetes manifests, DNS configuration, and validation steps for end-to-end connectivity through Azure Front Door → Azure Firewall DNAT → private Application Gateway (AGIC) → AKS.
+Typical scenarios
+
+Private-by-default Kubernetes ingress: You wa…]]></summary>
+        <author>
+            <name>kkaushal</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[From Discovery to Executive Presentation: Plan Your Migration with Azure Migrate in Hours]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AzureMigrationBlog/from-discovery-to-executive-presentation-plan-your-migration-with-azure-migrate-/4508500</id>
+        <link href="https://techcommunity.microsoft.com/blog/AzureMigrationBlog/from-discovery-to-executive-presentation-plan-your-migration-with-azure-migrate-/4508500"/>
+        <updated>2026-04-03T18:06:11.000Z</updated>
+        <summary type="html"><![CDATA[The migration planning bottleneck
+Every migration starts with the same question: what do we have, and where should it go? Getting from that question to a clear, executive-ready answer has traditionally taken weeks. You scan the environment, export spreadsheets, manually classify workloads, run assessments and business case for cost analysis and readiness, and then stitch everything together into a deck that's outdated by the time you present it.
+Azure Migrate now collapses that entire process into a single workflow. Starting with the Azure Migrate Collector, you can scan your estate offline, enrich the inventory with tags and application groupings, and generate a PowerPoint report that summarizes modernization and lift-and-shift recommendations, security posture, and cost insights ready fo…]]></summary>
+        <author>
+            <name>Shikher</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Microsoft Agent Framework Version 1.0]]></title>
+        <id>https://devblogs.microsoft.com/agent-framework/?p=5212</id>
+        <link href="https://devblogs.microsoft.com/agent-framework/microsoft-agent-framework-version-1-0/"/>
+        <updated>2026-04-03T17:04:03.000Z</updated>
+        <summary type="html"><![CDATA[Today, we’re thrilled to announce that Microsoft Agent Framework has reached version 1.0 for both .NET and Python. This is the production-ready release: stable APIs, and a commitment to long-term support. Whether you’re building a single assistant or orchestrating a fleet of specialized agents, Agent Framework 1.0 gives you enterprise-grade multi-agent orchestration, multi-provider model support, […]
+The post Microsoft Agent Framework Version 1.0 appeared first on Microsoft Agent Framework.]]></summary>
+        <author>
+            <name>Shawn Henry</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Announcing general availability of Network Security Perimeter for Azure Service Bus]]></title>
+        <id>https://techcommunity.microsoft.com/blog/MessagingonAzureBlog/announcing-general-availability-of-network-security-perimeter-for-azure-service-/4508179</id>
+        <link href="https://techcommunity.microsoft.com/blog/MessagingonAzureBlog/announcing-general-availability-of-network-security-perimeter-for-azure-service-/4508179"/>
+        <updated>2026-04-03T16:31:50.000Z</updated>
+        <summary type="html"><![CDATA[Today we are excited to announce the general availability of Network Security Perimeter (NSP) support for Azure Service Bus. Network Security Perimeter allows you to define a logical network boundary around your Service Bus namespaces and other Azure PaaS resources, restricting public network access and enabling secure communication between services within the perimeter. This builds on the existing network security options for Service Bus - IP firewall rules, VNet service endpoints, and private endpoints - by providing centralized, perimeter-level control over which resources can communicate with each other.
+How Network Security Perimeter fits with existing network security
+Service Bus already provides several options for controlling network access to your namespaces. IP firewall rules let…]]></summary>
+        <author>
+            <name>EldertGrootenboer</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Build and Deploy a Microsoft Foundry Hosted Agent: A Hands-On Workshop]]></title>
+        <id>https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/build-and-deploy-a-microsoft-foundry-hosted-agent-a-hands-on-workshop/4508426</id>
+        <link href="https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/build-and-deploy-a-microsoft-foundry-hosted-agent-a-hands-on-workshop/4508426"/>
+        <updated>2026-04-03T11:21:16.000Z</updated>
+        <summary type="html"><![CDATA[Agents are easy to demo, hard to ship.
+Most teams can put together a convincing prototype quickly. The harder part starts afterwards: shaping deterministic tools, validating behaviour with tests, building a CI path, packaging for deployment, and proving the experience through a user-facing interface. That is where many promising projects slow down.
+This workshop helps you close that gap without unnecessary friction. You get a guided path from local run to deployment handoff, then complete the journey with a working chat UI that calls your deployed hosted agent through the project endpoint.
+
+
+What You Will Build
+This is a hands-on, end-to-end learning experience for building and deploying AI agents with Microsoft Foundry.
+The lab provides a guided and practical journey through hosted-agent …]]></summary>
+        <author>
+            <name>Lee_Stott</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Workspace Customer-Managed Keys for BYOK in Microsoft Fabric (Preview)]]></title>
+        <id>workspace-customer-managed-keys-for-byok-in-microsoft-fabric-preview</id>
+        <link href="https://blog.fabric.microsoft.com/en/blog/workspace-customer-managed-keys-for-byok-in-microsoft-fabric-preview/"/>
+        <updated>2026-04-03T10:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Enterprise analytics platforms increasingly operate under strict security, compliance, and regulatory requirements. For many organizations, encryption is not sufficient without clear ownership and control of cryptographic keys.]]></summary>
+        <author>
+            <name>Microsoft Fabric Blog</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Fabric Influencers Spotlight: March 2026]]></title>
+        <id>fabric-influencers-spotlight-march-2016</id>
+        <link href="https://blog.fabric.microsoft.com/en/blog/fabric-influencers-spotlight-march-2016/"/>
+        <updated>2026-04-03T09:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Welcome to the March 2026 edition of the Fabric Influencers Spotlight, a recurring monthly post here to shine a bright light on the places on the internet where Microsoft MVPs & Fabric Super Users are doing some amazing work on all aspects of Microsoft Fabric. The Microsoft Fabric Community team has created the Fabric Influencers Spotlight to … 
+Continue reading “Fabric Influencers Spotlight: March 2026”]]></summary>
+        <author>
+            <name>Microsoft Fabric Blog</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Blue‑Green Strategy for Always‑On TCP Workloads on Azure Container Apps]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/blue%E2%80%91green-strategy-for-always%E2%80%91on-tcp-workloads-on-azure-container-apps/4507894</id>
+        <link href="https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/blue%E2%80%91green-strategy-for-always%E2%80%91on-tcp-workloads-on-azure-container-apps/4507894"/>
+        <updated>2026-04-03T05:58:36.000Z</updated>
+        <summary type="html"><![CDATA[Scenario: Always‑on workloads in Azure Container Apps continuously pull from a TCP source, process the stream, and push into Azure Managed Redis, which is then consumed by another always‑on Container Apps workload that writes to a database. 
+Challenge: Standard revision traffic splitting isn’t a fit because there’s no HTTP ingress-based routing for this workload pattern as defined here; instead, the approach uses a flag‑controlled activation plus a temporary/mock Redis path to validate a new revision end‑to‑end before promotion.
+Why this pattern is needed
+Azure Container Apps supports revisions and traffic management primarily for HTTP ingress scenarios. But for always‑running TCP pipelines, there’s no meaningful way to “route 10% traffic” to a new revision. Instead, the safer approach is …]]></summary>
+        <author>
+            <name>srivastavani</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Bring Your Own Model (BYOM) for Azure AI Applications using Azure Machine Learning]]></title>
         <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/bring-your-own-model-byom-for-azure-ai-applications-using-azure-machine-learning/4508211</id>
@@ -8784,127 +8887,6 @@ The post DocumentDB goes cloud-native: Introducing the DocumentDB Kubernetes Ope
 Today, we are excited to announce the general availability of larger container sizes on Azure Container Instances (ACI). Customers can now deploy workloads with higher vCPU and memory for standard containers, confidential containers, containers with virtual networks, and containers utilizing virtual nodes to connect to Azure Kubernetes Service (AKS). After impro…]]></summary>
         <author>
             <name>tysonfreeman</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Decoupling Default Semantic Models for Existing Items in Microsoft Fabric]]></title>
-        <id>decoupling-default-semantic-models-for-existing-in-microsoft-fabric</id>
-        <link href="https://blog.fabric.microsoft.com/en/blog/decoupling-default-semantic-models-for-existing-in-microsoft-fabric/"/>
-        <updated>2025-11-05T10:00:00.000Z</updated>
-        <summary type="html"><![CDATA[In our earlier announcement, we shared that newly created data warehouses, lakehouses and other items in Microsoft Fabric would no longer automatically generate default semantic models. This change allows customers to have more control over their modeling experience and to explicitly choose when and how to create semantic models. Starting November 20, 2025, Power BI … 
-Continue reading “Decoupling Default Semantic Models for Existing Items in Microsoft Fabric”]]></summary>
-        <author>
-            <name>Microsoft Fabric Blog</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Advance your career in Data &amp; AI with Microsoft Fabric Data Days]]></title>
-        <id>advance-your-career-in-data-ai-with-microsoft-fabric-data-days</id>
-        <link href="https://blog.fabric.microsoft.com/en/blog/advance-your-career-in-data-ai-with-microsoft-fabric-data-days/"/>
-        <updated>2025-11-05T09:30:00.000Z</updated>
-        <summary type="html"><![CDATA[There’s no AI without data. Are you ready to invest in your future? Fabric Data Days offers 50+ days of immersive learning designed for data professionals at every level and students alike. Don’t miss your chance to gain practical experience, earn free certifications exam voucher, and connect with a global community of experts. Here’s what … 
-Continue reading “Advance your career in Data & AI with Microsoft Fabric Data Days”]]></summary>
-        <author>
-            <name>Microsoft Fabric Blog</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Azure Container Registry Repository Permissions with Attribute-based Access Control (ABAC)]]></title>
-        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/azure-container-registry-repository-permissions-with-attribute-based-access-cont/4467182</id>
-        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/azure-container-registry-repository-permissions-with-attribute-based-access-cont/4467182"/>
-        <updated>2025-11-05T00:31:02.000Z</updated>
-        <summary type="html"><![CDATA[General Availability announcement
-Today marks the general availability of Azure Container Registry (ACR) repository permissions with Microsoft Entra attribute-based access control (ABAC).
-ABAC augments the familiar Azure RBAC model with namespace and repository-level conditions so platform teams can express least-privilege access at the granularity of specific repositories or entire logical namespaces. This capability is designed for modern multi-tenant platform engineering patterns where a central registry serves many business domains. With ABAC, CI/CD systems and runtime consumers like Azure Kubernetes Service (AKS) clusters have least-privilege access to ACR registries.
-Why this matters
-Enterprises are converging on a central container registry pattern that hosts artifacts and container…]]></summary>
-        <author>
-            <name>johshmsft</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Azure Developer CLI: Azure Container Apps Dev-to-Prod Deployment with Layered Infrastructure]]></title>
-        <id>https://devblogs.microsoft.com/devops/?p=72065</id>
-        <link href="https://devblogs.microsoft.com/devops/azure-developer-cli-azure-container-apps-dev-to-prod-deployment-with-layered-infrastructure/"/>
-        <updated>2025-11-04T22:45:46.000Z</updated>
-        <summary type="html"><![CDATA[This post walks through how to implement “build once, deploy everywhere” patterns using Azure Container Apps with the new azd publish and layered infrastructure features in Azure Developer CLI v1.20.0. You’ll learn how to deploy the same containerized application across multiple environments with proper separation of concerns. This is the third installment in our Azure […]
-The post Azure Developer CLI: Azure Container Apps Dev-to-Prod Deployment with Layered Infrastructure appeared first on Azure DevOps Blog.]]></summary>
-        <author>
-            <name>PuiChee (PC) Chan</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Microsoft Excel Power User Updates | Agent Mode, Copilot Function & Formula AI]]></title>
-        <id>https://techcommunity.microsoft.com/blog/MicrosoftMechanicsBlog/microsoft-excel-power-user%C2%A0updates--agent-mode-copilot-function--formula%C2%A0ai/4465676</id>
-        <link href="https://techcommunity.microsoft.com/blog/MicrosoftMechanicsBlog/microsoft-excel-power-user%C2%A0updates--agent-mode-copilot-function--formula%C2%A0ai/4465676"/>
-        <updated>2025-11-04T16:15:00.000Z</updated>
-        <summary type="html"><![CDATA[With Agent Mode, automate complex analysis, create pivot tables, and build interactive dashboards without manual setup. Streamline text analysis, formula generation, and complex calculations right inside Excel. Use the Copilot function to categorize feedback, score sentiment, or automate repetitive tasks, and leverage Formula AI to generate accurate formulas from plain language prompts. 
-Jeremy Chapman, Microsoft 365 Director, shares how to work smarter and make faster, data-driven decisions in Microsoft Excel.
-No manual setup required.
-
-Auto-analyze your spreadsheets, generate KPIs, pivot tables, and charts. Check out Agent Mode in Microsoft Excel.
-Analyze text, categorize feedback, and score sentiment.
-
-Turn manual data tagging into instant AI-powered insights inside your spreadsheet. Se…]]></summary>
-        <author>
-            <name>Zachary-Cavanell</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[JDConf 2026 Is Coming With Modern Solutions for an Agentic World]]></title>
-        <id>https://devblogs.microsoft.com/java/?p=232564</id>
-        <link href="https://devblogs.microsoft.com/java/jdconf-2026-is-coming-with-modern-solutions-for-an-agentic-world/"/>
-        <updated>2025-11-04T16:00:58.000Z</updated>
-        <summary type="html"><![CDATA[Technology is accelerating faster than ever, and developers are once again at the helm, shaping the future of applications, intelligence, and enterprise systems. With the rise of large language models (LLMs), agent-oriented architectures, and AI-driven development paradigms, Java developers find themselves in a uniquely powerful position to modernize code already powering critical systems, and to […]
-The post JDConf 2026 Is Coming With Modern Solutions for an Agentic World appeared first on Microsoft for Java Developers.]]></summary>
-        <author>
-            <name>Bruno Borges</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Part 3: Client-Side Multi-Agent Orchestration on Azure App Service with Microsoft Agent Framework]]></title>
-        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/part-3-client-side-multi-agent-orchestration-on-azure-app-service-with-microsoft/4466728</id>
-        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/part-3-client-side-multi-agent-orchestration-on-azure-app-service-with-microsoft/4466728"/>
-        <updated>2025-11-04T15:35:47.000Z</updated>
-        <summary type="html"><![CDATA[In Part 2 of this series, I showed you how to build sophisticated multi-agent systems on Azure App Service using Azure AI Foundry Agents—server-side managed agents that run as Azure resources. Now I want to show you another alternative that gives you full control over agent orchestration, chat history management, and provider flexibility: client-side agents using ChatClientAgent. But this alternative raises an important question:
-How do you choose between client-side and server-side agents?
-This is an important question that points to a fundamental choice in Agent Framework: client-side agents vs. server-side agents. I'm not going to go into extreme detail here; my goal for this post is to show you how to build client-side multi-agent systems with ChatClientAgent and Azure App Service, but…]]></summary>
-        <author>
-            <name>jordanselig</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Introducing the enhanced query diagnostics in Azure Log Analytics]]></title>
-        <id>https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/introducing-the-enhanced-query-diagnostics-in-azure-log-analytics/4466993</id>
-        <link href="https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/introducing-the-enhanced-query-diagnostics-in-azure-log-analytics/4466993"/>
-        <updated>2025-11-04T14:35:59.000Z</updated>
-        <summary type="html"><![CDATA[We’re excited to introduce a set of new capabilities that simplify query diagnostics and troubleshooting in Azure Log Analytics.
-With this new experience, users can now easily resolve query issues that may surface using the suggested recommendations, have a deeper visibility into query execution statistics and utilize those to optimize query performances.
-What’s new?
-Improved query notification experience
-
-Concise details providing a clear understanding of query status, errors, and root cause
-Actionable recommendations and suggestions to quickly resolve query issues
-Contextual linkage to the Query Details pane for advanced diagnostics
-
-
-The revamped 'Query Details' pane
-After running a query, you can navigate to the revamp Query details to explore multiple query aspects over the new tabs:
-
-Overview – A curated set of key performance indicators, including:
-
-Execution time breakdown: Engine, Log Analytics Service, and Queue times
-Metrics such as Total CPU, Memory peak, Response size and more
-
-Raw statistics – Complete execution details, referenced workspaces, and technical metadata
-Errors – Raw error payloads for precise and advanced debugging
-
-
- 
-With these enhancements, query troubleshooting is made easier - All within the familiar Azure Log Analytics experience over the Azure Portal.
-Learn more: Optimize log queries in Azure Monitor - Azure Monitor | Microsoft Learn]]></summary>
-        <author>
-            <name>Ron Frenkel</name>
         </author>
     </entry>
 </feed>
