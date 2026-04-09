@@ -2,10 +2,110 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2026-04-08T02:34:00.008Z</updated>
+    <updated>2026-04-09T02:29:45.046Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Designing Reliable Health Check Endpoints for IIS Behind Azure Application Gateway]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/designing-reliable-health-check-endpoints-for-iis-behind-azure-application-gatew/4507938</id>
+        <link href="https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/designing-reliable-health-check-endpoints-for-iis-behind-azure-application-gatew/4507938"/>
+        <updated>2026-04-08T23:18:05.000Z</updated>
+        <summary type="html"><![CDATA[Why Health Probes Matter in Azure Application Gateway
+Azure Application Gateway relies entirely on health probes to determine whether backend instances should receive traffic.
+If a probe:
+
+Receives a non‑200 response
+Times out
+Gets redirected
+Requires authentication
+
+…the backend is marked Unhealthy, and traffic is stopped—resulting in user-facing errors.
+ A healthy IIS application does not automatically mean a healthy Application Gateway backend.
+ Failure Flow: How a Misconfigured Health Probe Leads to 502 Errors
+One of the most confusing scenarios teams encounter is when the IIS application is running correctly, yet users intermittently receive 502 Bad Gateway errors.
+This typically happens when health probes fail, causing Azure Application Gateway to mark backend instances as Unhealthy …]]></summary>
+        <author>
+            <name>AjaySingh_</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Build and Host MCP Apps on Azure App Service]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/build-and-host-mcp-apps-on-azure-app-service/4509705</id>
+        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/build-and-host-mcp-apps-on-azure-app-service/4509705"/>
+        <updated>2026-04-08T18:10:03.000Z</updated>
+        <summary type="html"><![CDATA[MCP Apps are here, and they're a game-changer for building AI tools with interactive UIs. If you've been following the Model Context Protocol (MCP) ecosystem, you've probably heard about the MCP Apps spec — the first official MCP extension that lets your tools return rich, interactive UIs that render directly inside AI chat clients like Claude Desktop, ChatGPT, VS Code Copilot, Goose, and Postman.
+And here's the best part: you can host them on Azure App Service. In this post, I'll walk you through building a weather widget MCP App and deploying it to App Service. You'll have a production-ready MCP server serving interactive UIs in under 10 minutes.
+What Are MCP Apps?
+MCP Apps extend the Model Context Protocol by combining tools (the functions your AI client can call) with UI resources (the…]]></summary>
+        <author>
+            <name>jordanselig</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Fast cloud migration, measurable ROI: Forrester Total Economic Impact study of Azure VMware Solution]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AzureMigrationBlog/fast-cloud-migration-measurable-roi-forrester-total-economic-impact-study-of-azu/4508136</id>
+        <link href="https://techcommunity.microsoft.com/blog/AzureMigrationBlog/fast-cloud-migration-measurable-roi-forrester-total-economic-impact-study-of-azu/4508136"/>
+        <updated>2026-04-08T17:59:23.000Z</updated>
+        <summary type="html"><![CDATA[Many organizations are balancing near-term continuity for VMware-based workloads with longer-term cloud modernization goals – all while managing cost, security, and resiliency.
+Azure VMware Solution (AVS) is built for this moment: a Microsoft-managed service verified by VMware that enables running VMware Cloud Foundation (VCF) workloads (vSphere, NSX-T, vSAN, HCX) on dedicated Azure infrastructure. It gives organizations a practical way to move or extend VMware environments into Azure while maintaining operational consistency and leveraging the skills of existing VMware teams. To help leaders quantify the potential value of this approach, Microsoft commissioned Forrester Consulting to conduct The Total Economic Impact™ (TEI) of Microsoft Azure VMware Solution (March 2026). The study models…]]></summary>
+        <author>
+            <name>BritneyCretella</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Item Recovery in Microsoft Fabric (Preview)]]></title>
+        <id>item-recovery-in-microsoft-fabric-preview</id>
+        <link href="https://blog.fabric.microsoft.com/en/blog/item-recovery-in-microsoft-fabric-preview/"/>
+        <updated>2026-04-08T08:30:00.000Z</updated>
+        <summary type="html"><![CDATA[Have you ever accidentally deleted something important? With Item recovery in Microsoft Fabric (Preview), you no longer need to worry. You can easily restore deleted items—whether it was a mistake or something unexpected—within a retention window you control.]]></summary>
+        <author>
+            <name>Microsoft Fabric Blog</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Dropped warehouse recovery in Microsoft Fabric (Preview)]]></title>
+        <id>dropped-warehouse-recovery-in-microsoft-fabric-preview</id>
+        <link href="https://blog.fabric.microsoft.com/en/blog/dropped-warehouse-recovery-in-microsoft-fabric-preview/"/>
+        <updated>2026-04-08T08:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Accidental drops can happen anytime—ETL moves fast, schemas change, and mistakes happen. What matters is how fast and predictably you recover.]]></summary>
+        <author>
+            <name>Microsoft Fabric Blog</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[GitHub Copilot for Eclipse Is Going Open Source]]></title>
+        <id>https://devblogs.microsoft.com/java/?p=232965</id>
+        <link href="https://devblogs.microsoft.com/java/ghc-eclipse-is-going-open-source/"/>
+        <updated>2026-04-08T07:10:00.000Z</updated>
+        <summary type="html"><![CDATA[We’re excited to announce that the GitHub Copilot for Eclipse plugin is going open source under the MIT license and will be hosted on GitHub under the microsoft organization in the coming weeks. By open-sourcing the project, we’re inviting the community to contribute, extend, and innovate, helping shape a more powerful and inclusive AI development experience for everyone in the open […]
+The post GitHub Copilot for Eclipse Is Going Open Source appeared first on Microsoft for Java Developers.]]></summary>
+        <author>
+            <name>Jialuo Gan</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Building a Real-Time Multi-Agent UI with AG-UI and Microsoft Agent Framework Workflows]]></title>
+        <id>https://devblogs.microsoft.com/agent-framework/?p=5227</id>
+        <link href="https://devblogs.microsoft.com/agent-framework/ag-ui-multi-agent-workflow-demo/"/>
+        <updated>2026-04-08T07:07:55.000Z</updated>
+        <summary type="html"><![CDATA[Multi-agent systems demo beautifully. Putting them in front of real users is another story. In early prototypes, a terminal or a basic chat window is enough. But once agents start handing off to each other, pausing for approvals, or asking follow-up questions, those interfaces fall apart. Which agent is active? Why is the system waiting? […]
+The post Building a Real-Time Multi-Agent UI with AG-UI and Microsoft Agent Framework Workflows appeared first on Microsoft Agent Framework.]]></summary>
+        <author>
+            <name>Evan Mattson</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[AZD for Beginners: A Practical Introduction to Azure Developer CLI]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/azd-for-beginners-a-practical-introduction-to-azure-developer-cli/4503747</id>
+        <link href="https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/azd-for-beginners-a-practical-introduction-to-azure-developer-cli/4503747"/>
+        <updated>2026-04-08T07:00:00.000Z</updated>
+        <summary type="html"><![CDATA[If you are learning how to get an application from your machine into Azure without stitching together every deployment step by hand, Azure Developer CLI, usually shortened to azd, is one of the most useful tools to understand early. It gives developers a workflow-focused command line for provisioning infrastructure, deploying application code, wiring environment settings, and working with templates that reflect real cloud architectures rather than toy examples.
+This matters because many beginners hit the same wall when they first approach Azure. They can build a web app locally, but once deployment enters the picture they have to think about resource groups, hosting plans, databases, secrets, monitoring, configuration, and repeatability all at once. azd reduces that operational overhead by…]]></summary>
+        <author>
+            <name>Lee_Stott</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[3 Ways to Get More from Azure SRE Agent]]></title>
         <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/3-ways-to-get-more-from-azure-sre-agent/4508993</id>
@@ -185,6 +285,18 @@ Continue reading “Update on User Experience Feedback from the Reddit Thread (G
 Continue reading “Microsoft ADO.NET Driver for Microsoft Fabric Data Engineering (Preview)”]]></summary>
         <author>
             <name>Microsoft Fabric Blog</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How we build and use Azure SRE Agent with agentic workflows]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/how-we-build-and-use-azure-sre-agent-with-agentic-workflows/4508753</id>
+        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/how-we-build-and-use-azure-sre-agent-with-agentic-workflows/4508753"/>
+        <updated>2026-04-05T07:40:28.000Z</updated>
+        <summary type="html"><![CDATA[The Challenge: Ops is critical but takes time from innovation
+Microsoft operates always-on, mission-critical production systems at extraordinary scale. Thousands of services, millions of deployments, and constant change are the reality of modern cloud engineering. These are titan systems that power organizations around the globe—including our own—with extremely low risk tolerance for downtime. While operations work like incident investigation, response and recovery, and remediation is essential, it’s also disruptive to innovation.
+For engineers, operational toil often means being pulled away from feature work to diagnose alerts, sift through logs, correlate metrics across systems, or respond to incidents at any hour. On-call rotations and manual investigations slow teams down and introduce…]]></summary>
+        <author>
+            <name>Shamir_AbdulAziz</name>
         </author>
     </entry>
     <entry>
@@ -8932,39 +9044,6 @@ Moving to cloud is an essential step for enterprises looking to leverage the ben
 In our endeavour to both simplify and enrich your cloud adoption journey, we are evolving Application awareness in Azure Migrate that we introduced last y…]]></summary>
         <author>
             <name>Shikher</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[It&#8217;s Time! Announcing The Microsoft SQL Community Conference]]></title>
-        <id>its-time-announcing-the-microsoft-sql-community-conference</id>
-        <link href="https://blog.fabric.microsoft.com/en/blog/its-time-announcing-the-microsoft-sql-community-conference/"/>
-        <updated>2025-11-10T14:16:58.000Z</updated>
-        <summary type="html"><![CDATA[SQL is having its moment. From on-premises data centers to Azure Cloud Services to Microsoft Fabric, SQL has evolved into something far more powerful than many realize and it deserves the focused attention of a big stage.  That’s why I’m thrilled to announce SQLCon, a dedicated conference for database developers, database administrators, and database engineers. Co-located with FabCon for an unprecedented week of deep technical content … 
-Continue reading “It’s Time! Announcing The Microsoft SQL Community Conference”]]></summary>
-        <author>
-            <name>Microsoft Fabric Blog</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Microsoft named Leader and Outperformer in the 2025 GigaOm Radar for Semantic Layers &amp; Metric Stores]]></title>
-        <id>microsoft-named-leader-and-outperformer-in-the-2025-gigaom-radar-for-semantic-layers-metric-stores</id>
-        <link href="https://blog.fabric.microsoft.com/en/blog/microsoft-named-leader-and-outperformer-in-the-2025-gigaom-radar-for-semantic-layers-metric-stores/"/>
-        <updated>2025-11-10T08:00:00.000Z</updated>
-        <summary type="html"><![CDATA[In today’s data-driven world, semantic models have become the backbone of trustworthy analytics. They define business logic, metrics, and relationships that turn raw data into meaningful, trusted and curated insights. As organizations embrace generative AI, semantic models provide the structure and context that AI needs to deliver accurate, reliable answers.  At Microsoft, we have spent nearly two decades refining the semantic layer that connects data … 
-Continue reading “Microsoft named Leader and Outperformer in the 2025 GigaOm Radar for Semantic Layers & Metric Stores “]]></summary>
-        <author>
-            <name>Microsoft Fabric Blog</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Warehouse Snapshots in Microsoft Fabric (Generally Available)]]></title>
-        <id>warehouse-snapshots-in-microsoft-fabric-freeze-data-unlock-reliable-reporting</id>
-        <link href="https://blog.fabric.microsoft.com/en/blog/warehouse-snapshots-in-microsoft-fabric-freeze-data-unlock-reliable-reporting/"/>
-        <updated>2025-11-10T08:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Managing data consistency during ETL has always been a challenge for our customers. Dashboards break, KPIs fluctuate, and compliance audits become painful when reporting hits ‘half-loaded’ data. With Warehouse Snapshots, Microsoft Fabric solves this by giving you a stable, read-only view of your warehouse at a specific point in time and now, this capability is … 
-Continue reading “Warehouse Snapshots in Microsoft Fabric (Generally Available)”]]></summary>
-        <author>
-            <name>Microsoft Fabric Blog</name>
         </author>
     </entry>
 </feed>
