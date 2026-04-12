@@ -4282,56 +4282,6 @@
           "wordCount": 3697,
           "title": "Build your first AI Agent with Azure App Service",
           "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDY4NzI1LTZ1UUJOVw?revision=3"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/part-iii-otel-sidecar-extension-on-azure-app-service-for-linux---language-cheat-/4469589",
-          "author": "TulikaC",
-          "description": "Building on Part II (and Part I), here’s a concise matrix for PHP, Python, Node.js, and .NET, plus the key app settings and quick troubleshooting steps. \n \n\n\nLang docOTEL librariesAppSettingsStartup command exampleSample repo\nPHP\nComposer autoloader (vendor/autoload.php); PECL ext opentelemetry via php.ini (extension=opentelemetry.so); Composer plugins (e.g., Slim, PSR-18).\n\nMain: OTEL_PHP_AUTOLOAD_ENABLED=true, SCM_DO_BUILD_DURING_DEPLOYMENT=true, OTEL_EXPORTER_OTLP_ENDPOINT=http://127.0.0.1:4318 Sidecar: map OTEL_PHP_AUTOLOAD_ENABLED\n\ncp /home/site/wwwroot/default /etc/nginx/sites-enabled/default && nginx -s reload && bash /home/site/wwwroot/startup.sh (startup.sh: pecl install opentelemetry; add extension=opentelemetry.so; php-fpm)\nPHP Sample\nPython\nVia opentelemetry-instrument wrapper;…",
-          "link": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/part-iii-otel-sidecar-extension-on-azure-app-service-for-linux---language-cheat-/4469589",
-          "publishedOn": "2025-11-13T10:12:33.000Z",
-          "wordCount": 3753,
-          "title": "Part III: OTEL sidecar extension on Azure App Service for Linux - Language cheat-sheet",
-          "imageUrl": null
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/part-ii-otel-sidecar-extension-on-azure-app-service-for-linux---elastic-apm-setu/4469576",
-          "author": "TulikaC",
-          "description": "Picking up from Part I, this post shows how to obtain the Elastic APM Server URL and Secret token, add the OTEL Elastic sidecar, and validate telemetry in Kibana.\nMost steps are identical to the Azure Monitor walkthrough (create PHP app, add OTEL libraries, deploy, map OTEL_PHP_AUTOLOAD_ENABLED, keep the same startup command, and point your app to the sidecar at http://127.0.0.1:4318).\nThe only differences are - get your Elastic APM Server URL and Secret token, choose the OpenTelemetry – Elastic APM extension, and set Elastic-specific app settings.\n \nYou can use the sample code (based on your language stack) from here - https://github.com/Azure-Samples/sidecar-samples/tree/main/otel-sidecar\n1) Get the Elastic APM Server URL\nIn Kibana go to:Observability → Data management → Fleet → Agent po…",
-          "link": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/part-ii-otel-sidecar-extension-on-azure-app-service-for-linux---elastic-apm-setu/4469576",
-          "publishedOn": "2025-11-13T08:44:41.000Z",
-          "wordCount": 3275,
-          "title": "Part II: OTEL sidecar extension on Azure App Service for Linux - Elastic APM setup",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDY5NTc2LVBPWm5OcA?revision=2"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/part-i-otel-sidecar-extension-on-azure-app-service-for-linux---intro--php-walkth/4469514",
-          "author": "TulikaC",
-          "description": "Sidecar extensions let you attach a companion container to your App Service for Linux app to add capabilities—without changing your core app or container. If you’re new to sidecars on App Service, start here: Sidecars in Azure App Service\nOpenTelemetry (OTEL) is the vendor-neutral standard for collecting traces, metrics, and logs, with auto/manual instrumentation across popular languages and backends. See the official docs for concepts and quick starts. (OpenTelemetry)\nIn this post, we’ll use the new sidecar extension—OpenTelemetry - Azure Monitor and show end-to-end setup for a PHP code-based apps (the same extension will also work for other language stacks and container-based apps).\nWalkthrough: add the OpenTelemetry – Azure Monitor sidecar to a PHP (code-based) app\nThis section shows th…",
-          "link": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/part-i-otel-sidecar-extension-on-azure-app-service-for-linux---intro--php-walkth/4469514",
-          "publishedOn": "2025-11-13T06:28:27.000Z",
-          "wordCount": 4023,
-          "title": "Part I: OTEL sidecar extension on Azure App Service for Linux - Intro + PHP walkthrough",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDY5NTE0LWNiaW5zVw?revision=2"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/introducing-ai-playground-on-azure-app-service-for-linux/4469497",
-          "author": "TulikaC",
-          "description": "If you’re running a Small Language Model (SLM) as a sidecar with your web app, there’s now a faster way to try prompts, measure latency, and copy working code into your app—all without leaving your site. AI Playground is a lightweight, built-in experience available from the Kudu endpoint for every Linux App Service. \nWhat is AI Playground? \nAI Playground is a simple UI that talks to the SLM you’ve attached to your App Service app (for example, Phi or BitNet via the Sidecar extension). It lets you: \n\nSend system and user prompts and view responses in-line\nSee performance metrics like Time to First Token (TTFT), total time, and tokens/sec\nGrab ready-to-use code snippets for popular languages from the right sidebar (when you’re ready to integrate) \nConfirm whether a sidecar SLM is configured—…",
-          "link": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/introducing-ai-playground-on-azure-app-service-for-linux/4469497",
-          "publishedOn": "2025-11-13T04:36:41.000Z",
-          "wordCount": 3866,
-          "title": "Introducing AI Playground on Azure App Service for Linux",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDY5NDk3LUg2SURaMA?revision=1"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/what%E2%80%99s-new-for-python-on-app-service-for-linux-pyproject-toml-uv-and-more/4468903",
-          "author": "TulikaC",
-          "description": "Python apps on Azure App Service for Linux just got a lot easier to build and ship! We’ve modernized the build pipeline to support new deployment options —whether you’re on classic setup.py, fully on pyproject.toml with Poetry or uv, or somewhere in between.\nThis post walks through five upgrades that reduce friction end-to-end—from local dev to GitHub Actions to the App Service build environment:\n\npyproject.toml + uv (and poetry): modern, reproducible Python builds\nsetup.py support\n.bashrc quality-of-life improvements in the App Service container shell\nGitHub Actions samples for common Python flows (setup.py, uv.lock, local venv, and pyproject.toml deployments)\n\npyproject.toml + uv\nuv is an extremely fast Python package & project manager written in Rust—think “pip + virtualenv + pip-tools,…",
-          "link": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/what%E2%80%99s-new-for-python-on-app-service-for-linux-pyproject-toml-uv-and-more/4468903",
-          "publishedOn": "2025-11-12T15:16:13.000Z",
-          "wordCount": 9814,
-          "title": "What’s New for Python on App Service for Linux: pyproject.toml, uv, and more",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDY4OTAzLVJZWUhadA?revision=5"
         }
       ]
     },
@@ -4675,16 +4625,6 @@
           "wordCount": 10619,
           "title": "Comprehensive VM Monitoring with OpenTelemetry performance counters",
           "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDcwMTIyLXR6WTVUVA?revision=8"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/announcing-public-preview-of-query-based-metric-alerts-in-azure-monitor/4469290",
-          "author": "yairgil",
-          "description": "Azure Monitor metric alerts are now more powerful than ever\nAzure Monitor metric alerts now support all Azure metrics—including platform, Prometheus, and custom metrics—giving you complete coverage for your monitoring needs.In addition, metric alerts now offer powerful query capabilities with PromQL, enabling complex logic across multiple metrics and resources. This makes it easier to detect patterns, correlate signals, and customize alerts for modern workloads like Kubernetes clusters, VMs, and custom applications.\nKey Benefits \n\nFull metrics coverage: metric alerts now support alerting on any Azure metrics including platform metrics, Prometheus metrics and custom metrics.\nPromQL-Powered Conditions: Use PromQL to select, aggregate, and transform metrics for advanced alerting scenarios.\nPo…",
-          "link": "https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/announcing-public-preview-of-query-based-metric-alerts-in-azure-monitor/4469290",
-          "publishedOn": "2025-11-12T17:43:31.000Z",
-          "wordCount": 7986,
-          "title": "Announcing public preview of query-based metric alerts in Azure Monitor",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDY5MjkwLUtyVUhhSQ?revision=6"
         }
       ]
     },
@@ -4872,16 +4812,6 @@
           "wordCount": 6582,
           "title": "AI Dev Days 2025: Your Gateway to the Future of AI Development",
           "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDc2MTEzLTQwWDFMOA?revision=3"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/demystifying-github-copilot-security-controls-easing-concerns-for-organizational/4468193",
-          "author": "jorgebalderas",
-          "description": "At a recent developer conference, I delivered a session on Legacy Code Rescue using GitHub Copilot App Modernization. Throughout the day, conversations with developers revealed a clear divide: some have fully embraced Agentic AI in their daily coding, while others remain cautious. Often, this hesitation isn't due to reluctance but stems from organizational concerns around security and regulatory compliance. Having witnessed similar patterns during past technology shifts, I understand how these barriers can slow adoption.\nIn this blog, I'll demystify the most common security concerns about GitHub Copilot and explain how its built-in features address them, empowering organizations to confidently modernize their development workflows.\nGitHub Copilot Model Training\nA common question I received…",
-          "link": "https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/demystifying-github-copilot-security-controls-easing-concerns-for-organizational/4468193",
-          "publishedOn": "2025-11-13T08:00:00.000Z",
-          "wordCount": 5467,
-          "title": "Demystifying GitHub Copilot Security Controls: easing concerns for organizational adoption",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDY4MTkzLVVmUTlqcQ?revision=1"
         }
       ]
     },
