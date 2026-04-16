@@ -2,10 +2,95 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2026-04-15T02:38:42.227Z</updated>
+    <updated>2026-04-16T02:46:41.644Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Production Cutover in Cloud-Native Migrations]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AzureMigrationBlog/production-cutover-in-cloud-native-migrations/4509924</id>
+        <link href="https://techcommunity.microsoft.com/blog/AzureMigrationBlog/production-cutover-in-cloud-native-migrations/4509924"/>
+        <updated>2026-04-16T00:05:46.000Z</updated>
+        <summary type="html"><![CDATA[Migration Planning vs Runtime Reality
+Migration to container orchestration platforms such as Azure Kubernetes Service (AKS) typically involves:
+
+Containerizing application workloads
+Configuring cluster networking
+Migrating data to managed storage services
+Updating application integrations
+Validating deployment pipelines
+
+Even with these practices in place, runtime validation often reveals issues that are not directly related to deployment or application code.
+For example, it is common to encounter scenarios where:
+
+Services deploy successfully but terminate under production memory allocation thresholds
+Configuration repositories do not reflect region‑specific runtime parameters
+Messaging consumers fail to bind to cloud‑based ingestion pipelines
+External integrations continue referencing le…]]></summary>
+        <author>
+            <name>dhruti</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Databricks Delta Sharing: Enabling Cost Efficient Cross Cloud Data Access]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/databricks-delta-sharing-enabling-cost-efficient-cross-cloud-data-access/4511400</id>
+        <link href="https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/databricks-delta-sharing-enabling-cost-efficient-cross-cloud-data-access/4511400"/>
+        <updated>2026-04-16T00:00:42.000Z</updated>
+        <summary type="html"><![CDATA[What Is Delta Sharing?
+Delta sharing is an open protocol for secure data sharing that allows organizations to share live data stored in Delta Lake with external consumers—across cloud providers such as Azure, AWS, and Google Cloud—while keeping the data in its original location. Consumers access the same up‑to‑date data without the provider having to copy or move it to another cloud. 
+Why Delta Sharing Matters in Multi‑Cloud Architectures
+In multi‑cloud environments, data sharing typically leads to increased storage duplication and cross‑cloud data transfer charges. Delta Sharing changes this model by exposing data in place, enabling access rather than replication.
+Key architectural benefits include:
+
+Cross‑cloud data availability without replicationData producers share tables directly fro…]]></summary>
+        <author>
+            <name>kirankumar_manchiwar04</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Gemma 4 on Azure Container Apps Serverless GPU]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/gemma-4-on-azure-container-apps-serverless-gpu/4511671</id>
+        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/gemma-4-on-azure-container-apps-serverless-gpu/4511671"/>
+        <updated>2026-04-15T16:18:54.000Z</updated>
+        <summary type="html"><![CDATA[Every prompt you send to a hosted AI service leaves your tenant. Your code, your architecture decisions, your proprietary logic — all of it crosses a network boundary you don't control. For teams building in regulated industries or handling sensitive IP, that's not a philosophical concern. It's a compliance blocker.
+What if you could spin up a fully private AI coding agent — running on your own GPU, in your own Azure subscription — with a single command?
+That's exactly what this template does. One azd up, 15 minutes, and you have Google's Gemma 4 running on Azure Container Apps serverless GPU with an OpenAI-compatible API, protected by auth, and ready to power OpenCode as your terminal-based coding agent. No data leaves your environment. No third-party model provider sees your code. Full c…]]></summary>
+        <author>
+            <name>simonjj</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[One-click security scanning and org-wide alert triage come to Advanced Security]]></title>
+        <id>https://devblogs.microsoft.com/devops/?p=72614</id>
+        <link href="https://devblogs.microsoft.com/devops/one-click-security-scanning-and-org-wide-alert-triage-come-to-advanced-security/"/>
+        <updated>2026-04-15T15:06:53.000Z</updated>
+        <summary type="html"><![CDATA[We’re shipping two major capabilities that change how security teams enable and act on application security in Azure DevOps: CodeQL default setup makes it possible to enable code scanning across your organization without configuring a single pipeline, and a new combined alerts experience in Security Overview gives security administrators a single place to search, filter, […]
+The post One-click security scanning and org-wide alert triage come to Advanced Security appeared first on Azure DevOps Blog.]]></summary>
+        <author>
+            <name>Laura Jiang</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Supercharge Your Dev Workflows with GitHub Copilot Custom Skills]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/supercharge-your-dev-workflows-with-github-copilot-custom-skills/4510012</id>
+        <link href="https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/supercharge-your-dev-workflows-with-github-copilot-custom-skills/4510012"/>
+        <updated>2026-04-15T05:00:00.000Z</updated>
+        <summary type="html"><![CDATA[The Problem
+Every team has those repetitive, multi-step workflows that eat up time:
+
+Running a sequence of CLI commands, parsing output, and generating a report
+Querying multiple APIs, correlating data, and summarizing findings
+Executing test suites, analyzing failures, and producing actionable insights
+
+You've probably documented these in a wiki or a runbook. But every time, you still manually copy-paste commands, tweak parameters, and stitch results together.
+What if your AI coding assistant could do all of that — triggered by a single natural language request?
+That's exactly what GitHub Copilot Custom Skills enable.
+What Are Custom Skills?
+A skill is a folder containing a SKILL.md file (instructions for the AI), plus optional scripts, templates, and reference docs. When you ask Copilot …]]></summary>
+        <author>
+            <name>sachoudhury</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Building a Scalable IoT Platform for Facility Management with Azure Serverless Services]]></title>
         <id>https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/building-a-scalable-iot-platform-for-facility-management-with-azure-serverless-s/4495263</id>
@@ -9124,17 +9209,6 @@ Azure Monitor already provides Guest OS performance monitoring through Log Analy
 Today, we’re excited to introduce a new preview capability: OpenTelemetry (OTel) Guest OS metrics for VMs and Arc servers, with metric data stored in the metrics-optimized Azure Monitor Wo…]]></summary>
         <author>
             <name>viviandiec</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Introducing Eventhouse Endpoint for Fabric Data Warehouse: Real-Time Analytics, Unified Architecture]]></title>
-        <id>introducing-eventhouse-endpoint-for-fabric-data-warehouse-real-time-analytics-unified-architecture</id>
-        <link href="https://blog.fabric.microsoft.com/en/blog/introducing-eventhouse-endpoint-for-fabric-data-warehouse-real-time-analytics-unified-architecture/"/>
-        <updated>2025-11-17T09:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Microsoft Fabric is expanding its real-time analytics capabilities with the new Eventhouse Endpoint for Fabric Data Warehouse, bringing the same powerful technology that powers the existing Eventhouse Endpoint for Lakehouse—but now tailored for Data Warehouse. What is Eventhouse? Eventhouse is Fabric’s high-performance, real-time analytics engine designed to handle massive volumes of time-series, structured, semi-structured and … 
-Continue reading “Introducing Eventhouse Endpoint for Fabric Data Warehouse: Real-Time Analytics, Unified Architecture”]]></summary>
-        <author>
-            <name>Microsoft Fabric Blog</name>
         </author>
     </entry>
 </feed>
