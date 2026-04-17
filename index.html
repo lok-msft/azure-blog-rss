@@ -22,11 +22,314 @@
             data-action="toggle-accordions"
             title="Click to toggle the day, Ctrl + click to toggle all."
           >
-            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2026-04-16 datetime="2026-04-16T00:05:46.000Z">2026-04-16</time>
-            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2026-04-16 datetime="2026-04-16T00:05:46.000Z"></time>
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2026-04-17 datetime="2026-04-17T02:14:28.000Z">2026-04-17</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2026-04-17 datetime="2026-04-17T02:14:28.000Z"></time>
           </button>
         </h2>
         <ul class="sources card">
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Microsoft Tech Community - Latest Blogs - Apps on Azure Blog</button>
+                  <a class="source-heading__link" href="https://techcommunity.microsoft.com">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/new-in-azure-sre-agent-log-analytics-and-application-insights-connectors/4509649"
+                        open
+                      >
+                        <summary class="article-expander__title">New in Azure SRE Agent: Log Analytics and Application Insights Connectors</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/new-in-azure-sre-agent-log-analytics-and-application-insights-connectors/4509649">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTA5NjQ5LTlOczdxYQ?revision&#x3D;4" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>Azure SRE Agent now supports Log Analytics and Application Insights as log providers, backed by the Azure MCP Server. Connect your workspaces and App Insights resources, and the agent can query them directly during investigations.
+Why This Matters
+Log Analytics and Application Insights are common destinations for Azure operational data - container logs, application traces, dependency failures, security events. The agent could already access this data through az monitor CLI commands if you granted RBAC roles to its managed identity, and that approach still works. But it required manual RBAC setup and the agent had to shell out to CLI for every query.
+ 
+With these connectors, setup is simpler and querying is faster. You pick a workspace, we handle the RBAC grants, and the agent gets native M…</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;29
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/event-driven-iac-operations-with-azure-sre-agent-terraform-drift-detection-via-h/4512233"
+                        open
+                      >
+                        <summary class="article-expander__title">Event-Driven IaC Operations with Azure SRE Agent: Terraform Drift Detection via HTTP Triggers</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/event-driven-iac-operations-with-azure-sre-agent-terraform-drift-detection-via-h/4512233">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTEyMjMzLXh6TjhJVQ?revision&#x3D;3" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>What Happens After terraform plan Finds Drift?
+If your team is like most, the answer looks something like this:
+
+A nightly terraform plan runs and finds 3 drifted resources
+A notification lands in Slack or Teams
+Someone files a ticket
+During the next sprint, an engineer opens 4 browser tabs — Terraform state, Azure Portal, Activity Log, Application Insights — and spends 30 minutes piecing together what happened
+They discover the drift was caused by an on-call engineer who scaled up the App Service during a latency incident at 2 AM
+They revert the drift with terraform apply
+The app goes down because they just scaled it back down while the bug that caused the incident is still deployed
+
+Step 7 is the one nobody talks about. Drift detection tooling has gotten remarkably good — scheduled plans…</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;56
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/explaining-what-github-copilot-modernization-can-and-cannot-do/4511739"
+                        open
+                      >
+                        <summary class="article-expander__title">Explaining what GitHub Copilot Modernization can (and cannot do)</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/explaining-what-github-copilot-modernization-can-and-cannot-do/4511739">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTExNzM5LUR5T25Ybw?revision&#x3D;2" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>In the last post, we looked at the workflow: assess, plan, execute. You get reports you can review and the agent makes changes you can inspect.
+If you don’t know, GitHub Copilot Modernization is the new agentic tool that supports you to in modernizing older applications. Could it support you with that old 4.8 Framework app, even that forgotten VB.NET script?
+You&#x27;re probably not modernizing one small app. It is probably a handful of projects, each with its own stack of blockers. Different frameworks, different databases, different dependencies frozen in time because nobody wants to touch them.
+GitHub Copilot modernization handles two big categories: upgrading .NET projects to newer versions and migrating .NET apps to Azure. But what does that look like?
+
+Upgrading .NET Projects
+Let’s say, y…</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;34
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+        </ul>
+      </section>
+      <section class="daily-content js-toggle-accordions-scope">
+        <h2 class="daily-heading">
+          <button
+            class="daily-heading-toggle"
+            data-action="toggle-accordions"
+            title="Click to toggle the day, Ctrl + click to toggle all."
+          >
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2026-04-16 datetime="2026-04-16T10:00:00.000Z">2026-04-16</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2026-04-16 datetime="2026-04-16T10:00:00.000Z"></time>
+          </button>
+        </h2>
+        <ul class="sources card">
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Microsoft Fabric Blog</button>
+                  <a class="source-heading__link" href="https://blog.fabric.microsoft.com/en/blog/">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="give-your-ai-agent-the-keys-to-onelake-onelake-mcp-generally-available"
+                        open
+                      >
+                        <summary class="article-expander__title">Give your AI agent the keys to OneLake: OneLake MCP (Generally Available)</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://blog.fabric.microsoft.com/en/blog/give-your-ai-agent-the-keys-to-onelake-onelake-mcp-generally-available/">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://blog.fabric.microsoft.com/images/shared/social/social-image-v2.png" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>Have you ever tried to understand what’s stored in your Fabric items? Would you even know where to begin? I had 92,000 UK property transactions sitting in an open mirrored database. Rather than spending hours sorting through documentation, I just asked my AI agent: “Document what’s in the House Price Open Mirror in my UK … 
+Continue reading “Give your AI agent the keys to OneLake: OneLake MCP (Generally Available)”</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;8
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="answers-to-common-questions-about-fabric-data-factory"
+                        open
+                      >
+                        <summary class="article-expander__title">Answers to common questions about Fabric Data Factory</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://blog.fabric.microsoft.com/en/blog/answers-to-common-questions-about-fabric-data-factory/">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://blog.fabric.microsoft.com/images/shared/social/social-image-v2.png" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>As the Data Integration Customer Advisory Team (CAT) lead, I spent a lot of time talking to customers at the recent FabCon/SQLCon about Fabric Data Factory, and I came away with a clear picture of what’s on customers’ minds when it comes to the future of data integration. Many of the same questions came up … 
+Continue reading “Answers to common questions about Fabric Data Factory”</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;12
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Microsoft Tech Community - Latest Blogs - Microsoft Developer Community Blog</button>
+                  <a class="source-heading__link" href="https://techcommunity.microsoft.com">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/architecting-secure-and-trustworthy-ai-agents-with-microsoft-foundry/4506580"
+                        open
+                      >
+                        <summary class="article-expander__title">Architecting Secure and Trustworthy AI Agents with Microsoft Foundry</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/architecting-secure-and-trustworthy-ai-agents-with-microsoft-foundry/4506580">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTA2NTgwLTEwNG1XMw?revision&#x3D;6" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>Co-Authored by Avneesh Kaushik
+Why Trust Matters for AI Agents
+Unlike static ML models, AI agents call tools and APIs, retrieve enterprise data, generate dynamic outputs, and can act autonomously based on their planning. This introduces expanded risk surfaces: prompt injection, data exfiltration, over-privileged tool access, hallucinations, and undetected model drift. A trustworthy agent must be designed with defense-in-depth controls spanning planning, development, deployment, and operations.
+Key Principles for Trustworthy AI Agents
+Trust Is Designed, Not Bolted On- Trust cannot be added after deployment. By the time an agent reaches production, its data flows, permissions, reasoning boundaries, and safety posture must already be structurally embedded. Trust is architecture, not configura…</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;46
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Microsoft Tech Community - Latest Blogs - Apps on Azure Blog</button>
+                  <a class="source-heading__link" href="https://techcommunity.microsoft.com">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/managing-multi%E2%80%91tenant-azure-resource-with-sre-agent-and-lighthouse/4511789"
+                        open
+                      >
+                        <summary class="article-expander__title">Managing Multi‑Tenant Azure Resource with SRE Agent and Lighthouse</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/managing-multi%E2%80%91tenant-azure-resource-with-sre-agent-and-lighthouse/4511789">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTExNzg5LTVhTmgybQ?revision&#x3D;1" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>Azure SRE Agent is an AI‑powered reliability assistant that helps teams diagnose and resolve production issues faster while reducing operational toil. It analyzes logs, metrics, alerts, and deployment data to perform root cause analysis and recommend or execute mitigations with human approval. It’s capable of integrating with azure services across subscriptions and resource groups that you need to monitor and manage. Today’s enterprise customers live in a multi-tenant world, and there are multiple reasons to that due to acquisitions, complex corporate structures, managed service providers, or IT partners. Azure Lighthouse enables enterprise IT teams and managed service providers to manage resources across multiple azure tenants from a single control plane.
+In this demo I will walk you thro…</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;37
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/using-an-ai-agent-to-troubleshoot-and-fix-azure-function-app-issues/4511781"
+                        open
+                      >
+                        <summary class="article-expander__title">Using an AI Agent to Troubleshoot and Fix Azure Function App Issues</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/using-an-ai-agent-to-troubleshoot-and-fix-azure-function-app-issues/4511781">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTExNzgxLWZ6SUcyTw?revision&#x3D;1" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>TOC
+
+Preparation
+Troubleshooting Workflow
+Conclusion
+
+ 
+Preparation
+Topic: Required tools
+
+AI agent: for example, Copilot CLI / OpenCode / Hermes / OpenClaw, etc. In this example, we use Copilot CLI.
+Model access: for example, Anthropic Claude Opus.
+Relevant skills: this example does not use skills, but using relevant skills can speed up troubleshooting.
+
+ 
+Topic: Compliant with your organization
+
+Enterprise-level projects are sensitive, so you must confirm with the appropriate stakeholders before using them.
+Enterprise environments may also have strict standards for AI agent usage.
+
+ 
+Topic: Network limitations
+
+If the process involves restarting the Function App container or restarting related settings, communication between the user and the agent may be interrupted, and you will need to…</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;29
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/gemma-4-on-azure-container-apps-serverless-gpu/4511671"
+                        open
+                      >
+                        <summary class="article-expander__title">Gemma 4 on Azure Container Apps Serverless GPU</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/gemma-4-on-azure-container-apps-serverless-gpu/4511671">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTExNjcxLTJnZHg2Vw?revision&#x3D;2" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>Every prompt you send to a hosted AI service leaves your tenant. Your code, your architecture decisions, your proprietary logic — all of it crosses a network boundary you don&#x27;t control. For teams building in regulated industries or handling sensitive IP, that&#x27;s not a philosophical concern. It&#x27;s a compliance blocker.
+What if you could spin up a fully private AI coding agent — running on your own GPU, in your own Azure subscription — with a single command?
+That&#x27;s exactly what this template does. One azd up, 15 minutes, and you have Google&#x27;s Gemma 4 running on Azure Container Apps serverless GPU with an OpenAI-compatible API, protected by auth, and ready to power OpenCode as your terminal-based coding agent. No data leaves your environment. No third-party model provider sees your code. Full c…</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;36
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
             <li class="card__section">
               <section class="js-toggle-accordions-scope">
                 <h3 class="source-heading">
@@ -106,42 +409,6 @@ Key architectural benefits include:
 
 Cross‑cloud data availability without replicationData producers share tables directly fro…</span>
                                 &ensp;<span class="article-reading-time">(&hairsp;32
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Microsoft Tech Community - Latest Blogs - Apps on Azure Blog</button>
-                  <a class="source-heading__link" href="https://techcommunity.microsoft.com">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/gemma-4-on-azure-container-apps-serverless-gpu/4511671"
-                        open
-                      >
-                        <summary class="article-expander__title">Gemma 4 on Azure Container Apps Serverless GPU</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/gemma-4-on-azure-container-apps-serverless-gpu/4511671">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTExNjcxLTJnZHg2Vw?revision&#x3D;2" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>Every prompt you send to a hosted AI service leaves your tenant. Your code, your architecture decisions, your proprietary logic — all of it crosses a network boundary you don&#x27;t control. For teams building in regulated industries or handling sensitive IP, that&#x27;s not a philosophical concern. It&#x27;s a compliance blocker.
-What if you could spin up a fully private AI coding agent — running on your own GPU, in your own Azure subscription — with a single command?
-That&#x27;s exactly what this template does. One azd up, 15 minutes, and you have Google&#x27;s Gemma 4 running on Azure Container Apps serverless GPU with an OpenAI-compatible API, protected by auth, and ready to power OpenCode as your terminal-based coding agent. No data leaves your environment. No third-party model provider sees your code. Full c…</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;36
                                   min&hairsp;)</span>
                             </span>
                           </div>
@@ -22795,30 +23062,6 @@ Imagine beginn…</span>
                         </a>
                       </details>
                     </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://techcommunity.microsoft.com/blog/AzureMigrationBlog/assess-security-risks-with-insights-in-azure-migrate/4470866"
-                        open
-                      >
-                        <summary class="article-expander__title">Assess Security risks with Insights in Azure Migrate</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/blog/AzureMigrationBlog/assess-security-risks-with-insights-in-azure-migrate/4470866">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDcwODY2LW8xR0NQRw?revision&#x3D;2" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>Why Security matters in Migration
-Migrating to the cloud is not only about speed and cost efficiency, it&#x27;s also about building a secure foundation on Azure. As organizations move workloads to Azure, security often slips down the priority list, overshadowed by migration tasks and timelines. But here’s the truth: addressing security risks early in your migration strategy not only prevents costly surprises but also strengthens compliance, reduces risk exposure, and instills confidence across your business. A proactive approach ensures your cloud journey is smooth, secure, and future-ready.
-That’s why we introduced Insights (preview) in Azure Migrate, to help you identify security risks before they become roadblocks during the migration journey. 
-What are Insights?
-Security Insights in Azure M…</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;30
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
                 </section>
               </section>
             </li>
@@ -22849,28 +23092,6 @@ Security Insights in Azure M…</span>
 What&#x27;s New
 The demand for leveraging telemetry data beyond observability scenarios is st…</span>
                                 &ensp;<span class="article-reading-time">(&hairsp;26
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/comprehensive-vm-monitoring-with-opentelemetry-performance-counters/4470122"
-                        open
-                      >
-                        <summary class="article-expander__title">Comprehensive VM Monitoring with OpenTelemetry performance counters</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/comprehensive-vm-monitoring-with-opentelemetry-performance-counters/4470122">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDcwMTIyLXR6WTVUVA?revision&#x3D;8" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>Monitoring virtual machines often requires multiple tools and manual investigation. You may see high CPU or memory usage, but identifying the process responsible usually means signing in to the VM and running diagnostic commands.
-Azure Monitor already provides Guest OS performance monitoring through Log Analytics‑based metrics, trusted for its flexibility, deep integration, and advanced analytics, including custom performance counters, extended retention, and powerful KQL queries. Many customers use LA‑based metrics to correlate performance with other log data sources and build rich operational insights.
-Today, we’re excited to introduce a new preview capability: OpenTelemetry (OTel) Guest OS metrics for VMs and Arc servers, with metric data stored in the metrics-optimized Azure Monitor Wo…</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;35
                                   min&hairsp;)</span>
                             </span>
                           </div>
@@ -22938,345 +23159,6 @@ But the game is changing. Today, agentic AI is transforming modernization from a
                         </a>
                       </details>
                     </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/how-to-add-an-mcp-tool-to-your-azure-foundry-agent-using-dynamic-sessions-on-azu/4468844"
-                        open
-                      >
-                        <summary class="article-expander__title">How-to add an MCP tool to your Azure Foundry agent using dynamic sessions on Azure Container Apps</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/how-to-add-an-mcp-tool-to-your-azure-foundry-agent-using-dynamic-sessions-on-azu/4468844">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDY4ODQ0LUJSRWhENA?revision&#x3D;10" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>Now available in preview, Azure Container Apps supports a new shell session pool type in dynamic sessions as well as MCP support for both shell and Python container types. With MCP enablement, you can bring the benefits of dynamics sessions to your AI agents by giving them the ability to execute code, run system commands, access file systems, and perform complex tasks in isolated, secure container environments that appear and disappear on demand.
- 
-The following is a tutorial on how to use an MCP enabled dynamic session as a tool used in an Azure Foundry agent giving it the capability to run remote shell commands. 
-Setup
-For this tutorial, we&#x27;re going to use an ARM template to deploy our Container App Session Pool resource.
-Begin by signing into Azure and creating a resource group.
-az logi…</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;32
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/azure-functions-on-azure-container-apps-the-unified-platform-for-event-driven-an/4470814"
-                        open
-                      >
-                        <summary class="article-expander__title">Azure Functions on Azure Container Apps: The Unified Platform for Event-Driven and Finite Workloads</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/azure-functions-on-azure-container-apps-the-unified-platform-for-event-driven-an/4470814">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDcwODE0LVp1VWk4Ug?revision&#x3D;4" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>Overview 
-Azure Functions on Azure Container Apps (ACA) integrates the high-productivity model of Function-as-a-Service (FaaS) with the flexible, cloud-native hosting environment of Azure Container Apps. Functions deployed in this manner run as continuous services (&quot;Apps&quot;), providing event-driven responsiveness while simultaneously possessing the mechanisms to handle tasks that traditionally have a definite start and end time. 
-This platform utilizes a rich set of triggers and bindings and incorporates advanced Azure Container Apps features, enabling it to execute virtually any containerized workload. 
-Use Cases for Azure Functions on Azure Container Apps 
-Azure Functions on Azure Container Apps is ideally suited for all event-driven scenarios and can robustly handle tasks conventionally c…</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;29
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/windows-server-2019-retirement-on-aks-enabled-by-azure-arc/4470184"
-                        open
-                      >
-                        <summary class="article-expander__title">Windows Server 2019 Retirement on AKS enabled by Azure Arc</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/windows-server-2019-retirement-on-aks-enabled-by-azure-arc/4470184">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDcwMTg0LVFCelRZQg?revision&#x3D;2" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>Action Required: Migrate to Windows Server 2022 by April 2026
-As previously announced, Microsoft is retiring Windows Server 2019 support on Azure Kubernetes Service (AKS) enabled by Azure Arc (formerly AKS Hybrid on Azure Local releases after April 1, 2026. If you&#x27;re running Windows Server 2019 workloads, you must migrate to Windows Server 2022 to maintain support, security updates, and the ability to upgrade Kubernetes versions.
-Migration Approach
-You cannot upgrade Windows node pools in place. The migration process requires:
-
-Creating new Windows Server 2022 node pools
-Updating and rebuilding container images with WS2022 base images
-Migrating workloads to the new pools
-Decommissioning old Windows Server 2019 pools
-
-Make sure to allocate 2-4 weeks for testing, and plan to complete product…</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;29
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Microsoft Tech Community - Latest Blogs - Microsoft Developer Community Blog</button>
-                  <a class="source-heading__link" href="https://techcommunity.microsoft.com">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/understanding-small-language-modes/4466170"
-                        open
-                      >
-                        <summary class="article-expander__title">Understanding Small Language Modes</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/understanding-small-language-modes/4466170">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDY2MTcwLWJQaU5EYg?revision&#x3D;8" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>In Part 1 of this series, we explored the key differences between Large Language Models (LLMs) and Small Language Models (SLMs) and why the latter are becoming essential for edge computing.
-In short, while LLMs like GPT-5 and Gemini are incredibly powerful, they depend on massive compute resources and constant connectivity. SLMs, with far fewer parameters, can run directly on devices such as smartphones, laptops, and embedded systems. This means faster responses, stronger privacy, and far lower energy use making AI not just powerful, but practical. For details on model efficiency and quotas, see Azure OpenAI quotas and limits.
-In this second part, we move from why SLMs matter to how they actually work, focusing on the technical foundations and design principles that make them effective in …</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;39
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Microsoft Fabric Blog</button>
-                  <a class="source-heading__link" href="https://blog.fabric.microsoft.com/en/blog/">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="two-years-on-how-fabric-redefines-the-modernization-path-for-synapse-users"
-                        open
-                      >
-                        <summary class="article-expander__title">Two Years in: How Fabric Redefines the Modernization Path for Synapse Users</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://blog.fabric.microsoft.com/en/blog/two-years-on-how-fabric-redefines-the-modernization-path-for-synapse-users/">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://blog.fabric.microsoft.com/images/shared/social/social-image-v2.png" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>Two years ago, we introduced Microsoft Fabric to Azure Synapse users as a bold new direction for analytics—one that promised unification, simplicity, scale. Today, that promise has matured into a complete platform that’s not just ready for enterprises, it’s built for them. To be very clear: Synapse continues to be supported. We will fix bugs, … 
-Continue reading “Two Years in: How Fabric Redefines the Modernization Path for Synapse Users”</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;8
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="fabric-databases-a-unified-saas-native-experience-for-modern-data-workloads-generally-available"
-                        open
-                      >
-                        <summary class="article-expander__title">Fabric Databases— a unified, SaaS-native experience for modern data workloads (Generally Available)</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://blog.fabric.microsoft.com/en/blog/fabric-databases-a-unified-saas-native-experience-for-modern-data-workloads-generally-available/">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://blog.fabric.microsoft.com/images/shared/social/social-image-v2.png" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>Today marks a major milestone: Fabric databases are now generally available, bringing together the strengths of SQL database and Cosmos DB within Microsoft Fabric. This launch redefines how organizations manage, analyze, and activate their data, creating a unified foundation for the next generation of AI-powered apps and innovation. Fabric databases: simple, autonomous, optimized for AI … 
-Continue reading “Fabric Databases— a unified, SaaS-native experience for modern data workloads (Generally Available)”</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;9
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="fabric-capacity-events-in-real-time-hub-preview"
-                        open
-                      >
-                        <summary class="article-expander__title">Fabric Capacity Events in Real-Time Hub (Preview)</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://blog.fabric.microsoft.com/en/blog/fabric-capacity-events-in-real-time-hub-preview/">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://blog.fabric.microsoft.com/images/shared/social/social-image-v2.png" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>This highly requested feature is designed to give organizations real-time visibility and control over their Microsoft Fabric capacity resources to take the actions necessary to keep their capacities running. Capacity overview events include two event types: As part of this, there has been a community effort to build an accelerator that has out of the … 
-Continue reading “Fabric Capacity Events in Real-Time Hub (Preview)”</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;5
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="whats-new-for-fabric-data-agents-at-ignite-2025-unlocking-deeper-data-reasoning-and-seamless-ai-interoperability"
-                        open
-                      >
-                        <summary class="article-expander__title">What’s New for Fabric Data Agents at Ignite 2025: Unlocking Deeper Data Reasoning and Seamless AI Interoperability</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://blog.fabric.microsoft.com/en/blog/whats-new-for-fabric-data-agents-at-ignite-2025-unlocking-deeper-data-reasoning-and-seamless-ai-interoperability/">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://blog.fabric.microsoft.com/images/shared/social/social-image-v2.png" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>From Unstructured Data and Ontology to Seamless Integration with M365 Copilot and MCP Fabric data agents are evolving rapidly, and today we’re announcing many new capabilities that make it easier than ever to build modular, production-ready agentic solutions on your enterprise data in Fabric! At their core, Fabric data agents are interoperable AI agents that … 
-Continue reading “What’s New for Fabric Data Agents at Ignite 2025: Unlocking Deeper Data Reasoning and Seamless AI Interoperability”</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;7
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="from-data-platform-to-intelligence-platform-introducing-microsoft-fabric-iq"
-                        open
-                      >
-                        <summary class="article-expander__title">From Data Platform to Intelligence Platform: Introducing Microsoft Fabric IQ</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://blog.fabric.microsoft.com/en/blog/from-data-platform-to-intelligence-platform-introducing-microsoft-fabric-iq/">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://blog.fabric.microsoft.com/images/shared/social/social-image-v2.png" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>The organizations winning today are not merely collecting more data. They are the organizations turning data into intelligence, and intelligence into action. They are building systems that observe, understand, and reason about the business in real time and at machine scale and then act to drive and advance business outcomes. That is the shift from … 
-Continue reading “From Data Platform to Intelligence Platform: Introducing Microsoft Fabric IQ”</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;13
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="whats-new-in-onelake-and-the-fabric-platform-more-sources-security-and-capacity-tooling"
-                        open
-                      >
-                        <summary class="article-expander__title">What’s new in OneLake and the Fabric platform: more sources, security, and capacity tooling</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://blog.fabric.microsoft.com/en/blog/whats-new-in-onelake-and-the-fabric-platform-more-sources-security-and-capacity-tooling/">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://blog.fabric.microsoft.com/images/shared/social/social-image-v2.png" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>Organizations today are under immense pressure to unify data spread across clouds, systems, and formats—while also meeting higher standards for security, governance, and AI readiness. Microsoft Fabric was built to solve exactly this challenge. Since launching two years ago, more than 28,000 customers like Dentsu, Eastman, and Apollo Hospitals have adopted Fabric to bring their data together in OneLake and run … 
-Continue reading “What’s new in OneLake and the Fabric platform: more sources, security, and capacity tooling”</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;10
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="announcing-sql-database-in-fabric-is-now-generally-available-ga"
-                        open
-                      >
-                        <summary class="article-expander__title">Announcing SQL database in Fabric (Generally Available)</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://blog.fabric.microsoft.com/en/blog/announcing-sql-database-in-fabric-is-now-generally-available-ga/">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="//dataplatformblogwebfd-d3h9cbawf0h8ecgf.b01.azurefd.net/wp-content/uploads/2025/11/SQL-database-in-Fabric.png" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>Co-authored by: Idris Motiwala SQL is everywhere and Microsoft is innovating to deliver a unified experience across on-premises, cloud, and SaaS. One SQL unifies your data estate, bringing platform consistency, performance at scale, advanced security, and AI-ready tools together in one seamless experience, and SQL database in Fabric is no exception to that. At Microsoft … 
-Continue reading “Announcing SQL database in Fabric (Generally Available)”</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;8
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="elevating-microsoft-fabric-with-new-isv-solutions"
-                        open
-                      >
-                        <summary class="article-expander__title">New Partner Integrations for Microsoft Fabric Unlocking AI and Analytics Opportunities</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://blog.fabric.microsoft.com/en/blog/elevating-microsoft-fabric-with-new-isv-solutions/">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="//dataplatformblogwebfd-d3h9cbawf0h8ecgf.b01.azurefd.net/wp-content/uploads/2025/11/image-98.png" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>Unlocking value with partner workloads for Microsoft Fabric and data unification integration for Microsoft OneLake. Microsoft Ignite 2025 marks a pivotal moment for the Microsoft Fabric ecosystem, as we welcome a new wave of ISV partners whose integrations promise to redefine the boundaries of data analytics, AI, and business innovation. Building on the momentum from … 
-Continue reading “New Partner Integrations for Microsoft Fabric Unlocking AI and Analytics Opportunities”</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;9
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="microsoft-and-databricks-advancing-openness-and-interoperability-with-onelake"
-                        open
-                      >
-                        <summary class="article-expander__title">Microsoft and Databricks: Advancing Openness and Interoperability with OneLake</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://blog.fabric.microsoft.com/en/blog/microsoft-and-databricks-advancing-openness-and-interoperability-with-onelake/">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="//dataplatformblogwebfd-d3h9cbawf0h8ecgf.b01.azurefd.net/wp-content/uploads/2025/11/Databricks-blog-image.png" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>Read and Write integration announcement between Microsoft OneLake and Azure Databricks</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;6
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="microsoft-and-snowflake-simplified-interoperability-with-no-data-movement"
-                        open
-                      >
-                        <summary class="article-expander__title">Microsoft and Snowflake: Simplified interoperability with no data movement</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://blog.fabric.microsoft.com/en/blog/microsoft-and-snowflake-simplified-interoperability-with-no-data-movement/">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="//dataplatformblogwebfd-d3h9cbawf0h8ecgf.b01.azurefd.net/wp-content/uploads/2025/11/Fabric_1090636_Blog_251114.png" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>Data today lives everywhere—across apps, services, and clouds. Every department has its own analytics stack, AI tools, and preferences, and what used to be a manageable data landscape is now a distributed web of systems. But now, in the era of AI, bringing this data together has never been more important as we build agentic … 
-Continue reading “Microsoft and Snowflake: Simplified interoperability with no data movement”</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;6
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
                 </section>
               </section>
             </li>
@@ -23284,8 +23166,8 @@ Continue reading “Microsoft and Snowflake: Simplified interoperability with no
       </section>
 
     <footer>
-      <a class="footer-link" href="https://github.com/lok-msft/azure-blog-rss/actions/runs/24489229829">
-        <time id="build-timestamp" datetime="2026-04-16T02:46:41.598Z">2026-04-16T02:46:41.598Z</time>
+      <a class="footer-link" href="https://github.com/lok-msft/azure-blog-rss/actions/runs/24544930179">
+        <time id="build-timestamp" datetime="2026-04-17T02:41:43.569Z">2026-04-17T02:41:43.569Z</time>
       </a>
       <a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a>
     </footer>
