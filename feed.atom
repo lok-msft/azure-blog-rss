@@ -2,10 +2,141 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2026-04-23T02:44:36.310Z</updated>
+    <updated>2026-04-24T02:45:35.042Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Centralizing Enterprise API Access for Agent-Based Architectures]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/centralizing-enterprise-api-access-for-agent-based-architectures/4511792</id>
+        <link href="https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/centralizing-enterprise-api-access-for-agent-based-architectures/4511792"/>
+        <updated>2026-04-23T21:43:23.000Z</updated>
+        <summary type="html"><![CDATA[Problem Statement
+When building AI agents or automation solutions, calling enterprise APIs directly often means configuring individual HTTP actions within each agent for every API. While this works for simple scenarios, it quickly becomes repetitive and difficult to manage as complexity grows.
+The challenge becomes more pronounced when a single business domain exposes multiple APIs, or when the same APIs are consumed by multiple agents. This leads to duplicated configurations, higher maintenance effort, inconsistent behavior, and increased governance and security risks.
+A more scalable approach is to centralize and reuse API access. By grouping APIs by business domain using an API management layer, shaping those APIs through a Model Context Protocol (MCP) server, and exposing the MCP serve…]]></summary>
+        <author>
+            <name>sbaskaran</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Automatic SSO Takeover in Azure AD B2C Custom Policies]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/automatic-sso-takeover-in-azure-ad-b2c-custom-policies/4514167</id>
+        <link href="https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/automatic-sso-takeover-in-azure-ad-b2c-custom-policies/4514167"/>
+        <updated>2026-04-23T21:34:55.000Z</updated>
+        <summary type="html"><![CDATA[Why This Matters
+As organizations modernize authentication, many shift toward Single Sign-On (SSO) using providers like Microsoft EntraID.
+But if you already have users in Azure AD B2C using local accounts (email + password), the transition isn’t straightforward.
+You’ll run into:
+
+Duplicate identities when users sign in with SSO using the same email
+No clean migration path for existing users
+Security gaps if password sign-in remains available after SSO
+Confusing UX if password reset still allowed for SSO users
+
+The Goal
+A seamless, secure transition where:
+
+Users keep a single identity (objectId)
+SSO is automatically linked to existing accounts
+Password-based flows are permanently disabled after migration
+Non-migrated users continue normal local flows (including Forgot Password)
+No manual …]]></summary>
+        <author>
+            <name>anammalu</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Enabling Agentic Data Governance with Hybrid Cloud Flexibility in Azure]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/enabling-agentic-data-governance-with-hybrid-cloud-flexibility-in-azure/4513511</id>
+        <link href="https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/enabling-agentic-data-governance-with-hybrid-cloud-flexibility-in-azure/4513511"/>
+        <updated>2026-04-23T18:17:35.000Z</updated>
+        <summary type="html"><![CDATA[The “Why”
+
+Do you manage data in a complex multi-cloud environment? Are you struggling with data silos, evolving regulations, and the pressure to maintain control and compliance across on-prem and multiple clouds? Do you ever wish an intelligent assistant could help shoulder the load of data governance? If so, I can relate. Let me tell you a story that might sound familiar.
+Meet Mark (pictured above). He is a data governance officer at Contoso (a fictional but very representative enterprise).  Mark’s day job is ensuring data governance and compliance across his company’s vast hybrid cloud estate – think around ~2 million data assets sprawled across 12+ datacenters on-premises and in different public clouds. Regulatory requirements are constantly shifting. Customer data is increasingly sens…]]></summary>
+        <author>
+            <name>Moaz_Mirza</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Microsoft 365 multi-agent workflow with Microsoft Agent Framework]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/microsoft-365-multi-agent-workflow-with-microsoft-agent-framework/4514164</id>
+        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/microsoft-365-multi-agent-workflow-with-microsoft-agent-framework/4514164"/>
+        <updated>2026-04-23T16:16:15.000Z</updated>
+        <summary type="html"><![CDATA[Most production AI tasks are too complex for a single agent. You need specialists that collaborate, a destination expert that researches the best places to visit, a budget analyst that breaks down costs, an activities curator that finds the best experiences, all coordinated by an orchestration layer you can test locally, deploy to Microsoft Foundry, and surface to end users in Microsoft 365 (Teams or Copilot).
+This article takes you through a self-contained runnable example inspired by the end-to-end samples in the Microsoft Agent Framework repository. Each section builds on the previous one:
+
+You can stop at any layer. A WorkflowBuilder workflow works locally without Foundry; a hosted agent works without M365. The stack composes, you adopt what you need.
+What we'll build
+
+
+LayerWhatKey co…]]></summary>
+        <author>
+            <name>vgiraud</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[CodeAct in Agent Framework: Faster Agents with Fewer Model Turns]]></title>
+        <id>https://devblogs.microsoft.com/agent-framework/?p=5293</id>
+        <link href="https://devblogs.microsoft.com/agent-framework/codeact-with-hyperlight/"/>
+        <updated>2026-04-23T14:24:23.000Z</updated>
+        <summary type="html"><![CDATA[Modern AI agents often aren’t bottlenecked by model quality, they are bottlenecked by orchestration overhead. When an agent chains together many small tool calls, each step typically requires a new model turn, driving up latency and token usage. With CodeAct support in Agent Framework, agents can collapse those multi-step plans into a single executable code […]
+The post CodeAct in Agent Framework: Faster Agents with Fewer Model Turns appeared first on Microsoft Agent Framework.]]></summary>
+        <author>
+            <name>Eduard van Valkenburg</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Nested folders support in shortcut transformations (Generally Available)]]></title>
+        <id>nested-folders-support-in-shortcut-transformations-generally-available</id>
+        <link href="https://blog.fabric.microsoft.com/en/blog/nested-folders-support-in-shortcut-transformations-generally-available/"/>
+        <updated>2026-04-23T14:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Nested folders, shortcut transformations, subfolder processing, OneLake, shortcuts, Lakehouse Data lakes rarely come in flat structures. In practice, data is organized across multi-level folder hierarchies, partitioned by date, region, source system, or business unit. Previously, shortcut transformations processed files at a single folder level, requiring users to set up separate transforms for each subdirectory. Moving … 
+Continue reading “Nested folders support in shortcut transformations (Generally Available)”]]></summary>
+        <author>
+            <name>Microsoft Fabric Blog</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Resource instance rules for OneLake in Microsoft Fabric (Preview)]]></title>
+        <id>resource-instance-rules-for-onelake-in-microsoft-fabric-preview</id>
+        <link href="https://blog.fabric.microsoft.com/en/blog/resource-instance-rules-for-onelake-in-microsoft-fabric-preview/"/>
+        <updated>2026-04-23T10:30:00.000Z</updated>
+        <summary type="html"><![CDATA[As enterprises adopt OneLake as their unified data lake for analytics, securing how external services access data in OneLake becomes increasingly important—especially in environments where public internet access must be tightly controlled. Today, we’re introducing resource instance rules for OneLake in preview. This new capability allows workspace admins to explicitly allow inbound access from trusted … 
+Continue reading “Resource instance rules for OneLake in Microsoft Fabric (Preview)”]]></summary>
+        <author>
+            <name>Microsoft Fabric Blog</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Cross-workspace logging for MLflow in Microsoft Fabric: Build MLOps workflows with confidence (Generally Available)]]></title>
+        <id>cross-workspace-logging-for-mlflow-in-microsoft-fabric-build-mlops-workflows-with-confidence-generally-available</id>
+        <link href="https://blog.fabric.microsoft.com/en/blog/cross-workspace-logging-for-mlflow-in-microsoft-fabric-build-mlops-workflows-with-confidence-generally-available/"/>
+        <updated>2026-04-23T10:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Machine learning teams need more than a great model — they need a reliable way to move that model from experimentation to production. Cross-workspace logging for MLflow in Microsoft Fabric, is a capability that enables you to build end-to-end MLOps workflows using the standard MLflow APIs you already know. Figure: Animated gif of Log ML … 
+Continue reading “Cross-workspace logging for MLflow in Microsoft Fabric: Build MLOps workflows with confidence (Generally Available)”]]></summary>
+        <author>
+            <name>Microsoft Fabric Blog</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Stop Experimenting, Start Building: AI Apps & Agents Dev Days Has You Covered]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/stop-experimenting-start-building-ai-apps--agents-dev-days-has-you-covered/4513651</id>
+        <link href="https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/stop-experimenting-start-building-ai-apps--agents-dev-days-has-you-covered/4513651"/>
+        <updated>2026-04-23T07:00:00.000Z</updated>
+        <summary type="html"><![CDATA[The AI landscape has shifted. The question is no longer “Can we build AI applications?” it’s “Can we build AI applications that actually work in production?” Demos are easy. Reliable, scalable, resilient AI systems that handle real-world complexity? That’s where most teams struggle.
+If you’re an AI developer, software engineer, or solution architect who’s ready to move beyond prototypes and into production-grade AI, there’s a series built specifically for you.
+ 
+
+What Is AI Apps & Agents Dev Days?
+ 
+AI Apps & Agents Dev Days is a monthly technical series from Microsoft Reactor, delivered in partnership with Microsoft and NVIDIA. You can explore the full series at https://developer.microsoft.com/en-us/reactor/series/s-1590/
+This isn’t a slide deck marathon. The series tagline says it best: …]]></summary>
+        <author>
+            <name>Lee_Stott</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Optimizing Git policy management at scale]]></title>
         <id>https://devblogs.microsoft.com/devops/?p=72697</id>
@@ -8455,31 +8586,6 @@ The post Introducing TypeSpec for Microsoft 365 Copilot – Build declarative ag
 The post SharePoint Framework (SPFx) roadmap update – November 2025 appeared first on Microsoft 365 Developer Blog.]]></summary>
         <author>
             <name>Vesa Juvonen</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Microsoft JDBC Driver for Microsoft Fabric Data Engineering (Preview)]]></title>
-        <id>microsoft-jdbc-driver-for-microsoft-fabric-data-engineering-preview</id>
-        <link href="https://blog.fabric.microsoft.com/en/blog/microsoft-jdbc-driver-for-microsoft-fabric-data-engineering-preview/"/>
-        <updated>2025-11-25T11:00:00.000Z</updated>
-        <summary type="html"><![CDATA[JDBC (Java Database Connectivity) is a widely adopted standard that enables client applications to connect to and work with data from databases and big data platforms. The Microsoft JDBC Driver for Microsoft Fabric Data Engineering (Preview) – an enterprise-grade connector that brings powerful, secure, and flexible Spark SQL connectivity to your Java applications and BI … 
-Continue reading “Microsoft JDBC Driver for Microsoft Fabric Data Engineering (Preview)”]]></summary>
-        <author>
-            <name>Microsoft Fabric Blog</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Azure SRE Agent: Expanding Observability and Multi-Cloud Resilience]]></title>
-        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/azure-sre-agent-expanding-observability-and-multi-cloud-resilience/4472719</id>
-        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/azure-sre-agent-expanding-observability-and-multi-cloud-resilience/4472719"/>
-        <updated>2025-11-24T23:34:13.000Z</updated>
-        <summary type="html"><![CDATA[The Azure SRE Agent continues to evolve as a cornerstone for operational excellence and incident management. Over the past few months, we have made significant strides in enabling integrations with leading observability platforms—Dynatrace, New Relic, and Datadog—through Model Context Protocol (MCP) Servers. These partnerships serve joint customers, enabling automated remediation across diverse environments. 
-Deepening Integrations with MCP Servers 
-Our collaboration with these partners is more than technical—it’s about delivering value at scale. Datadog, New Relic, and Dynatrace are all Azure Native ISV Service partners. With these integrations Azure Native customers can also choose to add these MCP servers directly from the Azure Native partners’ resource: 
-
-Datadog: At Ignite, Azure SRE…]]></summary>
-        <author>
-            <name>dbandaru</name>
         </author>
     </entry>
 </feed>
