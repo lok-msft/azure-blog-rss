@@ -2,10 +2,139 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2026-04-24T02:45:35.042Z</updated>
+    <updated>2026-04-25T02:33:48.864Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Modernizing Industrial Safety and Inspection with AI-Driven Drone Automation]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/modernizing-industrial-safety-and-inspection-with-ai-driven-drone-automation/4514284</id>
+        <link href="https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/modernizing-industrial-safety-and-inspection-with-ai-driven-drone-automation/4514284"/>
+        <updated>2026-04-25T00:07:31.000Z</updated>
+        <summary type="html"><![CDATA[In large-scale manufacturing and infrastructure environments, maintaining structural integrity is a continuous operational challenge. Industrial facilities—from automotive plants to energy and infrastructure sites—depend on thousands of structural connection points such as bolts and fasteners to ensure safe and reliable operations. Over time, vibration, thermal cycling, and mechanical stress can cause these components to loosen or degrade.
+While drones have dramatically improved how inspection data is captured, the analysis of that data—often involving thousands of connection points—remains largely manual. Engineers frequently review footage frame by frame, making the process labor-intensive, inconsistent, difficult to scale, and often reactive rather than predictive.
+Bolt inspection is on…]]></summary>
+        <author>
+            <name>PeterTHLee</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Designing a Medallion Framework — A Decision Guide]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/designing-a-medallion-framework-%E2%80%94-a-decision-guide/4514349</id>
+        <link href="https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/designing-a-medallion-framework-%E2%80%94-a-decision-guide/4514349"/>
+        <updated>2026-04-24T16:11:09.000Z</updated>
+        <summary type="html"><![CDATA[Everyone draws the same picture: Bronze → Silver → Gold. Three boxes, three arrows. Done.
+What that picture hides is the dozen design decisions you have to make inside each box — and the ones you make at the boundaries between them. Get those right and onboarding the 200th table feels like onboarding the 2nd. Get them wrong and you’ll be rewriting the framework in 18 months.
+This post is a generic walkthrough of how to think about a medallion framework on Databricks (or any other platform): what each layer should own, where the responsibilities blur, and a few opinionated patterns I’ve found worth defending
+The classic template -
+Bronze → Silver → Gold. Three layers, broadly:
+Press enter or click to view image in full size
+ 
+
+ 
+This template is intentionally vague — and that’s the point. T…]]></summary>
+        <author>
+            <name>Subhajit1994</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Enhancing Enterprise AI Deployments with Zero Trust Networking]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/enhancing-enterprise-ai-deployments-with-zero-trust-networking/4513662</id>
+        <link href="https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/enhancing-enterprise-ai-deployments-with-zero-trust-networking/4513662"/>
+        <updated>2026-04-24T16:08:22.000Z</updated>
+        <summary type="html"><![CDATA[Problem Statement
+
+Azure OpenAI is publicly accessible by default Azure OpenAI frequently asked questions | Microsoft Learn
+Any application with API access can call it from anywhere
+Violates:
+
+Enterprise security policies
+Zero Trust architecture Key principles of the Zero Trust network model
+Regulatory compliance
+
+
+👉 Enterprises require:
+
+Private connectivity
+Controlled access via VNet
+DNS-based secure resolution
+
+🏗️ Architecture Overview
+✅ Key Components
+
+Azure OpenAI Service
+Azure Virtual Network (VNet)
+Private Endpoint
+Private DNS Zone
+Application (VM / App Service / AKS)
+
+✅ High-Level Flow
+
+Application sends request to OpenAI endpoint
+DNS resolves endpoint → Private IP
+Traffic routed inside VNet
+No internet exposure
+
+👉 Private endpoints assign a private IP inside VNet, ensuring secu…]]></summary>
+        <author>
+            <name>kirankumar_manchiwar04</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Chat History Storage Patterns in Microsoft Agent Framework]]></title>
+        <id>https://devblogs.microsoft.com/agent-framework/?p=5255</id>
+        <link href="https://devblogs.microsoft.com/agent-framework/chat-history-storage-patterns-in-microsoft-agent-framework/"/>
+        <updated>2026-04-24T15:00:14.000Z</updated>
+        <summary type="html"><![CDATA[When people talk about building AI agents, they usually focus on models, tools, and prompts. In practice, one of the most important architectural decisions is much simpler: where does the conversation history live? Imagine a user asks your agent a complex question, clicks “try again,” explores two different answers in parallel, and then comes back […]
+The post Chat History Storage Patterns in Microsoft Agent Framework appeared first on Microsoft Agent Framework.]]></summary>
+        <author>
+            <name>Wes Steyn</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Axios npm Supply Chain Compromise – Guidance for Azure Pipelines Customers]]></title>
+        <id>https://devblogs.microsoft.com/devops/?p=72715</id>
+        <link href="https://devblogs.microsoft.com/devops/axios-npm-supply-chain-compromise-guidance-for-azure-pipelines-customers/"/>
+        <updated>2026-04-24T10:40:43.000Z</updated>
+        <summary type="html"><![CDATA[On March 31, 2026, malicious versions of the widely used JavaScript HTTP client library Axios were briefly published to the npm registry as part of a supply chain attack. The affected versions — 1.14.1 and 0.30.4 — included a hidden malicious dependency that executed during installation and connected to attacker-controlled command-and-control (C2) infrastructure to retrieve […]
+The post Axios npm Supply Chain Compromise – Guidance for Azure Pipelines Customers appeared first on Azure DevOps Blog.]]></summary>
+        <author>
+            <name>Josef Sin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Fabric Influencers Spotlight April 2026]]></title>
+        <id>fabric-influencers-spotlight-april-2026</id>
+        <link href="https://blog.fabric.microsoft.com/en/blog/fabric-influencers-spotlight-april-2026/"/>
+        <updated>2026-04-24T09:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Welcome to the April 2026 edition of the Fabric Influencers Spotlight, a recurring monthly post here to shine a bright light on the places on the internet where Microsoft MVPs & Fabric Super Users are doing some amazing work on all aspects of Microsoft Fabric. The Microsoft Fabric Community team has created the Fabric Influencers Spotlight to … 
+Continue reading “Fabric Influencers Spotlight April 2026”]]></summary>
+        <author>
+            <name>Microsoft Fabric Blog</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[When RAG Isn’t Enough: Moving from Retrieval to Relationship-Aware Systems in Enterprise AI:]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/when-rag-isn%E2%80%99t-enough-moving-from-retrieval-to-relationship-aware-systems-in-ent/4514185</id>
+        <link href="https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/when-rag-isn%E2%80%99t-enough-moving-from-retrieval-to-relationship-aware-systems-in-ent/4514185"/>
+        <updated>2026-04-24T07:04:57.000Z</updated>
+        <summary type="html"><![CDATA[The Problem
+In an enterprise AI scenario, the goal was to map structured feature data to relevant sections within large technical documents.
+At a glance, this appears to be a straightforward semantic matching problem. Initial results using semantic search were promising. However, as the system was used more extensively, certain issues became apparent:
+
+Inconsistent mappings across similar inputs
+Occasional matches to contextually unrelated sections
+Variability in results across repeated runs
+
+Despite multiple optimizations, the system continued to produce outcomes that lacked reliability.
+This pointed to a deeper realization:
+The challenge was not just retrieval quality, but the absence of structure in how retrieval was being guided. 
+Initial Approach: Retrieval-Augmented Generation (RAG)
+…]]></summary>
+        <author>
+            <name>ankitasarkar</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Centralizing Enterprise API Access for Agent-Based Architectures]]></title>
         <id>https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/centralizing-enterprise-api-access-for-agent-based-architectures/4511792</id>
@@ -8533,59 +8662,6 @@ Customers can see not just whether their systems are up or fast, but also wh
 Azure Monitor, in partnership with Foundry, unifies agent …]]></summary>
         <author>
             <name>Hong Gao</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[On-premises data gateway November 2025 release]]></title>
-        <id>on-premises-data-gateway-november-2025-release</id>
-        <link href="https://blog.fabric.microsoft.com/en/blog/on-premises-data-gateway-november-2025-release/"/>
-        <updated>2025-11-26T09:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Here is the November 2025 release of the on-premises data gateway (version 3000.294).]]></summary>
-        <author>
-            <name>Microsoft Fabric Blog</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Run local AI on any PC or Mac — Microsoft Foundry Local]]></title>
-        <id>https://techcommunity.microsoft.com/blog/MicrosoftMechanicsBlog/run-local-ai-on-any-pc-or-mac-%E2%80%94-microsoft-foundry-local/4473018</id>
-        <link href="https://techcommunity.microsoft.com/blog/MicrosoftMechanicsBlog/run-local-ai-on-any-pc-or-mac-%E2%80%94-microsoft-foundry-local/4473018"/>
-        <updated>2025-11-25T18:16:05.000Z</updated>
-        <summary type="html"><![CDATA[Leverage full hardware performance, keep data private, reduce latency, and predict costs, even in offline or low-connectivity scenarios.
-Simplify development and deploy AI apps across diverse hardware and OS platforms with the Foundry Local SDK. Manage models locally, switch AI engines easily, and deliver consistent, multi-modal experiences, voice or text, without complex cross-platform setup.
-Raji Rajagopalan, Microsoft CoreAI Vice President, shares how to start quickly, test locally, and scale confidently.
-No cloud needed.
-
-Build AI apps once and run them locally on Windows, macOS, & mobile. Get started with Foundry Local SDK.
-Lower latency, data privacy, and cost predictability.
-
-All in the box with Foundry Local. Start here.
-Build once, deploy everywhere.
-
-Foundry Local ensures your AI…]]></summary>
-        <author>
-            <name>Zachary-Cavanell</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Introducing TypeSpec for Microsoft 365 Copilot – Build declarative agents faster with more confidence]]></title>
-        <id>https://devblogs.microsoft.com/microsoft365dev/?p=25058</id>
-        <link href="https://devblogs.microsoft.com/microsoft365dev/introducing-typespec-for-microsoft-365-copilot/"/>
-        <updated>2025-11-25T15:54:48.000Z</updated>
-        <summary type="html"><![CDATA[We’re excited to announce that TypeSpec for Microsoft 365 Copilot is now generally available! This milestone marks the first stable release of the domain-specific language (DSL) designed to streamline how developers build and extend Microsoft 365 Copilot. Whether you’re creating an agent to help colleagues find documents, or connecting your service as an API plugin, TypeSpec for Microsoft 365 Copilot makes the process […]
-The post Introducing TypeSpec for Microsoft 365 Copilot – Build declarative agents faster with more confidence appeared first on Microsoft 365 Developer Blog.]]></summary>
-        <author>
-            <name>Sébastien Levert</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[SharePoint Framework (SPFx) roadmap update – November 2025]]></title>
-        <id>https://devblogs.microsoft.com/microsoft365dev/?p=25052</id>
-        <link href="https://devblogs.microsoft.com/microsoft365dev/sharepoint-framework-spfx-roadmap-update-november-2025/"/>
-        <updated>2025-11-25T15:42:49.000Z</updated>
-        <summary type="html"><![CDATA[SPFx is powering the future of Microsoft 365. From AI-driven portals to seamless integrations across SharePoint, Teams and Viva, SPFx is driving innovation at scale. This monthly blog series kicks off our journey into the next evolution - transparent, community-driven, and built for the AI era. Let’s shape what’s next, together.
-The post SharePoint Framework (SPFx) roadmap update – November 2025 appeared first on Microsoft 365 Developer Blog.]]></summary>
-        <author>
-            <name>Vesa Juvonen</name>
         </author>
     </entry>
 </feed>

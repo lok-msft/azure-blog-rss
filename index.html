@@ -22,8 +22,8 @@
             data-action="toggle-accordions"
             title="Click to toggle the day, Ctrl + click to toggle all."
           >
-            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2026-04-24 datetime="2026-04-23T21:43:23.000Z">2026-04-24</time>
-            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2026-04-24 datetime="2026-04-23T21:43:23.000Z"></time>
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2026-04-25 datetime="2026-04-25T00:07:31.000Z">2026-04-25</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2026-04-25 datetime="2026-04-25T00:07:31.000Z"></time>
           </button>
         </h2>
         <ul class="sources card">
@@ -38,6 +38,275 @@
                   <a class="source-heading__link" href="https://techcommunity.microsoft.com">Open</a>
                 </h3>
                 <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/modernizing-industrial-safety-and-inspection-with-ai-driven-drone-automation/4514284"
+                        open
+                      >
+                        <summary class="article-expander__title">Modernizing Industrial Safety and Inspection with AI-Driven Drone Automation</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/modernizing-industrial-safety-and-inspection-with-ai-driven-drone-automation/4514284">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTE0Mjg0LTZmUGhuaQ?revision&#x3D;6" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>In large-scale manufacturing and infrastructure environments, maintaining structural integrity is a continuous operational challenge. Industrial facilities—from automotive plants to energy and infrastructure sites—depend on thousands of structural connection points such as bolts and fasteners to ensure safe and reliable operations. Over time, vibration, thermal cycling, and mechanical stress can cause these components to loosen or degrade.
+While drones have dramatically improved how inspection data is captured, the analysis of that data—often involving thousands of connection points—remains largely manual. Engineers frequently review footage frame by frame, making the process labor-intensive, inconsistent, difficult to scale, and often reactive rather than predictive.
+Bolt inspection is on…</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;60
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/designing-a-medallion-framework-%E2%80%94-a-decision-guide/4514349"
+                        open
+                      >
+                        <summary class="article-expander__title">Designing a Medallion Framework — A Decision Guide</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/designing-a-medallion-framework-%E2%80%94-a-decision-guide/4514349">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTE0MzQ5LXhTNFN4eA?revision&#x3D;3" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>Everyone draws the same picture: Bronze → Silver → Gold. Three boxes, three arrows. Done.
+What that picture hides is the dozen design decisions you have to make inside each box — and the ones you make at the boundaries between them. Get those right and onboarding the 200th table feels like onboarding the 2nd. Get them wrong and you’ll be rewriting the framework in 18 months.
+This post is a generic walkthrough of how to think about a medallion framework on Databricks (or any other platform): what each layer should own, where the responsibilities blur, and a few opinionated patterns I’ve found worth defending
+The classic template -
+Bronze → Silver → Gold. Three layers, broadly:
+Press enter or click to view image in full size
+ 
+
+ 
+This template is intentionally vague — and that’s the point. T…</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;44
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/enhancing-enterprise-ai-deployments-with-zero-trust-networking/4513662"
+                        open
+                      >
+                        <summary class="article-expander__title">Enhancing Enterprise AI Deployments with Zero Trust Networking</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/enhancing-enterprise-ai-deployments-with-zero-trust-networking/4513662">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTEzNjYyLUdDSXBkRA?revision&#x3D;5" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>Problem Statement
+
+Azure OpenAI is publicly accessible by default Azure OpenAI frequently asked questions | Microsoft Learn
+Any application with API access can call it from anywhere
+Violates:
+
+Enterprise security policies
+Zero Trust architecture Key principles of the Zero Trust network model
+Regulatory compliance
+
+
+👉 Enterprises require:
+
+Private connectivity
+Controlled access via VNet
+DNS-based secure resolution
+
+🏗️ Architecture Overview
+✅ Key Components
+
+Azure OpenAI Service
+Azure Virtual Network (VNet)
+Private Endpoint
+Private DNS Zone
+Application (VM / App Service / AKS)
+
+✅ High-Level Flow
+
+Application sends request to OpenAI endpoint
+DNS resolves endpoint → Private IP
+Traffic routed inside VNet
+No internet exposure
+
+👉 Private endpoints assign a private IP inside VNet, ensuring secu…</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;29
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+        </ul>
+      </section>
+      <section class="daily-content js-toggle-accordions-scope">
+        <h2 class="daily-heading">
+          <button
+            class="daily-heading-toggle"
+            data-action="toggle-accordions"
+            title="Click to toggle the day, Ctrl + click to toggle all."
+          >
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2026-04-24 datetime="2026-04-24T15:00:14.000Z">2026-04-24</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2026-04-24 datetime="2026-04-24T15:00:14.000Z"></time>
+          </button>
+        </h2>
+        <ul class="sources card">
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Microsoft Agent Framework</button>
+                  <a class="source-heading__link" href="https://devblogs.microsoft.com/agent-framework/">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://devblogs.microsoft.com/agent-framework/?p&#x3D;5255"
+                        open
+                      >
+                        <summary class="article-expander__title">Chat History Storage Patterns in Microsoft Agent Framework</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://devblogs.microsoft.com/agent-framework/chat-history-storage-patterns-in-microsoft-agent-framework/">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://devblogs.microsoft.com/agent-framework/wp-content/uploads/sites/78/2026/04/image_small.webp" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>When people talk about building AI agents, they usually focus on models, tools, and prompts. In practice, one of the most important architectural decisions is much simpler: where does the conversation history live? Imagine a user asks your agent a complex question, clicks “try again,” explores two different answers in parallel, and then comes back […]
+The post Chat History Storage Patterns in Microsoft Agent Framework appeared first on Microsoft Agent Framework.</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;31
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Azure DevOps Blog</button>
+                  <a class="source-heading__link" href="https://devblogs.microsoft.com/devops/">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://devblogs.microsoft.com/devops/?p&#x3D;72715"
+                        open
+                      >
+                        <summary class="article-expander__title">Axios npm Supply Chain Compromise – Guidance for Azure Pipelines Customers</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://devblogs.microsoft.com/devops/axios-npm-supply-chain-compromise-guidance-for-azure-pipelines-customers/">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://devblogs.microsoft.com/devops/wp-content/uploads/sites/6/2026/04/Create-a-feature-image-for-a-blog-post-on-httpsdev.webp" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>On March 31, 2026, malicious versions of the widely used JavaScript HTTP client library Axios were briefly published to the npm registry as part of a supply chain attack. The affected versions — 1.14.1 and 0.30.4 — included a hidden malicious dependency that executed during installation and connected to attacker-controlled command-and-control (C2) infrastructure to retrieve […]
+The post Axios npm Supply Chain Compromise – Guidance for Azure Pipelines Customers appeared first on Azure DevOps Blog.</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;27
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Microsoft Fabric Blog</button>
+                  <a class="source-heading__link" href="https://blog.fabric.microsoft.com/en/blog/">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="fabric-influencers-spotlight-april-2026"
+                        open
+                      >
+                        <summary class="article-expander__title">Fabric Influencers Spotlight April 2026</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://blog.fabric.microsoft.com/en/blog/fabric-influencers-spotlight-april-2026/">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://blog.fabric.microsoft.com/images/shared/social/social-image-v2.png" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>Welcome to the April 2026 edition of the Fabric Influencers Spotlight, a recurring monthly post here to shine a bright light on the places on the internet where Microsoft MVPs &amp; Fabric Super Users are doing some amazing work on all aspects of Microsoft Fabric. The Microsoft Fabric Community team has created the Fabric Influencers Spotlight to … 
+Continue reading “Fabric Influencers Spotlight April 2026”</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;8
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Microsoft Tech Community - Latest Blogs - Azure Architecture Blog</button>
+                  <a class="source-heading__link" href="https://techcommunity.microsoft.com">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/when-rag-isn%E2%80%99t-enough-moving-from-retrieval-to-relationship-aware-systems-in-ent/4514185"
+                        open
+                      >
+                        <summary class="article-expander__title">When RAG Isn’t Enough: Moving from Retrieval to Relationship-Aware Systems in Enterprise AI:</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/when-rag-isn%E2%80%99t-enough-moving-from-retrieval-to-relationship-aware-systems-in-ent/4514185">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTE0MTg1LUxGMERMcQ?revision&#x3D;3" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>The Problem
+In an enterprise AI scenario, the goal was to map structured feature data to relevant sections within large technical documents.
+At a glance, this appears to be a straightforward semantic matching problem. Initial results using semantic search were promising. However, as the system was used more extensively, certain issues became apparent:
+
+Inconsistent mappings across similar inputs
+Occasional matches to contextually unrelated sections
+Variability in results across repeated runs
+
+Despite multiple optimizations, the system continued to produce outcomes that lacked reliability.
+This pointed to a deeper realization:
+The challenge was not just retrieval quality, but the absence of structure in how retrieval was being guided. 
+Initial Approach: Retrieval-Augmented Generation (RAG)
+…</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;29
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
                     <article>
                       <details
                         class="article-expander"
@@ -21926,173 +22195,10 @@ Azure Monitor, in partnership with Foundry, unifies agent …</span>
             </li>
         </ul>
       </section>
-      <section class="daily-content js-toggle-accordions-scope">
-        <h2 class="daily-heading">
-          <button
-            class="daily-heading-toggle"
-            data-action="toggle-accordions"
-            title="Click to toggle the day, Ctrl + click to toggle all."
-          >
-            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2025-11-26 datetime="2025-11-26T09:00:00.000Z">2025-11-26</time>
-            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2025-11-26 datetime="2025-11-26T09:00:00.000Z"></time>
-          </button>
-        </h2>
-        <ul class="sources card">
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Microsoft Fabric Blog</button>
-                  <a class="source-heading__link" href="https://blog.fabric.microsoft.com/en/blog/">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="on-premises-data-gateway-november-2025-release"
-                        open
-                      >
-                        <summary class="article-expander__title">On-premises data gateway November 2025 release</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://blog.fabric.microsoft.com/en/blog/on-premises-data-gateway-november-2025-release/">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://blog.fabric.microsoft.com/images/shared/social/social-image-v2.png" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>Here is the November 2025 release of the on-premises data gateway (version 3000.294).</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;4
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Microsoft Tech Community - Latest Blogs - Microsoft Mechanics Blog</button>
-                  <a class="source-heading__link" href="https://techcommunity.microsoft.com">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://techcommunity.microsoft.com/blog/MicrosoftMechanicsBlog/run-local-ai-on-any-pc-or-mac-%E2%80%94-microsoft-foundry-local/4473018"
-                        open
-                      >
-                        <summary class="article-expander__title">Run local AI on any PC or Mac — Microsoft Foundry Local</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/blog/MicrosoftMechanicsBlog/run-local-ai-on-any-pc-or-mac-%E2%80%94-microsoft-foundry-local/4473018">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDczMDE4LWJpeDZZYw?revision&#x3D;1" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>Leverage full hardware performance, keep data private, reduce latency, and predict costs, even in offline or low-connectivity scenarios.
-Simplify development and deploy AI apps across diverse hardware and OS platforms with the Foundry Local SDK. Manage models locally, switch AI engines easily, and deliver consistent, multi-modal experiences, voice or text, without complex cross-platform setup.
-Raji Rajagopalan, Microsoft CoreAI Vice President, shares how to start quickly, test locally, and scale confidently.
-No cloud needed.
-
-Build AI apps once and run them locally on Windows, macOS, &amp; mobile. Get started with Foundry Local SDK.
-Lower latency, data privacy, and cost predictability.
-
-All in the box with Foundry Local. Start here.
-Build once, deploy everywhere.
-
-Foundry Local ensures your AI…</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;52
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
-        </ul>
-      </section>
-      <section class="daily-content js-toggle-accordions-scope">
-        <h2 class="daily-heading">
-          <button
-            class="daily-heading-toggle"
-            data-action="toggle-accordions"
-            title="Click to toggle the day, Ctrl + click to toggle all."
-          >
-            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2025-11-25 datetime="2025-11-25T15:54:48.000Z">2025-11-25</time>
-            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2025-11-25 datetime="2025-11-25T15:54:48.000Z"></time>
-          </button>
-        </h2>
-        <ul class="sources card">
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Microsoft 365 Developer Blog</button>
-                  <a class="source-heading__link" href="https://devblogs.microsoft.com/microsoft365dev/">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://devblogs.microsoft.com/microsoft365dev/?p&#x3D;25058"
-                        open
-                      >
-                        <summary class="article-expander__title">Introducing TypeSpec for Microsoft 365 Copilot – Build declarative agents faster with more confidence</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://devblogs.microsoft.com/microsoft365dev/introducing-typespec-for-microsoft-365-copilot/">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2025/11/Screenshot.2025-11-25.07-33-59.webp" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>We’re excited to announce that TypeSpec for Microsoft 365 Copilot is now generally available! This milestone marks the first stable release of the domain-specific language (DSL) designed to streamline how developers build and extend Microsoft 365 Copilot. Whether you’re creating an agent to help colleagues find documents, or connecting your service as an API plugin, TypeSpec for Microsoft 365 Copilot makes the process […]
-The post Introducing TypeSpec for Microsoft 365 Copilot – Build declarative agents faster with more confidence appeared first on Microsoft 365 Developer Blog.</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;23
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://devblogs.microsoft.com/microsoft365dev/?p&#x3D;25052"
-                        open
-                      >
-                        <summary class="article-expander__title">SharePoint Framework (SPFx) roadmap update – November 2025</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://devblogs.microsoft.com/microsoft365dev/sharepoint-framework-spfx-roadmap-update-november-2025/">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2025/11/202511-spfx-monthly.webp" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>SPFx is powering the future of Microsoft 365. From AI-driven portals to seamless integrations across SharePoint, Teams and Viva, SPFx is driving innovation at scale. This monthly blog series kicks off our journey into the next evolution - transparent, community-driven, and built for the AI era. Let’s shape what’s next, together.
-The post SharePoint Framework (SPFx) roadmap update – November 2025 appeared first on Microsoft 365 Developer Blog.</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;25
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
-        </ul>
-      </section>
 
     <footer>
-      <a class="footer-link" href="https://github.com/lok-msft/azure-blog-rss/actions/runs/24869541439">
-        <time id="build-timestamp" datetime="2026-04-24T02:45:34.987Z">2026-04-24T02:45:34.987Z</time>
+      <a class="footer-link" href="https://github.com/lok-msft/azure-blog-rss/actions/runs/24920520793">
+        <time id="build-timestamp" datetime="2026-04-25T02:33:48.813Z">2026-04-25T02:33:48.813Z</time>
       </a>
       <a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a>
     </footer>
