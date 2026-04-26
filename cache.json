@@ -2564,6 +2564,16 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/how-acr-artifact-cache-handles-multi-arch-images-what-gets-cached-and-when-webho/4514744",
+          "author": "johnsonshi_msft",
+          "description": "By Johnson Shi (Senior Product Manager), Toddy Mladenov (Principal PM Manager), Luis Dieguez (Principal SWE Manager), Akash Singhal (Senior Software Engineer), Kiran Challa (Senior Software Engineer), Ren Shao (Senior Software Engineer)\nIntroduction\nThree of the most common questions we hear from teams using Azure Container Registry (ACR) Artifact Cache and Webhooks are:\n\n\"When I pull a multi-architecture (multi-arch) image through Artifact Cache, what exactly gets cached?\" — Does ACR pull all architectures, or just the one I requested?\n\"How do I know when an image has been cached using Webhooks?\" — Especially for multi-arch images, how can I tell when the image is fully stored locally in a cache rule's downstream ACR and pulls are no longer being proxied (pulled through) to upstream?\n\"Whe…",
+          "link": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/how-acr-artifact-cache-handles-multi-arch-images-what-gets-cached-and-when-webho/4514744",
+          "publishedOn": "2026-04-25T19:37:56.000Z",
+          "wordCount": 14415,
+          "title": "How ACR Artifact Cache Handles Multi-Arch Images: What Gets Cached and When Webhooks Fire",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTE0NzQ0LW0xSkJ0Mg?revision=1"
+        },
+        {
           "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/microsoft-365-multi-agent-workflow-with-microsoft-agent-framework/4514164",
           "author": "vgiraud",
           "description": "Most production AI tasks are too complex for a single agent. You need specialists that collaborate, a destination expert that researches the best places to visit, a budget analyst that breaks down costs, an activities curator that finds the best experiences, all coordinated by an orchestration layer you can test locally, deploy to Microsoft Foundry, and surface to end users in Microsoft 365 (Teams or Copilot).\nThis article takes you through a self-contained runnable example inspired by the end-to-end samples in the Microsoft Agent Framework repository. Each section builds on the previous one:\n\nYou can stop at any layer. A WorkflowBuilder workflow works locally without Foundry; a hosted agent works without M365. The stack composes, you adopt what you need.\nWhat we'll build\n\n\nLayerWhatKey co…",
@@ -4135,16 +4145,6 @@
           "wordCount": 7724,
           "title": "Announcing Application Insights SDK 3.x for .NET",
           "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDkzOTg4LVA0Q2FmSg?revision=1"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/observability-for-the-age-of-generative-ai/4473307",
-          "author": "Hong Gao",
-          "description": "Every generation of computing brings new challenges in how we monitor and trust our systems. \nWith the rise of Generative AI, applications are no longer static code—they’re living systems that plan, reason, call tools, and make choices dynamically. \nTraditional observability, built for servers and microservices, simply can’t tell you when an AI agent is correct, safe, or cost-efficient. \nWe’re reimagining observability for this new world. \nAt Ignite, we introduced the next wave of Azure Monitor and AI Foundry integration—purpose-built for GenAI apps and agents. \n \nEnd-to-End GenAI Observability Across the AI Stack \nCustomers can see not just whether their systems are up or fast, but also whether their agent responses are accurate. \nAzure Monitor, in partnership with Foundry, unifies agent …",
-          "link": "https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/observability-for-the-age-of-generative-ai/4473307",
-          "publishedOn": "2025-11-26T18:35:59.000Z",
-          "wordCount": 7939,
-          "title": "Observability for the Age of Generative AI",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDczMzA3LU9qb0cwbw?revision=3"
         }
       ]
     },
@@ -4768,26 +4768,6 @@
           "wordCount": 7633,
           "title": "AI Upskilling Framework Level 3 Building",
           "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDc3NDcyLUNHS1RRdA?revision=2"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/background-tasks-in-net/4472341",
-          "author": "riturajjana",
-          "description": "What is a Background Task? \nA background task (or background service) is work that runs behind the scenes in an application without blocking the main user flow and often without direct user interaction.\nThink of it as a worker or helper that performs tasks independently while the main app continues doing other things.\nProblem Statement - What do you do when your downstream API is flaky or sometimes down for hours or even days , yet your UI and main API must stay responsive?Solution -This is a very common architecture problem in enterprise systems, and .NET gives us excellent tools to solve it cleanly: BackgroundService and exponential backoff retry logic.\nIn this article, I’ll walk you through:\n\nA real production-like use case\nThe architecture needed to make it reliable\nWhy exponential bac…",
-          "link": "https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/background-tasks-in-net/4472341",
-          "publishedOn": "2025-11-27T08:00:00.000Z",
-          "wordCount": 9793,
-          "title": "Background tasks in .NET",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDcyMzQxLW00UlRFaQ?revision=10"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/azure-skilling-at-microsoft-ignite-2025/4472678",
-          "author": "AaronStark",
-          "description": "The energy at Microsoft Ignite was unmistakable. Developers, architects, and technical decision-makers converged in San Francisco to explore the latest innovations in cloud technology, AI applications, and data platforms. Beyond the keynotes and product announcements was something even more valuable: an integrated skilling ecosystem designed to transform how you build with Azure.\nThis year Azure Skilling at Microsoft Ignite 2025 brought together distinct learning experiences, over 150+ hands-on labs, and multiple pathways to industry-recognized credentials—all designed to help you master skills that matter most in today's AI-driven cloud landscape.\nJust Launched at Ignite\nMicrosoft Ignite 2025 offered an exceptional array of learning opportunities, each designed to meet developers anywhere…",
-          "link": "https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/azure-skilling-at-microsoft-ignite-2025/4472678",
-          "publishedOn": "2025-11-26T22:14:11.000Z",
-          "wordCount": 9464,
-          "title": "Azure Skilling at Microsoft Ignite 2025",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDcyNjc4LXhUUVZwaA?revision=8"
         }
       ]
     },
@@ -5526,16 +5506,6 @@
           "wordCount": 7655,
           "title": "Migrate from Amazon API Gateway to Azure API Management",
           "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDcxNTI0LTJtMEYzUA?revision=6"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AzureMigrationBlog/best-practices-for-migrating-cots-applications-to-microsoft-azure/4473323",
-          "author": "srhulsus",
-          "description": "Understanding the Nature of COTS Migrations\nMigrating Commercial Off-The-Shelf (COTS) applications to Microsoft Azure requires more care than a standard application migration. These workloads usually depend on strict vendor requirements, fixed upgrade cycles, licensing limitations, and specific operating systems or databases. Because of this, the first step in any COTS migration is a detailed discussion with the software vendor to confirm what Azure services, operating systems, and database platforms they officially support. Many vendors already provide Azure-ready architecture or publish marketplace templates that simplify deployment. Following vendor-supported patterns helps prevent support issues later and ensures the application remains fully certified in the cloud.\nMicrosoft’s general…",
-          "link": "https://techcommunity.microsoft.com/blog/AzureMigrationBlog/best-practices-for-migrating-cots-applications-to-microsoft-azure/4473323",
-          "publishedOn": "2025-11-26T20:43:14.000Z",
-          "wordCount": 8947,
-          "title": "Best Practices for Migrating COTS Applications to Microsoft Azure",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDczMzIzLXMxZ3FZdA?revision=1"
         }
       ]
     },

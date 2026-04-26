@@ -22,6 +22,60 @@
             data-action="toggle-accordions"
             title="Click to toggle the day, Ctrl + click to toggle all."
           >
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2026-04-26 datetime="2026-04-25T19:37:56.000Z">2026-04-26</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2026-04-26 datetime="2026-04-25T19:37:56.000Z"></time>
+          </button>
+        </h2>
+        <ul class="sources card">
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Microsoft Tech Community - Latest Blogs - Apps on Azure Blog</button>
+                  <a class="source-heading__link" href="https://techcommunity.microsoft.com">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/how-acr-artifact-cache-handles-multi-arch-images-what-gets-cached-and-when-webho/4514744"
+                        open
+                      >
+                        <summary class="article-expander__title">How ACR Artifact Cache Handles Multi-Arch Images: What Gets Cached and When Webhooks Fire</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/how-acr-artifact-cache-handles-multi-arch-images-what-gets-cached-and-when-webho/4514744">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTE0NzQ0LW0xSkJ0Mg?revision&#x3D;1" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>By Johnson Shi (Senior Product Manager), Toddy Mladenov (Principal PM Manager), Luis Dieguez (Principal SWE Manager), Akash Singhal (Senior Software Engineer), Kiran Challa (Senior Software Engineer), Ren Shao (Senior Software Engineer)
+Introduction
+Three of the most common questions we hear from teams using Azure Container Registry (ACR) Artifact Cache and Webhooks are:
+
+&quot;When I pull a multi-architecture (multi-arch) image through Artifact Cache, what exactly gets cached?&quot; — Does ACR pull all architectures, or just the one I requested?
+&quot;How do I know when an image has been cached using Webhooks?&quot; — Especially for multi-arch images, how can I tell when the image is fully stored locally in a cache rule&#x27;s downstream ACR and pulls are no longer being proxied (pulled through) to upstream?
+&quot;Whe…</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;48
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+        </ul>
+      </section>
+      <section class="daily-content js-toggle-accordions-scope">
+        <h2 class="daily-heading">
+          <button
+            class="daily-heading-toggle"
+            data-action="toggle-accordions"
+            title="Click to toggle the day, Ctrl + click to toggle all."
+          >
             <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2026-04-25 datetime="2026-04-25T00:07:31.000Z">2026-04-25</time>
             <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2026-04-25 datetime="2026-04-25T00:07:31.000Z"></time>
           </button>
@@ -22038,167 +22092,10 @@ Decide wh…</span>
             </li>
         </ul>
       </section>
-      <section class="daily-content js-toggle-accordions-scope">
-        <h2 class="daily-heading">
-          <button
-            class="daily-heading-toggle"
-            data-action="toggle-accordions"
-            title="Click to toggle the day, Ctrl + click to toggle all."
-          >
-            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2025-11-27 datetime="2025-11-27T08:00:00.000Z">2025-11-27</time>
-            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2025-11-27 datetime="2025-11-27T08:00:00.000Z"></time>
-          </button>
-        </h2>
-        <ul class="sources card">
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Microsoft Tech Community - Latest Blogs - Microsoft Developer Community Blog</button>
-                  <a class="source-heading__link" href="https://techcommunity.microsoft.com">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/background-tasks-in-net/4472341"
-                        open
-                      >
-                        <summary class="article-expander__title">Background tasks in .NET</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/background-tasks-in-net/4472341">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDcyMzQxLW00UlRFaQ?revision&#x3D;10" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>What is a Background Task? 
-A background task (or background service) is work that runs behind the scenes in an application without blocking the main user flow and often without direct user interaction.
-Think of it as a worker or helper that performs tasks independently while the main app continues doing other things.
-Problem Statement - What do you do when your downstream API is flaky or sometimes down for hours or even days , yet your UI and main API must stay responsive?Solution -This is a very common architecture problem in enterprise systems, and .NET gives us excellent tools to solve it cleanly: BackgroundService and exponential backoff retry logic.
-In this article, I’ll walk you through:
-
-A real production-like use case
-The architecture needed to make it reliable
-Why exponential bac…</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;33
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/azure-skilling-at-microsoft-ignite-2025/4472678"
-                        open
-                      >
-                        <summary class="article-expander__title">Azure Skilling at Microsoft Ignite 2025</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/azure-skilling-at-microsoft-ignite-2025/4472678">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDcyNjc4LXhUUVZwaA?revision&#x3D;8" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>The energy at Microsoft Ignite was unmistakable. Developers, architects, and technical decision-makers converged in San Francisco to explore the latest innovations in cloud technology, AI applications, and data platforms. Beyond the keynotes and product announcements was something even more valuable: an integrated skilling ecosystem designed to transform how you build with Azure.
-This year Azure Skilling at Microsoft Ignite 2025 brought together distinct learning experiences, over 150+ hands-on labs, and multiple pathways to industry-recognized credentials—all designed to help you master skills that matter most in today&#x27;s AI-driven cloud landscape.
-Just Launched at Ignite
-Microsoft Ignite 2025 offered an exceptional array of learning opportunities, each designed to meet developers anywhere…</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;32
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Microsoft Tech Community - Latest Blogs - Azure Migration and Modernization Blog</button>
-                  <a class="source-heading__link" href="https://techcommunity.microsoft.com">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://techcommunity.microsoft.com/blog/AzureMigrationBlog/best-practices-for-migrating-cots-applications-to-microsoft-azure/4473323"
-                        open
-                      >
-                        <summary class="article-expander__title">Best Practices for Migrating COTS Applications to Microsoft Azure</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/blog/AzureMigrationBlog/best-practices-for-migrating-cots-applications-to-microsoft-azure/4473323">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDczMzIzLXMxZ3FZdA?revision&#x3D;1" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>Understanding the Nature of COTS Migrations
-Migrating Commercial Off-The-Shelf (COTS) applications to Microsoft Azure requires more care than a standard application migration. These workloads usually depend on strict vendor requirements, fixed upgrade cycles, licensing limitations, and specific operating systems or databases. Because of this, the first step in any COTS migration is a detailed discussion with the software vendor to confirm what Azure services, operating systems, and database platforms they officially support. Many vendors already provide Azure-ready architecture or publish marketplace templates that simplify deployment. Following vendor-supported patterns helps prevent support issues later and ensures the application remains fully certified in the cloud.
-Microsoft’s general…</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;30
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Microsoft Tech Community - Latest Blogs - Azure Observability Blog</button>
-                  <a class="source-heading__link" href="https://techcommunity.microsoft.com">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/observability-for-the-age-of-generative-ai/4473307"
-                        open
-                      >
-                        <summary class="article-expander__title">Observability for the Age of Generative AI</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/observability-for-the-age-of-generative-ai/4473307">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDczMzA3LU9qb0cwbw?revision&#x3D;3" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>Every generation of computing brings new challenges in how we monitor and trust our systems. 
-With the rise of Generative AI, applications are no longer static code—they’re living systems that plan, reason, call tools, and make choices dynamically. 
-Traditional observability, built for servers and microservices, simply can’t tell you when an AI agent is correct, safe, or cost-efficient. 
-We’re reimagining observability for this new world. 
-At Ignite, we introduced the next wave of Azure Monitor and AI Foundry integration—purpose-built for GenAI apps and agents. 
- 
-End-to-End GenAI Observability Across the AI Stack 
-Customers can see not just whether their systems are up or fast, but also whether their agent responses are accurate. 
-Azure Monitor, in partnership with Foundry, unifies agent …</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;26
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
-        </ul>
-      </section>
 
     <footer>
-      <a class="footer-link" href="https://github.com/lok-msft/azure-blog-rss/actions/runs/24920520793">
-        <time id="build-timestamp" datetime="2026-04-25T02:33:48.813Z">2026-04-25T02:33:48.813Z</time>
+      <a class="footer-link" href="https://github.com/lok-msft/azure-blog-rss/actions/runs/24946649579">
+        <time id="build-timestamp" datetime="2026-04-26T02:51:22.937Z">2026-04-26T02:51:22.937Z</time>
       </a>
       <a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a>
     </footer>
