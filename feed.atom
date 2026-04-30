@@ -2,10 +2,132 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2026-04-29T03:20:36.926Z</updated>
+    <updated>2026-04-30T03:21:50.765Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Azure SRE Agent for Azure Monitor Alerts: Reduce Alert Fatigue, Investigate What Matters]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/azure-sre-agent-for-azure-monitor-alerts-reduce-alert-fatigue-investigate-what-m/4513458</id>
+        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/azure-sre-agent-for-azure-monitor-alerts-reduce-alert-fatigue-investigate-what-m/4513458"/>
+        <updated>2026-04-30T01:28:49.000Z</updated>
+        <summary type="html"><![CDATA[The Alert Problem
+Organizations running Azure Monitor tend to land in one of two situations:
+
+Alert fatigue has set in. Alert rules tend to grow over time — a CPU threshold from two years ago, a health probe check from a migration, a disk alert from an outage that never got cleaned up. These rules fire regularly, most auto-resolve, and nobody investigates them. But buried in that noise are real incidents that go unnoticed until they escalate.
+Teams respond, but the effort is repetitive. Engineers triage the same alerts repeatedly — running the same diagnostic queries, confirming the same "transient spike, no action needed" conclusion. They know the rule is noisy, but fixing it in Azure Monitor requires data they don't have readily available: What should the threshold be? What's the auto-re…]]></summary>
+        <author>
+            <name>Vineela-Suri</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Plugin Marketplace for Azure SRE Agent: Build Once, Install Anywhere]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/plugin-marketplace-for-azure-sre-agent-build-once-install-anywhere/4513501</id>
+        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/plugin-marketplace-for-azure-sre-agent-build-once-install-anywhere/4513501"/>
+        <updated>2026-04-29T22:25:23.000Z</updated>
+        <summary type="html"><![CDATA[What's a Plugin?
+A plugin bundles two things:
+
+Skills — Operational knowledge (triage runbooks, policy rules, known issues) the agent reads at runtime to guide its reasoning
+MCP Connectors — Live integrations to your internal APIs (deployment tracker, cost dashboard, CMDB) the agent can query during an investigation
+
+
+This is the key distinction: a plugin doesn't just tell the agent what your policies are — it gives the agent tools to query your internal systems and apply those policies with real data.
+
+ 
+Plugin detail view showing the AKS Runbooks plugin with its 2 skills and 1 MCP connector listed.A plugin bundles skills and MCP connectors as a single installable unit.
+The Marketplace Model: Create Once, Install Everywhere
+The marketplace is a GitHub repository with a marketplace.json ma…]]></summary>
+        <author>
+            <name>Vineela-Suri</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[From prompt to production: Teams agent setup, simplified]]></title>
+        <id>https://devblogs.microsoft.com/microsoft365dev/?p=25609</id>
+        <link href="https://devblogs.microsoft.com/microsoft365dev/from-prompt-to-production-teams-agent-setup-simplified/"/>
+        <updated>2026-04-29T21:27:55.000Z</updated>
+        <summary type="html"><![CDATA[Learn how to use a coding agent to register and agent with Teams.
+The post From prompt to production: Teams agent setup, simplified appeared first on Microsoft 365 Developer Blog.]]></summary>
+        <author>
+            <name>Aamir Jawaid, Umang Sehgal, Kavin Singh</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Get started with the New Relic MCP server in Azure SRE Agent]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/get-started-with-the-new-relic-mcp-server-in-azure-sre-agent/4515268</id>
+        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/get-started-with-the-new-relic-mcp-server-in-azure-sre-agent/4515268"/>
+        <updated>2026-04-29T17:35:44.000Z</updated>
+        <summary type="html"><![CDATA[Overview
+The New Relic MCP server is a cloud-hosted bridge between your New Relic account and Azure SRE Agent. Once configured, it enables real-time interaction with your observability data—APM traces, distributed traces, logs, metrics, alerts, incidents, dashboards, and entities—through natural language. All actions respect your existing New Relic role and capability assignments.
+The server uses Streamable HTTP transport with a single Api-Key header for authentication. Azure SRE Agent connects directly to the New Relic-hosted endpoint (https://mcp.newrelic.com/mcp/)—no npm packages, local proxies, or container deployments are required. The SRE Agent portal includes a dedicated New Relic connector type that pre-populates the endpoint URL and the Api-Key header for streamlined setup.
+Key ca…]]></summary>
+        <author>
+            <name>dbandaru</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Operations Context for AI | Ontology in Fabric IQ]]></title>
+        <id>https://techcommunity.microsoft.com/blog/MicrosoftMechanicsBlog/operations-context-for-ai--ontology-in-fabric%C2%A0iq/4515899</id>
+        <link href="https://techcommunity.microsoft.com/blog/MicrosoftMechanicsBlog/operations-context-for-ai--ontology-in-fabric%C2%A0iq/4515899"/>
+        <updated>2026-04-29T16:49:19.000Z</updated>
+        <summary type="html"><![CDATA[Generate a full business ontology from an existing Power BI semantic model, map entities and relationships, and embed real-time operational signals alongside business rules that live inside the ontology with the data and its meaning. 
+
+From there, trace cascading operational impacts across your business through the relationship graph, stand up Operations Agents in natural language with Teams-based actions, and connect the same ontology as a knowledge source in Copilot Studio or Azure AI Foundry. 
+Chafia Aouissi, Fabric IQ Principal PM Manager, shares how to model your business operations, embed intelligence in your data, and deploy agents that act on it.
+Logic lives with your data.
+
+Embed business rules directly in the Fabric IQ ontology. Define thresholds, trigger notifications, and casca…]]></summary>
+        <author>
+            <name>Zachary-Cavanell</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Azure Monitor Service Level Indicators (SLI)]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/azure-monitor-service-level-indicators-sli/4507445</id>
+        <link href="https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/azure-monitor-service-level-indicators-sli/4507445"/>
+        <updated>2026-04-29T16:16:56.000Z</updated>
+        <summary type="html"><![CDATA[Announcing Public Preview of Azure Monitor SLIs 
+Today, we are excited to introduce Service Level Indicators (SLI) and Service Level Objectives (SLO) in Azure Monitor a step forward in helping teams measure how customers are experiencing their applications.
+SLI: A quantitative measure of how well an application or service is performing from the customer’s point of view.
+SLO: A defined target for an SLI that represents how good or bad the SLI is over a given time-period. This is also referred to as a baseline in Azure Monitor.
+One of the biggest advantages of SLIs is that they quantify real customer impact. In many environments, multiple alerts may fire across infrastructure and services—but not all of them translate to user-visible issues. Metrics like CPU Percentage can measure what is ha…]]></summary>
+        <author>
+            <name>Sokuma</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[AG-UI: The Future of Agent-Driven User Interfaces]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/ag-ui-the-future-of-agent-driven-user-interfaces/4515769</id>
+        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/ag-ui-the-future-of-agent-driven-user-interfaces/4515769"/>
+        <updated>2026-04-29T08:59:10.000Z</updated>
+        <summary type="html"><![CDATA[As AI agents evolve from simple chatbots into workflow engines, decision-makers, and copilots, one challenge has remained stubbornly unsolved: How do we connect intelligent agents to rich, dynamic, user-facing interfaces without custom plumbing every single time?
+Introducing AG-UI (Agent–User Interface) — a unified protocol that finally standardizes how agents talk to frontends. It enables streaming, declarative UI generation, state synchronization, and human-in-the-loop workflows out of the box.
+AG-UI is the missing piece that bridges backend intelligence with real-time, interactive user experiences.
+Why is AG‑UI a Game‑Changer?
+1. A Unified Standard for Agent ↔ UI Interaction
+Before AG-UI, developers juggled:
+
+REST APIs for request–response
+Web Sockets/SSE for streaming
+Custom JSON struc…]]></summary>
+        <author>
+            <name>VaidhyaP</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Building an Enterprise Knowledge Copilot with Foundry IQ and Agentic Retrieval on Azure AI]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/building-an-enterprise-knowledge-copilot-with-foundry-iq-and-agentic-retrieval-o/4512308</id>
+        <link href="https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/building-an-enterprise-knowledge-copilot-with-foundry-iq-and-agentic-retrieval-o/4512308"/>
+        <updated>2026-04-29T07:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Every enterprise has the same problem: knowledge scattered across SharePoint, file shares, wikis, and email. This article walks through building a knowledge copilot that unifies that data behind a single conversational interface — using Microsoft's Foundry IQ knowledge bases and the agentic retrieval engine in Azure AI Search.
+The Problem: Fragmented Knowledge, Fragmented Answers
+Enterprise AI projects today share a common pain point. Each new agent or copilot that needs to answer questions from company data must rebuild its own retrieval pipeline from scratch — data connections, chunking logic, embeddings, routing, permissions — all duplicated project after project. The result is a tangle of fragmented, siloed pipelines that are expensive to maintain and inconsistent in quality.
+Consider …]]></summary>
+        <author>
+            <name>Shah_Viral</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Transforming Video Content into Structured SOPs Using Graph-based RAG]]></title>
         <id>https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/transforming-video-content-into-structured-sops-using-graph-based-rag/4515038</id>

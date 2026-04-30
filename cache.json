@@ -2574,6 +2574,46 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/azure-sre-agent-for-azure-monitor-alerts-reduce-alert-fatigue-investigate-what-m/4513458",
+          "author": "Vineela-Suri",
+          "description": "The Alert Problem\nOrganizations running Azure Monitor tend to land in one of two situations:\n\nAlert fatigue has set in. Alert rules tend to grow over time — a CPU threshold from two years ago, a health probe check from a migration, a disk alert from an outage that never got cleaned up. These rules fire regularly, most auto-resolve, and nobody investigates them. But buried in that noise are real incidents that go unnoticed until they escalate.\nTeams respond, but the effort is repetitive. Engineers triage the same alerts repeatedly — running the same diagnostic queries, confirming the same \"transient spike, no action needed\" conclusion. They know the rule is noisy, but fixing it in Azure Monitor requires data they don't have readily available: What should the threshold be? What's the auto-re…",
+          "link": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/azure-sre-agent-for-azure-monitor-alerts-reduce-alert-fatigue-investigate-what-m/4513458",
+          "publishedOn": "2026-04-30T01:28:49.000Z",
+          "wordCount": 12823,
+          "title": "Azure SRE Agent for Azure Monitor Alerts: Reduce Alert Fatigue, Investigate What Matters",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTEzNDU4LXpHcEphZw?revision=9"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/plugin-marketplace-for-azure-sre-agent-build-once-install-anywhere/4513501",
+          "author": "Vineela-Suri",
+          "description": "What's a Plugin?\nA plugin bundles two things:\n\nSkills — Operational knowledge (triage runbooks, policy rules, known issues) the agent reads at runtime to guide its reasoning\nMCP Connectors — Live integrations to your internal APIs (deployment tracker, cost dashboard, CMDB) the agent can query during an investigation\n\n\nThis is the key distinction: a plugin doesn't just tell the agent what your policies are — it gives the agent tools to query your internal systems and apply those policies with real data.\n\n \nPlugin detail view showing the AKS Runbooks plugin with its 2 skills and 1 MCP connector listed.A plugin bundles skills and MCP connectors as a single installable unit.\nThe Marketplace Model: Create Once, Install Everywhere\nThe marketplace is a GitHub repository with a marketplace.json ma…",
+          "link": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/plugin-marketplace-for-azure-sre-agent-build-once-install-anywhere/4513501",
+          "publishedOn": "2026-04-29T22:25:23.000Z",
+          "wordCount": 12060,
+          "title": "Plugin Marketplace for Azure SRE Agent: Build Once, Install Anywhere",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTEzNTAxLXl1YmZtdg?revision=5"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/get-started-with-the-new-relic-mcp-server-in-azure-sre-agent/4515268",
+          "author": "dbandaru",
+          "description": "Overview\nThe New Relic MCP server is a cloud-hosted bridge between your New Relic account and Azure SRE Agent. Once configured, it enables real-time interaction with your observability data—APM traces, distributed traces, logs, metrics, alerts, incidents, dashboards, and entities—through natural language. All actions respect your existing New Relic role and capability assignments.\nThe server uses Streamable HTTP transport with a single Api-Key header for authentication. Azure SRE Agent connects directly to the New Relic-hosted endpoint (https://mcp.newrelic.com/mcp/)—no npm packages, local proxies, or container deployments are required. The SRE Agent portal includes a dedicated New Relic connector type that pre-populates the endpoint URL and the Api-Key header for streamlined setup.\nKey ca…",
+          "link": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/get-started-with-the-new-relic-mcp-server-in-azure-sre-agent/4515268",
+          "publishedOn": "2026-04-29T17:35:44.000Z",
+          "wordCount": 20273,
+          "title": "Get started with the New Relic MCP server in Azure SRE Agent",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTE1MjY4LUVkZEtjVg?revision=2"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/ag-ui-the-future-of-agent-driven-user-interfaces/4515769",
+          "author": "VaidhyaP",
+          "description": "As AI agents evolve from simple chatbots into workflow engines, decision-makers, and copilots, one challenge has remained stubbornly unsolved: How do we connect intelligent agents to rich, dynamic, user-facing interfaces without custom plumbing every single time?\nIntroducing AG-UI (Agent–User Interface) — a unified protocol that finally standardizes how agents talk to frontends. It enables streaming, declarative UI generation, state synchronization, and human-in-the-loop workflows out of the box.\nAG-UI is the missing piece that bridges backend intelligence with real-time, interactive user experiences.\nWhy is AG‑UI a Game‑Changer?\n1. A Unified Standard for Agent ↔ UI Interaction\nBefore AG-UI, developers juggled:\n\nREST APIs for request–response\nWeb Sockets/SSE for streaming\nCustom JSON struc…",
+          "link": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/ag-ui-the-future-of-agent-driven-user-interfaces/4515769",
+          "publishedOn": "2026-04-29T08:59:10.000Z",
+          "wordCount": 8528,
+          "title": "AG-UI: The Future of Agent-Driven User Interfaces",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTE1NzY5LUE2dVlObw?revision=6"
+        },
+        {
           "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/how-microsoft-1es-uses-agentic-ai-to-take-on-security-and-compliance-at-scale/4515191",
           "author": "JennyF",
           "description": "Microsoft’s Customer Zero blog series gives an insider view of how Microsoft builds and operates Microsoft using our trusted, enterprise-grade IQ platform. Learn best practices from our engineering teams with real-world lessons, architectural patterns, and operational strategies for pressure-tested solutions in building, operating, and scaling AI apps and agent fleets across the organization.\nWhat we do\nWithin Microsoft’s One Engineering System (1ES) organization, teams build and maintain the internal engineering systems that product groups across the company rely on to ship and secure their services. These shared tools and processes support teams responsible for mission-critical products, from modern cloud-native platforms to long-lived legacy applications.\nSecurity, compliance, and relia…",
@@ -4097,6 +4137,16 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/azure-monitor-service-level-indicators-sli/4507445",
+          "author": "Sokuma",
+          "description": "Announcing Public Preview of Azure Monitor SLIs \nToday, we are excited to introduce Service Level Indicators (SLI) and Service Level Objectives (SLO) in Azure Monitor a step forward in helping teams measure how customers are experiencing their applications.\nSLI: A quantitative measure of how well an application or service is performing from the customer’s point of view.\nSLO: A defined target for an SLI that represents how good or bad the SLI is over a given time-period. This is also referred to as a baseline in Azure Monitor.\nOne of the biggest advantages of SLIs is that they quantify real customer impact. In many environments, multiple alerts may fire across infrastructure and services—but not all of them translate to user-visible issues. Metrics like CPU Percentage can measure what is ha…",
+          "link": "https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/azure-monitor-service-level-indicators-sli/4507445",
+          "publishedOn": "2026-04-29T16:16:56.000Z",
+          "wordCount": 8158,
+          "title": "Azure Monitor Service Level Indicators (SLI)",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTA3NDQ1LVhrUnNvdw?revision=9"
+        },
+        {
           "id": "https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/ingest-at-scale-securely-%E2%80%94-azure-monitor-pipeline-is-now-generally-available/4510379",
           "author": "XemaPathak",
           "description": "Today, we're thrilled to announce the general availability of Azure Monitor pipeline — a telemetry pipeline built for secure, high-scale ingestion across any environment. But the best way to understand what makes it powerful isn't to start with features. It's to start with the problems that kept showing up, over and over, in our conversations with customers. So, let's dig in...\nChances are, this sounds a lot like your environment\nImagine a large enterprise rolling out Microsoft Sentinel as their SIEM.\nThey have sites across regions, a mix of on‑premises and cloud environments, and security telemetry streaming in from firewalls, network devices, and Linux servers—100,000 to 1 million events per second in some locations. Traditional forwarders buckle under the load, drop events during networ…",
@@ -4469,6 +4519,16 @@
       "feedUrl": "https://techcommunity.microsoft.com/t5/s/plugins/custom/microsoft/o365/custom-blog-rss?board=AzureDevCommunityBlog&size=100&label=Developer",
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
+        {
+          "id": "https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/building-an-enterprise-knowledge-copilot-with-foundry-iq-and-agentic-retrieval-o/4512308",
+          "author": "Shah_Viral",
+          "description": "Every enterprise has the same problem: knowledge scattered across SharePoint, file shares, wikis, and email. This article walks through building a knowledge copilot that unifies that data behind a single conversational interface — using Microsoft's Foundry IQ knowledge bases and the agentic retrieval engine in Azure AI Search.\nThe Problem: Fragmented Knowledge, Fragmented Answers\nEnterprise AI projects today share a common pain point. Each new agent or copilot that needs to answer questions from company data must rebuild its own retrieval pipeline from scratch — data connections, chunking logic, embeddings, routing, permissions — all duplicated project after project. The result is a tangle of fragmented, siloed pipelines that are expensive to maintain and inconsistent in quality.\nConsider …",
+          "link": "https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/building-an-enterprise-knowledge-copilot-with-foundry-iq-and-agentic-retrieval-o/4512308",
+          "publishedOn": "2026-04-29T07:00:00.000Z",
+          "wordCount": 11436,
+          "title": "Building an Enterprise Knowledge Copilot with Foundry IQ and Agentic Retrieval on Azure AI",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTEyMzA4LVlTRFBKNA?revision=6"
+        },
         {
           "id": "https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/the-future-of-agentic-ai-inside-microsoft-agent-framework-1-0/4510698",
           "author": "rajesh-yadav",
@@ -5290,6 +5350,16 @@
       "feedUrl": "https://techcommunity.microsoft.com/t5/s/plugins/custom/microsoft/o365/custom-blog-rss?board=MicrosoftMechanicsBlog&size=50",
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
+        {
+          "id": "https://techcommunity.microsoft.com/blog/MicrosoftMechanicsBlog/operations-context-for-ai--ontology-in-fabric%C2%A0iq/4515899",
+          "author": "Zachary-Cavanell",
+          "description": "Generate a full business ontology from an existing Power BI semantic model, map entities and relationships, and embed real-time operational signals alongside business rules that live inside the ontology with the data and its meaning. \n\nFrom there, trace cascading operational impacts across your business through the relationship graph, stand up Operations Agents in natural language with Teams-based actions, and connect the same ontology as a knowledge source in Copilot Studio or Azure AI Foundry. \nChafia Aouissi, Fabric IQ Principal PM Manager, shares how to model your business operations, embed intelligence in your data, and deploy agents that act on it.\nLogic lives with your data.\n\nEmbed business rules directly in the Fabric IQ ontology. Define thresholds, trigger notifications, and casca…",
+          "link": "https://techcommunity.microsoft.com/blog/MicrosoftMechanicsBlog/operations-context-for-ai--ontology-in-fabric%C2%A0iq/4515899",
+          "publishedOn": "2026-04-29T16:49:19.000Z",
+          "wordCount": 13841,
+          "title": "Operations Context for AI | Ontology in Fabric IQ",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTE1ODk5LWJPc3RLbg?revision=2"
+        },
         {
           "id": "https://techcommunity.microsoft.com/blog/MicrosoftMechanicsBlog/foundry-agent-service--microsoft-agent-framework-explained/4511661",
           "author": "Zachary-Cavanell",
@@ -6388,6 +6458,16 @@
       "feedUrl": "https://devblogs.microsoft.com/microsoft365dev/feed/",
       "siteUrl": "https://devblogs.microsoft.com/microsoft365dev/",
       "articles": [
+        {
+          "id": "https://devblogs.microsoft.com/microsoft365dev/?p=25609",
+          "author": "Aamir Jawaid, Umang Sehgal, Kavin Singh",
+          "description": "Learn how to use a coding agent to register and agent with Teams.\nThe post From prompt to production: Teams agent setup, simplified appeared first on Microsoft 365 Developer Blog.",
+          "link": "https://devblogs.microsoft.com/microsoft365dev/from-prompt-to-production-teams-agent-setup-simplified/",
+          "publishedOn": "2026-04-29T21:27:55.000Z",
+          "wordCount": 7252,
+          "title": "From prompt to production: Teams agent setup, simplified",
+          "imageUrl": "https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2026/04/setup-steps.webp"
+        },
         {
           "id": "https://devblogs.microsoft.com/microsoft365dev/?p=25600",
           "author": "Vesa Juvonen",
