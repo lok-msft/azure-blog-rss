@@ -2555,16 +2555,6 @@
           "wordCount": 12092,
           "title": ".NET 10 and Memory: Less Heap, Smarter GC, Faster Apps",
           "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDc0MTY1LThUMnhtcQ?revision=1"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/zero-trust-agent-architecture-how-to-actually-secure-your-agents/4473995",
-          "author": "hazem",
-          "description": "Microsoft’s announcements at Ignite 2025 hit right at this point.\nWith the evolution of Azure AI Foundry into Microsoft Foundry, and the launch of Foundry Agent Service, we now have a platform designed not just to build smarter agents, but safer ones — agents with identity, permissions, observability, and compliance baked into their runtime.\n \nI’m Hazem Ali, A Microsoft AI MVP · Principal AI & ML Engineer / Architect & CEO of Skytells, Inc.\nMy work focuses on building AI systems that connect research with reality, turning the science into scalable, production-ready solutions. \nAnd today, I’ll walk you through how to secure your agents on Microsoft Foundry, from protecting tools and handling prompt injection, to enforcing policy in code and using Azure’s new content-safety features like Pro…",
-          "link": "https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/zero-trust-agent-architecture-how-to-actually-secure-your-agents/4473995",
-          "publishedOn": "2025-12-02T11:00:35.000Z",
-          "wordCount": 21008,
-          "title": "Zero-Trust Agent Architecture: How To Actually Secure Your Agents",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDczOTk1LXFYZm83VQ?revision=5"
         }
       ]
     },
@@ -3992,16 +3982,6 @@
           "wordCount": 10550,
           "title": "Deploying a Bun + Hono + Vite app to Azure App Service",
           "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDc1MzU2LVRSbnZsaA?revision=3"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/faster-python-on-azure-functions-with-uvloop/4455323",
-          "author": "eroman",
-          "description": "Python 3.13+ apps on Azure Functions are now faster by default. By replacing the standard event loop with uvloop, the Functions Python worker delivers higher throughput and lower latency for asynchronous workloads — no code changes required.\nIntroduction\nAzure Functions powers millions of customer scenarios, from real-time APIs to event-driven automation. For Python developers, scalability often comes down to how efficiently the runtime handles I/O, concurrency, and asynchronous workloads.\nThat’s why, starting with Python 3.13, the Azure Functions Python worker now uses uvloop as its default event loop. Built on top of libuv (the same library behind Node.js), uvloop provides a drop-in replacement for Python’s standard asyncio loop with measurable performance improvements.\nFor customers, th…",
-          "link": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/faster-python-on-azure-functions-with-uvloop/4455323",
-          "publishedOn": "2025-12-01T19:58:50.000Z",
-          "wordCount": 9519,
-          "title": "Faster Python on Azure Functions with uvloop",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDU1MzIzLVFPT2dMTQ?revision=12"
         }
       ]
     },
@@ -4520,6 +4500,16 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/%EF%B8%8Fstreamline-image-generation-workflow-in-foundry-toolkit/4516055",
+          "author": "junjieli",
+          "description": "Integrating image generation into a production AI application has historically meant juggling multiple surfaces — browsing models in the Foundry portal, setting up deployments via the Azure CLI, testing prompts in a separate tool, then stitching together API credentials before writing a single line of app code. That context-switching adds friction at exactly the moment you want to be experimenting.\nWith this release, the full image generation workflow — discover, deploy, prompt, iterate, export code — lives inside your editor. A few things this unlocks for developers:\n🎨GPT-Image-2 in the Model Catalog\n\nGPT-Image-2 via Microsoft Foundry is now listed in the Foundry Toolkit Model Catalog. You can browse its capabilities, review inference parameters, and deploy it to any Azure AI Foundry pro…",
+          "link": "https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/%EF%B8%8Fstreamline-image-generation-workflow-in-foundry-toolkit/4516055",
+          "publishedOn": "2026-04-30T07:00:00.000Z",
+          "wordCount": 7680,
+          "title": "🖼️Streamline Image Generation Workflow in Foundry Toolkit",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTE2MDU1LU5YTk43bA?revision=2"
+        },
+        {
           "id": "https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/building-an-enterprise-knowledge-copilot-with-foundry-iq-and-agentic-retrieval-o/4512308",
           "author": "Shah_Viral",
           "description": "Every enterprise has the same problem: knowledge scattered across SharePoint, file shares, wikis, and email. This article walks through building a knowledge copilot that unifies that data behind a single conversational interface — using Microsoft's Foundry IQ knowledge bases and the agentic retrieval engine in Azure AI Search.\nThe Problem: Fragmented Knowledge, Fragmented Answers\nEnterprise AI projects today share a common pain point. Each new agent or copilot that needs to answer questions from company data must rebuild its own retrieval pipeline from scratch — data connections, chunking logic, embeddings, routing, permissions — all duplicated project after project. The result is a tangle of fragmented, siloed pipelines that are expensive to maintain and inconsistent in quality.\nConsider …",
@@ -4964,6 +4954,16 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/running-diffusion-models-at-scale-on-aks/4513687",
+          "author": "PrabalDeb",
+          "description": "Diffusion workloads are simple at prototype scale and unforgiving in production. A single demo can run on one GPU-backed VM, but a real platform has to handle bursty demand, long-running jobs, model artifact distribution, secure public access, rollout safety, and hardware-level observability.\nAzure Kubernetes Service (AKS) is a strong fit when the requirement is not just to run a model, but to operate a repeatable platform for GPU inference. The reusable pattern is straightforward: keep the API and control layer on CPU nodes, buffer work through a dispatch layer, run inference on isolated GPU capacity, push results to durable storage, and treat security, telemetry, and deployment automation as first-class platform features.\nAKS reference architecture for diffusion workloads\nThe architectur…",
+          "link": "https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/running-diffusion-models-at-scale-on-aks/4513687",
+          "publishedOn": "2026-04-30T04:38:08.000Z",
+          "wordCount": 14701,
+          "title": "Running Diffusion Models at Scale on AKS",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTEzNjg3LW1kalk5dA?revision=7"
+        },
+        {
           "id": "https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/transforming-video-content-into-structured-sops-using-graph-based-rag/4515038",
           "author": "dikshashakya",
           "description": "Introduction\nIn today’s digital-first environments, a large portion of enterprise knowledge lives inside video content, training sessions, onboarding walkthroughs, and recorded operational procedures.\nWhile videos are great for learning, they are not ideal for quick reference, compliance, or repeatable processes. Converting that knowledge into structured documentation like Standard Operating Procedures (SOPs) is often manual and time-consuming.\nWhat if this process could be automated using AI?\nThe Problem\nTranscripts alone don’t solve the problem.\nWhen videos are converted into text, the output typically lacks:\n\nClear structure (sections, headings, hierarchy)\nContext (relationships between steps, tools, and roles)\nCompleteness (definitions and dependencies spread across the content)\n\nThis …",
@@ -5332,16 +5332,6 @@
           "wordCount": 16435,
           "title": "How to Modernise a Microsoft Access Database (Forms + VBA) to Node.JS, OpenAPI and SQL Server",
           "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDczNTA0LWRnUzN3Rw?revision=1"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/cloud-as-a-war-against-entropy/4474111",
-          "author": "lavann320",
-          "description": "From Physics and Information Theory to Practical Reliability in the Cloud\nTwo years ago I wrote about mitigating downtime and increasing reliability by managing complexity in cloud‑native systems. I used ideas from physics and chaos theory as a lens to explain why cloud architectures feel fragile as they grow: more moving parts, more states, more surprising failure modes.\nSince then, I’ve gone deeper, especially into three concepts:\n\nThermodynamic entropy: energy spreading out, order decaying.\nShannon entropy: uncertainty and information in signals.\nChaos theory: deterministic systems behaving unpredictably due to sensitivity to initial conditions.\n\nWhat is striking is how naturally these ideas line up with what we experience every day in Azure estates:\n\nThe system's that we design and dep…",
-          "link": "https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/cloud-as-a-war-against-entropy/4474111",
-          "publishedOn": "2025-12-02T01:24:03.000Z",
-          "wordCount": 18560,
-          "title": "Cloud as a War Against Entropy",
-          "imageUrl": null
         }
       ]
     },
@@ -5894,26 +5884,6 @@
           "wordCount": 8274,
           "title": "Build AI Agents with GitHub Copilot SDK and Microsoft Agent Framework",
           "imageUrl": "https://devblogs.microsoft.com/semantic-kernel/wp-content/uploads/sites/78/2025/10/Screenshot-2025-10-07-233551.png"
-        },
-        {
-          "id": "https://devblogs.microsoft.com/semantic-kernel/?p=5069",
-          "author": "Kinfey Lo",
-          "description": "In the explosive era of Agentic AI, we’re not just seeking more powerful models—we’re searching for a development experience that lets developers actually get some sleep. When building Agents locally, we’ve traditionally faced three major challenges: Black-Box Execution: What is my Agent thinking? Why is it stuck? (Debugging is hard) Interaction Silos: I’ve built my Agent—how do […]\nThe post The “Golden Triangle” of Agentic Development with Microsoft Agent Framework: AG-UI, DevUI & OpenTelemetry Deep Dive appeared first on Microsoft Agent Framework.",
-          "link": "https://devblogs.microsoft.com/agent-framework/the-golden-triangle-of-agentic-development-with-microsoft-agent-framework-ag-ui-devui-opentelemetry-deep-dive/",
-          "publishedOn": "2025-12-01T17:08:48.000Z",
-          "wordCount": 8462,
-          "title": "The “Golden Triangle” of Agentic Development with Microsoft Agent Framework: AG-UI, DevUI & OpenTelemetry Deep Dive",
-          "imageUrl": "https://devblogs.microsoft.com/agent-framework/wp-content/uploads/sites/78/2025/10/Screenshot-2025-10-07-233551.png"
-        },
-        {
-          "id": "https://devblogs.microsoft.com/semantic-kernel/?p=5069",
-          "author": "Kinfey Lo",
-          "description": "In the explosive era of Agentic AI, we’re not just seeking more powerful models—we’re searching for a development experience that lets developers actually get some sleep. When building Agents locally, we’ve traditionally faced three major challenges: Black-Box Execution: What is my Agent thinking? Why is it stuck? (Debugging is hard) Interaction Silos: I’ve built my Agent—how do […]\nThe post The “Golden Triangle” of Agentic Development with Microsoft Agent Framework: AG-UI, DevUI & OpenTelemetry Deep Dive appeared first on Semantic Kernel.",
-          "link": "https://devblogs.microsoft.com/semantic-kernel/the-golden-triangle-of-agentic-development-with-microsoft-agent-framework-ag-ui-devui-opentelemetry-deep-dive/",
-          "publishedOn": "2025-12-01T17:08:48.000Z",
-          "wordCount": 7624,
-          "title": "The “Golden Triangle” of Agentic Development with Microsoft Agent Framework: AG-UI, DevUI & OpenTelemetry Deep Dive",
-          "imageUrl": "https://devblogs.microsoft.com/semantic-kernel/wp-content/uploads/sites/78/2023/02/sk-blog.001.new_.png"
         }
       ]
     },
@@ -6401,6 +6371,16 @@
       "feedUrl": "https://cloudblogs.microsoft.com/opensource/feed/",
       "siteUrl": "https://opensource.microsoft.com/blog/",
       "articles": [
+        {
+          "id": "https://opensource.microsoft.com/blog/2026/04/30/postgresql-enters-its-ai-era-run-postgresql-like-a-pro-in-the-era-of-ai-and-rapid-growth/",
+          "author": "Charles Feddersen",
+          "description": "Postgres can handle intelligent workloads and scale without sacrificing security, performance, reliability, or operational ease.\nThe post PostgreSQL enters its AI era: Run PostgreSQL like a pro in the era of AI and rapid growth appeared first on Microsoft Open Source Blog.",
+          "link": "https://opensource.microsoft.com/blog/2026/04/30/postgresql-enters-its-ai-era-run-postgresql-like-a-pro-in-the-era-of-ai-and-rapid-growth/",
+          "publishedOn": "2026-04-30T15:00:00.000Z",
+          "wordCount": 4370,
+          "title": "PostgreSQL enters its AI era: Run PostgreSQL like a pro in the era of AI and rapid growth",
+          "imageUrl": "https://opensource.microsoft.com/blog/wp-content/uploads/2026/04/Azure-Infrastructure-Dark-2-scaled.jpg"
+        },
         {
           "id": "https://opensource.microsoft.com/blog/2026/04/28/continuing-the-story-of-early-dos-development/",
           "author": "Stacey Haffner and Scott Hanselman",
