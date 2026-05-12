@@ -2,10 +2,107 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2026-05-11T03:37:53.875Z</updated>
+    <updated>2026-05-12T03:25:23.726Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[How to Secure Azure Databricks without Public Exposure using WAF + Private Endpoints]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/how-to-secure-azure-databricks-without-public-exposure-using-waf--private-endpoi/4517721</id>
+        <link href="https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/how-to-secure-azure-databricks-without-public-exposure-using-waf--private-endpoi/4517721"/>
+        <updated>2026-05-11T23:37:12.000Z</updated>
+        <summary type="html"><![CDATA[While first thing that comes up to mind is that lets configure IP Access List with keeping Azure Databricks in Hybrid Connectivity. This approach is technically doable, but not the best approach for organizations which follows Zero Trust Architecture Framework.
+This is where organizations has to design a solution which follows CAF Principles and is fully secured with Azure Application Gateway with Web Application Firewall (WAF) combined with Private Endpoints (Azure Private Link) becomes critical to enforce Zero Trust Architecture.
+In this blog, I’ll walk through:
+
+Why Zero Trust is essential for Databricks
+Traffic Flow For Securing Databricks
+Architecture Components
+Key Considerations
+Conclusion
+
+Why Zero Trust for Azure Databricks?
+Azure Databricks is a SaaS-managed service—but in many e…]]></summary>
+        <author>
+            <name>FaizaanMerchant</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Announcing general availability of confidential computing for Azure Service Bus Premium]]></title>
+        <id>https://techcommunity.microsoft.com/blog/MessagingonAzureBlog/announcing-general-availability-of-confidential-computing-for-azure-service-bus-/4517931</id>
+        <link href="https://techcommunity.microsoft.com/blog/MessagingonAzureBlog/announcing-general-availability-of-confidential-computing-for-azure-service-bus-/4517931"/>
+        <updated>2026-05-11T18:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Today we are excited to announce the general availability of confidential computing for Azure Service Bus Premium. With this capability, your Service Bus namespace processes messages inside hardware-based trusted execution environments (TEEs), preventing unauthorized access to data while it is being processed. This rounds out our protection story alongside existing encryption at rest and in transit, giving customers with regulatory or sensitive workloads a way to protect their messaging data through every stage of its lifecycle.
+How confidential computing fits with existing Service Bus security
+Service Bus already provides strong protection for messaging data. TLS encryption protects data in transit, and encryption at rest with optional support for customer-managed keys (CMK) protects data…]]></summary>
+        <author>
+            <name>EldertGrootenboer</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Azure Service Bus Premium now offers 99.99% SLA in all Availability Zone regions]]></title>
+        <id>https://techcommunity.microsoft.com/blog/MessagingonAzureBlog/azure-service-bus-premium-now-offers-99-99-sla-in-all-availability-zone-regions/4517933</id>
+        <link href="https://techcommunity.microsoft.com/blog/MessagingonAzureBlog/azure-service-bus-premium-now-offers-99-99-sla-in-all-availability-zone-regions/4517933"/>
+        <updated>2026-05-11T17:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Today we are excited to announce an update to the Azure Service Bus Service Level Agreement. Starting May 1, 2026, all Premium namespaces deployed in regions with Availability Zone support will receive a 99.99% uptime SLA. This applies regardless of whether partitioning is enabled on the namespace.
+Service Bus Premium is the tier customers choose for their most important workloads, where dedicated resources, predictable performance, and strong isolation matter. With this update, the SLA matches the resilience those deployments already have when they run across Availability Zones.
+What is an Availability Zone
+Availability Zones are physically separate datacenters within an Azure region, each with independent power, cooling, and networking. A Premium namespace deployed in an Availability Zon…]]></summary>
+        <author>
+            <name>EldertGrootenboer</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Stripe Events + Azure Event Grid: Now Generally Available]]></title>
+        <id>https://techcommunity.microsoft.com/blog/MessagingonAzureBlog/stripe-events--azure-event-grid-now-generally-available/4518499</id>
+        <link href="https://techcommunity.microsoft.com/blog/MessagingonAzureBlog/stripe-events--azure-event-grid-now-generally-available/4518499"/>
+        <updated>2026-05-11T15:38:22.000Z</updated>
+        <summary type="html"><![CDATA[Stripe events give developers real-time visibility into everything happening in their Stripe accounts — payments, subscriptions, refunds, disputes, and more. With Azure Event Grid as a destination for Stripe events, now Generally Available, teams can route those signals directly into Azure and build scalable, event-driven architectures without managing webhook infrastructure.
+Stripe events meet Azure Event Grid
+
+Stripe produces events for changes across payments, customers, subscriptions, accounts, meters, and more — covering hundreds of distinct event types. Azure Event Grid acts as a fully managed event broker, routing those events directly into Azure so teams can build reactive, real-time workflows without managing custom webhook infrastructure. Here are some of the scenarios this enabl…]]></summary>
+        <author>
+            <name>robece</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Container crash with exit code 132 (SIGILL) on Web App for Containers]]></title>
+        <id>https://azureossd.github.io/2026/05/11/Container-crash-with-exit-code-132-SIGILL-on-Web-App-for-Containers/index.html</id>
+        <link href="https://azureossd.github.io/2026/05/11/Container-crash-with-exit-code-132-SIGILL-on-Web-App-for-Containers/index.html"/>
+        <updated>2026-05-11T12:00:00.000Z</updated>
+        <summary type="html"><![CDATA[This post will cover containers crashing with exit code 132 (SIGILL - Illegal Instruction) on Web App for Containers, typically caused by CPU architecture mismatches between Intel and AMD workers.]]></summary>
+        <author>
+            <name>azureossd.github.io</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[City simulator with AI agents for traffic congestion]]></title>
+        <id>https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/city-simulator-with-ai-agents-for-traffic-congestion/4517565</id>
+        <link href="https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/city-simulator-with-ai-agents-for-traffic-congestion/4517565"/>
+        <updated>2026-05-11T07:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Project Overview
+Hi I'm Shoib Muhammad an MEng Mathematical Computation student at UCL, I set out to tackle one of the most persistent challenges in modern cities: traffic congestion. In London alone, drivers lose around 141 hours each year to congestion, with the wider UK economy losing approximately £5.1 billion in productivity. Traditional fixed-cycle traffic lights cannot adapt to changing demand, and even adaptive systems such as SCOOT and SCATS tend to focus on single intersections rather than understanding the full network.
+The aim of this project was to build something practical and experimental: a high fidelity simulation environment where multi agent AI systems can be tested, broken, and improved without affecting real world traffic. It is a safe space to explore how intelligent …]]></summary>
+        <author>
+            <name>Shoib</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Configure DNS forwarding for Azure NetApp Files]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/configure-dns-forwarding-for-azure-netapp-files/4516381</id>
+        <link href="https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/configure-dns-forwarding-for-azure-netapp-files/4516381"/>
+        <updated>2026-05-11T04:20:10.000Z</updated>
+        <summary type="html"><![CDATA[This post has been written with the collaboration of Rizul Khanna
+
+Applies to: Azure NetApp Files — SMB, dual-protocol, and NFSv4.1 Kerberos volumes deployed in hub-spoke or Azure Virtual WAN topologies using an external private DNS forwarder.
+
+Overview
+
+Azure NetApp Files (ANF) has a hard dependency on DNS for all volume types that integrate with Active Directory (AD): SMB, dual-protocol (SMB + NFS), and NFSv4.1 with Kerberos. Unlike most Azure PaaS services, ANF does not use Azure Private Link and has no privatelink.* zone. Its volumes attach directly to a delegated subnet, and their hostnames are registered into AD-integrated DNS via Secure Dynamic DNS (DDNS). This architecture means DNS design decisions for the ANF delegated subnet are fundamentally different from those that apply to s…]]></summary>
+        <author>
+            <name>mkachare</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Announcing the public preview of the Microsoft 365 Copilot Agent Evaluations tool]]></title>
         <id>https://devblogs.microsoft.com/microsoft365dev/?p=25662</id>
@@ -125,6 +222,16 @@ Message loss (queue gaps during switchover)
 Degraded user exp…]]></summary>
         <author>
             <name>lapadman</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How to Reset WordPress Admin Password on Azure App Service Using SSH and WP-CLI]]></title>
+        <id>https://azureossd.github.io/2026/05/07/How-to-Reset-WordPress-Admin-Password-on-Azure-App-Service-Using-SSH-and-WP-CLI/index.html</id>
+        <link href="https://azureossd.github.io/2026/05/07/How-to-Reset-WordPress-Admin-Password-on-Azure-App-Service-Using-SSH-and-WP-CLI/index.html"/>
+        <updated>2026-05-07T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Overview This article provides the steps to reset a WordPress admin password for a site hosted on Azure App Service using SSH and WP-CLI.]]></summary>
+        <author>
+            <name>azureossd.github.io</name>
         </author>
     </entry>
     <entry>
@@ -2672,6 +2779,16 @@ Microsoft Foundry lets you build AI agents that can reason, plan, and take actio
 The post Introducing the Agent Governance Toolkit: Open-source runtime security for AI agents appeared first on Microsoft Open Source Blog.]]></summary>
         <author>
             <name>Imran Siddique</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Overview of Azure Load Testing Service]]></title>
+        <id>https://azureossd.github.io/2026/04/02/Azure-Load-Testing-overview/index.html</id>
+        <link href="https://azureossd.github.io/2026/04/02/Azure-Load-Testing-overview/index.html"/>
+        <updated>2026-04-02T12:00:00.000Z</updated>
+        <summary type="html"><![CDATA[This blog provides a quick overview of the Azure Load testing service]]></summary>
+        <author>
+            <name>azureossd.github.io</name>
         </author>
     </entry>
     <entry>
@@ -8738,36 +8855,6 @@ Continue reading “Fabric Environment Library Management Performance Improvemen
 Continue reading “Fabric Runtime 2.0 (Preview)”]]></summary>
         <author>
             <name>Microsoft Fabric Blog</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Key Considerations for Modernizing and Migrating Custom Applications to Azure]]></title>
-        <id>https://techcommunity.microsoft.com/blog/AzureMigrationBlog/key-considerations-for-modernizing-and-migrating-custom-applications-to-azure/4476580</id>
-        <link href="https://techcommunity.microsoft.com/blog/AzureMigrationBlog/key-considerations-for-modernizing-and-migrating-custom-applications-to-azure/4476580"/>
-        <updated>2025-12-12T18:04:26.000Z</updated>
-        <summary type="html"><![CDATA[Understanding the Current Application
-A detailed understanding of the existing application is the foundation of a successful migration. Azure Migrate helps discover servers, databases, dependencies, and performance characteristics. It gives insight into everything that must be moved and modernized.Documentation: https://learn.microsoft.com/azure/migrate/migrate-overview
-This step reveals performance bottlenecks, outdated libraries, legacy integrations, and security gaps that need attention during modernization.
-Selecting the Right Migration Approach
- 
-
- 
-Once the current state is clear, the next step is to decide how each component should move to Azure. Some workloads can be rehosted on Azure Virtual Machines, while others benefit from modernization using App Services, Kubernetes, serverle…]]></summary>
-        <author>
-            <name>srhulsus</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[AI Upskilling Framework Level 3 Building]]></title>
-        <id>https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/ai-upskilling-framework-level-3-building/4477472</id>
-        <link href="https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/ai-upskilling-framework-level-3-building/4477472"/>
-        <updated>2025-12-12T17:31:50.000Z</updated>
-        <summary type="html"><![CDATA[The Global AI Community is excited to bring you the latest updates on AI Upskilling Framework Level 3 Building, straight from Microsoft Ignite! This session dives deep into advanced concepts for building agentic workflows and showcases new announcements that will help developers accelerate their Agentic AI journey.
-AI Upskilling Framework
-In this new era of work, AI skills will be critical for nearly every role. But the level of AI readiness will vary: An entry-level sales representative, seasoned marketing professional, data analyst, and engineer will all need different skills to incorporate AI into their day-to-day work.
-It can be complex to navigate these different use cases; that’s why the LinkedIn Learning team crafted a five-level framework with a structured learning model to upskill…]]></summary>
-        <author>
-            <name>carlottacaste</name>
         </author>
     </entry>
     <entry>
