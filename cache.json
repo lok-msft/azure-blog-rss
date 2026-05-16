@@ -1983,6 +1983,26 @@
       "siteUrl": "https://azure.github.io/AppService/",
       "articles": [
         {
+          "id": "https://azure.github.io/AppService/2026/05/14/fastapi-improvements.html",
+          "author": null,
+          "description": "Deploying FastAPI apps to Azure App Service for Linux is now simpler.",
+          "link": "https://azure.github.io/AppService/2026/05/14/fastapi-improvements.html",
+          "publishedOn": "2026-05-14T00:00:00.000Z",
+          "wordCount": 812,
+          "title": "Simplifying FastAPI Deployments on Azure App Service for Linux",
+          "imageUrl": "https://azure.github.io/AppService/assets/images/icon.png"
+        },
+        {
+          "id": "https://azure.github.io/AppService/2026/05/07/kudu-deferred-recycle.html",
+          "author": null,
+          "description": "Azure App Service for Linux now includes Deferred Kudu Recycle, a platform improvement designed to make deployments more resilient when app settings or connection strings are updated during an active deployment.",
+          "link": "https://azure.github.io/AppService/2026/05/07/kudu-deferred-recycle.html",
+          "publishedOn": "2026-05-07T00:00:00.000Z",
+          "wordCount": 1006,
+          "title": "Improving Deployment Resiliency on Azure App Service for Linux with Deferred Kudu Recycle",
+          "imageUrl": "https://azure.github.io/AppService/assets/images/icon.png"
+        },
+        {
           "id": "https://azure.github.io/AppService/2026/05/06/platform-release-channel.html",
           "author": null,
           "description": "Azure App Service for Linux is introducing Platform Release Channel, a new setting that gives you more control over when runtime patch updates are applied to your app.",
@@ -2563,6 +2583,56 @@
       "feedUrl": "https://techcommunity.microsoft.com/t5/s/plugins/custom/microsoft/o365/custom-blog-rss?board=AppsonAzureBlog&size=100",
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
+        {
+          "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/from-copilots-to-coworkers-how-ai-agents-are-transforming-azure-networking-opera/4519850",
+          "author": "dbillor",
+          "description": "Microsoft's Customer Zero blog series gives an insider view of how Microsoft builds and operates Microsoft using our trusted, enterprise-grade IQ platform. Learn best practices from our engineering teams with real-world lessons, architectural patterns, and operational strategies for pressure-tested solutions in building, operating, and scaling AI apps and agent fleets across the organization.\nThe Challenge: Operating a global-scale physical network\nAzure operates one of the largest physical networks on the planet. That scale shapes more than infrastructure decisions; it reshapes how operational work itself must be organized.\nHundreds of thousands of kilometers of outside-plant fiber and more than a million optical devices connect datacenters, regions, and Microsoft's global services. Every…",
+          "link": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/from-copilots-to-coworkers-how-ai-agents-are-transforming-azure-networking-opera/4519850",
+          "publishedOn": "2026-05-15T17:45:28.000Z",
+          "wordCount": 10210,
+          "title": "From Copilots to Coworkers: How AI Agents Are Transforming Azure Networking Operations",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTE5ODUwLTFSbU05OQ?revision=5"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/new-ssh-helper-aliases-for-python-apps-on-azure-app-service-for-linux/4520111",
+          "author": "TulikaC",
+          "description": "Troubleshooting a running application often starts with SSH. To make that experience simpler for Python apps on Azure App Service for Linux, we have added new SSH helper aliases for common app, log, networking, and Azure AI Foundry diagnostics.\nWhen you SSH into your application, you will now see two helper commands:\n\nView available SSH helpers with apphelp\nRun apphelp to see the full list of available aliases.\n\nThese helpers are grouped by common tasks, including app information, logs, diagnostics, testing, and Azure AI Foundry connectivity.\nFor example:\napplogs\nTails your application logs directly from the SSH session.\nappcurl\nTests your application locally using localhost:$PORT, which is useful when checking whether the app is listening correctly inside the container.\nOther useful helpe…",
+          "link": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/new-ssh-helper-aliases-for-python-apps-on-azure-app-service-for-linux/4520111",
+          "publishedOn": "2026-05-15T10:37:16.000Z",
+          "wordCount": 6245,
+          "title": "New SSH helper aliases for Python apps on Azure App Service for Linux",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTIwMTExLTU5SnRDRw?revision=1"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/simplifying-fastapi-deployments-on-azure-app-service-for-linux/4520103",
+          "author": "TulikaC",
+          "description": "Deploying FastAPI apps to Azure App Service for Linux is now simpler.\nPreviously, when you deployed a FastAPI application, you needed to configure a custom startup command so the app could run correctly with an ASGI server. This added an extra step to the deployment flow and could create friction, especially when getting started with FastAPI on App Service.\nWe have now added built-in detection logic that identifies FastAPI applications automatically and configures the appropriate startup behavior for you.\nWhat changed\nWhen you deploy a Python app, App Service now scans common entry point files such as:\nmain.py, app.py, application.py, server.py, asgi.py, api.py, index.py, and run.py\nIf one of these files imports FastAPI using from fastapi or import fastapi, App Service detects the app as a FastAPI application.\nTo avoid false positives, files that also import Flask are skipped during FastAPI detection.\nHow your app is started\nWhen a FastAPI app is detected, App Service automatically starts the application using Gunicorn with the Uvicorn worker class:\ngunicorn -k uvicorn_worker.UvicornWorker\nThis provides the ASGI support required by FastAPI applications.\nFramework detection priority\nIf multiple framework indicators are present, App Service uses the following priority order:\nDjango > FastAPI > Flask\nDjango continues to take precedence when a wsgi.py file is found in a subdirectory.\nWhat this means for you\nWhen you deploy a FastAPI app to Azure App Service for Linux, you no longer need to configure a custom startup command in the supported runtime flow. Oryx detects the FastAPI app and configures the startup behavior automatically.\nThis removes an extra setup step and makes it easier to get your FastAPI app running on App Service.\nAvailability\nThis improvement is currently enabled for Python 3.14 and later. Support for additional Python versions will be enabled in an upcoming rollout.\nFor more details on deploying Python apps to App Service, see the Azure App Service Python quickstart documentation.",
+          "link": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/simplifying-fastapi-deployments-on-azure-app-service-for-linux/4520103",
+          "publishedOn": "2026-05-15T10:25:16.000Z",
+          "wordCount": 5974,
+          "title": "Simplifying FastAPI Deployments on Azure App Service for Linux",
+          "imageUrl": null
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/platform-improvements-for-python-ai-apps-on-azure-app-service/4519620",
+          "author": "SurenderSinghMalik",
+          "description": "Overview\nAzure App Service (Linux) is a fully managed PaaS offering that supports a broad range of languages, including Python, Node.js, .NET, PHP, and Java. Developers can push source code or deploy a pre-built artifact; the platform handles the rest, including dependency installation, application containerization, and running the application at cloud scale. \nMore customers are building intelligent applications using Azure AI Foundry and other AI services, and Python has become a language of choice for these workloads. The performance and reliability of the Python deployment pipeline directly shape the developer's experience on the platform, so we looked across the deployment path for opportunities to reduce latency and improve reliability. The first set of changes has reduced Python depl…",
+          "link": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/platform-improvements-for-python-ai-apps-on-azure-app-service/4519620",
+          "publishedOn": "2026-05-14T07:44:37.000Z",
+          "wordCount": 10657,
+          "title": "Platform Improvements for Python AI Apps on Azure App Service",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTE5NjIwLUVnMThMRw?revision=2"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/control-runtime-patch-updates-with-platform-release-channel-on-azure-app-service/4519570",
+          "author": "TulikaC",
+          "description": "Azure App Service for Linux is introducing Platform Release Channel, a new setting that gives you more control over when runtime patch updates are applied to your app.\nWith this feature, you can choose how quickly your app moves to newly rolled-out runtime patches. This helps teams balance two common needs: staying current with the latest security and platform updates, while also having enough time to validate changes before adopting them.\nWhy this matters\nRuntime patch updates are important because they include fixes, security updates, and platform improvements. However, some production applications need time to validate these updates before moving to the newest available patch.\nPlatform Release Channel gives you that flexibility.\nYou can choose to stay close to the latest patch updates, …",
+          "link": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/control-runtime-patch-updates-with-platform-release-channel-on-azure-app-service/4519570",
+          "publishedOn": "2026-05-14T05:31:26.000Z",
+          "wordCount": 6720,
+          "title": "Control runtime patch updates with Platform Release Channel on Azure App Service for Linux",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTE5NTcwLTNVaFpTVg?revision=1"
+        },
         {
           "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/introducing-azure-container-apps-express/4519150",
           "author": "simonjj",
@@ -4089,26 +4159,6 @@
           "wordCount": 8208,
           "title": "Announcing General Availability of Geo-Replication for Azure Service Bus Premium",
           "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDEzMTY0LXNxZUlrRg?revision=3"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/MessagingonAzureBlog/json-structure-a-json-schema-language-youll-love/4476852",
-          "author": "clemensv",
-          "description": "We talk to many customers moving structured data through queues and event streams and topics, and we see a strong desire to create more efficient and less brittle communication paths governed by rich data definitions well understood by all parties. The way those definitions are often shared are schema documents. While there is great need, the available schema options and related tool chains are often not great.\nJSON Schema is popular for its relative simplicity in trivial cases, but quickly becomes unmanageable as users employ more complex constructs. The industry has largely settled on \"Draft 7,\" with subsequent releases seeing weak adoption. There's substantial frustration among developers who try to use JSON Schema for code generation or database mapping—scenarios it was never designed …",
-          "link": "https://techcommunity.microsoft.com/blog/MessagingonAzureBlog/json-structure-a-json-schema-language-youll-love/4476852",
-          "publishedOn": "2025-12-17T08:03:09.000Z",
-          "wordCount": 12202,
-          "title": "JSON Structure: A JSON schema language you'll love",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDc2ODUyLVo3akxJOQ?revision=2"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/MessagingonAzureBlog/message-brokers-as-the-cornerstone-of-the-next-generation-of-agentic-ai-backends/4478088",
-          "author": "EldertGrootenboer",
-          "description": "We are seeing changes in the way Agentic AI behaves. Instead of one-off model calls, we are starting to see networks of agents and MCP services working together. These are going to bring powerful integrations, with a variety of distributed components. Work is going to arrive in unpredictable bursts. Some services end up overloaded while others sit idle. Every call burns tokens and compute, so wasted effort translates directly into real money.\nDirect calls are no longer enough. We are going to need orchestration. A broker in the middle that absorbs spikes, queues up work until capacity becomes available, and handles retries. This approach helps keep costs predictable by pacing work to match budgets and downstream capacity.\nMessage brokers, such as Azure Service Bus, are ideal for the capabi…",
-          "link": "https://techcommunity.microsoft.com/blog/MessagingonAzureBlog/message-brokers-as-the-cornerstone-of-the-next-generation-of-agentic-ai-backends/4478088",
-          "publishedOn": "2025-12-15T19:00:00.000Z",
-          "wordCount": 9815,
-          "title": "Message brokers as the cornerstone of the next generation of agentic AI backends",
-          "imageUrl": null
         }
       ]
     },
@@ -4156,6 +4206,26 @@
       "feedUrl": "https://techcommunity.microsoft.com/t5/s/plugins/custom/microsoft/o365/custom-blog-rss?board=AzureObservabilityBlog&size=50",
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
+        {
+          "id": "https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/azure-monitor-health-model---api-refresh/4519092",
+          "author": "shijain13",
+          "description": "API Refresh? \nDiscovery scope extended to include\n\nApplication Insights\nAzure Resource Graph query\n\n\nSignals Enhancement for Azure resources\n\nResource health is used as a default signal  \nRecommended signals are available   \nAlert rules can be imported as signals\ndynamic thresholds for metric signals\n\n\nAggregation rules\nImport health reports and data annotations\n\n-->> Link to docs",
+          "link": "https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/azure-monitor-health-model---api-refresh/4519092",
+          "publishedOn": "2026-05-14T19:43:35.000Z",
+          "wordCount": 5175,
+          "title": "Azure Monitor Health Model - API Refresh",
+          "imageUrl": null
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/public-preview-update-azure-copilot-observability-agent/4517871",
+          "author": "EfratNauerman",
+          "description": "Modern cloud applications generate massive amounts of telemetry - metrics, logs, traces, alerts, and platform signals.\nYet whether you're asking questions about your observability data or responding when things go wrong, discovering insights and root causes requires a deep understanding of the application, the observability signals it emits, and the tools, while your business and customers are impacted.\nThe Observability agent is designed to be your monitoring companion across the full observability lifecycle, enabling you to interact via chat to better understand your observability data. Our aspiration is to support the full range of activities - from onboarding and detection through triage and root cause analysis - to significantly reduce human toil and customer downtime.\nToday, the agen…",
+          "link": "https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/public-preview-update-azure-copilot-observability-agent/4517871",
+          "publishedOn": "2026-05-14T07:00:56.000Z",
+          "wordCount": 7655,
+          "title": "Public Preview Update: Azure Copilot Observability Agent",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTE3ODcxLVZUR1hlMg?revision=9"
+        },
         {
           "id": "https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/azure-monitor-service-level-indicators-sli/4507445",
           "author": "Sokuma",
@@ -4549,6 +4619,16 @@
       "feedUrl": "https://techcommunity.microsoft.com/t5/s/plugins/custom/microsoft/o365/custom-blog-rss?board=AzureDevCommunityBlog&size=100&label=Developer",
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
+        {
+          "id": "https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/six-coding-agents-one-production-system-a-field-guide-to-agenticops-with-aks-lab/4519916",
+          "author": "kinfey",
+          "description": "The shift: from \"AI helps me code\" to \"AI authors my repo\"\nFor two years we've been talking about GitHub Copilot as an inline pair programmer — a clever autocomplete that lives in your editor. That framing is officially out of date.\nThe new reality is agentic delivery: a team of named, scoped AI agents owns slices of your repository, each with its own tools, skills, and refusal rules. They produce pull requests. They run tests. They roll deployments. And when one finishes its turn, it hands off to the next.\nThe microsoft/AKS-Lab-GitHubCopilot's five labs you ship ZavaShop — a multi-agent retail supply-chain control plane running on AKS + Azure Container Apps — and along the way you internalize an operating model you can carry to any project. Everything in the repo (specs, agents, MCP serve…",
+          "link": "https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/six-coding-agents-one-production-system-a-field-guide-to-agenticops-with-aks-lab/4519916",
+          "publishedOn": "2026-05-15T07:00:00.000Z",
+          "wordCount": 10638,
+          "title": "Six Coding Agents, One Production System: A Field Guide to AgenticOps with AKS-Lab-GitHubCopilot",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTE5OTE2LUw1U1d6aQ?revision=2"
+        },
         {
           "id": "https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/from-test-cases-to-trust-elevating-enterprise-quality-with-github-copilot/4512819",
           "author": "SagarPatra",
@@ -5422,26 +5502,6 @@
           "wordCount": 13597,
           "title": "Static Egress Gateway in AKS: The Native Way to Control Multiple Outbound IPs",
           "imageUrl": null
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/from-large-semi-structured-docs-to-actionable-data-in-depth-evaluation-approache/4474060",
-          "author": "anishganguli",
-          "description": "Introduction\nExtracting structured data from large, semi-structured documents (the detailed solution implementation overview and architecture is provided in this tech community blog: From Large Semi-Structured Docs to Actionable Data: Reusable Pipelines with ADI, AI Search & OpenAI) demands a rigorous evaluation framework. \nThe goal is to ensure our pipeline is accurate, reliable, and scalable before we trust it with mission-critical data. This framework breaks evaluation into clear phases, from how we prepare the document, to how we find relevant parts, to how we validate the final output. It provides metrics, examples, and best practices at each step, forming a generic pattern that can be applied to various domains.\nFramework Overview\nA very structured and stepwise approach for evaluatio…",
-          "link": "https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/from-large-semi-structured-docs-to-actionable-data-in-depth-evaluation-approache/4474060",
-          "publishedOn": "2025-12-15T20:24:10.000Z",
-          "wordCount": 13128,
-          "title": "From Large Semi-Structured Docs to Actionable Data: In-Depth Evaluation Approaches Guidance",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDc0MDYwLU5rZ0duZQ?revision=9"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/streamline-azure-netapp-files-management%E2%80%94right-from-your-ide/4478122",
-          "author": "GeertVanTeylingen",
-          "description": "Table of Contents\nAbstract\nIntroduction\nThe Traditional Approach\nThe Modern Approach\nStep 1: Generate Infrastructure (10 Minutes)\nStep 2: Instant Validation (10 Minutes)\nStep 3: Optimization & Insights (5 Minutes)\nKey Capabilities\nThe ROI: Why This Matters\nEfficiency Gains\nSummary\nReady to Start? Learn more!\nAbstract\nThe Azure NetApp Files VS Code Extension is designed to streamline storage provisioning and management directly within the developer’s IDE. Traditional workflows often require extensive portal navigation, manual configuration, and policy management, leading to inefficiencies and context switching. The extension addresses these challenges by enabling AI-powered automation through natural language commands, reducing provisioning time from hours to minutes while minimizing errors…",
-          "link": "https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/streamline-azure-netapp-files-management%E2%80%94right-from-your-ide/4478122",
-          "publishedOn": "2025-12-15T20:17:22.000Z",
-          "wordCount": 9710,
-          "title": "Streamline Azure NetApp Files Management—Right from Your IDE",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDc4MTIyLWFHZTNJSA?revision=2"
         }
       ]
     },
@@ -5450,6 +5510,16 @@
       "feedUrl": "https://techcommunity.microsoft.com/t5/s/plugins/custom/microsoft/o365/custom-blog-rss?board=MicrosoftMechanicsBlog&size=50",
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
+        {
+          "id": "https://techcommunity.microsoft.com/blog/MicrosoftMechanicsBlog/work-iq--data-context-skills--tools-for-copilot-and-your-agents/4519554",
+          "author": "Zachary-Cavanell",
+          "description": "Pull context from SharePoint, OneDrive, Teams, email, and meetings — all through Work IQ. Draft Word documents that carry your existing sensitivity labels, and resolve calendar conflicts in Outlook. Run multi-step Copilot Cowork workflows that generate files, schedule meetings, and send status updates from a single prompt. \nExtend the same knowledge layer to ServiceNow, CRMs, and other non-Microsoft systems with API and MCP Server connectors in the Microsoft 365 admin center, or build your own agents in code against the Work IQ API. \nJeremy Chapman, Microsoft 365 Director, shares how data, context, and skills & tools combine into a single grounding layer for Copilot and your custom agents.\nSkip the manual prompt scaffolding. \n\nWork IQ delivers data, context, skills & tools as the built-in …",
+          "link": "https://techcommunity.microsoft.com/blog/MicrosoftMechanicsBlog/work-iq--data-context-skills--tools-for-copilot-and-your-agents/4519554",
+          "publishedOn": "2026-05-14T12:00:00.000Z",
+          "wordCount": 10863,
+          "title": "Work IQ | Data, Context, Skills & Tools for Copilot and Your Agents",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTE5NTU0LTRja3dIOA?revision=1"
+        },
         {
           "id": "https://techcommunity.microsoft.com/blog/MicrosoftMechanicsBlog/azure-arc--on-prem--multi-cloud-management/4519017",
           "author": "Zachary-Cavanell",
@@ -6178,16 +6248,6 @@
           "wordCount": 8689,
           "title": "Java at Microsoft: 2025 Year in Review",
           "imageUrl": "https://devblogs.microsoft.com/java/wp-content/uploads/sites/51/2025/12/cover-java25review-v2.webp"
-        },
-        {
-          "id": "https://devblogs.microsoft.com/java/?p=232717",
-          "author": "Monica Beckwith",
-          "description": "In our previous blog we introduced Azure Command Launcher for Java (jaz) —a safe, resource-aware way to launch the JVM without hand-tuning dozens of flags. This follow-up shares performance results, focusing on how jaz affects G1 behavior, heap dynamics, and pause characteristics under a long-running, allocation-intensive workload: SPECjbb 2015 (JBB). Test bed: 4-vCPU, 16-GB Azure […]\nThe post Beyond Ergonomics: How the Azure Command Launcher for Java Improves GC Stability and Throughput on Azure VMs appeared first on Microsoft for Java Developers.",
-          "link": "https://devblogs.microsoft.com/java/beyond-ergonomics-how-the-azure-command-launcher-for-java-improves-gc-stability-and-throughput-on-azure-vms/",
-          "publishedOn": "2025-12-16T19:17:27.000Z",
-          "wordCount": 9426,
-          "title": "Beyond Ergonomics: How the Azure Command Launcher for Java Improves GC Stability and Throughput on Azure VMs",
-          "imageUrl": "https://devblogs.microsoft.com/java/wp-content/uploads/sites/51/2019/11/trexduke-blackwhite-cropped-half.png"
         }
       ]
     },
@@ -6802,21 +6862,6 @@
           "wordCount": 7649,
           "title": "SharePoint Framework (SPFx) roadmap update – December 2025",
           "imageUrl": "https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2025/12/202512-spfx-monthly.webp"
-        },
-        {
-          "id": "https://devblogs.microsoft.com/microsoft365dev/?p=24789",
-          "author": "Karishma S",
-          "description": "Email is a key part of how people get things done, whether it’s booking a reservation, confirming a package delivery, or managing a cab reservation. But as inboxes become increasingly cluttered, important transactional information often gets buried. Users are forced to open multiple emails, search through text, and manually look for key details such as […]\nThe post Unlock your email potential with Schema.org appeared first on Microsoft 365 Developer Blog.",
-          "link": "https://devblogs.microsoft.com/microsoft365dev/unlock-your-email-potential-with-schema-org/",
-          "publishedOn": "2025-12-17T06:58:11.000Z",
-          "wordCount": 7946,
-          "title": "Unlock your email potential with Schema.org",
-          "enclosure": {
-            "url": "https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2025/11/Schemaorg_validation.mp4",
-            "length": "8950996",
-            "type": "video/mp4"
-          },
-          "imageUrl": "https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2025/12/Schema-image.webp"
         }
       ]
     }

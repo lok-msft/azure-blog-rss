@@ -2,10 +2,89 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2026-05-15T03:35:30.169Z</updated>
+    <updated>2026-05-16T03:20:12.195Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[From Copilots to Coworkers: How AI Agents Are Transforming Azure Networking Operations]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/from-copilots-to-coworkers-how-ai-agents-are-transforming-azure-networking-opera/4519850</id>
+        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/from-copilots-to-coworkers-how-ai-agents-are-transforming-azure-networking-opera/4519850"/>
+        <updated>2026-05-15T17:45:28.000Z</updated>
+        <summary type="html"><![CDATA[Microsoft's Customer Zero blog series gives an insider view of how Microsoft builds and operates Microsoft using our trusted, enterprise-grade IQ platform. Learn best practices from our engineering teams with real-world lessons, architectural patterns, and operational strategies for pressure-tested solutions in building, operating, and scaling AI apps and agent fleets across the organization.
+The Challenge: Operating a global-scale physical network
+Azure operates one of the largest physical networks on the planet. That scale shapes more than infrastructure decisions; it reshapes how operational work itself must be organized.
+Hundreds of thousands of kilometers of outside-plant fiber and more than a million optical devices connect datacenters, regions, and Microsoft's global services. Every…]]></summary>
+        <author>
+            <name>dbillor</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[New SSH helper aliases for Python apps on Azure App Service for Linux]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/new-ssh-helper-aliases-for-python-apps-on-azure-app-service-for-linux/4520111</id>
+        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/new-ssh-helper-aliases-for-python-apps-on-azure-app-service-for-linux/4520111"/>
+        <updated>2026-05-15T10:37:16.000Z</updated>
+        <summary type="html"><![CDATA[Troubleshooting a running application often starts with SSH. To make that experience simpler for Python apps on Azure App Service for Linux, we have added new SSH helper aliases for common app, log, networking, and Azure AI Foundry diagnostics.
+When you SSH into your application, you will now see two helper commands:
+
+View available SSH helpers with apphelp
+Run apphelp to see the full list of available aliases.
+
+These helpers are grouped by common tasks, including app information, logs, diagnostics, testing, and Azure AI Foundry connectivity.
+For example:
+applogs
+Tails your application logs directly from the SSH session.
+appcurl
+Tests your application locally using localhost:$PORT, which is useful when checking whether the app is listening correctly inside the container.
+Other useful helpe…]]></summary>
+        <author>
+            <name>TulikaC</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Simplifying FastAPI Deployments on Azure App Service for Linux]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/simplifying-fastapi-deployments-on-azure-app-service-for-linux/4520103</id>
+        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/simplifying-fastapi-deployments-on-azure-app-service-for-linux/4520103"/>
+        <updated>2026-05-15T10:25:16.000Z</updated>
+        <summary type="html"><![CDATA[Deploying FastAPI apps to Azure App Service for Linux is now simpler.
+Previously, when you deployed a FastAPI application, you needed to configure a custom startup command so the app could run correctly with an ASGI server. This added an extra step to the deployment flow and could create friction, especially when getting started with FastAPI on App Service.
+We have now added built-in detection logic that identifies FastAPI applications automatically and configures the appropriate startup behavior for you.
+What changed
+When you deploy a Python app, App Service now scans common entry point files such as:
+main.py, app.py, application.py, server.py, asgi.py, api.py, index.py, and run.py
+If one of these files imports FastAPI using from fastapi or import fastapi, App Service detects the app as a FastAPI application.
+To avoid false positives, files that also import Flask are skipped during FastAPI detection.
+How your app is started
+When a FastAPI app is detected, App Service automatically starts the application using Gunicorn with the Uvicorn worker class:
+gunicorn -k uvicorn_worker.UvicornWorker
+This provides the ASGI support required by FastAPI applications.
+Framework detection priority
+If multiple framework indicators are present, App Service uses the following priority order:
+Django > FastAPI > Flask
+Django continues to take precedence when a wsgi.py file is found in a subdirectory.
+What this means for you
+When you deploy a FastAPI app to Azure App Service for Linux, you no longer need to configure a custom startup command in the supported runtime flow. Oryx detects the FastAPI app and configures the startup behavior automatically.
+This removes an extra setup step and makes it easier to get your FastAPI app running on App Service.
+Availability
+This improvement is currently enabled for Python 3.14 and later. Support for additional Python versions will be enabled in an upcoming rollout.
+For more details on deploying Python apps to App Service, see the Azure App Service Python quickstart documentation.]]></summary>
+        <author>
+            <name>TulikaC</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Six Coding Agents, One Production System: A Field Guide to AgenticOps with AKS-Lab-GitHubCopilot]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/six-coding-agents-one-production-system-a-field-guide-to-agenticops-with-aks-lab/4519916</id>
+        <link href="https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/six-coding-agents-one-production-system-a-field-guide-to-agenticops-with-aks-lab/4519916"/>
+        <updated>2026-05-15T07:00:00.000Z</updated>
+        <summary type="html"><![CDATA[The shift: from "AI helps me code" to "AI authors my repo"
+For two years we've been talking about GitHub Copilot as an inline pair programmer — a clever autocomplete that lives in your editor. That framing is officially out of date.
+The new reality is agentic delivery: a team of named, scoped AI agents owns slices of your repository, each with its own tools, skills, and refusal rules. They produce pull requests. They run tests. They roll deployments. And when one finishes its turn, it hands off to the next.
+The microsoft/AKS-Lab-GitHubCopilot's five labs you ship ZavaShop — a multi-agent retail supply-chain control plane running on AKS + Azure Container Apps — and along the way you internalize an operating model you can carry to any project. Everything in the repo (specs, agents, MCP serve…]]></summary>
+        <author>
+            <name>kinfey</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Custom authorization for API for GraphQL in Microsoft Fabric (Preview)]]></title>
         <id>https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Custom-authorization-for-API-for-GraphQL-in-Microsoft-Fabric/ba-p/5182352</id>
@@ -24,6 +103,34 @@
         <summary type="html"><![CDATA[Author: Shreyas Canchi Radhakrishna - Product Manager]]></summary>
         <author>
             <name>msft-shreyas</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Azure Monitor Health Model - API Refresh]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/azure-monitor-health-model---api-refresh/4519092</id>
+        <link href="https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/azure-monitor-health-model---api-refresh/4519092"/>
+        <updated>2026-05-14T19:43:35.000Z</updated>
+        <summary type="html"><![CDATA[API Refresh? 
+Discovery scope extended to include
+
+Application Insights
+Azure Resource Graph query
+
+
+Signals Enhancement for Azure resources
+
+Resource health is used as a default signal  
+Recommended signals are available   
+Alert rules can be imported as signals
+dynamic thresholds for metric signals
+
+
+Aggregation rules
+Import health reports and data annotations
+
+-->> Link to docs]]></summary>
+        <author>
+            <name>shijain13</name>
         </author>
     </entry>
     <entry>
@@ -60,6 +167,61 @@ The post Conductor: Deterministic orchestration for multi-agent AI workflows app
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[Work IQ | Data, Context, Skills & Tools for Copilot and Your Agents]]></title>
+        <id>https://techcommunity.microsoft.com/blog/MicrosoftMechanicsBlog/work-iq--data-context-skills--tools-for-copilot-and-your-agents/4519554</id>
+        <link href="https://techcommunity.microsoft.com/blog/MicrosoftMechanicsBlog/work-iq--data-context-skills--tools-for-copilot-and-your-agents/4519554"/>
+        <updated>2026-05-14T12:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Pull context from SharePoint, OneDrive, Teams, email, and meetings — all through Work IQ. Draft Word documents that carry your existing sensitivity labels, and resolve calendar conflicts in Outlook. Run multi-step Copilot Cowork workflows that generate files, schedule meetings, and send status updates from a single prompt. 
+Extend the same knowledge layer to ServiceNow, CRMs, and other non-Microsoft systems with API and MCP Server connectors in the Microsoft 365 admin center, or build your own agents in code against the Work IQ API. 
+Jeremy Chapman, Microsoft 365 Director, shares how data, context, and skills & tools combine into a single grounding layer for Copilot and your custom agents.
+Skip the manual prompt scaffolding. 
+
+Work IQ delivers data, context, skills & tools as the built-in …]]></summary>
+        <author>
+            <name>Zachary-Cavanell</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Platform Improvements for Python AI Apps on Azure App Service]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/platform-improvements-for-python-ai-apps-on-azure-app-service/4519620</id>
+        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/platform-improvements-for-python-ai-apps-on-azure-app-service/4519620"/>
+        <updated>2026-05-14T07:44:37.000Z</updated>
+        <summary type="html"><![CDATA[Overview
+Azure App Service (Linux) is a fully managed PaaS offering that supports a broad range of languages, including Python, Node.js, .NET, PHP, and Java. Developers can push source code or deploy a pre-built artifact; the platform handles the rest, including dependency installation, application containerization, and running the application at cloud scale. 
+More customers are building intelligent applications using Azure AI Foundry and other AI services, and Python has become a language of choice for these workloads. The performance and reliability of the Python deployment pipeline directly shape the developer's experience on the platform, so we looked across the deployment path for opportunities to reduce latency and improve reliability. The first set of changes has reduced Python depl…]]></summary>
+        <author>
+            <name>SurenderSinghMalik</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Public Preview Update: Azure Copilot Observability Agent]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/public-preview-update-azure-copilot-observability-agent/4517871</id>
+        <link href="https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/public-preview-update-azure-copilot-observability-agent/4517871"/>
+        <updated>2026-05-14T07:00:56.000Z</updated>
+        <summary type="html"><![CDATA[Modern cloud applications generate massive amounts of telemetry - metrics, logs, traces, alerts, and platform signals.
+Yet whether you're asking questions about your observability data or responding when things go wrong, discovering insights and root causes requires a deep understanding of the application, the observability signals it emits, and the tools, while your business and customers are impacted.
+The Observability agent is designed to be your monitoring companion across the full observability lifecycle, enabling you to interact via chat to better understand your observability data. Our aspiration is to support the full range of activities - from onboarding and detection through triage and root cause analysis - to significantly reduce human toil and customer downtime.
+Today, the agen…]]></summary>
+        <author>
+            <name>EfratNauerman</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Control runtime patch updates with Platform Release Channel on Azure App Service for Linux]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/control-runtime-patch-updates-with-platform-release-channel-on-azure-app-service/4519570</id>
+        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/control-runtime-patch-updates-with-platform-release-channel-on-azure-app-service/4519570"/>
+        <updated>2026-05-14T05:31:26.000Z</updated>
+        <summary type="html"><![CDATA[Azure App Service for Linux is introducing Platform Release Channel, a new setting that gives you more control over when runtime patch updates are applied to your app.
+With this feature, you can choose how quickly your app moves to newly rolled-out runtime patches. This helps teams balance two common needs: staying current with the latest security and platform updates, while also having enough time to validate changes before adopting them.
+Why this matters
+Runtime patch updates are important because they include fixes, security updates, and platform improvements. However, some production applications need time to validate these updates before moving to the newest available patch.
+Platform Release Channel gives you that flexibility.
+You can choose to stay close to the latest patch updates, …]]></summary>
+        <author>
+            <name>TulikaC</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[PyCon US 2026]]></title>
         <id>https://devblogs.microsoft.com/python/?p=10321</id>
         <link href="https://devblogs.microsoft.com/python/pycon-us-2026/"/>
@@ -68,6 +230,16 @@ The post Conductor: Deterministic orchestration for multi-agent AI workflows app
 The post PyCon US 2026 appeared first on Microsoft for Python Developers Blog.]]></summary>
         <author>
             <name>Vedha Ranganathan</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Simplifying FastAPI Deployments on Azure App Service for Linux]]></title>
+        <id>https://azure.github.io/AppService/2026/05/14/fastapi-improvements.html</id>
+        <link href="https://azure.github.io/AppService/2026/05/14/fastapi-improvements.html"/>
+        <updated>2026-05-14T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Deploying FastAPI apps to Azure App Service for Linux is now simpler.]]></summary>
+        <author>
+            <name>Azure App Service</name>
         </author>
     </entry>
     <entry>
@@ -477,6 +649,16 @@ Message loss (queue gaps during switchover)
 Degraded user exp…]]></summary>
         <author>
             <name>lapadman</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Improving Deployment Resiliency on Azure App Service for Linux with Deferred Kudu Recycle]]></title>
+        <id>https://azure.github.io/AppService/2026/05/07/kudu-deferred-recycle.html</id>
+        <link href="https://azure.github.io/AppService/2026/05/07/kudu-deferred-recycle.html"/>
+        <updated>2026-05-07T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Azure App Service for Linux now includes Deferred Kudu Recycle, a platform improvement designed to make deployments more resilient when app settings or connection strings are updated during an active deployment.]]></summary>
+        <author>
+            <name>Azure App Service</name>
         </author>
     </entry>
     <entry>
@@ -9021,89 +9203,6 @@ Continue reading “2025 Year in Review: What’s new across SQL Server, Azure S
         <summary type="html"><![CDATA[Today we are excited to announce general availability of the Geo-Replication feature for Azure Service Bus in the premium tier. This feature ensures that the metadata and data of a namespace are continuously replicated from a primary region to a secondary region. Moreover, this feature allows promoting a secondary region at any time. The Geo-Replication feature is the latest option to insulate Azure Service Bus applications against outages and disasters. Other options are Geo-Disaster Recovery and Availability Zones.
 Differentiation
 There are currently two features that provide Geo-Disaster Recovery in Azure Service Bus for the Premium tier. First, there is Geo-Disaster Recovery (Metadata DR) that just provides replication of metadata. Second, Geo-Replication, which is now GA, provides rep…]]></summary>
-        <author>
-            <name>EldertGrootenboer</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[JSON Structure: A JSON schema language you'll love]]></title>
-        <id>https://techcommunity.microsoft.com/blog/MessagingonAzureBlog/json-structure-a-json-schema-language-youll-love/4476852</id>
-        <link href="https://techcommunity.microsoft.com/blog/MessagingonAzureBlog/json-structure-a-json-schema-language-youll-love/4476852"/>
-        <updated>2025-12-17T08:03:09.000Z</updated>
-        <summary type="html"><![CDATA[We talk to many customers moving structured data through queues and event streams and topics, and we see a strong desire to create more efficient and less brittle communication paths governed by rich data definitions well understood by all parties. The way those definitions are often shared are schema documents. While there is great need, the available schema options and related tool chains are often not great.
-JSON Schema is popular for its relative simplicity in trivial cases, but quickly becomes unmanageable as users employ more complex constructs. The industry has largely settled on "Draft 7," with subsequent releases seeing weak adoption. There's substantial frustration among developers who try to use JSON Schema for code generation or database mapping—scenarios it was never designed …]]></summary>
-        <author>
-            <name>clemensv</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Unlock your email potential with Schema.org]]></title>
-        <id>https://devblogs.microsoft.com/microsoft365dev/?p=24789</id>
-        <link href="https://devblogs.microsoft.com/microsoft365dev/unlock-your-email-potential-with-schema-org/"/>
-        <updated>2025-12-17T06:58:11.000Z</updated>
-        <summary type="html"><![CDATA[Email is a key part of how people get things done, whether it’s booking a reservation, confirming a package delivery, or managing a cab reservation. But as inboxes become increasingly cluttered, important transactional information often gets buried. Users are forced to open multiple emails, search through text, and manually look for key details such as […]
-The post Unlock your email potential with Schema.org appeared first on Microsoft 365 Developer Blog.]]></summary>
-        <author>
-            <name>Karishma S</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Beyond Ergonomics: How the Azure Command Launcher for Java Improves GC Stability and Throughput on Azure VMs]]></title>
-        <id>https://devblogs.microsoft.com/java/?p=232717</id>
-        <link href="https://devblogs.microsoft.com/java/beyond-ergonomics-how-the-azure-command-launcher-for-java-improves-gc-stability-and-throughput-on-azure-vms/"/>
-        <updated>2025-12-16T19:17:27.000Z</updated>
-        <summary type="html"><![CDATA[In our previous blog we introduced Azure Command Launcher for Java (jaz) —a safe, resource-aware way to launch the JVM without hand-tuning dozens of flags. This follow-up shares performance results, focusing on how jaz affects G1 behavior, heap dynamics, and pause characteristics under a long-running, allocation-intensive workload: SPECjbb 2015 (JBB). Test bed: 4-vCPU, 16-GB Azure […]
-The post Beyond Ergonomics: How the Azure Command Launcher for Java Improves GC Stability and Throughput on Azure VMs appeared first on Microsoft for Java Developers.]]></summary>
-        <author>
-            <name>Monica Beckwith</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[From Large Semi-Structured Docs to Actionable Data: In-Depth Evaluation Approaches Guidance]]></title>
-        <id>https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/from-large-semi-structured-docs-to-actionable-data-in-depth-evaluation-approache/4474060</id>
-        <link href="https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/from-large-semi-structured-docs-to-actionable-data-in-depth-evaluation-approache/4474060"/>
-        <updated>2025-12-15T20:24:10.000Z</updated>
-        <summary type="html"><![CDATA[Introduction
-Extracting structured data from large, semi-structured documents (the detailed solution implementation overview and architecture is provided in this tech community blog: From Large Semi-Structured Docs to Actionable Data: Reusable Pipelines with ADI, AI Search & OpenAI) demands a rigorous evaluation framework. 
-The goal is to ensure our pipeline is accurate, reliable, and scalable before we trust it with mission-critical data. This framework breaks evaluation into clear phases, from how we prepare the document, to how we find relevant parts, to how we validate the final output. It provides metrics, examples, and best practices at each step, forming a generic pattern that can be applied to various domains.
-Framework Overview
-A very structured and stepwise approach for evaluatio…]]></summary>
-        <author>
-            <name>anishganguli</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Streamline Azure NetApp Files Management—Right from Your IDE]]></title>
-        <id>https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/streamline-azure-netapp-files-management%E2%80%94right-from-your-ide/4478122</id>
-        <link href="https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/streamline-azure-netapp-files-management%E2%80%94right-from-your-ide/4478122"/>
-        <updated>2025-12-15T20:17:22.000Z</updated>
-        <summary type="html"><![CDATA[Table of Contents
-Abstract
-Introduction
-The Traditional Approach
-The Modern Approach
-Step 1: Generate Infrastructure (10 Minutes)
-Step 2: Instant Validation (10 Minutes)
-Step 3: Optimization & Insights (5 Minutes)
-Key Capabilities
-The ROI: Why This Matters
-Efficiency Gains
-Summary
-Ready to Start? Learn more!
-Abstract
-The Azure NetApp Files VS Code Extension is designed to streamline storage provisioning and management directly within the developer’s IDE. Traditional workflows often require extensive portal navigation, manual configuration, and policy management, leading to inefficiencies and context switching. The extension addresses these challenges by enabling AI-powered automation through natural language commands, reducing provisioning time from hours to minutes while minimizing errors…]]></summary>
-        <author>
-            <name>GeertVanTeylingen</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Message brokers as the cornerstone of the next generation of agentic AI backends]]></title>
-        <id>https://techcommunity.microsoft.com/blog/MessagingonAzureBlog/message-brokers-as-the-cornerstone-of-the-next-generation-of-agentic-ai-backends/4478088</id>
-        <link href="https://techcommunity.microsoft.com/blog/MessagingonAzureBlog/message-brokers-as-the-cornerstone-of-the-next-generation-of-agentic-ai-backends/4478088"/>
-        <updated>2025-12-15T19:00:00.000Z</updated>
-        <summary type="html"><![CDATA[We are seeing changes in the way Agentic AI behaves. Instead of one-off model calls, we are starting to see networks of agents and MCP services working together. These are going to bring powerful integrations, with a variety of distributed components. Work is going to arrive in unpredictable bursts. Some services end up overloaded while others sit idle. Every call burns tokens and compute, so wasted effort translates directly into real money.
-Direct calls are no longer enough. We are going to need orchestration. A broker in the middle that absorbs spikes, queues up work until capacity becomes available, and handles retries. This approach helps keep costs predictable by pacing work to match budgets and downstream capacity.
-Message brokers, such as Azure Service Bus, are ideal for the capabi…]]></summary>
         <author>
             <name>EldertGrootenboer</name>
         </author>
