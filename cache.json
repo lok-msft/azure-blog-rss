@@ -2217,6 +2217,16 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/cicd-for-ai-agents-on-microsoft-foundry/4522218",
+          "author": "Lee_Stott",
+          "description": "Introduction\nBuilding an AI agent is the straightforward part. Shipping it reliably to production with version control, evaluation-driven quality gates, multi-environment promotion, and enterprise governance is where most teams run into friction.\nMicrosoft Foundry changes this. It is Microsoft's AI app and agent factory: a fully managed platform for building, deploying, and governing AI agents at scale. It provides a first-class agent runtime with built-in lifecycle management, making it possible to apply the same CI/CD rigour you already use for application software to AI agents — regardless of whether you are building containerised hosted agents or declarative prompt-based agents.\nThis post walks through a complete, production-ready reference architecture for doing exactly that. You will…",
+          "link": "https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/cicd-for-ai-agents-on-microsoft-foundry/4522218",
+          "publishedOn": "2026-05-22T08:35:49.000Z",
+          "wordCount": 11409,
+          "title": "CI/CD for AI Agents on Microsoft Foundry",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTIyMjE4LVNtUnZ6MQ?revision=4"
+        },
+        {
           "id": "https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/student-devs-build-ai-agents-compete-for-55k-in-prizes/4521764",
           "author": "Lee_Stott",
           "description": "Student Devs: Build AI Agents, Compete for $55K in Prizes\n🎮 AI Skills Fest • June 4–14, 2026 • Free to Enter\n\n\n$55KPrize Pool3Challenge Tracks10Days of HackingFreeTo Enter\n\n\n \nWhether you're a first-year CS student or a final-year senior with a portfolio full of projects, Agents League is the best way to gain hands-on experience with agentic AI this summer and walk away with real skills employers are hiring for right now.\n\nWhat You'll Actually Learn\nForget passive tutorials. Agents League is project-based learning at full speed. By the end of the hackathon, you'll have built a working AI agent and gained practical experience with the tools shaping the future of software development.\n\n\n🤖 AI-Assisted DevelopmentUse GitHub Copilot to accelerate your coding workflow — from scaffolding to deb…",
@@ -2653,6 +2663,16 @@
       "feedUrl": "https://techcommunity.microsoft.com/t5/s/plugins/custom/microsoft/o365/custom-blog-rss?board=AppsonAzureBlog&size=100",
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
+        {
+          "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/custom-keda-scale-rules-for-azure-functions-on-azure-container-apps/4521781",
+          "author": "DeepGanguly",
+          "description": "Announcing Custom KEDA Scale Rules for Azure Functions on Container Apps\nWe're excited to announce a new capability for Azure Functions on Container Apps: custom KEDA scale rule overrides. You can now bypass the platform's auto-generated scaling rules and define your own KEDA configuration - giving you full control over how your function apps scale.\nWhy We Built This\nAzure Functions on Container Apps automatically generates KEDA scale rules from your function triggers. This works great for most workloads, but we heard from customers that the platform defaults don't always match their scaling needs:\n\nMessage-driven workloads that need a higher threshold before scaling out - to control costs and avoid over-provisioning.\nCPU-intensive functions where each replica should process fewer messages…",
+          "link": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/custom-keda-scale-rules-for-azure-functions-on-azure-container-apps/4521781",
+          "publishedOn": "2026-05-22T12:41:28.000Z",
+          "wordCount": 6653,
+          "title": "Custom KEDA Scale Rules for Azure Functions on Azure Container Apps",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTIxNzgxLXZoYUl4Qw?revision=7"
+        },
         {
           "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/you-can-build-a-framework-agnostic-ai-gateway-on-azure-app-service-%E2%80%94-heres-how/4522004",
           "author": "jordanselig",
@@ -4132,46 +4152,6 @@
           "wordCount": 14313,
           "title": "Context Engineering Lessons from Building Azure SRE Agent",
           "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDgxMjAwLXM4bUJWNw?revision=37"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/extend-sre-agent-with-mcp-build-an-agentic-workflow-to-triage-customer-issues/4480710",
-          "author": "dchelupati",
-          "description": "Your inbox is full. GitHub issues piling up. \"App not working.\" \"How do I configure alerts?\" \"Please add dark mode.\" You open each one, figure out what it is, ask for more info, add labels, route to the right team. An hour later, you're still sorting issues. Sound familiar?\nThe Triage Tax \nEvery L1 support engineer, PM, and on-call developer who's handled customer issues knows this pain. When tickets come in, you're not solving problems, you're sorting them.\nRead the issue. Is it a bug or a question? Check the docs. Does this feature exist? Ask for more info. Wait two days. Re-triage. Add labels. Route to engineering.\nIt's tedious. It requires judgment, you need to understand the product, know what info is needed, check documentation. And honestly? It's work that nobody volunteers for but …",
-          "link": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/extend-sre-agent-with-mcp-build-an-agentic-workflow-to-triage-customer-issues/4480710",
-          "publishedOn": "2025-12-23T22:08:48.000Z",
-          "wordCount": 10366,
-          "title": "Extend SRE Agent with MCP: Build an Agentic Workflow to Triage Customer Issues",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDgwNzEwLTRRSUtIUQ?revision=1"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/ai-assisted-load-test-authoring-in-azure-app-testing/4480652",
-          "author": "Nikita_Nallamothu",
-          "description": "Creating reliable load tests shouldn’t require hours of manual scripting. With AI-assisted load test authoring in Azure App Testing, you can go from a simple browser recording to a production-ready JMeter script in minutes, while staying fully in control of what gets applied.\nThis new experience helps you:\n\nCreate load tests faster by recording real user journeys directly from the browser\nImprove script quality automatically with AI-recommended best practices\nRun more realistic tests that better reflect real user behavior\nReduce manual effort without giving up transparency or control\n\n \nRecord once. Let AI enhance the script.\nUsing the Azure App Testing browser extension for Edge and Chrome, you can record how users interact with your application. Once uploaded to Azure Load Testing, AI an…",
-          "link": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/ai-assisted-load-test-authoring-in-azure-app-testing/4480652",
-          "publishedOn": "2025-12-23T21:50:11.000Z",
-          "wordCount": 7190,
-          "title": "AI-assisted load test authoring in Azure App Testing",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDgwNjUyLTZXWHJNMA?revision=4"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/ai-assisted-load-test-authoring-in-azure-load-testing/4480652",
-          "author": "Nikita_Nallamothu",
-          "description": "Creating reliable load tests shouldn’t require hours of manual scripting. With AI-assisted load test authoring in Azure Load Testing, you can go from a simple browser recording to a production-ready JMeter script in minutes, while staying fully in control of what gets applied.\nThis new experience helps you:\n\nCreate load tests faster by recording real user journeys directly from the browser\nImprove script quality automatically with AI-recommended best practices\nRun more realistic tests that better reflect real user behavior\nReduce manual effort without giving up transparency or control\n\n \nRecord once. Let AI enhance the script.\nUsing the Azure App Testing browser extension for Edge and Chrome, you can record how users interact with your application. Once uploaded to Azure Load Testing, AI a…",
-          "link": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/ai-assisted-load-test-authoring-in-azure-load-testing/4480652",
-          "publishedOn": "2025-12-23T21:50:11.000Z",
-          "wordCount": 7156,
-          "title": "AI-assisted load test authoring in Azure Load Testing",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDgwNjUyLTZXWHJNMA?revision=1"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/host-chatgpt-apps-on-azure-functions/4480696",
-          "author": "lily-ma",
-          "description": "This blog post is for developers learning and building ChatGPT apps. It provides an overview of how these apps work, why build them, and how to host one on Azure Functions.\nChat with ChatGPT apps\nOpenAI recently launched ChatGPT apps. These are apps you can chat with right inside ChatGPT, extending what ChatGPT can do beyond simple chats to actions. These apps can be invoked by starting a message with the app name, or they can be suggested by ChatGPT when relevant to the conversation. The following shows an example of invoking the Booking.com app to find hotels that meet certain criteria:\n\nOpenAI calls these “a new generation of apps” that “blend familiar interactive elements…with new ways of interacting through conversation.” For users, ChatGPT apps fit directly into an interface they’re …",
-          "link": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/host-chatgpt-apps-on-azure-functions/4480696",
-          "publishedOn": "2025-12-23T19:03:00.000Z",
-          "wordCount": 10938,
-          "title": "Host ChatGPT apps on Azure Functions",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDgwNjk2LUxNQjN2Rg?revision=5"
         }
       ]
     },
@@ -4712,16 +4692,6 @@
           "wordCount": 8611,
           "title": "How to Ensure Seamless Data Recovery and Deployment in Microsoft Azure",
           "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDc4Mzk1LWJGeTVjeQ?revision=2"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/data-security-azure-key-vault-in-data-bricks/4479785",
-          "author": "bhramesh",
-          "description": "Why this article?\nTo remove the vulnerability of exposing the data base connection string in Databricks notebook directly, by using Azure key vault.\nDatabase connection strings are extremely confidential/vulnerable data, that we should not be exposed in the DataBricks notebook explicitly. Azure key vault is a secure option to read the secrets and establish connection.\nWhat do we need?\n\nTenant Id of the app from the app registration with access to the azure key vault secrets\nClient Id of the of the app from the app registration with access to the azure key vault secrets\nClient secret of the app from the app registration with access to the azure key vault\n\nWhere to find this information?\n\nUnder the App registration, you can find the (application) Client Id, Directory (tenant) Id.\n\n       \nAz…",
-          "link": "https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/data-security-azure-key-vault-in-data-bricks/4479785",
-          "publishedOn": "2025-12-24T08:00:00.000Z",
-          "wordCount": 7635,
-          "title": "Data Security: Azure key Vault in Data bricks",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDc5Nzg1LW5HaDBUUQ?revision=2"
         }
       ]
     },
@@ -5228,16 +5198,6 @@
           "wordCount": 8611,
           "title": "How to Ensure Seamless Data Recovery and Deployment in Microsoft Azure",
           "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDc4Mzk1LWJGeTVjeQ?revision=2"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/data-security-azure-key-vault-in-data-bricks/4479785",
-          "author": "bhramesh",
-          "description": "Why this article?\nTo remove the vulnerability of exposing the data base connection string in Databricks notebook directly, by using Azure key vault.\nDatabase connection strings are extremely confidential/vulnerable data, that we should not be exposed in the DataBricks notebook explicitly. Azure key vault is a secure option to read the secrets and establish connection.\nWhat do we need?\n\nTenant Id of the app from the app registration with access to the azure key vault secrets\nClient Id of the of the app from the app registration with access to the azure key vault secrets\nClient secret of the app from the app registration with access to the azure key vault\n\nWhere to find this information?\n\nUnder the App registration, you can find the (application) Client Id, Directory (tenant) Id.\n\n       \nAz…",
-          "link": "https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/data-security-azure-key-vault-in-data-bricks/4479785",
-          "publishedOn": "2025-12-24T08:00:00.000Z",
-          "wordCount": 7635,
-          "title": "Data Security: Azure key Vault in Data bricks",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDc5Nzg1LW5HaDBUUQ?revision=2"
         }
       ]
     },
@@ -6070,6 +6030,16 @@
       "feedUrl": "https://devblogs.microsoft.com/semantic-kernel/feed/",
       "siteUrl": "https://devblogs.microsoft.com/agent-framework/",
       "articles": [
+        {
+          "id": "https://devblogs.microsoft.com/agent-framework/?p=5462",
+          "author": "Sergey Menshykh",
+          "description": "Python developers working with Agent Skills can now author skills as files on disk, as inline Python code, or as reusable classes – and mix them freely through composable source classes that handle discovery, filtering, and deduplication. A skill living in your local repository, one installed from your organization’s internal package index, and a quick […]\nThe post Agent Skills for Python: File, Code, and Class – Composed in One Provider appeared first on Microsoft Agent Framework.",
+          "link": "https://devblogs.microsoft.com/agent-framework/agent-skills-for-python-file-code-and-class-composed-in-one-provider/",
+          "publishedOn": "2026-05-22T08:34:12.000Z",
+          "wordCount": 8914,
+          "title": "Agent Skills for Python: File, Code, and Class – Composed in One Provider",
+          "imageUrl": "https://devblogs.microsoft.com/agent-framework/wp-content/uploads/sites/78/2026/03/AgentSkills1.webp"
+        },
         {
           "id": "https://devblogs.microsoft.com/agent-framework/?p=5414",
           "author": "Eduard van Valkenburg, Shruti Tople",
