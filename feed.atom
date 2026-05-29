@@ -2,10 +2,79 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2026-05-28T03:42:56.882Z</updated>
+    <updated>2026-05-29T03:42:56.181Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Building Reliable AI Coding Workflows Using Modular AI Agent Optimization]]></title>
+        <id>https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/building-reliable-ai-coding-workflows-using-modular-ai-agent-optimization/4523252</id>
+        <link href="https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/building-reliable-ai-coding-workflows-using-modular-ai-agent-optimization/4523252"/>
+        <updated>2026-05-28T19:53:45.000Z</updated>
+        <summary type="html"><![CDATA[Artificial Intelligence is rapidly transforming the modern software development industry. AI-powered coding assistants such as GitHub Copilot, Claude Code, and other Large Language Model (LLM)-based systems are helping developers automate repetitive coding tasks, improve productivity, and accelerate software development processes. These tools can generate code, assist with debugging, provide recommendations, and support developers during implementation. However, despite their growing capabilities, many AI coding assistants still face challenges related to reliability, maintainability, project-specific conventions, and structured software engineering workflows.
+Most coding assistants perform well for generic programming tasks but often struggle when working with domain-specific development …]]></summary>
+        <author>
+            <name>ShardaKaur</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Who's Calling Your Service? Designing for Humans and Agents at the Same Time]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/whos-calling-your-service-designing-for-humans-and-agents-at-the-same-time/4523716</id>
+        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/whos-calling-your-service-designing-for-humans-and-agents-at-the-same-time/4523716"/>
+        <updated>2026-05-28T18:46:18.000Z</updated>
+        <summary type="html"><![CDATA[We're building three interfaces for Azure SRE Agent: an interactive CLI for humans at a terminal, an agent mode for coding agents that spawn it as a subprocess, and an MCP server for humans inside coding agents and for remote agents in other ecosystems.
+The CLI and agent mode are coming. The MCP server ships first. That ordering wasn't obvious at first, and this post is about why we landed there.
+Three interfaces, one question: who's actually calling this?
+When we started designing the Azure SRE Agent CLI, the question we kept running into was deceptively simple: who's the caller?
+A human at 2 AM during an incident? Yes. But also a coding agent mid-session that wants SRE Agent capabilities without leaving VS Code. And a PagerDuty SRE agent running an automated triage loop with no human in …]]></summary>
+        <author>
+            <name>dbandaru</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[SharePoint Framework (SPFx) roadmap update – May 2026]]></title>
+        <id>https://devblogs.microsoft.com/microsoft365dev/?p=25715</id>
+        <link href="https://devblogs.microsoft.com/microsoft365dev/sharepoint-framework-spfx-roadmap-update-may-2026/"/>
+        <updated>2026-05-28T17:20:03.000Z</updated>
+        <summary type="html"><![CDATA[SPFx is powering the future of Microsoft 365 with AI driven portals and deep integrations across SharePoint and Microsoft 365. The May 2026 update shares new features and the roadmap for the next evolution built for the AI era. This is a transparent community driven journey that we shape together based on your input.
+The post SharePoint Framework (SPFx) roadmap update – May 2026 appeared first on Microsoft 365 Developer Blog.]]></summary>
+        <author>
+            <name>Vesa Juvonen</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Automate evaluations | Microsoft Foundry]]></title>
+        <id>https://techcommunity.microsoft.com/blog/MicrosoftMechanicsBlog/automate-evaluations--microsoft-foundry/4521926</id>
+        <link href="https://techcommunity.microsoft.com/blog/MicrosoftMechanicsBlog/automate-evaluations--microsoft-foundry/4521926"/>
+        <updated>2026-05-28T16:02:56.000Z</updated>
+        <summary type="html"><![CDATA[Trace every run end-to-end, generate synthetic datasets to stress-test on demand, fire automated Red Team attacks at your own agents, and pin down why evaluations fail — all from the Microsoft Foundry control plane. Lock in guardrails that inspect every tool call at runtime, define the risks once, and enforce them across every agent run. 
+Mohammad Abuomar, Responsible AI Principal Architect, shares how to turn a coding agent into production-ready software inside Foundry. 
+Describe the agent, set the row count, confirm.
+
+Your test set lands in seconds. Microsoft Foundry’s synthetic dataset generator builds eval data on demand. Get started.
+Pin down why your agent fails evaluations. 
+
+Foundry’s Analyze Results uses AI to cluster failures, name the root cause, and recommend specific fixes. Ch…]]></summary>
+        <author>
+            <name>Zachary-Cavanell</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Building Agentic Systems on Azure: Microsoft Foundry Agents SDK vs Microsoft Agent Framework]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/building-agentic-systems-on-azure-microsoft-foundry-agents-sdk-vs-microsoft-agen/4517290</id>
+        <link href="https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/building-agentic-systems-on-azure-microsoft-foundry-agents-sdk-vs-microsoft-agen/4517290"/>
+        <updated>2026-05-28T07:00:00.000Z</updated>
+        <summary type="html"><![CDATA[In my recent experience as a Senior Consultant at Microsoft, I’ve been actively involved in designing and delivering AI-driven solutions, with a strong focus on building intelligent agents using modern frameworks.
+Along the way, I've built agents using both Microsoft Foundry Agents SDK (hereafter "Agents SDK") and Microsoft Agent Framework (MAF)
+Both approaches are powerful and capable. However, once you move beyond simple proofs of concept, the developer experience and architectural patterns start to differ significantly.
+This article provides a practical comparison based on real implementation experience and aims to help developers choose the right approach.
+Approach 1: Agents SDK
+Agents SDK provides a straightforward way to create agents with integrated tools and models.
+Example: Creati…]]></summary>
+        <author>
+            <name>ChaitanyaThalloory</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Access Your SRE Agent from Any IDE, Terminal, or AI Assistant]]></title>
         <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/access-your-sre-agent-from-any-ide-terminal-or-ai-assistant/4523434</id>
@@ -9688,34 +9757,6 @@ You're checking the Web App, the SQL Server, the VNet, the private endpoint, the
 Networking issues are especially brutal. The error says "Login failed" but the actual causes could be DNS, firewall, identity, or all three. The symptom and the root causes are in completely different resources. Without deep Azure networking knowledge, you're j…]]></summary>
         <author>
             <name>dchelupati</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[How to Ensure Seamless Data Recovery and Deployment in Microsoft Azure]]></title>
-        <id>https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/how-to-ensure-seamless-data-recovery-and-deployment-in-microsoft-azure/4478395</id>
-        <link href="https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/how-to-ensure-seamless-data-recovery-and-deployment-in-microsoft-azure/4478395"/>
-        <updated>2025-12-30T08:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Overcoming Cosmos DB Backup and Restore Challenges with Azure Databricks
-The Challenge of Backing Up and Restoring Azure Cosmos DB
-One of the significant pain points when working with Azure Cosmos DB is the lack of instant, self-service backup restoration. While Cosmos DB is engineered for global scalability and high availability, its backup and recovery process introduces a crucial bottleneck for organizations that demand agility. Backups in Cosmos DB are created automatically, but restoring them isn’t a seamless, on-demand operation. Instead, it often involves lengthy procedures and sometimes requires intervention from Microsoft support, causing delays that can stretch from hours to even longer—depending on the size and complexity of your data.
-
-Downtime Risks: During the drawn-out resto…]]></summary>
-        <author>
-            <name>ravimodi</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[How to Ensure Seamless Data Recovery and Deployment in Microsoft Azure]]></title>
-        <id>https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/how-to-ensure-seamless-data-recovery-and-deployment-in-microsoft-azure/4478395</id>
-        <link href="https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/how-to-ensure-seamless-data-recovery-and-deployment-in-microsoft-azure/4478395"/>
-        <updated>2025-12-30T08:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Overcoming Cosmos DB Backup and Restore Challenges with Azure Databricks
-The Challenge of Backing Up and Restoring Azure Cosmos DB
-One of the significant pain points when working with Azure Cosmos DB is the lack of instant, self-service backup restoration. While Cosmos DB is engineered for global scalability and high availability, its backup and recovery process introduces a crucial bottleneck for organizations that demand agility. Backups in Cosmos DB are created automatically, but restoring them isn’t a seamless, on-demand operation. Instead, it often involves lengthy procedures and sometimes requires intervention from Microsoft support, causing delays that can stretch from hours to even longer—depending on the size and complexity of your data.
-
-Downtime Risks: During the drawn-out resto…]]></summary>
-        <author>
-            <name>ravimodi</name>
         </author>
     </entry>
 </feed>
