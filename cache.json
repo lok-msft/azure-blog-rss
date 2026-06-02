@@ -6,6 +6,26 @@
       "siteUrl": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/bg-p/fbc_fabricupdatesblogs",
       "articles": [
         {
+          "id": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/What-s-new-in-Fabric-Business-Events/ba-p/5189137",
+          "author": "robece-msft",
+          "description": "Author: Roberto Cervantes Rivero, Senior Product Manger - The latest Business Events updates in Microsoft Fabric help close that gap by making it easier to publish meaningful events, route them consistently, and use them across analytics, automation, and application workflows. In this post, we walk through the latest capabilities across publishers, consumers, and platform behavior.",
+          "link": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/What-s-new-in-Fabric-Business-Events/ba-p/5189137",
+          "publishedOn": "2026-06-01T18:04:09.000Z",
+          "wordCount": 6801,
+          "title": "What’s new in Fabric Business Events",
+          "imageUrl": "https://community.fabric.microsoft.com/t5/image/serverpage/image-id/1350253iBAF472EBDDD56A4B?v=v2"
+        },
+        {
+          "id": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Solving-Power-BI-in-report-alerts-with-translytical-task-flows/ba-p/5190667",
+          "author": "v-ksheldon",
+          "description": "Kiefer Sheldon - Data Engineer",
+          "link": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Solving-Power-BI-in-report-alerts-with-translytical-task-flows/ba-p/5190667",
+          "publishedOn": "2026-06-01T16:00:00.000Z",
+          "wordCount": 6777,
+          "title": "Solving Power BI in-report alerts with translytical task flows",
+          "imageUrl": "https://community.fabric.microsoft.com/t5/image/serverpage/image-id/1350630iF98696C93FE6DD7E?v=v2"
+        },
+        {
           "id": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Fabric-Influencers-Spotlight-May-2026/ba-p/5185408",
           "author": "mamathews",
           "description": "Welcome to the May 2026 edition of the Fabric Influencers Spotlight, a recurring monthly post here to shine a bright light on the places on the internet where Microsoft MVPs and Fabric Super Users are doing some amazing work on all aspects of Microsoft Fabric. The Microsoft Fabric Community team has created the Fabric Influencers Spotlight to highlight and amplify blog posts, videos, presentations, and other content related to Microsoft Fabric. We’ve cultivated submissions from members of Microsoft MVPs and Fabric Super Users from the Fabric community that cover the Fabric Platform, Data Engineering & Data Science in Fabric, Data Warehousing, Power BI, Real-Time Intelligence, Data Integration, Fabric Administration and Governance and Databases.Microsoft Most Valuable Professionals, or MVPs…",
@@ -2774,6 +2794,16 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/determinism-over-magic-the-engineering-design-behind-azure-container-registry-re/4524101",
+          "author": "zoeyli",
+          "description": "By Zoey Li, Huangli Wu, Johnson Shi, Wei Meng\nIntroduction\nAzure Container Registry (ACR) supports geo-replication: one registry resource with active-active replicas across multiple Azure regions. You push or pull through any replica, and ACR asynchronously replicates content to all others.\nFor geo-replicated registries, ACR exposes a global endpoint — myregistry.azurecr.io — backed by Azure Traffic Manager (TM), which routes requests based on network performance. This works well for most workloads. But \"automatic\" is also \"opaque\": customers can't see or influence which region TM picks, and for teams with data-residency requirements or their own failover logic, not knowing which replica served a request wasn't enough. \nThis post is an engineering deep dive into the design of Regional Endp…",
+          "link": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/determinism-over-magic-the-engineering-design-behind-azure-container-registry-re/4524101",
+          "publishedOn": "2026-06-01T15:57:03.000Z",
+          "wordCount": 9766,
+          "title": "Determinism over magic: the engineering design behind Azure Container Registry Regional Endpoints",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTI0MTAxLWRrMm9XMA?revision=9"
+        },
+        {
           "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/azure-functions-mcp-extension-now-supports-mcp-prompts/4516359",
           "author": "lily-ma",
           "description": "We are thrilled to announce that the MCP prompt trigger is now available in public preview in the Azure Functions MCP extension! With this release, the extension now supports all three core MCP server primitives - tools, resources, and prompts, giving you a complete platform for building rich MCP servers on Azure Functions.\nIn case you missed it, the MCP resource trigger is generally available for serving resources and building interactive UIs in  MCP Apps.\nWhat are MCP Prompts\nIn the Model Context Protocol (MCP), prompts are reusable templates that allow server authors to provide parameterized prompts for a domain, or showcase how to best use the MCP server. Prompts are user-controlled in that they require explicit invocation rather than automatic triggering, and can be context-aware, ref…",
@@ -4880,6 +4910,16 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/claude-code-on-microsoft-foundry-in-vs-code-%E2%80%94-a-practical-setup-guide-with-the-g/4524245",
+          "author": "LZhang",
+          "description": "Enables enterprise-grade governance without changing your developer workflow.\n\nThe official Microsoft Learn article (Configure Claude Code for Microsoft Foundry) gets you ~80% of the way there. The remaining 20%—VS Code settings shape, tenant mismatches, and configuration conflicts like \"baseURL and resource are mutually exclusive\"—is where most setups fail in practice.\nThis guide walks the full path end-to-end, with the exact JSON that validates, working CLI configuration, and a troubleshooting matrix based on real-world failures. This guidance is based on repeated customer deployments and internal testing across both CLI and VS Code scenarios.\n\nTL;DR\nSetup - Deploy claude-sonnet-4-6 (optionally Haiku + Opus) in a supported region - Grant Cognitive Services User + Foundry User - az login …",
+          "link": "https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/claude-code-on-microsoft-foundry-in-vs-code-%E2%80%94-a-practical-setup-guide-with-the-g/4524245",
+          "publishedOn": "2026-06-01T13:31:13.000Z",
+          "wordCount": 11612,
+          "title": "Claude Code on Microsoft Foundry in VS Code — A Practical Setup Guide (with the gotchas)",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTI0MjQ1LVZ5S1A5bQ?revision=6"
+        },
+        {
           "id": "https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/power-pages--spa-deploying-a-custom-react-spa-to-microsoft-power-pages/4521378",
           "author": "aakarshdhawan",
           "description": "Introduction\nModern business applications are no longer limited to traditional server-rendered pages or fixed portal layouts. Today’s users expect fast, responsive, highly interactive web experiences - the kind of experience developers commonly build using modern front-end frameworks such as React.\nMicrosoft Power Pages has evolved to support this shift. With Single Page Application support, developers can now build modern client-side applications and deploy them directly to Power Pages while still benefiting from the platform’s security, authentication, Dataverse integration, and governance capabilities.\nIn this blog, we’ll walk through how to build a simple React Single Page Application using Vite and deploy it to Microsoft Power Pages using the Power Platform CLI.\n\nWhat We Will Build\nIn…",
@@ -6210,6 +6250,16 @@
       "feedUrl": "https://devblogs.microsoft.com/semantic-kernel/feed/",
       "siteUrl": "https://devblogs.microsoft.com/agent-framework/",
       "articles": [
+        {
+          "id": "https://devblogs.microsoft.com/agent-framework/?p=5480",
+          "author": "Shawn Henry",
+          "description": "BUILD 2026 begins on Tuesday, June 2, and there will be tons of exciting announcements from the Microsoft Agent Framework team, Microsoft Foundry, and all things Microsoft AI. If you’re traveling to San Francisco for BUILD, be sure to stop by the Microsoft Foundry booths to chat with folks from the Agent Framework team – […]\nThe post Microsoft Agent Framework at BUILD 2026 appeared first on Microsoft Agent Framework.",
+          "link": "https://devblogs.microsoft.com/agent-framework/microsoft-agent-framework-at-build-2026/",
+          "publishedOn": "2026-06-01T06:00:59.000Z",
+          "wordCount": 7174,
+          "title": "Microsoft Agent Framework at BUILD 2026",
+          "imageUrl": "https://devblogs.microsoft.com/agent-framework/wp-content/uploads/sites/78/2026/05/Screenshot-2026-05-30-222939.webp"
+        },
         {
           "id": "https://devblogs.microsoft.com/agent-framework/?p=5462",
           "author": "Sergey Menshykh",
