@@ -6,6 +6,56 @@
       "siteUrl": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/bg-p/fbc_fabricupdatesblogs",
       "articles": [
         {
+          "id": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Spark-History-Server-performance-improvement-Snapshot-based/ba-p/5196953",
+          "author": "jiang_jenny1",
+          "description": "As Spark workloads scale in size and complexity, fast access to Spark application execution metrics and logs is essential for debugging, performance analysis, and operational confidence. The Spark History Server is a key part of that workflow — but for large workloads, loading times have been a significant pain point. With this release, we’ve introduced a new snapshot-based approach that significantly improves Spark History Server loading performance in Microsoft Fabric. The challengePreviously, the Spark History Server had to fully parse and render the entire application event log before the UI could load. For large-scale enterprise workloads — applications with hundreds of thousands of tasks, event logs exceeding 10 GB, or long-running Spark Streaming jobs — this could take up to an hour…",
+          "link": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Spark-History-Server-performance-improvement-Snapshot-based/ba-p/5196953",
+          "publishedOn": "2026-06-16T21:00:00.000Z",
+          "wordCount": 6400,
+          "title": "Spark History Server performance improvement: Snapshot-based loading (Preview)",
+          "imageUrl": "https://community.fabric.microsoft.com/t5/image/serverpage/image-id/1352282i2DDD8272CACCF57D?v=v2"
+        },
+        {
+          "id": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Stay-informed-about-Microsoft-Fabric-service-issues-Preview/ba-p/5194037",
+          "author": "royr",
+          "description": "Fabric uses several message types to communicate service issues, depending on how an issue is detected and where the information is surfaced.",
+          "link": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Stay-informed-about-Microsoft-Fabric-service-issues-Preview/ba-p/5194037",
+          "publishedOn": "2026-06-16T19:00:00.000Z",
+          "wordCount": 6502,
+          "title": "Stay informed about Microsoft Fabric service issues (Preview)",
+          "imageUrl": "https://community.fabric.microsoft.com/t5/image/serverpage/image-id/1351665i44BEEEFF2539D156?v=v2"
+        },
+        {
+          "id": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Copy-job-for-SAP-with-ABAP-Add-On-in-Microsoft-Fabric-Preview/ba-p/5196120",
+          "author": "UlrichChrist",
+          "description": "SAP systems sit at the center of many enterprises’ core business operations, powering processes across finance, supply chain, manufacturing, procurement, and HR. That makes SAP data some of the most business-critical data in the enterprise. As organizations modernize their analytics and AI platforms, bringing SAP data together with the rest of the enterprise data estate has become increasingly important. But moving SAP data at enterprise scale has historically been difficult. SAP landscapes are complex, data volumes are large, and extraction architectures often require specialized frameworks, custom code, and additional operational layers. For many organizations, this creates friction between where their most important operational data lives and where they want to analyze, enrich, and acti…",
+          "link": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Copy-job-for-SAP-with-ABAP-Add-On-in-Microsoft-Fabric-Preview/ba-p/5196120",
+          "publishedOn": "2026-06-16T17:00:00.000Z",
+          "wordCount": 6951,
+          "title": "Copy job for SAP with ABAP Add-On in Microsoft Fabric (Preview)",
+          "imageUrl": "https://community.fabric.microsoft.com/t5/image/serverpage/image-id/1352386iD45386C3B389EB06?v=v2"
+        },
+        {
+          "id": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Unlocking-Microsoft-OneLake-as-the-data-foundation-for-Azure/ba-p/5201876",
+          "author": "diptiborkar",
+          "description": "As organizations scale their data and AI investments, many are adopting a multi-platform approach so teams can use the tools that best fit each project. But this flexibility comes at a cost: duplicated data, fragmented governance, and complex data movement across systems. The next phase of data platforms isn’t just about connecting systems; it’s about sharing a common data foundation and, increasingly, a context foundation. Instead of aligning on a single engine, organizations can align on a single copy of data while enabling teams to use the tools they use. With today’s updates, Microsoft Fabric and Azure Databricks take a major step forward, enabling you to use Microsoft OneLake as a shared data layer that both platforms can read and store in natively. This means Azure Databricks custome…",
+          "link": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Unlocking-Microsoft-OneLake-as-the-data-foundation-for-Azure/ba-p/5201876",
+          "publishedOn": "2026-06-16T13:09:07.000Z",
+          "wordCount": 7156,
+          "title": "Unlocking Microsoft OneLake as the data foundation for Azure Databricks customers",
+          "imageUrl": "https://community.fabric.microsoft.com/html/assets/fabric_twitter_OG_image.png"
+        },
+        {
+          "id": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Extending-interoperability-Azure-Databricks-can-now-store-Unity/ba-p/5199741",
+          "author": "preshah",
+          "description": "As organizations scale their data and AI investments, they increasingly adopt a multi-platform approach, enabling teams to use the tools that best fit their needs. The challenge has been enabling both platforms to work from a single copy of data without duplicating storage or building complex pipelines. With today's updates, Azure Databricks and Microsoft Fabric take a major step toward true bi-directional interoperability through OneLake. Reading data across platforms is already available: Onelake catalog federation (now generally available) lets Azure Databricks query OneLake data directly, and Mirrored Azure Databricks Catalog makes Unity Catalog tables stored in ADLS Gen2 accessible in Fabric. Now, we are taking this a step further — Azure Databricks can store Unity Catalog managed tab…",
+          "link": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Extending-interoperability-Azure-Databricks-can-now-store-Unity/ba-p/5199741",
+          "publishedOn": "2026-06-16T13:00:00.000Z",
+          "wordCount": 7023,
+          "title": "Extending interoperability: Azure Databricks can now store Unity Catalog managed tables directly in OneLake",
+          "imageUrl": "https://community.fabric.microsoft.com/html/assets/fabric_twitter_OG_image.png"
+        },
+        {
           "id": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/A-new-way-to-create-visuals-on-Real-Time-Dashboards-Preview/ba-p/5194484",
           "author": "MichalBar",
           "description": "Discover a new way to build visuals in Real-Time Dashboards. The redesigned tile editing experience in Real-Time Dashboards brings AI-assisted authoring, a larger preview area, and more flexible workflows to help you create and refine dashboard visuals faster.",
@@ -2577,6 +2627,16 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/detecting-python-vulnerabilities-with-graphcodebert/4517909",
+          "author": "a_elhaag",
+          "description": "We are nine software engineering students at the Egyptian Chinese University in Cairo. When we got our project brief, we noticed a gap that bothered us: Python is the most widely used language in AI development, yet almost every security tool out there was built for C and C++. The tools that do exist for Python rely on regex pattern matching — a technique that has not changed meaningfully in years.\nSo we built one ourselves.\nWe called it Code Security Identifier — CSI. Instead of matching patterns like existing tools, CSI understands code structure. We split the work across nine people, each owning a specific piece of the system: dataset engineering, model architecture, loss function design, adversarial training, hyperparameter optimization, and deployment. None of us had built a productio…",
+          "link": "https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/detecting-python-vulnerabilities-with-graphcodebert/4517909",
+          "publishedOn": "2026-06-16T07:00:00.000Z",
+          "wordCount": null,
+          "title": "Detecting Python Vulnerabilities with GraphCodeBERT",
+          "imageUrl": null
+        },
+        {
           "id": "https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/building-shadowquest-a-multi-agent-rpg/4528055",
           "author": "ShardaKaur",
           "description": "Artificial Intelligence is rapidly evolving beyond traditional chatbots. Today, developers are building intelligent systems where multiple AI agents collaborate, retrieve knowledge, and solve problems together. Microsoft's Agents League Hackathon provided the perfect opportunity to explore this new approach through the Reasoning Agents challenge.\nFor this challenge, I built ShadowQuest, a fantasy role-playing game (RPG) powered by Microsoft Foundry, Foundry IQ, Azure AI Search, GPT-4.1, and GitHub Copilot. The project demonstrates how specialized AI agents can work together while using Retrieval-Augmented Generation (RAG) to deliver accurate and context-aware responses.\n\nAbout the Challenge\n\nMicrosoft Agents League is a global developer challenge designed to encourage developers to build i…",
@@ -4997,6 +5057,26 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/anomaly-detection-made-easy-with-dynamic-thresholds-for-log-search-alerts/4521522",
+          "author": "Efrat_Ben_Porat",
+          "description": "We’re excited to announce the General Availability of dynamic thresholds for log search alerts in Azure Monitor. Dynamic thresholds make anomaly detection easier by using machine learning to learn normal behavior from your historical log query results, automatically account for patterns such as hourly, daily, and weekly seasonality, and adapt as your environment changes. Instead of manually choosing static limits that can quickly become outdated, you can let Azure Monitor automatically determine the right threshold for each alert rule. Dynamic thresholds for Log search alerts are available at no extra charge - you pay the standard log search alert rule rate.  \nDynamic threshold preview chart displayed when setting up a new alert rule.\nWhy it matters \n\nSimplified configuration: No need to f…",
+          "link": "https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/anomaly-detection-made-easy-with-dynamic-thresholds-for-log-search-alerts/4521522",
+          "publishedOn": "2026-06-16T17:33:52.000Z",
+          "wordCount": 6349,
+          "title": "Anomaly detection made easy with Dynamic thresholds for Log search alerts",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTIxNTIyLUxSUWZ3Vg?revision=3"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/general-availability-simple-log-alerts-in-azure-monitor/4521498",
+          "author": "Efrat_Ben_Porat",
+          "description": "We are excited to announce the General Availability of Simple log alerts in Azure Monitor! This feature is designed to provide a simplified and more intuitive experience for monitoring and alerting, enhancing your ability to detect and respond to problems in near real-time. \nSimple log alerts are a type of Log search alerts in Azure Monitor, designed to provide a simpler alternative to traditional Log search alerts. Unlike Log search alerts that aggregate rows over a defined period, Simple Log Alerts evaluate each row individually.\nSimple Log Alerts are supported using Basic logs as well. Before, choosing Basic logs for cost optimization - for example, configuring the traces table in Application Insights with Basic logs plan - meant giving up the ability to alert on that data. Simple log a…",
+          "link": "https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/general-availability-simple-log-alerts-in-azure-monitor/4521498",
+          "publishedOn": "2026-06-16T17:33:31.000Z",
+          "wordCount": 6236,
+          "title": "General Availability: Simple log alerts in Azure Monitor",
+          "imageUrl": null
+        },
+        {
           "id": "https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/inside-the-observability-agent-how-deep-investigations-and-reasoning-work/4527102",
           "author": "yalavi",
           "description": "Incidents are rarely explained by one chart. A spike in request failures might be caused by a dependency timeout. A dependency timeout might come from a connection pool issue. And that connection pool issue might trace back to a deployment or a resource health event that started minutes earlier.\nFrom the outside, Azure Copilot observability agent presents this as a focused troubleshooting experience that correlates signals such as metrics, logs, alerts (and alert context), tracing data, and resource and service health.\nUnder the hood, the implementation is more than a chat prompt with a few queries attached. It is a dedicated investigation runtime designed to build hypotheses, gather data across layers, and return an explanation that is meant to be understandable and data-backed.\nDeep Inve…",
@@ -5304,6 +5384,16 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/azure-function-app-%E2%80%94-queue-based-architecture-for-long-running-sync-jobs/4524474",
+          "author": "Jamesdld23",
+          "description": "The Problem: HTTP Triggers and Long-Running Jobs Don't Mix\nHere's a situation you've probably run into: you have a job that needs to loop over dozens of Azure resources, call APIs, and do real work. You wrap it in an HTTP-triggered Azure Function so it can be called on demand. It works great and after a few minutes, the caller gets a 504 Gateway Timeout.\nSpoiler (Highlight to read)\n\n⭐ This isn't a bug. Azure (like most cloud platforms) enforces a hard 230-second HTTP response timeout at the load balancer level — no matter what you configure in your function. If your job takes longer than that, the connection is cut.\n\n\n⭐ This isn't a bug. Azure (like most cloud platforms) enforces a hard 230-second HTTP response timeout at the load balancer level — no matter what you configure in your funct…",
+          "link": "https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/azure-function-app-%E2%80%94-queue-based-architecture-for-long-running-sync-jobs/4524474",
+          "publishedOn": "2026-06-16T07:00:00.000Z",
+          "wordCount": null,
+          "title": "Azure Function App — Queue-Based Architecture for Long-Running Sync Jobs",
+          "imageUrl": null
+        },
+        {
           "id": "https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/getting-secrets-out-of-yaml-implementing-azure-key-vault-csi-driver-on-aks-with-/4522590",
           "author": "anandranjan",
           "description": "Table of Contents\n\nWhy This Pattern Matters\nThe Problem with Secrets in YAML\nWhat We Wanted to Achieve\nArchitecture Overview\nHow the Flow Works\nImplementation Prerequisites\nStep-by-Step Implementation\nUnderstanding the YAML Components\nSecret Rotation and Reloaders\nCommon Pitfalls and Troubleshooting\nSecurity and Operational Benefits\nKey Takeaways\nMicrosoft Documentation References\nFinal Thoughts\n\nWhy This Pattern Matters\nMost Kubernetes environments start with good intentions around secret management.\nOver time, however, many AKS deployments gradually evolve toward patterns like:\nvalue: \"#{SomeSecret}#\"\nA pipeline substitutes the value during deployment, the application works, and the pattern spreads across services.\nThe problem is that this quietly turns:\n\ndeployment pipelines\nrendered ma…",
@@ -5575,13 +5665,34 @@
       "title": "Microsoft Tech Community - Latest Blogs - Microsoft Developer Community Blog",
       "feedUrl": "https://techcommunity.microsoft.com/t5/s/plugins/custom/microsoft/o365/custom-blog-rss?board=AzureDevCommunityBlog&size=50&label=Functions",
       "siteUrl": "https://techcommunity.microsoft.com",
-      "articles": []
+      "articles": [
+        {
+          "id": "https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/azure-function-app-%E2%80%94-queue-based-architecture-for-long-running-sync-jobs/4524474",
+          "author": "Jamesdld23",
+          "description": "The Problem: HTTP Triggers and Long-Running Jobs Don't Mix\nHere's a situation you've probably run into: you have a job that needs to loop over dozens of Azure resources, call APIs, and do real work. You wrap it in an HTTP-triggered Azure Function so it can be called on demand. It works great and after a few minutes, the caller gets a 504 Gateway Timeout.\nSpoiler (Highlight to read)\n\n⭐ This isn't a bug. Azure (like most cloud platforms) enforces a hard 230-second HTTP response timeout at the load balancer level — no matter what you configure in your function. If your job takes longer than that, the connection is cut.\n\n\n⭐ This isn't a bug. Azure (like most cloud platforms) enforces a hard 230-second HTTP response timeout at the load balancer level — no matter what you configure in your funct…",
+          "link": "https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/azure-function-app-%E2%80%94-queue-based-architecture-for-long-running-sync-jobs/4524474",
+          "publishedOn": "2026-06-16T07:00:00.000Z",
+          "wordCount": 9385,
+          "title": "Azure Function App — Queue-Based Architecture for Long-Running Sync Jobs",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTI0NDc0LTUyUktJVw?revision=5"
+        }
+      ]
     },
     {
       "title": "Microsoft Tech Community - Latest Blogs - Microsoft Developer Community Blog",
       "feedUrl": "https://techcommunity.microsoft.com/t5/s/plugins/custom/microsoft/o365/custom-blog-rss?board=AzureDevCommunityBlog&size=50&label=API%20Design",
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
+        {
+          "id": "https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/azure-function-app-%E2%80%94-queue-based-architecture-for-long-running-sync-jobs/4524474",
+          "author": "Jamesdld23",
+          "description": "The Problem: HTTP Triggers and Long-Running Jobs Don't Mix\nHere's a situation you've probably run into: you have a job that needs to loop over dozens of Azure resources, call APIs, and do real work. You wrap it in an HTTP-triggered Azure Function so it can be called on demand. It works great and after a few minutes, the caller gets a 504 Gateway Timeout.\nSpoiler (Highlight to read)\n\n⭐ This isn't a bug. Azure (like most cloud platforms) enforces a hard 230-second HTTP response timeout at the load balancer level — no matter what you configure in your function. If your job takes longer than that, the connection is cut.\n\n\n⭐ This isn't a bug. Azure (like most cloud platforms) enforces a hard 230-second HTTP response timeout at the load balancer level — no matter what you configure in your funct…",
+          "link": "https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/azure-function-app-%E2%80%94-queue-based-architecture-for-long-running-sync-jobs/4524474",
+          "publishedOn": "2026-06-16T07:00:00.000Z",
+          "wordCount": 9385,
+          "title": "Azure Function App — Queue-Based Architecture for Long-Running Sync Jobs",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTI0NDc0LTUyUktJVw?revision=5"
+        },
         {
           "id": "https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/implementing-the-backend-for-frontend-bff--curated-api-pattern-using-azure-api-m/4499880",
           "author": "SajalMukherjee",
@@ -7279,6 +7390,16 @@
       "feedUrl": "https://devblogs.microsoft.com/java/feed/",
       "siteUrl": "https://devblogs.microsoft.com/java/",
       "articles": [
+        {
+          "id": "https://devblogs.microsoft.com/java/?p=233050",
+          "author": "Ji Dong",
+          "description": "Copilot CLI is becoming the default agent harness in GitHub Copilot for JetBrains, and our local harness will be deprecated. This change provides greater consistency across all GitHub Copilot surfaces and is an important step toward faster feature parity and higher-quality results in GitHub Copilot for JetBrains. Copilot CLI sessions run independently in the background […]\nThe post GitHub Copilot for JetBrains is moving to Copilot CLI as the default agent harness appeared first on Microsoft for Java Developers.",
+          "link": "https://devblogs.microsoft.com/java/github-copilot-for-jetbrains-is-moving-to-copilot-cli-as-the-default-agent-harness/",
+          "publishedOn": "2026-06-16T06:16:54.000Z",
+          "wordCount": 7657,
+          "title": "GitHub Copilot for JetBrains is moving to Copilot CLI as the default agent harness",
+          "imageUrl": "https://devblogs.microsoft.com/java/wp-content/uploads/sites/51/2026/03/77ix12m5_copilot.webp"
+        },
         {
           "id": "https://devblogs.microsoft.com/java/?p=233017",
           "author": "Ayan Gupta",

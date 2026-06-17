@@ -2,10 +2,160 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2026-06-16T04:17:20.508Z</updated>
+    <updated>2026-06-17T04:13:54.039Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Spark History Server performance improvement: Snapshot-based loading (Preview)]]></title>
+        <id>https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Spark-History-Server-performance-improvement-Snapshot-based/ba-p/5196953</id>
+        <link href="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Spark-History-Server-performance-improvement-Snapshot-based/ba-p/5196953"/>
+        <updated>2026-06-16T21:00:00.000Z</updated>
+        <summary type="html"><![CDATA[As Spark workloads scale in size and complexity, fast access to Spark application execution metrics and logs is essential for debugging, performance analysis, and operational confidence. The Spark History Server is a key part of that workflow — but for large workloads, loading times have been a significant pain point. With this release, we’ve introduced a new snapshot-based approach that significantly improves Spark History Server loading performance in Microsoft Fabric. The challengePreviously, the Spark History Server had to fully parse and render the entire application event log before the UI could load. For large-scale enterprise workloads — applications with hundreds of thousands of tasks, event logs exceeding 10 GB, or long-running Spark Streaming jobs — this could take up to an hour…]]></summary>
+        <author>
+            <name>jiang_jenny1</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Stay informed about Microsoft Fabric service issues (Preview)]]></title>
+        <id>https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Stay-informed-about-Microsoft-Fabric-service-issues-Preview/ba-p/5194037</id>
+        <link href="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Stay-informed-about-Microsoft-Fabric-service-issues-Preview/ba-p/5194037"/>
+        <updated>2026-06-16T19:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Fabric uses several message types to communicate service issues, depending on how an issue is detected and where the information is surfaced.]]></summary>
+        <author>
+            <name>royr</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Anomaly detection made easy with Dynamic thresholds for Log search alerts]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/anomaly-detection-made-easy-with-dynamic-thresholds-for-log-search-alerts/4521522</id>
+        <link href="https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/anomaly-detection-made-easy-with-dynamic-thresholds-for-log-search-alerts/4521522"/>
+        <updated>2026-06-16T17:33:52.000Z</updated>
+        <summary type="html"><![CDATA[We’re excited to announce the General Availability of dynamic thresholds for log search alerts in Azure Monitor. Dynamic thresholds make anomaly detection easier by using machine learning to learn normal behavior from your historical log query results, automatically account for patterns such as hourly, daily, and weekly seasonality, and adapt as your environment changes. Instead of manually choosing static limits that can quickly become outdated, you can let Azure Monitor automatically determine the right threshold for each alert rule. Dynamic thresholds for Log search alerts are available at no extra charge - you pay the standard log search alert rule rate.  
+Dynamic threshold preview chart displayed when setting up a new alert rule.
+Why it matters 
+
+Simplified configuration: No need to f…]]></summary>
+        <author>
+            <name>Efrat_Ben_Porat</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[General Availability: Simple log alerts in Azure Monitor]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/general-availability-simple-log-alerts-in-azure-monitor/4521498</id>
+        <link href="https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/general-availability-simple-log-alerts-in-azure-monitor/4521498"/>
+        <updated>2026-06-16T17:33:31.000Z</updated>
+        <summary type="html"><![CDATA[We are excited to announce the General Availability of Simple log alerts in Azure Monitor! This feature is designed to provide a simplified and more intuitive experience for monitoring and alerting, enhancing your ability to detect and respond to problems in near real-time. 
+Simple log alerts are a type of Log search alerts in Azure Monitor, designed to provide a simpler alternative to traditional Log search alerts. Unlike Log search alerts that aggregate rows over a defined period, Simple Log Alerts evaluate each row individually.
+Simple Log Alerts are supported using Basic logs as well. Before, choosing Basic logs for cost optimization - for example, configuring the traces table in Application Insights with Basic logs plan - meant giving up the ability to alert on that data. Simple log a…]]></summary>
+        <author>
+            <name>Efrat_Ben_Porat</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Copy job for SAP with ABAP Add-On in Microsoft Fabric (Preview)]]></title>
+        <id>https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Copy-job-for-SAP-with-ABAP-Add-On-in-Microsoft-Fabric-Preview/ba-p/5196120</id>
+        <link href="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Copy-job-for-SAP-with-ABAP-Add-On-in-Microsoft-Fabric-Preview/ba-p/5196120"/>
+        <updated>2026-06-16T17:00:00.000Z</updated>
+        <summary type="html"><![CDATA[SAP systems sit at the center of many enterprises’ core business operations, powering processes across finance, supply chain, manufacturing, procurement, and HR. That makes SAP data some of the most business-critical data in the enterprise. As organizations modernize their analytics and AI platforms, bringing SAP data together with the rest of the enterprise data estate has become increasingly important. But moving SAP data at enterprise scale has historically been difficult. SAP landscapes are complex, data volumes are large, and extraction architectures often require specialized frameworks, custom code, and additional operational layers. For many organizations, this creates friction between where their most important operational data lives and where they want to analyze, enrich, and acti…]]></summary>
+        <author>
+            <name>UlrichChrist</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Unlocking Microsoft OneLake as the data foundation for Azure Databricks customers]]></title>
+        <id>https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Unlocking-Microsoft-OneLake-as-the-data-foundation-for-Azure/ba-p/5201876</id>
+        <link href="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Unlocking-Microsoft-OneLake-as-the-data-foundation-for-Azure/ba-p/5201876"/>
+        <updated>2026-06-16T13:09:07.000Z</updated>
+        <summary type="html"><![CDATA[As organizations scale their data and AI investments, many are adopting a multi-platform approach so teams can use the tools that best fit each project. But this flexibility comes at a cost: duplicated data, fragmented governance, and complex data movement across systems. The next phase of data platforms isn’t just about connecting systems; it’s about sharing a common data foundation and, increasingly, a context foundation. Instead of aligning on a single engine, organizations can align on a single copy of data while enabling teams to use the tools they use. With today’s updates, Microsoft Fabric and Azure Databricks take a major step forward, enabling you to use Microsoft OneLake as a shared data layer that both platforms can read and store in natively. This means Azure Databricks custome…]]></summary>
+        <author>
+            <name>diptiborkar</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Extending interoperability: Azure Databricks can now store Unity Catalog managed tables directly in OneLake]]></title>
+        <id>https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Extending-interoperability-Azure-Databricks-can-now-store-Unity/ba-p/5199741</id>
+        <link href="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Extending-interoperability-Azure-Databricks-can-now-store-Unity/ba-p/5199741"/>
+        <updated>2026-06-16T13:00:00.000Z</updated>
+        <summary type="html"><![CDATA[As organizations scale their data and AI investments, they increasingly adopt a multi-platform approach, enabling teams to use the tools that best fit their needs. The challenge has been enabling both platforms to work from a single copy of data without duplicating storage or building complex pipelines. With today's updates, Azure Databricks and Microsoft Fabric take a major step toward true bi-directional interoperability through OneLake. Reading data across platforms is already available: Onelake catalog federation (now generally available) lets Azure Databricks query OneLake data directly, and Mirrored Azure Databricks Catalog makes Unity Catalog tables stored in ADLS Gen2 accessible in Fabric. Now, we are taking this a step further — Azure Databricks can store Unity Catalog managed tab…]]></summary>
+        <author>
+            <name>preshah</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Detecting Python Vulnerabilities with GraphCodeBERT]]></title>
+        <id>https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/detecting-python-vulnerabilities-with-graphcodebert/4517909</id>
+        <link href="https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/detecting-python-vulnerabilities-with-graphcodebert/4517909"/>
+        <updated>2026-06-16T07:00:00.000Z</updated>
+        <summary type="html"><![CDATA[We are nine software engineering students at the Egyptian Chinese University in Cairo. When we got our project brief, we noticed a gap that bothered us: Python is the most widely used language in AI development, yet almost every security tool out there was built for C and C++. The tools that do exist for Python rely on regex pattern matching — a technique that has not changed meaningfully in years.
+So we built one ourselves.
+We called it Code Security Identifier — CSI. Instead of matching patterns like existing tools, CSI understands code structure. We split the work across nine people, each owning a specific piece of the system: dataset engineering, model architecture, loss function design, adversarial training, hyperparameter optimization, and deployment. None of us had built a productio…]]></summary>
+        <author>
+            <name>a_elhaag</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Azure Function App — Queue-Based Architecture for Long-Running Sync Jobs]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/azure-function-app-%E2%80%94-queue-based-architecture-for-long-running-sync-jobs/4524474</id>
+        <link href="https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/azure-function-app-%E2%80%94-queue-based-architecture-for-long-running-sync-jobs/4524474"/>
+        <updated>2026-06-16T07:00:00.000Z</updated>
+        <summary type="html"><![CDATA[The Problem: HTTP Triggers and Long-Running Jobs Don't Mix
+Here's a situation you've probably run into: you have a job that needs to loop over dozens of Azure resources, call APIs, and do real work. You wrap it in an HTTP-triggered Azure Function so it can be called on demand. It works great and after a few minutes, the caller gets a 504 Gateway Timeout.
+Spoiler (Highlight to read)
+
+⭐ This isn't a bug. Azure (like most cloud platforms) enforces a hard 230-second HTTP response timeout at the load balancer level — no matter what you configure in your function. If your job takes longer than that, the connection is cut.
+
+
+⭐ This isn't a bug. Azure (like most cloud platforms) enforces a hard 230-second HTTP response timeout at the load balancer level — no matter what you configure in your funct…]]></summary>
+        <author>
+            <name>Jamesdld23</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Azure Function App — Queue-Based Architecture for Long-Running Sync Jobs]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/azure-function-app-%E2%80%94-queue-based-architecture-for-long-running-sync-jobs/4524474</id>
+        <link href="https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/azure-function-app-%E2%80%94-queue-based-architecture-for-long-running-sync-jobs/4524474"/>
+        <updated>2026-06-16T07:00:00.000Z</updated>
+        <summary type="html"><![CDATA[The Problem: HTTP Triggers and Long-Running Jobs Don't Mix
+Here's a situation you've probably run into: you have a job that needs to loop over dozens of Azure resources, call APIs, and do real work. You wrap it in an HTTP-triggered Azure Function so it can be called on demand. It works great and after a few minutes, the caller gets a 504 Gateway Timeout.
+Spoiler (Highlight to read)
+
+⭐ This isn't a bug. Azure (like most cloud platforms) enforces a hard 230-second HTTP response timeout at the load balancer level — no matter what you configure in your function. If your job takes longer than that, the connection is cut.
+
+
+⭐ This isn't a bug. Azure (like most cloud platforms) enforces a hard 230-second HTTP response timeout at the load balancer level — no matter what you configure in your funct…]]></summary>
+        <author>
+            <name>Jamesdld23</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Azure Function App — Queue-Based Architecture for Long-Running Sync Jobs]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/azure-function-app-%E2%80%94-queue-based-architecture-for-long-running-sync-jobs/4524474</id>
+        <link href="https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/azure-function-app-%E2%80%94-queue-based-architecture-for-long-running-sync-jobs/4524474"/>
+        <updated>2026-06-16T07:00:00.000Z</updated>
+        <summary type="html"><![CDATA[The Problem: HTTP Triggers and Long-Running Jobs Don't Mix
+Here's a situation you've probably run into: you have a job that needs to loop over dozens of Azure resources, call APIs, and do real work. You wrap it in an HTTP-triggered Azure Function so it can be called on demand. It works great and after a few minutes, the caller gets a 504 Gateway Timeout.
+Spoiler (Highlight to read)
+
+⭐ This isn't a bug. Azure (like most cloud platforms) enforces a hard 230-second HTTP response timeout at the load balancer level — no matter what you configure in your function. If your job takes longer than that, the connection is cut.
+
+
+⭐ This isn't a bug. Azure (like most cloud platforms) enforces a hard 230-second HTTP response timeout at the load balancer level — no matter what you configure in your funct…]]></summary>
+        <author>
+            <name>Jamesdld23</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[GitHub Copilot for JetBrains is moving to Copilot CLI as the default agent harness]]></title>
+        <id>https://devblogs.microsoft.com/java/?p=233050</id>
+        <link href="https://devblogs.microsoft.com/java/github-copilot-for-jetbrains-is-moving-to-copilot-cli-as-the-default-agent-harness/"/>
+        <updated>2026-06-16T06:16:54.000Z</updated>
+        <summary type="html"><![CDATA[Copilot CLI is becoming the default agent harness in GitHub Copilot for JetBrains, and our local harness will be deprecated. This change provides greater consistency across all GitHub Copilot surfaces and is an important step toward faster feature parity and higher-quality results in GitHub Copilot for JetBrains. Copilot CLI sessions run independently in the background […]
+The post GitHub Copilot for JetBrains is moving to Copilot CLI as the default agent harness appeared first on Microsoft for Java Developers.]]></summary>
+        <author>
+            <name>Ji Dong</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Inside the Observability Agent: How Deep Investigations and Reasoning Work]]></title>
         <id>https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/inside-the-observability-agent-how-deep-investigations-and-reasoning-work/4527102</id>
