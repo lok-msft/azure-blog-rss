@@ -22,6 +22,272 @@
             data-action="toggle-accordions"
             title="Click to toggle the day, Ctrl + click to toggle all."
           >
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2026-06-23 datetime="2026-06-22T21:00:00.000Z">2026-06-23</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2026-06-23 datetime="2026-06-22T21:00:00.000Z"></time>
+          </button>
+        </h2>
+        <ul class="sources card">
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Fabric Updates Blog articles</button>
+                  <a class="source-heading__link" href="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/bg-p/fbc_fabricupdatesblogs">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/More-resilient-Spark-jobs-with-Efficient-Scaledown-Preview/ba-p/5212071"
+                        open
+                      >
+                        <summary class="article-expander__title">More resilient Spark jobs with Efficient Scaledown (Preview)</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/More-resilient-Spark-jobs-with-Efficient-Scaledown-Preview/ba-p/5212071">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://community.fabric.microsoft.com/t5/image/serverpage/image-id/1352669iA22276C25E438107?v&#x3D;v2" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>Running large-scale data engineering workloads in Apache Spark often means dealing with expensive shuffle operations. Shuffle is one of the most resource-intensive operations that Spark runs on most, if not all, jobs. When executors holding shuffle data are removed during scale-down, Spark must re-execute entire stages—causing task retries, wasted compute, and unpredictable job runtimes. Efficient Scaledown in Microsoft Fabric Spark helps solve this problem. It decouples shuffle data from executor lifetime by routing shuffle output to Azure Blob Storage (or migrating it on demand), enabling faster cluster scale-down, improved fault tolerance, lower compute costs, and resilient jobs—with no changes to your queries, notebooks, or pipelines. The challenge: Shuffle data pins executors and driv…</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;22
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Improve-performance-for-Python-UDFs-and-complex-data-types-in/ba-p/5212036"
+                        open
+                      >
+                        <summary class="article-expander__title">Improve performance for Python UDFs and complex data types in Microsoft Fabric’s Native Execution Engine</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Improve-performance-for-Python-UDFs-and-complex-data-types-in/ba-p/5212036">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://community.fabric.microsoft.com/t5/image/serverpage/image-id/1352823i8187950C47829A58?v&#x3D;v2" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>Where this matters: A concrete exampleFor example, you have a data pipeline (extract, transform, load—ETL) that ingests JSON telemetry events, each containing nested arrays of user actions. Your pipeline uses a Python UDF to apply custom business rules—say, classifying events based on logic that doesn’t map cleanly to SQL expressions. Before NEE, this pipeline hits two performance penalties at once:The Python/Scala UDF forces serialization between the JVM and a Python worker for every batch.The nested arrays cause the engine to fall back from optimized columnar execution to slower row-based processing. With NEE enabled, both operations run in the native execution path. Internal benchmarks show 2–5x faster execution, depending on UDF complexity and data nesting depth. Why Python or Scala UD…</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;23
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Event-Driven-Copy-Job-Execution-with-Fabric-Activator-Generally/ba-p/5195808"
+                        open
+                      >
+                        <summary class="article-expander__title">Event-Driven Copy Job Execution with Fabric Activator (Generally Available)</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Event-Driven-Copy-Job-Execution-with-Fabric-Activator-Generally/ba-p/5195808">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://community.fabric.microsoft.com/html/assets/fabric_twitter_OG_image.png" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>IntroductionModern data platforms are increasingly moving toward event-driven architectures where data flows react to events or changes instead of running on rigid schedules. In Microsoft Fabric, two powerful capabilities enable this vision:Copy job: the simplest and most scalable way to move data across multiple clouds and tenants.Activator: a real-time engine that monitors data and reacts to events.A key enhancement brings these two capabilities closer together: you can now invoke Copy jobs directly from Activator—no pipeline required. This unlocks a simpler, faster, and more efficient way to build event-driven data movement in Fabric. Why this matters The limitations of scheduled data movement Traditionally, data movement in enterprise systems relies on fixed schedules:Run every five mi…</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;22
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Microsoft Tech Community - Latest Blogs - Educator Developer Blog</button>
+                  <a class="source-heading__link" href="https://techcommunity.microsoft.com">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/the-gate-is-the-product-human-verified-artifacts-in-a-foundry-multi-agent-game/4529682"
+                        open
+                      >
+                        <summary class="article-expander__title">The Gate Is the Product: Human-Verified Artifacts in a Foundry Multi-Agent Game</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/the-gate-is-the-product-human-verified-artifacts-in-a-foundry-multi-agent-game/4529682">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Part 2 of 5.
+
+In Part 1 the loop ended at a verification gate. This post is about why that gate is not a confirmation dialog - it is the core mechanic, the reliability story, and the thing that lets a reasoning-agent system be demoed live without praying.
+Most multi-agent demos gate on &quot;did the model produce something.&quot; That is a vibe check. A reasoning-agent system that touches anything real needs a harder question: who is allowed to say this artifact is good enough - and can a human stop it?
+
+A model can create. A model must not be the thing that certifies its own creation.
+
+This post is a code walkthrough of how that rule is enforced. We build the three-layer scoring ladder from the bottom up - deterministic validators, a model rubric floored by them, and a human gate - then look at the…</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Microsoft Agent Framework</button>
+                  <a class="source-heading__link" href="https://devblogs.microsoft.com/agent-framework/">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://devblogs.microsoft.com/agent-framework/?p&#x3D;5512"
+                        open
+                      >
+                        <summary class="article-expander__title">Meet your agent harness and claw</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://devblogs.microsoft.com/agent-framework/meet-your-agent-harness-and-claw/">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://devblogs.microsoft.com/agent-framework/wp-content/uploads/sites/78/2026/06/01-meet-your-claw.webp" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>Part 1 of Build your own claw and agent harness with Microsoft Agent Framework. In the overview we said a “claw” is really just an agent harness: a loop around a model, wired up with tools, planning, memory, and more. In this first post we stand up that loop and give our personal finance assistant […]
+The post Meet your agent harness and claw appeared first on Microsoft Agent Framework.</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;30
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://devblogs.microsoft.com/agent-framework/?p&#x3D;5510"
+                        open
+                      >
+                        <summary class="article-expander__title">Build your own claw and agent harness with Microsoft Agent Framework</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://devblogs.microsoft.com/agent-framework/build-your-own-claw-and-agent-harness-with-microsoft-agent-framework/">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://devblogs.microsoft.com/agent-framework/wp-content/uploads/sites/78/2026/06/00-build-your-own-claw-overview.webp" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>What does it take to build your own “claw” – a capable, CLI-style agent that can plan, use tools, remember things, and safely act on your behalf? Coding agents and assistants like these can feel like magic, but underneath they are an agent harness: a loop around a language model wired up with tools, planning, […]
+The post Build your own claw and agent harness with Microsoft Agent Framework appeared first on Microsoft Agent Framework.</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;25
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+        </ul>
+      </section>
+      <section class="daily-content js-toggle-accordions-scope">
+        <h2 class="daily-heading">
+          <button
+            class="daily-heading-toggle"
+            data-action="toggle-accordions"
+            title="Click to toggle the day, Ctrl + click to toggle all."
+          >
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2026-06-22 datetime="2026-06-22T15:20:26.000Z">2026-06-22</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2026-06-22 datetime="2026-06-22T15:20:26.000Z"></time>
+          </button>
+        </h2>
+        <ul class="sources card">
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Microsoft Tech Community - Latest Blogs - Apps on Azure Blog</button>
+                  <a class="source-heading__link" href="https://techcommunity.microsoft.com">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/how-many-copies-of-each-layer-does-your-container-registry-actually-need/4529836"
+                        open
+                      >
+                        <summary class="article-expander__title">How Many Copies of Each Layer Does Your Container Registry Actually Need?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/how-many-copies-of-each-layer-does-your-container-registry-actually-need/4529836">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Authors: Payal Mahesh and Vicky Lin
+Azure Container Registry team: Jeanine Burke and Johnson Shi
+Introduction
+It&#x27;s Monday morning. You spin up a fresh 1,000-node AKS cluster for a big training run or a fleet-wide rollout. Every node reaches for the same large container image at the same instant. What actually happens in the next ten minutes - and whether your pods reach Ready in 9 minutes or 14 - turns out to depend on a single number you&#x27;ve probably never thought about: how many copies of each image layer exist behind your registry.
+At the surface, you see a single capacity number for your registry size - but behind that abstraction, Azure Container Registry maintains copies of your layer data to optimize pull performance. That number of copies directly determines the read throughput avai…</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Azure DevOps Blog</button>
+                  <a class="source-heading__link" href="https://devblogs.microsoft.com/devops/">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://devblogs.microsoft.com/devops/?p&#x3D;72939"
+                        open
+                      >
+                        <summary class="article-expander__title">Retirement of Azure DevOps issuer in Workload identity federation service connections</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://devblogs.microsoft.com/devops/retirement-of-azure-devops-issuer-in-workload-identity-federation-service-connections/">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://devblogs.microsoft.com/devops/wp-content/uploads/sites/6/2026/06/azdo-issuer-sc-list.webp" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>We are announcing the deprecation of the Azure DevOps issuer in workload identity federation (WIF) service connections, with planned retirement on July 1, 2027. The Azure DevOps issuer uses the https://vstoken.dev.azure.com prefix in federated credentials. This change is part of Microsoft’s broader initiative to standardize on the Microsoft Entra issuer across Azure services that implement […]
+The post Retirement of Azure DevOps issuer in Workload identity federation service connections appeared first on Azure DevOps Blog.</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;25
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+        </ul>
+      </section>
+      <section class="daily-content js-toggle-accordions-scope">
+        <h2 class="daily-heading">
+          <button
+            class="daily-heading-toggle"
+            data-action="toggle-accordions"
+            title="Click to toggle the day, Ctrl + click to toggle all."
+          >
             <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2026-06-20 datetime="2026-06-19T16:52:06.000Z">2026-06-20</time>
             <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2026-06-20 datetime="2026-06-19T16:52:06.000Z"></time>
           </button>
@@ -27157,76 +27423,10 @@ D’abord vous devez accéder à Power apps. Si votre entreprise utilise Microso
             </li>
         </ul>
       </section>
-      <section class="daily-content js-toggle-accordions-scope">
-        <h2 class="daily-heading">
-          <button
-            class="daily-heading-toggle"
-            data-action="toggle-accordions"
-            title="Click to toggle the day, Ctrl + click to toggle all."
-          >
-            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2026-01-24 datetime="2026-01-23T20:35:55.000Z">2026-01-24</time>
-            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2026-01-24 datetime="2026-01-23T20:35:55.000Z"></time>
-          </button>
-        </h2>
-        <ul class="sources card">
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Microsoft Tech Community - Latest Blogs - Apps on Azure Blog</button>
-                  <a class="source-heading__link" href="https://techcommunity.microsoft.com">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/how-to-connect-azure-sre-agent-to-azure-mcp/4488905"
-                        open
-                      >
-                        <summary class="article-expander__title">How to Connect Azure SRE Agent to Azure MCP</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/how-to-connect-azure-sre-agent-to-azure-mcp/4488905">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDg4OTA1LVB5d1FReA?revision&#x3D;3" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>Prerequisites
-Before you begin, ensure you have:
-
-An active Azure subscription
-An Azure SRE Agent deployed and accessible
-
-Step 1: Add an MCP Connector Using the Portal UI
-To connect Azure MCP to your SRE Agent, you need to add an MCP connector through the Azure Portal. This connector tells the SRE Agent how to communicate with the Azure MCP server.
-Navigate to the MCP Connectors section:
-
-Open the Azure Portal and navigate to your SRE Agent resource
-In the left navigation menu, select Connectors under the Settings section
-Click + Add MCP Connector to open the configuration panel
-
-
-Configure the connector settings:
-
-Name: Enter a descriptive name for your connector (for example, &quot;Azure MCP Server&quot;)
-Connection Type: Select stdio from the dropdown menu. This tells the agent to communicate wi…</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;29
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
-        </ul>
-      </section>
 
     <footer>
-      <a class="footer-link" href="https://github.com/lok-msft/azure-blog-rss/actions/runs/27929323210">
-        <time id="build-timestamp" datetime="2026-06-22T04:21:10.516Z">2026-06-22T04:21:10.516Z</time>
+      <a class="footer-link" href="https://github.com/lok-msft/azure-blog-rss/actions/runs/28000451131">
+        <time id="build-timestamp" datetime="2026-06-23T03:39:07.974Z">2026-06-23T03:39:07.974Z</time>
       </a>
       <a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a>
     </footer>

@@ -2,10 +2,104 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2026-06-22T04:21:10.564Z</updated>
+    <updated>2026-06-23T03:39:08.026Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[More resilient Spark jobs with Efficient Scaledown (Preview)]]></title>
+        <id>https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/More-resilient-Spark-jobs-with-Efficient-Scaledown-Preview/ba-p/5212071</id>
+        <link href="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/More-resilient-Spark-jobs-with-Efficient-Scaledown-Preview/ba-p/5212071"/>
+        <updated>2026-06-22T21:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Running large-scale data engineering workloads in Apache Spark often means dealing with expensive shuffle operations. Shuffle is one of the most resource-intensive operations that Spark runs on most, if not all, jobs. When executors holding shuffle data are removed during scale-down, Spark must re-execute entire stages—causing task retries, wasted compute, and unpredictable job runtimes. Efficient Scaledown in Microsoft Fabric Spark helps solve this problem. It decouples shuffle data from executor lifetime by routing shuffle output to Azure Blob Storage (or migrating it on demand), enabling faster cluster scale-down, improved fault tolerance, lower compute costs, and resilient jobs—with no changes to your queries, notebooks, or pipelines. The challenge: Shuffle data pins executors and driv…]]></summary>
+        <author>
+            <name>Santhosh_Ravin1</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[The Gate Is the Product: Human-Verified Artifacts in a Foundry Multi-Agent Game]]></title>
+        <id>https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/the-gate-is-the-product-human-verified-artifacts-in-a-foundry-multi-agent-game/4529682</id>
+        <link href="https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/the-gate-is-the-product-human-verified-artifacts-in-a-foundry-multi-agent-game/4529682"/>
+        <updated>2026-06-22T20:50:06.000Z</updated>
+        <summary type="html"><![CDATA[Part 2 of 5.
+
+In Part 1 the loop ended at a verification gate. This post is about why that gate is not a confirmation dialog - it is the core mechanic, the reliability story, and the thing that lets a reasoning-agent system be demoed live without praying.
+Most multi-agent demos gate on "did the model produce something." That is a vibe check. A reasoning-agent system that touches anything real needs a harder question: who is allowed to say this artifact is good enough - and can a human stop it?
+
+A model can create. A model must not be the thing that certifies its own creation.
+
+This post is a code walkthrough of how that rule is enforced. We build the three-layer scoring ladder from the bottom up - deterministic validators, a model rubric floored by them, and a human gate - then look at the…]]></summary>
+        <author>
+            <name>Princeps</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Meet your agent harness and claw]]></title>
+        <id>https://devblogs.microsoft.com/agent-framework/?p=5512</id>
+        <link href="https://devblogs.microsoft.com/agent-framework/meet-your-agent-harness-and-claw/"/>
+        <updated>2026-06-22T17:35:24.000Z</updated>
+        <summary type="html"><![CDATA[Part 1 of Build your own claw and agent harness with Microsoft Agent Framework. In the overview we said a “claw” is really just an agent harness: a loop around a model, wired up with tools, planning, memory, and more. In this first post we stand up that loop and give our personal finance assistant […]
+The post Meet your agent harness and claw appeared first on Microsoft Agent Framework.]]></summary>
+        <author>
+            <name>Wes Steyn</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Build your own claw and agent harness with Microsoft Agent Framework]]></title>
+        <id>https://devblogs.microsoft.com/agent-framework/?p=5510</id>
+        <link href="https://devblogs.microsoft.com/agent-framework/build-your-own-claw-and-agent-harness-with-microsoft-agent-framework/"/>
+        <updated>2026-06-22T17:33:56.000Z</updated>
+        <summary type="html"><![CDATA[What does it take to build your own “claw” – a capable, CLI-style agent that can plan, use tools, remember things, and safely act on your behalf? Coding agents and assistants like these can feel like magic, but underneath they are an agent harness: a loop around a language model wired up with tools, planning, […]
+The post Build your own claw and agent harness with Microsoft Agent Framework appeared first on Microsoft Agent Framework.]]></summary>
+        <author>
+            <name>Wes Steyn</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Improve performance for Python UDFs and complex data types in Microsoft Fabric’s Native Execution Engine]]></title>
+        <id>https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Improve-performance-for-Python-UDFs-and-complex-data-types-in/ba-p/5212036</id>
+        <link href="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Improve-performance-for-Python-UDFs-and-complex-data-types-in/ba-p/5212036"/>
+        <updated>2026-06-22T17:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Where this matters: A concrete exampleFor example, you have a data pipeline (extract, transform, load—ETL) that ingests JSON telemetry events, each containing nested arrays of user actions. Your pipeline uses a Python UDF to apply custom business rules—say, classifying events based on logic that doesn’t map cleanly to SQL expressions. Before NEE, this pipeline hits two performance penalties at once:The Python/Scala UDF forces serialization between the JVM and a Python worker for every batch.The nested arrays cause the engine to fall back from optimized columnar execution to slower row-based processing. With NEE enabled, both operations run in the native execution path. Internal benchmarks show 2–5x faster execution, depending on UDF complexity and data nesting depth. Why Python or Scala UD…]]></summary>
+        <author>
+            <name>Santhosh_Ravin1</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Event-Driven Copy Job Execution with Fabric Activator (Generally Available)]]></title>
+        <id>https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Event-Driven-Copy-Job-Execution-with-Fabric-Activator-Generally/ba-p/5195808</id>
+        <link href="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Event-Driven-Copy-Job-Execution-with-Fabric-Activator-Generally/ba-p/5195808"/>
+        <updated>2026-06-22T16:00:00.000Z</updated>
+        <summary type="html"><![CDATA[IntroductionModern data platforms are increasingly moving toward event-driven architectures where data flows react to events or changes instead of running on rigid schedules. In Microsoft Fabric, two powerful capabilities enable this vision:Copy job: the simplest and most scalable way to move data across multiple clouds and tenants.Activator: a real-time engine that monitors data and reacts to events.A key enhancement brings these two capabilities closer together: you can now invoke Copy jobs directly from Activator—no pipeline required. This unlocks a simpler, faster, and more efficient way to build event-driven data movement in Fabric. Why this matters The limitations of scheduled data movement Traditionally, data movement in enterprise systems relies on fixed schedules:Run every five mi…]]></summary>
+        <author>
+            <name>yexu</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How Many Copies of Each Layer Does Your Container Registry Actually Need?]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/how-many-copies-of-each-layer-does-your-container-registry-actually-need/4529836</id>
+        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/how-many-copies-of-each-layer-does-your-container-registry-actually-need/4529836"/>
+        <updated>2026-06-22T15:20:26.000Z</updated>
+        <summary type="html"><![CDATA[Authors: Payal Mahesh and Vicky Lin
+Azure Container Registry team: Jeanine Burke and Johnson Shi
+Introduction
+It's Monday morning. You spin up a fresh 1,000-node AKS cluster for a big training run or a fleet-wide rollout. Every node reaches for the same large container image at the same instant. What actually happens in the next ten minutes - and whether your pods reach Ready in 9 minutes or 14 - turns out to depend on a single number you've probably never thought about: how many copies of each image layer exist behind your registry.
+At the surface, you see a single capacity number for your registry size - but behind that abstraction, Azure Container Registry maintains copies of your layer data to optimize pull performance. That number of copies directly determines the read throughput avai…]]></summary>
+        <author>
+            <name>payalmahesh</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Retirement of Azure DevOps issuer in Workload identity federation service connections]]></title>
+        <id>https://devblogs.microsoft.com/devops/?p=72939</id>
+        <link href="https://devblogs.microsoft.com/devops/retirement-of-azure-devops-issuer-in-workload-identity-federation-service-connections/"/>
+        <updated>2026-06-22T09:35:34.000Z</updated>
+        <summary type="html"><![CDATA[We are announcing the deprecation of the Azure DevOps issuer in workload identity federation (WIF) service connections, with planned retirement on July 1, 2027. The Azure DevOps issuer uses the https://vstoken.dev.azure.com prefix in federated credentials. This change is part of Microsoft’s broader initiative to standardize on the Microsoft Entra issuer across Azure services that implement […]
+The post Retirement of Azure DevOps issuer in Workload identity federation service connections appeared first on Azure DevOps Blog.]]></summary>
+        <author>
+            <name>Eric van Wijk</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Three lessons that make or break your AWS-to-Azure workload migration]]></title>
         <id>https://techcommunity.microsoft.com/blog/AzureMigrationBlog/three-lessons-that-make-or-break-your-aws-to-azure-workload-migration/4520020</id>
@@ -10774,34 +10868,6 @@ Se connecter et démarrer
 D’abord vous devez accéder à Power apps. Si votre entreprise utilise Microsoft 365, vous avez probablement déjà accès a cette plateforme. Rendez-vous sur le site https://mak…]]></summary>
         <author>
             <name>Tchesco</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[How to Connect Azure SRE Agent to Azure MCP]]></title>
-        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/how-to-connect-azure-sre-agent-to-azure-mcp/4488905</id>
-        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/how-to-connect-azure-sre-agent-to-azure-mcp/4488905"/>
-        <updated>2026-01-23T20:35:55.000Z</updated>
-        <summary type="html"><![CDATA[Prerequisites
-Before you begin, ensure you have:
-
-An active Azure subscription
-An Azure SRE Agent deployed and accessible
-
-Step 1: Add an MCP Connector Using the Portal UI
-To connect Azure MCP to your SRE Agent, you need to add an MCP connector through the Azure Portal. This connector tells the SRE Agent how to communicate with the Azure MCP server.
-Navigate to the MCP Connectors section:
-
-Open the Azure Portal and navigate to your SRE Agent resource
-In the left navigation menu, select Connectors under the Settings section
-Click + Add MCP Connector to open the configuration panel
-
-
-Configure the connector settings:
-
-Name: Enter a descriptive name for your connector (for example, "Azure MCP Server")
-Connection Type: Select stdio from the dropdown menu. This tells the agent to communicate wi…]]></summary>
-        <author>
-            <name>dbandaru</name>
         </author>
     </entry>
 </feed>
