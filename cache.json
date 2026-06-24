@@ -6,6 +6,26 @@
       "siteUrl": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/bg-p/fbc_fabricupdatesblogs",
       "articles": [
         {
+          "id": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Billing-for-Microsoft-Fabric-Planning-Preview/ba-p/5207643",
+          "author": "SupriyaKashyap",
+          "description": "A business-first approach to economics on Microsoft Fabric Enterprise planning is evolving across industries - from an isolated finance exercise to a cross-functional capability that spans finance, operations, supply chain, HR, and executive leadership, but the tools and pricing models behind it have not kept up. Planning in Microsoft Fabric (Preview) is bringing planning, analytics, reporting, and data management into one integrated experience in Microsoft Fabric, moving organizations from disconnected processes to real-time, data-driven decisions. As customers adopt Fabric Planning, one question comes up: How does billing work and why is it designed this way? This blog post explains how the model is built for outcomes, impact, and predictability, not just usage. Why pricing for Fabric Pl…",
+          "link": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Billing-for-Microsoft-Fabric-Planning-Preview/ba-p/5207643",
+          "publishedOn": "2026-06-23T19:00:00.000Z",
+          "wordCount": 6545,
+          "title": "Billing for Microsoft Fabric Planning (Preview)",
+          "imageUrl": "https://community.fabric.microsoft.com/t5/image/serverpage/image-id/1352543iAFA337F8E68F5FC1?v=v2"
+        },
+        {
+          "id": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Multi-cloud-data-architecture-patterns-using-Fabric-Data-Factory/ba-p/5217279",
+          "author": "sunil_sabat",
+          "description": "Multi Cloud Data integration and transformation  made easy and painless by Fabric Data Factory.",
+          "link": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Multi-cloud-data-architecture-patterns-using-Fabric-Data-Factory/ba-p/5217279",
+          "publishedOn": "2026-06-23T17:00:00.000Z",
+          "wordCount": 6566,
+          "title": "Multi-cloud data architecture patterns using Fabric Data Factory (Generally Available)",
+          "imageUrl": "https://community.fabric.microsoft.com/html/assets/fabric_twitter_OG_image.png"
+        },
+        {
           "id": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/More-resilient-Spark-jobs-with-Efficient-Scaledown-Preview/ba-p/5212071",
           "author": "Santhosh_Ravin1",
           "description": "Running large-scale data engineering workloads in Apache Spark often means dealing with expensive shuffle operations. Shuffle is one of the most resource-intensive operations that Spark runs on most, if not all, jobs. When executors holding shuffle data are removed during scale-down, Spark must re-execute entire stages—causing task retries, wasted compute, and unpredictable job runtimes. Efficient Scaledown in Microsoft Fabric Spark helps solve this problem. It decouples shuffle data from executor lifetime by routing shuffle output to Azure Blob Storage (or migrating it on demand), enabling faster cluster scale-down, improved fault tolerance, lower compute costs, and resilient jobs—with no changes to your queries, notebooks, or pipelines. The challenge: Shuffle data pins executors and driv…",
@@ -2627,6 +2647,16 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/kvstream-smarter-memory-management-for-on-device-language-model-inference/4529843",
+          "author": "shreyanfern",
+          "description": "On-Device LLMs Are Starved for Memory Intelligence\nThe shift toward on-device language model inference is accelerating. Platforms like Microsoft's Foundry Local, Ollama, and llama.cpp now make it possible to run capable models such as Phi-3-mini and Llama 3 entirely on local hardware, no cloud dependency, no data leaving the device. This is a meaningful leap for privacy-sensitive applications, offline scenarios, and latency-critical workloads.\nBut on-device/edge inference surfaces a class of performance problems that cloud-based serving largely abstracts away.\nMemory is the bottleneck. When a language model generates text, it builds a Key-Value (KV) cache a memory structure that stores intermediate attention states so it doesn't have to recompute them for every new token. On a cloud server…",
+          "link": "https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/kvstream-smarter-memory-management-for-on-device-language-model-inference/4529843",
+          "publishedOn": "2026-06-23T07:00:00.000Z",
+          "wordCount": null,
+          "title": "KVStream: Smarter Memory Management for On-Device Language Model Inference",
+          "imageUrl": null
+        },
+        {
           "id": "https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/the-gate-is-the-product-human-verified-artifacts-in-a-foundry-multi-agent-game/4529682",
           "author": "Princeps",
           "description": "Part 2 of 5.\n\nIn Part 1 the loop ended at a verification gate. This post is about why that gate is not a confirmation dialog - it is the core mechanic, the reliability story, and the thing that lets a reasoning-agent system be demoed live without praying.\nMost multi-agent demos gate on \"did the model produce something.\" That is a vibe check. A reasoning-agent system that touches anything real needs a harder question: who is allowed to say this artifact is good enough - and can a human stop it?\n\nA model can create. A model must not be the thing that certifies its own creation.\n\nThis post is a code walkthrough of how that rule is enforced. We build the three-layer scoring ladder from the bottom up - deterministic validators, a model rubric floored by them, and a human gate - then look at the…",
@@ -3173,6 +3203,26 @@
       "feedUrl": "https://techcommunity.microsoft.com/t5/s/plugins/custom/microsoft/o365/custom-blog-rss?board=AppsonAzureBlog&size=100",
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
+        {
+          "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/only-8-5-of-mcp-servers-use-oauth-%E2%80%94-heres-how-to-host-one-securely-on-app-servic/4530349",
+          "author": "jordanselig",
+          "description": "The Model Context Protocol exploded onto the scene because it's easy. Stand up a server, expose a few tools, point Claude or VS Code at it, and your agent can suddenly read files, hit APIs, and run code. That same ease is the problem: most MCP servers ship with no authentication at all, and they're getting pushed straight to the internet.\nThe numbers are bleak-into-an-incident-report bad. Astrix Research's State of MCP Server Security 2025 found that only 8.5% of MCP servers use OAuth — the rest lean on static API keys or nothing. And the CVEs have already started:\n\nCVE-2025-6514 — a CVSS 9.6 OS command-injection flaw in mcp-remote. If a client connects to a malicious or hijacked MCP server, the server can inject shell commands through the OAuth authorization_endpoint during discovery and …",
+          "link": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/only-8-5-of-mcp-servers-use-oauth-%E2%80%94-heres-how-to-host-one-securely-on-app-servic/4530349",
+          "publishedOn": "2026-06-23T19:20:54.000Z",
+          "wordCount": null,
+          "title": "Only 8.5% of MCP Servers Use OAuth — Here's How to Host One Securely on App Service",
+          "imageUrl": null
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/mcp-just-went-stateless-%E2%80%94-what-the-2026-spec-changes-about-scaling-on-app-servic/4530222",
+          "author": "jordanselig",
+          "description": "A couple of months ago I wrote about scaling MCP servers behind App Service's built-in load balancer. The trick back then was to lean on stateless HTTP transport so any instance could serve any request — and to make sure you turned off ARR affinity so the load balancer was actually free to spread traffic around.\nThat post still works. But the MCP spec just caught up to it in a big way.\nThe 2026-07-28 release candidate is the largest revision of the Model Context Protocol since it launched, and the headline change is exactly the thing we were working around: MCP is now stateless at the protocol layer. The handshake is gone, the session header is gone, and the sticky-routing-and-shared-session-store dance that horizontal deployments used to need is no longer part of the protocol at all.\nIf y…",
+          "link": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/mcp-just-went-stateless-%E2%80%94-what-the-2026-spec-changes-about-scaling-on-app-servic/4530222",
+          "publishedOn": "2026-06-23T16:10:35.000Z",
+          "wordCount": null,
+          "title": "MCP Just Went Stateless — What the 2026 Spec Changes About Scaling on App Service",
+          "imageUrl": null
+        },
         {
           "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/how-many-copies-of-each-layer-does-your-container-registry-actually-need/4529836",
           "author": "payalmahesh",
@@ -4977,6 +5027,16 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/azure-copilot-observability-agent-is-generally-available-with-autonomous-operati/4528213",
+          "author": "EfratNauerman",
+          "description": "Complex cloud environments have outpaced manual operations. Agentic cloud operations connect people, tools, and data to streamline investigation workflows and move teams from scattered signals to evidence-backed next steps. With unified observability, teams can investigate Azure-monitored applications, Azure Kubernetes Service (AKS) environments, VMs, Foundry telemetry, infrastructure, and platform signals with greater context and control.\nPowered by Azure Monitor, the Azure Copilot Observability Agent is now generally available. It helps engineering, SRE, DevOps, and operations teams move from telemetry and alert noise to investigated issues, explainable reasoning, and recommended next steps that can reduce Time-To-Mitigate (TTM). \nAutonomous operations are also available in public previe…",
+          "link": "https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/azure-copilot-observability-agent-is-generally-available-with-autonomous-operati/4528213",
+          "publishedOn": "2026-06-23T15:52:27.000Z",
+          "wordCount": null,
+          "title": "Azure Copilot Observability Agent is generally available, with autonomous operations in preview",
+          "imageUrl": null
+        },
+        {
           "id": "https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/accelerating-aks-troubleshooting-with-the-azure-copilot-observability-agent/4528517",
           "author": "yairgil",
           "description": "AKS incidents rarely stay within one Kubernetes object, signal, or tool. A latency spike might first appear in application telemetry, but the root cause may sit elsewhere: pod restarts, node pressure, scheduling failures, or a recent configuration change. The Azure Copilot Observability Agent in Azure Monitor helps connect these signals into an explainable investigation, so teams can move from symptoms to evidence-backed next steps.\nWhy AKS troubleshooting is complex\nTroubleshooting Azure Kubernetes Service (AKS) is complex because failures can originate in workloads, platform components, infrastructure, or the application code running on the cluster. For example, pods stuck in Pending may indicate capacity or scheduling issues, while application latency may be caused by throttling, failed…",
@@ -6662,6 +6722,16 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/blog/MicrosoftMechanicsBlog/rayfin--go-from-prompt-to-production-backend/4529210",
+          "author": "Zachary-Cavanell",
+          "description": "Describe the app you want using Rayfin’s open-source SDK with GitHub Copilot, and generate your full backend in code — schemas, relationships, and access policies included. Deploy to Microsoft Fabric with a single CLI command and immediately inherit enterprise data security, identity controls, and audit compliance already in place across your data estate. \nConnect your app’s live operational data to years of historical records in Fabric from the moment you deploy, no pipelines, no data movement. Query across both datasets using a Fabric data agent you spin up directly on your app’s data. \nWill Thompson, Microsoft Fabric Principal Product Manager, shares how to take an app from idea to governed production deployment in a single session.\nDescribe the app you want. \n\nRayfin and GitHub Copilot…",
+          "link": "https://techcommunity.microsoft.com/blog/MicrosoftMechanicsBlog/rayfin--go-from-prompt-to-production-backend/4529210",
+          "publishedOn": "2026-06-23T16:06:02.000Z",
+          "wordCount": null,
+          "title": "Rayfin | Go from prompt to production backend",
+          "imageUrl": null
+        },
+        {
           "id": "https://techcommunity.microsoft.com/blog/MicrosoftMechanicsBlog/agent-365--identity--access-controls-in%C2%A0entra/4526815",
           "author": "Zachary-Cavanell",
           "description": "Surface agents across AWS Bedrock, Google Vertex, Databricks, and Salesforce in one registry, assign Entra Agent IDs via CLI or SDK, and enforce least-privilege access through Conditional Access policies and Agent Blueprints, all without rebuilding your existing identity infrastructure. \nLock down agent activity with sign-in logs that capture every authentication attempt, policy hit, and failure. Govern agents as first-class identities alongside your users, apps, and devices, and draw a hard line between managed and unmanaged AI in your organization. \nVince Smith, Microsoft Entra Principal Product Manager, shares how to establish full visibility, access control, and lifecycle governance for AI agents using Microsoft Entra and Agent 365.\nTransform unmanaged agents into a managed agent ident…",
@@ -7944,6 +8014,16 @@
       "feedUrl": "https://devblogs.microsoft.com/microsoft365dev/feed/",
       "siteUrl": "https://devblogs.microsoft.com/microsoft365dev/",
       "articles": [
+        {
+          "id": "https://devblogs.microsoft.com/microsoft365dev/?p=25858",
+          "author": "Vesa Juvonen",
+          "description": "Microsoft 365 Copilot is brilliant with words - but work isn't only words. Introducing SharePoint Copilot Apps: bring rich, interactive UX components straight into the Copilot canvas, built with any JavaScript stack your team already knows. Reuse your existing SPFx investments across Copilot, SharePoint, and Teams - no new platform, no infrastructure, no lock-in.\nThe post Going beyond text in Microsoft 365 Copilot – Introducing SharePoint Copilot Apps appeared first on Microsoft 365 Developer Blog.",
+          "link": "https://devblogs.microsoft.com/microsoft365dev/going-beyond-text-in-microsoft-365-copilot-introducing-sharepoint-copilot-apps/",
+          "publishedOn": "2026-06-23T12:25:46.000Z",
+          "wordCount": 8673,
+          "title": "Going beyond text in Microsoft 365 Copilot – Introducing SharePoint Copilot Apps",
+          "imageUrl": "https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2026/06/sharepoint-copilot-apps-blog-post-thumnail.webp"
+        },
         {
           "id": "https://devblogs.microsoft.com/microsoft365dev/?p=25816",
           "author": "Microsoft Graph team",

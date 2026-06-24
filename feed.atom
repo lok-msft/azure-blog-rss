@@ -2,10 +2,107 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2026-06-23T03:39:08.026Z</updated>
+    <updated>2026-06-24T03:39:57.384Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Only 8.5% of MCP Servers Use OAuth — Here's How to Host One Securely on App Service]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/only-8-5-of-mcp-servers-use-oauth-%E2%80%94-heres-how-to-host-one-securely-on-app-servic/4530349</id>
+        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/only-8-5-of-mcp-servers-use-oauth-%E2%80%94-heres-how-to-host-one-securely-on-app-servic/4530349"/>
+        <updated>2026-06-23T19:20:54.000Z</updated>
+        <summary type="html"><![CDATA[The Model Context Protocol exploded onto the scene because it's easy. Stand up a server, expose a few tools, point Claude or VS Code at it, and your agent can suddenly read files, hit APIs, and run code. That same ease is the problem: most MCP servers ship with no authentication at all, and they're getting pushed straight to the internet.
+The numbers are bleak-into-an-incident-report bad. Astrix Research's State of MCP Server Security 2025 found that only 8.5% of MCP servers use OAuth — the rest lean on static API keys or nothing. And the CVEs have already started:
+
+CVE-2025-6514 — a CVSS 9.6 OS command-injection flaw in mcp-remote. If a client connects to a malicious or hijacked MCP server, the server can inject shell commands through the OAuth authorization_endpoint during discovery and …]]></summary>
+        <author>
+            <name>jordanselig</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Billing for Microsoft Fabric Planning (Preview)]]></title>
+        <id>https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Billing-for-Microsoft-Fabric-Planning-Preview/ba-p/5207643</id>
+        <link href="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Billing-for-Microsoft-Fabric-Planning-Preview/ba-p/5207643"/>
+        <updated>2026-06-23T19:00:00.000Z</updated>
+        <summary type="html"><![CDATA[A business-first approach to economics on Microsoft Fabric Enterprise planning is evolving across industries - from an isolated finance exercise to a cross-functional capability that spans finance, operations, supply chain, HR, and executive leadership, but the tools and pricing models behind it have not kept up. Planning in Microsoft Fabric (Preview) is bringing planning, analytics, reporting, and data management into one integrated experience in Microsoft Fabric, moving organizations from disconnected processes to real-time, data-driven decisions. As customers adopt Fabric Planning, one question comes up: How does billing work and why is it designed this way? This blog post explains how the model is built for outcomes, impact, and predictability, not just usage. Why pricing for Fabric Pl…]]></summary>
+        <author>
+            <name>SupriyaKashyap</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Multi-cloud data architecture patterns using Fabric Data Factory (Generally Available)]]></title>
+        <id>https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Multi-cloud-data-architecture-patterns-using-Fabric-Data-Factory/ba-p/5217279</id>
+        <link href="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Multi-cloud-data-architecture-patterns-using-Fabric-Data-Factory/ba-p/5217279"/>
+        <updated>2026-06-23T17:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Multi Cloud Data integration and transformation  made easy and painless by Fabric Data Factory.]]></summary>
+        <author>
+            <name>sunil_sabat</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[MCP Just Went Stateless — What the 2026 Spec Changes About Scaling on App Service]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/mcp-just-went-stateless-%E2%80%94-what-the-2026-spec-changes-about-scaling-on-app-servic/4530222</id>
+        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/mcp-just-went-stateless-%E2%80%94-what-the-2026-spec-changes-about-scaling-on-app-servic/4530222"/>
+        <updated>2026-06-23T16:10:35.000Z</updated>
+        <summary type="html"><![CDATA[A couple of months ago I wrote about scaling MCP servers behind App Service's built-in load balancer. The trick back then was to lean on stateless HTTP transport so any instance could serve any request — and to make sure you turned off ARR affinity so the load balancer was actually free to spread traffic around.
+That post still works. But the MCP spec just caught up to it in a big way.
+The 2026-07-28 release candidate is the largest revision of the Model Context Protocol since it launched, and the headline change is exactly the thing we were working around: MCP is now stateless at the protocol layer. The handshake is gone, the session header is gone, and the sticky-routing-and-shared-session-store dance that horizontal deployments used to need is no longer part of the protocol at all.
+If y…]]></summary>
+        <author>
+            <name>jordanselig</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Rayfin | Go from prompt to production backend]]></title>
+        <id>https://techcommunity.microsoft.com/blog/MicrosoftMechanicsBlog/rayfin--go-from-prompt-to-production-backend/4529210</id>
+        <link href="https://techcommunity.microsoft.com/blog/MicrosoftMechanicsBlog/rayfin--go-from-prompt-to-production-backend/4529210"/>
+        <updated>2026-06-23T16:06:02.000Z</updated>
+        <summary type="html"><![CDATA[Describe the app you want using Rayfin’s open-source SDK with GitHub Copilot, and generate your full backend in code — schemas, relationships, and access policies included. Deploy to Microsoft Fabric with a single CLI command and immediately inherit enterprise data security, identity controls, and audit compliance already in place across your data estate. 
+Connect your app’s live operational data to years of historical records in Fabric from the moment you deploy, no pipelines, no data movement. Query across both datasets using a Fabric data agent you spin up directly on your app’s data. 
+Will Thompson, Microsoft Fabric Principal Product Manager, shares how to take an app from idea to governed production deployment in a single session.
+Describe the app you want. 
+
+Rayfin and GitHub Copilot…]]></summary>
+        <author>
+            <name>Zachary-Cavanell</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Azure Copilot Observability Agent is generally available, with autonomous operations in preview]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/azure-copilot-observability-agent-is-generally-available-with-autonomous-operati/4528213</id>
+        <link href="https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/azure-copilot-observability-agent-is-generally-available-with-autonomous-operati/4528213"/>
+        <updated>2026-06-23T15:52:27.000Z</updated>
+        <summary type="html"><![CDATA[Complex cloud environments have outpaced manual operations. Agentic cloud operations connect people, tools, and data to streamline investigation workflows and move teams from scattered signals to evidence-backed next steps. With unified observability, teams can investigate Azure-monitored applications, Azure Kubernetes Service (AKS) environments, VMs, Foundry telemetry, infrastructure, and platform signals with greater context and control.
+Powered by Azure Monitor, the Azure Copilot Observability Agent is now generally available. It helps engineering, SRE, DevOps, and operations teams move from telemetry and alert noise to investigated issues, explainable reasoning, and recommended next steps that can reduce Time-To-Mitigate (TTM). 
+Autonomous operations are also available in public previe…]]></summary>
+        <author>
+            <name>EfratNauerman</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Going beyond text in Microsoft 365 Copilot – Introducing SharePoint Copilot Apps]]></title>
+        <id>https://devblogs.microsoft.com/microsoft365dev/?p=25858</id>
+        <link href="https://devblogs.microsoft.com/microsoft365dev/going-beyond-text-in-microsoft-365-copilot-introducing-sharepoint-copilot-apps/"/>
+        <updated>2026-06-23T12:25:46.000Z</updated>
+        <summary type="html"><![CDATA[Microsoft 365 Copilot is brilliant with words - but work isn't only words. Introducing SharePoint Copilot Apps: bring rich, interactive UX components straight into the Copilot canvas, built with any JavaScript stack your team already knows. Reuse your existing SPFx investments across Copilot, SharePoint, and Teams - no new platform, no infrastructure, no lock-in.
+The post Going beyond text in Microsoft 365 Copilot – Introducing SharePoint Copilot Apps appeared first on Microsoft 365 Developer Blog.]]></summary>
+        <author>
+            <name>Vesa Juvonen</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[KVStream: Smarter Memory Management for On-Device Language Model Inference]]></title>
+        <id>https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/kvstream-smarter-memory-management-for-on-device-language-model-inference/4529843</id>
+        <link href="https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/kvstream-smarter-memory-management-for-on-device-language-model-inference/4529843"/>
+        <updated>2026-06-23T07:00:00.000Z</updated>
+        <summary type="html"><![CDATA[On-Device LLMs Are Starved for Memory Intelligence
+The shift toward on-device language model inference is accelerating. Platforms like Microsoft's Foundry Local, Ollama, and llama.cpp now make it possible to run capable models such as Phi-3-mini and Llama 3 entirely on local hardware, no cloud dependency, no data leaving the device. This is a meaningful leap for privacy-sensitive applications, offline scenarios, and latency-critical workloads.
+But on-device/edge inference surfaces a class of performance problems that cloud-based serving largely abstracts away.
+Memory is the bottleneck. When a language model generates text, it builds a Key-Value (KV) cache a memory structure that stores intermediate attention states so it doesn't have to recompute them for every new token. On a cloud server…]]></summary>
+        <author>
+            <name>shreyanfern</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[More resilient Spark jobs with Efficient Scaledown (Preview)]]></title>
         <id>https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/More-resilient-Spark-jobs-with-Efficient-Scaledown-Preview/ba-p/5212071</id>

@@ -22,11 +22,295 @@
             data-action="toggle-accordions"
             title="Click to toggle the day, Ctrl + click to toggle all."
           >
-            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2026-06-23 datetime="2026-06-22T21:00:00.000Z">2026-06-23</time>
-            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2026-06-23 datetime="2026-06-22T21:00:00.000Z"></time>
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2026-06-24 datetime="2026-06-23T19:20:54.000Z">2026-06-24</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2026-06-24 datetime="2026-06-23T19:20:54.000Z"></time>
           </button>
         </h2>
         <ul class="sources card">
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Microsoft Tech Community - Latest Blogs - Apps on Azure Blog</button>
+                  <a class="source-heading__link" href="https://techcommunity.microsoft.com">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/only-8-5-of-mcp-servers-use-oauth-%E2%80%94-heres-how-to-host-one-securely-on-app-servic/4530349"
+                        open
+                      >
+                        <summary class="article-expander__title">Only 8.5% of MCP Servers Use OAuth — Here&#x27;s How to Host One Securely on App Service</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/only-8-5-of-mcp-servers-use-oauth-%E2%80%94-heres-how-to-host-one-securely-on-app-servic/4530349">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>The Model Context Protocol exploded onto the scene because it&#x27;s easy. Stand up a server, expose a few tools, point Claude or VS Code at it, and your agent can suddenly read files, hit APIs, and run code. That same ease is the problem: most MCP servers ship with no authentication at all, and they&#x27;re getting pushed straight to the internet.
+The numbers are bleak-into-an-incident-report bad. Astrix Research&#x27;s State of MCP Server Security 2025 found that only 8.5% of MCP servers use OAuth — the rest lean on static API keys or nothing. And the CVEs have already started:
+
+CVE-2025-6514 — a CVSS 9.6 OS command-injection flaw in mcp-remote. If a client connects to a malicious or hijacked MCP server, the server can inject shell commands through the OAuth authorization_endpoint during discovery and …</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/mcp-just-went-stateless-%E2%80%94-what-the-2026-spec-changes-about-scaling-on-app-servic/4530222"
+                        open
+                      >
+                        <summary class="article-expander__title">MCP Just Went Stateless — What the 2026 Spec Changes About Scaling on App Service</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/mcp-just-went-stateless-%E2%80%94-what-the-2026-spec-changes-about-scaling-on-app-servic/4530222">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>A couple of months ago I wrote about scaling MCP servers behind App Service&#x27;s built-in load balancer. The trick back then was to lean on stateless HTTP transport so any instance could serve any request — and to make sure you turned off ARR affinity so the load balancer was actually free to spread traffic around.
+That post still works. But the MCP spec just caught up to it in a big way.
+The 2026-07-28 release candidate is the largest revision of the Model Context Protocol since it launched, and the headline change is exactly the thing we were working around: MCP is now stateless at the protocol layer. The handshake is gone, the session header is gone, and the sticky-routing-and-shared-session-store dance that horizontal deployments used to need is no longer part of the protocol at all.
+If y…</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Fabric Updates Blog articles</button>
+                  <a class="source-heading__link" href="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/bg-p/fbc_fabricupdatesblogs">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Billing-for-Microsoft-Fabric-Planning-Preview/ba-p/5207643"
+                        open
+                      >
+                        <summary class="article-expander__title">Billing for Microsoft Fabric Planning (Preview)</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Billing-for-Microsoft-Fabric-Planning-Preview/ba-p/5207643">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://community.fabric.microsoft.com/t5/image/serverpage/image-id/1352543iAFA337F8E68F5FC1?v&#x3D;v2" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>A business-first approach to economics on Microsoft Fabric Enterprise planning is evolving across industries - from an isolated finance exercise to a cross-functional capability that spans finance, operations, supply chain, HR, and executive leadership, but the tools and pricing models behind it have not kept up. Planning in Microsoft Fabric (Preview) is bringing planning, analytics, reporting, and data management into one integrated experience in Microsoft Fabric, moving organizations from disconnected processes to real-time, data-driven decisions. As customers adopt Fabric Planning, one question comes up: How does billing work and why is it designed this way? This blog post explains how the model is built for outcomes, impact, and predictability, not just usage. Why pricing for Fabric Pl…</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;22
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Multi-cloud-data-architecture-patterns-using-Fabric-Data-Factory/ba-p/5217279"
+                        open
+                      >
+                        <summary class="article-expander__title">Multi-cloud data architecture patterns using Fabric Data Factory (Generally Available)</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Multi-cloud-data-architecture-patterns-using-Fabric-Data-Factory/ba-p/5217279">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://community.fabric.microsoft.com/html/assets/fabric_twitter_OG_image.png" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>Multi Cloud Data integration and transformation  made easy and painless by Fabric Data Factory.</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;22
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Microsoft Tech Community - Latest Blogs - Microsoft Mechanics Blog</button>
+                  <a class="source-heading__link" href="https://techcommunity.microsoft.com">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://techcommunity.microsoft.com/blog/MicrosoftMechanicsBlog/rayfin--go-from-prompt-to-production-backend/4529210"
+                        open
+                      >
+                        <summary class="article-expander__title">Rayfin | Go from prompt to production backend</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/blog/MicrosoftMechanicsBlog/rayfin--go-from-prompt-to-production-backend/4529210">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Describe the app you want using Rayfin’s open-source SDK with GitHub Copilot, and generate your full backend in code — schemas, relationships, and access policies included. Deploy to Microsoft Fabric with a single CLI command and immediately inherit enterprise data security, identity controls, and audit compliance already in place across your data estate. 
+Connect your app’s live operational data to years of historical records in Fabric from the moment you deploy, no pipelines, no data movement. Query across both datasets using a Fabric data agent you spin up directly on your app’s data. 
+Will Thompson, Microsoft Fabric Principal Product Manager, shares how to take an app from idea to governed production deployment in a single session.
+Describe the app you want. 
+
+Rayfin and GitHub Copilot…</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+        </ul>
+      </section>
+      <section class="daily-content js-toggle-accordions-scope">
+        <h2 class="daily-heading">
+          <button
+            class="daily-heading-toggle"
+            data-action="toggle-accordions"
+            title="Click to toggle the day, Ctrl + click to toggle all."
+          >
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2026-06-23 datetime="2026-06-23T15:52:27.000Z">2026-06-23</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2026-06-23 datetime="2026-06-23T15:52:27.000Z"></time>
+          </button>
+        </h2>
+        <ul class="sources card">
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Microsoft Tech Community - Latest Blogs - Azure Observability Blog</button>
+                  <a class="source-heading__link" href="https://techcommunity.microsoft.com">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/azure-copilot-observability-agent-is-generally-available-with-autonomous-operati/4528213"
+                        open
+                      >
+                        <summary class="article-expander__title">Azure Copilot Observability Agent is generally available, with autonomous operations in preview</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/azure-copilot-observability-agent-is-generally-available-with-autonomous-operati/4528213">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Complex cloud environments have outpaced manual operations. Agentic cloud operations connect people, tools, and data to streamline investigation workflows and move teams from scattered signals to evidence-backed next steps. With unified observability, teams can investigate Azure-monitored applications, Azure Kubernetes Service (AKS) environments, VMs, Foundry telemetry, infrastructure, and platform signals with greater context and control.
+Powered by Azure Monitor, the Azure Copilot Observability Agent is now generally available. It helps engineering, SRE, DevOps, and operations teams move from telemetry and alert noise to investigated issues, explainable reasoning, and recommended next steps that can reduce Time-To-Mitigate (TTM). 
+Autonomous operations are also available in public previe…</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Microsoft 365 Developer Blog</button>
+                  <a class="source-heading__link" href="https://devblogs.microsoft.com/microsoft365dev/">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://devblogs.microsoft.com/microsoft365dev/?p&#x3D;25858"
+                        open
+                      >
+                        <summary class="article-expander__title">Going beyond text in Microsoft 365 Copilot – Introducing SharePoint Copilot Apps</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://devblogs.microsoft.com/microsoft365dev/going-beyond-text-in-microsoft-365-copilot-introducing-sharepoint-copilot-apps/">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2026/06/sharepoint-copilot-apps-blog-post-thumnail.webp" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>Microsoft 365 Copilot is brilliant with words - but work isn&#x27;t only words. Introducing SharePoint Copilot Apps: bring rich, interactive UX components straight into the Copilot canvas, built with any JavaScript stack your team already knows. Reuse your existing SPFx investments across Copilot, SharePoint, and Teams - no new platform, no infrastructure, no lock-in.
+The post Going beyond text in Microsoft 365 Copilot – Introducing SharePoint Copilot Apps appeared first on Microsoft 365 Developer Blog.</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;29
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Microsoft Tech Community - Latest Blogs - Educator Developer Blog</button>
+                  <a class="source-heading__link" href="https://techcommunity.microsoft.com">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/kvstream-smarter-memory-management-for-on-device-language-model-inference/4529843"
+                        open
+                      >
+                        <summary class="article-expander__title">KVStream: Smarter Memory Management for On-Device Language Model Inference</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/kvstream-smarter-memory-management-for-on-device-language-model-inference/4529843">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>On-Device LLMs Are Starved for Memory Intelligence
+The shift toward on-device language model inference is accelerating. Platforms like Microsoft&#x27;s Foundry Local, Ollama, and llama.cpp now make it possible to run capable models such as Phi-3-mini and Llama 3 entirely on local hardware, no cloud dependency, no data leaving the device. This is a meaningful leap for privacy-sensitive applications, offline scenarios, and latency-critical workloads.
+But on-device/edge inference surfaces a class of performance problems that cloud-based serving largely abstracts away.
+Memory is the bottleneck. When a language model generates text, it builds a Key-Value (KV) cache a memory structure that stores intermediate attention states so it doesn&#x27;t have to recompute them for every new token. On a cloud server…</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/the-gate-is-the-product-human-verified-artifacts-in-a-foundry-multi-agent-game/4529682"
+                        open
+                      >
+                        <summary class="article-expander__title">The Gate Is the Product: Human-Verified Artifacts in a Foundry Multi-Agent Game</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/the-gate-is-the-product-human-verified-artifacts-in-a-foundry-multi-agent-game/4529682">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Part 2 of 5.
+
+In Part 1 the loop ended at a verification gate. This post is about why that gate is not a confirmation dialog - it is the core mechanic, the reliability story, and the thing that lets a reasoning-agent system be demoed live without praying.
+Most multi-agent demos gate on &quot;did the model produce something.&quot; That is a vibe check. A reasoning-agent system that touches anything real needs a harder question: who is allowed to say this artifact is good enough - and can a human stop it?
+
+A model can create. A model must not be the thing that certifies its own creation.
+
+This post is a code walkthrough of how that rule is enforced. We build the three-layer scoring ladder from the bottom up - deterministic validators, a model rubric floored by them, and a human gate - then look at the…</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
             <li class="card__section">
               <section class="js-toggle-accordions-scope">
                 <h3 class="source-heading">
@@ -93,44 +377,6 @@
                               <span>IntroductionModern data platforms are increasingly moving toward event-driven architectures where data flows react to events or changes instead of running on rigid schedules. In Microsoft Fabric, two powerful capabilities enable this vision:Copy job: the simplest and most scalable way to move data across multiple clouds and tenants.Activator: a real-time engine that monitors data and reacts to events.A key enhancement brings these two capabilities closer together: you can now invoke Copy jobs directly from Activator—no pipeline required. This unlocks a simpler, faster, and more efficient way to build event-driven data movement in Fabric. Why this matters The limitations of scheduled data movement Traditionally, data movement in enterprise systems relies on fixed schedules:Run every five mi…</span>
                                 &ensp;<span class="article-reading-time">(&hairsp;22
                                   min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Microsoft Tech Community - Latest Blogs - Educator Developer Blog</button>
-                  <a class="source-heading__link" href="https://techcommunity.microsoft.com">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/the-gate-is-the-product-human-verified-artifacts-in-a-foundry-multi-agent-game/4529682"
-                        open
-                      >
-                        <summary class="article-expander__title">The Gate Is the Product: Human-Verified Artifacts in a Foundry Multi-Agent Game</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/the-gate-is-the-product-human-verified-artifacts-in-a-foundry-multi-agent-game/4529682">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Part 2 of 5.
-
-In Part 1 the loop ended at a verification gate. This post is about why that gate is not a confirmation dialog - it is the core mechanic, the reliability story, and the thing that lets a reasoning-agent system be demoed live without praying.
-Most multi-agent demos gate on &quot;did the model produce something.&quot; That is a vibe check. A reasoning-agent system that touches anything real needs a harder question: who is allowed to say this artifact is good enough - and can a human stop it?
-
-A model can create. A model must not be the thing that certifies its own creation.
-
-This post is a code walkthrough of how that rule is enforced. We build the three-layer scoring ladder from the bottom up - deterministic validators, a model rubric floored by them, and a human gate - then look at the…</span>
                             </span>
                           </div>
                         </a>
@@ -27425,8 +27671,8 @@ D’abord vous devez accéder à Power apps. Si votre entreprise utilise Microso
       </section>
 
     <footer>
-      <a class="footer-link" href="https://github.com/lok-msft/azure-blog-rss/actions/runs/28000451131">
-        <time id="build-timestamp" datetime="2026-06-23T03:39:07.974Z">2026-06-23T03:39:07.974Z</time>
+      <a class="footer-link" href="https://github.com/lok-msft/azure-blog-rss/actions/runs/28073456110">
+        <time id="build-timestamp" datetime="2026-06-24T03:39:57.336Z">2026-06-24T03:39:57.336Z</time>
       </a>
       <a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a>
     </footer>
