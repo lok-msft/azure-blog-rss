@@ -6,6 +6,26 @@
       "siteUrl": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/bg-p/fbc_fabricupdatesblogs",
       "articles": [
         {
+          "id": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Know-before-you-optimize-Diagnose-Lakehouse-table-health-with-a/ba-p/5228076",
+          "author": "perirocha",
+          "description": "A new built-in stored procedure for the SQL analytics endpoint in Microsoft Fabric; sp_get_table_health_metric. This feature gives you a T-SQL-native way to check the structural health of your Lakehouse tables, so you can make informed decisions about table maintenance before it impacts your users. The challenge: Blind maintenance or reactive firefighting If you use Lakehouse tables through the SQL analytics endpoint, you may notice queries gradually slowing down. Dashboards lag, and users report degraded performance even though the logical data hasn’t changed. The root cause is often physical. Parquet files drift into a suboptimal layout over time, impacting query performance. Until now, diagnosing this required leaving T-SQL entirely. You had to open a Spark notebook, inspect Delta logs,…",
+          "link": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Know-before-you-optimize-Diagnose-Lakehouse-table-health-with-a/ba-p/5228076",
+          "publishedOn": "2026-06-24T21:00:00.000Z",
+          "wordCount": 6885,
+          "title": "Know before you optimize: Diagnose Lakehouse table health with a single T-SQL command (Generally Available)",
+          "imageUrl": "https://community.fabric.microsoft.com/t5/image/serverpage/image-id/1353167i7B52B6CB1AFF31F0?v=v2"
+        },
+        {
+          "id": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/What-s-new-across-Microsoft-SQL-in-2026-so-far-SQL-Server-Azure/ba-p/5221163",
+          "author": "analyticanna",
+          "description": "We’re halfway through 2026, and Microsoft SQL has not slowed down. Since SQLCon/FabCon in March (where we released a ton of things, and those updates can be found in the What's New in Microsoft SQL at SQLCon/FabCon | Data Exposed video), we shipped a wave of updates across SQL Server, Azure SQL, and SQL database in Fabric, with Microsoft Build 2026 as the centerpiece. If you want the details on Build, start with my recap blog, The Era of the Agentic Database Developer. This post collects everything new from mid-March through today, organized by service so you can find what matters to you. Every item is tagged Preview or Generally Available with a link. You can also catch new episodes on the Azure SQL YouTube channel, where we go deeper on a lot of what’s below. Without further ado, here’s …",
+          "link": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/What-s-new-across-Microsoft-SQL-in-2026-so-far-SQL-Server-Azure/ba-p/5221163",
+          "publishedOn": "2026-06-24T17:05:00.000Z",
+          "wordCount": 6836,
+          "title": "What’s new across Microsoft SQL in 2026 so far (SQL Server, Azure SQL, and SQL database in Fabric)",
+          "imageUrl": "https://community.fabric.microsoft.com/html/assets/fabric_twitter_OG_image.png"
+        },
+        {
           "id": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Billing-for-Microsoft-Fabric-Planning-Preview/ba-p/5207643",
           "author": "SupriyaKashyap",
           "description": "A business-first approach to economics on Microsoft Fabric Enterprise planning is evolving across industries - from an isolated finance exercise to a cross-functional capability that spans finance, operations, supply chain, HR, and executive leadership, but the tools and pricing models behind it have not kept up. Planning in Microsoft Fabric (Preview) is bringing planning, analytics, reporting, and data management into one integrated experience in Microsoft Fabric, moving organizations from disconnected processes to real-time, data-driven decisions. As customers adopt Fabric Planning, one question comes up: How does billing work and why is it designed this way? This blog post explains how the model is built for outcomes, impact, and predictability, not just usage. Why pricing for Fabric Pl…",
@@ -2394,16 +2414,6 @@
           "wordCount": 5580,
           "title": "Fabric January 2026 Feature Summary",
           "imageUrl": "https://blog.fabric.microsoft.com/images/shared/social/social-image-v2.png"
-        },
-        {
-          "id": "surge-protection-gets-smarter-introducing-workspace-level-controls-preview",
-          "author": null,
-          "description": "Surge protection in Microsoft Fabric has been a key feature for managing capacity usage and preventing overload. Today, it helps you: Until now, surge protection applied only at the capacity level—meaning all workspaces shared the same rules. What’s new: workspace-level surge protection We’re taking surge protection to the next level with workspace-level controls. This update … \nContinue reading “Surge protection gets smarter: introducing workspace-level controls (Preview)”",
-          "link": "https://blog.fabric.microsoft.com/en/blog/surge-protection-gets-smarter-introducing-workspace-level-controls-preview/",
-          "publishedOn": "2026-01-26T09:00:00.000Z",
-          "wordCount": 1737,
-          "title": "Surge protection gets smarter: introducing workspace-level controls (Preview)",
-          "imageUrl": "https://blog.fabric.microsoft.com/images/shared/social/social-image-v2.png"
         }
       ]
     },
@@ -2646,6 +2656,16 @@
       "feedUrl": "https://techcommunity.microsoft.com/t5/s/plugins/custom/microsoft/o365/custom-blog-rss?board=EducatorDeveloperBlog&size=100",
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
+        {
+          "id": "https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/agents-that-remember-the-boss-closing-the-loop-with-foundry-agent-service-memory/4529688",
+          "author": "Princeps",
+          "description": "Part 3 of 5.\n\nMost multi-agent demos have a quiet secret: the human's decisions change nothing. You approve an artifact, reject another, pick a direction at a fork - and the next agent runs with the same prompt it would have run with anyway. The loop is open.\nIn Part 2, every artifact stops at a CEO gate. This post is about what happens after the gate: how the decision is written to the Foundry Agent Service memory store, recalled into the next worker's brief, and enforced as binding direction - so a choice in chapter 2 visibly changes the artifact in chapter 3.\n\nMemory is not a transcript. Memory is the set of decisions the agent is no longer allowed to ignore.\n\nThe memory loop in one diagram\n\nEvery piece below is in two files: the store and its keyless twin in submission/agents/memory.py…",
+          "link": "https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/agents-that-remember-the-boss-closing-the-loop-with-foundry-agent-service-memory/4529688",
+          "publishedOn": "2026-06-24T10:40:42.000Z",
+          "wordCount": null,
+          "title": "Agents That Remember the Boss: Closing the Loop with Foundry Agent Service Memory",
+          "imageUrl": null
+        },
         {
           "id": "https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/kvstream-smarter-memory-management-for-on-device-language-model-inference/4529843",
           "author": "shreyanfern",
@@ -3185,16 +3205,6 @@
           "wordCount": 37580,
           "title": "The Hidden Memory Architecture of LLMs",
           "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDg1MzY3LU5oa3dhbA?revision=20"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/cr%C3%A9er-votre-premi%C3%A8re-application-avec-powerapps/4439002",
-          "author": "Tchesco",
-          "description": "De nos jours, créer une application n’est plus réservés uniquement qu’aux développeurs.\nAvec Microsoft Power Apps, tout le monde peut concevoir des applications d’entreprise professionnelles sans écrire une seule ligne de code. C’es la magie qu’on appelle le low-code / no-code. On peut construire une application en quelques minutes, gérer des données sur Excel, SharePoint ou Dataverse et aussi générer automatiquement l’application à partir d’une simple description avec l’aide de Copilot.\nCet article est un guide pas à pas pour créer votre toute première application, sans aucune ligne de code.\n \nSe connecter et démarrer\nD’abord vous devez accéder à Power apps. Si votre entreprise utilise Microsoft 365, vous avez probablement déjà accès a cette plateforme. Rendez-vous sur le site https://mak…",
-          "link": "https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/cr%C3%A9er-votre-premi%C3%A8re-application-avec-powerapps/4439002",
-          "publishedOn": "2026-01-26T06:27:25.000Z",
-          "wordCount": 9359,
-          "title": "Créer votre première application avec PowerApps",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDM5MDAyLThnYm1nNQ?revision=1"
         }
       ]
     },
@@ -3203,6 +3213,16 @@
       "feedUrl": "https://techcommunity.microsoft.com/t5/s/plugins/custom/microsoft/o365/custom-blog-rss?board=AppsonAzureBlog&size=100",
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
+        {
+          "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/ipv6-dual-stack-endpoints-for-azure-container-registry-public-preview/4528422",
+          "author": "johnsonshi_msft",
+          "description": "By Johnson Shi, Aviral Takkar, Bin Du\nIntroduction\nTwo of the most common networking questions we hear from teams running Azure Container Registry (ACR) are:\n\n\"Can my registry serve clients on IPv6 networks?\" — Teams operating IPv6-only or dual-stack networks need their container registry reachable over IPv6.\n\"How do we start moving registry traffic toward IPv6 without breaking anything?\" — Organizations guarding against IPv4 address exhaustion, or operating under IPv6 transition mandates, want a migration path that doesn't disrupt existing IPv4 clients.\n\nToday, we're announcing the public preview of IPv6 dual-stack endpoints for Azure Container Registry for public endpoints and firewall rules, with IPv6 over private endpoints planned for GA. Set your registry's endpoint protocol to IPv4An…",
+          "link": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/ipv6-dual-stack-endpoints-for-azure-container-registry-public-preview/4528422",
+          "publishedOn": "2026-06-24T22:28:46.000Z",
+          "wordCount": null,
+          "title": "IPv6 Dual-Stack Endpoints for Azure Container Registry (Public Preview)",
+          "imageUrl": null
+        },
         {
           "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/only-8-5-of-mcp-servers-use-oauth-%E2%80%94-heres-how-to-host-one-securely-on-app-servic/4530349",
           "author": "jordanselig",

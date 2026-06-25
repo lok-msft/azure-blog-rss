@@ -2,10 +2,66 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2026-06-24T03:39:57.384Z</updated>
+    <updated>2026-06-25T03:39:52.081Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[IPv6 Dual-Stack Endpoints for Azure Container Registry (Public Preview)]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/ipv6-dual-stack-endpoints-for-azure-container-registry-public-preview/4528422</id>
+        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/ipv6-dual-stack-endpoints-for-azure-container-registry-public-preview/4528422"/>
+        <updated>2026-06-24T22:28:46.000Z</updated>
+        <summary type="html"><![CDATA[By Johnson Shi, Aviral Takkar, Bin Du
+Introduction
+Two of the most common networking questions we hear from teams running Azure Container Registry (ACR) are:
+
+"Can my registry serve clients on IPv6 networks?" — Teams operating IPv6-only or dual-stack networks need their container registry reachable over IPv6.
+"How do we start moving registry traffic toward IPv6 without breaking anything?" — Organizations guarding against IPv4 address exhaustion, or operating under IPv6 transition mandates, want a migration path that doesn't disrupt existing IPv4 clients.
+
+Today, we're announcing the public preview of IPv6 dual-stack endpoints for Azure Container Registry for public endpoints and firewall rules, with IPv6 over private endpoints planned for GA. Set your registry's endpoint protocol to IPv4An…]]></summary>
+        <author>
+            <name>johnsonshi_msft</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Know before you optimize: Diagnose Lakehouse table health with a single T-SQL command (Generally Available)]]></title>
+        <id>https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Know-before-you-optimize-Diagnose-Lakehouse-table-health-with-a/ba-p/5228076</id>
+        <link href="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Know-before-you-optimize-Diagnose-Lakehouse-table-health-with-a/ba-p/5228076"/>
+        <updated>2026-06-24T21:00:00.000Z</updated>
+        <summary type="html"><![CDATA[A new built-in stored procedure for the SQL analytics endpoint in Microsoft Fabric; sp_get_table_health_metric. This feature gives you a T-SQL-native way to check the structural health of your Lakehouse tables, so you can make informed decisions about table maintenance before it impacts your users. The challenge: Blind maintenance or reactive firefighting If you use Lakehouse tables through the SQL analytics endpoint, you may notice queries gradually slowing down. Dashboards lag, and users report degraded performance even though the logical data hasn’t changed. The root cause is often physical. Parquet files drift into a suboptimal layout over time, impacting query performance. Until now, diagnosing this required leaving T-SQL entirely. You had to open a Spark notebook, inspect Delta logs,…]]></summary>
+        <author>
+            <name>perirocha</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[What’s new across Microsoft SQL in 2026 so far (SQL Server, Azure SQL, and SQL database in Fabric)]]></title>
+        <id>https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/What-s-new-across-Microsoft-SQL-in-2026-so-far-SQL-Server-Azure/ba-p/5221163</id>
+        <link href="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/What-s-new-across-Microsoft-SQL-in-2026-so-far-SQL-Server-Azure/ba-p/5221163"/>
+        <updated>2026-06-24T17:05:00.000Z</updated>
+        <summary type="html"><![CDATA[We’re halfway through 2026, and Microsoft SQL has not slowed down. Since SQLCon/FabCon in March (where we released a ton of things, and those updates can be found in the What's New in Microsoft SQL at SQLCon/FabCon | Data Exposed video), we shipped a wave of updates across SQL Server, Azure SQL, and SQL database in Fabric, with Microsoft Build 2026 as the centerpiece. If you want the details on Build, start with my recap blog, The Era of the Agentic Database Developer. This post collects everything new from mid-March through today, organized by service so you can find what matters to you. Every item is tagged Preview or Generally Available with a link. You can also catch new episodes on the Azure SQL YouTube channel, where we go deeper on a lot of what’s below. Without further ado, here’s …]]></summary>
+        <author>
+            <name>analyticanna</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Agents That Remember the Boss: Closing the Loop with Foundry Agent Service Memory]]></title>
+        <id>https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/agents-that-remember-the-boss-closing-the-loop-with-foundry-agent-service-memory/4529688</id>
+        <link href="https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/agents-that-remember-the-boss-closing-the-loop-with-foundry-agent-service-memory/4529688"/>
+        <updated>2026-06-24T10:40:42.000Z</updated>
+        <summary type="html"><![CDATA[Part 3 of 5.
+
+Most multi-agent demos have a quiet secret: the human's decisions change nothing. You approve an artifact, reject another, pick a direction at a fork - and the next agent runs with the same prompt it would have run with anyway. The loop is open.
+In Part 2, every artifact stops at a CEO gate. This post is about what happens after the gate: how the decision is written to the Foundry Agent Service memory store, recalled into the next worker's brief, and enforced as binding direction - so a choice in chapter 2 visibly changes the artifact in chapter 3.
+
+Memory is not a transcript. Memory is the set of decisions the agent is no longer allowed to ignore.
+
+The memory loop in one diagram
+
+Every piece below is in two files: the store and its keyless twin in submission/agents/memory.py…]]></summary>
+        <author>
+            <name>Princeps</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Only 8.5% of MCP Servers Use OAuth — Here's How to Host One Securely on App Service]]></title>
         <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/only-8-5-of-mcp-servers-use-oauth-%E2%80%94-heres-how-to-host-one-securely-on-app-servic/4530349</id>
@@ -10939,32 +10995,6 @@ The post Introducing the Evals for Agent Interop starter kit appeared first on M
 In this blog, I'll walk through building a TOTP authenticator application using Azure's modern cloud services. Our solution demonstrates using Azure Functions for server-side operations with Azure Key Vault for secrets management. A bonus section covers integrati…]]></summary>
         <author>
             <name>StephenMS</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Surge protection gets smarter: introducing workspace-level controls (Preview)]]></title>
-        <id>surge-protection-gets-smarter-introducing-workspace-level-controls-preview</id>
-        <link href="https://blog.fabric.microsoft.com/en/blog/surge-protection-gets-smarter-introducing-workspace-level-controls-preview/"/>
-        <updated>2026-01-26T09:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Surge protection in Microsoft Fabric has been a key feature for managing capacity usage and preventing overload. Today, it helps you: Until now, surge protection applied only at the capacity level—meaning all workspaces shared the same rules. What’s new: workspace-level surge protection We’re taking surge protection to the next level with workspace-level controls. This update … 
-Continue reading “Surge protection gets smarter: introducing workspace-level controls (Preview)”]]></summary>
-        <author>
-            <name>Fabric Updates Blog articles</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Créer votre première application avec PowerApps]]></title>
-        <id>https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/cr%C3%A9er-votre-premi%C3%A8re-application-avec-powerapps/4439002</id>
-        <link href="https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/cr%C3%A9er-votre-premi%C3%A8re-application-avec-powerapps/4439002"/>
-        <updated>2026-01-26T06:27:25.000Z</updated>
-        <summary type="html"><![CDATA[De nos jours, créer une application n’est plus réservés uniquement qu’aux développeurs.
-Avec Microsoft Power Apps, tout le monde peut concevoir des applications d’entreprise professionnelles sans écrire une seule ligne de code. C’es la magie qu’on appelle le low-code / no-code. On peut construire une application en quelques minutes, gérer des données sur Excel, SharePoint ou Dataverse et aussi générer automatiquement l’application à partir d’une simple description avec l’aide de Copilot.
-Cet article est un guide pas à pas pour créer votre toute première application, sans aucune ligne de code.
- 
-Se connecter et démarrer
-D’abord vous devez accéder à Power apps. Si votre entreprise utilise Microsoft 365, vous avez probablement déjà accès a cette plateforme. Rendez-vous sur le site https://mak…]]></summary>
-        <author>
-            <name>Tchesco</name>
         </author>
     </entry>
 </feed>
