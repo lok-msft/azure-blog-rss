@@ -2,10 +2,24 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2026-06-27T03:33:18.512Z</updated>
+    <updated>2026-06-28T03:56:32.949Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Local-First and Fully Traced: Routing Between Ollama, Foundry Local, and Microsoft Foundry]]></title>
+        <id>https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/local-first-and-fully-traced-routing-between-ollama-foundry-local-and-microsoft-/4529694</id>
+        <link href="https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/local-first-and-fully-traced-routing-between-ollama-foundry-local-and-microsoft-/4529694"/>
+        <updated>2026-06-27T06:13:09.000Z</updated>
+        <summary type="html"><![CDATA[Part 4 of 5.
+
+If you publish an agent project today, you are caught between two forces. The interesting behaviour lives in the cloud - Foundry models, Foundry IQ retrieval, the Agent Service memory store. But the audience that decides whether your project matters - judges, students, engineers skimming GitHub at midnight - will give it exactly one git clone and five minutes. If the first run dies on a missing credential, the project is dead to them.
+This is the same tension Lee Stott opens his Hybrid AI Agents in Python post with - privacy, latency, and frontier capability pulling in different directions - and his answer is the one we adopted: route between tiers behind one contract. Every cloud arrow gets a keyless fallback with the same schema and code path.
+This post covers both halves o…]]></summary>
+        <author>
+            <name>Princeps</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[MCP for Beginners: Why Every AI Engineer and Developer Should Learn the Model Context Protocol]]></title>
         <id>https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/mcp-for-beginners-why-every-ai-engineer-and-developer-should-learn-the-model-con/4530623</id>
@@ -10808,121 +10822,6 @@ Abstract
 This article introduces Azure NetApp Files Elastic zone-redundant storage service level (Azure NetApp Files Elastic ZRS), a high-availability solution that synchronously replicates data across multiple Azure Availability Zones within a region. Leveraging Azure’s ZRS architecture to ensure zero data loss and minimal downtime by automatically redirecting traffic during outages while maintaining a single volume interface. Features include support for NFS/SMB protocols, snapshots, clones, encryption, and backups, providing seamless multi-AZ redundancy and operational simplicity. Real-world use cases include supporting mission-critical applications in sec…]]></summary>
         <author>
             <name>GeertVanTeylingen</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Workspace Outbound Access Protection for Data Factory and OneLake Shortcuts (Preview)]]></title>
-        <id>workspace-outbound-access-protection-for-data-factory</id>
-        <link href="https://blog.fabric.microsoft.com/en/blog/workspace-outbound-access-protection-for-data-factory/"/>
-        <updated>2026-01-29T15:00:00.000Z</updated>
-        <summary type="html"><![CDATA[We announced Outbound Access Protection for Spark (Generally Available) and recently extended it to support SQL Endpoint and Warehouse. Now, Pipelines, Copy job, Dataflows, OneLake Shortcuts as well as Mirrored Databases (such as Mirrored SQL Database, Mirrored Snowflake) support Workspace level Outbound Access Protection (Preview). Key Benefits What to expect with Outbound access protection (OAP) … 
-Continue reading “Workspace Outbound Access Protection for Data Factory and OneLake Shortcuts (Preview)”]]></summary>
-        <author>
-            <name>Fabric Updates Blog articles</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Dev Proxy v2.1 with configuration hot reload and stdio proxying]]></title>
-        <id>https://devblogs.microsoft.com/microsoft365dev/?p=25265</id>
-        <link href="https://devblogs.microsoft.com/microsoft365dev/dev-proxy-v2-1-with-configuration-hot-reload-and-stdio-proxying/"/>
-        <updated>2026-01-29T12:16:19.000Z</updated>
-        <summary type="html"><![CDATA[Introducing Dev Proxy v2.1 with configuration hot reload and stdio proxying
-The post Dev Proxy v2.1 with configuration hot reload and stdio proxying appeared first on Microsoft 365 Developer Blog.]]></summary>
-        <author>
-            <name>Waldek Mastykarz, Garry Trinder</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[On-premises data gateway January 2026 release]]></title>
-        <id>on-premises-data-gateway-january-2026-release</id>
-        <link href="https://blog.fabric.microsoft.com/en/blog/on-premises-data-gateway-january-2026-release/"/>
-        <updated>2026-01-29T10:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Here is the January 2026 release of the on-premises data gateway (version 3000.302).]]></summary>
-        <author>
-            <name>Fabric Updates Blog articles</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Introducing workspace-level IP Firewall rules in Microsoft Fabric (Preview)]]></title>
-        <id>introducing-workspace-level-ip-firewall-rules-in-microsoft-fabric-preview</id>
-        <link href="https://blog.fabric.microsoft.com/en/blog/introducing-workspace-level-ip-firewall-rules-in-microsoft-fabric-preview/"/>
-        <updated>2026-01-29T09:00:00.000Z</updated>
-        <summary type="html"><![CDATA[In today’s hyper-connected digital landscape, safeguarding sensitive data is more critical than ever. Microsoft Fabric already offers a robust suite of network security capabilities for both inbound and outbound connectivity, including Private Links, Entra Conditional Access and Outbound Access Protection, all generally available. As adoption of Microsoft Fabric continues to grow, customers increasingly operate in diverse scenarios … 
-Continue reading “Introducing workspace-level IP Firewall rules in Microsoft Fabric (Preview)”]]></summary>
-        <author>
-            <name>Fabric Updates Blog articles</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Exploring Traffic Manager Integration for External DNS]]></title>
-        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/exploring-traffic-manager-integration-for-external-dns/4485690</id>
-        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/exploring-traffic-manager-integration-for-external-dns/4485690"/>
-        <updated>2026-01-29T08:43:34.000Z</updated>
-        <summary type="html"><![CDATA[When you deploy externally accessible applications into Kubernetes, there is usually a requirement for creating some DNS records pointing to these applications, to allow your users to resolve them. Rather than manually creating these DNS records, there are tools that will do this work for you, one of which is External DNS.
-External DNS can watch your Kubernetes resource configuration for specific annotations and then use these to create DNS records in your DNS zone. It has integrations with many DNS providers, including Azure DNS. This solution works well and is in use by many customers using AKS and Azure DNS. Where we hit a limitation with External DNS in Azure is in scenarios where we are need to distribute traffic across multiple clusters for load balancing and global distribution.
-The…]]></summary>
-        <author>
-            <name>samcogan</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Building Interactive Agent UIs with AG-UI and Microsoft Agent Framework]]></title>
-        <id>https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/building-interactive-agent-uis-with-ag-ui-and-microsoft-agent-framework/4488249</id>
-        <link href="https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/building-interactive-agent-uis-with-ag-ui-and-microsoft-agent-framework/4488249"/>
-        <updated>2026-01-29T08:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Introduction
-Picture this: You've built an AI agent that analyzes financial data. A user uploads a quarterly report and asks: "What are the top three expense categories?" Behind the scenes, your agent parses the spreadsheet, aggregates thousands of rows, and generates visualizations. All in 20 seconds. But the user? They see a loading spinner. Nothing else. No "reading file" message, no "analyzing data" indicator, no hint that progress is being made. They start wondering: Is it frozen? Should I refresh?
-The problem isn't the agent's capabilities - it's the communication gap between the agent running on the backend and the user interface. When agents perform multi-step reasoning, call external APIs, or execute complex tool chains, users deserve to see what's happening. They need streaming u…]]></summary>
-        <author>
-            <name>pratikpanda</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Building Interactive Agent UIs with AG-UI and Microsoft Agent Framework]]></title>
-        <id>https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/building-interactive-agent-uis-with-ag-ui-and-microsoft-agent-framework/4488249</id>
-        <link href="https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/building-interactive-agent-uis-with-ag-ui-and-microsoft-agent-framework/4488249"/>
-        <updated>2026-01-29T08:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Introduction
-Picture this: You've built an AI agent that analyzes financial data. A user uploads a quarterly report and asks: "What are the top three expense categories?" Behind the scenes, your agent parses the spreadsheet, aggregates thousands of rows, and generates visualizations. All in 20 seconds. But the user? They see a loading spinner. Nothing else. No "reading file" message, no "analyzing data" indicator, no hint that progress is being made. They start wondering: Is it frozen? Should I refresh?
-The problem isn't the agent's capabilities - it's the communication gap between the agent running on the backend and the user interface. When agents perform multi-step reasoning, call external APIs, or execute complex tool chains, users deserve to see what's happening. They need streaming u…]]></summary>
-        <author>
-            <name>pratikpanda</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[From Ingress to Gateway API: A pragmatic path forward (and why it matters now)]]></title>
-        <id>https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/from-ingress-to-gateway-api-a-pragmatic-path-forward-and-why-it-matters-now/4489779</id>
-        <link href="https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/from-ingress-to-gateway-api-a-pragmatic-path-forward-and-why-it-matters-now/4489779"/>
-        <updated>2026-01-28T23:19:40.000Z</updated>
-        <summary type="html"><![CDATA[If you operate Kubernetes at scale, you've felt it: "Ingress YAML sprawl", annotation archaeology, and the creeping sense that your edge configuration is one upstream change away from becoming fragile. Over the last couple of years, the Kubernetes networking community has been steadily moving toward a clearer, more expressive model for north-south traffic management: Gateway API.
-That shift has accelerated recently for a very practical reason: Ingress NGINX (the community ingress-nginx controller) is on a retirement timeline. For many teams, that controller wasn't a "nice to have" - it was the default ingress path. Now, you have to make two decisions in short order:
-
-Pick a proxy / gateway implementation that you can run confidently for years.
-Learn Gateway API (or at least build a migrati…]]></summary>
-        <author>
-            <name>Jack Stromberg</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Introducing the Microsoft Graph User Configuration API (preview)]]></title>
-        <id>https://devblogs.microsoft.com/microsoft365dev/?p=25248</id>
-        <link href="https://devblogs.microsoft.com/microsoft365dev/introducing-the-microsoft-graph-user-configuration-api-preview/"/>
-        <updated>2026-01-28T18:59:42.000Z</updated>
-        <summary type="html"><![CDATA[The User Configuration API is now available in the beta endpoint in Microsoft Graph.  Use it to create, read, update, and delete user configuration objects in Exchange Online mail folders.
-The post Introducing the Microsoft Graph User Configuration API (preview) appeared first on Microsoft 365 Developer Blog.]]></summary>
-        <author>
-            <name>Cameron Parker</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Diagnosing instability in production-scale agent reinforcement learning]]></title>
-        <id>https://devblogs.microsoft.com/engineering-at-microsoft/?p=1233</id>
-        <link href="https://devblogs.microsoft.com/engineering-at-microsoft/diagnosing-instability-in-production-scale-agent-rl/"/>
-        <updated>2026-01-28T18:07:38.000Z</updated>
-        <summary type="html"><![CDATA[On January 28, 2026, Hugging Face announced that they have upstreamed the Post-Training Toolkit into TRL as a first-party integration, making these diagnostics directly usable in production RL and agent post-training pipelines. This enables closed-loop monitoring and control patterns that are increasingly necessary for long-running and continuously adapted agent systems. Documentation @ https://huggingface.co/docs/trl/main/en/ptt_integration. Overview In […]
-The post Diagnosing instability in production-scale agent reinforcement learning appeared first on Engineering@Microsoft.]]></summary>
-        <author>
-            <name>Aditya Challapally</name>
         </author>
     </entry>
 </feed>
