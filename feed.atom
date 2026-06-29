@@ -2,10 +2,44 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2026-06-28T03:56:32.949Z</updated>
+    <updated>2026-06-29T04:02:20.028Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Master the Command Line with GitHub Copilot CLI:]]></title>
+        <id>https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/master-the-command-line-with-github-copilot-cli/4531566</id>
+        <link href="https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/master-the-command-line-with-github-copilot-cli/4531566"/>
+        <updated>2026-06-28T11:26:35.000Z</updated>
+        <summary type="html"><![CDATA[If you are a student aiming to become an AI engineer or a software developer, the terminal is about to become your most powerful classroom. https://github.com/features/copilot/cli/ brings an AI agent directly into your command line, and its slash commands (typed as /something) are the shortcuts that unlock its real capabilities.
+The problem most students hit is simple: they install a powerful tool and then only ever use 10% of it. They type questions, get answers, and never discover the commands that turn Copilot CLI from a chatbot into a genuine pair programmer. This post fixes that. We will walk through the most useful slash commands, explain why you would reach for each one, and give you concrete student scenarios for every command.
+Why This Matters Now
+AI-assisted development is no lon…]]></summary>
+        <author>
+            <name>Lee_Stott</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Action Required: Migrate Your Copilot CLI MCP Config Away from .vscode/mcp.json]]></title>
+        <id>https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/action-required-migrate-your-copilot-cli-mcp-config-away-from-vscodemcp-json/4531562</id>
+        <link href="https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/action-required-migrate-your-copilot-cli-mcp-config-away-from-vscodemcp-json/4531562"/>
+        <updated>2026-06-28T11:01:53.000Z</updated>
+        <summary type="html"><![CDATA[If you use the GitHub Copilot CLI with Model Context Protocol (MCP) servers, you may have hit this message on launch:
+
+Copilot CLI's incomplete support for .vscode/mcp.json has been removed. See https://gh.io/copilotcli-mcpmigrate to migrate to .mcp.json or .github/mcp.json.
+
+This is a quick, one-time fix. Here's what changed, why, and exactly what you need to do.
+What Changed
+The Copilot CLI previously made a best-effort attempt to read .vscode/mcp.json, the file VS Code uses to define MCP servers. That support was incomplete, so it has been removed. The CLI now loads MCP servers only from its own dedicated files:
+
+.mcp.json in your project root (or working directory)
+.github/mcp.json in your repository
+
+Your .vscode/mcp.json file is not deleted and still works for VS Code. The CLI simply…]]></summary>
+        <author>
+            <name>Lee_Stott</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Local-First and Fully Traced: Routing Between Ollama, Foundry Local, and Microsoft Foundry]]></title>
         <id>https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/local-first-and-fully-traced-routing-between-ollama-foundry-local-and-microsoft-/4529694</id>
@@ -10722,106 +10756,6 @@ Today we’re sharing Azure Local LENS: a free, community-driven Azure Workbook 
 Get the workbook and step-by-step instructions to deploy it here: https:…]]></summary>
         <author>
             <name>Neil_Bird</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Fabric Influencers Spotlight January 2026]]></title>
-        <id>fabric-influencers-spotlight-january-2026</id>
-        <link href="https://blog.fabric.microsoft.com/en/blog/fabric-influencers-spotlight-january-2026/"/>
-        <updated>2026-01-30T09:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Welcome to the January 2026 edition of the Fabric Influencers Spotlight, a recurring monthly post here to shine a bright light on the places on the internet where Microsoft MVPs & Fabric Super Users are doing some amazing work on all aspects of Microsoft Fabric. The Microsoft Fabric Community team has created the Fabric Influencers Spotlight to … 
-Continue reading “Fabric Influencers Spotlight January 2026”]]></summary>
-        <author>
-            <name>Fabric Updates Blog articles</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Minimum Usage in Azure App Testing]]></title>
-        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/minimum-usage-in-azure-app-testing/4490658</id>
-        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/minimum-usage-in-azure-app-testing/4490658"/>
-        <updated>2026-01-30T06:56:43.000Z</updated>
-        <summary type="html"><![CDATA[Load testing is most effective when it closely mirrors real-world usage and when test infrastructure is used efficiently.
-We recently launched AI-assisted load test authoring which enables mirroring real-world usage. Today, we are taking another step for the efficient use of test infrastructure. Behind every load test run, there is dedicated infrastructure that needs to be provisioned, managed, and deprovisioned. Low-user or short-lived load test runs lead to inefficient use of test infrastructure. To keep the service cost-effective and ensure judicious use of test infrastructure, we are introducing a minimum usage per test run for load tests in Azure App Testing.
-Effective March 1, 2026, load tests in Azure App Testing will incur a minimum Virtual User Hours (VUH) charge per test run. For…]]></summary>
-        <author>
-            <name>Nikita_Nallamothu</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[🦞 Deploy OpenClaw to Azure Container Apps: Your 24/7 AI Assistant in 30 Minutes]]></title>
-        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/-deploy-openclaw-to-azure-container-apps-your-247-ai-assistant-in-30-minutes/4490611</id>
-        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/-deploy-openclaw-to-azure-container-apps-your-247-ai-assistant-in-30-minutes/4490611"/>
-        <updated>2026-01-30T00:06:37.000Z</updated>
-        <summary type="html"><![CDATA[🚀 The Quick Version: Create a Discord bot, clone the repo, run azd up, invite bot to server, start chatting. Total time: ~25 minutes. Total cost: ~$40-60/month.
-
-Why Azure Container Apps over other options?
-
-✅ Managed Identity - No credentials in config files
-✅ Built-in Secrets - API keys never exposed in logs
-✅ Automatic HTTPS - Free TLS certificates
-✅ Hyper-V Isolation - Hardware-level container security
-✅ Compliance Ready - SOC2, ISO, HIPAA certifications
-
-
-What is OpenClaw?
-If you've ever wanted a personal AI assistant that actually does things - not just answers questions - OpenClaw is for you. Created by Peter Steinberger and a growing open-source community, OpenClaw is a personal AI assistant that:
-
-
-CapabilityDescription
-
-Runs 24/7On your own infrastructure, always available
-Multi…]]></summary>
-        <author>
-            <name>dbandaru</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[🦞 Deploy MoltBot to Azure Container Apps: Your 24/7 AI Assistant in 30 Minutes]]></title>
-        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/-deploy-moltbot-to-azure-container-apps-your-247-ai-assistant-in-30-minutes/4490611</id>
-        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/-deploy-moltbot-to-azure-container-apps-your-247-ai-assistant-in-30-minutes/4490611"/>
-        <updated>2026-01-30T00:06:37.000Z</updated>
-        <summary type="html"><![CDATA[🚀 The Quick Version: Create a Discord bot, clone the repo, run azd up, invite bot to server, start chatting. Total time: ~25 minutes. Total cost: ~$40-60/month.
-
-Why Azure Container Apps over other options?
-
-✅ Managed Identity - No credentials in config files
-✅ Built-in Secrets - API keys never exposed in logs
-✅ Automatic HTTPS - Free TLS certificates
-✅ Hyper-V Isolation - Hardware-level container security
-✅ Compliance Ready - SOC2, ISO, HIPAA certifications
-
-
-🤖 What is MoltBot?
-If you've ever wanted a personal AI assistant that actually does things - not just answers questions - MoltBot is for you. Created by Peter Steinberger and a growing open-source community, MoltBot is a personal AI assistant that:
-
-
-CapabilityDescription
-
-🔄 Runs 24/7On your own infrastructure, always available
-💬…]]></summary>
-        <author>
-            <name>dbandaru</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Azure NetApp Files Elastic ZRS service level - File Storage High Availability Made Easy]]></title>
-        <id>https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/azure-netapp-files-elastic-zrs-service-level---file-storage-high-availability-ma/4484235</id>
-        <link href="https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/azure-netapp-files-elastic-zrs-service-level---file-storage-high-availability-ma/4484235"/>
-        <updated>2026-01-29T17:55:00.000Z</updated>
-        <summary type="html"><![CDATA[Table of Contents
-Abstract
-Introduction
-Why it matters
-How it works
-What are we enabling?
-Use Cases
-Conclusion
-Next steps
-Learn more
-Abstract
-This article introduces Azure NetApp Files Elastic zone-redundant storage service level (Azure NetApp Files Elastic ZRS), a high-availability solution that synchronously replicates data across multiple Azure Availability Zones within a region. Leveraging Azure’s ZRS architecture to ensure zero data loss and minimal downtime by automatically redirecting traffic during outages while maintaining a single volume interface. Features include support for NFS/SMB protocols, snapshots, clones, encryption, and backups, providing seamless multi-AZ redundancy and operational simplicity. Real-world use cases include supporting mission-critical applications in sec…]]></summary>
-        <author>
-            <name>GeertVanTeylingen</name>
         </author>
     </entry>
 </feed>

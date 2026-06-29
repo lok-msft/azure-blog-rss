@@ -2384,16 +2384,6 @@
           "wordCount": 1978,
           "title": "Mirroring Azure Databricks catalogs from Azure Databricks workspaces behind private endpoints (Generally Available)",
           "imageUrl": "https://blog.fabric.microsoft.com/images/shared/social/social-image-v2.png"
-        },
-        {
-          "id": "fabric-influencers-spotlight-january-2026",
-          "author": null,
-          "description": "Welcome to the January 2026 edition of the Fabric Influencers Spotlight, a recurring monthly post here to shine a bright light on the places on the internet where Microsoft MVPs & Fabric Super Users are doing some amazing work on all aspects of Microsoft Fabric. The Microsoft Fabric Community team has created the Fabric Influencers Spotlight to … \nContinue reading “Fabric Influencers Spotlight January 2026”",
-          "link": "https://blog.fabric.microsoft.com/en/blog/fabric-influencers-spotlight-january-2026/",
-          "publishedOn": "2026-01-30T09:00:00.000Z",
-          "wordCount": 2371,
-          "title": "Fabric Influencers Spotlight January 2026",
-          "imageUrl": "https://blog.fabric.microsoft.com/images/shared/social/social-image-v2.png"
         }
       ]
     },
@@ -2646,6 +2636,26 @@
       "feedUrl": "https://techcommunity.microsoft.com/t5/s/plugins/custom/microsoft/o365/custom-blog-rss?board=EducatorDeveloperBlog&size=100",
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
+        {
+          "id": "https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/master-the-command-line-with-github-copilot-cli/4531566",
+          "author": "Lee_Stott",
+          "description": "If you are a student aiming to become an AI engineer or a software developer, the terminal is about to become your most powerful classroom. https://github.com/features/copilot/cli/ brings an AI agent directly into your command line, and its slash commands (typed as /something) are the shortcuts that unlock its real capabilities.\nThe problem most students hit is simple: they install a powerful tool and then only ever use 10% of it. They type questions, get answers, and never discover the commands that turn Copilot CLI from a chatbot into a genuine pair programmer. This post fixes that. We will walk through the most useful slash commands, explain why you would reach for each one, and give you concrete student scenarios for every command.\nWhy This Matters Now\nAI-assisted development is no lon…",
+          "link": "https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/master-the-command-line-with-github-copilot-cli/4531566",
+          "publishedOn": "2026-06-28T11:26:35.000Z",
+          "wordCount": 8966,
+          "title": "Master the Command Line with GitHub Copilot CLI:",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTMxNTY2LWtiUVVlUQ?revision=1"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/action-required-migrate-your-copilot-cli-mcp-config-away-from-vscodemcp-json/4531562",
+          "author": "Lee_Stott",
+          "description": "If you use the GitHub Copilot CLI with Model Context Protocol (MCP) servers, you may have hit this message on launch:\n\nCopilot CLI's incomplete support for .vscode/mcp.json has been removed. See https://gh.io/copilotcli-mcpmigrate to migrate to .mcp.json or .github/mcp.json.\n\nThis is a quick, one-time fix. Here's what changed, why, and exactly what you need to do.\nWhat Changed\nThe Copilot CLI previously made a best-effort attempt to read .vscode/mcp.json, the file VS Code uses to define MCP servers. That support was incomplete, so it has been removed. The CLI now loads MCP servers only from its own dedicated files:\n\n.mcp.json in your project root (or working directory)\n.github/mcp.json in your repository\n\nYour .vscode/mcp.json file is not deleted and still works for VS Code. The CLI simply…",
+          "link": "https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/action-required-migrate-your-copilot-cli-mcp-config-away-from-vscodemcp-json/4531562",
+          "publishedOn": "2026-06-28T11:01:53.000Z",
+          "wordCount": 6629,
+          "title": "Action Required: Migrate Your Copilot CLI MCP Config Away from .vscode/mcp.json",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTMxNTYyLXFZRGtUWg?revision=2"
+        },
         {
           "id": "https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/local-first-and-fully-traced-routing-between-ollama-foundry-local-and-microsoft-/4529694",
           "author": "Princeps",
@@ -4802,36 +4812,6 @@
           "wordCount": 14068,
           "title": "Serverless GPU Tutorial: Build an AI Image Generator with Azure Functions on Container Apps",
           "imageUrl": null
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/minimum-usage-in-azure-app-testing/4490658",
-          "author": "Nikita_Nallamothu",
-          "description": "Load testing is most effective when it closely mirrors real-world usage and when test infrastructure is used efficiently.\nWe recently launched AI-assisted load test authoring which enables mirroring real-world usage. Today, we are taking another step for the efficient use of test infrastructure. Behind every load test run, there is dedicated infrastructure that needs to be provisioned, managed, and deprovisioned. Low-user or short-lived load test runs lead to inefficient use of test infrastructure. To keep the service cost-effective and ensure judicious use of test infrastructure, we are introducing a minimum usage per test run for load tests in Azure App Testing.\nEffective March 1, 2026, load tests in Azure App Testing will incur a minimum Virtual User Hours (VUH) charge per test run. For…",
-          "link": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/minimum-usage-in-azure-app-testing/4490658",
-          "publishedOn": "2026-01-30T06:56:43.000Z",
-          "wordCount": 7847,
-          "title": "Minimum Usage in Azure App Testing",
-          "imageUrl": null
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/-deploy-openclaw-to-azure-container-apps-your-247-ai-assistant-in-30-minutes/4490611",
-          "author": "dbandaru",
-          "description": "🚀 The Quick Version: Create a Discord bot, clone the repo, run azd up, invite bot to server, start chatting. Total time: ~25 minutes. Total cost: ~$40-60/month.\n\nWhy Azure Container Apps over other options?\n\n✅ Managed Identity - No credentials in config files\n✅ Built-in Secrets - API keys never exposed in logs\n✅ Automatic HTTPS - Free TLS certificates\n✅ Hyper-V Isolation - Hardware-level container security\n✅ Compliance Ready - SOC2, ISO, HIPAA certifications\n\n\nWhat is OpenClaw?\nIf you've ever wanted a personal AI assistant that actually does things - not just answers questions - OpenClaw is for you. Created by Peter Steinberger and a growing open-source community, OpenClaw is a personal AI assistant that:\n\n\nCapabilityDescription\n\nRuns 24/7On your own infrastructure, always available\nMulti…",
-          "link": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/-deploy-openclaw-to-azure-container-apps-your-247-ai-assistant-in-30-minutes/4490611",
-          "publishedOn": "2026-01-30T00:06:37.000Z",
-          "wordCount": 10859,
-          "title": "🦞 Deploy OpenClaw to Azure Container Apps: Your 24/7 AI Assistant in 30 Minutes",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDkwNjExLU5pZkJPOQ?revision=5"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/-deploy-moltbot-to-azure-container-apps-your-247-ai-assistant-in-30-minutes/4490611",
-          "author": "dbandaru",
-          "description": "🚀 The Quick Version: Create a Discord bot, clone the repo, run azd up, invite bot to server, start chatting. Total time: ~25 minutes. Total cost: ~$40-60/month.\n\nWhy Azure Container Apps over other options?\n\n✅ Managed Identity - No credentials in config files\n✅ Built-in Secrets - API keys never exposed in logs\n✅ Automatic HTTPS - Free TLS certificates\n✅ Hyper-V Isolation - Hardware-level container security\n✅ Compliance Ready - SOC2, ISO, HIPAA certifications\n\n\n🤖 What is MoltBot?\nIf you've ever wanted a personal AI assistant that actually does things - not just answers questions - MoltBot is for you. Created by Peter Steinberger and a growing open-source community, MoltBot is a personal AI assistant that:\n\n\nCapabilityDescription\n\n🔄 Runs 24/7On your own infrastructure, always available\n💬…",
-          "link": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/-deploy-moltbot-to-azure-container-apps-your-247-ai-assistant-in-30-minutes/4490611",
-          "publishedOn": "2026-01-30T00:06:37.000Z",
-          "wordCount": 19323,
-          "title": "🦞 Deploy MoltBot to Azure Container Apps: Your 24/7 AI Assistant in 30 Minutes",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDkwNjExLU5pZkJPOQ?revision=1"
         }
       ]
     },
@@ -6653,16 +6633,6 @@
           "wordCount": 9002,
           "title": "Azure Local LENS workbook—deep insights at scale, in minutes",
           "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDkwNjA4LVRPdnJsMQ?revision=13"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/azure-netapp-files-elastic-zrs-service-level---file-storage-high-availability-ma/4484235",
-          "author": "GeertVanTeylingen",
-          "description": "Table of Contents\nAbstract\nIntroduction\nWhy it matters\nHow it works\nWhat are we enabling?\nUse Cases\nConclusion\nNext steps\nLearn more\nAbstract\nThis article introduces Azure NetApp Files Elastic zone-redundant storage service level (Azure NetApp Files Elastic ZRS), a high-availability solution that synchronously replicates data across multiple Azure Availability Zones within a region. Leveraging Azure’s ZRS architecture to ensure zero data loss and minimal downtime by automatically redirecting traffic during outages while maintaining a single volume interface. Features include support for NFS/SMB protocols, snapshots, clones, encryption, and backups, providing seamless multi-AZ redundancy and operational simplicity. Real-world use cases include supporting mission-critical applications in sec…",
-          "link": "https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/azure-netapp-files-elastic-zrs-service-level---file-storage-high-availability-ma/4484235",
-          "publishedOn": "2026-01-29T17:55:00.000Z",
-          "wordCount": 15904,
-          "title": "Azure NetApp Files Elastic ZRS service level - File Storage High Availability Made Easy",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDg0MjM1LWVsM1RhYw?revision=5"
         }
       ]
     },
