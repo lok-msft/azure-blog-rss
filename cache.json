@@ -4722,26 +4722,6 @@
           "wordCount": 11027,
           "title": "How Azure SRE Agent Can Investigate Resources in a Private Network",
           "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDk0OTExLVZBYnE5dA?revision=3"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/azure-waf-compliance-with-mcp-driven-sre-agent/4494687",
-          "author": "varghesejoji",
-          "description": "Azure governance at scale is complex. Security teams manually review many resource types across multiple subscriptions. Finance can't track costs without tags. Compliance teams spend days cross-referencing WAF standards against actual infrastructure. And critical security gaps - like RDP open to 0.0.0.0/0 or customer-managed encryption disabled - slip through until discovered in audits.\nThis workflow is broken. Enter the Azure SRE Agent: an AI-powered compliance engine that discovers all resources, assesses them against all 5 WAF pillars AND your organization's specific standards in minutes, then generates exact remediation commands with quantified impact.\nHow it works:\nThe agent leverages these capabilities to transform Azure governance:\nAutonomous Resource Discovery via MCP - Azure MCP (…",
-          "link": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/azure-waf-compliance-with-mcp-driven-sre-agent/4494687",
-          "publishedOn": "2026-02-12T23:13:16.000Z",
-          "wordCount": 11658,
-          "title": "Azure WAF Compliance with MCP-Driven SRE Agent",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDk0Njg3LUNwQTl6TA?revision=3"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/mcp-driven-azure-sre-for-databricks/4494630",
-          "author": "varghesejoji",
-          "description": "Azure SRE Agent is an AI-powered operations assistant built for incident response and governance. MCP (Model Context Protocol) is the standard interface it uses to connect to external systems and tools.\nAzure SRE Agent integrates with Azure Databricks through the Model Context Protocol (MCP) to provide:\n\nProactive Compliance - Automated best practice validation\nReactive Troubleshooting - Root cause analysis and remediation for job failures\n\nThis post demonstrates both capabilities with real examples.\nArchitecture\n\nThe Azure SRE Agent orchestrates Ops Skills and Knowledge Base prompts, then calls the Databricks MCP server over HTTPS. The MCP server translates those requests into Databricks REST API calls, returns structured results, and the agent composes findings, evidence, and remediation…",
-          "link": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/mcp-driven-azure-sre-for-databricks/4494630",
-          "publishedOn": "2026-02-12T16:53:41.000Z",
-          "wordCount": 9174,
-          "title": "MCP-Driven Azure SRE for Databricks",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDk0NjMwLWJvSE5BdQ?revision=3"
         }
       ]
     },
@@ -6155,6 +6135,16 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/the-ai-agent-lifecycle-a-simple-guide/4535729",
+          "author": "supriyas",
+          "description": "The Bigger Picture\nBuilding an AI agent is fundamentally different from building traditional software.\nWith a website or application, teams typically design, develop, test, and release. Once deployed, the focus shifts primarily to maintenance and feature enhancements. AI agents operate differently. They don't just execute predefined instructions they interpret information, reason, and make decisions.\nIn banking, those decisions can influence customer experiences, operational efficiency, compliance outcomes, and risk management. As a result, deploying an AI agent is not the finish line; it's the beginning of an ongoing process of learning, monitoring, and improvement.\nThe lifecycle of an enterprise AI agent reflects this reality.\n \n\n \nStage 1 —> Design: Decide What It Can and Cannot Do\nBefo…",
+          "link": "https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/the-ai-agent-lifecycle-a-simple-guide/4535729",
+          "publishedOn": "2026-07-13T00:52:49.000Z",
+          "wordCount": null,
+          "title": "The AI Agent Lifecycle: A Simple Guide",
+          "imageUrl": null
+        },
+        {
           "id": "https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/beyond-the-canvas-the-azure-architecture-diagram-builder-becomes-agent-ready/4534590",
           "author": "arturoqu",
           "description": "AZURE ARCHITECTURE BLOG · 8 MIN READ\nAuthor: Arturo Quiroga, Senior Partner Solutions Architect — Microsoft\n\nTwo months ago I published From Prompt to Production: Building Azure Architecture Diagrams with AI, introducing the open-source Azure Architecture Diagram Builder. The response was humbling — thousands of you read it, tried the tool, and filed issues and feature requests. A follow-up on how the Well-Architected Framework scoring works went deep on validation.\nYou asked, and the tool grew. This post is about what’s new since May — and one change big enough to reframe the whole project: the Azure Architecture Diagram Builder is no longer just an app you click. It’s a partner you chat with, and a tool other agents can call.\n\nTL;DR. Three arcs of new capability: (1) Architecture Chat tu…",
@@ -6810,16 +6800,6 @@
           "wordCount": 14361,
           "title": "AI with Zero Trust Security",
           "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDk1NDQ1LVlPS1ZnOA?revision=2"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/MicrosoftMechanicsBlog/microsoft-entra-agent-id-explained/4494408",
-          "author": "Zachary-Cavanell",
-          "description": "See every agent in one place, understand what it can access, detect agent sprawl early, and apply least-privilege permissions using the same Microsoft Entra tools you already use for users — without introducing new governance models.\nApprove and scope agent access with accountability, enforce agent-specific Conditional Access in real time, automatically block risky behavior, and ensure every agent always has an owner, even as people change roles or leave.\nLeandro Iwase, Microsoft Entra Senior Product Manager shows how to keep agents operating securely, transparently, and predictably across their entire lifecycle.\nAI agents get real identities.\n\nSee how to apply permissions, protections, and policies. Treat agents like human users with Microsoft Entra Agent ID.\nGain full visibility for each…",
-          "link": "https://techcommunity.microsoft.com/blog/MicrosoftMechanicsBlog/microsoft-entra-agent-id-explained/4494408",
-          "publishedOn": "2026-02-12T19:13:02.000Z",
-          "wordCount": 13415,
-          "title": "Microsoft Entra Agent ID explained",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDk0NDA4LWRObnpsNg?revision=1"
         }
       ]
     },
@@ -6957,26 +6937,6 @@
           "wordCount": 11414,
           "title": "Migrating Workloads from AWS to Azure: A Structured Approach for Cloud Architects",
           "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDk1MjI3LUFnNzZSYw?revision=3"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AzureMigrationBlog/modernizing-for-the-ai-era-accelerating-application-transformation-with-agentic-/4490596",
-          "author": "MarcoB",
-          "description": "Organizations are entering a new phase of digital transformation where AI is not simply an enhancement—it is a fundamental change in how applications are designed, delivered, and operated. Yet many companies still rely on aging, monolithic, or poorly documented applications that were never built to work in an AI‑driven, cloud‑optimized world. Modernization is no longer optional; it is the prerequisite to participating in the next generation of intelligent app development.\nThe data underscores this urgency. McKinsey estimates that organizations lose up to $85 billion annually due to delayed modernization and accumulated technical debt.⁽¹⁾ Gartner reports that 40% of developer time is consumed maintaining legacy systems instead of building new capabilities.⁽²⁾ IDC notes that up to 66% of IT …",
-          "link": "https://techcommunity.microsoft.com/blog/AzureMigrationBlog/modernizing-for-the-ai-era-accelerating-application-transformation-with-agentic-/4490596",
-          "publishedOn": "2026-02-12T23:41:09.000Z",
-          "wordCount": 9466,
-          "title": "Modernizing for the AI Era: Accelerating Application Transformation with Agentic Tools",
-          "imageUrl": null
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AzureMigrationBlog/azure-landing-zone-and-compliance-for-banks-indian-banks/4491951",
-          "author": "srhulsus",
-          "description": "1.     Azure Landing Zone for Banks\nAzure Landing Zone (ALZ) is a predefined, policy-driven cloud foundation that enables banks to securely host regulated workloads while meeting governance, security, audit, and compliance mandates.\nCore ALZ Principles\n\nSubscription isolation by environment and risk tier\nCentralized identity and access management\nHub-and-Spoke network architecture\nSecurity-by-default with Zero Trust\nPolicy-as-code enforcement\nFull auditability and traceability\n\n2. Reference Architecture (Banking Grade)\nManagement Group Hierarchy\n\nRoot Management Group (Bank)\nPlatform MG\n\no   Connectivity Subscription\no   Security Subscription\no   Management Subscription\n\nLanding Zone MG\n\no   Production Subscriptions\no   Non-Production Subscriptions\no   DR Subscriptions\nCompliance Value: En…",
-          "link": "https://techcommunity.microsoft.com/blog/AzureMigrationBlog/azure-landing-zone-and-compliance-for-banks-indian-banks/4491951",
-          "publishedOn": "2026-02-12T23:41:04.000Z",
-          "wordCount": 8012,
-          "title": "Azure Landing Zone and compliance for Banks (Indian Banks)",
-          "imageUrl": null
         }
       ]
     },
@@ -7439,16 +7399,6 @@
           "wordCount": 8118,
           "title": "Meet the First Round of Speakers for Microsoft JDConf 2026",
           "imageUrl": "https://devblogs.microsoft.com/java/wp-content/uploads/sites/51/2026/02/jdconf-lineup-first-round.webp"
-        },
-        {
-          "id": "https://devblogs.microsoft.com/java/?p=232821",
-          "author": "Ayan Gupta",
-          "description": "Java developers face a tough trifecta: keeping mission-critical systems running, modernizing legacy apps, and weaving AI into real engineering workflows, all without increasing risk. At DevNexus 2026, the Microsoft Java team is tackling these challenges head-on.  This year’s DevNexus agenda reflects where the Java ecosystem is heading. With dedicated tracks for AI Engineering, Generative AI, and AI […]\nThe post Microsoft at DevNexus 2026: Practical AI for Real-World Java Development appeared first on Microsoft for Java Developers.",
-          "link": "https://devblogs.microsoft.com/java/microsoft-at-devnexus-2026-practical-ai-for-real-world-java-development/",
-          "publishedOn": "2026-02-12T21:01:50.000Z",
-          "wordCount": 8159,
-          "title": "Microsoft at DevNexus 2026: Practical AI for Real-World Java Development",
-          "imageUrl": "https://devblogs.microsoft.com/java/wp-content/uploads/sites/51/2026/02/Devnexus-Workshop.webp"
         }
       ]
     },
@@ -8108,16 +8058,6 @@
           "wordCount": 7555,
           "title": "Increased control over Office Add-in user experiences",
           "imageUrl": "https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2026/02/auto-open-blog-featured-image.webp"
-        },
-        {
-          "id": "https://devblogs.microsoft.com/microsoft365dev/?p=25292",
-          "author": "Paolo Pialorsi",
-          "description": "Introduction The SharePoint Framework (SPFx) has undergone some important changes in how it handles Entra ID app registration and security models. Here you can find additional details about what was updated and about the new application IDs used by SPFx. These changes have important implications for developers who previously relied on legacy user settings stored […]\nThe post Handling Legacy User Settings in SharePoint Framework appeared first on Microsoft 365 Developer Blog.",
-          "link": "https://devblogs.microsoft.com/microsoft365dev/handling-legacy-user-settings-in-sharepoint-framework/",
-          "publishedOn": "2026-02-12T18:25:13.000Z",
-          "wordCount": 8332,
-          "title": "Handling Legacy User Settings in SharePoint Framework",
-          "imageUrl": "https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2026/02/Handling-Legacy-User-Settings-in-SharePoint-Framework.webp"
         }
       ]
     }
