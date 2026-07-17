@@ -3184,6 +3184,26 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/mcp-enterprise-authorization-is-here-%E2%80%94-what-entra-and-app-service-can-do-today/4537433",
+          "author": "jordanselig",
+          "description": "A few weeks ago I wrote about what the latest MCP changes meant for scaling on Azure App Service. This time, the protocol change is about a different kind of scale: how an enterprise connects hundreds or thousands of employees to MCP servers without making every person authorize every server one at a time.\nEnterprise-Managed Authorization (EMA) is now a stable MCP extension. It makes the organization's identity provider the policy decision point, replaces repeated server-by-server browser prompts with an identity assertion grant, and gives security teams a central place to grant and revoke access.\nThat sounds a lot like Microsoft Entra preauthorization and App Service Authentication. But while building the sample for this post, I found an important distinction:\n\nA centrally governed OAuth …",
+          "link": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/mcp-enterprise-authorization-is-here-%E2%80%94-what-entra-and-app-service-can-do-today/4537433",
+          "publishedOn": "2026-07-16T14:31:39.000Z",
+          "wordCount": 11191,
+          "title": "MCP Enterprise Authorization Is Here — What Entra and App Service Can Do Today",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTM3NDMzLTB4ZllRTQ?revision=6"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/how-microsoft-365-built-a-platform-engineering-layer-on-aks-to-ship-faster-at-gl/4537523",
+          "author": "Suma SaganeGowda",
+          "description": "Challenge: Scaling success without increasing complexity  \nMicrosoft 365 runs a broad portfolio of services across global and sovereign clouds. At that scale, the platform has to do more than schedule workloads. It has to enforce security boundaries, meet enterprise compliance requirements, and support reliable change management across every service that runs on it. \nWithout a shared foundation, each service team ended up solving the same problems on its own: how to provision correctly, deploy safely, meet policy requirements, and stay resilient as traffic and complexity grew. That slowed teams down and produced unnecessary variation in how services were built and operated. \nWhat Microsoft 365 needed was a hosting experience that could absorb operational complexity centrally so product tea…",
+          "link": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/how-microsoft-365-built-a-platform-engineering-layer-on-aks-to-ship-faster-at-gl/4537523",
+          "publishedOn": "2026-07-16T05:00:13.000Z",
+          "wordCount": 9904,
+          "title": "How Microsoft 365 built a platform engineering layer on AKS to ship faster at global scale",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTM3NTIzLWRvdUlxOA?revision=3"
+        },
+        {
           "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/give-your-ai-agent-two-memories-with-azure-app-service/4537400",
           "author": "jordanselig",
           "description": "Agents feel continuous only when they can operate across two very different time horizons. They need the recent turns that make the current conversation coherent, and they need a smaller set of durable facts that can follow an authenticated user into a new conversation.\nThis sample implements both horizons on Azure App Service with Microsoft Agent Framework, Azure Managed Redis, Azure Cosmos DB for NoSQL vector search, and Azure OpenAI. It is deployed and available as a complete reference implementation with a browser UI, deterministic local mode, tests, Bicep, and Azure Developer CLI support.\nSample: github.com/seligj95/app-service-agent-memory\nWhy one memory store is not enough\nConversation history is ordered, session-specific, frequently updated, and naturally short-lived. The agent nee…",
@@ -4781,6 +4801,16 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/blog/MessagingonAzureBlog/announcing-public-preview-of-autoscale-for-azure-event-grid-namespaces/4537851",
+          "author": "Pritha_Das",
+          "description": "Today we are pleased to announce the public preview of Autoscale for Azure Event Grid namespaces. With this capability, an Event Grid namespace in the Standard tier automatically adjusts its throughput unit (TU) allocation in response to real-time workload utilization. This removes the need to manually provision capacity ahead of traffic changes or react to throttling after the fact.\nHow Autoscale fits with existing capacity management \nEvent Grid namespaces already provide control over capacity through throughput units. Each Throughput Unit defines a fixed rate of event ingress, event egress, MQTT publish, and MQTT client connections. Until now, customers set the Throughput Unit count at namespace creation and adjusted it manually when traffic patterns changed. \nAutoscale builds on this m…",
+          "link": "https://techcommunity.microsoft.com/blog/MessagingonAzureBlog/announcing-public-preview-of-autoscale-for-azure-event-grid-namespaces/4537851",
+          "publishedOn": "2026-07-16T16:09:51.000Z",
+          "wordCount": 7512,
+          "title": "Announcing Public Preview of Autoscale for Azure Event Grid Namespaces",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTM3ODUxLXJpU2ZHYw?revision=1"
+        },
+        {
           "id": "https://techcommunity.microsoft.com/blog/MessagingonAzureBlog/a-message-broker-is-only-as-reliable-as-the-layer-you-stopped-at/4533259",
           "author": "EldertGrootenboer",
           "description": "Reliability is easy to reduce to a single number. You find the SLA, you put it on a slide, and you move on. But a service-level agreement describes an outcome, not the set of decisions that produce it. The same Azure Service Bus namespace can keep running when a single server fails, survive the loss of an entire datacenter, or stay available through a regional outage, and which of those is true depends on choices you make, not on a percentage you read. Reliability is a stack of layers you compose to fit the workload, and the only real mistake is stopping at a layer below what the workload needs.\nThat framing matters because the failures you are protecting against are not all the same size. A single host can fail. A whole availability zone can lose power. An entire region can go dark in a w…",
@@ -4956,6 +4986,16 @@
       "feedUrl": "https://techcommunity.microsoft.com/t5/s/plugins/custom/microsoft/o365/custom-blog-rss?board=AzureObservabilityBlog&size=50",
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
+        {
+          "id": "https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/understanding-billing-for-the-azure-copilot-observability-agent/4537780",
+          "author": "Noa Kuperberg",
+          "description": "The Azure Copilot Observability Agent brings an agentic investigation experience directly into Azure Monitor. Teams can chat with their observability data, run deep investigations across application and infrastructure signals, and, in preview, use autonomous operations to correlate alerts and create issues for review. The common thread across these experiences is that the agent performs AI work on behalf of the user or configured workflow, and that work has a cost. Azure Copilot Observability Agent billing went into effect July 1, 2026.\nThis post explains the billing model at a practical level: what is measured, which agent operations are billable today, how usage appears to users, and how this differs from the standard Azure Monitor costs customers already manage for telemetry ingestion, …",
+          "link": "https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/understanding-billing-for-the-azure-copilot-observability-agent/4537780",
+          "publishedOn": "2026-07-16T13:15:47.000Z",
+          "wordCount": 8240,
+          "title": "Understanding billing for the Azure Copilot Observability Agent",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTM3NzgwLWF5TzRXdw?revision=3"
+        },
         {
           "id": "https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/public-preview-advanced-platform-metrics-in-azure-monitor/4536983",
           "author": "alyssaschimm",
@@ -6632,6 +6672,16 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/blog/MicrosoftMechanicsBlog/microsoft-entra-suite-hands-on-tour-of-identity-and-network-access-protections/4537379",
+          "author": "Zachary-Cavanell",
+          "description": "Enforce least privilege access across every app and resource. Wire lifecycle workflows directly to your HR system to strip stale permissions on role changes, gate sensitive data behind biometric step-up verification, and replace your VPN with per-app, identity-scoped access that revokes tokens the moment risk spikes. Secure AI usage at every layer. Block confidential data from reaching public AI tools and stop adversarial prompt injections before your agents process them. \nJohn Damon, Microsoft Entra Suite Senior Product Manager, shares how to lock down identity, network access, and AI usage from a single control plane.\nZero stale permissions after a role change. \n\nEntra Suite lifecycle workflows auto-assign the right access package and remove old entitlements. Check it out.\nCut legacy VPN…",
+          "link": "https://techcommunity.microsoft.com/blog/MicrosoftMechanicsBlog/microsoft-entra-suite-hands-on-tour-of-identity-and-network-access-protections/4537379",
+          "publishedOn": "2026-07-16T13:22:33.000Z",
+          "wordCount": 11044,
+          "title": "Microsoft Entra Suite hands-on tour of identity and network access protections",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTM3Mzc5LUVRd2Z1WA?revision=1"
+        },
+        {
           "id": "https://techcommunity.microsoft.com/blog/MicrosoftMechanicsBlog/new-agentic-platform-in-dynamics-365-for-sales-and-service/4536953",
           "author": "Zachary-Cavanell",
           "description": "Ask a question and pull a grounded answer straight from your CRM and your calendar. Hand a prompt to Copilot Cowork and walk away with updated records, a finished presentation, and a drafted email, ready before your next meeting. Auto-fill a case description as you work, and walk into every quality review already scored against your team’s framework. \nEric Boocock, Dynamics 365 Principal Program Manager, shares how these agents move with you from first prospect touch to case resolution, right inside the apps you work in every day. Along the way, he explains the mechanics of how everything works and your options to customize the experience with your own skills and instructions.\nFlag risks. Surface next steps. \n\nThe Sales Qualification and Sales Opportunity Agents in Dynamics 365 turn raw le…",
@@ -7792,16 +7842,6 @@
             "type": "video/mp4"
           },
           "imageUrl": "https://devblogs.microsoft.com/devops/wp-content/uploads/sites/6/2026/02/tfvc-tn.webp"
-        },
-        {
-          "id": "https://devblogs.microsoft.com/devops/?p=72437",
-          "author": "Dan Hellem",
-          "description": "One of the challenges teams face when working with large boards or displaying multiple fields on work item cards is limited screen space. This became even more noticeable with the rollout of the New Boards hub, which introduced additional spacing and padding for improved readability. While this enhances clarity, it can also reduce the number […]\nThe post Condensed views on Kanban and Sprint boards appeared first on Azure DevOps Blog.",
-          "link": "https://devblogs.microsoft.com/devops/condensed-views-on-kanban-and-sprint-boards/",
-          "publishedOn": "2026-02-16T20:53:30.000Z",
-          "wordCount": 6983,
-          "title": "Condensed views on Kanban and Sprint boards",
-          "imageUrl": "https://devblogs.microsoft.com/devops/wp-content/uploads/sites/6/2026/02/tn.webp"
         }
       ]
     },
@@ -7827,6 +7867,16 @@
       "feedUrl": "https://cloudblogs.microsoft.com/opensource/feed/",
       "siteUrl": "https://opensource.microsoft.com/blog/",
       "articles": [
+        {
+          "id": "https://opensource.microsoft.com/blog/?p=98760",
+          "author": "Robert Standefer and Scott Hanselman",
+          "description": "Microsoft Comic Chat, the pioneering IRC client that transformed conversations into comic-book panels and introduced Comic Sans to the world, is now open source. Explore the source code behind one of Microsoft's most memorable internet-era experiments.\nThe post Microsoft Comic Chat is now open source appeared first on Microsoft Open Source Blog.",
+          "link": "https://opensource.microsoft.com/blog/2026/07/16/microsoft-comic-chat-is-now-open-source/",
+          "publishedOn": "2026-07-16T15:00:00.000Z",
+          "wordCount": 6076,
+          "title": "Microsoft Comic Chat is now open source",
+          "imageUrl": "https://opensource.microsoft.com/blog/wp-content/uploads/2026/07/Microsoft365-FY26-Consumer-C2-ArtStudio-2749-RGB-scaled.jpg"
+        },
         {
           "id": "https://opensource.microsoft.com/blog/2026/06/17/whats-new-with-microsoft-in-open-source-and-kubernetes-at-open-source-summit-and-kubecon-india/",
           "author": "Sean McKenna",
@@ -7924,6 +7974,16 @@
       "feedUrl": "https://devblogs.microsoft.com/microsoft365dev/feed/",
       "siteUrl": "https://devblogs.microsoft.com/microsoft365dev/",
       "articles": [
+        {
+          "id": "https://devblogs.microsoft.com/microsoft365dev/?p=25758",
+          "author": "Office Extensibility team",
+          "description": "Unified manifest support for Word, Excel, PowerPoint, and Outlook makes it possible for developers to build a single app that works across Microsoft 365 apps, creating a more consistent experience for users and a simpler deployment model for IT admins.\nThe post Build Once, Run Everywhere: Unified Manifest for Office Add-Ins now Generally Available appeared first on Microsoft 365 Developer Blog.",
+          "link": "https://devblogs.microsoft.com/microsoft365dev/unified-manifest-for-office-add-ins-now-ga/",
+          "publishedOn": "2026-07-17T00:00:07.000Z",
+          "wordCount": 7205,
+          "title": "Build Once, Run Everywhere: Unified Manifest for Office Add-Ins now Generally Available",
+          "imageUrl": "https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2025/12/default-image.webp"
+        },
         {
           "id": "https://devblogs.microsoft.com/microsoft365dev/?p=25957",
           "author": "Joey Glocke",
