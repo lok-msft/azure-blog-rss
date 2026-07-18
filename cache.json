@@ -3184,6 +3184,16 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/microsoft-foundry-now-has-an-ai-gateway-control-plane-%E2%80%94-what-changes-for-app-ser/4538320",
+          "author": "jordanselig",
+          "description": "In May, I published a runnable sample that put Azure API Management in front of an AI agent on Azure App Service. APIM handled token limits, semantic caching, token metrics, and access to the model. The point was simple: keep the agent framework interchangeable and put the production controls at the gateway.\nA recent Apps on Azure post, From AI Adoption to AI Governance, arrived at the same architectural conclusion from a platform-governance angle. It uses APIM to turn model identity and token consumption into a per-model chargeback signal for Microsoft Foundry workloads.\nThat is useful validation, but the more interesting update is in the product itself: Microsoft Foundry can now create or associate an APIM-based AI Gateway directly from its Admin console. The data path is still APIM. Wha…",
+          "link": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/microsoft-foundry-now-has-an-ai-gateway-control-plane-%E2%80%94-what-changes-for-app-ser/4538320",
+          "publishedOn": "2026-07-17T17:04:16.000Z",
+          "wordCount": null,
+          "title": "Microsoft Foundry Now Has an AI Gateway Control Plane — What Changes for App Service",
+          "imageUrl": null
+        },
+        {
           "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/mcp-enterprise-authorization-is-here-%E2%80%94-what-entra-and-app-service-can-do-today/4537433",
           "author": "jordanselig",
           "description": "A few weeks ago I wrote about what the latest MCP changes meant for scaling on Azure App Service. This time, the protocol change is about a different kind of scale: how an enterprise connects hundreds or thousands of employees to MCP servers without making every person authorize every server one at a time.\nEnterprise-Managed Authorization (EMA) is now a stable MCP extension. It makes the organization's identity provider the policy decision point, replaces repeated server-by-server browser prompts with an identity assertion grant, and gives security teams a central place to grant and revoke access.\nThat sounds a lot like Microsoft Entra preauthorization and App Service Authentication. But while building the sample for this post, I found an important distinction:\n\nA centrally governed OAuth …",
@@ -4782,16 +4792,6 @@
           "wordCount": 10065,
           "title": "Get started with Elasticsearch MCP server in Azure SRE Agent",
           "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDkyODk2LTdUMzk1Zw?revision=4"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/how-azure-sre-agent-can-investigate-resources-in-a-private-network/4494911",
-          "author": "dbandaru",
-          "description": "⚠️ Important Note on Network Communication: In this pattern, Azure SRE Agent communicates over the public network to reach the Azure Function proxy. The proxy endpoint is secured with Easy Auth (Microsoft Entra ID) and only authenticated callers can invoke it. We are also actively working on enabling SRE Agent to be injected directly into private networks, which will eliminate the need for a public proxy altogether. Stay tuned for updates on private network injection support.\n\nTL;DR\nWhen you configure Azure Monitor Private Link Scope (AMPLS) with publicNetworkAccessForQuery: Disabled, all public queries to your Log Analytics Workspace are blocked. To enable Azure SRE Agent to query these protected workspaces, deploy Azure Functions inside your VNet as a secure query proxy.\n\nWhat We Built: …",
-          "link": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/how-azure-sre-agent-can-investigate-resources-in-a-private-network/4494911",
-          "publishedOn": "2026-02-17T23:01:58.000Z",
-          "wordCount": 11027,
-          "title": "How Azure SRE Agent Can Investigate Resources in a Private Network",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDk0OTExLVZBYnE5dA?revision=3"
         }
       ]
     },
@@ -5612,26 +5612,6 @@
           "wordCount": 9804,
           "title": "Using Azure API Management with Azure Front Door for Global, Multi‑Region Architectures",
           "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDkyMzg0LU5OZkRzeg?revision=11"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/on-demand-webinar-maximize-the-cost-efficiency-of-ai-agents-on-azure/4493923",
-          "author": "carlottacaste",
-          "description": "AI agents are quickly becoming central to how organizations automate work, engage customers, and unlock new insights. But as adoption accelerates, so do questions about cost, ROI, and long-term sustainability. That’s exactly what the Maximize the Cost Efficiency of AI Agents on Azure webinar is designed to address.\nThe webinar will provide practical guidance on building and scaling AI agents on Azure with financial discipline in mind. Rather than focusing only on technology, the session helps learners connect AI design decisions to real business outcomes—covering everything from identifying high-impact use cases and understanding cost drivers to forecasting ROI.\nWhether you’re just starting your AI journey or expanding AI agents across the enterprise, the session will equip you with strate…",
-          "link": "https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/on-demand-webinar-maximize-the-cost-efficiency-of-ai-agents-on-azure/4493923",
-          "publishedOn": "2026-02-18T08:00:00.000Z",
-          "wordCount": 8490,
-          "title": "On-demand webinar: Maximize the Cost Efficiency of AI Agents on Azure",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDkzOTIzLUdpUU5iNQ?revision=5"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/upcoming-webinar-maximize-the-cost-efficiency-of-ai-agents-on-azure/4493923",
-          "author": "carlottacaste",
-          "description": "AI agents are quickly becoming central to how organizations automate work, engage customers, and unlock new insights. But as adoption accelerates, so do questions about cost, ROI, and long-term sustainability. That’s exactly what the Maximize the Cost Efficiency of AI Agents on Azure webinar is designed to address.\nThe webinar will provide practical guidance on building and scaling AI agents on Azure with financial discipline in mind. Rather than focusing only on technology, the session helps learners connect AI design decisions to real business outcomes—covering everything from identifying high-impact use cases and understanding cost drivers to forecasting ROI.\nWhether you’re just starting your AI journey or expanding AI agents across the enterprise, the session will equip you with strate…",
-          "link": "https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/upcoming-webinar-maximize-the-cost-efficiency-of-ai-agents-on-azure/4493923",
-          "publishedOn": "2026-02-18T08:00:00.000Z",
-          "wordCount": 8483,
-          "title": "Upcoming webinar: Maximize the Cost Efficiency of AI Agents on Azure",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDkzOTIzLUdpUU5iNQ?revision=3"
         }
       ]
     },
@@ -6199,26 +6179,6 @@
           "wordCount": 18073,
           "title": "Exploring Azure Face API: Facial Landmark Detection and Real-Time Analysis with C#",
           "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDk1MzM1LTBSZ2dqcw?revision=2"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/on-demand-webinar-maximize-the-cost-efficiency-of-ai-agents-on-azure/4493923",
-          "author": "carlottacaste",
-          "description": "AI agents are quickly becoming central to how organizations automate work, engage customers, and unlock new insights. But as adoption accelerates, so do questions about cost, ROI, and long-term sustainability. That’s exactly what the Maximize the Cost Efficiency of AI Agents on Azure webinar is designed to address.\nThe webinar will provide practical guidance on building and scaling AI agents on Azure with financial discipline in mind. Rather than focusing only on technology, the session helps learners connect AI design decisions to real business outcomes—covering everything from identifying high-impact use cases and understanding cost drivers to forecasting ROI.\nWhether you’re just starting your AI journey or expanding AI agents across the enterprise, the session will equip you with strate…",
-          "link": "https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/on-demand-webinar-maximize-the-cost-efficiency-of-ai-agents-on-azure/4493923",
-          "publishedOn": "2026-02-18T08:00:00.000Z",
-          "wordCount": 8490,
-          "title": "On-demand webinar: Maximize the Cost Efficiency of AI Agents on Azure",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDkzOTIzLUdpUU5iNQ?revision=5"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/upcoming-webinar-maximize-the-cost-efficiency-of-ai-agents-on-azure/4493923",
-          "author": "carlottacaste",
-          "description": "AI agents are quickly becoming central to how organizations automate work, engage customers, and unlock new insights. But as adoption accelerates, so do questions about cost, ROI, and long-term sustainability. That’s exactly what the Maximize the Cost Efficiency of AI Agents on Azure webinar is designed to address.\nThe webinar will provide practical guidance on building and scaling AI agents on Azure with financial discipline in mind. Rather than focusing only on technology, the session helps learners connect AI design decisions to real business outcomes—covering everything from identifying high-impact use cases and understanding cost drivers to forecasting ROI.\nWhether you’re just starting your AI journey or expanding AI agents across the enterprise, the session will equip you with strate…",
-          "link": "https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/upcoming-webinar-maximize-the-cost-efficiency-of-ai-agents-on-azure/4493923",
-          "publishedOn": "2026-02-18T08:00:00.000Z",
-          "wordCount": 8483,
-          "title": "Upcoming webinar: Maximize the Cost Efficiency of AI Agents on Azure",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDkzOTIzLUdpUU5iNQ?revision=3"
         }
       ]
     },
@@ -6274,6 +6234,16 @@
       "feedUrl": "https://techcommunity.microsoft.com/t5/s/plugins/custom/microsoft/o365/custom-blog-rss?board=AzureArchitectureBlog&size=50",
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
+        {
+          "id": "https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/hypervelocity-engineering-accelerating-enterprise-ai-with-azure-ai-landing-zones/4536192",
+          "author": "VimalVerma",
+          "description": "Artificial Intelligence is evolving at unprecedented speed. The challenge for enterprises is no longer building AI solutions—it is engineering AI platforms that can adapt, scale, and govern innovation continuously. Hypervelocity Engineering (HVE) provides the engineering operating model that enables this transformation.\nExecutive Summary\nArtificial Intelligence is transforming how enterprises design and operate digital platforms. Traditional Enterprise Architecture practices—built around static documentation, periodic governance reviews, and manual implementation—are struggling to keep pace with the rapid evolution of AI workloads.\nHyperVelocity Engineering (HVE) introduces a disciplined engineering operating model that combines AI-assisted decision making, platform engineering, automation…",
+          "link": "https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/hypervelocity-engineering-accelerating-enterprise-ai-with-azure-ai-landing-zones/4536192",
+          "publishedOn": "2026-07-17T14:57:27.000Z",
+          "wordCount": null,
+          "title": "Hypervelocity Engineering: Accelerating Enterprise AI with Azure AI Landing Zones",
+          "imageUrl": null
+        },
         {
           "id": "https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/from-policy-to-proof-governing-ai-to-scale-human-ambition-and-machine-intelligen/4535137",
           "author": "manasa_ramalinga",
@@ -6960,16 +6930,6 @@
           "wordCount": 14182,
           "title": "AI in Windows 11",
           "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDk1OTg1LWpzc2gxVQ?revision=2"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/MicrosoftMechanicsBlog/ai-with-zero-trust%C2%A0security/4495445",
-          "author": "Zachary-Cavanell",
-          "description": "Adopt a Zero Trust approach that lets you verify every access request — human, machine, or AI — before it reaches your most critical resources. As AI agents, semantic search, and automation accelerate how work gets done, you can reduce risk by explicitly validating identity, enforcing least-privilege access, and assuming breach across every step of your environment. Apply layered, continuous protection across identities, endpoints, networks, data, AI resources, applications, and infrastructure so attackers can’t exploit any weak links. \nMichael Madrigal, Security Product Manager, shares how you can protect productivity and keep pace with an evolving threat landscape, by continuously assessing risk, securing resources at runtime, and adapting policies as conditions change.\nGovern AI agents …",
-          "link": "https://techcommunity.microsoft.com/blog/MicrosoftMechanicsBlog/ai-with-zero-trust%C2%A0security/4495445",
-          "publishedOn": "2026-02-17T21:09:55.000Z",
-          "wordCount": 14361,
-          "title": "AI with Zero Trust Security",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDk1NDQ1LVlPS1ZnOA?revision=2"
         }
       ]
     },
@@ -7569,16 +7529,6 @@
           "wordCount": 7857,
           "title": "JCON Europe 2026: Java Modernization, Performance, and AI",
           "imageUrl": "https://devblogs.microsoft.com/java/wp-content/uploads/sites/51/2026/02/JConf-Europe-Promo.webp"
-        },
-        {
-          "id": "https://devblogs.microsoft.com/java/?p=232877",
-          "author": "Bruno Borges",
-          "description": "We’re excited to announce the first wave of speakers for Microsoft JDConf 2026, our flagship community event for Java at Microsoft. Whether you’re architecting enterprise microservices, modernizing legacy systems, or building intelligent applications, JDConf 2026 will equip you with the insights and tools to stay ahead. Live streamed across three time zones, the event gives […]\nThe post Meet the First Round of Speakers for Microsoft JDConf 2026 appeared first on Microsoft for Java Developers.",
-          "link": "https://devblogs.microsoft.com/java/meet-the-first-round-of-speakers-for-microsoft-jdconf-2026/",
-          "publishedOn": "2026-02-17T15:59:51.000Z",
-          "wordCount": 8118,
-          "title": "Meet the First Round of Speakers for Microsoft JDConf 2026",
-          "imageUrl": "https://devblogs.microsoft.com/java/wp-content/uploads/sites/51/2026/02/jdconf-lineup-first-round.webp"
         }
       ]
     },
