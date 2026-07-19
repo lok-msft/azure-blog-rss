@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2026-07-18T02:33:07.859Z</updated>
+    <updated>2026-07-19T02:47:14.839Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
@@ -10498,124 +10498,6 @@ Continue reading “Announcing official support for Microsoft fabric-cicd tool�
 Continue reading “OneLake SharePoint and OneDrive shortcuts now support workspace and service principal identities (Preview)”]]></summary>
         <author>
             <name>Fabric Updates Blog articles</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Agentic Code Fixing with GitHub Copilot SDK and Foundry Local]]></title>
-        <id>https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/agentic-code-fixing-with-github-copilot-sdk-and-foundry-local/4493968</id>
-        <link href="https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/agentic-code-fixing-with-github-copilot-sdk-and-foundry-local/4493968"/>
-        <updated>2026-02-19T08:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Introduction
-AI-powered coding assistants have transformed how developers write and review code. But most of these tools require sending your source code to cloud services, a non-starter for teams working with proprietary codebases, air-gapped environments, or strict compliance requirements. What if you could have an intelligent coding agent that finds bugs, fixes them, runs your tests, and produces PR-ready summaries, all without a single byte leaving your machine?
-The Local Repo Patch Agent demonstrates exactly this. By combining the GitHub Copilot SDK for agent orchestration with Foundry Local for on-device inference, this project creates a fully autonomous coding workflow that operates entirely on your hardware. The agent scans your repository, identifies bugs and code smells, applies …]]></summary>
-        <author>
-            <name>Lee_Stott</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Migrating Workloads from AWS to Azure: A Structured Approach for Cloud Architects]]></title>
-        <id>https://techcommunity.microsoft.com/blog/AzureMigrationBlog/migrating-workloads-from-aws-to-azure-a-structured-approach-for-cloud-architects/4495227</id>
-        <link href="https://techcommunity.microsoft.com/blog/AzureMigrationBlog/migrating-workloads-from-aws-to-azure-a-structured-approach-for-cloud-architects/4495227"/>
-        <updated>2026-02-19T06:52:01.000Z</updated>
-        <summary type="html"><![CDATA[The core migration principle: Like-for-like architecture
-The foundation of a successful migration is maintaining a like-for-like architecture during the transition. This means replicating your existing AWS architecture on Azure with equivalent services, preserving the same operational patterns, performance characteristics, and the same known issues that exist today.
-This approach may seem counterintuitive. Why migrate if you're not modernizing? The answer lies in risk management. If you attempt to modernize during migration, you introduce potential scope creep, increase complexity, and erode confidence in the workload. Once the workload is stable on Azure and meeting the same KPIs it achieved on AWS, you can pursue optimization and technical debt reduction from a position of stability.
-The…]]></summary>
-        <author>
-            <name>rhack</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Reactive Incident Response with Azure SRE Agent: From Alert to Resolution in Minutes]]></title>
-        <id>https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/reactive-incident-response-with-azure-sre-agent-from-alert-to-resolution-in-minu/4492938</id>
-        <link href="https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/reactive-incident-response-with-azure-sre-agent-from-alert-to-resolution-in-minu/4492938"/>
-        <updated>2026-02-19T06:44:39.000Z</updated>
-        <summary type="html"><![CDATA[SRE Agent portal overview with incident list
- 
-The Reactive Incident Challenge
-Your monitoring is solid. Alerts fire when they should. But then what?
-
-Alert lands in Teams/PagerDuty
-On-call engineer wakes up, logs in
-Starts investigating: "What's broken? Why? How do I fix it?"
-20 minutes later, they're still gathering context
-
-The alert was fast. The human response? Not so much.
-The Traditional Incident Response Flow
-┌─────────────┐    ┌─────────────┐    ┌─────────────┐    ┌─────────────┐
-│   Alert     │───▶│   Human     │───▶│  Manual     │───▶│ Resolution  │
-│   Fires     │    │ Acknowledges│    │Investigation│    │  (Maybe)    │
-│             │    │  (5-15 min) │    │  (15-30 min)│    │             │
-└─────────────┘    └─────────────┘    └─────────────┘    └─────────────┘
-     t=0      …]]></summary>
-        <author>
-            <name>Sabyasachi-Samaddar</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[From "Maybe Next Quarter" to "Running Before Lunch" on Container Apps - Modernizing Legacy .NET App]]></title>
-        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/from-maybe-next-quarter-to-running-before-lunch-on-container-apps---modernizing-/4495736</id>
-        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/from-maybe-next-quarter-to-running-before-lunch-on-container-apps---modernizing-/4495736"/>
-        <updated>2026-02-18T23:19:26.000Z</updated>
-        <summary type="html"><![CDATA[In early 2025, we wanted to modernize Jon Galloway's MVC Music Store — a classic ASP.NET MVC 5 app running on .NET Framework 4.8 with Entity Framework 6. The goal was straightforward: address vulnerabilities, enable managed identity, and deploy to Azure Container Apps and Azure SQL. No more plaintext connection strings. No more passwords in config files.
- 
-
-We hit a wall immediately.
-Entity Framework on .NET Framework did not support Azure.Identity or DefaultAzureCredential. We just could not add a NuGet package and call it done — we’d need EF Core, which means modern .NET - and rewriting the data layer, the identity system, the startup pipeline, the views. The engineering team estimated one week of dedicated developer work. As a product manager without extensive .NET modernization experie…]]></summary>
-        <author>
-            <name>Jan-Kalis</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Python Environments Extension for VS Code]]></title>
-        <id>https://devblogs.microsoft.com/python/?p=10243</id>
-        <link href="https://devblogs.microsoft.com/python/python-in-visual-studio-code-february-2026-release/"/>
-        <updated>2026-02-18T22:00:22.000Z</updated>
-        <summary type="html"><![CDATA[The February 2026 release  This release includes the Python Environments extension... Keep on reading to learn more!
-The post Python Environments Extension for VS Code appeared first on Microsoft for Python Developers Blog.]]></summary>
-        <author>
-            <name>Vedha Ranganathan</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Get started with Elasticsearch MCP server in Azure SRE Agent]]></title>
-        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/get-started-with-elasticsearch-mcp-server-in-azure-sre-agent/4492896</id>
-        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/get-started-with-elasticsearch-mcp-server-in-azure-sre-agent/4492896"/>
-        <updated>2026-02-18T16:41:52.000Z</updated>
-        <summary type="html"><![CDATA[Overview
-The Elasticsearch MCP server enables Azure SRE Agent to interact with your Elasticsearch clusters using natural language. Query your logs, analyze metrics, check cluster health, and troubleshoot issues conversationally.
-This integration uses Elastic's Agent Builder MCP endpoint, the recommended approach for Elastic 9.2.0+ and Elasticsearch Serverless projects.
-Key capabilities
-
-
-CapabilityDescription
-
-SearchExecute search queries using Elasticsearch Query DSL
-ES|QLRun ES|QL queries for data exploration
-MappingsGet field mappings for indices
-Cluster healthCheck shard information and cluster status
-Index managementList available indices
-
-
-
-Prerequisites
-
-Azure SRE Agent resource at sre.azure.com
-Elasticsearch cluster (Elastic Cloud or self-hosted, version 9.2.0 or higher)
-Kibana wit…]]></summary>
-        <author>
-            <name>dbandaru</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[TFVC Remove Existing Obsolete Policies ASAP]]></title>
-        <id>https://devblogs.microsoft.com/devops/?p=72447</id>
-        <link href="https://devblogs.microsoft.com/devops/tfvc-remove-existing-obsolete-policies-asap/"/>
-        <updated>2026-02-18T16:35:23.000Z</updated>
-        <summary type="html"><![CDATA[In April 2025, we announced the deprecation schedule for legacy TFVC check-in policies. This change was required due to limitations in how those policies were previously implemented and stored. The old policies have been marked as obsolete, and you can replace them by selecting the equivalent updated policy. We are currently in Phase II of […]
-The post TFVC Remove Existing Obsolete Policies ASAP appeared first on Azure DevOps Blog.]]></summary>
-        <author>
-            <name>Dan Hellem</name>
         </author>
     </entry>
     <entry>

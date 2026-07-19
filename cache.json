@@ -3165,16 +3165,6 @@
           "wordCount": 13724,
           "title": "Building an AI Study Agent - How GitHub Copilot CLI & SDK helped Reimagine LMS",
           "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDk1MTc5LU5LSUdkWg?revision=2"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/agentic-code-fixing-with-github-copilot-sdk-and-foundry-local/4493968",
-          "author": "Lee_Stott",
-          "description": "Introduction\nAI-powered coding assistants have transformed how developers write and review code. But most of these tools require sending your source code to cloud services, a non-starter for teams working with proprietary codebases, air-gapped environments, or strict compliance requirements. What if you could have an intelligent coding agent that finds bugs, fixes them, runs your tests, and produces PR-ready summaries, all without a single byte leaving your machine?\nThe Local Repo Patch Agent demonstrates exactly this. By combining the GitHub Copilot SDK for agent orchestration with Foundry Local for on-device inference, this project creates a fully autonomous coding workflow that operates entirely on your hardware. The agent scans your repository, identifies bugs and code smells, applies …",
-          "link": "https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/agentic-code-fixing-with-github-copilot-sdk-and-foundry-local/4493968",
-          "publishedOn": "2026-02-19T08:00:00.000Z",
-          "wordCount": 18078,
-          "title": "Agentic Code Fixing with GitHub Copilot SDK and Foundry Local",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDkzOTY4LVhjNERwWA?revision=1"
         }
       ]
     },
@@ -4772,26 +4762,6 @@
           "wordCount": 9226,
           "title": "Host Declarative Markdown-Based Agents on Azure Functions",
           "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDk2MDM4LXIzMjlzcw?revision=4"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/from-maybe-next-quarter-to-running-before-lunch-on-container-apps---modernizing-/4495736",
-          "author": "Jan-Kalis",
-          "description": "In early 2025, we wanted to modernize Jon Galloway's MVC Music Store — a classic ASP.NET MVC 5 app running on .NET Framework 4.8 with Entity Framework 6. The goal was straightforward: address vulnerabilities, enable managed identity, and deploy to Azure Container Apps and Azure SQL. No more plaintext connection strings. No more passwords in config files.\n \n\nWe hit a wall immediately.\nEntity Framework on .NET Framework did not support Azure.Identity or DefaultAzureCredential. We just could not add a NuGet package and call it done — we’d need EF Core, which means modern .NET - and rewriting the data layer, the identity system, the startup pipeline, the views. The engineering team estimated one week of dedicated developer work. As a product manager without extensive .NET modernization experie…",
-          "link": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/from-maybe-next-quarter-to-running-before-lunch-on-container-apps---modernizing-/4495736",
-          "publishedOn": "2026-02-18T23:19:26.000Z",
-          "wordCount": 10518,
-          "title": "From \"Maybe Next Quarter\" to \"Running Before Lunch\" on Container Apps - Modernizing Legacy .NET App",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDk1NzM2LU9KR3BjbQ?revision=5"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/get-started-with-elasticsearch-mcp-server-in-azure-sre-agent/4492896",
-          "author": "dbandaru",
-          "description": "Overview\nThe Elasticsearch MCP server enables Azure SRE Agent to interact with your Elasticsearch clusters using natural language. Query your logs, analyze metrics, check cluster health, and troubleshoot issues conversationally.\nThis integration uses Elastic's Agent Builder MCP endpoint, the recommended approach for Elastic 9.2.0+ and Elasticsearch Serverless projects.\nKey capabilities\n\n\nCapabilityDescription\n\nSearchExecute search queries using Elasticsearch Query DSL\nES|QLRun ES|QL queries for data exploration\nMappingsGet field mappings for indices\nCluster healthCheck shard information and cluster status\nIndex managementList available indices\n\n\n\nPrerequisites\n\nAzure SRE Agent resource at sre.azure.com\nElasticsearch cluster (Elastic Cloud or self-hosted, version 9.2.0 or higher)\nKibana wit…",
-          "link": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/get-started-with-elasticsearch-mcp-server-in-azure-sre-agent/4492896",
-          "publishedOn": "2026-02-18T16:41:52.000Z",
-          "wordCount": 10065,
-          "title": "Get started with Elasticsearch MCP server in Azure SRE Agent",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDkyODk2LTdUMzk1Zw?revision=4"
         }
       ]
     },
@@ -6623,16 +6593,6 @@
           "wordCount": null,
           "title": "Decision Matrix: API vs MCP Tools — The Great Integration Showdown 🥊",
           "imageUrl": null
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/reactive-incident-response-with-azure-sre-agent-from-alert-to-resolution-in-minu/4492938",
-          "author": "Sabyasachi-Samaddar",
-          "description": "SRE Agent portal overview with incident list\n \nThe Reactive Incident Challenge\nYour monitoring is solid. Alerts fire when they should. But then what?\n\nAlert lands in Teams/PagerDuty\nOn-call engineer wakes up, logs in\nStarts investigating: \"What's broken? Why? How do I fix it?\"\n20 minutes later, they're still gathering context\n\nThe alert was fast. The human response? Not so much.\nThe Traditional Incident Response Flow\n┌─────────────┐    ┌─────────────┐    ┌─────────────┐    ┌─────────────┐\n│   Alert     │───▶│   Human     │───▶│  Manual     │───▶│ Resolution  │\n│   Fires     │    │ Acknowledges│    │Investigation│    │  (Maybe)    │\n│             │    │  (5-15 min) │    │  (15-30 min)│    │             │\n└─────────────┘    └─────────────┘    └─────────────┘    └─────────────┘\n     t=0      …",
-          "link": "https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/reactive-incident-response-with-azure-sre-agent-from-alert-to-resolution-in-minu/4492938",
-          "publishedOn": "2026-02-19T06:44:39.000Z",
-          "wordCount": 18482,
-          "title": "Reactive Incident Response with Azure SRE Agent: From Alert to Resolution in Minutes",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDkyOTM4LTRkbHZLZw?revision=3"
         }
       ]
     },
@@ -7057,16 +7017,6 @@
           "wordCount": 8087,
           "title": "Azure Copilot Migration Agent",
           "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTAxMjkyLVJXeFNiWA?revision=1"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AzureMigrationBlog/migrating-workloads-from-aws-to-azure-a-structured-approach-for-cloud-architects/4495227",
-          "author": "rhack",
-          "description": "The core migration principle: Like-for-like architecture\nThe foundation of a successful migration is maintaining a like-for-like architecture during the transition. This means replicating your existing AWS architecture on Azure with equivalent services, preserving the same operational patterns, performance characteristics, and the same known issues that exist today.\nThis approach may seem counterintuitive. Why migrate if you're not modernizing? The answer lies in risk management. If you attempt to modernize during migration, you introduce potential scope creep, increase complexity, and erode confidence in the workload. Once the workload is stable on Azure and meeting the same KPIs it achieved on AWS, you can pursue optimization and technical debt reduction from a position of stability.\nThe…",
-          "link": "https://techcommunity.microsoft.com/blog/AzureMigrationBlog/migrating-workloads-from-aws-to-azure-a-structured-approach-for-cloud-architects/4495227",
-          "publishedOn": "2026-02-19T06:52:01.000Z",
-          "wordCount": 11414,
-          "title": "Migrating Workloads from AWS to Azure: A Structured Approach for Cloud Architects",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDk1MjI3LUFnNzZSYw?revision=3"
         }
       ]
     },
@@ -7422,16 +7372,6 @@
           "wordCount": 7713,
           "title": "Python in Visual Studio Code – March 2026 Release",
           "imageUrl": "https://private-user-images.githubusercontent.com/104594771/570736410-6bde10d2-a099-4124-ba2a-188749d5a085.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NzUwNzczMDEsIm5iZiI6MTc3NTA3NzAwMSwicGF0aCI6Ii8xMDQ1OTQ3NzEvNTcwNzM2NDEwLTZiZGUxMGQyLWEwOTktNDEyNC1iYTJhLTE4ODc0OWQ1YTA4NS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwNDAxJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDQwMVQyMDU2NDFaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1iNTc5NTg1MjllZWNmMGFhZmM2MWI1NzIwZmQ0NGY0MmU1Y2JlYTU0MzRmYzJlZDk2MDUyMjNhYzg4MDZiNDdiJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.PIEBA0sK6mBviqTWX12ffGy8X0CwVc4Xo56ba8MAoII"
-        },
-        {
-          "id": "https://devblogs.microsoft.com/python/?p=10243",
-          "author": "Vedha Ranganathan",
-          "description": "The February 2026 release  This release includes the Python Environments extension... Keep on reading to learn more!\nThe post Python Environments Extension for VS Code appeared first on Microsoft for Python Developers Blog.",
-          "link": "https://devblogs.microsoft.com/python/python-in-visual-studio-code-february-2026-release/",
-          "publishedOn": "2026-02-18T22:00:22.000Z",
-          "wordCount": 7898,
-          "title": "Python Environments Extension for VS Code",
-          "imageUrl": "https://devblogs.microsoft.com/python/wp-content/uploads/sites/12/2026/02/PythonProject.png"
         }
       ]
     },
@@ -7777,21 +7717,6 @@
           "wordCount": 7153,
           "title": "Updates to Team Calendar extension",
           "imageUrl": "https://devblogs.microsoft.com/devops/wp-content/uploads/sites/6/2026/02/e033a530-b271-444c-9667-184b46322201.webp"
-        },
-        {
-          "id": "https://devblogs.microsoft.com/devops/?p=72447",
-          "author": "Dan Hellem",
-          "description": "In April 2025, we announced the deprecation schedule for legacy TFVC check-in policies. This change was required due to limitations in how those policies were previously implemented and stored. The old policies have been marked as obsolete, and you can replace them by selecting the equivalent updated policy. We are currently in Phase II of […]\nThe post TFVC Remove Existing Obsolete Policies ASAP appeared first on Azure DevOps Blog.",
-          "link": "https://devblogs.microsoft.com/devops/tfvc-remove-existing-obsolete-policies-asap/",
-          "publishedOn": "2026-02-18T16:35:23.000Z",
-          "wordCount": 7401,
-          "title": "TFVC Remove Existing Obsolete Policies ASAP",
-          "enclosure": {
-            "url": "https://devblogs.microsoft.com/devops/wp-content/uploads/sites/6/2026/02/tfvc-steps-to-remove-obsolete-checkin-policies.mp4",
-            "length": "131944145",
-            "type": "video/mp4"
-          },
-          "imageUrl": "https://devblogs.microsoft.com/devops/wp-content/uploads/sites/6/2026/02/tfvc-tn.webp"
         }
       ]
     },
