@@ -2647,6 +2647,16 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/set-up-plaud-note-pro-with-microsoft-foundry/4537428",
+          "author": "suzarilshah",
+          "description": "Prerequisites\n\nRiffado, up and running: follow the setup guide in the official Riffado repository to get it going with Docker Compose.\nA Microsoft Foundry (formerly Azure AI Foundry) resource, with the models you want deployed; in my case, whisper for transcription and o3-mini for summaries.\nA Plaud device, or any audio recordings you can import into Riffado.\n\nOnce Riffado is up, head to the Settings page > Providers > Add Provider, and select Custom. This is where the Azure details will go.\nWhy \"OpenAI-compatible\" isn’t one thing on Microsoft Foundry\nAzure AI Foundry exposes two different API surfaces on the same resource, and which one serves your model depends on the model:\n\n\n\nSurface\n\nPath shape\n\nServes\n\nOpenAI-compatible?\n\n\nv1 route\n\n/openai/v1/…\n\ngpt-4o-transcribe, gpt-4o-mini-transc…",
+          "link": "https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/set-up-plaud-note-pro-with-microsoft-foundry/4537428",
+          "publishedOn": "2026-07-22T14:59:24.000Z",
+          "wordCount": null,
+          "title": "Set Up Plaud Note Pro with Microsoft Foundry",
+          "imageUrl": null
+        },
+        {
           "id": "https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/microsoft-agent-framework-multi-agent-workflow-architecture-for-automated-kubern/4538371",
           "author": "cyruswong",
           "description": "Why this system generates tests (design rationale)\nThis project does not generate tests just to \"check code.\" It generates tests because, in a Kubernetes learning game, the test suite is the grading contract.\nThe design goals are:\n\nScale content creation: instructors should not hand-author every task and checker.\nKeep grading objective: student success is measured against Kubernetes API state, not subjective review.\nAvoid fragile tasks: generated tasks must survive empty/wrong cluster states without crashing.\nMake failures repairable: when checks break, the system should patch and re-validate automatically.\n\nSo the pipeline generates a full task package (setup, answer, check, cleanup) where tests define exactly what \"correct\" means.\nLifecycle: from concept to production-ready grader\nReader…",
@@ -3145,16 +3155,6 @@
           "wordCount": 11492,
           "title": "Stop Drawing Architecture Diagrams Manually: Meet the Open-Source AI Architecture Review Agents",
           "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDk2MjcxLUdnMlRhNg?revision=4"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/integrating-microsoft-foundry-with-openclaw-step-by-step-model-configuration/4495586",
-          "author": "suzarilshah",
-          "description": "Step 1: Deploying Models on Microsoft Foundry\nLet us kick things off in the Azure portal. To get our OpenClaw agent thinking like a genius, we need to deploy our models in Microsoft Foundry. For this guide, we are going to focus on deploying gpt-5.2-codex on Microsoft Foundry with OpenClaw. \nNavigate to your AI Hub, head over to the model catalog, choose the model you wish to use with OpenClaw and hit deploy. Once your deployment is successful, head to the endpoints section.\n \n\n\nImportant: Grab your Endpoint URL and your API Keys right now and save them in a secure note. We will need these exact values to connect OpenClaw in a few minutes.\n\nStep 2: Installing and Initializing OpenClaw\nNext up, we need to get OpenClaw running on your machine. Open up your terminal and run the official insta…",
-          "link": "https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/integrating-microsoft-foundry-with-openclaw-step-by-step-model-configuration/4495586",
-          "publishedOn": "2026-02-23T09:39:15.000Z",
-          "wordCount": 10701,
-          "title": "Integrating Microsoft Foundry with OpenClaw: Step by Step Model Configuration",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDk1NTg2LTlyQXVNaw?revision=2"
         }
       ]
     },
@@ -3163,6 +3163,16 @@
       "feedUrl": "https://techcommunity.microsoft.com/t5/s/plugins/custom/microsoft/o365/custom-blog-rss?board=AppsonAzureBlog&size=100",
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
+        {
+          "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/mcp-in-azure-using-api-management-for-authentication-access-logging--governance/4532139",
+          "author": "Kalaivanan",
+          "description": "If MCP is becoming the “USB-C for AI,” enterprises need something equally familiar on the other side of that port: a control plane. The Model Context Protocol (MCP) gives AI applications a standard way to discover tools, retrieve context, and call capabilities from external systems. But once you move beyond a single local server and start connecting multiple remote tools across teams, environments, and data domains, the protocol alone is not enough, you also need a way to manage identity, access, traffic, visibility, and lifecycle consistently.\nThat is where Azure API Management (APIM) becomes strategically important. APIM is not “MCP instead of APIs.” It is the layer that can sit in front of MCP servers or even turn existing REST APIs into MCP-compatible tool surfaces so that organization…",
+          "link": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/mcp-in-azure-using-api-management-for-authentication-access-logging--governance/4532139",
+          "publishedOn": "2026-07-22T16:51:16.000Z",
+          "wordCount": null,
+          "title": "MCP in Azure: Using API Management for Authentication, Access, Logging & Governance",
+          "imageUrl": null
+        },
         {
           "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/microsoft-foundry-now-has-an-ai-gateway-control-plane-%E2%80%94-what-changes-for-app-ser/4538320",
           "author": "jordanselig",
@@ -4692,26 +4702,6 @@
           "wordCount": 8836,
           "title": "Building MCP Apps with Azure Functions MCP Extension",
           "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDk2NTM2LW1wR3FUaA?revision=2"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/rethinking-ingress-on-azure-application-gateway-for-containers-explained/4492277",
-          "author": "rgarofalo",
-          "description": "Introduction\nAzure Application Gateway for Containers is a managed Azure service designed to handle incoming traffic for container-based applications. It brings Layer-7 load balancing, routing, TLS termination, and web application protection outside of the Kubernetes cluster and into an Azure-managed data plane. By separating traffic management from the cluster itself, the service reduces operational complexity while providing a more consistent, secure, and scalable way to expose container workloads on Azure.\nImages and Visualizations (Highlight to read)\n\nAll images and visualizations in this articles have been generated using GEN AI technologies.\n\n\nAll images and visualizations in this articles have been generated using GEN AI technologies.\n\n\n\nService Overview\nWhat Application Gateway for…",
-          "link": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/rethinking-ingress-on-azure-application-gateway-for-containers-explained/4492277",
-          "publishedOn": "2026-02-23T10:49:29.000Z",
-          "wordCount": 18020,
-          "title": "Rethinking Ingress on Azure: Application Gateway for Containers Explained",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDkyMjc3LTdVR3luWQ?revision=10"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/how-to-troubleshoot-azure-functions-not-visible-in-azure-portal/4495873",
-          "author": "vikasgupta5",
-          "description": "How to Troubleshoot Azure Functions Not Visible in Azure Portal\nOverview\nAzure Functions is a powerful serverless compute service that enables you to run event-driven code without managing infrastructure. When you deploy functions to Azure, you expect to see them listed in the Azure Portal under your Function App. However, there are situations where your functions may not appear in the portal, even though they were successfully deployed.\nThis issue can be frustrating, especially when your functions are actually running and processing requests correctly, but you cannot see them in the portal UI. In this blog, we will explore the common causes of functions not appearing in the Azure Portal and provide step-by-step solutions to help you troubleshoot and resolve this issue.\nUnderstanding How F…",
-          "link": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/how-to-troubleshoot-azure-functions-not-visible-in-azure-portal/4495873",
-          "publishedOn": "2026-02-23T04:33:16.000Z",
-          "wordCount": 14919,
-          "title": "How to Troubleshoot Azure Functions Not Visible in Azure Portal",
-          "imageUrl": null
         }
       ]
     },
@@ -6165,6 +6155,16 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/reminder-path-to-production-for-agents-webinar-series-starts-next-week/4539877",
+          "author": "brauerblogs",
+          "description": "Next week, join Microsoft for the Path to Production for Agents webinar series—a free, six-session technical training designed to help organizations move from AI experimentation to secure, scalable, production-ready agent solutions. The series takes place July 27–28 and is aimed at architects, technical leaders, engineers, and AI practitioners looking to operationalize AI at enterprise scale.\nAcross six expert-led sessions, you'll learn how to:\n\nEstablish governance foundations for AI at scale\nDesign production-ready AI platforms and landing zones\nBuild reliable multi-agent architectures\nImplement AgentOps practices for deployment and observability\nSecure and govern AI systems\nOptimize performance, cost, and scalability\n\nEach session includes proven Microsoft architecture patterns, real-world engineering guidance, and practical techniques you can apply immediately to accelerate your path from prototype to production.\nRegister today: Path to Production for Agents Registration\nDon't miss this opportunity to gain the knowledge and frameworks needed to confidently deploy production-grade AI agents at scale. We look forward to seeing you next week!",
+          "link": "https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/reminder-path-to-production-for-agents-webinar-series-starts-next-week/4539877",
+          "publishedOn": "2026-07-23T00:15:07.000Z",
+          "wordCount": null,
+          "title": "Reminder: Path to Production for Agents Webinar Series Starts Next Week",
+          "imageUrl": null
+        },
+        {
           "id": "https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/hypervelocity-engineering-accelerating-enterprise-ai-with-azure-ai-landing-zones/4536192",
           "author": "VimalVerma",
           "description": "Artificial Intelligence is evolving at unprecedented speed. The challenge for enterprises is no longer building AI solutions—it is engineering AI platforms that can adapt, scale, and govern innovation continuously. Hypervelocity Engineering (HVE) provides the engineering operating model that enables this transformation.\nExecutive Summary\nArtificial Intelligence is transforming how enterprises design and operate digital platforms. Traditional Enterprise Architecture practices—built around static documentation, periodic governance reviews, and manual implementation—are struggling to keep pace with the rapid evolution of AI workloads.\nHyperVelocity Engineering (HVE) introduces a disciplined engineering operating model that combines AI-assisted decision making, platform engineering, automation…",
@@ -6561,6 +6561,16 @@
       "feedUrl": "https://techcommunity.microsoft.com/t5/s/plugins/custom/microsoft/o365/custom-blog-rss?board=MicrosoftMechanicsBlog&size=50",
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
+        {
+          "id": "https://techcommunity.microsoft.com/blog/MicrosoftMechanicsBlog/build-your-first-power-app-from-data-in%C2%A0seconds/4537967",
+          "author": "Zachary-Cavanell",
+          "description": "Generate new pages from a natural language prompt with Generative Pages, auto-populate records from any document in seconds with Automatic Form Fill, and embed Copilot to query your app data directly. \nLayer in an Agent Feed to proactively surface decisions, missing data, and action items, then connect to Outlook and Microsoft 365 through Work IQ to act on your app data without leaving your inbox. \nJed Brown, Power Platform Group Product Manager, shares how to turn existing business data into a modern, AI-powered app.\nCreate a simple app from existing data. \n\nPower Apps generates a fully working model-driven app in under a minute. Get started.\nDescribe what you want. \n\nPower Apps generates the page — map controls, filtered list views, and click-to-assign interactions wired up automatically…",
+          "link": "https://techcommunity.microsoft.com/blog/MicrosoftMechanicsBlog/build-your-first-power-app-from-data-in%C2%A0seconds/4537967",
+          "publishedOn": "2026-07-22T18:35:50.000Z",
+          "wordCount": null,
+          "title": "Build your first Power App from data in seconds",
+          "imageUrl": null
+        },
         {
           "id": "https://techcommunity.microsoft.com/blog/MicrosoftMechanicsBlog/microsoft-entra-suite-hands-on-tour-of-identity-and-network-access-protections/4537379",
           "author": "Zachary-Cavanell",
@@ -6991,6 +7001,16 @@
       "feedUrl": "https://devblogs.microsoft.com/semantic-kernel/feed/",
       "siteUrl": "https://devblogs.microsoft.com/agent-framework/",
       "articles": [
+        {
+          "id": "https://devblogs.microsoft.com/agent-framework/?p=5717",
+          "author": "Wes Steyn",
+          "description": "Your agents can now be built on a stable, batteries-included harness – the loop, planning, memory, context management, approvals, and telemetry that turn a model into an agent that actually does things – in both Python and .NET. What is an agent harness? An agent harness is the scaffolding that turns a language model into […]\nThe post The Microsoft Agent Framework Harness is now released appeared first on Microsoft Agent Framework.",
+          "link": "https://devblogs.microsoft.com/agent-framework/the-microsoft-agent-framework-harness-is-now-released/",
+          "publishedOn": "2026-07-22T08:54:03.000Z",
+          "wordCount": 7960,
+          "title": "The Microsoft Agent Framework Harness is now released",
+          "imageUrl": "https://devblogs.microsoft.com/agent-framework/wp-content/uploads/sites/78/2026/07/harness-agent-now-released.webp"
+        },
         {
           "id": "https://devblogs.microsoft.com/agent-framework/?p=5642",
           "author": "Giles Odigwe",
