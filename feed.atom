@@ -2,10 +2,42 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2026-07-31T02:52:23.575Z</updated>
+    <updated>2026-08-01T02:51:16.827Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Governing Log Analytics retention at scale]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/governing-log-analytics-retention-at-scale/4542538</id>
+        <link href="https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/governing-log-analytics-retention-at-scale/4542538"/>
+        <updated>2026-07-31T09:39:45.000Z</updated>
+        <summary type="html"><![CDATA[A Log Analytics workspace stores its data in tables, and data retention can be configured at two levels:
+
+Workspace level: a default interactive (Analytics) retention that applies to the whole workspace (30–730 days).
+Table level: each table has its own Analytics retention and its own total retention (Analytics + long-term/archive). By default a table's Analytics retention is set to "Workspace default", i.e. it inherits the workspace value.
+
+Two ideas are worth keeping in mind:
+
+Analytics vs. long-term (archive) retention. Analytics retention is the "hot", fully queryable period. Beyond that, data can be kept in cheaper long-term retention for compliance, and restored or searched when needed. See Manage data retention in a Log Analytics workspace.
+Tables can be configured individually: ins…]]></summary>
+        <author>
+            <name>TomClaes</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[CivicGrant IQ: The Five-Agent AI That Reads Federal Grants So Cities Don't Have To]]></title>
+        <id>https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/civicgrant-iq-the-five-agent-ai-that-reads-federal-grants-so-cities-dont-have-to/4542419</id>
+        <link href="https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/civicgrant-iq-the-five-agent-ai-that-reads-federal-grants-so-cities-dont-have-to/4542419"/>
+        <updated>2026-07-31T07:14:35.000Z</updated>
+        <summary type="html"><![CDATA[Guest post by JonEric Eubanks winner of Best use of Microsoft IQ series for Agents League 2026 Hackathon.
+The meeting that started this
+Every city has the same meeting. Finance finds a federal grant that looks relevant. A department director, a project manager, and a grants coordinator gather around an 80-page Notice of Funding Opportunity (NOFO) and spend two hours trying to answer three questions: Do we qualify? Which of our projects fits? Is it worth the effort?
+Nobody has a good answer by the end. The NOFO is written for federal program officers, not city staff. So most of the time the city does nothing, the deadline passes, and real, appropriated money goes unclaimed.
+I've built production tools for local government for years, including an app that won Microsoft's global Best in Autom…]]></summary>
+        <author>
+            <name>JonEricEubanks</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Skill or Sub-Agent. Choosing AI Capabilities You Will Actually Reuse]]></title>
         <id>https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/skill-or-sub-agent-choosing-ai-capabilities-you-will-actually-reuse/4542099</id>
@@ -10297,31 +10329,6 @@ This shift is not speculative. A late-2025 MIT Sloan Management Review / BCG stu
 Continue reading “Update to required permissions for Semantic Models in Fabric Data Agents”]]></summary>
         <author>
             <name>Fabric Updates Blog articles</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Building Generative Pages in Power Platform]]></title>
-        <id>https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/building-generative-pages-in-power-platform/4494062</id>
-        <link href="https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/building-generative-pages-in-power-platform/4494062"/>
-        <updated>2026-03-04T08:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Artificial Intelligence is now embedded across the Power Platform, and Generative Pages are among its most significant innovations. Instead of manually arranging controls, configuring forms, linking views, or writing Power Fx expressions, creators can now describe their requirements in plain language. Power Apps then converts those instructions into a complete, responsive, and data-enabled page.
-This article explains how to build Generative Pages step by step, explores the technology behind them, shares practical prompt-writing tips, and compares them with conventional page designs.
-Understanding Generative Pages
-Generative Pages offer an AI-powered way to design pages in model-driven apps. Using natural language, makers can request complete layouts that automatically connect to Dataverse …]]></summary>
-        <author>
-            <name>harshul05</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Agents in Microsoft Intune | Automate Policy Creation, Troubleshooting & Fix Guidance]]></title>
-        <id>https://techcommunity.microsoft.com/blog/MicrosoftMechanicsBlog/agents-in-microsoft-intune--automate-policy-creation-troubleshooting--fix-guidan/4496732</id>
-        <link href="https://techcommunity.microsoft.com/blog/MicrosoftMechanicsBlog/agents-in-microsoft-intune--automate-policy-creation-troubleshooting--fix-guidan/4496732"/>
-        <updated>2026-03-03T16:51:09.000Z</updated>
-        <summary type="html"><![CDATA[Automate device and security policy management by turning written compliance requirements into Intune policies. Use natural language to draft, refine, and deploy configuration profiles, review AI-generated recommendations with confidence scores, and stay in full control before publishing to your environment. 
-Reduce risk and manual effort by automatically evaluating admin change requests and blocking harmful scripts before deployment. Prioritize vulnerabilities from Defender, translate them into actionable Intune remediation steps, and schedule ongoing fixes. 
-Jason Githens, Microsoft Intune Principal GPM, shares how to move from reactive security work to continuous, proactive protection. Note: At the time of publishing this video, the Change Review Agent and Policy Configuration Agent are…]]></summary>
-        <author>
-            <name>Zachary-Cavanell</name>
         </author>
     </entry>
     <entry>
