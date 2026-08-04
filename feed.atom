@@ -2,10 +2,45 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2026-08-03T02:51:09.657Z</updated>
+    <updated>2026-08-04T02:34:59.971Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Built-In Observability for Serverless AI Agents on Azure Functions]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/built-in-observability-for-serverless-ai-agents-on-azure-functions/4542087</id>
+        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/built-in-observability-for-serverless-ai-agents-on-azure-functions/4542087"/>
+        <updated>2026-08-03T22:29:13.000Z</updated>
+        <summary type="html"><![CDATA[Azure Functions Agents - the markdown-first runtime that turns a folder of *.agent.md files into a serverless Azure Functions app - now ships with OpenTelemetry tracing built into the runtime itself. Every agent run becomes a real, structured trace in Application Insights: the model used, the session, and every tool call or sub-agent hand-off along the way. None of it requires writing a line of telemetry code in your app.
+Click here to create and run a Serverless Agent using Azure Functions
+Full visibility, zero code
+Bootstrapping an agent app is still two lines:
+from azure_functions_agents import create_function_app app = create_function_app()
+Turning on export is two settings, no code:
+In requirements.txt - 
+pip install azurefunctions-agents-runtime[monitor]
+In your App Settings -
+
+APPLI…]]></summary>
+        <author>
+            <name>larohra</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Announcing public preview: Markdown for Agents in Azure App Service]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/announcing-public-preview-markdown-for-agents-in-azure-app-service/4537023</id>
+        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/announcing-public-preview-markdown-for-agents-in-azure-app-service/4537023"/>
+        <updated>2026-08-03T19:46:29.000Z</updated>
+        <summary type="html"><![CDATA[Why Markdown for Agents?
+Web pages often contain scripts, styles, and HTML markup that are useful to browsers but add noise when the content is sent to an AI model. Markdown for Agents removes that extra markup and returns a smaller, text-focused response that is easier for agents to process and can reduce token usage.
+In internal testing across more than 637,000 pages, converted Markdown responses were 97 percent smaller at the median than the source HTML, with a median conversion time of 2 milliseconds. Results vary based on the page and its content.
+Public preview availability
+Markdown for Agents is available in public preview for Windows apps on Azure App Service in all public regions. The app must use an App Service plan in the Basic tier or higher.
+No additional authentication setup …]]></summary>
+        <author>
+            <name>jordanselig</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Governing Log Analytics retention at scale]]></title>
         <id>https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/governing-log-analytics-retention-at-scale/4542538</id>
@@ -10185,34 +10220,6 @@ Tier…]]></summary>
 Azure Storage Mover is a fully managed migration service used to transfer file data into Azure Storage (Azure Blob containers or Azure file shares) with minimal downtime. It wo…]]></summary>
         <author>
             <name>SriniThumala</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[The LLM Inference Optimization Stack: A Prioritized Playbook for Enterprise Teams]]></title>
-        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/the-llm-inference-optimization-stack-a-prioritized-playbook-for-enterprise-teams/4498818</id>
-        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/the-llm-inference-optimization-stack-a-prioritized-playbook-for-enterprise-teams/4498818"/>
-        <updated>2026-03-06T23:26:22.000Z</updated>
-        <summary type="html"><![CDATA[The Solutions — An Optimization Stack for Enterprise Inference
-The optimizations below are ordered by implementation priority — starting with the highest-leverage.
-The Three-Layer Serving Stack
-Most enterprise LLM deployments operate across three layers, each responsible for a different part of the inference pipeline. Understanding which layer a bottleneck belongs to is often the fastest path to improving inference performance.
-
-Azure Kubernetes Service (AKS) orchestrates the infrastructure — GPU nodes, networking, and container lifecycle.
-Ray Serve provides the distributed model serving layer — handling request routing, autoscaling, batching, replica placement, and multi-model serving.
-Inference engines such as vLLM execute the model forward passes and implement token-generation optimizat…]]></summary>
-        <author>
-            <name>bobmital</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Prepare your add-in for Outlook ribbon improvements]]></title>
-        <id>https://devblogs.microsoft.com/microsoft365dev/?p=25368</id>
-        <link href="https://devblogs.microsoft.com/microsoft365dev/prepare-your-addin-for-outlook-ribbon-improvements/"/>
-        <updated>2026-03-06T21:43:22.000Z</updated>
-        <summary type="html"><![CDATA[We’re improving how add-ins appear on the ribbon in Outlook on the web and the new Outlook on Windows. These updates make add-ins easier to find and align the experience across Outlook clients.
-The post Prepare your add-in for Outlook ribbon improvements appeared first on Microsoft 365 Developer Blog.]]></summary>
-        <author>
-            <name>Office Add-ins team</name>
         </author>
     </entry>
     <entry>
