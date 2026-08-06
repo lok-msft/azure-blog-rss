@@ -4661,6 +4661,16 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/blog/MessagingonAzureBlog/update-wcf-relay-applications-to-use-tls-1-2-or-later/4544418",
+          "author": "EldertGrootenboer",
+          "description": "WCF Relay listeners that still negotiate TLS 1.0 can fail to connect through Azure Relay. The symptom appears on the sender, which connected successfully before and now fails every call with System.ServiceModel.EndpointNotFoundException: no connected listeners accepted the connection within timeout. If you run a WCF Relay listener on the .NET Framework, and especially one built against an older version of the WindowsAzure.ServiceBus package or Microsoft.ServiceBus.dll, it is worth checking how it negotiates TLS.\nAzure Relay Hybrid Connections are not affected and need no action. They use HTTP and WebSockets through the Microsoft.Azure.Relay package, a different stack from the WCF Relay path described here.\nWhat is happening\nTLS 1.0 and TLS 1.1 are deprecated. We retired them across Azure s…",
+          "link": "https://techcommunity.microsoft.com/blog/MessagingonAzureBlog/update-wcf-relay-applications-to-use-tls-1-2-or-later/4544418",
+          "publishedOn": "2026-08-05T21:00:00.000Z",
+          "wordCount": 6886,
+          "title": "Update WCF Relay applications to use TLS 1.2 or later",
+          "imageUrl": null
+        },
+        {
           "id": "https://techcommunity.microsoft.com/blog/MessagingonAzureBlog/announcing-public-preview-of-autoscale-for-azure-event-grid-namespaces/4537851",
           "author": "Pritha_Das",
           "description": "Today we are pleased to announce the public preview of Autoscale for Azure Event Grid namespaces. With this capability, an Event Grid namespace in the Standard tier automatically adjusts its throughput unit (TU) allocation in response to real-time workload utilization. This removes the need to manually provision capacity ahead of traffic changes or react to throttling after the fact.\nHow Autoscale fits with existing capacity management \nEvent Grid namespaces already provide control over capacity through throughput units. Each Throughput Unit defines a fixed rate of event ingress, event egress, MQTT publish, and MQTT client connections. Until now, customers set the Throughput Unit count at namespace creation and adjusted it manually when traffic patterns changed. \nAutoscale builds on this m…",
@@ -4828,16 +4838,6 @@
           "wordCount": 8989,
           "title": "Deploying DNS Private Resolvers and Private DNS Zones for Azure AI Supported Services",
           "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTE1NjQ1LTBlMGRUMw?revision=2"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/FastTrackforAzureBlog/modernizing-on%E2%80%91prem-file-servers-azure-storage-mover-and-file-sync/4500204",
-          "author": "SriniThumala",
-          "description": "Azure File Sync is a hybrid cloud storage service that centralizes on-premises file shares into Azure Files while preserving the experience of a local Windows file server. It installs an agent on Windows Server(s) to cache and sync files to an Azure file share (the cloud backend). Key features include cloud tiering (keeping only hot files on-prem and tiering cold data to Azure) and multi-site synchronization, so changes propagate across servers via the cloud. In essence, Azure File Sync transforms your file server into a cache for Azure, providing continuous two-way sync between on-premises and the Azure file share.\nAzure Storage Mover is a fully managed migration service used to transfer file data into Azure Storage (Azure Blob containers or Azure file shares) with minimal downtime. It wo…",
-          "link": "https://techcommunity.microsoft.com/blog/FastTrackforAzureBlog/modernizing-on%E2%80%91prem-file-servers-azure-storage-mover-and-file-sync/4500204",
-          "publishedOn": "2026-03-08T21:46:02.000Z",
-          "wordCount": null,
-          "title": "Modernizing On‑Prem File Servers: Azure Storage Mover and File Sync",
-          "imageUrl": null
         }
       ]
     },
@@ -6483,16 +6483,6 @@
           "wordCount": 10490,
           "title": "Resiliency Patterns for Azure Front Door: Field Lessons",
           "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTAxMjUyLVRFU0xTVA?revision=14"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/stop-burning-money-in-azure-storage/4500208",
-          "author": "Sabyasachi-Samaddar",
-          "description": "Audience: Engineers, Architects, FinOps teams (and anyone whose finance team sends \"friendly\" cost emails)\n \nYour blobs called. They want to talk about your spending habits.\nLook, we've all been there. You spin up a storage account, dump everything into Hot tier, and walk away feeling productive. Six months later, your finance team sends you a cost report that looks like a phone number.\nLet's fix that — without a 47-page whitepaper.\n────────────────────────────────────────────────────────────\n1. Not Everything Deserves the Hot Tier \nHot tier is like first-class on a flight. Great for things that actually fly often. But that compliance PDF from 2019? It doesn't need a window seat and champagne.\nAzure offers five access tiers — each with a different storage vs. access cost trade-off:\n\n\n\nTier…",
-          "link": "https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/stop-burning-money-in-azure-storage/4500208",
-          "publishedOn": "2026-03-09T03:19:14.000Z",
-          "wordCount": 11833,
-          "title": "Stop Burning Money in Azure Storage",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTAwMjA4LXJVSkV1eg?revision=2"
         }
       ]
     },
@@ -7404,6 +7394,16 @@
       "siteUrl": "https://devblogs.microsoft.com/devops/",
       "articles": [
         {
+          "id": "https://devblogs.microsoft.com/devops/?p=73167",
+          "author": "Dan Hellem",
+          "description": "Today, we’re excited to announce the general availability of the Azure DevOps MCP Server 🎉 The Azure DevOps MCP Server gives AI assistants secure, contextual access to your Azure DevOps projects so they can help you plan, build, and ship software more effectively. With the Azure DevOps remote MCP Server, you can get started without […]\nThe post Azure DevOps Remote MCP Server is generally available appeared first on Azure DevOps Blog.",
+          "link": "https://devblogs.microsoft.com/devops/azure-devops-remote-mcp-server-ga/",
+          "publishedOn": "2026-08-05T12:58:52.000Z",
+          "wordCount": 7506,
+          "title": "Azure DevOps Remote MCP Server is generally available",
+          "imageUrl": "https://devblogs.microsoft.com/devops/wp-content/uploads/sites/6/2026/07/mcp-thumb.webp"
+        },
+        {
           "id": "https://devblogs.microsoft.com/devops/?p=73145",
           "author": "Alex Pysanets",
           "description": "Great code has a long memory. The fix you shipped last quarter, the refactor that touched a dozen files, the one-line change that explained why something works the way it does — it’s all there in your commit history. The hard part has always been finding it. Today, we’re excited to announce that Commit Search […]\nThe post Find any commit in seconds: Commit Search comes to Azure DevOps appeared first on Azure DevOps Blog.",
@@ -8007,21 +8007,6 @@
           "wordCount": 7502,
           "title": "Changes to attachment IDs for inline images in Outlook add-ins",
           "imageUrl": null
-        },
-        {
-          "id": "https://devblogs.microsoft.com/microsoft365dev/?p=25384",
-          "author": "James Oleinik",
-          "description": "Microsoft 365 Copilot is now embedded as an in-app sidecar within Power Apps, Dynamics 365 Sales, and Dynamics 365 Customer Service—removing the need to switch between apps to find context or complete steps. \nThe post Build business understanding with Dataverse in Microsoft 365 Copilot appeared first on Microsoft 365 Developer Blog.",
-          "link": "https://devblogs.microsoft.com/microsoft365dev/build-business-understanding-with-dataverse-in-microsoft-365-copilot/",
-          "publishedOn": "2026-03-09T12:45:27.000Z",
-          "wordCount": 7749,
-          "title": "Build business understanding with Dataverse in Microsoft 365 Copilot",
-          "enclosure": {
-            "url": "https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2026/03/MSFT-2743-D365_Blog_Work_IQ.mp4",
-            "length": "20270358",
-            "type": "video/mp4"
-          },
-          "imageUrl": "https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2026/03/Dataverse-and-M365-Copilot.webp"
         }
       ]
     }
