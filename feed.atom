@@ -2,10 +2,43 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2026-08-06T02:36:16.487Z</updated>
+    <updated>2026-08-07T02:41:12.534Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Announcing the preview of the Work IQ Developer Tools]]></title>
+        <id>https://devblogs.microsoft.com/microsoft365dev/?p=26029</id>
+        <link href="https://devblogs.microsoft.com/microsoft365dev/announcing-the-preview-of-the-work-iq-developer-tools/"/>
+        <updated>2026-08-06T16:17:13.000Z</updated>
+        <summary type="html"><![CDATA[Software is shifting from apps built for people to agents that can reason over context and act on someone’s behalf. Microsoft 365 Copilot put that shift in front of hundreds of millions of users, and Work IQ gave agents a production-ready intelligence layer to build on. What’s been missing is the path in between: getting […]
+The post Announcing the preview of the Work IQ Developer Tools appeared first on Microsoft 365 Developer Blog.]]></summary>
+        <author>
+            <name>Sébastien Levert</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Pull request annotations on work item cards]]></title>
+        <id>https://devblogs.microsoft.com/devops/?p=73213</id>
+        <link href="https://devblogs.microsoft.com/devops/pull-request-annotations-on-work-item-cards/"/>
+        <updated>2026-08-06T14:00:21.000Z</updated>
+        <summary type="html"><![CDATA[It’s now easier to track development progress without leaving your Kanban board. Azure Boards now displays pull request annotations directly on work item cards, making it easy to see at a glance when work is actively moving through code review. With pull request status visible directly on the board, your team can quickly understand the […]
+The post Pull request annotations on work item cards appeared first on Azure DevOps Blog.]]></summary>
+        <author>
+            <name>Dan Hellem</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[You can now use the Azure DevOps Service Connection instead of a PAT or Build Session token]]></title>
+        <id>https://devblogs.microsoft.com/devops/?p=73142</id>
+        <link href="https://devblogs.microsoft.com/devops/you-can-now-use-the-azure-devops-service-connection-instead-of-a-pat-or-build-session-token/"/>
+        <updated>2026-08-06T08:57:40.000Z</updated>
+        <summary type="html"><![CDATA[We’re excited to announce the Azure DevOps service connection, a new way to access Azure DevOps from your pipelines using a Microsoft Entra workload identity (a service principal or managed identity) instead of a Personal Access Token (PAT) or session token. This post walks through what it is, how to set it up, and the […]
+The post You can now use the Azure DevOps Service Connection instead of a PAT or Build Session token appeared first on Azure DevOps Blog.]]></summary>
+        <author>
+            <name>Eric van Wijk</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Update WCF Relay applications to use TLS 1.2 or later]]></title>
         <id>https://techcommunity.microsoft.com/blog/MessagingonAzureBlog/update-wcf-relay-applications-to-use-tls-1-2-or-later/4544418</id>
@@ -10047,96 +10080,6 @@ The Backend-for-Frontend (BFF)—also known as the Curated API pattern—solves 
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[The Agent that investigates itself]]></title>
-        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/the-agent-that-investigates-itself/4500073</id>
-        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/the-agent-that-investigates-itself/4500073"/>
-        <updated>2026-03-10T14:13:59.000Z</updated>
-        <summary type="html"><![CDATA[Azure SRE Agent handles tens of thousands of incident investigations each week for internal Microsoft services and external teams running it for their own systems. Last month, one of those incidents was about the agent itself.
-Our KV cache hit rate alert started firing. Cached token percentage was dropping across the fleet. We didn't open dashboards. We simply asked the agent.
-It spawned parallel subagents, searched logs, read through its own source code, and produced the analysis. First finding: Claude Haiku at 0% cache hits. The agent checked the input distribution and found that the average call was ~180 tokens, well below Anthropic’s 4,096-token minimum for Haiku prompt caching.  Structurally, these requests could never be cached. They were false positives.
-The real regression was in C…]]></summary>
-        <author>
-            <name>sanchitmehta</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[What It Takes to Give SRE Agent a Useful Starting Point]]></title>
-        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/what-it-takes-to-give-sre-agent-a-useful-starting-point/4500343</id>
-        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/what-it-takes-to-give-sre-agent-a-useful-starting-point/4500343"/>
-        <updated>2026-03-10T14:11:15.000Z</updated>
-        <summary type="html"><![CDATA[In our latest posts, The Agent that investigates itself and Azure SRE Agent Now Builds Expertise Like Your Best Engineer Introducing Deep Context, we wrote about a moment that changed how we think about agent systems. Azure SRE Agent investigated a regression in its own prompt cache, traced the drop to a specific PR, and proposed fixes. What mattered was not just the model. What mattered was the starting point. The agent had code, logs, deployment history, and a workspace it could use to discover the next piece of context.
-That lesson forced an uncomfortable question about onboarding.
-If a customer finishes setup and the agent still knows nothing about their app, we have not really onboarded them. We have only created a resource.
-So for the March 10 GA release, we rebuilt onboarding around…]]></summary>
-        <author>
-            <name>Dalibor_Kovacevic</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[What's new in Azure SRE Agent in the GA release]]></title>
-        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/whats-new-in-azure-sre-agent-in-the-ga-release/4500779</id>
-        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/whats-new-in-azure-sre-agent-in-the-ga-release/4500779"/>
-        <updated>2026-03-10T14:09:34.000Z</updated>
-        <summary type="html"><![CDATA[Azure SRE Agent is now generally available (read the GA announcement). . After months in preview with teams across Microsoft and early customers, here's what's shipping at GA.
-We use SRE Agent in our team
-We built SRE Agent to solve our own operational problems first. It investigates our regressions, triages errors daily, and turns investigations into reusable knowledge. Every capability in this release was shaped from those learnings.
-
-→ The Agent That Investigates Itself
-
-What's new at GA
-Redesigned onboarding — useful on day one
-Can a new agent become useful the same day you set it up? That's the bar we designed around. Connect code, logs, incidents, Azure resources, and knowledge files in a single guided flow.
-
-→ What It Takes to Give an SRE Agent a Useful Starting Point
-
-Deep Context …]]></summary>
-        <author>
-            <name>dchelupati</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Agent Hooks: Production-Grade Governance for Azure SRE Agent]]></title>
-        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/agent-hooks-production-grade-governance-for-azure-sre-agent/4500292</id>
-        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/agent-hooks-production-grade-governance-for-azure-sre-agent/4500292"/>
-        <updated>2026-03-10T14:08:35.000Z</updated>
-        <summary type="html"><![CDATA[Introduction
-Azure SRE Agent helps engineering teams automate incident response, diagnostics, and remediation tasks. But when you're giving an agent access to production systems—your databases, your Kubernetes clusters, your cloud resources—you need more than just automation. You need governance.
-Today, we're diving deep into Agent Hooks, the built-in governance framework in Azure SRE Agent that lets you enforce quality standards, prevent dangerous operations, and maintain audit trails without writing custom middleware or proxies.
-Agent Hooks work by intercepting your SRE Agent at critical execution points—before it responds to users (Stop hooks) or after it executes tools (PostToolUse hooks). You define the rules once in your custom agent configuration, and the SRE Agent runtime enforces …]]></summary>
-        <author>
-            <name>Vineela-Suri</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Azure SRE Agent Now Builds Expertise Like Your Best Engineer 
-Introducing Deep Context]]></title>
-        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/azure-sre-agent-now-builds-expertise-like-your-best-engineer-introducing-deep-co/4500754</id>
-        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/azure-sre-agent-now-builds-expertise-like-your-best-engineer-introducing-deep-co/4500754"/>
-        <updated>2026-03-10T14:08:23.000Z</updated>
-        <summary type="html"><![CDATA[What if SRE Agent already knew your system before the next incident?
-Your most experienced SRE didn't become an expert overnight. Day one: reading runbooks, studying architecture diagrams, asking a lot of questions. Month three: knowing which services are fragile, which config changes cascade, which log patterns mean real trouble. Year two: diagnosing a production issue at 2 AM from a single alert because they'd built deep, living context about your systems. 
-That learning process, absorbing documentation, reading code, handling incidents, building intuition from every interaction is what makes an expert. 
-Azure SRE Agent could do the same thing 
-From pulling context to living in it 
-Azure SRE Agent already connects to Azure Monitor, PagerDuty, and ServiceNow. It queries Kusto logs, checks…]]></summary>
-        <author>
-            <name>dchelupati</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Announcing general availability for the Azure SRE Agent]]></title>
-        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/announcing-general-availability-for-the-azure-sre-agent/4500682</id>
-        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/announcing-general-availability-for-the-azure-sre-agent/4500682"/>
-        <updated>2026-03-10T14:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Today, we’re excited to announce the General Availability (GA) of Azure SRE Agent— your AI‑powered operations teammate that helps organizations improve uptime, reduce incident impact, and cut operational toil by accelerating diagnosis and automating response workflows.  This GA release represents a fundamental leap forward—shaped by feedback from hundreds of preview customers—in how agentic AI can be applied to cloud operations, so teams can spend less time firefighting and more time delivering new capabilities.
-Microsoft runs Azure SRE Agent across its own services — 1,300+ agents deployed, 35,000+ incidents mitigated, and over 20,000  engineering hours saved every month. The same platform is now generally available to every customer.
-What’s new with the GA milestone
-Preview customers hel…]]></summary>
-        <author>
-            <name>Mayunk_Jain</name>
-        </author>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[ExtractLabel: Schema-driven unstructured data extraction with Fabric AI Functions]]></title>
         <id>extractlabel-schema-driven-unstructured-data-extraction-with-fabric-ai-functions</id>
         <link href="https://blog.fabric.microsoft.com/en/blog/extractlabel-schema-driven-unstructured-data-extraction-with-fabric-ai-functions/"/>
@@ -10145,72 +10088,6 @@ Preview customers hel…]]></summary>
 Continue reading “ExtractLabel: Schema-driven unstructured data extraction with Fabric AI Functions”]]></summary>
         <author>
             <name>Fabric Updates Blog articles</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Microsoft Azure at KubeCon Europe 2026 | Amsterdam, NL - March 23-26]]></title>
-        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/microsoft-azure-at-kubecon-europe-2026--amsterdam-nl---march-23-26/4500716</id>
-        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/microsoft-azure-at-kubecon-europe-2026--amsterdam-nl---march-23-26/4500716"/>
-        <updated>2026-03-10T09:15:00.000Z</updated>
-        <summary type="html"><![CDATA[Microsoft Azure is coming back to Amsterdam for  KubeCon + CloudNativeCon Europe 2026 in two short weeks, from March 23-26! As a Diamond Sponsor, we have a full week of sessions, hands-on activities, and ways to connect with the engineers behind AKS and our open-source projects. Here's what's on the schedule:
-Azure Day with Kubernetes: 23 March 2026
-Before the main conference begins, join us at Hotel Casa Amsterdam for a free, full-day technical event built around AKS (registration required for entry - capacity is limited!). Whether you're early in your Kubernetes journey, running clusters at scale, or building AI apps, the day is designed to give you practical guidance from Microsoft product and engineering teams.
-
-Morning sessions cover what's new in AKS, including how teams are building…]]></summary>
-        <author>
-            <name>coryskimming</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Build a Fully Offline RAG App with Foundry Local: No Cloud Required]]></title>
-        <id>https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/build-a-fully-offline-rag-app-with-foundry-local-no-cloud-required/4499964</id>
-        <link href="https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/build-a-fully-offline-rag-app-with-foundry-local-no-cloud-required/4499964"/>
-        <updated>2026-03-10T07:00:00.000Z</updated>
-        <summary type="html"><![CDATA[A practical guide to building an on-device AI support agent using Retrieval-Augmented Generation, JavaScript, and Microsoft Foundry Local.
-
-
-The Problem: AI That Can't Go Offline
-Most AI-powered applications today are firmly tethered to the cloud. They assume stable internet, low-latency API calls, and the comfort of a managed endpoint. But what happens when your users are in an environment with zero connectivity  a gas pipeline in a remote field, a factory floor, an underground facility?
-That's exactly the scenario that motivated this project: a fully offline RAG-powered support agent that runs entirely on a laptop. No cloud. No API keys. No outbound network calls. Just a local model, a local vector store, and domain-specific documents  all accessible from a browser on any device.
-
-The Ga…]]></summary>
-        <author>
-            <name>Lee_Stott</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Getting Started with Behave: Writing Cucumber Tests in VS Code]]></title>
-        <id>https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/getting-started-with-behave-writing-cucumber-tests-in-vs-code/4496865</id>
-        <link href="https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/getting-started-with-behave-writing-cucumber-tests-in-vs-code/4496865"/>
-        <updated>2026-03-10T07:00:00.000Z</updated>
-        <summary type="html"><![CDATA[What is Behave?
-Behave is a BDD test framework for Python that allows you to write tests in plain English using Given–When–Then syntax, backed by Python step definitions. 
-Key benefits:
-
-Human‑readable test scenarios using Gherkin
-Strong alignment between business requirements and test automation
-Easy integration with CI/CD pipelines
-Lightweight and IDE‑friendly
-
-Prerequisites
-Before getting started, ensure you have the following installed:
-
-Python 3.10+
-Visual Studio Code
-Basic understanding of Python
-Familiarity with BDD concepts (Given / When / Then)
-
-Steps
-Download the sample demo zip from github download
-Step 1: Create a Virtual Environment and activate it.
-python -m venv venv
-.venv\Scripts\activate
-Install Dependencies
-pip install behave requests
-Step 2: Install VS Code Extensions
-To…]]></summary>
-        <author>
-            <name>sabappal</name>
         </author>
     </entry>
     <entry>

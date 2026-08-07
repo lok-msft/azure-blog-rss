@@ -3195,16 +3195,6 @@
           "wordCount": 12480,
           "title": "Microsoft Foundry Model Router: A Developer's Guide to Smarter AI Routing",
           "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTAyMTMzLTMxTzhQTw?revision=5"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/build-a-fully-offline-rag-app-with-foundry-local-no-cloud-required/4499964",
-          "author": "Lee_Stott",
-          "description": "A practical guide to building an on-device AI support agent using Retrieval-Augmented Generation, JavaScript, and Microsoft Foundry Local.\n\n\nThe Problem: AI That Can't Go Offline\nMost AI-powered applications today are firmly tethered to the cloud. They assume stable internet, low-latency API calls, and the comfort of a managed endpoint. But what happens when your users are in an environment with zero connectivity  a gas pipeline in a remote field, a factory floor, an underground facility?\nThat's exactly the scenario that motivated this project: a fully offline RAG-powered support agent that runs entirely on a laptop. No cloud. No API keys. No outbound network calls. Just a local model, a local vector store, and domain-specific documents  all accessible from a browser on any device.\n\nThe Ga…",
-          "link": "https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/build-a-fully-offline-rag-app-with-foundry-local-no-cloud-required/4499964",
-          "publishedOn": "2026-03-10T07:00:00.000Z",
-          "wordCount": 13393,
-          "title": "Build a Fully Offline RAG App with Foundry Local: No Cloud Required",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDk5OTY0LW9CNE05UQ?revision=2"
         }
       ]
     },
@@ -4582,76 +4572,6 @@
           "wordCount": 9502,
           "title": "From Single Apps to Scale Solutions: How AI Agents Scale Modernization",
           "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTAwMDU5LUtsRWRDdg?revision=6"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/the-agent-that-investigates-itself/4500073",
-          "author": "sanchitmehta",
-          "description": "Azure SRE Agent handles tens of thousands of incident investigations each week for internal Microsoft services and external teams running it for their own systems. Last month, one of those incidents was about the agent itself.\nOur KV cache hit rate alert started firing. Cached token percentage was dropping across the fleet. We didn't open dashboards. We simply asked the agent.\nIt spawned parallel subagents, searched logs, read through its own source code, and produced the analysis. First finding: Claude Haiku at 0% cache hits. The agent checked the input distribution and found that the average call was ~180 tokens, well below Anthropic’s 4,096-token minimum for Haiku prompt caching.  Structurally, these requests could never be cached. They were false positives.\nThe real regression was in C…",
-          "link": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/the-agent-that-investigates-itself/4500073",
-          "publishedOn": "2026-03-10T14:13:59.000Z",
-          "wordCount": 16733,
-          "title": "The Agent that investigates itself",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTAwMDczLTFUdTdDVQ?revision=56"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/what-it-takes-to-give-sre-agent-a-useful-starting-point/4500343",
-          "author": "Dalibor_Kovacevic",
-          "description": "In our latest posts, The Agent that investigates itself and Azure SRE Agent Now Builds Expertise Like Your Best Engineer Introducing Deep Context, we wrote about a moment that changed how we think about agent systems. Azure SRE Agent investigated a regression in its own prompt cache, traced the drop to a specific PR, and proposed fixes. What mattered was not just the model. What mattered was the starting point. The agent had code, logs, deployment history, and a workspace it could use to discover the next piece of context.\nThat lesson forced an uncomfortable question about onboarding.\nIf a customer finishes setup and the agent still knows nothing about their app, we have not really onboarded them. We have only created a resource.\nSo for the March 10 GA release, we rebuilt onboarding around…",
-          "link": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/what-it-takes-to-give-sre-agent-a-useful-starting-point/4500343",
-          "publishedOn": "2026-03-10T14:11:15.000Z",
-          "wordCount": 16349,
-          "title": "What It Takes to Give SRE Agent a Useful Starting Point",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTAwMzQzLTJ3bUFoZQ?revision=12"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/whats-new-in-azure-sre-agent-in-the-ga-release/4500779",
-          "author": "dchelupati",
-          "description": "Azure SRE Agent is now generally available (read the GA announcement). . After months in preview with teams across Microsoft and early customers, here's what's shipping at GA.\nWe use SRE Agent in our team\nWe built SRE Agent to solve our own operational problems first. It investigates our regressions, triages errors daily, and turns investigations into reusable knowledge. Every capability in this release was shaped from those learnings.\n\n→ The Agent That Investigates Itself\n\nWhat's new at GA\nRedesigned onboarding — useful on day one\nCan a new agent become useful the same day you set it up? That's the bar we designed around. Connect code, logs, incidents, Azure resources, and knowledge files in a single guided flow.\n\n→ What It Takes to Give an SRE Agent a Useful Starting Point\n\nDeep Context …",
-          "link": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/whats-new-in-azure-sre-agent-in-the-ga-release/4500779",
-          "publishedOn": "2026-03-10T14:09:34.000Z",
-          "wordCount": 7812,
-          "title": "What's new in Azure SRE Agent in the GA release",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTAwNzc5LW5HZmxxYQ?revision=9"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/agent-hooks-production-grade-governance-for-azure-sre-agent/4500292",
-          "author": "Vineela-Suri",
-          "description": "Introduction\nAzure SRE Agent helps engineering teams automate incident response, diagnostics, and remediation tasks. But when you're giving an agent access to production systems—your databases, your Kubernetes clusters, your cloud resources—you need more than just automation. You need governance.\nToday, we're diving deep into Agent Hooks, the built-in governance framework in Azure SRE Agent that lets you enforce quality standards, prevent dangerous operations, and maintain audit trails without writing custom middleware or proxies.\nAgent Hooks work by intercepting your SRE Agent at critical execution points—before it responds to users (Stop hooks) or after it executes tools (PostToolUse hooks). You define the rules once in your custom agent configuration, and the SRE Agent runtime enforces …",
-          "link": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/agent-hooks-production-grade-governance-for-azure-sre-agent/4500292",
-          "publishedOn": "2026-03-10T14:08:35.000Z",
-          "wordCount": 14683,
-          "title": "Agent Hooks: Production-Grade Governance for Azure SRE Agent",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTAwMjkyLW5xeXRLbQ?revision=6"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/azure-sre-agent-now-builds-expertise-like-your-best-engineer-introducing-deep-co/4500754",
-          "author": "dchelupati",
-          "description": "What if SRE Agent already knew your system before the next incident?\nYour most experienced SRE didn't become an expert overnight. Day one: reading runbooks, studying architecture diagrams, asking a lot of questions. Month three: knowing which services are fragile, which config changes cascade, which log patterns mean real trouble. Year two: diagnosing a production issue at 2 AM from a single alert because they'd built deep, living context about your systems. \nThat learning process, absorbing documentation, reading code, handling incidents, building intuition from every interaction is what makes an expert. \nAzure SRE Agent could do the same thing \nFrom pulling context to living in it \nAzure SRE Agent already connects to Azure Monitor, PagerDuty, and ServiceNow. It queries Kusto logs, checks…",
-          "link": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/azure-sre-agent-now-builds-expertise-like-your-best-engineer-introducing-deep-co/4500754",
-          "publishedOn": "2026-03-10T14:08:23.000Z",
-          "wordCount": 11495,
-          "title": "Azure SRE Agent Now Builds Expertise Like Your Best Engineer \nIntroducing Deep Context",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTAwNzU0LWk4NkpseA?revision=6"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/announcing-general-availability-for-the-azure-sre-agent/4500682",
-          "author": "Mayunk_Jain",
-          "description": "Today, we’re excited to announce the General Availability (GA) of Azure SRE Agent— your AI‑powered operations teammate that helps organizations improve uptime, reduce incident impact, and cut operational toil by accelerating diagnosis and automating response workflows.  This GA release represents a fundamental leap forward—shaped by feedback from hundreds of preview customers—in how agentic AI can be applied to cloud operations, so teams can spend less time firefighting and more time delivering new capabilities.\nMicrosoft runs Azure SRE Agent across its own services — 1,300+ agents deployed, 35,000+ incidents mitigated, and over 20,000  engineering hours saved every month. The same platform is now generally available to every customer.\nWhat’s new with the GA milestone\nPreview customers hel…",
-          "link": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/announcing-general-availability-for-the-azure-sre-agent/4500682",
-          "publishedOn": "2026-03-10T14:00:00.000Z",
-          "wordCount": 10018,
-          "title": "Announcing general availability for the Azure SRE Agent",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTAwNjgyLWRQeTBNYQ?revision=4"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/microsoft-azure-at-kubecon-europe-2026--amsterdam-nl---march-23-26/4500716",
-          "author": "coryskimming",
-          "description": "Microsoft Azure is coming back to Amsterdam for  KubeCon + CloudNativeCon Europe 2026 in two short weeks, from March 23-26! As a Diamond Sponsor, we have a full week of sessions, hands-on activities, and ways to connect with the engineers behind AKS and our open-source projects. Here's what's on the schedule:\nAzure Day with Kubernetes: 23 March 2026\nBefore the main conference begins, join us at Hotel Casa Amsterdam for a free, full-day technical event built around AKS (registration required for entry - capacity is limited!). Whether you're early in your Kubernetes journey, running clusters at scale, or building AI apps, the day is designed to give you practical guidance from Microsoft product and engineering teams.\n\nMorning sessions cover what's new in AKS, including how teams are building…",
-          "link": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/microsoft-azure-at-kubecon-europe-2026--amsterdam-nl---march-23-26/4500716",
-          "publishedOn": "2026-03-10T09:15:00.000Z",
-          "wordCount": 13342,
-          "title": "Microsoft Azure at KubeCon Europe 2026 | Amsterdam, NL - March 23-26",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTAwNzE2LUNLV3hEYQ?revision=2"
         }
       ]
     },
@@ -5999,16 +5919,6 @@
           "wordCount": 11116,
           "title": "Implementing the Backend-for-Frontend (BFF) / Curated API Pattern Using Azure API Management",
           "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDk5ODgwLUx1M091cA?revision=4"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/getting-started-with-behave-writing-cucumber-tests-in-vs-code/4496865",
-          "author": "sabappal",
-          "description": "What is Behave?\nBehave is a BDD test framework for Python that allows you to write tests in plain English using Given–When–Then syntax, backed by Python step definitions. \nKey benefits:\n\nHuman‑readable test scenarios using Gherkin\nStrong alignment between business requirements and test automation\nEasy integration with CI/CD pipelines\nLightweight and IDE‑friendly\n\nPrerequisites\nBefore getting started, ensure you have the following installed:\n\nPython 3.10+\nVisual Studio Code\nBasic understanding of Python\nFamiliarity with BDD concepts (Given / When / Then)\n\nSteps\nDownload the sample demo zip from github download\nStep 1: Create a Virtual Environment and activate it.\npython -m venv venv\n.venv\\Scripts\\activate\nInstall Dependencies\npip install behave requests\nStep 2: Install VS Code Extensions\nTo…",
-          "link": "https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/getting-started-with-behave-writing-cucumber-tests-in-vs-code/4496865",
-          "publishedOn": "2026-03-10T07:00:00.000Z",
-          "wordCount": 8013,
-          "title": "Getting Started with Behave: Writing Cucumber Tests in VS Code",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDk2ODY1LUxmczFYTg?revision=3"
         }
       ]
     },
@@ -7394,6 +7304,26 @@
       "siteUrl": "https://devblogs.microsoft.com/devops/",
       "articles": [
         {
+          "id": "https://devblogs.microsoft.com/devops/?p=73213",
+          "author": "Dan Hellem",
+          "description": "It’s now easier to track development progress without leaving your Kanban board. Azure Boards now displays pull request annotations directly on work item cards, making it easy to see at a glance when work is actively moving through code review. With pull request status visible directly on the board, your team can quickly understand the […]\nThe post Pull request annotations on work item cards appeared first on Azure DevOps Blog.",
+          "link": "https://devblogs.microsoft.com/devops/pull-request-annotations-on-work-item-cards/",
+          "publishedOn": "2026-08-06T14:00:21.000Z",
+          "wordCount": 7061,
+          "title": "Pull request annotations on work item cards",
+          "imageUrl": "https://devblogs.microsoft.com/devops/wp-content/uploads/sites/6/2026/08/pr-on-card-featured.webp"
+        },
+        {
+          "id": "https://devblogs.microsoft.com/devops/?p=73142",
+          "author": "Eric van Wijk",
+          "description": "We’re excited to announce the Azure DevOps service connection, a new way to access Azure DevOps from your pipelines using a Microsoft Entra workload identity (a service principal or managed identity) instead of a Personal Access Token (PAT) or session token. This post walks through what it is, how to set it up, and the […]\nThe post You can now use the Azure DevOps Service Connection instead of a PAT or Build Session token appeared first on Azure DevOps Blog.",
+          "link": "https://devblogs.microsoft.com/devops/you-can-now-use-the-azure-devops-service-connection-instead-of-a-pat-or-build-session-token/",
+          "publishedOn": "2026-08-06T08:57:40.000Z",
+          "wordCount": 7702,
+          "title": "You can now use the Azure DevOps Service Connection instead of a PAT or Build Session token",
+          "imageUrl": "https://devblogs.microsoft.com/devops/wp-content/uploads/sites/6/2026/07/new-azdo-sc1.webp"
+        },
+        {
           "id": "https://devblogs.microsoft.com/devops/?p=73167",
           "author": "Dan Hellem",
           "description": "Today, we’re excited to announce the general availability of the Azure DevOps MCP Server 🎉 The Azure DevOps MCP Server gives AI assistants secure, contextual access to your Azure DevOps projects so they can help you plan, build, and ship software more effectively. With the Azure DevOps remote MCP Server, you can get started without […]\nThe post Azure DevOps Remote MCP Server is generally available appeared first on Azure DevOps Blog.",
@@ -7768,6 +7698,16 @@
       "feedUrl": "https://devblogs.microsoft.com/microsoft365dev/feed/",
       "siteUrl": "https://devblogs.microsoft.com/microsoft365dev/",
       "articles": [
+        {
+          "id": "https://devblogs.microsoft.com/microsoft365dev/?p=26029",
+          "author": "Sébastien Levert",
+          "description": "Software is shifting from apps built for people to agents that can reason over context and act on someone’s behalf. Microsoft 365 Copilot put that shift in front of hundreds of millions of users, and Work IQ gave agents a production-ready intelligence layer to build on. What’s been missing is the path in between: getting […]\nThe post Announcing the preview of the Work IQ Developer Tools appeared first on Microsoft 365 Developer Blog.",
+          "link": "https://devblogs.microsoft.com/microsoft365dev/announcing-the-preview-of-the-work-iq-developer-tools/",
+          "publishedOn": "2026-08-06T16:17:13.000Z",
+          "wordCount": 8260,
+          "title": "Announcing the preview of the Work IQ Developer Tools",
+          "imageUrl": "https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2026/08/POWERPNT_aCUVnc1tXv.webp"
+        },
         {
           "id": "https://devblogs.microsoft.com/microsoft365dev/?p=25758",
           "author": "Office Extensibility team",
