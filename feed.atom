@@ -2,10 +2,52 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2026-08-07T02:41:12.534Z</updated>
+    <updated>2026-08-08T01:41:04.581Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Announcing Grafana 13 Support in Azure Managed Grafana]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/announcing-grafana-13-support-in-azure-managed-grafana/4545199</id>
+        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/announcing-grafana-13-support-in-azure-managed-grafana/4545199"/>
+        <updated>2026-08-07T22:24:56.000Z</updated>
+        <summary type="html"><![CDATA[Enhanced Dashboarding and Visualization Experience
+Grafana 13 introduces a number of improvements that make dashboards easier to build, reuse, and manage at scale. Teams can create richer observability experiences while reducing duplication and improving consistency across environments. These improvements include Dynamic Dashboards, Saved Queries, enhanced filtering and grouping experiences, dashboard templates, and additional usability enhancements that streamline dashboard authoring and discovery. From enhanced dashboard authoring experiences and reusable queries to Git-based dashboard lifecycle management, Grafana 13 helps teams build and operate observability solutions more efficiently at scale. 
+Git Sync: Manage Dashboards as Code
+One of the most anticipated capabilities associated wi…]]></summary>
+        <author>
+            <name>nuzhat-minhaz</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Build Durable, Long-Running MCP Tasks on Azure App Service]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/build-durable-long-running-mcp-tasks-on-azure-app-service/4545170</id>
+        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/build-durable-long-running-mcp-tasks-on-azure-app-service/4545170"/>
+        <updated>2026-08-07T19:40:32.000Z</updated>
+        <summary type="html"><![CDATA[Not every tool call finishes in a few seconds.
+A compliance scan might inspect hundreds of resources. A deployment might wait for an approval. A batch import might run for an hour. Holding an HTTP connection open for that entire operation is fragile: clients restart, proxies time out, networks drop, and the App Service instance that accepted the request might recycle or scale in.
+The 2026-07-28 Model Context Protocol release addresses this with the official MCP Tasks extension. Instead of blocking until the final result is ready, an MCP server can return a task handle immediately. The client can disconnect, reconnect later, poll for progress, provide input when required, cancel the operation, and retrieve the result when it is complete.
+That is the protocol story. The infrastructure story …]]></summary>
+        <author>
+            <name>jordanselig</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Zero Ops: Agents Operate, Humans Govern]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/zero-ops-agents-operate-humans-govern/4545151</id>
+        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/zero-ops-agents-operate-humans-govern/4545151"/>
+        <updated>2026-08-07T16:48:45.000Z</updated>
+        <summary type="html"><![CDATA[A note on scope: the patterns in this guide apply to any agentic operations platform. The specifics — the pricing model, the built-in capabilities, the primitives named throughout — are Azure SRE Agent. Where something is a property of the product rather than a universal truth, it’s called out.
+
+
+Remember when?
+Remember the 3am page? The one where you sat on the edge of the bed with a laptop balanced on your knees, hunting through six dashboards to work out whether the thing that woke you was even real. Half the time it wasn’t.
+Remember the cost review? Somebody exports a month of billing to a spreadsheet, three engineers spend a fortnight arguing about which resources are actually orphaned, and by the time you’ve agreed on a plan the next month’s bill has already landed.
+Remember the zero…]]></summary>
+        <author>
+            <name>Shamir_AbdulAziz</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Announcing the preview of the Work IQ Developer Tools]]></title>
         <id>https://devblogs.microsoft.com/microsoft365dev/?p=26029</id>
@@ -10038,45 +10080,6 @@ Over the past few years, AI has changed software development faster than anythin
 Agentic DevOps makes this shift practical. Software agents can now help across every stage of the application lifecycle, from planning and refactoring to testing, deployment, and running production systems. The real question organizations face is no longer if they should modernize, but how to modernize safely, continuously, an…]]></summary>
         <author>
             <name>mandywhaley</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Implementing the Backend-for-Frontend (BFF) / Curated API Pattern Using Azure API Management]]></title>
-        <id>https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/implementing-the-backend-for-frontend-bff--curated-api-pattern-using-azure-api-m/4499880</id>
-        <link href="https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/implementing-the-backend-for-frontend-bff--curated-api-pattern-using-azure-api-m/4499880"/>
-        <updated>2026-03-11T07:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Modern digital applications rarely serve a single type of client. Web portals, mobile apps, partner integrations, and internal tools often consume the same backend services—yet each has different performance, payload, and UX requirements.
-Exposing backend APIs directly to all clients frequently leads to over-fetching, chatty networks, and tight coupling between UI and backend domain models. This is where a Curated API or Backend for Frontend API design pattern becomes useful. 
-What Is the Backend-for-Frontend (BFF) Pattern?
-The Backend-for-Frontend (BFF)—also known as the Curated API pattern—solves this problem by introducing a client-specific API layer that shapes, aggregates, and optimizes data specifically for the consuming experience. There is very good architectural guidance on this a…]]></summary>
-        <author>
-            <name>SajalMukherjee</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Implementing the Backend-for-Frontend (BFF) / Curated API Pattern Using Azure API Management]]></title>
-        <id>https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/implementing-the-backend-for-frontend-bff--curated-api-pattern-using-azure-api-m/4499880</id>
-        <link href="https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/implementing-the-backend-for-frontend-bff--curated-api-pattern-using-azure-api-m/4499880"/>
-        <updated>2026-03-11T07:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Modern digital applications rarely serve a single type of client. Web portals, mobile apps, partner integrations, and internal tools often consume the same backend services—yet each has different performance, payload, and UX requirements.
-Exposing backend APIs directly to all clients frequently leads to over-fetching, chatty networks, and tight coupling between UI and backend domain models. This is where a Curated API or Backend for Frontend API design pattern becomes useful. 
-What Is the Backend-for-Frontend (BFF) Pattern?
-The Backend-for-Frontend (BFF)—also known as the Curated API pattern—solves this problem by introducing a client-specific API layer that shapes, aggregates, and optimizes data specifically for the consuming experience. There is very good architectural guidance on this a…]]></summary>
-        <author>
-            <name>SajalMukherjee</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Implementing the Backend-for-Frontend (BFF) / Curated API Pattern Using Azure API Management]]></title>
-        <id>https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/implementing-the-backend-for-frontend-bff--curated-api-pattern-using-azure-api-m/4499880</id>
-        <link href="https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/implementing-the-backend-for-frontend-bff--curated-api-pattern-using-azure-api-m/4499880"/>
-        <updated>2026-03-11T07:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Modern digital applications rarely serve a single type of client. Web portals, mobile apps, partner integrations, and internal tools often consume the same backend services—yet each has different performance, payload, and UX requirements.
-Exposing backend APIs directly to all clients frequently leads to over-fetching, chatty networks, and tight coupling between UI and backend domain models. This is where a Curated API or Backend for Frontend API design pattern becomes useful. 
-What Is the Backend-for-Frontend (BFF) Pattern?
-The Backend-for-Frontend (BFF)—also known as the Curated API pattern—solves this problem by introducing a client-specific API layer that shapes, aggregates, and optimizes data specifically for the consuming experience. There is very good architectural guidance on this a…]]></summary>
-        <author>
-            <name>SajalMukherjee</name>
         </author>
     </entry>
     <entry>
