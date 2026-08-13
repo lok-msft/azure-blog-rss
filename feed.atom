@@ -2,10 +2,57 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2026-08-12T01:59:01.477Z</updated>
+    <updated>2026-08-13T02:01:25.782Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Add AI to the workflows you already have using Serverless Agents in Azure Functions]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/add-ai-to-the-workflows-you-already-have-using-serverless-agents-in-azure-functi/4544824</id>
+        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/add-ai-to-the-workflows-you-already-have-using-serverless-agents-in-azure-functi/4544824"/>
+        <updated>2026-08-12T22:47:37.000Z</updated>
+        <summary type="html"><![CDATA[There are a lot of ways to build with AI right now: chat frontends, copilots, greenfield agent apps, orchestration frameworks. All of them have their place, and some customers are building entirely new applications this way. But across customer engagements, a consistent pattern has emerged: the most successful and most cost-effective AI projects are not rewrites. They are existing, deterministic, event-driven business workflows (queue processing, message handling, scheduled jobs) with AI added at exactly the one step that was never deterministic to begin with. This enables the parts that are battle hardened to remain as before, adding AI where non-deterministic smarts are needed. This creates a more robust application along with spending costs for tokens only where beneficial.
+That pattern…]]></summary>
+        <author>
+            <name>Anirudh Garg</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Governing a Risk Operations Agent with the Microsoft Agent Framework Harness and AGT]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/governing-a-risk-operations-agent-with-the-microsoft-agent-framework-harness-and/4546425</id>
+        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/governing-a-risk-operations-agent-with-the-microsoft-agent-framework-harness-and/4546425"/>
+        <updated>2026-08-12T20:24:44.000Z</updated>
+        <summary type="html"><![CDATA[Introduction
+I hope you have already found Auditing and Telemetry for the Agent Governance Toolkit - Getting Started with .NET Core. This article demonstrates how you can leverage the Agent Governance Toolkit practically.
+This time, I'll take it a step further and combine the Microsoft Agent Framework Harness with AGT. The example is a file-access agent that operates on a local working directory.
+As soon as you let an agent touch files, a familiar set of requirements shows up:
+
+Listing, reading, and searching files should be allowed
+Creating, deleting, and overwriting files should not be
+That decision shouldn't be left entirely to the agent's prompt
+Blocked tool calls need to show up in an audit log
+
+This is exactly the kind of split where Harness answers "what can the agent do" and AGT an…]]></summary>
+        <author>
+            <name>daisami</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Azure Monitor Auxiliary Logs expands with Azure tables support, plan switching, and sovereign clouds]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/azure-monitor-auxiliary-logs-expands-with-azure-tables-support-plan-switching-an/4525206</id>
+        <link href="https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/azure-monitor-auxiliary-logs-expands-with-azure-tables-support-plan-switching-an/4525206"/>
+        <updated>2026-08-12T09:08:22.000Z</updated>
+        <summary type="html"><![CDATA[Three long-standing customer requests for the Auxiliary table plan in Log Analytics are now generally available:
+
+Azure table support. Auxiliary now covers a subset of standard Azure tables, selected by ingestion pattern, in addition to DCR-based custom tables (_CL).
+In-place plan switching. You can switch existing tables between the Analytics and Auxiliary plans without recreating them.
+Sovereign cloud availability. Auxiliary Logs is GA in Azure Government (Fairfax) and Microsoft Azure operated by 21Vianet (Mooncake)..
+
+Together, these changes make Auxiliary practical to adopt on the tables you already have, and in the clouds where your workloads already run. And because plan switching is fully reversible, you can try the more cost-effective option with confidence - if it is not the right…]]></summary>
+        <author>
+            <name>AdiBiran</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Reliability Starter Kit: SLIs, Health models, and SRE Agent]]></title>
         <id>https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/reliability-starter-kit-slis-health-models-and-sre-agent/4545733</id>
@@ -9952,32 +9999,6 @@ For geo-replicated registries, ACR exposes a global endpoint like contoso.azurec
 That's the promise. But TM routing at the global endpoint was latency-aware, not fully workload-health-aware: it could see whether the regional front door responded, but not whether that region could successfully serve real pull …]]></summary>
         <author>
             <name>johnsonshi_msft</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Microsoft Foundry Model Router: A Developer's Guide to Smarter AI Routing]]></title>
-        <id>https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/microsoft-foundry-model-router-a-developers-guide-to-smarter-ai-routing/4502133</id>
-        <link href="https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/microsoft-foundry-model-router-a-developers-guide-to-smarter-ai-routing/4502133"/>
-        <updated>2026-03-16T07:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Introduction
-When building AI-powered applications on Azure, one of the most impactful decisions you make isn't about which model to use, it's about how your application selects models at runtime. Microsoft Foundry Model Router, available through Microsoft Foundry, automatically routes your inference requests to the best available model based on prompt complexity, latency targets, and cost efficiency. But how do you know it's actually routing correctly? And how do you compare its behavior across different API paths?
-That's exactly the problem RouteLens solves. It's an open-source Node.js CLI and web-based testing tool that sends configurable prompts through two distinct Azure AI runtime paths and produces a detailed comparison of routing decisions, latency profiles, and reliability metrics…]]></summary>
-        <author>
-            <name>Lee_Stott</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[From Prototype to Production: Building a Hosted Agent with AI Toolkit & Microsoft Foundry]]></title>
-        <id>https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/from-prototype-to-production-building-a-hosted-agent-with-ai-toolkit--microsoft-/4501969</id>
-        <link href="https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/from-prototype-to-production-building-a-hosted-agent-with-ai-toolkit--microsoft-/4501969"/>
-        <updated>2026-03-16T07:00:00.000Z</updated>
-        <summary type="html"><![CDATA[From Prototype to Production: Building a Hosted Agent with AI Toolkit & Microsoft Foundry
-Agentic AI is no longer a future concept — it’s quickly becoming the backbone of intelligent, action-oriented applications. But while it’s easy to prototype an AI agent, taking it all the way to production requires much more than a clever prompt.
-In this blog post - and the accompanying video tutorial - we walk through the end-to-end journey of an AI engineer building, testing, and operationalizing a hosted AI agent using AI Toolkit in Visual Studio Code and Microsoft Foundry. The goal is to show not just how to build an agent, but how to do it in a way that’s scalable, testable, and production ready.
-The scenario: a retail agent for sales and inventory insights
-To make things concrete, the demo uses …]]></summary>
-        <author>
-            <name>carlottacaste</name>
         </author>
     </entry>
     <entry>
