@@ -3175,16 +3175,6 @@
           "wordCount": 11681,
           "title": "ProvePresent: Ending Proxy Attendance with Azure Serverless & Azure OpenAI",
           "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTAxODMwLVRwVlg1ZA?revision=7"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/foundry-iq-give-your-ai-agents-a-knowledge-upgrade/4502615",
-          "author": "Lee_Stott",
-          "description": "If you’re learning to build AI agents, you’ve probably hit a familiar wall: your agent can generate text, but it doesn’t actually know anything about your data. It can’t look up your documents, search across your files, or pull facts from multiple sources to answer a real question.\nThat’s the gap Foundry IQ fills. It gives your AI agents structured access to knowledge, so they can retrieve, reason over, and synthesize information from real data sources instead of relying on what’s baked into the model.\nWhy Should You Care?\nAs a student or early-career developer, understanding how AI systems work with external knowledge is one of the most valuable skills you can build right now. Retrieval-Augmented Generation (RAG), knowledge bases, and multi-source querying are at the core of every product…",
-          "link": "https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/foundry-iq-give-your-ai-agents-a-knowledge-upgrade/4502615",
-          "publishedOn": "2026-03-17T07:00:00.000Z",
-          "wordCount": 100,
-          "title": "Foundry IQ: Give Your AI Agents a Knowledge Upgrade",
-          "imageUrl": null
         }
       ]
     },
@@ -4602,16 +4592,6 @@
           "wordCount": 11084,
           "title": "Building an Enterprise Platform for Inference at Scale",
           "imageUrl": null
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/health-aware-failover-for-azure-container-registry-geo-replication/4501730",
-          "author": "johnsonshi_msft",
-          "description": "Azure Container Registry (ACR) supports geo-replication: one registry resource with active-active (primary-primary), write-enabled geo-replicas across multiple Azure regions. You can push or pull through any replica, and ACR asynchronously replicates content and metadata to all other replicas using an eventual consistency model.\nFor geo-replicated registries, ACR exposes a global endpoint like contoso.azurecr.io; that URL is backed by Azure Traffic Manager, which routes requests to the replica with the best network performance profile (usually the closest region).\nThat's the promise. But TM routing at the global endpoint was latency-aware, not fully workload-health-aware: it could see whether the regional front door responded, but not whether that region could successfully serve real pull …",
-          "link": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/health-aware-failover-for-azure-container-registry-geo-replication/4501730",
-          "publishedOn": "2026-03-16T18:11:49.000Z",
-          "wordCount": 13606,
-          "title": "Health-Aware Failover for Azure Container Registry Geo-Replication",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTAxNzMwLTBJdkp1OA?revision=4"
         }
       ]
     },
@@ -5909,16 +5889,6 @@
           "wordCount": 15583,
           "title": "Building real-world AI automation with Foundry Local and the Microsoft Agent Framework",
           "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTAxODk4LWxkcXgydg?revision=1"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/announcing-the-iq-series-foundry-iq/4501862",
-          "author": "aycabas",
-          "description": "AI agents are rapidly becoming a new way to build applications. But for agents to be truly useful, they need access to the knowledge and context that helps them reason about the world they operate in.\nThat’s where Foundry IQ comes in.\nToday we’re announcing the IQ Series: Foundry IQ, a new set of developer-focused episodes exploring how to build knowledge-centric AI systems using Foundry IQ.\nThe series focuses on the core ideas behind how modern AI systems work with knowledge, how they retrieve information, reason across sources, synthesize answers, and orchestrate multi-step interactions.\nInstead of treating retrieval as a single step in a pipeline, Foundry IQ approaches knowledge as something that AI systems actively work with throughout the reasoning process. The IQ Series breaks down t…",
-          "link": "https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/announcing-the-iq-series-foundry-iq/4501862",
-          "publishedOn": "2026-03-17T07:00:00.000Z",
-          "wordCount": 8375,
-          "title": "Announcing the IQ Series: Foundry IQ",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTAxODYyLXlsNFJFQw?revision=4"
         }
       ]
     },
@@ -5927,6 +5897,16 @@
       "feedUrl": "https://techcommunity.microsoft.com/t5/s/plugins/custom/microsoft/o365/custom-blog-rss?board=AzurePaaSBlog&size=100",
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
+        {
+          "id": "https://techcommunity.microsoft.com/blog/AzurePaaSBlog/monitoring-azure-service-fabric-with-azure-managed-grafana/4546439",
+          "author": "Ahmed_Khaled",
+          "description": "1. Why integrate Grafana with Service Fabric?\nScope: this walkthrough covers a classic, VMSS-backed Service Fabric cluster running Windows. Service Fabric managed clusters (SFMC) use managed node types instead of VM scale sets, but the same AMA + DCR + Grafana pattern applies once AMA is installed on the managed node type. Linux node types use a different AMA data collection path (syslog instead of Windows Event Log channels) and aren't covered here.\nGrafana is valuable for Service Fabric customers who want a single operational view across cluster nodes, VM infrastructure, and Service Fabric platform events. Position Grafana as the visualization layer, while Azure Monitor and Log Analytics are the telemetry backbone. Grafana does not “monitor Service Fabric” by itself but it visualizes tel…",
+          "link": "https://techcommunity.microsoft.com/blog/AzurePaaSBlog/monitoring-azure-service-fabric-with-azure-managed-grafana/4546439",
+          "publishedOn": "2026-08-13T18:44:37.000Z",
+          "wordCount": null,
+          "title": "Monitoring Azure Service Fabric with Azure Managed Grafana",
+          "imageUrl": null
+        },
         {
           "id": "https://techcommunity.microsoft.com/blog/AzurePaaSBlog/update-host-keys-to-use-sftp-on-azure-blob-storage/4515483",
           "author": "LuisFilipe",
@@ -5974,6 +5954,16 @@
       "feedUrl": "https://techcommunity.microsoft.com/t5/s/plugins/custom/microsoft/o365/custom-blog-rss?board=AzureArchitectureBlog&size=50",
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
+        {
+          "id": "https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/from-features-to-flow-how-real-world-adoption-reshaped-the-azure-architecture-di/4546817",
+          "author": "arturoqu",
+          "description": "In May, I introduced the open-source Azure Architecture Diagram Builder as a way to move from a natural-language prompt to an Azure architecture diagram, cost estimate, Well-Architected assessment, and deployment guidance. In July, I shared how the project had become agent-ready through Model Context Protocol (MCP).\nThose posts described what the tool could do. The more interesting story came next: what happened when people actually used it.\nAs adoption grew, the central product question changed. It was no longer simply, Can AI generate an Azure architecture? It became:\n\nHow do we help an architect choose how to begin, improve a result without losing their work, validate it responsibly, and turn it into something another person can use?\n\nThat question reshaped the Azure Architecture Diagra…",
+          "link": "https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/from-features-to-flow-how-real-world-adoption-reshaped-the-azure-architecture-di/4546817",
+          "publishedOn": "2026-08-13T22:10:46.000Z",
+          "wordCount": 14621,
+          "title": "From Features to Flow: How Real-World Adoption Reshaped the Azure Architecture Diagram Builder",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTQ2ODE3LUZHSUVFRg?revision=2"
+        },
         {
           "id": "https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/skill-or-sub-agent-choosing-ai-capabilities-you-will-actually-reuse/4542099",
           "author": "KishoreKumarPattabiraman",
@@ -6383,16 +6373,6 @@
           "wordCount": 13176,
           "title": "Proactive Reliability Series — Article 1: Fault Types in Azure",
           "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTA3MDA2LTVwbFN4MQ?revision=6"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/resiliency-patterns-for-azure-front-door-field-lessons/4501252",
-          "author": "pbeegala",
-          "description": "Abstract\nAzure Front Door (AFD) sits at the edge of Microsoft’s global cloud, delivering secure, performant, and highly available applications to users worldwide. As adoption has grown—especially for mission‑critical workloads—the need for resilient application architectures that can tolerate rare but impactful platform incidents has become essential.\nThis article summarizes key lessons from Azure Front Door incidents in October 2025, outlines how Microsoft is hardening the platform, and—most importantly—describes proven architectural patterns customers can adopt today to maintain business continuity when global load‑balancing services are unavailable.\nWho this is for\nThis article is intended for:\n\nCloud and solution architects designing mission‑critical internet‑facing workloads\nPlatform …",
-          "link": "https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/resiliency-patterns-for-azure-front-door-field-lessons/4501252",
-          "publishedOn": "2026-03-17T07:19:43.000Z",
-          "wordCount": 10490,
-          "title": "Resiliency Patterns for Azure Front Door: Field Lessons",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTAxMjUyLVRFU0xTVA?revision=14"
         }
       ]
     },
@@ -6797,16 +6777,6 @@
           "wordCount": 12233,
           "title": "Autonomous Self-Healing for Azure VMware Solution Private Clouds",
           "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTA2Mzc0LTdsMVRJOQ?revision=6"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AzureMigrationBlog/porting-c-from-ibm-power-to-x86-solving-silent-endianness-corruption-with-cand-g/4501666",
-          "author": "OsvaldoDaibert",
-          "description": "Migrating C++ applications from IBM Power Systems to Azure x86 involves a subtle but critical architectural difference that is the byte order. When legacy code compiled for Big-Endian hardware is recompiled for Little-Endian x86 without modification, multi-byte integers silently corrupt. There are no compile errors, no runtime exceptions, just wrong values in production. This guide walks through the endianness challenge, demonstrates a practical refactoring workflow using GitHub Copilot, and provides a companion repository you can use immediately.\nWhy this migration is different\nC++ code written for IBM Power (OS/400, IBM i) compiles for virtually every platform. The language is not the problem. The problem is how decades of development on a Big-Endian, vertically scaled, single-system arc…",
-          "link": "https://techcommunity.microsoft.com/blog/AzureMigrationBlog/porting-c-from-ibm-power-to-x86-solving-silent-endianness-corruption-with-cand-g/4501666",
-          "publishedOn": "2026-03-17T07:34:04.000Z",
-          "wordCount": 14387,
-          "title": "Porting C++ from IBM Power to x86: Solving Silent Endianness Corruption with C++and Github Copilot",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTAxNjY2LXlSWm5qZw?revision=7"
         }
       ]
     },
@@ -7512,21 +7482,6 @@
           "wordCount": 7119,
           "title": "Authentication Tokens Are Not a Data Contract",
           "imageUrl": "https://devblogs.microsoft.com/devops/wp-content/uploads/sites/6/2021/05/Frame-1.png"
-        },
-        {
-          "id": "https://devblogs.microsoft.com/devops/?p=72519",
-          "author": "Dan Hellem",
-          "description": "When we released the local Azure DevOps MCP Server, it gave customers a way to connect Azure DevOps data with tools like Visual Studio and Visual Studio Code through GitHub Copilot Chat. The next step was to make this experience easier to get started with and to enable it for services that support only remote […]\nThe post Azure DevOps Remote MCP Server (public preview) appeared first on Azure DevOps Blog.",
-          "link": "https://devblogs.microsoft.com/devops/azure-devops-remote-mcp-server-public-preview/",
-          "publishedOn": "2026-03-17T13:52:29.000Z",
-          "wordCount": 7865,
-          "title": "Azure DevOps Remote MCP Server (public preview)",
-          "enclosure": {
-            "url": "https://devblogs.microsoft.com/devops/wp-content/uploads/sites/6/2026/03/remote-mcp-video.mp4",
-            "length": "11139713",
-            "type": "video/mp4"
-          },
-          "imageUrl": "https://devblogs.microsoft.com/devops/wp-content/uploads/sites/6/2026/03/mcp-ado-pp.webp"
         }
       ]
     },
@@ -7648,6 +7603,16 @@
       "feedUrl": "https://devblogs.microsoft.com/microsoft365dev/feed/",
       "siteUrl": "https://devblogs.microsoft.com/microsoft365dev/",
       "articles": [
+        {
+          "id": "https://devblogs.microsoft.com/microsoft365dev/?p=26023",
+          "author": "Lily Du",
+          "description": "Most of us are familiar with one-to-one agent chats: private, direct interactions where rules are relatively simple. With only you and the agent, each moment has clear intent. You can ask follow-up questions, pause, or restart without worrying about how each exchange affects anyone else. Collaboration in groups works differently. Every message competes for attention, […]\nThe post Building Agents for Teams: Managing the noise of collaboration appeared first on Microsoft 365 Developer Blog.",
+          "link": "https://devblogs.microsoft.com/microsoft365dev/building-agents-for-teams-managing-the-noise-of-collaboration/",
+          "publishedOn": "2026-08-13T11:43:59.000Z",
+          "wordCount": 7792,
+          "title": "Building Agents for Teams: Managing the noise of collaboration",
+          "imageUrl": "https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2026/08/preview.webp"
+        },
         {
           "id": "https://devblogs.microsoft.com/microsoft365dev/?p=26029",
           "author": "Sébastien Levert",
