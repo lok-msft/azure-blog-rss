@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2026-08-14T01:59:21.438Z</updated>
+    <updated>2026-08-15T01:15:30.433Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
@@ -9909,56 +9909,6 @@ Continue reading “On-premises data gateway auto-update (admin triggered) (Gene
 Continue reading “Trusted AI starts with Microsoft Fabric: Unified real-time intelligence and IQ context”]]></summary>
         <author>
             <name>Fabric Updates Blog articles</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[After Ingress NGINX: Migrating to Application Gateway for Containers]]></title>
-        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/after-ingress-nginx-migrating-to-application-gateway-for-containers/4503110</id>
-        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/after-ingress-nginx-migrating-to-application-gateway-for-containers/4503110"/>
-        <updated>2026-03-17T21:03:22.000Z</updated>
-        <summary type="html"><![CDATA[If you're running Ingress NGINX on AKS, you've probably seen the announcements by now. The community Ingress Nginx project is being retired, upstream maintenance ends in March 2026, and Microsoft's extended support for the Application Routing add-on runs out in November 2026. A requirement to migrate to another solution is inevitable.
-There are a few places you can go. This post focuses on Application Gateway for Containers: what it is, why it's worth the move, and how to actually do it. Microsoft has also released a migration utility that handles most of the translation work from your existing Ingress resources, so we'll cover that too.
-Ingress NGINX Retirement
-Ingress NGINX has been the default choice for Kubernetes HTTP routing for years. It's reliable, well-understood, and it appears i…]]></summary>
-        <author>
-            <name>samcogan</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Building an Enterprise Platform for Inference at Scale]]></title>
-        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/building-an-enterprise-platform-for-inference-at-scale/4498820</id>
-        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/building-an-enterprise-platform-for-inference-at-scale/4498820"/>
-        <updated>2026-03-17T18:28:24.000Z</updated>
-        <summary type="html"><![CDATA[Architecture Decisions
-With the optimization stack in place, the next layer of decisions is architectural — how you distribute compute across GPUs, nodes, and deployment environments to match your model size and traffic profile.
-GPU Parallelism Strategy on AKS
-
-
-
-Strategy
-
-How It Works
-
-When to Use
-
-Tradeoff
-
-
-
-Tensor Parallelism
-
-Splits weight matrices within each layer across GPUs (intra-layer sharding); all GPUs participate in every forward pass.
-
-Model exceeds single-GPU memory (e.g., 70B on A100 GPUs once weights, KV cache, runtime overhead are included) 
-
-Inter-GPU communication overhead; requires fast interconnects (NVLink on ND-series) — costly to scale beyond a single node without them
-
-
-Pipeline Parallelism
-
-Distributes layers sequentially across nodes, with each stage processing…]]></summary>
-        <author>
-            <name>bobmital</name>
         </author>
     </entry>
     <entry>

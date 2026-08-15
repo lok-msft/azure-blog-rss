@@ -4572,26 +4572,6 @@
           "wordCount": 17386,
           "title": "The Swarm Diaries: What Happens When You Let AI Agents Loose on a Codebase",
           "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTAxMzkzLWx2R3VicQ?revision=6"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/after-ingress-nginx-migrating-to-application-gateway-for-containers/4503110",
-          "author": "samcogan",
-          "description": "If you're running Ingress NGINX on AKS, you've probably seen the announcements by now. The community Ingress Nginx project is being retired, upstream maintenance ends in March 2026, and Microsoft's extended support for the Application Routing add-on runs out in November 2026. A requirement to migrate to another solution is inevitable.\nThere are a few places you can go. This post focuses on Application Gateway for Containers: what it is, why it's worth the move, and how to actually do it. Microsoft has also released a migration utility that handles most of the translation work from your existing Ingress resources, so we'll cover that too.\nIngress NGINX Retirement\nIngress NGINX has been the default choice for Kubernetes HTTP routing for years. It's reliable, well-understood, and it appears i…",
-          "link": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/after-ingress-nginx-migrating-to-application-gateway-for-containers/4503110",
-          "publishedOn": "2026-03-17T21:03:22.000Z",
-          "wordCount": 15502,
-          "title": "After Ingress NGINX: Migrating to Application Gateway for Containers",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTAzMTEwLTQxakNNeA?revision=2"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/building-an-enterprise-platform-for-inference-at-scale/4498820",
-          "author": "bobmital",
-          "description": "Architecture Decisions\nWith the optimization stack in place, the next layer of decisions is architectural — how you distribute compute across GPUs, nodes, and deployment environments to match your model size and traffic profile.\nGPU Parallelism Strategy on AKS\n\n\n\nStrategy\n\nHow It Works\n\nWhen to Use\n\nTradeoff\n\n\n\nTensor Parallelism\n\nSplits weight matrices within each layer across GPUs (intra-layer sharding); all GPUs participate in every forward pass.\n\nModel exceeds single-GPU memory (e.g., 70B on A100 GPUs once weights, KV cache, runtime overhead are included) \n\nInter-GPU communication overhead; requires fast interconnects (NVLink on ND-series) — costly to scale beyond a single node without them\n\n\nPipeline Parallelism\n\nDistributes layers sequentially across nodes, with each stage processing…",
-          "link": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/building-an-enterprise-platform-for-inference-at-scale/4498820",
-          "publishedOn": "2026-03-17T18:28:24.000Z",
-          "wordCount": 11084,
-          "title": "Building an Enterprise Platform for Inference at Scale",
-          "imageUrl": null
         }
       ]
     },
