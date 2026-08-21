@@ -6,6 +6,46 @@
       "siteUrl": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/bg-p/fbc_fabricupdatesblogs",
       "articles": [
         {
+          "id": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Secure-Azure-Event-Hubs-Connections-in-Eventstream-with/ba-p/5359945",
+          "author": "spurthikommajos",
+          "description": "Connecting streaming workloads to Azure Event Hubs should not require teams to manage shared credentials. Organizations building real-time data solutions need a secure and manageable way to connect streaming workloads to event sources. With workspace identity support for Azure Event Hubs sources in Eventstream, now in preview, customers can use the identity associated with their Fabric workspace to authenticate.\r\nWorkspace identity support for Azure Event Hubs sources gives Eventstream an identity-based alternative to shared access keys. Eventstream authenticates using the identity associated with the Fabric workspace, while administrators manage access through Azure role-based access control (Azure RBAC). This removes the need to store a connection string containing a shared access key in…",
+          "link": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Secure-Azure-Event-Hubs-Connections-in-Eventstream-with/ba-p/5359945",
+          "publishedOn": "2026-08-20T17:35:21.000Z",
+          "wordCount": null,
+          "title": "Secure Azure Event Hubs Connections in Eventstream with Workspace Identity (Preview)",
+          "imageUrl": null
+        },
+        {
+          "id": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Monitor-key-metrics-at-a-glance-with-the-new-KPI-visualization/ba-p/5360033",
+          "author": "Naorbt",
+          "description": "Operational dashboards often need to answer a direct question: Is this metric healthy, approaching a limit, or already in a critical range? A number alone shows the current value, but it does not always provide the context needed to interpret that value quickly.\r\nThe new KPI visualization is now generally available in Microsoft Fabric Real-Time Dashboards. It combines a query-based numeric value with a scale, status ranges, formatting options, and reference indicators so you can communicate metric health in a single responsive visual.\r\nChoose the right KPI display\r\nYou can display a KPI in four modes: Number, Bar, Gauge, or Donut. Each mode uses the same underlying value and configuration while supporting a different dashboard layout.\r\n\r\nNumber emphasizes the formatted value and works well…",
+          "link": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Monitor-key-metrics-at-a-glance-with-the-new-KPI-visualization/ba-p/5360033",
+          "publishedOn": "2026-08-20T17:05:26.000Z",
+          "wordCount": null,
+          "title": "Monitor key metrics at a glance with the new KPI visualization in Real-Time Dashboards (Generally Available)",
+          "imageUrl": null
+        },
+        {
+          "id": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Bringing-agentic-warehouse-development-to-Fabric-Data-Warehouse/ba-p/5360190",
+          "author": "salilkanade1",
+          "description": "AI agents are increasingly becoming part of how developers work with data. But generating SQL is only one step in a typical warehousing workflow. Users still need to understand the right objects, run and validate queries, troubleshoot failures, and investigate performance when something goes wrong. Today, agents often either lack the access or the product-specific context needed to help across that full workflow. Model Context Protocol, or MCP, gives agents a standard way to connect to external systems and invoke tools. Agent Skills complement MCP by giving agents reusable, task-specific instructions that guide how they approach and complete work. For Fabric Data Warehouse, we are bringing both together. The Fabric Data Warehouse MCP Server (remote), now in preview, gives agents a governed…",
+          "link": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Bringing-agentic-warehouse-development-to-Fabric-Data-Warehouse/ba-p/5360190",
+          "publishedOn": "2026-08-20T17:00:00.000Z",
+          "wordCount": null,
+          "title": "Bringing agentic warehouse development to Fabric Data Warehouse with MCP and Agent Skills (Preview)",
+          "imageUrl": null
+        },
+        {
+          "id": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Building-the-Bronze-Silver-Gold-layers/ba-p/5360201",
+          "author": "Scirqueira",
+          "description": "Part two of a series on medallion architecture with Fabric Data Warehouse\r\nOne job per layer — with enough implementation detail to make it real \r\nIn Part 1 of this series, you picked your pattern. Now, let’s fill in the layers. The single most useful mental model here: each layer has exactly one job. Most medallion messes come from a layer doing another’s work — cleaning data in Bronze or letting business logic creep into Gold. \r\nIn this post, we’ll look at hose Bronze, Silver, and Gold layers are implemented in Fabric Data Warehouse (DW), the T-SQL patterns commonly used in each layer, and the practices that help keep your architecture maintainable as it grows. We’ll also cover which practices are worth calling out before we move deeper into best practices in Part 3 of this series. \r\nHer…",
+          "link": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Building-the-Bronze-Silver-Gold-layers/ba-p/5360201",
+          "publishedOn": "2026-08-20T16:00:00.000Z",
+          "wordCount": null,
+          "title": "Building the Bronze → Silver → Gold layers",
+          "imageUrl": null
+        },
+        {
           "id": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Billing-personas-for-PowerTable-within-Planning-in-Fabric-IQ/ba-p/5360168",
           "author": "SupriyaKashyap",
           "description": "Enterprise Planning is cyclical, and Fabric Planning is built for that reality. Instead of per-user licenses or a separate subscription, Fabric Plan uses an activity-based, session-driven model that bills only against your Fabric capacity. You avoid license commitments and administration; seasonal and ad-hoc contributors can participate without inflating annual costs; and spend is eligible for Microsoft Azure Consumption Commitment (MACC) credits where applicable. Unused capacity remains available to other Fabric workloads. \r\nNow, that model has been refined for customers who come to Fabric Plan for PowerTable, our data-management capability and for Intelligence. \r\nYou can now provision Fabric Plan with no Planning sheets configured. In this configuration the item is oriented towards Power…",
@@ -1984,66 +2024,6 @@
           "wordCount": 1770,
           "title": "Live connectivity in Migration Assistant for Fabric Data Warehouse (Preview)",
           "imageUrl": "https://blog.fabric.microsoft.com/images/shared/social/social-image-v2.png"
-        },
-        {
-          "id": "dbt-microsoft-fabric-a-strategic-investment-in-the-modern-analytics-stack",
-          "author": null,
-          "description": "Modern analytics teams are adopting open, SQL-first data transformation, robust CI/CD and governance, and seamless integration across lakehouse and warehouse platforms. dbt is now the standard for analytics engineering, while Microsoft Fabric unifies data engineering, science, warehousing, and BI in OneLake.",
-          "link": "https://blog.fabric.microsoft.com/en/blog/dbt-microsoft-fabric-a-strategic-investment-in-the-modern-analytics-stack/",
-          "publishedOn": "2026-03-24T13:00:00.000Z",
-          "wordCount": 2197,
-          "title": "dbt+ Microsoft Fabric: A strategic investment in the modern analytics stack",
-          "imageUrl": "https://blog.fabric.microsoft.com/images/shared/social/social-image-v2.png"
-        },
-        {
-          "id": "outstanding-connectivity-for-data-movement-in-fabric-data-factory",
-          "author": null,
-          "description": "In today’s data landscape, success depends not just on powerful analytics, but on how seamlessly and reliably you can move data across systems.",
-          "link": "https://blog.fabric.microsoft.com/en/blog/outstanding-connectivity-for-data-movement-in-fabric-data-factory/",
-          "publishedOn": "2026-03-24T13:00:00.000Z",
-          "wordCount": 2310,
-          "title": "Outstanding connectivity for data movement in Fabric Data Factory",
-          "imageUrl": "https://blog.fabric.microsoft.com/images/shared/social/social-image-v2.png"
-        },
-        {
-          "id": "whats-new-with-fabric-activator-more-connected-and-capabilities",
-          "author": null,
-          "description": "In our data-centric society, immediate responses have become a necessity rather than a choice. Fabric Activator for Microsoft Fabric enables organizations to move from passive monitoring to proactive action. By continuously monitoring streaming and event data, Activator helps you to automatically execute actions or send alerts whenever specific data conditions are met, ensuring timely and efficient operations.",
-          "link": "https://blog.fabric.microsoft.com/en/blog/whats-new-with-fabric-activator-more-connected-and-capabilities/",
-          "publishedOn": "2026-03-24T11:30:00.000Z",
-          "wordCount": 2139,
-          "title": "What’s new with Fabric Activator: more connected and capabilities",
-          "imageUrl": "https://blog.fabric.microsoft.com/images/shared/social/social-image-v2.png"
-        },
-        {
-          "id": "whats-next-for-fabric-iq-ontology-the-operational-context-that-powers-your-ai-agents-preview",
-          "author": null,
-          "description": "If you haven’t already, check out Arun Ulag’s hero blog “FabCon and SQLCon 2026: Unifying databases and Fabric on a single, complete platform” for a complete look at all of our FabCon and SQLCon announcements across both Fabric and our database offerings.  Since introducing Fabric IQ, we’ve seen growing momentum around how organizations are using … \nContinue reading “What’s next for Fabric IQ Ontology: The operational context that powers your AI agents (Preview)”",
-          "link": "https://blog.fabric.microsoft.com/en/blog/whats-next-for-fabric-iq-ontology-the-operational-context-that-powers-your-ai-agents-preview/",
-          "publishedOn": "2026-03-24T11:30:00.000Z",
-          "wordCount": 2275,
-          "title": "What&#8217;s next for Fabric IQ Ontology: The operational context that powers your AI agents (Preview)",
-          "imageUrl": "https://blog.fabric.microsoft.com/images/shared/social/social-image-v2.png"
-        },
-        {
-          "id": "incremental-copy-gets-more-flexible-new-watermark-column-types-in-copy-job-in-fabric-data-factory-generally-available",
-          "author": null,
-          "description": "Copy job is the go-to solution in Microsoft Fabric Data Factory for simplified data movement across multiple clouds. With native support for bulk copy, incremental copy, and change data capture (CDC) replication, it can handle a wide range of movement scenarios through an intuitive, easy-to-use experience.",
-          "link": "https://blog.fabric.microsoft.com/en/blog/incremental-copy-gets-more-flexible-new-watermark-column-types-in-copy-job-in-fabric-data-factory-generally-available/",
-          "publishedOn": "2026-03-24T11:00:00.000Z",
-          "wordCount": 1983,
-          "title": "Incremental copy gets more flexible: New watermark column types in Copy job in Fabric Data Factory (Generally Available)",
-          "imageUrl": "https://blog.fabric.microsoft.com/images/shared/social/social-image-v2.png"
-        },
-        {
-          "id": "business-events-in-microsoft-fabric-preview",
-          "author": null,
-          "description": "Modern organizations generate countless signals as customers interact with applications; operations evolve, and market conditions change—but most of these signals remain locked in data and are often discovered too late for action. With Business Events in Microsoft Fabric (Preview), organizations can move from observing what happened to acting on what matters, in real time.",
-          "link": "https://blog.fabric.microsoft.com/en/blog/business-events-in-microsoft-fabric-preview/",
-          "publishedOn": "2026-03-23T13:30:00.000Z",
-          "wordCount": 2056,
-          "title": "Business Events in Microsoft Fabric (Preview)",
-          "imageUrl": "https://blog.fabric.microsoft.com/images/shared/social/social-image-v2.png"
         }
       ]
     },
@@ -2785,16 +2765,6 @@
           "wordCount": 12662,
           "title": "Build an Offline Hybrid RAG Stack with ONNX and Foundry Local",
           "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTAzNTg5LW9rS1QxMA?revision=5"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/step-by-step-deploy-the-architecture-review-agent-using-azd-ai-cli/4504460",
-          "author": "ShivamGoyal",
-          "description": "Hey everyone! I am Shivam Goyal, a Microsoft MVP, and I am super excited to share a project that will save you a massive amount of time.\nHave you ever built a brilliant AI agent in an afternoon, only to spend the next two weeks fighting with Docker containers, memory persistence, and cloud deployment scripts to get it running?\nIn our previous post, we introduced the Architecture Review Agent, an open-source tool built on Microsoft Foundry that automatically converts messy architectural notes into structured risk assessments and interactive Excalidraw diagrams.\nBut building an AI agent is only half the battle. Iterating on one and actually getting it running in a production-grade environment without losing your mind over infrastructure is a completely different story.\nThe Problem with Agent…",
-          "link": "https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/step-by-step-deploy-the-architecture-review-agent-using-azd-ai-cli/4504460",
-          "publishedOn": "2026-03-24T07:00:00.000Z",
-          "wordCount": 10985,
-          "title": "Step-by-Step: Deploy the Architecture Review Agent Using AZD AI CLI",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTA0NDYwLU9aSWNxSA?revision=3"
         }
       ]
     },
@@ -4152,46 +4122,6 @@
           "wordCount": 15529,
           "title": "HTTP Triggers in Azure SRE Agent: From Jira Ticket to Automated Investigation",
           "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTA0OTYwLUhWTjZJVg?revision=8"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/take-control-of-every-message-partial-failure-handling-for-service-bus-triggers-/4504893",
-          "author": "swapnil_nagar",
-          "description": "The Problem: All-or-Nothing Batch Processing in Azure Service Bus\nAzure Service Bus is one of the most widely used messaging services for building event-driven applications on Azure. When you use Azure Functions with a Service Bus trigger in batch mode, your function receives multiple messages at once for efficient, high-throughput processing.\nBut what happens when one message in the batch fails?\nYour function receives a batch of 50 Service Bus messages. 49 process perfectly. 1 fails. What happens?\nIn the default model, the entire batch fails. All 50 messages go back on the queue and get reprocessed, including the 49 that already succeeded. This leads to:\n\nDuplicate processing — messages that were already handled successfully get processed again\nWasted compute — you pay for re-executing wo…",
-          "link": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/take-control-of-every-message-partial-failure-handling-for-service-bus-triggers-/4504893",
-          "publishedOn": "2026-03-24T02:11:47.000Z",
-          "wordCount": 11190,
-          "title": "Take Control of Every Message: Partial Failure Handling for Service Bus Triggers in Azure Functions",
-          "imageUrl": null
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/get-started-with-neubird-hawkeye-mcp-server-in-azure-sre-agent/4504860",
-          "author": "dbandaru",
-          "description": "Integrate NeuBird Hawkeye MCP with Azure SRE Agent\n\nTL;DR\nIf your infrastructure spans multiple clouds say Azure and GCP, or Azure alongside any other cloud provider investigating incidents means jumping between completely separate consoles, log systems, and monitoring stacks. Azure SRE Agent now integrates with NeuBird Hawkeye via Model Context Protocol (MCP), so you can investigate incidents across all of your clouds and monitoring tools from a single conversation.\nKey benefits:\n\n90-second investigations vs 3-4 hours of manual dashboard-hopping\nMulti-cloud support - Azure, GCP, and other cloud providers investigated from a single conversation\n42 MCP tools across 7 categories for investigation, analysis, and remediation\nReal-time streaming progress - watch investigations unfold step-by-st…",
-          "link": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/get-started-with-neubird-hawkeye-mcp-server-in-azure-sre-agent/4504860",
-          "publishedOn": "2026-03-23T18:07:39.000Z",
-          "wordCount": 16681,
-          "title": "Get started with NeuBird Hawkeye MCP server in Azure SRE Agent",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTA0ODYwLVVGbVhZSA?revision=1"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/migrating-ant-builds-to-maven-with-github-copilot-app-modernization/4491992",
-          "author": "ayangupta",
-          "description": "Many legacy Java applications still rely on Apache Ant for building, packaging, and dependency management. While Ant remains flexible, it lacks the structured lifecycle, dependency resolution, and ecosystem support that modern build tools like Maven provide. Migrating from Ant to Maven improves maintainability, build reproducibility, IDE compatibility, and enables modern Java workflows such as dependency upgrades, framework updates, and containerization.\nGitHub Copilot app modernization accelerates this transition by analyzing an Ant‑based project, generating a migration plan, and applying transformations to produce a Maven‑based build aligned with modern Java tooling.\nWhat GitHub Copilot app modernization Supports\nGitHub Copilot app modernization can help teams:\n\nDetect Ant build scripts …",
-          "link": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/migrating-ant-builds-to-maven-with-github-copilot-app-modernization/4491992",
-          "publishedOn": "2026-03-23T16:49:01.000Z",
-          "wordCount": 8734,
-          "title": "Migrating Ant Builds to Maven with GitHub Copilot app modernization",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDkxOTkyLVpVVUZzVA?revision=1"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/code-optimizations-for-azure-app-service-now-available-in-vs-code/4504252",
-          "author": "fiveisprime",
-          "description": "Today we shipped a feature in the Azure App Service extension for VS Code that answers both questions: Code Optimizations, powered by Application Insights profiler data and GitHub Copilot.\nThe problem: production performance is a black box\nYou've deployed your .NET app to Azure App Service. Monitoring shows CPU is elevated, and response times are creeping up. You know something is slow, but reproducing production load patterns locally is nearly impossible. Application Insights can detect these issues, but context-switching between the Azure Portal and your editor to actually fix them adds friction.\nWhat if the issues came to you, right where you write code?\nWhat's new\nThe Azure App Service extension now adds a Code Optimizations node directly under your .NET web apps in the Azure Resources…",
-          "link": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/code-optimizations-for-azure-app-service-now-available-in-vs-code/4504252",
-          "publishedOn": "2026-03-23T15:18:08.000Z",
-          "wordCount": 8318,
-          "title": "Code Optimizations for Azure App Service Now Available in VS Code",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTA0MjUyLXlWd3lxZw?revision=5"
         }
       ]
     },
@@ -4329,16 +4259,6 @@
           "wordCount": 8713,
           "title": "\"No-Ops\" Kafka Experience: Why Event Hubs is Your Default Destination for Streaming on Azure",
           "imageUrl": null
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/MessagingonAzureBlog/azure-event-grid-mqtt-broker-enterprise-grade-messaging-for-the-connected-world/4504246",
-          "author": "Connected-Seth",
-          "description": "Azure Messaging · What's New · March 2026\nThe Enterprise MQTT Brokerfor Every Connected Ecosystem\nScale to millions of devices, enforce zero-trust security, and route real-time events across every service, system, and application — all on Azure's hyperscaler-grade messaging backbone.\n\n\n\n1,000\nmsg/sec/session\n\n5M+\nconcurrent connections\n\n1 MB\nlarge message support\n\nTLS 1.2+\nenforced encryption\n\n\n\n\n\n\nThe Modern Broker for Every Connected Ecosystem\nWhether you're connecting vehicles, factory floors, edge devices, retail infrastructure, financial systems, or cloud-native services — Azure Event Grid MQTT Broker is the enterprise messaging backbone that scales from prototype to planet. With deep Azure integration, full MQTT compliance, and hyperscaler-grade security, it's the broker you ship on …",
-          "link": "https://techcommunity.microsoft.com/blog/MessagingonAzureBlog/azure-event-grid-mqtt-broker-enterprise-grade-messaging-for-the-connected-world/4504246",
-          "publishedOn": "2026-03-23T17:48:18.000Z",
-          "wordCount": 18683,
-          "title": "Azure Event Grid MQTT Broker: Enterprise-Grade Messaging for the Connected World",
-          "imageUrl": null
         }
       ]
     },
@@ -4386,6 +4306,16 @@
       "feedUrl": "https://techcommunity.microsoft.com/t5/s/plugins/custom/microsoft/o365/custom-blog-rss?board=AzureObservabilityBlog&size=50",
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
+        {
+          "id": "https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/from-detection-to-action-extending-azure-monitor-issues-with-action-groups/4548416",
+          "author": "ronitauber",
+          "description": "When the Azure Copilot Observability Agent detects a problem, correlates related alerts, investigates and creates an Azure Monitor issue, it does more than identify what happened. It creates a durable record that brings together investigation findings, severity, impacted resources, and recommended next steps in a single place.\nIn many organizations, however, understanding a problem is only part of the workflow. Teams still need to notify stakeholders, create tickets, start remediation processes, or coordinate work across multiple systems.\nBy connecting Azure Monitor issues to Logic Apps, Azure Functions, and other Azure services, triggered automatically via Action Groups, you can now provide the most relevant context to operational workflows across systems.\nBuilding on the Azure Ecosystem\n…",
+          "link": "https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/from-detection-to-action-extending-azure-monitor-issues-with-action-groups/4548416",
+          "publishedOn": "2026-08-20T11:54:02.000Z",
+          "wordCount": 9162,
+          "title": "From Detection to Action: Extending Azure Monitor Issues with Action Groups",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTQ4NDE2LTRqV2xKMw?revision=2"
+        },
         {
           "id": "https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/keep-azure-monitor-issues-and-servicenow-itom-incidents-in-sync/4543399",
           "author": "Harel Broitman",
@@ -5002,16 +4932,6 @@
           "wordCount": 8141,
           "title": "Agents League: Meet the Winners",
           "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTA3NTAzLU9SRUxWTQ?revision=1"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/hosted-containers-and-ai-agent-solutions/4500627",
-          "author": "Lee_Stott",
-          "description": "If you have built a proof-of-concept AI agent on your laptop and wondered how to turn it into something other people can actually use, you are not alone. The gap between a working prototype and a production-ready service is where most agent projects stall. Hosted containers close that gap faster than any other approach available today.\nThis post walks through why containers and managed hosting platforms like Azure Container Apps are an ideal fit for multi-agent AI systems, what practical benefits they unlock, and how you can get started with minimal friction.\nThe problem with \"it works on my machine\"\nMost AI agent projects begin the same way: a Python script, an API key, and a local terminal. That workflow is perfect for experimentation, but it creates a handful of problems the moment you …",
-          "link": "https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/hosted-containers-and-ai-agent-solutions/4500627",
-          "publishedOn": "2026-03-24T07:00:00.000Z",
-          "wordCount": 15691,
-          "title": "Hosted Containers and AI Agent Solutions",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTAwNjI3LWtBOUdtTA?revision=3"
         }
       ]
     },
@@ -5479,16 +5399,6 @@
           "wordCount": 12808,
           "title": "Building an Offline AI Interview Coach with Foundry Local, RAG, and SQLite",
           "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTAwNjE0LUYwVndldA?revision=1"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/hosted-containers-and-ai-agent-solutions/4500627",
-          "author": "Lee_Stott",
-          "description": "If you have built a proof-of-concept AI agent on your laptop and wondered how to turn it into something other people can actually use, you are not alone. The gap between a working prototype and a production-ready service is where most agent projects stall. Hosted containers close that gap faster than any other approach available today.\nThis post walks through why containers and managed hosting platforms like Azure Container Apps are an ideal fit for multi-agent AI systems, what practical benefits they unlock, and how you can get started with minimal friction.\nThe problem with \"it works on my machine\"\nMost AI agent projects begin the same way: a Python script, an API key, and a local terminal. That workflow is perfect for experimentation, but it creates a handful of problems the moment you …",
-          "link": "https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/hosted-containers-and-ai-agent-solutions/4500627",
-          "publishedOn": "2026-03-24T07:00:00.000Z",
-          "wordCount": 15691,
-          "title": "Hosted Containers and AI Agent Solutions",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTAwNjI3LWtBOUdtTA?revision=3"
         }
       ]
     },
@@ -5536,16 +5446,6 @@
           "wordCount": 9175,
           "title": "Leveraging Azure Resource Graph Queries for Azure Storage Configuration",
           "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTA5MTg0LTlEbzRxbg?revision=7"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AzurePaaSBlog/how-to-get-blob-total-blob-count-and-total-capacity-with-blob-inventory/4485643",
-          "author": "ruineiva",
-          "description": "Table of Contents\n\nApproach\nIntroduction to the Blob Inventory Service\nSteps to enable inventory report\nSupport Documentation\nDisclaimer:\n\n\nApproach\nThis article presents how to take advantage of the Blob Inventory service to get the total blob count and the total capacity per storage account, per container or per directory.\nI will present the steps to create the blob inventory rule and how to get the needed information without having to process the blob inventory rule results just by using the prefix match field.\nAdditional support documentation it is presented at the end of the article.\nIntroduction to the Blob Inventory Service\nAzure Storage blob inventory provides a list of the containers, blobs, blob versions, and snapshots in your storage account, along with their associated properti…",
-          "link": "https://techcommunity.microsoft.com/blog/AzurePaaSBlog/how-to-get-blob-total-blob-count-and-total-capacity-with-blob-inventory/4485643",
-          "publishedOn": "2026-03-23T13:46:08.000Z",
-          "wordCount": 11181,
-          "title": "How to get blob Total Blob Count and Total Capacity with Blob Inventory",
-          "imageUrl": null
         }
       ]
     },
@@ -6789,16 +6689,6 @@
           "wordCount": 7024,
           "title": "GitHub Copilot for Eclipse Is Going Open Source",
           "imageUrl": "https://devblogs.microsoft.com/java/wp-content/uploads/sites/51/2026/04/OSS-Eclispe-Poster.webp"
-        },
-        {
-          "id": "https://devblogs.microsoft.com/java/?p=232928",
-          "author": "Rory Preddy",
-          "description": "We recently released a step-by-step course from simple chat to AI agents using LangChain4j 👉http://aka.ms/LangChain4j-for-Beginners Now watch the new 6️⃣part Video series with tons of hands-on demos. Let’s break down what you’ll learn. Introduction to LangChain4j Every journey starts with a working app. In this first session, you’ll connect to Azure OpenAI GPT-5, send your […]\nThe post 📢LangChain4j got a new video series appeared first on Microsoft for Java Developers.",
-          "link": "https://devblogs.microsoft.com/java/%f0%9f%93%a2langchain4j-got-a-new-video-series/",
-          "publishedOn": "2026-03-24T07:28:32.000Z",
-          "wordCount": 7331,
-          "title": "📢LangChain4j got a new video series",
-          "imageUrl": "https://devblogs.microsoft.com/java/wp-content/uploads/sites/51/2026/03/LangChain4j.webp"
         }
       ]
     },
@@ -7155,16 +7045,6 @@
           "wordCount": 4676,
           "title": "Introducing the Agent Governance Toolkit: Open-source runtime security for AI agents",
           "imageUrl": "https://opensource.microsoft.com/blog/wp-content/uploads/2024/06/CLO19_Ubisoft_Azure_055.png"
-        },
-        {
-          "id": "https://opensource.microsoft.com/blog/2026/03/24/whats-new-with-microsoft-in-open-source-and-kubernetes-at-kubecon-cloudnativecon-europe-2026/",
-          "author": "Brendan Burns",
-          "description": "At KubeCon + CloudNativeCon Europe 2026 in Amsterdam, we're making announcements that reflect the goal of bringing the operational maturity of Kubernetes to today's workloads and demands.\nThe post What’s new with Microsoft in open-source and Kubernetes at KubeCon + CloudNativeCon Europe 2026 appeared first on Microsoft Open Source Blog.",
-          "link": "https://opensource.microsoft.com/blog/2026/03/24/whats-new-with-microsoft-in-open-source-and-kubernetes-at-kubecon-cloudnativecon-europe-2026/",
-          "publishedOn": "2026-03-24T07:00:00.000Z",
-          "wordCount": 4836,
-          "title": "What’s new with Microsoft in open-source and Kubernetes at KubeCon + CloudNativeCon Europe 2026",
-          "imageUrl": "https://opensource.microsoft.com/blog/wp-content/uploads/2026/03/KubeCon_BlogBanner_Static_S.png"
         }
       ]
     },

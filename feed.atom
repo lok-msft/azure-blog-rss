@@ -2,10 +2,74 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2026-08-20T01:15:14.127Z</updated>
+    <updated>2026-08-21T01:18:28.262Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Secure Azure Event Hubs Connections in Eventstream with Workspace Identity (Preview)]]></title>
+        <id>https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Secure-Azure-Event-Hubs-Connections-in-Eventstream-with/ba-p/5359945</id>
+        <link href="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Secure-Azure-Event-Hubs-Connections-in-Eventstream-with/ba-p/5359945"/>
+        <updated>2026-08-20T17:35:21.000Z</updated>
+        <summary type="html"><![CDATA[Connecting streaming workloads to Azure Event Hubs should not require teams to manage shared credentials. Organizations building real-time data solutions need a secure and manageable way to connect streaming workloads to event sources. With workspace identity support for Azure Event Hubs sources in Eventstream, now in preview, customers can use the identity associated with their Fabric workspace to authenticate.
+Workspace identity support for Azure Event Hubs sources gives Eventstream an identity-based alternative to shared access keys. Eventstream authenticates using the identity associated with the Fabric workspace, while administrators manage access through Azure role-based access control (Azure RBAC). This removes the need to store a connection string containing a shared access key in…]]></summary>
+        <author>
+            <name>spurthikommajos</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Monitor key metrics at a glance with the new KPI visualization in Real-Time Dashboards (Generally Available)]]></title>
+        <id>https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Monitor-key-metrics-at-a-glance-with-the-new-KPI-visualization/ba-p/5360033</id>
+        <link href="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Monitor-key-metrics-at-a-glance-with-the-new-KPI-visualization/ba-p/5360033"/>
+        <updated>2026-08-20T17:05:26.000Z</updated>
+        <summary type="html"><![CDATA[Operational dashboards often need to answer a direct question: Is this metric healthy, approaching a limit, or already in a critical range? A number alone shows the current value, but it does not always provide the context needed to interpret that value quickly.
+The new KPI visualization is now generally available in Microsoft Fabric Real-Time Dashboards. It combines a query-based numeric value with a scale, status ranges, formatting options, and reference indicators so you can communicate metric health in a single responsive visual.
+Choose the right KPI display
+You can display a KPI in four modes: Number, Bar, Gauge, or Donut. Each mode uses the same underlying value and configuration while supporting a different dashboard layout.
+
+Number emphasizes the formatted value and works well…]]></summary>
+        <author>
+            <name>Naorbt</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Bringing agentic warehouse development to Fabric Data Warehouse with MCP and Agent Skills (Preview)]]></title>
+        <id>https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Bringing-agentic-warehouse-development-to-Fabric-Data-Warehouse/ba-p/5360190</id>
+        <link href="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Bringing-agentic-warehouse-development-to-Fabric-Data-Warehouse/ba-p/5360190"/>
+        <updated>2026-08-20T17:00:00.000Z</updated>
+        <summary type="html"><![CDATA[AI agents are increasingly becoming part of how developers work with data. But generating SQL is only one step in a typical warehousing workflow. Users still need to understand the right objects, run and validate queries, troubleshoot failures, and investigate performance when something goes wrong. Today, agents often either lack the access or the product-specific context needed to help across that full workflow. Model Context Protocol, or MCP, gives agents a standard way to connect to external systems and invoke tools. Agent Skills complement MCP by giving agents reusable, task-specific instructions that guide how they approach and complete work. For Fabric Data Warehouse, we are bringing both together. The Fabric Data Warehouse MCP Server (remote), now in preview, gives agents a governed…]]></summary>
+        <author>
+            <name>salilkanade1</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Building the Bronze → Silver → Gold layers]]></title>
+        <id>https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Building-the-Bronze-Silver-Gold-layers/ba-p/5360201</id>
+        <link href="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Building-the-Bronze-Silver-Gold-layers/ba-p/5360201"/>
+        <updated>2026-08-20T16:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Part two of a series on medallion architecture with Fabric Data Warehouse
+One job per layer — with enough implementation detail to make it real 
+In Part 1 of this series, you picked your pattern. Now, let’s fill in the layers. The single most useful mental model here: each layer has exactly one job. Most medallion messes come from a layer doing another’s work — cleaning data in Bronze or letting business logic creep into Gold. 
+In this post, we’ll look at hose Bronze, Silver, and Gold layers are implemented in Fabric Data Warehouse (DW), the T-SQL patterns commonly used in each layer, and the practices that help keep your architecture maintainable as it grows. We’ll also cover which practices are worth calling out before we move deeper into best practices in Part 3 of this series. 
+Her…]]></summary>
+        <author>
+            <name>Scirqueira</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[From Detection to Action: Extending Azure Monitor Issues with Action Groups]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/from-detection-to-action-extending-azure-monitor-issues-with-action-groups/4548416</id>
+        <link href="https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/from-detection-to-action-extending-azure-monitor-issues-with-action-groups/4548416"/>
+        <updated>2026-08-20T11:54:02.000Z</updated>
+        <summary type="html"><![CDATA[When the Azure Copilot Observability Agent detects a problem, correlates related alerts, investigates and creates an Azure Monitor issue, it does more than identify what happened. It creates a durable record that brings together investigation findings, severity, impacted resources, and recommended next steps in a single place.
+In many organizations, however, understanding a problem is only part of the workflow. Teams still need to notify stakeholders, create tickets, start remediation processes, or coordinate work across multiple systems.
+By connecting Azure Monitor issues to Logic Apps, Azure Functions, and other Azure services, triggered automatically via Action Groups, you can now provide the most relevant context to operational workflows across systems.
+Building on the Azure Ecosystem
+…]]></summary>
+        <author>
+            <name>ronitauber</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Choosing the Right Agent in Microsoft Foundry]]></title>
         <id>https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/choosing-the-right-agent-in-microsoft-foundry/4547827</id>
@@ -9503,253 +9567,6 @@ The Sc…]]></summary>
         <link href="https://blog.fabric.microsoft.com/en/blog/live-connectivity-in-migration-assistant-for-fabric-data-warehouse-preview/"/>
         <updated>2026-03-24T13:30:00.000Z</updated>
         <summary type="html"><![CDATA[The live connectivity in Migration Assistant for Fabric Data Warehouse lets you connect directly to your source system and migrate object metadata into a new Fabric warehouse. This preview is designed to help you accelerate the migration and reduce upfront prep by eliminating the need to generate and upload a DACPAC for the metadata step.]]></summary>
-        <author>
-            <name>Fabric Updates Blog articles</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[dbt+ Microsoft Fabric: A strategic investment in the modern analytics stack]]></title>
-        <id>dbt-microsoft-fabric-a-strategic-investment-in-the-modern-analytics-stack</id>
-        <link href="https://blog.fabric.microsoft.com/en/blog/dbt-microsoft-fabric-a-strategic-investment-in-the-modern-analytics-stack/"/>
-        <updated>2026-03-24T13:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Modern analytics teams are adopting open, SQL-first data transformation, robust CI/CD and governance, and seamless integration across lakehouse and warehouse platforms. dbt is now the standard for analytics engineering, while Microsoft Fabric unifies data engineering, science, warehousing, and BI in OneLake.]]></summary>
-        <author>
-            <name>Fabric Updates Blog articles</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Outstanding connectivity for data movement in Fabric Data Factory]]></title>
-        <id>outstanding-connectivity-for-data-movement-in-fabric-data-factory</id>
-        <link href="https://blog.fabric.microsoft.com/en/blog/outstanding-connectivity-for-data-movement-in-fabric-data-factory/"/>
-        <updated>2026-03-24T13:00:00.000Z</updated>
-        <summary type="html"><![CDATA[In today’s data landscape, success depends not just on powerful analytics, but on how seamlessly and reliably you can move data across systems.]]></summary>
-        <author>
-            <name>Fabric Updates Blog articles</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[What’s new with Fabric Activator: more connected and capabilities]]></title>
-        <id>whats-new-with-fabric-activator-more-connected-and-capabilities</id>
-        <link href="https://blog.fabric.microsoft.com/en/blog/whats-new-with-fabric-activator-more-connected-and-capabilities/"/>
-        <updated>2026-03-24T11:30:00.000Z</updated>
-        <summary type="html"><![CDATA[In our data-centric society, immediate responses have become a necessity rather than a choice. Fabric Activator for Microsoft Fabric enables organizations to move from passive monitoring to proactive action. By continuously monitoring streaming and event data, Activator helps you to automatically execute actions or send alerts whenever specific data conditions are met, ensuring timely and efficient operations.]]></summary>
-        <author>
-            <name>Fabric Updates Blog articles</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[What&#8217;s next for Fabric IQ Ontology: The operational context that powers your AI agents (Preview)]]></title>
-        <id>whats-next-for-fabric-iq-ontology-the-operational-context-that-powers-your-ai-agents-preview</id>
-        <link href="https://blog.fabric.microsoft.com/en/blog/whats-next-for-fabric-iq-ontology-the-operational-context-that-powers-your-ai-agents-preview/"/>
-        <updated>2026-03-24T11:30:00.000Z</updated>
-        <summary type="html"><![CDATA[If you haven’t already, check out Arun Ulag’s hero blog “FabCon and SQLCon 2026: Unifying databases and Fabric on a single, complete platform” for a complete look at all of our FabCon and SQLCon announcements across both Fabric and our database offerings.  Since introducing Fabric IQ, we’ve seen growing momentum around how organizations are using … 
-Continue reading “What’s next for Fabric IQ Ontology: The operational context that powers your AI agents (Preview)”]]></summary>
-        <author>
-            <name>Fabric Updates Blog articles</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Incremental copy gets more flexible: New watermark column types in Copy job in Fabric Data Factory (Generally Available)]]></title>
-        <id>incremental-copy-gets-more-flexible-new-watermark-column-types-in-copy-job-in-fabric-data-factory-generally-available</id>
-        <link href="https://blog.fabric.microsoft.com/en/blog/incremental-copy-gets-more-flexible-new-watermark-column-types-in-copy-job-in-fabric-data-factory-generally-available/"/>
-        <updated>2026-03-24T11:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Copy job is the go-to solution in Microsoft Fabric Data Factory for simplified data movement across multiple clouds. With native support for bulk copy, incremental copy, and change data capture (CDC) replication, it can handle a wide range of movement scenarios through an intuitive, easy-to-use experience.]]></summary>
-        <author>
-            <name>Fabric Updates Blog articles</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[📢LangChain4j got a new video series]]></title>
-        <id>https://devblogs.microsoft.com/java/?p=232928</id>
-        <link href="https://devblogs.microsoft.com/java/%f0%9f%93%a2langchain4j-got-a-new-video-series/"/>
-        <updated>2026-03-24T07:28:32.000Z</updated>
-        <summary type="html"><![CDATA[We recently released a step-by-step course from simple chat to AI agents using LangChain4j 👉http://aka.ms/LangChain4j-for-Beginners Now watch the new 6️⃣part Video series with tons of hands-on demos. Let’s break down what you’ll learn. Introduction to LangChain4j Every journey starts with a working app. In this first session, you’ll connect to Azure OpenAI GPT-5, send your […]
-The post 📢LangChain4j got a new video series appeared first on Microsoft for Java Developers.]]></summary>
-        <author>
-            <name>Rory Preddy</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Step-by-Step: Deploy the Architecture Review Agent Using AZD AI CLI]]></title>
-        <id>https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/step-by-step-deploy-the-architecture-review-agent-using-azd-ai-cli/4504460</id>
-        <link href="https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/step-by-step-deploy-the-architecture-review-agent-using-azd-ai-cli/4504460"/>
-        <updated>2026-03-24T07:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Hey everyone! I am Shivam Goyal, a Microsoft MVP, and I am super excited to share a project that will save you a massive amount of time.
-Have you ever built a brilliant AI agent in an afternoon, only to spend the next two weeks fighting with Docker containers, memory persistence, and cloud deployment scripts to get it running?
-In our previous post, we introduced the Architecture Review Agent, an open-source tool built on Microsoft Foundry that automatically converts messy architectural notes into structured risk assessments and interactive Excalidraw diagrams.
-But building an AI agent is only half the battle. Iterating on one and actually getting it running in a production-grade environment without losing your mind over infrastructure is a completely different story.
-The Problem with Agent…]]></summary>
-        <author>
-            <name>ShivamGoyal</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Hosted Containers and AI Agent Solutions]]></title>
-        <id>https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/hosted-containers-and-ai-agent-solutions/4500627</id>
-        <link href="https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/hosted-containers-and-ai-agent-solutions/4500627"/>
-        <updated>2026-03-24T07:00:00.000Z</updated>
-        <summary type="html"><![CDATA[If you have built a proof-of-concept AI agent on your laptop and wondered how to turn it into something other people can actually use, you are not alone. The gap between a working prototype and a production-ready service is where most agent projects stall. Hosted containers close that gap faster than any other approach available today.
-This post walks through why containers and managed hosting platforms like Azure Container Apps are an ideal fit for multi-agent AI systems, what practical benefits they unlock, and how you can get started with minimal friction.
-The problem with "it works on my machine"
-Most AI agent projects begin the same way: a Python script, an API key, and a local terminal. That workflow is perfect for experimentation, but it creates a handful of problems the moment you …]]></summary>
-        <author>
-            <name>Lee_Stott</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Hosted Containers and AI Agent Solutions]]></title>
-        <id>https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/hosted-containers-and-ai-agent-solutions/4500627</id>
-        <link href="https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/hosted-containers-and-ai-agent-solutions/4500627"/>
-        <updated>2026-03-24T07:00:00.000Z</updated>
-        <summary type="html"><![CDATA[If you have built a proof-of-concept AI agent on your laptop and wondered how to turn it into something other people can actually use, you are not alone. The gap between a working prototype and a production-ready service is where most agent projects stall. Hosted containers close that gap faster than any other approach available today.
-This post walks through why containers and managed hosting platforms like Azure Container Apps are an ideal fit for multi-agent AI systems, what practical benefits they unlock, and how you can get started with minimal friction.
-The problem with "it works on my machine"
-Most AI agent projects begin the same way: a Python script, an API key, and a local terminal. That workflow is perfect for experimentation, but it creates a handful of problems the moment you …]]></summary>
-        <author>
-            <name>Lee_Stott</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[What’s new with Microsoft in open-source and Kubernetes at KubeCon + CloudNativeCon Europe 2026]]></title>
-        <id>https://opensource.microsoft.com/blog/2026/03/24/whats-new-with-microsoft-in-open-source-and-kubernetes-at-kubecon-cloudnativecon-europe-2026/</id>
-        <link href="https://opensource.microsoft.com/blog/2026/03/24/whats-new-with-microsoft-in-open-source-and-kubernetes-at-kubecon-cloudnativecon-europe-2026/"/>
-        <updated>2026-03-24T07:00:00.000Z</updated>
-        <summary type="html"><![CDATA[At KubeCon + CloudNativeCon Europe 2026 in Amsterdam, we're making announcements that reflect the goal of bringing the operational maturity of Kubernetes to today's workloads and demands.
-The post What’s new with Microsoft in open-source and Kubernetes at KubeCon + CloudNativeCon Europe 2026 appeared first on Microsoft Open Source Blog.]]></summary>
-        <author>
-            <name>Brendan Burns</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Take Control of Every Message: Partial Failure Handling for Service Bus Triggers in Azure Functions]]></title>
-        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/take-control-of-every-message-partial-failure-handling-for-service-bus-triggers-/4504893</id>
-        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/take-control-of-every-message-partial-failure-handling-for-service-bus-triggers-/4504893"/>
-        <updated>2026-03-24T02:11:47.000Z</updated>
-        <summary type="html"><![CDATA[The Problem: All-or-Nothing Batch Processing in Azure Service Bus
-Azure Service Bus is one of the most widely used messaging services for building event-driven applications on Azure. When you use Azure Functions with a Service Bus trigger in batch mode, your function receives multiple messages at once for efficient, high-throughput processing.
-But what happens when one message in the batch fails?
-Your function receives a batch of 50 Service Bus messages. 49 process perfectly. 1 fails. What happens?
-In the default model, the entire batch fails. All 50 messages go back on the queue and get reprocessed, including the 49 that already succeeded. This leads to:
-
-Duplicate processing — messages that were already handled successfully get processed again
-Wasted compute — you pay for re-executing wo…]]></summary>
-        <author>
-            <name>swapnil_nagar</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Get started with NeuBird Hawkeye MCP server in Azure SRE Agent]]></title>
-        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/get-started-with-neubird-hawkeye-mcp-server-in-azure-sre-agent/4504860</id>
-        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/get-started-with-neubird-hawkeye-mcp-server-in-azure-sre-agent/4504860"/>
-        <updated>2026-03-23T18:07:39.000Z</updated>
-        <summary type="html"><![CDATA[Integrate NeuBird Hawkeye MCP with Azure SRE Agent
-
-TL;DR
-If your infrastructure spans multiple clouds say Azure and GCP, or Azure alongside any other cloud provider investigating incidents means jumping between completely separate consoles, log systems, and monitoring stacks. Azure SRE Agent now integrates with NeuBird Hawkeye via Model Context Protocol (MCP), so you can investigate incidents across all of your clouds and monitoring tools from a single conversation.
-Key benefits:
-
-90-second investigations vs 3-4 hours of manual dashboard-hopping
-Multi-cloud support - Azure, GCP, and other cloud providers investigated from a single conversation
-42 MCP tools across 7 categories for investigation, analysis, and remediation
-Real-time streaming progress - watch investigations unfold step-by-st…]]></summary>
-        <author>
-            <name>dbandaru</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Azure Event Grid MQTT Broker: Enterprise-Grade Messaging for the Connected World]]></title>
-        <id>https://techcommunity.microsoft.com/blog/MessagingonAzureBlog/azure-event-grid-mqtt-broker-enterprise-grade-messaging-for-the-connected-world/4504246</id>
-        <link href="https://techcommunity.microsoft.com/blog/MessagingonAzureBlog/azure-event-grid-mqtt-broker-enterprise-grade-messaging-for-the-connected-world/4504246"/>
-        <updated>2026-03-23T17:48:18.000Z</updated>
-        <summary type="html"><![CDATA[Azure Messaging · What's New · March 2026
-The Enterprise MQTT Brokerfor Every Connected Ecosystem
-Scale to millions of devices, enforce zero-trust security, and route real-time events across every service, system, and application — all on Azure's hyperscaler-grade messaging backbone.
-
-
-
-1,000
-msg/sec/session
-
-5M+
-concurrent connections
-
-1 MB
-large message support
-
-TLS 1.2+
-enforced encryption
-
-
-
-
-
-
-The Modern Broker for Every Connected Ecosystem
-Whether you're connecting vehicles, factory floors, edge devices, retail infrastructure, financial systems, or cloud-native services — Azure Event Grid MQTT Broker is the enterprise messaging backbone that scales from prototype to planet. With deep Azure integration, full MQTT compliance, and hyperscaler-grade security, it's the broker you ship on …]]></summary>
-        <author>
-            <name>Connected-Seth</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Migrating Ant Builds to Maven with GitHub Copilot app modernization]]></title>
-        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/migrating-ant-builds-to-maven-with-github-copilot-app-modernization/4491992</id>
-        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/migrating-ant-builds-to-maven-with-github-copilot-app-modernization/4491992"/>
-        <updated>2026-03-23T16:49:01.000Z</updated>
-        <summary type="html"><![CDATA[Many legacy Java applications still rely on Apache Ant for building, packaging, and dependency management. While Ant remains flexible, it lacks the structured lifecycle, dependency resolution, and ecosystem support that modern build tools like Maven provide. Migrating from Ant to Maven improves maintainability, build reproducibility, IDE compatibility, and enables modern Java workflows such as dependency upgrades, framework updates, and containerization.
-GitHub Copilot app modernization accelerates this transition by analyzing an Ant‑based project, generating a migration plan, and applying transformations to produce a Maven‑based build aligned with modern Java tooling.
-What GitHub Copilot app modernization Supports
-GitHub Copilot app modernization can help teams:
-
-Detect Ant build scripts …]]></summary>
-        <author>
-            <name>ayangupta</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Code Optimizations for Azure App Service Now Available in VS Code]]></title>
-        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/code-optimizations-for-azure-app-service-now-available-in-vs-code/4504252</id>
-        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/code-optimizations-for-azure-app-service-now-available-in-vs-code/4504252"/>
-        <updated>2026-03-23T15:18:08.000Z</updated>
-        <summary type="html"><![CDATA[Today we shipped a feature in the Azure App Service extension for VS Code that answers both questions: Code Optimizations, powered by Application Insights profiler data and GitHub Copilot.
-The problem: production performance is a black box
-You've deployed your .NET app to Azure App Service. Monitoring shows CPU is elevated, and response times are creeping up. You know something is slow, but reproducing production load patterns locally is nearly impossible. Application Insights can detect these issues, but context-switching between the Azure Portal and your editor to actually fix them adds friction.
-What if the issues came to you, right where you write code?
-What's new
-The Azure App Service extension now adds a Code Optimizations node directly under your .NET web apps in the Azure Resources…]]></summary>
-        <author>
-            <name>fiveisprime</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[How to get blob Total Blob Count and Total Capacity with Blob Inventory]]></title>
-        <id>https://techcommunity.microsoft.com/blog/AzurePaaSBlog/how-to-get-blob-total-blob-count-and-total-capacity-with-blob-inventory/4485643</id>
-        <link href="https://techcommunity.microsoft.com/blog/AzurePaaSBlog/how-to-get-blob-total-blob-count-and-total-capacity-with-blob-inventory/4485643"/>
-        <updated>2026-03-23T13:46:08.000Z</updated>
-        <summary type="html"><![CDATA[Table of Contents
-
-Approach
-Introduction to the Blob Inventory Service
-Steps to enable inventory report
-Support Documentation
-Disclaimer:
-
-
-Approach
-This article presents how to take advantage of the Blob Inventory service to get the total blob count and the total capacity per storage account, per container or per directory.
-I will present the steps to create the blob inventory rule and how to get the needed information without having to process the blob inventory rule results just by using the prefix match field.
-Additional support documentation it is presented at the end of the article.
-Introduction to the Blob Inventory Service
-Azure Storage blob inventory provides a list of the containers, blobs, blob versions, and snapshots in your storage account, along with their associated properti…]]></summary>
-        <author>
-            <name>ruineiva</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Business Events in Microsoft Fabric (Preview)]]></title>
-        <id>business-events-in-microsoft-fabric-preview</id>
-        <link href="https://blog.fabric.microsoft.com/en/blog/business-events-in-microsoft-fabric-preview/"/>
-        <updated>2026-03-23T13:30:00.000Z</updated>
-        <summary type="html"><![CDATA[Modern organizations generate countless signals as customers interact with applications; operations evolve, and market conditions change—but most of these signals remain locked in data and are often discovered too late for action. With Business Events in Microsoft Fabric (Preview), organizations can move from observing what happened to acting on what matters, in real time.]]></summary>
         <author>
             <name>Fabric Updates Blog articles</name>
         </author>
