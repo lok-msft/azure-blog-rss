@@ -22,11 +22,104 @@
             data-action="toggle-accordions"
             title="Click to toggle the day, Ctrl + click to toggle all."
           >
-            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2026-08-21 datetime="2026-08-20T17:35:21.000Z">2026-08-21</time>
-            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2026-08-21 datetime="2026-08-20T17:35:21.000Z"></time>
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2026-08-21 datetime="2026-08-21T15:20:28.000Z">2026-08-21</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2026-08-21 datetime="2026-08-21T15:20:28.000Z"></time>
           </button>
         </h2>
         <ul class="sources card">
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Microsoft Tech Community - Latest Blogs - Apps on Azure Blog</button>
+                  <a class="source-heading__link" href="https://techcommunity.microsoft.com">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/stop-restricting-the-agent-start-restricting-its-environment-/4548726"
+                        open
+                      >
+                        <summary class="article-expander__title">Stop restricting the agent. Start restricting its environment.</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/stop-restricting-the-agent-start-restricting-its-environment-/4548726">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTQ4NzI2LTRMVHFGbg?revision&#x3D;12" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>Thanks to visagarwal​ for co-authoring this post. Cross-posted from: https://commandline.microsoft.com/azure-sre-agent-restricting-environment-ai-safety/
+
+ 
+Azure SRE Agent gives an LLM tools, a code execution environment, and access to production resources. The first question most people ask is: “How is that safe?”
+The instinctive answer is to restrict the agent. Least-privileged scopes. Short-lived credentials. A human approval gate in front of anything that mutates state. All of that helps, and we do all of it.
+But after a year in production, we learned that restriction is only half the answer. A useful agent needs the capability to reason, the authority to act, and the agency to carry work through to completion. It must gather evidence, choose between tools, and act on what it finds. T…</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;49
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/announcing-azure-web-pubsub-chat-in-public-preview/4548907"
+                        open
+                      >
+                        <summary class="article-expander__title">Announcing Azure Web PubSub chat in public preview</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/announcing-azure-web-pubsub-chat-in-public-preview/4548907">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Chat is becoming a standard interaction model across customer support, collaboration, gaming, marketplaces, healthcare, financial services, and AI-powered applications. But building a production-ready chat system involves much more than opening a WebSocket connection. Teams also need to manage rooms and membership, deliver and order messages, retain conversation history, recover from connection interruptions, and enforce permissions.
+Today, we are excited to announce that Azure Web PubSub chat is available in public preview. Azure Web PubSub chat is a managed capability built on Azure Web PubSub. It provides chat-focused client and server APIs so developers can work directly with familiar concepts such as rooms, messages, members, users, and roles, while Azure manages the underlying real-t…</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;26
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Microsoft Tech Community - Latest Blogs - Azure PaaS Blog</button>
+                  <a class="source-heading__link" href="https://techcommunity.microsoft.com">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://techcommunity.microsoft.com/blog/AzurePaaSBlog/azure-managed-redis-deployment-automation/4547874"
+                        open
+                      >
+                        <summary class="article-expander__title">Azure Managed Redis Deployment Automation</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/blog/AzurePaaSBlog/azure-managed-redis-deployment-automation/4547874">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Sometimes we may see some temporary capacity restrictions on some Azure Regions, while deploying Azure Managed Redis (AMR), and when that happen, the recommendation is usually retrying using a different Azure Region, a different AMR SKU, or retrying during off-peak hours or weekends.Retrying the cache deployment on a different region without capacity restrictions allow us to create the cache immediately.But our business needs, requirements or company policies may not allow us to use a different region, and in that case we may need to keep retrying the AMR cache creation at different times of the day or during next days, or even trying different AMR SKUs.This PowerShell script was build to help on those scenarios.
+If this script was useful for you, please share your comments at the end of t…</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;98
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
             <li class="card__section">
               <section class="js-toggle-accordions-scope">
                 <h3 class="source-heading">
@@ -24006,30 +24099,6 @@ Aspire brings a code-first model for building, running, and deploying distribute
                         </a>
                       </details>
                     </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/http-triggers-in-azure-sre-agent-from-jira-ticket-to-automated-investigation/4504960"
-                        open
-                      >
-                        <summary class="article-expander__title">HTTP Triggers in Azure SRE Agent: From Jira Ticket to Automated Investigation</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/http-triggers-in-azure-sre-agent-from-jira-ticket-to-automated-investigation/4504960">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTA0OTYwLUhWTjZJVg?revision&#x3D;8" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>Introduction
-Many teams run their observability, incident management, ticketing, and deployment on platforms outside of Azure—Jira, Opsgenie, Grafana, Zendesk, GitLab, Jenkins, Harness, or homegrown internal tools. These are the systems where alerts fire, tickets get filed, deployments happen, and operational decisions are made every day.
-HTTP Triggers make it easy to connect any of them to Azure SRE Agent—turning events from any platform into automated agent actions with a simple HTTP POST. No manual copy-paste, no context-switching, no delay between detection and response.
-In this blog, we&#x27;ll demonstrate by connecting Jira to SRE Agent—so that every new incident ticket automatically triggers an investigation, and the agent posts its findings back to the Jira ticket when it&#x27;s done.
-The Sc…</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;52
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
                 </section>
               </section>
             </li>
@@ -24064,365 +24133,6 @@ The Sc…</span>
                         </a>
                       </details>
                     </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="industrial-analytics-delivered-at-scale-powered-by-fabric-real-time-intelligence-and-fusion-data-hub"
-                        open
-                      >
-                        <summary class="article-expander__title">Industrial Analytics delivered at-scale: Powered by Fabric Real-Time Intelligence and Fusion Data Hub</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://blog.fabric.microsoft.com/en/blog/industrial-analytics-delivered-at-scale-powered-by-fabric-real-time-intelligence-and-fusion-data-hub/">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://blog.fabric.microsoft.com/images/shared/social/social-image-v2.png" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>Industrial organizations generate a continuous stream of operational signals—temperature, pressure, flow, vibration, energy, and more. Much of that data is captured in plant historians, systems built to collect and store sensor and equipment data over long periods, often driven by compliance needs and operational reporting.</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;7
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="sql-server-management-studio-ssms-22-4-1-and-github-copilot-in-ssms-generally-available"
-                        open
-                      >
-                        <summary class="article-expander__title">SQL Server Management Studio (SSMS) 22.4.1 and GitHub Copilot in SSMS (Generally Available)</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://blog.fabric.microsoft.com/en/blog/sql-server-management-studio-ssms-22-4-1-and-github-copilot-in-ssms-generally-available/">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://blog.fabric.microsoft.com/images/shared/social/social-image-v2.png" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>GitHub Copilot in SQL Server Management Studio (SSMS) now offers a few highly requested features and several bug fixes based on feedback items. Check out the full release notes to learn about the complete list of updates in the 22.4.1 release. We appreciate you taking time to file issues, share your requests, and upvote items; you’ll notice your feedback helped us shape this release, and will help us continue to evolve the GitHub Copilot in SSMS integration.</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;7
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="explore-edit-and-organize-item-definitions-and-fabric-mcp-server-in-vs-code"
-                        open
-                      >
-                        <summary class="article-expander__title">Explore, edit, and organize Item definitions and Fabric MCP server in VS Code</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://blog.fabric.microsoft.com/en/blog/explore-edit-and-organize-item-definitions-and-fabric-mcp-server-in-vs-code/">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://blog.fabric.microsoft.com/images/shared/social/social-image-v2.png" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>If you haven’t already, check out Arun Ulag’s hero blog “FabCon and SQLCon 2026: Unifying databases and Fabric on a single, complete platform” for a complete look at all of our FabCon and SQLCon announcements across both Fabric and our database offerings.  We have been iterating quickly on the Fabric extension for Visual Studio Code … 
-Continue reading “Explore, edit, and organize Item definitions and Fabric MCP server in VS Code”</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;7
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="workspace-level-ip-firewall-rules-in-microsoft-fabric-generally-available"
-                        open
-                      >
-                        <summary class="article-expander__title">Workspace level IP firewall rules in Microsoft Fabric (Generally Available)</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://blog.fabric.microsoft.com/en/blog/workspace-level-ip-firewall-rules-in-microsoft-fabric-generally-available/">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://blog.fabric.microsoft.com/images/shared/social/social-image-v2.png" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>If you haven’t already, check out Arun Ulag’s hero blog “FabCon and SQLCon 2026: Unifying databases and Fabric on a single, complete platform” for a complete look at all of our FabCon and SQLCon announcements across both Fabric and our database offerings.  In today’s increasingly connected data landscape, protecting access to sensitive data is more … 
-Continue reading “Workspace level IP firewall rules in Microsoft Fabric (Generally Available)”</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;6
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="find-and-manage-workspaces-faster-with-workspace-tags-generally-available"
-                        open
-                      >
-                        <summary class="article-expander__title">Find and manage workspaces faster with workspace tags (Generally Available)</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://blog.fabric.microsoft.com/en/blog/find-and-manage-workspaces-faster-with-workspace-tags-generally-available/">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://blog.fabric.microsoft.com/images/shared/social/social-image-v2.png" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>Fabric Tags adds meaningful metadata so people can find the right content faster and organize it consistently.</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;6
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="invoke-ssis-package-activity-in-microsoft-fabric-preview"
-                        open
-                      >
-                        <summary class="article-expander__title">Invoke SSIS Package Activity in Microsoft Fabric (Preview)</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://blog.fabric.microsoft.com/en/blog/invoke-ssis-package-activity-in-microsoft-fabric-preview/">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://blog.fabric.microsoft.com/images/shared/social/social-image-v2.png" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>SQL Server Integration Services (SSIS) has been a cornerstone of enterprise data integration for decades, powering mission-critical ETL workloads across thousands of organizations worldwide. Now Invoke SSIS Package activity (Preview) in Data Factory in Microsoft Fabric, brings the power of your existing SSIS investments directly into Fabric’s unified SaaS analytics platform.</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;8
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="higher-performance-with-copy-job-in-fabric-data-factory-auto-partitioning-preview"
-                        open
-                      >
-                        <summary class="article-expander__title">Higher Performance with Copy job in Fabric Data Factory Auto Partitioning (Preview)</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://blog.fabric.microsoft.com/en/blog/higher-performance-with-copy-job-in-fabric-data-factory-auto-partitioning-preview/">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://blog.fabric.microsoft.com/images/shared/social/social-image-v2.png" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>Copy job is the go-to solution in Microsoft Fabric Data Factory for simplified data movement across multiple clouds. With native support for bulk copy, incremental copy, and change data capture (CDC) replication, it can handle a wide range of movement scenarios through an intuitive, easy-to-use experience.</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;7
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="simplifying-data-movement-across-multiple-clouds-with-richer-cdc-in-copy-job-in-fabric-data-factory-oracle-source-fabric-data-warehouse-sink-and-scd-type-2-preview"
-                        open
-                      >
-                        <summary class="article-expander__title">Simplifying data movement across multiple Clouds with richer CDC in Copy job in Fabric Data Factory Oracle source, Fabric Data Warehouse sink and SCD Type 2 (Preview)</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://blog.fabric.microsoft.com/en/blog/simplifying-data-movement-across-multiple-clouds-with-richer-cdc-in-copy-job-in-fabric-data-factory-oracle-source-fabric-data-warehouse-sink-and-scd-type-2-preview/">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://blog.fabric.microsoft.com/images/shared/social/social-image-v2.png" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>Copy job is the go-to solution in Microsoft Fabric Data Factory for simplified data movement across multiple clouds. With native support for bulk copy, incremental copy, and change data capture (CDC) replication, it can handle a wide range of movement scenarios through an intuitive, easy-to-use experience.</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;11
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Microsoft 365 Developer Blog</button>
-                  <a class="source-heading__link" href="https://devblogs.microsoft.com/microsoft365dev/">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://devblogs.microsoft.com/microsoft365dev/?p&#x3D;25463"
-                        open
-                      >
-                        <summary class="article-expander__title">SharePoint Framework (SPFx) roadmap update – March 2026</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://devblogs.microsoft.com/microsoft365dev/sharepoint-framework-spfx-roadmap-update-march-2026/">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2026/03/spfx-roadmap-2026-march.webp" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>SPFx is powering the future of Microsoft 365 with AI driven portals and deep integrations across SharePoint Teams and Viva. The March 2026 update shares new features and the roadmap for the next evolution built for the AI era. This is a transparent community driven journey that we shape together.
-The post SharePoint Framework (SPFx) roadmap update – March 2026 appeared first on Microsoft 365 Developer Blog.</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;29
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Azure App Service</button>
-                  <a class="source-heading__link" href="https://azure.github.io/AppService/">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://azure.github.io/AppService/2026/03/25/Aspire-GA.html"
-                        open
-                      >
-                        <summary class="article-expander__title">Aspire on Azure App Service is now Generally Available</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://azure.github.io/AppService/2026/03/25/Aspire-GA.html">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://azure.github.io/AppService/assets/images/icon.png" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>Today we are announcing General Availability of Aspire on Azure App Service, making it easier to take distributed applications from local development to a fully managed production environment on Azure App Service. With the Aspire.Hosting.Azure.AppService package, you can define your hosting environment in code and deploy to App Service using the same AppHost model you already use for orchestration.</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;3
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
-        </ul>
-      </section>
-      <section class="daily-content js-toggle-accordions-scope">
-        <h2 class="daily-heading">
-          <button
-            class="daily-heading-toggle"
-            data-action="toggle-accordions"
-            title="Click to toggle the day, Ctrl + click to toggle all."
-          >
-            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2026-03-24 datetime="2026-03-24T15:30:00.000Z">2026-03-24</time>
-            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2026-03-24 datetime="2026-03-24T15:30:00.000Z"></time>
-          </button>
-        </h2>
-        <ul class="sources card">
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Fabric Updates Blog articles</button>
-                  <a class="source-heading__link" href="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/bg-p/fbc_fabricupdatesblogs">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="34710"
-                        open
-                      >
-                        <summary class="article-expander__title">Tenant level private link support for Microsoft Fabric API for GraphQL (Generally Available)</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://blog.fabric.microsoft.com/en/blog/34710/">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://blog.fabric.microsoft.com/images/shared/social/social-image-v2.png" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>Microsoft Fabric API for GraphQL now supports Tenant Level Private Link, delivering enterprise-grade network security to your data APIs. This highly requested feature enables organizations to access their GraphQL APIs through private connectivity, ensuring that data traffic never traverses the public internet.</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;7
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="configure-and-manage-activator-rules-directly-in-eventstream-preview"
-                        open
-                      >
-                        <summary class="article-expander__title">Configure and manage Activator rules directly in Eventstream (Preview)</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://blog.fabric.microsoft.com/en/blog/configure-and-manage-activator-rules-directly-in-eventstream-preview/">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://blog.fabric.microsoft.com/images/shared/social/social-image-v2.png" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>Customers use Eventstream in Microsoft Fabric to ingest and process streaming data at scale. They use Fabric Activator to monitor conditions and initiate actions when thresholds are met or specific patterns are detected. Now, we’re bringing these experiences closer together.</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;6
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="sharepoint-site-picker-for-easily-connecting-sharepoint-data-in-microsoft-fabric-preview"
-                        open
-                      >
-                        <summary class="article-expander__title">SharePoint Site Picker for easily connecting SharePoint data in Microsoft Fabric (Preview)</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://blog.fabric.microsoft.com/en/blog/sharepoint-site-picker-for-easily-connecting-sharepoint-data-in-microsoft-fabric-preview/">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://blog.fabric.microsoft.com/images/shared/social/social-image-v2.png" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>The SharePoint Site Picker simplifies the process by replacing the manual URL entry with a browsable and searchable dropdown menu. By enabling site discovery directly within Fabric, it helps prevent URL format errors, reduces connection issues, and allows you to concentrate on building your data integration instead of searching through SharePoint.</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;6
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="fabric-cli-v1-5-is-here-generally-available"
-                        open
-                      >
-                        <summary class="article-expander__title">Fabric CLI v1.5 is here (Generally Available)</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://blog.fabric.microsoft.com/en/blog/fabric-cli-v1-5-is-here-generally-available/">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://blog.fabric.microsoft.com/images/shared/social/social-image-v2.png" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>Since the open-source launch in October, the Fabric CLI has gained one-command deployments, first-class Power BI support, an AI agent execution layer, interactive REPL mode, Python 3.13 support, and contributions from community members whose code ships in the CLI you install today.</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;12
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="live-connectivity-in-migration-assistant-for-fabric-data-warehouse-preview"
-                        open
-                      >
-                        <summary class="article-expander__title">Live connectivity in Migration Assistant for Fabric Data Warehouse (Preview)</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://blog.fabric.microsoft.com/en/blog/live-connectivity-in-migration-assistant-for-fabric-data-warehouse-preview/">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://blog.fabric.microsoft.com/images/shared/social/social-image-v2.png" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>The live connectivity in Migration Assistant for Fabric Data Warehouse lets you connect directly to your source system and migrate object metadata into a new Fabric warehouse. This preview is designed to help you accelerate the migration and reduce upfront prep by eliminating the need to generate and upload a DACPAC for the metadata step.</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;6
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
                 </section>
               </section>
             </li>
@@ -24430,8 +24140,8 @@ The post SharePoint Framework (SPFx) roadmap update – March 2026 appeared firs
       </section>
 
     <footer>
-      <a class="footer-link" href="https://github.com/lok-msft/azure-blog-rss/actions/runs/32435806131">
-        <time id="build-timestamp" datetime="2026-08-21T01:18:28.224Z">2026-08-21T01:18:28.224Z</time>
+      <a class="footer-link" href="https://github.com/lok-msft/azure-blog-rss/actions/runs/32542818692">
+        <time id="build-timestamp" datetime="2026-08-22T01:14:32.692Z">2026-08-22T01:14:32.692Z</time>
       </a>
       <a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a>
     </footer>
