@@ -22,11 +22,227 @@
             data-action="toggle-accordions"
             title="Click to toggle the day, Ctrl + click to toggle all."
           >
-            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2026-08-25 datetime="2026-08-24T21:00:00.000Z">2026-08-25</time>
-            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2026-08-25 datetime="2026-08-24T21:00:00.000Z"></time>
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2026-08-26 datetime="2026-08-25T19:00:00.000Z">2026-08-26</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2026-08-26 datetime="2026-08-25T19:00:00.000Z"></time>
           </button>
         </h2>
         <ul class="sources card">
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Fabric Updates Blog articles</button>
+                  <a class="source-heading__link" href="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/bg-p/fbc_fabricupdatesblogs">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Find-the-SQL-Team-at-SQLCon-FabCon-Europe-2026/ba-p/5359947"
+                        open
+                      >
+                        <summary class="article-expander__title">Find the SQL Team at SQLCon/FabCon Europe 2026</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Find-the-SQL-Team-at-SQLCon-FabCon-Europe-2026/ba-p/5359947">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Twenty sessions. Four days. One short link!
+The Microsoft SQL product team is heading to Barcelona for SQLCon Europe 2026, September 28 to October 1, co-located with FabCon Europe. The people building SQL Server, Azure SQL, and SQL database in Fabric are presenting what&#x27;s new and the roadmap, and then sticking around to answer your questions and discuss your ideas and problems-to-solve.
+Bookmark this or remember to URL to find it later: aka.ms/sqlsessions
+By the way, if you haven&#x27;t registered yet and have decided you want to come, you can register online now!
+Find the SQL team
+Here&#x27;s where we will be, broken down by day. SQLCon TV topics and guests are still being finalized. The times are included in the following schedule so you can save the slots and check back for details.
+Monday,…</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Introducing-anonymous-data-access-for-Fabric-Apps-Preview/ba-p/5361116"
+                        open
+                      >
+                        <summary class="article-expander__title">Introducing anonymous data access for Fabric Apps (Preview)</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Introducing-anonymous-data-access-for-Fabric-Apps-Preview/ba-p/5361116">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Fabric Apps now support anonymous data access to enable public-facing experiences without mandatory sign-in. This feature balances accessibility with security by exposing only specific data and operations to unauthenticated users under strict administrative controls.
+
+Access requires tenant admin approval, explicit app opt-in, and data-model role permissions for anonymous users.
+Developers can grant read or create permissions for public data like catalogs or event registrations while protecting sensitive information.
+Best practices include minimal permission grants, field restrictions, input validation, and monitoring to safeguard data integrity.</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Microsoft Tech Community - Latest Blogs - Azure PaaS Blog</button>
+                  <a class="source-heading__link" href="https://techcommunity.microsoft.com">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://techcommunity.microsoft.com/blog/AzurePaaSBlog/tracking-batch-node-state-and-duration-in-log-analytics/4547582"
+                        open
+                      >
+                        <summary class="article-expander__title">Tracking Batch node state and duration in Log Analytics</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/blog/AzurePaaSBlog/tracking-batch-node-state-and-duration-in-log-analytics/4547582">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>1. The problem (a real customer scenario)
+Some of our customers described that they have those underlying gaps:
+
+
+
+Symptom
+
+What the customer wanted
+
+
+Nodes intermittently stayed in the leavingpool state for hours. The customer needed to know which node was stuck and for how long, so an alert could fire only after a threshold (e.g. &gt; 60 minutes).
+
+A dashboard/query that isolates one node at a time and calculates its duration in the current state.
+
+
+A node was reported unusable because the underlying OS provisioning failed. The customer needed automated detection to remediate (drop the pool to 0 and back up) instead of catching it manually.
+
+A per-node feed that carries state + error code + IP, so an alert can identify the offending node and its error.
+
+
+
+In both scenarios we recommended th…</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+        </ul>
+      </section>
+      <section class="daily-content js-toggle-accordions-scope">
+        <h2 class="daily-heading">
+          <button
+            class="daily-heading-toggle"
+            data-action="toggle-accordions"
+            title="Click to toggle the day, Ctrl + click to toggle all."
+          >
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2026-08-25 datetime="2026-08-25T15:00:00.000Z">2026-08-25</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2026-08-25 datetime="2026-08-25T15:00:00.000Z"></time>
+          </button>
+        </h2>
+        <ul class="sources card">
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Microsoft Tech Community - Latest Blogs - Apps on Azure Blog</button>
+                  <a class="source-heading__link" href="https://techcommunity.microsoft.com">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/azure-sre-agent-introducing-live-reports/4549732"
+                        open
+                      >
+                        <summary class="article-expander__title">Azure SRE Agent: Introducing Live Reports</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/azure-sre-agent-introducing-live-reports/4549732">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Today we&#x27;re introducing Live Reports in Azure SRE Agent, now in public preview. You describe a dashboard in chat; the agent builds it, and it refreshes every time you open it. 
+Ops teams ask the same handful of questions every morning: What&#x27;s burning right now? What landed overnight? Who&#x27;s on call? The answers usually live across multiple browser tabs, a one-off script only one person can run, or a chat prompt retyped daily and re-read as a fresh wall of text. Live Reports provides the missing piece: somewhere to author a view once and consume it many times.
+ 
+
+Frozen structure, live data 
+This is the core design decision: the layout is deterministic, and the data is live.
+The agent authors the page once, then freezes it. Charts, thresholds, column order, and styling stay put. What refresh…</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/azure-sre-agent-vnet-integration-is-now-generally-available/4549774"
+                        open
+                      >
+                        <summary class="article-expander__title">Azure SRE Agent VNet integration is now generally available</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/azure-sre-agent-vnet-integration-is-now-generally-available/4549774">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>VNet integration for Azure SRE Agent is now generally available. You can route outbound agent traffic through your virtual network to access resources behind private endpoints, including databases, Azure Container Apps, Azure Kubernetes Service (AKS) API servers, and more. Traffic routed through your VNet follows your existing routes, network security group rules, firewall policies, private DNS configuration, and network logging.
+How VNet integration fits into Azure SRE Agent security
+Azure SRE Agent provides complementary security controls for enterprise workloads:
+
+VNet integration controls where outbound traffic can go and applies your routing, firewall, DNS, and network logging policies.
+Identity and permissions provide the identity and authorization layer and determine which resources…</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Microsoft Tech Community - Latest Blogs - Educator Developer Blog</button>
+                  <a class="source-heading__link" href="https://techcommunity.microsoft.com">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/agent-governance-toolkit-giving-ai-agents-rules-of-the-road/4549185"
+                        open
+                      >
+                        <summary class="article-expander__title">Agent Governance Toolkit: Giving AI Agents Rules of the Road</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/agent-governance-toolkit-giving-ai-agents-rules-of-the-road/4549185">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Organizations are increasingly deploying autonomous AI agents directly to production environments. These agents ingest customer support tickets, query database states, and execute automated refund transactions. Operating with high throughput and minimal latency, they frequently hold service principal credentials scoped with write access to core infrastructure.
+This architecture introduces a critical security boundary question: What prevents an autonomous agent from executing an unauthorized transaction or destructive operation?
+Without strict guardrails, an agent processing unmanaged user inputs remains vulnerable to adversarial indirect prompt injections hidden within customer attachments or support tickets. Furthermore, LLM non-determinism means a tool-calling sequence can hallucinate in…</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
             <li class="card__section">
               <section class="js-toggle-accordions-scope">
                 <h3 class="source-heading">
@@ -23450,8 +23666,8 @@ In Playwright W…</span>
       </section>
 
     <footer>
-      <a class="footer-link" href="https://github.com/lok-msft/azure-blog-rss/actions/runs/32796882691">
-        <time id="build-timestamp" datetime="2026-08-25T01:16:43.037Z">2026-08-25T01:16:43.037Z</time>
+      <a class="footer-link" href="https://github.com/lok-msft/azure-blog-rss/actions/runs/32918497294">
+        <time id="build-timestamp" datetime="2026-08-26T01:19:23.711Z">2026-08-26T01:19:23.711Z</time>
       </a>
       <a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a>
     </footer>

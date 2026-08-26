@@ -2,10 +2,114 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2026-08-25T01:16:43.089Z</updated>
+    <updated>2026-08-26T01:19:23.763Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Find the SQL Team at SQLCon/FabCon Europe 2026]]></title>
+        <id>https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Find-the-SQL-Team-at-SQLCon-FabCon-Europe-2026/ba-p/5359947</id>
+        <link href="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Find-the-SQL-Team-at-SQLCon-FabCon-Europe-2026/ba-p/5359947"/>
+        <updated>2026-08-25T19:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Twenty sessions. Four days. One short link!
+The Microsoft SQL product team is heading to Barcelona for SQLCon Europe 2026, September 28 to October 1, co-located with FabCon Europe. The people building SQL Server, Azure SQL, and SQL database in Fabric are presenting what's new and the roadmap, and then sticking around to answer your questions and discuss your ideas and problems-to-solve.
+Bookmark this or remember to URL to find it later: aka.ms/sqlsessions
+By the way, if you haven't registered yet and have decided you want to come, you can register online now!
+Find the SQL team
+Here's where we will be, broken down by day. SQLCon TV topics and guests are still being finalized. The times are included in the following schedule so you can save the slots and check back for details.
+Monday,…]]></summary>
+        <author>
+            <name>analyticanna</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Tracking Batch node state and duration in Log Analytics]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AzurePaaSBlog/tracking-batch-node-state-and-duration-in-log-analytics/4547582</id>
+        <link href="https://techcommunity.microsoft.com/blog/AzurePaaSBlog/tracking-batch-node-state-and-duration-in-log-analytics/4547582"/>
+        <updated>2026-08-25T18:04:45.000Z</updated>
+        <summary type="html"><![CDATA[1. The problem (a real customer scenario)
+Some of our customers described that they have those underlying gaps:
+
+
+
+Symptom
+
+What the customer wanted
+
+
+Nodes intermittently stayed in the leavingpool state for hours. The customer needed to know which node was stuck and for how long, so an alert could fire only after a threshold (e.g. > 60 minutes).
+
+A dashboard/query that isolates one node at a time and calculates its duration in the current state.
+
+
+A node was reported unusable because the underlying OS provisioning failed. The customer needed automated detection to remediate (drop the pool to 0 and back up) instead of catching it manually.
+
+A per-node feed that carries state + error code + IP, so an alert can identify the offending node and its error.
+
+
+
+In both scenarios we recommended th…]]></summary>
+        <author>
+            <name>Ahmed_Khaled</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Introducing anonymous data access for Fabric Apps (Preview)]]></title>
+        <id>https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Introducing-anonymous-data-access-for-Fabric-Apps-Preview/ba-p/5361116</id>
+        <link href="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Introducing-anonymous-data-access-for-Fabric-Apps-Preview/ba-p/5361116"/>
+        <updated>2026-08-25T18:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Fabric Apps now support anonymous data access to enable public-facing experiences without mandatory sign-in. This feature balances accessibility with security by exposing only specific data and operations to unauthenticated users under strict administrative controls.
+
+Access requires tenant admin approval, explicit app opt-in, and data-model role permissions for anonymous users.
+Developers can grant read or create permissions for public data like catalogs or event registrations while protecting sensitive information.
+Best practices include minimal permission grants, field restrictions, input validation, and monitoring to safeguard data integrity.]]></summary>
+        <author>
+            <name>mk_sunitha</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Azure SRE Agent: Introducing Live Reports]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/azure-sre-agent-introducing-live-reports/4549732</id>
+        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/azure-sre-agent-introducing-live-reports/4549732"/>
+        <updated>2026-08-25T15:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Today we're introducing Live Reports in Azure SRE Agent, now in public preview. You describe a dashboard in chat; the agent builds it, and it refreshes every time you open it. 
+Ops teams ask the same handful of questions every morning: What's burning right now? What landed overnight? Who's on call? The answers usually live across multiple browser tabs, a one-off script only one person can run, or a chat prompt retyped daily and re-read as a fresh wall of text. Live Reports provides the missing piece: somewhere to author a view once and consume it many times.
+ 
+
+Frozen structure, live data 
+This is the core design decision: the layout is deterministic, and the data is live.
+The agent authors the page once, then freezes it. Charts, thresholds, column order, and styling stay put. What refresh…]]></summary>
+        <author>
+            <name>yashnisar</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Azure SRE Agent VNet integration is now generally available]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/azure-sre-agent-vnet-integration-is-now-generally-available/4549774</id>
+        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/azure-sre-agent-vnet-integration-is-now-generally-available/4549774"/>
+        <updated>2026-08-25T15:00:00.000Z</updated>
+        <summary type="html"><![CDATA[VNet integration for Azure SRE Agent is now generally available. You can route outbound agent traffic through your virtual network to access resources behind private endpoints, including databases, Azure Container Apps, Azure Kubernetes Service (AKS) API servers, and more. Traffic routed through your VNet follows your existing routes, network security group rules, firewall policies, private DNS configuration, and network logging.
+How VNet integration fits into Azure SRE Agent security
+Azure SRE Agent provides complementary security controls for enterprise workloads:
+
+VNet integration controls where outbound traffic can go and applies your routing, firewall, DNS, and network logging policies.
+Identity and permissions provide the identity and authorization layer and determine which resources…]]></summary>
+        <author>
+            <name>Cary_Chai</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Agent Governance Toolkit: Giving AI Agents Rules of the Road]]></title>
+        <id>https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/agent-governance-toolkit-giving-ai-agents-rules-of-the-road/4549185</id>
+        <link href="https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/agent-governance-toolkit-giving-ai-agents-rules-of-the-road/4549185"/>
+        <updated>2026-08-25T07:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Organizations are increasingly deploying autonomous AI agents directly to production environments. These agents ingest customer support tickets, query database states, and execute automated refund transactions. Operating with high throughput and minimal latency, they frequently hold service principal credentials scoped with write access to core infrastructure.
+This architecture introduces a critical security boundary question: What prevents an autonomous agent from executing an unauthorized transaction or destructive operation?
+Without strict guardrails, an agent processing unmanaged user inputs remains vulnerable to adversarial indirect prompt injections hidden within customer attachments or support tickets. Furthermore, LLM non-determinism means a tool-calling sequence can hallucinate in…]]></summary>
+        <author>
+            <name>shreyanfern</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Bring your Google Lakehouse Runtime Catalog data to OneLake (Preview)]]></title>
         <id>https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Bring-your-Google-Lakehouse-Runtime-Catalog-data-to-OneLake/ba-p/5360492</id>
