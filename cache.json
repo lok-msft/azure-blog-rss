@@ -6,6 +6,26 @@
       "siteUrl": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/bg-p/fbc_fabricupdatesblogs",
       "articles": [
         {
+          "id": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Fabric-August-2026-Feature-Summary/ba-p/5325824",
+          "author": "murray-kp",
+          "description": "Welcome to the August 2026 Fabric update!\r\nMicrosoft Fabric continues to evolve with new capabilities that help organizations build, manage, and scale their data and AI solutions more efficiently. This month's updates introduce enhancements across Fabric Platform, OneLake, Data Engineering, Conversational Analytics, Data Warehouse, Real-Time Intelligence, and Data Factory. \r\nWhether you're strengthening governance, improving performance, streamlining development workflows, or expanding AI-powered experiences, these updates are designed to help you get more value from your data while simplifying day-to-day operations. Explore the following highlights to see what's new in Microsoft Fabric this month.\r\n\r\nTable of Contents\r\n\r\nEvents and Announcements\r\n\r\nJoin us for FABCON and SQLCON in Barcelo…",
+          "link": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Fabric-August-2026-Feature-Summary/ba-p/5325824",
+          "publishedOn": "2026-08-26T16:06:14.000Z",
+          "wordCount": null,
+          "title": "Fabric August 2026 Feature Summary",
+          "imageUrl": null
+        },
+        {
+          "id": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/IDENTITY-columns-support-for-Identity-Insert-Generally-Available/ba-p/5361138",
+          "author": "perirocha",
+          "description": "IDENTITY columns in Fabric Data Warehouse are now generally available. Since preview, thousands of customers have adopted IDENTITY columns to simplify data warehouse design, reduce custom key-generation logic, and make it easier to build scalable dimensional models in Microsoft Fabric.\r\nIDENTITY columns automatically generate unique numeric values when rows are inserted into a table. This is especially useful for surrogate keys in dimension tables, fact-to-dimension relationships, migration scenarios, and any workload where stable system-generated identifiers are needed. Instead of maintaining custom logic such as MAX(ID) + 1, ROW_NUMBER(), control tables, hashes, or application-side scripts, data teams can let the Warehouse engine generate unique values during ingestion.\r\nWhat’s new\r\nWe h…",
+          "link": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/IDENTITY-columns-support-for-Identity-Insert-Generally-Available/ba-p/5361138",
+          "publishedOn": "2026-08-26T16:00:00.000Z",
+          "wordCount": null,
+          "title": "IDENTITY columns support for Identity Insert (Generally Available)",
+          "imageUrl": null
+        },
+        {
           "id": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Find-the-SQL-Team-at-SQLCon-FabCon-Europe-2026/ba-p/5359947",
           "author": "analyticanna",
           "description": "Twenty sessions. Four days. One short link!\r\nThe Microsoft SQL product team is heading to Barcelona for SQLCon Europe 2026, September 28 to October 1, co-located with FabCon Europe. The people building SQL Server, Azure SQL, and SQL database in Fabric are presenting what's new and the roadmap, and then sticking around to answer your questions and discuss your ideas and problems-to-solve.\r\nBookmark this or remember to URL to find it later: aka.ms/sqlsessions\r\nBy the way, if you haven't registered yet and have decided you want to come, you can register online now!\r\nFind the SQL team\r\nHere's where we will be, broken down by day. SQLCon TV topics and guests are still being finalized. The times are included in the following schedule so you can save the slots and check back for details.\r\nMonday,…",
@@ -1764,26 +1784,6 @@
           "wordCount": 2206,
           "title": "Sensitivity labels in Fabric for public APIs (Generally Available)",
           "imageUrl": "https://blog.fabric.microsoft.com/images/shared/social/social-image-v2.png"
-        },
-        {
-          "id": "modernize-your-adf-pipelines-to-unlock-fabric",
-          "author": null,
-          "description": "Moving your Azure Data Factory and Azure Synapse pipelines to Fabric Data Factory is now fast, easy, and free!",
-          "link": "https://blog.fabric.microsoft.com/en/blog/modernize-your-adf-pipelines-to-unlock-fabric/",
-          "publishedOn": "2026-03-30T13:00:00.000Z",
-          "wordCount": 1756,
-          "title": "Modernize your ADF pipelines to unlock Fabric",
-          "imageUrl": "https://blog.fabric.microsoft.com/images/shared/social/social-image-v2.png"
-        },
-        {
-          "id": "compute-auto-scaling-choices-to-better-optimize-price-performance-for-sql-databases-in-microsoft-fabric-preview",
-          "author": null,
-          "description": "One of the most common pieces of feedback we hear from customers using SQL databases in Microsoft Fabric is the need for stronger cost control and predictable resource usage, especially in shared capacities. Today, SQL databases in Fabric automatically scale to meet workload demand. This delivers great performance, but in shared environments it can also … \nContinue reading “Compute auto-scaling choices to better optimize price-performance for SQL databases in Microsoft Fabric (Preview)”",
-          "link": "https://blog.fabric.microsoft.com/en/blog/compute-auto-scaling-choices-to-better-optimize-price-performance-for-sql-databases-in-microsoft-fabric-preview/",
-          "publishedOn": "2026-03-30T10:30:00.000Z",
-          "wordCount": 2184,
-          "title": "Compute auto-scaling choices to better optimize price-performance for SQL databases in Microsoft Fabric (Preview)",
-          "imageUrl": "https://blog.fabric.microsoft.com/images/shared/social/social-image-v2.png"
         }
       ]
     },
@@ -2016,6 +2016,16 @@
       "feedUrl": "https://techcommunity.microsoft.com/t5/s/plugins/custom/microsoft/o365/custom-blog-rss?board=EducatorDeveloperBlog&size=100",
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
+        {
+          "id": "https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/adding-a-fallback-model-to-hermes-with-microsoft-foundry/4541254",
+          "author": "suzarilshah",
+          "description": "So the plan was simple. Leave the Bedrock configuration untouched, then wire Microsoft Foundry in behind it as a fallback, so Hermes always has somewhere else to go when the primary provider is not responding. A few other reasons pushed me towards Foundry in particular:\n\nRedundancy that does not need me. If Bedrock is throttled or out of quota, I want Hermes to fail over on its own rather than waiting for me to notice.\nA catalogue I already pay for. Foundry puts the latest GPT models next to open-weight and partner models in one place, so I can pick a model that suits the task instead of settling for whatever a single provider happens to offer.\nEnterprise controls out of the box. Region pinning, private networking, content filters and per-deployment quota all sit in the same portal, which …",
+          "link": "https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/adding-a-fallback-model-to-hermes-with-microsoft-foundry/4541254",
+          "publishedOn": "2026-08-27T07:00:00.000Z",
+          "wordCount": null,
+          "title": "Adding a Fallback Model to Hermes with Microsoft Foundry",
+          "imageUrl": null
+        },
         {
           "id": "https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/agent-governance-toolkit-giving-ai-agents-rules-of-the-road/4549185",
           "author": "shreyanfern",
@@ -2515,16 +2525,6 @@
           "wordCount": 11338,
           "title": "Build and Deploy a Microsoft Foundry Hosted Agent: A Hands-On Workshop",
           "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTA4NDI2LTQ4ZDNzWA?revision=3"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/getting-started-with-foundry-local-a-student-guide-to-the-microsoft-foundry-loca/4503604",
-          "author": "Lee_Stott",
-          "description": "If you want to start building AI applications on your own machine, the Microsoft Foundry Local Lab is one of the most useful places to begin. It is a practical workshop that takes you from first-time setup through to agents, retrieval, evaluation, speech transcription, tool calling, and a browser-based interface. The material is hands-on, cross-language, and designed to show how modern AI apps can run locally rather than depending on a cloud service for every step.\nThis blog post is aimed at students, self-taught developers, and anyone learning how AI applications are put together in practice. Instead of treating large language models as a black box, the lab shows you how to install and manage local models, connect to them with code, structure tasks into workflows, and test whether the res…",
-          "link": "https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/getting-started-with-foundry-local-a-student-guide-to-the-microsoft-foundry-loca/4503604",
-          "publishedOn": "2026-03-30T07:00:00.000Z",
-          "wordCount": 16286,
-          "title": "Getting Started with Foundry Local: A Student Guide to the Microsoft Foundry Local Lab",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTAzNjA0LVZJTGZyNw?revision=3"
         }
       ]
     },
@@ -3852,16 +3852,6 @@
           "wordCount": 9200,
           "title": "The Durable Task Scheduler Consumption SKU is now Generally Available",
           "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTA2NjgyLUpWSDd3dA?revision=7"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/gain-visibility-into-cloud-browser-usage-with-browser-activity-logs-in-playwrigh/4506706",
-          "author": "AbhinavPremsekhar",
-          "description": "Today, we're announcing a new feature to view the usage metrics for a browser session using the Browser Activity Logs in Playwright Workspaces. Modern test automation and browser-based workflows increasingly rely on cloud-hosted browsers. As teams scale their usage across test runs, automation tools, and AI-driven agents, visibility and traceability into browser usage become critical, not just for debugging, but also for cost awareness and governance.\nTo address this, Browser Activity Logs in Playwright Workspaces provide a centralized view of every cloud browser session provisioned by Playwright Workspaces. In this post, we’ll walk through what Browser Activity Logs are, what insights they offer, and how you can access them from the Azure portal.\nWhat is a Browser Session?\nIn Playwright W…",
-          "link": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/gain-visibility-into-cloud-browser-usage-with-browser-activity-logs-in-playwrigh/4506706",
-          "publishedOn": "2026-03-30T05:39:04.000Z",
-          "wordCount": 9165,
-          "title": "Gain Visibility into Cloud Browser Usage with Browser Activity Logs in Playwright Workspaces",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTA2NzA2LUNpUkhQQQ?revision=4"
         }
       ]
     },
@@ -5099,16 +5089,6 @@
           "wordCount": 8141,
           "title": "Agents League: Meet the Winners",
           "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTA3NTAzLU9SRUxWTQ?revision=1"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/building-your-first-local-rag-application-with-foundry-local/4501968",
-          "author": "Lee_Stott",
-          "description": "A developer's guide to building an offline, mobile-responsive AI support agent using Retrieval-Augmented Generation, the Foundry Local SDK, and JavaScript.\nImagine you are a gas field engineer standing beside a pipeline in a remote location. There is no Wi-Fi, no mobile signal, and you need a safety procedure right now. What do you do?\nThis is the exact problem that inspired this project: a fully offline RAG-powered support agent that runs entirely on your machine. No cloud. No API keys. No outbound network calls. Just a local language model, a local vector store, and your own documents, all accessible from a browser on any device.\nIn this post, you will learn how it works, how to build your own, and the key architectural decisions behind it. If you have ever wanted to build an AI applicat…",
-          "link": "https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/building-your-first-local-rag-application-with-foundry-local/4501968",
-          "publishedOn": "2026-03-30T07:00:00.000Z",
-          "wordCount": 16492,
-          "title": "Building Your First Local RAG Application with Foundry Local",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTAxOTY4LVUyVzltaA?revision=3"
         }
       ]
     },
@@ -5860,16 +5840,6 @@
           "wordCount": 13971,
           "title": "Claude + GPT | Multi-model intelligence in Copilot",
           "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTA5NzczLTl0RVliVw?revision=1"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/MicrosoftMechanicsBlog/labeling-files-is-worth-it--speed--protection-benefits-in-microsoft-purview/4505234",
-          "author": "Zachary-Cavanell",
-          "description": "Classify your data, apply clear labels, and enforce protections that automatically adapt to human and AI interactions so you can reduce risk without slowing down workflows. Proactively monitor, assess, and respond to risk in real time. Use labeling and layered policies to stop accidental sharing, manage AI access, and maintain consistent protection across your organization. \n\nMatt McSpirit, Microsoft Mechanics expert, joins Jeremy Chapman to share how to turn scattered data into actionable security that moves as fast as your team and AI.\nScan your environment beyond standard detection. \n\nIdentify gaps where AI or big files might expose sensitive data. Get started with Microsoft Purview Information Protection.\nReduce the risk of accidental sharing. \n\nLabel sensitive data, including propriet…",
-          "link": "https://techcommunity.microsoft.com/blog/MicrosoftMechanicsBlog/labeling-files-is-worth-it--speed--protection-benefits-in-microsoft-purview/4505234",
-          "publishedOn": "2026-03-30T15:13:47.000Z",
-          "wordCount": 18694,
-          "title": "Labeling Files is Worth It | Speed & Protection Benefits in Microsoft Purview",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTA1MjM0LUpOZDlXTw?revision=1"
         }
       ]
     },
@@ -5991,6 +5961,16 @@
       "feedUrl": "https://devblogs.microsoft.com/semantic-kernel/feed/",
       "siteUrl": "https://devblogs.microsoft.com/agent-framework/",
       "articles": [
+        {
+          "id": "https://devblogs.microsoft.com/agent-framework/?p=5739",
+          "author": "Eduard van Valkenburg",
+          "description": "An agent or workflow is only useful when people and other systems can reach it through the interfaces and channels they already use. That might be an OpenAI Responses client, Telegram, another agent using A2A, or an MCP client. As a builder of agents and workflow, you need control over which channels you expose it […]\nThe post Introducing agent and workflow channels appeared first on Microsoft Agent Framework.",
+          "link": "https://devblogs.microsoft.com/agent-framework/introducing-agent-and-workflow-channels/",
+          "publishedOn": "2026-08-26T14:47:23.000Z",
+          "wordCount": 8189,
+          "title": "Introducing agent and workflow channels",
+          "imageUrl": "https://devblogs.microsoft.com/agent-framework/wp-content/uploads/sites/78/2026/07/2026-07-30-143534-mai-image-2_5-pro.webp"
+        },
         {
           "id": "https://devblogs.microsoft.com/agent-framework/?p=5754",
           "author": "Giles Odigwe",
@@ -6413,6 +6393,16 @@
       "feedUrl": "https://devblogs.microsoft.com/devops/feed/",
       "siteUrl": "https://devblogs.microsoft.com/devops/",
       "articles": [
+        {
+          "id": "https://devblogs.microsoft.com/devops/?p=73253",
+          "author": "Dan Hellem",
+          "description": "Today, we’re announcing the public preview of GitHub Copilot Code Review for Azure Repos, making the feature available to all Azure DevOps customers using the service. There’s no longer a need to sign up for early access. Customers can now enable Copilot Code Review for their Azure Repos repositories and start using it. With the […]\nThe post Copilot Code Reviews for Azure Repos (public preview) appeared first on Azure DevOps Blog.",
+          "link": "https://devblogs.microsoft.com/devops/copilot-code-reviews-for-azure-repos-public-preview/",
+          "publishedOn": "2026-08-26T15:17:16.000Z",
+          "wordCount": 7927,
+          "title": "Copilot Code Reviews for Azure Repos (public preview)",
+          "imageUrl": "https://devblogs.microsoft.com/devops/wp-content/uploads/sites/6/2026/08/blog-thumb.webp"
+        },
         {
           "id": "https://devblogs.microsoft.com/devops/?p=73232",
           "author": "Eric van Wijk",
