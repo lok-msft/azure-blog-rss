@@ -6,6 +6,56 @@
       "siteUrl": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/bg-p/fbc_fabricupdatesblogs",
       "articles": [
         {
+          "id": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Common-dbt-job-patterns-in-Microsoft-Fabric-Preview/ba-p/5361480",
+          "author": "meghasony",
+          "description": "One of the most common questions we hear from customers adopting dbt job in Microsoft Fabric isn't how to create models, it's how to structure them. \r\n\r\nShould Bronze, Silver, and Gold live in a Lakehouse or a Warehouse?\r\nShould dbt own Silver, Gold, or both?\r\nWhen does a Fabric pipeline make sense?\r\n\r\nTo help answer these questions, we've published new guidance: Common dbt job patterns in Microsoft Fabric (Preview). The guide walks through common architecture choices and explains where dbt fits within a Fabric medallion architecture. \r\nFigure: Four documented patterns show how Warehouse and Lakehouse can support each medallion layer.\r\nFour common patterns\r\nThe guidance highlights four common approaches: \r\n\r\nWarehouse-only medallion for SQL-first teams that want to keep Bronze, Silver, and…",
+          "link": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Common-dbt-job-patterns-in-Microsoft-Fabric-Preview/ba-p/5361480",
+          "publishedOn": "2026-08-31T21:00:00.000Z",
+          "wordCount": null,
+          "title": "Common dbt job patterns in Microsoft Fabric (Preview)",
+          "imageUrl": null
+        },
+        {
+          "id": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/From-factory-floor-to-Fabric-Securely-stream-private-data-with/ba-p/5362960",
+          "author": "bytecascade",
+          "description": "Bring private operational data into real-time analytics\r\nReal-time operational data is often generated in places that are intentionally isolated from the public internet. Factory MQTT brokers, enterprise Kafka clusters, database change data capture sources, and messaging systems may live in an on-premises network, an Azure virtual network, or a private environment in another cloud. \r\nMicrosoft Fabric Eventstream virtual network and on-premises support gives streaming connectors a managed path to approved private sources. The source stays behind its network boundary while Eventstream retrieves events for transformation, routing, analytics, and action. Network teams continue to control connectivity, and data teams use a shared network reference in Fabric instead of exposing a public endpoint…",
+          "link": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/From-factory-floor-to-Fabric-Securely-stream-private-data-with/ba-p/5362960",
+          "publishedOn": "2026-08-31T20:00:00.000Z",
+          "wordCount": null,
+          "title": "From factory floor to Fabric: Securely stream private data with Eventstream",
+          "imageUrl": null
+        },
+        {
+          "id": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Fabric-Migration-Assistant-for-SQL-database-Generally-Available/ba-p/5363606",
+          "author": "FabSubhojit",
+          "description": "Migrating a SQL Server database to the cloud rarely fails on the data — it fails on everything around it. Schema objects that use unsupported features surface only after you've provisioned a target and started deploying. Remediation turns into a manual pass-through error logs. Schema and data move through separate tools, on separate timelines, with separate things to go wrong. A migration most teams could scope in a day ends up planned like a quarter-long project.\r\nWhat makes that work worth doing is where it lands. SQL database in Fabric provisions in seconds, with no networking, storage, or sizing decisions to make — the serverless architecture scales compute and storage automatically, and high availability, disaster recovery, Microsoft Entra authentication, customer-managed keys and SQL…",
+          "link": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Fabric-Migration-Assistant-for-SQL-database-Generally-Available/ba-p/5363606",
+          "publishedOn": "2026-08-31T19:00:00.000Z",
+          "wordCount": null,
+          "title": "Fabric Migration Assistant for SQL database (Generally Available)",
+          "imageUrl": null
+        },
+        {
+          "id": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Bring-Fabric-Maps-into-Real-Time-Dashboards-Preview/ba-p/5360916",
+          "author": "Naorbt",
+          "description": "Operational data often answers two related questions: what is happening, and where is it happening? Real-Time Dashboards help you monitor changing metrics, trends, and events. With Fabric Map integration, you can add an authored map to the same dashboard and provide geospatial context alongside your other visuals.The integration treats a Fabric Map as a self-contained visual. You build and maintain the map in its own Fabric item, then reuse its published state in a Real-Time Dashboard. This approach keeps map queries, layers, filters, and styling in one place instead of requiring you to recreate that logic in each dashboard.Add a Fabric Map as a dashboard visualWhen you edit a Real-Time Dashboard, the visual picker includes a distinct Fabric Map option. This option is separate from the exi…",
+          "link": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Bring-Fabric-Maps-into-Real-Time-Dashboards-Preview/ba-p/5360916",
+          "publishedOn": "2026-08-31T18:30:03.000Z",
+          "wordCount": null,
+          "title": "Bring Fabric Maps into Real-Time Dashboards (Preview)",
+          "imageUrl": null
+        },
+        {
+          "id": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Five-Business-Event-scenarios-and-the-pattern-they-share/ba-p/5361411",
+          "author": "robece-msft",
+          "description": "Welcome to the sixth post in our Business Events, Fabric Events, and Azure Events series for Microsoft Fabric. This series takes you from foundational event-driven concepts to practical implementation patterns that help teams turn meaningful business moments into trusted signals, decisions, and actions across Fabric.",
+          "link": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Five-Business-Event-scenarios-and-the-pattern-they-share/ba-p/5361411",
+          "publishedOn": "2026-08-31T16:00:00.000Z",
+          "wordCount": null,
+          "title": "Five Business Event scenarios and the pattern they share",
+          "imageUrl": null
+        },
+        {
           "id": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/On-premises-data-gateway-August-2026-release/ba-p/5363026",
           "author": "goupadhy",
           "description": "The August 2026 release of the on-premises data gateway is version 3000.330. The new August 2026 release of the on-premises data gateway (version 3000.330) continues our commitment to delivering secure, reliable, and manageable connectivity between on-premises data sources and Microsoft Fabric services.\r\nThis release includes improvements focused on gateway manageability, operational visibility, enterprise governance, and platform reliability, helping organizations manage their gateway environments with greater confidence. It also brings compatibility updates for the August 2026 release of Power BI Desktop, ensuring consistent query execution and a seamless experience between Power BI Desktop and cloud-based refresh scenarios. Additionally, this release includes enhancements across securit…",
@@ -1742,6 +1792,16 @@
       "feedUrl": "https://azure.github.io/AppService/feed.xml",
       "siteUrl": "https://azure.github.io/AppService/",
       "articles": [
+        {
+          "id": "https://azure.github.io/AppService/2026/09/01/azure-cli-2-90-app-service-updates.html",
+          "author": null,
+          "description": "Azure CLI 2.90.0 is now available and includes new capabilities and reliability improvements for Azure App Service. This release makes it easier to troubleshoot Linux web apps, work directly with running containers, identify deployments, and create App Service plans using the latest Isolated tier.",
+          "link": "https://azure.github.io/AppService/2026/09/01/azure-cli-2-90-app-service-updates.html",
+          "publishedOn": "2026-09-01T00:00:00.000Z",
+          "wordCount": 1555,
+          "title": "What’s new for Azure App Service in Azure CLI 2.90.0",
+          "imageUrl": "https://azure.github.io/AppService/assets/images/icon.png"
+        },
         {
           "id": "https://azure.github.io/AppService/2026/08/31/practical-path-to-ai-ready-applications.html",
           "author": null,
@@ -3839,16 +3899,6 @@
           "wordCount": 8923,
           "title": "Protect Your Streaming Data in Use: Confidential Computing for Azure Event Hubs Dedicated",
           "imageUrl": null
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/MessagingonAzureBlog/announcing-general-availability-of-network-security-perimeter-for-azure-service-/4508179",
-          "author": "EldertGrootenboer",
-          "description": "Today we are excited to announce the general availability of Network Security Perimeter (NSP) support for Azure Service Bus. Network Security Perimeter allows you to define a logical network boundary around your Service Bus namespaces and other Azure PaaS resources, restricting public network access and enabling secure communication between services within the perimeter. This builds on the existing network security options for Service Bus - IP firewall rules, VNet service endpoints, and private endpoints - by providing centralized, perimeter-level control over which resources can communicate with each other.\nHow Network Security Perimeter fits with existing network security\nService Bus already provides several options for controlling network access to your namespaces. IP firewall rules let…",
-          "link": "https://techcommunity.microsoft.com/blog/MessagingonAzureBlog/announcing-general-availability-of-network-security-perimeter-for-azure-service-/4508179",
-          "publishedOn": "2026-04-03T16:31:50.000Z",
-          "wordCount": 8780,
-          "title": "Announcing general availability of Network Security Perimeter for Azure Service Bus",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTA4MTc5LWJobkpnRA?revision=1"
         }
       ]
     },
@@ -5393,16 +5443,6 @@
           "wordCount": 11061,
           "title": "Designing Reliable Health Check Endpoints for IIS Behind Azure Application Gateway",
           "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTA3OTM4LVlxRDZEMQ?revision=5"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/secure-http%E2%80%91only-aks-ingress-with-azure-front-door-premium-firewall-dnat-and-pri/4508167",
-          "author": "kkaushal",
-          "description": "Reference architecture and runbook (Part 1: HTTP-only) for Hub-Spoke networking with private Application Gateway (AGIC), Azure Firewall DNAT, and Azure Front Door Premium (WAF)\n0. When and Why to Use This Architecture\nSeries note: This document is Part 1 and uses HTTP to keep the focus on routing and control points. A follow-up Part 2 will extend the same architecture to HTTPS (end-to-end TLS) with the recommended certificate and policy configuration.\nWhat this document contains\nScope: Architecture overview and traffic flow, build/run steps, sample Kubernetes manifests, DNS configuration, and validation steps for end-to-end connectivity through Azure Front Door → Azure Firewall DNAT → private Application Gateway (AGIC) → AKS.\nTypical scenarios\n\nPrivate-by-default Kubernetes ingress: You wa…",
-          "link": "https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/secure-http%E2%80%91only-aks-ingress-with-azure-front-door-premium-firewall-dnat-and-pri/4508167",
-          "publishedOn": "2026-04-03T19:15:55.000Z",
-          "wordCount": 16214,
-          "title": "Secure HTTP‑Only AKS Ingress with Azure Front Door Premium, Firewall DNAT, and Private AGIC",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTA4MTY3LUpMOEVCMQ?revision=4"
         }
       ]
     },
@@ -5727,16 +5767,6 @@
           "wordCount": 8961,
           "title": "Discover and assess File Shares for migration to Azure Files with Azure Migrate",
           "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTA5MDM0LTZ6eTJ2Rg?revision=4"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AzureMigrationBlog/from-discovery-to-executive-presentation-plan-your-migration-with-azure-migrate-/4508500",
-          "author": "Shikher",
-          "description": "The migration planning bottleneck\nEvery migration starts with the same question: what do we have, and where should it go? Getting from that question to a clear, executive-ready answer has traditionally taken weeks. You scan the environment, export spreadsheets, manually classify workloads, run assessments and business case for cost analysis and readiness, and then stitch everything together into a deck that's outdated by the time you present it.\nAzure Migrate now collapses that entire process into a single workflow. Starting with the Azure Migrate Collector, you can scan your estate offline, enrich the inventory with tags and application groupings, and generate a PowerPoint report that summarizes modernization and lift-and-shift recommendations, security posture, and cost insights ready fo…",
-          "link": "https://techcommunity.microsoft.com/blog/AzureMigrationBlog/from-discovery-to-executive-presentation-plan-your-migration-with-azure-migrate-/4508500",
-          "publishedOn": "2026-04-03T18:06:11.000Z",
-          "wordCount": 10736,
-          "title": "From Discovery to Executive Presentation: Plan Your Migration with Azure Migrate in Hours",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTA4NTAwLUIxc3BBOA?revision=1"
         }
       ]
     },
@@ -6020,21 +6050,6 @@
           "wordCount": 8341,
           "title": "Building a Real-Time Multi-Agent UI with AG-UI and Microsoft Agent Framework Workflows",
           "imageUrl": "https://devblogs.microsoft.com/agent-framework/wp-content/uploads/sites/78/2026/04/Screenshot-2026-04-07-at-11.51.23-AM-3.webp"
-        },
-        {
-          "id": "https://devblogs.microsoft.com/agent-framework/?p=5212",
-          "author": "Shawn Henry",
-          "description": "Today, we’re thrilled to announce that Microsoft Agent Framework has reached version 1.0 for both .NET and Python. This is the production-ready release: stable APIs, and a commitment to long-term support. Whether you’re building a single assistant or orchestrating a fleet of specialized agents, Agent Framework 1.0 gives you enterprise-grade multi-agent orchestration, multi-provider model support, […]\nThe post Microsoft Agent Framework Version 1.0 appeared first on Microsoft Agent Framework.",
-          "link": "https://devblogs.microsoft.com/agent-framework/microsoft-agent-framework-version-1-0/",
-          "publishedOn": "2026-04-03T17:04:03.000Z",
-          "wordCount": 8109,
-          "title": "Microsoft Agent Framework Version 1.0",
-          "enclosure": {
-            "url": "https://devblogs.microsoft.com/agent-framework/wp-content/uploads/sites/78/2026/04/devui6_720p.mp4",
-            "length": "3380557",
-            "type": "video/mp4"
-          },
-          "imageUrl": "https://devblogs.microsoft.com/agent-framework/wp-content/uploads/sites/78/2025/10/Screenshot-2025-10-07-233551.png"
         }
       ]
     },
@@ -6183,6 +6198,16 @@
       "feedUrl": "https://devblogs.microsoft.com/devops/feed/",
       "siteUrl": "https://devblogs.microsoft.com/devops/",
       "articles": [
+        {
+          "id": "https://devblogs.microsoft.com/devops/?p=73303",
+          "author": "Soo Stahl",
+          "description": "Move Azure DevOps repositories to GitHub Enterprise Cloud with data residency while minimizing disruption Over the last several years, we’ve encouraged customers to move their repositories from Azure Repos to GitHub to take advantage of the latest AI-powered and agentic development experiences. We know that making this move at enterprise scale isn’t always straightforward. Critical […]\nThe post Enterprise Live Migrations is now in public preview appeared first on Azure DevOps Blog.",
+          "link": "https://devblogs.microsoft.com/devops/enterprise-live-migrations-public-preview/",
+          "publishedOn": "2026-08-31T20:52:38.000Z",
+          "wordCount": 7616,
+          "title": "Enterprise Live Migrations is now in public preview",
+          "imageUrl": "https://devblogs.microsoft.com/devops/wp-content/uploads/sites/6/2026/06/image.webp"
+        },
         {
           "id": "https://devblogs.microsoft.com/devops/?p=73320",
           "author": "Dan Hellem",
