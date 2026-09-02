@@ -22,6 +22,143 @@
             data-action="toggle-accordions"
             title="Click to toggle the day, Ctrl + click to toggle all."
           >
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2026-09-02 datetime="2026-09-01T20:00:00.000Z">2026-09-02</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2026-09-02 datetime="2026-09-01T20:00:00.000Z"></time>
+          </button>
+        </h2>
+        <ul class="sources card">
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Fabric Updates Blog articles</button>
+                  <a class="source-heading__link" href="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/bg-p/fbc_fabricupdatesblogs">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Start-validating-today-The-ODBC-to-ADBC-driver-transition-in/ba-p/5362917"
+                        open
+                      >
+                        <summary class="article-expander__title">Start validating today: The ODBC to ADBC driver transition in Power BI and Microsoft Fabric (Generally Available)</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Start-validating-today-The-ODBC-to-ADBC-driver-transition-in/ba-p/5362917">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Power BI and Microsoft Fabric are transitioning supported data source connections from legacy embedded ODBC drivers to Apache Arrow Database Connectivity (ADBC) drivers. ADBC provides standard interfaces for interacting with Arrow data, delivers significant performance improvements when fetching large datasets, and incorporates memory-safety and security enhancements over the embedded drivers we ship today. 
+In this post, we share what’s changing, and how you can start validating today — well before the change becomes the default for your tenant. 
+If you use Snowflake, Databricks, Azure Databricks, Google BigQuery, Google BigQuery (Microsoft Entra ID), Impala, Spark, or Dremio connectors in Power BI or Fabric, this transition affects you. To learn more about each connector, please refere…</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Get-tenant-wide-visibility-into-workspace-networking-policies/ba-p/5361690"
+                        open
+                      >
+                        <summary class="article-expander__title">Get tenant-wide visibility into workspace networking policies with the Admin API (Generally Available)</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Get-tenant-wide-visibility-into-workspace-networking-policies/ba-p/5361690">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>As organizations strengthen their security posture and adopt network security controls across their data platforms, visibility becomes just as important as enforcement. List Networking Communication Policies API, now generally available, provides Fabric Tenant administrators with a centralized, tenant-wide view of workspace networking policies configured for workspaces, making it easier to monitor configurations, support governance initiatives, and streamline security reviews. Why this mattersAs enterprises deploy controls such as Inbound Access Protection and Outbound Access Protection, administrators need a scalable way to monitor compliance, audit workspace configurations, and identify workspaces that may require additional review. Prior to this capability, administrators often relied o…</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/New-CI-CD-resources-for-Microsoft-Fabric-from-concepts-to-end-to/ba-p/5358502"
+                        open
+                      >
+                        <summary class="article-expander__title">New CI/CD resources for Microsoft Fabric: from concepts to end-to-end automation</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/New-CI-CD-resources-for-Microsoft-Fabric-from-concepts-to-end-to/ba-p/5358502">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Introducing a new set of resources that make it easier to build continuous integration and continuous deployment (CI/CD) into your Microsoft Fabric data projects. A Fabric solution is rarely a single artifact. It is a composition of workspace items, and with more than 70 item types available today (and the number continuing to grow), moving a solution from development to production takes a deliberate plan. These new resources connect the platform capabilities into one coherent workflow and form a path you can follow end to end: understand the platform, plan your approach, get hands-on with guided tutorials, and reach for advanced options when your scenario calls for them.
+ 
+Figure: The Fabric CI/CD platform, layered on the Fabric REST APIs.
+Get started: Introduction to CI/CD in Microsof…</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Advanced-DAX-generation-for-semantic-models-in-Fabric-data/ba-p/5363136"
+                        open
+                      >
+                        <summary class="article-expander__title">Advanced DAX generation for semantic models in Fabric data agents (Preview)</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Advanced-DAX-generation-for-semantic-models-in-Fabric-data/ba-p/5363136">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Advanced DAX generation for Power BI semantic models is now available in Fabric data agents through the Preview runtime. The experience changes how a data agent translates natural-language questions into DAX by allowing it to plan, use tools, inspect intermediate results, and refine its approach before returning an answer.This iterative approach can lower response latency, and improve response accuracy and consistency, particularly for questions that require value resolution or multiple reasoning steps. It also uses the semantic-model query foundation shared across Fabric data agents, Fabric Skills, Power BI, and Microsoft 365 Copilot.From single-pass generation to an agentic architectureThe existing DAX generation experience handles query generation in a single pass. This approach works w…</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Microsoft Tech Community - Latest Blogs - Microsoft Mechanics Blog</button>
+                  <a class="source-heading__link" href="https://techcommunity.microsoft.com">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://techcommunity.microsoft.com/blog/MicrosoftMechanicsBlog/windows-365-five-years-in-see-whats-new/4548204"
+                        open
+                      >
+                        <summary class="article-expander__title">Windows 365: Five Years In, See What&#x27;s New</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/blog/MicrosoftMechanicsBlog/windows-365-five-years-in-see-whats-new/4548204">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTQ4MjA0LVVsa0tvZw?revision&#x3D;2" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>Windows 365 allows you to access Cloud PC experiences from almost any device. Now you can even use AI agents that work from inside your Cloud PC and interact with them from a Teams chat on your phone — finding downloaded files, editing documents, and drafting emails with your laptop lid closed. Microsoft Scout, a new Autopilot agent powered by the open-source OpenClaw project, runs on your own Cloud PC using your identity, your files, and your apps.
+Developers get a Developer Optimized Cloud PC preloaded with GitHub, VS Code, and Node.js that runs Foundry Local for token-free AI coding, and input and output protection capabilities black out the screen when anyone tries to capture a sensitive file.
+Bhavya Chopra, Windows 365 Partner Director, joins Jeremy Chapman, Microsoft 365 Director, to…</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;53
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+        </ul>
+      </section>
+      <section class="daily-content js-toggle-accordions-scope">
+        <h2 class="daily-heading">
+          <button
+            class="daily-heading-toggle"
+            data-action="toggle-accordions"
+            title="Click to toggle the day, Ctrl + click to toggle all."
+          >
             <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2026-09-01 datetime="2026-09-01T00:00:00.000Z">2026-09-01</time>
             <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2026-09-01 datetime="2026-09-01T00:00:00.000Z"></time>
           </button>
@@ -22875,82 +23012,10 @@ With GA support for managed identities and workload identities, Azure Red Hat Op
             </li>
         </ul>
       </section>
-      <section class="daily-content js-toggle-accordions-scope">
-        <h2 class="daily-heading">
-          <button
-            class="daily-heading-toggle"
-            data-action="toggle-accordions"
-            title="Click to toggle the day, Ctrl + click to toggle all."
-          >
-            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2026-04-05 datetime="2026-04-05T07:40:28.000Z">2026-04-05</time>
-            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2026-04-05 datetime="2026-04-05T07:40:28.000Z"></time>
-          </button>
-        </h2>
-        <ul class="sources card">
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Microsoft Tech Community - Latest Blogs - Apps on Azure Blog</button>
-                  <a class="source-heading__link" href="https://techcommunity.microsoft.com">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/how-we-build-and-use-azure-sre-agent-with-agentic-workflows/4508753"
-                        open
-                      >
-                        <summary class="article-expander__title">How we build and use Azure SRE Agent with agentic workflows</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/how-we-build-and-use-azure-sre-agent-with-agentic-workflows/4508753">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTA4NzUzLWRyZk9aMw?revision&#x3D;3" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>The Challenge: Ops is critical but takes time from innovation
-Microsoft operates always-on, mission-critical production systems at extraordinary scale. Thousands of services, millions of deployments, and constant change are the reality of modern cloud engineering. These are titan systems that power organizations around the globe—including our own—with extremely low risk tolerance for downtime. While operations work like incident investigation, response and recovery, and remediation is essential, it’s also disruptive to innovation.
-For engineers, operational toil often means being pulled away from feature work to diagnose alerts, sift through logs, correlate metrics across systems, or respond to incidents at any hour. On-call rotations and manual investigations slow teams down and introduce…</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;40
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/how-we-build-azure-sre-agent-with-agentic-workflows/4508753"
-                        open
-                      >
-                        <summary class="article-expander__title">How we build Azure SRE Agent with agentic workflows</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/how-we-build-azure-sre-agent-with-agentic-workflows/4508753">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTA4NzUzLWRyZk9aMw?revision&#x3D;1" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>The Challenge: Ops is critical but takes time from innovation
-Microsoft operates always-on, mission-critical production systems at extraordinary scale. Thousands of services, millions of deployments, and constant change are the reality of modern cloud engineering. These are titan systems that power organizations around the globe—including our own—with extremely low risk tolerance for downtime. While operations work like incident investigation, response and recovery, and remediation is essential, it’s also disruptive to innovation.
-For engineers, operational toil often means being pulled away from feature work to diagnose alerts, sift through logs, correlate metrics across systems, or respond to incidents at any hour. On-call rotations and manual investigations slow teams down and introduce…</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;39
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
-        </ul>
-      </section>
 
     <footer>
-      <a class="footer-link" href="https://github.com/lok-msft/azure-blog-rss/actions/runs/33468072128">
-        <time id="build-timestamp" datetime="2026-09-01T03:58:08.391Z">2026-09-01T03:58:08.391Z</time>
+      <a class="footer-link" href="https://github.com/lok-msft/azure-blog-rss/actions/runs/33586471228">
+        <time id="build-timestamp" datetime="2026-09-02T03:17:59.219Z">2026-09-02T03:17:59.219Z</time>
       </a>
       <a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a>
     </footer>
