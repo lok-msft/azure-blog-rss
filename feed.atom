@@ -2,10 +2,86 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2026-09-02T03:17:59.271Z</updated>
+    <updated>2026-09-03T03:19:43.490Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Connect securely to Snowflake in Fabric Pipelines and Copy Jobs]]></title>
+        <id>https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Connect-securely-to-Snowflake-in-Fabric-Pipelines-and-Copy-Jobs/ba-p/5363159</id>
+        <link href="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Connect-securely-to-Snowflake-in-Fabric-Pipelines-and-Copy-Jobs/ba-p/5363159"/>
+        <updated>2026-09-02T19:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Snowflake is a common source and sink for enterprise data movement, and Microsoft Fabric Data Factory supports it in both pipelines and Copy Jobs. For organizations that restrict public network access, some additional considerations are needed to meet that requirement. You can have private inbound and outbound access to Fabric, a private staging storage account, and a private Snowflake instance.
+By combining Workspace-level Private Link, a private Azure Storage account, and Snowflake's storage integration with USE_PRIVATELINK_ENDPOINT, you can keep the path entirely private. This post explains how those controls fit together for Fabric Data Factory pipelines and Copy Jobs.
+When this might apply
+Your organization might require private networking, where every hop needs to be inspectable a…]]></summary>
+        <author>
+            <name>ryanjadams</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Fabric Data Agents in Microsoft Copilot Studio (Generally Available)]]></title>
+        <id>https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Fabric-Data-Agents-in-Microsoft-Copilot-Studio-Generally/ba-p/5362882</id>
+        <link href="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Fabric-Data-Agents-in-Microsoft-Copilot-Studio-Generally/ba-p/5362882"/>
+        <updated>2026-09-02T13:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Organizations can now bring governed business data from Microsoft Fabric into Copilot Studio agents, enabling agents to answer questions, generate insights, and support business processes using trusted enterprise data. Fabric data agents make it easier to ground experiences in the data your organization already relies on.
+Since we announced this integration in preview, both Fabric and Copilot Studio have evolved significantly. General availability provides a more integrated experience, broader publishing options, and a stronger foundation for deploying data-powered agents across the Microsoft ecosystem.
+Fabric Data Agents are now integrated as tools
+Previously, you added a Fabric data agent from the Agents category as a connected agent.
+Now, Fabric data agents integrate through the new…]]></summary>
+        <author>
+            <name>AmirJafari</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Behind SPFx Dev Skills: testing what agents know and fixing what they miss]]></title>
+        <id>https://devblogs.microsoft.com/microsoft365dev/?p=26109</id>
+        <link href="https://devblogs.microsoft.com/microsoft365dev/behind-spfx-dev-skills-testing-what-agents-know-and-fixing-what-they-miss/"/>
+        <updated>2026-09-02T10:14:00.000Z</updated>
+        <summary type="html"><![CDATA[How much guidance does an AI coding agent actually need? See how we used evaluation data to target SPFx knowledge gaps, improving results without wasting tokens on what models already know.
+The post Behind SPFx Dev Skills: testing what agents know and fixing what they miss appeared first on Microsoft 365 Developer Blog.]]></summary>
+        <author>
+            <name>Waldek Mastykarz, Vesa Juvonen, Garry Trinder</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[From Microsoft Student Ambassador to Microsoft MVP: A Journey of Learning, Leadership, and Community]]></title>
+        <id>https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/from-microsoft-student-ambassador-to-microsoft-mvp-a-journey-of-learning-leaders/4540797</id>
+        <link href="https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/from-microsoft-student-ambassador-to-microsoft-mvp-a-journey-of-learning-leaders/4540797"/>
+        <updated>2026-09-02T08:12:09.000Z</updated>
+        <summary type="html"><![CDATA["Every journey begins with curiosity. Mine started in 18 October 2023 with a simple decision to join the Microsoft Student Ambassador program."
+
+ 
+When I became a Microsoft Student Ambassador in 2026, I never imagined that one day I would be writing this as a Microsoft Most Valuable Professional (MVP).
+Back then, I wasn't thinking about titles or recognition. I simply wanted to learn new technologies, connect with like-minded people, and become a better developer.
+Looking back today, I realize that this journey was never about earning badges it was about becoming someone who could make a meaningful impact on others.
+ 
+
+
+The First Step
+
+Like many students, I joined the Student Ambassador program because I loved technology and wanted to learn beyond the classroom.
+Every Microsoft Learn modul…]]></summary>
+        <author>
+            <name>ShardaKaur</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Why long-running tasks on Linux Batch pools can restart daily and how to prevent it]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AzurePaaSBlog/why-long-running-tasks-on-linux-batch-pools-can-restart-daily-and-how-to-prevent/4546215</id>
+        <link href="https://techcommunity.microsoft.com/blog/AzurePaaSBlog/why-long-running-tasks-on-linux-batch-pools-can-restart-daily-and-how-to-prevent/4546215"/>
+        <updated>2026-09-02T04:57:13.000Z</updated>
+        <summary type="html"><![CDATA[In Azure Batch, customers running long tasks on Linux (Ubuntu) compute nodes sometimes observe that a task is interrupted and automatically re-run from the beginning on a recurring basis, often once per day, around the same time, even though no one cancelled or resubmitted the task, and the application itself never failed. If your task takes longer than a few hours, this can mean it never reaches completion.
+This article explains why this happens and how to prevent it, so your long-running workloads complete reliably.
+What you might observe
+
+A task restarts from the beginning rather than failing, it is re-queued, not errored.
+The restarts recur daily within a narrow time window (for example, some time between 06:00–07:00 UTC), and happen on different nodes a few minutes apart.
+The affected…]]></summary>
+        <author>
+            <name>Sithu</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Start validating today: The ODBC to ADBC driver transition in Power BI and Microsoft Fabric (Generally Available)]]></title>
         <id>https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Start-validating-today-The-ODBC-to-ADBC-driver-transition-in/ba-p/5362917</id>
@@ -8904,84 +8980,6 @@ Azure App Service has long been the lift-and-shift destination for these workloa
 Managed Instance on Azure App Service c…]]></summary>
         <author>
             <name>Gaurav-Seth</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Introducing Migration assistant for SQL database in Fabric (Preview)]]></title>
-        <id>introducing-migration-assistant-for-sql-database-in-fabric-preview</id>
-        <link href="https://blog.fabric.microsoft.com/en/blog/introducing-migration-assistant-for-sql-database-in-fabric-preview/"/>
-        <updated>2026-04-06T15:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Modern organizations are at a crossroads. Legacy SQL Server workloads need modernization, but migration complexity often stands in the way. What if you could bring your SQL databases into a unified analytics platform—without the hassle of manual schema conversion, complex ETL pipelines, or costly re-architecture? That’s exactly what the new Migration Assistant for SQL database … 
-Continue reading “Introducing Migration assistant for SQL database in Fabric (Preview)”]]></summary>
-        <author>
-            <name>Fabric Updates Blog articles</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Azure Red Hat OpenShift: Managed Identity and Workload Identity now generally available]]></title>
-        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/azure-red-hat-openshift-managed-identity-and-workload-identity-now-generally-ava/4504940</id>
-        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/azure-red-hat-openshift-managed-identity-and-workload-identity-now-generally-ava/4504940"/>
-        <updated>2026-04-06T14:44:45.000Z</updated>
-        <summary type="html"><![CDATA[Azure Red Hat OpenShift now supports managed identities and workload identities as a generally available capability, so you can run OpenShift clusters and applications on Azure without long-lived service principal credentials.​
-ARO, identity, and Azure governance
-With GA support for managed identities and workload identities, Azure Red Hat OpenShift uses short‑lived credentials and least‑privilege access to help organizations strengthen their security posture. This approach reduces reliance on long‑lived credentials and overly broad permissions, supporting enterprise security requirements while improving how identity is managed for OpenShift workloads.
- ​As an Azure-native service, Azure Red Hat OpenShift also integrates directly with Microsoft Entra workload identities, Azure RBAC strengt…]]></summary>
-        <author>
-            <name>MelanieKraintz007</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Use ANY_VALUE() for simpler grouping of results in Fabric Data Warehouse (Generally Available)]]></title>
-        <id>use-any_value-for-simpler-grouping-of-results-in-fabric-data-warehouse-generally-available</id>
-        <link href="https://blog.fabric.microsoft.com/en/blog/use-any_value-for-simpler-grouping-of-results-in-fabric-data-warehouse-generally-available/"/>
-        <updated>2026-04-06T14:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Fabric Data Warehouse now supports the ANY_VALUE() aggregate, making it easier to write readable, efficient T-SQL when you want to group by a key but still return descriptive columns that are functionally the same for every row in the group. What is ANY_VALUE()? ANY_VALUE() is an aggregate or analytic function that returns an arbitrary value … 
-Continue reading “Use ANY_VALUE() for simpler grouping of results in Fabric Data Warehouse (Generally Available)”]]></summary>
-        <author>
-            <name>Fabric Updates Blog articles</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Working with unstructured text in Fabric Data Warehouse with built-in AI functions (Preview)]]></title>
-        <id>working-with-unstructured-text-in-fabric-data-warehouse-with-built-in-ai-functions-preview</id>
-        <link href="https://blog.fabric.microsoft.com/en/blog/working-with-unstructured-text-in-fabric-data-warehouse-with-built-in-ai-functions-preview/"/>
-        <updated>2026-04-06T12:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Data warehouses traditionally focus on structured and semi-structured data. Free-form text such as notes, logs, or comments was difficult to process in data warehousing scenarios without external components. Microsoft Fabric Data Warehouse is opening new scenarios in modern data warehousing by enabling you to work with unstructured text using new AI capabilities. We are introducing … 
-Continue reading “Working with unstructured text in Fabric Data Warehouse with built-in AI functions (Preview)”]]></summary>
-        <author>
-            <name>Fabric Updates Blog articles</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Update on User Experience Feedback from the Reddit Thread (General Available)]]></title>
-        <id>update-on-user-experience-feedback-from-the-reddit-thread-general-available</id>
-        <link href="https://blog.fabric.microsoft.com/en/blog/update-on-user-experience-feedback-from-the-reddit-thread-general-available/"/>
-        <updated>2026-04-06T10:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Over the past few weeks, we’ve been actively reading through comments in the Reddit thread to gather UX feedback. Thank you all for taking the time to share your experiences — we appreciate your honesty and passion. Here’s a quick update on where things stand: Item dropdown no longer goes off-screen Several users noted that … 
-Continue reading “Update on User Experience Feedback from the Reddit Thread (General Available)”]]></summary>
-        <author>
-            <name>Fabric Updates Blog articles</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Microsoft ADO.NET Driver for Microsoft Fabric Data Engineering (Preview)]]></title>
-        <id>microsoft-ado-net-driver-for-microsoft-fabric-data-engineering-preview</id>
-        <link href="https://blog.fabric.microsoft.com/en/blog/microsoft-ado-net-driver-for-microsoft-fabric-data-engineering-preview/"/>
-        <updated>2026-04-06T09:00:00.000Z</updated>
-        <summary type="html"><![CDATA[ADO.NET is a widely adopted data access technology in the .NET ecosystem that enables applications to connect to and work with data from databases and big data platforms. The Microsoft ADO.NET Driver for Fabric Data Engineering lets you connect, query, and manage Spark workloads in Microsoft Fabric with the reliability and simplicity of standard ADO.NET … 
-Continue reading “Microsoft ADO.NET Driver for Microsoft Fabric Data Engineering (Preview)”]]></summary>
-        <author>
-            <name>Fabric Updates Blog articles</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[A simpler way to deploy your code to Azure App Service for Linux]]></title>
-        <id>https://azure.github.io/AppService/2026/04/06/quickdeploy.html</id>
-        <link href="https://azure.github.io/AppService/2026/04/06/quickdeploy.html"/>
-        <updated>2026-04-06T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[We’ve added a new deployment experience for Azure App Service for Linux that makes it easier to get your code running on your web app.]]></summary>
-        <author>
-            <name>Azure App Service</name>
         </author>
     </entry>
 </feed>
