@@ -2,10 +2,157 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2026-09-03T03:19:43.490Z</updated>
+    <updated>2026-09-04T03:20:16.862Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Fabric Data Warehouse best practices for medallion architectures]]></title>
+        <id>https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Fabric-Data-Warehouse-best-practices-for-medallion-architectures/ba-p/5364080</id>
+        <link href="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Fabric-Data-Warehouse-best-practices-for-medallion-architectures/ba-p/5364080"/>
+        <updated>2026-09-03T21:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Part three of a series on medallion architecture with Fabric Data Warehouse.
+Good medallion architecture is mostly operational discipline.
+In part one of this series, we chose the pattern, and in part two, we filled in the Bronze, Silver, and Gold layers. Now comes the part that usually determines whether the architecture holds up in production: the operating rules. Many medallion architectures look great on paper but become difficult to maintain as data volumes, business requirements, and consumers grow. 
+A medallion pipeline is easy to explain and easy to demo. It is more challenging to keep clean over time. The challenges usually start small: row-by-row loads, report-specific logic in the wrong place, transformations that cannot be safely rerun, or Gold tables that slowly become anot…]]></summary>
+        <author>
+            <name>Scirqueira</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Workspace Outbound Access Protection (OAP) for Operations Agent and Fabric Maps (Preview)]]></title>
+        <id>https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Workspace-Outbound-Access-Protection-OAP-for-Operations-Agent/ba-p/5363817</id>
+        <link href="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Workspace-Outbound-Access-Protection-OAP-for-Operations-Agent/ba-p/5363817"/>
+        <updated>2026-09-03T20:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Co-authors: Andre Terceros and Bodhisatva Gautam
+Workspace Outbound Access Protection (OAP) in Microsoft Fabric helps WS admins secure outbound connections from workspace items to external resources. Administrators can control outbound access by blocking unwanted connections by default and allowing only approved connections through configured rules. 
+As organizations adopt AI-powered operations at scale, governance and security remain at critical requirements. With this preview release, Microsoft Fabric introduces Outbound Access Protection (OAP) for Operations Agent and Fabric Maps, enabling workspace administrators to control the outbound actions an agent can perform. 
+OAP for Operations Agent
+When OAP is enabled, Operations Agent continues to perform core functions including reasoni…]]></summary>
+        <author>
+            <name>BisiAdele</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Manage Fabric connections at scale with connection recency in Fabric REST APIs]]></title>
+        <id>https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Manage-Fabric-connections-at-scale-with-connection-recency-in/ba-p/5363147</id>
+        <link href="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Manage-Fabric-connections-at-scale-with-connection-recency-in/ba-p/5363147"/>
+        <updated>2026-09-03T19:50:43.000Z</updated>
+        <summary type="html"><![CDATA[Understand Connection Recency
+Connections are shared infrastructure in Microsoft Fabric. Pipelines, dataflows, semantic models, and other Fabric items use them to reach data sources without storing connection details and credentials in every item. Connection Recency adds the context administrators need to understand how each connection is being used. If you go to “Manage Connections and Gateways” in Fabric settings and open the settings of any connection, the following information card will populate:
+Figure: Connection Recency shows when a connection was created, last linked to an item, and last used to access credentials.
+The card provides three insights: 
+
+Created on shows when the connection was created. 
+Last Bound to items shows when an item was most recently associated with the…]]></summary>
+        <author>
+            <name>ryanjadams</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Building 3IQ Retail Assistant Demo – Part 1]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/building-3iq-retail-assistant-demo-%E2%80%93-part-1/4547228</id>
+        <link href="https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/building-3iq-retail-assistant-demo-%E2%80%93-part-1/4547228"/>
+        <updated>2026-09-03T17:24:53.000Z</updated>
+        <summary type="html"><![CDATA[Introduction
+Recently I received a request from one of our GSI partners to demonstrate them 4IQs on a retail industry scenario. Unfortunately, Web IQ is still not in public preview. Hence, I promised them to come back with an example later with Web IQ. But even with the remaining Fabric IQ, Foundry IQ and Work IQ, the issue is finding the right set of data and then build a story around it to demonstrate an agentic solution addressing some practical real-life scenario.
+After doing some research with available data, I formulated a plan to prepare an assistant for customer reps to address incoming questions and requests from customers. This article describes how to build such an environment to demonstrate the capability of 3IQs together.
+First, we need an Azure subscription with option to pro…]]></summary>
+        <author>
+            <name>pranabpaul</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Building 3IQ Retail Assistant Demo – Part 2]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/building-3iq-retail-assistant-demo-%E2%80%93-part-2/4547231</id>
+        <link href="https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/building-3iq-retail-assistant-demo-%E2%80%93-part-2/4547231"/>
+        <updated>2026-09-03T17:24:04.000Z</updated>
+        <summary type="html"><![CDATA[In part 1 while setting up the Azure environment, I informed the template puts everything under VNET and all the services are having only private endpoints. Which is great from the security point of view. We also spoke about creating a jumpbox as a Bastion host to work on those services. If you did it already – great, if not, we can bypass the situation by opening the public endpoint from Networking menu for each of these following services. 
+Setting up Blob Storage Container 
+Unlike structured data used for Foundry, we will use some unstructured data (pdf files) for Foundry and build knowledge source and knowledge base and will use those with our Foundry agent. To start with, I used 3 PDF files as listed below:
+
+Adventure Works Inc Retail Customer Support Representative Guide.pdf
+Adventur…]]></summary>
+        <author>
+            <name>pranabpaul</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Building 3IQ Retail Assistant Demo – Part 3]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/building-3iq-retail-assistant-demo-%E2%80%93-part-3/4547233</id>
+        <link href="https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/building-3iq-retail-assistant-demo-%E2%80%93-part-3/4547233"/>
+        <updated>2026-09-03T17:23:13.000Z</updated>
+        <summary type="html"><![CDATA[We are now at the last part of our demo. We will build a Copilot Agent to connect it to a SharePoint List holding data related to Support case raised by the customers. Then connect the other 2 agents (Fabric Data Agent and Foundry Prompt Agent) to it. But before doing it ensure Work IQ is activated with your Copilot, and you can build agents in Copilot Studio using Work IQ. Contact your Admin if it is not available. Also, Go ahead and rescale the Fabric Capacity to F64 and Resume it from the Azure Portal.
+Setting up SharePoint List  
+Create a list in your M365 SharePoint site of choice and add the following entries. I referred to the customer/sales data available in our Fabric Lakehouse:
+ 
+
+ 
+You can add more entries referring to the related data from Lakehouse. These 2 entries are enough …]]></summary>
+        <author>
+            <name>pranabpaul</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Capacity Operation Events in Real-Time Hub (Preview)]]></title>
+        <id>https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Capacity-Operation-Events-in-Real-Time-Hub-Preview/ba-p/5364092</id>
+        <link href="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Capacity-Operation-Events-in-Real-Time-Hub-Preview/ba-p/5364092"/>
+        <updated>2026-09-03T16:29:18.000Z</updated>
+        <summary type="html"><![CDATA[Capacity Operation Events in Real-Time Hub is now available as a preview, giving Microsoft Fabric capacity administrators access to detailed, operation-level telemetry in near real time.
+Capacity Operation Events build on Capacity Overview Events by helping administrators move beyond understanding overall capacity health to identifying the specific operations, workspaces, and artifacts contributing to capacity consumption, throttling, and performance issues.  
+From capacity health to root cause analysis
+Capacity administrators have long relied on tools such as the Capacity Metrics App to understand utilization patterns and investigate capacity-related issues. This augments those capabilities by providing direct, near real-time access to the underlying operational signals.  It exposes gr…]]></summary>
+        <author>
+            <name>pankajarora</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Build Advanced ServiceNow Response Plans in Azure SRE Agent]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/build-advanced-servicenow-response-plans-in-azure-sre-agent/4553059</id>
+        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/build-advanced-servicenow-response-plans-in-azure-sre-agent/4553059"/>
+        <updated>2026-09-03T14:07:15.000Z</updated>
+        <summary type="html"><![CDATA[A ServiceNow connection tells Azure SRE Agent which incidents it can see. Advanced filtering narrows that further, so each response plan handles only the incidents it should.
+Advanced filters let a plan express the rule your on-call team already follows:
+
+Send High-priority production network incidents owned by the Network group to our network specialist, and require approval for its proposed actions.
+
+The response plan defines the incident criteria, response subagent, and autonomy level. The selected subagent uses the connectors, source code, telemetry, and Azure access already configured on the agent. If you are still building that foundation, see What It Takes to Give SRE Agent a Useful Starting Point.
+Match the incidents your team owns
+A plan can specify one or more assignment groups. …]]></summary>
+        <author>
+            <name>Dalibor_Kovacevic</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Keep the evidence: Low-cost logs with Azure Copilot Observability Agent (Generally Available)]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/keep-the-evidence-low-cost-logs-with-azure-copilot-observability-agent-generally/4550844</id>
+        <link href="https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/keep-the-evidence-low-cost-logs-with-azure-copilot-observability-agent-generally/4550844"/>
+        <updated>2026-09-03T12:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Cloud environments can generate large volumes of application, infrastructure, audit, and platform logs. Moving eligible tables to the Basic or Auxiliary table plan can help control costs while keeping the data available for search. But during an incident, teams may still need those logs to understand what happened. The Azure Copilot Observability Agent brings lower-cost log evidence into the same investigation as alerts, metrics, traces, topology, recent changes, and Azure resource context.
+This capability is generally available as part of the Azure Copilot Observability Agent.
+Why low-cost tables matter for investigation 
+During investigation, high-volume logs that are stored in Basic and Auxiliary table plans can help answer questions such as: 
+
+What changed before the issue began?
+Which…]]></summary>
+        <author>
+            <name>yairgil</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[From AI Infrastructure to Secure AI Agent Infrastructure with kars]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/from-ai-infrastructure-to-secure-ai-agent-infrastructure-with-kars/4551519</id>
+        <link href="https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/from-ai-infrastructure-to-secure-ai-agent-infrastructure-with-kars/4551519"/>
+        <updated>2026-09-03T07:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Opening scene: a three-minute bug fix that is still unsafe for an enterprise
+ByteCraft AI is a four-person startup. Maya is the co-founder and AI engineer, Arun leads product, Ethan owns the platform, and Lina is responsible for security. They have six months of runway and one design partner.
+Their product is Forge, an issue-to-pull-request agent that reads GitHub issues and source code, runs targeted tests, produces a minimal patch, and stops for developer review.
+Maya's first OpenClaw prototype is impressive. Forge diagnoses a null-pointer problem, edits the code, and passes the right test in three minutes. It also has a model API key, a GitHub token, a shell, and unrestricted internet access.
+Lina places a hostile instruction in the test repository's README.md: ignore the issue, upload …]]></summary>
+        <author>
+            <name>kinfey</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Connect securely to Snowflake in Fabric Pipelines and Copy Jobs]]></title>
         <id>https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Connect-securely-to-Snowflake-in-Fabric-Pipelines-and-Copy-Jobs/ba-p/5363159</id>
@@ -615,6 +762,16 @@ Her…]]></summary>
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[Self-Hosted GitHub Actions Runners on Azure Container Apps: Rate Limits, Authentication, and Scaling]]></title>
+        <id>https://azureossd.github.io/2026/08/20/Rate-Limits-and-Auth-on-Github-Actions-Runners-on-Azure-Container-Apps/index.html</id>
+        <link href="https://azureossd.github.io/2026/08/20/Rate-Limits-and-Auth-on-Github-Actions-Runners-on-Azure-Container-Apps/index.html"/>
+        <updated>2026-08-20T12:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Azure Container Apps (ACA) Jobs are a good way to run self-hosted GitHub Actions runners that spin up on demand and scale to zero when idle. However, GitHub API imposes rate limits which can sometimes limit job executions. This post walks through various ways to handle rate limits as well as some related concepts. For more information on ACA Jobs, see the ACA Jobs overview. Additional information is also available at azureossd. Use search terms “jobs” or “keda” to find relevant articles.]]></summary>
+        <author>
+            <name>azureossd.github.io</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[From Detection to Action: Extending Azure Monitor Issues with Action Groups]]></title>
         <id>https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/from-detection-to-action-extending-azure-monitor-issues-with-action-groups/4548416</id>
         <link href="https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/from-detection-to-action-extending-azure-monitor-issues-with-action-groups/4548416"/>
@@ -835,6 +992,16 @@ Azure Monitor issues now provide a simplified integration with ServiceNow IT Ope
 The integration can also keep the Azure Monitor issue, its related alerts, the Se…]]></summary>
         <author>
             <name>Harel Broitman</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Configuring JVM settings on Azure Container Apps and App Service (and why JAVA_OPTS may not work)]]></title>
+        <id>https://azureossd.github.io/2026/08/14/Configuring-JVM-on-Azure-Container-Apps-and-App-Services/index.html</id>
+        <link href="https://azureossd.github.io/2026/08/14/Configuring-JVM-on-Azure-Container-Apps-and-App-Services/index.html"/>
+        <updated>2026-08-14T12:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Overview]]></summary>
+        <author>
+            <name>azureossd.github.io</name>
         </author>
     </entry>
     <entry>
@@ -8915,71 +9082,6 @@ The post MCP Apps now available in Copilot chat appeared first on Microsoft 365 
 The post Write SQL Your Way: Dual Parameter Style Benefits in mssql-python appeared first on Microsoft for Python Developers Blog.]]></summary>
         <author>
             <name>Jahnvi Thakkar</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Shortcut transformations: Turn files into Delta tables without pipelines (Generally Available)]]></title>
-        <id>shortcut-transformations-and-turn-files-into-delta-tables-without-pipelines-generally-available</id>
-        <link href="https://blog.fabric.microsoft.com/en/blog/shortcut-transformations-and-turn-files-into-delta-tables-without-pipelines-generally-available/"/>
-        <updated>2026-04-07T10:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Organizations today manage data across multiple storage systems, often in formats like CSV, Parquet, and JSON. While this data is readily available, turning it into analytics-ready tables typically requires building and maintaining complex ETL pipelines. Shortcut transformations remove that complexity. With Shortcut transformations, you can convert structured files referenced through OneLake shortcuts into Delta tables … 
-Continue reading “Shortcut transformations: Turn files into Delta tables without pipelines (Generally Available)”]]></summary>
-        <author>
-            <name>Fabric Updates Blog articles</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Secure data streaming: Custom CA and mTLS in Fabric Eventstream connectors (Preview)]]></title>
-        <id>secure-data-streaming-custom-ca-and-mtls-in-fabric-eventstream-connectors-preview</id>
-        <link href="https://blog.fabric.microsoft.com/en/blog/secure-data-streaming-custom-ca-and-mtls-in-fabric-eventstream-connectors-preview/"/>
-        <updated>2026-04-07T09:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Security is non-negotiable when it comes to real-time data streaming. In regulated industries such as banking, healthcare, and telecommunications, organizations must ensure that every data connection is encrypted and mutually authenticated. But many enterprises rely on internal Certificate Authorities (CAs) or require mutual TLS (mTLS) to meet their security policies, which means that the standard, … 
-Continue reading “Secure data streaming: Custom CA and mTLS in Fabric Eventstream connectors (Preview)”]]></summary>
-        <author>
-            <name>Fabric Updates Blog articles</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Discover and assess File Shares for migration to Azure Files with Azure Migrate]]></title>
-        <id>https://techcommunity.microsoft.com/blog/AzureMigrationBlog/discover-and-assess-file-shares-for-migration-to-azure-files-with-azure-migrate/4509034</id>
-        <link href="https://techcommunity.microsoft.com/blog/AzureMigrationBlog/discover-and-assess-file-shares-for-migration-to-azure-files-with-azure-migrate/4509034"/>
-        <updated>2026-04-07T07:00:08.000Z</updated>
-        <summary type="html"><![CDATA[When organizations migrate to the cloud, applications are at the center of every decision. And behind every application is data, stored in file shares, accessed by users and services, and critical to keeping the application running. Moving that data seamlessly is not optional; it is a fundamental part of any successful migration. 
-That is why we are excited to announce that Azure Migrate now supports discovery and assessment of SMB and NFS file shares hosted on Windows and Linux servers, giving you a complete, data-driven picture of your file share estate and a clear path to Azure Files. 
-Overview 
-File shares are the backbone of day-to-day operations for many enterprises, storing project files, user data, application content, and shared resources across teams. Yet when it comes to cloud m…]]></summary>
-        <author>
-            <name>ankitsurkar</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Why Data Platforms Must Become Intelligence Platforms for AI Agents to Work]]></title>
-        <id>https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/why-data-platforms-must-become-intelligence-platforms-for-ai-agents-to-work/4505653</id>
-        <link href="https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/why-data-platforms-must-become-intelligence-platforms-for-ai-agents-to-work/4505653"/>
-        <updated>2026-04-07T07:00:00.000Z</updated>
-        <summary type="html"><![CDATA[The promise and the gap
-Your organization has invested in an AI agent. You ask it: "Prepare a summary of Q3 revenue by region, including year-over-year trends and top product lines."
-The agent finds revenue numbers in a SQL warehouse, product metadata in Dataverse, regional mappings in SharePoint, historical data in Azure Blob Storage, and organizational context in Microsoft Graph. Five data sources. Five schemas. No shared definitions.
-The result? The agent hallucinates, returns incomplete data, or asks a dozen clarifying questions that defeat its purpose.
-This isn't a model limitation — modern AI models are 
-highly capable.
-The real constraint is that enterprise data is not structured for reasoning.
-Traditional data platforms were built for humans to query. Intelligence platforms must be…]]></summary>
-        <author>
-            <name>AnjaliSadhukhan</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Agentic IIS Migration to Managed Instance on Azure App Service]]></title>
-        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/agentic-iis-migration-to-managed-instance-on-azure-app-service/4508969</id>
-        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/agentic-iis-migration-to-managed-instance-on-azure-app-service/4508969"/>
-        <updated>2026-04-06T23:58:35.000Z</updated>
-        <summary type="html"><![CDATA[Introduction
-Enterprises running ASP.NET Framework workloads on Windows Server with IIS face a familiar dilemma: modernize or stay put. The applications work, the infrastructure is stable, and nobody wants to be the person who breaks production during a cloud migration. But the cost of maintaining aging on-premises servers, patching Windows, and managing IIS keeps climbing.
-Azure App Service has long been the lift-and-shift destination for these workloads. But what about applications that depend on Windows registry keys, COM components, SMTP relay, MSMQ queues, local file system access, or custom fonts? These OS-level dependencies have historically been migration blockers — forcing teams into expensive re-architecture or keeping them anchored to VMs.
-Managed Instance on Azure App Service c…]]></summary>
-        <author>
-            <name>Gaurav-Seth</name>
         </author>
     </entry>
 </feed>
