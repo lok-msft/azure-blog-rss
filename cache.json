@@ -1774,26 +1774,6 @@
           "wordCount": 1813,
           "title": "Announcing Full Collation Support for SQL Databases in Microsoft Fabric (Preview)",
           "imageUrl": "https://blog.fabric.microsoft.com/images/shared/social/social-image-v2.png"
-        },
-        {
-          "id": "whats-new-in-fabric-eventstream-2026-q1-edition",
-          "author": null,
-          "description": "Coauthor: Arindam Chatterjee Over the first quarter of 2026, Fabric Eventstreams shipped meaningful improvements across three themes that have repeatedly come up in feedback from our broad community of customers and partners: broader connectivity, richer real-time processing, and secure enterprise‑ready networking and operations. This post highlights some of the most impactful new Eventstreams-related features and … \nContinue reading “What’s new in Fabric Eventstream: 2026 Q1 Edition”",
-          "link": "https://blog.fabric.microsoft.com/en/blog/whats-new-in-fabric-eventstream-2026-q1-edition/",
-          "publishedOn": "2026-04-09T10:00:00.000Z",
-          "wordCount": 2520,
-          "title": "What’s new in Fabric Eventstream: 2026 Q1 Edition",
-          "imageUrl": "https://blog.fabric.microsoft.com/images/shared/social/social-image-v2.png"
-        },
-        {
-          "id": "associated-identities-for-items-preview",
-          "author": null,
-          "description": "Background Currently, many items rely on the item’s owner identity for accessing connections and certain features (like delegated mode in SQL endpoint) specific to the item. If the owner leaves the organization or their credentials expire, items can become partially or fully non-functional. We’ve heard from many of you that the current remediation path (like … \nContinue reading “Associated identities for items (Preview)”",
-          "link": "https://blog.fabric.microsoft.com/en/blog/associated-identities-for-items-preview/",
-          "publishedOn": "2026-04-09T09:00:00.000Z",
-          "wordCount": 1819,
-          "title": "Associated identities for items (Preview)",
-          "imageUrl": "https://blog.fabric.microsoft.com/images/shared/social/social-image-v2.png"
         }
       ]
     },
@@ -1960,16 +1940,6 @@
           "publishedOn": "2026-04-10T00:00:00.000Z",
           "wordCount": 610,
           "title": "PHP 8.5 is now available on Azure App Service for Linux",
-          "imageUrl": "https://azure.github.io/AppService/assets/images/icon.png"
-        },
-        {
-          "id": "https://azure.github.io/AppService/2026/04/09/Agentic_IIS_Migration_to_Managed_Instance_On_AppService.html",
-          "author": null,
-          "description": "Migrating legacy ASP.NET Framework applications from IIS to Azure App Service — guided by AI agents, powered by the Model Context Protocol.",
-          "link": "https://azure.github.io/AppService/2026/04/09/Agentic_IIS_Migration_to_Managed_Instance_On_AppService.html",
-          "publishedOn": "2026-04-09T00:00:00.000Z",
-          "wordCount": 4303,
-          "title": "Agentic IIS Migration to Managed Instance on Azure App Service",
           "imageUrl": "https://azure.github.io/AppService/assets/images/icon.png"
         }
       ]
@@ -3752,26 +3722,6 @@
           "wordCount": 13594,
           "title": "Build Multi-Agent AI Apps on Azure App Service with Microsoft Agent Framework 1.0",
           "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTEwMDE3LXM0WXV0WA?revision=3"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/deploying-to-azure-web-app-from-azure-devops-using-uami/4509800",
-          "author": "theringe",
-          "description": "TOC\n\nUAMI Configuration\nApp Configuration\nAzure DevOps Configuration\nLogs\n\n \n \nUAMI Configuration\nCreate a User Assigned Managed Identity with no additional configuration.This identity will be mentioned in later steps, especially at Object ID.\n\n \nApp Configuration\nOn an existing Azure Web App, enable Diagnostic Settings and configure it to retain certain types of logs, such as Access Audit Logs.These logs will be discussed in the final section of this article.\n\nNext, navigate to Access Control (IAM) and assign the previously created User Assigned Managed Identity the Website Contributor role.\n\n \nAzure DevOps Configuration\nGo to Azure DevOps → Project Settings → Service Connections, and create a new ARM (Azure Resource Manager) connection.\nWhile creating the connection:\n\nSelect the corresponding User Assigned Managed Identity\nGrant it appropriate permissions at the Resource Group level\n\nDuring this process, you will be prompted to sign in again using your own account.This authentication will later be reflected in the deployment logs discussed below.\n\n \nAssuming the following deployment template is used in the pipeline, you will notice that additional steps appear in the deployment process compared to traditional service principal–based authentication.\n\n \nLogs\nA few minutes after deployment, related log records will appear.\nIn the AppServiceAuditLogs table, you can observe that the deployment initiator is shown as the Object ID from UAMI, and the Source is listed as Azure (DevOps).\n\nThis indicates that the User Assigned Managed Identity is authorized under my user context, while the deployment action itself is initiated by Azure DevOps.",
-          "link": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/deploying-to-azure-web-app-from-azure-devops-using-uami/4509800",
-          "publishedOn": "2026-04-09T05:53:29.000Z",
-          "wordCount": 7259,
-          "title": "Deploying to Azure Web App from Azure DevOps Using UAMI",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTA5ODAwLWdwYVkzMQ?revision=2"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/build-and-host-mcp-apps-on-azure-app-service/4509705",
-          "author": "jordanselig",
-          "description": "MCP Apps are here, and they're a game-changer for building AI tools with interactive UIs. If you've been following the Model Context Protocol (MCP) ecosystem, you've probably heard about the MCP Apps spec — the first official MCP extension that lets your tools return rich, interactive UIs that render directly inside AI chat clients like Claude Desktop, ChatGPT, VS Code Copilot, Goose, and Postman.\nAnd here's the best part: you can host them on Azure App Service. In this post, I'll walk you through building a weather widget MCP App and deploying it to App Service. You'll have a production-ready MCP server serving interactive UIs in under 10 minutes.\nWhat Are MCP Apps?\nMCP Apps extend the Model Context Protocol by combining tools (the functions your AI client can call) with UI resources (the…",
-          "link": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/build-and-host-mcp-apps-on-azure-app-service/4509705",
-          "publishedOn": "2026-04-08T18:10:03.000Z",
-          "wordCount": 12964,
-          "title": "Build and Host MCP Apps on Azure App Service",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTA5NzA1LUx4dVljUg?revision=1"
         }
       ]
     },
@@ -4522,16 +4472,6 @@
           "wordCount": 13667,
           "title": "Architecting Secure and Trustworthy AI Agents with Microsoft Foundry",
           "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTA2NTgwLTEwNG1XMw?revision=6"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/understanding-agentic-function-calling-with-multi-modal-data-access/4504151",
-          "author": "jayesh_mevada",
-          "description": "What You'll Learn\n\nWhy traditional API design struggles when questions span multiple data sources, and how function-calling solves this.\nHow the iterative tool-use loop works — the model plans, calls tools, inspects results, and repeats until it has a complete answer.\nWhat makes an agent truly \"agentic\": autonomy, multi-step reasoning, and dynamic decision-making without hard-coded control flow.\nDesign principles for tools, system prompts, security boundaries, and conversation memory that make this pattern production-ready.\n\nWho This Guide Is For\nThis is a concept-first guide — there are no setup steps, no CLI commands to run, and no infrastructure to provision. It is designed for:\n\nDevelopers evaluating whether this pattern fits their use case.\nArchitects designing systems where natural l…",
-          "link": "https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/understanding-agentic-function-calling-with-multi-modal-data-access/4504151",
-          "publishedOn": "2026-04-09T07:00:00.000Z",
-          "wordCount": 20468,
-          "title": "Understanding Agentic Function-Calling with Multi-Modal Data Access",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTA0MTUxLTNoTUFCcQ?revision=15"
         }
       ]
     },
@@ -4949,16 +4889,6 @@
           "wordCount": 9664,
           "title": "Passwordless AKS Secrets: Sync Azure Key Vault with ESO + Workload Identity",
           "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTA5OTU5LTdDNHo5Mw?revision=4"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/understanding-agentic-function-calling-with-multi-modal-data-access/4504151",
-          "author": "jayesh_mevada",
-          "description": "What You'll Learn\n\nWhy traditional API design struggles when questions span multiple data sources, and how function-calling solves this.\nHow the iterative tool-use loop works — the model plans, calls tools, inspects results, and repeats until it has a complete answer.\nWhat makes an agent truly \"agentic\": autonomy, multi-step reasoning, and dynamic decision-making without hard-coded control flow.\nDesign principles for tools, system prompts, security boundaries, and conversation memory that make this pattern production-ready.\n\nWho This Guide Is For\nThis is a concept-first guide — there are no setup steps, no CLI commands to run, and no infrastructure to provision. It is designed for:\n\nDevelopers evaluating whether this pattern fits their use case.\nArchitects designing systems where natural l…",
-          "link": "https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/understanding-agentic-function-calling-with-multi-modal-data-access/4504151",
-          "publishedOn": "2026-04-09T07:00:00.000Z",
-          "wordCount": 20468,
-          "title": "Understanding Agentic Function-Calling with Multi-Modal Data Access",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTA0MTUxLTNoTUFCcQ?revision=15"
         }
       ]
     },
@@ -5463,16 +5393,6 @@
           "wordCount": 11401,
           "title": "Advancing to Agentic AI with Azure NetApp Files VS Code Extension v1.2.0",
           "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTAwMzgzLXJiTWVReQ?revision=7"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/designing-reliable-health-check-endpoints-for-iis-behind-azure-application-gatew/4507938",
-          "author": "AjaySingh_",
-          "description": "Why Health Probes Matter in Azure Application Gateway\nAzure Application Gateway relies entirely on health probes to determine whether backend instances should receive traffic.\nIf a probe:\n\nReceives a non‑200 response\nTimes out\nGets redirected\nRequires authentication\n\n…the backend is marked Unhealthy, and traffic is stopped—resulting in user-facing errors.\n A healthy IIS application does not automatically mean a healthy Application Gateway backend.\n Failure Flow: How a Misconfigured Health Probe Leads to 502 Errors\nOne of the most confusing scenarios teams encounter is when the IIS application is running correctly, yet users intermittently receive 502 Bad Gateway errors.\nThis typically happens when health probes fail, causing Azure Application Gateway to mark backend instances as Unhealthy …",
-          "link": "https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/designing-reliable-health-check-endpoints-for-iis-behind-azure-application-gatew/4507938",
-          "publishedOn": "2026-04-08T23:18:05.000Z",
-          "wordCount": 11061,
-          "title": "Designing Reliable Health Check Endpoints for IIS Behind Azure Application Gateway",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTA3OTM4LVlxRDZEMQ?revision=5"
         }
       ]
     },
@@ -5787,16 +5707,6 @@
           "wordCount": 8297,
           "title": "Production Cutover in Cloud-Native Migrations",
           "imageUrl": null
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AzureMigrationBlog/fast-cloud-migration-measurable-roi-forrester-total-economic-impact-study-of-azu/4508136",
-          "author": "BritneyCretella",
-          "description": "Many organizations are balancing near-term continuity for VMware-based workloads with longer-term cloud modernization goals – all while managing cost, security, and resiliency.\nAzure VMware Solution (AVS) is built for this moment: a Microsoft-managed service verified by VMware that enables running VMware Cloud Foundation (VCF) workloads (vSphere, NSX-T, vSAN, HCX) on dedicated Azure infrastructure. It gives organizations a practical way to move or extend VMware environments into Azure while maintaining operational consistency and leveraging the skills of existing VMware teams. To help leaders quantify the potential value of this approach, Microsoft commissioned Forrester Consulting to conduct The Total Economic Impact™ (TEI) of Microsoft Azure VMware Solution (March 2026). The study models…",
-          "link": "https://techcommunity.microsoft.com/blog/AzureMigrationBlog/fast-cloud-migration-measurable-roi-forrester-total-economic-impact-study-of-azu/4508136",
-          "publishedOn": "2026-04-08T17:59:23.000Z",
-          "wordCount": 10122,
-          "title": "Fast cloud migration, measurable ROI: Forrester Total Economic Impact study of Azure VMware Solution",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTA4MTM2LUhxc3RncA?revision=13"
         }
       ]
     },
@@ -6550,16 +6460,6 @@
           "wordCount": 3823,
           "title": "Continuing the story of early DOS development",
           "imageUrl": "https://opensource.microsoft.com/blog/wp-content/uploads/2026/04/86-DOS-Changelist.png"
-        },
-        {
-          "id": "https://opensource.microsoft.com/blog/2026/04/09/how-drasi-used-github-copilot-to-find-documentation-bugs/",
-          "author": "Aman Singh",
-          "description": "How Microsoft uses AI agents and Drasi to keep open‑source documentation accurate and working.\nThe post How Drasi used GitHub Copilot to find documentation bugs appeared first on Microsoft Open Source Blog.",
-          "link": "https://opensource.microsoft.com/blog/2026/04/09/how-drasi-used-github-copilot-to-find-documentation-bugs/",
-          "publishedOn": "2026-04-09T15:00:00.000Z",
-          "wordCount": 4937,
-          "title": "How Drasi used GitHub Copilot to find documentation bugs",
-          "imageUrl": "https://opensource.microsoft.com/blog/wp-content/uploads/2024/06/CLO19_Ubisoft_Azure_030.png"
         }
       ]
     },
