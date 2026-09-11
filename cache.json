@@ -6,6 +6,36 @@
       "siteUrl": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/bg-p/fbc_fabricupdatesblogs",
       "articles": [
         {
+          "id": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Designing-scalable-Business-Events-in-Microsoft-Fabric/ba-p/5365863",
+          "author": "robece-msft",
+          "description": "Welcome to the seventh post in our Business Events, Fabric Events, and Azure Events series for Microsoft Fabric. This series takes you from foundational event-driven concepts to practical implementation patterns that help teams turn meaningful business moments into trusted signals, decisions, and actions across Fabric.",
+          "link": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Designing-scalable-Business-Events-in-Microsoft-Fabric/ba-p/5365863",
+          "publishedOn": "2026-09-10T19:40:36.000Z",
+          "wordCount": null,
+          "title": "Designing scalable Business Events in Microsoft Fabric",
+          "imageUrl": null
+        },
+        {
+          "id": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Lineage-aware-AI-with-the-Fabric-item-relations-API-Preview/ba-p/5366064",
+          "author": "yaronc",
+          "description": "With two new REST operations, you can retrieve the upstream and downstream relations of any Fabric item directly from your own code — the dependency graph behind the portal's lineage view, now available as a supported, programmable surface. Each response includes related items, the typed relation edges that connect them, and the workspaces those items belong to. \r\nLineage has always answered two human questions: “where does this data come from?” and “what breaks if I change it?” This API lets your tools — and your AI agents — ask those same questions programmatically. \r\nWhat’s new \r\nUntil now, item lineage in Fabric was something you explored visually in the portal. You opened an item, looked at its lineage view, and traced dependencies by eye. That’s great for people, but it’s difficult t…",
+          "link": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Lineage-aware-AI-with-the-Fabric-item-relations-API-Preview/ba-p/5366064",
+          "publishedOn": "2026-09-10T19:10:20.000Z",
+          "wordCount": null,
+          "title": "Lineage-aware AI with the Fabric item relations API (Preview)",
+          "imageUrl": null
+        },
+        {
+          "id": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Accelerate-JSON-workloads-with-the-Native-Execution-Engine-in/ba-p/5364366",
+          "author": "Santhosh_Ravin1",
+          "description": "JSON is one of the most common formats in modern data platforms. It carries application events, API payloads, operational telemetry, configuration data, and the metadata that coordinates data-driven processes. For many organizations, JSON is not an edge case. It is part of the critical path from ingestion through transformation and analytics. The update of JSON support in the Microsoft Fabric Spark Native Execution Engine, now in preview, expands native acceleration to an important class of semi-structured workloads. Spark can now read and process JSON data through the Native Execution Engine's vectorized C++ path, helping more of the query remain columnar from the source through downstream transformations. Why JSON performance matters Analytics systems increasingly combine structured tabl…",
+          "link": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Accelerate-JSON-workloads-with-the-Native-Execution-Engine-in/ba-p/5364366",
+          "publishedOn": "2026-09-10T17:00:00.000Z",
+          "wordCount": null,
+          "title": "Accelerate JSON workloads with the Native Execution Engine in Microsoft Fabric",
+          "imageUrl": null
+        },
+        {
           "id": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Get-ready-for-table-discovery-in-OneLake-Catalog-search-Preview/ba-p/5365764",
           "author": "nschachter",
           "description": "In late September, OneLake Catalog will begin surfacing tables as searchable objects in Microsoft Fabric. This change expands which table metadata users can discover based on their existing item permissions, so administrators may want to review the related tenant setting before rollout.To give organizations time to prepare, the controlling tenant setting is already available in the Fabric admin portal. Administrators can review and configure this setting before table search becomes available.Tables are the first object, an entity contained inside a Microsoft Fabric item, that OneLake Catalog will return as a standalone search result. Bringing objects into search makes the catalog more useful for everyday discovery because they are often where analysis, reporting, and development work begin…",
@@ -1744,36 +1774,6 @@
           "wordCount": 3573,
           "title": "Answers to common questions about Fabric Data Factory",
           "imageUrl": "https://blog.fabric.microsoft.com/images/shared/social/social-image-v2.png"
-        },
-        {
-          "id": "one-data-many-insights-how-eventhouse-brings-analytics-together-preview",
-          "author": null,
-          "description": "Modern analytics isn’t just about storing data. It’s about detecting issues early, understanding them fast, and acting with confidence. Eventhouse in Microsoft Fabric brings advanced analytics capabilities together so teams can move from raw events to insight and action without stitching tools or duplicating data. With native integrations for Anomaly Detection, Data Agents, SQL Endpoints, … \nContinue reading “One platform, many insights: How Eventhouse brings analytics together (Preview)”",
-          "link": "https://blog.fabric.microsoft.com/en/blog/one-data-many-insights-how-eventhouse-brings-analytics-together-preview/",
-          "publishedOn": "2026-04-14T12:00:00.000Z",
-          "wordCount": 2025,
-          "title": "One platform, many insights: How Eventhouse brings analytics together (Preview)",
-          "imageUrl": "https://blog.fabric.microsoft.com/images/shared/social/social-image-v2.png"
-        },
-        {
-          "id": "capacity-scheduler-smarter-capacity-control-for-eventhouse-preview",
-          "author": null,
-          "description": "Modern, real-time analytics workloads are rarely flat. In Eventhouse, some of the customers consistently told us that their usage follows clear, predictable patterns: heavy ingestion during business hours, lighter query traffic overnight, quiet weekends, and short but critical pipeline windows. Previously, customers had to choose a single minimum capacity value for the entire week, paying … \nContinue reading “Capacity Scheduler: Smarter capacity control for Eventhouse (Preview)”",
-          "link": "https://blog.fabric.microsoft.com/en/blog/capacity-scheduler-smarter-capacity-control-for-eventhouse-preview/",
-          "publishedOn": "2026-04-14T10:00:00.000Z",
-          "wordCount": 1802,
-          "title": "Capacity Scheduler: Smarter capacity control for Eventhouse (Preview)",
-          "imageUrl": "https://blog.fabric.microsoft.com/images/shared/social/social-image-v2.png"
-        },
-        {
-          "id": "unifying-analyze-data-with-analytics-across-fabric-preview",
-          "author": null,
-          "description": "As Microsoft Fabric continues to converge analytics experiences across workloads, one of the most important steps forward is reducing friction in how users move from raw data to insights. With the latest integrations, the Eventhouse Endpoint is now deeply embedded into the “Analyze data with” entry points across Lakehouse, Data Warehouse, and Eventhouse, bringing a … \nContinue reading “Unifying “Analyze data with” analytics across Fabric (Preview)”",
-          "link": "https://blog.fabric.microsoft.com/en/blog/unifying-analyze-data-with-analytics-across-fabric-preview/",
-          "publishedOn": "2026-04-14T09:00:00.000Z",
-          "wordCount": 2227,
-          "title": "Unifying “Analyze data with” analytics across Fabric (Preview)",
-          "imageUrl": "https://blog.fabric.microsoft.com/images/shared/social/social-image-v2.png"
         }
       ]
     },
@@ -1782,6 +1782,16 @@
       "feedUrl": "https://azure.github.io/AppService/feed.xml",
       "siteUrl": "https://azure.github.io/AppService/",
       "articles": [
+        {
+          "id": "https://azure.github.io/AppService/2026/09/10/managed-instance-ga-and-markdown-for-agents.html",
+          "author": null,
+          "description": "Moving a legacy Windows application to the cloud and making an existing website easier for AI agents to use might sound like separate challenges. In the latest Azure App Service Community Standup, the team showed how App Service platform capabilities can help with both, often with few or no application code changes.",
+          "link": "https://azure.github.io/AppService/2026/09/10/managed-instance-ga-and-markdown-for-agents.html",
+          "publishedOn": "2026-09-10T00:00:00.000Z",
+          "wordCount": 1386,
+          "title": "Azure App Service Community Standup: Managed Instance GA and Markdown for Agents",
+          "imageUrl": "https://azure.github.io/AppService/assets/images/icon.png"
+        },
         {
           "id": "https://azure.github.io/AppService/2026/09/01/azure-cli-2-90-app-service-updates.html",
           "author": null,
@@ -3702,16 +3712,6 @@
           "wordCount": 10911,
           "title": "Gemma 4 on Azure Container Apps Serverless GPU",
           "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTExNjcxLTJnZHg2Vw?revision=2"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/govern-ai-agents-on-app-service-with-the-microsoft-agent-governance-toolkit/4510962",
-          "author": "jordanselig",
-          "description": "Part 3 of 3 — Multi-Agent AI on Azure App Service\nIn Blog 1, we built a multi-agent travel planner with Microsoft Agent Framework 1.0 on App Service. In Blog 2, we added observability with OpenTelemetry and the new Application Insights Agents view. Now in Part 3, we secure those agents for production with the Microsoft Agent Governance Toolkit.\nThis post assumes you've followed the guidance in Blog 1 to deploy the multi-agent travel planner to Azure App Service. If you haven't deployed the app yet, start there first.\n\nThe governance gap\nOur travel planner works. It's observable. But here's the question I'm hearing from customers: \"How do I make sure my agents don't do something they shouldn't?\"\nIt's a fair question. Our six agents — Coordinator, Currency Converter, Weather Advisor, Local K…",
-          "link": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/govern-ai-agents-on-app-service-with-the-microsoft-agent-governance-toolkit/4510962",
-          "publishedOn": "2026-04-13T21:15:44.000Z",
-          "wordCount": 20283,
-          "title": "Govern AI Agents on App Service with the Microsoft Agent Governance Toolkit",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTEwOTYyLUdwNnVVSA?revision=1"
         }
       ]
     },
@@ -4869,16 +4869,6 @@
           "wordCount": 12636,
           "title": "Supercharge Your Dev Workflows with GitHub Copilot Custom Skills",
           "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTEwMDEyLWt6NEZLdg?revision=2"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/from-cicd-to-continuous-ai-the-future-of-github-automation/4507378",
-          "author": "Ravindra_Kumar_Vishwakarma",
-          "description": "Introduction\nFor over a decade, CI/CD (Continuous Integration and Continuous Deployment) has been the backbone of modern software engineering. It helped teams move from manual, error-prone deployments to automated, reliable pipelines. But today, we are standing at the edge of another transformation—one that is far more powerful.\nWelcome to the era of Continuous AI.\nThis new paradigm is not just about automating pipelines—it’s about building self-improving, intelligent systems that can analyze, decide, and act with minimal human intervention. With the emergence of AI-powered workflows inside GitHub, automation is evolving from rule-based execution to context-aware decision-making.\nThis article explores:\n\nWhat Continuous AI is\nHow it differs from CI/CD\nReal-world use cases\nArchitecture patte…",
-          "link": "https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/from-cicd-to-continuous-ai-the-future-of-github-automation/4507378",
-          "publishedOn": "2026-04-14T07:00:00.000Z",
-          "wordCount": 9200,
-          "title": "From CI/CD to Continuous AI: The Future of GitHub Automation",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTA3Mzc4LVNwdldXeg?revision=2"
         }
       ]
     },
@@ -4964,6 +4954,16 @@
       "feedUrl": "https://techcommunity.microsoft.com/t5/s/plugins/custom/microsoft/o365/custom-blog-rss?board=AzureArchitectureBlog&size=50",
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
+        {
+          "id": "https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/ai-agent-roi-framework/4555445",
+          "author": "Yagneswari",
+          "description": "Introduction \nAI agents are rapidly becoming a core component of enterprise transformation strategies. Organizations are deploying agents to assist employees, automate business processes, improve customer experiences, accelerate decision-making, and scale operations. Yet many organizations still face a fundamental challenge.\nHow do we prove the business value of AI agents? \nWhile innovation and experimentation are important, long-term success requires a disciplined approach to measuring outcomes, managing costs, and continuously optimizing investments. Organizations that fail to establish clear ROI measurements often struggle to justify continued funding, prioritize future investments, or scale successful solutions. \nAn effective AI Agent ROI Framework helps leaders connect technology inve…",
+          "link": "https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/ai-agent-roi-framework/4555445",
+          "publishedOn": "2026-09-10T22:36:02.000Z",
+          "wordCount": 12993,
+          "title": "AI Agent ROI Framework",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTU1NDQ1LXZXaW9sbQ?revision=7"
+        },
         {
           "id": "https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/your-private-endpoint-does-not-cover-agent-egress-locking-down-azure-ai-foundry-/4547864",
           "author": "rgarofalo",
@@ -6078,6 +6078,16 @@
       "feedUrl": "https://devblogs.microsoft.com/devops/feed/",
       "siteUrl": "https://devblogs.microsoft.com/devops/",
       "articles": [
+        {
+          "id": "https://devblogs.microsoft.com/devops/?p=73438",
+          "author": "Gloridel Morales",
+          "description": "We are releasing new patches for our self‑hosted product, Azure DevOps Server. We strongly recommend that all customers stay up to date with the latest, most secure version of Azure DevOps Server. The most recent release, Azure DevOps Server, is available on the download page. The following versions have been patched. For more details on […]\nThe post September Patches for Azure DevOps Server appeared first on Azure DevOps Blog.",
+          "link": "https://devblogs.microsoft.com/devops/september-patches-for-azure-devops-server-3/",
+          "publishedOn": "2026-09-10T22:25:52.000Z",
+          "wordCount": 7243,
+          "title": "September Patches for Azure DevOps Server",
+          "imageUrl": "https://devblogs.microsoft.com/devops/wp-content/uploads/sites/6/2025/09/image-1.png"
+        },
         {
           "id": "https://devblogs.microsoft.com/devops/?p=73303",
           "author": "Soo Stahl",
