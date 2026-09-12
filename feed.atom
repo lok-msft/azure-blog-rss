@@ -2,10 +2,70 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2026-09-11T03:25:55.969Z</updated>
+    <updated>2026-09-12T03:31:15.406Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Azure App Service is now a trigger destination for Azure Managed Connectors]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/azure-app-service-is-now-a-trigger-destination-for-azure-managed-connectors/4555785</id>
+        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/azure-app-service-is-now-a-trigger-destination-for-azure-managed-connectors/4555785"/>
+        <updated>2026-09-11T18:41:02.000Z</updated>
+        <summary type="html"><![CDATA[Azure Managed Connectors, currently in public preview, now lets you choose Azure App Service as a trigger destination. Connector events can be delivered directly to applications running on App Service, including ASP.NET Core, Java, Node.js, and Python applications.
+This is a new capability in the Managed Connectors public preview. It is not the announcement of a separate App Service preview.
+What's new
+When you create a trigger in the Managed Connectors portal, App Service now appears as a first-class destination alongside Azure Functions and the generic HTTP endpoint option.
+
+After selecting an existing App Service app, you configure:
+
+The application route that receives the event. New triggers default to POST /api/webhook, and the route can be edited.
+The Connector Namespace managed iden…]]></summary>
+        <author>
+            <name>jordanselig</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Building on AI Landing Zones: Operationalizing Enterprise AI with the Citadel Architecture]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/building-on-ai-landing-zones-operationalizing-enterprise-ai-with-the-citadel-arc/4551078</id>
+        <link href="https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/building-on-ai-landing-zones-operationalizing-enterprise-ai-with-the-citadel-arc/4551078"/>
+        <updated>2026-09-11T12:14:40.000Z</updated>
+        <summary type="html"><![CDATA[From AI Foundations to a Shared Operating Model
+In my previous article, AI Azure Landing Zone: Shared Capabilities and Models to Enable AI as a Platform, I explored how organizations establish secure, governed environments for AI workloads. Building on that foundation requires aligning three complementary responsibilities.
+1. Establish the deployment foundation
+Azure landing zones establish the subscription, identity, networking, and governance foundations. AI landing-zone implementations extend these foundations with architectures for Foundry-based applications, agents, and shared AI gateways.
+2.Use native AI platform capabilities
+Microsoft Foundry provides model and agent services alongside capabilities for evaluation, observability, security, and governance. These are native platform ca…]]></summary>
+        <author>
+            <name>Rohon_Mohapatra</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[From OSDU to Ontology: Why Oil & Gas AI Readiness Lives at the Meaning Layer]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/from-osdu-to-ontology-why-oil--gas-ai-readiness-lives-at-the-meaning-layer/4538718</id>
+        <link href="https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/from-osdu-to-ontology-why-oil--gas-ai-readiness-lives-at-the-meaning-layer/4538718"/>
+        <updated>2026-09-11T12:13:32.000Z</updated>
+        <summary type="html"><![CDATA[The five-answer problem
+Ask a simple question inside a large operator: “How is this asset producing against plan, and what’s the constraint?”
+Now watch five systems answer five different things. The production historian knows a “well” as a set of surface sensor tags. The reservoir team reasons about the wellbore and its completions in a subsurface model. Finance knows a cost object rolled up to a lease, licence, or block. The maintenance system knows the facility it sits on. The commercial team knows the contract. Every one of them is correct — and none agree on where a “well” ends and a “wellbore,” a “facility,” or a “licence” begins. OSDU itself separates Well from Wellbore for exactly this reason; the trouble is that our systems don’t honor that distinction consistently.
+That is not a d…]]></summary>
+        <author>
+            <name>KimVaddi</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Connecting GitHub Copilot to My Oscilloscope]]></title>
+        <id>https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/connecting-github-copilot-to-my-oscilloscope/4555545</id>
+        <link href="https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/connecting-github-copilot-to-my-oscilloscope/4555545"/>
+        <updated>2026-09-11T07:27:29.000Z</updated>
+        <summary type="html"><![CDATA[Firmware can look perfectly reasonable in the editor. That does not tell you whether the pulse on the pin is the right width or what your I2C bus is actually sending.
+The oscilloscope is new to me, and I’m still learning what it can do. Building and extending the MCP server has been a practical way to explore its capabilities while bringing it into my agent development workflow. Not heard about MCP see the excellent MCP for Beginners course.
+With rigol-mcp, GitHub Copilot can query the scope directly and use its measurements while I work on the code. My test setup is a Rigol DHO814 and a Raspberry Pi Pico 2 W, with Copilot in VS Code.
+First, Credit Where It Is Due
+This project builds on erebusnz/rigol-mcp, originally created by Stig Manning. The original MIT licence and copyright notice ar…]]></summary>
+        <author>
+            <name>DaveGlover</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[AI Agent ROI Framework]]></title>
         <id>https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/ai-agent-roi-framework/4555445</id>
@@ -8686,60 +8746,6 @@ What if you could spin up a fully private AI coding agent — running on your ow
 That's exactly what this template does. One azd up, 15 minutes, and you have Google's Gemma 4 running on Azure Container Apps serverless GPU with an OpenAI-compatible API, protected by auth, and ready to power OpenCode as your terminal-based coding agent. No data leaves your environment. No third-party model provider sees your code. Full c…]]></summary>
         <author>
             <name>simonjj</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[One-click security scanning and org-wide alert triage come to Advanced Security]]></title>
-        <id>https://devblogs.microsoft.com/devops/?p=72614</id>
-        <link href="https://devblogs.microsoft.com/devops/one-click-security-scanning-and-org-wide-alert-triage-come-to-advanced-security/"/>
-        <updated>2026-04-15T15:06:53.000Z</updated>
-        <summary type="html"><![CDATA[We’re shipping two major capabilities that change how security teams enable and act on application security in Azure DevOps: CodeQL default setup makes it possible to enable code scanning across your organization without configuring a single pipeline, and a new combined alerts experience in Security Overview gives security administrators a single place to search, filter, […]
-The post One-click security scanning and org-wide alert triage come to Advanced Security appeared first on Azure DevOps Blog.]]></summary>
-        <author>
-            <name>Laura Jiang</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Supercharge Your Dev Workflows with GitHub Copilot Custom Skills]]></title>
-        <id>https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/supercharge-your-dev-workflows-with-github-copilot-custom-skills/4510012</id>
-        <link href="https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/supercharge-your-dev-workflows-with-github-copilot-custom-skills/4510012"/>
-        <updated>2026-04-15T05:00:00.000Z</updated>
-        <summary type="html"><![CDATA[The Problem
-Every team has those repetitive, multi-step workflows that eat up time:
-
-Running a sequence of CLI commands, parsing output, and generating a report
-Querying multiple APIs, correlating data, and summarizing findings
-Executing test suites, analyzing failures, and producing actionable insights
-
-You've probably documented these in a wiki or a runbook. But every time, you still manually copy-paste commands, tweak parameters, and stitch results together.
-What if your AI coding assistant could do all of that — triggered by a single natural language request?
-That's exactly what GitHub Copilot Custom Skills enable.
-What Are Custom Skills?
-A skill is a folder containing a SKILL.md file (instructions for the AI), plus optional scripts, templates, and reference docs. When you ask Copilot …]]></summary>
-        <author>
-            <name>sachoudhury</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Building a Scalable IoT Platform for Facility Management with Azure Serverless Services]]></title>
-        <id>https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/building-a-scalable-iot-platform-for-facility-management-with-azure-serverless-s/4495263</id>
-        <link href="https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/building-a-scalable-iot-platform-for-facility-management-with-azure-serverless-s/4495263"/>
-        <updated>2026-04-14T20:44:41.000Z</updated>
-        <summary type="html"><![CDATA[The platform follows a microservices architecture with six independently deployable services, all built on Azure Functions v4 with TypeScript. Each service is containerized and deployed to Azure Container Apps.
-┌──────────────────────────────────────────────────────────────────────────────┐ │ Enterprise IoT Platform │ ├──────────────────────────────────────────────────────────────────────────────┤ │ │ │ ┌──────────────────┐ ┌──────────────────┐ ┌──────────────────────────┐ │ │ │ IoT Portal UI │──>│ IoT Portal API │──>│ Azure Cosmos DB │ │ │ │ (React / Vite) │ │ (Azure Functions)│ │ (Sites, Assets, Rules) │ │ │ └──────────────────┘ └──────────────────┘ └──────────────────────────┘ │ │ │ ▲ │ │ ┌──────────────────┐ ┌─────▼────────────┐ │ │ │ │ IoT Profile API │──>│ Redis Cache │ │ │ │ │ (RBAC…]]></summary>
-        <author>
-            <name>nishantmv</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[April Patches for Azure DevOps Server]]></title>
-        <id>https://devblogs.microsoft.com/devops/?p=72628</id>
-        <link href="https://devblogs.microsoft.com/devops/april-patches-for-azure-devops-server/"/>
-        <updated>2026-04-14T19:18:22.000Z</updated>
-        <summary type="html"><![CDATA[We are releasing patches for our self‑hosted product, Azure DevOps Server. We strongly recommend that all customers remain on the latest, most secure version to ensure optimal protection and reliability. The latest release of Azure DevOps Server is available from the download page. This patch applies to the most recent version, Azure DevOps Server, and […]
-The post April Patches for Azure DevOps Server appeared first on Azure DevOps Blog.]]></summary>
-        <author>
-            <name>Gloridel Morales</name>
         </author>
     </entry>
 </feed>
