@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2026-09-13T03:37:37.043Z</updated>
+    <updated>2026-09-14T03:47:04.219Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
@@ -8547,72 +8547,6 @@ Azure SRE Agent is designed to close that gap. It connects Azure-native observab
 This post walks through that loop in two real AKS failure scenarios. In both cases, the agent received an incident, investigated Azure Monitor and AKS signals, applied targeted remediation, verified recovery, and created follow-up in GitHub, all while k…]]></summary>
         <author>
             <name>hailukassa</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[🏆 Agents League Winner Spotlight – Reasoning Agents Track]]></title>
-        <id>https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/-agents-league-winner-spotlight-%E2%80%93-reasoning-agents-track/4511211</id>
-        <link href="https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/-agents-league-winner-spotlight-%E2%80%93-reasoning-agents-track/4511211"/>
-        <updated>2026-04-17T07:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Agents League was designed to showcase what agentic AI can look like when developers move beyond single‑prompt interactions and start building systems that plan, reason, verify, and collaborate.
-Across three competitive tracks—Creative Apps, Reasoning Agents, and Enterprise Agents—participants had two weeks to design and ship real AI agents using production‑ready Microsoft and GitHub tools, supported by live coding battles, community AMAs, and async builds on GitHub.
-Today, we’re excited to spotlight the winning project for the Reasoning Agents track, built on Microsoft Foundry: CertPrep Multi‑Agent System — Personalised Microsoft Exam Preparation by Athiq Ahmed.
- 
-The Reasoning Agents Challenge Scenario
-The goal of the Reasoning Agents track challenge was to design a multi‑agent system ca…]]></summary>
-        <author>
-            <name>carlottacaste</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[New in Azure SRE Agent: Log Analytics and Application Insights Connectors]]></title>
-        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/new-in-azure-sre-agent-log-analytics-and-application-insights-connectors/4509649</id>
-        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/new-in-azure-sre-agent-log-analytics-and-application-insights-connectors/4509649"/>
-        <updated>2026-04-17T02:14:28.000Z</updated>
-        <summary type="html"><![CDATA[Azure SRE Agent now supports Log Analytics and Application Insights as log providers, backed by the Azure MCP Server. Connect your workspaces and App Insights resources, and the agent can query them directly during investigations.
-Why This Matters
-Log Analytics and Application Insights are common destinations for Azure operational data - container logs, application traces, dependency failures, security events. The agent could already access this data through az monitor CLI commands if you granted RBAC roles to its managed identity, and that approach still works. But it required manual RBAC setup and the agent had to shell out to CLI for every query.
- 
-With these connectors, setup is simpler and querying is faster. You pick a workspace, we handle the RBAC grants, and the agent gets native M…]]></summary>
-        <author>
-            <name>Dalibor_Kovacevic</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Event-Driven IaC Operations with Azure SRE Agent: Terraform Drift Detection via HTTP Triggers]]></title>
-        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/event-driven-iac-operations-with-azure-sre-agent-terraform-drift-detection-via-h/4512233</id>
-        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/event-driven-iac-operations-with-azure-sre-agent-terraform-drift-detection-via-h/4512233"/>
-        <updated>2026-04-17T02:00:36.000Z</updated>
-        <summary type="html"><![CDATA[What Happens After terraform plan Finds Drift?
-If your team is like most, the answer looks something like this:
-
-A nightly terraform plan runs and finds 3 drifted resources
-A notification lands in Slack or Teams
-Someone files a ticket
-During the next sprint, an engineer opens 4 browser tabs — Terraform state, Azure Portal, Activity Log, Application Insights — and spends 30 minutes piecing together what happened
-They discover the drift was caused by an on-call engineer who scaled up the App Service during a latency incident at 2 AM
-They revert the drift with terraform apply
-The app goes down because they just scaled it back down while the bug that caused the incident is still deployed
-
-Step 7 is the one nobody talks about. Drift detection tooling has gotten remarkably good — scheduled plans…]]></summary>
-        <author>
-            <name>Vineela-Suri</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Explaining what GitHub Copilot Modernization can (and cannot do)]]></title>
-        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/explaining-what-github-copilot-modernization-can-and-cannot-do/4511739</id>
-        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/explaining-what-github-copilot-modernization-can-and-cannot-do/4511739"/>
-        <updated>2026-04-16T16:50:09.000Z</updated>
-        <summary type="html"><![CDATA[In the last post, we looked at the workflow: assess, plan, execute. You get reports you can review and the agent makes changes you can inspect.
-If you don’t know, GitHub Copilot Modernization is the new agentic tool that supports you to in modernizing older applications. Could it support you with that old 4.8 Framework app, even that forgotten VB.NET script?
-You're probably not modernizing one small app. It is probably a handful of projects, each with its own stack of blockers. Different frameworks, different databases, different dependencies frozen in time because nobody wants to touch them.
-GitHub Copilot modernization handles two big categories: upgrading .NET projects to newer versions and migrating .NET apps to Azure. But what does that look like?
-
-Upgrading .NET Projects
-Let’s say, y…]]></summary>
-        <author>
-            <name>PabloLopes</name>
         </author>
     </entry>
 </feed>

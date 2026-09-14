@@ -3652,36 +3652,6 @@
           "wordCount": 13586,
           "title": "Autonomous AKS Incident Response with Azure SRE Agent: From Alert to Verified Recovery in Minutes",
           "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTExMzQzLXZweFBhUA?revision=11"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/new-in-azure-sre-agent-log-analytics-and-application-insights-connectors/4509649",
-          "author": "Dalibor_Kovacevic",
-          "description": "Azure SRE Agent now supports Log Analytics and Application Insights as log providers, backed by the Azure MCP Server. Connect your workspaces and App Insights resources, and the agent can query them directly during investigations.\nWhy This Matters\nLog Analytics and Application Insights are common destinations for Azure operational data - container logs, application traces, dependency failures, security events. The agent could already access this data through az monitor CLI commands if you granted RBAC roles to its managed identity, and that approach still works. But it required manual RBAC setup and the agent had to shell out to CLI for every query.\n \nWith these connectors, setup is simpler and querying is faster. You pick a workspace, we handle the RBAC grants, and the agent gets native M…",
-          "link": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/new-in-azure-sre-agent-log-analytics-and-application-insights-connectors/4509649",
-          "publishedOn": "2026-04-17T02:14:28.000Z",
-          "wordCount": 8584,
-          "title": "New in Azure SRE Agent: Log Analytics and Application Insights Connectors",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTA5NjQ5LTlOczdxYQ?revision=4"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/event-driven-iac-operations-with-azure-sre-agent-terraform-drift-detection-via-h/4512233",
-          "author": "Vineela-Suri",
-          "description": "What Happens After terraform plan Finds Drift?\nIf your team is like most, the answer looks something like this:\n\nA nightly terraform plan runs and finds 3 drifted resources\nA notification lands in Slack or Teams\nSomeone files a ticket\nDuring the next sprint, an engineer opens 4 browser tabs — Terraform state, Azure Portal, Activity Log, Application Insights — and spends 30 minutes piecing together what happened\nThey discover the drift was caused by an on-call engineer who scaled up the App Service during a latency incident at 2 AM\nThey revert the drift with terraform apply\nThe app goes down because they just scaled it back down while the bug that caused the incident is still deployed\n\nStep 7 is the one nobody talks about. Drift detection tooling has gotten remarkably good — scheduled plans…",
-          "link": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/event-driven-iac-operations-with-azure-sre-agent-terraform-drift-detection-via-h/4512233",
-          "publishedOn": "2026-04-17T02:00:36.000Z",
-          "wordCount": 16791,
-          "title": "Event-Driven IaC Operations with Azure SRE Agent: Terraform Drift Detection via HTTP Triggers",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTEyMjMzLXh6TjhJVQ?revision=3"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/explaining-what-github-copilot-modernization-can-and-cannot-do/4511739",
-          "author": "PabloLopes",
-          "description": "In the last post, we looked at the workflow: assess, plan, execute. You get reports you can review and the agent makes changes you can inspect.\nIf you don’t know, GitHub Copilot Modernization is the new agentic tool that supports you to in modernizing older applications. Could it support you with that old 4.8 Framework app, even that forgotten VB.NET script?\nYou're probably not modernizing one small app. It is probably a handful of projects, each with its own stack of blockers. Different frameworks, different databases, different dependencies frozen in time because nobody wants to touch them.\nGitHub Copilot modernization handles two big categories: upgrading .NET projects to newer versions and migrating .NET apps to Azure. But what does that look like?\n\nUpgrading .NET Projects\nLet’s say, y…",
-          "link": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/explaining-what-github-copilot-modernization-can-and-cannot-do/4511739",
-          "publishedOn": "2026-04-16T16:50:09.000Z",
-          "wordCount": 10297,
-          "title": "Explaining what GitHub Copilot Modernization can (and cannot do)",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTExNzM5LUR5T25Ybw?revision=2"
         }
       ]
     },
@@ -4809,16 +4779,6 @@
           "wordCount": 10384,
           "title": "MCP Demystified: Tools vs Resources vs Prompts Explained Simply",
           "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTA4MDU3LTV2TVRZSw?revision=2"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/-agents-league-winner-spotlight-%E2%80%93-reasoning-agents-track/4511211",
-          "author": "carlottacaste",
-          "description": "Agents League was designed to showcase what agentic AI can look like when developers move beyond single‑prompt interactions and start building systems that plan, reason, verify, and collaborate.\nAcross three competitive tracks—Creative Apps, Reasoning Agents, and Enterprise Agents—participants had two weeks to design and ship real AI agents using production‑ready Microsoft and GitHub tools, supported by live coding battles, community AMAs, and async builds on GitHub.\nToday, we’re excited to spotlight the winning project for the Reasoning Agents track, built on Microsoft Foundry: CertPrep Multi‑Agent System — Personalised Microsoft Exam Preparation by Athiq Ahmed.\n \nThe Reasoning Agents Challenge Scenario\nThe goal of the Reasoning Agents track challenge was to design a multi‑agent system ca…",
-          "link": "https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/-agents-league-winner-spotlight-%E2%80%93-reasoning-agents-track/4511211",
-          "publishedOn": "2026-04-17T07:00:00.000Z",
-          "wordCount": 9732,
-          "title": "🏆 Agents League Winner Spotlight – Reasoning Agents Track",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTExMjExLVZ0MU1Kaw?revision=4"
         }
       ]
     },
