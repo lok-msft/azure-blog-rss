@@ -6,6 +6,26 @@
       "siteUrl": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/bg-p/fbc_fabricupdatesblogs",
       "articles": [
         {
+          "id": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Diagnose-Fabric-Data-Warehouse-workloads-with-the-SQL-DW/ba-p/5366102",
+          "author": "Mariyaali",
+          "description": "When a warehouse slows down, the investigation usually starts with more questions than answers. Was there a capacity spike? Did a specific query suddenly become expensive? Are requests failing, being canceled, or simply taking longer than usual?\r\nAnswering those questions often requires switching between the Fabric Capacity Metrics app, Query Insights, and SQL pool diagnostics while manually correlating time ranges across multiple tools. The SQL DW operations skill brings those investigations into a single workflow and is now generally available.\r\nAvailable through the open-source Microsoft Fabric skills repository, the SQL DW operations skill lets you describe a problem in natural language using a compatible AI coding tool such as GitHub Copilot CLI. The skill runs bounded, read-only diag…",
+          "link": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Diagnose-Fabric-Data-Warehouse-workloads-with-the-SQL-DW/ba-p/5366102",
+          "publishedOn": "2026-09-14T17:00:00.000Z",
+          "wordCount": null,
+          "title": "Diagnose Fabric Data Warehouse workloads with the SQL DW operations skill (Generally Available)",
+          "imageUrl": null
+        },
+        {
+          "id": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/From-Business-Events-Fabric-Events-and-Azure-Events-to-Real-Time/ba-p/5365864",
+          "author": "robece-msft",
+          "description": "Welcome to the eighth and final post in our Business Events, Fabric Events, and Azure Events series for Microsoft Fabric. This series takes you from foundational event-driven concepts to practical implementation patterns that help teams turn meaningful business moments into trusted signals, decisions, and actions across Fabric.",
+          "link": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/From-Business-Events-Fabric-Events-and-Azure-Events-to-Real-Time/ba-p/5365864",
+          "publishedOn": "2026-09-14T16:59:28.000Z",
+          "wordCount": null,
+          "title": "From Business Events, Fabric Events, and Azure Events to Real-Time Hub",
+          "imageUrl": null
+        },
+        {
           "id": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Designing-scalable-Business-Events-in-Microsoft-Fabric/ba-p/5365863",
           "author": "robece-msft",
           "description": "Welcome to the seventh post in our Business Events, Fabric Events, and Azure Events series for Microsoft Fabric. This series takes you from foundational event-driven concepts to practical implementation patterns that help teams turn meaningful business moments into trusted signals, decisions, and actions across Fabric.",
@@ -1930,6 +1950,16 @@
       "siteUrl": "https://azureossd.github.io/",
       "articles": [
         {
+          "id": "https://azureossd.github.io/2026/09/09/collecting-dumps-with-dotnetmonitor-sidecar/index.html",
+          "author": null,
+          "description": "Overview",
+          "link": "https://azureossd.github.io/2026/09/09/collecting-dumps-with-dotnetmonitor-sidecar/index.html",
+          "publishedOn": "2026-09-09T12:12:13.000Z",
+          "wordCount": 1579,
+          "title": "Collecting Memory Dumps with dotnet-monitor Using a Sidecar",
+          "imageUrl": "https://azureossd.github.io/assets/images/NETCoreIcon.png"
+        },
+        {
           "id": "https://azureossd.github.io/2026/08/20/Rate-Limits-and-Auth-on-Github-Actions-Runners-on-Azure-Container-Apps/index.html",
           "author": null,
           "description": "Azure Container Apps (ACA) Jobs are a good way to run self-hosted GitHub Actions runners that spin up on demand and scale to zero when idle. However, GitHub API imposes rate limits which can sometimes limit job executions. This post walks through various ways to handle rate limits as well as some related concepts. For more information on ACA Jobs, see the ACA Jobs overview. Additional information is also available at azureossd. Use search terms “jobs” or “keda” to find relevant articles.",
@@ -2543,6 +2573,26 @@
       "feedUrl": "https://techcommunity.microsoft.com/t5/s/plugins/custom/microsoft/o365/custom-blog-rss?board=AppsonAzureBlog&size=100",
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
+        {
+          "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/ssltls-certificates-and-end-to-end-encryption-for-azure-functions-flex-consumpti/4556425",
+          "author": "nzthiago",
+          "description": "Last week we announced the general availability of TLS/SSL certificate support and end-to-end TLS encryption for Azure Functions Flex Consumption.\nFlex Consumption is the recommended serverless hosting plan for Azure Functions. It combines event-driven scale-to-zero and execution-based billing with fast scale-out, configurable instance memory, always-ready instances, and virtual network integration. With this release, customers can now apply a more complete transport-security model to HTTP-based serverless applications without moving to dedicated compute.\nThe new capabilities include:\n\nSite-scoped certificates, with up to three private certificates and three public certificates for each function app.\nMultiple certificate sources, including direct upload, Azure Key Vault, App Service Certif…",
+          "link": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/ssltls-certificates-and-end-to-end-encryption-for-azure-functions-flex-consumpti/4556425",
+          "publishedOn": "2026-09-14T21:01:36.000Z",
+          "wordCount": null,
+          "title": "SSL/TLS certificates and end-to-end encryption for Azure Functions Flex Consumption",
+          "imageUrl": null
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/dashboards-are-for-ai-agents-too-not-just-humans/4556383",
+          "author": "Wuyi_Weng",
+          "description": "A few days ago I opened Azure SRE Agent and typed four prompts. None of them was careful:\n\nfind grafana dashboard for: GitHub Copilot\n\n\nrun the panels queries. list top 3 very long sessions in the past 3 days\n\n\nwhat session 1 was doing?\n\n\nwhat was session 2 doing?\n\nNo KQL. No table names. I didn't say what a \"session\" is, what \"long\" means, or which Application Insights resource my GitHub Copilot telemetry lands in.\nTen minutes later I had this:\n\n\n#SessionStart (UTC)DurationSpansLLM callsTool calls\n\n19b195ee3…Sep 10 19:55142.7 min663291365\n293d53744…Sep 08 10:1747.9 min1034953\n36da6be34…Sep 10 19:2428.6 min264108153\n\n\nand two diagnoses I would not have gotten from the dashboard alone:\n\nSession 1 (142.7 min) was a GitHub Copilot CLI session building a Grafana dashboard: 291 model calls (233…",
+          "link": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/dashboards-are-for-ai-agents-too-not-just-humans/4556383",
+          "publishedOn": "2026-09-14T20:25:20.000Z",
+          "wordCount": null,
+          "title": "Dashboards are for AI agents too, not just humans",
+          "imageUrl": null
+        },
         {
           "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/azure-app-service-is-now-a-trigger-destination-for-azure-managed-connectors/4555785",
           "author": "jordanselig",
@@ -3642,16 +3692,6 @@
           "wordCount": 14128,
           "title": "AKS App Routing's Next Chapter: Gateway API with Istio",
           "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTEyNzI5LU93RUZQcw?revision=1"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/autonomous-aks-incident-response-with-azure-sre-agent-from-alert-to-verified-rec/4511343",
-          "author": "hailukassa",
-          "description": "When a Sev1 alert fires on an AKS cluster, detection is rarely the hard part. The hard part is what comes next: proving what broke, why it broke, and fixing it without widening the blast radius, all under time pressure, often at 2 a.m.\nAzure SRE Agent is designed to close that gap. It connects Azure-native observability, AKS diagnostics, and engineering workflows into a single incident-response loop that can investigate, remediate, verify, and follow up, without waiting for a human to page through dashboards and run ad-hoc kubectl commands.\nThis post walks through that loop in two real AKS failure scenarios. In both cases, the agent received an incident, investigated Azure Monitor and AKS signals, applied targeted remediation, verified recovery, and created follow-up in GitHub, all while k…",
-          "link": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/autonomous-aks-incident-response-with-azure-sre-agent-from-alert-to-verified-rec/4511343",
-          "publishedOn": "2026-04-17T20:31:11.000Z",
-          "wordCount": 13586,
-          "title": "Autonomous AKS Incident Response with Azure SRE Agent: From Alert to Verified Recovery in Minutes",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTExMzQzLXZweFBhUA?revision=11"
         }
       ]
     },
@@ -4382,16 +4422,6 @@
           "wordCount": 9958,
           "title": "If You're Building AI on Azure, ECS 2026 is Where You Need to Be",
           "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTEzNjIyLUx1REwxTQ?revision=7"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/mcp-demystified-tools-vs-resources-vs-prompts-explained-simply/4508057",
-          "author": "Ravindra_Kumar_Vishwakarma",
-          "description": "Introduction\nWhen developers start working with Model Context Protocol (MCP), one of the most confusing parts is understanding the difference between MCP Tools, Resources, and Prompts. All three are important components in modern AI application development, but they serve completely different purposes.\nIn real-world AI systems like chatbots, AI agents, and copilots, using these components correctly can make your application scalable, clean, and easy to maintain. If used incorrectly, it can lead to confusion, bugs, and poor system design.\nIn this article, we will clearly explain the difference between MCP Tools, Resources, and Prompts in simple words, using real-world examples and practical explanations. This guide is helpful for both beginner and intermediate developers working with AI and…",
-          "link": "https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/mcp-demystified-tools-vs-resources-vs-prompts-explained-simply/4508057",
-          "publishedOn": "2026-04-18T04:00:00.000Z",
-          "wordCount": 10384,
-          "title": "MCP Demystified: Tools vs Resources vs Prompts Explained Simply",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTA4MDU3LTV2TVRZSw?revision=2"
         }
       ]
     },
@@ -4769,16 +4799,6 @@
           "wordCount": 10113,
           "title": "Building an Enterprise HR Chatbot with Multi-Strategy RAG and Live Agent Handoff on Azure",
           "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTA2ODI5LWFTTUN2UA?revision=2"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/mcp-demystified-tools-vs-resources-vs-prompts-explained-simply/4508057",
-          "author": "Ravindra_Kumar_Vishwakarma",
-          "description": "Introduction\nWhen developers start working with Model Context Protocol (MCP), one of the most confusing parts is understanding the difference between MCP Tools, Resources, and Prompts. All three are important components in modern AI application development, but they serve completely different purposes.\nIn real-world AI systems like chatbots, AI agents, and copilots, using these components correctly can make your application scalable, clean, and easy to maintain. If used incorrectly, it can lead to confusion, bugs, and poor system design.\nIn this article, we will clearly explain the difference between MCP Tools, Resources, and Prompts in simple words, using real-world examples and practical explanations. This guide is helpful for both beginner and intermediate developers working with AI and…",
-          "link": "https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/mcp-demystified-tools-vs-resources-vs-prompts-explained-simply/4508057",
-          "publishedOn": "2026-04-18T04:00:00.000Z",
-          "wordCount": 10384,
-          "title": "MCP Demystified: Tools vs Resources vs Prompts Explained Simply",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTA4MDU3LTV2TVRZSw?revision=2"
         }
       ]
     },
@@ -4864,6 +4884,16 @@
       "feedUrl": "https://techcommunity.microsoft.com/t5/s/plugins/custom/microsoft/o365/custom-blog-rss?board=AzureArchitectureBlog&size=50",
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
+        {
+          "id": "https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/microsoft-foundry-observability-how-to-trace-evaluate-monitor-and-secure-ai-agen/4555846",
+          "author": "gauravbhardwaj",
+          "description": "The green check that hid a real problem\nDuring a recent customer conversation, I was shown a customer-service refund agent that looked healthy by every traditional measure. Requests completed successfully. The endpoint returned HTTP 200. Latency was within the team's target, and there were no obvious exceptions in the application logs.\nThen a customer asked a simple thing:\nPlease refund the duplicate $500 charge on invoice 83457.\nThe agent processed the refund and confirmed success. There was only one problem: in the failure case explored in this article, the agent calls the correct tool with the wrong parameter—refunding $5,000 instead of $500.\nFrom the application's perspective, the request succeeded. From the business's perspective, the agent failed.\nThat moment changed the direction of…",
+          "link": "https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/microsoft-foundry-observability-how-to-trace-evaluate-monitor-and-secure-ai-agen/4555846",
+          "publishedOn": "2026-09-14T19:42:07.000Z",
+          "wordCount": null,
+          "title": "Microsoft Foundry Observability: How to Trace, Evaluate, Monitor, and Secure AI Agents",
+          "imageUrl": null
+        },
         {
           "id": "https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/building-on-ai-landing-zones-operationalizing-enterprise-ai-with-the-citadel-arc/4551078",
           "author": "Rohon_Mohapatra",

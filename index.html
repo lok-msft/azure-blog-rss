@@ -22,6 +22,186 @@
             data-action="toggle-accordions"
             title="Click to toggle the day, Ctrl + click to toggle all."
           >
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2026-09-15 datetime="2026-09-14T21:01:36.000Z">2026-09-15</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2026-09-15 datetime="2026-09-14T21:01:36.000Z"></time>
+          </button>
+        </h2>
+        <ul class="sources card">
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Microsoft Tech Community - Latest Blogs - Apps on Azure Blog</button>
+                  <a class="source-heading__link" href="https://techcommunity.microsoft.com">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/ssltls-certificates-and-end-to-end-encryption-for-azure-functions-flex-consumpti/4556425"
+                        open
+                      >
+                        <summary class="article-expander__title">SSL/TLS certificates and end-to-end encryption for Azure Functions Flex Consumption</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/ssltls-certificates-and-end-to-end-encryption-for-azure-functions-flex-consumpti/4556425">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Last week we announced the general availability of TLS/SSL certificate support and end-to-end TLS encryption for Azure Functions Flex Consumption.
+Flex Consumption is the recommended serverless hosting plan for Azure Functions. It combines event-driven scale-to-zero and execution-based billing with fast scale-out, configurable instance memory, always-ready instances, and virtual network integration. With this release, customers can now apply a more complete transport-security model to HTTP-based serverless applications without moving to dedicated compute.
+The new capabilities include:
+
+Site-scoped certificates, with up to three private certificates and three public certificates for each function app.
+Multiple certificate sources, including direct upload, Azure Key Vault, App Service Certif…</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/dashboards-are-for-ai-agents-too-not-just-humans/4556383"
+                        open
+                      >
+                        <summary class="article-expander__title">Dashboards are for AI agents too, not just humans</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/dashboards-are-for-ai-agents-too-not-just-humans/4556383">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>A few days ago I opened Azure SRE Agent and typed four prompts. None of them was careful:
+
+find grafana dashboard for: GitHub Copilot
+
+
+run the panels queries. list top 3 very long sessions in the past 3 days
+
+
+what session 1 was doing?
+
+
+what was session 2 doing?
+
+No KQL. No table names. I didn&#x27;t say what a &quot;session&quot; is, what &quot;long&quot; means, or which Application Insights resource my GitHub Copilot telemetry lands in.
+Ten minutes later I had this:
+
+
+#SessionStart (UTC)DurationSpansLLM callsTool calls
+
+19b195ee3…Sep 10 19:55142.7 min663291365
+293d53744…Sep 08 10:1747.9 min1034953
+36da6be34…Sep 10 19:2428.6 min264108153
+
+
+and two diagnoses I would not have gotten from the dashboard alone:
+
+Session 1 (142.7 min) was a GitHub Copilot CLI session building a Grafana dashboard: 291 model calls (233…</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Microsoft Tech Community - Latest Blogs - Azure Architecture Blog</button>
+                  <a class="source-heading__link" href="https://techcommunity.microsoft.com">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/microsoft-foundry-observability-how-to-trace-evaluate-monitor-and-secure-ai-agen/4555846"
+                        open
+                      >
+                        <summary class="article-expander__title">Microsoft Foundry Observability: How to Trace, Evaluate, Monitor, and Secure AI Agents</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/microsoft-foundry-observability-how-to-trace-evaluate-monitor-and-secure-ai-agen/4555846">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>The green check that hid a real problem
+During a recent customer conversation, I was shown a customer-service refund agent that looked healthy by every traditional measure. Requests completed successfully. The endpoint returned HTTP 200. Latency was within the team&#x27;s target, and there were no obvious exceptions in the application logs.
+Then a customer asked a simple thing:
+Please refund the duplicate $500 charge on invoice 83457.
+The agent processed the refund and confirmed success. There was only one problem: in the failure case explored in this article, the agent calls the correct tool with the wrong parameter—refunding $5,000 instead of $500.
+From the application&#x27;s perspective, the request succeeded. From the business&#x27;s perspective, the agent failed.
+That moment changed the direction of…</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Fabric Updates Blog articles</button>
+                  <a class="source-heading__link" href="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/bg-p/fbc_fabricupdatesblogs">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Diagnose-Fabric-Data-Warehouse-workloads-with-the-SQL-DW/ba-p/5366102"
+                        open
+                      >
+                        <summary class="article-expander__title">Diagnose Fabric Data Warehouse workloads with the SQL DW operations skill (Generally Available)</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Diagnose-Fabric-Data-Warehouse-workloads-with-the-SQL-DW/ba-p/5366102">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>When a warehouse slows down, the investigation usually starts with more questions than answers. Was there a capacity spike? Did a specific query suddenly become expensive? Are requests failing, being canceled, or simply taking longer than usual?
+Answering those questions often requires switching between the Fabric Capacity Metrics app, Query Insights, and SQL pool diagnostics while manually correlating time ranges across multiple tools. The SQL DW operations skill brings those investigations into a single workflow and is now generally available.
+Available through the open-source Microsoft Fabric skills repository, the SQL DW operations skill lets you describe a problem in natural language using a compatible AI coding tool such as GitHub Copilot CLI. The skill runs bounded, read-only diag…</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/From-Business-Events-Fabric-Events-and-Azure-Events-to-Real-Time/ba-p/5365864"
+                        open
+                      >
+                        <summary class="article-expander__title">From Business Events, Fabric Events, and Azure Events to Real-Time Hub</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/From-Business-Events-Fabric-Events-and-Azure-Events-to-Real-Time/ba-p/5365864">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Welcome to the eighth and final post in our Business Events, Fabric Events, and Azure Events series for Microsoft Fabric. This series takes you from foundational event-driven concepts to practical implementation patterns that help teams turn meaningful business moments into trusted signals, decisions, and actions across Fabric.</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+        </ul>
+      </section>
+      <section class="daily-content js-toggle-accordions-scope">
+        <h2 class="daily-heading">
+          <button
+            class="daily-heading-toggle"
+            data-action="toggle-accordions"
+            title="Click to toggle the day, Ctrl + click to toggle all."
+          >
             <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2026-09-12 datetime="2026-09-11T18:41:02.000Z">2026-09-12</time>
             <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2026-09-12 datetime="2026-09-11T18:41:02.000Z"></time>
           </button>
@@ -545,6 +725,40 @@ That is exactly what happened to us on a customer engagement, while building a D
 That work rarely starts and ends with a single query. Developers navigate large schemas, author and refine SQL, inspect results, share findings, and connect validated work to downstream analytics and operational workflows. As warehouses and teams grow, each of those steps can introduce friction, from finding the right object, to managing an increasing number of queries or moving between different Fabric experiences.
 The latest SQL query editor updates are focused on reducing that friction and making the development experience faster, more scalable, and more connected across Fabric.
 A scalabl…</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  ></button>
+                  <a class="source-heading__link" href="https://azureossd.github.io/">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://azureossd.github.io/2026/09/09/collecting-dumps-with-dotnetmonitor-sidecar/index.html"
+                        open
+                      >
+                        <summary class="article-expander__title">Collecting Memory Dumps with dotnet-monitor Using a Sidecar</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://azureossd.github.io/2026/09/09/collecting-dumps-with-dotnetmonitor-sidecar/index.html">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://azureossd.github.io/assets/images/NETCoreIcon.png" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>Overview</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;5
+                                  min&hairsp;)</span>
                             </span>
                           </div>
                         </a>
@@ -21799,134 +22013,10 @@ The App Routing Gateway API implementation is Microsoft&#x27;s recommended migra
             </li>
         </ul>
       </section>
-      <section class="daily-content js-toggle-accordions-scope">
-        <h2 class="daily-heading">
-          <button
-            class="daily-heading-toggle"
-            data-action="toggle-accordions"
-            title="Click to toggle the day, Ctrl + click to toggle all."
-          >
-            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2026-04-18 datetime="2026-04-18T04:00:00.000Z">2026-04-18</time>
-            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2026-04-18 datetime="2026-04-18T04:00:00.000Z"></time>
-          </button>
-        </h2>
-        <ul class="sources card">
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Microsoft Tech Community - Latest Blogs - Microsoft Developer Community Blog</button>
-                  <a class="source-heading__link" href="https://techcommunity.microsoft.com">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/mcp-demystified-tools-vs-resources-vs-prompts-explained-simply/4508057"
-                        open
-                      >
-                        <summary class="article-expander__title">MCP Demystified: Tools vs Resources vs Prompts Explained Simply</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/mcp-demystified-tools-vs-resources-vs-prompts-explained-simply/4508057">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTA4MDU3LTV2TVRZSw?revision&#x3D;2" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>Introduction
-When developers start working with Model Context Protocol (MCP), one of the most confusing parts is understanding the difference between MCP Tools, Resources, and Prompts. All three are important components in modern AI application development, but they serve completely different purposes.
-In real-world AI systems like chatbots, AI agents, and copilots, using these components correctly can make your application scalable, clean, and easy to maintain. If used incorrectly, it can lead to confusion, bugs, and poor system design.
-In this article, we will clearly explain the difference between MCP Tools, Resources, and Prompts in simple words, using real-world examples and practical explanations. This guide is helpful for both beginner and intermediate developers working with AI and…</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;35
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Microsoft Tech Community - Latest Blogs - Microsoft Developer Community Blog</button>
-                  <a class="source-heading__link" href="https://techcommunity.microsoft.com">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/mcp-demystified-tools-vs-resources-vs-prompts-explained-simply/4508057"
-                        open
-                      >
-                        <summary class="article-expander__title">MCP Demystified: Tools vs Resources vs Prompts Explained Simply</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/mcp-demystified-tools-vs-resources-vs-prompts-explained-simply/4508057">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTA4MDU3LTV2TVRZSw?revision&#x3D;2" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>Introduction
-When developers start working with Model Context Protocol (MCP), one of the most confusing parts is understanding the difference between MCP Tools, Resources, and Prompts. All three are important components in modern AI application development, but they serve completely different purposes.
-In real-world AI systems like chatbots, AI agents, and copilots, using these components correctly can make your application scalable, clean, and easy to maintain. If used incorrectly, it can lead to confusion, bugs, and poor system design.
-In this article, we will clearly explain the difference between MCP Tools, Resources, and Prompts in simple words, using real-world examples and practical explanations. This guide is helpful for both beginner and intermediate developers working with AI and…</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;35
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Microsoft Tech Community - Latest Blogs - Apps on Azure Blog</button>
-                  <a class="source-heading__link" href="https://techcommunity.microsoft.com">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/autonomous-aks-incident-response-with-azure-sre-agent-from-alert-to-verified-rec/4511343"
-                        open
-                      >
-                        <summary class="article-expander__title">Autonomous AKS Incident Response with Azure SRE Agent: From Alert to Verified Recovery in Minutes</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/autonomous-aks-incident-response-with-azure-sre-agent-from-alert-to-verified-rec/4511343">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTExMzQzLXZweFBhUA?revision&#x3D;11" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>When a Sev1 alert fires on an AKS cluster, detection is rarely the hard part. The hard part is what comes next: proving what broke, why it broke, and fixing it without widening the blast radius, all under time pressure, often at 2 a.m.
-Azure SRE Agent is designed to close that gap. It connects Azure-native observability, AKS diagnostics, and engineering workflows into a single incident-response loop that can investigate, remediate, verify, and follow up, without waiting for a human to page through dashboards and run ad-hoc kubectl commands.
-This post walks through that loop in two real AKS failure scenarios. In both cases, the agent received an incident, investigated Azure Monitor and AKS signals, applied targeted remediation, verified recovery, and created follow-up in GitHub, all while k…</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;45
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
-        </ul>
-      </section>
 
     <footer>
-      <a class="footer-link" href="https://github.com/lok-msft/azure-blog-rss/actions/runs/34803716308">
-        <time id="build-timestamp" datetime="2026-09-14T03:47:04.177Z">2026-09-14T03:47:04.177Z</time>
+      <a class="footer-link" href="https://github.com/lok-msft/azure-blog-rss/actions/runs/34926254734">
+        <time id="build-timestamp" datetime="2026-09-15T03:47:23.676Z">2026-09-15T03:47:23.676Z</time>
       </a>
       <a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a>
     </footer>
