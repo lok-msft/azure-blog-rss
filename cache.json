@@ -6,6 +6,16 @@
       "siteUrl": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/bg-p/fbc_fabricupdatesblogs",
       "articles": [
         {
+          "id": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Moving-off-ODBC-A-self-serve-scanner-for-your-ADBC-migration/ba-p/5365622",
+          "author": "MichaelaIsaacs",
+          "description": "If your Fabric workspace connects to an ODBC driver, and you haven’t already moved to the ADBC driver, you’re on the ODBC → ADBC migration path. The migration window is already open — the sooner you start, the more room you have to validate.What’s happeningPower Query is transitioning from legacy embedded ODBC drivers to Apache Arrow Database Connectivity (ADBC) drivers across Power BI Desktop and the Microsoft Fabric service. ADBC keeps data in the Arrow columnar format end-to-end, which can improve performance and reduce memory overhead for many workloads.The migration happens in two events per connector:The default flip. ADBC becomes the default driver for new connections. Existing connections keep working on ODBC unless you touch them. This flip is what opens your validation window.The…",
+          "link": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Moving-off-ODBC-A-self-serve-scanner-for-your-ADBC-migration/ba-p/5365622",
+          "publishedOn": "2026-09-15T19:00:00.000Z",
+          "wordCount": null,
+          "title": "Moving off ODBC — A self-serve scanner for your ADBC migration",
+          "imageUrl": null
+        },
+        {
           "id": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Diagnose-Fabric-Data-Warehouse-workloads-with-the-SQL-DW/ba-p/5366102",
           "author": "Mariyaali",
           "description": "When a warehouse slows down, the investigation usually starts with more questions than answers. Was there a capacity spike? Did a specific query suddenly become expensive? Are requests failing, being canceled, or simply taking longer than usual?\r\nAnswering those questions often requires switching between the Fabric Capacity Metrics app, Query Insights, and SQL pool diagnostics while manually correlating time ranges across multiple tools. The SQL DW operations skill brings those investigations into a single workflow and is now generally available.\r\nAvailable through the open-source Microsoft Fabric skills repository, the SQL DW operations skill lets you describe a problem in natural language using a compatible AI coding tool such as GitHub Copilot CLI. The skill runs bounded, read-only diag…",
@@ -2574,6 +2584,16 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/azure-red-hat-openshift-with-hosted-control-planes-now-available-in-public-previ/4555997",
+          "author": "Mayuri_Gupta",
+          "description": "Red Hat OpenShift momentum on Azure keeps building, driven by teams standardizing on Kubernetes for application modernization and, increasingly, by AI-enabled applications that need a consistent platform for the services around them. Azure Red Hat OpenShift gives those teams a jointly engineered, first-party Azure service, and today's announcement adds a new way to run it.\nToday we are excited to announce the public preview of Azure Red Hat OpenShift with hosted control planes. Hosted control planes is a new deployment option that runs the OpenShift control plane as a fully managed service in a Microsoft-managed Azure subscription, operated by Microsoft and Red Hat site reliability engineers (SREs), separate from the worker nodes that run your applications. This deployment option helps org…",
+          "link": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/azure-red-hat-openshift-with-hosted-control-planes-now-available-in-public-previ/4555997",
+          "publishedOn": "2026-09-15T17:10:06.000Z",
+          "wordCount": 10931,
+          "title": "Azure Red Hat OpenShift with hosted control planes now available in public preview",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTU1OTk3LUVlUW8wWQ?revision=4"
+        },
+        {
           "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/ssltls-certificates-and-end-to-end-encryption-for-azure-functions-flex-consumpti/4556425",
           "author": "nzthiago",
           "description": "Last week we announced the general availability of TLS/SSL certificate support and end-to-end TLS encryption for Azure Functions Flex Consumption.\nFlex Consumption is the recommended serverless hosting plan for Azure Functions. It combines event-driven scale-to-zero and execution-based billing with fast scale-out, configurable instance memory, always-ready instances, and virtual network integration. With this release, customers can now apply a more complete transport-security model to HTTP-based serverless applications without moving to dedicated compute.\nThe new capabilities include:\n\nSite-scoped certificates, with up to three private certificates and three public certificates for each function app.\nMultiple certificate sources, including direct upload, Azure Key Vault, App Service Certif…",
@@ -4885,6 +4905,16 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/closing-the-recruiting-context-gap-with-microsoft-foundry/4556469",
+          "author": "gauravbhardwaj",
+          "description": "A recruiter receives a detailed job description for a senior engineer working on a payments platform. It explains the required skills, the business domain, and the experience that would be useful.\nThen someone has to turn that description into a search.\nWhat reaches the sourcing platform might look like this:\nJava AND payments AND cloud\nWhere did “cloud” come from? Was payments experience required, or was it background about the team? Did a preferred qualification become mandatory?\nThose questions matter because a search can be technically valid while changing what the hiring team asked for.\nI use recruiting context gap here to describe the meaning lost between a job description and the search built from it. As a cloud solutions architect, I would approach this as a series of transformatio…",
+          "link": "https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/closing-the-recruiting-context-gap-with-microsoft-foundry/4556469",
+          "publishedOn": "2026-09-15T23:26:42.000Z",
+          "wordCount": null,
+          "title": "Closing the Recruiting Context Gap with Microsoft Foundry",
+          "imageUrl": null
+        },
+        {
           "id": "https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/microsoft-foundry-observability-how-to-trace-evaluate-monitor-and-secure-ai-agen/4555846",
           "author": "gauravbhardwaj",
           "description": "The green check that hid a real problem\nDuring a recent customer conversation, I was shown a customer-service refund agent that looked healthy by every traditional measure. Requests completed successfully. The endpoint returned HTTP 200. Latency was within the team's target, and there were no obvious exceptions in the application logs.\nThen a customer asked a simple thing:\nPlease refund the duplicate $500 charge on invoice 83457.\nThe agent processed the refund and confirmed success. There was only one problem: in the failure case explored in this article, the agent calls the correct tool with the wrong parameter—refunding $5,000 instead of $500.\nFrom the application's perspective, the request succeeded. From the business's perspective, the agent failed.\nThat moment changed the direction of…",
@@ -5322,6 +5352,16 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/blog/MicrosoftMechanicsBlog/new-agent-365-controls-for-microsoft-admins/4552315",
+          "author": "Zachary-Cavanell",
+          "description": "Track agents from Microsoft, Amazon, Google, and Salesforce in one registry, sync in agents you’re already running on AWS Bedrock, Google Cloud, Databricks Genie, and Anthropic Claude, and lock down shadow AI with default blocks and Execution Container isolation. \nAgent 365 inspects your environment for every agent Microsoft and partners have registered, then layers control on top. Reusable security policy templates apply Conditional Access, Access Packages, and Custom Security Attributes the moment you approve an agent, Tools governance blocks risky MCP servers and connectors org wide, and the Adoption Dashboard breaks down usage by group, job function, and license type for every manager in your org. \nJeremy Chapman, Microsoft 365 Director, shares how to bring every agent in your organiza…",
+          "link": "https://techcommunity.microsoft.com/blog/MicrosoftMechanicsBlog/new-agent-365-controls-for-microsoft-admins/4552315",
+          "publishedOn": "2026-09-15T17:48:37.000Z",
+          "wordCount": 13663,
+          "title": "New Agent 365 controls for Microsoft admins",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTUyMzE1LWk1MzQ0eQ?revision=3"
+        },
+        {
           "id": "https://techcommunity.microsoft.com/blog/MicrosoftMechanicsBlog/windows-365-five-years-in-see-whats-new/4548204",
           "author": "Zachary-Cavanell",
           "description": "Windows 365 allows you to access Cloud PC experiences from almost any device. Now you can even use AI agents that work from inside your Cloud PC and interact with them from a Teams chat on your phone — finding downloaded files, editing documents, and drafting emails with your laptop lid closed. Microsoft Scout, a new Autopilot agent powered by the open-source OpenClaw project, runs on your own Cloud PC using your identity, your files, and your apps.\nDevelopers get a Developer Optimized Cloud PC preloaded with GitHub, VS Code, and Node.js that runs Foundry Local for token-free AI coding, and input and output protection capabilities black out the screen when anyone tries to capture a sensitive file.\nBhavya Chopra, Windows 365 Partner Director, joins Jeremy Chapman, Microsoft 365 Director, to…",
@@ -5568,6 +5608,16 @@
       "feedUrl": "https://techcommunity.microsoft.com/t5/s/plugins/custom/microsoft/o365/custom-blog-rss?board=AzureMigrationBlog&size=50",
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
+        {
+          "id": "https://techcommunity.microsoft.com/blog/AzureMigrationBlog/bring-azure-ai-to-your-private-workloads-on-azure-vmware-solution/4556780",
+          "author": "rvandenbedem",
+          "description": "Overview\nA global enterprise has migrated thousands of VMware vSphere virtual machines (VMs) to Microsoft Azure as part of their application modernization strategy. Having exited their on-premises data centers and relocated their legacy application VMs to Azure VMware Solution, the next phase of that strategy is no longer about where the workloads run, but about what the organization can do with the data inside them. Those applications hold the enterprise's most valuable data, yet they sit on private networks that Azure AI services cannot reach by default. What should Azure VMware Solution look like when the goal is to make private workloads AI-accessible in place?\nAzure VMware Solution is a VMware validated first party Azure service from Microsoft that provides private clouds containing V…",
+          "link": "https://techcommunity.microsoft.com/blog/AzureMigrationBlog/bring-azure-ai-to-your-private-workloads-on-azure-vmware-solution/4556780",
+          "publishedOn": "2026-09-15T17:03:38.000Z",
+          "wordCount": 18074,
+          "title": "Bring Azure AI to your private workloads on Azure VMware Solution",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTU2NzgwLTEycXQ1Wg?revision=3"
+        },
         {
           "id": "https://techcommunity.microsoft.com/blog/AzureMigrationBlog/microsoft-is-headed-to-vmware-explore-2026-in-las-vegas/4541643",
           "author": "KirstenMegahan",
