@@ -2,10 +2,129 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2026-09-17T03:49:20.702Z</updated>
+    <updated>2026-09-18T03:36:19.404Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Agent experience with data in Onelake using Fabric IQ]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/agent-experience-with-data-in-onelake-using-fabric-iq/4557504</id>
+        <link href="https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/agent-experience-with-data-in-onelake-using-fabric-iq/4557504"/>
+        <updated>2026-09-17T23:57:52.000Z</updated>
+        <summary type="html"><![CDATA[Business Scenario
+A retail organization runs multiple promotional sales events across its store network in different cities, featuring various product categories.
+Data is captured from:
+
+Third-party systems (products, stores, sales events)
+ERP system i.e. Finance and Operations (customer data)
+
+Customers are linked to stores based on city in the ERP system, and each store hosts specific sales events.
+However, while significant investments are made in marketing campaigns, inventory allocation, and event planning, the organization needs to identify
+
+Which stores generate the highest revenue during events
+Which locations are having majority of customer footprint
+
+Solution:
+Rather than creating custom reports on raw data, an agent can leverage the data in Onelake and use Fabric semantic models…]]></summary>
+        <author>
+            <name>Sayanika</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Action required: PromQL regex matching in Azure Monitor Workspace is becoming spec-compliant]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/action-required-promql-regex-matching-in-azure-monitor-workspace-is-becoming-spe/4556437</id>
+        <link href="https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/action-required-promql-regex-matching-in-azure-monitor-workspace-is-becoming-spe/4556437"/>
+        <updated>2026-09-17T23:10:32.000Z</updated>
+        <summary type="html"><![CDATA[TL;DR: Bare regex matchers like pod=~"foo" will soon return only exact matches, not substring matches. If you rely on =~ for "starts with" or "contains" semantics, update your queries to add .* before the change lands. 
+What is changing
+AMW's Prometheus Query Service is moving to fully-anchored regex matching, aligning with the upstream Prometheus specification. 
+After the change, every =~ and !~ matcher is wrapped with ^…$ before evaluation. This matches the behavior of self-hosted Prometheus, Grafana Cloud Metrics, and Amazon Managed Prometheus. 
+
+"Regex matches are fully anchored. A match of env=~"foo" is treated as env=~"^foo$"." 
+
+Reference: Prometheus querying basics — Instant vector selectors 
+Behavior delta 
+Given these timeseries: 
+kube_pod_container_status_ready{pod="grafana-otel…]]></summary>
+        <author>
+            <name>Tyler_Kight</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Upcoming changes to legacy Teams and Outlook activities in Fabric Data Factory pipelines]]></title>
+        <id>https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Upcoming-changes-to-legacy-Teams-and-Outlook-activities-in/ba-p/5314499</id>
+        <link href="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Upcoming-changes-to-legacy-Teams-and-Outlook-activities-in/ba-p/5314499"/>
+        <updated>2026-09-17T21:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Beginning October 30, 2026, users will no longer be able to add new legacy Teams or legacy Outlook activities to pipelines.
+These legacy activities will no longer appear as options when users add new activities to a pipeline. Existing legacy activity instances can still be edited and used in existing pipelines. New notification scenarios should instead use the modern Microsoft Teams and Outlook 365 Email activities.]]></summary>
+        <author>
+            <name>conxu-ms</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Soft delete for On-premises data gateways in Microsoft Fabric (Preview)]]></title>
+        <id>https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Soft-delete-for-On-premises-data-gateways-in-Microsoft-Fabric/ba-p/5365712</id>
+        <link href="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Soft-delete-for-On-premises-data-gateways-in-Microsoft-Fabric/ba-p/5365712"/>
+        <updated>2026-09-17T17:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Deleting a gateway is currently permanent, so administrators must recreate it if it is removed accidentally. With soft delete, supported gateways are retained for 30 days after deletion, giving authorized administrators time to restore them before permanent deletion. Soft delete feature currently is only available for standard mode of on-premises data gateways in Microsoft Fabric (Preview). Personal mode gateways and virtual network data gateways are not currently supported. What’s new Soft delete introduces a recoverable deletion lifecycle for supported gateway types. When a supported gateway is deleted, it is retained for 30 days by default rather than being removed immediately and permanently. During the retention period, tenant admins and gateway admins can recover from it. The gateway…]]></summary>
+        <author>
+            <name>goupadhy</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Mirroring for Google BigQuery in Microsoft Fabric (Generally Available)]]></title>
+        <id>https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Mirroring-for-Google-BigQuery-in-Microsoft-Fabric-Generally/ba-p/5364851</id>
+        <link href="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Mirroring-for-Google-BigQuery-in-Microsoft-Fabric-Generally/ba-p/5364851"/>
+        <updated>2026-09-17T16:24:38.000Z</updated>
+        <summary type="html"><![CDATA[Mirroring for Google BigQuery in Microsoft Fabric is now generally available. For organizations running critical workloads on BigQuery, this means a simpler, faster, and lower-cost path to bringing your data into the rest of your analytics estate — with production support, an enterprise SLA, and no pipelines to build or maintain.]]></summary>
+        <author>
+            <name>MichaelaIsaacs</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Foundry IQ with D365F&O and Fabric IQ]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/foundry-iq-with-d365fo-and-fabric-iq/4557381</id>
+        <link href="https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/foundry-iq-with-d365fo-and-fabric-iq/4557381"/>
+        <updated>2026-09-17T14:47:21.000Z</updated>
+        <summary type="html"><![CDATA[Business Scenario
+A retail organization runs multiple promotional sales events across its store network in different cities, featuring various product categories where Data is captured from third-party systems (products, stores, sales events) and D365 Finance and Operations (customer data)
+Customers are linked to stores based on city, and each store hosts specific sales events.
+To figure out the store generating highest revenue, store event driving the best outcome, majority customer footprint, the organization has implemented copilot studio agent using Fabric IQ, Ontology and ERP MCP.
+ 
+New Business Challenge
+Beyond understanding past performance, the retailer wants the system to answer:
+
+Are there procurement risks impacting promotional sales?
+Which cities should receive additional marke…]]></summary>
+        <author>
+            <name>Sayanika</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Enable Dynamic Workflows in Azure Functions hosted skills]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/enable-dynamic-workflows-in-azure-functions-hosted-skills/4551993</id>
+        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/enable-dynamic-workflows-in-azure-functions-hosted-skills/4551993"/>
+        <updated>2026-09-17T12:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Azure Functions already gives you a familiar way to build event-driven apps. A queue message, HTTP request, timer, or event triggers the code that handles the work.
+Azure Functions hosted skills (formerly Serverless Agents) add AI reasoning to that model. A hosted skill can read a request, use the regular tools you give it to inspect context, and choose the next step, while your triggers, tools, and business logic stay in place.
+When the work needs to keep going
+Consider an insurance policy servicing request. A hosted skill can use its regular tools to understand the requested change, look up the policy, and inspect the submitted documents. If the information is ready and the request can finish now, the normal tool loop, where the model calls a tool, reads the result, and decides the next …]]></summary>
+        <author>
+            <name>greenie-msft</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Agentic Mentor: A Specification-Driven, Multi-Agent Learning Tool]]></title>
+        <id>https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/agentic-mentor-a-specification-driven-multi-agent-learning-tool/4555306</id>
+        <link href="https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/agentic-mentor-a-specification-driven-multi-agent-learning-tool/4555306"/>
+        <updated>2026-09-17T09:10:52.000Z</updated>
+        <summary type="html"><![CDATA[Project Overview
+Rather than relying on the model to know when the student understands, we built a pipeline where progress itself is gated: a student cannot move forward until they can demonstrate they understood what was just built. And rather than depending on commercial, token-billed APIs to make this teaching possible, the system is designed to run on locally hosted or free-tier models, keeping it accessible to students and institutions alike. As our contribution to Microsoft, we've handed over the full public repository behind Agentic Mentor. Given how central token-based services have become to software development, we see real potential for this approach in initiatives like GitHub Education, where affordable, agentic tools for students matter. 
+In this post, we'll walk through what …]]></summary>
+        <author>
+            <name>markconnor</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[From Specialist Agents to Distributed Skills over MCP]]></title>
         <id>https://devblogs.microsoft.com/agent-framework/?p=5882</id>
@@ -8532,102 +8651,6 @@ Imagine a large enterprise rolling out Microsoft Sentinel as their SIEM.
 They have sites across regions, a mix of on‑premises and cloud environments, and security telemetry streaming in from firewalls, network devices, and Linux servers—100,000 to 1 million events per second in some locations. Traditional forwarders buckle under the load, drop events during networ…]]></summary>
         <author>
             <name>XemaPathak</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Azure DevOps MCP Server April Update]]></title>
-        <id>https://devblogs.microsoft.com/devops/?p=72679</id>
-        <link href="https://devblogs.microsoft.com/devops/azure-devops-mcp-server-april-update/"/>
-        <updated>2026-04-21T14:12:23.000Z</updated>
-        <summary type="html"><![CDATA[This update brings a set of improvements and changes across both local and remote Azure DevOps MCP Servers. Here’s a summary of what’s changed. Query work items with WIQL We’ve introduced a new wit_query_by_wiql tool that enables users to construct and run work item WIQL queries. For our remote MCP, to ensure reliability and performance, […]
-The post Azure DevOps MCP Server April Update appeared first on Azure DevOps Blog.]]></summary>
-        <author>
-            <name>Dan Hellem</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Agentic Fabric: How MCP is turning your data platform into an AI-native operating system]]></title>
-        <id>agentic-fabric-how-mcp-is-turning-your-data-platform-into-an-ai-native-operating-system</id>
-        <link href="https://blog.fabric.microsoft.com/en/blog/agentic-fabric-how-mcp-is-turning-your-data-platform-into-an-ai-native-operating-system/"/>
-        <updated>2026-04-21T14:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Something fundamental is changing in how developers interact with data platforms. Not a feature update, not a UI refresh, but a shift in the interface itself.]]></summary>
-        <author>
-            <name>Fabric Updates Blog articles</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Leveraging Azure Resource Graph Queries for Azure Redis Configuration]]></title>
-        <id>https://techcommunity.microsoft.com/blog/AzurePaaSBlog/leveraging-azure-resource-graph-queries-for-azure-redis-configuration/4509826</id>
-        <link href="https://techcommunity.microsoft.com/blog/AzurePaaSBlog/leveraging-azure-resource-graph-queries-for-azure-redis-configuration/4509826"/>
-        <updated>2026-04-21T07:57:08.000Z</updated>
-        <summary type="html"><![CDATA[Scenario 
-Many times, we receive requests for a quick and reliable way to review Azure Redis configurations such as SKU tiers, Redis versions, TLS settings, Microsoft Entra authentication status, and public network exposure. Traditionally, these checks are performed using PowerShell, Azure CLI, or REST APIs. While effective, these methods can be time-consuming due to script development and module installation. Azure Resource Graph Explorer offers a faster and more scalable alternative by enabling customers to query Redis configurations directly using Kusto Query Language (KQL). This approach eliminates the need to create and maintain scripts while providing centralized visibility across multiple subscriptions.
-Azure Resource Graph Explorer 
-Azure Resource Graph Explorer allows you to run K…]]></summary>
-        <author>
-            <name>Soma_Sekhara_Raju</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[VS Code Agents Insiders: The AI-First Editor Built for Developers and Students]]></title>
-        <id>https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/vs-code-agents-insiders-the-ai-first-editor-built-for-developers-and-students/4512957</id>
-        <link href="https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/vs-code-agents-insiders-the-ai-first-editor-built-for-developers-and-students/4512957"/>
-        <updated>2026-04-21T07:56:51.000Z</updated>
-        <summary type="html"><![CDATA[There is a new application on the block, and it is not just VS Code with a plugin. https://code.visualstudio.com/updates/v1_115#_visual-studio-code-agents-previewis a dedicated, standalone editor application purpose-built for working with AI agents. Where regular VS Code treats the editor as the primary surface and adds AI on top, VS Code Agents flips that relationship: agents are the primary way you get work done, and the editor is the surface where you review and guide their output.
-If you are a student, AI developer, or engineer stepping into the world of agentic software development, this is the tool Microsoft has designed for you. This post explains what it is, how it differs from VS Code Insiders, and walks you through a real student project to show exactly what agents can do when th…]]></summary>
-        <author>
-            <name>Lee_Stott</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Leveraging Azure Resource Graph Queries for Azure Storage Configuration]]></title>
-        <id>https://techcommunity.microsoft.com/blog/AzurePaaSBlog/leveraging-azure-resource-graph-queries-for-azure-storage-configuration/4509184</id>
-        <link href="https://techcommunity.microsoft.com/blog/AzurePaaSBlog/leveraging-azure-resource-graph-queries-for-azure-storage-configuration/4509184"/>
-        <updated>2026-04-21T07:46:00.000Z</updated>
-        <summary type="html"><![CDATA[Scenario
-Many times, we receive requests for a quick and reliable way to check which Azure Storage features are enabled across subscriptions—such as SFTP, Hierarchical Namespace (HNS), or default access tiers. For such scenarios, customers can use PowerShell, Azure CLI, or REST APIs; however, these approaches can be time‑consuming due to module setup, frequent updates, and script maintenance. Azure Resource Graph Explorer provides a faster and simpler alternative by allowing customers to directly query storage account configurations at scale using Kusto Query Language (KQL), without the need to write or maintain scripts.
-Azure Resource Graph Explorer
-Azure Resource Graph Explorer enables you to run KQL queries directly from the Azure Portal to inspect resource configurations across subscri…]]></summary>
-        <author>
-            <name>jainsourabh</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[How to Troubleshoot Azure Functions Host Startup Issue]]></title>
-        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/how-to-troubleshoot-azure-functions-host-startup-issue/4512966</id>
-        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/how-to-troubleshoot-azure-functions-host-startup-issue/4512966"/>
-        <updated>2026-04-21T07:04:42.000Z</updated>
-        <summary type="html"><![CDATA[Overview
-Azure Functions is a powerful serverless compute service that enables you to run event-driven code without managing infrastructure. When you deploy a Function App, the Azure Functions host is the runtime process responsible for discovering your functions, loading extensions and bindings, connecting to storage, and starting trigger listeners.
-A host startup issue occurs when the Functions runtime fails to initialize and cannot reach a healthy Running state. When this happens, you may see one or more of these symptoms:
-
-"Function host is not running" error in the Azure Portal
-Functions are not visible in the Functions blade
-Triggers stop firing — HTTP functions return 503, timer/queue functions are silent
-The portal shows Error state or no response on the host status endpoint
-Applic…]]></summary>
-        <author>
-            <name>vikasgupta5</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Troubleshoot with OpenTelemetry in Azure Monitor - Public Preview]]></title>
-        <id>https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/troubleshoot-with-opentelemetry-in-azure-monitor---public-preview/4512128</id>
-        <link href="https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/troubleshoot-with-opentelemetry-in-azure-monitor---public-preview/4512128"/>
-        <updated>2026-04-20T18:14:20.000Z</updated>
-        <summary type="html"><![CDATA[OpenTelemetry is fast becoming the industry standard for modern telemetry collection and ingestion pipelines. With Azure Monitor’s new OpenTelemetry Protocol (OTLP) support, you can ship logs, metrics, and traces from wherever you run workloads to analyze and act on your observability data in one place.
-What’s in the preview
-
-Direct OTLP ingestion into Azure Monitor for logs, metrics, and traces.
-Automated onboarding for AKS workloads.
-Application Insights on OTLP for distributed tracing, performance and troubleshooting experiences.
-Pre-built Grafana dashboards to visualize signals quickly.
-Prometheus for metric storage and query.
-OpenTelemetry semantic conventions for logs and traces, so your data lands in a familiar standard-based schema.
-
-How to send OTLP to Azure Monitor: pick your pat…]]></summary>
-        <author>
-            <name>KayodePrince</name>
         </author>
     </entry>
 </feed>

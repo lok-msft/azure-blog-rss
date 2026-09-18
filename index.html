@@ -22,11 +22,299 @@
             data-action="toggle-accordions"
             title="Click to toggle the day, Ctrl + click to toggle all."
           >
-            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2026-09-17 datetime="2026-09-16T18:59:47.000Z">2026-09-17</time>
-            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2026-09-17 datetime="2026-09-16T18:59:47.000Z"></time>
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2026-09-18 datetime="2026-09-17T23:57:52.000Z">2026-09-18</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2026-09-18 datetime="2026-09-17T23:57:52.000Z"></time>
           </button>
         </h2>
         <ul class="sources card">
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Microsoft Tech Community - Latest Blogs - Azure Architecture Blog</button>
+                  <a class="source-heading__link" href="https://techcommunity.microsoft.com">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/agent-experience-with-data-in-onelake-using-fabric-iq/4557504"
+                        open
+                      >
+                        <summary class="article-expander__title">Agent experience with data in Onelake using Fabric IQ</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/agent-experience-with-data-in-onelake-using-fabric-iq/4557504">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTU3NTA0LWRoTGRKUA?revision&#x3D;1" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>Business Scenario
+A retail organization runs multiple promotional sales events across its store network in different cities, featuring various product categories.
+Data is captured from:
+
+Third-party systems (products, stores, sales events)
+ERP system i.e. Finance and Operations (customer data)
+
+Customers are linked to stores based on city in the ERP system, and each store hosts specific sales events.
+However, while significant investments are made in marketing campaigns, inventory allocation, and event planning, the organization needs to identify
+
+Which stores generate the highest revenue during events
+Which locations are having majority of customer footprint
+
+Solution:
+Rather than creating custom reports on raw data, an agent can leverage the data in Onelake and use Fabric semantic models…</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;34
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Microsoft Tech Community - Latest Blogs - Azure Observability Blog</button>
+                  <a class="source-heading__link" href="https://techcommunity.microsoft.com">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/action-required-promql-regex-matching-in-azure-monitor-workspace-is-becoming-spe/4556437"
+                        open
+                      >
+                        <summary class="article-expander__title">Action required: PromQL regex matching in Azure Monitor Workspace is becoming spec-compliant</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/action-required-promql-regex-matching-in-azure-monitor-workspace-is-becoming-spe/4556437">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTU2NDM3LWk0RlZWMg?revision&#x3D;3" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>TL;DR: Bare regex matchers like pod&#x3D;~&quot;foo&quot; will soon return only exact matches, not substring matches. If you rely on &#x3D;~ for &quot;starts with&quot; or &quot;contains&quot; semantics, update your queries to add .* before the change lands. 
+What is changing
+AMW&#x27;s Prometheus Query Service is moving to fully-anchored regex matching, aligning with the upstream Prometheus specification. 
+After the change, every &#x3D;~ and !~ matcher is wrapped with ^…$ before evaluation. This matches the behavior of self-hosted Prometheus, Grafana Cloud Metrics, and Amazon Managed Prometheus. 
+
+&quot;Regex matches are fully anchored. A match of env&#x3D;~&quot;foo&quot; is treated as env&#x3D;~&quot;^foo$&quot;.&quot; 
+
+Reference: Prometheus querying basics — Instant vector selectors 
+Behavior delta 
+Given these timeseries: 
+kube_pod_container_status_ready{pod&#x3D;&quot;grafana-otel…</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;32
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Fabric Updates Blog articles</button>
+                  <a class="source-heading__link" href="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/bg-p/fbc_fabricupdatesblogs">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Upcoming-changes-to-legacy-Teams-and-Outlook-activities-in/ba-p/5314499"
+                        open
+                      >
+                        <summary class="article-expander__title">Upcoming changes to legacy Teams and Outlook activities in Fabric Data Factory pipelines</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Upcoming-changes-to-legacy-Teams-and-Outlook-activities-in/ba-p/5314499">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Beginning October 30, 2026, users will no longer be able to add new legacy Teams or legacy Outlook activities to pipelines.
+These legacy activities will no longer appear as options when users add new activities to a pipeline. Existing legacy activity instances can still be edited and used in existing pipelines. New notification scenarios should instead use the modern Microsoft Teams and Outlook 365 Email activities.</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Soft-delete-for-On-premises-data-gateways-in-Microsoft-Fabric/ba-p/5365712"
+                        open
+                      >
+                        <summary class="article-expander__title">Soft delete for On-premises data gateways in Microsoft Fabric (Preview)</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Soft-delete-for-On-premises-data-gateways-in-Microsoft-Fabric/ba-p/5365712">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Deleting a gateway is currently permanent, so administrators must recreate it if it is removed accidentally. With soft delete, supported gateways are retained for 30 days after deletion, giving authorized administrators time to restore them before permanent deletion. Soft delete feature currently is only available for standard mode of on-premises data gateways in Microsoft Fabric (Preview). Personal mode gateways and virtual network data gateways are not currently supported. What’s new Soft delete introduces a recoverable deletion lifecycle for supported gateway types. When a supported gateway is deleted, it is retained for 30 days by default rather than being removed immediately and permanently. During the retention period, tenant admins and gateway admins can recover from it. The gateway…</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Mirroring-for-Google-BigQuery-in-Microsoft-Fabric-Generally/ba-p/5364851"
+                        open
+                      >
+                        <summary class="article-expander__title">Mirroring for Google BigQuery in Microsoft Fabric (Generally Available)</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Mirroring-for-Google-BigQuery-in-Microsoft-Fabric-Generally/ba-p/5364851">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Mirroring for Google BigQuery in Microsoft Fabric is now generally available. For organizations running critical workloads on BigQuery, this means a simpler, faster, and lower-cost path to bringing your data into the rest of your analytics estate — with production support, an enterprise SLA, and no pipelines to build or maintain.</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+        </ul>
+      </section>
+      <section class="daily-content js-toggle-accordions-scope">
+        <h2 class="daily-heading">
+          <button
+            class="daily-heading-toggle"
+            data-action="toggle-accordions"
+            title="Click to toggle the day, Ctrl + click to toggle all."
+          >
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2026-09-17 datetime="2026-09-17T14:47:21.000Z">2026-09-17</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2026-09-17 datetime="2026-09-17T14:47:21.000Z"></time>
+          </button>
+        </h2>
+        <ul class="sources card">
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Microsoft Tech Community - Latest Blogs - Azure Architecture Blog</button>
+                  <a class="source-heading__link" href="https://techcommunity.microsoft.com">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/foundry-iq-with-d365fo-and-fabric-iq/4557381"
+                        open
+                      >
+                        <summary class="article-expander__title">Foundry IQ with D365F&amp;O and Fabric IQ</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/foundry-iq-with-d365fo-and-fabric-iq/4557381">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTU3MzgxLU9iOGVUaQ?revision&#x3D;1" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>Business Scenario
+A retail organization runs multiple promotional sales events across its store network in different cities, featuring various product categories where Data is captured from third-party systems (products, stores, sales events) and D365 Finance and Operations (customer data)
+Customers are linked to stores based on city, and each store hosts specific sales events.
+To figure out the store generating highest revenue, store event driving the best outcome, majority customer footprint, the organization has implemented copilot studio agent using Fabric IQ, Ontology and ERP MCP.
+ 
+New Business Challenge
+Beyond understanding past performance, the retailer wants the system to answer:
+
+Are there procurement risks impacting promotional sales?
+Which cities should receive additional marke…</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;30
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Microsoft Tech Community - Latest Blogs - Apps on Azure Blog</button>
+                  <a class="source-heading__link" href="https://techcommunity.microsoft.com">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/enable-dynamic-workflows-in-azure-functions-hosted-skills/4551993"
+                        open
+                      >
+                        <summary class="article-expander__title">Enable Dynamic Workflows in Azure Functions hosted skills</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/enable-dynamic-workflows-in-azure-functions-hosted-skills/4551993">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTUxOTkzLUg3Y0ZlUA?revision&#x3D;12" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>Azure Functions already gives you a familiar way to build event-driven apps. A queue message, HTTP request, timer, or event triggers the code that handles the work.
+Azure Functions hosted skills (formerly Serverless Agents) add AI reasoning to that model. A hosted skill can read a request, use the regular tools you give it to inspect context, and choose the next step, while your triggers, tools, and business logic stay in place.
+When the work needs to keep going
+Consider an insurance policy servicing request. A hosted skill can use its regular tools to understand the requested change, look up the policy, and inspect the submitted documents. If the information is ready and the request can finish now, the normal tool loop, where the model calls a tool, reads the result, and decides the next …</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;32
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Microsoft Tech Community - Latest Blogs - Educator Developer Blog</button>
+                  <a class="source-heading__link" href="https://techcommunity.microsoft.com">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/agentic-mentor-a-specification-driven-multi-agent-learning-tool/4555306"
+                        open
+                      >
+                        <summary class="article-expander__title">Agentic Mentor: A Specification-Driven, Multi-Agent Learning Tool</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/agentic-mentor-a-specification-driven-multi-agent-learning-tool/4555306">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTU1MzA2LU90dnRoUg?revision&#x3D;2" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>Project Overview
+Rather than relying on the model to know when the student understands, we built a pipeline where progress itself is gated: a student cannot move forward until they can demonstrate they understood what was just built. And rather than depending on commercial, token-billed APIs to make this teaching possible, the system is designed to run on locally hosted or free-tier models, keeping it accessible to students and institutions alike. As our contribution to Microsoft, we&#x27;ve handed over the full public repository behind Agentic Mentor. Given how central token-based services have become to software development, we see real potential for this approach in initiatives like GitHub Education, where affordable, agentic tools for students matter. 
+In this post, we&#x27;ll walk through what …</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;48
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
             <li class="card__section">
               <section class="js-toggle-accordions-scope">
                 <h3 class="source-heading">
@@ -21839,274 +22127,10 @@ They have sites across regions, a mix of on‑premises and cloud environments, a
             </li>
         </ul>
       </section>
-      <section class="daily-content js-toggle-accordions-scope">
-        <h2 class="daily-heading">
-          <button
-            class="daily-heading-toggle"
-            data-action="toggle-accordions"
-            title="Click to toggle the day, Ctrl + click to toggle all."
-          >
-            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2026-04-21 datetime="2026-04-21T14:12:23.000Z">2026-04-21</time>
-            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2026-04-21 datetime="2026-04-21T14:12:23.000Z"></time>
-          </button>
-        </h2>
-        <ul class="sources card">
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Azure DevOps Blog</button>
-                  <a class="source-heading__link" href="https://devblogs.microsoft.com/devops/">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://devblogs.microsoft.com/devops/?p&#x3D;72679"
-                        open
-                      >
-                        <summary class="article-expander__title">Azure DevOps MCP Server April Update</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://devblogs.microsoft.com/devops/azure-devops-mcp-server-april-update/">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://devblogs.microsoft.com/devops/wp-content/uploads/sites/6/2026/04/391f7a33-c99d-40e7-9174-ff147bbf79db.webp" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>This update brings a set of improvements and changes across both local and remote Azure DevOps MCP Servers. Here’s a summary of what’s changed. Query work items with WIQL We’ve introduced a new wit_query_by_wiql tool that enables users to construct and run work item WIQL queries. For our remote MCP, to ensure reliability and performance, […]
-The post Azure DevOps MCP Server April Update appeared first on Azure DevOps Blog.</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;26
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Fabric Updates Blog articles</button>
-                  <a class="source-heading__link" href="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/bg-p/fbc_fabricupdatesblogs">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="agentic-fabric-how-mcp-is-turning-your-data-platform-into-an-ai-native-operating-system"
-                        open
-                      >
-                        <summary class="article-expander__title">Agentic Fabric: How MCP is turning your data platform into an AI-native operating system</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://blog.fabric.microsoft.com/en/blog/agentic-fabric-how-mcp-is-turning-your-data-platform-into-an-ai-native-operating-system/">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://blog.fabric.microsoft.com/images/shared/social/social-image-v2.png" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>Something fundamental is changing in how developers interact with data platforms. Not a feature update, not a UI refresh, but a shift in the interface itself.</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;11
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Microsoft Tech Community - Latest Blogs - Azure PaaS Blog</button>
-                  <a class="source-heading__link" href="https://techcommunity.microsoft.com">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://techcommunity.microsoft.com/blog/AzurePaaSBlog/leveraging-azure-resource-graph-queries-for-azure-redis-configuration/4509826"
-                        open
-                      >
-                        <summary class="article-expander__title">Leveraging Azure Resource Graph Queries for Azure Redis Configuration</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/blog/AzurePaaSBlog/leveraging-azure-resource-graph-queries-for-azure-redis-configuration/4509826">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTA5ODI2LUNramZ5bw?revision&#x3D;11" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>Scenario 
-Many times, we receive requests for a quick and reliable way to review Azure Redis configurations such as SKU tiers, Redis versions, TLS settings, Microsoft Entra authentication status, and public network exposure. Traditionally, these checks are performed using PowerShell, Azure CLI, or REST APIs. While effective, these methods can be time-consuming due to script development and module installation. Azure Resource Graph Explorer offers a faster and more scalable alternative by enabling customers to query Redis configurations directly using Kusto Query Language (KQL). This approach eliminates the need to create and maintain scripts while providing centralized visibility across multiple subscriptions.
-Azure Resource Graph Explorer 
-Azure Resource Graph Explorer allows you to run K…</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;31
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://techcommunity.microsoft.com/blog/AzurePaaSBlog/leveraging-azure-resource-graph-queries-for-azure-storage-configuration/4509184"
-                        open
-                      >
-                        <summary class="article-expander__title">Leveraging Azure Resource Graph Queries for Azure Storage Configuration</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/blog/AzurePaaSBlog/leveraging-azure-resource-graph-queries-for-azure-storage-configuration/4509184">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTA5MTg0LTlEbzRxbg?revision&#x3D;7" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>Scenario
-Many times, we receive requests for a quick and reliable way to check which Azure Storage features are enabled across subscriptions—such as SFTP, Hierarchical Namespace (HNS), or default access tiers. For such scenarios, customers can use PowerShell, Azure CLI, or REST APIs; however, these approaches can be time‑consuming due to module setup, frequent updates, and script maintenance. Azure Resource Graph Explorer provides a faster and simpler alternative by allowing customers to directly query storage account configurations at scale using Kusto Query Language (KQL), without the need to write or maintain scripts.
-Azure Resource Graph Explorer
-Azure Resource Graph Explorer enables you to run KQL queries directly from the Azure Portal to inspect resource configurations across subscri…</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;31
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Microsoft Tech Community - Latest Blogs - Educator Developer Blog</button>
-                  <a class="source-heading__link" href="https://techcommunity.microsoft.com">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/vs-code-agents-insiders-the-ai-first-editor-built-for-developers-and-students/4512957"
-                        open
-                      >
-                        <summary class="article-expander__title">VS Code Agents Insiders: The AI-First Editor Built for Developers and Students</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/vs-code-agents-insiders-the-ai-first-editor-built-for-developers-and-students/4512957">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTEyOTU3LXpERE9zZQ?revision&#x3D;4" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>There is a new application on the block, and it is not just VS Code with a plugin. https://code.visualstudio.com/updates/v1_115#_visual-studio-code-agents-previewis a dedicated, standalone editor application purpose-built for working with AI agents. Where regular VS Code treats the editor as the primary surface and adds AI on top, VS Code Agents flips that relationship: agents are the primary way you get work done, and the editor is the surface where you review and guide their output.
-If you are a student, AI developer, or engineer stepping into the world of agentic software development, this is the tool Microsoft has designed for you. This post explains what it is, how it differs from VS Code Insiders, and walks you through a real student project to show exactly what agents can do when th…</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;75
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Microsoft Tech Community - Latest Blogs - Apps on Azure Blog</button>
-                  <a class="source-heading__link" href="https://techcommunity.microsoft.com">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/how-to-troubleshoot-azure-functions-host-startup-issue/4512966"
-                        open
-                      >
-                        <summary class="article-expander__title">How to Troubleshoot Azure Functions Host Startup Issue</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/how-to-troubleshoot-azure-functions-host-startup-issue/4512966">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTEyOTY2LXlZQ2hnag?revision&#x3D;3" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>Overview
-Azure Functions is a powerful serverless compute service that enables you to run event-driven code without managing infrastructure. When you deploy a Function App, the Azure Functions host is the runtime process responsible for discovering your functions, loading extensions and bindings, connecting to storage, and starting trigger listeners.
-A host startup issue occurs when the Functions runtime fails to initialize and cannot reach a healthy Running state. When this happens, you may see one or more of these symptoms:
-
-&quot;Function host is not running&quot; error in the Azure Portal
-Functions are not visible in the Functions blade
-Triggers stop firing — HTTP functions return 503, timer/queue functions are silent
-The portal shows Error state or no response on the host status endpoint
-Applic…</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;68
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Microsoft Tech Community - Latest Blogs - Azure Observability Blog</button>
-                  <a class="source-heading__link" href="https://techcommunity.microsoft.com">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/troubleshoot-with-opentelemetry-in-azure-monitor---public-preview/4512128"
-                        open
-                      >
-                        <summary class="article-expander__title">Troubleshoot with OpenTelemetry in Azure Monitor - Public Preview</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/troubleshoot-with-opentelemetry-in-azure-monitor---public-preview/4512128">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTEyMTI4LUZWOXZVUg?revision&#x3D;5" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>OpenTelemetry is fast becoming the industry standard for modern telemetry collection and ingestion pipelines. With Azure Monitor’s new OpenTelemetry Protocol (OTLP) support, you can ship logs, metrics, and traces from wherever you run workloads to analyze and act on your observability data in one place.
-What’s in the preview
-
-Direct OTLP ingestion into Azure Monitor for logs, metrics, and traces.
-Automated onboarding for AKS workloads.
-Application Insights on OTLP for distributed tracing, performance and troubleshooting experiences.
-Pre-built Grafana dashboards to visualize signals quickly.
-Prometheus for metric storage and query.
-OpenTelemetry semantic conventions for logs and traces, so your data lands in a familiar standard-based schema.
-
-How to send OTLP to Azure Monitor: pick your pat…</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;25
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
-        </ul>
-      </section>
 
     <footer>
-      <a class="footer-link" href="https://github.com/lok-msft/azure-blog-rss/actions/runs/35179525103">
-        <time id="build-timestamp" datetime="2026-09-17T03:49:20.643Z">2026-09-17T03:49:20.643Z</time>
+      <a class="footer-link" href="https://github.com/lok-msft/azure-blog-rss/actions/runs/35303767302">
+        <time id="build-timestamp" datetime="2026-09-18T03:36:19.353Z">2026-09-18T03:36:19.353Z</time>
       </a>
       <a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a>
     </footer>

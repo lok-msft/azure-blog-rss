@@ -6,6 +6,36 @@
       "siteUrl": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/bg-p/fbc_fabricupdatesblogs",
       "articles": [
         {
+          "id": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Upcoming-changes-to-legacy-Teams-and-Outlook-activities-in/ba-p/5314499",
+          "author": "conxu-ms",
+          "description": "Beginning October 30, 2026, users will no longer be able to add new legacy Teams or legacy Outlook activities to pipelines.\r\nThese legacy activities will no longer appear as options when users add new activities to a pipeline. Existing legacy activity instances can still be edited and used in existing pipelines. New notification scenarios should instead use the modern Microsoft Teams and Outlook 365 Email activities.",
+          "link": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Upcoming-changes-to-legacy-Teams-and-Outlook-activities-in/ba-p/5314499",
+          "publishedOn": "2026-09-17T21:00:00.000Z",
+          "wordCount": null,
+          "title": "Upcoming changes to legacy Teams and Outlook activities in Fabric Data Factory pipelines",
+          "imageUrl": null
+        },
+        {
+          "id": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Soft-delete-for-On-premises-data-gateways-in-Microsoft-Fabric/ba-p/5365712",
+          "author": "goupadhy",
+          "description": "Deleting a gateway is currently permanent, so administrators must recreate it if it is removed accidentally. With soft delete, supported gateways are retained for 30 days after deletion, giving authorized administrators time to restore them before permanent deletion. Soft delete feature currently is only available for standard mode of on-premises data gateways in Microsoft Fabric (Preview). Personal mode gateways and virtual network data gateways are not currently supported. What’s new Soft delete introduces a recoverable deletion lifecycle for supported gateway types. When a supported gateway is deleted, it is retained for 30 days by default rather than being removed immediately and permanently. During the retention period, tenant admins and gateway admins can recover from it. The gateway…",
+          "link": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Soft-delete-for-On-premises-data-gateways-in-Microsoft-Fabric/ba-p/5365712",
+          "publishedOn": "2026-09-17T17:00:00.000Z",
+          "wordCount": null,
+          "title": "Soft delete for On-premises data gateways in Microsoft Fabric (Preview)",
+          "imageUrl": null
+        },
+        {
+          "id": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Mirroring-for-Google-BigQuery-in-Microsoft-Fabric-Generally/ba-p/5364851",
+          "author": "MichaelaIsaacs",
+          "description": "Mirroring for Google BigQuery in Microsoft Fabric is now generally available. For organizations running critical workloads on BigQuery, this means a simpler, faster, and lower-cost path to bringing your data into the rest of your analytics estate — with production support, an enterprise SLA, and no pipelines to build or maintain.",
+          "link": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Mirroring-for-Google-BigQuery-in-Microsoft-Fabric-Generally/ba-p/5364851",
+          "publishedOn": "2026-09-17T16:24:38.000Z",
+          "wordCount": null,
+          "title": "Mirroring for Google BigQuery in Microsoft Fabric (Generally Available)",
+          "imageUrl": null
+        },
+        {
           "id": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Moving-off-ODBC-A-self-serve-scanner-for-your-ADBC-migration/ba-p/5365622",
           "author": "MichaelaIsaacs",
           "description": "If your Fabric workspace connects to an ODBC driver, and you haven’t already moved to the ADBC driver, you’re on the ODBC → ADBC migration path. The migration window is already open — the sooner you start, the more room you have to validate.What’s happeningPower Query is transitioning from legacy embedded ODBC drivers to Apache Arrow Database Connectivity (ADBC) drivers across Power BI Desktop and the Microsoft Fabric service. ADBC keeps data in the Arrow columnar format end-to-end, which can improve performance and reduce memory overhead for many workloads.The migration happens in two events per connector:The default flip. ADBC becomes the default driver for new connections. Existing connections keep working on ODBC unless you touch them. This flip is what opens your validation window.The…",
@@ -1744,16 +1774,6 @@
           "wordCount": 1654,
           "title": "Customer Managed Keys (CMK) for Eventhouse (Preview)",
           "imageUrl": "https://blog.fabric.microsoft.com/images/shared/social/social-image-v2.png"
-        },
-        {
-          "id": "agentic-fabric-how-mcp-is-turning-your-data-platform-into-an-ai-native-operating-system",
-          "author": null,
-          "description": "Something fundamental is changing in how developers interact with data platforms. Not a feature update, not a UI refresh, but a shift in the interface itself.",
-          "link": "https://blog.fabric.microsoft.com/en/blog/agentic-fabric-how-mcp-is-turning-your-data-platform-into-an-ai-native-operating-system/",
-          "publishedOn": "2026-04-21T14:00:00.000Z",
-          "wordCount": 3430,
-          "title": "Agentic Fabric: How MCP is turning your data platform into an AI-native operating system",
-          "imageUrl": "https://blog.fabric.microsoft.com/images/shared/social/social-image-v2.png"
         }
       ]
     },
@@ -2006,6 +2026,16 @@
       "feedUrl": "https://techcommunity.microsoft.com/t5/s/plugins/custom/microsoft/o365/custom-blog-rss?board=EducatorDeveloperBlog&size=100",
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
+        {
+          "id": "https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/agentic-mentor-a-specification-driven-multi-agent-learning-tool/4555306",
+          "author": "markconnor",
+          "description": "Project Overview\nRather than relying on the model to know when the student understands, we built a pipeline where progress itself is gated: a student cannot move forward until they can demonstrate they understood what was just built. And rather than depending on commercial, token-billed APIs to make this teaching possible, the system is designed to run on locally hosted or free-tier models, keeping it accessible to students and institutions alike. As our contribution to Microsoft, we've handed over the full public repository behind Agentic Mentor. Given how central token-based services have become to software development, we see real potential for this approach in initiatives like GitHub Education, where affordable, agentic tools for students matter. \nIn this post, we'll walk through what …",
+          "link": "https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/agentic-mentor-a-specification-driven-multi-agent-learning-tool/4555306",
+          "publishedOn": "2026-09-17T09:10:52.000Z",
+          "wordCount": 14477,
+          "title": "Agentic Mentor: A Specification-Driven, Multi-Agent Learning Tool",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTU1MzA2LU90dnRoUg?revision=2"
+        },
         {
           "id": "https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/connecting-github-copilot-to-my-oscilloscope/4555545",
           "author": "DaveGlover",
@@ -2515,16 +2545,6 @@
           "wordCount": 15990,
           "title": "Building an Auditable Security Layer for Agentic AI",
           "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NDk1NzUzLUp4MGV2Zw?revision=3"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/vs-code-agents-insiders-the-ai-first-editor-built-for-developers-and-students/4512957",
-          "author": "Lee_Stott",
-          "description": "There is a new application on the block, and it is not just VS Code with a plugin. https://code.visualstudio.com/updates/v1_115#_visual-studio-code-agents-previewis a dedicated, standalone editor application purpose-built for working with AI agents. Where regular VS Code treats the editor as the primary surface and adds AI on top, VS Code Agents flips that relationship: agents are the primary way you get work done, and the editor is the surface where you review and guide their output.\nIf you are a student, AI developer, or engineer stepping into the world of agentic software development, this is the tool Microsoft has designed for you. This post explains what it is, how it differs from VS Code Insiders, and walks you through a real student project to show exactly what agents can do when th…",
-          "link": "https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/vs-code-agents-insiders-the-ai-first-editor-built-for-developers-and-students/4512957",
-          "publishedOn": "2026-04-21T07:56:51.000Z",
-          "wordCount": 22552,
-          "title": "VS Code Agents Insiders: The AI-First Editor Built for Developers and Students",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTEyOTU3LXpERE9zZQ?revision=4"
         }
       ]
     },
@@ -2533,6 +2553,16 @@
       "feedUrl": "https://techcommunity.microsoft.com/t5/s/plugins/custom/microsoft/o365/custom-blog-rss?board=AppsonAzureBlog&size=100",
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
+        {
+          "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/enable-dynamic-workflows-in-azure-functions-hosted-skills/4551993",
+          "author": "greenie-msft",
+          "description": "Azure Functions already gives you a familiar way to build event-driven apps. A queue message, HTTP request, timer, or event triggers the code that handles the work.\nAzure Functions hosted skills (formerly Serverless Agents) add AI reasoning to that model. A hosted skill can read a request, use the regular tools you give it to inspect context, and choose the next step, while your triggers, tools, and business logic stay in place.\nWhen the work needs to keep going\nConsider an insurance policy servicing request. A hosted skill can use its regular tools to understand the requested change, look up the policy, and inspect the submitted documents. If the information is ready and the request can finish now, the normal tool loop, where the model calls a tool, reads the result, and decides the next …",
+          "link": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/enable-dynamic-workflows-in-azure-functions-hosted-skills/4551993",
+          "publishedOn": "2026-09-17T12:00:00.000Z",
+          "wordCount": 9458,
+          "title": "Enable Dynamic Workflows in Azure Functions hosted skills",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTUxOTkzLUg3Y0ZlUA?revision=12"
+        },
         {
           "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/introducing-a-guided-copilot-experience-for-building-azure-apps-in-vs-code/4557120",
           "author": "fiveisprime",
@@ -3652,16 +3682,6 @@
           "wordCount": 9274,
           "title": "NFS Permission Denied in Azure App Service on Linux: What It Means and What to Do",
           "imageUrl": null
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/how-to-troubleshoot-azure-functions-host-startup-issue/4512966",
-          "author": "vikasgupta5",
-          "description": "Overview\nAzure Functions is a powerful serverless compute service that enables you to run event-driven code without managing infrastructure. When you deploy a Function App, the Azure Functions host is the runtime process responsible for discovering your functions, loading extensions and bindings, connecting to storage, and starting trigger listeners.\nA host startup issue occurs when the Functions runtime fails to initialize and cannot reach a healthy Running state. When this happens, you may see one or more of these symptoms:\n\n\"Function host is not running\" error in the Azure Portal\nFunctions are not visible in the Functions blade\nTriggers stop firing — HTTP functions return 503, timer/queue functions are silent\nThe portal shows Error state or no response on the host status endpoint\nApplic…",
-          "link": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/how-to-troubleshoot-azure-functions-host-startup-issue/4512966",
-          "publishedOn": "2026-04-21T07:04:42.000Z",
-          "wordCount": 20449,
-          "title": "How to Troubleshoot Azure Functions Host Startup Issue",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTEyOTY2LXlZQ2hnag?revision=3"
         }
       ]
     },
@@ -3816,6 +3836,16 @@
       "feedUrl": "https://techcommunity.microsoft.com/t5/s/plugins/custom/microsoft/o365/custom-blog-rss?board=AzureObservabilityBlog&size=50",
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
+        {
+          "id": "https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/action-required-promql-regex-matching-in-azure-monitor-workspace-is-becoming-spe/4556437",
+          "author": "Tyler_Kight",
+          "description": "TL;DR: Bare regex matchers like pod=~\"foo\" will soon return only exact matches, not substring matches. If you rely on =~ for \"starts with\" or \"contains\" semantics, update your queries to add .* before the change lands. \nWhat is changing\nAMW's Prometheus Query Service is moving to fully-anchored regex matching, aligning with the upstream Prometheus specification. \nAfter the change, every =~ and !~ matcher is wrapped with ^…$ before evaluation. This matches the behavior of self-hosted Prometheus, Grafana Cloud Metrics, and Amazon Managed Prometheus. \n\n\"Regex matches are fully anchored. A match of env=~\"foo\" is treated as env=~\"^foo$\".\" \n\nReference: Prometheus querying basics — Instant vector selectors \nBehavior delta \nGiven these timeseries: \nkube_pod_container_status_ready{pod=\"grafana-otel…",
+          "link": "https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/action-required-promql-regex-matching-in-azure-monitor-workspace-is-becoming-spe/4556437",
+          "publishedOn": "2026-09-17T23:10:32.000Z",
+          "wordCount": 9566,
+          "title": "Action required: PromQL regex matching in Azure Monitor Workspace is becoming spec-compliant",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTU2NDM3LWk0RlZWMg?revision=3"
+        },
         {
           "id": "https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/keep-the-evidence-low-cost-logs-with-azure-copilot-observability-agent-generally/4550844",
           "author": "yairgil",
@@ -4195,16 +4225,6 @@
           "wordCount": 11219,
           "title": "Ingest at Scale, Securely — Azure Monitor pipeline Is Now Generally Available",
           "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTEwMzc5LW9aenlObQ?revision=4"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/troubleshoot-with-opentelemetry-in-azure-monitor---public-preview/4512128",
-          "author": "KayodePrince",
-          "description": "OpenTelemetry is fast becoming the industry standard for modern telemetry collection and ingestion pipelines. With Azure Monitor’s new OpenTelemetry Protocol (OTLP) support, you can ship logs, metrics, and traces from wherever you run workloads to analyze and act on your observability data in one place.\nWhat’s in the preview\n\nDirect OTLP ingestion into Azure Monitor for logs, metrics, and traces.\nAutomated onboarding for AKS workloads.\nApplication Insights on OTLP for distributed tracing, performance and troubleshooting experiences.\nPre-built Grafana dashboards to visualize signals quickly.\nPrometheus for metric storage and query.\nOpenTelemetry semantic conventions for logs and traces, so your data lands in a familiar standard-based schema.\n\nHow to send OTLP to Azure Monitor: pick your pat…",
-          "link": "https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/troubleshoot-with-opentelemetry-in-azure-monitor---public-preview/4512128",
-          "publishedOn": "2026-04-20T18:14:20.000Z",
-          "wordCount": 7587,
-          "title": "Troubleshoot with OpenTelemetry in Azure Monitor - Public Preview",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTEyMTI4LUZWOXZVUg?revision=5"
         }
       ]
     },
@@ -4816,26 +4836,6 @@
           "wordCount": 9177,
           "title": "Update host keys to use SFTP on Azure Blob Storage",
           "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTE1NDgzLXpCc1l5Tw?revision=3"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AzurePaaSBlog/leveraging-azure-resource-graph-queries-for-azure-redis-configuration/4509826",
-          "author": "Soma_Sekhara_Raju",
-          "description": "Scenario \nMany times, we receive requests for a quick and reliable way to review Azure Redis configurations such as SKU tiers, Redis versions, TLS settings, Microsoft Entra authentication status, and public network exposure. Traditionally, these checks are performed using PowerShell, Azure CLI, or REST APIs. While effective, these methods can be time-consuming due to script development and module installation. Azure Resource Graph Explorer offers a faster and more scalable alternative by enabling customers to query Redis configurations directly using Kusto Query Language (KQL). This approach eliminates the need to create and maintain scripts while providing centralized visibility across multiple subscriptions.\nAzure Resource Graph Explorer \nAzure Resource Graph Explorer allows you to run K…",
-          "link": "https://techcommunity.microsoft.com/blog/AzurePaaSBlog/leveraging-azure-resource-graph-queries-for-azure-redis-configuration/4509826",
-          "publishedOn": "2026-04-21T07:57:08.000Z",
-          "wordCount": 9233,
-          "title": "Leveraging Azure Resource Graph Queries for Azure Redis Configuration",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTA5ODI2LUNramZ5bw?revision=11"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AzurePaaSBlog/leveraging-azure-resource-graph-queries-for-azure-storage-configuration/4509184",
-          "author": "jainsourabh",
-          "description": "Scenario\nMany times, we receive requests for a quick and reliable way to check which Azure Storage features are enabled across subscriptions—such as SFTP, Hierarchical Namespace (HNS), or default access tiers. For such scenarios, customers can use PowerShell, Azure CLI, or REST APIs; however, these approaches can be time‑consuming due to module setup, frequent updates, and script maintenance. Azure Resource Graph Explorer provides a faster and simpler alternative by allowing customers to directly query storage account configurations at scale using Kusto Query Language (KQL), without the need to write or maintain scripts.\nAzure Resource Graph Explorer\nAzure Resource Graph Explorer enables you to run KQL queries directly from the Azure Portal to inspect resource configurations across subscri…",
-          "link": "https://techcommunity.microsoft.com/blog/AzurePaaSBlog/leveraging-azure-resource-graph-queries-for-azure-storage-configuration/4509184",
-          "publishedOn": "2026-04-21T07:46:00.000Z",
-          "wordCount": 9175,
-          "title": "Leveraging Azure Resource Graph Queries for Azure Storage Configuration",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTA5MTg0LTlEbzRxbg?revision=7"
         }
       ]
     },
@@ -4844,6 +4844,26 @@
       "feedUrl": "https://techcommunity.microsoft.com/t5/s/plugins/custom/microsoft/o365/custom-blog-rss?board=AzureArchitectureBlog&size=50",
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
+        {
+          "id": "https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/agent-experience-with-data-in-onelake-using-fabric-iq/4557504",
+          "author": "Sayanika",
+          "description": "Business Scenario\nA retail organization runs multiple promotional sales events across its store network in different cities, featuring various product categories.\nData is captured from:\n\nThird-party systems (products, stores, sales events)\nERP system i.e. Finance and Operations (customer data)\n\nCustomers are linked to stores based on city in the ERP system, and each store hosts specific sales events.\nHowever, while significant investments are made in marketing campaigns, inventory allocation, and event planning, the organization needs to identify\n\nWhich stores generate the highest revenue during events\nWhich locations are having majority of customer footprint\n\nSolution:\nRather than creating custom reports on raw data, an agent can leverage the data in Onelake and use Fabric semantic models…",
+          "link": "https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/agent-experience-with-data-in-onelake-using-fabric-iq/4557504",
+          "publishedOn": "2026-09-17T23:57:52.000Z",
+          "wordCount": 10234,
+          "title": "Agent experience with data in Onelake using Fabric IQ",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTU3NTA0LWRoTGRKUA?revision=1"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/foundry-iq-with-d365fo-and-fabric-iq/4557381",
+          "author": "Sayanika",
+          "description": "Business Scenario\nA retail organization runs multiple promotional sales events across its store network in different cities, featuring various product categories where Data is captured from third-party systems (products, stores, sales events) and D365 Finance and Operations (customer data)\nCustomers are linked to stores based on city, and each store hosts specific sales events.\nTo figure out the store generating highest revenue, store event driving the best outcome, majority customer footprint, the organization has implemented copilot studio agent using Fabric IQ, Ontology and ERP MCP.\n \nNew Business Challenge\nBeyond understanding past performance, the retailer wants the system to answer:\n\nAre there procurement risks impacting promotional sales?\nWhich cities should receive additional marke…",
+          "link": "https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/foundry-iq-with-d365fo-and-fabric-iq/4557381",
+          "publishedOn": "2026-09-17T14:47:21.000Z",
+          "wordCount": 9034,
+          "title": "Foundry IQ with D365F&O and Fabric IQ",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTU3MzgxLU9iOGVUaQ?revision=1"
+        },
         {
           "id": "https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/closing-the-recruiting-context-gap-with-microsoft-foundry/4556469",
           "author": "gauravbhardwaj",
@@ -6257,16 +6277,6 @@
           "wordCount": 7527,
           "title": "Public Preview: Actual Result for Manual Tests in Azure Test Plans",
           "imageUrl": "https://devblogs.microsoft.com/devops/wp-content/uploads/sites/6/2026/04/Screenshot-2026-04-10-at-14.31.25.webp"
-        },
-        {
-          "id": "https://devblogs.microsoft.com/devops/?p=72679",
-          "author": "Dan Hellem",
-          "description": "This update brings a set of improvements and changes across both local and remote Azure DevOps MCP Servers. Here’s a summary of what’s changed. Query work items with WIQL We’ve introduced a new wit_query_by_wiql tool that enables users to construct and run work item WIQL queries. For our remote MCP, to ensure reliability and performance, […]\nThe post Azure DevOps MCP Server April Update appeared first on Azure DevOps Blog.",
-          "link": "https://devblogs.microsoft.com/devops/azure-devops-mcp-server-april-update/",
-          "publishedOn": "2026-04-21T14:12:23.000Z",
-          "wordCount": 7821,
-          "title": "Azure DevOps MCP Server April Update",
-          "imageUrl": "https://devblogs.microsoft.com/devops/wp-content/uploads/sites/6/2026/04/391f7a33-c99d-40e7-9174-ff147bbf79db.webp"
         }
       ]
     },
