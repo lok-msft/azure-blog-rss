@@ -6,6 +6,16 @@
       "siteUrl": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/bg-p/fbc_fabricupdatesblogs",
       "articles": [
         {
+          "id": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/On-premises-data-gateway-September-2026-release/ba-p/5368525",
+          "author": "goupadhy",
+          "description": "The September 2026 release of the on-premises data gateway (version 3000.334) continues our commitment to delivering secure, reliable, and manageable connectivity between on-premises data sources and Microsoft Fabric services.\r\nThis release includes improvements focused on gateway manageability, operational visibility, enterprise governance, and platform reliability, helping organizations manage their gateway environments with greater confidence.\r\nIt also brings compatibility updates for the September 2026 release of Power BI Desktop, ensuring consistent query execution and a seamless experience between Power BI Desktop and cloud-based refresh scenarios. Additionally, this release includes enhancements across security, authentication, diagnostics, and overall platform quality. \r\nFeature up…",
+          "link": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/On-premises-data-gateway-September-2026-release/ba-p/5368525",
+          "publishedOn": "2026-09-25T16:00:00.000Z",
+          "wordCount": null,
+          "title": "On-premises data gateway September 2026 release",
+          "imageUrl": null
+        },
+        {
           "id": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Upcoming-changes-to-legacy-Teams-and-Outlook-activities-in/ba-p/5314499",
           "author": "conxu-ms",
           "description": "Beginning October 30, 2026, users will no longer be able to add new legacy Teams or legacy Outlook activities to pipelines.\r\nThese legacy activities will no longer appear as options when users add new activities to a pipeline. Existing legacy activity instances can still be edited and used in existing pipelines. New notification scenarios should instead use the modern Microsoft Teams and Outlook 365 Email activities.",
@@ -1957,6 +1967,16 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/foundry-local-with-rust-from-catalog-discovery-to-in-process-streaming/4558179",
+          "author": "kevin_gatimu",
+          "description": "The shortest path to local inference is not to begin with a web server, an agent framework, or a full RAG pipeline. Begin with a spike that proves five things on the target machine: the SDK initializes, the catalog is visible, an appropriate model alias resolves, model artifacts can be cached and loaded, and tokens stream from the local runtime.\nThat narrow test is especially valuable in Rust, where application logic, native runtime loading, async streams, execution providers, and model lifecycle can otherwise fail at the same time. Once the spike works, it can be embedded behind a deliberate application boundary.\nThis article uses the current device-focused Foundry Local SDK. The project that motivated it embeds foundry-local-sdk v1 directly in a Rocket process and enables the winml featu…",
+          "link": "https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/foundry-local-with-rust-from-catalog-discovery-to-in-process-streaming/4558179",
+          "publishedOn": "2026-09-25T07:00:00.000Z",
+          "wordCount": 15218,
+          "title": "Foundry Local with Rust: From Catalog Discovery to In-Process Streaming",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTU4MTc5LTJnYVEySQ?revision=4"
+        },
+        {
           "id": "https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/architecture-first-drawing-the-boundary-for-on-premises-health-rag/4557242",
           "author": "kevin_gatimu",
           "description": "A retrieval-augmented generation prototype can look convincing after an afternoon: load a few documents, create embeddings, retrieve passages, and ask a model to answer. A health-records system is harder for a reason that has little to do with prompt wording. Before retrieval quality matters, the team must be able to answer a more basic question: where can sensitive data travel?\nThis prototype starts there. Its primary invariant is that health-record data, prompts, vectors, retrieved evidence, conversations, model output, and operational telemetry stay on premises. There is no cloud inference path and no silent cloud fallback. If local inference is unavailable, model-dependent work degrades or fails explicitly.\nThe invariant is not a stylistic preference. A number of countries require, by …",
@@ -3602,26 +3622,6 @@
           "wordCount": 20273,
           "title": "Get started with the New Relic MCP server in Azure SRE Agent",
           "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTE1MjY4LUVkZEtjVg?revision=2"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/ag-ui-the-future-of-agent-driven-user-interfaces/4515769",
-          "author": "VaidhyaP",
-          "description": "As AI agents evolve from simple chatbots into workflow engines, decision-makers, and copilots, one challenge has remained stubbornly unsolved: How do we connect intelligent agents to rich, dynamic, user-facing interfaces without custom plumbing every single time?\nIntroducing AG-UI (Agent–User Interface) — a unified protocol that finally standardizes how agents talk to frontends. It enables streaming, declarative UI generation, state synchronization, and human-in-the-loop workflows out of the box.\nAG-UI is the missing piece that bridges backend intelligence with real-time, interactive user experiences.\nWhy is AG‑UI a Game‑Changer?\n1. A Unified Standard for Agent ↔ UI Interaction\nBefore AG-UI, developers juggled:\n\nREST APIs for request–response\nWeb Sockets/SSE for streaming\nCustom JSON struc…",
-          "link": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/ag-ui-the-future-of-agent-driven-user-interfaces/4515769",
-          "publishedOn": "2026-04-29T08:59:10.000Z",
-          "wordCount": 8528,
-          "title": "AG-UI: The Future of Agent-Driven User Interfaces",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTE1NzY5LUE2dVlObw?revision=6"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/how-microsoft-1es-uses-agentic-ai-to-take-on-security-and-compliance-at-scale/4515191",
-          "author": "JennyF",
-          "description": "Microsoft’s Customer Zero blog series gives an insider view of how Microsoft builds and operates Microsoft using our trusted, enterprise-grade IQ platform. Learn best practices from our engineering teams with real-world lessons, architectural patterns, and operational strategies for pressure-tested solutions in building, operating, and scaling AI apps and agent fleets across the organization.\nWhat we do\nWithin Microsoft’s One Engineering System (1ES) organization, teams build and maintain the internal engineering systems that product groups across the company rely on to ship and secure their services. These shared tools and processes support teams responsible for mission-critical products, from modern cloud-native platforms to long-lived legacy applications.\nSecurity, compliance, and relia…",
-          "link": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/how-microsoft-1es-uses-agentic-ai-to-take-on-security-and-compliance-at-scale/4515191",
-          "publishedOn": "2026-04-28T16:15:00.000Z",
-          "wordCount": 12519,
-          "title": "How Microsoft 1ES uses agentic AI to take on security and compliance at scale",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTE1MTkxLUgzTHRzdg?revision=8"
         }
       ]
     },
@@ -4669,16 +4669,6 @@
           "wordCount": 7680,
           "title": "🖼️Streamline Image Generation Workflow in Foundry Toolkit",
           "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTE2MDU1LU5YTk43bA?revision=2"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/building-an-enterprise-knowledge-copilot-with-foundry-iq-and-agentic-retrieval-o/4512308",
-          "author": "Shah_Viral",
-          "description": "Every enterprise has the same problem: knowledge scattered across SharePoint, file shares, wikis, and email. This article walks through building a knowledge copilot that unifies that data behind a single conversational interface — using Microsoft's Foundry IQ knowledge bases and the agentic retrieval engine in Azure AI Search.\nThe Problem: Fragmented Knowledge, Fragmented Answers\nEnterprise AI projects today share a common pain point. Each new agent or copilot that needs to answer questions from company data must rebuild its own retrieval pipeline from scratch — data connections, chunking logic, embeddings, routing, permissions — all duplicated project after project. The result is a tangle of fragmented, siloed pipelines that are expensive to maintain and inconsistent in quality.\nConsider …",
-          "link": "https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/building-an-enterprise-knowledge-copilot-with-foundry-iq-and-agentic-retrieval-o/4512308",
-          "publishedOn": "2026-04-29T07:00:00.000Z",
-          "wordCount": 11436,
-          "title": "Building an Enterprise Knowledge Copilot with Foundry IQ and Agentic Retrieval on Azure AI",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTEyMzA4LVlTRFBKNA?revision=6"
         }
       ]
     },
@@ -4744,6 +4734,16 @@
       "feedUrl": "https://techcommunity.microsoft.com/t5/s/plugins/custom/microsoft/o365/custom-blog-rss?board=AzureArchitectureBlog&size=50",
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
+        {
+          "id": "https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/from-camera-to-canvas-how-multimodal-genai-automates-shop-floor-instructions/4557740",
+          "author": "Matt_Kazanowsky",
+          "description": "Scenario\nAcross the industry, manufacturing organizations spend significant engineering effort converting tribal knowledge and assembly demonstrations into standardized work instructions. This process is traditionally manual, inconsistent, and difficult to scale across plants, product lines, and geographies. By integrating multimodal Generative AI directly into supply chain workflows on Azure, this solution automates the transformation of raw assembly videos into reviewable, illustrated work instructions—dramatically reducing documentation effort, accelerating worker onboarding, and preserving critical operational knowledge.\n \nSolution Components and Architecture\n\n \n \n\nAssembly Video to Manufacturing Document Execution Flow\n\n Video Ingestion and Job Creation\n\nThe user selects an assembly v…",
+          "link": "https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/from-camera-to-canvas-how-multimodal-genai-automates-shop-floor-instructions/4557740",
+          "publishedOn": "2026-09-25T18:26:46.000Z",
+          "wordCount": 12459,
+          "title": "From Camera to Canvas: How Multimodal GenAI Automates Shop Floor Instructions",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTU3NzQwLUFoallwaw?revision=7"
+        },
         {
           "id": "https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/foundry-iq-with-d365fo-and-fabric-iq/4557380",
           "author": "Sayanika",
@@ -5123,26 +5123,6 @@
           "wordCount": 14701,
           "title": "Running Diffusion Models at Scale on AKS",
           "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTEzNjg3LW1kalk5dA?revision=7"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/transforming-video-content-into-structured-sops-using-graph-based-rag/4515038",
-          "author": "dikshashakya",
-          "description": "Introduction\nIn today’s digital-first environments, a large portion of enterprise knowledge lives inside video content, training sessions, onboarding walkthroughs, and recorded operational procedures.\nWhile videos are great for learning, they are not ideal for quick reference, compliance, or repeatable processes. Converting that knowledge into structured documentation like Standard Operating Procedures (SOPs) is often manual and time-consuming.\nWhat if this process could be automated using AI?\nThe Problem\nTranscripts alone don’t solve the problem.\nWhen videos are converted into text, the output typically lacks:\n\nClear structure (sections, headings, hierarchy)\nContext (relationships between steps, tools, and roles)\nCompleteness (definitions and dependencies spread across the content)\n\nThis …",
-          "link": "https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/transforming-video-content-into-structured-sops-using-graph-based-rag/4515038",
-          "publishedOn": "2026-04-29T01:04:53.000Z",
-          "wordCount": 7955,
-          "title": "Transforming Video Content into Structured SOPs Using Graph-based RAG",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTE1MDM4LVFkUWY1RQ?revision=2"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/flexible-cooling-for-ai-growth-how-zonal-architecture-supports-diverse-hardware-/4514042",
-          "author": "stsolo",
-          "description": "By: Ricardo Bianchini, Steve Solomon, Brijesh Warrier, Martin Herbert, Jay Jochim, Husam Alissa, Pulkit Misra, Eric Peterson and Cam Turner\nContext - \nMicrosoft is pioneering zonal cooling in its next-generation AI datacenters, enabling flexible, performant, efficient, and sustainable thermal management for diverse workloads.\nThe unprecedented growth of artificial intelligence (AI) is transforming datacenter infrastructure. Modern facilities must now support a diverse array of IT equipment, each with distinct cooling requirements. For example, modern GPUs and other AI accelerators require liquid cooling as air cooling is impractical at power draws exceeding 1 kW per accelerator due to the limited heat capacity of air to remove the resulting thermal load. Meanwhile, non-AI-accelerator (i.e.…",
-          "link": "https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/flexible-cooling-for-ai-growth-how-zonal-architecture-supports-diverse-hardware-/4514042",
-          "publishedOn": "2026-04-29T00:58:54.000Z",
-          "wordCount": 10030,
-          "title": "Flexible Cooling for AI Growth: How Zonal Architecture Supports Diverse Hardware Needs",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTE0MDQyLTFBckh3Yg?revision=8"
         }
       ]
     },
@@ -5720,16 +5700,6 @@
           "wordCount": 7729,
           "title": "From Local to Production: Deploy Your Microsoft Agent Framework Agent with Foundry Hosted Agents",
           "imageUrl": null
-        },
-        {
-          "id": "https://devblogs.microsoft.com/agent-framework/?p=5367",
-          "author": "Sergey Menshykh",
-          "description": "As organizations move from single-agent prototypes to multi-agent production systems, the ability for agents to communicate reliably across platforms and organizational boundaries becomes essential. With the release of A2A Protocol v1.0 and updated support in the Microsoft Agent Framework, you can now connect and expose your AI agents using a stable, production-ready interoperability standard – […]\nThe post A2A v1 Is Here: Cross-Platform Agent Communication in Microsoft Agent Framework for .NET appeared first on Microsoft Agent Framework.",
-          "link": "https://devblogs.microsoft.com/agent-framework/a2a-v1-is-here-cross-platform-agent-communication-in-microsoft-agent-framework-for-net/",
-          "publishedOn": "2026-04-28T20:57:51.000Z",
-          "wordCount": 8746,
-          "title": "A2A v1 Is Here: Cross-Platform Agent Communication in Microsoft Agent Framework for .NET",
-          "imageUrl": "https://devblogs.microsoft.com/agent-framework/wp-content/uploads/sites/78/2026/04/A2Av1Migration.webp"
         }
       ]
     },
@@ -6140,16 +6110,6 @@
           "wordCount": 4370,
           "title": "PostgreSQL enters its AI era: Run PostgreSQL like a pro in the era of AI and rapid growth",
           "imageUrl": "https://opensource.microsoft.com/blog/wp-content/uploads/2026/04/Azure-Infrastructure-Dark-2-scaled.jpg"
-        },
-        {
-          "id": "https://opensource.microsoft.com/blog/2026/04/28/continuing-the-story-of-early-dos-development/",
-          "author": "Stacey Haffner and Scott Hanselman",
-          "description": "In 2018 we (re)-open-sourced MS‑DOS 1.25 and 2.11, and more recently in 2024 we were able to make the source for MS‑DOS 4.0 available to the public as well. Today, on 86-DOS 1.00’s 45th anniversary, we’re continuing that tradition with the earliest DOS source code discovered to date.\nThe post Continuing the story of early DOS development appeared first on Microsoft Open Source Blog.",
-          "link": "https://opensource.microsoft.com/blog/2026/04/28/continuing-the-story-of-early-dos-development/",
-          "publishedOn": "2026-04-28T16:00:00.000Z",
-          "wordCount": 3823,
-          "title": "Continuing the story of early DOS development",
-          "imageUrl": "https://opensource.microsoft.com/blog/wp-content/uploads/2026/04/86-DOS-Changelist.png"
         }
       ]
     },
@@ -6407,16 +6367,6 @@
           "wordCount": 7252,
           "title": "From prompt to production: Teams agent setup, simplified",
           "imageUrl": "https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2026/04/setup-steps.webp"
-        },
-        {
-          "id": "https://devblogs.microsoft.com/microsoft365dev/?p=25600",
-          "author": "Vesa Juvonen",
-          "description": "SPFx is powering the future of Microsoft 365 with AI driven portals and deep integrations across SharePoint and Microsoft 365. The April 2026 update shares new features and the roadmap for the next evolution built for the AI era. This is a transparent community driven journey that we shape together.\nThe post SharePoint Framework (SPFx) roadmap update – April 2026 appeared first on Microsoft 365 Developer Blog.",
-          "link": "https://devblogs.microsoft.com/microsoft365dev/sharepoint-framework-spfx-roadmap-update-april-2026/",
-          "publishedOn": "2026-04-28T17:13:17.000Z",
-          "wordCount": 8303,
-          "title": "SharePoint Framework (SPFx) roadmap update – April 2026",
-          "imageUrl": "https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2026/04/sofx-roadmap-april-blog-post.webp"
         }
       ]
     }
