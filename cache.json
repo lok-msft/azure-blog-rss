@@ -1703,6 +1703,16 @@
       "siteUrl": "https://azure.github.io/AppService/",
       "articles": [
         {
+          "id": "https://azure.github.io/AppService/2026/09/28/Azure-App-Service-on-Azure-Stack-Hub-26R1-Released.html",
+          "author": null,
+          "description": "Azure App Service on Azure Stack Hub 26R1 is now available for customers to download and update their Azure Stack Hub deployments. This release contains updates to application runtimes, including .NET and Java; and updates the the resource provider itself. What’s New? Updates to core service to improve reliability and error messaging enabling easier diagnosis of common issues. Stalled controller start up due to slow role discovery has been resolved. Database performance improved with reductions of locking and unnecessary saves. Updates to the following application frameworks and tools: .NET Framework 3.5 and 4.8.1 ASP.NET Core 10.0.11 10.0.8 8.0.30 8.0.303 8.0.424 Microsoft OpenJDK 11 11.0.30.7. Microsoft OpenJDK 17 17.0.18 Microsoft OpenJDK 21 21.0.10 Microsoft OpenJDK 25 25.0.2 Node.js 22.23.1 Npm 8.1.0 10.9.8 11.16.0 Tomcat 9.0.109 9.0.113 9.0.115 9.0.116 10.1.146 10.1.50 10.1.53 11.0.11 11.0.15 11.0.20 Updated Kudu to 2026.08.1.2 Continual accessibility and usability updates All other fixes and updates are detailed in the App Service on Azure Stack Hub 26R1 Release Notes The App Service on Azure Stack Hub 26R1 build number is 102.20.2.2 and requires Azure Stack Hub to be updated with 2311 or later prior to deployment/upgrade. You can download the new installer and offline package: Installer Offline package Please read the updated documentation prior to getting started with deployment: Update the App Service Resource Provider for updating existing deployments",
+          "link": "https://azure.github.io/AppService/2026/09/28/Azure-App-Service-on-Azure-Stack-Hub-26R1-Released.html",
+          "publishedOn": "2026-09-28T00:00:00.000Z",
+          "wordCount": 685,
+          "title": "Azure App Service on Azure Stack Hub 26R1 Released",
+          "imageUrl": "https://azure.github.io/AppService/assets/images/icon.png"
+        },
+        {
           "id": "https://azure.github.io/AppService/2026/09/17/network-capture.html",
           "author": null,
           "description": "Troubleshooting network issues in Azure App Service for Linux has traditionally required several manual steps. You would typically SSH into your app, run a packet capture from the container, download the resulting trace, and then open it in a tool such as Wireshark to investigate what happened.",
@@ -1966,6 +1976,26 @@
       "feedUrl": "https://techcommunity.microsoft.com/t5/s/plugins/custom/microsoft/o365/custom-blog-rss?board=EducatorDeveloperBlog&size=100",
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
+        {
+          "id": "https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/bringing-ai-powered-grid-optimization-offline-quantizing-gridsfm-for-local-deplo/4556291",
+          "author": "MargauxV",
+          "description": "Introduction\nField engineers operating in remote substations frequently encounter connectivity limitations when evaluating the safety of proposed grid adjustments. While physics-informed neural surrogates for AC Optimal Power Flow can deliver these assessments in milliseconds, they typically rely on cloud infrastructure. Beyond the risk of complete service loss in low-connectivity environments, transmitting telemetry off-site introduces critical data privacy and security vulnerabilities for infrastructure operators.\nThis project addresses these operational constraints by exploring the limits of model compression. Specifically, it evaluates how significantly a state-of-the-art power grid surrogate can be quantized without compromising safety thresholds, while integrating the optimized model…",
+          "link": "https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/bringing-ai-powered-grid-optimization-offline-quantizing-gridsfm-for-local-deplo/4556291",
+          "publishedOn": "2026-09-28T07:00:00.000Z",
+          "wordCount": 15156,
+          "title": "Bringing AI-Powered Grid Optimization Offline: Quantizing GridSFM for Local Deployment",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTU2MjkxLU9VMnlrcA?revision=16"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/connecting-azure-ai-foundry-to-opencode-and-some-troubleshooting-steps/4558132",
+          "author": "suzarilshah",
+          "description": "Introduction\nI had an Azure model deployment, an endpoint, and an API key. Getting that model into OpenCode looked like a configuration task: register a provider, paste in the connection details, select the model.\n \nThen came “Resource not found.” After a provider change, a more useful error appeared:\n \nUnsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\nThe breakthrough was a tiny request outside OpenCode. With the right parameter, the model replied: “Hi!”\n \nThat response narrowed the problem. The deployment could answer a request. The remaining question was what the coding agent's provider adapter was sending differently.\n \nThis post follows that investigation, including the detours I would skip next time. It also gives the setup seq…",
+          "link": "https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/connecting-azure-ai-foundry-to-opencode-and-some-troubleshooting-steps/4558132",
+          "publishedOn": "2026-09-28T07:00:00.000Z",
+          "wordCount": 13821,
+          "title": "Connecting Azure AI Foundry to OpenCode, and some troubleshooting steps",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTU4MTMyLUxLSm1paQ?revision=2"
+        },
         {
           "id": "https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/foundry-local-with-rust-from-catalog-discovery-to-in-process-streaming/4558179",
           "author": "kevin_gatimu",
@@ -3699,16 +3729,6 @@
           "wordCount": 7655,
           "title": "Stripe Events + Azure Event Grid: Now Generally Available",
           "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTE4NDk5LXRzWEhZSQ?revision=1"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/MessagingonAzureBlog/protect-your-streaming-data-in-use-confidential-computing-for-azure-event-hubs-d/4515219",
-          "author": "ashish-chhabria",
-          "description": "For organizations in regulated industries — financial services, healthcare, government, defense — the security conversation around data has always revolved around two states: data at rest and data in transit. Encrypt your storage. Encrypt your network traffic. Check, check.\nBut there's a third state that's been much harder to address: data in use. What happens to your events while they're being actively processed by the streaming infrastructure? While they're in memory on the broker, being indexed, being replicated? That's the gap that confidential computing closes.\nToday, we're announcing confidential computing support for Azure Event Hubs Dedicated clusters, available now in Korea Central and UAE North.\nEvent Hubs already provides a comprehensive security model: Entra ID authentication, …",
-          "link": "https://techcommunity.microsoft.com/blog/MessagingonAzureBlog/protect-your-streaming-data-in-use-confidential-computing-for-azure-event-hubs-d/4515219",
-          "publishedOn": "2026-05-01T16:11:46.000Z",
-          "wordCount": 8923,
-          "title": "Protect Your Streaming Data in Use: Confidential Computing for Azure Event Hubs Dedicated",
-          "imageUrl": null
         }
       ]
     },
@@ -4134,6 +4154,16 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/sending-email-from-an-aks-pod-without-a-single-secret/4556222",
+          "author": "Jamesdld23",
+          "description": "The problem\nYou have a workload running in AKS that occasionally needs to send an email — a notification, an alert, a report. The obvious options all come with baggage:\n\nAn SMTP relay means yet another credential to store, rotate, and eventually leak.\nA shared \"app password\" mailbox account means an identity nobody really owns, that can authenticate as itself forever.\nGranting Mail.Send as a Microsoft Graph application permission is tempting — until you realize it lets your app send email as any mailbox in the entire tenant, not just the one you intended.\n\nThis post walks through a pattern that avoids all three: Azure Workload Identity for the pod, Microsoft Graph for sending, and Exchange Online RBAC for Applications to scope the identity down to exactly one authorized mailbox. No secrets…",
+          "link": "https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/sending-email-from-an-aks-pod-without-a-single-secret/4556222",
+          "publishedOn": "2026-09-29T04:15:00.000Z",
+          "wordCount": 11241,
+          "title": "Sending Email from an AKS Pod Without a Single Secret",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTU2MjIyLUxmQVRPQQ?revision=3"
+        },
+        {
           "id": "https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/distributing-agents-to-microsoft-teams-and-microsoft-365-copilot-part-45/4541925",
           "author": "Lee_Stott",
           "description": "This is the fourth post in our series on the Microsoft agent platform. We cover the Distribute in M365 pillar — publishing your agents to Microsoft Teams and Microsoft 365 Copilot so they reach users where they already work.\nAll examples reference the FibreOps repository, demonstrated at Microsoft Build BRK241.\nThe Distribution Story\nBuilding a great agent is only half the challenge. The other half is getting it into the hands of users without asking them to learn a new tool, visit a new URL, or change their workflow. Microsoft 365 Copilot and Microsoft Teams are where enterprise users already spend their day, making them the natural distribution surface for agents.\nWith the GA release, publishing an agent to Teams and M365 Copilot is a single command. No separate app registration portal, …",
@@ -4307,6 +4337,16 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/sending-email-from-an-aks-pod-without-a-single-secret/4556222",
+          "author": "Jamesdld23",
+          "description": "The problem\nYou have a workload running in AKS that occasionally needs to send an email — a notification, an alert, a report. The obvious options all come with baggage:\n\nAn SMTP relay means yet another credential to store, rotate, and eventually leak.\nA shared \"app password\" mailbox account means an identity nobody really owns, that can authenticate as itself forever.\nGranting Mail.Send as a Microsoft Graph application permission is tempting — until you realize it lets your app send email as any mailbox in the entire tenant, not just the one you intended.\n\nThis post walks through a pattern that avoids all three: Azure Workload Identity for the pod, Microsoft Graph for sending, and Exchange Online RBAC for Applications to scope the identity down to exactly one authorized mailbox. No secrets…",
+          "link": "https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/sending-email-from-an-aks-pod-without-a-single-secret/4556222",
+          "publishedOn": "2026-09-29T04:15:00.000Z",
+          "wordCount": 11241,
+          "title": "Sending Email from an AKS Pod Without a Single Secret",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTU2MjIyLUxmQVRPQQ?revision=3"
+        },
+        {
           "id": "https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/build-an-ai-assisted-support-email-workflow-with-power-automate-and-microsoft-fo/4554297",
           "author": "MinseokSong",
           "description": "Difficulty: Intermediate\n \nA support email arrives with a product name, an error code, and a country. Before anyone can help, someone has to interpret the request, find the right team, record the case, and decide what to tell the customer.\nIn this tutorial, you build that support email workflow with Microsoft 365, Power Automate, Azure Functions, and Microsoft Foundry. AI extracts the request details and recommends a support team. The flow checks the recommendation against a SharePoint catalog, asks a person to approve it, and creates an editable Outlook acknowledgement draft.\nThe central design decision is who can do what: the model proposes a routing key; the flow validates it; a person approves draft creation. No customer-facing send action is included.\nWhat you will build\nMina manages …",
@@ -4333,6 +4373,16 @@
       "feedUrl": "https://techcommunity.microsoft.com/t5/s/plugins/custom/microsoft/o365/custom-blog-rss?board=AzureDevCommunityBlog&size=50&label=API%20Design",
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
+        {
+          "id": "https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/sending-email-from-an-aks-pod-without-a-single-secret/4556222",
+          "author": "Jamesdld23",
+          "description": "The problem\nYou have a workload running in AKS that occasionally needs to send an email — a notification, an alert, a report. The obvious options all come with baggage:\n\nAn SMTP relay means yet another credential to store, rotate, and eventually leak.\nA shared \"app password\" mailbox account means an identity nobody really owns, that can authenticate as itself forever.\nGranting Mail.Send as a Microsoft Graph application permission is tempting — until you realize it lets your app send email as any mailbox in the entire tenant, not just the one you intended.\n\nThis post walks through a pattern that avoids all three: Azure Workload Identity for the pod, Microsoft Graph for sending, and Exchange Online RBAC for Applications to scope the identity down to exactly one authorized mailbox. No secrets…",
+          "link": "https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/sending-email-from-an-aks-pod-without-a-single-secret/4556222",
+          "publishedOn": "2026-09-29T04:15:00.000Z",
+          "wordCount": 11241,
+          "title": "Sending Email from an AKS Pod Without a Single Secret",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTU2MjIyLUxmQVRPQQ?revision=3"
+        },
         {
           "id": "https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/microsoft-leads-a-new-era-of-software-supply-chain-transparency/4528367",
           "author": "ShubhraS",
@@ -4370,6 +4420,16 @@
       "feedUrl": "https://techcommunity.microsoft.com/t5/s/plugins/custom/microsoft/o365/custom-blog-rss?board=AzureDevCommunityBlog&size=100&label=Developer",
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
+        {
+          "id": "https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/sending-email-from-an-aks-pod-without-a-single-secret/4556222",
+          "author": "Jamesdld23",
+          "description": "The problem\nYou have a workload running in AKS that occasionally needs to send an email — a notification, an alert, a report. The obvious options all come with baggage:\n\nAn SMTP relay means yet another credential to store, rotate, and eventually leak.\nA shared \"app password\" mailbox account means an identity nobody really owns, that can authenticate as itself forever.\nGranting Mail.Send as a Microsoft Graph application permission is tempting — until you realize it lets your app send email as any mailbox in the entire tenant, not just the one you intended.\n\nThis post walks through a pattern that avoids all three: Azure Workload Identity for the pod, Microsoft Graph for sending, and Exchange Online RBAC for Applications to scope the identity down to exactly one authorized mailbox. No secrets…",
+          "link": "https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/sending-email-from-an-aks-pod-without-a-single-secret/4556222",
+          "publishedOn": "2026-09-29T04:15:00.000Z",
+          "wordCount": 11241,
+          "title": "Sending Email from an AKS Pod Without a Single Secret",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTU2MjIyLUxmQVRPQQ?revision=3"
+        },
         {
           "id": "https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/from-ai-infrastructure-to-secure-ai-agent-infrastructure-with-kars/4551519",
           "author": "kinfey",
@@ -4618,6 +4678,16 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/blog/AzurePaaSBlog/troubleshooting-azure-storage-deletion-immutability-worm-and-version-retention/4559051",
+          "author": "carlosbermudezlopez",
+          "description": "One of the most common questions Azure Storage administrators ask after enabling immutable storage is:\n\"Why can't I delete my storage account anymore?\"\nAzure Immutable Storage is designed to provide WORM (Write Once, Read Many) protection, ensuring that data cannot be modified or deleted during a defined retention period. This capability is essential for compliance, regulatory, legal, and audit requirements, but it can be surprising when administrators later attempt to remove storage resources and discover that Azure refuses to delete them.In some environments, immutable storage policies may not have been configured directly by Azure Storage administrators. Backup or data protection solutions can automatically enable and manage retention settings, and storage administrators may not always …",
+          "link": "https://techcommunity.microsoft.com/blog/AzurePaaSBlog/troubleshooting-azure-storage-deletion-immutability-worm-and-version-retention/4559051",
+          "publishedOn": "2026-09-25T04:15:53.000Z",
+          "wordCount": null,
+          "title": "Troubleshooting Azure Storage Deletion: Immutability, WORM, and Version Retention",
+          "imageUrl": null
+        },
+        {
           "id": "https://techcommunity.microsoft.com/blog/AzurePaaSBlog/why-long-running-tasks-on-linux-batch-pools-can-restart-daily-and-how-to-prevent/4546215",
           "author": "Sithu",
           "description": "In Azure Batch, customers running long tasks on Linux (Ubuntu) compute nodes sometimes observe that a task is interrupted and automatically re-run from the beginning on a recurring basis, often once per day, around the same time, even though no one cancelled or resubmitted the task, and the application itself never failed. If your task takes longer than a few hours, this can mean it never reaches completion.\nThis article explains why this happens and how to prevent it, so your long-running workloads complete reliably.\nWhat you might observe\n\nA task restarts from the beginning rather than failing, it is re-queued, not errored.\nThe restarts recur daily within a narrow time window (for example, some time between 06:00–07:00 UTC), and happen on different nodes a few minutes apart.\nThe affected…",
@@ -4656,16 +4726,6 @@
           "wordCount": null,
           "title": "Monitoring Azure Service Fabric with Azure Managed Grafana",
           "imageUrl": null
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AzurePaaSBlog/update-host-keys-to-use-sftp-on-azure-blob-storage/4515483",
-          "author": "LuisFilipe",
-          "description": "Update host keys to use SFTP on Azure Blob Storage\nSome Azure Storage users may have received an alert informing that Microsoft will change the public key, like this. \n\nThis article describes the impact this will have on the SFTP blob service and what are the changes needed.On this article:\n\nWhat is this alert and what actions you need to take\nHow to list all your storage accounts with SFTP enabled\n\nWhich client systems or applications are currently connecting to the storage account via SFTP\n\nFAQs to Host keys for SSH File Transfer Protocol (SFTP) support for Azure Blob Storage\n\n \n========================================================\nWhat is this alert and what action you need to take\nAzure Storage SFTP users can use two different authentication methods:\nSSH Password and/or SSH Key pair…",
-          "link": "https://techcommunity.microsoft.com/blog/AzurePaaSBlog/update-host-keys-to-use-sftp-on-azure-blob-storage/4515483",
-          "publishedOn": "2026-04-28T14:44:02.000Z",
-          "wordCount": 9177,
-          "title": "Update host keys to use SFTP on Azure Blob Storage",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTE1NDgzLXpCc1l5Tw?revision=3"
         }
       ]
     },
@@ -6247,26 +6307,6 @@
           "wordCount": 7198,
           "title": "Announcing general availability of the mailbox import and export Microsoft Graph APIs",
           "imageUrl": "https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2021/03/graph_color128-1.png"
-        },
-        {
-          "id": "https://devblogs.microsoft.com/microsoft365dev/?p=25637",
-          "author": "Lily Du, Ricky Castaneda, Aamir Jawaid",
-          "description": "Python developers can now build Teams-native apps and agents using the same SDK surface that powers modern Teams experiences across our TypeScript and .NET stacks \nThe post Python support for the Microsoft Teams SDK is now generally available appeared first on Microsoft 365 Developer Blog.",
-          "link": "https://devblogs.microsoft.com/microsoft365dev/python-support-for-the-microsoft-teams-sdk-is-now-generally-available/",
-          "publishedOn": "2026-05-01T20:15:16.000Z",
-          "wordCount": 7213,
-          "title": "Python support for the Microsoft Teams SDK is now generally available",
-          "imageUrl": "https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2026/05/Image-2.webp"
-        },
-        {
-          "id": "https://devblogs.microsoft.com/microsoft365dev/?p=25551",
-          "author": "Microsoft Entra Agent ID team",
-          "description": "As part of moving to general availability (GA) for Entra Agent ID, agent identity objects will only accept dynamic membership groups and unified (Microsoft 365) groups as group-type sponsors.\nThe post Sponsor group type requirements for agent identities appeared first on Microsoft 365 Developer Blog.",
-          "link": "https://devblogs.microsoft.com/microsoft365dev/sponsor-group-type-requirements-for-agent-identities/",
-          "publishedOn": "2026-05-01T17:45:01.000Z",
-          "wordCount": 7456,
-          "title": "Sponsor group type requirements for agent identities",
-          "imageUrl": "https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2026/05/Sponsor-group-change-blog-img-asset.webp"
         }
       ]
     }
