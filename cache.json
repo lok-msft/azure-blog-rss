@@ -2654,6 +2654,26 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/meet-the-hosted-skills-canvas-build-run-and-debug-in-github-copilot/4561222",
+          "author": "paulyuk",
+          "description": "We have been evolving Azure Functions from the bottom up: first the infrastructure with Flex Consumption, then the way you write an app, and now the tools you use to build it.We're introducing a new developer experience for event-driven apps: the Azure Functions Hosted Skills canvas in the GitHub Copilot app. Your Function App, plain-English instructions, trigger controls, and live logs sit beside your conversation. From choosing an event to reading the result, the development loop stays in one window, with Copilot there when you need a hand.Let's walk through a daily digest for the Azure Functions host repository on GitHub.\nStart in the canvas\nOpen Azure Functions Hosted Skills and choose Local Function App. Use the generated daily repository digest starter for this walkthrough. The app's…",
+          "link": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/meet-the-hosted-skills-canvas-build-run-and-debug-in-github-copilot/4561222",
+          "publishedOn": "2026-09-30T22:19:50.000Z",
+          "wordCount": 10860,
+          "title": "Meet the Hosted Skills Canvas: Build, Run, and Debug in GitHub Copilot",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTYxMjIyLXZzS09neg?revision=12"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/bring-managed-browser-automation-to-your-agent-applications/4561184",
+          "author": "Arun_Kumar_Thiagarajan",
+          "description": "AI agents become more useful when they can move beyond conversation and complete real workflows. Playwright Cloud Browsers provides managed, on-demand browser capacity that agent applications can access through Model Context Protocol (MCP).\nYou can connect Playwright Cloud Browsers to agent applications, including coding agents such as the GitHub Copilot app and Visual Studio Code: when they support custom remote MCP servers. Once connected, an agent can navigate an approved application, complete forms, verify results, capture evidence, and close the managed browser session. Your team gets browser automation without maintaining browsers in every user or agent environment.\nIn this example, we use the GitHub Copilot app to show the connection and workflow. You can extend the same approach to…",
+          "link": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/bring-managed-browser-automation-to-your-agent-applications/4561184",
+          "publishedOn": "2026-09-30T14:25:38.000Z",
+          "wordCount": 9750,
+          "title": "Bring managed browser automation to your agent applications",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTYxMTg0LVpmZHVoeg?revision=1"
+        },
+        {
           "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/bring-your-azure-devops-repos-to-azure-sre-agent-plugins/4560857",
           "author": "Dalibor_Kovacevic",
           "description": "Plugins package the skills, agents, and connector settings your team wants every SRE Agent to have. A plugin marketplace is a Git repository that lists those plugins so any agent can install them.\nUntil now, that repository had to be on GitHub. If your team keeps its runbooks and tooling in Azure DevOps, you had to mirror them somewhere else. Now you can point your agent at the Azure DevOps repository directly.\nYour team keeps authoring plugins in the repository it already uses. The agent reads from that repository and installs the plugins you choose, and a pinned version stays put until you change it.\nConnect a marketplace\nAzure DevOps marketplaces are rolling out now. You can use them today by turning on the preview feature.\n\nOpen the Plugins page on your agent and select Connect marketp…",
@@ -3742,16 +3762,6 @@
           "wordCount": 8632,
           "title": "Running Foundry Agent Service on Azure Container Apps",
           "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTE4NTk4LWlYWHRsMA?revision=2"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/performance-tuning-and-scaling-optimization-for-large-scale-azure-workloads/4516788",
-          "author": "ruchitapradhan",
-          "description": "Summary\nAs cloud-native systems scale, performance challenges rarely stem from a single bottleneck. Instead, they emerge from the interaction between compute, orchestration, and data layers under load. This article captures a practical optimization journey of a high-volume Azure-based workload and highlights how controlled scaling, improved orchestration design, and proactive database maintenance can significantly outperform brute-force scaling.\nIntroduction\nDistributed systems are often designed with the assumption that scaling out will solve performance issues. However, for orchestration-heavy and database-intensive workloads, this approach can introduce more problems than it solves.\nIn this scenario, the system processed millions of transactional records through Azure Functions, Durable…",
-          "link": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/performance-tuning-and-scaling-optimization-for-large-scale-azure-workloads/4516788",
-          "publishedOn": "2026-05-04T13:41:07.000Z",
-          "wordCount": 9400,
-          "title": "Performance Tuning and Scaling Optimization for Large-Scale Azure Workloads",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTE2Nzg4LUlaOFNnbQ?revision=3"
         }
       ]
     },
@@ -3888,16 +3898,6 @@
           "wordCount": 6116,
           "title": "Azure Availability Zone Mapping and VM Resilience Analysis Guidance using SRE.AZURE.COM Agent",
           "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTI2NTQ4LVhuTDRhUw?revision=1"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/FastTrackforAzureBlog/deploying-dns-private-resolvers-and-private-dns-zones-for-azure-ai-supported-ser/4515645",
-          "author": "munieswar_avulapalli",
-          "description": "Private Networks:\n\nPrivate DNS Zones: Resolves domain names to private IPs within Azure virtual networks without exposing them to the internet. Private DNS Zones are global, you don’t need to create multiple same private DNS Zones, you can reuse the same zones as it’s global\nDNS Private Resolvers: Fully managed service that enables DNS resolution between Azure VNets and on-premises networks without custom DNS servers. DNS Private resolvers are regional, which means if you have Azure EAST US and WEST US 2 regions, you need to create DNS Private resolvers in both regions linked to Private DNS Zones, you can adopt centralized or distributed DNS Private resolvers, I will discuss both options later in this article\n\n \nPublic Networks: <In this part – not focusing on Public Networks>\n\nPublic DNS …",
-          "link": "https://techcommunity.microsoft.com/blog/FastTrackforAzureBlog/deploying-dns-private-resolvers-and-private-dns-zones-for-azure-ai-supported-ser/4515645",
-          "publishedOn": "2026-04-28T19:24:54.000Z",
-          "wordCount": 8989,
-          "title": "Deploying DNS Private Resolvers and Private DNS Zones for Azure AI Supported Services",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTE1NjQ1LTBlMGRUMw?revision=2"
         }
       ]
     },
@@ -4442,16 +4442,6 @@
           "wordCount": 10506,
           "title": "Moving Beyond Prompts: A Practical Introduction to Spec-Driven Development",
           "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTExMDEyLVNEYTQ1UQ?revision=7"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/high-availability-testing-for-azure-kubernetes-service-in-a-single-region-with-a/4509825",
-          "author": "jiteshhp",
-          "description": "During migration testing engagements for enterprise workloads moving to Azure Kubernetes Service (AKS), we frequently validate high availability behavior under simulated infrastructure failures within a single Azure region using Availability Zones.\nIn one such workload migration scenario involving a multi‑replica API service, infrastructure‑level HA configuration alone did not guarantee runtime resiliency during node or zone‑level disruptions. This required us to perform controlled failure simulations at pod, node, and availability zone levels to observe application behavior under real traffic conditions.\nA properly designed HA architecture helps evaluate service availability during component failures, automatically recover workloads, and reduce single points of failure.\nMicrosoft’s HA gui…",
-          "link": "https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/high-availability-testing-for-azure-kubernetes-service-in-a-single-region-with-a/4509825",
-          "publishedOn": "2026-05-04T07:00:00.000Z",
-          "wordCount": 10815,
-          "title": "High Availability Testing for Azure Kubernetes Service in a Single Region with Availability Zones",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTA5ODI1LXhQQmpaNQ?revision=16"
         }
       ]
     },
@@ -5817,16 +5807,6 @@
           "wordCount": 7014,
           "title": "PyCon US 2026",
           "imageUrl": null
-        },
-        {
-          "id": "https://devblogs.microsoft.com/python/?p=10301",
-          "author": "Saumya Garg",
-          "description": "Reviewed by Sumit Sarabhai Fetching a million rows from SQL Server into a Polars DataFrame used to mean a million Python objects, a million GC allocations, and then throwing it all away to build a DataFrame. Not anymore. mssql-python now supports fetching SQL Server data directly as Apache Arrow structures – a faster and more […]\nThe post Introducing Apache Arrow Support in mssql-python appeared first on Microsoft for Python Developers Blog.",
-          "link": "https://devblogs.microsoft.com/python/introducing-apache-arrow-support-in-mssql-python/",
-          "publishedOn": "2026-05-04T04:33:00.000Z",
-          "wordCount": 8176,
-          "title": "Introducing Apache Arrow Support in mssql-python",
-          "imageUrl": "https://devblogs.microsoft.com/python/wp-content/uploads/sites/12/2018/08/importOS-1256.png"
         }
       ]
     },
@@ -5928,6 +5908,16 @@
       "feedUrl": "https://devblogs.microsoft.com/devops/feed/",
       "siteUrl": "https://devblogs.microsoft.com/devops/",
       "articles": [
+        {
+          "id": "https://devblogs.microsoft.com/devops/?p=73484",
+          "author": "Dan Hellem",
+          "description": "We announced the public preview of Copilot Code Review for Azure Repos in late August. Since then, we have continued to make improvements, fix bugs, and add new features. We wanted to share an update on some of the recent changes. Effort levels The effort level controls how much time Copilot spends reviewing a pull […]\nThe post Updates to Copilot Code Reviews for Azure Repos appeared first on Azure DevOps Blog.",
+          "link": "https://devblogs.microsoft.com/devops/updates-to-copilot-code-reviews-for-azure-repos/",
+          "publishedOn": "2026-09-30T17:05:16.000Z",
+          "wordCount": 7584,
+          "title": "Updates to Copilot Code Reviews for Azure Repos",
+          "imageUrl": "https://devblogs.microsoft.com/devops/wp-content/uploads/sites/6/2026/09/blog-ccr-2.webp"
+        },
         {
           "id": "https://devblogs.microsoft.com/devops/?p=73438",
           "author": "Gloridel Morales",
@@ -6208,6 +6198,26 @@
       "feedUrl": "https://devblogs.microsoft.com/microsoft365dev/feed/",
       "siteUrl": "https://devblogs.microsoft.com/microsoft365dev/",
       "articles": [
+        {
+          "id": "https://devblogs.microsoft.com/microsoft365dev/?p=26193",
+          "author": "Vesa Juvonen",
+          "description": "New Copilot UX components heading to Generally Available in October 2026, SPFx 1.24 Beta 5 is now available, React 18 support is coming in 1.24. Updates coming in Node.js support.\nThe post SharePoint Framework (SPFx) roadmap update – September 2026 appeared first on Microsoft 365 Developer Blog.",
+          "link": "https://devblogs.microsoft.com/microsoft365dev/sharepoint-framework-spfx-roadmap-update-september-2026/",
+          "publishedOn": "2026-09-30T21:35:52.000Z",
+          "wordCount": 9494,
+          "title": "SharePoint Framework (SPFx) roadmap update – September 2026",
+          "imageUrl": "https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2026/09/spfx-september-roadmap.webp"
+        },
+        {
+          "id": "https://devblogs.microsoft.com/microsoft365dev/?p=26158",
+          "author": "Seth T. Bacon, Sébastien Levert, Rachit Kumar Malik",
+          "description": "Bring an existing agent plugin into Work IQ Developer Tools (WIQD) and the plugin registry or create a new plugin to utilize the full Microsoft Copilot packaging workflow. A plugin gives Microsoft Copilot new ways to get work done. It packages one or more capabilities, such as skills, MCP servers, or agents, so Copilot can […]\nThe post Bring your plugin to Microsoft Copilot with Work IQ Developer Tools appeared first on Microsoft 365 Developer Blog.",
+          "link": "https://devblogs.microsoft.com/microsoft365dev/bring-your-plugin-to-microsoft-copilot-with-wiqd/",
+          "publishedOn": "2026-09-30T12:00:18.000Z",
+          "wordCount": 8291,
+          "title": "Bring your plugin to Microsoft Copilot with Work IQ Developer Tools",
+          "imageUrl": "https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2025/12/default-image.webp"
+        },
         {
           "id": "https://devblogs.microsoft.com/microsoft365dev/?p=26149",
           "author": "Paolo Pialorsi",
