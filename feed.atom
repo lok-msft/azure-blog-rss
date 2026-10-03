@@ -2,10 +2,36 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2026-10-02T04:28:24.111Z</updated>
+    <updated>2026-10-03T04:11:03.938Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Resumable Health-Record Ingestion Without Sacrificing the Last-Known-Good Index]]></title>
+        <id>https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/resumable-health-record-ingestion-without-sacrificing-the-last-known-good-index/4559732</id>
+        <link href="https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/resumable-health-record-ingestion-without-sacrificing-the-last-known-good-index/4559732"/>
+        <updated>2026-10-02T07:00:00.000Z</updated>
+        <summary type="html"><![CDATA[A health-record index is most vulnerable while it is being rebuilt. A source database can disconnect halfway through a large table. An embedding process can fail after thousands of rows. The application can restart between writing the final page and publishing it. If refresh means “delete the old index, then rebuild,” every one of those ordinary failures becomes an outage - or worse, leaves a partially refreshed corpus that looks complete.
+Part 4 of this series develops a safer pattern: bounded, resumable, generation-aware ingestion with transactional publication. PostgreSQL, MySQL, and SQL Server remain the external clinical systems of record. A separate Internal DocumentDB Hybrid Store holds copied documents, vectors, metadata, and application state. New data is invisible while it is sta…]]></summary>
+        <author>
+            <name>Lee_Stott</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[When AI Starts Taking Action: Building Execution Boundaries with OpenSandbox and AKS]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/when-ai-starts-taking-action-building-execution-boundaries-with-opensandbox-and-/4561601</id>
+        <link href="https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/when-ai-starts-taking-action-building-execution-boundaries-with-opensandbox-and-/4561601"/>
+        <updated>2026-10-02T06:26:45.000Z</updated>
+        <summary type="html"><![CDATA[1. An agent needs more than a smarter model
+Imagine you are building a food-ordering assistant.
+In its first version, it says, “You might enjoy a burger and fries.” That is primarily a content-generation problem. In the next version, it queries coupons, reads a menu, calculates prices, creates files, and calls a local program to create an order.
+The engineering problem has changed. You are no longer asking a model to speak. You are allowing software to act on someone's behalf.
+This is a distinction I emphasize in technical talks: model capability determines what the agent can propose; the execution platform determines where, with which permissions, and for how long those proposals can become actions.
+Running every agent's tool processes inside the business API container creates awkward cou…]]></summary>
+        <author>
+            <name>kinfey</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Run an Ollaya decision model on Azure Container Apps]]></title>
         <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/run-an-ollaya-decision-model-on-azure-container-apps/4561558</id>
@@ -8163,96 +8189,6 @@ The post From Local to Production: Deploy Your Microsoft Agent Framework Agent w
 The post GitHub Copilot Modernize 101 is live on the Microsoft Developer Channel appeared first on Microsoft for Java Developers.]]></summary>
         <author>
             <name>Ayan Gupta</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Control runtime patch updates with Platform Release Channel on Azure App Service for Linux]]></title>
-        <id>https://azure.github.io/AppService/2026/05/06/platform-release-channel.html</id>
-        <link href="https://azure.github.io/AppService/2026/05/06/platform-release-channel.html"/>
-        <updated>2026-05-06T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Azure App Service for Linux is introducing Platform Release Channel, a new setting that gives you more control over when runtime patch updates are applied to your app.]]></summary>
-        <author>
-            <name>Azure App Service</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Providing more insights & tools: Capacity health, timepoint summary, timepoint detail, chargeback now generally available]]></title>
-        <id>https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Providing-more-insights-amp-tools-Capacity-health-timepoint/ba-p/5176753</id>
-        <link href="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Providing-more-insights-amp-tools-Capacity-health-timepoint/ba-p/5176753"/>
-        <updated>2026-05-05T20:00:59.000Z</updated>
-        <summary type="html"><![CDATA[Author: Pankaj Arora - Principal Product Manager _____________________________________________________]]></summary>
-        <author>
-            <name>pankajarora</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[On-premises data gateway April 2026 release]]></title>
-        <id>https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/On-premises-data-gateway-April-2026-release/ba-p/5171981</id>
-        <link href="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/On-premises-data-gateway-April-2026-release/ba-p/5171981"/>
-        <updated>2026-05-05T19:24:04.000Z</updated>
-        <summary type="html"><![CDATA[Author: Leo Li - Principal Program Manager]]></summary>
-        <author>
-            <name>lrtoyou1223</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Monitor your Eventstreams with workspace monitoring (Preview)]]></title>
-        <id>https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Monitor-your-Eventstreams-with-workspace-monitoring-Preview/ba-p/5161116</id>
-        <link href="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Monitor-your-Eventstreams-with-workspace-monitoring-Preview/ba-p/5161116"/>
-        <updated>2026-05-05T19:21:33.000Z</updated>
-        <summary type="html"><![CDATA[Author: Anasheh Boisvert - Senior Program Manager]]></summary>
-        <author>
-            <name>anboisve</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Discover items across workspaces with the OneLake Catalog Search API, MCP and CLI tools (Preview)]]></title>
-        <id>https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Discover-items-across-workspaces-with-the-OneLake-Catalog-Search/ba-p/5176768</id>
-        <link href="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Discover-items-across-workspaces-with-the-OneLake-Catalog-Search/ba-p/5176768"/>
-        <updated>2026-05-05T19:10:44.000Z</updated>
-        <summary type="html"><![CDATA[Author: Nadav Schachter - Senior Product Manager]]></summary>
-        <author>
-            <name>nschachter</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Pipelines are evolving beyond ETL]]></title>
-        <id>https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Pipelines-are-evolving-beyond-ETL/ba-p/5177527</id>
-        <link href="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Pipelines-are-evolving-beyond-ETL/ba-p/5177527"/>
-        <updated>2026-05-05T19:09:38.000Z</updated>
-        <summary type="html"><![CDATA[Author: Connie Xu - Product Manager]]></summary>
-        <author>
-            <name>conxu-ms</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Simplify Schema Changes in Fabric Data Warehouse with ALTER COLUMN (Preview)]]></title>
-        <id>https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Simplify-Schema-Changes-in-Fabric-Data-Warehouse-with-ALTER/ba-p/5177593</id>
-        <link href="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Simplify-Schema-Changes-in-Fabric-Data-Warehouse-with-ALTER/ba-p/5177593"/>
-        <updated>2026-05-05T19:08:11.000Z</updated>
-        <summary type="html"><![CDATA[Author: Twinkle Cyril - Senior Product Manager]]></summary>
-        <author>
-            <name>TwinkleCyril</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[From repetition to reuse: accelerate data prep with My queries in Dataflow Gen2]]></title>
-        <id>https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/From-repetition-to-reuse-accelerate-data-prep-with-My-queries-in/ba-p/5176763</id>
-        <link href="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/From-repetition-to-reuse-accelerate-data-prep-with-My-queries-in/ba-p/5176763"/>
-        <updated>2026-05-05T19:06:28.000Z</updated>
-        <summary type="html"><![CDATA[Author: Miguel Escobar - Senior Product Manager]]></summary>
-        <author>
-            <name>miguel</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Direct Lake on SQL with Fabric Data Warehouse]]></title>
-        <id>https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Direct-Lake-on-SQL-with-Fabric-Data-Warehouse/ba-p/5177641</id>
-        <link href="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Direct-Lake-on-SQL-with-Fabric-Data-Warehouse/ba-p/5177641"/>
-        <updated>2026-05-05T19:04:47.000Z</updated>
-        <summary type="html"><![CDATA[Author: Justin Barry - Sr. Cloud Solution Architect]]></summary>
-        <author>
-            <name>jbarry15</name>
         </author>
     </entry>
 </feed>
