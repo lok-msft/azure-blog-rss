@@ -2,10 +2,33 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2026-10-07T04:45:21.012Z</updated>
+    <updated>2026-10-08T04:55:49.045Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Anyscale on Azure is now Generally Available]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/anyscale-on-azure-is-now-generally-available/4562547</id>
+        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/anyscale-on-azure-is-now-generally-available/4562547"/>
+        <updated>2026-10-07T17:12:20.000Z</updated>
+        <summary type="html"><![CDATA[Anyscale on Azure is now Generally Available. Enterprises can run the Ray distributed runtime as a managed service on Azure Kubernetes Service (AKS), with workloads running in the customer’s own Azure subscription, network, and identity boundary.  
+With General Availability, Anyscale on Azure is ready for production workloads and comes with the commitments enterprises need. It is backed by a service level agreement and production support from both Microsoft and Anyscale. Customer workloads, datasets, and model artifacts run in their Azure subscription, while Anyscale operates the control plane in its own Azure tenant. Customers can use their Azure identity and governance controls for the resources in their subscription. Xoople is already using Anyscale on Azure to turn planetary-scale sate…]]></summary>
+        <author>
+            <name>bobmital</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Streaming Grounded Chat to Desktop and Mobile Through a Rust Bridge]]></title>
+        <id>https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/streaming-grounded-chat-to-desktop-and-mobile-through-a-rust-bridge/4558416</id>
+        <link href="https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/streaming-grounded-chat-to-desktop-and-mobile-through-a-rust-bridge/4558416"/>
+        <updated>2026-10-07T07:00:00.000Z</updated>
+        <summary type="html"><![CDATA[A streamed answer feels simple until two conversations run at once, the user changes screens, a token begins with a space, or the user presses Stop before the HTTP request has fully started. Add a bearer token and health-record context, and the transport boundary becomes part of the security and correctness design - not merely UI plumbing.
+Part 6 follows one grounded answer from the Desktop App or Mobile App through a Tauri v2 Rust bridge, into a Rocket server, through local retrieval and Foundry Local, and back as correlated events. The pattern keeps the JWT, base URL, HTTP client, and SSE stream outside the web view while supporting concurrent runs, per-conversation queues, cancellation, bounded server memory, citations, and optional verification.
+The transport boundary is also where a r…]]></summary>
+        <author>
+            <name>kevin_gatimu</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Build Automated Agents, Workflows, and Apps - New in Copilot Studio]]></title>
         <id>https://techcommunity.microsoft.com/blog/MicrosoftMechanicsBlog/build-automated-agents-workflows-and-apps---new-in-copilot-studio/4562164</id>
@@ -19,6 +42,16 @@ Describe the agent you need. 
 Copilot Studio helps build it. See how it turns the requirements…]]></summary>
         <author>
             <name>Zachary-Cavanell</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[What’s new for Azure App Service in Azure CLI 2.91.0]]></title>
+        <id>https://azure.github.io/AppService/2026/10/06/azure-cli-2-91-app-service-updates.html</id>
+        <link href="https://azure.github.io/AppService/2026/10/06/azure-cli-2-91-app-service-updates.html"/>
+        <updated>2026-10-06T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Azure CLI 2.91.0 adds a preview command for diagnosing Linux web app configuration and runtime errors from the terminal. This release also makes access-restriction updates safer by preserving unrelated site configuration.]]></summary>
+        <author>
+            <name>Azure App Service</name>
         </author>
     </entry>
     <entry>
@@ -7972,67 +8005,6 @@ What is an Availability Zone
 Availability Zones are physically separate datacenters within an Azure region, each with independent power, cooling, and networking. A Premium namespace deployed in an Availability Zon…]]></summary>
         <author>
             <name>EldertGrootenboer</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Data Warehouse Monitor: A Unified Monitoring Experience for Fabric Data Warehouse (Preview)]]></title>
-        <id>https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Data-Warehouse-Monitor-A-Unified-Monitoring-Experience-for/ba-p/5180024</id>
-        <link href="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Data-Warehouse-Monitor-A-Unified-Monitoring-Experience-for/ba-p/5180024"/>
-        <updated>2026-05-11T16:30:00.000Z</updated>
-        <summary type="html"><![CDATA[Authored by: Mariya Ali - Program Manager II and Twinkle Cyril - Senior Product Manager]]></summary>
-        <author>
-            <name>TwinkleCyril</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Stripe Events + Azure Event Grid: Now Generally Available]]></title>
-        <id>https://techcommunity.microsoft.com/blog/MessagingonAzureBlog/stripe-events--azure-event-grid-now-generally-available/4518499</id>
-        <link href="https://techcommunity.microsoft.com/blog/MessagingonAzureBlog/stripe-events--azure-event-grid-now-generally-available/4518499"/>
-        <updated>2026-05-11T15:38:22.000Z</updated>
-        <summary type="html"><![CDATA[Stripe events give developers real-time visibility into everything happening in their Stripe accounts — payments, subscriptions, refunds, disputes, and more. With Azure Event Grid as a destination for Stripe events, now Generally Available, teams can route those signals directly into Azure and build scalable, event-driven architectures without managing webhook infrastructure.
-Stripe events meet Azure Event Grid
-
-Stripe produces events for changes across payments, customers, subscriptions, accounts, meters, and more — covering hundreds of distinct event types. Azure Event Grid acts as a fully managed event broker, routing those events directly into Azure so teams can build reactive, real-time workflows without managing custom webhook infrastructure. Here are some of the scenarios this enabl…]]></summary>
-        <author>
-            <name>robece</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Container crash with exit code 132 (SIGILL) on Web App for Containers]]></title>
-        <id>https://azureossd.github.io/2026/05/11/Container-crash-with-exit-code-132-SIGILL-on-Web-App-for-Containers/index.html</id>
-        <link href="https://azureossd.github.io/2026/05/11/Container-crash-with-exit-code-132-SIGILL-on-Web-App-for-Containers/index.html"/>
-        <updated>2026-05-11T12:00:00.000Z</updated>
-        <summary type="html"><![CDATA[This post will cover containers crashing with exit code 132 (SIGILL - Illegal Instruction) on Web App for Containers, typically caused by CPU architecture mismatches between Intel and AMD workers.]]></summary>
-        <author>
-            <name>azureossd.github.io</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[City simulator with AI agents for traffic congestion]]></title>
-        <id>https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/city-simulator-with-ai-agents-for-traffic-congestion/4517565</id>
-        <link href="https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/city-simulator-with-ai-agents-for-traffic-congestion/4517565"/>
-        <updated>2026-05-11T07:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Project Overview
-Hi I'm Shoib Muhammad an MEng Mathematical Computation student at UCL, I set out to tackle one of the most persistent challenges in modern cities: traffic congestion. In London alone, drivers lose around 141 hours each year to congestion, with the wider UK economy losing approximately £5.1 billion in productivity. Traditional fixed-cycle traffic lights cannot adapt to changing demand, and even adaptive systems such as SCOOT and SCATS tend to focus on single intersections rather than understanding the full network.
-The aim of this project was to build something practical and experimental: a high fidelity simulation environment where multi agent AI systems can be tested, broken, and improved without affecting real world traffic. It is a safe space to explore how intelligent …]]></summary>
-        <author>
-            <name>Shoib</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Configure DNS forwarding for Azure NetApp Files]]></title>
-        <id>https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/configure-dns-forwarding-for-azure-netapp-files/4516381</id>
-        <link href="https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/configure-dns-forwarding-for-azure-netapp-files/4516381"/>
-        <updated>2026-05-11T04:20:10.000Z</updated>
-        <summary type="html"><![CDATA[This post has been written with the collaboration of Rizul Khanna
-
-Applies to: Azure NetApp Files — SMB, dual-protocol, and NFSv4.1 Kerberos volumes deployed in hub-spoke or Azure Virtual WAN topologies using an external private DNS forwarder.
-
-Overview
-
-Azure NetApp Files (ANF) has a hard dependency on DNS for all volume types that integrate with Active Directory (AD): SMB, dual-protocol (SMB + NFS), and NFSv4.1 with Kerberos. Unlike most Azure PaaS services, ANF does not use Azure Private Link and has no privatelink.* zone. Its volumes attach directly to a delegated subnet, and their hostnames are registered into AD-integrated DNS via Secure Dynamic DNS (DDNS). This architecture means DNS design decisions for the ANF delegated subnet are fundamentally different from those that apply to s…]]></summary>
-        <author>
-            <name>mkachare</name>
         </author>
     </entry>
 </feed>
