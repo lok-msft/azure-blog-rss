@@ -2,10 +2,31 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2026-10-09T04:58:41.008Z</updated>
+    <updated>2026-10-10T04:44:14.720Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Run Deterministic SQL Before Asking a Local LLM to Plan]]></title>
+        <id>https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/run-deterministic-sql-before-asking-a-local-llm-to-plan/4558418</id>
+        <link href="https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/run-deterministic-sql-before-asking-a-local-llm-to-plan/4558418"/>
+        <updated>2026-10-09T07:00:00.000Z</updated>
+        <summary type="html"><![CDATA[“How many patients are there?” is not a semantic-search question. Retrieving six relevant patient chunks and asking a language model to infer the total would be fast, fluent, and wrong. It is also unnecessary: a database already knows how to count.
+Yet sending every structured question directly to text-to-SQL is not ideal either. Local planning adds latency, consumes scarce accelerator time, and introduces a probabilistic interpretation step for requests that often fit a small set of exact shapes. On a hospital server that may only have an integrated GPU - or only a CPU - that accelerator time is the system’s scarcest resource, and a question the parser can answer is capacity returned to the questions it cannot. Part 7 uses a different order: route structured intent, link one source scoped…]]></summary>
+        <author>
+            <name>kevin_gatimu</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Nginx package update for PHP apps on Azure App Service]]></title>
+        <id>https://azure.github.io/AppService/2026/10/09/php-nginx-update.html</id>
+        <link href="https://azure.github.io/AppService/2026/10/09/php-nginx-update.html"/>
+        <updated>2026-10-09T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[We’re updating the Nginx packages used in Azure App Service PHP images, moving from the deprecated deb.sury.org repository to the official nginx.org repository. This follows the upstream repository changes.]]></summary>
+        <author>
+            <name>Azure App Service</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Open-source databases in the AI era: Meet Microsoft at All Things Open]]></title>
         <id>https://opensource.microsoft.com/blog/?p=98820</id>
@@ -69,6 +90,18 @@ The post Faster by Design: Performance engineering in the Microsoft JDBC Driver 
 With General Availability, Anyscale on Azure is ready for production workloads and comes with the commitments enterprises need. It is backed by a service level agreement and production support from both Microsoft and Anyscale. Customer workloads, datasets, and model artifacts run in their Azure subscription, while Anyscale operates the control plane in its own Azure tenant. Customers can use their Azure identity and governance controls for the resources in their subscription. Xoople is already using Anyscale on Azure to turn planetary-scale sate…]]></summary>
         <author>
             <name>bobmital</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Bulk changing blob tiers using Azure Storage Actions]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AzurePaaSBlog/bulk-changing-blob-tiers-using-azure-storage-actions/4559342</id>
+        <link href="https://techcommunity.microsoft.com/blog/AzurePaaSBlog/bulk-changing-blob-tiers-using-azure-storage-actions/4559342"/>
+        <updated>2026-10-07T08:13:05.000Z</updated>
+        <summary type="html"><![CDATA[Managing blob access tiers at scale can be challenging, especially when a storage account contains a large number of blobs spread across containers and virtual directories. Traditionally, changing blob tiers in bulk may require scripts, automation runbooks, or custom tooling to iterate through each blob and update its access tier individually.
+Azure Storage Actions provide a no-code way to perform bulk operations on blobs based on defined conditions. This makes it easier to move blobs between tiers such as Hot, Cool, Cold, or Archive without writing custom scripts.
+In this blog, we present a no-code solution for bulk changing blob access tiers using Azure Storage Actions. This approach is especially useful when dealing with a large number of blobs, eliminating the need for custom scripts. …]]></summary>
+        <author>
+            <name>hqaffesha</name>
         </author>
     </entry>
     <entry>
@@ -7852,155 +7885,6 @@ The post PyCon US 2026 appeared first on Microsoft for Python Developers Blog.]]
         <summary type="html"><![CDATA[Author: Roberto Cervantes Rivero - Senior Product Manager]]></summary>
         <author>
             <name>robece-msft</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Why your database schema belongs in Git]]></title>
-        <id>https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Why-your-database-schema-belongs-in-Git/ba-p/5179521</id>
-        <link href="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Why-your-database-schema-belongs-in-Git/ba-p/5179521"/>
-        <updated>2026-05-13T16:41:11.000Z</updated>
-        <summary type="html"><![CDATA[Author: Iqra Shaikh - Product Manager 2]]></summary>
-        <author>
-            <name>iqrashaikh</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Azure Arc | On-prem + Multi-cloud Management]]></title>
-        <id>https://techcommunity.microsoft.com/blog/MicrosoftMechanicsBlog/azure-arc--on-prem--multi-cloud-management/4519017</id>
-        <link href="https://techcommunity.microsoft.com/blog/MicrosoftMechanicsBlog/azure-arc--on-prem--multi-cloud-management/4519017"/>
-        <updated>2026-05-13T14:32:38.000Z</updated>
-        <summary type="html"><![CDATA[In this video, we explore how Azure Arc simplifies hybrid and multi-cloud operations by providing a single, consistent control plane for managing your entire infrastructure across Linux and Windows, on-prem, in Azure, or in any cloud.
-Once connected, you can patch Windows and Linux together with Azure Update Manager, enforce CIS benchmarks and Azure Security Baselines through Azure Policy, and pull consistent inventory, tags, and RBAC across your whole estate.
-
-Auto-recover unbootable Windows Server 2025 machines with Quick Machine Recovery, audit and configure WinRE using built-in Azure Policy. Run your virtual machines as Azure Virtual Desktop session hosts on Nutanix, VMware, Hyper-V, or using physical Windows hardware.
-Satya Vel, Azure Arc Principal Group PDM Manager, shares how to mak…]]></summary>
-        <author>
-            <name>Zachary-Cavanell</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[General Availability of SharePoint Framework 1.23 – Advancing the modern developer experience]]></title>
-        <id>https://devblogs.microsoft.com/microsoft365dev/?p=25624</id>
-        <link href="https://devblogs.microsoft.com/microsoft365dev/general-availability-of-sharepoint-framework-1-23-advancing-the-modern-developer-experience/"/>
-        <updated>2026-05-13T12:55:39.000Z</updated>
-        <summary type="html"><![CDATA[We are excited to announce general availability for the SharePoint Framework 1.23. We are rolling out new features in extensions, preview of new CLI and addressing known npm audit issues.
-The post General Availability of SharePoint Framework 1.23 – Advancing the modern developer experience appeared first on Microsoft 365 Developer Blog.]]></summary>
-        <author>
-            <name>Vesa Juvonen</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Introducing Azure Container Apps Express!]]></title>
-        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/introducing-azure-container-apps-express/4519150</id>
-        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/introducing-azure-container-apps-express/4519150"/>
-        <updated>2026-05-13T10:58:06.000Z</updated>
-        <summary type="html"><![CDATA[Three years ago, a 15-second cold start was industry-leading. Today, developers and AI agents expect sub-second. The speed bar has moved, and the tooling needs to move with it.
-After running Azure Container Apps for years, we've learned something important: for most developers, the ACA environment is an unnecessary construct. It adds provisioning time, configuration surface, and cognitive overhead — when all you really want is to run your app with scaling, networking, and operations handled for you.
-At the same time, a new class of workloads has emerged. Agent-first platforms — systems where AI agents deploy endpoints on demand, spin up tool-use APIs, and tear them down when work is done — demand an even more radical focus on speed and simplicity. Every second of provisioning delay is wast…]]></summary>
-        <author>
-            <name>simonjj</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Building the Solution Teams Need to Secure AI Against Prompt Injection]]></title>
-        <id>https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/building-the-solution-teams-need-to-secure-ai-against-prompt-injection/4514198</id>
-        <link href="https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/building-the-solution-teams-need-to-secure-ai-against-prompt-injection/4514198"/>
-        <updated>2026-05-13T08:00:00.000Z</updated>
-        <summary type="html"><![CDATA[As artificial intelligence continues to evolve, teams are prioritising rapid advancements and deployment of applications while often overlooking security considerations. Emerging threats such as prompt injection remain poorly understood, and this is putting systems, users, and infrastructure at serious risk.
-Much of the expertise required to mitigate these risks is currently fragmented and inaccessible, concentrated among a small group of cybersecurity specialists. Meanwhile, developers, under pressure to ship quickly, often lack both the tools and frameworks needed to systematically test their AI systems for vulnerabilities.
-This disconnect is creating a significant gap between the development and security assurance of AI applications.
-To address this gap, we developed a unified Prompt In…]]></summary>
-        <author>
-            <name>teo-montero</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Agent 365 | Your Security & Compliance Controls]]></title>
-        <id>https://techcommunity.microsoft.com/blog/MicrosoftMechanicsBlog/agent-365--your-security--compliance-controls/4517882</id>
-        <link href="https://techcommunity.microsoft.com/blog/MicrosoftMechanicsBlog/agent-365--your-security--compliance-controls/4517882"/>
-        <updated>2026-05-13T06:21:15.000Z</updated>
-        <summary type="html"><![CDATA[Block agent access to labeled files at runtime, stop sensitive data from leaving in agent-drafted emails, and catch agents that cross conduct lines using the same Microsoft Purview controls you already run for users. Map every risky agent action in Insider Risk Management, drill into Activity Explorer for interaction-level detail, and pull regulator-ready forensics from Purview Audit. 
-
-Shilpa Ranganathan, Microsoft Purview Partner Group Squad Leader, shares how IT and data security teams can govern agent behavior on a single Agent 365 control plane built into the Microsoft tools that you're already using today. 
-Block labeled files from agent access in real time. 
-
-No policy bypass, no data leak. See how it works using Microsoft Purview as part of Agent 365.
-Same policies, now extended to…]]></summary>
-        <author>
-            <name>Zachary-Cavanell</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Stop Hallucinating, Start Evaluating — A Tour of AgentEval]]></title>
-        <id>https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/stop-hallucinating-start-evaluating-%E2%80%94-a-tour-of-agenteval/4519068</id>
-        <link href="https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/stop-hallucinating-start-evaluating-%E2%80%94-a-tour-of-agenteval/4519068"/>
-        <updated>2026-05-13T06:12:50.000Z</updated>
-        <summary type="html"><![CDATA[Your AI agent works great… until it doesn't. AgentEval catches the failures before your users do.
-Your AI agent works great… until it doesn't. AgentEval catches the failures before your users do.
-The biggest problem for Agentic Engineers
-Shipping an AI agent feels great — until you hit the wall every Agentic Engineer eventually hits: non-determinism. In September 2025 OpenAI researchers published "Why Language Models Hallucinate" (Kalai, Nachum, Vempala, Zhang). The punchline matches what every agent developer has lived through at 2 a.m.: even the best models confidently produce plausible falsehoods. So how do we — .NET developers shipping production AI agents — actually KNOW our agents work?
-Four questions a traditional unit test cannot answer:
-
-Did the agent call the right tools, in the …]]></summary>
-        <author>
-            <name>joslat</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Give Your AI Agent Eyes: Browser-Harness Meets Playwright Workspaces Remote Browsers]]></title>
-        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/give-your-ai-agent-eyes-browser-harness-meets-playwright-workspaces-remote-brows/4518419</id>
-        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/give-your-ai-agent-eyes-browser-harness-meets-playwright-workspaces-remote-brows/4518419"/>
-        <updated>2026-05-13T06:00:21.000Z</updated>
-        <summary type="html"><![CDATA[What happens when you hand a coding agent a real browser — not a mock, not an API wrapper, but a full Chromium instance running in the cloud?
-It fills form for you. It does research for you. It navigates JavaScript-heavy SPAs that would make any REST-based scraper weep. And it does it across 10+ parallel sessions without touching your local machine.
-This is the story of combining two tools that were built for different worlds — and discovering they're a perfect fit.
-The Problem
-Today's coding agents — Codex, Claude Code, Copilot — are extraordinary at reading and writing code. But ask one to product availability on an web site, and it hits a wall. Modern websites are JavaScript-rendered, authentication-gated, geolocation-aware, and hostile to simple HTTP requests.
-The agent needs a real br…]]></summary>
-        <author>
-            <name>NandiniMuralidharan</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Fabric April 2026 Feature Summary]]></title>
-        <id>https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Fabric-April-2026-Feature-Summary/ba-p/5176490</id>
-        <link href="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Fabric-April-2026-Feature-Summary/ba-p/5176490"/>
-        <updated>2026-05-12T22:19:20.000Z</updated>
-        <summary type="html"><![CDATA[Author: Katie Murray - Senior Program Manager]]></summary>
-        <author>
-            <name>kamurray</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Build Smarter, Simpler IoT Messaging with Azure Event Grid MQTT Broker]]></title>
-        <id>https://techcommunity.microsoft.com/blog/MessagingonAzureBlog/build-smarter-simpler-iot-messaging-with-azure-event-grid-mqtt-broker/4518672</id>
-        <link href="https://techcommunity.microsoft.com/blog/MessagingonAzureBlog/build-smarter-simpler-iot-messaging-with-azure-event-grid-mqtt-broker/4518672"/>
-        <updated>2026-05-12T21:39:49.000Z</updated>
-        <summary type="html"><![CDATA[Why this matters for modern IoT solutions
-As IoT solutions grow, teams need messaging that is reliable, scalable, and simple enough to operate across devices, apps, and cloud services. Azure Event Grid MQTT broker helps organizations connect devices and applications using standard MQTT patterns while also integrating with Azure services for downstream processing and automation. The result is a managed, cloud-native approach to messaging that supports both technical flexibility and business agility.
-With support for MQTT v3.1.1 and MQTT v5, Azure Event Grid MQTT broker enables device-to-device, device-to-cloud, and server-to-device communication patterns. It is especially useful in scenarios where customers want to ingest telemetry, send commands, broadcast alerts, and route data into analy…]]></summary>
-        <author>
-            <name>Connected-Seth</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Optimize your storage costs with OneLake storage tiers and lifecycle management (Preview)]]></title>
-        <id>https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Optimize-your-storage-costs-with-OneLake-storage-tiers-and/ba-p/5179295</id>
-        <link href="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Optimize-your-storage-costs-with-OneLake-storage-tiers-and/ba-p/5179295"/>
-        <updated>2026-05-12T17:30:00.000Z</updated>
-        <summary type="html"><![CDATA[Author: Matt Basile - Senior Product Manager]]></summary>
-        <author>
-            <name>Mabasile_MSFT</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Configurable Data Retention in Microsoft Fabric Warehouse (Preview)]]></title>
-        <id>https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Configurable-Data-Retention-in-Microsoft-Fabric-Warehouse/ba-p/5181211</id>
-        <link href="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Configurable-Data-Retention-in-Microsoft-Fabric-Warehouse/ba-p/5181211"/>
-        <updated>2026-05-12T17:26:00.000Z</updated>
-        <summary type="html"><![CDATA[Author: Ambika Jagadish, Senior Product Manager]]></summary>
-        <author>
-            <name>ajagadish</name>
         </author>
     </entry>
 </feed>
