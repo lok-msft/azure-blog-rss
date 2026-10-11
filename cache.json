@@ -1624,26 +1624,6 @@
           "wordCount": null,
           "title": "Data Agent Now Supports Eventhouse Functions, Materialized Views, and Shortcuts (Preview)",
           "imageUrl": null
-        },
-        {
-          "id": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Service-Principal-Support-for-Data-Agents-in-Fabric-Preview/ba-p/5181634",
-          "author": "AmirJafari",
-          "description": "Amir Jafari - Principal Product ManagerJoanne Wong - Senior Product Marketing Manager",
-          "link": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Service-Principal-Support-for-Data-Agents-in-Fabric-Preview/ba-p/5181634",
-          "publishedOn": "2026-05-13T18:45:00.000Z",
-          "wordCount": null,
-          "title": "Service Principal Support for Data Agents in Fabric (Preview)",
-          "imageUrl": null
-        },
-        {
-          "id": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Fabric-Eventstream-can-now-publish-Business-Events-Preview/ba-p/5180050",
-          "author": "robece-msft",
-          "description": "Author: Roberto Cervantes Rivero - Senior Product Manager",
-          "link": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Fabric-Eventstream-can-now-publish-Business-Events-Preview/ba-p/5180050",
-          "publishedOn": "2026-05-13T17:00:00.000Z",
-          "wordCount": null,
-          "title": "Fabric Eventstream can now publish Business Events (Preview)",
-          "imageUrl": null
         }
       ]
     },
@@ -1850,16 +1830,6 @@
           "publishedOn": "2026-05-18T00:00:00.000Z",
           "wordCount": 2151,
           "title": "Platform Improvements for Python AI Apps on Azure App Service",
-          "imageUrl": "https://azure.github.io/AppService/assets/images/icon.png"
-        },
-        {
-          "id": "https://azure.github.io/AppService/2026/05/14/fastapi-improvements.html",
-          "author": null,
-          "description": "Deploying FastAPI apps to Azure App Service for Linux is now simpler.",
-          "link": "https://azure.github.io/AppService/2026/05/14/fastapi-improvements.html",
-          "publishedOn": "2026-05-14T00:00:00.000Z",
-          "wordCount": 812,
-          "title": "Simplifying FastAPI Deployments on Azure App Service for Linux",
           "imageUrl": "https://azure.github.io/AppService/assets/images/icon.png"
         }
       ]
@@ -2493,6 +2463,16 @@
       "feedUrl": "https://techcommunity.microsoft.com/t5/s/plugins/custom/microsoft/o365/custom-blog-rss?board=AppsonAzureBlog&size=100",
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
+        {
+          "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/qwen3-8-27b-on-a-2-h100-azure-spot-vm-does-it-pay-off/4563387",
+          "author": "Wuyi_Weng",
+          "description": "For three hours on the morning of October 9, a single H100 in Azure served 1,434 requests to Qwen3.8-27B: 168.7 million input tokens in, 1.27 million output tokens out. At a public list price for this model that day ($0.425 per million input tokens, $0.085 per million cached input tokens and $2.55 per million output tokens), those tokens are worth $24.35. The three hours of VM time cost $4.65 at that region's Spot price; the dashboard below counts them at a round $2 an hour.\nThis post is the guide I'd have wanted before I started: how to run Qwen3.8-27B on an Azure GPU VM, how to tune it, and how to monitor it end to end, with metrics, logs and traces, using Application Insights and Grafana. The answer to the title comes at the end. The dashboard that measured it comes from the monitoring …",
+          "link": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/qwen3-8-27b-on-a-2-h100-azure-spot-vm-does-it-pay-off/4563387",
+          "publishedOn": "2026-10-10T07:27:28.000Z",
+          "wordCount": null,
+          "title": "Qwen3.8-27B on a $2 H100 Azure Spot VM: does it pay off?",
+          "imageUrl": null
+        },
         {
           "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/anyscale-on-azure-is-now-generally-available/4562547",
           "author": "bobmital",
@@ -3572,26 +3552,6 @@
           "wordCount": 5974,
           "title": "Simplifying FastAPI Deployments on Azure App Service for Linux",
           "imageUrl": null
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/platform-improvements-for-python-ai-apps-on-azure-app-service/4519620",
-          "author": "SurenderSinghMalik",
-          "description": "Overview\nAzure App Service (Linux) is a fully managed PaaS offering that supports a broad range of languages, including Python, Node.js, .NET, PHP, and Java. Developers can push source code or deploy a pre-built artifact; the platform handles the rest, including dependency installation, application containerization, and running the application at cloud scale. \nMore customers are building intelligent applications using Azure AI Foundry and other AI services, and Python has become a language of choice for these workloads. The performance and reliability of the Python deployment pipeline directly shape the developer's experience on the platform, so we looked across the deployment path for opportunities to reduce latency and improve reliability. The first set of changes has reduced Python depl…",
-          "link": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/platform-improvements-for-python-ai-apps-on-azure-app-service/4519620",
-          "publishedOn": "2026-05-14T07:44:37.000Z",
-          "wordCount": 10657,
-          "title": "Platform Improvements for Python AI Apps on Azure App Service",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTE5NjIwLUVnMThMRw?revision=2"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/control-runtime-patch-updates-with-platform-release-channel-on-azure-app-service/4519570",
-          "author": "TulikaC",
-          "description": "Azure App Service for Linux is introducing Platform Release Channel, a new setting that gives you more control over when runtime patch updates are applied to your app.\nWith this feature, you can choose how quickly your app moves to newly rolled-out runtime patches. This helps teams balance two common needs: staying current with the latest security and platform updates, while also having enough time to validate changes before adopting them.\nWhy this matters\nRuntime patch updates are important because they include fixes, security updates, and platform improvements. However, some production applications need time to validate these updates before moving to the newest available patch.\nPlatform Release Channel gives you that flexibility.\nYou can choose to stay close to the latest patch updates, …",
-          "link": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/control-runtime-patch-updates-with-platform-release-channel-on-azure-app-service/4519570",
-          "publishedOn": "2026-05-14T05:31:26.000Z",
-          "wordCount": 6720,
-          "title": "Control runtime patch updates with Platform Release Channel on Azure App Service for Linux",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTE5NTcwLTNVaFpTVg?revision=1"
         }
       ]
     },
@@ -4055,16 +4015,6 @@
           "wordCount": 5175,
           "title": "Azure Monitor Health Model - API Refresh",
           "imageUrl": null
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/public-preview-update-azure-copilot-observability-agent/4517871",
-          "author": "EfratNauerman",
-          "description": "Modern cloud applications generate massive amounts of telemetry - metrics, logs, traces, alerts, and platform signals.\nYet whether you're asking questions about your observability data or responding when things go wrong, discovering insights and root causes requires a deep understanding of the application, the observability signals it emits, and the tools, while your business and customers are impacted.\nThe Observability agent is designed to be your monitoring companion across the full observability lifecycle, enabling you to interact via chat to better understand your observability data. Our aspiration is to support the full range of activities - from onboarding and detection through triage and root cause analysis - to significantly reduce human toil and customer downtime.\nToday, the agen…",
-          "link": "https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/public-preview-update-azure-copilot-observability-agent/4517871",
-          "publishedOn": "2026-05-14T07:00:56.000Z",
-          "wordCount": 7655,
-          "title": "Public Preview Update: Azure Copilot Observability Agent",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTE3ODcxLVZUR1hlMg?revision=9"
         }
       ]
     },
@@ -5180,16 +5130,6 @@
           "wordCount": null,
           "title": "Microsoft Excel Beginners Tutorial (2026)",
           "imageUrl": null
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/MicrosoftMechanicsBlog/work-iq--data-context-skills--tools-for-copilot-and-your-agents/4519554",
-          "author": "Zachary-Cavanell",
-          "description": "Pull context from SharePoint, OneDrive, Teams, email, and meetings — all through Work IQ. Draft Word documents that carry your existing sensitivity labels, and resolve calendar conflicts in Outlook. Run multi-step Copilot Cowork workflows that generate files, schedule meetings, and send status updates from a single prompt. \nExtend the same knowledge layer to ServiceNow, CRMs, and other non-Microsoft systems with API and MCP Server connectors in the Microsoft 365 admin center, or build your own agents in code against the Work IQ API. \nJeremy Chapman, Microsoft 365 Director, shares how data, context, and skills & tools combine into a single grounding layer for Copilot and your custom agents.\nSkip the manual prompt scaffolding. \n\nWork IQ delivers data, context, skills & tools as the built-in …",
-          "link": "https://techcommunity.microsoft.com/blog/MicrosoftMechanicsBlog/work-iq--data-context-skills--tools-for-copilot-and-your-agents/4519554",
-          "publishedOn": "2026-05-14T12:00:00.000Z",
-          "wordCount": 10863,
-          "title": "Work IQ | Data, Context, Skills & Tools for Copilot and Your Agents",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTE5NTU0LTRja3dIOA?revision=1"
         }
       ]
     },
@@ -5497,18 +5437,7 @@
       "title": "Microsoft for Python Developers Blog",
       "feedUrl": "https://devblogs.microsoft.com/python/feed/",
       "siteUrl": "https://devblogs.microsoft.com/python/",
-      "articles": [
-        {
-          "id": "https://devblogs.microsoft.com/python/?p=10321",
-          "author": "Vedha Ranganathan",
-          "description": "PyCon US 2026\nThe post PyCon US 2026 appeared first on Microsoft for Python Developers Blog.",
-          "link": "https://devblogs.microsoft.com/python/pycon-us-2026/",
-          "publishedOn": "2026-05-14T00:18:13.000Z",
-          "wordCount": 7014,
-          "title": "PyCon US 2026",
-          "imageUrl": null
-        }
-      ]
+      "articles": []
     },
     {
       "title": "Microsoft for Java Developers",
@@ -5910,16 +5839,6 @@
           "wordCount": 5199,
           "title": "From open source to agentic systems: Microsoft at Open Source Summit North America 2026",
           "imageUrl": "https://opensource.microsoft.com/blog/wp-content/uploads/2026/05/Open-Source-Summit-Blog-Banner.png"
-        },
-        {
-          "id": "https://opensource.microsoft.com/blog/2026/05/14/conductor-deterministic-orchestration-for-multi-agent-ai-workflows/",
-          "author": "Jason Robert",
-          "description": "Conductor is an open-source CLI (MIT license, Microsoft org) that takes a different approach: you define your multi-agent workflows in YAML, and the routing between agents is deterministic. Jinja2 templates and expression evaluation handle conditions and branching. The orchestration layer consumes zero tokens. The structure is fixed at definition time—and that's the point.\nThe post Conductor: Deterministic orchestration for multi-agent AI workflows appeared first on Microsoft Open Source Blog.",
-          "link": "https://opensource.microsoft.com/blog/2026/05/14/conductor-deterministic-orchestration-for-multi-agent-ai-workflows/",
-          "publishedOn": "2026-05-14T16:00:00.000Z",
-          "wordCount": 4615,
-          "title": "Conductor: Deterministic orchestration for multi-agent AI workflows",
-          "imageUrl": "https://opensource.microsoft.com/blog/wp-content/uploads/2026/03/CLO25b-Developer-RemoteHome-1-scaled.jpg"
         }
       ]
     },

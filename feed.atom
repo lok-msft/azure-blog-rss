@@ -2,10 +2,21 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2026-10-10T04:44:14.720Z</updated>
+    <updated>2026-10-11T04:29:28.285Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Qwen3.8-27B on a $2 H100 Azure Spot VM: does it pay off?]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/qwen3-8-27b-on-a-2-h100-azure-spot-vm-does-it-pay-off/4563387</id>
+        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/qwen3-8-27b-on-a-2-h100-azure-spot-vm-does-it-pay-off/4563387"/>
+        <updated>2026-10-10T07:27:28.000Z</updated>
+        <summary type="html"><![CDATA[For three hours on the morning of October 9, a single H100 in Azure served 1,434 requests to Qwen3.8-27B: 168.7 million input tokens in, 1.27 million output tokens out. At a public list price for this model that day ($0.425 per million input tokens, $0.085 per million cached input tokens and $2.55 per million output tokens), those tokens are worth $24.35. The three hours of VM time cost $4.65 at that region's Spot price; the dashboard below counts them at a round $2 an hour.
+This post is the guide I'd have wanted before I started: how to run Qwen3.8-27B on an Azure GPU VM, how to tune it, and how to monitor it end to end, with metrics, logs and traces, using Application Insights and Grafana. The answer to the title comes at the end. The dashboard that measured it comes from the monitoring …]]></summary>
+        <author>
+            <name>Wuyi_Weng</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Run Deterministic SQL Before Asking a Local LLM to Plan]]></title>
         <id>https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/run-deterministic-sql-before-asking-a-local-llm-to-plan/4558418</id>
@@ -7778,113 +7789,6 @@ The post Governance at the Speed of Agents: Microsoft Agent Framework and Agent 
 The post May Patches for Azure DevOps Server appeared first on Azure DevOps Blog.]]></summary>
         <author>
             <name>Gloridel Morales</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Conductor: Deterministic orchestration for multi-agent AI workflows]]></title>
-        <id>https://opensource.microsoft.com/blog/2026/05/14/conductor-deterministic-orchestration-for-multi-agent-ai-workflows/</id>
-        <link href="https://opensource.microsoft.com/blog/2026/05/14/conductor-deterministic-orchestration-for-multi-agent-ai-workflows/"/>
-        <updated>2026-05-14T16:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Conductor is an open-source CLI (MIT license, Microsoft org) that takes a different approach: you define your multi-agent workflows in YAML, and the routing between agents is deterministic. Jinja2 templates and expression evaluation handle conditions and branching. The orchestration layer consumes zero tokens. The structure is fixed at definition time—and that's the point.
-The post Conductor: Deterministic orchestration for multi-agent AI workflows appeared first on Microsoft Open Source Blog.]]></summary>
-        <author>
-            <name>Jason Robert</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Work IQ | Data, Context, Skills & Tools for Copilot and Your Agents]]></title>
-        <id>https://techcommunity.microsoft.com/blog/MicrosoftMechanicsBlog/work-iq--data-context-skills--tools-for-copilot-and-your-agents/4519554</id>
-        <link href="https://techcommunity.microsoft.com/blog/MicrosoftMechanicsBlog/work-iq--data-context-skills--tools-for-copilot-and-your-agents/4519554"/>
-        <updated>2026-05-14T12:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Pull context from SharePoint, OneDrive, Teams, email, and meetings — all through Work IQ. Draft Word documents that carry your existing sensitivity labels, and resolve calendar conflicts in Outlook. Run multi-step Copilot Cowork workflows that generate files, schedule meetings, and send status updates from a single prompt. 
-Extend the same knowledge layer to ServiceNow, CRMs, and other non-Microsoft systems with API and MCP Server connectors in the Microsoft 365 admin center, or build your own agents in code against the Work IQ API. 
-Jeremy Chapman, Microsoft 365 Director, shares how data, context, and skills & tools combine into a single grounding layer for Copilot and your custom agents.
-Skip the manual prompt scaffolding. 
-
-Work IQ delivers data, context, skills & tools as the built-in …]]></summary>
-        <author>
-            <name>Zachary-Cavanell</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Platform Improvements for Python AI Apps on Azure App Service]]></title>
-        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/platform-improvements-for-python-ai-apps-on-azure-app-service/4519620</id>
-        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/platform-improvements-for-python-ai-apps-on-azure-app-service/4519620"/>
-        <updated>2026-05-14T07:44:37.000Z</updated>
-        <summary type="html"><![CDATA[Overview
-Azure App Service (Linux) is a fully managed PaaS offering that supports a broad range of languages, including Python, Node.js, .NET, PHP, and Java. Developers can push source code or deploy a pre-built artifact; the platform handles the rest, including dependency installation, application containerization, and running the application at cloud scale. 
-More customers are building intelligent applications using Azure AI Foundry and other AI services, and Python has become a language of choice for these workloads. The performance and reliability of the Python deployment pipeline directly shape the developer's experience on the platform, so we looked across the deployment path for opportunities to reduce latency and improve reliability. The first set of changes has reduced Python depl…]]></summary>
-        <author>
-            <name>SurenderSinghMalik</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Public Preview Update: Azure Copilot Observability Agent]]></title>
-        <id>https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/public-preview-update-azure-copilot-observability-agent/4517871</id>
-        <link href="https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/public-preview-update-azure-copilot-observability-agent/4517871"/>
-        <updated>2026-05-14T07:00:56.000Z</updated>
-        <summary type="html"><![CDATA[Modern cloud applications generate massive amounts of telemetry - metrics, logs, traces, alerts, and platform signals.
-Yet whether you're asking questions about your observability data or responding when things go wrong, discovering insights and root causes requires a deep understanding of the application, the observability signals it emits, and the tools, while your business and customers are impacted.
-The Observability agent is designed to be your monitoring companion across the full observability lifecycle, enabling you to interact via chat to better understand your observability data. Our aspiration is to support the full range of activities - from onboarding and detection through triage and root cause analysis - to significantly reduce human toil and customer downtime.
-Today, the agen…]]></summary>
-        <author>
-            <name>EfratNauerman</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Control runtime patch updates with Platform Release Channel on Azure App Service for Linux]]></title>
-        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/control-runtime-patch-updates-with-platform-release-channel-on-azure-app-service/4519570</id>
-        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/control-runtime-patch-updates-with-platform-release-channel-on-azure-app-service/4519570"/>
-        <updated>2026-05-14T05:31:26.000Z</updated>
-        <summary type="html"><![CDATA[Azure App Service for Linux is introducing Platform Release Channel, a new setting that gives you more control over when runtime patch updates are applied to your app.
-With this feature, you can choose how quickly your app moves to newly rolled-out runtime patches. This helps teams balance two common needs: staying current with the latest security and platform updates, while also having enough time to validate changes before adopting them.
-Why this matters
-Runtime patch updates are important because they include fixes, security updates, and platform improvements. However, some production applications need time to validate these updates before moving to the newest available patch.
-Platform Release Channel gives you that flexibility.
-You can choose to stay close to the latest patch updates, …]]></summary>
-        <author>
-            <name>TulikaC</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[PyCon US 2026]]></title>
-        <id>https://devblogs.microsoft.com/python/?p=10321</id>
-        <link href="https://devblogs.microsoft.com/python/pycon-us-2026/"/>
-        <updated>2026-05-14T00:18:13.000Z</updated>
-        <summary type="html"><![CDATA[PyCon US 2026
-The post PyCon US 2026 appeared first on Microsoft for Python Developers Blog.]]></summary>
-        <author>
-            <name>Vedha Ranganathan</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Simplifying FastAPI Deployments on Azure App Service for Linux]]></title>
-        <id>https://azure.github.io/AppService/2026/05/14/fastapi-improvements.html</id>
-        <link href="https://azure.github.io/AppService/2026/05/14/fastapi-improvements.html"/>
-        <updated>2026-05-14T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Deploying FastAPI apps to Azure App Service for Linux is now simpler.]]></summary>
-        <author>
-            <name>Azure App Service</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Service Principal Support for Data Agents in Fabric (Preview)]]></title>
-        <id>https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Service-Principal-Support-for-Data-Agents-in-Fabric-Preview/ba-p/5181634</id>
-        <link href="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Service-Principal-Support-for-Data-Agents-in-Fabric-Preview/ba-p/5181634"/>
-        <updated>2026-05-13T18:45:00.000Z</updated>
-        <summary type="html"><![CDATA[Amir Jafari - Principal Product ManagerJoanne Wong - Senior Product Marketing Manager]]></summary>
-        <author>
-            <name>AmirJafari</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Fabric Eventstream can now publish Business Events (Preview)]]></title>
-        <id>https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Fabric-Eventstream-can-now-publish-Business-Events-Preview/ba-p/5180050</id>
-        <link href="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Fabric-Eventstream-can-now-publish-Business-Events-Preview/ba-p/5180050"/>
-        <updated>2026-05-13T17:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Author: Roberto Cervantes Rivero - Senior Product Manager]]></summary>
-        <author>
-            <name>robece-msft</name>
         </author>
     </entry>
 </feed>
