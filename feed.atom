@@ -2,10 +2,20 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2026-10-11T04:29:28.285Z</updated>
+    <updated>2026-10-12T04:44:55.055Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[From metrics to answers: Grafana dashboards for Azure App Service]]></title>
+        <id>https://azure.github.io/AppService/2026/10/12/grafana-dashboards-for-azure-app-service.html</id>
+        <link href="https://azure.github.io/AppService/2026/10/12/grafana-dashboards-for-azure-app-service.html"/>
+        <updated>2026-10-12T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[When your web application slows down, a chart is only the beginning. You need to understand what changed, where to investigate, and which diagnostic tools can help.]]></summary>
+        <author>
+            <name>Azure App Service</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Qwen3.8-27B on a $2 H100 Azure Spot VM: does it pay off?]]></title>
         <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/qwen3-8-27b-on-a-2-h100-azure-spot-vm-does-it-pay-off/4563387</id>
@@ -7653,142 +7663,6 @@ Azure operates one of the largest physical networks on the planet. That scale sh
 Hundreds of thousands of kilometers of outside-plant fiber and more than a million optical devices connect datacenters, regions, and Microsoft's global services. Every…]]></summary>
         <author>
             <name>dbillor</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[New SSH helper aliases for Python apps on Azure App Service for Linux]]></title>
-        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/new-ssh-helper-aliases-for-python-apps-on-azure-app-service-for-linux/4520111</id>
-        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/new-ssh-helper-aliases-for-python-apps-on-azure-app-service-for-linux/4520111"/>
-        <updated>2026-05-15T10:37:16.000Z</updated>
-        <summary type="html"><![CDATA[Troubleshooting a running application often starts with SSH. To make that experience simpler for Python apps on Azure App Service for Linux, we have added new SSH helper aliases for common app, log, networking, and Azure AI Foundry diagnostics.
-When you SSH into your application, you will now see two helper commands:
-
-View available SSH helpers with apphelp
-Run apphelp to see the full list of available aliases.
-
-These helpers are grouped by common tasks, including app information, logs, diagnostics, testing, and Azure AI Foundry connectivity.
-For example:
-applogs
-Tails your application logs directly from the SSH session.
-appcurl
-Tests your application locally using localhost:$PORT, which is useful when checking whether the app is listening correctly inside the container.
-Other useful helpe…]]></summary>
-        <author>
-            <name>TulikaC</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Simplifying FastAPI Deployments on Azure App Service for Linux]]></title>
-        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/simplifying-fastapi-deployments-on-azure-app-service-for-linux/4520103</id>
-        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/simplifying-fastapi-deployments-on-azure-app-service-for-linux/4520103"/>
-        <updated>2026-05-15T10:25:16.000Z</updated>
-        <summary type="html"><![CDATA[Deploying FastAPI apps to Azure App Service for Linux is now simpler.
-Previously, when you deployed a FastAPI application, you needed to configure a custom startup command so the app could run correctly with an ASGI server. This added an extra step to the deployment flow and could create friction, especially when getting started with FastAPI on App Service.
-We have now added built-in detection logic that identifies FastAPI applications automatically and configures the appropriate startup behavior for you.
-What changed
-When you deploy a Python app, App Service now scans common entry point files such as:
-main.py, app.py, application.py, server.py, asgi.py, api.py, index.py, and run.py
-If one of these files imports FastAPI using from fastapi or import fastapi, App Service detects the app as a FastAPI application.
-To avoid false positives, files that also import Flask are skipped during FastAPI detection.
-How your app is started
-When a FastAPI app is detected, App Service automatically starts the application using Gunicorn with the Uvicorn worker class:
-gunicorn -k uvicorn_worker.UvicornWorker
-This provides the ASGI support required by FastAPI applications.
-Framework detection priority
-If multiple framework indicators are present, App Service uses the following priority order:
-Django > FastAPI > Flask
-Django continues to take precedence when a wsgi.py file is found in a subdirectory.
-What this means for you
-When you deploy a FastAPI app to Azure App Service for Linux, you no longer need to configure a custom startup command in the supported runtime flow. Oryx detects the FastAPI app and configures the startup behavior automatically.
-This removes an extra setup step and makes it easier to get your FastAPI app running on App Service.
-Availability
-This improvement is currently enabled for Python 3.14 and later. Support for additional Python versions will be enabled in an upcoming rollout.
-For more details on deploying Python apps to App Service, see the Azure App Service Python quickstart documentation.]]></summary>
-        <author>
-            <name>TulikaC</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Six Coding Agents, One Production System: A Field Guide to AgenticOps with AKS-Lab-GitHubCopilot]]></title>
-        <id>https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/six-coding-agents-one-production-system-a-field-guide-to-agenticops-with-aks-lab/4519916</id>
-        <link href="https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/six-coding-agents-one-production-system-a-field-guide-to-agenticops-with-aks-lab/4519916"/>
-        <updated>2026-05-15T07:00:00.000Z</updated>
-        <summary type="html"><![CDATA[The shift: from "AI helps me code" to "AI authors my repo"
-For two years we've been talking about GitHub Copilot as an inline pair programmer — a clever autocomplete that lives in your editor. That framing is officially out of date.
-The new reality is agentic delivery: a team of named, scoped AI agents owns slices of your repository, each with its own tools, skills, and refusal rules. They produce pull requests. They run tests. They roll deployments. And when one finishes its turn, it hands off to the next.
-The microsoft/AKS-Lab-GitHubCopilot's five labs you ship ZavaShop — a multi-agent retail supply-chain control plane running on AKS + Azure Container Apps — and along the way you internalize an operating model you can carry to any project. Everything in the repo (specs, agents, MCP serve…]]></summary>
-        <author>
-            <name>kinfey</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Custom authorization for API for GraphQL in Microsoft Fabric (Preview)]]></title>
-        <id>https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Custom-authorization-for-API-for-GraphQL-in-Microsoft-Fabric/ba-p/5182352</id>
-        <link href="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Custom-authorization-for-API-for-GraphQL-in-Microsoft-Fabric/ba-p/5182352"/>
-        <updated>2026-05-14T21:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Author: Sunitha Muthukrishna - Principal Product Manager]]></summary>
-        <author>
-            <name>mk_sunitha</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Data Agent Now Supports Eventhouse Functions, Materialized Views, and Shortcuts (Preview)]]></title>
-        <id>https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Data-Agent-Now-Supports-Eventhouse-Functions-Materialized-Views/ba-p/5181801</id>
-        <link href="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Data-Agent-Now-Supports-Eventhouse-Functions-Materialized-Views/ba-p/5181801"/>
-        <updated>2026-05-14T20:55:21.000Z</updated>
-        <summary type="html"><![CDATA[Author: Shreyas Canchi Radhakrishna - Product Manager]]></summary>
-        <author>
-            <name>msft-shreyas</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Azure Monitor Health Model - API Refresh]]></title>
-        <id>https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/azure-monitor-health-model---api-refresh/4519092</id>
-        <link href="https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/azure-monitor-health-model---api-refresh/4519092"/>
-        <updated>2026-05-14T19:43:35.000Z</updated>
-        <summary type="html"><![CDATA[API Refresh? 
-Discovery scope extended to include
-
-Application Insights
-Azure Resource Graph query
-
-
-Signals Enhancement for Azure resources
-
-Resource health is used as a default signal  
-Recommended signals are available   
-Alert rules can be imported as signals
-dynamic thresholds for metric signals
-
-
-Aggregation rules
-Import health reports and data annotations
-
--->> Link to docs]]></summary>
-        <author>
-            <name>shijain13</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Governance at the Speed of Agents: Microsoft Agent Framework and Agent Governance Toolkit, Better Together]]></title>
-        <id>https://devblogs.microsoft.com/agent-framework/?p=5442</id>
-        <link href="https://devblogs.microsoft.com/agent-framework/governance-at-the-speed-of-agents-microsoft-agent-framework-and-agent-governance-toolkit-better-together/"/>
-        <updated>2026-05-14T18:36:20.000Z</updated>
-        <summary type="html"><![CDATA[Building powerful AI agents is only half the story, running them safely in production is the real challenge. As customers adopt Microsoft Agent Framework for agent orchestration, a clear need has emerged for robust, built-in governance. In this post, Imran Siddique from the AGT team walks through how Agent Governance Toolkit pairs with Agent Framework […]
-The post Governance at the Speed of Agents: Microsoft Agent Framework and Agent Governance Toolkit, Better Together appeared first on Microsoft Agent Framework.]]></summary>
-        <author>
-            <name>Imran Siddique, Shawn Henry</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[May Patches for Azure DevOps Server]]></title>
-        <id>https://devblogs.microsoft.com/devops/?p=72744</id>
-        <link href="https://devblogs.microsoft.com/devops/may-patches-for-azure-devops-server-3/"/>
-        <updated>2026-05-14T17:18:24.000Z</updated>
-        <summary type="html"><![CDATA[We are releasing new patches for our self‑hosted product, Azure DevOps Server. We strongly recommend that all customers stay up to date with the latest, most secure version of Azure DevOps Server. The most recent release, Azure DevOps Server, is available on the download page. The following versions have been patched. For more details on […]
-The post May Patches for Azure DevOps Server appeared first on Azure DevOps Blog.]]></summary>
-        <author>
-            <name>Gloridel Morales</name>
         </author>
     </entry>
 </feed>
