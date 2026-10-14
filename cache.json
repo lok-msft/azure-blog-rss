@@ -6,6 +6,36 @@
       "siteUrl": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/bg-p/fbc_fabricupdatesblogs",
       "articles": [
         {
+          "id": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/File-Data-Ingestion-with-Materialized-Lake-Views-in-Microsoft/ba-p/5367801",
+          "author": "hareshgowri",
+          "description": "File data ingestion with materialized lake views (MLVs) in Microsoft Fabric is now available in preview. Instead of building separate ingestion pipelines to move raw files into tables, you can now ingest CSV and Parquet files directly from OneLake into a materialized lake view and make your bronze layer part of the same declarative pipeline as the rest of your medallion architecture.\r\nThis capability builds on the recent announcement of Materialized Lake Views in Microsoft Fabric (Generally Available), extending the simplified approach from table-based transformations to raw file ingestion.\r\nWhy this matters\r\nUntil now, you had to build and maintain a separate ingestion layer before you could get the benefits of MLVs, which had to start from tables. To get raw files into that first table, …",
+          "link": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/File-Data-Ingestion-with-Materialized-Lake-Views-in-Microsoft/ba-p/5367801",
+          "publishedOn": "2026-10-13T21:00:00.000Z",
+          "wordCount": null,
+          "title": "File Data Ingestion with Materialized Lake Views in Microsoft Fabric (Preview)",
+          "imageUrl": null
+        },
+        {
+          "id": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Fabric-App-functions-to-use-secure-server-side-custom-logic/ba-p/5368691",
+          "author": "mk_sunitha",
+          "description": "Fabric App functions is a new capability that allows builders to add secure, server-side logic directly to their Fabric Apps without standing up separate infrastructure. Built on top of Fabric User Data Functions (UDFs), Fabric App functions give developers a simple way to execute business logic, integrate with external services, access protected resources, and keep secrets from the client.\r\nFigure: Get started with functions in your Fabric app.\r\nWhat are Fabric App functions?\r\nFabric App functions are TypeScript-based serverless functions that run alongside your Fabric app. They provide a secure backend execution environment for code that should not run in the browser. Functions are packaged and deployed as part of the application experience and can be invoked directly from the applicatio…",
+          "link": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Fabric-App-functions-to-use-secure-server-side-custom-logic/ba-p/5368691",
+          "publishedOn": "2026-10-13T17:00:00.000Z",
+          "wordCount": null,
+          "title": "Fabric App functions to use secure server-side custom logic (Preview)",
+          "imageUrl": null
+        },
+        {
+          "id": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/My-workspace-governance-improvements-Generally-Available/ba-p/5368442",
+          "author": "sergeig888",
+          "description": "My workspace governance features, which give administrators governance controls over their users' personal My workspaces, are now generally available.  \r\nAs My workspaces continue to be used for business-critical content, organizations need governance capabilities that scale with their environment. These enhancements give administrators greater flexibility to access, manage, and recover content when needed, while enabling automation that reduces operational overhead and improves consistency across the tenant. These enhanced tenant administrator controls for My workspace are also available in government clouds. \r\nWhat's new \r\nTwo new admin REST APIs make temporary admin access to a personal workspace fully programmable: \r\n\r\nGrant Admin Temporary Access: grants a Fabric administrator 24-hour access to a user's My workspace.\r\nRemove Admin Temporary Access:  revokes that access before the 24-hour window ends. \r\n\r\nBoth can be called by a Fabric administrator or by a service principal. The service principal identity must be enabled for Admin API access in your tenant settings. SPN support and these new APIs allow tenant administrators to automate management of tenant users’ My workspaces contents instead of doing it by hand in the Admin Portal. \r\nReminder: Restoring orphaned My workspaces \r\nWhen a user is hard deleted in Microsoft Entra, their My workspace becomes orphaned and moves to a Deleted state, with contents retained for 30 days. During that window, you can restore it with the Restore Workspace API.  \r\nImportant: new workspace name is required when restoring a former My workspace, and you assign a new admin to own the recovered content. \r\nTry the Admin controls and new APIs and let us know what you think in the comment section.",
+          "link": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/My-workspace-governance-improvements-Generally-Available/ba-p/5368442",
+          "publishedOn": "2026-10-13T16:00:00.000Z",
+          "wordCount": null,
+          "title": "My workspace governance improvements (Generally Available)",
+          "imageUrl": null
+        },
+        {
           "id": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/What-s-new-for-Business-Events-and-real-time-events-in-Microsoft/ba-p/5367401",
           "author": "robece-msft",
           "description": "Microsoft Fabric helps teams react when those moments happen. Real-Time Hub provides a common place to discover event sources, connect consumers, and move from a signal to an action. With Business Events now generally available and new Fabric Events capabilities arriving in the September 2026 release, organizations can connect business meaning and platform operations through one event-driven model.\r\nOne model, three outcomes\r\nPublish a governed signal once, let operational teams react independently, and retain the same event for real-time and historical analysis.\r\nTurn business meaning into a governed event (Generally Available)\r\nA Business Event represents a meaningful occurrence or state change that matters to the organization. It is not raw telemetry or a diagnostic record. It captures …",
@@ -1896,6 +1926,16 @@
       "feedUrl": "https://techcommunity.microsoft.com/t5/s/plugins/custom/microsoft/o365/custom-blog-rss?board=EducatorDeveloperBlog&size=100",
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
+        {
+          "id": "https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/microsoft-foundry-guardrails-getting-in-your-way-here%E2%80%99s-how-to-dial-them-down/4562939",
+          "author": "suzarilshah",
+          "description": "How This All Started\nSo here’s the story. I just got back from a trip and had a pile of footage sitting on my laptop. Being the lazy (sorry, efficient) person I am, I fired up OpenCode and asked GPT-6 Astra, running on Microsoft Foundry, to cut me a travelogue. Nothing fancy: under two minutes, nice lighting, clean transitions, no cringy effects, a quick QA before showing me, and the output in its own folder. Easy, right? Nope.\nThis is what I got instead:\n\n“Image processing blocked due to content policy violation.” Seriously? It’s holiday footage! Nothing even remotely dodgy in there. This is a classic false positive from the default guardrails, and the good news is it’s totally fixable. Let me show you how.\n \n \n \n \n \nMy Setup\nQuick context before we dive in: I’ve got two models deployed o…",
+          "link": "https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/microsoft-foundry-guardrails-getting-in-your-way-here%E2%80%99s-how-to-dial-them-down/4562939",
+          "publishedOn": "2026-10-13T07:00:00.000Z",
+          "wordCount": null,
+          "title": "Microsoft Foundry Guardrails Getting in Your Way? Here’s How to Dial Them Down",
+          "imageUrl": null
+        },
         {
           "id": "https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/not-every-decision-needs-an-llm-getting-started-with-microsoft-decision-1/4563468",
           "author": "shreyanfern",
@@ -5518,6 +5558,16 @@
       "siteUrl": "https://devblogs.microsoft.com/devops/",
       "articles": [
         {
+          "id": "https://devblogs.microsoft.com/devops/?p=73530",
+          "author": "Gloridel Morales",
+          "description": "We are releasing new patches for our self‑hosted product, Azure DevOps Server. We strongly recommend that all customers stay up to date with the latest, most secure version of Azure DevOps Server. The most recent release, Azure DevOps Server, is available on the download page. The following versions have been patched. For more details on […]\nThe post October Patches for Azure DevOps Server appeared first on Azure DevOps Blog.",
+          "link": "https://devblogs.microsoft.com/devops/october-patches-for-azure-devops-server-4/",
+          "publishedOn": "2026-10-13T20:20:06.000Z",
+          "wordCount": 7247,
+          "title": "October Patches for Azure DevOps Server",
+          "imageUrl": "https://devblogs.microsoft.com/devops/wp-content/uploads/sites/6/2025/09/image-1.png"
+        },
+        {
           "id": "https://devblogs.microsoft.com/devops/?p=73446",
           "author": "Dan Hellem",
           "description": "We are excited to announce a new editing experience for Wiki pages. We are replacing the existing editor with a new editor built on Monaco Editor, the same editor technology that powers Visual Studio Code. Monaco brings many of the editing capabilities familiar to Visual Studio Code to Wiki pages, while preserving the functionality of […]\nThe post New Wiki Editor Experience appeared first on Azure DevOps Blog.",
@@ -5837,6 +5887,16 @@
       "feedUrl": "https://devblogs.microsoft.com/microsoft365dev/feed/",
       "siteUrl": "https://devblogs.microsoft.com/microsoft365dev/",
       "articles": [
+        {
+          "id": "https://devblogs.microsoft.com/microsoft365dev/?p=26245",
+          "author": "Steve Pucelik",
+          "description": "Developers building AI applications face a familiar challenge: how do you ground AI experiences in enterprise content while maintaining security, compliance, and governance?  You can use the Microsoft 365 Copilot Retrieval API for SharePoint Embedded, which helps you add Microsoft 365 Copilot and agent experiences to your SharePoint Embedded apps when you want to control the grounding […]\nThe post Build AI-powered apps without creating a vector database appeared first on Microsoft 365 Developer Blog.",
+          "link": "https://devblogs.microsoft.com/microsoft365dev/build-ai-powered-apps-without-creating-a-vector-database/",
+          "publishedOn": "2026-10-13T13:00:52.000Z",
+          "wordCount": 8203,
+          "title": "Build AI-powered apps without creating a vector database",
+          "imageUrl": "https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2026/10/RetrievalAPIImage.webp"
+        },
         {
           "id": "https://devblogs.microsoft.com/microsoft365dev/?p=26170",
           "author": "SharePoint team",

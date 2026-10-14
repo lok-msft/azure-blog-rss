@@ -22,11 +22,220 @@
             data-action="toggle-accordions"
             title="Click to toggle the day, Ctrl + click to toggle all."
           >
-            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2026-10-13 datetime="2026-10-12T19:10:36.000Z">2026-10-13</time>
-            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2026-10-13 datetime="2026-10-12T19:10:36.000Z"></time>
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2026-10-14 datetime="2026-10-13T21:00:00.000Z">2026-10-14</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2026-10-14 datetime="2026-10-13T21:00:00.000Z"></time>
           </button>
         </h2>
         <ul class="sources card">
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Fabric Updates Blog articles</button>
+                  <a class="source-heading__link" href="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/bg-p/fbc_fabricupdatesblogs">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/File-Data-Ingestion-with-Materialized-Lake-Views-in-Microsoft/ba-p/5367801"
+                        open
+                      >
+                        <summary class="article-expander__title">File Data Ingestion with Materialized Lake Views in Microsoft Fabric (Preview)</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/File-Data-Ingestion-with-Materialized-Lake-Views-in-Microsoft/ba-p/5367801">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>File data ingestion with materialized lake views (MLVs) in Microsoft Fabric is now available in preview. Instead of building separate ingestion pipelines to move raw files into tables, you can now ingest CSV and Parquet files directly from OneLake into a materialized lake view and make your bronze layer part of the same declarative pipeline as the rest of your medallion architecture.
+This capability builds on the recent announcement of Materialized Lake Views in Microsoft Fabric (Generally Available), extending the simplified approach from table-based transformations to raw file ingestion.
+Why this matters
+Until now, you had to build and maintain a separate ingestion layer before you could get the benefits of MLVs, which had to start from tables. To get raw files into that first table, …</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Fabric-App-functions-to-use-secure-server-side-custom-logic/ba-p/5368691"
+                        open
+                      >
+                        <summary class="article-expander__title">Fabric App functions to use secure server-side custom logic (Preview)</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Fabric-App-functions-to-use-secure-server-side-custom-logic/ba-p/5368691">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Fabric App functions is a new capability that allows builders to add secure, server-side logic directly to their Fabric Apps without standing up separate infrastructure. Built on top of Fabric User Data Functions (UDFs), Fabric App functions give developers a simple way to execute business logic, integrate with external services, access protected resources, and keep secrets from the client.
+Figure: Get started with functions in your Fabric app.
+What are Fabric App functions?
+Fabric App functions are TypeScript-based serverless functions that run alongside your Fabric app. They provide a secure backend execution environment for code that should not run in the browser. Functions are packaged and deployed as part of the application experience and can be invoked directly from the applicatio…</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/My-workspace-governance-improvements-Generally-Available/ba-p/5368442"
+                        open
+                      >
+                        <summary class="article-expander__title">My workspace governance improvements (Generally Available)</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/My-workspace-governance-improvements-Generally-Available/ba-p/5368442">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>My workspace governance features, which give administrators governance controls over their users&#x27; personal My workspaces, are now generally available.  
+As My workspaces continue to be used for business-critical content, organizations need governance capabilities that scale with their environment. These enhancements give administrators greater flexibility to access, manage, and recover content when needed, while enabling automation that reduces operational overhead and improves consistency across the tenant. These enhanced tenant administrator controls for My workspace are also available in government clouds. 
+What&#x27;s new 
+Two new admin REST APIs make temporary admin access to a personal workspace fully programmable: 
+
+Grant Admin Temporary Access: grants a Fabric administrator 24-hour access to a user&#x27;s My workspace.
+Remove Admin Temporary Access:  revokes that access before the 24-hour window ends. 
+
+Both can be called by a Fabric administrator or by a service principal. The service principal identity must be enabled for Admin API access in your tenant settings. SPN support and these new APIs allow tenant administrators to automate management of tenant users’ My workspaces contents instead of doing it by hand in the Admin Portal. 
+Reminder: Restoring orphaned My workspaces 
+When a user is hard deleted in Microsoft Entra, their My workspace becomes orphaned and moves to a Deleted state, with contents retained for 30 days. During that window, you can restore it with the Restore Workspace API.  
+Important: new workspace name is required when restoring a former My workspace, and you assign a new admin to own the recovered content. 
+Try the Admin controls and new APIs and let us know what you think in the comment section.</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Azure DevOps Blog</button>
+                  <a class="source-heading__link" href="https://devblogs.microsoft.com/devops/">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://devblogs.microsoft.com/devops/?p&#x3D;73530"
+                        open
+                      >
+                        <summary class="article-expander__title">October Patches for Azure DevOps Server</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://devblogs.microsoft.com/devops/october-patches-for-azure-devops-server-4/">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://devblogs.microsoft.com/devops/wp-content/uploads/sites/6/2025/09/image-1.png" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>We are releasing new patches for our self‑hosted product, Azure DevOps Server. We strongly recommend that all customers stay up to date with the latest, most secure version of Azure DevOps Server. The most recent release, Azure DevOps Server, is available on the download page. The following versions have been patched. For more details on […]
+The post October Patches for Azure DevOps Server appeared first on Azure DevOps Blog.</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;24
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+        </ul>
+      </section>
+      <section class="daily-content js-toggle-accordions-scope">
+        <h2 class="daily-heading">
+          <button
+            class="daily-heading-toggle"
+            data-action="toggle-accordions"
+            title="Click to toggle the day, Ctrl + click to toggle all."
+          >
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2026-10-13 datetime="2026-10-13T13:00:52.000Z">2026-10-13</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2026-10-13 datetime="2026-10-13T13:00:52.000Z"></time>
+          </button>
+        </h2>
+        <ul class="sources card">
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Microsoft 365 Developer Blog</button>
+                  <a class="source-heading__link" href="https://devblogs.microsoft.com/microsoft365dev/">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://devblogs.microsoft.com/microsoft365dev/?p&#x3D;26245"
+                        open
+                      >
+                        <summary class="article-expander__title">Build AI-powered apps without creating a vector database</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://devblogs.microsoft.com/microsoft365dev/build-ai-powered-apps-without-creating-a-vector-database/">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2026/10/RetrievalAPIImage.webp" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>Developers building AI applications face a familiar challenge: how do you ground AI experiences in enterprise content while maintaining security, compliance, and governance?  You can use the Microsoft 365 Copilot Retrieval API for SharePoint Embedded, which helps you add Microsoft 365 Copilot and agent experiences to your SharePoint Embedded apps when you want to control the grounding […]
+The post Build AI-powered apps without creating a vector database appeared first on Microsoft 365 Developer Blog.</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;27
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Microsoft Tech Community - Latest Blogs - Educator Developer Blog</button>
+                  <a class="source-heading__link" href="https://techcommunity.microsoft.com">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/microsoft-foundry-guardrails-getting-in-your-way-here%E2%80%99s-how-to-dial-them-down/4562939"
+                        open
+                      >
+                        <summary class="article-expander__title">Microsoft Foundry Guardrails Getting in Your Way? Here’s How to Dial Them Down</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/microsoft-foundry-guardrails-getting-in-your-way-here%E2%80%99s-how-to-dial-them-down/4562939">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>How This All Started
+So here’s the story. I just got back from a trip and had a pile of footage sitting on my laptop. Being the lazy (sorry, efficient) person I am, I fired up OpenCode and asked GPT-6 Astra, running on Microsoft Foundry, to cut me a travelogue. Nothing fancy: under two minutes, nice lighting, clean transitions, no cringy effects, a quick QA before showing me, and the output in its own folder. Easy, right? Nope.
+This is what I got instead:
+
+“Image processing blocked due to content policy violation.” Seriously? It’s holiday footage! Nothing even remotely dodgy in there. This is a classic false positive from the default guardrails, and the good news is it’s totally fixable. Let me show you how.
+ 
+ 
+ 
+ 
+ 
+My Setup
+Quick context before we dive in: I’ve got two models deployed o…</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
             <li class="card__section">
               <section class="js-toggle-accordions-scope">
                 <h3 class="source-heading">
@@ -20062,8 +20271,8 @@ VS Code → Copilot Agent → MCP Server → Azure DevOps
       </section>
 
     <footer>
-      <a class="footer-link" href="https://github.com/lok-msft/azure-blog-rss/actions/runs/38353274523">
-        <time id="build-timestamp" datetime="2026-10-13T05:49:19.301Z">2026-10-13T05:49:19.301Z</time>
+      <a class="footer-link" href="https://github.com/lok-msft/azure-blog-rss/actions/runs/38508410914">
+        <time id="build-timestamp" datetime="2026-10-14T03:52:36.104Z">2026-10-14T03:52:36.104Z</time>
       </a>
       <a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a>
     </footer>

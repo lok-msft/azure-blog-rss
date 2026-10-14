@@ -2,10 +2,101 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2026-10-13T05:49:19.359Z</updated>
+    <updated>2026-10-14T03:52:36.127Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[File Data Ingestion with Materialized Lake Views in Microsoft Fabric (Preview)]]></title>
+        <id>https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/File-Data-Ingestion-with-Materialized-Lake-Views-in-Microsoft/ba-p/5367801</id>
+        <link href="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/File-Data-Ingestion-with-Materialized-Lake-Views-in-Microsoft/ba-p/5367801"/>
+        <updated>2026-10-13T21:00:00.000Z</updated>
+        <summary type="html"><![CDATA[File data ingestion with materialized lake views (MLVs) in Microsoft Fabric is now available in preview. Instead of building separate ingestion pipelines to move raw files into tables, you can now ingest CSV and Parquet files directly from OneLake into a materialized lake view and make your bronze layer part of the same declarative pipeline as the rest of your medallion architecture.
+This capability builds on the recent announcement of Materialized Lake Views in Microsoft Fabric (Generally Available), extending the simplified approach from table-based transformations to raw file ingestion.
+Why this matters
+Until now, you had to build and maintain a separate ingestion layer before you could get the benefits of MLVs, which had to start from tables. To get raw files into that first table, …]]></summary>
+        <author>
+            <name>hareshgowri</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[October Patches for Azure DevOps Server]]></title>
+        <id>https://devblogs.microsoft.com/devops/?p=73530</id>
+        <link href="https://devblogs.microsoft.com/devops/october-patches-for-azure-devops-server-4/"/>
+        <updated>2026-10-13T20:20:06.000Z</updated>
+        <summary type="html"><![CDATA[We are releasing new patches for our self‑hosted product, Azure DevOps Server. We strongly recommend that all customers stay up to date with the latest, most secure version of Azure DevOps Server. The most recent release, Azure DevOps Server, is available on the download page. The following versions have been patched. For more details on […]
+The post October Patches for Azure DevOps Server appeared first on Azure DevOps Blog.]]></summary>
+        <author>
+            <name>Gloridel Morales</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Fabric App functions to use secure server-side custom logic (Preview)]]></title>
+        <id>https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Fabric-App-functions-to-use-secure-server-side-custom-logic/ba-p/5368691</id>
+        <link href="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Fabric-App-functions-to-use-secure-server-side-custom-logic/ba-p/5368691"/>
+        <updated>2026-10-13T17:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Fabric App functions is a new capability that allows builders to add secure, server-side logic directly to their Fabric Apps without standing up separate infrastructure. Built on top of Fabric User Data Functions (UDFs), Fabric App functions give developers a simple way to execute business logic, integrate with external services, access protected resources, and keep secrets from the client.
+Figure: Get started with functions in your Fabric app.
+What are Fabric App functions?
+Fabric App functions are TypeScript-based serverless functions that run alongside your Fabric app. They provide a secure backend execution environment for code that should not run in the browser. Functions are packaged and deployed as part of the application experience and can be invoked directly from the applicatio…]]></summary>
+        <author>
+            <name>mk_sunitha</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[My workspace governance improvements (Generally Available)]]></title>
+        <id>https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/My-workspace-governance-improvements-Generally-Available/ba-p/5368442</id>
+        <link href="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/My-workspace-governance-improvements-Generally-Available/ba-p/5368442"/>
+        <updated>2026-10-13T16:00:00.000Z</updated>
+        <summary type="html"><![CDATA[My workspace governance features, which give administrators governance controls over their users' personal My workspaces, are now generally available.  
+As My workspaces continue to be used for business-critical content, organizations need governance capabilities that scale with their environment. These enhancements give administrators greater flexibility to access, manage, and recover content when needed, while enabling automation that reduces operational overhead and improves consistency across the tenant. These enhanced tenant administrator controls for My workspace are also available in government clouds. 
+What's new 
+Two new admin REST APIs make temporary admin access to a personal workspace fully programmable: 
+
+Grant Admin Temporary Access: grants a Fabric administrator 24-hour access to a user's My workspace.
+Remove Admin Temporary Access:  revokes that access before the 24-hour window ends. 
+
+Both can be called by a Fabric administrator or by a service principal. The service principal identity must be enabled for Admin API access in your tenant settings. SPN support and these new APIs allow tenant administrators to automate management of tenant users’ My workspaces contents instead of doing it by hand in the Admin Portal. 
+Reminder: Restoring orphaned My workspaces 
+When a user is hard deleted in Microsoft Entra, their My workspace becomes orphaned and moves to a Deleted state, with contents retained for 30 days. During that window, you can restore it with the Restore Workspace API.  
+Important: new workspace name is required when restoring a former My workspace, and you assign a new admin to own the recovered content. 
+Try the Admin controls and new APIs and let us know what you think in the comment section.]]></summary>
+        <author>
+            <name>sergeig888</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Build AI-powered apps without creating a vector database]]></title>
+        <id>https://devblogs.microsoft.com/microsoft365dev/?p=26245</id>
+        <link href="https://devblogs.microsoft.com/microsoft365dev/build-ai-powered-apps-without-creating-a-vector-database/"/>
+        <updated>2026-10-13T13:00:52.000Z</updated>
+        <summary type="html"><![CDATA[Developers building AI applications face a familiar challenge: how do you ground AI experiences in enterprise content while maintaining security, compliance, and governance?  You can use the Microsoft 365 Copilot Retrieval API for SharePoint Embedded, which helps you add Microsoft 365 Copilot and agent experiences to your SharePoint Embedded apps when you want to control the grounding […]
+The post Build AI-powered apps without creating a vector database appeared first on Microsoft 365 Developer Blog.]]></summary>
+        <author>
+            <name>Steve Pucelik</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Microsoft Foundry Guardrails Getting in Your Way? Here’s How to Dial Them Down]]></title>
+        <id>https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/microsoft-foundry-guardrails-getting-in-your-way-here%E2%80%99s-how-to-dial-them-down/4562939</id>
+        <link href="https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/microsoft-foundry-guardrails-getting-in-your-way-here%E2%80%99s-how-to-dial-them-down/4562939"/>
+        <updated>2026-10-13T07:00:00.000Z</updated>
+        <summary type="html"><![CDATA[How This All Started
+So here’s the story. I just got back from a trip and had a pile of footage sitting on my laptop. Being the lazy (sorry, efficient) person I am, I fired up OpenCode and asked GPT-6 Astra, running on Microsoft Foundry, to cut me a travelogue. Nothing fancy: under two minutes, nice lighting, clean transitions, no cringy effects, a quick QA before showing me, and the output in its own folder. Easy, right? Nope.
+This is what I got instead:
+
+“Image processing blocked due to content policy violation.” Seriously? It’s holiday footage! Nothing even remotely dodgy in there. This is a classic false positive from the default guardrails, and the good news is it’s totally fixable. Let me show you how.
+ 
+ 
+ 
+ 
+ 
+My Setup
+Quick context before we dive in: I’ve got two models deployed o…]]></summary>
+        <author>
+            <name>suzarilshah</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[From alerts to answers: The future of PostgreSQL operations is intelligent]]></title>
         <id>https://opensource.microsoft.com/blog/?p=98841</id>
