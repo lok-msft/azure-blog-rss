@@ -2,10 +2,22 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2026-10-16T03:29:59.882Z</updated>
+    <updated>2026-10-17T03:20:19.093Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Bounded Local Agentic Patterns for Clinical RAG]]></title>
+        <id>https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/bounded-local-agentic-patterns-for-clinical-rag/4558426</id>
+        <link href="https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/bounded-local-agentic-patterns-for-clinical-rag/4558426"/>
+        <updated>2026-10-16T07:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Calling a workflow “agentic” can hide the most important architectural question: who has authority to do what? In a health-record system, an unrestricted model that repeatedly selects tools, changes plans, and executes queries is a poor default. It enlarges the attack surface, makes latency unpredictable, and makes failures difficult to explain.
+This synthetic prototype takes a narrower approach. Its agents are fixed dispatch and orchestration paths inside a Rust Rocket server. Local models can classify a request or propose a typed plan, but Rust chooses capabilities, validates every plan, executes data operations, and follows a finite fallback graph. There is no cloud Foundry Agent Service, no cloud model fallback, and no general ReAct-style or multi-agent loop.
+The result is still useful…]]></summary>
+        <author>
+            <name>kevin_gatimu</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Fabric Policies: Granular governance at scale (Preview)]]></title>
         <id>https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Fabric-Policies-Granular-governance-at-scale-Preview/ba-p/5368144</id>
@@ -7616,147 +7628,6 @@ On the Azure Functions team, complex customer incidents often require deep in
         <summary type="html"><![CDATA[Author: Michal Bar - Principal Program Manager]]></summary>
         <author>
             <name>MichalBar</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Stop prompt injection from hijacking your agent, new security capabilities now released within Agent Framework]]></title>
-        <id>https://devblogs.microsoft.com/agent-framework/?p=5414</id>
-        <link href="https://devblogs.microsoft.com/agent-framework/fides/"/>
-        <updated>2026-05-20T14:58:20.000Z</updated>
-        <summary type="html"><![CDATA[Prompt injection is the #1 risk on the OWASP LLM Top 10, and most agents in production today defend against it with one of two heuristics: a defensive system prompt, or a hand-rolled allowlist. Neither is deterministic. Both fail silently the day someone slips a [SYSTEM OVERRIDE] line into an issue body, an email, or […]
-The post Stop prompt injection from hijacking your agent, new security capabilities now released within Agent Framework appeared first on Microsoft Agent Framework.]]></summary>
-        <author>
-            <name>Eduard van Valkenburg, Shruti Tople</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Signing in to Microsoft Foundry from OpenClaw using Azure AD: a smoother way to bring your models in]]></title>
-        <id>https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/signing-in-to-microsoft-foundry-from-openclaw-using-azure-ad-a-smoother-way-to-b/4519034</id>
-        <link href="https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/signing-in-to-microsoft-foundry-from-openclaw-using-azure-ad-a-smoother-way-to-b/4519034"/>
-        <updated>2026-05-20T07:11:23.000Z</updated>
-        <summary type="html"><![CDATA[This post is a quick update to walk through the new flow. If you read the previous one, think of this as the easier path I wish I had the first time round. If you have not seen the original, you can find it here: Integrating Microsoft Foundry with OpenClaw: Step by Step Model Configuration | Microsoft Community Hub
-Pre-requisite:
-You will need the Azure CLI (azure-cli) installed on your machine. The official install guide for Linux is here: https://learn.microsoft.com/en-us/cli/azure/install-azure-cli-linux?view=azure-cli-latest
-I am on Linux so I went the Homebrew route, which keeps things simple. The formula is here: https://formulae.brew.sh/formula/azure-cli 
-Microsoft also has official docs covering the Homebrew/Linuxbrew install: https://learn.microsoft.com/en-us/cli/azure/install-azu…]]></summary>
-        <author>
-            <name>suzarilshah</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[How to Visualize Your Azure AI Workloads Usage for Observability]]></title>
-        <id>https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/how-to-visualize-your-azure-ai-workloads-usage-for-observability/4517324</id>
-        <link href="https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/how-to-visualize-your-azure-ai-workloads-usage-for-observability/4517324"/>
-        <updated>2026-05-20T07:00:00.000Z</updated>
-        <summary type="html"><![CDATA[This article assumes you already have an Azure Foundry project and resource deployed in Microsoft Foundry. The options referenced here are documented in detail in the linked articles; this post serves as a consolidated step by step guide bringing them all together and explaining where each option is most useful.
-A Summary: 
-
-
-
-Need
-
-Best Option
-
-
-Quick day-over-day visual, minimal setup
-
-Grafana Dashboard (Option 3)
-
-
-Custom growth % calculations
-
-App Insights + KQL in Log Analytics (Option 4)
-
-
-Shareable, interactive report
-
-Azure Workbooks (Option 5)
-
-
-Per-user/per-agent granularity
-
-APIM + App Insights (Option 6)
-
-
-Quick one-off chart, export to Excel
-
-Microsoft Foundry Monitor tab or App Insights Metrics Explorer (Option 1 and 2)
-
-
-Option 1. Within the Microsoft Foundry Portal (Quickes…]]></summary>
-        <author>
-            <name>juneesingh</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Create support tickets from within Microsoft Fabric (Generally Available)]]></title>
-        <id>https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Create-support-tickets-from-within-Microsoft-Fabric-Generally/ba-p/5183100</id>
-        <link href="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Create-support-tickets-from-within-Microsoft-Fabric-Generally/ba-p/5183100"/>
-        <updated>2026-05-19T21:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Author: Roy Rubinstein, Principal Lead TPM - Starting May 2026, eligible Microsoft Fabric and Power BI users can access a new ticket creation experience within Fabric. The ticket creation flow lives inside the Help Pane, right where you go for help. By June 2026, Microsoft plans to transition Fabric and Power BI ticket creation to this experience. During this transition, users who previously created tickets through the Power Platform Admin Center may be redirected to Fabric.]]></summary>
-        <author>
-            <name>royr</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Introducing STATE-Bench: A benchmark for AI agent memory]]></title>
-        <id>https://opensource.microsoft.com/blog/2026/05/19/introducing-state-bench-a-benchmark-for-ai-agent-memory/</id>
-        <link href="https://opensource.microsoft.com/blog/2026/05/19/introducing-state-bench-a-benchmark-for-ai-agent-memory/"/>
-        <updated>2026-05-19T17:30:00.000Z</updated>
-        <summary type="html"><![CDATA[STATE-Bench is an open-source, memory-agnostic benchmark freely available to agent developers, researchers, and platform teams.
-The post Introducing STATE-Bench: A benchmark for AI agent memory appeared first on Microsoft Open Source Blog.]]></summary>
-        <author>
-            <name>Lewis Liu and Nishant Yadav</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[From Prompt to Production: Building Azure Architecture Diagrams with AI]]></title>
-        <id>https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/from-prompt-to-production-building-azure-architecture-diagrams-with-ai/4520336</id>
-        <link href="https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/from-prompt-to-production-building-azure-architecture-diagrams-with-ai/4520336"/>
-        <updated>2026-05-19T16:32:11.000Z</updated>
-        <summary type="html"><![CDATA[Author: Arturo Quiroga, Senior Partner Solutions Architect — Microsoft
-
-Cloud architects spend significant time translating ideas into architecture diagrams. They toggle between Visio, draw.io, pricing calculators, and documentation. According to the 2024 Stack Overflow Developer Survey, 61% of developers spend more than 30 minutes a day searching for answers or solutions, time lost to context-switching rather than design. What if you could describe your architecture in plain English and get a diagram, cost estimate, and deployment guide in minutes?
-The Challenge: Fragmented Architecture Workflows
-Designing Azure architectures today typically involves multiple disconnected steps:
-
-Sketch the architecture in a diagramming tool
-Look up official Azure icons and drag them into place
-Research p…]]></summary>
-        <author>
-            <name>arturoqu</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Microsoft Excel Beginners Tutorial (2026)]]></title>
-        <id>https://techcommunity.microsoft.com/blog/MicrosoftMechanicsBlog/microsoft-excel-beginners-tutorial%C2%A02026/4520866</id>
-        <link href="https://techcommunity.microsoft.com/blog/MicrosoftMechanicsBlog/microsoft-excel-beginners-tutorial%C2%A02026/4520866"/>
-        <updated>2026-05-19T16:18:33.000Z</updated>
-        <summary type="html"><![CDATA[If you’re new to and getting started with Excel or coming from another app, in this video we teach the basics of Excel, the user interface, core concepts, and how to work with basic data. We’ll show you how to build a full Excel workbook from scratch using natural language prompts with Copilot. Format cells, write formulas, and analyze a year of data. Generate sample data, calculate totals, apply conditional formatting, and pin down outliers across columns and rows, all from your browser at excel.new. Share the workbook by name, group, or email and co-author with teammates across web, desktop, and phone. Every edit syncs to OneDrive in real time.
-Jeremy Chapman, Microsoft 365 Director, shares how to go from blank workbook to analyzed, shared spreadsheet in one sitting.
-A full data set with…]]></summary>
-        <author>
-            <name>Zachary-Cavanell</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Fabric Jumpstart – Discover what’s possible with Microsoft Fabric]]></title>
-        <id>https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Fabric-Jumpstart-Discover-what-s-possible-with-Microsoft-Fabric/ba-p/5182277</id>
-        <link href="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Fabric-Jumpstart-Discover-what-s-possible-with-Microsoft-Fabric/ba-p/5182277"/>
-        <updated>2026-05-19T16:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Miles Cole — Principal Program ManagerEdgar Cotte — Senior Program Manager]]></summary>
-        <author>
-            <name>milescole-msft</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Fabric Warehouse upgrades in SSMS 22.5]]></title>
-        <id>https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Fabric-Warehouse-upgrades-in-SSMS-22-5/ba-p/5177764</id>
-        <link href="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Fabric-Warehouse-upgrades-in-SSMS-22-5/ba-p/5177764"/>
-        <updated>2026-05-19T16:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Author: Pradeep Srikakolapu - Senior Product Manager]]></summary>
-        <author>
-            <name>pradeepsvs</name>
         </author>
     </entry>
 </feed>
