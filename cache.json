@@ -6,6 +6,26 @@
       "siteUrl": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/bg-p/fbc_fabricupdatesblogs",
       "articles": [
         {
+          "id": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Retiring-the-Fabric-data-agent-custom-tool-in-Microsoft-Foundry/ba-p/5374418",
+          "author": "AmirJafari",
+          "description": "In March 2025, we announced that agents in Microsoft Foundry could use Fabric data agents to answer questions about data in Microsoft Fabric. In the earlier integration, you connected to a data agent by adding it as a custom tool. For details, refer to Consume a data agent in Microsoft Foundry.\r\nWhat’s changing\r\nWe are deprecating the earlier custom-connection integration. Starting 11/6, 2026, that integration will no longer be supported. If your Foundry agents use a Fabric data agent as a custom tool, you must migrate them before that date.\r\nThe replacement integration (Preview) uses the Fabric IQ (OneLake Catalog) tool, which makes your data available to agents and applications. In the Foundry portal, you can use this tool to add a published Fabric data agent to a Foundry agent. For conf…",
+          "link": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Retiring-the-Fabric-data-agent-custom-tool-in-Microsoft-Foundry/ba-p/5374418",
+          "publishedOn": "2026-10-19T17:00:00.000Z",
+          "wordCount": null,
+          "title": "Retiring the Fabric data agent custom tool in Microsoft Foundry: move to Fabric IQ",
+          "imageUrl": null
+        },
+        {
+          "id": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Advanced-NL2SQL-and-advanced-DAX-generation-in-Fabric-data/ba-p/5374654",
+          "author": "midesa",
+          "description": "Data agents in Microsoft Fabric let users ask questions about data in plain language. As a creator, you connect an agent to supported sources—including SQL databases, lakehouses, Power BI semantic models, and eventhouses—add the business context it needs, and share it with users across Fabric, Teams, Microsoft 365 Copilot, Copilot Studio, and Microsoft Foundry. The data agent can then respond like a domain expert that understands what your tables mean, how your metrics are defined, and which source can answer a question.\r\nThe usefulness of a data agent ultimately depends on a simple question: can it translate what a user asks into the right query? That is harder than it sounds.\r\nEnterprise schemas are rarely intuitive. Several tables, columns, measures, or join paths may appear to answer t…",
+          "link": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Advanced-NL2SQL-and-advanced-DAX-generation-in-Fabric-data/ba-p/5374654",
+          "publishedOn": "2026-10-19T15:56:36.000Z",
+          "wordCount": null,
+          "title": "Advanced NL2SQL and advanced DAX generation in Fabric data agents (Generally Available)",
+          "imageUrl": null
+        },
+        {
           "id": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Fabric-Policies-Granular-governance-at-scale-Preview/ba-p/5368144",
           "author": "t-dmarcovich1",
           "description": "As Microsoft Fabric grows across teams, workspaces, and capacities, governance becomes harder to manage with broad tenant-wide switches alone because governance models are not one-size-fits-all.\r\nFabric Policies provide granular controls that can fit your governance model by defining what actions are allowed, to whom and where.\r\nThe result is governance that scales with your Fabric estate. Teams keep the flexibility they need to work; capacity admins can protect the resources they manage, and central administrators gain consistent controls and visibility across the organization.\r\nFabric Policies help organizations:\r\n\r\nMatch controls to organizational boundaries - Apply organization-wide rules at tenant scope and resource-specific rules at capacity scope.\r\nProtect sensitive actions without …",
@@ -2444,6 +2464,26 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/plan-your-java-upgrade-ahead-of-microsoft%E2%80%99s-2027-support-milestones/4565984",
+          "author": "Bruno Borges",
+          "description": "In April 2021, we announced the Microsoft Build of OpenJDK. We were starting with a preview of our Java 11 builds for Windows, Linux, and macOS. Today, if you’re planning a Java upgrade on Azure, you have several generations of that work to build on: 11, 17, 21, and now 25.\nJava 8 has been part of that work too, with help from the fine folks at the Eclipse Foundation’s Eclipse Adoptium project. Microsoft has supported Java 8 on Azure using their Eclipse Temurin builds of OpenJDK 8, rather than producing a Microsoft Build of OpenJDK 8. That collaboration goes back to the launch: our first Java 11 builds also used Adoptium’s build scripts and quality assurance suite.\nSupporting those releases has meant years of updates. Now it’s time to plan the next move. The Microsoft Build of OpenJDK support roadmap lists September 2027 as the earliest end-of-support date for Java 11 and 17. That’s a distribution-wide milestone: if you use those Microsoft builds on a VM, in a container, on Kubernetes, on Azure platform services, or evem outside Azure, it belongs in your upgrade planning. These dates are initial targets, and Microsoft may extend them. However, consider taking action now.\nAzure services also have their own deadlines. Azure App Service and Azure Functions support for Java 8, 11, and 17 ends on September 1, 2027. Existing applications will continue to run, but the affected Java versions will no longer receive security updates, improvements, or related customer support.\nIf that’s your application, the practical question is how to get to Java 21 or 25 while keeping it working. GitHub Copilot modernization gives you a tool: the Modernize CLI, which can assess your code, help plan the upgrade, and actually perform and apply changes for you to review.\nContinue reading on the Java at Microsoft blog...",
+          "link": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/plan-your-java-upgrade-ahead-of-microsoft%E2%80%99s-2027-support-milestones/4565984",
+          "publishedOn": "2026-10-19T21:33:14.000Z",
+          "wordCount": 7642,
+          "title": "Plan Your Java Upgrade Ahead of Microsoft’s 2027 Support Milestones",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTY1OTg0LUY5Rm0wMQ?revision=2"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/making-acr-data-transfer-visible-the-storage-activity-platform-behind-getblob-me/4564893",
+          "author": "brethompson",
+          "description": "Learn More\n\nUse Grafana dashboards in Azure Container Registry - Use Grafana dashboards in Azure Container Registry - Azure Container Registry | Microsoft Learn\nMonitor Azure Container Registry - Monitor Azure Container Registry - Azure Container Registry | Microsoft Learn\n\nIntroduction\nAzure Container Registry (ACR) can now show customers something it never could before: how much data leaves their registry, and which operations caused it. A new customer-facing Data Transfer metric in Azure Monitor breaks egress down by API Name, GetManifest, GetBlob, GeoReplication, and ImportSource so customers can finally attribute and plan for traffic that used to be invisible.\nThe hard part of that metric is GetBlob. Blob and layer downloads, the bulk of pull traffic, are redirected to Azure Storage, …",
+          "link": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/making-acr-data-transfer-visible-the-storage-activity-platform-behind-getblob-me/4564893",
+          "publishedOn": "2026-10-19T17:32:37.000Z",
+          "wordCount": null,
+          "title": "Making ACR Data Transfer Visible: The Storage Activity Platform Behind GetBlob Metrics",
+          "imageUrl": null
+        },
+        {
           "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/enterprise-adoption-guide-for-azure-sre-agent-part-2-from-one-team-to-enterprise/4564311",
           "author": "dchelupati",
           "description": "In Part 1: From First Use Case to Automated Workflows, we focused on identifying use cases and getting setup with your initial SRE Agent. Teams see the value, and now you need to decide how adoption should expand.\nThese are the questions we increasingly hear from teams. Who should share an agent? When does another team need its own? How do separate agents collaborate? And how do you deploy and govern all of this without creating unnecessary complexity?\nPart 2 shares our recommendations for making those decisions. There is no single topology that fits every organization. Start from the work, context, permissions, and ownership involved, then create boundaries only where they are needed.\nThis part answers three questions:\n\nHow do we share an SRE Agent with more users?\nHow do we expand from o…",
@@ -3451,6 +3491,16 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/blog/MessagingonAzureBlog/connect-azure-service-bus-to-other-messaging-systems-with-a-jms-bridge/4564885",
+          "author": "EldertGrootenboer",
+          "description": "A JMS bridge connects existing messaging workloads to Azure Service Bus while their applications continue to use their current broker. In this post, we look at an on-premises IBM MQ application sending order events to a workload in Azure through Azure Service Bus Premium. IBM MQ is one example; the same pattern applies to other JMS-compatible messaging systems.\nConnect the two messaging systems\nJava Message Service, or JMS, provides a common Java API for sending and receiving messages. Each provider supplies a client library and connection factory for its messaging system. The bridge uses the IBM MQ connection factory to receive messages and the Service Bus connection factory to forward them over AMQP 1.0. For our example, the application sends order events to a dedicated MQ integration qu…",
+          "link": "https://techcommunity.microsoft.com/blog/MessagingonAzureBlog/connect-azure-service-bus-to-other-messaging-systems-with-a-jms-bridge/4564885",
+          "publishedOn": "2026-10-19T17:00:00.000Z",
+          "wordCount": 8605,
+          "title": "Connect Azure Service Bus to other messaging systems with a JMS bridge",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTY0ODg1LXI4OXIxYg?revision=3"
+        },
+        {
           "id": "https://techcommunity.microsoft.com/blog/MessagingonAzureBlog/what-the-azure-api-management-integration-means-for-azure-service-bus/4558087",
           "author": "EldertGrootenboer",
           "description": "Azure API Management now provides a generally available policy for sending messages to Azure Service Bus. Using the send-service-bus-message policy, an API request can send a message directly to a Service Bus queue or topic. This allows you to put a governed HTTP API in front of an asynchronous messaging solution, without adding an intermediary service just to translate and forward the request.\nThe API Management announcement explains how to configure the policy. In this post, we look at the Service Bus patterns you can use behind that API.\nAdd an asynchronous boundary to your API\nAn API often needs to accept a request without making the caller wait for all the work behind it to finish. For example, submitting an order might start inventory checks, payment processing, fulfillment, and cust…",
@@ -3546,6 +3596,16 @@
       "feedUrl": "https://techcommunity.microsoft.com/t5/s/plugins/custom/microsoft/o365/custom-blog-rss?board=AzureObservabilityBlog&size=50",
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
+        {
+          "id": "https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/general-availability-metrics-usage-insights-for-azure-monitor-workspace/4565377",
+          "author": "ayeshakhan",
+          "description": "As your application and hosting environment grows, so do your observability needs and the volume of metrics you collect. But understanding what is driving that usage, how it is changing over time, and where there may be opportunities to optimize can be challenging. \nWe’re excited to announce the general availability of Metrics usage insights for Azure Monitor workspace, an end-to-end insights solution that brings together detailed metrics usage data to give you greater visibility into your metrics footprint and help you better understand, manage, and optimize your usage. \nSince public preview, we’ve expanded Metrics usage insights to all public regions where Azure Monitor workspace is generally available and refreshed the dashboard experiences. As part of GA, we’re also introducing the Ing…",
+          "link": "https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/general-availability-metrics-usage-insights-for-azure-monitor-workspace/4565377",
+          "publishedOn": "2026-10-19T17:58:01.000Z",
+          "wordCount": 8520,
+          "title": "General Availability: Metrics usage insights for Azure Monitor workspace",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTY1Mzc3LWZVa0ZKQw?revision=6"
+        },
         {
           "id": "https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/action-required-promql-regex-matching-in-azure-monitor-workspace-is-becoming-spe/4556437",
           "author": "Tyler_Kight",
@@ -3903,6 +3963,16 @@
       "feedUrl": "https://techcommunity.microsoft.com/t5/s/plugins/custom/microsoft/o365/custom-blog-rss?board=AzureDevCommunityBlog&size=100&label=Best%20Practices",
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
+        {
+          "id": "https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/beyond-one-size-fits-all-decision-routing-for-github-copilot-in-cli--vs-code/4564778",
+          "author": "kinfey",
+          "description": "As developer tools move into the age of agentic AI, it is easy to fall into a familiar habit: when a task matters, choose the strongest—and usually most expensive—model available.\nReal software work is more varied than that. Explaining a function, editing a README, adding a boundary test, debugging a cross-module race condition and reviewing authentication logic demand very different levels of reasoning, context, tool use and reliability. A fixed model for every turn either wastes latency and budget or leaves difficult tasks underpowered.\nThat is the motivation behind decision-ghc-router: GitHub Copilot continues to execute, while a Decision Router selects a sufficiently reliable and economically sensible model at the start of each new user turn. (The design also draws on gargpratyush/jev-…",
+          "link": "https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/beyond-one-size-fits-all-decision-routing-for-github-copilot-in-cli--vs-code/4564778",
+          "publishedOn": "2026-10-19T07:00:00.000Z",
+          "wordCount": 15092,
+          "title": "Beyond One-Size-Fits-All: Decision Routing for GitHub Copilot in CLI & VS Code",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTY0Nzc4LVpnZ21zQw?revision=2"
+        },
         {
           "id": "https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/sending-email-from-an-aks-pod-without-a-single-secret/4556222",
           "author": "Jamesdld23",
@@ -5195,6 +5265,16 @@
       "siteUrl": "https://devblogs.microsoft.com/java/",
       "articles": [
         {
+          "id": "https://devblogs.microsoft.com/java/?p=233220",
+          "author": "Bruno Borges",
+          "description": "In April 2021, we announced the Microsoft Build of OpenJDK. We were starting with a preview of our Java 11 builds for Windows, Linux, and macOS. Today, if you’re planning a Java upgrade on Azure, you have several generations of that work to build on: 11, 17, 21, and now 25. Java 8 has been […]\nThe post Plan Your Java Upgrade Ahead of Microsoft’s 2027 Support Milestones appeared first on Microsoft for Java Developers.",
+          "link": "https://devblogs.microsoft.com/java/plan-your-java-upgrade-ahead-of-microsofts-2027-support-milestones/",
+          "publishedOn": "2026-10-19T14:59:36.000Z",
+          "wordCount": 8502,
+          "title": "Plan Your Java Upgrade Ahead of Microsoft’s 2027 Support Milestones",
+          "imageUrl": "https://devblogs.microsoft.com/java/wp-content/uploads/sites/51/2026/10/modernize-githubcopilot-java-duke.webp"
+        },
+        {
           "id": "https://devblogs.microsoft.com/java/?p=233210",
           "author": "Ananya Garg",
           "description": "A database driver sits on the critical path of many applications. When a frequently executed path performs unnecessary work, even a small amount of overhead can compound across millions of operations. Over the past several releases, we have systematically profiled frequently executed paths across the Microsoft JDBC Driver for SQL Server, identifying opportunities to improve […]\nThe post Faster by Design: Performance engineering in the Microsoft JDBC Driver for SQL Server appeared first on Microsoft for Java Developers.",
@@ -5530,6 +5610,16 @@
       "feedUrl": "https://cloudblogs.microsoft.com/opensource/feed/",
       "siteUrl": "https://opensource.microsoft.com/blog/",
       "articles": [
+        {
+          "id": "https://opensource.microsoft.com/blog/?p=98863",
+          "author": "Todd Anglin",
+          "description": "Introducing Scope, Microsoft’s open-source platform for evaluating AI coding agents. Learn how Scope helps teams understand agent behavior, run repeatable evaluations, and turn insights into better developer experiences.\nThe post Introducing Scope: Open-source evaluation for AI coding agents appeared first on Microsoft Open Source Blog.",
+          "link": "https://opensource.microsoft.com/blog/2026/10/19/introducing-scope-open-source-evaluation-for-ai-coding-agents/",
+          "publishedOn": "2026-10-19T16:00:00.000Z",
+          "wordCount": 6362,
+          "title": "Introducing Scope: Open-source evaluation for AI coding agents",
+          "imageUrl": "https://opensource.microsoft.com/blog/wp-content/uploads/2026/10/CLO20b_Avery_Alain_Jean_Cafe_001-scaled.jpg"
+        },
         {
           "id": "https://opensource.microsoft.com/blog/?p=98841",
           "author": "Jonathon Frost",
