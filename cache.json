@@ -6,6 +6,36 @@
       "siteUrl": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/bg-p/fbc_fabricupdatesblogs",
       "articles": [
         {
+          "id": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Incrementally-migrate-and-re-migrate-database-objects-with/ba-p/5376060",
+          "author": "prl",
+          "description": "Migrate database objects to Microsoft Fabric in phases without creating a new Warehouse for every run. Start with one business domain, add another when it is ready, or revisit an object after its source definition changes. You can also build on an existing Warehouse instead of replacing it.\r\nIncremental migration for Microsoft Fabric Data Warehouse (Preview) lets you move workloads in manageable phases while keeping control of the destination. Select the objects required for the current workload, add more objects in later runs, and resolve naming conflicts when an incoming object already exists. The process migrates object definitions; it does not continuously synchronize changed rows.\r\nYou can start with an empty Warehouse, continue a previous migration, or use an existing Warehouse that …",
+          "link": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Incrementally-migrate-and-re-migrate-database-objects-with/ba-p/5376060",
+          "publishedOn": "2026-10-21T18:00:00.000Z",
+          "wordCount": null,
+          "title": "Incrementally migrate and re-migrate database objects with Migration Assistant for Fabric Warehouse (Preview)",
+          "imageUrl": null
+        },
+        {
+          "id": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Simplify-Teradata-migrations-with-Fabric-Migration-Assistant/ba-p/5376058",
+          "author": "prl",
+          "description": "Migrating an enterprise Teradata estate to Microsoft Fabric can require extensive manual work across database objects, SQL and BTEQ code, dependencies, and operational processes. Fabric Migration Assistant helps reduce that effort so teams can focus their review on the objects and workflows that need attention.\r\nFabric Migration Assistant for Data Warehouse now supports Teradata sources in preview. It converts eligible Teradata metadata and code to Fabric-compatible T-SQL, deploys eligible destination definitions, and flags scripts that need review or remediation, reducing the manual effort required to prepare a migration.\r\nYou can choose which objects to migrate, review the translated code, and focus remediation on exceptions instead of manually translating every eligible object. Migratio…",
+          "link": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Simplify-Teradata-migrations-with-Fabric-Migration-Assistant/ba-p/5376058",
+          "publishedOn": "2026-10-21T17:00:00.000Z",
+          "wordCount": null,
+          "title": "Simplify Teradata migrations with Fabric Migration Assistant (Preview)",
+          "imageUrl": null
+        },
+        {
+          "id": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Connect-coding-agents-to-Fabric-notebooks-with-FNTK-Preview/ba-p/5375986",
+          "author": "QixiaoWang",
+          "description": "The Fabric Notebook Toolkit (Preview) helps developers shorten the feedback loop between writing code and validating it with live notebook results. It connects coding agents to Microsoft Fabric notebooks through a command-line interface (CLI) that runs in the terminal alongside tools such as Claude Code, GitHub Copilot CLI, and Codex. An agent can inspect the current code, run one cell, review its output, make a targeted change, and run it again without resubmitting the entire notebook—much as a human programmer working interactively.\r\nFigure: Animated GIF A coding agent uses FNTK from the terminal to interact with a Microsoft Fabric notebook.\r\nFrom code suggestions to notebook execution\r\nA coding agent can help write a transformation, but a proposed change is not the same as a working res…",
+          "link": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Connect-coding-agents-to-Fabric-notebooks-with-FNTK-Preview/ba-p/5375986",
+          "publishedOn": "2026-10-21T16:44:34.000Z",
+          "wordCount": null,
+          "title": "Connect coding agents to Fabric notebooks with FNTK (Preview)",
+          "imageUrl": null
+        },
+        {
           "id": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/From-mixed-events-to-real-time-action-Fabric-Eventstreams-Q3/ba-p/5375736",
           "author": "Alicia_Li_MSFT",
           "description": "Coauthor: Arindam Chatterjee\r\nFabric Eventstreams makes it easy to connect to streaming sources, transform the ingested events and route them to destinations across Microsoft Fabric. But building real-time systems also requires teams to understand the events in motion, enriching them with business context, detecting and responding to any issues on time, and securely managing their streams across environments.\r\nThat broader experience is the story behind this quarter’s updates. Eventstreams is expanding beyond connectivity and data movement to provide more of the capabilities teams need to work with streaming data after it arrives, while it is still in motion.\r\nWith these expanded capabilities, users can now:\r\n\r\nConnect to more managed sources and extend Eventstreams with custom connectors.…",
@@ -1653,6 +1683,16 @@
       "siteUrl": "https://azure.github.io/AppService/",
       "articles": [
         {
+          "id": "https://azure.github.io/AppService/2026/10/21/php-critical-security-release-app-service-linux.html",
+          "author": null,
+          "description": "WordPress update (21 October 2026): WordPress apps deployed using the official WordPress on App Service offering in Microsoft Marketplace have been updated to patched PHP versions, except for apps still using the older Alpine-based images. The older Alpine-based images will not receive these security patches. If your app uses an Alpine-based image, follow Transition from Alpine Linux to Debian for WordPress on App Service to migrate to a Debian-based image.",
+          "link": "https://azure.github.io/AppService/2026/10/21/php-critical-security-release-app-service-linux.html",
+          "publishedOn": "2026-10-21T00:00:00.000Z",
+          "wordCount": 1032,
+          "title": "Critical PHP Security Release: What It Means for Azure App Service on Linux",
+          "imageUrl": "https://azure.github.io/AppService/assets/images/icon.png"
+        },
+        {
           "id": "https://azure.github.io/AppService/2026/10/12/grafana-dashboards-for-azure-app-service.html",
           "author": null,
           "description": "When your web application slows down, a chart is only the beginning. You need to understand what changed, where to investigate, and which diagnostic tools can help.",
@@ -1896,6 +1936,16 @@
       "feedUrl": "https://techcommunity.microsoft.com/t5/s/plugins/custom/microsoft/o365/custom-blog-rss?board=EducatorDeveloperBlog&size=100",
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
+        {
+          "id": "https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/evaluate-before-production-evidence-based-gates-for-on-premises-rag/4558430",
+          "author": "kevin_gatimu",
+          "description": "A working demo answers a question. A production decision explains which revision answered which test set, on which hardware, with which models and configuration, at what quality and latency, under which failures and concurrency.\nThat distinction matters for RAG. A fluent answer can conceal a retrieval miss. A perfect count can exercise deterministic SQL while proving nothing about semantic search. A load script or runbook can exist without proving capacity or recovery.\nThis synthetic prototype uses a strict evidence rule: plans, targets, code paths, and fixtures are not results. A claim becomes release evidence only when an artifact records the environment, revision, method, and outcome.\nThis series implements the system in Rust, but the evaluation pattern applies when using the Foundry Lo…",
+          "link": "https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/evaluate-before-production-evidence-based-gates-for-on-premises-rag/4558430",
+          "publishedOn": "2026-10-21T07:00:00.000Z",
+          "wordCount": 17045,
+          "title": "Evaluate Before Production: Evidence-Based Gates for On-Premises RAG",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTU4NDMwLXJhTXpIWA?revision=3"
+        },
         {
           "id": "https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/hardening-on-premises-rag-identity-admission-readiness-and-phi-safe-observabilit/4558427",
           "author": "kevin_gatimu",
@@ -2513,6 +2563,16 @@
       "feedUrl": "https://techcommunity.microsoft.com/t5/s/plugins/custom/microsoft/o365/custom-blog-rss?board=AppsonAzureBlog&size=100",
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
+        {
+          "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/enhanced-feature-flags-a-new-foundation-for-feature-management-in-azure-app-conf/4566672",
+          "author": "mukta",
+          "description": "Shipping is no longer just about deploying code.\nConsider a team introducing a new checkout experience. The code is already in production, but the team wants to expose it to a small audience, gradually increase availability, monitor the results, and retain the ability to turn it off if something goes wrong.\nFeature flags make that possible without requiring another deployment.\nAs feature flags become increasingly central to how software is released and operated, we saw an opportunity to evolve how they’re represented in Azure App Configuration.\nEnhanced Feature Flags are available in public preview, with a dedicated resource model designed specifically for feature management.\nWhy rethink the feature flag resource model?\nConsider a team preparing to launch a new check out experience. The re…",
+          "link": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/enhanced-feature-flags-a-new-foundation-for-feature-management-in-azure-app-conf/4566672",
+          "publishedOn": "2026-10-21T23:04:15.000Z",
+          "wordCount": null,
+          "title": "Enhanced Feature Flags: A New Foundation for Feature Management in Azure App Configuration",
+          "imageUrl": null
+        },
         {
           "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/gpu-memory-profiling-on-aks-find-the-code-behind-memory-pressure/4566375",
           "author": "johnsonshi_msft",
@@ -3676,6 +3736,16 @@
       "feedUrl": "https://techcommunity.microsoft.com/t5/s/plugins/custom/microsoft/o365/custom-blog-rss?board=AzureObservabilityBlog&size=50",
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
+        {
+          "id": "https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/scale-data-collection-endpoint-private-connectivity-with-ip-endpoint-compression/4563958",
+          "author": "Mahesh_Sundaram",
+          "description": "Scale Azure Monitor Private Link with data collection endpoint IP compression\nAs organizations expand their Azure Monitor deployments, private networking needs to scale with them. For enterprises running large, distributed environments, that can create an increasingly important challenge: how do you grow private monitoring without consuming private IP address space at the same rate?\nAzure Monitor is introducing private IP endpoint compression for data collection endpoints (DCEs) connected through Azure Monitor Private Link Scope (AMPLS).\nThis capability is designed to reduce the private IP footprint by ~90%-95% associated with DCEs while preserving the Azure Monitor Private Link architecture and the security controls customers already use.\nThe challenge: private monitoring at enterprise sc…",
+          "link": "https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/scale-data-collection-endpoint-private-connectivity-with-ip-endpoint-compression/4563958",
+          "publishedOn": "2026-10-21T17:19:43.000Z",
+          "wordCount": 10024,
+          "title": "Scale Data Collection Endpoint private connectivity with IP Endpoint Compression - Preview",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTYzOTU4LXJBelFENg?revision=13"
+        },
         {
           "id": "https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/general-availability-advanced-platform-metrics-in-azure-monitor/4566015",
           "author": "alyssaschimm",
@@ -5347,7 +5417,18 @@
       "title": "Microsoft for Python Developers Blog",
       "feedUrl": "https://devblogs.microsoft.com/python/feed/",
       "siteUrl": "https://devblogs.microsoft.com/python/",
-      "articles": []
+      "articles": [
+        {
+          "id": "https://devblogs.microsoft.com/python/?p=10347",
+          "author": "Brett Cannon",
+          "description": "Announcing the Type Server Protocol and our partnership with Meta\nThe post Pylance + Pyrefly: bring your preferred type checker to Visual Studio Code appeared first on Microsoft for Python Developers Blog.",
+          "link": "https://devblogs.microsoft.com/python/announcing-tsp/",
+          "publishedOn": "2026-10-21T16:42:20.000Z",
+          "wordCount": 8180,
+          "title": "Pylance + Pyrefly: bring your preferred type checker to Visual Studio Code",
+          "imageUrl": "https://devblogs.microsoft.com/python/wp-content/uploads/sites/12/2026/10/toast.png"
+        }
+      ]
     },
     {
       "title": "Microsoft for Java Developers",
@@ -5447,6 +5528,16 @@
       "feedUrl": "https://devblogs.microsoft.com/devops/feed/",
       "siteUrl": "https://devblogs.microsoft.com/devops/",
       "articles": [
+        {
+          "id": "https://devblogs.microsoft.com/devops/?p=73534",
+          "author": "Laura Jiang",
+          "description": "Fixing a vulnerability takes more than knowing where it is. You need a change that follows your coding standards and works with the rest of your code. Copilot Autofix for GitHub Advanced Security for Azure DevOps now runs on an agentic foundation. It also supports dependency vulnerability fixes and code scanning alerts from third-party tools. […]\nThe post Introducing Agentic Autofix for code and dependencies appeared first on Azure DevOps Blog.",
+          "link": "https://devblogs.microsoft.com/devops/introducing-agentic-autofix-for-code-and-dependencies/",
+          "publishedOn": "2026-10-21T15:06:27.000Z",
+          "wordCount": 7736,
+          "title": "Introducing Agentic Autofix for code and dependencies",
+          "imageUrl": "https://devblogs.microsoft.com/devops/wp-content/uploads/sites/6/2026/06/option_F_shield_big-scaled.webp"
+        },
         {
           "id": "https://devblogs.microsoft.com/devops/?p=73554",
           "author": "Dan Hellem",

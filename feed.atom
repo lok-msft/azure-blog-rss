@@ -2,10 +2,122 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2026-10-21T03:38:33.184Z</updated>
+    <updated>2026-10-22T03:38:19.675Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Enhanced Feature Flags: A New Foundation for Feature Management in Azure App Configuration]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/enhanced-feature-flags-a-new-foundation-for-feature-management-in-azure-app-conf/4566672</id>
+        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/enhanced-feature-flags-a-new-foundation-for-feature-management-in-azure-app-conf/4566672"/>
+        <updated>2026-10-21T23:04:15.000Z</updated>
+        <summary type="html"><![CDATA[Shipping is no longer just about deploying code.
+Consider a team introducing a new checkout experience. The code is already in production, but the team wants to expose it to a small audience, gradually increase availability, monitor the results, and retain the ability to turn it off if something goes wrong.
+Feature flags make that possible without requiring another deployment.
+As feature flags become increasingly central to how software is released and operated, we saw an opportunity to evolve how they’re represented in Azure App Configuration.
+Enhanced Feature Flags are available in public preview, with a dedicated resource model designed specifically for feature management.
+Why rethink the feature flag resource model?
+Consider a team preparing to launch a new check out experience. The re…]]></summary>
+        <author>
+            <name>mukta</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Incrementally migrate and re-migrate database objects with Migration Assistant for Fabric Warehouse (Preview)]]></title>
+        <id>https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Incrementally-migrate-and-re-migrate-database-objects-with/ba-p/5376060</id>
+        <link href="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Incrementally-migrate-and-re-migrate-database-objects-with/ba-p/5376060"/>
+        <updated>2026-10-21T18:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Migrate database objects to Microsoft Fabric in phases without creating a new Warehouse for every run. Start with one business domain, add another when it is ready, or revisit an object after its source definition changes. You can also build on an existing Warehouse instead of replacing it.
+Incremental migration for Microsoft Fabric Data Warehouse (Preview) lets you move workloads in manageable phases while keeping control of the destination. Select the objects required for the current workload, add more objects in later runs, and resolve naming conflicts when an incoming object already exists. The process migrates object definitions; it does not continuously synchronize changed rows.
+You can start with an empty Warehouse, continue a previous migration, or use an existing Warehouse that …]]></summary>
+        <author>
+            <name>prl</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Scale Data Collection Endpoint private connectivity with IP Endpoint Compression - Preview]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/scale-data-collection-endpoint-private-connectivity-with-ip-endpoint-compression/4563958</id>
+        <link href="https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/scale-data-collection-endpoint-private-connectivity-with-ip-endpoint-compression/4563958"/>
+        <updated>2026-10-21T17:19:43.000Z</updated>
+        <summary type="html"><![CDATA[Scale Azure Monitor Private Link with data collection endpoint IP compression
+As organizations expand their Azure Monitor deployments, private networking needs to scale with them. For enterprises running large, distributed environments, that can create an increasingly important challenge: how do you grow private monitoring without consuming private IP address space at the same rate?
+Azure Monitor is introducing private IP endpoint compression for data collection endpoints (DCEs) connected through Azure Monitor Private Link Scope (AMPLS).
+This capability is designed to reduce the private IP footprint by ~90%-95% associated with DCEs while preserving the Azure Monitor Private Link architecture and the security controls customers already use.
+The challenge: private monitoring at enterprise sc…]]></summary>
+        <author>
+            <name>Mahesh_Sundaram</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Simplify Teradata migrations with Fabric Migration Assistant (Preview)]]></title>
+        <id>https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Simplify-Teradata-migrations-with-Fabric-Migration-Assistant/ba-p/5376058</id>
+        <link href="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Simplify-Teradata-migrations-with-Fabric-Migration-Assistant/ba-p/5376058"/>
+        <updated>2026-10-21T17:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Migrating an enterprise Teradata estate to Microsoft Fabric can require extensive manual work across database objects, SQL and BTEQ code, dependencies, and operational processes. Fabric Migration Assistant helps reduce that effort so teams can focus their review on the objects and workflows that need attention.
+Fabric Migration Assistant for Data Warehouse now supports Teradata sources in preview. It converts eligible Teradata metadata and code to Fabric-compatible T-SQL, deploys eligible destination definitions, and flags scripts that need review or remediation, reducing the manual effort required to prepare a migration.
+You can choose which objects to migrate, review the translated code, and focus remediation on exceptions instead of manually translating every eligible object. Migratio…]]></summary>
+        <author>
+            <name>prl</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Connect coding agents to Fabric notebooks with FNTK (Preview)]]></title>
+        <id>https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Connect-coding-agents-to-Fabric-notebooks-with-FNTK-Preview/ba-p/5375986</id>
+        <link href="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Connect-coding-agents-to-Fabric-notebooks-with-FNTK-Preview/ba-p/5375986"/>
+        <updated>2026-10-21T16:44:34.000Z</updated>
+        <summary type="html"><![CDATA[The Fabric Notebook Toolkit (Preview) helps developers shorten the feedback loop between writing code and validating it with live notebook results. It connects coding agents to Microsoft Fabric notebooks through a command-line interface (CLI) that runs in the terminal alongside tools such as Claude Code, GitHub Copilot CLI, and Codex. An agent can inspect the current code, run one cell, review its output, make a targeted change, and run it again without resubmitting the entire notebook—much as a human programmer working interactively.
+Figure: Animated GIF A coding agent uses FNTK from the terminal to interact with a Microsoft Fabric notebook.
+From code suggestions to notebook execution
+A coding agent can help write a transformation, but a proposed change is not the same as a working res…]]></summary>
+        <author>
+            <name>QixiaoWang</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Pylance + Pyrefly: bring your preferred type checker to Visual Studio Code]]></title>
+        <id>https://devblogs.microsoft.com/python/?p=10347</id>
+        <link href="https://devblogs.microsoft.com/python/announcing-tsp/"/>
+        <updated>2026-10-21T16:42:20.000Z</updated>
+        <summary type="html"><![CDATA[Announcing the Type Server Protocol and our partnership with Meta
+The post Pylance + Pyrefly: bring your preferred type checker to Visual Studio Code appeared first on Microsoft for Python Developers Blog.]]></summary>
+        <author>
+            <name>Brett Cannon</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Introducing Agentic Autofix for code and dependencies]]></title>
+        <id>https://devblogs.microsoft.com/devops/?p=73534</id>
+        <link href="https://devblogs.microsoft.com/devops/introducing-agentic-autofix-for-code-and-dependencies/"/>
+        <updated>2026-10-21T15:06:27.000Z</updated>
+        <summary type="html"><![CDATA[Fixing a vulnerability takes more than knowing where it is. You need a change that follows your coding standards and works with the rest of your code. Copilot Autofix for GitHub Advanced Security for Azure DevOps now runs on an agentic foundation. It also supports dependency vulnerability fixes and code scanning alerts from third-party tools. […]
+The post Introducing Agentic Autofix for code and dependencies appeared first on Azure DevOps Blog.]]></summary>
+        <author>
+            <name>Laura Jiang</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Evaluate Before Production: Evidence-Based Gates for On-Premises RAG]]></title>
+        <id>https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/evaluate-before-production-evidence-based-gates-for-on-premises-rag/4558430</id>
+        <link href="https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/evaluate-before-production-evidence-based-gates-for-on-premises-rag/4558430"/>
+        <updated>2026-10-21T07:00:00.000Z</updated>
+        <summary type="html"><![CDATA[A working demo answers a question. A production decision explains which revision answered which test set, on which hardware, with which models and configuration, at what quality and latency, under which failures and concurrency.
+That distinction matters for RAG. A fluent answer can conceal a retrieval miss. A perfect count can exercise deterministic SQL while proving nothing about semantic search. A load script or runbook can exist without proving capacity or recovery.
+This synthetic prototype uses a strict evidence rule: plans, targets, code paths, and fixtures are not results. A claim becomes release evidence only when an artifact records the environment, revision, method, and outcome.
+This series implements the system in Rust, but the evaluation pattern applies when using the Foundry Lo…]]></summary>
+        <author>
+            <name>kevin_gatimu</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Critical PHP Security Release: What It Means for Azure App Service on Linux]]></title>
+        <id>https://azure.github.io/AppService/2026/10/21/php-critical-security-release-app-service-linux.html</id>
+        <link href="https://azure.github.io/AppService/2026/10/21/php-critical-security-release-app-service-linux.html"/>
+        <updated>2026-10-21T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[WordPress update (21 October 2026): WordPress apps deployed using the official WordPress on App Service offering in Microsoft Marketplace have been updated to patched PHP versions, except for apps still using the older Alpine-based images. The older Alpine-based images will not receive these security patches. If your app uses an Alpine-based image, follow Transition from Alpine Linux to Debian for WordPress on App Service to migrate to a Debian-based image.]]></summary>
+        <author>
+            <name>Azure App Service</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[GPU Memory Profiling on AKS: Find the Code Behind Memory Pressure]]></title>
         <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/gpu-memory-profiling-on-aks-find-the-code-behind-memory-pressure/4566375</id>
