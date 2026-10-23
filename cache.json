@@ -6,6 +6,26 @@
       "siteUrl": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/bg-p/fbc_fabricupdatesblogs",
       "articles": [
         {
+          "id": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Explore-and-process-multiple-event-types-with-Schema-aware/ba-p/5376384",
+          "author": "arindamc",
+          "description": "Real-time streams rarely contain just one kind of event.\r\nA building operations stream, for example, might carry thermostat readings, occupancy updates, air-quality measurements, and badge-reader activity through the same source. These events may share a payload format, but they don't describe the same thing. A temperature field matters to a thermostat event. An employee identifier belongs to an access event. An occupancy count describes something else entirely.\r\nTraditionally, processing a mixed stream like this often meant treating it as one wide, sparse schema or reconstructing the meaning of each event downstream. Developers identify the event type, guard against fields that don't apply, and often repeat that logic wherever the stream branches.\r\nWith Schema-aware Fabric Eventstreams (P…",
+          "link": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Explore-and-process-multiple-event-types-with-Schema-aware/ba-p/5376384",
+          "publishedOn": "2026-10-22T20:01:43.000Z",
+          "wordCount": null,
+          "title": "Explore and process multiple event types with Schema-aware Fabric Eventstreams (Preview)",
+          "imageUrl": null
+        },
+        {
+          "id": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Create-purpose-built-custom-visuals-in-Real-Time-Dashboards-with/ba-p/5376359",
+          "author": "MichalBar",
+          "description": "Real-Time Dashboards include built-in visuals for common monitoring and analysis scenarios. However, operational decisions do not always fit a standard chart. You may need to combine several signals, use a domain-specific layout, or present information differently for a particular workflow or audience. Custom visuals with Copilot, now in preview, help you create a dashboard experience around the operational question you need to answer.\r\nWith custom visuals, you can describe the operational view you need in natural language. Copilot creates the supporting KQL query and HTML-based visualization directly in the dashboard, helping you move from an operational question to a tailored visual without first adapting the scenario to a predefined chart.\r\nMove beyond predefined chart types\r\nA standard…",
+          "link": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Create-purpose-built-custom-visuals-in-Real-Time-Dashboards-with/ba-p/5376359",
+          "publishedOn": "2026-10-22T16:55:50.000Z",
+          "wordCount": null,
+          "title": "Create purpose-built custom visuals in Real-Time Dashboards with Copilot (Preview)",
+          "imageUrl": null
+        },
+        {
           "id": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Incrementally-migrate-and-re-migrate-database-objects-with/ba-p/5376060",
           "author": "prl",
           "description": "Migrate database objects to Microsoft Fabric in phases without creating a new Warehouse for every run. Start with one business domain, add another when it is ready, or revisit an object after its source definition changes. You can also build on an existing Warehouse instead of replacing it.\r\nIncremental migration for Microsoft Fabric Data Warehouse (Preview) lets you move workloads in manageable phases while keeping control of the destination. Select the objects required for the current workload, add more objects in later runs, and resolve naming conflicts when an incoming object already exists. The process migrates object definitions; it does not continuously synchronize changed rows.\r\nYou can start with an empty Warehouse, continue a previous migration, or use an existing Warehouse that …",
@@ -1682,6 +1702,56 @@
       "feedUrl": "https://azure.github.io/AppService/feed.xml",
       "siteUrl": "https://azure.github.io/AppService/",
       "articles": [
+        {
+          "id": "https://azure.github.io/AppService/2026/10/22/emudhra-certificate-issue-app-service-linux.html",
+          "author": null,
+          "description": "Update (22 October 2026): Rollout of patched built-in Linux images for the eMudhra / emSign CA certificate security incident is complete on Latest for the runtimes listed below. Rollout is also complete on Standard except for Java, whose Standard rollout remains in progress. Java customers on Standard should wait for that rollout to complete; no channel change is needed. The PHP 8.2 and EOL exclusions described below remain unchanged.",
+          "link": "https://azure.github.io/AppService/2026/10/22/emudhra-certificate-issue-app-service-linux.html",
+          "publishedOn": "2026-10-22T00:00:00.000Z",
+          "wordCount": 1705,
+          "title": "eMudhra / emSign Certificate Security Updates on Azure App Service for Linux",
+          "imageUrl": "https://azure.github.io/AppService/assets/images/icon.png"
+        },
+        {
+          "id": "https://azure.github.io/AppService/2026/10/22/emudhra-certificate-issue-app-service-windows.html",
+          "author": null,
+          "description": "Update (22 October 2026): The rollout of Windows operating-system certificate updates for the eMudhra / emSign CA certificate security incident has started on Azure App Service for Windows. Rollout is in progress, not complete. We will update this post when the rollout completes.",
+          "link": "https://azure.github.io/AppService/2026/10/22/emudhra-certificate-issue-app-service-windows.html",
+          "publishedOn": "2026-10-22T00:00:00.000Z",
+          "wordCount": 1013,
+          "title": "eMudhra / emSign Certificate Security Updates on Azure App Service for Windows",
+          "imageUrl": "https://azure.github.io/AppService/assets/images/icon.png"
+        },
+        {
+          "id": "https://azure.github.io/AppService/2026/10/22/node-emergency-release-app-service-windows.html",
+          "author": null,
+          "description": "Update (22 October 2026): The rollout of updated built-in Node.js runtimes on Azure App Service for Windows has started. This update is part of a rollout following an accelerated SDP (Safe Deployment Practice). We will update this post when the rollout is complete.",
+          "link": "https://azure.github.io/AppService/2026/10/22/node-emergency-release-app-service-windows.html",
+          "publishedOn": "2026-10-22T00:00:00.000Z",
+          "wordCount": 1098,
+          "title": "Emergency Node.js Runtime Updates on Azure App Service for Windows",
+          "imageUrl": "https://azure.github.io/AppService/assets/images/icon.png"
+        },
+        {
+          "id": "https://azure.github.io/AppService/2026/10/22/node-python-emergency-release-app-service-linux.html",
+          "author": null,
+          "description": "Update (22 October 2026): Rollout of the updated built-in Node.js and Python images is complete on both the Latest and Standard Platform Release Channels for Azure App Service on Linux.",
+          "link": "https://azure.github.io/AppService/2026/10/22/node-python-emergency-release-app-service-linux.html",
+          "publishedOn": "2026-10-22T00:00:00.000Z",
+          "wordCount": 1346,
+          "title": "Emergency Node.js and Python Runtime Updates on Azure App Service for Linux",
+          "imageUrl": "https://azure.github.io/AppService/assets/images/icon.png"
+        },
+        {
+          "id": "https://azure.github.io/AppService/2026/10/22/time-zone-updates-app-service-linux.html",
+          "author": null,
+          "description": "Update (22 October 2026): Rollout of updated built-in Linux images for the time-zone rule changes in IANA time zone database 2026e is complete on Latest for the supported runtimes covered below. Rollout is also complete on Standard except for Java, whose Standard rollout remains in progress. Java customers on Standard should wait for that rollout to complete; no channel change is needed. The PHP 8.2, PHP 8.3, and EOL exclusions described below remain unchanged.",
+          "link": "https://azure.github.io/AppService/2026/10/22/time-zone-updates-app-service-linux.html",
+          "publishedOn": "2026-10-22T00:00:00.000Z",
+          "wordCount": 1635,
+          "title": "Time Zone Updates on Azure App Service for Linux",
+          "imageUrl": "https://azure.github.io/AppService/assets/images/icon.png"
+        },
         {
           "id": "https://azure.github.io/AppService/2026/10/21/php-critical-security-release-app-service-linux.html",
           "author": null,
@@ -4539,16 +4609,6 @@
           "wordCount": 7358,
           "title": "Multi-Tenant Architecture: Real Challenges and an Azure Design Walkthrough",
           "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTE3NDYwLTg1clQ3NQ?revision=2"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/building-an-on-device-voice-assistant-with-microsoft-foundry-local/4522392",
-          "author": "Lee_Stott",
-          "description": "Why on-device voice still matters\nMost \"voice AI\" tutorials assume your audio leaves the machine. You ship a WAV to Whisper-API, your transcript to GPT-4, and a synthesized response back over the wire. That works — but it also means three round trips, three per-token bills, and three places your user's voice gets logged.\nThe new wave of small, hardware-optimised models changes the trade-off. NVIDIA's Nemotron Speech Streaming En 0.6B is a 600M-parameter streaming ASR model published into the Microsoft Foundry Local catalog. Paired with a small chat model like qwen2.5-0.5b or phi-4-mini, you can run the entire capture → transcribe → reason → respond loop in-process on a developer laptop, with no API keys and no network egress.\nThis post walks through how the fl-nemotron sample does it, the …",
-          "link": "https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/building-an-on-device-voice-assistant-with-microsoft-foundry-local/4522392",
-          "publishedOn": "2026-05-26T07:00:00.000Z",
-          "wordCount": 10518,
-          "title": "Building an On-Device Voice Assistant with Microsoft Foundry Local",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTIyMzkyLUVuTUEwYg?revision=1"
         }
       ]
     },
@@ -5868,6 +5928,16 @@
       "feedUrl": "https://devblogs.microsoft.com/microsoft365dev/feed/",
       "siteUrl": "https://devblogs.microsoft.com/microsoft365dev/",
       "articles": [
+        {
+          "id": "https://devblogs.microsoft.com/microsoft365dev/?p=26346",
+          "author": "Steve Pucelik",
+          "description": "Taking an enterprise application from development to production requires confidence that it can scale, stay reliable, and be governed effectively. Recent SharePoint Embedded updates give developers clearer guidance for making those decisions, from understanding limits and managing throttling to choosing the right permissions.  In this blog post, we highlight updates that help you:   Plan with […]\nThe post Develop enterprise-grade apps with SharePoint Embedded appeared first on Microsoft 365 Developer Blog.",
+          "link": "https://devblogs.microsoft.com/microsoft365dev/develop-enterprise-grade-apps-with-sharepoint-embedded/",
+          "publishedOn": "2026-10-22T12:30:44.000Z",
+          "wordCount": 8652,
+          "title": "Develop enterprise-grade apps with SharePoint Embedded",
+          "imageUrl": "https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2026/10/DMSHeader.webp"
+        },
         {
           "id": "https://devblogs.microsoft.com/microsoft365dev/?p=26252",
           "author": "Paolo Pialorsi",
