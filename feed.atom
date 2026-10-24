@@ -2,10 +2,59 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2026-10-23T03:42:52.177Z</updated>
+    <updated>2026-10-24T03:37:11.125Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Making Azure Container Registry Activity Visible at Scale]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/making-azure-container-registry-activity-visible-at-scale/4567301</id>
+        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/making-azure-container-registry-activity-visible-at-scale/4567301"/>
+        <updated>2026-10-23T23:56:08.000Z</updated>
+        <summary type="html"><![CDATA[Learn More
+
+Use Grafana dashboards in Azure Container Registry
+Monitor Azure Container Registry
+
+Azure Container Registry (ACR) now publishes two new metrics: Transactions and Data Transfer. For the first time, you can see which operations your registry serves, which region serves them, and how much data (egress) they move, for each registry and each of its geo-replicas.
+ACR often serves as a shared distribution point for containerized workloads. Build systems push container images and other artifacts, Kubernetes clusters pull images during deployments, and security and lifecycle tools scan artifacts throughout the day. As those environments grow, high-level signals such as a total pull count or storage used can tell you that activity changed, but not why. Transactions and Data Transfer fi…]]></summary>
+        <author>
+            <name>cabarker</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Before Your Next Azure VM Refresh, Revisit the PaaS Options]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AzureMigrationBlog/before-your-next-azure-vm-refresh-revisit-the-paas-options/4562940</id>
+        <link href="https://techcommunity.microsoft.com/blog/AzureMigrationBlog/before-your-next-azure-vm-refresh-revisit-the-paas-options/4562940"/>
+        <updated>2026-10-23T18:57:34.000Z</updated>
+        <summary type="html"><![CDATA[Why review these changes together?
+MANA and VM lifecycles
+MANA can change the network adapter on an eligible existing VM after maintenance or a stop, deallocate, and start cycle, even when the VM size stays the same. With Accelerated Networking enabled, check supported OS and driver versions. When it is disabled, no MANA-specific action is required. Rollout timing depends on the VM series, so check readiness alongside the application tests.
+The VM lifecycle stages are Current, Extended, End of Life, and Retired. Extended sizes remain supported; End of Life sizes remain supported until their announced retirement date. A retirement announcement does not end support immediately. Check the exact family’s dates when planning a refresh and evaluate suitable managed services alongside supported V…]]></summary>
+        <author>
+            <name>Madhura Amlekar</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Azure Functions: Time Zone, Node.js, Python, and Certificate Updates]]></title>
+        <id>https://azure.github.io/AppService/2026/10/23/time-zone-runtime-certificate-updates-azure-functions.html</id>
+        <link href="https://azure.github.io/AppService/2026/10/23/time-zone-runtime-certificate-updates-azure-functions.html"/>
+        <updated>2026-10-23T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Update (23 October 2026): Updates for time-zone rules, Node.js and Python runtimes, and the eMudhra / emSign certificate issue are rolling out to Azure Functions. Windows apps on Consumption, App Service plans, and Elastic Premium follow the App Service Windows patching process. Linux apps on Consumption, App Service plans, Elastic Premium, and Flex Consumption are being patched separately by the Azure Functions team. Updates for Azure Static Web Apps managed functions are also in progress. Rollouts are in progress, not complete.]]></summary>
+        <author>
+            <name>Azure App Service</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Time Zone Updates on Azure App Service for Windows]]></title>
+        <id>https://azure.github.io/AppService/2026/10/23/time-zone-updates-app-service-windows.html</id>
+        <link href="https://azure.github.io/AppService/2026/10/23/time-zone-updates-app-service-windows.html"/>
+        <updated>2026-10-23T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Update (23 October 2026): The rollout of Windows operating-system time-zone updates on Azure App Service for Windows has started through accelerated Safe Deployment Practices (SDP). Rollout is in progress, not complete. We will update this post when the rollout completes.]]></summary>
+        <author>
+            <name>Azure App Service</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Explore and process multiple event types with Schema-aware Fabric Eventstreams (Preview)]]></title>
         <id>https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Explore-and-process-multiple-event-types-with-Schema-aware/ba-p/5376384</id>
@@ -7679,139 +7728,6 @@ Configuration Snapshots in Microsoft Entra Te…]]></summary>
         <summary type="html"><![CDATA[Author: Xu Jiang, Principal PM Manager - Bring more context to your IoT data in Microsoft Fabric Eventstream. With the enhanced Azure IoT Hub connector (Preview), you can now preserve valuable event metadata—such as device identity, ingestion time, and authentication details—alongside your payload, unlocking richer real-time analytics, better monitoring, and smarter routing scenarios.]]></summary>
         <author>
             <name>xujx</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[From Excel to Delta Tables - Simplifying Excel Data Ingestion with Shortcut Transformations (Preview)]]></title>
-        <id>https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/From-Excel-to-Delta-Tables-Simplifying-Excel-Data-Ingestion-with/ba-p/5185370</id>
-        <link href="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/From-Excel-to-Delta-Tables-Simplifying-Excel-Data-Ingestion-with/ba-p/5185370"/>
-        <updated>2026-05-27T12:31:59.000Z</updated>
-        <summary type="html"><![CDATA[Haresh Gowri Sankar, Principal Product Manager - Microsoft Fabric]]></summary>
-        <author>
-            <name>hareshgowri</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Hybrid AI Agents in Python: Routing Between Foundry Local and Microsoft Foundry]]></title>
-        <id>https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/hybrid-ai-agents-in-python-routing-between-foundry-local-and-microsoft-foundry/4522979</id>
-        <link href="https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/hybrid-ai-agents-in-python-routing-between-foundry-local-and-microsoft-foundry/4522979"/>
-        <updated>2026-05-27T07:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Why hybrid, and why now
-If you build AI features today, you are caught between three forces. Users want low latency and strong privacy. Product teams want frontier reasoning capability. Finance teams want predictable cost. No single model satisfies all three. Run everything on a small on-device model and you bottleneck on complex questions. Send everything to a frontier cloud model and you pay for trivial requests, leak sensitive data across a network boundary, and add hundreds of milliseconds of latency to greetings.
-The pragmatic answer is hybrid inference: a lightweight local model classifies every request first, simple or sensitive ones stay on the device, and only the genuinely hard or frontier-capability requests escalate to the cloud. Microsoft now ships both halves of that pattern …]]></summary>
-        <author>
-            <name>Lee_Stott</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Multi-Tenant Architecture: Real Challenges and an Azure Design Walkthrough]]></title>
-        <id>https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/multi-tenant-architecture-real-challenges-and-an-azure-design-walkthrough/4517460</id>
-        <link href="https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/multi-tenant-architecture-real-challenges-and-an-azure-design-walkthrough/4517460"/>
-        <updated>2026-05-27T07:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Azure Multi-Tenant Architecture (B2C Scenario)
-Let’s start with a reference design commonly used in Azure-based systems.
-
-A pretty standard setup looks something like this:
-
-Microsoft Entra External ID (Azure AD B2C) for authentication
-Azure API Management as the entry layer
-App Service or Functions for the compute layer
-Cosmos DB or SQL for storage
-Redis for caching
-Service Bus for async processing
-Application Insights for monitoring
-
-If you’ve worked on Azure systems, nothing here is surprising.On paper, this architecture is clean, scalable, and “multi-tenant ready”.
-But once traffic starts flowing and tenants behave differently, things start breaking in subtle ways.
-1. Tenant Context Propagation Across Services
-
-
-A request doesn’t stay in one place. It moves across:
-
-API layer
-queues/to…]]></summary>
-        <author>
-            <name>pranav_pratik</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Build AI RAG Apps with Azure DocumentDB (with MongoDB compatibility) and OpenAI: Step-by-Step Guide]]></title>
-        <id>https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/build-ai-rag-apps-with-azure-documentdb-with-mongodb-compatibility-and-openai-st/4497192</id>
-        <link href="https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/build-ai-rag-apps-with-azure-documentdb-with-mongodb-compatibility-and-openai-st/4497192"/>
-        <updated>2026-05-26T22:08:40.000Z</updated>
-        <summary type="html"><![CDATA[Scenario
-Imagine you are building your company’s RAG chat application using Azure OpenAI Service and orchestrating the flow with LangChain. The chat experience works, but now it needs to be grounded in your company’s data. You generate embeddings and want to store and query them without adding another database or complex sync pipeline. Instead of stitching services together, you use Azure DocumentDB (with MongoDB compatibility) with built-in vector search to store your JSON data and embeddings in one place. You deploy the app to Azure App Service and quickly compare vector search alone versus a full RAG pipeline, sharing it with your team for testing.
-What will you learn?
-In this blog, you'll learn to:
-
-Create an Azure DocumentDB (with MongoDB compatibility) resource.
-Create an embeddings …]]></summary>
-        <author>
-            <name>JohnAziz</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Simplify your data movement with Copy job: CDC with SQL estate (Generally Available)]]></title>
-        <id>https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Simplify-your-data-movement-with-Copy-job-CDC-with-SQL-estate/ba-p/5184211</id>
-        <link href="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Simplify-your-data-movement-with-Copy-job-CDC-with-SQL-estate/ba-p/5184211"/>
-        <updated>2026-05-26T21:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Author: Ye Xu, Principal Program Manager - Copy job  is the go-to solution in Microsoft Fabric Data Factory for simplified data movement across multiple clouds and tenants. With native support for bulk copy, incremental copy, and change data capture (CDC) replication, it can handle a wide range of movement scenarios through an intuitive, easy-to-use experience.]]></summary>
-        <author>
-            <name>yexu</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[How ACR Runs Multi-Tenancy at Scale: Compute Stamp Rebalancing and Why You Never See It Happen]]></title>
-        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/how-acr-runs-multi-tenancy-at-scale-compute-stamp-rebalancing-and-why-you-never-/4523014</id>
-        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/how-acr-runs-multi-tenancy-at-scale-compute-stamp-rebalancing-and-why-you-never-/4523014"/>
-        <updated>2026-05-26T18:11:47.000Z</updated>
-        <summary type="html"><![CDATA[By Johnson Shi, Richard Yuan, Yi Zha, Susan Shi, Jeanine Burke, Bin Du, Clark Porter, Bernie Harris, Eric Du
-Introduction
-Two of the most common questions we hear from teams running container workloads at scale on Azure Container Registry (ACR) are:
-
-"How does ACR keep my registry's performance predictable when I'm sharing infrastructure with thousands of other tenants?" — Cloud services are inherently multi-tenant. What does ACR actually do to keep my workload from competing with my neighbors during high concurrency data plane API operations?
-"What happens when one tenant's workload grows large enough to affect the shared infrastructure?" — Is there an active intervention, or does the system just absorb the noise from concurrent registry operations?
-
-In this post, we clarify how ACR runs …]]></summary>
-        <author>
-            <name>johnsonshi_msft</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[How ACR Runs Multi-Tenancy at Scale: Stamp Rebalancing and Why You Never See It Happen]]></title>
-        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/how-acr-runs-multi-tenancy-at-scale-stamp-rebalancing-and-why-you-never-see-it-h/4523014</id>
-        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/how-acr-runs-multi-tenancy-at-scale-stamp-rebalancing-and-why-you-never-see-it-h/4523014"/>
-        <updated>2026-05-26T18:11:47.000Z</updated>
-        <summary type="html"><![CDATA[By Johnson Shi, Richard Yuan, Yi Zha, Susan Shi, Jeanine Burke, Bin Du, Clark Porter, Bernie Harris, Eric Du
-Introduction
-Two of the most common questions we hear from teams running container workloads at scale on Azure Container Registry (ACR) are:
-
-"How does ACR keep my registry's performance predictable when I'm sharing infrastructure with thousands of other tenants?" — Cloud services are inherently multi-tenant. What does ACR actually do to keep my workload from competing with my neighbors?
-"What happens when one tenant's workload grows large enough to affect the shared infrastructure?" — Is there an active intervention, or does the system just absorb the noise?
-
-In this post, we clarify how ACR runs its multi-tenant fleet: the stamp architecture that underpins ACR's infrastructure in …]]></summary>
-        <author>
-            <name>johnsonshi_msft</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Custom Live Pools for Fabric Data Engineering (Preview)]]></title>
-        <id>https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Custom-Live-Pools-for-Fabric-Data-Engineering-Preview/ba-p/5187356</id>
-        <link href="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Custom-Live-Pools-for-Fabric-Data-Engineering-Preview/ba-p/5187356"/>
-        <updated>2026-05-26T17:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Author: Santhosh Kumar Ravindran, Principal Product Manager - Custom Live Pools for Fabric Data Engineering is a new way to schedule and manage “ready to run” Spark capacity so your teams spend less time waiting for compute and more time delivering outcomes.]]></summary>
-        <author>
-            <name>Santhosh_Ravin1</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Simplify data movement with Copy job: more control, more flexibility]]></title>
-        <id>https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Simplify-data-movement-with-Copy-job-more-control-more/ba-p/5184219</id>
-        <link href="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Simplify-data-movement-with-Copy-job-more-control-more/ba-p/5184219"/>
-        <updated>2026-05-26T16:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Author: Ye Xu, Principal Program Manager - Copy job is the go-to solution in Microsoft Fabric Data Factory for simplified data movement across multiple clouds and tenants. With native support for bulk copy, incremental copy, and change data capture (CDC) replication, it can handle a wide range of movement scenarios through an intuitive, easy-to-use experience.]]></summary>
-        <author>
-            <name>yexu</name>
         </author>
     </entry>
 </feed>
