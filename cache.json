@@ -6,6 +6,26 @@
       "siteUrl": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/bg-p/fbc_fabricupdatesblogs",
       "articles": [
         {
+          "id": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Data-Visualization-in-the-Agentic-Era/ba-p/5376290",
+          "author": "yelper",
+          "description": "Data visualizations help people identify patterns, trends, and outliers in their data. However, creating a useful visual requires several decisions: which chart and data to use, how to map the data to visual properties such as color and position, and how the finished visual should look. AI-assisted development can reduce that complexity by letting developers describe the intended result in natural language while reusable visualization components handle common design and interaction requirements.\r\nDeciding what visualization to create is one problem, while deciding how to create it is another. Power BI offers a convenient way to create reports and visualizations, but authors work within the chart types and formatting options that the product provides. AI coding agents another approach: deve…",
+          "link": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Data-Visualization-in-the-Agentic-Era/ba-p/5376290",
+          "publishedOn": "2026-10-26T21:00:00.000Z",
+          "wordCount": null,
+          "title": "Data Visualization in the Agentic Era",
+          "imageUrl": null
+        },
+        {
+          "id": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Announcing-workspace-monitoring-integration-for-Fabric-Data/ba-p/5376599",
+          "author": "Mariyaali",
+          "description": "With Microsoft Fabric Data Warehouse integration with workspace monitoring (Preview), you can analyze completed warehouse query activity across an entire workspace from the monitoring Eventhouse and KQL database, helping you find failed or slow queries and quickly identify the warehouse that needs attention.\r\nSee warehouse activity across your workspace\r\nMonitoring multiple warehouses is difficult when query activity is spread across separate tools and experiences. Workspace monitoring brings completed warehouse execution events into the WarehouseExecutions table, where administrators and operators can review activity across the workspace from a single monitoring database.\r\nThe integration supports warehouses, SQL analytics endpoints, and warehouse snapshots. It captures completed, user-in…",
+          "link": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Announcing-workspace-monitoring-integration-for-Fabric-Data/ba-p/5376599",
+          "publishedOn": "2026-10-26T16:00:00.000Z",
+          "wordCount": null,
+          "title": "Announcing workspace monitoring integration for Fabric Data Warehouse (Preview)",
+          "imageUrl": null
+        },
+        {
           "id": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Explore-and-process-multiple-event-types-with-Schema-aware/ba-p/5376384",
           "author": "arindamc",
           "description": "Real-time streams rarely contain just one kind of event.\r\nA building operations stream, for example, might carry thermostat readings, occupancy updates, air-quality measurements, and badge-reader activity through the same source. These events may share a payload format, but they don't describe the same thing. A temperature field matters to a thermostat event. An employee identifier belongs to an access event. An occupancy count describes something else entirely.\r\nTraditionally, processing a mixed stream like this often meant treating it as one wide, sparse schema or reconstructing the meaning of each event downstream. Developers identify the event type, guard against fields that don't apply, and often repeat that logic wherever the stream branches.\r\nWith Schema-aware Fabric Eventstreams (P…",
@@ -93,6 +113,16 @@
           "publishedOn": "2026-10-20T16:00:00.000Z",
           "wordCount": null,
           "title": "New analytical functions in Microsoft Fabric Data Warehouse (Preview)",
+          "imageUrl": null
+        },
+        {
+          "id": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Fabric-Data-Warehouse-integration-with-Fabric-User-Data/ba-p/5375137",
+          "author": "jovanpop-msft",
+          "description": "Microsoft Fabric Data Warehouse now integrates with Fabric User Data Functions in preview, so you can extend T-SQL with custom Python logic without building separate applications or pipelines. Use the integration to send email or Teams messages, retrieve parameters and secrets from Fabric variable libraries or Azure Key Vault, and access data across OneLake.\r\nThese capabilities are now available directly from T-SQL queries in your Warehouse.\r\n \r\nFigure: Calling a Fabric User Data Function from a T-SQL query in Fabric Data Warehouse.\r\nYou can create T-SQL external functions in Fabric Data Warehouse that reference Python functions in a Fabric User Data Functions item. You can then invoke those functions from familiar statements such as SELECT, INSERT, and UPDATE. When an external function is…",
+          "link": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Fabric-Data-Warehouse-integration-with-Fabric-User-Data/ba-p/5375137",
+          "publishedOn": "2026-10-19T21:00:00.000Z",
+          "wordCount": null,
+          "title": "Fabric Data Warehouse integration with Fabric User Data Functions (Preview)",
           "imageUrl": null
         },
         {
@@ -1624,16 +1654,6 @@
           "wordCount": 6777,
           "title": "Solving Power BI in-report alerts with translytical task flows",
           "imageUrl": "https://community.fabric.microsoft.com/t5/image/serverpage/image-id/1350630iF98696C93FE6DD7E?v=v2"
-        },
-        {
-          "id": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Fabric-Influencers-Spotlight-May-2026/ba-p/5185408",
-          "author": "mamathews",
-          "description": "Welcome to the May 2026 edition of the Fabric Influencers Spotlight, a recurring monthly post here to shine a bright light on the places on the internet where Microsoft MVPs and Fabric Super Users are doing some amazing work on all aspects of Microsoft Fabric. The Microsoft Fabric Community team has created the Fabric Influencers Spotlight to highlight and amplify blog posts, videos, presentations, and other content related to Microsoft Fabric. We’ve cultivated submissions from members of Microsoft MVPs and Fabric Super Users from the Fabric community that cover the Fabric Platform, Data Engineering & Data Science in Fabric, Data Warehousing, Power BI, Real-Time Intelligence, Data Integration, Fabric Administration and Governance and Databases.Microsoft Most Valuable Professionals, or MVPs…",
-          "link": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Fabric-Influencers-Spotlight-May-2026/ba-p/5185408",
-          "publishedOn": "2026-05-29T16:00:00.000Z",
-          "wordCount": 6909,
-          "title": "Fabric Influencers Spotlight: May 2026",
-          "imageUrl": "https://community.fabric.microsoft.com/html/assets/fabric_twitter_OG_image.png"
         }
       ]
     },
@@ -1642,6 +1662,36 @@
       "feedUrl": "https://azure.github.io/AppService/feed.xml",
       "siteUrl": "https://azure.github.io/AppService/",
       "articles": [
+        {
+          "id": "https://azure.github.io/AppService/2026/10/26/dotnet-brotli-security-update-app-service-linux.html",
+          "author": null,
+          "description": "Update (26 October 2026): Rollout of the updated built-in .NET images is complete on the Latest Platform Release Channel for Azure App Service on Linux. Rollout to Standard is in progress through Safe Deployment Practices (SDP).",
+          "link": "https://azure.github.io/AppService/2026/10/26/dotnet-brotli-security-update-app-service-linux.html",
+          "publishedOn": "2026-10-26T00:00:00.000Z",
+          "wordCount": 1300,
+          "title": ".NET Brotli Security Updates on Azure App Service for Linux",
+          "imageUrl": "https://azure.github.io/AppService/assets/images/icon.png"
+        },
+        {
+          "id": "https://azure.github.io/AppService/2026/10/26/dotnet-brotli-security-update-app-service-windows.html",
+          "author": null,
+          "description": "Update (26 October 2026): Deployment of updated built-in .NET runtimes on Azure App Service for Windows is active through Safe Deployment Practices (SDP). Rollout is in progress, not complete.",
+          "link": "https://azure.github.io/AppService/2026/10/26/dotnet-brotli-security-update-app-service-windows.html",
+          "publishedOn": "2026-10-26T00:00:00.000Z",
+          "wordCount": 1151,
+          "title": ".NET Brotli Security Updates on Azure App Service for Windows",
+          "imageUrl": "https://azure.github.io/AppService/assets/images/icon.png"
+        },
+        {
+          "id": "https://azure.github.io/AppService/2026/10/26/dotnet-brotli-security-update-azure-functions.html",
+          "author": null,
+          "description": "Update (26 October 2026): The .NET security update rollout for Linux Azure Functions is in progress. The applicable update for Azure Static Web Apps managed functions is also in progress and depends on the Functions Linux rollout. Windows function apps on Consumption, App Service plans, and Elastic Premium depend on the App Service Windows runtime rollout, which is active through Safe Deployment Practices (SDP) and is not yet complete.",
+          "link": "https://azure.github.io/AppService/2026/10/26/dotnet-brotli-security-update-azure-functions.html",
+          "publishedOn": "2026-10-26T00:00:00.000Z",
+          "wordCount": 1504,
+          "title": "Azure Functions: .NET Brotli Security Updates",
+          "imageUrl": "https://azure.github.io/AppService/assets/images/icon.png"
+        },
         {
           "id": "https://azure.github.io/AppService/2026/10/23/time-zone-runtime-certificate-updates-azure-functions.html",
           "author": null,
@@ -2553,6 +2603,26 @@
       "feedUrl": "https://techcommunity.microsoft.com/t5/s/plugins/custom/microsoft/o365/custom-blog-rss?board=AppsonAzureBlog&size=100",
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
+        {
+          "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/qwen3-8-27b-on-a-lenovo-laptop-run-it-on-rtx-spark-watch-it-in-azure-monitor/4567828",
+          "author": "Wuyi_Weng",
+          "description": "In an earlier post I served Qwen3.8-27B from an H100 in Azure. The same model also runs on a laptop: the Lenovo Yoga 9n 2-in-1 (16\", 11) with NVIDIA's RTX Spark N1X and 64 GB of unified memory. On a short code-generation benchmark it decodes 44.7 tokens a second for one request, and it holds the model's full 262,144-token context. Over three hours of an OpenCode agent reviewing two open-source repositories, it decoded replies at a steady 27 tokens a second per request, and the GPU averaged 41 W.\nA coding agent needs three things from a local model: replies fast enough to wait for, room for the whole conversation, and a machine that runs cool and steady for hours. In my testing, the Yoga 9n delivered all three. This post reviews it for that job, shows what three hours of agent traffic looke…",
+          "link": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/qwen3-8-27b-on-a-lenovo-laptop-run-it-on-rtx-spark-watch-it-in-azure-monitor/4567828",
+          "publishedOn": "2026-10-26T18:37:40.000Z",
+          "wordCount": null,
+          "title": "Qwen3.8-27B on a Lenovo laptop: run it on RTX Spark, watch it in Azure Monitor",
+          "imageUrl": null
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/bringing-ai-powered-sre-to-your-on-premise-server-estate-for-unifying-ops/4566884",
+          "author": "FaizaanMerchant",
+          "description": "The problem nobody talks about at cloud conferences\nWalk the floor at any cloud event and you'll hear a lot about AI-assisted operations: agents that triage alerts, correlate signals, and hand your on-call engineer a root cause instead of a wall of logs. It's genuinely useful. But there's a quiet assumption — that the workload lives in the cloud.\nMeanwhile, back in the real world, a huge amount of enterprise compute still runs on-premises. Manufacturing, engineering and EPC firms, banks, hospitals, government — they keep critical systems in their own data centers for reasons that aren't going away: latency to plant-floor or trading systems, data gravity, data-residency rules, and decade-old SQL Server estates that nobody is going to re-platform on a whim.\nThe question that naturally follow…",
+          "link": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/bringing-ai-powered-sre-to-your-on-premise-server-estate-for-unifying-ops/4566884",
+          "publishedOn": "2026-10-26T15:15:49.000Z",
+          "wordCount": 14517,
+          "title": "Bringing AI-Powered SRE to Your On-Premise Server Estate For Unifying Ops",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTY2ODg0LTRQQWNpbQ?revision=2"
+        },
         {
           "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/making-azure-container-registry-activity-visible-at-scale/4567301",
           "author": "cabarker",
@@ -3572,16 +3642,6 @@
           "wordCount": 9766,
           "title": "Determinism over magic: the engineering design behind Azure Container Registry Regional Endpoints",
           "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTI0MTAxLWRrMm9XMA?revision=9"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/azure-functions-mcp-extension-now-supports-mcp-prompts/4516359",
-          "author": "lily-ma",
-          "description": "We are thrilled to announce that the MCP prompt trigger is now available in public preview in the Azure Functions MCP extension! With this release, the extension now supports all three core MCP server primitives - tools, resources, and prompts, giving you a complete platform for building rich MCP servers on Azure Functions.\nIn case you missed it, the MCP resource trigger is generally available for serving resources and building interactive UIs in  MCP Apps.\nWhat are MCP Prompts\nIn the Model Context Protocol (MCP), prompts are reusable templates that allow server authors to provide parameterized prompts for a domain, or showcase how to best use the MCP server. Prompts are user-controlled in that they require explicit invocation rather than automatic triggering, and can be context-aware, ref…",
-          "link": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/azure-functions-mcp-extension-now-supports-mcp-prompts/4516359",
-          "publishedOn": "2026-05-29T21:06:21.000Z",
-          "wordCount": null,
-          "title": "Azure Functions MCP extension now supports MCP Prompts",
-          "imageUrl": null
         }
       ]
     },
@@ -5438,6 +5498,16 @@
       "feedUrl": "https://devblogs.microsoft.com/devops/feed/",
       "siteUrl": "https://devblogs.microsoft.com/devops/",
       "articles": [
+        {
+          "id": "https://devblogs.microsoft.com/devops/?p=73590",
+          "author": "Josef Sin",
+          "description": "On October 21, 2026, PHP disclosed two critical vulnerabilities that can allow remote code execution. Neither Azure DevOps Services, our cloud-hosted offering, nor Azure DevOps Server, our on-premises product, uses PHP to handle customer requests. PHP runtimes used by pipelines, containers, and deployed applications have their own patching requirements. Deployment scope: cloud and on-premises Azure […]\nThe post PHP2Shell and Azure DevOps: what to check appeared first on Azure DevOps Blog.",
+          "link": "https://devblogs.microsoft.com/devops/php2shell-and-azure-devops-what-to-check/",
+          "publishedOn": "2026-10-26T13:00:38.000Z",
+          "wordCount": 7747,
+          "title": "PHP2Shell and Azure DevOps: what to check",
+          "imageUrl": "https://devblogs.microsoft.com/devops/wp-content/uploads/sites/6/2018/08/vstsfeature.png"
+        },
         {
           "id": "https://devblogs.microsoft.com/devops/?p=73534",
           "author": "Laura Jiang",
