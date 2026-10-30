@@ -6,6 +6,66 @@
       "siteUrl": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/bg-p/fbc_fabricupdatesblogs",
       "articles": [
         {
+          "id": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Strengthening-data-security-with-workspace-level-private/ba-p/5377347",
+          "author": "spurthikommajos",
+          "description": "Organizations that operate sensitive applications often keep them in networks with no route to the public internet. Applications in restricted networks need real-time analytics without a route to the public internet. Eventstream now supports workspace-level private links for custom endpoint sources (Preview), so those applications can send events to Microsoft Fabric over a private connection. Teams can bring sensitive operational data into real-time analytics without opening a public internet path for ingestion.\r\nThe change is especially useful for in-house applications, services, and gateways that do not have a managed Eventstream connector. They can publish directly to a custom endpoint source through the workspace’s private connection, bringing these workloads into the same private netw…",
+          "link": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Strengthening-data-security-with-workspace-level-private/ba-p/5377347",
+          "publishedOn": "2026-10-29T21:00:00.000Z",
+          "wordCount": null,
+          "title": "Strengthening data security with workspace-level private connectivity for custom endpoints for Eventstream (Preview)",
+          "imageUrl": null
+        },
+        {
+          "id": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Using-Allow-workspace-settings-editing-policy-in-Fabric-Preview/ba-p/5377845",
+          "author": "yaelbiss",
+          "description": "Your teams are ready to build. They know their data, understand their business, and need the freedom to manage the workspaces where ideas become solutions. As adoption grows, that freedom becomes even more valuable. So does the ability to protect the settings that matter most.\r\nA workspace admin role brings broad responsibility. But owning an analytics workspace shouldn't mean every administrator also needs authority over its encryption and networking. Organizations need a more precise way to share responsibility, without pulling everyday workspace management back into a central team's queue.\r\nAt FabCon Barcelona, we introduced the Allow workspace settings editing policy, part of Microsoft Fabric policies, currently in preview. We're excited to give organizations finer control over sensiti…",
+          "link": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Using-Allow-workspace-settings-editing-policy-in-Fabric-Preview/ba-p/5377845",
+          "publishedOn": "2026-10-29T19:00:00.000Z",
+          "wordCount": null,
+          "title": "Using Allow workspace settings editing policy in Fabric (Preview)",
+          "imageUrl": null
+        },
+        {
+          "id": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Manage-once-reuse-everywhere-Introducing-variable-library/ba-p/5377349",
+          "author": "spurthikommajos",
+          "description": "Moving a real-time data pipeline from development to test to production should not mean reconfiguring every source and destination. Yet environment-specific connection details and destination references can make each release a manual, error-prone task. Variable library integration with Eventstream in Microsoft Fabric lets teams reuse the same eventstream definition across environments, with references that resolve to each environment's resources.\r\nWhat's new?\r\nVariable library integration with Eventstream is available in preview. For supported source connections and destination items, you can use variable library references instead of direct values. These references are preserved through Git integration and deployment pipelines, helping teams reuse an eventstream definition across workspac…",
+          "link": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Manage-once-reuse-everywhere-Introducing-variable-library/ba-p/5377349",
+          "publishedOn": "2026-10-29T18:20:11.000Z",
+          "wordCount": null,
+          "title": "Manage once, reuse everywhere: Introducing variable library support for Eventstream (Preview)",
+          "imageUrl": null
+        },
+        {
+          "id": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Bringing-Rust-native-Spark-compatibility-to-Microsoft-OneLake/ba-p/5377595",
+          "author": "amitch",
+          "description": "Coauthor: Shehab Amin\r\nMicrosoft OneLake gives every Microsoft Fabric tenant a single, unified data lake built on open formats. One copy of data, many engines: that is the promise, and it is what makes OneLake such a strong foundation for analytics and AI alike. This post looks at how Sail, the open-source distributed compute framework, and LakeSail Cloud, the managed platform for running Sail in production, connect natively to OneLake, and what that unlocks for teams running Spark and Python workloads on Fabric. \r\nSail is a drop-in replacement for Apache Spark, rebuilt from the ground up in Rust, with Rust-native support for Delta Lake and Apache Iceberg out of the box. That makes it a natural fit for OneLake, where lakehouse tables are stored in exactly these open formats. Point Sail at …",
+          "link": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Bringing-Rust-native-Spark-compatibility-to-Microsoft-OneLake/ba-p/5377595",
+          "publishedOn": "2026-10-29T17:48:58.000Z",
+          "wordCount": null,
+          "title": "Bringing Rust-native Spark compatibility to Microsoft OneLake with Sail and LakeSail",
+          "imageUrl": null
+        },
+        {
+          "id": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Access-versioned-lakeFS-data-from-Microsoft-Fabric-with/ba-p/5377386",
+          "author": "amitch",
+          "description": "Coauthor: Iddo Avneri (Treeverse) \r\nUse a live branch for up-to-date analytics or pin a shortcut to an immutable commit when reproducibility matters. \r\nData teams often need two seemingly conflicting things: immediate access to the latest data and the ability to return to the exact data behind an earlier analysis, report, or experiment. \r\nMaintaining both typically means creating snapshots, copying datasets, or building additional pipelines. That adds operational overhead and makes it harder to know which version of the data was used. \r\nMicrosoft OneLake and lakeFS provide a simpler, complementary pattern for addressing this use case. \r\nOneLake shortcuts allow Microsoft Fabric lakehouses to reference data in external storage through a unified namespace. Because lakeFS exposes versioned dat…",
+          "link": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Access-versioned-lakeFS-data-from-Microsoft-Fabric-with/ba-p/5377386",
+          "publishedOn": "2026-10-29T17:00:00.000Z",
+          "wordCount": null,
+          "title": "Access versioned lakeFS data from Microsoft Fabric with Microsoft OneLake shortcuts",
+          "imageUrl": null
+        },
+        {
+          "id": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Introducing-the-data-engineering-agent-for-Fabric-Project-Osmos/ba-p/5377944",
+          "author": "nareshvenkat",
+          "description": "AI coding assistants are excellent at turning natural-language transformation instructions into code. For data engineers, the harder question is whether that code produces results they can trust.\r\nYou can describe transformation logic in natural language, and an AI coding assistant will happily generate hundreds of lines of Spark code. Impressive.\r\nBut a Spark job can execute successfully and still produce completely wrong results. The logic may work for a subset of the data but fail when run against the full dataset. The pipeline's logic and validation checks may not account for future changes to the data or schema. Incremental loads can cause duplicates. Revenue numbers might look perfectly reasonable until someone reconciles them against the source.\r\nAnyone who's spent time working with…",
+          "link": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Introducing-the-data-engineering-agent-for-Fabric-Project-Osmos/ba-p/5377944",
+          "publishedOn": "2026-10-29T15:55:24.000Z",
+          "wordCount": null,
+          "title": "Introducing the data engineering agent for Fabric (Project Osmos)",
+          "imageUrl": null
+        },
+        {
           "id": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Govern-your-Microsoft-Fabric-data-estate-from-one-place-with-the/ba-p/5377369",
           "author": "LeeBenjamin",
           "description": "The Govern experience in the OneLake catalog is now generally available, providing centralized governance capabilities for tenants, domains, capacities, workspaces, tags, and policies in Microsoft Fabric. Govern Skills are also now available in the Skills for Fabric collection, giving AI agents the knowledge they need to help admins and data owners audit, investigate, and remediate governance issues at scale.\r\nBoth were announced at FabCon Europe 2026. Together, they help you monitor, manage, and act on your data estate from one place, whether you work in the Fabric portal or with an AI agent.\r\nWhy it matters\r\nAs AI makes it easier for more people to build with data, data estates grow in size and complexity. More workspaces, items, and access requests create more decisions about ownership,…",
@@ -1664,26 +1724,6 @@
           "wordCount": 7144,
           "title": "Introducing Rayfin: A new AI-first way to build, deploy, and govern application backends",
           "imageUrl": "https://community.fabric.microsoft.com/t5/image/serverpage/image-id/1351038iE4DAE7472D704538?v=v2"
-        },
-        {
-          "id": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/On-premises-data-gateway-May-2026-release/ba-p/5190820",
-          "author": "lrtoyou1223",
-          "description": "The May 2026 release of the on-premises data gateway is (version 3000.318).",
-          "link": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/On-premises-data-gateway-May-2026-release/ba-p/5190820",
-          "publishedOn": "2026-06-02T13:30:19.000Z",
-          "wordCount": 6323,
-          "title": "On-premises data gateway May 2026 release",
-          "imageUrl": "https://community.fabric.microsoft.com/html/assets/fabric_twitter_OG_image.png"
-        },
-        {
-          "id": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/What-s-new-in-Fabric-Business-Events/ba-p/5189137",
-          "author": "robece-msft",
-          "description": "Author: Roberto Cervantes Rivero, Senior Product Manger - The latest Business Events updates in Microsoft Fabric help close that gap by making it easier to publish meaningful events, route them consistently, and use them across analytics, automation, and application workflows. In this post, we walk through the latest capabilities across publishers, consumers, and platform behavior.",
-          "link": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/What-s-new-in-Fabric-Business-Events/ba-p/5189137",
-          "publishedOn": "2026-06-01T18:04:09.000Z",
-          "wordCount": 6801,
-          "title": "What’s new in Fabric Business Events",
-          "imageUrl": "https://community.fabric.microsoft.com/t5/image/serverpage/image-id/1350253iBAF472EBDDD56A4B?v=v2"
         }
       ]
     },
@@ -1970,16 +2010,6 @@
           "publishedOn": "2026-06-08T00:00:00.000Z",
           "wordCount": 2509,
           "title": "App Service Build 2026 Updates",
-          "imageUrl": "https://azure.github.io/AppService/assets/images/icon.png"
-        },
-        {
-          "id": "https://azure.github.io/AppService/2026/06/02/azure-cli-2-87-app-service-updates.html",
-          "author": null,
-          "description": "Azure CLI 2.87.0 adds structured runtime discovery and preview commands for Linux startup logs. This release also deprecates az webapp up and introduces a breaking change for scripts that consume az webapp list-runtimes output.",
-          "link": "https://azure.github.io/AppService/2026/06/02/azure-cli-2-87-app-service-updates.html",
-          "publishedOn": "2026-06-02T00:00:00.000Z",
-          "wordCount": 910,
-          "title": "What’s new for Azure App Service in Azure CLI 2.87.0",
           "imageUrl": "https://azure.github.io/AppService/assets/images/icon.png"
         }
       ]
@@ -2595,16 +2625,6 @@
           "wordCount": 12861,
           "title": "Make Your Copilot Credits Count: A Student's Guide to Smarter AI Usage",
           "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTI2NjY4LXlGS1ZZQQ?revision=2"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/evaluating-the-evaluator-how-to-test-an-llm-judge-with-microsoft-agent-framework/4516639",
-          "author": "Abdulhamid_Onawole",
-          "description": "The four verdicts, up front\n\n\nConsistency: mean CV across posts 5.30%\n\n\nPipeline format checks: pipeline pass rate 100%\n\n\nRubric adherence (strict judge): 5.00 / 5, mean math drift 0.05 pts\n\n\nCalibration vs. labels: Pearson r = 0.51, MAE = 22.9 pts\n\n\nThree of those say the model is healthy. The last one is the only one that compared the model against anything real, and it tells a different story.\nWhere we left off\nIn Post 1 I built Viral or Fail, three Microsoft Agent Framework agents that pressure-test a gaming social post before you publish it. A Content Creator drafts the post, an Algorithm Simulator scores it the way a recommendation system might, and an Audience Persona reacts the way an actual viewer would. The whole thing runs on the GitHub Models free tier, with no paid API keys.\nT…",
-          "link": "https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/evaluating-the-evaluator-how-to-test-an-llm-judge-with-microsoft-agent-framework/4516639",
-          "publishedOn": "2026-06-02T13:09:41.000Z",
-          "wordCount": null,
-          "title": "Evaluating the Evaluator: How to Test an LLM Judge with Microsoft Agent Framework",
-          "imageUrl": null
         }
       ]
     },
@@ -3572,86 +3592,6 @@
           "wordCount": 8475,
           "title": "Closing the AI-readiness gap with agentic modernization",
           "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTI0MDExLVFpMXdkeA?revision=24"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/azure-sre-agent-at-microsoft-build-2026-bringing-agentic-operations-to-the-enter/4524669",
-          "author": "dchelupati",
-          "description": "Build 2026 Update\nWhen we launched Azure SRE Agent, the promise was simple: reduce operational toil, improve up time, and evolve teams from manual incident response towards AI-powered operations. Since GA in March 2026, that promise has held up in production. Teams are using the agent to diagnose live issues, reason across telemetry and code, and automate response workflows - and the footprint has grown fast. \nBut there's a gap between an agent that works in a dev/test environment and one that works in your production environment. Real production environments sits behind a private network with strict egress rules for enterprise security. Their code lives in a GitHub Enterprise tenant that a consumer OAuth sign-in can't reach. Platform teams need to govern what the agent can learn and use, …",
-          "link": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/azure-sre-agent-at-microsoft-build-2026-bringing-agentic-operations-to-the-enter/4524669",
-          "publishedOn": "2026-06-02T16:01:43.000Z",
-          "wordCount": null,
-          "title": "Azure SRE Agent at Microsoft Build 2026: Bringing agentic operations to the enterprise",
-          "imageUrl": null
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/bring-your-own-github-app-connecting-azure-sre-agent-to-enterprise-repositories/4524673",
-          "author": "dchelupati",
-          "description": "What if your SRE agent could access your enterprise GitHub repositories the same way your CI/CD pipelines do  with a governed service identity, not a personal token? \n\nAzure SRE Agent connects to your GitHub repositories to build rich context about your systems source code, infrastructure definitions, deployment configs, skills, runbooks, and operational history. This context is what turns generic troubleshooting into root cause analysis that points to the exact file, the exact commit, the exact config change. This is part of the Azure SRE Agent announcements at Build 2026.\nFor teams on github.com, connecting is a quick OAuth sign-in. Today, we are extending that same deep context to GitHub Enterprise Cloud and introducing Bring Your Own GitHub App as a first-class authentication model for…",
-          "link": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/bring-your-own-github-app-connecting-azure-sre-agent-to-enterprise-repositories/4524673",
-          "publishedOn": "2026-06-02T15:57:37.000Z",
-          "wordCount": null,
-          "title": "Bring Your Own GitHub App: Connecting Azure SRE Agent to Enterprise Repositories",
-          "imageUrl": null
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/private-plugins-with-azure-sre-agent/4523763",
-          "author": "ebencarek",
-          "description": "SRE's and platform teams are building operational skills specific to their infrastructure: investigation runbooks, compliance checks, cost analysis playbooks, deployment verification procedures. The next step is making that work reusable across every agent in the organization without exposing it publicly. Today, SRE Agent supports plugin marketplaces hosted in private GitHub repositories, including GitHub Enterprise. This is part of the Azure SRE Agent announcements at Build 2026.\nYou can now point SRE Agent at a private repo when adding a marketplace or installing a plugin. Authentication is handled per-marketplace, and supports OAuth, GitHub PATs, and GitHub Apps for GHE tenants.\nFrom one agent to an organization’s plugin catalog\nMost teams start with a single SRE Agent connected to thei…",
-          "link": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/private-plugins-with-azure-sre-agent/4523763",
-          "publishedOn": "2026-06-02T15:54:38.000Z",
-          "wordCount": null,
-          "title": "Private Plugins with Azure SRE Agent",
-          "imageUrl": null
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/vnet-integration-for-azure-sre-agent-preview/4524287",
-          "author": "sanchitmehta",
-          "description": "For many production systems, the logs, databases, private endpoints, repositories, and runbooks an SRE Agent needs to do its job are behind network boundaries your security team already governs. VNet integration for Azure SRE Agent, now in preview, puts the agent's outbound traffic under those same controls - your virtual network, your NSG rules, your private DNS - so it reaches only what your network allows.\nThe principle is one your security team already applies to every other workload: a component's network access shouldn't depend on the component behaving correctly. Identity governs what the agent can reach. Permissions and hooks shape what it does within reach. The network sits beneath both: it blocks any request to a destination you haven't allowed no matter what the agent decides.\nW…",
-          "link": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/vnet-integration-for-azure-sre-agent-preview/4524287",
-          "publishedOn": "2026-06-02T15:54:16.000Z",
-          "wordCount": 8578,
-          "title": "VNet integration for Azure SRE Agent (preview)",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTI0Mjg3LUgyN2V6Yg?revision=17"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/managed-connectors-for-sre-agent-preview--govern-what-your-agent-can-do/4524840",
-          "author": "Dalibor_Kovacevic",
-          "description": "Giving an agent access to a tool is the easy part. The harder question is what it's allowed to do with that access. \"Can the agent copy a file in OneDrive?\" mostly answers itself. \"Can it copy any file, to any destination, over one that's already there?\" is the one that decides whether the integration has a governance layer.\nManaged Connectors is built around that second question. It expands the catalog of tools the agent can reach - OneDrive, SharePoint, Google Drive, GitLab, Power BI, Microsoft Security Copilot, with more being added regularly - and pairs it with a governance model that keeps the policy for those tools outside the agent's control. This is part of the Azure SRE Agent announcements at Build 2026\nWhat's new\nManaged Connectors is the next generation of our connector experien…",
-          "link": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/managed-connectors-for-sre-agent-preview--govern-what-your-agent-can-do/4524840",
-          "publishedOn": "2026-06-02T15:52:54.000Z",
-          "wordCount": 7876,
-          "title": "Managed Connectors for SRE Agent (preview)- Govern what your agent can do",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTI0ODQwLWhGelBDcg?revision=10"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/shaping-what-azure-sre-agent-does-tool-permissions-and-hooks/4524791",
-          "author": "Dalibor_Kovacevic",
-          "description": "When an AI agent runs against production, the first question every security team asks is \"What can it do, who decided it could, and what stops it from doing something it should not.\"\nAzure SRE Agent reached general availability in March. Since then, teams inside Microsoft and customers running it against real production workloads have asked for the same thing: finer-grained controls over what the agent can do on its own and a clear answer to who governs each call that reaches a tool. \nToday at  Build 2026, we are releasing global tool access policies as one of a set of new governance controls. This post covers how they work. Tool access policies give security and platform teams a single place to define which tools the agent can invoke, under what conditions, and what requires human approva…",
-          "link": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/shaping-what-azure-sre-agent-does-tool-permissions-and-hooks/4524791",
-          "publishedOn": "2026-06-02T15:52:48.000Z",
-          "wordCount": 9918,
-          "title": "Shaping what Azure SRE Agent does: Tool Permissions and Hooks",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTI0NzkxLXF1a25rMA?revision=16"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/better-deployment-errors-in-az-webapp-deploy/4524680",
-          "author": "TulikaC",
-          "description": "Deployment failures can be difficult to interpret, especially when the error returned by the deployment API does not clearly explain what went wrong or what to do next.\nTo make this easier, we have added a new switch to az webapp deploy for App Service for Linux:\n--enriched-errors true\nWhen enabled, deployment failures show context-enriched diagnostics directly in the CLI output. This includes an error code, deployment context, the raw error, suggested fixes, and a Copilot-ready prompt that you can use for additional guidance.\nBy default, this option is disabled.\nHow to use it\nAdd --enriched-errors true to your deployment command:\naz webapp deploy \\\n  --resource-group <resource-group-name> \\\n  --name <app-name> \\\n  --src-path <path-to-package> \\\n  --enriched-errors true\nWhat you get\nWith e…",
-          "link": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/better-deployment-errors-in-az-webapp-deploy/4524680",
-          "publishedOn": "2026-06-02T05:52:13.000Z",
-          "wordCount": null,
-          "title": "Better Deployment Errors in az webapp deploy",
-          "imageUrl": null
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/understand-what%E2%80%99s-happening-with-your-app-service-for-linux-website-using-site-s/4524676",
-          "author": "TulikaC",
-          "description": "When your website is not starting or behaving unexpectedly, it can be difficult to quickly understand what state the application is in and what might be causing the issue.\nTo make this easier, Azure App Service for Linux now includes Site Status. Site Status provides runtime information for your website, including the current state of the app and detailed error information when issues are detected.\nWhat Site Status shows\nSite Status gives you a view into the current runtime state of your App Service for Linux website.\nYou can see the site runtime status from the web app’s Properties experience. If the platform detects an issue with the site, the runtime status will show Issues Detected.\n \n\n \nSelecting Issues Detected opens a detailed view where you can see the current status of the site, t…",
-          "link": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/understand-what%E2%80%99s-happening-with-your-app-service-for-linux-website-using-site-s/4524676",
-          "publishedOn": "2026-06-02T05:21:07.000Z",
-          "wordCount": 7539,
-          "title": "Understand What’s Happening with Your App Service for Linux Website Using Site Status",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTI0Njc2LUlicFNwOA?revision=2"
         }
       ]
     },
@@ -4115,26 +4055,6 @@
           "wordCount": 7287,
           "title": "Any source. Any destination. Ready for AI-era.",
           "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTI0ODg2LWhucnRPRw?revision=12"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/monitor-ai-coding-agents-with-opentelemetry-in-azure-monitor/4524049",
-          "author": "KayodePrince",
-          "description": "AI coding agents are quickly becoming part of the everyday developer workflow. As teams adopt tools such as GitHub Copilot, Claude Code, and Codex, they need a better way to understand usage, troubleshoot performance, and keep an eye on token consumption and cost.\nWith Azure Monitor’s OpenTelemetry support, you can collect OpenTelemetry Protocol (OTLP) signals from AI coding agents and route them into Azure Monitor for end-to-end visibility. Ingested OTLP data is stored with OpenTelemetry semantics for logs and traces, Application Insights provides curated agent views for troubleshooting, detailed trace visualizations and end-to-end transaction views.\n\n\nImage: Application Insights end-to-end transaction view for agents.\n\n \nAzure Monitor also includes ready-to-use Grafana dashboards that de…",
-          "link": "https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/monitor-ai-coding-agents-with-opentelemetry-in-azure-monitor/4524049",
-          "publishedOn": "2026-06-02T14:41:00.000Z",
-          "wordCount": 6619,
-          "title": "Monitor AI coding agents with OpenTelemetry in Azure Monitor",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTI0MDQ5LWtLVElSTw?revision=4"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/direct-opentelemetry-ingestion-into-azure-monitor-is-now-generally-available/4524044",
-          "author": "KayodePrince",
-          "description": "OpenTelemetry is powering a new era of observability. Built on open standards, designed for portability, and made for developers who want flexibility without compromise. And now, you can send OpenTelemetry logs, metrics, and traces straight into Azure Monitor OTLP endpoints and data storage. This capability is generally available, production-ready, and built to scale from day one.\nWith direct OTLP ingestion, you can keep your existing OpenTelemetry instrumentation and OpenTelemetry collector pipelines while sending telemetry to Azure Monitor for investigation in Application Insights, analysis in Log Analytics, Prometheus metric storage and visualization in Grafana. \nWhat’s now generally available \n\nDirect OTLP ingestion into Azure Monitor for logs, metrics, and traces. \n\n\nProduction-ready …",
-          "link": "https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/direct-opentelemetry-ingestion-into-azure-monitor-is-now-generally-available/4524044",
-          "publishedOn": "2026-06-02T14:39:33.000Z",
-          "wordCount": 6863,
-          "title": "Direct OpenTelemetry ingestion into Azure Monitor is now generally available",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTI0MDQ0LTFQRDVFZQ?revision=3"
         }
       ]
     },
@@ -4901,6 +4821,16 @@
       "feedUrl": "https://techcommunity.microsoft.com/t5/s/plugins/custom/microsoft/o365/custom-blog-rss?board=MicrosoftMechanicsBlog&size=50",
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
+        {
+          "id": "https://techcommunity.microsoft.com/blog/MicrosoftMechanicsBlog/new-conditional-access-policy-plans-in-microsoft-entra/4568461",
+          "author": "Zachary-Cavanell",
+          "description": "Add a rule for each requirement, like phishing-resistant MFA or compliant devices, and keep the shared scope in one place.\nBuild a plan around a user group, like headquarters staff, or a shared condition, like high agent risk, and start from templates. Merge existing policies into a plan with the migration tool. It pulls shared conditions up to the plan and turns each policy into a rule. Your current policies stay enforced until you cut over.\nEtan Basseri, Principal Product Manager, Microsoft Entra, shares how plans and rules fit together in the Microsoft Entra admin center.\nDefine your access controls once.\n\nEnforce it consistently across every rule with Conditional Access policy plans. See how it works.\nAdd a rule, keep your scope.\n\nSet HQ users and break-glass exclusions once in a Condi…",
+          "link": "https://techcommunity.microsoft.com/blog/MicrosoftMechanicsBlog/new-conditional-access-policy-plans-in-microsoft-entra/4568461",
+          "publishedOn": "2026-10-29T15:59:55.000Z",
+          "wordCount": 13668,
+          "title": "New Conditional Access policy plans in Microsoft Entra",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTY4NDYxLWh3d0gzMQ?revision=1"
+        },
         {
           "id": "https://techcommunity.microsoft.com/blog/MicrosoftMechanicsBlog/fight-ai-with-ai--multi-agent-security-defense/4563980",
           "author": "Zachary-Cavanell",

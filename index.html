@@ -22,8 +22,8 @@
             data-action="toggle-accordions"
             title="Click to toggle the day, Ctrl + click to toggle all."
           >
-            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2026-10-29 datetime="2026-10-28T19:47:19.000Z">2026-10-29</time>
-            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2026-10-29 datetime="2026-10-28T19:47:19.000Z"></time>
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2026-10-30 datetime="2026-10-29T21:00:00.000Z">2026-10-30</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2026-10-30 datetime="2026-10-29T21:00:00.000Z"></time>
           </button>
         </h2>
         <ul class="sources card">
@@ -38,6 +38,193 @@
                   <a class="source-heading__link" href="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/bg-p/fbc_fabricupdatesblogs">Open</a>
                 </h3>
                 <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Strengthening-data-security-with-workspace-level-private/ba-p/5377347"
+                        open
+                      >
+                        <summary class="article-expander__title">Strengthening data security with workspace-level private connectivity for custom endpoints for Eventstream (Preview)</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Strengthening-data-security-with-workspace-level-private/ba-p/5377347">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Organizations that operate sensitive applications often keep them in networks with no route to the public internet. Applications in restricted networks need real-time analytics without a route to the public internet. Eventstream now supports workspace-level private links for custom endpoint sources (Preview), so those applications can send events to Microsoft Fabric over a private connection. Teams can bring sensitive operational data into real-time analytics without opening a public internet path for ingestion.
+The change is especially useful for in-house applications, services, and gateways that do not have a managed Eventstream connector. They can publish directly to a custom endpoint source through the workspace’s private connection, bringing these workloads into the same private netw…</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Using-Allow-workspace-settings-editing-policy-in-Fabric-Preview/ba-p/5377845"
+                        open
+                      >
+                        <summary class="article-expander__title">Using Allow workspace settings editing policy in Fabric (Preview)</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Using-Allow-workspace-settings-editing-policy-in-Fabric-Preview/ba-p/5377845">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Your teams are ready to build. They know their data, understand their business, and need the freedom to manage the workspaces where ideas become solutions. As adoption grows, that freedom becomes even more valuable. So does the ability to protect the settings that matter most.
+A workspace admin role brings broad responsibility. But owning an analytics workspace shouldn&#x27;t mean every administrator also needs authority over its encryption and networking. Organizations need a more precise way to share responsibility, without pulling everyday workspace management back into a central team&#x27;s queue.
+At FabCon Barcelona, we introduced the Allow workspace settings editing policy, part of Microsoft Fabric policies, currently in preview. We&#x27;re excited to give organizations finer control over sensiti…</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Manage-once-reuse-everywhere-Introducing-variable-library/ba-p/5377349"
+                        open
+                      >
+                        <summary class="article-expander__title">Manage once, reuse everywhere: Introducing variable library support for Eventstream (Preview)</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Manage-once-reuse-everywhere-Introducing-variable-library/ba-p/5377349">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Moving a real-time data pipeline from development to test to production should not mean reconfiguring every source and destination. Yet environment-specific connection details and destination references can make each release a manual, error-prone task. Variable library integration with Eventstream in Microsoft Fabric lets teams reuse the same eventstream definition across environments, with references that resolve to each environment&#x27;s resources.
+What&#x27;s new?
+Variable library integration with Eventstream is available in preview. For supported source connections and destination items, you can use variable library references instead of direct values. These references are preserved through Git integration and deployment pipelines, helping teams reuse an eventstream definition across workspac…</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Bringing-Rust-native-Spark-compatibility-to-Microsoft-OneLake/ba-p/5377595"
+                        open
+                      >
+                        <summary class="article-expander__title">Bringing Rust-native Spark compatibility to Microsoft OneLake with Sail and LakeSail</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Bringing-Rust-native-Spark-compatibility-to-Microsoft-OneLake/ba-p/5377595">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Coauthor: Shehab Amin
+Microsoft OneLake gives every Microsoft Fabric tenant a single, unified data lake built on open formats. One copy of data, many engines: that is the promise, and it is what makes OneLake such a strong foundation for analytics and AI alike. This post looks at how Sail, the open-source distributed compute framework, and LakeSail Cloud, the managed platform for running Sail in production, connect natively to OneLake, and what that unlocks for teams running Spark and Python workloads on Fabric. 
+Sail is a drop-in replacement for Apache Spark, rebuilt from the ground up in Rust, with Rust-native support for Delta Lake and Apache Iceberg out of the box. That makes it a natural fit for OneLake, where lakehouse tables are stored in exactly these open formats. Point Sail at …</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Access-versioned-lakeFS-data-from-Microsoft-Fabric-with/ba-p/5377386"
+                        open
+                      >
+                        <summary class="article-expander__title">Access versioned lakeFS data from Microsoft Fabric with Microsoft OneLake shortcuts</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Access-versioned-lakeFS-data-from-Microsoft-Fabric-with/ba-p/5377386">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Coauthor: Iddo Avneri (Treeverse) 
+Use a live branch for up-to-date analytics or pin a shortcut to an immutable commit when reproducibility matters. 
+Data teams often need two seemingly conflicting things: immediate access to the latest data and the ability to return to the exact data behind an earlier analysis, report, or experiment. 
+Maintaining both typically means creating snapshots, copying datasets, or building additional pipelines. That adds operational overhead and makes it harder to know which version of the data was used. 
+Microsoft OneLake and lakeFS provide a simpler, complementary pattern for addressing this use case. 
+OneLake shortcuts allow Microsoft Fabric lakehouses to reference data in external storage through a unified namespace. Because lakeFS exposes versioned dat…</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+        </ul>
+      </section>
+      <section class="daily-content js-toggle-accordions-scope">
+        <h2 class="daily-heading">
+          <button
+            class="daily-heading-toggle"
+            data-action="toggle-accordions"
+            title="Click to toggle the day, Ctrl + click to toggle all."
+          >
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2026-10-29 datetime="2026-10-29T15:59:55.000Z">2026-10-29</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2026-10-29 datetime="2026-10-29T15:59:55.000Z"></time>
+          </button>
+        </h2>
+        <ul class="sources card">
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Microsoft Tech Community - Latest Blogs - Microsoft Mechanics Blog</button>
+                  <a class="source-heading__link" href="https://techcommunity.microsoft.com">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://techcommunity.microsoft.com/blog/MicrosoftMechanicsBlog/new-conditional-access-policy-plans-in-microsoft-entra/4568461"
+                        open
+                      >
+                        <summary class="article-expander__title">New Conditional Access policy plans in Microsoft Entra</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/blog/MicrosoftMechanicsBlog/new-conditional-access-policy-plans-in-microsoft-entra/4568461">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTY4NDYxLWh3d0gzMQ?revision&#x3D;1" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>Add a rule for each requirement, like phishing-resistant MFA or compliant devices, and keep the shared scope in one place.
+Build a plan around a user group, like headquarters staff, or a shared condition, like high agent risk, and start from templates. Merge existing policies into a plan with the migration tool. It pulls shared conditions up to the plan and turns each policy into a rule. Your current policies stay enforced until you cut over.
+Etan Basseri, Principal Product Manager, Microsoft Entra, shares how plans and rules fit together in the Microsoft Entra admin center.
+Define your access controls once.
+
+Enforce it consistently across every rule with Conditional Access policy plans. See how it works.
+Add a rule, keep your scope.
+
+Set HQ users and break-glass exclusions once in a Condi…</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;46
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Fabric Updates Blog articles</button>
+                  <a class="source-heading__link" href="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/bg-p/fbc_fabricupdatesblogs">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Introducing-the-data-engineering-agent-for-Fabric-Project-Osmos/ba-p/5377944"
+                        open
+                      >
+                        <summary class="article-expander__title">Introducing the data engineering agent for Fabric (Project Osmos)</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Introducing-the-data-engineering-agent-for-Fabric-Project-Osmos/ba-p/5377944">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>AI coding assistants are excellent at turning natural-language transformation instructions into code. For data engineers, the harder question is whether that code produces results they can trust.
+You can describe transformation logic in natural language, and an AI coding assistant will happily generate hundreds of lines of Spark code. Impressive.
+But a Spark job can execute successfully and still produce completely wrong results. The logic may work for a subset of the data but fail when run against the full dataset. The pipeline&#x27;s logic and validation checks may not account for future changes to the data or schema. Incremental loads can cause duplicates. Revenue numbers might look perfectly reasonable until someone reconciles them against the source.
+Anyone who&#x27;s spent time working with…</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
                     <article>
                       <details
                         class="article-expander"
@@ -19352,25 +19539,6 @@ In a recent Forrester study, 94% of IT leaders ranked modernization as a top pr
                         </a>
                       </details>
                     </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/azure-sre-agent-at-microsoft-build-2026-bringing-agentic-operations-to-the-enter/4524669"
-                        open
-                      >
-                        <summary class="article-expander__title">Azure SRE Agent at Microsoft Build 2026: Bringing agentic operations to the enterprise</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/azure-sre-agent-at-microsoft-build-2026-bringing-agentic-operations-to-the-enter/4524669">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Build 2026 Update
-When we launched Azure SRE Agent, the promise was simple: reduce operational toil, improve up time, and evolve teams from manual incident response towards AI-powered operations. Since GA in March 2026, that promise has held up in production. Teams are using the agent to diagnose live issues, reason across telemetry and code, and automate response workflows - and the footprint has grown fast. 
-But there&#x27;s a gap between an agent that works in a dev/test environment and one that works in your production environment. Real production environments sits behind a private network with strict egress rules for enterprise security. Their code lives in a GitHub Enterprise tenant that a consumer OAuth sign-in can&#x27;t reach. Platform teams need to govern what the agent can learn and use, …</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
                 </section>
               </section>
             </li>
@@ -19662,409 +19830,10 @@ The post Frontier Tuning: Teaching AI to work the way you do appeared first on M
             </li>
         </ul>
       </section>
-      <section class="daily-content js-toggle-accordions-scope">
-        <h2 class="daily-heading">
-          <button
-            class="daily-heading-toggle"
-            data-action="toggle-accordions"
-            title="Click to toggle the day, Ctrl + click to toggle all."
-          >
-            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2026-06-02 datetime="2026-06-02T15:57:37.000Z">2026-06-02</time>
-            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2026-06-02 datetime="2026-06-02T15:57:37.000Z"></time>
-          </button>
-        </h2>
-        <ul class="sources card">
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Microsoft Tech Community - Latest Blogs - Apps on Azure Blog</button>
-                  <a class="source-heading__link" href="https://techcommunity.microsoft.com">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/bring-your-own-github-app-connecting-azure-sre-agent-to-enterprise-repositories/4524673"
-                        open
-                      >
-                        <summary class="article-expander__title">Bring Your Own GitHub App: Connecting Azure SRE Agent to Enterprise Repositories</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/bring-your-own-github-app-connecting-azure-sre-agent-to-enterprise-repositories/4524673">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>What if your SRE agent could access your enterprise GitHub repositories the same way your CI/CD pipelines do  with a governed service identity, not a personal token? 
-
-Azure SRE Agent connects to your GitHub repositories to build rich context about your systems source code, infrastructure definitions, deployment configs, skills, runbooks, and operational history. This context is what turns generic troubleshooting into root cause analysis that points to the exact file, the exact commit, the exact config change. This is part of the Azure SRE Agent announcements at Build 2026.
-For teams on github.com, connecting is a quick OAuth sign-in. Today, we are extending that same deep context to GitHub Enterprise Cloud and introducing Bring Your Own GitHub App as a first-class authentication model for…</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/private-plugins-with-azure-sre-agent/4523763"
-                        open
-                      >
-                        <summary class="article-expander__title">Private Plugins with Azure SRE Agent</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/private-plugins-with-azure-sre-agent/4523763">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>SRE&#x27;s and platform teams are building operational skills specific to their infrastructure: investigation runbooks, compliance checks, cost analysis playbooks, deployment verification procedures. The next step is making that work reusable across every agent in the organization without exposing it publicly. Today, SRE Agent supports plugin marketplaces hosted in private GitHub repositories, including GitHub Enterprise. This is part of the Azure SRE Agent announcements at Build 2026.
-You can now point SRE Agent at a private repo when adding a marketplace or installing a plugin. Authentication is handled per-marketplace, and supports OAuth, GitHub PATs, and GitHub Apps for GHE tenants.
-From one agent to an organization’s plugin catalog
-Most teams start with a single SRE Agent connected to thei…</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/vnet-integration-for-azure-sre-agent-preview/4524287"
-                        open
-                      >
-                        <summary class="article-expander__title">VNet integration for Azure SRE Agent (preview)</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/vnet-integration-for-azure-sre-agent-preview/4524287">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTI0Mjg3LUgyN2V6Yg?revision&#x3D;17" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>For many production systems, the logs, databases, private endpoints, repositories, and runbooks an SRE Agent needs to do its job are behind network boundaries your security team already governs. VNet integration for Azure SRE Agent, now in preview, puts the agent&#x27;s outbound traffic under those same controls - your virtual network, your NSG rules, your private DNS - so it reaches only what your network allows.
-The principle is one your security team already applies to every other workload: a component&#x27;s network access shouldn&#x27;t depend on the component behaving correctly. Identity governs what the agent can reach. Permissions and hooks shape what it does within reach. The network sits beneath both: it blocks any request to a destination you haven&#x27;t allowed no matter what the agent decides.
-W…</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;29
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/managed-connectors-for-sre-agent-preview--govern-what-your-agent-can-do/4524840"
-                        open
-                      >
-                        <summary class="article-expander__title">Managed Connectors for SRE Agent (preview)- Govern what your agent can do</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/managed-connectors-for-sre-agent-preview--govern-what-your-agent-can-do/4524840">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTI0ODQwLWhGelBDcg?revision&#x3D;10" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>Giving an agent access to a tool is the easy part. The harder question is what it&#x27;s allowed to do with that access. &quot;Can the agent copy a file in OneDrive?&quot; mostly answers itself. &quot;Can it copy any file, to any destination, over one that&#x27;s already there?&quot; is the one that decides whether the integration has a governance layer.
-Managed Connectors is built around that second question. It expands the catalog of tools the agent can reach - OneDrive, SharePoint, Google Drive, GitLab, Power BI, Microsoft Security Copilot, with more being added regularly - and pairs it with a governance model that keeps the policy for those tools outside the agent&#x27;s control. This is part of the Azure SRE Agent announcements at Build 2026
-What&#x27;s new
-Managed Connectors is the next generation of our connector experien…</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;26
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/shaping-what-azure-sre-agent-does-tool-permissions-and-hooks/4524791"
-                        open
-                      >
-                        <summary class="article-expander__title">Shaping what Azure SRE Agent does: Tool Permissions and Hooks</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/shaping-what-azure-sre-agent-does-tool-permissions-and-hooks/4524791">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTI0NzkxLXF1a25rMA?revision&#x3D;16" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>When an AI agent runs against production, the first question every security team asks is &quot;What can it do, who decided it could, and what stops it from doing something it should not.&quot;
-Azure SRE Agent reached general availability in March. Since then, teams inside Microsoft and customers running it against real production workloads have asked for the same thing: finer-grained controls over what the agent can do on its own and a clear answer to who governs each call that reaches a tool. 
-Today at  Build 2026, we are releasing global tool access policies as one of a set of new governance controls. This post covers how they work. Tool access policies give security and platform teams a single place to define which tools the agent can invoke, under what conditions, and what requires human approva…</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;33
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/better-deployment-errors-in-az-webapp-deploy/4524680"
-                        open
-                      >
-                        <summary class="article-expander__title">Better Deployment Errors in az webapp deploy</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/better-deployment-errors-in-az-webapp-deploy/4524680">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Deployment failures can be difficult to interpret, especially when the error returned by the deployment API does not clearly explain what went wrong or what to do next.
-To make this easier, we have added a new switch to az webapp deploy for App Service for Linux:
---enriched-errors true
-When enabled, deployment failures show context-enriched diagnostics directly in the CLI output. This includes an error code, deployment context, the raw error, suggested fixes, and a Copilot-ready prompt that you can use for additional guidance.
-By default, this option is disabled.
-How to use it
-Add --enriched-errors true to your deployment command:
-az webapp deploy \
-  --resource-group  \
-  --name  \
-  --src-path 
- \
-  --enriched-errors true
-What you get
-With e…</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/understand-what%E2%80%99s-happening-with-your-app-service-for-linux-website-using-site-s/4524676"
-                        open
-                      >
-                        <summary class="article-expander__title">Understand What’s Happening with Your App Service for Linux Website Using Site Status</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/understand-what%E2%80%99s-happening-with-your-app-service-for-linux-website-using-site-s/4524676">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTI0Njc2LUlicFNwOA?revision&#x3D;2" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>When your website is not starting or behaving unexpectedly, it can be difficult to quickly understand what state the application is in and what might be causing the issue.
-To make this easier, Azure App Service for Linux now includes Site Status. Site Status provides runtime information for your website, including the current state of the app and detailed error information when issues are detected.
-What Site Status shows
-Site Status gives you a view into the current runtime state of your App Service for Linux website.
-You can see the site runtime status from the web app’s Properties experience. If the platform detects an issue with the site, the runtime status will show Issues Detected.
- 
-
- 
-Selecting Issues Detected opens a detailed view where you can see the current status of the site, t…</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;25
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Microsoft Tech Community - Latest Blogs - Azure Observability Blog</button>
-                  <a class="source-heading__link" href="https://techcommunity.microsoft.com">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/monitor-ai-coding-agents-with-opentelemetry-in-azure-monitor/4524049"
-                        open
-                      >
-                        <summary class="article-expander__title">Monitor AI coding agents with OpenTelemetry in Azure Monitor</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/monitor-ai-coding-agents-with-opentelemetry-in-azure-monitor/4524049">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTI0MDQ5LWtLVElSTw?revision&#x3D;4" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>AI coding agents are quickly becoming part of the everyday developer workflow. As teams adopt tools such as GitHub Copilot, Claude Code, and Codex, they need a better way to understand usage, troubleshoot performance, and keep an eye on token consumption and cost.
-With Azure Monitor’s OpenTelemetry support, you can collect OpenTelemetry Protocol (OTLP) signals from AI coding agents and route them into Azure Monitor for end-to-end visibility. Ingested OTLP data is stored with OpenTelemetry semantics for logs and traces, Application Insights provides curated agent views for troubleshooting, detailed trace visualizations and end-to-end transaction views.
-
-
-Image: Application Insights end-to-end transaction view for agents.
-
- 
-Azure Monitor also includes ready-to-use Grafana dashboards that de…</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;22
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/direct-opentelemetry-ingestion-into-azure-monitor-is-now-generally-available/4524044"
-                        open
-                      >
-                        <summary class="article-expander__title">Direct OpenTelemetry ingestion into Azure Monitor is now generally available</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/direct-opentelemetry-ingestion-into-azure-monitor-is-now-generally-available/4524044">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTI0MDQ0LTFQRDVFZQ?revision&#x3D;3" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>OpenTelemetry is powering a new era of observability. Built on open standards, designed for portability, and made for developers who want flexibility without compromise. And now, you can send OpenTelemetry logs, metrics, and traces straight into Azure Monitor OTLP endpoints and data storage. This capability is generally available, production-ready, and built to scale from day one.
-With direct OTLP ingestion, you can keep your existing OpenTelemetry instrumentation and OpenTelemetry collector pipelines while sending telemetry to Azure Monitor for investigation in Application Insights, analysis in Log Analytics, Prometheus metric storage and visualization in Grafana. 
-What’s now generally available 
-
-Direct OTLP ingestion into Azure Monitor for logs, metrics, and traces. 
-
-
-Production-ready …</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;23
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Fabric Updates Blog articles</button>
-                  <a class="source-heading__link" href="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/bg-p/fbc_fabricupdatesblogs">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/On-premises-data-gateway-May-2026-release/ba-p/5190820"
-                        open
-                      >
-                        <summary class="article-expander__title">On-premises data gateway May 2026 release</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/On-premises-data-gateway-May-2026-release/ba-p/5190820">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://community.fabric.microsoft.com/html/assets/fabric_twitter_OG_image.png" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>The May 2026 release of the on-premises data gateway is (version 3000.318).</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;21
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/What-s-new-in-Fabric-Business-Events/ba-p/5189137"
-                        open
-                      >
-                        <summary class="article-expander__title">What’s new in Fabric Business Events</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/What-s-new-in-Fabric-Business-Events/ba-p/5189137">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://community.fabric.microsoft.com/t5/image/serverpage/image-id/1350253iBAF472EBDDD56A4B?v&#x3D;v2" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>Author: Roberto Cervantes Rivero, Senior Product Manger - The latest Business Events updates in Microsoft Fabric help close that gap by making it easier to publish meaningful events, route them consistently, and use them across analytics, automation, and application workflows. In this post, we walk through the latest capabilities across publishers, consumers, and platform behavior.</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;23
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Microsoft Tech Community - Latest Blogs - Educator Developer Blog</button>
-                  <a class="source-heading__link" href="https://techcommunity.microsoft.com">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/evaluating-the-evaluator-how-to-test-an-llm-judge-with-microsoft-agent-framework/4516639"
-                        open
-                      >
-                        <summary class="article-expander__title">Evaluating the Evaluator: How to Test an LLM Judge with Microsoft Agent Framework</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/evaluating-the-evaluator-how-to-test-an-llm-judge-with-microsoft-agent-framework/4516639">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>The four verdicts, up front
-
-
-Consistency: mean CV across posts 5.30%
-
-
-Pipeline format checks: pipeline pass rate 100%
-
-
-Rubric adherence (strict judge): 5.00 / 5, mean math drift 0.05 pts
-
-
-Calibration vs. labels: Pearson r &#x3D; 0.51, MAE &#x3D; 22.9 pts
-
-
-Three of those say the model is healthy. The last one is the only one that compared the model against anything real, and it tells a different story.
-Where we left off
-In Post 1 I built Viral or Fail, three Microsoft Agent Framework agents that pressure-test a gaming social post before you publish it. A Content Creator drafts the post, an Algorithm Simulator scores it the way a recommendation system might, and an Audience Persona reacts the way an actual viewer would. The whole thing runs on the GitHub Models free tier, with no paid API keys.
-T…</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Azure App Service</button>
-                  <a class="source-heading__link" href="https://azure.github.io/AppService/">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://azure.github.io/AppService/2026/06/02/azure-cli-2-87-app-service-updates.html"
-                        open
-                      >
-                        <summary class="article-expander__title">What’s new for Azure App Service in Azure CLI 2.87.0</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://azure.github.io/AppService/2026/06/02/azure-cli-2-87-app-service-updates.html">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://azure.github.io/AppService/assets/images/icon.png" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>Azure CLI 2.87.0 adds structured runtime discovery and preview commands for Linux startup logs. This release also deprecates az webapp up and introduces a breaking change for scripts that consume az webapp list-runtimes output.</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;3
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
-        </ul>
-      </section>
 
     <footer>
-      <a class="footer-link" href="https://github.com/lok-msft/azure-blog-rss/actions/runs/40819347208">
-        <time id="build-timestamp" datetime="2026-10-29T04:44:34.557Z">2026-10-29T04:44:34.557Z</time>
+      <a class="footer-link" href="https://github.com/lok-msft/azure-blog-rss/actions/runs/41004436353">
+        <time id="build-timestamp" datetime="2026-10-30T04:44:10.969Z">2026-10-30T04:44:10.969Z</time>
       </a>
       <a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a>
     </footer>
