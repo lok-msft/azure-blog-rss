@@ -2,10 +2,116 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2026-11-02T04:50:07.113Z</updated>
+    <updated>2026-11-03T05:40:23.563Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Why Did Our Azure Bill Change? Investigating Cloud Spend with Azure SRE Agent]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/why-did-our-azure-bill-change-investigating-cloud-spend-with-azure-sre-agent/4569760</id>
+        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/why-did-our-azure-bill-change-investigating-cloud-spend-with-azure-sre-agent/4569760"/>
+        <updated>2026-11-03T03:51:16.000Z</updated>
+        <summary type="html"><![CDATA[The question after the cost chart
+The monthly cost review usually starts with a straightforward observation: Azure spending changed.
+Then come the questions that take the time.
+Which subscription accounts for the increase? Is it an existing workload getting more expensive, or something that only started generating charges this month? Did a reduction somewhere else hide part of the increase? And which optimization recommendations are worth taking to a workload owner?
+Azure already has the underlying information. Cost Management provides spending data. Azure Advisor provides optimization recommendations. Resource inventory provides context about what those resources are.
+The work is connecting those sources into an explanation that someone can check and act on.
+Conversational Cost Analytics …]]></summary>
+        <author>
+            <name>AsithaDeSilva</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Bring insights and action together with Fabric Apps in Org apps]]></title>
+        <id>https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Bring-insights-and-action-together-with-Fabric-Apps-in-Org-apps/ba-p/5377690</id>
+        <link href="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Bring-insights-and-action-together-with-Fabric-Apps-in-Org-apps/ba-p/5377690"/>
+        <updated>2026-11-02T22:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Business users move from understanding what happened, to investigating why, to acting. Microsoft Fabric can bring that journey together.  Fabric Apps provide purpose-built, data-driven experiences when users need more than a report. Org apps distribute them alongside Power BI reports and other supported Fabric content in a curated destination.
+Move from insight to action in one destination
+Power BI reports help users monitor performance, explore trends, and understand what’s happening in the business. Many insights, however, lead to a next step: submitting a request, updating a plan, investigating an exception, assigning an owner, or tracking a resolution.
+A Fabric App provides the custom interface and workflow for that next step. Including it in an org app places action beside the repo…]]></summary>
+        <author>
+            <name>mk_sunitha</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[From a prompt to an operational dashboard: Generate Real-Time Dashboards with Copilot (Preview)]]></title>
+        <id>https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/From-a-prompt-to-an-operational-dashboard-Generate-Real-Time/ba-p/5380258</id>
+        <link href="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/From-a-prompt-to-an-operational-dashboard-Generate-Real-Time/ba-p/5380258"/>
+        <updated>2026-11-02T20:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Start with the question, not a blank dashboard
+Which transit stations are sending the most fans toward a stadium? How does that incoming demand compare with activity at the gates? Where are queues building?
+Answering these operational questions traditionally requires translating them into tables, queries, visualizations, and a dashboard layout. When you already know what you want to monitor, that setup can get in the way of the question you are trying to answer.
+Copilot in Microsoft Fabric can generate a Real-Time Dashboard from a natural-language description of the insights you want. Working with a selected database in an Eventhouse, it uses the tables in that database to create a dashboard tailored to your goal.
+
+Figure: Start generating a Real-Time Dashboard with Copilot from an Ev…]]></summary>
+        <author>
+            <name>MichalBar</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Announcing general availability of Geo-Replication on partitioned namespaces for Service Bus Premium]]></title>
+        <id>https://techcommunity.microsoft.com/blog/MessagingonAzureBlog/announcing-general-availability-of-geo-replication-on-partitioned-namespaces-for/4569139</id>
+        <link href="https://techcommunity.microsoft.com/blog/MessagingonAzureBlog/announcing-general-availability-of-geo-replication-on-partitioned-namespaces-for/4569139"/>
+        <updated>2026-11-02T17:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Today we are excited to announce the general availability of Geo-Replication on partitioned namespaces for Azure Service Bus Premium. You can now combine the throughput benefits of partitioning with the reliability of replicating your messages and metadata to a secondary Azure region.
+Throughput and reliability in the same namespace
+Large messaging workloads can need more than the 16 messaging units available in a non-partitioned Premium namespace. Partitioned namespaces distribute queues and topics across multiple message brokers and messaging stores within a region, so throughput is no longer limited to a single broker.
+These applications depend on the messages Service Bus holds as well as the capacity it provides. Messages waiting in queues and subscriptions represent work that has been accepted but not yet completed. To continue that work in another region, applications need the messages and their processing state, along with the queues, topics, and subscriptions.
+Geo-Replication replicates this data and configuration to a secondary region, so applications can resume processing replicated messages there when they need to move the workload. With this support now generally available on partitioned namespaces, large workloads can use both capabilities in the same namespace: the capacity to handle their message volume and replication of the work they still need to process.
+Getting started
+If you already use a partitioned Premium namespace, you can configure Geo-Replication on that namespace, including its existing queues and topics.
+For a new namespace, select Premium and enable Partitioning during namespace creation, then configure Geo-Replication. The partitioning setting cannot be changed on an existing namespace.
+To enable Geo-Replication on your partitioned namespace, follow the setup guidance.]]></summary>
+        <author>
+            <name>EldertGrootenboer</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Data Days: Learn, build, and connect with AI @Work]]></title>
+        <id>https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Data-Days-Learn-build-and-connect-with-AI-Work/ba-p/5382446</id>
+        <link href="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Data-Days-Learn-build-and-connect-with-AI-Work/ba-p/5382446"/>
+        <updated>2026-11-02T16:19:22.000Z</updated>
+        <summary type="html"><![CDATA[Real people. Real projects. Real AI on Fabric, SQL, and Power BI.
+From November 2 through December 15, Data Days is your chance to get past polished demos and put data and AI to work yourself.
+Join a live session, build something new, work toward a certification, or connect with a community study group. Share what you've learned, showcase something you've created, or bring Data Days to your own community.
+This is about doing, not just watching.
+Start with the series that interests you
+AI Work​ is at the heart of this Data Days, with three stages designed to meet you wherever you are:
+
+Let's Make Sense of It explores how Copilot, Fabric IQ, Fabric Apps, and your data fit together. If you've heard the names but want to understand what they mean for your work, start here.
+Let's Build …]]></summary>
+        <author>
+            <name>slindsay</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Announcing flex nodes for AKS (preview) in Azure portal]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/announcing-flex-nodes-for-aks-preview-in-azure-portal/4569460</id>
+        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/announcing-flex-nodes-for-aks-preview-in-azure-portal/4569460"/>
+        <updated>2026-11-02T13:00:00.000Z</updated>
+        <summary type="html"><![CDATA[What’s new?
+Today, we’re announcing Azure portal support for flex nodes for AKS (preview), offering an intuitive, guided experience that helps users create Flex node pools and connect supported user-managed compute to their existing AKS clusters.
+Flex nodes for AKS lets you extend an existing cluster with worker nodes running on user-managed virtual machines or on-premises servers in other Azure regions, on-premises, or at the edge, without adding another Kubernetes control plane to manage. The new portal experience brings flex node pool creation and supported host onboarding into the familiar AKS management workflow. By guiding users through these steps and showing deployment progress, the portal makes it easier to get started with flex nodes.
+How it works
+From an existing AKS cluster’s N…]]></summary>
+        <author>
+            <name>Samantha_Fernandez</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[The Agentic Gatekeeper: Using Microsoft Decision-1 to Decide When Agents Act]]></title>
+        <id>https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/the-agentic-gatekeeper-using-microsoft-decision-1-to-decide-when-agents-act/4569246</id>
+        <link href="https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/the-agentic-gatekeeper-using-microsoft-decision-1-to-decide-when-agents-act/4569246"/>
+        <updated>2026-11-02T08:00:00.000Z</updated>
+        <summary type="html"><![CDATA[An AI agent is most dangerous in the split second after it decides what to do and before it actually does it. That is the moment this post is about, and Microsoft-Decision-1 is the model that guards it.
+Earlier post introduced Microsoft-Decision-1: not every decision needs a large language model. Many of the questions inside an AI system are closed questions - yes or no; option A, B, or C; low, medium, or high. In this post, let's uncover and find a solution to one of the hardest problems in agentic AI: deciding whether an agent should be allowed to take the action it just proposed using Microsoft-Decision-1.
+Agents now edit code, run shell commands, send emails, issue refunds, and restart production services. Each of those actions comes from a model that read a task, read some context, an…]]></summary>
+        <author>
+            <name>shreyanfern</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Strengthening data security with workspace-level private connectivity for custom endpoints for Eventstream (Preview)]]></title>
         <id>https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Strengthening-data-security-with-workspace-level-private/ba-p/5377347</id>
