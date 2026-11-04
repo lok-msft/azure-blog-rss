@@ -6,6 +6,46 @@
       "siteUrl": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/bg-p/fbc_fabricupdatesblogs",
       "articles": [
         {
+          "id": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Announcing-support-for-Materialized-views-and-streaming-tables/ba-p/5377928",
+          "author": "shilmenon",
+          "description": "Access more Unity Catalog objects through the existing mirrored catalog experience in Microsoft Fabric\r\nWe are expanding Mirrored Azure Databricks catalogs in Microsoft Fabric to support materialized views and streaming tables alongside tables.\r\nThese objects remain created and managed in Azure Databricks, while Fabric provides read-only access to the underlying data through shortcuts. This brings more of your Unity Catalog environment into Fabric without copying or replicating the data.\r\nWhat's new\r\nA Mirrored Azure Databricks catalog can now include support:\r\n\r\nTables\r\nMaterialized views\r\nStreaming tables\r\n\r\nWhen configuring the mirrored catalog, select the Unity Catalog catalogs, schemas, and supported objects you want to make available in Fabric. Fabric mirrors the selected catalog str…",
+          "link": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Announcing-support-for-Materialized-views-and-streaming-tables/ba-p/5377928",
+          "publishedOn": "2026-11-03T20:00:00.000Z",
+          "wordCount": null,
+          "title": "Announcing support for Materialized views and streaming tables in Mirrored Azure Databricks catalog",
+          "imageUrl": null
+        },
+        {
+          "id": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Adding-the-Context-Streaming-Events-Need-Reference-Data-Joins/ba-p/5382230",
+          "author": "bytecascade",
+          "description": "Enrich events with business context in real time, enabling faster decisions, more relevant alerts, and lower operational effort downstream. \r\nA real-time event tells you what happened. Context tells you what it means—and what to do next. In cold-chain logistics, a temperature reading becomes actionable when paired with a shipment’s temperature limits, customer priority, and response contacts. Reference Data Join in Fabric Eventstream brings that context to live events by matching them with business information from Delta tables in OneLake before they reach downstream destinations—so consumers can understand and act on the events without performing separate lookups.\r\nThe scenario: Cold chain logistics \r\nCold chain logistics moves temperature-sensitive goods, such as fresh produce, dairy, fr…",
+          "link": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Adding-the-Context-Streaming-Events-Need-Reference-Data-Joins/ba-p/5382230",
+          "publishedOn": "2026-11-03T18:00:00.000Z",
+          "wordCount": null,
+          "title": "Adding the Context Streaming Events Need: Reference Data Joins with OneLake Delta Tables in Fabric Eventstream",
+          "imageUrl": null
+        },
+        {
+          "id": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/OneLake-The-file-system-for-agent-first-data-engineering/ba-p/5383035",
+          "author": "tompeplow",
+          "description": "Software engineers are increasingly using agents to build software, and data engineers are no different. We want OneLake to help enable data engineers to develop software in this new agent-first era.\r\nThink about how you work in a terminal: you use it to run programs that read and write files. Both the programs and the data live in the file system. Now apply that model to data engineering: OneLake is the file system, Fabric engines are the programs, and the AI prompt is your terminal.\r\nOver the last few weeks, we’ve released several new capabilities in OneLake that come together to create an experience where agent-first data engineers can thrive. This blog post provides a rundown of those features.\r\nManaging OneLake\r\nOneLake now offers a remotely hosted MCP server (preview), so agents can …",
+          "link": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/OneLake-The-file-system-for-agent-first-data-engineering/ba-p/5383035",
+          "publishedOn": "2026-11-03T18:00:00.000Z",
+          "wordCount": null,
+          "title": "OneLake: The file system for agent-first data engineering",
+          "imageUrl": null
+        },
+        {
+          "id": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Modernize-data-integration-strategy-with-Microsoft-Fabric-when/ba-p/5377581",
+          "author": "grakhra",
+          "description": "Challenges solved by Microsoft Fabric\r\nMicrosoft Fabric is an end-to-end analytics platform that brings together data integration, data engineering, warehousing, real-time analytics, business intelligence, and AI-related experiences. It has grown tremendously within the community because it is solving a key problem: lowering the integration tax across data and analytics systems. To understand the integration tax, consider a mid-sized or large organization that wants to perform analytics and data processing. It may use several source systems, an analytics platform such as a warehouse or lakehouse, and yet another platform or vendor for orchestration. To generate insights, the organization must integrate these different systems (hence the term integration tax).\r\nFabric brings together a broa…",
+          "link": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Modernize-data-integration-strategy-with-Microsoft-Fabric-when/ba-p/5377581",
+          "publishedOn": "2026-11-03T17:00:00.000Z",
+          "wordCount": null,
+          "title": "Modernize data integration strategy with Microsoft Fabric when using Snowflake and Databricks",
+          "imageUrl": null
+        },
+        {
           "id": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Bring-insights-and-action-together-with-Fabric-Apps-in-Org-apps/ba-p/5377690",
           "author": "mk_sunitha",
           "description": "Business users move from understanding what happened, to investigating why, to acting. Microsoft Fabric can bring that journey together.  Fabric Apps provide purpose-built, data-driven experiences when users need more than a report. Org apps distribute them alongside Power BI reports and other supported Fabric content in a curated destination.\r\nMove from insight to action in one destination\r\nPower BI reports help users monitor performance, explore trends, and understand what’s happening in the business. Many insights, however, lead to a next step: submitting a request, updating a plan, investigating an exception, assigning an owner, or tracking a resolution.\r\nA Fabric App provides the custom interface and workflow for that next step. Including it in an org app places action beside the repo…",
@@ -1563,6 +1603,16 @@
       "siteUrl": "https://azure.github.io/AppService/",
       "articles": [
         {
+          "id": "https://azure.github.io/AppService/2026/11/03/github-reconnection-failures.html",
+          "author": null,
+          "description": "If you disconnected a private GitHub repository from Azure App Service and cannot reconnect it, the issue may be an existing 2048-bit RSA deploy key.",
+          "link": "https://azure.github.io/AppService/2026/11/03/github-reconnection-failures.html",
+          "publishedOn": "2026-11-03T00:00:00.000Z",
+          "wordCount": 1238,
+          "title": "Resolving GitHub repository reconnection failures in Azure App Service",
+          "imageUrl": "https://azure.github.io/AppService/assets/images/icon.png"
+        },
+        {
           "id": "https://azure.github.io/AppService/2026/10/26/dotnet-brotli-security-update-app-service-linux.html",
           "author": null,
           "description": "Update (26 October 2026): Rollout of the updated built-in .NET images is complete on the Latest Platform Release Channel for Azure App Service on Linux. Rollout to Standard is in progress through Safe Deployment Practices (SDP).",
@@ -1886,6 +1936,16 @@
       "feedUrl": "https://techcommunity.microsoft.com/t5/s/plugins/custom/microsoft/o365/custom-blog-rss?board=EducatorDeveloperBlog&size=100",
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
+        {
+          "id": "https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/build-an-offline-ai-voice-notebook-on-raspberry-pi-with-microsoft-foundry-local/4568592",
+          "author": "JiongShi",
+          "description": "Can a Raspberry Pi turn spoken reflections into useful notes without sending audio to the cloud? In this walkthrough, you will build Voice Notes, a single-user voice notebook that captures speech in the browser, transcribes it with Microsoft Foundry Local, and drafts a summary on-device. Along the way, educators and learners can explore audio processing, web APIs, model lifecycle management, and responsible AI on resource-constrained hardware.\nVideo demo: Watch the Voice Notes demo on Bilibili.\n\nScope and versions: This is an educational prototype based on a recorded Raspberry Pi 5 experiment, not a managed classroom service or a Raspberry Pi hardware-certification statement. The walkthrough uses Microsoft Foundry Local Python SDK 2.1.0 and Foundry Local CLI Preview 0.10.3. These are separ…",
+          "link": "https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/build-an-offline-ai-voice-notebook-on-raspberry-pi-with-microsoft-foundry-local/4568592",
+          "publishedOn": "2026-11-03T08:00:00.000Z",
+          "wordCount": null,
+          "title": "Build an Offline AI Voice Notebook on Raspberry Pi with Microsoft Foundry Local",
+          "imageUrl": null
+        },
         {
           "id": "https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/the-agentic-gatekeeper-using-microsoft-decision-1-to-decide-when-agents-act/4569246",
           "author": "shreyanfern",
@@ -4946,6 +5006,16 @@
       "siteUrl": "https://devblogs.microsoft.com/java/",
       "articles": [
         {
+          "id": "https://devblogs.microsoft.com/java/?p=233234",
+          "author": "Hang Wang, Jun Han, Ji Dong",
+          "description": "GitHub Copilot is now available in the JetBrains Air as a default agent. Select GitHub Copilot as your agent, delegate coding tasks, and work through results without leaving your IDE.  All you need to get started is a GitHub Copilot subscription: Built in collaboration with JetBrains and powered by Agent Client Protocol (ACP), this integration brings […]\nThe post GitHub Copilot is now a default agent in JetBrains Air appeared first on Microsoft for Java Developers.",
+          "link": "https://devblogs.microsoft.com/java/github-copilot-jetbrains-air/",
+          "publishedOn": "2026-11-03T23:11:50.000Z",
+          "wordCount": 7894,
+          "title": "GitHub Copilot is now a default agent in JetBrains Air",
+          "imageUrl": "https://devblogs.microsoft.com/java/wp-content/uploads/sites/51/2026/10/banner4.webp"
+        },
+        {
           "id": "https://devblogs.microsoft.com/java/?p=233220",
           "author": "Bruno Borges",
           "description": "In April 2021, we announced the Microsoft Build of OpenJDK. We were starting with a preview of our Java 11 builds for Windows, Linux, and macOS. Today, if you’re planning a Java upgrade on Azure, you have several generations of that work to build on: 11, 17, 21, and now 25. Java 8 has been […]\nThe post Plan Your Java Upgrade Ahead of Microsoft’s 2027 Support Milestones appeared first on Microsoft for Java Developers.",
@@ -5378,6 +5448,16 @@
       "feedUrl": "https://devblogs.microsoft.com/microsoft365dev/feed/",
       "siteUrl": "https://devblogs.microsoft.com/microsoft365dev/",
       "articles": [
+        {
+          "id": "https://devblogs.microsoft.com/microsoft365dev/?p=26388",
+          "author": "Steve Pucelik",
+          "description": "File storage is rarely just file storage.  Imagine your team is building a contract management application. At first, the document requirement looks straightforward: upload a file, organize it, retrieve it, and let the right people open it.  Then the real requirements from your customer, security, and operations teams arrive, and the scope quickly expands to […]\nThe post Your app needs documents. Do you really want to build a document platform? appeared first on Microsoft 365 Developer Blog.",
+          "link": "https://devblogs.microsoft.com/microsoft365dev/your-app-needs-documents-do-you-really-want-to-build-a-document-platform/",
+          "publishedOn": "2026-11-03T16:00:58.000Z",
+          "wordCount": 8337,
+          "title": "Your app needs documents. Do you really want to build a document platform?",
+          "imageUrl": "https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2025/12/default-image.webp"
+        },
         {
           "id": "https://devblogs.microsoft.com/microsoft365dev/?p=26367",
           "author": "Steve Pucelik",
