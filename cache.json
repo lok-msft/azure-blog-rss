@@ -6,6 +6,66 @@
       "siteUrl": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/bg-p/fbc_fabricupdatesblogs",
       "articles": [
         {
+          "id": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Eventhouse-support-for-OneLake-security-Generally-Available/ba-p/5377875",
+          "author": "aonelakeuser",
+          "description": "Security should be consistent wherever you query your data. With OneLake security, you can define access controls once, close to the data, and apply them across supported Microsoft Fabric engines without recreating your security rules for each experience.\r\nToday, we’re announcing the general availability of OneLake security support for Eventhouse external tables. When these external tables query data secured by OneLake security, they automatically enforce object-level, column-level, and row-level access controls. This extends the same centrally managed security model to KQL queries, helping you maintain consistent, end-to-end security and governance across analytics experiences.\r\nLakehouse data with Eventhouse power\r\nThe Eventhouse endpoint for Lakehouses provides a high-performance query …",
+          "link": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Eventhouse-support-for-OneLake-security-Generally-Available/ba-p/5377875",
+          "publishedOn": "2026-11-04T22:00:00.000Z",
+          "wordCount": null,
+          "title": "Eventhouse support for OneLake security (Generally Available)",
+          "imageUrl": null
+        },
+        {
+          "id": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Find-expensive-queries-from-Capacity-Metrics-Generally-Available/ba-p/5393588",
+          "author": "Mariyaali",
+          "description": "When warehouse capacity usage spikes, you need to quickly understand what ran, which warehouse drove the usage, and which queries require investigation. \r\nThe Monitor in warehouse action in the Microsoft Fabric Capacity Metrics app connects the capacity-level view directly to Warehouse Monitor. It opens the selected warehouse with the relevant time window already applied, eliminating manual correlation across monitoring experiences. \r\nFigure: Animated GIF - demonstrating how to navigate from a Capacity Metrics timepoint to Warehouse Monitor in four steps.\r\nFollow the activity into your warehouse \r\n\r\nOpen Capacity Metrics: From the Compute page, select your capacity and review CU % over time. Capacity Units, or CUs, represent the compute consumption tracked for the capacity.\r\nChoose a timep…",
+          "link": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Find-expensive-queries-from-Capacity-Metrics-Generally-Available/ba-p/5393588",
+          "publishedOn": "2026-11-04T20:03:23.000Z",
+          "wordCount": null,
+          "title": "Find expensive queries from Capacity Metrics (Generally Available)",
+          "imageUrl": null
+        },
+        {
+          "id": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/OneLake-table-APIs-Now-with-Iceberg-writes-plus-richer-table/ba-p/5391262",
+          "author": "MattH_OneLake",
+          "description": "OneLake table APIs already let Iceberg-compatible engines discover and read tables in Microsoft Fabric. Today we're taking the next step with two additions: Iceberg REST Catalog (IRC) writes through the OneLake table endpoint, now available, and a new additional table metadata API, in preview, for adding descriptions and tags to tables and columns. Together, they make OneLake a place where any engine can not only read data, but also publish it, with the business context people and AI agents need to use it well. \r\nWrite native Iceberg tables from the engines you already use\r\nUntil now, the OneLake Iceberg endpoint supported read-only metadata operations. Now, IRC-compatible clients can create native Iceberg tables, commit new snapshots, and request short-lived storage credentials through th…",
+          "link": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/OneLake-table-APIs-Now-with-Iceberg-writes-plus-richer-table/ba-p/5391262",
+          "publishedOn": "2026-11-04T20:00:00.000Z",
+          "wordCount": null,
+          "title": "OneLake table APIs: Now with Iceberg writes, plus richer table metadata (Preview)",
+          "imageUrl": null
+        },
+        {
+          "id": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Govern-Fabric-connections-with-admin-APIs-and-data-connection/ba-p/5383656",
+          "author": "alexathompson",
+          "description": "Co-author: Abhishek Narain\r\nProtect continuity, understand connection risk, and set tenant-wide guardrails \r\nImagine that the person who built a business-critical pipeline has left your organization. The connection still exists, but nobody is sure who can manage it or whether its credentials will keep working. What begins as a handover problem quickly becomes a governance question: who owns your connections, where do they lead, and which identities should be allowed to use them? \r\nMicrosoft Fabric brings these questions together through two complementary capabilities:\r\n\r\nAdmin connection APIs give tenant administrators visibility and ownership-management tools across connection types.  \r\nData connection policies set preventive controls for cloud connections.  \r\n\r\nTogether, they support a p…",
+          "link": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Govern-Fabric-connections-with-admin-APIs-and-data-connection/ba-p/5383656",
+          "publishedOn": "2026-11-04T19:00:00.000Z",
+          "wordCount": null,
+          "title": "Govern Fabric connections with admin APIs and data connection policies (Preview)",
+          "imageUrl": null
+        },
+        {
+          "id": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Bring-your-Fabric-data-into-your-next-app-with-connectors/ba-p/5377609",
+          "author": "mk_sunitha",
+          "description": "Most business applications start with data that already exists. Customer orders may live in a Fabric SQL database. Inventory history may be in a Lakehouse. Sales performance may already be modeled in Power BI. The opportunity is not to move that data again, but to turn trusted data into an experience that helps people make decisions and take action.  \r\nConnectors in Fabric Apps shorten that path. They give an app a consistent way to work with Fabric data, so developers can spend less time on integration plumbing and more time building the experience users need.  \r\nConnect to the Fabric data you already trust. Build the experience your users need. Keep the application close to the data and governance foundation already in place.  \r\nInstead of beginning with infrastructure, start with the cu…",
+          "link": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Bring-your-Fabric-data-into-your-next-app-with-connectors/ba-p/5377609",
+          "publishedOn": "2026-11-04T18:00:00.000Z",
+          "wordCount": null,
+          "title": "Bring your Fabric data into your next app with connectors",
+          "imageUrl": null
+        },
+        {
+          "id": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Salesforce-Data-360-integration-with-OneLake-Preview/ba-p/5384626",
+          "author": "shiv_narayanan",
+          "description": "A customer reports a missing delivery. The service case is in Salesforce, while the shipping and returns records are in Microsoft Fabric. Before a team can decide what to do next, it needs to connect those two views of the same customer experience.\r\nFor many organizations, answering questions like this still means exporting customer data, building ingestion pipelines, and maintaining another copy for analytics. Every additional handoff adds work for data teams and another dataset to secure and reconcile. Business teams wait for a complete picture while customer decisions move ahead. \r\nZero-copy file sharing offers a different approach by making source data available where it is needed for analysis, without first building a separate ingestion copy. The data is always current. This makes it …",
+          "link": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Salesforce-Data-360-integration-with-OneLake-Preview/ba-p/5384626",
+          "publishedOn": "2026-11-04T16:10:26.000Z",
+          "wordCount": null,
+          "title": "Salesforce Data 360 integration with OneLake (Preview)",
+          "imageUrl": null
+        },
+        {
           "id": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Announcing-support-for-Materialized-views-and-streaming-tables/ba-p/5377928",
           "author": "shilmenon",
           "description": "Access more Unity Catalog objects through the existing mirrored catalog experience in Microsoft Fabric\r\nWe are expanding Mirrored Azure Databricks catalogs in Microsoft Fabric to support materialized views and streaming tables alongside tables.\r\nThese objects remain created and managed in Azure Databricks, while Fabric provides read-only access to the underlying data through shortcuts. This brings more of your Unity Catalog environment into Fabric without copying or replicating the data.\r\nWhat's new\r\nA Mirrored Azure Databricks catalog can now include support:\r\n\r\nTables\r\nMaterialized views\r\nStreaming tables\r\n\r\nWhen configuring the mirrored catalog, select the Unity Catalog catalogs, schemas, and supported objects you want to make available in Fabric. Fabric mirrors the selected catalog str…",
@@ -1584,16 +1644,6 @@
           "wordCount": 7181,
           "title": "Power-up in SSMS 22.7: Schema compare and SQL formatting",
           "imageUrl": "https://community.fabric.microsoft.com/t5/image/serverpage/image-id/1351496iFCFAE0B0BF9D1B10?v=v2"
-        },
-        {
-          "id": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/SharePoint-and-OneDrive-Shortcuts-in-OneLake-Generally-Available/ba-p/5193807",
-          "author": "shiv_narayanan",
-          "description": "For most enterprises, the largest and fastest-growing repository of business-critical information is SharePoint and OneDrive. Contracts, financial models, project plans, meeting notes, presentations, and compliance documentation accumulate across every team and department, rich with context that rarely makes it into an analytics workflow. This content has traditionally been invisible to data platforms. Bringing it into a data lake meant building pipelines, scheduling exports, managing duplicates, and reconciling governance across two separate systems. The result: valuable knowledge stayed locked in productivity tools while analytics teams worked with an incomplete picture. Now, SharePoint and OneDrive Shortcuts in Microsoft Fabric OneLake is now generally available. With this capability, o…",
-          "link": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/SharePoint-and-OneDrive-Shortcuts-in-OneLake-Generally-Available/ba-p/5193807",
-          "publishedOn": "2026-06-08T12:18:35.000Z",
-          "wordCount": 7317,
-          "title": "SharePoint and OneDrive Shortcuts in OneLake (Generally Available)",
-          "imageUrl": "https://community.fabric.microsoft.com/html/assets/fabric_twitter_OG_image.png"
         }
       ]
     },
@@ -1602,6 +1652,26 @@
       "feedUrl": "https://azure.github.io/AppService/feed.xml",
       "siteUrl": "https://azure.github.io/AppService/",
       "articles": [
+        {
+          "id": "https://azure.github.io/AppService/2026/11/04/azure-powershell-app-service-updates.html",
+          "author": null,
+          "description": "Azure PowerShell Az 16.5.0 adds App Service plan controls for asynchronous scaling and PowerShell management of Managed Instance on Azure App Service. Together with the September and October releases, these updates bring Isolated v4 plan support and a newer Microsoft.Web management API to your App Service automation.",
+          "link": "https://azure.github.io/AppService/2026/11/04/azure-powershell-app-service-updates.html",
+          "publishedOn": "2026-11-04T00:00:00.000Z",
+          "wordCount": 1462,
+          "title": "What’s new for Azure App Service in Azure PowerShell: September-November 2026",
+          "imageUrl": "https://azure.github.io/AppService/assets/images/icon.png"
+        },
+        {
+          "id": "https://azure.github.io/AppService/2026/11/03/azure-cli-2-92-app-service-updates.html",
+          "author": null,
+          "description": "Azure CLI 2.92.0 restores the established appServicePlanId field in az webapp show and az webapp list output. This fixes a regression that affected scripts and queries that use the field to identify a web app’s App Service plan.",
+          "link": "https://azure.github.io/AppService/2026/11/03/azure-cli-2-92-app-service-updates.html",
+          "publishedOn": "2026-11-03T00:00:00.000Z",
+          "wordCount": 706,
+          "title": "What’s new for Azure App Service in Azure CLI 2.92.0",
+          "imageUrl": "https://azure.github.io/AppService/assets/images/icon.png"
+        },
         {
           "id": "https://azure.github.io/AppService/2026/11/03/github-reconnection-failures.html",
           "author": null,
@@ -1881,16 +1951,6 @@
           "wordCount": 1008,
           "title": "Debug App Startup Faster on Azure App Service for Linux with Startup Logs",
           "imageUrl": "https://azure.github.io/AppService/assets/images/icon.png"
-        },
-        {
-          "id": "https://azure.github.io/AppService/2026/06/08/AppService-Build2026.html",
-          "author": null,
-          "description": "Build 2026 is here, and Azure App Service is showing up with a packed lineup of updates. This post is your one-stop rollup of what’s new: a brand-new Easy AI experience that turns your web apps into agent-ready endpoints, the general availability of Isolated v4 on ASEv3, continued progress on App Service Managed Instance, and a wave of platform and CLI improvements built for the agent era.",
-          "link": "https://azure.github.io/AppService/2026/06/08/AppService-Build2026.html",
-          "publishedOn": "2026-06-08T00:00:00.000Z",
-          "wordCount": 2509,
-          "title": "App Service Build 2026 Updates",
-          "imageUrl": "https://azure.github.io/AppService/assets/images/icon.png"
         }
       ]
     },
@@ -1936,6 +1996,16 @@
       "feedUrl": "https://techcommunity.microsoft.com/t5/s/plugins/custom/microsoft/o365/custom-blog-rss?board=EducatorDeveloperBlog&size=100",
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
+        {
+          "id": "https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/vector-search-vs-knowledge-graphs-where-microsoft-fabric-graph-fits/4561849",
+          "author": "JonEricEubanks",
+          "description": "One of the most confused topics in AI is the difference between a vector database and a knowledge graph. People often use the terms as if they describe competing versions of the same technology. They do not.\nA vector database finds information that is similar in meaning. A knowledge graph defines what entities mean and how they are connected. A relational database preserves authoritative records and transactions. Microsoft Fabric Graph provides an engine for following complex paths and patterns across connected data in OneLake.\nFor local government, picture a Civic Evidence Lab: a lamplit survey desk overlooking city hall, with one water-main incident under examination. A file cabinet is the city's memory. A brass scanner is its listening signal. A sealed charter and street atlas are its s…",
+          "link": "https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/vector-search-vs-knowledge-graphs-where-microsoft-fabric-graph-fits/4561849",
+          "publishedOn": "2026-11-04T08:00:00.000Z",
+          "wordCount": 17668,
+          "title": "Vector Search vs. Knowledge Graphs: Where Microsoft Fabric Graph Fits",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTYxODQ5LUZBUFhadw?revision=9"
+        },
         {
           "id": "https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/build-an-offline-ai-voice-notebook-on-raspberry-pi-with-microsoft-foundry-local/4568592",
           "author": "JiongShi",
@@ -3342,26 +3412,6 @@
           "wordCount": 6276,
           "title": "What's new in Azure App Service at #MSBuild 2026",
           "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTI2NTY5LTJCNllrbw?revision=1"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/designing-for-high-availability-the-operational-reference-for-running-a-geo-repl/4526465",
-          "author": "johnsonshi_msft",
-          "description": "By Johnson Shi, Zoey (Zhuyu) Li, Huangli Wu\nIntroduction\nThree of the most common questions we hear from enterprise teams running geo-replicated Azure Container Registries (ACR) are:\n\n\"How do I control which region serves my traffic?\" — When my AKS clusters are spread across regions, can I pin each one to its co-located replica, or am I stuck with however the global endpoint routes?\n\"What happens during a regional incident — is failover automatic or do I have to act?\" — If the registry in one region degrades, does the global endpoint reroute on its own, or do I need to manually disable the affected replica?\n\"What happens after the region recovers — does traffic return on its own?\" — Is there a cooldown, a quarantine, or any manual step before failback?\n\nWe answer those head-on, then go dee…",
-          "link": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/designing-for-high-availability-the-operational-reference-for-running-a-geo-repl/4526465",
-          "publishedOn": "2026-06-08T16:04:12.000Z",
-          "wordCount": 27988,
-          "title": "Designing for High Availability: The Operational Reference for Running a Geo-Replicated ACR",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTI2NDY1LWtvVW9ucA?revision=4"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/now-in-preview-built-in-mcp-for-azure-app-service/4526407",
-          "author": "jordanselig",
-          "description": "At Build 2026 last week, we announced the public preview of built-in MCP for Azure App Service. It does one thing, and it does it with almost no effort on your part: it turns a REST API you already host on App Service into a Model Context Protocol (MCP) server, so AI agents and assistants can call your API as a set of tools. No MCP code to write. No second service to deploy.\nWhat it does\nYou give App Service an OpenAPI 3.x specification (JSON or YAML) describing the operations you want to expose. The platform reads that spec and generates one MCP tool per operation, then serves the MCP endpoint over streamable HTTP at a path you choose (the default is /mcp). From there, App Service handles the parts that are tedious to build yourself:\n\nMCP protocol negotiation\nTool discovery, so clients ca…",
-          "link": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/now-in-preview-built-in-mcp-for-azure-app-service/4526407",
-          "publishedOn": "2026-06-08T13:09:52.000Z",
-          "wordCount": 6775,
-          "title": "Now in preview: built-in MCP for Azure App Service",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTI2NDA3LTJ5NGRhaQ?revision=1"
         }
       ]
     },
@@ -3735,16 +3785,6 @@
           "wordCount": 7321,
           "title": "PUBLIC PREVIEW - Azure Monitor - Collect Azure Resource Platform Logs at Scale with DCRs",
           "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTI1Mjk2LWwwdFg4WA?revision=10"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/connect-metrics-to-traces-with-exemplars-in-azure-monitor/4525714",
-          "author": "sunayanasingh",
-          "description": "Following Microsoft’s recent GA announcement for OpenTelemetry (OTel) support, we are excited to announce support for Exemplars for customers instrumenting metrics with Prometheus or OpenTelemetry and traces using OpenTelemetry, enhancing Azure Monitor’s integrated observability experience for cloud-native applications.\nModern cloud-native applications generate enormous volumes of telemetry. Metrics help teams detect that something is wrong, but traces explain why. Exemplars bridge these two worlds by attaching trace references directly to metric data points, making it dramatically easier to pivot from a spike in latency or errors to the exact distributed trace responsible for the issue.\nWith Azure Monitor, customers can now ingest metrics with exemplars and visualize them in Azure Managed…",
-          "link": "https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/connect-metrics-to-traces-with-exemplars-in-azure-monitor/4525714",
-          "publishedOn": "2026-06-08T17:15:03.000Z",
-          "wordCount": 7578,
-          "title": "Connect Metrics to Traces with Exemplars in Azure Monitor",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTI1NzE0LXk2VnhVNw?revision=2"
         }
       ]
     },
@@ -3862,16 +3902,6 @@
           "wordCount": null,
           "title": "Azure Function App — Queue-Based Architecture for Long-Running Sync Jobs",
           "imageUrl": null
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/getting-secrets-out-of-yaml-implementing-azure-key-vault-csi-driver-on-aks-with-/4522590",
-          "author": "anandranjan",
-          "description": "Table of Contents\n\nWhy This Pattern Matters\nThe Problem with Secrets in YAML\nWhat We Wanted to Achieve\nArchitecture Overview\nHow the Flow Works\nImplementation Prerequisites\nStep-by-Step Implementation\nUnderstanding the YAML Components\nSecret Rotation and Reloaders\nCommon Pitfalls and Troubleshooting\nSecurity and Operational Benefits\nKey Takeaways\nMicrosoft Documentation References\nFinal Thoughts\n\nWhy This Pattern Matters\nMost Kubernetes environments start with good intentions around secret management.\nOver time, however, many AKS deployments gradually evolve toward patterns like:\nvalue: \"#{SomeSecret}#\"\nA pipeline substitutes the value during deployment, the application works, and the pattern spreads across services.\nThe problem is that this quietly turns:\n\ndeployment pipelines\nrendered ma…",
-          "link": "https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/getting-secrets-out-of-yaml-implementing-azure-key-vault-csi-driver-on-aks-with-/4522590",
-          "publishedOn": "2026-06-08T07:00:00.000Z",
-          "wordCount": 9887,
-          "title": "Getting Secrets Out of YAML: Implementing Azure Key Vault CSI Driver on AKS with Workload Identity",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTIyNTkwLWFQazBkVg?revision=3"
         }
       ]
     },
@@ -4782,6 +4812,16 @@
       "siteUrl": "https://devblogs.microsoft.com/agent-framework/",
       "articles": [
         {
+          "id": "https://devblogs.microsoft.com/agent-framework/?p=5929",
+          "author": "Eduard van Valkenburg, Wes Steyn",
+          "description": "We have added installable Microsoft Agent Framework builder skills for .NET and Python. They give coding agents Microsoft-maintained guidance for building and modifying Agent Framework applications, from choosing the right pattern to wiring tools, sessions, workflows, and hosting. These are development-time skills for your coding assistant, not runtime skills loaded by the application you ship. […]\nThe post Give your coding agent a head start with Microsoft Agent Framework skills for .NET and Python appeared first on Microsoft Agent Framework.",
+          "link": "https://devblogs.microsoft.com/agent-framework/give-your-coding-agent-a-head-start-with-microsoft-agent-framework-skills-for-net-and-python/",
+          "publishedOn": "2026-11-04T15:35:49.000Z",
+          "wordCount": 7789,
+          "title": "Give your coding agent a head start with Microsoft Agent Framework skills for .NET and Python",
+          "imageUrl": "https://devblogs.microsoft.com/agent-framework/wp-content/uploads/sites/78/2026/11/builder-skills.webp"
+        },
+        {
           "id": "https://devblogs.microsoft.com/agent-framework/?p=5922",
           "author": "Eduard van Valkenburg",
           "description": "Vector stores have been part of the Python experience in Semantic Kernel for some time. With Microsoft Agent Framework, we have ported that work forward rather than starting over. This post focuses on Python. For the .NET equivalent, see Use vector stores in .NET AI apps. The foundation remains familiar: typed record definitions, stores and […]\nThe post Vector stores in Agent Framework for Python: familiar foundations, streamlined for agents appeared first on Microsoft Agent Framework.",
@@ -5005,6 +5045,16 @@
       "feedUrl": "https://devblogs.microsoft.com/java/feed/",
       "siteUrl": "https://devblogs.microsoft.com/java/",
       "articles": [
+        {
+          "id": "https://devblogs.microsoft.com/java/?p=233231",
+          "author": "Nick Zhu",
+          "description": "Following our previous announcement about ending support for JetBrains 2025.1.x, we’re continuing to update the minimum supported IDE versions for GitHub Copilot. Our general principle is to support approximately one year of JetBrains IDE releases, allowing us to focus on newer platform capabilities while continuing to improve GitHub Copilot’s features, stability, and performance. With JetBrains […]\nThe post Important updates: GitHub Copilot support ending for JetBrains 2025.2.x appeared first on Microsoft for Java Developers.",
+          "link": "https://devblogs.microsoft.com/java/important-updates-github-copilot-support-ending-for-jetbrains-2025-2-x/",
+          "publishedOn": "2026-11-05T02:24:27.000Z",
+          "wordCount": 7419,
+          "title": "Important updates: GitHub Copilot support ending for JetBrains 2025.2.x",
+          "imageUrl": "https://devblogs.microsoft.com/java/wp-content/uploads/sites/51/2019/11/trexduke-blackwhite-cropped-half.png"
+        },
         {
           "id": "https://devblogs.microsoft.com/java/?p=233234",
           "author": "Hang Wang, Jun Han, Ji Dong",
@@ -5357,16 +5407,6 @@
           "wordCount": 8073,
           "title": "Copilot Code Reviews for Azure Repos",
           "imageUrl": "https://devblogs.microsoft.com/devops/wp-content/uploads/sites/6/2026/05/copilot-code-reviews-featured-image.webp"
-        },
-        {
-          "id": "https://devblogs.microsoft.com/devops/?p=72788",
-          "author": "Soo Stahl, Bhuvan Shah",
-          "description": "Over the last several years, we’ve encouraged customers to move their repositories from Azure Repos to GitHub to take advantage of the latest AI-powered and agentic development experiences. For many enterprise teams, however, migrating at scale comes with real constraints. Traditional approaches can require extended downtime – sometimes days – which isn’t acceptable for teams […]\nThe post Enterprise Live Migrations: Moving from Azure DevOps Repo to GitHub with minimal disruption appeared first on Azure DevOps Blog.",
-          "link": "https://devblogs.microsoft.com/devops/enterprise-live-migrations/",
-          "publishedOn": "2026-06-08T16:13:26.000Z",
-          "wordCount": 7218,
-          "title": "Enterprise Live Migrations: Moving from Azure DevOps Repo to GitHub with minimal disruption",
-          "imageUrl": "https://devblogs.microsoft.com/devops/wp-content/uploads/sites/6/2026/06/image.webp"
         }
       ]
     },
@@ -5448,6 +5488,26 @@
       "feedUrl": "https://devblogs.microsoft.com/microsoft365dev/feed/",
       "siteUrl": "https://devblogs.microsoft.com/microsoft365dev/",
       "articles": [
+        {
+          "id": "https://devblogs.microsoft.com/microsoft365dev/?p=26383",
+          "author": "SharePoint team",
+          "description": "Support for low-trust SharePoint Add-ins in SharePoint Server Subscription Edition ends on January 12, 2027. The January 2027 public update will disable these add-ins by default. Organizations should identify affected solutions and plan their migration to supported alternatives, such as SharePoint Framework (SPFx). SharePoint REST, CSOM, and JSOM APIs are not affected.\nThe post Deprecation notice: Low-trust SharePoint add-ins in SharePoint Server Subscription Edition appeared first on Microsoft 365 Developer Blog.",
+          "link": "https://devblogs.microsoft.com/microsoft365dev/deprecation-notice-low-trust-sharepoint-add-ins-in-sharepoint-server-subscription-edition/",
+          "publishedOn": "2026-11-04T16:52:01.000Z",
+          "wordCount": 7402,
+          "title": "Deprecation notice: Low-trust SharePoint add-ins in SharePoint Server Subscription Edition",
+          "imageUrl": "https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2026/11/sharepoint-on-prem-deprecation.webp"
+        },
+        {
+          "id": "https://devblogs.microsoft.com/microsoft365dev/?p=26400",
+          "author": "Vesa Juvonen",
+          "description": "Help shape the future of SPFx. Share your developer experience in our survey, open until December 9, 2026, and help guide future investments. Explore highlights from a year of updates, including Copilot UX components, and discover what’s next on the roadmap and how to get involved in the community.\nThe post Your voice shapes SPFx: take our developer survey appeared first on Microsoft 365 Developer Blog.",
+          "link": "https://devblogs.microsoft.com/microsoft365dev/your-voice-shapes-spfx-take-our-developer-survey/",
+          "publishedOn": "2026-11-04T10:10:37.000Z",
+          "wordCount": 7940,
+          "title": "Your voice shapes SPFx: take our developer survey",
+          "imageUrl": "https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2026/11/spfx-autumn-survey-2.webp"
+        },
         {
           "id": "https://devblogs.microsoft.com/microsoft365dev/?p=26388",
           "author": "Steve Pucelik",
