@@ -2,10 +2,90 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2026-11-10T06:16:31.512Z</updated>
+    <updated>2026-11-11T05:01:20.341Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Introducing Azure Monitor dashboards with Grafana MCP: Telemetry for AI Agents, Signed In as You]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/introducing-azure-monitor-dashboards-with-grafana-mcp-telemetry-for-ai-agents-si/4572228</id>
+        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/introducing-azure-monitor-dashboards-with-grafana-mcp-telemetry-for-ai-agents-si/4572228"/>
+        <updated>2026-11-10T22:21:47.000Z</updated>
+        <summary type="html"><![CDATA[We're introducing the Azure Monitor dashboards with Grafana remote MCP server, a global Model Context Protocol (MCP) endpoint at https://mcp.dashboard.azure.com. It lets AI agents such as GitHub Copilot query Azure Monitor metrics and logs, Azure Resource Graph, Prometheus in Azure Monitor workspaces, Azure Data Explorer and Azure Monitor health models, and find, read and update your dashboards. It needs no Azure Managed Grafana resource, no MCP server to deploy and no Grafana data source. Each tool call runs as the signed-in Microsoft Entra ID user, so what your agent can reach follows your own Azure access.
+Set it up in one click
+Install in Visual Studio Code: https://aka.ms/join-dashboard-mcp
+The link opens Visual Studio Code and adds the server, https://mcp.dashboard.azure.com, to its …]]></summary>
+        <author>
+            <name>Wuyi_Weng</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[.NET 11 is now generally available in Azure Functions]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/-net-11-is-now-generally-available-in-azure-functions/4571176</id>
+        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/-net-11-is-now-generally-available-in-azure-functions/4571176"/>
+        <updated>2026-11-10T19:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Today, we're announcing general availability of .NET 11 support in Azure Functions through the isolated worker model. You can build new serverless applications with .NET 11 or update your existing isolated worker apps to target the new release.
+This release also introduces a required project SDK for .NET 11 function apps: Azure.Functions.Sdk. Updated Azure Functions tooling templates use the new SDK, giving new projects a simpler project file while preserving the isolated worker programming model.
+.NET 11 support in Azure Functions is currently available for C# apps. F# support is temporarily unavailable.
+A simpler project SDK
+Azure.Functions.Sdk brings the Functions build integration into the project's SDK declaration. Instead of using Microsoft.NET.Sdk as the project SDK and adding Micro…]]></summary>
+        <author>
+            <name>nzthiago</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Run on your schedule: App Service plan start/stop now in public preview]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/run-on-your-schedule-app-service-plan-startstop-now-in-public-preview/4566184</id>
+        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/run-on-your-schedule-app-service-plan-startstop-now-in-public-preview/4566184"/>
+        <updated>2026-11-10T18:32:36.000Z</updated>
+        <summary type="html"><![CDATA[Start and stop your apps together
+Managing an environment with multiple apps shouldn't mean stopping and starting each app individually. App Service plan start/stop brings that control to the plan level, letting you manage the apps and deployment slots it hosts together.
+Today, we're announcing the public preview for this feature for Premium v4 (Pv4) and Premium memory-optimized v4 (Pmv4) plans. Stop the plan to take its workloads offline, then start it again when you're ready, without issuing separate commands for each app.
+
+NOTE: 
+Start and stop operations are asynchronous: the apps on your plan don’t all stop or become ready to serve requests immediately. After you stop a plan, app shutdown and cleanup can continue over the next few minutes. When you start it again, allow time for your …]]></summary>
+        <author>
+            <name>jordanselig</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[New Microsoft Copilot Harness | More power, token efficiency & control for agents in Foundry]]></title>
+        <id>https://techcommunity.microsoft.com/blog/MicrosoftMechanicsBlog/new-microsoft-copilot-harness--more-power-token-efficiency--control-for-agents-i/4572063</id>
+        <link href="https://techcommunity.microsoft.com/blog/MicrosoftMechanicsBlog/new-microsoft-copilot-harness--more-power-token-efficiency--control-for-agents-i/4572063"/>
+        <updated>2026-11-10T16:53:18.000Z</updated>
+        <summary type="html"><![CDATA[Start with a fully managed prompt agent and move it onto the Microsoft Copilot harness so it plans, loops, calls subagents, and delivers finished reports. You can also bring your own harness, such as the Claude Agent SDK, and run it as a hosted agent with isolated VM sandboxes, autoscaling, and zero idle cost. 
+Give every agent its own Entra Agent ID, restrict its egress to approved endpoints, and trace every action it takes. Curate tools once in a governed, MCP-compatible toolbox, cut token use with tool search, and tune agents against your own benchmark with Agent Optimizer. 
+Jeff Hollan, Microsoft Foundry VP, shares how to balance agent autonomy with enterprise control from first build through production. 
+Same agent. New harness. 
+
+The Microsoft Copilot harness turns a one-pass prompt …]]></summary>
+        <author>
+            <name>Zachary-Cavanell</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Where Should the LLM Sit? Lessons from a Local Clinical Ranking Prototype with Foundry Local]]></title>
+        <id>https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/where-should-the-llm-sit-lessons-from-a-local-clinical-ranking-prototype-with-fo/4563684</id>
+        <link href="https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/where-should-the-llm-sit-lessons-from-a-local-clinical-ranking-prototype-with-fo/4563684"/>
+        <updated>2026-11-10T13:04:28.000Z</updated>
+        <summary type="html"><![CDATA[Getting Qwen3-8B running through Foundry Local was only the beginning. Once it became part of a diagnostic-ranking application, the questions were less about launching a model and more about what to do when it returned an incomplete ranking, displaced a correct result, or never saw the right candidate in the first place.
+I explored those questions using MDDial, a template-constructed differential-diagnosis dialogue benchmark. The task was deliberately limited to ranking 12 known disease classes from fixed dialogues, not diagnosing patients in an open clinical setting. Model inference ran on a Windows laptop with an NVIDIA RTX 5060 Laptop GPU; the rest of the workflow combined deterministic processing with selective language-model calls.
+1. Constrain First, Rerank Second
+Qwen3-8B first extr…]]></summary>
+        <author>
+            <name>ZijunYuan</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Run on your schedule: App Service plan start/stop now in public preview]]></title>
+        <id>https://azure.github.io/AppService/2026/11/10/app-service-plan-start-stop-public-preview.html</id>
+        <link href="https://azure.github.io/AppService/2026/11/10/app-service-plan-start-stop-public-preview.html"/>
+        <updated>2026-11-10T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Start and stop your apps together]]></summary>
+        <author>
+            <name>Azure App Service</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Securing and governing your medallion layers in Fabric Data Warehouse]]></title>
         <id>https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Securing-and-governing-your-medallion-layers-in-Fabric-Data/ba-p/5377539</id>

@@ -1663,6 +1663,16 @@
       "siteUrl": "https://azure.github.io/AppService/",
       "articles": [
         {
+          "id": "https://azure.github.io/AppService/2026/11/10/app-service-plan-start-stop-public-preview.html",
+          "author": null,
+          "description": "Start and stop your apps together",
+          "link": "https://azure.github.io/AppService/2026/11/10/app-service-plan-start-stop-public-preview.html",
+          "publishedOn": "2026-11-10T00:00:00.000Z",
+          "wordCount": 1151,
+          "title": "Run on your schedule: App Service plan start/stop now in public preview",
+          "imageUrl": "https://azure.github.io/AppService/assets/images/icon.png"
+        },
+        {
           "id": "https://azure.github.io/AppService/2026/11/09/post-quantum-tls-app-service-azure-functions.html",
           "author": null,
           "description": "Azure App Service and Azure Functions are beginning a phased rollout of support for the TLS 1.3 hybrid key exchange group X25519MLKEM768.",
@@ -2006,6 +2016,16 @@
       "feedUrl": "https://techcommunity.microsoft.com/t5/s/plugins/custom/microsoft/o365/custom-blog-rss?board=EducatorDeveloperBlog&size=100",
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
+        {
+          "id": "https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/where-should-the-llm-sit-lessons-from-a-local-clinical-ranking-prototype-with-fo/4563684",
+          "author": "ZijunYuan",
+          "description": "Getting Qwen3-8B running through Foundry Local was only the beginning. Once it became part of a diagnostic-ranking application, the questions were less about launching a model and more about what to do when it returned an incomplete ranking, displaced a correct result, or never saw the right candidate in the first place.\nI explored those questions using MDDial, a template-constructed differential-diagnosis dialogue benchmark. The task was deliberately limited to ranking 12 known disease classes from fixed dialogues, not diagnosing patients in an open clinical setting. Model inference ran on a Windows laptop with an NVIDIA RTX 5060 Laptop GPU; the rest of the workflow combined deterministic processing with selective language-model calls.\n1. Constrain First, Rerank Second\nQwen3-8B first extr…",
+          "link": "https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/where-should-the-llm-sit-lessons-from-a-local-clinical-ranking-prototype-with-fo/4563684",
+          "publishedOn": "2026-11-10T13:04:28.000Z",
+          "wordCount": null,
+          "title": "Where Should the LLM Sit? Lessons from a Local Clinical Ranking Prototype with Foundry Local",
+          "imageUrl": null
+        },
         {
           "id": "https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/vector-search-vs-knowledge-graphs-where-microsoft-fabric-graph-fits/4561849",
           "author": "JonEricEubanks",
@@ -2593,6 +2613,36 @@
       "feedUrl": "https://techcommunity.microsoft.com/t5/s/plugins/custom/microsoft/o365/custom-blog-rss?board=AppsonAzureBlog&size=100",
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
+        {
+          "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/introducing-azure-monitor-dashboards-with-grafana-mcp-telemetry-for-ai-agents-si/4572228",
+          "author": "Wuyi_Weng",
+          "description": "We're introducing the Azure Monitor dashboards with Grafana remote MCP server, a global Model Context Protocol (MCP) endpoint at https://mcp.dashboard.azure.com. It lets AI agents such as GitHub Copilot query Azure Monitor metrics and logs, Azure Resource Graph, Prometheus in Azure Monitor workspaces, Azure Data Explorer and Azure Monitor health models, and find, read and update your dashboards. It needs no Azure Managed Grafana resource, no MCP server to deploy and no Grafana data source. Each tool call runs as the signed-in Microsoft Entra ID user, so what your agent can reach follows your own Azure access.\nSet it up in one click\nInstall in Visual Studio Code: https://aka.ms/join-dashboard-mcp\nThe link opens Visual Studio Code and adds the server, https://mcp.dashboard.azure.com, to its …",
+          "link": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/introducing-azure-monitor-dashboards-with-grafana-mcp-telemetry-for-ai-agents-si/4572228",
+          "publishedOn": "2026-11-10T22:21:47.000Z",
+          "wordCount": 16845,
+          "title": "Introducing Azure Monitor dashboards with Grafana MCP: Telemetry for AI Agents, Signed In as You",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTcyMjI4LU1oa0gyOA?revision=2"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/-net-11-is-now-generally-available-in-azure-functions/4571176",
+          "author": "nzthiago",
+          "description": "Today, we're announcing general availability of .NET 11 support in Azure Functions through the isolated worker model. You can build new serverless applications with .NET 11 or update your existing isolated worker apps to target the new release.\nThis release also introduces a required project SDK for .NET 11 function apps: Azure.Functions.Sdk. Updated Azure Functions tooling templates use the new SDK, giving new projects a simpler project file while preserving the isolated worker programming model.\n.NET 11 support in Azure Functions is currently available for C# apps. F# support is temporarily unavailable.\nA simpler project SDK\nAzure.Functions.Sdk brings the Functions build integration into the project's SDK declaration. Instead of using Microsoft.NET.Sdk as the project SDK and adding Micro…",
+          "link": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/-net-11-is-now-generally-available-in-azure-functions/4571176",
+          "publishedOn": "2026-11-10T19:00:00.000Z",
+          "wordCount": 11633,
+          "title": ".NET 11 is now generally available in Azure Functions",
+          "imageUrl": null
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/run-on-your-schedule-app-service-plan-startstop-now-in-public-preview/4566184",
+          "author": "jordanselig",
+          "description": "Start and stop your apps together\nManaging an environment with multiple apps shouldn't mean stopping and starting each app individually. App Service plan start/stop brings that control to the plan level, letting you manage the apps and deployment slots it hosts together.\nToday, we're announcing the public preview for this feature for Premium v4 (Pv4) and Premium memory-optimized v4 (Pmv4) plans. Stop the plan to take its workloads offline, then start it again when you're ready, without issuing separate commands for each app.\n\nNOTE: \nStart and stop operations are asynchronous: the apps on your plan don’t all stop or become ready to serve requests immediately. After you stop a plan, app shutdown and cleanup can continue over the next few minutes. When you start it again, allow time for your …",
+          "link": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/run-on-your-schedule-app-service-plan-startstop-now-in-public-preview/4566184",
+          "publishedOn": "2026-11-10T18:32:36.000Z",
+          "wordCount": 11168,
+          "title": "Run on your schedule: App Service plan start/stop now in public preview",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTY2MTg0LWZuV0xOTw?revision=4"
+        },
         {
           "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/durable-task-extension-for-microsoft-agent-framework-is-now-generally-available/4571100",
           "author": "NickGreenfield",
@@ -4470,6 +4520,16 @@
       "feedUrl": "https://techcommunity.microsoft.com/t5/s/plugins/custom/microsoft/o365/custom-blog-rss?board=MicrosoftMechanicsBlog&size=50",
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
+        {
+          "id": "https://techcommunity.microsoft.com/blog/MicrosoftMechanicsBlog/new-microsoft-copilot-harness--more-power-token-efficiency--control-for-agents-i/4572063",
+          "author": "Zachary-Cavanell",
+          "description": "Start with a fully managed prompt agent and move it onto the Microsoft Copilot harness so it plans, loops, calls subagents, and delivers finished reports. You can also bring your own harness, such as the Claude Agent SDK, and run it as a hosted agent with isolated VM sandboxes, autoscaling, and zero idle cost. \nGive every agent its own Entra Agent ID, restrict its egress to approved endpoints, and trace every action it takes. Curate tools once in a governed, MCP-compatible toolbox, cut token use with tool search, and tune agents against your own benchmark with Agent Optimizer. \nJeff Hollan, Microsoft Foundry VP, shares how to balance agent autonomy with enterprise control from first build through production. \nSame agent. New harness. \n\nThe Microsoft Copilot harness turns a one-pass prompt …",
+          "link": "https://techcommunity.microsoft.com/blog/MicrosoftMechanicsBlog/new-microsoft-copilot-harness--more-power-token-efficiency--control-for-agents-i/4572063",
+          "publishedOn": "2026-11-10T16:53:18.000Z",
+          "wordCount": null,
+          "title": "New Microsoft Copilot Harness | More power, token efficiency & control for agents in Foundry",
+          "imageUrl": null
+        },
         {
           "id": "https://techcommunity.microsoft.com/blog/MicrosoftMechanicsBlog/new-conditional-access-policy-plans-in-microsoft-entra/4568461",
           "author": "Zachary-Cavanell",
