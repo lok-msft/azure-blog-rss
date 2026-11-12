@@ -6,6 +6,26 @@
       "siteUrl": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/bg-p/fbc_fabricupdatesblogs",
       "articles": [
         {
+          "id": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/The-next-chapter-for-CI-CD-in-Fabric-Warehouse-Preview/ba-p/5401222",
+          "author": "pradeepsvs",
+          "description": "Building and operating a data warehouse is increasingly a software engineering discipline. Teams want to develop warehouse changes in isolation, version them in Git, review them through pull requests, promote them safely across environments, and automate the entire process using their existing CI/CD systems.\r\nOver the past several releases, we've been evolving CI/CD in Fabric Warehouse around that lifecycle:\r\n\r\nDacFx established a common schema deployment foundation.\r\nPre, and post-deployment scripts expanded deployments beyond schema changes.\r\nWarehouse Item Definition APIs opened the same lifecycle to automation.\r\n\r\nTogether, these investments are creating a more complete CI/CD lifecycle for Fabric Warehouse, from developing and versioning database changes to deploying and automating the…",
+          "link": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/The-next-chapter-for-CI-CD-in-Fabric-Warehouse-Preview/ba-p/5401222",
+          "publishedOn": "2026-11-11T18:00:00.000Z",
+          "wordCount": null,
+          "title": "The next chapter for CI/CD in Fabric Warehouse (Preview)",
+          "imageUrl": null
+        },
+        {
+          "id": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Use-OneLake-as-native-storage-for-Azure-Databricks-Preview/ba-p/5377939",
+          "author": "shilmenon",
+          "description": "Organizations increasingly use Microsoft Fabric and Azure Databricks together so teams can choose the tools that best fit their data engineering, analytics, and AI workloads while working from a common data foundation.\r\nOneLake external-location support for Azure Databricks Unity Catalog is now generally available in Microsoft Fabric, with OneLake Security enabled by default for Azure Databricks Storage items. On the Azure Databricks side, the feature is in preview.\r\nWith this integration, supported Unity Catalog-managed data can be stored directly in OneLake. To understand the setup and supported scenarios, Connect Azure Databricks to a OneLake external location.\r\nWhy this matters\r\nData teams often need Azure Databricks and Microsoft Fabric in the same architecture. Without a shared stora…",
+          "link": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Use-OneLake-as-native-storage-for-Azure-Databricks-Preview/ba-p/5377939",
+          "publishedOn": "2026-11-11T12:13:55.000Z",
+          "wordCount": null,
+          "title": "Use OneLake as native storage for Azure Databricks (Preview)",
+          "imageUrl": null
+        },
+        {
           "id": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Securing-and-governing-your-medallion-layers-in-Fabric-Data/ba-p/5377539",
           "author": "Scirqueira",
           "description": "Coauthor - Artur Vieira\r\nPart 4 of a series on medallion architecture with Fabric Data Warehouse.\r\nSecurity should follow the layers, not fight them.\r\nIn Part 1 we chose the pattern, in Part 2 we built the layers, and in Part 3 we covered the operating practices that keep them healthy. Security is the natural next step, because a medallion architecture already gives you something most platforms do not: three clearly different audiences. \r\nA medallion architecture creates clear boundaries between raw, refined, and curated data. Applying security and governance at those boundaries helps reduce unnecessary exposure, simplify access decisions, and give each audience the data it needs without opening every layer.. \r\nThe following approach shows how to secure and govern a medallion pipeline in F…",
@@ -1663,6 +1683,16 @@
       "siteUrl": "https://azure.github.io/AppService/",
       "articles": [
         {
+          "id": "https://azure.github.io/AppService/2026/11/11/dotnet11-python315-node26-ga.html",
+          "author": null,
+          "description": ".NET 11 and Python 3.15 are now generally available on Azure App Service for Linux, alongside Node.js 26 Long Term Support (LTS). You can use these runtimes for production applications, whether you’re creating a new app or upgrading an existing workload.",
+          "link": "https://azure.github.io/AppService/2026/11/11/dotnet11-python315-node26-ga.html",
+          "publishedOn": "2026-11-11T00:00:00.000Z",
+          "wordCount": 1263,
+          "title": ".NET 11 and Python 3.15 are generally available, and Node.js 26 LTS is now on Azure App Service",
+          "imageUrl": "https://azure.github.io/AppService/assets/images/icon.png"
+        },
+        {
           "id": "https://azure.github.io/AppService/2026/11/10/app-service-plan-start-stop-public-preview.html",
           "author": null,
           "description": "Start and stop your apps together",
@@ -2575,36 +2605,6 @@
           "wordCount": null,
           "title": "Detecting Python Vulnerabilities with GraphCodeBERT",
           "imageUrl": null
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/building-shadowquest-a-multi-agent-rpg/4528055",
-          "author": "ShardaKaur",
-          "description": "Artificial Intelligence is rapidly evolving beyond traditional chatbots. Today, developers are building intelligent systems where multiple AI agents collaborate, retrieve knowledge, and solve problems together. Microsoft's Agents League Hackathon provided the perfect opportunity to explore this new approach through the Reasoning Agents challenge.\nFor this challenge, I built ShadowQuest, a fantasy role-playing game (RPG) powered by Microsoft Foundry, Foundry IQ, Azure AI Search, GPT-4.1, and GitHub Copilot. The project demonstrates how specialized AI agents can work together while using Retrieval-Augmented Generation (RAG) to deliver accurate and context-aware responses.\n\nAbout the Challenge\n\nMicrosoft Agents League is a global developer challenge designed to encourage developers to build i…",
-          "link": "https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/building-shadowquest-a-multi-agent-rpg/4528055",
-          "publishedOn": "2026-06-15T08:00:00.000Z",
-          "wordCount": 8870,
-          "title": "Building ShadowQuest: A Multi-Agent RPG",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTI4MDU1LXBDV0N6Qg?revision=1"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/gamifying-world-improvement-shipping-a-reasoning-agent-rpg-on-microsoft-foundry/4527648",
-          "author": "Princeps",
-          "description": "Part 1 of 5\n\nBuilding a multi-agent demo is the straightforward part. Building one where you can prove - live, with judges watching - that the agents reasoned, retrieved grounded context, called tools, and deferred to a human before awarding anything: that is where most teams run into friction.\nWe found out on stage. This project was demoed live at the Agents League Reasoning Agents battle on Microsoft Reactor - real-time narration, real Foundry calls, real latency. Since then it has changed a great deal: it is now a public web app you can play in your browser, with a developer console that exposes every model call, every retrieval, and every logged event. This series is the build, told properly, one subsystem at a time.\nThis first post is the map: what the game is, the four-agent pipeline…",
-          "link": "https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/gamifying-world-improvement-shipping-a-reasoning-agent-rpg-on-microsoft-foundry/4527648",
-          "publishedOn": "2026-06-15T06:40:36.000Z",
-          "wordCount": 10555,
-          "title": "Gamifying World Improvement: Shipping a Reasoning-Agent RPG on Microsoft Foundry",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTI3NjQ4LXpJNnpHSA?revision=6"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/gamifying-world-improvement-a-reasoning-agent-rpg-on-microsoft-foundry/4527648",
-          "author": "Princeps",
-          "description": "Building a multi-agent demo is the straightforward part. Building one where you can prove, live, with judges watching, that the agents reasoned, retrieved grounded context, called tools, and deferred to a human before awarding anything: that is where most teams run into friction.\n \nWe found out on stage. This project was demoed live at the Agents League Reasoning Agents battle on Microsoft Reactor: real-time narration, real Foundry calls, real latency, and a host watching the terminal.\n \nFor Microsoft Agents League Battle #2 (Reasoning Agents) the brief was the classic Game Master pattern: an orchestrator decomposes a goal, specialist agents execute, shared state tracks the world. We reskinned it with the biggest stakes we could defend. The game opens in a world that terraforms the Sahara …",
-          "link": "https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/gamifying-world-improvement-a-reasoning-agent-rpg-on-microsoft-foundry/4527648",
-          "publishedOn": "2026-06-15T06:40:36.000Z",
-          "wordCount": 9763,
-          "title": "Gamifying World Improvement: A Reasoning-Agent RPG on Microsoft Foundry",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTI3NjQ4LXltQnM0UA?revision=3"
         }
       ]
     },
@@ -2613,6 +2613,26 @@
       "feedUrl": "https://techcommunity.microsoft.com/t5/s/plugins/custom/microsoft/o365/custom-blog-rss?board=AppsonAzureBlog&size=100",
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
+        {
+          "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/introducing-azure-container-apps-as-a-target-workload-in-azure-migrate/4571669",
+          "author": "DeepGanguly",
+          "description": "We are excited to announce Azure Container Apps as a target workload for assessment in Azure Migrate, helping organizations evaluate existing web applications for migration to a managed, serverless container platform.\nThis capability extends the Azure Migrate assessment experience to Azure Container Apps, bringing application readiness, migration requirements, sizing recommendations, and estimated hosting costs into migration planning. Organizations can identify suitable applications, understand the changes required, and make informed decisions before starting migration.\nSupported workloads include Web Apps discovered through Azure Migrate\nMake informed modernization and migration decisions\nFor organizations with an existing application estate, modernization starts with a few essential que…",
+          "link": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/introducing-azure-container-apps-as-a-target-workload-in-azure-migrate/4571669",
+          "publishedOn": "2026-11-12T05:44:09.000Z",
+          "wordCount": 11512,
+          "title": "Introducing Azure Container Apps as a target workload in Azure Migrate",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTcxNjY5LTFDT2ZnVw?revision=14"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/python-support-has-arrived-in-the-guided-copilot-experience-for-vs-code/4572591",
+          "author": "fiveisprime",
+          "description": "When we introduced the guided Copilot experience for building Azure apps in VS Code, we started with JavaScript and TypeScript, with Python on the roadmap. Since then, we've seen people creating Python projects with the experience, and we wanted to make sure our Python lovers had proper support.\nToday, we're excited to announce that the guided Copilot experience in VS Code now fully supports Python projects. 🐍\nFrom Python idea to Azure app\nThe guided experience helps you move from an idea to a deployed Azure app through a structured workflow, with checkpoints for reviewing important decisions. Now Python developers can use that same experience to:\n \n\n \n\nPlan and scaffold: Describe your app, review the proposed architecture, and approve a plan before code is generated.\nDevelop locally: Get help preparing your development environment, then run and iterate on your Python project in VS Code.\nDeploy to Azure: Review the deployment tools, resources, and estimated costs before deploying your app.\n\nThis guided path complements the free-form Copilot workflows you already know, so you can choose the approach that works best for you.\nGive it a try\nInstall the Azure Tools extension pack, open an empty folder in VS Code, and start the guided Copilot experience with your Python project in mind.\nWhether you're building an API, prototyping an idea, or learning something new, we'd love to see what you create. Have feedback? Share it with us on GitHub.\nThanks to everyone who's been building Python projects with the experience. We're excited to see what you make next!",
+          "link": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/python-support-has-arrived-in-the-guided-copilot-experience-for-vs-code/4572591",
+          "publishedOn": "2026-11-11T16:56:47.000Z",
+          "wordCount": 9518,
+          "title": "Python support has arrived in the guided Copilot experience for VS Code",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTcyNTkxLXBhbG9qQg?revision=2"
+        },
         {
           "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/introducing-azure-monitor-dashboards-with-grafana-mcp-telemetry-for-ai-agents-si/4572228",
           "author": "Wuyi_Weng",
@@ -3546,6 +3566,16 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/public-preview-auto-scaling-of-ingestion-limits-in-azure-monitor-workspace/4570377",
+          "author": "sunayanasingh",
+          "description": "If you run Azure Monitor Workspace at scale, you've probably had to request a higher ingestion limit at some point. A new service rolls out, a cluster scales out, or cardinality creeps up, and suddenly usage is close to your limit. Until now, the fix was a manual request, and you were at risk of throttling until the new limit was applied.\nToday we're announcing the public preview of Auto-scale for ingestion limits in Azure Monitor workspace (AMW). When you turn on Auto-scale, Azure Monitor adjusts your workspace's ingestion limits automatically based on your actual usage. Limits go up as your metrics volume grows and come back down when usage stays low for a sustained period of time.\nWhy Auto-scale?\nStatic ingestion limits create problems in both directions:\n\nThrottling risk: When usage gr…",
+          "link": "https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/public-preview-auto-scaling-of-ingestion-limits-in-azure-monitor-workspace/4570377",
+          "publishedOn": "2026-11-11T16:00:00.000Z",
+          "wordCount": null,
+          "title": "Public preview: Auto scaling of ingestion limits in Azure Monitor workspace",
+          "imageUrl": null
+        },
+        {
           "id": "https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/scale-data-collection-endpoint-private-connectivity-with-ip-endpoint-compression/4563958",
           "author": "Mahesh_Sundaram",
           "description": "Scale Azure Monitor Private Link with data collection endpoint IP compression\nAs organizations expand their Azure Monitor deployments, private networking needs to scale with them. For enterprises running large, distributed environments, that can create an increasingly important challenge: how do you grow private monitoring without consuming private IP address space at the same rate?\nAzure Monitor is introducing private IP endpoint compression for data collection endpoints (DCEs) connected through Azure Monitor Private Link Scope (AMPLS).\nThis capability is designed to reduce the private IP footprint by ~90%-95% associated with DCEs while preserving the Azure Monitor Private Link architecture and the security controls customers already use.\nThe challenge: private monitoring at enterprise sc…",
@@ -3754,16 +3784,6 @@
           "wordCount": 6236,
           "title": "General Availability: Simple log alerts in Azure Monitor",
           "imageUrl": null
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/inside-the-observability-agent-how-deep-investigations-and-reasoning-work/4527102",
-          "author": "yalavi",
-          "description": "Incidents are rarely explained by one chart. A spike in request failures might be caused by a dependency timeout. A dependency timeout might come from a connection pool issue. And that connection pool issue might trace back to a deployment or a resource health event that started minutes earlier.\nFrom the outside, Azure Copilot observability agent presents this as a focused troubleshooting experience that correlates signals such as metrics, logs, alerts (and alert context), tracing data, and resource and service health.\nUnder the hood, the implementation is more than a chat prompt with a few queries attached. It is a dedicated investigation runtime designed to build hypotheses, gather data across layers, and return an explanation that is meant to be understandable and data-backed.\nDeep Inve…",
-          "link": "https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/inside-the-observability-agent-how-deep-investigations-and-reasoning-work/4527102",
-          "publishedOn": "2026-06-15T15:57:54.000Z",
-          "wordCount": 9537,
-          "title": "Inside the Observability Agent: How Deep Investigations and Reasoning Work",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTI3MTAyLWVNTUUxWQ?revision=2"
         }
       ]
     },
@@ -5427,6 +5447,16 @@
       "feedUrl": "https://devblogs.microsoft.com/microsoft365dev/feed/",
       "siteUrl": "https://devblogs.microsoft.com/microsoft365dev/",
       "articles": [
+        {
+          "id": "https://devblogs.microsoft.com/microsoft365dev/?p=26422",
+          "author": "Steve Pucelik",
+          "description": "What happens when intelligent information management meets the Microsoft 365 ecosystem?  Organizations are looking for better ways to manage growing volumes of business-critical content while preparing that content for AI. As they’re building custom apps, they want strong context and governance along with the Microsoft 365 environments, tools, and security practices they already rely on.  […]\nThe post Make business content ready for AI with M-Files – SharePoint Embedded partner spotlight appeared first on Microsoft 365 Developer Blog.",
+          "link": "https://devblogs.microsoft.com/microsoft365dev/make-business-content-ready-for-ai-with-m-files-sharepoint-embedded-partner-spotlight/",
+          "publishedOn": "2026-11-11T14:00:54.000Z",
+          "wordCount": 8797,
+          "title": "Make business content ready for AI with M-Files – SharePoint Embedded partner spotlight",
+          "imageUrl": "https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2026/11/MFilesSpotlight.webp"
+        },
         {
           "id": "https://devblogs.microsoft.com/microsoft365dev/?p=26276",
           "author": "Paolo Pialorsi, Patrick Rodgers",
