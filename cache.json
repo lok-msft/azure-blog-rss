@@ -6,6 +6,16 @@
       "siteUrl": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/bg-p/fbc_fabricupdatesblogs",
       "articles": [
         {
+          "id": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Use-OneLake-as-native-storage-for-Azure-Databricks/ba-p/5377939",
+          "author": "shilmenon",
+          "description": "Organizations increasingly use Microsoft Fabric and Azure Databricks together so teams can choose the tools that best fit their data engineering, analytics, and AI workloads while working from a common data foundation.\r\nOneLake external-location support for Azure Databricks Unity Catalog is now generally available in Microsoft Fabric, with OneLake Security enabled by default for Azure Databricks Storage items. On the Azure Databricks side, the feature is in preview.\r\nWith this integration, supported Unity Catalog-managed data can be stored directly in OneLake. To understand the setup and supported scenarios, Connect Azure Databricks to a OneLake external location.\r\nWhy this matters\r\nData teams often need Azure Databricks and Microsoft Fabric in the same architecture. Without a shared stora…",
+          "link": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Use-OneLake-as-native-storage-for-Azure-Databricks/ba-p/5377939",
+          "publishedOn": "2026-11-13T08:01:45.000Z",
+          "wordCount": null,
+          "title": "Use OneLake as native storage for Azure Databricks",
+          "imageUrl": null
+        },
+        {
           "id": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/The-next-chapter-for-CI-CD-in-Fabric-Warehouse-Preview/ba-p/5401222",
           "author": "pradeepsvs",
           "description": "Building and operating a data warehouse is increasingly a software engineering discipline. Teams want to develop warehouse changes in isolation, version them in Git, review them through pull requests, promote them safely across environments, and automate the entire process using their existing CI/CD systems.\r\nOver the past several releases, we've been evolving CI/CD in Fabric Warehouse around that lifecycle:\r\n\r\nDacFx established a common schema deployment foundation.\r\nPre, and post-deployment scripts expanded deployments beyond schema changes.\r\nWarehouse Item Definition APIs opened the same lifecycle to automation.\r\n\r\nTogether, these investments are creating a more complete CI/CD lifecycle for Fabric Warehouse, from developing and versioning database changes to deploying and automating the…",
@@ -1604,46 +1614,6 @@
           "wordCount": 6824,
           "title": "Securing the Power Query connector ecosystem in Fabric",
           "imageUrl": "https://community.fabric.microsoft.com/html/assets/fabric_twitter_OG_image.png"
-        },
-        {
-          "id": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/ServiceNow-Zero-Copy-Querying-of-Enterprise-Data-in-Microsoft/ba-p/5198369",
-          "author": "amitch",
-          "description": "OneLake in Microsoft Fabric makes a simple promise: provide a single, unified data foundation for analytics, AI, and BI. ServiceNow Workflow Data Fabric enables customers to access, derive insights and build AI agents using their enterprise data where it lives without needing to manage complex ETL pipelines or duplicate data.ServiceNow Workflow Data Fabric has now introduced a new zero-copy connector for Microsoft OneLake. With the new connector, customers can access their enterprise data stored in OneLake without moving or copying it. ServiceNow OneLake connectorServiceNow introduced a new OneLake connector that enables organisations to access data in Microsoft OneLake directly from ServiceNow—bringing governed, enterprise data into workflows, analytics, and AI-powered experiences. This a…",
-          "link": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/ServiceNow-Zero-Copy-Querying-of-Enterprise-Data-in-Microsoft/ba-p/5198369",
-          "publishedOn": "2026-06-17T17:00:00.000Z",
-          "wordCount": 6681,
-          "title": "ServiceNow Zero-Copy Querying of Enterprise Data in Microsoft OneLake (Preview)",
-          "imageUrl": "https://community.fabric.microsoft.com/t5/image/serverpage/image-id/1352352iA8449FF3165C1CEB?v=v2"
-        },
-        {
-          "id": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Simplify-Spark-failure-diagnosis-in-Fabric-Preview/ba-p/5196959",
-          "author": "jiang_jenny1",
-          "description": "An AI-powered skill that turns Spark troubleshooting from a multi-tab investigation into a single natural-language command.",
-          "link": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Simplify-Spark-failure-diagnosis-in-Fabric-Preview/ba-p/5196959",
-          "publishedOn": "2026-06-17T16:00:00.000Z",
-          "wordCount": 6775,
-          "title": "Simplify Spark failure diagnosis in Fabric (Preview)",
-          "imageUrl": "https://community.fabric.microsoft.com/t5/image/serverpage/image-id/1352283i9D6941374FFB2696?v=v2"
-        },
-        {
-          "id": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Spark-History-Server-performance-improvement-Snapshot-based/ba-p/5196953",
-          "author": "jiang_jenny1",
-          "description": "As Spark workloads scale in size and complexity, fast access to Spark application execution metrics and logs is essential for debugging, performance analysis, and operational confidence. The Spark History Server is a key part of that workflow — but for large workloads, loading times have been a significant pain point. With this release, we’ve introduced a new snapshot-based approach that significantly improves Spark History Server loading performance in Microsoft Fabric. The challengePreviously, the Spark History Server had to fully parse and render the entire application event log before the UI could load. For large-scale enterprise workloads — applications with hundreds of thousands of tasks, event logs exceeding 10 GB, or long-running Spark Streaming jobs — this could take up to an hour…",
-          "link": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Spark-History-Server-performance-improvement-Snapshot-based/ba-p/5196953",
-          "publishedOn": "2026-06-16T21:00:00.000Z",
-          "wordCount": 6400,
-          "title": "Spark History Server performance improvement: Snapshot-based loading (Preview)",
-          "imageUrl": "https://community.fabric.microsoft.com/t5/image/serverpage/image-id/1352282i2DDD8272CACCF57D?v=v2"
-        },
-        {
-          "id": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Stay-informed-about-Microsoft-Fabric-service-issues-Preview/ba-p/5194037",
-          "author": "royr",
-          "description": "Fabric uses several message types to communicate service issues, depending on how an issue is detected and where the information is surfaced.",
-          "link": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Stay-informed-about-Microsoft-Fabric-service-issues-Preview/ba-p/5194037",
-          "publishedOn": "2026-06-16T19:00:00.000Z",
-          "wordCount": 6502,
-          "title": "Stay informed about Microsoft Fabric service issues (Preview)",
-          "imageUrl": "https://community.fabric.microsoft.com/t5/image/serverpage/image-id/1351665i44BEEEFF2539D156?v=v2"
         }
       ]
     },
@@ -2583,6 +2553,16 @@
       "feedUrl": "https://techcommunity.microsoft.com/t5/s/plugins/custom/microsoft/o365/custom-blog-rss?board=AppsonAzureBlog&size=100",
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
+        {
+          "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/introducing-azure-container-apps-sandboxes-in-visual-studio-code/4573296",
+          "author": "fiveisprime",
+          "description": "We're introducing support for Azure Container Apps Sandboxes in the Azure Container Apps extension for Visual Studio Code. The new experience brings sandbox groups and individual sandboxes into the Azure Resources view, putting everyday sandbox operations alongside your development workflow.\nInstead of switching tools to create and manage sandbox resources, you can work with them directly in VS Code, see their current state, and follow operation results in the Azure output channel.\nYour sandboxes, alongside your code\nThe new Container Apps Sandboxes node gives sandbox resources a dedicated home in the Azure Resources tree. Expand a sandbox group to find its sandboxes and see status labels such as Running and Stopped.\nStart with Create Sandbox Group... and follow the guided workflow, includ…",
+          "link": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/introducing-azure-container-apps-sandboxes-in-visual-studio-code/4573296",
+          "publishedOn": "2026-11-13T19:44:47.000Z",
+          "wordCount": 10522,
+          "title": "Introducing Azure Container Apps Sandboxes in Visual Studio Code",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTczMjk2LWhmR3VSSg?revision=1"
+        },
         {
           "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/introducing-azure-container-apps-as-a-target-workload-in-azure-migrate/4571669",
           "author": "DeepGanguly",
@@ -3723,36 +3703,6 @@
           "publishedOn": "2026-06-23T15:52:27.000Z",
           "wordCount": null,
           "title": "Azure Copilot Observability Agent is generally available, with autonomous operations in preview",
-          "imageUrl": null
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/accelerating-aks-troubleshooting-with-the-azure-copilot-observability-agent/4528517",
-          "author": "yairgil",
-          "description": "AKS incidents rarely stay within one Kubernetes object, signal, or tool. A latency spike might first appear in application telemetry, but the root cause may sit elsewhere: pod restarts, node pressure, scheduling failures, or a recent configuration change. The Azure Copilot Observability Agent in Azure Monitor helps connect these signals into an explainable investigation, so teams can move from symptoms to evidence-backed next steps.\nWhy AKS troubleshooting is complex\nTroubleshooting Azure Kubernetes Service (AKS) is complex because failures can originate in workloads, platform components, infrastructure, or the application code running on the cluster. For example, pods stuck in Pending may indicate capacity or scheduling issues, while application latency may be caused by throttling, failed…",
-          "link": "https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/accelerating-aks-troubleshooting-with-the-azure-copilot-observability-agent/4528517",
-          "publishedOn": "2026-06-17T16:27:27.000Z",
-          "wordCount": 9033,
-          "title": "Accelerating AKS troubleshooting with the Azure Copilot Observability Agent",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTI4NTE3LXVmV040VA?revision=4"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/anomaly-detection-made-easy-with-dynamic-thresholds-for-log-search-alerts/4521522",
-          "author": "Efrat_Ben_Porat",
-          "description": "We’re excited to announce the General Availability of dynamic thresholds for log search alerts in Azure Monitor. Dynamic thresholds make anomaly detection easier by using machine learning to learn normal behavior from your historical log query results, automatically account for patterns such as hourly, daily, and weekly seasonality, and adapt as your environment changes. Instead of manually choosing static limits that can quickly become outdated, you can let Azure Monitor automatically determine the right threshold for each alert rule. Dynamic thresholds for Log search alerts are available at no extra charge - you pay the standard log search alert rule rate.  \nDynamic threshold preview chart displayed when setting up a new alert rule.\nWhy it matters \n\nSimplified configuration: No need to f…",
-          "link": "https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/anomaly-detection-made-easy-with-dynamic-thresholds-for-log-search-alerts/4521522",
-          "publishedOn": "2026-06-16T17:33:52.000Z",
-          "wordCount": 6349,
-          "title": "Anomaly detection made easy with Dynamic thresholds for Log search alerts",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTIxNTIyLUxSUWZ3Vg?revision=3"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/general-availability-simple-log-alerts-in-azure-monitor/4521498",
-          "author": "Efrat_Ben_Porat",
-          "description": "We are excited to announce the General Availability of Simple log alerts in Azure Monitor! This feature is designed to provide a simplified and more intuitive experience for monitoring and alerting, enhancing your ability to detect and respond to problems in near real-time. \nSimple log alerts are a type of Log search alerts in Azure Monitor, designed to provide a simpler alternative to traditional Log search alerts. Unlike Log search alerts that aggregate rows over a defined period, Simple Log Alerts evaluate each row individually.\nSimple Log Alerts are supported using Basic logs as well. Before, choosing Basic logs for cost optimization - for example, configuring the traces table in Application Insights with Basic logs plan - meant giving up the ability to alert on that data. Simple log a…",
-          "link": "https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/general-availability-simple-log-alerts-in-azure-monitor/4521498",
-          "publishedOn": "2026-06-16T17:33:31.000Z",
-          "wordCount": 6236,
-          "title": "General Availability: Simple log alerts in Azure Monitor",
           "imageUrl": null
         }
       ]
