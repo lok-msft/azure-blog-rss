@@ -2,10 +2,129 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2026-11-16T05:11:17.612Z</updated>
+    <updated>2026-11-17T06:55:43.238Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Task queues in Durable Task Scheduler]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/task-queues-in-durable-task-scheduler/4573962</id>
+        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/task-queues-in-durable-task-scheduler/4573962"/>
+        <updated>2026-11-17T04:12:51.000Z</updated>
+        <summary type="html"><![CDATA[Task queues in Durable Task Scheduler: control the pace of your work 
+As teams scale their workflows on Durable Task Scheduler (DTS), many of them hit the same problem: the scheduler is fast, but the systems they call are not. 
+A batch job starts 50,000 orchestrations. Each one calls a partner API that allows only 10 requests per second. Your workers are happy to go as fast as the scheduler hands them work, so the partner API starts returning 429 Too Many Requests. Retries pile up, the batch slows down, and other workloads in the same task hub feel the pain too. 
+Without a built-in way to pace one workload, teams use workarounds. Some move the slow workload to its own task hub with fewer workers. Others write throttling code inside every activity, or cap worker concurrency and hope the num…]]></summary>
+        <author>
+            <name>Anirudh Garg</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Announcing Azure Observability Skills Plugin at Ignite 2026]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/announcing-azure-observability-skills-plugin-at-ignite-2026/4573940</id>
+        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/announcing-azure-observability-skills-plugin-at-ignite-2026/4573940"/>
+        <updated>2026-11-17T01:24:42.000Z</updated>
+        <summary type="html"><![CDATA[What if you could start troubleshooting without first figuring out how to assemble the entire observability toolbox?
+Your API is slow. Your agent is failing. An alert just fired. Before you can investigate, you may need to work out which telemetry source, MCP server, API, or skill can answer your question and how to connect them.
+Azure Observability skills plugin brings together troubleshooting instructions, specialist guidance, and connection workflows to help GitHub Copilot turn your question into the next useful action. Built on Azure Monitor, with Microsoft Foundry guidance for AI-specific scenarios, it helps Copilot identify relevant evidence, choose an investigation path, explain remediation options, and check recovery. You don’t need every observability integration installed in your…]]></summary>
+        <author>
+            <name>nuzhat-minhaz</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[See the Patterns, Then the Trace: 
+Distributed Tracing at Scale with Azure Monitor]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/see-the-patterns-then-the-trace-distributed-tracing-at-scale-with-azure-monitor/4573318</id>
+        <link href="https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/see-the-patterns-then-the-trace-distributed-tracing-at-scale-with-azure-monitor/4573318"/>
+        <updated>2026-11-17T01:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Analyze distributed traces at scale
+We are excited to announce the public preview of Azure Monitor traces. You can now analyze application transactions at-scale using end-to-end traces and their derived metrics to identify patterns in usage, performance, and failures.
+Trace-based metrics automatically generates metrics from transaction traces that can power service-level indicators, dashboards, alerts and long-term trend analysis.
+Trace Analytics brings distributed operations from multiple services together and lets you define matching criteria to isolate the business-relevant or service-specific transactions that matter most to you. From that result set, you can compare behavior across traces, understand which services and dependencies shape end-to-end latency or result in failures, and d…]]></summary>
+        <author>
+            <name>KayodePrince</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Troubleshoot with OpenTelemetry in Azure Monitor – Now Generally Available]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/troubleshoot-with-opentelemetry-in-azure-monitor-%E2%80%93-now-generally-available/4573810</id>
+        <link href="https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/troubleshoot-with-opentelemetry-in-azure-monitor-%E2%80%93-now-generally-available/4573810"/>
+        <updated>2026-11-17T01:00:00.000Z</updated>
+        <summary type="html"><![CDATA[OpenTelemetry is fast becoming the industry standard for modern telemetry pipelines. Now Azure Monitor speaks it natively. With OpenTelemetry Protocol (OTLP) support generally available, you can ship logs, metrics, and traces from wherever your workloads run to analyze and act on it in one place. Direct OTLP ingestion into Azure Monitor has been generally available since May 2026. Now, we are expanding the scope to include automated onboarding for Azure Kubernetes Service (AKS) and using the Azure Monitor Agent (AMA) to receive and forward OTLP.
+OTLP Support in Azure Monitor
+
+Ingest OTLP signals directly into Azure Monitor logs, metrics, and traces.
+Automatically onboard AKS workloads.
+Receive and forward OTLP with (AMA) on Linux Azure VMs and VM Scale sets.
+Use Application Insights on OTL…]]></summary>
+        <author>
+            <name>KayodePrince</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Using AI to help forestry planners prioritise fuel-reduction work]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/using-ai-to-help-forestry-planners-prioritise-fuel-reduction-work/4573152</id>
+        <link href="https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/using-ai-to-help-forestry-planners-prioritise-fuel-reduction-work/4573152"/>
+        <updated>2026-11-16T20:54:26.000Z</updated>
+        <summary type="html"><![CDATA[Print / save as PDF
+Using AI to help forestry planners prioritise fuel-reduction work
+By Eneko Vallecillo, Principal Solution Engineer, Microsoft UK
+
+Forestry companies, including pulp and paper producers, can manage thousands of plantation parcels. EU wildfire-prevention policy promotes reducing vegetation that can fuel fires [1], but legal duties vary. Portugal's Decree-Law 82/2021 requires fuel management around homes and other buildings used for economic activities on rural land, with a standard 50-metre strip where it covers forest land [2]. Spain's Forest Law 43/2003 makes owners responsible for managing private forests; regional governments set detailed fire-prevention rules [3].
+I evaluated whether an AI agent built with Microsoft Foundry could help a forestry planner choose where …]]></summary>
+        <author>
+            <name>Enekovb</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Lantern: agentic AI for records and provenance
+on Azure]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/lantern-agentic-ai-for-records-and-provenance-on-azure/4572947</id>
+        <link href="https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/lantern-agentic-ai-for-records-and-provenance-on-azure/4572947"/>
+        <updated>2026-11-16T20:53:39.000Z</updated>
+        <summary type="html"><![CDATA[Author: Warren Kahn, Senior Solution Engineer, MicrosoftVersion: 3.5.10, 12 November 2026Written for: Architects and technical leaders at museums, libraries and archives, auction houses, banks, land registries and manufacturers with product passports, and the partners who build for themReading time: About 20 minutes
+Notice. The museum in this white paper is the Musée National des Arts Réunis (MNAR), a fictional French national museum from a case-study scenario [1]. The demonstration collection is real: 501 records from the French national catalogue, Joconde, under the Licence Ouverte 2.0 [12]. I built and ran the system on Azure in September and October 2026. Every measured result in this white paper comes from that build, and so does every lesson in section 9. Measured results carry their…]]></summary>
+        <author>
+            <name>WarrenZA</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Microsoft 365 Developer Program updates: new sandbox options and retirement of legacy sandboxes]]></title>
+        <id>https://devblogs.microsoft.com/microsoft365dev/?p=26425</id>
+        <link href="https://devblogs.microsoft.com/microsoft365dev/microsoft-365-developer-program-updates-new-sandbox-options-and-retirement-of-legacy-sandboxes/"/>
+        <updated>2026-11-16T15:47:51.000Z</updated>
+        <summary type="html"><![CDATA[The Microsoft 365 Developer Program is moving to a more flexible sandbox model with optional paid add-ons and retiring legacy subscriptions. Learn how to check whether your sandbox is affected, prepare for the transition, and continue developing through eligible program benefits, including qualifying Visual Studio subscriptions, or paid Microsoft 365 plans.
+The post Microsoft 365 Developer Program updates: new sandbox options and retirement of legacy sandboxes appeared first on Microsoft 365 Developer Blog.]]></summary>
+        <author>
+            <name>Microsoft 365 Platform team</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Introducing Azure Durable Task for Pydantic AI agents]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/introducing-azure-durable-task-for-pydantic-ai-agents/4571024</id>
+        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/introducing-azure-durable-task-for-pydantic-ai-agents/4571024"/>
+        <updated>2026-11-16T13:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Pydantic AI agents can now use Azure Durable Task Scheduler to preserve progress across worker restarts, recover interrupted runs, and wait for human approval without keeping an activity running.
+The new Azure Durable Task integration brings durable execution to your existing Pydantic AI agents. Add a capability to the agent, call it from a Durable Task orchestrator, and let the runtime handle recovery.
+That means a deployment or worker crash does not have to turn an almost-finished agent run into another full round of model requests. Your agent already did the work. It should not need a motivational speech to remember it.
+What this means for your application
+Keep the progress you have paid for. Completed model responses and tool results are recorded durably. Recovery reuses those recorded…]]></summary>
+        <author>
+            <name>tamirdresher</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Designing a Reliable AI Workflow on Azure: Production Lessons from Translation Automation]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/designing-a-reliable-ai-workflow-on-azure-production-lessons-from-translation-au/4571175</id>
+        <link href="https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/designing-a-reliable-ai-workflow-on-azure-production-lessons-from-translation-au/4571175"/>
+        <updated>2026-11-16T08:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Many teams can build an AI prototype that works. A trigger arrives, the model produces a plausible response, and the demo ends with the expected file or message. But what happens when that prototype becomes a workflow that other people depend on?
+Imagine an AI-assisted process that prepares a recurring report. The notification arrives on time, but the report is blank. On another run, the research is useful but lands in the wrong template. A retry then replaces a version that someone had already reviewed. In each case, the model may have responded normally while the application still delivered the wrong operational result.
+I encountered versions of these failures while operating Localizeflow, an independent translation orchestration project built around Co-op Translator. A translation could…]]></summary>
+        <author>
+            <name>MinseokSong</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[A fresh look at the Azure App Service portal experience]]></title>
         <id>https://azure.github.io/AppService/2026/11/16/app-service-portal-refresh.html</id>
