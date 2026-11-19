@@ -22,8 +22,8 @@
             data-action="toggle-accordions"
             title="Click to toggle the day, Ctrl + click to toggle all."
           >
-            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2026-11-18 datetime="2026-11-17T23:15:21.000Z">2026-11-18</time>
-            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2026-11-18 datetime="2026-11-17T23:15:21.000Z"></time>
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2026-11-19 datetime="2026-11-19T02:19:54.000Z">2026-11-19</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2026-11-19 datetime="2026-11-19T02:19:54.000Z"></time>
           </button>
         </h2>
         <ul class="sources card">
@@ -34,25 +34,62 @@
                     class="source-heading__name"
                     data-action="toggle-accordions"
                     title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Microsoft 365 Developer Blog</button>
-                  <a class="source-heading__link" href="https://devblogs.microsoft.com/microsoft365dev/">Open</a>
+                  >Microsoft Tech Community - Latest Blogs - Messaging on Azure Blog</button>
+                  <a class="source-heading__link" href="https://techcommunity.microsoft.com">Open</a>
                 </h3>
                 <section class="articles-per-source">
                     <article>
                       <details
                         class="article-expander"
                         data-action="toggle-native-accordion"
-                        data-accordion-key="https://devblogs.microsoft.com/microsoft365dev/?p&#x3D;26432"
+                        data-accordion-key="https://techcommunity.microsoft.com/blog/MessagingonAzureBlog/what-your-service-bus-messages-can-tell-you-about-your-business/4574630"
                         open
                       >
-                        <summary class="article-expander__title">Introducing the Starter Pack for Work IQ</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://devblogs.microsoft.com/microsoft365dev/introducing-the-starter-pack-for-work-iq/">
+                        <summary class="article-expander__title">What your Service Bus messages can tell you about your business</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/blog/MessagingonAzureBlog/what-your-service-bus-messages-can-tell-you-about-your-business/4574630">
                           <div class="article-summary-box-inner media-object">
-                              <img src="https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2026/11/Work-IQ-Video-Cover.webp" loading="lazy" class="media-object__media article-image" />
+                              <img src="https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTc0NjMwLUpsMnJiaA?revision&#x3D;5" loading="lazy" class="media-object__media article-image" />
                             <span class="media-object__text">
-                              <span>Announcing the Starter Pack for Work IQ Anyone who has prepared a Copilot demo or who wanted to play with Copilot and Work IQ without touching real business data knows the hardest part is the lack of demo/test content in the target tenant: no emails worth summarizing, no meetings to recap, no documents or business […]
-The post Introducing the Starter Pack for Work IQ appeared first on Microsoft 365 Developer Blog.</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;28
+                              <span>Which business decisions could benefit from the information already moving through your applications? The messages exchanged through Azure Service Bus can carry details that matter beyond the application receiving them.
+Connecting Service Bus to Microsoft Fabric lets you analyze those details alongside other business data and history. We can look for patterns across that data, use the findings to inform decisions, and send work back to the responsible applications through Service Bus.
+Give analysis its own subscription
+For example, a retailer can create a dedicated analytics subscription on a Service Bus topic carrying its order, inventory, and fulfilment messages. Each subscription receives its own copy of matching messages, so Fabric can read from the analytics subscription without compe…</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;82
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Microsoft Tech Community - Latest Blogs - Azure Architecture Blog</button>
+                  <a class="source-heading__link" href="https://techcommunity.microsoft.com">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/inside-the-architecture-how-connectors-work-with-azure-functions/4573939"
+                        open
+                      >
+                        <summary class="article-expander__title">Inside the architecture: How connectors work with Azure Functions</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/inside-the-architecture-how-connectors-work-with-azure-functions/4573939">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTczOTM5LWF6cHUwag?revision&#x3D;13" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>Say you run a shared support inbox. Each time a customer writes in, you want a function to read the email, pick out the important parts, and post a summary in your team&#x27;s Teams channel. The business logic might be twenty lines. The rest is authorization, change detection, event delivery, and a second set of permissions to post in Teams, and you rebuild most of it for every service you touch.
+Azure Connectors and the Connector SDKs take that work on. The platform manages connections and authorization. The same app can react to events in one service and call operations in another. Webhook and poll delivery give you push or pull, so you can pick what fits your app. One SDK per language covers the Connector catalog with typed operations and payloads, VS Code tooling handles setup, and SDKs are…</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;104
                                   min&hairsp;)</span>
                             </span>
                           </div>
@@ -73,6 +110,178 @@ The post Introducing the Starter Pack for Work IQ appeared first on Microsoft 36
                   <a class="source-heading__link" href="https://techcommunity.microsoft.com">Open</a>
                 </h3>
                 <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/enable-and-manage-gateway-api-on-azure-portal/4574567"
+                        open
+                      >
+                        <summary class="article-expander__title">Enable and manage Gateway API on Azure Portal</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/enable-and-manage-gateway-api-on-azure-portal/4574567">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTc0NTY3LUVITFlibg?revision&#x3D;1" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>Gateway API is the long-term Kubernetes standard for ingress and L7 traffic management. Compared with the traditional Ingress resource, Gateway API separates infrastructure entry points from routing configuration, giving platform and application teams clearer ownership boundaries and a more extensible model for managing application traffic.
+ Customers can now discover and configure Gateway API-based ingress solutions, view Gateway and HTTPRoute resources and better understand the ingress configuration of an AKS cluster without leaving the Portal.
+A new Ingress profile for AKS
+AKS offers two options for Gateway API implementations:
+
+Application Routing with Gateway API, an AKS-native path for cluster-hosted routing.
+Application Gateway for Containers, an Azure application-layer load balanci…</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;73
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/azure-sre-agent-now-natively-supports-aws-and-google-cloud/4569556"
+                        open
+                      >
+                        <summary class="article-expander__title">Azure SRE Agent now natively supports AWS and Google Cloud</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/azure-sre-agent-now-natively-supports-aws-and-google-cloud/4569556">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTY5NTU2LVgycExXUg?revision&#x3D;5" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>The alert is in Azure. The next clue may be in AWS. 
+Imagine an inventory API running on Azure Container Apps starts returning errors. Azure telemetry shows requests failing, but the application reads its data from an Amazon DynamoDB table. Is the container app unhealthy, or is the database struggling? To find out, your team needs to follow the evidence across clouds. 
+Your infrastructure spans clouds. Your investigations should too. 
+Today, we&#x27;re announcing the public preview of built-in AWS and Google Cloud connectors for Azure SRE Agent. With native support for both clouds, the agent can investigate your connected AWS and Google Cloud environments alongside Azure, without moving your workloads or rebuilding the investigation in another console. The AWS and Google Cloud connectors are pa…</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;81
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Microsoft for Java Developers</button>
+                  <a class="source-heading__link" href="https://devblogs.microsoft.com/java/">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://devblogs.microsoft.com/java/?p&#x3D;233299"
+                        open
+                      >
+                        <summary class="article-expander__title">Java OpenJDK November 2026 Critical Patch Update</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://devblogs.microsoft.com/java/java-openjdk-november-2026-critical-patch-update/">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://devblogs.microsoft.com/java/wp-content/uploads/sites/51/2019/11/trexduke-blackwhite-cropped-half.png" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>Hello Java customers! We are happy to announce the latest November 2026 critical patch update release for the Microsoft Build of OpenJDK. Check our release notes page for details on fixes and enhancements or download and install the binaries today. The source code of our builds are now available on GitHub for further inspection: OpenJDK 25.0.5.1 OpenJDK 21.0.13.1 OpenJDK 17.0.21.1 […]
+The post Java OpenJDK November 2026 Critical Patch Update appeared first on Microsoft for Java Developers.</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;25
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Microsoft 365 Developer Blog</button>
+                  <a class="source-heading__link" href="https://devblogs.microsoft.com/microsoft365dev/">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://devblogs.microsoft.com/microsoft365dev/?p&#x3D;26472"
+                        open
+                      >
+                        <summary class="article-expander__title">Frontier Tuning opens to more customers, with new tools for your teams</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://devblogs.microsoft.com/microsoft365dev/frontier-tuning-opens-to-more-customers-with-new-tools-for-your-teams/">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2026/11/Picture1-1.webp" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>Frontier Tuning is expanding its private preview, giving makers, developers, and subject-matter experts new tools to tune AI for specialized work using their organization’s own expertise and standards. See what’s new, how EY is putting Frontier Tuning to work, and how your organization can join the private preview.
+The post Frontier Tuning opens to more customers, with new tools for your teams appeared first on Microsoft 365 Developer Blog.</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;27
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+        </ul>
+      </section>
+      <section class="daily-content js-toggle-accordions-scope">
+        <h2 class="daily-heading">
+          <button
+            class="daily-heading-toggle"
+            data-action="toggle-accordions"
+            title="Click to toggle the day, Ctrl + click to toggle all."
+          >
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2026-11-18 datetime="2026-11-18T14:00:00.000Z">2026-11-18</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2026-11-18 datetime="2026-11-18T14:00:00.000Z"></time>
+          </button>
+        </h2>
+        <ul class="sources card">
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Microsoft Tech Community - Latest Blogs - Apps on Azure Blog</button>
+                  <a class="source-heading__link" href="https://techcommunity.microsoft.com">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/beyond-the-pilot-scaling-azure-sre-agent-across-your-enterprise/4573349"
+                        open
+                      >
+                        <summary class="article-expander__title">Beyond the pilot: Scaling Azure SRE Agent across your enterprise</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/beyond-the-pilot-scaling-azure-sre-agent-across-your-enterprise/4573349">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTczMzQ5LUoyZlRmbQ?revision&#x3D;11" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>For organizations modernizing with AI, deploying a successful first agent is only the beginning. The real test is moving from a pilot into the core workflows that keep the business running, such as incident response, change management, and on-call operations. 
+That shift brings new questions into focus. How should agents and teams work together? Where should humans stay in control? And how do you govern dozens of agents, not just one? 
+At Microsoft Ignite, we&#x27;re expanding Azure SRE Agent in three areas, all now in preview:
+
+Work where your team works: Chat with Azure SRE Agent using the native Microsoft Teams integration, with approvals and access controls right in the conversation. Slack integration is in private preview.
+Agents that work across teams: With Agent-to-Agent (A2A) collaborat…</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;88
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
                     <article>
                       <details
                         class="article-expander"
@@ -567,6 +776,48 @@ Diagnose DNS and TCP issues: Ide…</span>
                       <details
                         class="article-expander"
                         data-action="toggle-native-accordion"
+                        data-accordion-key="https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/unified-agent-observability-with-end-to-end-tracing-in-azure-monitor/4574277"
+                        open
+                      >
+                        <summary class="article-expander__title">Unified agent observability with end-to-end tracing in Azure Monitor</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/unified-agent-observability-with-end-to-end-tracing-in-azure-monitor/4574277">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Creating an AI agent can take minutes, with little or no code. Understanding its behavior, tracking its cost, and debugging a response across multiple agents is much harder—and sometimes impossible without visibility into the runtimes behind them. 
+Your agent may rely on managed runtimes and components for which you have never written a line of code. You cannot simply add instrumentation inside them. You depend on their providers to expose the telemetry needed to understand what happened. 
+Microsoft agent runtime and framework providers, including Copilot Studio, Microsoft 365 Copilot, WorkIQ, Foundry, and Fabric, Azure Copilot, are addressing this need with standardized agent observability data built on OpenTelemetry and its GenAI semantic conventions, with availability outlined below. Un…</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;80
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/unified-agent-observability-with-end-to-end-tracing-in-azure-monitor/4574276"
+                        open
+                      >
+                        <summary class="article-expander__title">Unified agent observability with end-to-end tracing in Azure Monitor</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/unified-agent-observability-with-end-to-end-tracing-in-azure-monitor/4574276">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Creating an AI agent can take minutes, with little or no code. Understanding its behavior, tracking its cost, and debugging a response across multiple agents is much harder—and sometimes impossible without visibility into the runtimes behind them. 
+Your agent may rely on managed runtimes and components for which you have never written a line of code. You cannot simply add instrumentation inside them. You depend on their providers to expose the telemetry needed to understand what happened. 
+Microsoft agent runtime and framework providers, including Copilot Studio, Microsoft 365 Copilot, WorkIQ, Foundry, and Fabric, Azure Copilot, are addressing this need with standardized agent observability data built on OpenTelemetry and its GenAI semantic conventions, with availability outlined below. Un…</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;80
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
                         data-accordion-key="https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/introducing-observability-in-your-coding-agent-for-fabric-apps/4573853"
                         open
                       >
@@ -758,6 +1009,116 @@ The order tool rejected the request and echoed the full payload into an exceptio
 Why this matters
 Agentic applications are changing what it means to keep a service healthy. An agent might call several models and tools, hand work off to other agents, and rely on APIs, databases, Kubernetes clusters and virtual machines b…</span>
                                 &ensp;<span class="article-reading-time">(&hairsp;87
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Microsoft 365 Developer Blog</button>
+                  <a class="source-heading__link" href="https://devblogs.microsoft.com/microsoft365dev/">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://devblogs.microsoft.com/microsoft365dev/?p&#x3D;26499"
+                        open
+                      >
+                        <summary class="article-expander__title">SPFx Dev Skills for SPFx 1.24.1: tested across agents and models</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://devblogs.microsoft.com/microsoft365dev/spfx-dev-skills-for-spfx-1-24-1-tested-across-agents-and-models/">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2026/11/spfx-skills-update-1241-tested-promo-blog-post.webp" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>SPFx Dev Skills v1.1.2 adds support for SPFx v1.24.1 and React 18 migration. Across 105 evaluation runs, the updated skill improved upgrade quality for every agent and model combination we tested, with 6 of 7 reaching a 100% mean score.
+The post SPFx Dev Skills for SPFx 1.24.1: tested across agents and models appeared first on Microsoft 365 Developer Blog.</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;30
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://devblogs.microsoft.com/microsoft365dev/?p&#x3D;26432"
+                        open
+                      >
+                        <summary class="article-expander__title">Introducing the Starter Pack for Work IQ</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://devblogs.microsoft.com/microsoft365dev/introducing-the-starter-pack-for-work-iq/">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2026/11/Work-IQ-Video-Cover.webp" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>Announcing the Starter Pack for Work IQ Anyone who has prepared a Copilot demo or who wanted to play with Copilot and Work IQ without touching real business data knows the hardest part is the lack of demo/test content in the target tenant: no emails worth summarizing, no meetings to recap, no documents or business […]
+The post Introducing the Starter Pack for Work IQ appeared first on Microsoft 365 Developer Blog.</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;28
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Azure App Service</button>
+                  <a class="source-heading__link" href="https://azure.github.io/AppService/">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://azure.github.io/AppService/2026/11/18/java4shell-app-service-update.html"
+                        open
+                      >
+                        <summary class="article-expander__title">Java4Shell Security Updates on Azure App Service</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://azure.github.io/AppService/2026/11/18/java4shell-app-service-update.html">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://azure.github.io/AppService/assets/images/icon.png" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>Update (18 November 2026, 17:40 PT): Rollout for Linux Standard and Latest channels are complete and customers using auto-update will automatically receive the version upgrade outside local business hours. The restart may cause a brief interruption, and timing may vary by region and application instance. Manually restarting the application will also pick up the version upgrade.</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;3
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://azure.github.io/AppService/2026/11/18/nginx2root-app-service-security-update.html"
+                        open
+                      >
+                        <summary class="article-expander__title">NGINX2Root Security Updates on Azure App Service</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://azure.github.io/AppService/2026/11/18/nginx2root-app-service-security-update.html">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://azure.github.io/AppService/assets/images/icon.png" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>Update (18 November 2026): Azure App Service on Linux began an emergency rollout of updated PHP and WordPress images following the disclosure of NGINX2Root. As of approximately 12:00 PM PT on 18 November 2026, rollout validation was underway for the Latest and Standard Platform Release Channels. We currently expect the rollout to complete by the end of 19 November 2026 PT subject to successful validation.</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;3
                                   min&hairsp;)</span>
                             </span>
                           </div>
@@ -19508,186 +19869,6 @@ This post is a code walkthrough of how that rule is enforced. We build the three
                         </a>
                       </details>
                     </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Improve-performance-for-Python-UDFs-and-complex-data-types-in/ba-p/5212036"
-                        open
-                      >
-                        <summary class="article-expander__title">Improve performance for Python UDFs and complex data types in Microsoft Fabric’s Native Execution Engine</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Improve-performance-for-Python-UDFs-and-complex-data-types-in/ba-p/5212036">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://community.fabric.microsoft.com/t5/image/serverpage/image-id/1352823i8187950C47829A58?v&#x3D;v2" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>Where this matters: A concrete exampleFor example, you have a data pipeline (extract, transform, load—ETL) that ingests JSON telemetry events, each containing nested arrays of user actions. Your pipeline uses a Python UDF to apply custom business rules—say, classifying events based on logic that doesn’t map cleanly to SQL expressions. Before NEE, this pipeline hits two performance penalties at once:The Python/Scala UDF forces serialization between the JVM and a Python worker for every batch.The nested arrays cause the engine to fall back from optimized columnar execution to slower row-based processing. With NEE enabled, both operations run in the native execution path. Internal benchmarks show 2–5x faster execution, depending on UDF complexity and data nesting depth. Why Python or Scala UD…</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;23
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Event-Driven-Copy-Job-Execution-with-Fabric-Activator-Generally/ba-p/5195808"
-                        open
-                      >
-                        <summary class="article-expander__title">Event-Driven Copy Job Execution with Fabric Activator (Generally Available)</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Event-Driven-Copy-Job-Execution-with-Fabric-Activator-Generally/ba-p/5195808">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://community.fabric.microsoft.com/html/assets/fabric_twitter_OG_image.png" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>IntroductionModern data platforms are increasingly moving toward event-driven architectures where data flows react to events or changes instead of running on rigid schedules. In Microsoft Fabric, two powerful capabilities enable this vision:Copy job: the simplest and most scalable way to move data across multiple clouds and tenants.Activator: a real-time engine that monitors data and reacts to events.A key enhancement brings these two capabilities closer together: you can now invoke Copy jobs directly from Activator—no pipeline required. This unlocks a simpler, faster, and more efficient way to build event-driven data movement in Fabric. Why this matters The limitations of scheduled data movement Traditionally, data movement in enterprise systems relies on fixed schedules:Run every five mi…</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;22
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Microsoft Agent Framework</button>
-                  <a class="source-heading__link" href="https://devblogs.microsoft.com/agent-framework/">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://devblogs.microsoft.com/agent-framework/?p&#x3D;5512"
-                        open
-                      >
-                        <summary class="article-expander__title">Meet your agent harness and claw</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://devblogs.microsoft.com/agent-framework/meet-your-agent-harness-and-claw/">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://devblogs.microsoft.com/agent-framework/wp-content/uploads/sites/78/2026/06/01-meet-your-claw.webp" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>Part 1 of Build your own claw and agent harness with Microsoft Agent Framework. In the overview we said a “claw” is really just an agent harness: a loop around a model, wired up with tools, planning, memory, and more. In this first post we stand up that loop and give our personal finance assistant […]
-The post Meet your agent harness and claw appeared first on Microsoft Agent Framework.</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;30
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://devblogs.microsoft.com/agent-framework/?p&#x3D;5510"
-                        open
-                      >
-                        <summary class="article-expander__title">Build your own claw and agent harness with Microsoft Agent Framework</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://devblogs.microsoft.com/agent-framework/build-your-own-claw-and-agent-harness-with-microsoft-agent-framework/">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://devblogs.microsoft.com/agent-framework/wp-content/uploads/sites/78/2026/06/00-build-your-own-claw-overview.webp" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>What does it take to build your own “claw” – a capable, CLI-style agent that can plan, use tools, remember things, and safely act on your behalf? Coding agents and assistants like these can feel like magic, but underneath they are an agent harness: a loop around a language model wired up with tools, planning, […]
-The post Build your own claw and agent harness with Microsoft Agent Framework appeared first on Microsoft Agent Framework.</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;25
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
-        </ul>
-      </section>
-      <section class="daily-content js-toggle-accordions-scope">
-        <h2 class="daily-heading">
-          <button
-            class="daily-heading-toggle"
-            data-action="toggle-accordions"
-            title="Click to toggle the day, Ctrl + click to toggle all."
-          >
-            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2026-06-22 datetime="2026-06-22T15:20:26.000Z">2026-06-22</time>
-            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2026-06-22 datetime="2026-06-22T15:20:26.000Z"></time>
-          </button>
-        </h2>
-        <ul class="sources card">
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Microsoft Tech Community - Latest Blogs - Apps on Azure Blog</button>
-                  <a class="source-heading__link" href="https://techcommunity.microsoft.com">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/how-many-copies-of-each-layer-does-your-container-registry-actually-need/4529836"
-                        open
-                      >
-                        <summary class="article-expander__title">How Many Copies of Each Layer Does Your Container Registry Actually Need?</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/how-many-copies-of-each-layer-does-your-container-registry-actually-need/4529836">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Authors: Payal Mahesh and Vicky Lin
-Azure Container Registry team: Jeanine Burke and Johnson Shi
-Introduction
-It&#x27;s Monday morning. You spin up a fresh 1,000-node AKS cluster for a big training run or a fleet-wide rollout. Every node reaches for the same large container image at the same instant. What actually happens in the next ten minutes - and whether your pods reach Ready in 9 minutes or 14 - turns out to depend on a single number you&#x27;ve probably never thought about: how many copies of each image layer exist behind your registry.
-At the surface, you see a single capacity number for your registry size - but behind that abstraction, Azure Container Registry maintains copies of your layer data to optimize pull performance. That number of copies directly determines the read throughput avai…</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Azure DevOps Blog</button>
-                  <a class="source-heading__link" href="https://devblogs.microsoft.com/devops/">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://devblogs.microsoft.com/devops/?p&#x3D;72939"
-                        open
-                      >
-                        <summary class="article-expander__title">Retirement of Azure DevOps issuer in Workload identity federation service connections</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://devblogs.microsoft.com/devops/retirement-of-azure-devops-issuer-in-workload-identity-federation-service-connections/">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://devblogs.microsoft.com/devops/wp-content/uploads/sites/6/2026/06/azdo-issuer-sc-list.webp" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>We are announcing the deprecation of the Azure DevOps issuer in workload identity federation (WIF) service connections, with planned retirement on July 1, 2027. The Azure DevOps issuer uses the https://vstoken.dev.azure.com prefix in federated credentials. This change is part of Microsoft’s broader initiative to standardize on the Microsoft Entra issuer across Azure services that implement […]
-The post Retirement of Azure DevOps issuer in Workload identity federation service connections appeared first on Azure DevOps Blog.</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;25
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
                 </section>
               </section>
             </li>
@@ -19744,8 +19925,8 @@ The post What’s new with Microsoft in open source and Kubernetes at Open Sourc
       </section>
 
     <footer>
-      <a class="footer-link" href="https://github.com/lok-msft/azure-blog-rss/actions/runs/44250015605">
-        <time id="build-timestamp" datetime="2026-11-18T06:16:38.553Z">2026-11-18T06:16:38.553Z</time>
+      <a class="footer-link" href="https://github.com/lok-msft/azure-blog-rss/actions/runs/44471088026">
+        <time id="build-timestamp" datetime="2026-11-19T06:18:38.064Z">2026-11-19T06:18:38.064Z</time>
       </a>
       <a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a>
     </footer>
