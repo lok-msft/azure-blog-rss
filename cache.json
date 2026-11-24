@@ -6,6 +6,56 @@
       "siteUrl": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/bg-p/fbc_fabricupdatesblogs",
       "articles": [
         {
+          "id": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Enable-Azure-Blob-Storage-Events-Without-Compromising-Your/ba-p/5408564",
+          "author": "GEGUIRGU",
+          "description": "Learn how to keep Microsoft Fabric tenant private links enabled while allowing approved Azure Blob Storage events through workspace Resource Instance Rules.",
+          "link": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Enable-Azure-Blob-Storage-Events-Without-Compromising-Your/ba-p/5408564",
+          "publishedOn": "2026-11-23T20:00:00.000Z",
+          "wordCount": null,
+          "title": "Enable Azure Blob Storage Events Without Compromising Your Tenant Private Links Policy",
+          "imageUrl": null
+        },
+        {
+          "id": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/On-demand-billing-for-Fabric-Data-Warehouse-Preview/ba-p/5376329",
+          "author": "Sosivara_msft",
+          "description": "Only pay for what you consume  \r\nMany warehouse workloads are highly variable. In some cases, a few peak periods demand significant compute, while the rest of the month usage is much lower. Shared capacity is a great fit for steady, predictable workloads, while workloads with variable or intermittent demand can benefit from a consumption-based model. On-demand billing for Fabric Data Warehouse gives you that flexibility: you can use dedicated compute when your warehouse needs it and pay for the compute you consume.\r\nAs introduced in the Fabric on-demand billing platform blog post this new billing model applies more broadly across Fabric. In this post, we'll go deeper on what it means specifically for Fabric Data Warehouse, including when to use it, how it works, and how to get started.\r\nWh…",
+          "link": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/On-demand-billing-for-Fabric-Data-Warehouse-Preview/ba-p/5376329",
+          "publishedOn": "2026-11-23T19:30:00.000Z",
+          "wordCount": null,
+          "title": "On-demand billing for Fabric Data Warehouse (Preview)",
+          "imageUrl": null
+        },
+        {
+          "id": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Fabric-on-demand-billing-and-Zero-provisioned-F0-Capacity/ba-p/5377585",
+          "author": "MonicaBoris",
+          "description": "Microsoft is introducing a new way to consume Fabric called on-demand billing. This includes a new F0 SKU, enabling customers to get started with zero upfront commitment, as well as a hybrid option that pairs any traditional F SKU with the flexibility of on-demand billing.\r\nIn addition to the traditional Fabric capacity model, customers can selectively enable on-demand billing for individual Fabric workloads, such as Data Factory or Data Warehouse, which are broken down into what is known as on-demand billing categories. Customers can set usage thresholds per billing category to maintain predictable governance and spend controls.\r\nUltimately, this gives organizations the flexibility to start with less upfront commitment, adapt to less predictable demand, and balance spiky or outsized workl…",
+          "link": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Fabric-on-demand-billing-and-Zero-provisioned-F0-Capacity/ba-p/5377585",
+          "publishedOn": "2026-11-23T19:00:00.000Z",
+          "wordCount": null,
+          "title": "Fabric on-demand billing and Zero-provisioned (F0) Capacity (Preview)",
+          "imageUrl": null
+        },
+        {
+          "id": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Tune-the-performance-of-your-medallion-pipeline-in-Fabric-Data/ba-p/5377545",
+          "author": "Scirqueira",
+          "description": "Coauthor - Artur Vieira\r\nPart 5 of a series on medallion architecture with Fabric Data Warehouse \r\nMeasure first, then tune the layer that is actually slow \r\nThe first four posts covered how to choose a pattern, build the Bronze, Silver, and Gold layers, establish operating rules, and secure each layer for its audience. This final post explains how to identify the source of performance issues and keep pipelines responsive as data volumes and usage grow. \r\nFabric Data Warehouse manages caching, statistics, compaction, and V-Order by default, so you do not manage indexes or distributions as you would in a traditional warehouse. Effective tuning therefore starts with accurate measurement and workload patterns that allow the engine to operate efficiently. \r\nUse the following layer-by-layer app…",
+          "link": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Tune-the-performance-of-your-medallion-pipeline-in-Fabric-Data/ba-p/5377545",
+          "publishedOn": "2026-11-23T18:00:00.000Z",
+          "wordCount": null,
+          "title": "Tune the performance of your medallion pipeline in Fabric Data Warehouse",
+          "imageUrl": null
+        },
+        {
+          "id": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Scalar-User-defined-functions-UDFs-in-Microsoft-Fabric-Data/ba-p/5399753",
+          "author": "SMATIN",
+          "description": "T-SQL scalar user-defined functions (UDFs) are now generally available in Microsoft Fabric Data Warehouse and the SQL analytics endpoint.\r\nDuring preview, scalar UDFs gained support for procedural T-SQL and additional query shapes through Expression Block inlining, a technology built to run procedural logic at warehouse scale. A subsequent preview update expanded loop control, large-value data type support, and the query shapes available to scalar UDFs.\r\nGeneral availability builds on that foundation with time-dependent functions, AT TIME ZONE, NEWID(), and improved resource estimation for control-flow statements.\r\nData teams can keep time-sensitive and identifier-generation rules in reusable T-SQL rather than duplicating them across application code, orchestration steps, or queries. The a…",
+          "link": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Scalar-User-defined-functions-UDFs-in-Microsoft-Fabric-Data/ba-p/5399753",
+          "publishedOn": "2026-11-23T15:19:07.000Z",
+          "wordCount": null,
+          "title": "Scalar User-defined functions (UDFs) in Microsoft Fabric Data Warehouse (Generally Available)",
+          "imageUrl": null
+        },
+        {
           "id": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/On-premises-data-gateway-November-2026-release/ba-p/5430005",
           "author": "goupadhy",
           "description": "The November 2026 release of the on-premises data gateway (version 3000.342) continues our commitment to secure, reliable and accessible connectivity between on-premises data sources and Microsoft Fabric services.\r\nThis release focuses on strengthening gateway security, improving performance and reliability, enhancing diagnostics, and updating underlying dependencies to maintain compatibility with the latest Power Query capabilities.\r\nThis release gateway brings more reliable data transfers, improvements to Oracle DirectQuery and expanded diagnostics in the gateway setup application to make troubleshooting easier. It also brings compatibility updates for the November 2026 release of Power BI Desktop, so queries run the same way in Power BI Desktop and in cloud refreshes. It also includes i…",
@@ -2027,6 +2077,16 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/build-on-device-text-and-speech-experiences-with-foundry-local-for-android/4573546",
+          "author": "arafattehsin",
+          "description": "You have a voice note on your phone and want to turn it into something useful like a short summary, a clearer message or a question for another model. Before building the rest of the app, there are a few things to find out. Can the phone transcribe the recording? Can a small chat model handle your prompt? What happens when you switch between them?\nThose are the questions I wanted to make easier to explore with Foundry Local Lab, a Kotlin and Jetpack Compose sample in Microsoft's Foundry Local Android repository. It brings model management, text generation, speech transcription and runtime diagnostics into one place. I use it on my Samsung Galaxy S24 to try the input and model before deciding what belongs in an application.\nIn this walkthrough, we'll install the sample, generate a reply on …",
+          "link": "https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/build-on-device-text-and-speech-experiences-with-foundry-local-for-android/4573546",
+          "publishedOn": "2026-11-23T10:17:35.000Z",
+          "wordCount": null,
+          "title": "Build on-device text and speech experiences with Foundry Local for Android",
+          "imageUrl": null
+        },
+        {
           "id": "https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/the-model-watches-sewer-cctv-with-azure-content-understanding-in-microsoft-found/4560075",
           "author": "JonEricEubanks",
           "description": "A city crew drives a camera through a sewer pipe and records everything. The footage lands in SharePoint, and then someone has to watch it, every minute of it, pausing to log each crack, root intrusion, and joint offset against the right footage counter. It is skilled, necessary work, and it is also exactly the kind of work that burns out good people.\nAs part of my work at MGP Inc., I built a proof of concept that keeps the skilled part and removes the burnout part.\nAn AI model watches the video first and proposes findings. A human reviewer then confirms, corrects, or rejects each one, with the video cued up to the exact timestamp of the observation. The reviewer stops being a stenographer and goes back to being an inspector.\nThe whole thing is Azure Content Understanding in Microsoft Foun…",
@@ -2545,26 +2605,6 @@
           "wordCount": 6629,
           "title": "Action Required: Migrate Your Copilot CLI MCP Config Away from .vscode/mcp.json",
           "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTMxNTYyLXFZRGtUWg?revision=2"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/local-first-and-fully-traced-routing-between-ollama-foundry-local-and-microsoft-/4529694",
-          "author": "Princeps",
-          "description": "Part 4 of 5.\n\nIf you publish an agent project today, you are caught between two forces. The interesting behaviour lives in the cloud - Foundry models, Foundry IQ retrieval, the Agent Service memory store. But the audience that decides whether your project matters - judges, students, engineers skimming GitHub at midnight - will give it exactly one git clone and five minutes. If the first run dies on a missing credential, the project is dead to them.\nThis is the same tension Lee Stott opens his Hybrid AI Agents in Python post with - privacy, latency, and frontier capability pulling in different directions - and his answer is the one we adopted: route between tiers behind one contract. Every cloud arrow gets a keyless fallback with the same schema and code path.\nThis post covers both halves o…",
-          "link": "https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/local-first-and-fully-traced-routing-between-ollama-foundry-local-and-microsoft-/4529694",
-          "publishedOn": "2026-06-27T06:13:09.000Z",
-          "wordCount": 14924,
-          "title": "Local-First and Fully Traced: Routing Between Ollama, Foundry Local, and Microsoft Foundry",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTI5Njk0LWFnSldZRg?revision=3"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/mind-the-specs-grading-formal-specifications-and-kpis-as-artefacts-for-llm-drive/4530465",
-          "author": "Leon_Hausmann",
-          "description": "Large language models now write code straight from a prompt, but the specification in between is never checked, and a model asked to judge its own work brings the same blind spots to the review. We built a pipeline that lifts a plain-language requirements bundle into two graded specifications (a formal Alloy model and a set of numerical KPI targets), scores both before a single line of code is written, and hands the graded result to the code generator. It starts from GitHub Spec Kit and the Azure Well-Architected Framework. Here is what we built, and what we learned from running it at scale.\nThe problem\nWriting software used to be four separate activities: gathering requirements, writing a specification, verifying it, and implementing it. A language model collapses all four into a single s…",
-          "link": "https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/mind-the-specs-grading-formal-specifications-and-kpis-as-artefacts-for-llm-drive/4530465",
-          "publishedOn": "2026-06-25T17:59:34.000Z",
-          "wordCount": null,
-          "title": "Mind the Specs: Grading formal specifications and KPIs as artefacts for LLM-driven code generation",
-          "imageUrl": null
         }
       ]
     },
@@ -3661,6 +3701,16 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/blog/MessagingonAzureBlog/azure-event-hubs-dedicated-you-get-the-whole-cluster/4576001",
+          "author": "ashish-chhabria",
+          "description": "With Event Hubs Premium, you reserve compute for a namespace. With Dedicated, you reserve the whole cluster. Azure runs it, no other customer uses it, and you decide which of your namespaces share its capacity.\nYour teams can keep separate namespaces and endpoints without buying compute for each one. You size the cluster for their combined traffic.\nOne cluster, many teams\nTake a retailer: checkout streams orders during the lunch rush, logistics tracks deliveries through the afternoon, and operations collects device telemetry overnight. On Premium, spare compute in the checkout namespace can't help operations at midnight. On Dedicated, all those namespaces draw from the same cluster as demand shifts throughout the day.\nWhen another team joins, it can create a namespace on the same cluster. …",
+          "link": "https://techcommunity.microsoft.com/blog/MessagingonAzureBlog/azure-event-hubs-dedicated-you-get-the-whole-cluster/4576001",
+          "publishedOn": "2026-11-23T18:16:00.000Z",
+          "wordCount": 22120,
+          "title": "Azure Event Hubs Dedicated: you get the whole cluster",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTc2MDAxLUt6TjFnZQ?revision=2"
+        },
+        {
           "id": "https://techcommunity.microsoft.com/blog/MessagingonAzureBlog/what-your-service-bus-messages-can-tell-you-about-your-business/4574630",
           "author": "EldertGrootenboer",
           "description": "Which business decisions could benefit from the information already moving through your applications? The messages exchanged through Azure Service Bus can carry details that matter beyond the application receiving them.\nConnecting Service Bus to Microsoft Fabric lets you analyze those details alongside other business data and history. We can look for patterns across that data, use the findings to inform decisions, and send work back to the responsible applications through Service Bus.\nGive analysis its own subscription\nFor example, a retailer can create a dedicated analytics subscription on a Service Bus topic carrying its order, inventory, and fulfilment messages. Each subscription receives its own copy of matching messages, so Fabric can read from the analytics subscription without compe…",
@@ -3765,6 +3815,16 @@
       "feedUrl": "https://techcommunity.microsoft.com/t5/s/plugins/custom/microsoft/o365/custom-blog-rss?board=AzureObservabilityBlog&size=50",
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
+        {
+          "id": "https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/looking-for-a-managed-opentelemetry-collector-azure-monitor-pipeline-now-does-th/4576014",
+          "author": "shayoni_seth",
+          "description": "You did the hard part. Your teams instrumented applications, and increasingly, AI agents, with OpenTelemetry, so their logs, metrics, and traces and events aren’t locked to any one vendor’s SDK. In the AI era, those signals do double duty: they help people understand systems and give agents context to investigate and act.\nBut there's a challenge nobody puts on the roadmap: running the collector or gateway tier yourself. Infrastructure to build and scale out. Multiple exporter settings to wrangle into consistency. Credentials, certificates, and buffers to get right (and keep right!) as every new team onboards and ups the stakes, whilst keeping it all secure.\nMany of you have been asking for a managed OpenTelemetry collector. Until now, that layer between your instrumented apps (and agents) …",
+          "link": "https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/looking-for-a-managed-opentelemetry-collector-azure-monitor-pipeline-now-does-th/4576014",
+          "publishedOn": "2026-11-23T19:46:05.000Z",
+          "wordCount": 25647,
+          "title": "Looking for a managed OpenTelemetry collector? Azure Monitor pipeline now does the job",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTc2MDE0LVZzbDZxaQ?revision=4"
+        },
         {
           "id": "https://techcommunity.microsoft.com/blog/AzureObservabilityBlog/unified-agent-observability-with-end-to-end-tracing-in-azure-monitor/4574277",
           "author": "Hong Gao",
@@ -4171,16 +4231,6 @@
           "wordCount": null,
           "title": "GitHub Copilot App - Canvas Is Not a UI Builder",
           "imageUrl": null
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/mcp-for-beginners-why-every-ai-engineer-and-developer-should-learn-the-model-con/4530623",
-          "author": "Lee_Stott",
-          "description": "If you have spent any time building with large language models in the last year, you have hit the same wall everyone hits: your model is brilliant at reasoning but blind to the real world. It cannot read your database, call your internal API, search your documents, or trigger a deployment unless you hand-write glue code for every single integration. The Model Context Protocol (MCP) exists to tear that wall down, and Microsoft's open-source MCP for Beginners curriculum (reachable via the short link https://aka.ms/mcp-for-beginners) is the most complete, hands-on way to learn it.\nThis post explains what MCP is, walks through the latest updates to the course, shows real code, and makes the case for why MCP belongs on your learning roadmap right now. Whether you are an AI engineer shipping age…",
-          "link": "https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/mcp-for-beginners-why-every-ai-engineer-and-developer-should-learn-the-model-con/4530623",
-          "publishedOn": "2026-06-26T22:38:26.000Z",
-          "wordCount": null,
-          "title": "MCP for Beginners: Why Every AI Engineer and Developer Should Learn the Model Context Protocol",
-          "imageUrl": null
         }
       ]
     },
@@ -4368,16 +4418,6 @@
           "wordCount": 10250,
           "title": "My Journey with Azure SRE Agent",
           "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTIzNTE5LXdJMHFOWA?revision=2"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/mcp-for-beginners-why-every-ai-engineer-and-developer-should-learn-the-model-con/4530623",
-          "author": "Lee_Stott",
-          "description": "If you have spent any time building with large language models in the last year, you have hit the same wall everyone hits: your model is brilliant at reasoning but blind to the real world. It cannot read your database, call your internal API, search your documents, or trigger a deployment unless you hand-write glue code for every single integration. The Model Context Protocol (MCP) exists to tear that wall down, and Microsoft's open-source MCP for Beginners curriculum (reachable via the short link https://aka.ms/mcp-for-beginners) is the most complete, hands-on way to learn it.\nThis post explains what MCP is, walks through the latest updates to the course, shows real code, and makes the case for why MCP belongs on your learning roadmap right now. Whether you are an AI engineer shipping age…",
-          "link": "https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/mcp-for-beginners-why-every-ai-engineer-and-developer-should-learn-the-model-con/4530623",
-          "publishedOn": "2026-06-26T22:38:26.000Z",
-          "wordCount": null,
-          "title": "MCP for Beginners: Why Every AI Engineer and Developer Should Learn the Model Context Protocol",
-          "imageUrl": null
         }
       ]
     },
@@ -4463,6 +4503,26 @@
       "feedUrl": "https://techcommunity.microsoft.com/t5/s/plugins/custom/microsoft/o365/custom-blog-rss?board=AzureArchitectureBlog&size=50",
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
+        {
+          "id": "https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/evidence-before-autonomy-designing-multi-agent-battery-passports-on-azure/4575061",
+          "author": "Dominik Zemp",
+          "description": "Author: Dominik Zemp, Microsoft Switzerland, Enterprise Cloud Solution Architect\nAbout this article. This article is written from the author's perspective as an Enterprise Cloud Solution Architect contributing to the wider Microsoft community, and the views expressed are the author's own. It is not official Microsoft documentation, product guidance or a product announcement. For official guidance, see Microsoft Learn and the Azure Architecture Center. The scenario is fictional and uses synthetic data only. The article proposes a design; it does not describe a customer engagement, a production deployment or measured results. The article provides general information, not legal, regulatory, security or other professional advice.\nThe public GitHub repository [dzemp/multi-agent-digital-battery-…",
+          "link": "https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/evidence-before-autonomy-designing-multi-agent-battery-passports-on-azure/4575061",
+          "publishedOn": "2026-11-23T17:37:56.000Z",
+          "wordCount": null,
+          "title": "Evidence before autonomy: Designing multi-agent battery passports on Azure",
+          "imageUrl": null
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/who-can-see-this-record-designing-reusable-access-control-lists-for-azure-micros/4575167",
+          "author": "ShwethaPunnam",
+          "description": "A user signs in, opens /records/1042, and receives the correct response. Then they change one character in the URL and request /records/1043.\nThe access token is valid. The API gateway accepted it. The user has the expected application role. Yet the response contains somebody else’s data.\nNothing sophisticated happened. The API authenticated the caller but never answered the question that mattered: Is this caller allowed to perform this action on this specific record?\nOWASP API Security Top 10 2023 calls this broken object-level authorization (BOLA). OWASP places it at API1:2023 and recommends an object-level authorization check in every endpoint that receives an object identifier and acts on the corresponding object.\nThis article presents an Azure-oriented pattern for making those checks …",
+          "link": "https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/who-can-see-this-record-designing-reusable-access-control-lists-for-azure-micros/4575167",
+          "publishedOn": "2026-11-23T17:36:03.000Z",
+          "wordCount": null,
+          "title": "Who Can See This Record? Designing Reusable Access Control Lists for Azure Microservices",
+          "imageUrl": null
+        },
         {
           "id": "https://techcommunity.microsoft.com/blog/AzureArchitectureBlog/inside-the-architecture-how-connectors-work-with-azure-functions/4573939",
           "author": "swapnil_nagar",
@@ -4989,16 +5049,6 @@
           "wordCount": 10552,
           "title": "Find and fix app issues - Azure Copilot Observability Agent",
           "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTMxMDQ0LTZEOEQ4aQ?revision=1"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/MicrosoftMechanicsBlog/new-security-controls-in-edge-for%C2%A0business/4531027",
-          "author": "Zachary-Cavanell",
-          "description": "Extend Conditional Access, Purview DLP, and Defender controls into every session, across managed and unmanaged devices. \nBlock sensitive data from reaching unsanctioned AI services, lock contractors into your data boundary on devices you don’t manage, and control clipboard and screenshot actions by location. Manage extensions by permission type from the Microsoft 365 admin center and shut down scareware before users respond. \nJeremy Chapman, Microsoft 365 Director, shares how to deploy these controls using the security stack you already have.\nContractors access your SharePoint. \n\nSaves redirect to your OneDrive. Edge for Business enforces your data protection policies on unmanaged devices through Intune App Protection Policies — no dedicated device required. Check it out.\nYour clipboard, w…",
-          "link": "https://techcommunity.microsoft.com/blog/MicrosoftMechanicsBlog/new-security-controls-in-edge-for%C2%A0business/4531027",
-          "publishedOn": "2026-06-26T20:00:47.000Z",
-          "wordCount": null,
-          "title": "New Security Controls in Edge for Business",
-          "imageUrl": null
         }
       ]
     },
@@ -5016,6 +5066,16 @@
           "wordCount": 22257,
           "title": "Azure Catalyst expands Webapp target coverage",
           "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTc0Njg5LVRmR3hiUg?revision=5"
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/blog/AzureMigrationBlog/azure-catalyst-one-connected-agent-led-modernization-experience-across-apps-data/4573988",
+          "author": "NateCeres",
+          "description": "Authors: Roopesh Nair, Ryan Frazier, Nate Ceres, Ankita Bhalla\nPreparing applications for AI requires teams to understand how their systems share data, where business rules reside, and what needs to change. Teams must do this work while keeping critical applications running, putting a strain on IT and developers while delaying innovation. In Forrester’s Q1 2026 Cloud and AI Application Modernization Survey*, 91% of IT leaders said modernization was necessary for AI, yet they reported that, on average, only 43% of their applications were modernized and 32% were AI-ready.\nCustomers are already seeing what agentic modernization makes possible. Aldermore Bank migrated 100TB of data to Azure and saved over 2 hours on daily batch processing, Levi Strauss & Co. deployed more than 1,000 agents acr…",
+          "link": "https://techcommunity.microsoft.com/blog/AzureMigrationBlog/azure-catalyst-one-connected-agent-led-modernization-experience-across-apps-data/4573988",
+          "publishedOn": "2026-11-17T18:30:00.000Z",
+          "wordCount": null,
+          "title": "Azure Catalyst: one connected, agent-led modernization experience across apps, data, and infra",
+          "imageUrl": null
         },
         {
           "id": "https://techcommunity.microsoft.com/blog/AzureMigrationBlog/from-50-vms-to-fully-managed-moving-1-pb-from-amazon-s3-to-azure/4537165",
@@ -5397,6 +5457,26 @@
       "feedUrl": "https://devblogs.microsoft.com/devops/feed/",
       "siteUrl": "https://devblogs.microsoft.com/devops/",
       "articles": [
+        {
+          "id": "https://devblogs.microsoft.com/devops/?p=73768",
+          "author": "Laura Jiang",
+          "description": "Today, we’re announcing the public preview of Agentic Autofix for GitHub Advanced Security for Azure DevOps. Thank you to everyone who participated in our June private preview and our October limited preview. Your feedback helped us expand alert coverage, improve failure handling, and prepare the experience for broader rollout. With Agentic Autofix, cut time to […]\nThe post Agentic Autofix for GitHub Advanced Security for Azure DevOps is in public preview appeared first on Azure DevOps Blog.",
+          "link": "https://devblogs.microsoft.com/devops/agentic-autofix-for-advanced-security-for-azure-devops-public-preview/",
+          "publishedOn": "2026-11-23T20:21:42.000Z",
+          "wordCount": 7786,
+          "title": "Agentic Autofix for GitHub Advanced Security for Azure DevOps is in public preview",
+          "imageUrl": "https://devblogs.microsoft.com/devops/wp-content/uploads/sites/6/2026/11/autofix-hero-banner.webp"
+        },
+        {
+          "id": "https://devblogs.microsoft.com/devops/?p=73374",
+          "author": "Artur Karachev",
+          "description": "Git works well for most development workflows. But a change that seems harmless can make a repository harder to work with. Here are a few examples of how that can happen. Committing binaries directly to your repository Binaries are more likely than source code files to differ a lot between versions, so delta compression is […]\nThe post New guidance to optimize Git performance in Azure Repos appeared first on Azure DevOps Blog.",
+          "link": "https://devblogs.microsoft.com/devops/new-guidance-to-optimize-git-performance-in-azure-repos/",
+          "publishedOn": "2026-11-23T18:00:44.000Z",
+          "wordCount": 7363,
+          "title": "New guidance to optimize Git performance in Azure Repos",
+          "imageUrl": "https://devblogs.microsoft.com/devops/wp-content/uploads/sites/6/2026/08/repo-optimization-thumbnail.webp"
+        },
         {
           "id": "https://devblogs.microsoft.com/devops/?p=73625",
           "author": "Dan Hellem",
