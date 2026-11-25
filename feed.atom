@@ -2,10 +2,84 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2026-11-24T08:46:57.813Z</updated>
+    <updated>2026-11-25T07:22:10.336Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Measuring Freshness for Web Grounding]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/measuring-freshness-for-web-grounding/4576396</id>
+        <link href="https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/measuring-freshness-for-web-grounding/4576396"/>
+        <updated>2026-11-25T05:15:00.000Z</updated>
+        <summary type="html"><![CDATA[When picking a web grounding service, most developers evaluate a provider's enterprise readiness, quality, latency, and cost. For applications built on changing information, one more question matters: how fresh are the results? An earnings announcement can reshape a customer brief, and a permitting update can upend a project plan. If the grounding service hasn't caught up, the result is rework at best and decisions based on outdated assumptions at worst. 
+Freshness is hard to compare across providers: services return different kinds of content, and the time a page was fetched says little about when its information was recorded. FreshSearch is an open benchmark built to make that comparison consistent. It measures how effectively a service indexes & returns newly published content and wheth…]]></summary>
+        <author>
+            <name>RyanCassidy</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Upcoming DNS changes for Azure Event Hubs and Azure Service Bus]]></title>
+        <id>https://techcommunity.microsoft.com/blog/MessagingonAzureBlog/upcoming-dns-changes-for-azure-event-hubs-and-azure-service-bus/4576442</id>
+        <link href="https://techcommunity.microsoft.com/blog/MessagingonAzureBlog/upcoming-dns-changes-for-azure-event-hubs-and-azure-service-bus/4576442"/>
+        <updated>2026-11-24T23:43:01.000Z</updated>
+        <summary type="html"><![CDATA[What is happening
+In Azure public cloud, the new hostname format is namespace-name.zN.eventhubs.azure.net for Event Hubs and namespace-name.zN.servicebus.azure.net for Service Bus. Here, namespace-name is your namespace name and N is the partition number assigned by the service. Azure Relay also uses the shared legacy DNS zone, but isn't part of this transition.
+The planned rollout changes namespace DNS provisioning and endpoints in stages. For private-endpoint workloads, the table is a high-level summary; the separate API sequence is described immediately after it.
+
+
+
+Stage
+
+What customers can expect
+
+
+
+Both DNS formats available
+
+Existing and new namespaces have legacy and partitioned DNS records. Applications can continue using legacy hostnames during coexistence.
+
+
+Namespace endpoint a…]]></summary>
+        <author>
+            <name>EldertGrootenboer</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Choose the right document platform for your app: SharePoint Embedded]]></title>
+        <id>https://devblogs.microsoft.com/microsoft365dev/?p=26533</id>
+        <link href="https://devblogs.microsoft.com/microsoft365dev/choose-the-right-document-platform-for-your-app-sharepoint-embedded/"/>
+        <updated>2026-11-24T14:00:41.000Z</updated>
+        <summary type="html"><![CDATA[Choosing a document platform is an architectural decision—not simply a storage decision. SharePoint Embedded is designed for applications that need Microsoft 365-grade file and document capabilities while keeping the user experience, business logic, and navigation inside the application.  What SharePoint Embedded is  SharePoint Embedded is a cloud-based, API-only file and document management platform built on […]
+The post Choose the right document platform for your app: SharePoint Embedded appeared first on Microsoft 365 Developer Blog.]]></summary>
+        <author>
+            <name>Steve Pucelik</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[CetiRun: Taking AI Agents from Personal Tools to an Operable Platform on Azure]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/cetirun-taking-ai-agents-from-personal-tools-to-an-operable-platform-on-azure/4576068</id>
+        <link href="https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/cetirun-taking-ai-agents-from-personal-tools-to-an-operable-platform-on-azure/4576068"/>
+        <updated>2026-11-24T12:10:44.000Z</updated>
+        <summary type="html"><![CDATA[1. The adoption challenge is not whether an agent can write code
+At developer events, the demo often looks straightforward: describe a requirement, let AI inspect a project, change files, and run tests, and a few minutes later a feature is ready.
+But when a team tries to turn that demo into everyday practice, the question changes from "Is the model smart enough?" to:
+Who can open this agent? Which files can it read? Who manages model keys? Will the workspace survive a change of computer? How are costs controlled? And who can find out what happened when execution fails?
+Coding agents make these questions particularly concrete. They do not merely return text. They execute commands, install tools, and modify code. Running them on a developer's laptop is convenient, but it also distributes env…]]></summary>
+        <author>
+            <name>kinfey</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Copilot UX components now available in Cowork with plugins – SPFx roadmap update for November 2026]]></title>
+        <id>https://devblogs.microsoft.com/microsoft365dev/?p=26520</id>
+        <link href="https://devblogs.microsoft.com/microsoft365dev/copilot-ux-components-now-available-in-cowork-with-plugins-spfx-roadmap-update-for-november-2026/"/>
+        <updated>2026-11-24T11:21:11.000Z</updated>
+        <summary type="html"><![CDATA[Copilot UX components are now supported and available in Copilot Cowork as plugins, governed centrally with the admin tools you already use. Plus a first look at single page apps in SharePoint, a new UX model planned for preview in SPFx 1.25. As always, the roadmap is shaped by your feedback.
+The post Copilot UX components now available in Cowork with plugins – SPFx roadmap update for November 2026 appeared first on Microsoft 365 Developer Blog.]]></summary>
+        <author>
+            <name>Vesa Juvonen</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Agentic Autofix for GitHub Advanced Security for Azure DevOps is in public preview]]></title>
         <id>https://devblogs.microsoft.com/devops/?p=73768</id>
@@ -7666,40 +7740,6 @@ Logs. Metrics. Alerts. ML anomalies. 
 The Azure Copi…]]></summary>
         <author>
             <name>Zachary-Cavanell</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Master the Command Line with GitHub Copilot CLI:]]></title>
-        <id>https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/master-the-command-line-with-github-copilot-cli/4531566</id>
-        <link href="https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/master-the-command-line-with-github-copilot-cli/4531566"/>
-        <updated>2026-06-28T11:26:35.000Z</updated>
-        <summary type="html"><![CDATA[If you are a student aiming to become an AI engineer or a software developer, the terminal is about to become your most powerful classroom. https://github.com/features/copilot/cli/ brings an AI agent directly into your command line, and its slash commands (typed as /something) are the shortcuts that unlock its real capabilities.
-The problem most students hit is simple: they install a powerful tool and then only ever use 10% of it. They type questions, get answers, and never discover the commands that turn Copilot CLI from a chatbot into a genuine pair programmer. This post fixes that. We will walk through the most useful slash commands, explain why you would reach for each one, and give you concrete student scenarios for every command.
-Why This Matters Now
-AI-assisted development is no lon…]]></summary>
-        <author>
-            <name>Lee_Stott</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Action Required: Migrate Your Copilot CLI MCP Config Away from .vscode/mcp.json]]></title>
-        <id>https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/action-required-migrate-your-copilot-cli-mcp-config-away-from-vscodemcp-json/4531562</id>
-        <link href="https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/action-required-migrate-your-copilot-cli-mcp-config-away-from-vscodemcp-json/4531562"/>
-        <updated>2026-06-28T11:01:53.000Z</updated>
-        <summary type="html"><![CDATA[If you use the GitHub Copilot CLI with Model Context Protocol (MCP) servers, you may have hit this message on launch:
-
-Copilot CLI's incomplete support for .vscode/mcp.json has been removed. See https://gh.io/copilotcli-mcpmigrate to migrate to .mcp.json or .github/mcp.json.
-
-This is a quick, one-time fix. Here's what changed, why, and exactly what you need to do.
-What Changed
-The Copilot CLI previously made a best-effort attempt to read .vscode/mcp.json, the file VS Code uses to define MCP servers. That support was incomplete, so it has been removed. The CLI now loads MCP servers only from its own dedicated files:
-
-.mcp.json in your project root (or working directory)
-.github/mcp.json in your repository
-
-Your .vscode/mcp.json file is not deleted and still works for VS Code. The CLI simply…]]></summary>
-        <author>
-            <name>Lee_Stott</name>
         </author>
     </entry>
     <entry>

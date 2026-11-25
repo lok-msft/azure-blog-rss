@@ -2585,26 +2585,6 @@
           "wordCount": null,
           "title": "GitHub Copilot App Canvas Is a Runtime",
           "imageUrl": null
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/master-the-command-line-with-github-copilot-cli/4531566",
-          "author": "Lee_Stott",
-          "description": "If you are a student aiming to become an AI engineer or a software developer, the terminal is about to become your most powerful classroom. https://github.com/features/copilot/cli/ brings an AI agent directly into your command line, and its slash commands (typed as /something) are the shortcuts that unlock its real capabilities.\nThe problem most students hit is simple: they install a powerful tool and then only ever use 10% of it. They type questions, get answers, and never discover the commands that turn Copilot CLI from a chatbot into a genuine pair programmer. This post fixes that. We will walk through the most useful slash commands, explain why you would reach for each one, and give you concrete student scenarios for every command.\nWhy This Matters Now\nAI-assisted development is no lon…",
-          "link": "https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/master-the-command-line-with-github-copilot-cli/4531566",
-          "publishedOn": "2026-06-28T11:26:35.000Z",
-          "wordCount": 8966,
-          "title": "Master the Command Line with GitHub Copilot CLI:",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTMxNTY2LWtiUVVlUQ?revision=1"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/action-required-migrate-your-copilot-cli-mcp-config-away-from-vscodemcp-json/4531562",
-          "author": "Lee_Stott",
-          "description": "If you use the GitHub Copilot CLI with Model Context Protocol (MCP) servers, you may have hit this message on launch:\n\nCopilot CLI's incomplete support for .vscode/mcp.json has been removed. See https://gh.io/copilotcli-mcpmigrate to migrate to .mcp.json or .github/mcp.json.\n\nThis is a quick, one-time fix. Here's what changed, why, and exactly what you need to do.\nWhat Changed\nThe Copilot CLI previously made a best-effort attempt to read .vscode/mcp.json, the file VS Code uses to define MCP servers. That support was incomplete, so it has been removed. The CLI now loads MCP servers only from its own dedicated files:\n\n.mcp.json in your project root (or working directory)\n.github/mcp.json in your repository\n\nYour .vscode/mcp.json file is not deleted and still works for VS Code. The CLI simply…",
-          "link": "https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/action-required-migrate-your-copilot-cli-mcp-config-away-from-vscodemcp-json/4531562",
-          "publishedOn": "2026-06-28T11:01:53.000Z",
-          "wordCount": 6629,
-          "title": "Action Required: Migrate Your Copilot CLI MCP Config Away from .vscode/mcp.json",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTMxNTYyLXFZRGtUWg?revision=2"
         }
       ]
     },
@@ -3701,6 +3681,16 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/blog/MessagingonAzureBlog/upcoming-dns-changes-for-azure-event-hubs-and-azure-service-bus/4576442",
+          "author": "EldertGrootenboer",
+          "description": "What is happening\nIn Azure public cloud, the new hostname format is namespace-name.zN.eventhubs.azure.net for Event Hubs and namespace-name.zN.servicebus.azure.net for Service Bus. Here, namespace-name is your namespace name and N is the partition number assigned by the service. Azure Relay also uses the shared legacy DNS zone, but isn't part of this transition.\nThe planned rollout changes namespace DNS provisioning and endpoints in stages. For private-endpoint workloads, the table is a high-level summary; the separate API sequence is described immediately after it.\n\n\n\nStage\n\nWhat customers can expect\n\n\n\nBoth DNS formats available\n\nExisting and new namespaces have legacy and partitioned DNS records. Applications can continue using legacy hostnames during coexistence.\n\n\nNamespace endpoint a…",
+          "link": "https://techcommunity.microsoft.com/blog/MessagingonAzureBlog/upcoming-dns-changes-for-azure-event-hubs-and-azure-service-bus/4576442",
+          "publishedOn": "2026-11-24T23:43:01.000Z",
+          "wordCount": 23153,
+          "title": "Upcoming DNS changes for Azure Event Hubs and Azure Service Bus",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTc2NDQyLTBXSEM5dQ?revision=2"
+        },
+        {
           "id": "https://techcommunity.microsoft.com/blog/MessagingonAzureBlog/azure-event-hubs-dedicated-you-get-the-whole-cluster/4576001",
           "author": "ashish-chhabria",
           "description": "With Event Hubs Premium, you reserve compute for a namespace. With Dedicated, you reserve the whole cluster. Azure runs it, no other customer uses it, and you decide which of your namespaces share its capacity.\nYour teams can keep separate namespaces and endpoints without buying compute for each one. You size the cluster for their combined traffic.\nOne cluster, many teams\nTake a retailer: checkout streams orders during the lunch rush, logistics tracks deliveries through the afternoon, and operations collects device telemetry overnight. On Premium, spare compute in the checkout namespace can't help operations at midnight. On Dedicated, all those namespaces draw from the same cluster as demand shifts throughout the day.\nWhen another team joins, it can create a namespace on the same cluster. …",
@@ -4143,6 +4133,16 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/measuring-freshness-for-web-grounding/4576396",
+          "author": "RyanCassidy",
+          "description": "When picking a web grounding service, most developers evaluate a provider's enterprise readiness, quality, latency, and cost. For applications built on changing information, one more question matters: how fresh are the results? An earnings announcement can reshape a customer brief, and a permitting update can upend a project plan. If the grounding service hasn't caught up, the result is rework at best and decisions based on outdated assumptions at worst. \nFreshness is hard to compare across providers: services return different kinds of content, and the time a page was fetched says little about when its information was recorded. FreshSearch is an open benchmark built to make that comparison consistent. It measures how effectively a service indexes & returns newly published content and wheth…",
+          "link": "https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/measuring-freshness-for-web-grounding/4576396",
+          "publishedOn": "2026-11-25T05:15:00.000Z",
+          "wordCount": 25783,
+          "title": "Measuring Freshness for Web Grounding",
+          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTc2Mzk2LUJFbzFTaA?revision=1"
+        },
+        {
           "id": "https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/designing-a-reliable-ai-workflow-on-azure-production-lessons-from-translation-au/4571175",
           "author": "MinseokSong",
           "description": "Many teams can build an AI prototype that works. A trigger arrives, the model produces a plausible response, and the demo ends with the expected file or message. But what happens when that prototype becomes a workflow that other people depend on?\nImagine an AI-assisted process that prepares a recurring report. The notification arrives on time, but the report is blank. On another run, the research is useful but lands in the wrong template. A retry then replaces a version that someone had already reviewed. In each case, the model may have responded normally while the application still delivered the wrong operational result.\nI encountered versions of these failures while operating Localizeflow, an independent translation orchestration project built around Co-op Translator. A translation could…",
@@ -4289,6 +4289,16 @@
       "feedUrl": "https://techcommunity.microsoft.com/t5/s/plugins/custom/microsoft/o365/custom-blog-rss?board=AzureDevCommunityBlog&size=100&label=Developer",
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
+        {
+          "id": "https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/cetirun-taking-ai-agents-from-personal-tools-to-an-operable-platform-on-azure/4576068",
+          "author": "kinfey",
+          "description": "1. The adoption challenge is not whether an agent can write code\nAt developer events, the demo often looks straightforward: describe a requirement, let AI inspect a project, change files, and run tests, and a few minutes later a feature is ready.\nBut when a team tries to turn that demo into everyday practice, the question changes from \"Is the model smart enough?\" to:\nWho can open this agent? Which files can it read? Who manages model keys? Will the workspace survive a change of computer? How are costs controlled? And who can find out what happened when execution fails?\nCoding agents make these questions particularly concrete. They do not merely return text. They execute commands, install tools, and modify code. Running them on a developer's laptop is convenient, but it also distributes env…",
+          "link": "https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/cetirun-taking-ai-agents-from-personal-tools-to-an-operable-platform-on-azure/4576068",
+          "publishedOn": "2026-11-24T12:10:44.000Z",
+          "wordCount": null,
+          "title": "CetiRun: Taking AI Agents from Personal Tools to an Operable Platform on Azure",
+          "imageUrl": null
+        },
         {
           "id": "https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/whats-new-with-web-iq-ignite-2026-edition/4574183",
           "author": "dushantharmal",
@@ -5807,6 +5817,26 @@
       "feedUrl": "https://devblogs.microsoft.com/microsoft365dev/feed/",
       "siteUrl": "https://devblogs.microsoft.com/microsoft365dev/",
       "articles": [
+        {
+          "id": "https://devblogs.microsoft.com/microsoft365dev/?p=26533",
+          "author": "Steve Pucelik",
+          "description": "Choosing a document platform is an architectural decision—not simply a storage decision. SharePoint Embedded is designed for applications that need Microsoft 365-grade file and document capabilities while keeping the user experience, business logic, and navigation inside the application.  What SharePoint Embedded is  SharePoint Embedded is a cloud-based, API-only file and document management platform built on […]\nThe post Choose the right document platform for your app: SharePoint Embedded appeared first on Microsoft 365 Developer Blog.",
+          "link": "https://devblogs.microsoft.com/microsoft365dev/choose-the-right-document-platform-for-your-app-sharepoint-embedded/",
+          "publishedOn": "2026-11-24T14:00:41.000Z",
+          "wordCount": 8714,
+          "title": "Choose the right document platform for your app: SharePoint Embedded",
+          "imageUrl": "https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2026/11/SPE-Blog-Social-Image-20261124.webp"
+        },
+        {
+          "id": "https://devblogs.microsoft.com/microsoft365dev/?p=26520",
+          "author": "Vesa Juvonen",
+          "description": "Copilot UX components are now supported and available in Copilot Cowork as plugins, governed centrally with the admin tools you already use. Plus a first look at single page apps in SharePoint, a new UX model planned for preview in SPFx 1.25. As always, the roadmap is shaped by your feedback.\nThe post Copilot UX components now available in Cowork with plugins – SPFx roadmap update for November 2026 appeared first on Microsoft 365 Developer Blog.",
+          "link": "https://devblogs.microsoft.com/microsoft365dev/copilot-ux-components-now-available-in-cowork-with-plugins-spfx-roadmap-update-for-november-2026/",
+          "publishedOn": "2026-11-24T11:21:11.000Z",
+          "wordCount": 9891,
+          "title": "Copilot UX components now available in Cowork with plugins – SPFx roadmap update for November 2026",
+          "imageUrl": "https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2026/11/spfx-nov-roadmap-blog-post.webp"
+        },
         {
           "id": "https://devblogs.microsoft.com/microsoft365dev/?p=26472",
           "author": "Ranveer Chandra",
