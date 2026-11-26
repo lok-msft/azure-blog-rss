@@ -22,11 +22,188 @@
             data-action="toggle-accordions"
             title="Click to toggle the day, Ctrl + click to toggle all."
           >
-            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2026-11-25 datetime="2026-11-25T05:15:00.000Z">2026-11-25</time>
-            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2026-11-25 datetime="2026-11-25T05:15:00.000Z"></time>
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2026-11-26 datetime="2026-11-26T05:30:00.000Z">2026-11-26</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2026-11-26 datetime="2026-11-26T05:30:00.000Z"></time>
           </button>
         </h2>
         <ul class="sources card">
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Microsoft Tech Community - Latest Blogs - Microsoft Developer Community Blog</button>
+                  <a class="source-heading__link" href="https://techcommunity.microsoft.com">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/where-should-llm-weights-live-on-aks-three-options-for-gpu-cold-starts-measured/4574887"
+                        open
+                      >
+                        <summary class="article-expander__title">Where should LLM weights live on AKS? Three options for GPU cold starts, measured</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/where-should-llm-weights-live-on-aks-three-options-for-gpu-cold-starts-measured/4574887">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Summary 
+When you self-host an open-weight large language model (LLM) on Azure Kubernetes Service (AKS), each new replica needs two payloads before it can answer a request: the container image that holds the inference runtime, and the model weights. That wait is the cold start. On CPU services it is usually a minor nuisance; on GPU services it can decide whether autoscaling keeps up with demand, because keeping GPU nodes warm around the clock is costly. 
+We ran a controlled experiment on AKS designed to change one variable: where the weights live and how they reach the GPU. The model, the inference engine (vLLM), the GPU (one NVIDIA A100 80 GB) and the method (scale from zero onto a fresh node) were held constant. We compared three weight-delivery methods: downloading the weights from Hugg…</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Microsoft Tech Community - Latest Blogs - Apps on Azure Blog</button>
+                  <a class="source-heading__link" href="https://techcommunity.microsoft.com">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/azure-functions-and-aws-lambda-one-trigger-vs-multiple-triggers%E2%80%94what-changes-in-/4574749"
+                        open
+                      >
+                        <summary class="article-expander__title">Azure Functions and AWS Lambda: One Trigger vs. Multiple Triggers—What Changes in Your Design?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/azure-functions-and-aws-lambda-one-trigger-vs-multiple-triggers%E2%80%94what-changes-in-/4574749">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>When moving between Azure Functions and AWS Lambda, one difference quickly stands out:
+
+An individual Azure function must have exactly one trigger.
+An AWS Lambda function can have multiple triggers.
+
+At first glance, Lambda appears more flexible. But what does this difference actually mean for code reuse, event handling, and application design?
+Let’s explore it using a practical example.
+First, distinguish a function from a Function App
+In Azure, a function and a Function App are different things.
+A function is an individual entry point with its own trigger. A Function App is the Azure resource that hosts one or more functions.
+Therefore:
+The one-trigger rule applies to each Azure function—not to the entire Function App.
+A single Function App can contain HTTP-triggered, queue-triggered, an…</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/introducing-brewlet-manage-golden-images-at-platform-speed/4576767"
+                        open
+                      >
+                        <summary class="article-expander__title">Introducing Brewlet: Manage Golden Images at Platform Speed</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/introducing-brewlet-manage-golden-images-at-platform-speed/4576767">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>In October 2026, the PHP project released security updates for critical vulnerabilities that could allow unauthenticated remote code execution. For teams running PHP in Kubernetes, applying a runtime fix can mean more than updating PHP: it can mean rebuilding application images, waiting for application pipelines and approvals, and coordinating deployments across services, even when the application code itself has not changed. That delivery gap matters.
+AI is accelerating software development, but also vulnerability discovery and exploitation, increasing pressure on organizations to respond quickly. But asking every application team to rebuild and redeploy at once is not always practical. How can platform teams deliver a runtime update without making unrelated application releases a prerequ…</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Microsoft Agent Framework</button>
+                  <a class="source-heading__link" href="https://devblogs.microsoft.com/agent-framework/">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://devblogs.microsoft.com/agent-framework/?p&#x3D;5985"
+                        open
+                      >
+                        <summary class="article-expander__title">Microsoft Agent Framework repository update</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://devblogs.microsoft.com/agent-framework/microsoft-agent-framework-repository-update/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>We apologize for the disruption caused by the Microsoft Agent Framework repository’s temporary unavailability. This is a necessary precaution. We’re working to restore access as soon as possible, but don’t yet have a confirmed timeline. The repository will remain unavailable until we can confidently determine it is safe to re-enable. On November 17, 2026, two […]
+The post Microsoft Agent Framework repository update appeared first on Microsoft Agent Framework.</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;25
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+        </ul>
+      </section>
+      <section class="daily-content js-toggle-accordions-scope">
+        <h2 class="daily-heading">
+          <button
+            class="daily-heading-toggle"
+            data-action="toggle-accordions"
+            title="Click to toggle the day, Ctrl + click to toggle all."
+          >
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2026-11-25 datetime="2026-11-25T09:01:55.000Z">2026-11-25</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2026-11-25 datetime="2026-11-25T09:01:55.000Z"></time>
+          </button>
+        </h2>
+        <ul class="sources card">
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Microsoft 365 Developer Blog</button>
+                  <a class="source-heading__link" href="https://devblogs.microsoft.com/microsoft365dev/">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://devblogs.microsoft.com/microsoft365dev/?p&#x3D;26513"
+                        open
+                      >
+                        <summary class="article-expander__title">Action required: Update app-only permissions for SharePoint tenant App Catalog writes</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://devblogs.microsoft.com/microsoft365dev/action-required-update-app-only-permissions-for-sharepoint-tenant-app-catalog-writes/">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2026/11/app-catalog-writes-permissions-update.webp" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>We are introducing an additional authorization requirement for applications that use app-only authentication to write directly to specific surfaces in the SharePoint tenant App Catalog. Starting January 31, 2027, affected app-only workflows must have the SharePointTenantSettings.ReadWrite.All application permission on the Office 365 SharePoint Online resource. After that date, Sites.ReadWrite.All alone will no longer authorize these […]
+The post Action required: Update app-only permissions for SharePoint tenant App Catalog writes appeared first on Microsoft 365 Developer Blog.</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;27
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
             <li class="card__section">
               <section class="js-toggle-accordions-scope">
                 <h3 class="source-heading">
@@ -19712,283 +19889,6 @@ The Misconception…</span>
                 </section>
               </section>
             </li>
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Microsoft Tech Community - Latest Blogs - Microsoft Mechanics Blog</button>
-                  <a class="source-heading__link" href="https://techcommunity.microsoft.com">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://techcommunity.microsoft.com/blog/MicrosoftMechanicsBlog/secure-containers-from-code-to%C2%A0runtime--microsoft-defender/4531871"
-                        open
-                      >
-                        <summary class="article-expander__title">Secure containers from code to runtime | Microsoft Defender</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/blog/MicrosoftMechanicsBlog/secure-containers-from-code-to%C2%A0runtime--microsoft-defender/4531871">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTMxODcxLVNCUW5TYQ?revision&#x3D;1" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>Correlate cross-cloud attacks into a single incident, catch runtime threats that image scanning misses, and block vulnerable images before they reach production. 
-Investigate container hijacking, isolate compromised pods with Security Copilot-guided remediation, and close the loop from SOC to dev by pushing CVE fixes to GitHub and syncing resolution back to Defender. 
-Matt McSpirit, Microsoft Azure expert, shares how to detect, investigate, and remediate container threats in one connected workflow.
-Expose container hijacking at runtime.
-
-Binary drift detection flags the moment a container runs anything outside its original image. Try it now.
-Detection to containment in one flow. 
-
-Security Copilot in Defender generates your incident report, classifies the attack, and surfaces pod isolation…</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;36
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Fabric Updates Blog articles</button>
-                  <a class="source-heading__link" href="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/bg-p/fbc_fabricupdatesblogs">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Secure-Azure-and-Fabric-Event-Flows-Across-Workspaces-with/ba-p/5240305"
-                        open
-                      >
-                        <summary class="article-expander__title">Secure Azure and Fabric Event Flows Across Workspaces with Outbound Access Protection (Preview)</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Secure-Azure-and-Fabric-Event-Flows-Across-Workspaces-with/ba-p/5240305">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://community.fabric.microsoft.com/html/assets/fabric_twitter_OG_image.png" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>Lock down cross-workspace event flows in Fabric: new Outbound Access Protection lets you control which workspaces can consume Azure and Fabric events—blocking unauthorized access by default until you explicitly allow the Real-Time Events connector.</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;23
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
-        </ul>
-      </section>
-      <section class="daily-content js-toggle-accordions-scope">
-        <h2 class="daily-heading">
-          <button
-            class="daily-heading-toggle"
-            data-action="toggle-accordions"
-            title="Click to toggle the day, Ctrl + click to toggle all."
-          >
-            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2026-06-29 datetime="2026-06-29T13:22:32.000Z">2026-06-29</time>
-            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2026-06-29 datetime="2026-06-29T13:22:32.000Z"></time>
-          </button>
-        </h2>
-        <ul class="sources card">
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Microsoft Tech Community - Latest Blogs - Microsoft Developer Community Blog</button>
-                  <a class="source-heading__link" href="https://techcommunity.microsoft.com">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/my-journey-with-azure-sre-agent/4523519"
-                        open
-                      >
-                        <summary class="article-expander__title">My Journey with Azure SRE Agent</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/my-journey-with-azure-sre-agent/4523519">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTIzNTE5LXdJMHFOWA?revision&#x3D;2" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>Introduction
-A customer came to me with a problem that many organisations have. They control their infrastructure through Infrastructure as Code, but there are often scenarios where an admin needs to go in and make a change - even though they would ideally not want this to happen. The use an Entra feature Privileged Identity Management (PIM). Users statically don&#x27;t have contributor access to Azure resources, but PIM allows them to elevate their access for a period of time. As part of PIM, the admin needs to give a reason for the elevation. Wouldn&#x27;t it be good if an agent of some sort could look at this reason, then look at what the user actually did and make an assessment on whether what they did aligned with the reason given? Then alert if not.
-I initially built Python agents to handle th…</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;34
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Microsoft Agent Framework</button>
-                  <a class="source-heading__link" href="https://devblogs.microsoft.com/agent-framework/">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://devblogs.microsoft.com/agent-framework/?p&#x3D;5547"
-                        open
-                      >
-                        <summary class="article-expander__title">Agent Harness: Working with your data, safely</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://devblogs.microsoft.com/agent-framework/agent-harness-working-with-your-data-safely/">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://devblogs.microsoft.com/agent-framework/wp-content/uploads/sites/78/2026/06/02-working-with-your-data-safely.webp" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>Part 2 of Build your own claw and agent harness with Microsoft Agent Framework. In Part 1 we stood up a harness and gave our personal finance assistant its first abilities: a custom tool, web search, and planning. It can talk about the markets – but it can’t yet touch your data, and nothing stops […]
-The post Agent Harness: Working with your data, safely appeared first on Microsoft Agent Framework.</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;32
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Microsoft 365 Developer Blog</button>
-                  <a class="source-heading__link" href="https://devblogs.microsoft.com/microsoft365dev/">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://devblogs.microsoft.com/microsoft365dev/?p&#x3D;25888"
-                        open
-                      >
-                        <summary class="article-expander__title">Remote Event Receivers are retiring: move to SharePoint webhooks before July 1, 2027</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://devblogs.microsoft.com/microsoft365dev/remote-event-receivers-are-retiring-move-to-sharepoint-webhooks-before-july-1-2027/">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2026/06/rer-retirement-blog-post.webp" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>Remote Event Receivers in SharePoint Online are retiring. Starting July 1, 2027, all remote event receivers will stop firing events, including those registered using Microsoft Entra applications.
-The post Remote Event Receivers are retiring: move to SharePoint webhooks before July 1, 2027 appeared first on Microsoft 365 Developer Blog.</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;26
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Microsoft Tech Community - Latest Blogs - Educator Developer Blog</button>
-                  <a class="source-heading__link" href="https://techcommunity.microsoft.com">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/github-copilot-app-canvas-is-a-runtime/4531462"
-                        open
-                      >
-                        <summary class="article-expander__title">GitHub Copilot App Canvas Is a Runtime</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/github-copilot-app-canvas-is-a-runtime/4531462">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>There is a quiet shift happening in how we build software with AI. We are moving from writing static code to orchestrating living systems where developers and AI agents co-create, observe, and evolve a solution in real time. This post is a working theory of what GitHub Copilot App Canvas is actually for, grounded in a real, runnable demo you can clone today: leestott/agent-runtime-canvas.
-  
-The Agent Runtime canvas open beside the chat — control bar, activity spotlight, requirement &amp; constraints, and the live agent roster.
-
-The headline claim, which the rest of this post defends with code:
-Traditional UIs are for using software. Canvas is for shaping software while it runs.
-
-1. The misconception worth getting out of the way
-The first instinct most engineers have when they see Canvas is to…</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Microsoft Tech Community - Latest Blogs - Microsoft Mechanics Blog</button>
-                  <a class="source-heading__link" href="https://techcommunity.microsoft.com">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://techcommunity.microsoft.com/blog/MicrosoftMechanicsBlog/find-and-fix-app-issues%E2%80%8A-%E2%80%8Aazure-copilot-observability-agent/4531044"
-                        open
-                      >
-                        <summary class="article-expander__title">Find and fix app issues - Azure Copilot Observability Agent</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://techcommunity.microsoft.com/blog/MicrosoftMechanicsBlog/find-and-fix-app-issues%E2%80%8A-%E2%80%8Aazure-copilot-observability-agent/4531044">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTMxMDQ0LTZEOEQ4aQ?revision&#x3D;1" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>The Azure Copilot Observability Agent autonomously investigates incidents, correlates signals across logs, metrics, alerts, application health, and ML anomalies, then surfaces root cause with charts and recommended next steps. 
-Extend coverage to your AI agents in Microsoft Foundry, track Gen AI errors and token consumption with trace-level detail, and write plain-language instructions to tune autonomous behavior to match your team’s workflow. 
-Matt McSpirit, Microsoft Azure expert, shares how to take full control of incident response at scale.
-Any alert, full stack.
-
-The Azure Copilot Observability Agent correlates OpenTelemetry &amp; native Azure signals end-to-end. Trace any issue to deep failure analysis across every tier. Check it out.
-Logs. Metrics. Alerts. ML anomalies. 
-
-The Azure Copi…</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;35
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
         </ul>
       </section>
       <section class="daily-content js-toggle-accordions-scope">
@@ -20042,8 +19942,8 @@ The post What’s new with Microsoft in open source and Kubernetes at Open Sourc
       </section>
 
     <footer>
-      <a class="footer-link" href="https://github.com/lok-msft/azure-blog-rss/actions/runs/45567457470">
-        <time id="build-timestamp" datetime="2026-11-25T07:22:10.289Z">2026-11-25T07:22:10.289Z</time>
+      <a class="footer-link" href="https://github.com/lok-msft/azure-blog-rss/actions/runs/45773312134">
+        <time id="build-timestamp" datetime="2026-11-26T07:10:38.899Z">2026-11-26T07:10:38.899Z</time>
       </a>
       <a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a>
     </footer>

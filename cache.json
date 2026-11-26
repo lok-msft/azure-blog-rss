@@ -1614,16 +1614,6 @@
           "wordCount": 7027,
           "title": "AI-assisted Synapse Spark and pipeline migration to Microsoft Fabric from the command line (Preview)",
           "imageUrl": "https://community.fabric.microsoft.com/html/assets/fabric_twitter_OG_image.png"
-        },
-        {
-          "id": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Secure-Azure-and-Fabric-Event-Flows-Across-Workspaces-with/ba-p/5240305",
-          "author": "GEGUIRGU",
-          "description": "Lock down cross-workspace event flows in Fabric: new Outbound Access Protection lets you control which workspaces can consume Azure and Fabric events—blocking unauthorized access by default until you explicitly allow the Real-Time Events connector.",
-          "link": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Secure-Azure-and-Fabric-Event-Flows-Across-Workspaces-with/ba-p/5240305",
-          "publishedOn": "2026-06-29T16:00:00.000Z",
-          "wordCount": 6803,
-          "title": "Secure Azure and Fabric Event Flows Across Workspaces with Outbound Access Protection (Preview)",
-          "imageUrl": "https://community.fabric.microsoft.com/html/assets/fabric_twitter_OG_image.png"
         }
       ]
     },
@@ -2575,16 +2565,6 @@
           "wordCount": null,
           "title": "From Game to Operations: Exporting a Foundry-Designed Workforce as a Portable Bundle",
           "imageUrl": null
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/github-copilot-app-canvas-is-a-runtime/4531462",
-          "author": "Lee_Stott",
-          "description": "There is a quiet shift happening in how we build software with AI. We are moving from writing static code to orchestrating living systems where developers and AI agents co-create, observe, and evolve a solution in real time. This post is a working theory of what GitHub Copilot App Canvas is actually for, grounded in a real, runnable demo you can clone today: leestott/agent-runtime-canvas.\n  \nThe Agent Runtime canvas open beside the chat — control bar, activity spotlight, requirement & constraints, and the live agent roster.\n\nThe headline claim, which the rest of this post defends with code:\nTraditional UIs are for using software. Canvas is for shaping software while it runs.\n\n1. The misconception worth getting out of the way\nThe first instinct most engineers have when they see Canvas is to…",
-          "link": "https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/github-copilot-app-canvas-is-a-runtime/4531462",
-          "publishedOn": "2026-06-29T07:00:00.000Z",
-          "wordCount": null,
-          "title": "GitHub Copilot App Canvas Is a Runtime",
-          "imageUrl": null
         }
       ]
     },
@@ -2593,6 +2573,26 @@
       "feedUrl": "https://techcommunity.microsoft.com/t5/s/plugins/custom/microsoft/o365/custom-blog-rss?board=AppsonAzureBlog&size=100",
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
+        {
+          "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/azure-functions-and-aws-lambda-one-trigger-vs-multiple-triggers%E2%80%94what-changes-in-/4574749",
+          "author": "singh_abhi",
+          "description": "When moving between Azure Functions and AWS Lambda, one difference quickly stands out:\n\nAn individual Azure function must have exactly one trigger.\nAn AWS Lambda function can have multiple triggers.\n\nAt first glance, Lambda appears more flexible. But what does this difference actually mean for code reuse, event handling, and application design?\nLet’s explore it using a practical example.\nFirst, distinguish a function from a Function App\nIn Azure, a function and a Function App are different things.\nA function is an individual entry point with its own trigger. A Function App is the Azure resource that hosts one or more functions.\nTherefore:\nThe one-trigger rule applies to each Azure function—not to the entire Function App.\nA single Function App can contain HTTP-triggered, queue-triggered, an…",
+          "link": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/azure-functions-and-aws-lambda-one-trigger-vs-multiple-triggers%E2%80%94what-changes-in-/4574749",
+          "publishedOn": "2026-11-26T02:28:19.000Z",
+          "wordCount": null,
+          "title": "Azure Functions and AWS Lambda: One Trigger vs. Multiple Triggers—What Changes in Your Design?",
+          "imageUrl": null
+        },
+        {
+          "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/introducing-brewlet-manage-golden-images-at-platform-speed/4576767",
+          "author": "Bruno Borges",
+          "description": "In October 2026, the PHP project released security updates for critical vulnerabilities that could allow unauthenticated remote code execution. For teams running PHP in Kubernetes, applying a runtime fix can mean more than updating PHP: it can mean rebuilding application images, waiting for application pipelines and approvals, and coordinating deployments across services, even when the application code itself has not changed. That delivery gap matters.\nAI is accelerating software development, but also vulnerability discovery and exploitation, increasing pressure on organizations to respond quickly. But asking every application team to rebuild and redeploy at once is not always practical. How can platform teams deliver a runtime update without making unrelated application releases a prerequ…",
+          "link": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/introducing-brewlet-manage-golden-images-at-platform-speed/4576767",
+          "publishedOn": "2026-11-25T20:13:18.000Z",
+          "wordCount": null,
+          "title": "Introducing Brewlet: Manage Golden Images at Platform Speed",
+          "imageUrl": null
+        },
         {
           "id": "https://techcommunity.microsoft.com/blog/AppsonAzureBlog/introducing-azure-sre-agent-in-azure-managed-grafana-the-dashboard-as-command-ce/4575039",
           "author": "Wuyi_Weng",
@@ -4290,6 +4290,16 @@
       "siteUrl": "https://techcommunity.microsoft.com",
       "articles": [
         {
+          "id": "https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/where-should-llm-weights-live-on-aks-three-options-for-gpu-cold-starts-measured/4574887",
+          "author": "kumarsagar",
+          "description": "Summary \nWhen you self-host an open-weight large language model (LLM) on Azure Kubernetes Service (AKS), each new replica needs two payloads before it can answer a request: the container image that holds the inference runtime, and the model weights. That wait is the cold start. On CPU services it is usually a minor nuisance; on GPU services it can decide whether autoscaling keeps up with demand, because keeping GPU nodes warm around the clock is costly. \nWe ran a controlled experiment on AKS designed to change one variable: where the weights live and how they reach the GPU. The model, the inference engine (vLLM), the GPU (one NVIDIA A100 80 GB) and the method (scale from zero onto a fresh node) were held constant. We compared three weight-delivery methods: downloading the weights from Hugg…",
+          "link": "https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/where-should-llm-weights-live-on-aks-three-options-for-gpu-cold-starts-measured/4574887",
+          "publishedOn": "2026-11-26T05:30:00.000Z",
+          "wordCount": null,
+          "title": "Where should LLM weights live on AKS? Three options for GPU cold starts, measured",
+          "imageUrl": null
+        },
+        {
           "id": "https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/cetirun-taking-ai-agents-from-personal-tools-to-an-operable-platform-on-azure/4576068",
           "author": "kinfey",
           "description": "1. The adoption challenge is not whether an agent can write code\nAt developer events, the demo often looks straightforward: describe a requirement, let AI inspect a project, change files, and run tests, and a few minutes later a feature is ready.\nBut when a team tries to turn that demo into everyday practice, the question changes from \"Is the model smart enough?\" to:\nWho can open this agent? Which files can it read? Who manages model keys? Will the workspace survive a change of computer? How are costs controlled? And who can find out what happened when execution fails?\nCoding agents make these questions particularly concrete. They do not merely return text. They execute commands, install tools, and modify code. Running them on a developer's laptop is convenient, but it also distributes env…",
@@ -4418,16 +4428,6 @@
           "wordCount": null,
           "title": "From Multi-Model Chaos to a Governed AI Gateway: Cost Optimization on Azure",
           "imageUrl": null
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/my-journey-with-azure-sre-agent/4523519",
-          "author": "jometzg",
-          "description": "Introduction\nA customer came to me with a problem that many organisations have. They control their infrastructure through Infrastructure as Code, but there are often scenarios where an admin needs to go in and make a change - even though they would ideally not want this to happen. The use an Entra feature Privileged Identity Management (PIM). Users statically don't have contributor access to Azure resources, but PIM allows them to elevate their access for a period of time. As part of PIM, the admin needs to give a reason for the elevation. Wouldn't it be good if an agent of some sort could look at this reason, then look at what the user actually did and make an assessment on whether what they did aligned with the reason given? Then alert if not.\nI initially built Python agents to handle th…",
-          "link": "https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/my-journey-with-azure-sre-agent/4523519",
-          "publishedOn": "2026-06-29T13:22:32.000Z",
-          "wordCount": 10250,
-          "title": "My Journey with Azure SRE Agent",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTIzNTE5LXdJMHFOWA?revision=2"
         }
       ]
     },
@@ -5039,26 +5039,6 @@
           "wordCount": null,
           "title": "Zero Trust security for AI agents",
           "imageUrl": null
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/MicrosoftMechanicsBlog/secure-containers-from-code-to%C2%A0runtime--microsoft-defender/4531871",
-          "author": "Zachary-Cavanell",
-          "description": "Correlate cross-cloud attacks into a single incident, catch runtime threats that image scanning misses, and block vulnerable images before they reach production. \nInvestigate container hijacking, isolate compromised pods with Security Copilot-guided remediation, and close the loop from SOC to dev by pushing CVE fixes to GitHub and syncing resolution back to Defender. \nMatt McSpirit, Microsoft Azure expert, shares how to detect, investigate, and remediate container threats in one connected workflow.\nExpose container hijacking at runtime.\n\nBinary drift detection flags the moment a container runs anything outside its original image. Try it now.\nDetection to containment in one flow. \n\nSecurity Copilot in Defender generates your incident report, classifies the attack, and surfaces pod isolation…",
-          "link": "https://techcommunity.microsoft.com/blog/MicrosoftMechanicsBlog/secure-containers-from-code-to%C2%A0runtime--microsoft-defender/4531871",
-          "publishedOn": "2026-06-29T16:19:54.000Z",
-          "wordCount": 10936,
-          "title": "Secure containers from code to runtime | Microsoft Defender",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTMxODcxLVNCUW5TYQ?revision=1"
-        },
-        {
-          "id": "https://techcommunity.microsoft.com/blog/MicrosoftMechanicsBlog/find-and-fix-app-issues%E2%80%8A-%E2%80%8Aazure-copilot-observability-agent/4531044",
-          "author": "Zachary-Cavanell",
-          "description": "The Azure Copilot Observability Agent autonomously investigates incidents, correlates signals across logs, metrics, alerts, application health, and ML anomalies, then surfaces root cause with charts and recommended next steps. \nExtend coverage to your AI agents in Microsoft Foundry, track Gen AI errors and token consumption with trace-level detail, and write plain-language instructions to tune autonomous behavior to match your team’s workflow. \nMatt McSpirit, Microsoft Azure expert, shares how to take full control of incident response at scale.\nAny alert, full stack.\n\nThe Azure Copilot Observability Agent correlates OpenTelemetry & native Azure signals end-to-end. Trace any issue to deep failure analysis across every tier. Check it out.\nLogs. Metrics. Alerts. ML anomalies. \n\nThe Azure Copi…",
-          "link": "https://techcommunity.microsoft.com/blog/MicrosoftMechanicsBlog/find-and-fix-app-issues%E2%80%8A-%E2%80%8Aazure-copilot-observability-agent/4531044",
-          "publishedOn": "2026-06-29T06:30:00.000Z",
-          "wordCount": 10552,
-          "title": "Find and fix app issues - Azure Copilot Observability Agent",
-          "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTMxMDQ0LTZEOEQ4aQ?revision=1"
         }
       ]
     },
@@ -5140,6 +5120,16 @@
       "feedUrl": "https://devblogs.microsoft.com/semantic-kernel/feed/",
       "siteUrl": "https://devblogs.microsoft.com/agent-framework/",
       "articles": [
+        {
+          "id": "https://devblogs.microsoft.com/agent-framework/?p=5985",
+          "author": "Dan Taylor",
+          "description": "We apologize for the disruption caused by the Microsoft Agent Framework repository’s temporary unavailability. This is a necessary precaution. We’re working to restore access as soon as possible, but don’t yet have a confirmed timeline. The repository will remain unavailable until we can confidently determine it is safe to re-enable. On November 17, 2026, two […]\nThe post Microsoft Agent Framework repository update appeared first on Microsoft Agent Framework.",
+          "link": "https://devblogs.microsoft.com/agent-framework/microsoft-agent-framework-repository-update/",
+          "publishedOn": "2026-11-25T20:14:50.000Z",
+          "wordCount": 7522,
+          "title": "Microsoft Agent Framework repository update",
+          "imageUrl": null
+        },
         {
           "id": "https://devblogs.microsoft.com/agent-framework/?p=5929",
           "author": "Eduard van Valkenburg, Wes Steyn",
@@ -5309,16 +5299,6 @@
           "wordCount": 7632,
           "title": "Agent Skills for .NET Is Now Released",
           "imageUrl": "https://devblogs.microsoft.com/agent-framework/wp-content/uploads/sites/78/2026/07/skills-release-final.webp"
-        },
-        {
-          "id": "https://devblogs.microsoft.com/agent-framework/?p=5547",
-          "author": "Wes Steyn",
-          "description": "Part 2 of Build your own claw and agent harness with Microsoft Agent Framework. In Part 1 we stood up a harness and gave our personal finance assistant its first abilities: a custom tool, web search, and planning. It can talk about the markets – but it can’t yet touch your data, and nothing stops […]\nThe post Agent Harness: Working with your data, safely appeared first on Microsoft Agent Framework.",
-          "link": "https://devblogs.microsoft.com/agent-framework/agent-harness-working-with-your-data-safely/",
-          "publishedOn": "2026-06-29T10:41:33.000Z",
-          "wordCount": 9633,
-          "title": "Agent Harness: Working with your data, safely",
-          "imageUrl": "https://devblogs.microsoft.com/agent-framework/wp-content/uploads/sites/78/2026/06/02-working-with-your-data-safely.webp"
         }
       ]
     },
@@ -5818,6 +5798,16 @@
       "siteUrl": "https://devblogs.microsoft.com/microsoft365dev/",
       "articles": [
         {
+          "id": "https://devblogs.microsoft.com/microsoft365dev/?p=26513",
+          "author": "Vesa Juvonen",
+          "description": "We are introducing an additional authorization requirement for applications that use app-only authentication to write directly to specific surfaces in the SharePoint tenant App Catalog. Starting January 31, 2027, affected app-only workflows must have the SharePointTenantSettings.ReadWrite.All application permission on the Office 365 SharePoint Online resource. After that date, Sites.ReadWrite.All alone will no longer authorize these […]\nThe post Action required: Update app-only permissions for SharePoint tenant App Catalog writes appeared first on Microsoft 365 Developer Blog.",
+          "link": "https://devblogs.microsoft.com/microsoft365dev/action-required-update-app-only-permissions-for-sharepoint-tenant-app-catalog-writes/",
+          "publishedOn": "2026-11-25T09:01:55.000Z",
+          "wordCount": 8077,
+          "title": "Action required: Update app-only permissions for SharePoint tenant App Catalog writes",
+          "imageUrl": "https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2026/11/app-catalog-writes-permissions-update.webp"
+        },
+        {
           "id": "https://devblogs.microsoft.com/microsoft365dev/?p=26533",
           "author": "Steve Pucelik",
           "description": "Choosing a document platform is an architectural decision—not simply a storage decision. SharePoint Embedded is designed for applications that need Microsoft 365-grade file and document capabilities while keeping the user experience, business logic, and navigation inside the application.  What SharePoint Embedded is  SharePoint Embedded is a cloud-based, API-only file and document management platform built on […]\nThe post Choose the right document platform for your app: SharePoint Embedded appeared first on Microsoft 365 Developer Blog.",
@@ -6131,16 +6121,6 @@
           "wordCount": 7499,
           "title": "Mailbox requirement set 1.16 now available for Outlook add-ins",
           "imageUrl": "https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2026/06/Slide1.webp"
-        },
-        {
-          "id": "https://devblogs.microsoft.com/microsoft365dev/?p=25888",
-          "author": "SharePoint team",
-          "description": "Remote Event Receivers in SharePoint Online are retiring. Starting July 1, 2027, all remote event receivers will stop firing events, including those registered using Microsoft Entra applications.\nThe post Remote Event Receivers are retiring: move to SharePoint webhooks before July 1, 2027 appeared first on Microsoft 365 Developer Blog.",
-          "link": "https://devblogs.microsoft.com/microsoft365dev/remote-event-receivers-are-retiring-move-to-sharepoint-webhooks-before-july-1-2027/",
-          "publishedOn": "2026-06-29T09:32:55.000Z",
-          "wordCount": 7765,
-          "title": "Remote Event Receivers are retiring: move to SharePoint webhooks before July 1, 2027",
-          "imageUrl": "https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2026/06/rer-retirement-blog-post.webp"
         }
       ]
     }

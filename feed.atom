@@ -2,10 +2,77 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lok-msft.github.io/azure-blog-rss/index.html</id>
     <title>Azure::Blog::Update</title>
-    <updated>2026-11-25T07:22:10.336Z</updated>
+    <updated>2026-11-26T07:10:38.938Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://lok-msft.github.io/azure-blog-rss/index.html"/>
     <link rel="self" href="https://lok-msft.github.io/azure-blog-rss/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Where should LLM weights live on AKS? Three options for GPU cold starts, measured]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/where-should-llm-weights-live-on-aks-three-options-for-gpu-cold-starts-measured/4574887</id>
+        <link href="https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/where-should-llm-weights-live-on-aks-three-options-for-gpu-cold-starts-measured/4574887"/>
+        <updated>2026-11-26T05:30:00.000Z</updated>
+        <summary type="html"><![CDATA[Summary 
+When you self-host an open-weight large language model (LLM) on Azure Kubernetes Service (AKS), each new replica needs two payloads before it can answer a request: the container image that holds the inference runtime, and the model weights. That wait is the cold start. On CPU services it is usually a minor nuisance; on GPU services it can decide whether autoscaling keeps up with demand, because keeping GPU nodes warm around the clock is costly. 
+We ran a controlled experiment on AKS designed to change one variable: where the weights live and how they reach the GPU. The model, the inference engine (vLLM), the GPU (one NVIDIA A100 80 GB) and the method (scale from zero onto a fresh node) were held constant. We compared three weight-delivery methods: downloading the weights from Hugg…]]></summary>
+        <author>
+            <name>kumarsagar</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Azure Functions and AWS Lambda: One Trigger vs. Multiple Triggers—What Changes in Your Design?]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/azure-functions-and-aws-lambda-one-trigger-vs-multiple-triggers%E2%80%94what-changes-in-/4574749</id>
+        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/azure-functions-and-aws-lambda-one-trigger-vs-multiple-triggers%E2%80%94what-changes-in-/4574749"/>
+        <updated>2026-11-26T02:28:19.000Z</updated>
+        <summary type="html"><![CDATA[When moving between Azure Functions and AWS Lambda, one difference quickly stands out:
+
+An individual Azure function must have exactly one trigger.
+An AWS Lambda function can have multiple triggers.
+
+At first glance, Lambda appears more flexible. But what does this difference actually mean for code reuse, event handling, and application design?
+Let’s explore it using a practical example.
+First, distinguish a function from a Function App
+In Azure, a function and a Function App are different things.
+A function is an individual entry point with its own trigger. A Function App is the Azure resource that hosts one or more functions.
+Therefore:
+The one-trigger rule applies to each Azure function—not to the entire Function App.
+A single Function App can contain HTTP-triggered, queue-triggered, an…]]></summary>
+        <author>
+            <name>singh_abhi</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Microsoft Agent Framework repository update]]></title>
+        <id>https://devblogs.microsoft.com/agent-framework/?p=5985</id>
+        <link href="https://devblogs.microsoft.com/agent-framework/microsoft-agent-framework-repository-update/"/>
+        <updated>2026-11-25T20:14:50.000Z</updated>
+        <summary type="html"><![CDATA[We apologize for the disruption caused by the Microsoft Agent Framework repository’s temporary unavailability. This is a necessary precaution. We’re working to restore access as soon as possible, but don’t yet have a confirmed timeline. The repository will remain unavailable until we can confidently determine it is safe to re-enable. On November 17, 2026, two […]
+The post Microsoft Agent Framework repository update appeared first on Microsoft Agent Framework.]]></summary>
+        <author>
+            <name>Dan Taylor</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Introducing Brewlet: Manage Golden Images at Platform Speed]]></title>
+        <id>https://techcommunity.microsoft.com/blog/AppsonAzureBlog/introducing-brewlet-manage-golden-images-at-platform-speed/4576767</id>
+        <link href="https://techcommunity.microsoft.com/blog/AppsonAzureBlog/introducing-brewlet-manage-golden-images-at-platform-speed/4576767"/>
+        <updated>2026-11-25T20:13:18.000Z</updated>
+        <summary type="html"><![CDATA[In October 2026, the PHP project released security updates for critical vulnerabilities that could allow unauthenticated remote code execution. For teams running PHP in Kubernetes, applying a runtime fix can mean more than updating PHP: it can mean rebuilding application images, waiting for application pipelines and approvals, and coordinating deployments across services, even when the application code itself has not changed. That delivery gap matters.
+AI is accelerating software development, but also vulnerability discovery and exploitation, increasing pressure on organizations to respond quickly. But asking every application team to rebuild and redeploy at once is not always practical. How can platform teams deliver a runtime update without making unrelated application releases a prerequ…]]></summary>
+        <author>
+            <name>Bruno Borges</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Action required: Update app-only permissions for SharePoint tenant App Catalog writes]]></title>
+        <id>https://devblogs.microsoft.com/microsoft365dev/?p=26513</id>
+        <link href="https://devblogs.microsoft.com/microsoft365dev/action-required-update-app-only-permissions-for-sharepoint-tenant-app-catalog-writes/"/>
+        <updated>2026-11-25T09:01:55.000Z</updated>
+        <summary type="html"><![CDATA[We are introducing an additional authorization requirement for applications that use app-only authentication to write directly to specific surfaces in the SharePoint tenant App Catalog. Starting January 31, 2027, affected app-only workflows must have the SharePointTenantSettings.ReadWrite.All application permission on the Office 365 SharePoint Online resource. After that date, Sites.ReadWrite.All alone will no longer authorize these […]
+The post Action required: Update app-only permissions for SharePoint tenant App Catalog writes appeared first on Microsoft 365 Developer Blog.]]></summary>
+        <author>
+            <name>Vesa Juvonen</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Measuring Freshness for Web Grounding]]></title>
         <id>https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/measuring-freshness-for-web-grounding/4576396</id>
@@ -7642,104 +7709,6 @@ This post walks through a real Canvas extension we built, a Multi-Agent Dev Can
 The Misconception…]]></summary>
         <author>
             <name>Lee_Stott</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Secure containers from code to runtime | Microsoft Defender]]></title>
-        <id>https://techcommunity.microsoft.com/blog/MicrosoftMechanicsBlog/secure-containers-from-code-to%C2%A0runtime--microsoft-defender/4531871</id>
-        <link href="https://techcommunity.microsoft.com/blog/MicrosoftMechanicsBlog/secure-containers-from-code-to%C2%A0runtime--microsoft-defender/4531871"/>
-        <updated>2026-06-29T16:19:54.000Z</updated>
-        <summary type="html"><![CDATA[Correlate cross-cloud attacks into a single incident, catch runtime threats that image scanning misses, and block vulnerable images before they reach production. 
-Investigate container hijacking, isolate compromised pods with Security Copilot-guided remediation, and close the loop from SOC to dev by pushing CVE fixes to GitHub and syncing resolution back to Defender. 
-Matt McSpirit, Microsoft Azure expert, shares how to detect, investigate, and remediate container threats in one connected workflow.
-Expose container hijacking at runtime.
-
-Binary drift detection flags the moment a container runs anything outside its original image. Try it now.
-Detection to containment in one flow. 
-
-Security Copilot in Defender generates your incident report, classifies the attack, and surfaces pod isolation…]]></summary>
-        <author>
-            <name>Zachary-Cavanell</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Secure Azure and Fabric Event Flows Across Workspaces with Outbound Access Protection (Preview)]]></title>
-        <id>https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Secure-Azure-and-Fabric-Event-Flows-Across-Workspaces-with/ba-p/5240305</id>
-        <link href="https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Secure-Azure-and-Fabric-Event-Flows-Across-Workspaces-with/ba-p/5240305"/>
-        <updated>2026-06-29T16:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Lock down cross-workspace event flows in Fabric: new Outbound Access Protection lets you control which workspaces can consume Azure and Fabric events—blocking unauthorized access by default until you explicitly allow the Real-Time Events connector.]]></summary>
-        <author>
-            <name>GEGUIRGU</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[My Journey with Azure SRE Agent]]></title>
-        <id>https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/my-journey-with-azure-sre-agent/4523519</id>
-        <link href="https://techcommunity.microsoft.com/blog/AzureDevCommunityBlog/my-journey-with-azure-sre-agent/4523519"/>
-        <updated>2026-06-29T13:22:32.000Z</updated>
-        <summary type="html"><![CDATA[Introduction
-A customer came to me with a problem that many organisations have. They control their infrastructure through Infrastructure as Code, but there are often scenarios where an admin needs to go in and make a change - even though they would ideally not want this to happen. The use an Entra feature Privileged Identity Management (PIM). Users statically don't have contributor access to Azure resources, but PIM allows them to elevate their access for a period of time. As part of PIM, the admin needs to give a reason for the elevation. Wouldn't it be good if an agent of some sort could look at this reason, then look at what the user actually did and make an assessment on whether what they did aligned with the reason given? Then alert if not.
-I initially built Python agents to handle th…]]></summary>
-        <author>
-            <name>jometzg</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Agent Harness: Working with your data, safely]]></title>
-        <id>https://devblogs.microsoft.com/agent-framework/?p=5547</id>
-        <link href="https://devblogs.microsoft.com/agent-framework/agent-harness-working-with-your-data-safely/"/>
-        <updated>2026-06-29T10:41:33.000Z</updated>
-        <summary type="html"><![CDATA[Part 2 of Build your own claw and agent harness with Microsoft Agent Framework. In Part 1 we stood up a harness and gave our personal finance assistant its first abilities: a custom tool, web search, and planning. It can talk about the markets – but it can’t yet touch your data, and nothing stops […]
-The post Agent Harness: Working with your data, safely appeared first on Microsoft Agent Framework.]]></summary>
-        <author>
-            <name>Wes Steyn</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Remote Event Receivers are retiring: move to SharePoint webhooks before July 1, 2027]]></title>
-        <id>https://devblogs.microsoft.com/microsoft365dev/?p=25888</id>
-        <link href="https://devblogs.microsoft.com/microsoft365dev/remote-event-receivers-are-retiring-move-to-sharepoint-webhooks-before-july-1-2027/"/>
-        <updated>2026-06-29T09:32:55.000Z</updated>
-        <summary type="html"><![CDATA[Remote Event Receivers in SharePoint Online are retiring. Starting July 1, 2027, all remote event receivers will stop firing events, including those registered using Microsoft Entra applications.
-The post Remote Event Receivers are retiring: move to SharePoint webhooks before July 1, 2027 appeared first on Microsoft 365 Developer Blog.]]></summary>
-        <author>
-            <name>SharePoint team</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[GitHub Copilot App Canvas Is a Runtime]]></title>
-        <id>https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/github-copilot-app-canvas-is-a-runtime/4531462</id>
-        <link href="https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/github-copilot-app-canvas-is-a-runtime/4531462"/>
-        <updated>2026-06-29T07:00:00.000Z</updated>
-        <summary type="html"><![CDATA[There is a quiet shift happening in how we build software with AI. We are moving from writing static code to orchestrating living systems where developers and AI agents co-create, observe, and evolve a solution in real time. This post is a working theory of what GitHub Copilot App Canvas is actually for, grounded in a real, runnable demo you can clone today: leestott/agent-runtime-canvas.
-  
-The Agent Runtime canvas open beside the chat — control bar, activity spotlight, requirement & constraints, and the live agent roster.
-
-The headline claim, which the rest of this post defends with code:
-Traditional UIs are for using software. Canvas is for shaping software while it runs.
-
-1. The misconception worth getting out of the way
-The first instinct most engineers have when they see Canvas is to…]]></summary>
-        <author>
-            <name>Lee_Stott</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Find and fix app issues - Azure Copilot Observability Agent]]></title>
-        <id>https://techcommunity.microsoft.com/blog/MicrosoftMechanicsBlog/find-and-fix-app-issues%E2%80%8A-%E2%80%8Aazure-copilot-observability-agent/4531044</id>
-        <link href="https://techcommunity.microsoft.com/blog/MicrosoftMechanicsBlog/find-and-fix-app-issues%E2%80%8A-%E2%80%8Aazure-copilot-observability-agent/4531044"/>
-        <updated>2026-06-29T06:30:00.000Z</updated>
-        <summary type="html"><![CDATA[The Azure Copilot Observability Agent autonomously investigates incidents, correlates signals across logs, metrics, alerts, application health, and ML anomalies, then surfaces root cause with charts and recommended next steps. 
-Extend coverage to your AI agents in Microsoft Foundry, track Gen AI errors and token consumption with trace-level detail, and write plain-language instructions to tune autonomous behavior to match your team’s workflow. 
-Matt McSpirit, Microsoft Azure expert, shares how to take full control of incident response at scale.
-Any alert, full stack.
-
-The Azure Copilot Observability Agent correlates OpenTelemetry & native Azure signals end-to-end. Trace any issue to deep failure analysis across every tier. Check it out.
-Logs. Metrics. Alerts. ML anomalies. 
-
-The Azure Copi…]]></summary>
-        <author>
-            <name>Zachary-Cavanell</name>
         </author>
     </entry>
     <entry>
